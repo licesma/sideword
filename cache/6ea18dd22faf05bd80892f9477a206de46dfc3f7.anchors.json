@@ -1,0 +1,253 @@
+{
+ "blob_sha": "6ea18dd22faf05bd80892f9477a206de46dfc3f7",
+ "path": "django/urls/resolvers.py",
+ "repo": "django/django",
+ "records": 38,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ResolverMatch.__init__#assign:self.app_names",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r3",
+   "anchor": "ResolverMatch.__init__#if:not hasattr(func, '__name__')/assign:self._func_path",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "ResolverMatch.__init__#if:not hasattr(func, '__name__')/else/assign:self._func_path",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "get_ns_resolver#assign:pattern",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r6",
+   "anchor": "LocaleRegexDescriptor.__get__",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r7",
+   "anchor": "LocaleRegexDescriptor.__get__#assign:pattern",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r8",
+   "anchor": "CheckURLMixin.describe",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r9",
+   "anchor": "CheckURLMixin._check_pattern_startswith_slash",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r10",
+   "anchor": "CheckURLMixin._check_pattern_startswith_slash#if:not settings.APPEND_SLASH/return",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r11",
+   "anchor": "RegexPattern.match#if:match/assign:kwargs",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r12",
+   "anchor": "RegexPattern._compile",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r13",
+   "anchor": "_route_to_regex",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r14",
+   "anchor": "_route_to_regex#while:True/if:raw_converter is None/assign:raw_converter",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r15",
+   "anchor": "RoutePattern.match#if:match/assign:kwargs",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r16",
+   "anchor": "LocalePrefixPattern.regex#return",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r17",
+   "anchor": "URLPattern.__init__#assign:self.callback",
+   "kind": "trail",
+   "line": 342
+  },
+  {
+   "id": "r18",
+   "anchor": "URLPattern._check_pattern_name",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r19",
+   "anchor": "URLPattern.resolve#if:match/call:kwargs.update",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r20",
+   "anchor": "URLPattern.lookup_str",
+   "kind": "doc",
+   "line": 394
+  },
+  {
+   "id": "r21",
+   "anchor": "URLResolver.__init__#assign:self.urlconf_name",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r22",
+   "anchor": "URLResolver.__init__#assign:self._callback_strs",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r23",
+   "anchor": "URLResolver.__repr__#if:isinstance(self.urlconf_name, list) and self.urlconf_name/assign:urlconf_repr",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r24",
+   "anchor": "URLResolver._check_custom_error_handlers#for:status_code, num_parameters in [(400, 2), (403, 2), (404, 2), (500, 1)]",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r25",
+   "anchor": "URLResolver._populate#if:getattr(self._local, 'populating', False)",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r26",
+   "anchor": "URLResolver._populate#try/for:url_pattern in reversed(self.url_patterns)/if:isinstance(url_pattern, URLPattern)/else",
+   "kind": "trail",
+   "line": 506
+  },
+  {
+   "id": "r27",
+   "anchor": "URLResolver._join_route",
+   "kind": "doc",
+   "line": 567
+  },
+  {
+   "id": "r28",
+   "anchor": "URLResolver.resolve#assign:path",
+   "kind": "trail",
+   "line": 581
+  },
+  {
+   "id": "r29",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/assign:sub_match_dict",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r30",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/call:sub_match_dict.update",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r31",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/assign:sub_match_args",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r32",
+   "anchor": "URLResolver.url_patterns#assign:patterns",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r33",
+   "anchor": "URLResolver.resolve_error_handler#if:not callback/import:django.conf",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r34",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/assign:text_candidate_subs",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r35",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/assign:candidate_pat",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r36",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/if:re.search('^%s%s' % (re.escape(_prefix), pattern), candidate_pat % text_candidate_subs)/assign:url",
+   "kind": "lead",
+   "line": 696
+  },
+  {
+   "id": "r37",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/if:re.search('^%s%s' % (re.escape(_prefix), pattern), candidate_pat % text_candidate_subs)/return",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r38",
+   "anchor": "URLResolver._reverse_with_prefix#assign:m",
+   "kind": "lead",
+   "line": 701
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17065,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4855,
+  "thinking_tokens": 2633,
+  "opus_cost_usd": 0.2963165,
+  "total_cost_usd": 0.30867649999999996,
+  "duration_ms": 44558,
+  "duration_api_ms": 45559,
+  "num_turns": 2
+ },
+ "wall_ms": 45421,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

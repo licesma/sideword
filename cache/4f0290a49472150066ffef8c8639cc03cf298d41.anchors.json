@@ -1,0 +1,733 @@
+{
+ "blob_sha": "4f0290a49472150066ffef8c8639cc03cf298d41",
+ "path": "seaborn/_core/plot.py",
+ "repo": "mwaskom/seaborn",
+ "records": 118,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Layer",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r3",
+   "anchor": "Layer.mark",
+   "kind": "todo",
+   "line": 64
+  },
+  {
+   "id": "r4",
+   "anchor": "Layer.stat",
+   "kind": "todo",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "theme_context",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r6",
+   "anchor": "theme_context",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r7",
+   "anchor": "theme_context#try",
+   "kind": "todo",
+   "line": 100
+  },
+  {
+   "id": "r8",
+   "anchor": "build_plot_signature",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r9",
+   "anchor": "build_plot_signature#if:cls.__doc__ is not None",
+   "kind": "trail",
+   "line": 139
+  },
+  {
+   "id": "r10",
+   "anchor": "Plot",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r11",
+   "anchor": "Plot",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r12",
+   "anchor": "Plot._resolve_positionals",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r13",
+   "anchor": "Plot._resolve_positionals#if:isinstance(args[0], (abc.Mapping, pd.DataFrame))",
+   "kind": "todo",
+   "line": 246
+  },
+  {
+   "id": "r14",
+   "anchor": "Plot._resolve_positionals#for:name, var in zip(\"yx\", (y, x))/if:var is not None/assign:variables",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r15",
+   "anchor": "Plot._clone",
+   "kind": "todo",
+   "line": 282
+  },
+  {
+   "id": "r16",
+   "anchor": "Plot._clone",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r17",
+   "anchor": "Plot._clone#assign:new._data",
+   "kind": "todo",
+   "line": 287
+  },
+  {
+   "id": "r18",
+   "anchor": "Plot._variables#return",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r19",
+   "anchor": "Plot.on",
+   "kind": "doc",
+   "line": 343
+  },
+  {
+   "id": "r20",
+   "anchor": "Plot.on#assign:accepted_types",
+   "kind": "trail",
+   "line": 365
+  },
+  {
+   "id": "r21",
+   "anchor": "Plot.on#if:hasattr(mpl.figure, \"SubFigure\")",
+   "kind": "trail",
+   "line": 366
+  },
+  {
+   "id": "r22",
+   "anchor": "Plot.add",
+   "kind": "doc",
+   "line": 389
+  },
+  {
+   "id": "r23",
+   "anchor": "Plot.add#assign:stat",
+   "kind": "todo",
+   "line": 442
+  },
+  {
+   "id": "r24",
+   "anchor": "Plot.add#call:new._layers.append",
+   "kind": "todo",
+   "line": 465
+  },
+  {
+   "id": "r25",
+   "anchor": "Plot.pair",
+   "kind": "doc",
+   "line": 478
+  },
+  {
+   "id": "r26",
+   "anchor": "Plot.pair#assign:pair_spec",
+   "kind": "todo",
+   "line": 509
+  },
+  {
+   "id": "r27",
+   "anchor": "Plot.facet",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r28",
+   "anchor": "Plot.scale",
+   "kind": "todo",
+   "line": 604
+  },
+  {
+   "id": "r29",
+   "anchor": "Plot.scale",
+   "kind": "doc",
+   "line": 604
+  },
+  {
+   "id": "r30",
+   "anchor": "Plot.share",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r31",
+   "anchor": "Plot.limit",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r32",
+   "anchor": "Plot.label",
+   "kind": "doc",
+   "line": 671
+  },
+  {
+   "id": "r33",
+   "anchor": "Plot.layout",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r34",
+   "anchor": "Plot.layout#assign:new",
+   "kind": "todo",
+   "line": 733
+  },
+  {
+   "id": "r35",
+   "anchor": "Plot.theme",
+   "kind": "todo",
+   "line": 744
+  },
+  {
+   "id": "r36",
+   "anchor": "Plot.theme",
+   "kind": "doc",
+   "line": 744
+  },
+  {
+   "id": "r37",
+   "anchor": "Plot.theme#assign:nargs",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r38",
+   "anchor": "Plot.save",
+   "kind": "doc",
+   "line": 777
+  },
+  {
+   "id": "r39",
+   "anchor": "Plot.save#with:theme_context(self._theme_with_defaults())",
+   "kind": "todo",
+   "line": 791
+  },
+  {
+   "id": "r40",
+   "anchor": "Plot.show",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r41",
+   "anchor": "Plot.show#call:self.plot(pyplot=True).show",
+   "kind": "todo",
+   "line": 813
+  },
+  {
+   "id": "r42",
+   "anchor": "Plot.show#call:self.plot(pyplot=True).show",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r43",
+   "anchor": "Plot.plot",
+   "kind": "doc",
+   "line": 815
+  },
+  {
+   "id": "r44",
+   "anchor": "Plot._plot#assign:plotter",
+   "kind": "todo",
+   "line": 827
+  },
+  {
+   "id": "r45",
+   "anchor": "Plot._plot#assign:common, layers",
+   "kind": "lead",
+   "line": 830
+  },
+  {
+   "id": "r46",
+   "anchor": "Plot._plot#assign:coord_vars",
+   "kind": "lead",
+   "line": 834
+  },
+  {
+   "id": "r47",
+   "anchor": "Plot._plot#call:plotter._compute_stats",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r48",
+   "anchor": "Plot._plot#call:plotter._setup_scales",
+   "kind": "lead",
+   "line": 841
+  },
+  {
+   "id": "r49",
+   "anchor": "Plot._plot#assign:plotter._data",
+   "kind": "todo",
+   "line": 845
+  },
+  {
+   "id": "r50",
+   "anchor": "Plot._plot#for:layer in layers",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r51",
+   "anchor": "Plot._plot#call:plotter._make_legend",
+   "kind": "lead",
+   "line": 853
+  },
+  {
+   "id": "r52",
+   "anchor": "Plotter",
+   "kind": "lead",
+   "line": 862
+  },
+  {
+   "id": "r53",
+   "anchor": "Plotter",
+   "kind": "doc",
+   "line": 862
+  },
+  {
+   "id": "r54",
+   "anchor": "Plotter._data",
+   "kind": "todo",
+   "line": 870
+  },
+  {
+   "id": "r55",
+   "anchor": "Plotter.save",
+   "kind": "todo",
+   "line": 883
+  },
+  {
+   "id": "r56",
+   "anchor": "Plotter.save#try/except:TypeError/pass",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r57",
+   "anchor": "Plotter.show",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r58",
+   "anchor": "Plotter.show#import:matplotlib.pyplot",
+   "kind": "todo",
+   "line": 902
+  },
+  {
+   "id": "r59",
+   "anchor": "Plotter._repr_png_",
+   "kind": "todo",
+   "line": 909
+  },
+  {
+   "id": "r60",
+   "anchor": "Plotter._repr_png_#import:PIL",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r61",
+   "anchor": "Plotter._repr_png_#import:PIL",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r62",
+   "anchor": "Plotter._repr_png_#import:PIL",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r63",
+   "anchor": "Plotter._repr_png_#import:PIL",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r64",
+   "anchor": "Plotter._repr_png_#import:PIL",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r65",
+   "anchor": "Plotter._setup_figure#assign:subplot_spec",
+   "kind": "lead",
+   "line": 983
+  },
+  {
+   "id": "r66",
+   "anchor": "Plotter._setup_figure#assign:self._figure",
+   "kind": "lead",
+   "line": 999
+  },
+  {
+   "id": "r67",
+   "anchor": "Plotter._setup_figure#for:sub in subplots",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r68",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/for:axis in \"xy\"/assign:names",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r69",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/for:axis in \"xy\"/assign:names",
+   "kind": "todo",
+   "line": 1015
+  },
+  {
+   "id": "r70",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/for:axis in \"xy\"/assign:axis_obj",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r71",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/for:axis in \"xy\"/assign:axis_obj",
+   "kind": "todo",
+   "line": 1028
+  },
+  {
+   "id": "r72",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/assign:title_parts",
+   "kind": "todo",
+   "line": 1053
+  },
+  {
+   "id": "r73",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/assign:show_title",
+   "kind": "todo",
+   "line": 1064
+  },
+  {
+   "id": "r74",
+   "anchor": "Plotter._setup_figure#for:sub in subplots/assign:show_title",
+   "kind": "todo",
+   "line": 1064
+  },
+  {
+   "id": "r75",
+   "anchor": "Plotter._compute_stats#for:layer in layers/if:pair_vars/assign:data.frame",
+   "kind": "todo",
+   "line": 1103
+  },
+  {
+   "id": "r76",
+   "anchor": "Plotter._get_subplot_data#if:share_state in [True, \"all\"]/assign:seed_values",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r77",
+   "anchor": "Plotter._get_subplot_data#if:share_state in [True, \"all\"]/else/if:share_state in [False, \"none\"]",
+   "kind": "lead",
+   "line": 1155
+  },
+  {
+   "id": "r78",
+   "anchor": "Plotter._get_subplot_data#if:share_state in [True, \"all\"]/else/if:share_state in [False, \"none\"]/assign:idx",
+   "kind": "lead",
+   "line": 1157
+  },
+  {
+   "id": "r79",
+   "anchor": "Plotter._get_subplot_data#if:share_state in [True, \"all\"]/else/if:share_state in [False, \"none\"]/elif:share_state in df/assign:use_rows",
+   "kind": "lead",
+   "line": 1160
+  },
+  {
+   "id": "r80",
+   "anchor": "Plotter._get_subplot_data#if:share_state in [True, \"all\"]/else/if:share_state in [False, \"none\"]/elif:share_state in df/else/assign:idx",
+   "kind": "lead",
+   "line": 1164
+  },
+  {
+   "id": "r81",
+   "anchor": "Plotter._setup_scales#if:variables is None/assign:variables",
+   "kind": "lead",
+   "line": 1181
+  },
+  {
+   "id": "r82",
+   "anchor": "Plotter._setup_scales#for:var in variables/assign:m",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r83",
+   "anchor": "Plotter._setup_scales#for:var in variables/assign:prop_key",
+   "kind": "lead",
+   "line": 1200
+  },
+  {
+   "id": "r84",
+   "anchor": "Plotter._setup_scales#for:var in variables/assign:cols",
+   "kind": "lead",
+   "line": 1209
+  },
+  {
+   "id": "r85",
+   "anchor": "Plotter._setup_scales#for:var in variables/if:scale_key not in p._variables/assign:scale._priority",
+   "kind": "todo",
+   "line": 1224
+  },
+  {
+   "id": "r86",
+   "anchor": "Plotter._setup_scales#for:var in variables/if:axis is None/assign:share_state",
+   "kind": "lead",
+   "line": 1230
+  },
+  {
+   "id": "r87",
+   "anchor": "Plotter._setup_scales#for:var in variables/if:axis is not None and Version(mpl.__version__) < Version(\"3.4.0\")",
+   "kind": "lead",
+   "line": 1240
+  },
+  {
+   "id": "r88",
+   "anchor": "Plotter._setup_scales#for:var in variables/if:axis is None or (var != coord and coord in p._variables)",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r89",
+   "anchor": "Plotter._setup_scales#for:var in variables/assign:transformed_data",
+   "kind": "lead",
+   "line": 1265
+  },
+  {
+   "id": "r90",
+   "anchor": "Plotter._setup_scales#for:var in variables/for:layer, new_series in zip(layers, transformed_data)",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r91",
+   "anchor": "Plotter._plot_layer#assign:default_grouping_vars",
+   "kind": "todo",
+   "line": 1296
+  },
+  {
+   "id": "r92",
+   "anchor": "Plotter._plot_layer.get_order#if:var not in \"xy\" and var in scales",
+   "kind": "lead",
+   "line": 1310
+  },
+  {
+   "id": "r93",
+   "anchor": "Plotter._plot_layer#for:subplots, df, scales in self._generate_pairings(data, pair_variables)/if:\"width\" in mark._mappable_props/else/assign:width",
+   "kind": "todo",
+   "line": 1316
+  },
+  {
+   "id": "r94",
+   "anchor": "Plotter._plot_layer#for:subplots, df, scales in self._generate_pairings(data, pair_variables)/if:\"baseline\" in mark._mappable_props/assign:baseline",
+   "kind": "todo",
+   "line": 1325
+  },
+  {
+   "id": "r95",
+   "anchor": "Plotter._plot_layer#for:subplots, df, scales in self._generate_pairings(data, pair_variables)/if:\"baseline\" in mark._mappable_props/else/assign:baseline",
+   "kind": "todo",
+   "line": 1330
+  },
+  {
+   "id": "r96",
+   "anchor": "Plotter._plot_layer#for:view in self._subplots",
+   "kind": "todo",
+   "line": 1354
+  },
+  {
+   "id": "r97",
+   "anchor": "Plotter._unscale_coords#assign:coord_cols",
+   "kind": "todo",
+   "line": 1364
+  },
+  {
+   "id": "r98",
+   "anchor": "Plotter._unscale_coords#assign:out_df",
+   "kind": "trail",
+   "line": 1366
+  },
+  {
+   "id": "r99",
+   "anchor": "Plotter._unscale_coords#for:view in subplots/for:var, values in axes_df.items()/assign:transform",
+   "kind": "todo",
+   "line": 1380
+  },
+  {
+   "id": "r100",
+   "anchor": "Plotter._generate_pairings#assign:iter_axes",
+   "kind": "todo",
+   "line": 1399
+  },
+  {
+   "id": "r101",
+   "anchor": "Plotter._filter_subplot_data#assign:dims",
+   "kind": "todo",
+   "line": 1447
+  },
+  {
+   "id": "r102",
+   "anchor": "Plotter._setup_split_generator#assign:allow_empty",
+   "kind": "todo",
+   "line": 1460
+  },
+  {
+   "id": "r103",
+   "anchor": "Plotter._setup_split_generator.split_generator#for:view in subplots/with:pd.option_context(\"mode.use_inf_as_null\", True)/if:keep_na/assign:present",
+   "kind": "lead",
+   "line": 1485
+  },
+  {
+   "id": "r104",
+   "anchor": "Plotter._setup_split_generator.split_generator#for:view in subplots/for:key in itertools.product(*grouping_keys)/assign:pd_key",
+   "kind": "lead",
+   "line": 1508
+  },
+  {
+   "id": "r105",
+   "anchor": "Plotter._setup_split_generator.split_generator#for:view in subplots/for:key in itertools.product(*grouping_keys)/try/except:KeyError/assign:df_subset",
+   "kind": "todo",
+   "line": 1518
+  },
+  {
+   "id": "r106",
+   "anchor": "Plotter._setup_split_generator.split_generator#for:view in subplots/for:key in itertools.product(*grouping_keys)/yield",
+   "kind": "todo",
+   "line": 1527
+  },
+  {
+   "id": "r107",
+   "anchor": "Plotter._update_legend_contents",
+   "kind": "doc",
+   "line": 1531
+  },
+  {
+   "id": "r108",
+   "anchor": "Plotter._update_legend_contents#assign:schema",
+   "kind": "lead",
+   "line": 1548
+  },
+  {
+   "id": "r109",
+   "anchor": "Plotter._update_legend_contents#for:var in legend_vars/if:var_legend is not None/for:(_, part_id), part_vars, _ in schema/if:data.ids[var] == part_id/call:part_vars.append",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r110",
+   "anchor": "Plotter._update_legend_contents#assign:contents",
+   "kind": "lead",
+   "line": 1567
+  },
+  {
+   "id": "r111",
+   "anchor": "Plotter._make_legend",
+   "kind": "doc",
+   "line": 1579
+  },
+  {
+   "id": "r112",
+   "anchor": "Plotter._make_legend#assign:merged_contents",
+   "kind": "lead",
+   "line": 1584
+  },
+  {
+   "id": "r113",
+   "anchor": "Plotter._make_legend#for:key, new_artists, labels in self._legend_contents/if:key in merged_contents",
+   "kind": "lead",
+   "line": 1590
+  },
+  {
+   "id": "r114",
+   "anchor": "Plotter._make_legend#for:key, new_artists, labels in self._legend_contents/if:key in merged_contents/assign:existing_artists",
+   "kind": "lead",
+   "line": 1592
+  },
+  {
+   "id": "r115",
+   "anchor": "Plotter._make_legend#for:key, new_artists, labels in self._legend_contents/if:key in merged_contents/for:i, artist in enumerate(existing_artists)/if:isinstance(artist, tuple)",
+   "kind": "lead",
+   "line": 1595
+  },
+  {
+   "id": "r116",
+   "anchor": "Plotter._make_legend#assign:loc",
+   "kind": "todo",
+   "line": 1603
+  },
+  {
+   "id": "r117",
+   "anchor": "Plotter._make_legend#for:(name, _), (handles, labels) in merged_contents.items()/if:base_legend/assign:base_legend_box",
+   "kind": "lead",
+   "line": 1621
+  },
+  {
+   "id": "r118",
+   "anchor": "Plotter._finalize_figure#for:sub in self._subplots/for:axis in \"xy\"/if:axis_key in p._limits",
+   "kind": "lead",
+   "line": 1636
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 36869,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13900,
+  "thinking_tokens": 8021,
+  "opus_cost_usd": 0.7204815,
+  "total_cost_usd": 0.7489985,
+  "duration_ms": 125465,
+  "duration_api_ms": 126971,
+  "num_turns": 2
+ },
+ "wall_ms": 126851,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

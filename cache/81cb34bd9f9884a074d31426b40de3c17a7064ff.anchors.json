@@ -1,0 +1,247 @@
+{
+ "blob_sha": "81cb34bd9f9884a074d31426b40de3c17a7064ff",
+ "path": "django/db/backends/base/creation.py",
+ "repo": "django/django",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "TEST_DATABASE_PREFIX",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseDatabaseCreation",
+   "kind": "doc",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseDatabaseCreation.create_test_db",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseDatabaseCreation.create_test_db#import:django.core.management",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseDatabaseCreation.create_test_db#call:self._create_test_db",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseDatabaseCreation.create_test_db#try/if:self.connection.settings_dict['TEST']['MIGRATE'] is False/assign:old_migration_modules",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseDatabaseCreation.create_test_db#try/call:call_command",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseDatabaseCreation.create_test_db#if:serialize",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseDatabaseCreation.create_test_db#call:self.connection.ensure_connection",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseDatabaseCreation.set_as_test_mirror",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseDatabaseCreation.serialize_db_to_string",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseDatabaseCreation.serialize_db_to_string.get_objects",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseDatabaseCreation.serialize_db_to_string#assign:out",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseDatabaseCreation.deserialize_db_from_string",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseDatabaseCreation.deserialize_db_from_string#with:atomic(using=self.connection.alias)",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseDatabaseCreation.deserialize_db_from_string#with:atomic(using=self.connection.alias)/with:self.connection.constraint_checks_disabled()",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseDatabaseCreation.deserialize_db_from_string#with:atomic(using=self.connection.alias)/call:self.connection.check_constraints",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseDatabaseCreation._get_database_display_str",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseDatabaseCreation._get_test_db_name",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseDatabaseCreation._create_test_db",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseDatabaseCreation._create_test_db#with:self._nodb_cursor()",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseDatabaseCreation._create_test_db#with:self._nodb_cursor()/try/except:Exception/if:keepdb",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseDatabaseCreation.clone_test_db",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseDatabaseCreation.clone_test_db#call:self._clone_test_db",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseDatabaseCreation.get_test_db_clone_settings",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseDatabaseCreation.get_test_db_clone_settings#assign:orig_settings_dict",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseDatabaseCreation._clone_test_db",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseDatabaseCreation.destroy_test_db",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseDatabaseCreation.destroy_test_db#if:not keepdb",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseDatabaseCreation.destroy_test_db#if:old_database_name is not None",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseDatabaseCreation._destroy_test_db",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseDatabaseCreation._destroy_test_db#with:self._nodb_cursor()",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseDatabaseCreation.mark_expected_failures_and_skips",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseDatabaseCreation.mark_expected_failures_and_skips#for:test_name in self.connection.features.django_test_expected_failures/if:test_app in settings.INSTALLED_APPS",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseDatabaseCreation.mark_expected_failures_and_skips#for:reason, tests in self.connection.features.django_test_skips.items()/for:test_name in tests/if:test_app in settings.INSTALLED_APPS",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseDatabaseCreation.sql_table_creation_suffix",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseDatabaseCreation.test_db_signature",
+   "kind": "doc",
+   "line": 330
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10899,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3420,
+  "thinking_tokens": 1287,
+  "opus_cost_usd": 0.1987815,
+  "total_cost_usd": 0.2061325,
+  "duration_ms": 29386,
+  "duration_api_ms": 30216,
+  "num_turns": 2
+ },
+ "wall_ms": 30286,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

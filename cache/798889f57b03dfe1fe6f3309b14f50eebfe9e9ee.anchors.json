@@ -1,0 +1,337 @@
+{
+ "blob_sha": "798889f57b03dfe1fe6f3309b14f50eebfe9e9ee",
+ "path": "xarray/core/common.py",
+ "repo": "pydata/xarray",
+ "records": 52,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "ALL_DIMS",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r2",
+   "anchor": "AbstractArray",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r3",
+   "anchor": "AbstractArray.get_axis_num",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r4",
+   "anchor": "AbstractArray.sizes",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r5",
+   "anchor": "AttrAccessMixin",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r6",
+   "anchor": "AttrAccessMixin.__init_subclass__",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r7",
+   "anchor": "AttrAccessMixin._attr_sources",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r8",
+   "anchor": "AttrAccessMixin._item_sources",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r9",
+   "anchor": "AttrAccessMixin.__getattr__#if:name not in {\"__dict__\", \"__setstate__\"}/for:source in self._attr_sources",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r10",
+   "anchor": "AttrAccessMixin._setattr_dict",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r11",
+   "anchor": "AttrAccessMixin._setattr_dict",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r12",
+   "anchor": "AttrAccessMixin._setattr_dict#if:name in self.__dict__/call:warnings.warn",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r13",
+   "anchor": "AttrAccessMixin.__setattr__",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r14",
+   "anchor": "AttrAccessMixin.__setattr__#try/except:AttributeError/if:str(e) != \"{!r} object has no attribute {!r}\".format(type(self).__name__, name)",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r15",
+   "anchor": "AttrAccessMixin.__dir__",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r16",
+   "anchor": "AttrAccessMixin._ipython_key_completions_",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r17",
+   "anchor": "get_squeeze_dims",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r18",
+   "anchor": "DataWithCoords",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r19",
+   "anchor": "DataWithCoords.squeeze",
+   "kind": "doc",
+   "line": 343
+  },
+  {
+   "id": "r20",
+   "anchor": "DataWithCoords.get_index",
+   "kind": "doc",
+   "line": 376
+  },
+  {
+   "id": "r21",
+   "anchor": "DataWithCoords.get_index#try/except:KeyError/return",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r22",
+   "anchor": "DataWithCoords.assign_coords",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r23",
+   "anchor": "DataWithCoords.assign_attrs",
+   "kind": "doc",
+   "line": 480
+  },
+  {
+   "id": "r24",
+   "anchor": "DataWithCoords.pipe",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r25",
+   "anchor": "DataWithCoords.groupby",
+   "kind": "doc",
+   "line": 635
+  },
+  {
+   "id": "r26",
+   "anchor": "DataWithCoords.groupby#if:not isinstance(squeeze, bool)",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r27",
+   "anchor": "DataWithCoords.groupby_bins",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r28",
+   "anchor": "DataWithCoords.weighted",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r29",
+   "anchor": "DataWithCoords.rolling",
+   "kind": "doc",
+   "line": 790
+  },
+  {
+   "id": "r30",
+   "anchor": "DataWithCoords.rolling_exp",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r31",
+   "anchor": "DataWithCoords.coarsen",
+   "kind": "doc",
+   "line": 903
+  },
+  {
+   "id": "r32",
+   "anchor": "DataWithCoords.resample",
+   "kind": "doc",
+   "line": 979
+  },
+  {
+   "id": "r33",
+   "anchor": "DataWithCoords.resample#import:..coding.cftimeindex",
+   "kind": "todo",
+   "line": 1084
+  },
+  {
+   "id": "r34",
+   "anchor": "DataWithCoords.resample#if:(skipna is not None and not isinstance(skipna, bool)) or (\"how\" in indexer_kwargs and \"how\" not in self.dims) or (\"dim\" in indexer_kwargs and \"dim\" not in self.dims)",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r35",
+   "anchor": "DataWithCoords.where",
+   "kind": "doc",
+   "line": 1133
+  },
+  {
+   "id": "r36",
+   "anchor": "DataWithCoords.where#if:drop/assign:self, cond",
+   "kind": "lead",
+   "line": 1227
+  },
+  {
+   "id": "r37",
+   "anchor": "DataWithCoords.where#if:drop/if:isinstance(cond, Dataset)",
+   "kind": "lead",
+   "line": 1230
+  },
+  {
+   "id": "r38",
+   "anchor": "DataWithCoords.where#if:drop/assign:nonzeros",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r39",
+   "anchor": "DataWithCoords.close",
+   "kind": "doc",
+   "line": 1244
+  },
+  {
+   "id": "r40",
+   "anchor": "DataWithCoords.isin",
+   "kind": "doc",
+   "line": 1251
+  },
+  {
+   "id": "r41",
+   "anchor": "DataWithCoords.isin#if:isinstance(test_elements, Dataset)/elif:isinstance(test_elements, (Variable, DataArray))/assign:test_elements",
+   "kind": "lead",
+   "line": 1293
+  },
+  {
+   "id": "r42",
+   "anchor": "DataWithCoords.astype",
+   "kind": "doc",
+   "line": 1302
+  },
+  {
+   "id": "r43",
+   "anchor": "DataWithCoords.__getitem__#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1357
+  },
+  {
+   "id": "r44",
+   "anchor": "full_like",
+   "kind": "doc",
+   "line": 1360
+  },
+  {
+   "id": "r45",
+   "anchor": "_full_like_variable",
+   "kind": "doc",
+   "line": 1464
+  },
+  {
+   "id": "r46",
+   "anchor": "zeros_like",
+   "kind": "doc",
+   "line": 1483
+  },
+  {
+   "id": "r47",
+   "anchor": "ones_like",
+   "kind": "doc",
+   "line": 1543
+  },
+  {
+   "id": "r48",
+   "anchor": "is_np_datetime_like",
+   "kind": "doc",
+   "line": 1595
+  },
+  {
+   "id": "r49",
+   "anchor": "is_np_timedelta_like",
+   "kind": "doc",
+   "line": 1601
+  },
+  {
+   "id": "r50",
+   "anchor": "_contains_cftime_datetimes",
+   "kind": "doc",
+   "line": 1607
+  },
+  {
+   "id": "r51",
+   "anchor": "contains_cftime_datetimes",
+   "kind": "doc",
+   "line": 1626
+  },
+  {
+   "id": "r52",
+   "anchor": "_contains_datetime_like_objects",
+   "kind": "doc",
+   "line": 1632
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 41367,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 4189,
+  "thinking_tokens": 1816,
+  "opus_cost_usd": 0.518405,
+  "total_cost_usd": 0.54367,
+  "duration_ms": 37418,
+  "duration_api_ms": 39579,
+  "num_turns": 2
+ },
+ "wall_ms": 42058,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

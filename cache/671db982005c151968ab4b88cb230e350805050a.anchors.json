@@ -1,0 +1,223 @@
+{
+ "blob_sha": "671db982005c151968ab4b88cb230e350805050a",
+ "path": "django/apps/config.py",
+ "repo": "django/django",
+ "records": 33,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "AppConfig",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r2",
+   "anchor": "AppConfig.name",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "AppConfig.module",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "AppConfig.apps",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'label')",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r6",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'label')",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r7",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'verbose_name')",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r8",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'path')",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r9",
+   "anchor": "AppConfig.models_module",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r10",
+   "anchor": "AppConfig.models",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r11",
+   "anchor": "AppConfig._path_from_module",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r12",
+   "anchor": "AppConfig._path_from_module#assign:paths",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r13",
+   "anchor": "AppConfig._path_from_module#if:len(paths) != 1/else/assign:paths",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r14",
+   "anchor": "AppConfig.create",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r15",
+   "anchor": "AppConfig.create#assign:app_config_class",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r16",
+   "anchor": "AppConfig.create#try",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r17",
+   "anchor": "AppConfig.create#try/else/if:module_has_submodule(app_module, APPS_MODULE_NAME)",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r18",
+   "anchor": "AppConfig.create#try/else/if:module_has_submodule(app_module, APPS_MODULE_NAME)/assign:app_configs",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r19",
+   "anchor": "AppConfig.create#try/else/if:module_has_submodule(app_module, APPS_MODULE_NAME)/if:len(app_configs) == 1/else/assign:app_configs",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r20",
+   "anchor": "AppConfig.create#try/else/if:app_config_class is None",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r21",
+   "anchor": "AppConfig.create#if:app_config_class is None",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r22",
+   "anchor": "AppConfig.create#if:app_module is None and app_config_class is None",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r23",
+   "anchor": "AppConfig.create#if:app_module is None and app_config_class is None/assign:mod_path, _, cls_name",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r24",
+   "anchor": "AppConfig.create#if:app_module is None and app_config_class is None/if:mod_path and cls_name[0].isupper()/assign:mod",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r25",
+   "anchor": "AppConfig.create#if:app_module is None and app_config_class is None/if:mod_path and cls_name[0].isupper()/else/call:import_module",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r26",
+   "anchor": "AppConfig.create#if:not issubclass(app_config_class, AppConfig)",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r27",
+   "anchor": "AppConfig.create#if:app_name is None",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r28",
+   "anchor": "AppConfig.create#try",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r29",
+   "anchor": "AppConfig.create#return",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r30",
+   "anchor": "AppConfig.get_model",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r31",
+   "anchor": "AppConfig.get_models",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r32",
+   "anchor": "AppConfig.import_models#assign:self.models",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r33",
+   "anchor": "AppConfig.ready",
+   "kind": "doc",
+   "line": 266
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9427,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3406,
+  "thinking_tokens": 1787,
+  "opus_cost_usd": 0.18371149999999997,
+  "total_cost_usd": 0.18992049999999996,
+  "duration_ms": 32939,
+  "duration_api_ms": 34192,
+  "num_turns": 2
+ },
+ "wall_ms": 33757,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

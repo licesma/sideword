@@ -1,0 +1,253 @@
+{
+ "blob_sha": "d59a9cc122439f1422a8ada6dcb55269474b2b60",
+ "path": "django/contrib/staticfiles/storage.py",
+ "repo": "django/django",
+ "records": 38,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "StaticFilesStorage",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r2",
+   "anchor": "StaticFilesStorage.__init__#if:not location",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r3",
+   "anchor": "HashedFilesMixin.file_hash",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r4",
+   "anchor": "HashedFilesMixin.hashed_name#if:content is None/try/except:IOError/return",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "HashedFilesMixin.hashed_name#if:'?#' in name and not unparsed_name[3]",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r6",
+   "anchor": "HashedFilesMixin.url",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r7",
+   "anchor": "HashedFilesMixin.url#if:settings.DEBUG and not force/else/if:urlsplit(clean_name).path.endswith('/')",
+   "kind": "trail",
+   "line": 129
+  },
+  {
+   "id": "r8",
+   "anchor": "HashedFilesMixin.url#assign:query_fragment",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r9",
+   "anchor": "HashedFilesMixin.url#assign:query_fragment",
+   "kind": "trail",
+   "line": 138
+  },
+  {
+   "id": "r10",
+   "anchor": "HashedFilesMixin.url_converter",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r11",
+   "anchor": "HashedFilesMixin.url_converter.converter",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r12",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:re.match(r'^[a-z]+:', url)",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r13",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url.startswith('/') and not url.startswith(settings.STATIC_URL)",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r14",
+   "anchor": "HashedFilesMixin.url_converter.converter#assign:url_path, fragment",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r15",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url_path.startswith('/')/assert:url_path.startswith(settings.STATIC_URL)",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r16",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url_path.startswith('/')/else/assign:source_name",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r17",
+   "anchor": "HashedFilesMixin.url_converter.converter#assign:hashed_url",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r18",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:fragment",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r19",
+   "anchor": "HashedFilesMixin.url_converter.converter#return",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r20",
+   "anchor": "HashedFilesMixin.post_process",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r21",
+   "anchor": "HashedFilesMixin.post_process#if:dry_run",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r22",
+   "anchor": "HashedFilesMixin.post_process#assign:hashed_files",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r23",
+   "anchor": "HashedFilesMixin.post_process#assign:adjustable_paths",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r24",
+   "anchor": "HashedFilesMixin.post_process.path_level",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r25",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/assign:storage, path",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r26",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/assign:hashed_name",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r27",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/if:hasattr(original_file, 'seek')",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r28",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r29",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths/assign:content_file",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r30",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths/else/if:not hashed_file_exists",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r31",
+   "anchor": "HashedFilesMixin.post_process#for:name in sorted(paths.keys(), key=path_level, reverse=True)/with:storage.open(path)/assign:hashed_files[self.hash_key(name)]",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r32",
+   "anchor": "HashedFilesMixin.post_process#call:self.hashed_files.update",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r33",
+   "anchor": "HashedFilesMixin.stored_name#if:cache_name is None/assign:self.hashed_files[hash_key]",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r34",
+   "anchor": "ManifestFilesMixin.manifest_version",
+   "kind": "trail",
+   "line": 300
+  },
+  {
+   "id": "r35",
+   "anchor": "_MappingCache",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r36",
+   "anchor": "CachedFilesMixin.__init__#try/except:InvalidCacheBackendError/assign:self.hashed_files",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r37",
+   "anchor": "CachedStaticFilesStorage",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r38",
+   "anchor": "ManifestStaticFilesStorage",
+   "kind": "doc",
+   "line": 396
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11163,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3943,
+  "thinking_tokens": 1659,
+  "opus_cost_usd": 0.21449649999999998,
+  "total_cost_usd": 0.22217349999999997,
+  "duration_ms": 34618,
+  "duration_api_ms": 35650,
+  "num_turns": 2
+ },
+ "wall_ms": 35506,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

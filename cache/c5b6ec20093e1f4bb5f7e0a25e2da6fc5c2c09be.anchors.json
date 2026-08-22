@@ -1,0 +1,1747 @@
+{
+ "blob_sha": "c5b6ec20093e1f4bb5f7e0a25e2da6fc5c2c09be",
+ "path": "lib/matplotlib/widgets.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 287,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "LockDraw",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "LockDraw.__call__",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r4",
+   "anchor": "LockDraw.release",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r5",
+   "anchor": "LockDraw.available",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r6",
+   "anchor": "LockDraw.isowner",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r7",
+   "anchor": "LockDraw.locked",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r8",
+   "anchor": "Widget",
+   "kind": "doc",
+   "line": 64
+  },
+  {
+   "id": "r9",
+   "anchor": "Widget.set_active",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r10",
+   "anchor": "Widget.get_active",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r11",
+   "anchor": "Widget.active",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r12",
+   "anchor": "Widget.ignore",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r13",
+   "anchor": "AxesWidget",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r14",
+   "anchor": "AxesWidget.connect_event",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r15",
+   "anchor": "AxesWidget.disconnect_events",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r16",
+   "anchor": "Button",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r17",
+   "anchor": "Button.__init__",
+   "kind": "doc",
+   "line": 154
+  },
+  {
+   "id": "r18",
+   "anchor": "Button.on_clicked",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r19",
+   "anchor": "Button.disconnect",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r20",
+   "anchor": "SliderBase",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r21",
+   "anchor": "SliderBase.__init__#call:self._fmt.set_useOffset",
+   "kind": "trail",
+   "line": 262
+  },
+  {
+   "id": "r22",
+   "anchor": "SliderBase.__init__#call:self._fmt.set_useMathText",
+   "kind": "trail",
+   "line": 263
+  },
+  {
+   "id": "r23",
+   "anchor": "SliderBase._stepped_value",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r24",
+   "anchor": "SliderBase.disconnect",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r25",
+   "anchor": "SliderBase.reset",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r26",
+   "anchor": "Slider",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r27",
+   "anchor": "Slider.__init__",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r28",
+   "anchor": "Slider.hline",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r29",
+   "anchor": "Slider._value_in_bounds",
+   "kind": "doc",
+   "line": 475
+  },
+  {
+   "id": "r30",
+   "anchor": "Slider._update",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r31",
+   "anchor": "Slider._format",
+   "kind": "doc",
+   "line": 524
+  },
+  {
+   "id": "r32",
+   "anchor": "Slider._format#if:self.valfmt is not None/else/return",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r33",
+   "anchor": "Slider.set_val",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r34",
+   "anchor": "Slider.on_changed",
+   "kind": "doc",
+   "line": 558
+  },
+  {
+   "id": "r35",
+   "anchor": "RangeSlider",
+   "kind": "doc",
+   "line": 576
+  },
+  {
+   "id": "r36",
+   "anchor": "RangeSlider.__init__",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r37",
+   "anchor": "RangeSlider.val",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r38",
+   "anchor": "RangeSlider.__init__#if:valinit is None/assign:extent",
+   "kind": "lead",
+   "line": 679
+  },
+  {
+   "id": "r39",
+   "anchor": "RangeSlider._update_selection_poly",
+   "kind": "doc",
+   "line": 774
+  },
+  {
+   "id": "r40",
+   "anchor": "RangeSlider._update_selection_poly#assign:verts",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r41",
+   "anchor": "RangeSlider._min_in_bounds",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r42",
+   "anchor": "RangeSlider._max_in_bounds",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r43",
+   "anchor": "RangeSlider._value_in_bounds",
+   "kind": "doc",
+   "line": 817
+  },
+  {
+   "id": "r44",
+   "anchor": "RangeSlider._update_val_from_pos",
+   "kind": "doc",
+   "line": 821
+  },
+  {
+   "id": "r45",
+   "anchor": "RangeSlider._update",
+   "kind": "doc",
+   "line": 836
+  },
+  {
+   "id": "r46",
+   "anchor": "RangeSlider._update#if:self.orientation==\"vertical\"",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r47",
+   "anchor": "RangeSlider._update#if:handle is not self._active_handle",
+   "kind": "lead",
+   "line": 869
+  },
+  {
+   "id": "r48",
+   "anchor": "RangeSlider._format",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r49",
+   "anchor": "RangeSlider._format#if:self.valfmt is not None/else/assign:s1",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r50",
+   "anchor": "RangeSlider._format#if:self.valfmt is not None/else/return",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r51",
+   "anchor": "RangeSlider.set_min",
+   "kind": "doc",
+   "line": 891
+  },
+  {
+   "id": "r52",
+   "anchor": "RangeSlider.set_max",
+   "kind": "doc",
+   "line": 901
+  },
+  {
+   "id": "r53",
+   "anchor": "RangeSlider.set_val",
+   "kind": "doc",
+   "line": 911
+  },
+  {
+   "id": "r54",
+   "anchor": "RangeSlider.on_changed",
+   "kind": "doc",
+   "line": 940
+  },
+  {
+   "id": "r55",
+   "anchor": "CheckButtons",
+   "kind": "doc",
+   "line": 958
+  },
+  {
+   "id": "r56",
+   "anchor": "CheckButtons.__init__",
+   "kind": "doc",
+   "line": 980
+  },
+  {
+   "id": "r57",
+   "anchor": "CheckButtons.set_active",
+   "kind": "doc",
+   "line": 1056
+  },
+  {
+   "id": "r58",
+   "anchor": "CheckButtons.get_status",
+   "kind": "doc",
+   "line": 1085
+  },
+  {
+   "id": "r59",
+   "anchor": "CheckButtons.on_clicked",
+   "kind": "doc",
+   "line": 1091
+  },
+  {
+   "id": "r60",
+   "anchor": "CheckButtons.disconnect",
+   "kind": "doc",
+   "line": 1099
+  },
+  {
+   "id": "r61",
+   "anchor": "TextBox",
+   "kind": "doc",
+   "line": 1104
+  },
+  {
+   "id": "r62",
+   "anchor": "TextBox.__init__",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r63",
+   "anchor": "TextBox.text_disp",
+   "kind": "lead",
+   "line": 1163
+  },
+  {
+   "id": "r64",
+   "anchor": "TextBox.__init__#call:ax.set/arg:ylim",
+   "kind": "trail",
+   "line": 1171
+  },
+  {
+   "id": "r65",
+   "anchor": "TextBox._rendercursor#if:self.ax.figure._get_renderer() is None",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r66",
+   "anchor": "TextBox._rendercursor#if:self.ax.figure._get_renderer() is None",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r67",
+   "anchor": "TextBox._rendercursor#assign:text",
+   "kind": "trail",
+   "line": 1207
+  },
+  {
+   "id": "r68",
+   "anchor": "TextBox._rendercursor#if:bb_text.y0==bb_text.y1",
+   "kind": "trail",
+   "line": 1214
+  },
+  {
+   "id": "r69",
+   "anchor": "TextBox._rendercursor#if:bb_text.y0==bb_text.y1/elif:not widthtext",
+   "kind": "trail",
+   "line": 1217
+  },
+  {
+   "id": "r70",
+   "anchor": "TextBox._rendercursor#if:bb_text.y0==bb_text.y1/else",
+   "kind": "trail",
+   "line": 1219
+  },
+  {
+   "id": "r71",
+   "anchor": "TextBox.begin_typing#assign:stack",
+   "kind": "lead",
+   "line": 1287
+  },
+  {
+   "id": "r72",
+   "anchor": "TextBox.begin_typing#assign:stack",
+   "kind": "trail",
+   "line": 1287
+  },
+  {
+   "id": "r73",
+   "anchor": "TextBox.begin_typing#if:toolmanager is not None/call:toolmanager.keypresslock",
+   "kind": "lead",
+   "line": 1294
+  },
+  {
+   "id": "r74",
+   "anchor": "TextBox.begin_typing#if:toolmanager is not None/else/with:_api.suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1299
+  },
+  {
+   "id": "r75",
+   "anchor": "TextBox.stop_typing#if:notifysubmit and self.eventson/call:self._observers.process",
+   "kind": "lead",
+   "line": 1316
+  },
+  {
+   "id": "r76",
+   "anchor": "TextBox.position_cursor#if:len(self.text)==0",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r77",
+   "anchor": "TextBox.on_text_change",
+   "kind": "doc",
+   "line": 1355
+  },
+  {
+   "id": "r78",
+   "anchor": "TextBox.on_submit",
+   "kind": "doc",
+   "line": 1363
+  },
+  {
+   "id": "r79",
+   "anchor": "TextBox.disconnect",
+   "kind": "doc",
+   "line": 1372
+  },
+  {
+   "id": "r80",
+   "anchor": "RadioButtons",
+   "kind": "doc",
+   "line": 1377
+  },
+  {
+   "id": "r81",
+   "anchor": "RadioButtons.__init__",
+   "kind": "doc",
+   "line": 1400
+  },
+  {
+   "id": "r82",
+   "anchor": "RadioButtons.__init__#assign:circle_radius",
+   "kind": "lead",
+   "line": 1428
+  },
+  {
+   "id": "r83",
+   "anchor": "RadioButtons.__init__#assign:circle_radius",
+   "kind": "lead",
+   "line": 1430
+  },
+  {
+   "id": "r84",
+   "anchor": "RadioButtons.set_active",
+   "kind": "doc",
+   "line": 1470
+  },
+  {
+   "id": "r85",
+   "anchor": "RadioButtons.on_clicked",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r86",
+   "anchor": "RadioButtons.disconnect",
+   "kind": "doc",
+   "line": 1502
+  },
+  {
+   "id": "r87",
+   "anchor": "SubplotTool",
+   "kind": "doc",
+   "line": 1507
+  },
+  {
+   "id": "r88",
+   "anchor": "SubplotTool.__init__",
+   "kind": "doc",
+   "line": 1512
+  },
+  {
+   "id": "r89",
+   "anchor": "SubplotTool.__init__#for:name, ax in zip(names, toolfig.subplots(len(names) + 1))",
+   "kind": "lead",
+   "line": 1530
+  },
+  {
+   "id": "r90",
+   "anchor": "SubplotTool.__init__#assign:self.sliderleft.slidermax",
+   "kind": "lead",
+   "line": 1546
+  },
+  {
+   "id": "r91",
+   "anchor": "SubplotTool._on_reset#with:ExitStack()/call:stack.enter_context",
+   "kind": "lead",
+   "line": 1567
+  },
+  {
+   "id": "r92",
+   "anchor": "SubplotTool._on_reset#with:ExitStack()/for:slider in self._sliders",
+   "kind": "lead",
+   "line": 1572
+  },
+  {
+   "id": "r93",
+   "anchor": "SubplotTool._on_reset#if:self.drawon/call:event.canvas.draw",
+   "kind": "trail",
+   "line": 1575
+  },
+  {
+   "id": "r94",
+   "anchor": "SubplotTool._on_reset#call:self._on_slider_changed",
+   "kind": "trail",
+   "line": 1576
+  },
+  {
+   "id": "r95",
+   "anchor": "Cursor",
+   "kind": "doc",
+   "line": 1579
+  },
+  {
+   "id": "r96",
+   "anchor": "Cursor.clear",
+   "kind": "doc",
+   "line": 1628
+  },
+  {
+   "id": "r97",
+   "anchor": "Cursor.onmove",
+   "kind": "doc",
+   "line": 1637
+  },
+  {
+   "id": "r98",
+   "anchor": "MultiCursor",
+   "kind": "doc",
+   "line": 1674
+  },
+  {
+   "id": "r99",
+   "anchor": "MultiCursor.connect",
+   "kind": "doc",
+   "line": 1745
+  },
+  {
+   "id": "r100",
+   "anchor": "MultiCursor.disconnect",
+   "kind": "doc",
+   "line": 1751
+  },
+  {
+   "id": "r101",
+   "anchor": "MultiCursor.clear",
+   "kind": "doc",
+   "line": 1756
+  },
+  {
+   "id": "r102",
+   "anchor": "_SelectorWidget._selection_completed",
+   "kind": "lead",
+   "line": 1826
+  },
+  {
+   "id": "r103",
+   "anchor": "_SelectorWidget._eventpress",
+   "kind": "lead",
+   "line": 1829
+  },
+  {
+   "id": "r104",
+   "anchor": "_SelectorWidget._eventrelease",
+   "kind": "lead",
+   "line": 1831
+  },
+  {
+   "id": "r105",
+   "anchor": "_SelectorWidget._get_animated_artists",
+   "kind": "doc",
+   "line": 1845
+  },
+  {
+   "id": "r106",
+   "anchor": "_SelectorWidget.update_background",
+   "kind": "doc",
+   "line": 1857
+  },
+  {
+   "id": "r107",
+   "anchor": "_SelectorWidget.update_background#if:not self.useblit",
+   "kind": "lead",
+   "line": 1861
+  },
+  {
+   "id": "r108",
+   "anchor": "_SelectorWidget.update_background#assign:artists",
+   "kind": "lead",
+   "line": 1870
+  },
+  {
+   "id": "r109",
+   "anchor": "_SelectorWidget.connect_default_events",
+   "kind": "doc",
+   "line": 1883
+  },
+  {
+   "id": "r110",
+   "anchor": "_SelectorWidget.ignore#if:not self.active or not self.ax.get_visible()",
+   "kind": "lead",
+   "line": 1895
+  },
+  {
+   "id": "r111",
+   "anchor": "_SelectorWidget.ignore#if:not self.canvas.widgetlock.available(self)",
+   "kind": "lead",
+   "line": 1898
+  },
+  {
+   "id": "r112",
+   "anchor": "_SelectorWidget.ignore#if:self.validButtons is not None and event.button not in self.validButtons",
+   "kind": "lead",
+   "line": 1904
+  },
+  {
+   "id": "r113",
+   "anchor": "_SelectorWidget.ignore#if:self._eventpress is None",
+   "kind": "lead",
+   "line": 1909
+  },
+  {
+   "id": "r114",
+   "anchor": "_SelectorWidget.ignore#if:event.button==self._eventpress.button",
+   "kind": "lead",
+   "line": 1912
+  },
+  {
+   "id": "r115",
+   "anchor": "_SelectorWidget.ignore#return",
+   "kind": "lead",
+   "line": 1915
+  },
+  {
+   "id": "r116",
+   "anchor": "_SelectorWidget.update",
+   "kind": "doc",
+   "line": 1918
+  },
+  {
+   "id": "r117",
+   "anchor": "_SelectorWidget.update#if:self.useblit/assign:artists",
+   "kind": "lead",
+   "line": 1931
+  },
+  {
+   "id": "r118",
+   "anchor": "_SelectorWidget._get_data",
+   "kind": "doc",
+   "line": 1940
+  },
+  {
+   "id": "r119",
+   "anchor": "_SelectorWidget._clean_event",
+   "kind": "doc",
+   "line": 1948
+  },
+  {
+   "id": "r120",
+   "anchor": "_SelectorWidget.press",
+   "kind": "doc",
+   "line": 1964
+  },
+  {
+   "id": "r121",
+   "anchor": "_SelectorWidget.press#if:not self.ignore(event)/if:key==self._state_modifier_keys['move']",
+   "kind": "lead",
+   "line": 1973
+  },
+  {
+   "id": "r122",
+   "anchor": "_SelectorWidget._press",
+   "kind": "doc",
+   "line": 1979
+  },
+  {
+   "id": "r123",
+   "anchor": "_SelectorWidget.release",
+   "kind": "doc",
+   "line": 1982
+  },
+  {
+   "id": "r124",
+   "anchor": "_SelectorWidget._release",
+   "kind": "doc",
+   "line": 1994
+  },
+  {
+   "id": "r125",
+   "anchor": "_SelectorWidget.onmove",
+   "kind": "doc",
+   "line": 1997
+  },
+  {
+   "id": "r126",
+   "anchor": "_SelectorWidget._onmove",
+   "kind": "doc",
+   "line": 2005
+  },
+  {
+   "id": "r127",
+   "anchor": "_SelectorWidget.on_scroll",
+   "kind": "doc",
+   "line": 2008
+  },
+  {
+   "id": "r128",
+   "anchor": "_SelectorWidget._on_scroll",
+   "kind": "doc",
+   "line": 2013
+  },
+  {
+   "id": "r129",
+   "anchor": "_SelectorWidget.on_key_press",
+   "kind": "doc",
+   "line": 2016
+  },
+  {
+   "id": "r130",
+   "anchor": "_SelectorWidget.on_key_press#if:self.active/for:(state, modifier) in self._state_modifier_keys.items()/if:modifier in key.split('+')/if:state=='rotate'",
+   "kind": "lead",
+   "line": 2028
+  },
+  {
+   "id": "r131",
+   "anchor": "_SelectorWidget._on_key_press",
+   "kind": "doc",
+   "line": 2037
+  },
+  {
+   "id": "r132",
+   "anchor": "_SelectorWidget.on_key_release",
+   "kind": "doc",
+   "line": 2040
+  },
+  {
+   "id": "r133",
+   "anchor": "_SelectorWidget.on_key_release#if:self.active/for:(state, modifier) in self._state_modifier_keys.items()/if:modifier in key.split('+') and state!='rotate'",
+   "kind": "lead",
+   "line": 2047
+  },
+  {
+   "id": "r134",
+   "anchor": "_SelectorWidget._on_key_release",
+   "kind": "doc",
+   "line": 2051
+  },
+  {
+   "id": "r135",
+   "anchor": "_SelectorWidget.set_visible",
+   "kind": "doc",
+   "line": 2054
+  },
+  {
+   "id": "r136",
+   "anchor": "_SelectorWidget.get_visible",
+   "kind": "doc",
+   "line": 2060
+  },
+  {
+   "id": "r137",
+   "anchor": "_SelectorWidget.clear",
+   "kind": "doc",
+   "line": 2073
+  },
+  {
+   "id": "r138",
+   "anchor": "_SelectorWidget.artists",
+   "kind": "doc",
+   "line": 2083
+  },
+  {
+   "id": "r139",
+   "anchor": "_SelectorWidget.set_props",
+   "kind": "doc",
+   "line": 2088
+  },
+  {
+   "id": "r140",
+   "anchor": "_SelectorWidget.set_handle_props",
+   "kind": "doc",
+   "line": 2100
+  },
+  {
+   "id": "r141",
+   "anchor": "_SelectorWidget.add_state",
+   "kind": "doc",
+   "line": 2124
+  },
+  {
+   "id": "r142",
+   "anchor": "_SelectorWidget.remove_state",
+   "kind": "doc",
+   "line": 2144
+  },
+  {
+   "id": "r143",
+   "anchor": "SpanSelector",
+   "kind": "doc",
+   "line": 2165
+  },
+  {
+   "id": "r144",
+   "anchor": "SpanSelector._pressv",
+   "kind": "lead",
+   "line": 2290
+  },
+  {
+   "id": "r145",
+   "anchor": "SpanSelector.canvas",
+   "kind": "lead",
+   "line": 2303
+  },
+  {
+   "id": "r146",
+   "anchor": "SpanSelector._handle_props",
+   "kind": "lead",
+   "line": 2307
+  },
+  {
+   "id": "r147",
+   "anchor": "SpanSelector._prev",
+   "kind": "lead",
+   "line": 2318
+  },
+  {
+   "id": "r148",
+   "anchor": "SpanSelector.new_axes",
+   "kind": "doc",
+   "line": 2338
+  },
+  {
+   "id": "r149",
+   "anchor": "SpanSelector._selection_completed",
+   "kind": "lead",
+   "line": 2349
+  },
+  {
+   "id": "r150",
+   "anchor": "SpanSelector._setup_edge_handles#if:self.direction=='horizontal'",
+   "kind": "lead",
+   "line": 2367
+  },
+  {
+   "id": "r151",
+   "anchor": "SpanSelector._set_cursor",
+   "kind": "doc",
+   "line": 2383
+  },
+  {
+   "id": "r152",
+   "anchor": "SpanSelector.connect_default_events#call:super().connect_default_events",
+   "kind": "lead",
+   "line": 2396
+  },
+  {
+   "id": "r153",
+   "anchor": "SpanSelector._press",
+   "kind": "doc",
+   "line": 2400
+  },
+  {
+   "id": "r154",
+   "anchor": "SpanSelector._press#if:self._active_handle is None or not self._interactive/call:self.update",
+   "kind": "lead",
+   "line": 2410
+  },
+  {
+   "id": "r155",
+   "anchor": "SpanSelector._press#assign:self._pressv",
+   "kind": "lead",
+   "line": 2415
+  },
+  {
+   "id": "r156",
+   "anchor": "SpanSelector._press#if:self._active_handle is None and not self.ignore_event_outside/assign:self._visible",
+   "kind": "lead",
+   "line": 2422
+  },
+  {
+   "id": "r157",
+   "anchor": "SpanSelector._press#if:self._active_handle is None and not self.ignore_event_outside/assign:self._visible",
+   "kind": "lead",
+   "line": 2426
+  },
+  {
+   "id": "r158",
+   "anchor": "SpanSelector.direction",
+   "kind": "doc",
+   "line": 2433
+  },
+  {
+   "id": "r159",
+   "anchor": "SpanSelector.direction",
+   "kind": "doc",
+   "line": 2438
+  },
+  {
+   "id": "r160",
+   "anchor": "SpanSelector.direction#if:hasattr(self, '_direction') and direction!=self._direction/call:self._selection_artist.remove",
+   "kind": "lead",
+   "line": 2443
+  },
+  {
+   "id": "r161",
+   "anchor": "SpanSelector._release",
+   "kind": "doc",
+   "line": 2453
+  },
+  {
+   "id": "r162",
+   "anchor": "SpanSelector._release#assign:self._pressv",
+   "kind": "lead",
+   "line": 2457
+  },
+  {
+   "id": "r163",
+   "anchor": "SpanSelector._release#if:span<=self.minspan/call:self.set_visible",
+   "kind": "lead",
+   "line": 2471
+  },
+  {
+   "id": "r164",
+   "anchor": "SpanSelector._release#if:span<=self.minspan/if:self._selection_completed/call:self.onselect",
+   "kind": "lead",
+   "line": 2474
+  },
+  {
+   "id": "r165",
+   "anchor": "SpanSelector._hover",
+   "kind": "doc",
+   "line": 2486
+  },
+  {
+   "id": "r166",
+   "anchor": "SpanSelector._hover#if:self._active_handle is not None or not self._selection_completed/return",
+   "kind": "lead",
+   "line": 2496
+  },
+  {
+   "id": "r167",
+   "anchor": "SpanSelector._onmove",
+   "kind": "doc",
+   "line": 2501
+  },
+  {
+   "id": "r168",
+   "anchor": "SpanSelector._onmove#assign:self._prev",
+   "kind": "lead",
+   "line": 2505
+  },
+  {
+   "id": "r169",
+   "anchor": "SpanSelector._onmove#if:self._active_handle=='C' and self._extents_on_press is not None",
+   "kind": "lead",
+   "line": 2516
+  },
+  {
+   "id": "r170",
+   "anchor": "SpanSelector._onmove#if:self._active_handle=='C' and self._extents_on_press is not None/elif:self._active_handle and self._active_handle!='C'",
+   "kind": "lead",
+   "line": 2523
+  },
+  {
+   "id": "r171",
+   "anchor": "SpanSelector._onmove#if:self._active_handle=='C' and self._extents_on_press is not None/else",
+   "kind": "lead",
+   "line": 2530
+  },
+  {
+   "id": "r172",
+   "anchor": "SpanSelector._onmove#if:self._active_handle=='C' and self._extents_on_press is not None/else/if:self.ignore_event_outside and self._selection_completed",
+   "kind": "lead",
+   "line": 2533
+  },
+  {
+   "id": "r173",
+   "anchor": "SpanSelector._set_active_handle",
+   "kind": "doc",
+   "line": 2556
+  },
+  {
+   "id": "r174",
+   "anchor": "SpanSelector._set_active_handle#assign:e_idx, e_dist",
+   "kind": "lead",
+   "line": 2559
+  },
+  {
+   "id": "r175",
+   "anchor": "SpanSelector._set_active_handle#if:'move' in self._state",
+   "kind": "lead",
+   "line": 2563
+  },
+  {
+   "id": "r176",
+   "anchor": "SpanSelector._set_active_handle#if:'move' in self._state/elif:e_dist>self.grab_range/assign:self._active_handle",
+   "kind": "lead",
+   "line": 2567
+  },
+  {
+   "id": "r177",
+   "anchor": "SpanSelector._set_active_handle#if:'move' in self._state/elif:e_dist>self.grab_range/if:self.drag_from_anywhere and self._contains(event)/assign:self._active_handle",
+   "kind": "lead",
+   "line": 2570
+  },
+  {
+   "id": "r178",
+   "anchor": "SpanSelector._set_active_handle#if:'move' in self._state/else/assign:self._active_handle",
+   "kind": "lead",
+   "line": 2577
+  },
+  {
+   "id": "r179",
+   "anchor": "SpanSelector._set_active_handle#assign:self._extents_on_press",
+   "kind": "lead",
+   "line": 2580
+  },
+  {
+   "id": "r180",
+   "anchor": "SpanSelector._contains",
+   "kind": "doc",
+   "line": 2582
+  },
+  {
+   "id": "r181",
+   "anchor": "SpanSelector._snap",
+   "kind": "doc",
+   "line": 2587
+  },
+  {
+   "id": "r182",
+   "anchor": "SpanSelector._snap#assign:eps",
+   "kind": "lead",
+   "line": 2590
+  },
+  {
+   "id": "r183",
+   "anchor": "SpanSelector.extents",
+   "kind": "doc",
+   "line": 2596
+  },
+  {
+   "id": "r184",
+   "anchor": "SpanSelector.extents#if:self.snap_values is not None",
+   "kind": "lead",
+   "line": 2609
+  },
+  {
+   "id": "r185",
+   "anchor": "SpanSelector.extents#if:self._interactive/call:self._edge_handles.set_data",
+   "kind": "lead",
+   "line": 2614
+  },
+  {
+   "id": "r186",
+   "anchor": "ToolLineHandles",
+   "kind": "doc",
+   "line": 2619
+  },
+  {
+   "id": "r187",
+   "anchor": "ToolLineHandles.positions",
+   "kind": "doc",
+   "line": 2659
+  },
+  {
+   "id": "r188",
+   "anchor": "ToolLineHandles.direction",
+   "kind": "doc",
+   "line": 2665
+  },
+  {
+   "id": "r189",
+   "anchor": "ToolLineHandles.set_data",
+   "kind": "doc",
+   "line": 2669
+  },
+  {
+   "id": "r190",
+   "anchor": "ToolLineHandles.set_visible",
+   "kind": "doc",
+   "line": 2683
+  },
+  {
+   "id": "r191",
+   "anchor": "ToolLineHandles.set_animated",
+   "kind": "doc",
+   "line": 2688
+  },
+  {
+   "id": "r192",
+   "anchor": "ToolLineHandles.remove",
+   "kind": "doc",
+   "line": 2693
+  },
+  {
+   "id": "r193",
+   "anchor": "ToolLineHandles.closest",
+   "kind": "doc",
+   "line": 2698
+  },
+  {
+   "id": "r194",
+   "anchor": "ToolHandles",
+   "kind": "doc",
+   "line": 2727
+  },
+  {
+   "id": "r195",
+   "anchor": "ToolHandles.set_data",
+   "kind": "doc",
+   "line": 2768
+  },
+  {
+   "id": "r196",
+   "anchor": "ToolHandles.closest",
+   "kind": "doc",
+   "line": 2781
+  },
+  {
+   "id": "r197",
+   "anchor": "ToolHandles.closest#assign:pts",
+   "kind": "lead",
+   "line": 2785
+  },
+  {
+   "id": "r198",
+   "anchor": "RectangleSelector",
+   "kind": "doc",
+   "line": 2882
+  },
+  {
+   "id": "r199",
+   "anchor": "RectangleSelector._allow_creation",
+   "kind": "lead",
+   "line": 2938
+  },
+  {
+   "id": "r200",
+   "anchor": "RectangleSelector.__init__#if:drawtype=='none'",
+   "kind": "trail",
+   "line": 2940
+  },
+  {
+   "id": "r201",
+   "anchor": "RectangleSelector._press",
+   "kind": "doc",
+   "line": 3033
+  },
+  {
+   "id": "r202",
+   "anchor": "RectangleSelector._press#if:self._interactive and self._selection_artist.get_visible()",
+   "kind": "lead",
+   "line": 3037
+  },
+  {
+   "id": "r203",
+   "anchor": "RectangleSelector._press#if:(self._active_handle is None or not self._interactive) and self._allow_creation/call:self.update",
+   "kind": "lead",
+   "line": 3045
+  },
+  {
+   "id": "r204",
+   "anchor": "RectangleSelector._release",
+   "kind": "doc",
+   "line": 3063
+  },
+  {
+   "id": "r205",
+   "anchor": "RectangleSelector._release#assign:x0, x1, y0, y1",
+   "kind": "lead",
+   "line": 3073
+  },
+  {
+   "id": "r206",
+   "anchor": "RectangleSelector._release#if:self.spancoords=='data'",
+   "kind": "lead",
+   "line": 3085
+  },
+  {
+   "id": "r207",
+   "anchor": "RectangleSelector._release#assign:minspanxy",
+   "kind": "lead",
+   "line": 3096
+  },
+  {
+   "id": "r208",
+   "anchor": "RectangleSelector._release#if:self._drawtype!='none' and minspanxy/if:self._selection_completed/call:self.onselect",
+   "kind": "lead",
+   "line": 3100
+  },
+  {
+   "id": "r209",
+   "anchor": "RectangleSelector._onmove",
+   "kind": "doc",
+   "line": 3112
+  },
+  {
+   "id": "r210",
+   "anchor": "RectangleSelector._onmove#assign:state",
+   "kind": "lead",
+   "line": 3125
+  },
+  {
+   "id": "r211",
+   "anchor": "RectangleSelector._onmove#assign:refmax",
+   "kind": "lead",
+   "line": 3143
+  },
+  {
+   "id": "r212",
+   "anchor": "RectangleSelector._onmove#if:self._use_data_coordinates/else/assign:refx",
+   "kind": "lead",
+   "line": 3148
+  },
+  {
+   "id": "r213",
+   "anchor": "RectangleSelector._onmove#if:rotate",
+   "kind": "lead",
+   "line": 3153
+  },
+  {
+   "id": "r214",
+   "anchor": "RectangleSelector._onmove#if:rotate/assign:a",
+   "kind": "lead",
+   "line": 3155
+  },
+  {
+   "id": "r215",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state",
+   "kind": "lead",
+   "line": 3167
+  },
+  {
+   "id": "r216",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state/if:'square' in state",
+   "kind": "lead",
+   "line": 3169
+  },
+  {
+   "id": "r217",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state/if:'square' in state/if:self._active_handle in self._corner_order",
+   "kind": "lead",
+   "line": 3171
+  },
+  {
+   "id": "r218",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state/if:'square' in state/else/if:self._active_handle in ['E', 'W'] + self._corner_order",
+   "kind": "lead",
+   "line": 3183
+  },
+  {
+   "id": "r219",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state/else/if:'W' in self._active_handle",
+   "kind": "lead",
+   "line": 3194
+  },
+  {
+   "id": "r220",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/if:'center' in state/else/if:'square' in state/if:self._active_handle in self._corner_order",
+   "kind": "lead",
+   "line": 3204
+  },
+  {
+   "id": "r221",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/elif:move/else/assign:self._rotation",
+   "kind": "lead",
+   "line": 3226
+  },
+  {
+   "id": "r222",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/elif:move/else/if:(self.ignore_event_outside and self._selection_completed) or not self._allow_creation",
+   "kind": "lead",
+   "line": 3229
+  },
+  {
+   "id": "r223",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/elif:move/else/if:'square' in state",
+   "kind": "lead",
+   "line": 3237
+  },
+  {
+   "id": "r224",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/elif:move/else/if:'center' in state",
+   "kind": "lead",
+   "line": 3245
+  },
+  {
+   "id": "r225",
+   "anchor": "RectangleSelector._onmove#if:rotate/elif:resize/elif:move/else/if:'center' in state/else",
+   "kind": "lead",
+   "line": 3250
+  },
+  {
+   "id": "r226",
+   "anchor": "RectangleSelector._set_aspect_ratio_correction#if:not hasattr(self._selection_artist, '_aspect_ratio_correction')/assign:self._aspect_ratio_correction",
+   "kind": "lead",
+   "line": 3274
+  },
+  {
+   "id": "r227",
+   "anchor": "RectangleSelector.corners",
+   "kind": "doc",
+   "line": 3292
+  },
+  {
+   "id": "r228",
+   "anchor": "RectangleSelector.edge_centers",
+   "kind": "doc",
+   "line": 3305
+  },
+  {
+   "id": "r229",
+   "anchor": "RectangleSelector.center",
+   "kind": "doc",
+   "line": 3320
+  },
+  {
+   "id": "r230",
+   "anchor": "RectangleSelector.extents",
+   "kind": "doc",
+   "line": 3326
+  },
+  {
+   "id": "r231",
+   "anchor": "RectangleSelector.extents#call:self._draw_shape",
+   "kind": "lead",
+   "line": 3339
+  },
+  {
+   "id": "r232",
+   "anchor": "RectangleSelector.extents#if:self._interactive/call:self._corner_handles.set_data",
+   "kind": "lead",
+   "line": 3342
+  },
+  {
+   "id": "r233",
+   "anchor": "RectangleSelector.rotation",
+   "kind": "doc",
+   "line": 3349
+  },
+  {
+   "id": "r234",
+   "anchor": "RectangleSelector.rotation#if:-45<=value and value<=45",
+   "kind": "lead",
+   "line": 3360
+  },
+  {
+   "id": "r235",
+   "anchor": "RectangleSelector.rotation#if:-45<=value and value<=45/assign:self.extents",
+   "kind": "lead",
+   "line": 3363
+  },
+  {
+   "id": "r236",
+   "anchor": "RectangleSelector._set_active_handle",
+   "kind": "doc",
+   "line": 3389
+  },
+  {
+   "id": "r237",
+   "anchor": "RectangleSelector._set_active_handle#assign:c_idx, c_dist",
+   "kind": "lead",
+   "line": 3392
+  },
+  {
+   "id": "r238",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/elif:m_dist<self.grab_range * 2",
+   "kind": "lead",
+   "line": 3399
+  },
+  {
+   "id": "r239",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/elif:m_dist<self.grab_range * 2/assign:self._active_handle",
+   "kind": "lead",
+   "line": 3401
+  },
+  {
+   "id": "r240",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/elif:c_dist>self.grab_range and e_dist>self.grab_range/if:self.drag_from_anywhere and self._contains(event)",
+   "kind": "lead",
+   "line": 3404
+  },
+  {
+   "id": "r241",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/elif:c_dist>self.grab_range and e_dist>self.grab_range/if:self.drag_from_anywhere and self._contains(event)/assign:self._active_handle",
+   "kind": "lead",
+   "line": 3406
+  },
+  {
+   "id": "r242",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/elif:c_dist<e_dist/assign:self._active_handle",
+   "kind": "lead",
+   "line": 3412
+  },
+  {
+   "id": "r243",
+   "anchor": "RectangleSelector._set_active_handle#if:'move' in self._state/else/assign:self._active_handle",
+   "kind": "lead",
+   "line": 3415
+  },
+  {
+   "id": "r244",
+   "anchor": "RectangleSelector._contains",
+   "kind": "doc",
+   "line": 3417
+  },
+  {
+   "id": "r245",
+   "anchor": "RectangleSelector.geometry",
+   "kind": "doc",
+   "line": 3422
+  },
+  {
+   "id": "r246",
+   "anchor": "EllipseSelector",
+   "kind": "doc",
+   "line": 3439
+  },
+  {
+   "id": "r247",
+   "anchor": "LassoSelector",
+   "kind": "doc",
+   "line": 3494
+  },
+  {
+   "id": "r248",
+   "anchor": "LassoSelector.__init__#call:props.update",
+   "kind": "lead",
+   "line": 3543
+  },
+  {
+   "id": "r249",
+   "anchor": "PolygonSelector",
+   "kind": "doc",
+   "line": 3577
+  },
+  {
+   "id": "r250",
+   "anchor": "PolygonSelector.__init__#assign:state_modifier_keys",
+   "kind": "lead",
+   "line": 3666
+  },
+  {
+   "id": "r251",
+   "anchor": "PolygonSelector._add_box#assign:self._box._allow_creation",
+   "kind": "lead",
+   "line": 3719
+  },
+  {
+   "id": "r252",
+   "anchor": "PolygonSelector._update_box#if:self._box is not None",
+   "kind": "lead",
+   "line": 3730
+  },
+  {
+   "id": "r253",
+   "anchor": "PolygonSelector._old_box_extents",
+   "kind": "lead",
+   "line": 3734
+  },
+  {
+   "id": "r254",
+   "anchor": "PolygonSelector._scale_polygon",
+   "kind": "doc",
+   "line": 3736
+  },
+  {
+   "id": "r255",
+   "anchor": "PolygonSelector._scale_polygon#assign:x1, y1, w1, h1",
+   "kind": "lead",
+   "line": 3750
+  },
+  {
+   "id": "r256",
+   "anchor": "PolygonSelector._scale_polygon#assign:new_verts",
+   "kind": "lead",
+   "line": 3759
+  },
+  {
+   "id": "r257",
+   "anchor": "PolygonSelector._remove_vertex",
+   "kind": "doc",
+   "line": 3778
+  },
+  {
+   "id": "r258",
+   "anchor": "PolygonSelector._remove_vertex#if:len(self._xys)>2 and self._selection_completed and i in (0, len(self._xys) - 1)/call:self._xys.pop",
+   "kind": "lead",
+   "line": 3785
+  },
+  {
+   "id": "r259",
+   "anchor": "PolygonSelector._remove_vertex#if:len(self._xys)>2 and self._selection_completed and i in (0, len(self._xys) - 1)/call:self._xys.append",
+   "kind": "lead",
+   "line": 3789
+  },
+  {
+   "id": "r260",
+   "anchor": "PolygonSelector._remove_vertex#if:len(self._xys)<=2/assign:self._selection_completed",
+   "kind": "lead",
+   "line": 3795
+  },
+  {
+   "id": "r261",
+   "anchor": "PolygonSelector._press",
+   "kind": "doc",
+   "line": 3798
+  },
+  {
+   "id": "r262",
+   "anchor": "PolygonSelector._press#if:(self._selection_completed or 'move_vertex' in self._state) and len(self._xys)>0",
+   "kind": "lead",
+   "line": 3801
+  },
+  {
+   "id": "r263",
+   "anchor": "PolygonSelector._xys_at_press",
+   "kind": "lead",
+   "line": 3808
+  },
+  {
+   "id": "r264",
+   "anchor": "PolygonSelector._release",
+   "kind": "doc",
+   "line": 3810
+  },
+  {
+   "id": "r265",
+   "anchor": "PolygonSelector._release#if:self._active_handle_idx>=0",
+   "kind": "lead",
+   "line": 3813
+  },
+  {
+   "id": "r266",
+   "anchor": "PolygonSelector._release#if:self._active_handle_idx>=0/elif:len(self._xys)>3 and self._xys[-1]==self._xys[0]",
+   "kind": "lead",
+   "line": 3820
+  },
+  {
+   "id": "r267",
+   "anchor": "PolygonSelector._release#if:self._active_handle_idx>=0/elif:not self._selection_completed and 'move_all' not in self._state and 'move_vertex' not in self._state",
+   "kind": "lead",
+   "line": 3826
+  },
+  {
+   "id": "r268",
+   "anchor": "PolygonSelector.onmove",
+   "kind": "doc",
+   "line": 3834
+  },
+  {
+   "id": "r269",
+   "anchor": "PolygonSelector.onmove#if:not self.ignore(event)",
+   "kind": "lead",
+   "line": 3840
+  },
+  {
+   "id": "r270",
+   "anchor": "PolygonSelector._onmove",
+   "kind": "doc",
+   "line": 3846
+  },
+  {
+   "id": "r271",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0",
+   "kind": "lead",
+   "line": 3849
+  },
+  {
+   "id": "r272",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/if:idx==0 and self._selection_completed",
+   "kind": "lead",
+   "line": 3854
+  },
+  {
+   "id": "r273",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/elif:'move_all' in self._state and self._eventpress",
+   "kind": "lead",
+   "line": 3858
+  },
+  {
+   "id": "r274",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/elif:self._selection_completed or 'move_vertex' in self._state or 'move_all' in self._state",
+   "kind": "lead",
+   "line": 3866
+  },
+  {
+   "id": "r275",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/else",
+   "kind": "lead",
+   "line": 3871
+  },
+  {
+   "id": "r276",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/else/assign:x0, y0",
+   "kind": "lead",
+   "line": 3873
+  },
+  {
+   "id": "r277",
+   "anchor": "PolygonSelector._onmove#if:self._active_handle_idx>=0/else/if:len(self._xys)>3 and v0_dist<self.grab_range",
+   "kind": "lead",
+   "line": 3877
+  },
+  {
+   "id": "r278",
+   "anchor": "PolygonSelector._on_key_press",
+   "kind": "doc",
+   "line": 3884
+  },
+  {
+   "id": "r279",
+   "anchor": "PolygonSelector._on_key_press#if:not self._selection_completed and ('move_vertex' in self._state or 'move_all' in self._state)",
+   "kind": "lead",
+   "line": 3888
+  },
+  {
+   "id": "r280",
+   "anchor": "PolygonSelector._on_key_release",
+   "kind": "doc",
+   "line": 3894
+  },
+  {
+   "id": "r281",
+   "anchor": "PolygonSelector._on_key_release#if:not self._selection_completed and (event.key==self._state_modifier_keys.get('move_vertex') or event.key==self._state_modifier_keys.get('move_all'))",
+   "kind": "lead",
+   "line": 3898
+  },
+  {
+   "id": "r282",
+   "anchor": "PolygonSelector._on_key_release#if:not self._selection_completed and (event.key==self._state_modifier_keys.get('move_vertex') or event.key==self._state_modifier_keys.get('move_all'))/elif:event.key==self._state_modifier_keys.get('clear')",
+   "kind": "lead",
+   "line": 3905
+  },
+  {
+   "id": "r283",
+   "anchor": "PolygonSelector._draw_polygon",
+   "kind": "doc",
+   "line": 3912
+  },
+  {
+   "id": "r284",
+   "anchor": "PolygonSelector._draw_polygon#if:self._selection_completed or (len(self._xys)>3 and self._xys[-1]==self._xys[0])",
+   "kind": "lead",
+   "line": 3920
+  },
+  {
+   "id": "r285",
+   "anchor": "PolygonSelector.verts",
+   "kind": "doc",
+   "line": 3929
+  },
+  {
+   "id": "r286",
+   "anchor": "PolygonSelector.verts",
+   "kind": "doc",
+   "line": 3934
+  },
+  {
+   "id": "r287",
+   "anchor": "Lasso",
+   "kind": "doc",
+   "line": 3949
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 81452,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 27764,
+  "thinking_tokens": 13961,
+  "opus_cost_usd": 1.5129115,
+  "total_cost_usd": 1.5801015,
+  "duration_ms": 228836,
+  "duration_api_ms": 230704,
+  "num_turns": 2
+ },
+ "wall_ms": 229787,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

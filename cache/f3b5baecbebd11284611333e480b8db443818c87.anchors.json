@@ -1,0 +1,103 @@
+{
+ "blob_sha": "f3b5baecbebd11284611333e480b8db443818c87",
+ "path": "django/db/backends/postgresql/schema.py",
+ "repo": "django/django",
+ "records": 13,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseSchemaEditor.sql_create_column_inline_fk",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseSchemaEditor.sql_delete_fk",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseSchemaEditor.quote_value#return",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseSchemaEditor._field_base_data_types#if:field.base_field.get_internal_type() == 'ArrayField'",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseSchemaEditor._create_like_index_sql",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseSchemaEditor._create_like_index_sql#if:db_type is not None and (field.db_index or field.unique)/if:'[' in db_type",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseSchemaEditor._alter_column_type_sql#assign:using_sql",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseSchemaEditor._alter_column_type_sql#if:new_internal_type == 'ArrayField' and new_internal_type == old_internal_type/if:list(self._field_base_data_types(old_field)) != list(self._field_base_data_types(new_field))",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseSchemaEditor._alter_column_type_sql#assign:table",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseSchemaEditor._alter_column_type_sql#if:new_type.lower() in serial_fields_map/elif:old_field.db_parameters(connection=self.connection)['type'] in serial_fields_map/assign:column",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:(old_field.db_index or old_field.unique) and ((old_type.startswith('varchar') and not new_type.startswith('varchar')) or (old_type.startswith('text') and not new_type.startswith('text')) or (old_type.startswith('citext') and not new_type.startswith('citext')))",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:(not (old_field.db_index or old_field.unique) and new_field.db_index) or (not old_field.unique and new_field.unique)",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:old_field.unique and not (new_field.db_index or new_field.unique)",
+   "kind": "lead",
+   "line": 208
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8411,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2039,
+  "thinking_tokens": 996,
+  "opus_cost_usd": 0.13937650000000001,
+  "total_cost_usd": 0.14466150000000003,
+  "duration_ms": 19505,
+  "duration_api_ms": 20447,
+  "num_turns": 2
+ },
+ "wall_ms": 20366,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

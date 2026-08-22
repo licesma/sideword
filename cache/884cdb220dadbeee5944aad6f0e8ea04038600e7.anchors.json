@@ -1,0 +1,67 @@
+{
+ "blob_sha": "884cdb220dadbeee5944aad6f0e8ea04038600e7",
+ "path": "requests/packages/urllib3/contrib/appengine.py",
+ "repo": "psf/requests",
+ "records": 7,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "AppEngineManager",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r2",
+   "anchor": "AppEngineManager.__exit__#return",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r3",
+   "anchor": "AppEngineManager.urlopen#if:http_response.get_redirect_location() and retries.raise_on_redirect and redirect",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r4",
+   "anchor": "AppEngineManager.urlopen#if:retries.is_forced_retry(method, status_code=http_response.status)",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r5",
+   "anchor": "AppEngineManager._urlfetch_response_to_http_response#if:is_prod_appengine()/assign:content_encoding",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r6",
+   "anchor": "AppEngineManager._urlfetch_response_to_http_response#return/arg:body",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r7",
+   "anchor": "AppEngineManager._get_absolute_timeout#if:timeout is Timeout.DEFAULT_TIMEOUT/return",
+   "kind": "trail",
+   "line": 178
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6873,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 955,
+  "thinking_tokens": 482,
+  "opus_cost_usd": 0.0968965,
+  "total_cost_usd": 0.10092849999999999,
+  "duration_ms": 11290,
+  "duration_api_ms": 12381,
+  "num_turns": 2
+ },
+ "wall_ms": 12372,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

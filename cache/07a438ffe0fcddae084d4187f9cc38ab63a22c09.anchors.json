@@ -1,0 +1,367 @@
+{
+ "blob_sha": "07a438ffe0fcddae084d4187f9cc38ab63a22c09",
+ "path": "astropy/io/votable/converters.py",
+ "repo": "astropy/astropy",
+ "records": 57,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:re",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:astropy.utils.xml.writer",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#import:.exceptions",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r7",
+   "anchor": "array_splitter",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r8",
+   "anchor": "_make_masked_array",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r9",
+   "anchor": "_make_masked_array#if:len(data)",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r10",
+   "anchor": "bitarray_to_bool",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r11",
+   "anchor": "bool_to_bitarray",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r12",
+   "anchor": "Converter",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r13",
+   "anchor": "Converter.supports_empty_values",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r14",
+   "anchor": "Converter.parse",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r15",
+   "anchor": "Converter.parse_scalar",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r16",
+   "anchor": "Converter.output",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r17",
+   "anchor": "Converter.binparse",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r18",
+   "anchor": "Converter.binoutput",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r19",
+   "anchor": "Char",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r20",
+   "anchor": "Char.parse#try",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r21",
+   "anchor": "Char.output#try",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r22",
+   "anchor": "Char.output#try/if:isinstance(value, str)/else/assign:value",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r23",
+   "anchor": "Char.output#try/finally/if:isinstance(value, bytes)/assign:value",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r24",
+   "anchor": "UnicodeChar",
+   "kind": "doc",
+   "line": 411
+  },
+  {
+   "id": "r25",
+   "anchor": "Array",
+   "kind": "doc",
+   "line": 476
+  },
+  {
+   "id": "r26",
+   "anchor": "VarArray",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r27",
+   "anchor": "ArrayVarArray",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r28",
+   "anchor": "ScalarVarArray",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r29",
+   "anchor": "NumericArray",
+   "kind": "doc",
+   "line": 594
+  },
+  {
+   "id": "r30",
+   "anchor": "NumericArray.output#if:mask.size<=1/else",
+   "kind": "trail",
+   "line": 655
+  },
+  {
+   "id": "r31",
+   "anchor": "Numeric",
+   "kind": "doc",
+   "line": 670
+  },
+  {
+   "id": "r32",
+   "anchor": "FloatingPoint",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r33",
+   "anchor": "FloatingPoint._parse_permissive#try/except:ValueError/if:value.strip()!=\"\"",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r34",
+   "anchor": "FloatingPoint.output#call:vo_raise",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r35",
+   "anchor": "Double",
+   "kind": "doc",
+   "line": 810
+  },
+  {
+   "id": "r36",
+   "anchor": "Float",
+   "kind": "doc",
+   "line": 819
+  },
+  {
+   "id": "r37",
+   "anchor": "Integer",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r38",
+   "anchor": "UnsignedByte",
+   "kind": "doc",
+   "line": 904
+  },
+  {
+   "id": "r39",
+   "anchor": "Short",
+   "kind": "doc",
+   "line": 914
+  },
+  {
+   "id": "r40",
+   "anchor": "Int",
+   "kind": "doc",
+   "line": 924
+  },
+  {
+   "id": "r41",
+   "anchor": "Long",
+   "kind": "doc",
+   "line": 934
+  },
+  {
+   "id": "r42",
+   "anchor": "ComplexArrayVarArray",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r43",
+   "anchor": "ComplexVarArray",
+   "kind": "doc",
+   "line": 968
+  },
+  {
+   "id": "r44",
+   "anchor": "ComplexArray",
+   "kind": "doc",
+   "line": 993
+  },
+  {
+   "id": "r45",
+   "anchor": "Complex",
+   "kind": "doc",
+   "line": 1026
+  },
+  {
+   "id": "r46",
+   "anchor": "FloatComplex",
+   "kind": "doc",
+   "line": 1072
+  },
+  {
+   "id": "r47",
+   "anchor": "DoubleComplex",
+   "kind": "doc",
+   "line": 1081
+  },
+  {
+   "id": "r48",
+   "anchor": "BitArray",
+   "kind": "doc",
+   "line": 1090
+  },
+  {
+   "id": "r49",
+   "anchor": "Bit",
+   "kind": "doc",
+   "line": 1133
+  },
+  {
+   "id": "r50",
+   "anchor": "BooleanArray",
+   "kind": "doc",
+   "line": 1181
+  },
+  {
+   "id": "r51",
+   "anchor": "Boolean",
+   "kind": "doc",
+   "line": 1209
+  },
+  {
+   "id": "r52",
+   "anchor": "get_converter",
+   "kind": "doc",
+   "line": 1297
+  },
+  {
+   "id": "r53",
+   "anchor": "get_converter#if:field.datatype not in (\"char\", \"unicodeChar\") and arraysize is not None",
+   "kind": "lead",
+   "line": 1328
+  },
+  {
+   "id": "r54",
+   "anchor": "numpy_to_votable_dtype",
+   "kind": "doc",
+   "line": 1389
+  },
+  {
+   "id": "r55",
+   "anchor": "table_column_to_votable_datatype",
+   "kind": "doc",
+   "line": 1421
+  },
+  {
+   "id": "r56",
+   "anchor": "table_column_to_votable_datatype#if:column.dtype.char==\"O\"/return",
+   "kind": "lead",
+   "line": 1473
+  },
+  {
+   "id": "r57",
+   "anchor": "table_column_to_votable_datatype#assign:result",
+   "kind": "lead",
+   "line": 1477
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 26314,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3843,
+  "thinking_tokens": 1746,
+  "opus_cost_usd": 0.36350649999999995,
+  "total_cost_usd": 0.3844235,
+  "duration_ms": 34320,
+  "duration_api_ms": 35477,
+  "num_turns": 2
+ },
+ "wall_ms": 35138,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

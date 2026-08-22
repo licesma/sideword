@@ -1,0 +1,427 @@
+{
+ "blob_sha": "8abc7db3b5fa24584b2ab231781bb9030552ad43",
+ "path": "lib/matplotlib/backends/backend_qt.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 67,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SPECIAL_KEYS",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "SPECIAL_KEYS#item:(\"Key_Control\", \"control\" if sys.platform != \"darwin\" else \"cmd\")",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "_MODIFIER_KEYS",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "_create_qApp#decorator:functools.lru_cache",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "_create_qApp#if:app is None",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r6",
+   "anchor": "_create_qApp#if:app is None/if:not mpl._c_internal_utils.display_is_valid()",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r7",
+   "anchor": "_create_qApp#if:app is None/if:QT_API in {'PyQt6', 'PySide6'}",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r8",
+   "anchor": "_create_qApp#if:app is None/try/except:AttributeError",
+   "kind": "trail",
+   "line": 136
+  },
+  {
+   "id": "r9",
+   "anchor": "_create_qApp#if:app is None/try/except:AttributeError",
+   "kind": "trail",
+   "line": 141
+  },
+  {
+   "id": "r10",
+   "anchor": "_create_qApp#try/call:app.setAttribute",
+   "kind": "trail",
+   "line": 152
+  },
+  {
+   "id": "r11",
+   "anchor": "TimerQT",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r12",
+   "anchor": "TimerQT._timer",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r13",
+   "anchor": "TimerQT.__del__#if:not _isdeleted(self._timer)",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r14",
+   "anchor": "FigureCanvasQT._update_pixel_ratio#if:self._set_device_pixel_ratio(self.devicePixelRatioF() or 1)",
+   "kind": "trail",
+   "line": 222
+  },
+  {
+   "id": "r15",
+   "anchor": "FigureCanvasQT._update_pixel_ratio#if:self._set_device_pixel_ratio(self.devicePixelRatioF() or 1)/assign:event",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r16",
+   "anchor": "FigureCanvasQT._update_screen#call:self._update_pixel_ratio",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r17",
+   "anchor": "FigureCanvasQT.showEvent#assign:window",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r18",
+   "anchor": "FigureCanvasQT.set_cursor#call:self.setCursor",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r19",
+   "anchor": "FigureCanvasQT.mouseEventCoords",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r20",
+   "anchor": "FigureCanvasQT.mouseEventCoords#if:pos is None/elif:hasattr(pos, \"position\")",
+   "kind": "trail",
+   "line": 259
+  },
+  {
+   "id": "r21",
+   "anchor": "FigureCanvasQT.mouseEventCoords#if:pos is None/elif:hasattr(pos, \"position\")/elif:hasattr(pos, \"pos\")",
+   "kind": "trail",
+   "line": 261
+  },
+  {
+   "id": "r22",
+   "anchor": "FigureCanvasQT.mouseEventCoords#assign:x",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r23",
+   "anchor": "FigureCanvasQT.mouseEventCoords#assign:y",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r24",
+   "anchor": "FigureCanvasQT.enterEvent#assign:mods",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r25",
+   "anchor": "FigureCanvasQT.wheelEvent#if:event.pixelDelta().isNull() or QtWidgets.QApplication.instance().platformName() == \"xcb\"",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r26",
+   "anchor": "FigureCanvasQT.resizeEvent#if:self._in_resize_event",
+   "kind": "trail",
+   "line": 344
+  },
+  {
+   "id": "r27",
+   "anchor": "FigureCanvasQT.resizeEvent#try/call:QtWidgets.QWidget.resizeEvent",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r28",
+   "anchor": "FigureCanvasQT.resizeEvent#try/call:ResizeEvent(\"resize_event\", self)._process",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r29",
+   "anchor": "FigureCanvasQT._mpl_modifiers#return",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r30",
+   "anchor": "FigureCanvasQT._get_key#try/assign:key",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r31",
+   "anchor": "FigureCanvasQT._get_key#try/except:KeyError/if:event_key > sys.maxunicode",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r32",
+   "anchor": "FigureCanvasQT._get_key#try/except:KeyError/if:'shift' in mods",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r33",
+   "anchor": "FigureCanvasQT.flush_events#call:QtWidgets.QApplication.instance().processEvents",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r34",
+   "anchor": "FigureCanvasQT.start_event_loop#if:hasattr(self, \"_event_loop\") and self._event_loop.isRunning()",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r35",
+   "anchor": "FigureCanvasQT.stop_event_loop#if:hasattr(self, \"_event_loop\")",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r36",
+   "anchor": "FigureCanvasQT.draw",
+   "kind": "doc",
+   "line": 429
+  },
+  {
+   "id": "r37",
+   "anchor": "FigureCanvasQT.draw#if:self._is_drawing",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r38",
+   "anchor": "FigureCanvasQT.draw_idle",
+   "kind": "doc",
+   "line": 439
+  },
+  {
+   "id": "r39",
+   "anchor": "FigureCanvasQT.draw_idle#if:not (getattr(self, '_draw_pending', False) or getattr(self, '_is_drawing', False))",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r40",
+   "anchor": "FigureCanvasQT.blit#if:bbox is None and self.figure",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r41",
+   "anchor": "FigureCanvasQT.blit#if:bbox is None and self.figure/assign:bbox",
+   "kind": "trail",
+   "line": 454
+  },
+  {
+   "id": "r42",
+   "anchor": "FigureCanvasQT.blit#assign:l, b, w, h",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r43",
+   "anchor": "FigureCanvasQT._draw_idle#with:self._idle_draw_cntx()/try/except:Exception/call:traceback.print_exc",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r44",
+   "anchor": "FigureCanvasQT.drawRectangle#if:rect is not None",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r45",
+   "anchor": "FigureCanvasQT.drawRectangle._draw_rect_callback#for:color, offset in [(QtGui.QColor(\"black\"), 0), (QtGui.QColor(\"white\"), 3)]/call:painter.drawLine",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r46",
+   "anchor": "FigureManagerQT",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r47",
+   "anchor": "FigureManagerQT.__init__#call:self.window.closing.connect",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r48",
+   "anchor": "FigureManagerQT.__init__#assign:cs",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r49",
+   "anchor": "FigureManagerQT.__init__#call:self.canvas.setFocusPolicy",
+   "kind": "lead",
+   "line": 567
+  },
+  {
+   "id": "r50",
+   "anchor": "FigureManagerQT._widgetclosed#try/except:AttributeError/pass",
+   "kind": "post",
+   "line": 585
+  },
+  {
+   "id": "r51",
+   "anchor": "FigureManagerQT.resize#assign:width",
+   "kind": "lead",
+   "line": 593
+  },
+  {
+   "id": "r52",
+   "anchor": "FigureManagerQT.destroy#if:QtWidgets.QApplication.instance() is None",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r53",
+   "anchor": "NavigationToolbar2QT#call:toolitems.insert/arg:[name for name, *_ in toolitems].index(\"Subplots\") + 1",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r54",
+   "anchor": "NavigationToolbar2QT.__init__",
+   "kind": "doc",
+   "line": 641
+  },
+  {
+   "id": "r55",
+   "anchor": "NavigationToolbar2QT._actions",
+   "kind": "trail",
+   "line": 649
+  },
+  {
+   "id": "r56",
+   "anchor": "NavigationToolbar2QT.__init__#if:self.coordinates",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r57",
+   "anchor": "NavigationToolbar2QT._icon",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r58",
+   "anchor": "NavigationToolbar2QT._icon#assign:path_regular",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r59",
+   "anchor": "NavigationToolbar2QT._icon#call:pm.setDevicePixelRatio",
+   "kind": "trail",
+   "line": 695
+  },
+  {
+   "id": "r60",
+   "anchor": "NavigationToolbar2QT.edit_parameters#if:not axes/elif:len(axes) == 1/else/for:i, ax in enumerate(axes)/if:titles[i] in duplicate_titles/assign:titles[i]",
+   "kind": "trail",
+   "line": 726
+  },
+  {
+   "id": "r61",
+   "anchor": "NavigationToolbar2QT._update_buttons_checked#if:'pan' in self._actions",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r62",
+   "anchor": "NavigationToolbar2QT.save_figure#if:fname/if:startpath != \"\"",
+   "kind": "lead",
+   "line": 797
+  },
+  {
+   "id": "r63",
+   "anchor": "SubplotToolQt.__init__#for:group, spinboxes, buttons in [(\"Borders\", [\"top\", \"bottom\", \"left\", \"right\"], [(\"Export values\", self._export_values)]), (\"Spacings\", [\"hspace\", \"wspace\"], [(\"Tight layout\", self._tight_layout), (\"Reset\", self._reset), (\"Close\", self.close)])]/for:name, method in buttons/call:button.setAutoDefault",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r64",
+   "anchor": "SubplotToolQt.update_from_current_subplotpars#call:self._reset",
+   "kind": "trail",
+   "line": 864
+  },
+  {
+   "id": "r65",
+   "anchor": "SubplotToolQt._export_values#assign:self._export_values_dialog",
+   "kind": "lead",
+   "line": 869
+  },
+  {
+   "id": "r66",
+   "anchor": "SubplotToolQt._export_values#assign:size",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r67",
+   "anchor": "SubplotToolQt._on_value_changed#for:lower, higher in [(\"bottom\", \"top\"), (\"left\", \"right\")]",
+   "kind": "lead",
+   "line": 890
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 25447,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9770,
+  "thinking_tokens": 5814,
+  "opus_cost_usd": 0.5030115,
+  "total_cost_usd": 0.5217544999999999,
+  "duration_ms": 90690,
+  "duration_api_ms": 92089,
+  "num_turns": 2
+ },
+ "wall_ms": 91800,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

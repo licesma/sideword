@@ -1,0 +1,61 @@
+{
+ "blob_sha": "d6e2134f17c068f2187ddeaaa1038e8baf616810",
+ "path": "django/middleware/gzip.py",
+ "repo": "django/django",
+ "records": 6,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GZipMiddleware",
+   "kind": "doc",
+   "line": 10
+  },
+  {
+   "id": "r2",
+   "anchor": "GZipMiddleware.process_response#if:not response.streaming and len(response.content) < 200",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "GZipMiddleware.process_response#if:response.has_header('Content-Encoding')",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "GZipMiddleware.process_response#if:response.streaming/assign:response.streaming_content",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "GZipMiddleware.process_response#if:response.streaming/else/assign:compressed_content",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r6",
+   "anchor": "GZipMiddleware.process_response#assign:etag",
+   "kind": "lead",
+   "line": 47
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4303,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 544,
+  "thinking_tokens": 165,
+  "opus_cost_usd": 0.0609215,
+  "total_cost_usd": 0.06282850000000001,
+  "duration_ms": 6153,
+  "duration_api_ms": 7079,
+  "num_turns": 2
+ },
+ "wall_ms": 7104,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

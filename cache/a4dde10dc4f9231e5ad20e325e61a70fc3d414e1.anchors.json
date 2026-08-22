@@ -1,0 +1,127 @@
+{
+ "blob_sha": "a4dde10dc4f9231e5ad20e325e61a70fc3d414e1",
+ "path": "django/middleware/cache.py",
+ "repo": "django/django",
+ "records": 17,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "UpdateCacheMiddleware",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r3",
+   "anchor": "UpdateCacheMiddleware.process_response",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r4",
+   "anchor": "UpdateCacheMiddleware.process_response#if:not self._should_update_cache(request, response)/return",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r5",
+   "anchor": "UpdateCacheMiddleware.process_response#if:not request.COOKIES and response.cookies and has_vary_header(response, 'Cookie')",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r6",
+   "anchor": "UpdateCacheMiddleware.process_response#assign:timeout",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r7",
+   "anchor": "UpdateCacheMiddleware.process_response#if:timeout is None/elif:timeout == 0/return",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r8",
+   "anchor": "FetchFromCacheMiddleware",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r9",
+   "anchor": "FetchFromCacheMiddleware.process_request",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r10",
+   "anchor": "FetchFromCacheMiddleware.process_request#if:request.method not in ('GET', 'HEAD')/return",
+   "kind": "trail",
+   "line": 130
+  },
+  {
+   "id": "r11",
+   "anchor": "FetchFromCacheMiddleware.process_request#assign:cache_key",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r12",
+   "anchor": "FetchFromCacheMiddleware.process_request#if:cache_key is None/return",
+   "kind": "trail",
+   "line": 136
+  },
+  {
+   "id": "r13",
+   "anchor": "FetchFromCacheMiddleware.process_request#if:response is None and request.method == 'HEAD'",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r14",
+   "anchor": "FetchFromCacheMiddleware.process_request#if:response is None/return",
+   "kind": "trail",
+   "line": 145
+  },
+  {
+   "id": "r15",
+   "anchor": "FetchFromCacheMiddleware.process_request#assign:request._cache_update_cache",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r16",
+   "anchor": "CacheMiddleware",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r17",
+   "anchor": "CacheMiddleware.__init__#try",
+   "kind": "lead",
+   "line": 166
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7236,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1781,
+  "thinking_tokens": 850,
+  "opus_cost_usd": 0.12117650000000002,
+  "total_cost_usd": 0.12535050000000003,
+  "duration_ms": 18773,
+  "duration_api_ms": 19844,
+  "num_turns": 2
+ },
+ "wall_ms": 19661,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

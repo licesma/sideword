@@ -1,0 +1,79 @@
+{
+ "blob_sha": "1e3c08d313eb93f9d2f612ce578b035dd57ce421",
+ "path": "django/contrib/syndication/views.py",
+ "repo": "django/django",
+ "records": 9,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "add_domain#if:url.startswith('//')/assign:url",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "Feed.__call__#if:hasattr(self, 'item_pubdate') or hasattr(self, 'item_updateddate')/assign:response['Last-Modified']",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r3",
+   "anchor": "Feed.item_title#return",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "Feed._get_dynamic_attr#if:callable(attr)/try",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "Feed._get_dynamic_attr#if:callable(attr)/if:code.co_argcount == 2",
+   "kind": "trail",
+   "line": 91
+  },
+  {
+   "id": "r6",
+   "anchor": "Feed.feed_extra_kwargs",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r7",
+   "anchor": "Feed.item_extra_kwargs",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r8",
+   "anchor": "Feed.get_context_data",
+   "kind": "doc",
+   "line": 114
+  },
+  {
+   "id": "r9",
+   "anchor": "Feed.get_feed",
+   "kind": "doc",
+   "line": 124
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7327,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 984,
+  "thinking_tokens": 490,
+  "opus_cost_usd": 0.1021615,
+  "total_cost_usd": 0.1066125,
+  "duration_ms": 10366,
+  "duration_api_ms": 12038,
+  "num_turns": 2
+ },
+ "wall_ms": 11435,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

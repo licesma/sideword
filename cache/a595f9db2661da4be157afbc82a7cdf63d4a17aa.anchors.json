@@ -1,0 +1,187 @@
+{
+ "blob_sha": "a595f9db2661da4be157afbc82a7cdf63d4a17aa",
+ "path": "xarray/core/rolling.py",
+ "repo": "pydata/xarray",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#try/except:ImportError/assign:bottleneck",
+   "kind": "lead",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "Rolling",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "Rolling.__init__",
+   "kind": "doc",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "Rolling.__init__#if:min_periods is not None and min_periods <= 0",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r5",
+   "anchor": "Rolling.__repr__",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r6",
+   "anchor": "Rolling._mapping_to_list#if:utils.is_dict_like(arg)/elif:allow_allsame",
+   "kind": "trail",
+   "line": 151
+  },
+  {
+   "id": "r7",
+   "anchor": "DataArrayRolling.__init__",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r8",
+   "anchor": "DataArrayRolling.window_labels",
+   "kind": "todo",
+   "line": 206
+  },
+  {
+   "id": "r9",
+   "anchor": "DataArrayRolling.construct",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r10",
+   "anchor": "DataArrayRolling.reduce",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r11",
+   "anchor": "DataArrayRolling.reduce#assign:counts",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r12",
+   "anchor": "DataArrayRolling._counts",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r13",
+   "anchor": "DataArrayRolling._counts#assign:counts",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r14",
+   "anchor": "DataArrayRolling._bottleneck_reduce#if:self.min_periods is not None and self.min_periods == 0",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r15",
+   "anchor": "DataArrayRolling._bottleneck_reduce#if:self.center[0]/if:isinstance(padded.data, dask_array_type)/assign:shift",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r16",
+   "anchor": "DataArrayRolling._numpy_or_bottleneck_reduce#if:bottleneck_move_func is not None and not isinstance(self.obj.data, dask_array_type) and len(self.dim) == 1/return",
+   "kind": "todo",
+   "line": 427
+  },
+  {
+   "id": "r17",
+   "anchor": "DatasetRolling.__init__",
+   "kind": "doc",
+   "line": 435
+  },
+  {
+   "id": "r18",
+   "anchor": "DatasetRolling.rollings",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r19",
+   "anchor": "DatasetRolling.__init__#for:key, da in self.obj.data_vars.items()/assign:dims, center",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r20",
+   "anchor": "DatasetRolling.reduce",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r21",
+   "anchor": "DatasetRolling.construct",
+   "kind": "doc",
+   "line": 538
+  },
+  {
+   "id": "r22",
+   "anchor": "DatasetRolling.construct#for:key, da in self.obj.data_vars.items()/assign:dims",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r23",
+   "anchor": "Coarsen",
+   "kind": "doc",
+   "line": 601
+  },
+  {
+   "id": "r24",
+   "anchor": "Coarsen.__init__",
+   "kind": "doc",
+   "line": 621
+  },
+  {
+   "id": "r25",
+   "anchor": "Coarsen.__repr__",
+   "kind": "doc",
+   "line": 661
+  },
+  {
+   "id": "r26",
+   "anchor": "DataArrayCoarsen._reduce_method",
+   "kind": "doc",
+   "line": 680
+  },
+  {
+   "id": "r27",
+   "anchor": "DatasetCoarsen._reduce_method",
+   "kind": "doc",
+   "line": 721
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16451,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2717,
+  "thinking_tokens": 1397,
+  "opus_cost_usd": 0.23672649999999998,
+  "total_cost_usd": 0.24861049999999998,
+  "duration_ms": 27682,
+  "duration_api_ms": 28867,
+  "num_turns": 2
+ },
+ "wall_ms": 28556,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

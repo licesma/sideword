@@ -1,0 +1,91 @@
+{
+ "blob_sha": "3957788d0e6e39ea1a837548254795b1c5cd2628",
+ "path": "django/contrib/contenttypes/views.py",
+ "repo": "django/django",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "shortcut",
+   "kind": "doc",
+   "line": 11
+  },
+  {
+   "id": "r2",
+   "anchor": "shortcut#try",
+   "kind": "lead",
+   "line": 16
+  },
+  {
+   "id": "r3",
+   "anchor": "shortcut#if:absurl.startswith(('http://', 'https://', '//'))",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "shortcut#if:absurl.startswith(('http://', 'https://', '//'))",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "shortcut#assign:object_domain",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "shortcut#if:apps.is_installed('django.contrib.sites')/for:field in opts.many_to_many",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r7",
+   "anchor": "shortcut#if:apps.is_installed('django.contrib.sites')/for:field in opts.many_to_many/if:field.remote_field.model is Site/try/assign:object_domain",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r8",
+   "anchor": "shortcut#if:apps.is_installed('django.contrib.sites')/if:object_domain is None",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r9",
+   "anchor": "shortcut#if:apps.is_installed('django.contrib.sites')/if:object_domain is None",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r10",
+   "anchor": "shortcut#if:apps.is_installed('django.contrib.sites')/else/assign:object_domain",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r11",
+   "anchor": "shortcut#if:object_domain is not None",
+   "kind": "lead",
+   "line": 87
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5158,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1215,
+  "thinking_tokens": 569,
+  "opus_cost_usd": 0.0862465,
+  "total_cost_usd": 0.08894350000000001,
+  "duration_ms": 13315,
+  "duration_api_ms": 14498,
+  "num_turns": 2
+ },
+ "wall_ms": 14380,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

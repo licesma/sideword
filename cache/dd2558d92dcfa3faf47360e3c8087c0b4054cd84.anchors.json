@@ -1,0 +1,343 @@
+{
+ "blob_sha": "dd2558d92dcfa3faf47360e3c8087c0b4054cd84",
+ "path": "astropy/stats/funcs.py",
+ "repo": "astropy/astropy",
+ "records": 53,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "gaussian_sigma_to_fwhm",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r4",
+   "anchor": "gaussian_fwhm_to_sigma",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "_expand_dims",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r6",
+   "anchor": "_expand_dims",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "binom_conf_interval",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r8",
+   "anchor": "binom_conf_interval#if:interval=='wilson' or interval=='wald'/assign:kappa",
+   "kind": "trail",
+   "line": 267
+  },
+  {
+   "id": "r9",
+   "anchor": "binom_conf_interval#if:interval=='wilson' or interval=='wald'/if:interval=='wilson'/assign:conf_interval[conf_interval<0.]",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r10",
+   "anchor": "binom_conf_interval#if:interval=='wilson' or interval=='wald'/elif:interval=='jeffreys' or interval=='flat'/if:lowerbound.ndim==0",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r11",
+   "anchor": "binned_binom_proportion",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r12",
+   "anchor": "binned_binom_proportion#assign:n, bin_edges",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r13",
+   "anchor": "binned_binom_proportion#assign:valid",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r14",
+   "anchor": "poisson_conf_interval",
+   "kind": "doc",
+   "line": 506
+  },
+  {
+   "id": "r15",
+   "anchor": "poisson_conf_interval#if:interval=='root-n'/elif:interval=='kraft-burrows-nousek'/if:np.isscalar(n)",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r16",
+   "anchor": "median_absolute_deviation",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r17",
+   "anchor": "median_absolute_deviation#if:func is None/if:isinstance(data, np.ma.MaskedArray)",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r18",
+   "anchor": "median_absolute_deviation#if:func is None/if:isinstance(data, np.ma.MaskedArray)/elif:ignore_nan/else/assign:func",
+   "kind": "trail",
+   "line": 833
+  },
+  {
+   "id": "r19",
+   "anchor": "median_absolute_deviation#assign:data_median",
+   "kind": "lead",
+   "line": 840
+  },
+  {
+   "id": "r20",
+   "anchor": "median_absolute_deviation#if:isinstance(data, u.Quantity) and func is np.median and data_median.ndim == 0 and np.isnan(data_median)",
+   "kind": "lead",
+   "line": 843
+  },
+  {
+   "id": "r21",
+   "anchor": "median_absolute_deviation#if:axis is not None",
+   "kind": "lead",
+   "line": 848
+  },
+  {
+   "id": "r22",
+   "anchor": "median_absolute_deviation#if:axis is not None/assign:data_median",
+   "kind": "trail",
+   "line": 849
+  },
+  {
+   "id": "r23",
+   "anchor": "median_absolute_deviation#if:isinstance(data, u.Quantity) and func is np.median and result.ndim == 0 and np.isnan(result)",
+   "kind": "lead",
+   "line": 854
+  },
+  {
+   "id": "r24",
+   "anchor": "median_absolute_deviation#if:axis is None and np.ma.isMaskedArray(result)/assign:result",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r25",
+   "anchor": "median_absolute_deviation#if:axis is None and np.ma.isMaskedArray(result)/elif:np.ma.isMaskedArray(result) and not is_masked/assign:result",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r26",
+   "anchor": "mad_std",
+   "kind": "doc",
+   "line": 869
+  },
+  {
+   "id": "r27",
+   "anchor": "mad_std#assign:MAD",
+   "kind": "lead",
+   "line": 924
+  },
+  {
+   "id": "r28",
+   "anchor": "signal_to_noise_oir_ccd",
+   "kind": "doc",
+   "line": 929
+  },
+  {
+   "id": "r29",
+   "anchor": "bootstrap",
+   "kind": "doc",
+   "line": 972
+  },
+  {
+   "id": "r30",
+   "anchor": "bootstrap#if:samples<1 or bootnum<1",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r31",
+   "anchor": "bootstrap#if:bootfunc is None/else/try",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r32",
+   "anchor": "bootstrap#assign:boot",
+   "kind": "lead",
+   "line": 1073
+  },
+  {
+   "id": "r33",
+   "anchor": "_scipy_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1085
+  },
+  {
+   "id": "r34",
+   "anchor": "_scipy_kraft_burrows_nousek#assign:eqn8_res",
+   "kind": "lead",
+   "line": 1129
+  },
+  {
+   "id": "r35",
+   "anchor": "_scipy_kraft_burrows_nousek.find_s_min",
+   "kind": "doc",
+   "line": 1139
+  },
+  {
+   "id": "r36",
+   "anchor": "_mpmath_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1164
+  },
+  {
+   "id": "r37",
+   "anchor": "_mpmath_kraft_burrows_nousek#assign:N",
+   "kind": "lead",
+   "line": 1196
+  },
+  {
+   "id": "r38",
+   "anchor": "_mpmath_kraft_burrows_nousek.find_s_min",
+   "kind": "doc",
+   "line": 1217
+  },
+  {
+   "id": "r39",
+   "anchor": "_mpmath_kraft_burrows_nousek.find_s_min#if:(B >= N) or (eqn7(0, N, B) >= y_S_max)",
+   "kind": "lead",
+   "line": 1232
+  },
+  {
+   "id": "r40",
+   "anchor": "_mpmath_kraft_burrows_nousek#assign:s_max_guess",
+   "kind": "lead",
+   "line": 1249
+  },
+  {
+   "id": "r41",
+   "anchor": "_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1258
+  },
+  {
+   "id": "r42",
+   "anchor": "kuiper_false_positive_probability",
+   "kind": "doc",
+   "line": 1300
+  },
+  {
+   "id": "r43",
+   "anchor": "kuiper_false_positive_probability#try/except:ImportError/import:scipy.misc",
+   "kind": "lead",
+   "line": 1342
+  },
+  {
+   "id": "r44",
+   "anchor": "kuiper_false_positive_probability#if:D<2./N/elif:(D > 0.5 and N % 2 == 0) or (D > (N - 1.) / (2. * N) and N % 2 == 1)/assign:t",
+   "kind": "lead",
+   "line": 1357
+  },
+  {
+   "id": "r45",
+   "anchor": "kuiper_false_positive_probability#if:D<2./N/elif:(D > 0.5 and N % 2 == 0) or (D > (N - 1.) / (2. * N) and N % 2 == 1)/assign:term1[(term1 == np.inf) & (term2 == 0)]",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r46",
+   "anchor": "kuiper_false_positive_probability#if:D<2./N/elif:(D > 0.5 and N % 2 == 0) or (D > (N - 1.) / (2. * N) and N % 2 == 1)/else/assign:ms",
+   "kind": "lead",
+   "line": 1376
+  },
+  {
+   "id": "r47",
+   "anchor": "kuiper",
+   "kind": "doc",
+   "line": 1382
+  },
+  {
+   "id": "r48",
+   "anchor": "kuiper_two",
+   "kind": "doc",
+   "line": 1456
+  },
+  {
+   "id": "r49",
+   "anchor": "kuiper_two#if:np.isnan(data1[-1]) or np.isnan(data2[-1])",
+   "kind": "lead",
+   "line": 1487
+  },
+  {
+   "id": "r50",
+   "anchor": "fold_intervals",
+   "kind": "doc",
+   "line": 1495
+  },
+  {
+   "id": "r51",
+   "anchor": "cdf_from_intervals",
+   "kind": "doc",
+   "line": 1547
+  },
+  {
+   "id": "r52",
+   "anchor": "interval_overlap_length",
+   "kind": "doc",
+   "line": 1583
+  },
+  {
+   "id": "r53",
+   "anchor": "histogram_intervals",
+   "kind": "doc",
+   "line": 1615
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 36711,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7021,
+  "thinking_tokens": 4245,
+  "opus_cost_usd": 0.5469265,
+  "total_cost_usd": 0.5757255,
+  "duration_ms": 67195,
+  "duration_api_ms": 68485,
+  "num_turns": 2
+ },
+ "wall_ms": 68792,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,1027 @@
+{
+ "blob_sha": "fc87dca2e52f02a29f8fd50fcbaffeef2d1d62a8",
+ "path": "lib/matplotlib/dates.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 167,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_rc_timezone",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_rc_timezone",
+   "kind": "post",
+   "line": 178
+  },
+  {
+   "id": "r4",
+   "anchor": "JULIAN_OFFSET",
+   "kind": "trail",
+   "line": 190
+  },
+  {
+   "id": "r5",
+   "anchor": "_to_ordinalf",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r6",
+   "anchor": "_to_ordinalf#assign:tzi",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r7",
+   "anchor": "_to_ordinalf#assign:cdate",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r8",
+   "anchor": "_to_ordinalf#if:cdate is not None/assign:midnight_time",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r9",
+   "anchor": "_to_ordinalf#if:cdate is not None/assign:base",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r10",
+   "anchor": "_to_ordinalf_np_vectorized",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r11",
+   "anchor": "_dt64_to_ordinalf",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r12",
+   "anchor": "_dt64_to_ordinalf#assign:extra",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r13",
+   "anchor": "_from_ordinalf",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r14",
+   "anchor": "_from_ordinalf#assign:musec_prec",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r15",
+   "anchor": "_from_ordinalf#if:x<30*365",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r16",
+   "anchor": "_from_ordinalf#assign:dt",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r17",
+   "anchor": "_from_ordinalf_np_vectorized",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r18",
+   "anchor": "strpdate2num",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r19",
+   "anchor": "strpdate2num.__init__",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r20",
+   "anchor": "strpdate2num.__call__",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r21",
+   "anchor": "bytespdate2num",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r22",
+   "anchor": "bytespdate2num.__init__",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r23",
+   "anchor": "bytespdate2num.__call__",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r24",
+   "anchor": "_dateutil_parser_parse_np_vectorized",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r25",
+   "anchor": "datestr2num",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r26",
+   "anchor": "date2num",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r27",
+   "anchor": "date2num#if:hasattr(d, \"values\")/assign:d",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r28",
+   "anchor": "julian2num",
+   "kind": "doc",
+   "line": 429
+  },
+  {
+   "id": "r29",
+   "anchor": "num2julian",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r30",
+   "anchor": "num2date",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r31",
+   "anchor": "num2timedelta",
+   "kind": "doc",
+   "line": 511
+  },
+  {
+   "id": "r32",
+   "anchor": "drange",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r33",
+   "anchor": "drange#assign:num",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r34",
+   "anchor": "drange#assign:dinterval_end",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r35",
+   "anchor": "drange#if:dinterval_end>=dend",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r36",
+   "anchor": "drange#if:dinterval_end>=dend/assign:dinterval_end",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r37",
+   "anchor": "drange#assign:f2",
+   "kind": "trail",
+   "line": 573
+  },
+  {
+   "id": "r38",
+   "anchor": "DateFormatter",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r39",
+   "anchor": "DateFormatter",
+   "kind": "doc",
+   "line": 579
+  },
+  {
+   "id": "r40",
+   "anchor": "DateFormatter.__init__",
+   "kind": "doc",
+   "line": 586
+  },
+  {
+   "id": "r41",
+   "anchor": "DateFormatter._replace_common_substr",
+   "kind": "doc",
+   "line": 611
+  },
+  {
+   "id": "r42",
+   "anchor": "DateFormatter._replace_common_substr#assign:i",
+   "kind": "lead",
+   "line": 621
+  },
+  {
+   "id": "r43",
+   "anchor": "DateFormatter.strftime_pre_1900",
+   "kind": "doc",
+   "line": 637
+  },
+  {
+   "id": "r44",
+   "anchor": "DateFormatter.strftime_pre_1900#assign:fmt",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r45",
+   "anchor": "DateFormatter.strftime_pre_1900#assign:delta",
+   "kind": "lead",
+   "line": 664
+  },
+  {
+   "id": "r46",
+   "anchor": "DateFormatter.strftime_pre_1900#assign:year1",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r47",
+   "anchor": "DateFormatter.strftime_pre_1900#assign:s1",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r48",
+   "anchor": "DateFormatter.strftime_pre_1900#assign:s1, s2",
+   "kind": "lead",
+   "line": 684
+  },
+  {
+   "id": "r49",
+   "anchor": "DateFormatter.strftime",
+   "kind": "doc",
+   "line": 695
+  },
+  {
+   "id": "r50",
+   "anchor": "DateFormatter.strftime#if:dt.year>=1900/return",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r51",
+   "anchor": "IndexDateFormatter",
+   "kind": "doc",
+   "line": 718
+  },
+  {
+   "id": "r52",
+   "anchor": "IndexDateFormatter.__init__",
+   "kind": "doc",
+   "line": 723
+  },
+  {
+   "id": "r53",
+   "anchor": "IndexDateFormatter.__call__",
+   "kind": "doc",
+   "line": 734
+  },
+  {
+   "id": "r54",
+   "anchor": "ConciseDateFormatter",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r55",
+   "anchor": "ConciseDateFormatter.__init__",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r56",
+   "anchor": "ConciseDateFormatter.__init__#if:formats",
+   "kind": "lead",
+   "line": 824
+  },
+  {
+   "id": "r57",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%Y'",
+   "kind": "trail",
+   "line": 830
+  },
+  {
+   "id": "r58",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%b'",
+   "kind": "trail",
+   "line": 831
+  },
+  {
+   "id": "r59",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%d'",
+   "kind": "trail",
+   "line": 832
+  },
+  {
+   "id": "r60",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%H:%M'",
+   "kind": "trail",
+   "line": 833
+  },
+  {
+   "id": "r61",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%H:%M'",
+   "kind": "trail",
+   "line": 834
+  },
+  {
+   "id": "r62",
+   "anchor": "ConciseDateFormatter.__init__#if:formats/else/assign:self.formats/item:'%S.%f'",
+   "kind": "trail",
+   "line": 835
+  },
+  {
+   "id": "r63",
+   "anchor": "ConciseDateFormatter.__init__#if:zero_formats",
+   "kind": "lead",
+   "line": 841
+  },
+  {
+   "id": "r64",
+   "anchor": "ConciseDateFormatter.__init__#if:zero_formats/elif:formats/assign:self.zero_formats",
+   "kind": "lead",
+   "line": 848
+  },
+  {
+   "id": "r65",
+   "anchor": "ConciseDateFormatter.__init__#if:zero_formats/elif:formats/else/assign:self.zero_formats",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r66",
+   "anchor": "ConciseDateFormatter.format_ticks#assign:fmts",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r67",
+   "anchor": "ConciseDateFormatter.format_ticks#assign:zerofmts",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r68",
+   "anchor": "ConciseDateFormatter.format_ticks#assign:offsetfmts",
+   "kind": "lead",
+   "line": 888
+  },
+  {
+   "id": "r69",
+   "anchor": "ConciseDateFormatter.format_ticks#for:level in range(5, -1, -1)",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r70",
+   "anchor": "ConciseDateFormatter.format_ticks#assign:zerovals",
+   "kind": "lead",
+   "line": 899
+  },
+  {
+   "id": "r71",
+   "anchor": "ConciseDateFormatter.format_ticks#for:nn in range(len(tickdate))/if:level<5/else/if:tickdatetime[nn].second==tickdatetime[nn].microsecond==0",
+   "kind": "lead",
+   "line": 909
+  },
+  {
+   "id": "r72",
+   "anchor": "ConciseDateFormatter.format_ticks#if:level>=5",
+   "kind": "lead",
+   "line": 921
+  },
+  {
+   "id": "r73",
+   "anchor": "ConciseDateFormatter.format_ticks#if:self.show_offset/assign:self.offset_string",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r74",
+   "anchor": "AutoDateFormatter",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r75",
+   "anchor": "AutoDateFormatter.__init__",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r76",
+   "anchor": "AutoDateFormatter.__init__",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r77",
+   "anchor": "AutoDateFormatter.__init__",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r78",
+   "anchor": "AutoDateFormatter.__init__",
+   "kind": "doc",
+   "line": 1002
+  },
+  {
+   "id": "r79",
+   "anchor": "AutoDateFormatter.__call__#assign:fmt",
+   "kind": "lead",
+   "line": 1032
+  },
+  {
+   "id": "r80",
+   "anchor": "rrulewrapper._update_rrule#if:'dtstart' in kwargs",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r81",
+   "anchor": "rrulewrapper._attach_tzinfo#if:hasattr(tzinfo, 'localize')",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r82",
+   "anchor": "rrulewrapper._aware_return_wrapper",
+   "kind": "doc",
+   "line": 1097
+  },
+  {
+   "id": "r83",
+   "anchor": "rrulewrapper._aware_return_wrapper#if:self._tzinfo is None",
+   "kind": "lead",
+   "line": 1100
+  },
+  {
+   "id": "r84",
+   "anchor": "rrulewrapper._aware_return_wrapper.normalize_arg",
+   "kind": "lead",
+   "line": 1105
+  },
+  {
+   "id": "r85",
+   "anchor": "rrulewrapper._aware_return_wrapper#if:not returns_list",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r86",
+   "anchor": "DateLocator",
+   "kind": "doc",
+   "line": 1152
+  },
+  {
+   "id": "r87",
+   "anchor": "DateLocator.__init__",
+   "kind": "doc",
+   "line": 1161
+  },
+  {
+   "id": "r88",
+   "anchor": "DateLocator.set_tzinfo",
+   "kind": "doc",
+   "line": 1169
+  },
+  {
+   "id": "r89",
+   "anchor": "DateLocator.datalim_to_dt",
+   "kind": "doc",
+   "line": 1175
+  },
+  {
+   "id": "r90",
+   "anchor": "DateLocator.viewlim_to_dt",
+   "kind": "doc",
+   "line": 1190
+  },
+  {
+   "id": "r91",
+   "anchor": "DateLocator._get_unit",
+   "kind": "doc",
+   "line": 1205
+  },
+  {
+   "id": "r92",
+   "anchor": "DateLocator._get_interval",
+   "kind": "doc",
+   "line": 1212
+  },
+  {
+   "id": "r93",
+   "anchor": "DateLocator.nonsingular",
+   "kind": "doc",
+   "line": 1218
+  },
+  {
+   "id": "r94",
+   "anchor": "RRuleLocator.__init__",
+   "kind": "lead",
+   "line": 1235
+  },
+  {
+   "id": "r95",
+   "anchor": "RRuleLocator.__call__#try",
+   "kind": "lead",
+   "line": 1241
+  },
+  {
+   "id": "r96",
+   "anchor": "RRuleLocator.tick_values#try",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r97",
+   "anchor": "RRuleLocator.tick_values#try/except:(ValueError, OverflowError)/assign:stop",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r98",
+   "anchor": "RRuleLocator._get_unit",
+   "kind": "doc",
+   "line": 1270
+  },
+  {
+   "id": "r99",
+   "anchor": "RRuleLocator.get_unit_generic#if:freq==YEARLY/elif:freq==MONTHLY/elif:freq==WEEKLY/elif:freq==DAILY/elif:freq==HOURLY/elif:freq==MINUTELY/elif:freq==SECONDLY/else/return",
+   "kind": "lead",
+   "line": 1296
+  },
+  {
+   "id": "r100",
+   "anchor": "RRuleLocator.get_unit_generic#if:freq==YEARLY/elif:freq==MONTHLY/elif:freq==WEEKLY/elif:freq==DAILY/elif:freq==HOURLY/elif:freq==MINUTELY/elif:freq==SECONDLY/else/return",
+   "kind": "trail",
+   "line": 1296
+  },
+  {
+   "id": "r101",
+   "anchor": "RRuleLocator.autoscale",
+   "kind": "doc",
+   "line": 1301
+  },
+  {
+   "id": "r102",
+   "anchor": "RRuleLocator.autoscale#try",
+   "kind": "lead",
+   "line": 1309
+  },
+  {
+   "id": "r103",
+   "anchor": "RRuleLocator.autoscale#try/except:ValueError/assign:stop",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r104",
+   "anchor": "AutoDateLocator",
+   "kind": "doc",
+   "line": 1337
+  },
+  {
+   "id": "r105",
+   "anchor": "AutoDateLocator.__init__",
+   "kind": "doc",
+   "line": 1343
+  },
+  {
+   "id": "r106",
+   "anchor": "AutoDateLocator.__init__#if:maxticks is not None/try/except:TypeError/assign:self.maxticks",
+   "kind": "lead",
+   "line": 1407
+  },
+  {
+   "id": "r107",
+   "anchor": "AutoDateLocator.__init__#if:interval_multiples/assign:self.intervald[DAILY]",
+   "kind": "lead",
+   "line": 1424
+  },
+  {
+   "id": "r108",
+   "anchor": "AutoDateLocator.__call__",
+   "kind": "doc",
+   "line": 1429
+  },
+  {
+   "id": "r109",
+   "anchor": "AutoDateLocator.nonsingular#if:vmin==vmax",
+   "kind": "lead",
+   "line": 1440
+  },
+  {
+   "id": "r110",
+   "anchor": "AutoDateLocator.refresh",
+   "kind": "doc",
+   "line": 1449
+  },
+  {
+   "id": "r111",
+   "anchor": "AutoDateLocator.autoscale",
+   "kind": "doc",
+   "line": 1460
+  },
+  {
+   "id": "r112",
+   "anchor": "AutoDateLocator.get_locator",
+   "kind": "doc",
+   "line": 1466
+  },
+  {
+   "id": "r113",
+   "anchor": "AutoDateLocator.get_locator#if:dmin>dmax",
+   "kind": "lead",
+   "line": 1472
+  },
+  {
+   "id": "r114",
+   "anchor": "AutoDateLocator.get_locator#assign:numYears",
+   "kind": "lead",
+   "line": 1480
+  },
+  {
+   "id": "r115",
+   "anchor": "AutoDateLocator.get_locator#assign:numDays",
+   "kind": "trail",
+   "line": 1482
+  },
+  {
+   "id": "r116",
+   "anchor": "AutoDateLocator.get_locator#assign:byranges",
+   "kind": "lead",
+   "line": 1496
+  },
+  {
+   "id": "r117",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r118",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/if:num<self.minticks",
+   "kind": "lead",
+   "line": 1505
+  },
+  {
+   "id": "r119",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/if:num<self.minticks/assign:byranges[i]",
+   "kind": "lead",
+   "line": 1509
+  },
+  {
+   "id": "r120",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/for:interval in self.intervald[freq]",
+   "kind": "lead",
+   "line": 1514
+  },
+  {
+   "id": "r121",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/for:interval in self.intervald[freq]/else/call:cbook._warn_external",
+   "kind": "lead",
+   "line": 1520
+  },
+  {
+   "id": "r122",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/assign:self._freq",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r123",
+   "anchor": "AutoDateLocator.get_locator#for:i, (freq, num) in enumerate(zip(self._freqs, nums))/if:self._byranges[i] and self.interval_multiples/if:i in (DAILY, WEEKLY)/if:interval==14/assign:byranges[i]",
+   "kind": "lead",
+   "line": 1536
+  },
+  {
+   "id": "r124",
+   "anchor": "YearLocator",
+   "kind": "doc",
+   "line": 1574
+  },
+  {
+   "id": "r125",
+   "anchor": "YearLocator.__init__",
+   "kind": "doc",
+   "line": 1586
+  },
+  {
+   "id": "r126",
+   "anchor": "YearLocator.__init__#if:not hasattr(tz, 'localize')/assign:self.replaced['tzinfo']",
+   "kind": "lead",
+   "line": 1602
+  },
+  {
+   "id": "r127",
+   "anchor": "YearLocator.__call__#try",
+   "kind": "lead",
+   "line": 1606
+  },
+  {
+   "id": "r128",
+   "anchor": "YearLocator.tick_values#if:hasattr(self.tz, 'localize')/if:not vmin.tzinfo",
+   "kind": "lead",
+   "line": 1620
+  },
+  {
+   "id": "r129",
+   "anchor": "YearLocator.tick_values#while:True/if:hasattr(self.tz, 'localize')/if:not dt.tzinfo",
+   "kind": "lead",
+   "line": 1633
+  },
+  {
+   "id": "r130",
+   "anchor": "YearLocator.autoscale",
+   "kind": "doc",
+   "line": 1638
+  },
+  {
+   "id": "r131",
+   "anchor": "MonthLocator",
+   "kind": "doc",
+   "line": 1656
+  },
+  {
+   "id": "r132",
+   "anchor": "MonthLocator.__init__",
+   "kind": "doc",
+   "line": 1660
+  },
+  {
+   "id": "r133",
+   "anchor": "MonthLocator.__init__#if:bymonth is None/elif:isinstance(bymonth, np.ndarray)/assign:bymonth",
+   "kind": "lead",
+   "line": 1674
+  },
+  {
+   "id": "r134",
+   "anchor": "WeekdayLocator",
+   "kind": "doc",
+   "line": 1681
+  },
+  {
+   "id": "r135",
+   "anchor": "WeekdayLocator.__init__",
+   "kind": "doc",
+   "line": 1686
+  },
+  {
+   "id": "r136",
+   "anchor": "WeekdayLocator.__init__#if:isinstance(byweekday, np.ndarray)/expr:[x.item() for x in byweekday.astype(int)]",
+   "kind": "lead",
+   "line": 1702
+  },
+  {
+   "id": "r137",
+   "anchor": "DayLocator",
+   "kind": "doc",
+   "line": 1709
+  },
+  {
+   "id": "r138",
+   "anchor": "DayLocator.__init__",
+   "kind": "doc",
+   "line": 1714
+  },
+  {
+   "id": "r139",
+   "anchor": "DayLocator.__init__#if:bymonthday is None/elif:isinstance(bymonthday, np.ndarray)/assign:bymonthday",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r140",
+   "anchor": "HourLocator",
+   "kind": "doc",
+   "line": 1736
+  },
+  {
+   "id": "r141",
+   "anchor": "HourLocator.__init__",
+   "kind": "doc",
+   "line": 1740
+  },
+  {
+   "id": "r142",
+   "anchor": "MinuteLocator",
+   "kind": "doc",
+   "line": 1756
+  },
+  {
+   "id": "r143",
+   "anchor": "MinuteLocator.__init__",
+   "kind": "doc",
+   "line": 1760
+  },
+  {
+   "id": "r144",
+   "anchor": "SecondLocator",
+   "kind": "doc",
+   "line": 1776
+  },
+  {
+   "id": "r145",
+   "anchor": "SecondLocator.__init__",
+   "kind": "doc",
+   "line": 1780
+  },
+  {
+   "id": "r146",
+   "anchor": "MicrosecondLocator",
+   "kind": "doc",
+   "line": 1796
+  },
+  {
+   "id": "r147",
+   "anchor": "MicrosecondLocator.__init__",
+   "kind": "doc",
+   "line": 1815
+  },
+  {
+   "id": "r148",
+   "anchor": "MicrosecondLocator.__call__#try",
+   "kind": "lead",
+   "line": 1839
+  },
+  {
+   "id": "r149",
+   "anchor": "MicrosecondLocator._get_unit",
+   "kind": "doc",
+   "line": 1854
+  },
+  {
+   "id": "r150",
+   "anchor": "MicrosecondLocator._get_interval",
+   "kind": "doc",
+   "line": 1861
+  },
+  {
+   "id": "r151",
+   "anchor": "epoch2num",
+   "kind": "doc",
+   "line": 1868
+  },
+  {
+   "id": "r152",
+   "anchor": "num2epoch",
+   "kind": "doc",
+   "line": 1876
+  },
+  {
+   "id": "r153",
+   "anchor": "mx2num",
+   "kind": "doc",
+   "line": 1883
+  },
+  {
+   "id": "r154",
+   "anchor": "date_ticker_factory",
+   "kind": "doc",
+   "line": 1899
+  },
+  {
+   "id": "r155",
+   "anchor": "date_ticker_factory#assign:months",
+   "kind": "trail",
+   "line": 1912
+  },
+  {
+   "id": "r156",
+   "anchor": "date_ticker_factory#assign:years",
+   "kind": "trail",
+   "line": 1913
+  },
+  {
+   "id": "r157",
+   "anchor": "date_ticker_factory#if:years>numticks/assign:locator",
+   "kind": "trail",
+   "line": 1916
+  },
+  {
+   "id": "r158",
+   "anchor": "seconds",
+   "kind": "doc",
+   "line": 1942
+  },
+  {
+   "id": "r159",
+   "anchor": "minutes",
+   "kind": "doc",
+   "line": 1950
+  },
+  {
+   "id": "r160",
+   "anchor": "hours",
+   "kind": "doc",
+   "line": 1958
+  },
+  {
+   "id": "r161",
+   "anchor": "weeks",
+   "kind": "doc",
+   "line": 1966
+  },
+  {
+   "id": "r162",
+   "anchor": "DateConverter",
+   "kind": "doc",
+   "line": 1973
+  },
+  {
+   "id": "r163",
+   "anchor": "DateConverter.axisinfo",
+   "kind": "doc",
+   "line": 1983
+  },
+  {
+   "id": "r164",
+   "anchor": "DateConverter.convert",
+   "kind": "doc",
+   "line": 2001
+  },
+  {
+   "id": "r165",
+   "anchor": "DateConverter.default_units",
+   "kind": "doc",
+   "line": 2011
+  },
+  {
+   "id": "r166",
+   "anchor": "ConciseDateConverter",
+   "kind": "doc",
+   "line": 2030
+  },
+  {
+   "id": "r167",
+   "anchor": "ConciseDateConverter.axisinfo",
+   "kind": "doc",
+   "line": 2047
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 47154,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14387,
+  "thinking_tokens": 6596,
+  "opus_cost_usd": 0.8355065,
+  "total_cost_usd": 0.8729085000000001,
+  "duration_ms": 122810,
+  "duration_api_ms": 124167,
+  "num_turns": 2
+ },
+ "wall_ms": 123896,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

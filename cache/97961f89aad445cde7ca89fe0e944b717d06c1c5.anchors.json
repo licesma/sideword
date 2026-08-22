@@ -1,0 +1,421 @@
+{
+ "blob_sha": "97961f89aad445cde7ca89fe0e944b717d06c1c5",
+ "path": "django/http/multipartparser.py",
+ "repo": "django/django",
+ "records": 66,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "InputStreamExhausted",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r3",
+   "anchor": "MultiPartParser",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r4",
+   "anchor": "MultiPartParser.__init__",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "MultiPartParser.__init__#assign:content_type",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r6",
+   "anchor": "MultiPartParser.__init__#assign:ctypes, opts",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r7",
+   "anchor": "MultiPartParser.__init__#try",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r8",
+   "anchor": "MultiPartParser.__init__#if:content_length<0/raise:MultiPartParserError",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "MultiPartParser.__init__#assign:possible_sizes",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r10",
+   "anchor": "MultiPartParser.parse",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r11",
+   "anchor": "MultiPartParser.parse#if:self._content_length==0",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r12",
+   "anchor": "MultiPartParser.parse#for:handler in handlers",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r13",
+   "anchor": "MultiPartParser.parse#for:handler in handlers/if:result is not None",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r14",
+   "anchor": "MultiPartParser.parse#assign:self._post",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r15",
+   "anchor": "MultiPartParser.parse#assign:stream",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r16",
+   "anchor": "MultiPartParser.parse#assign:old_field_name",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r17",
+   "anchor": "MultiPartParser.parse#assign:num_bytes_read",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r18",
+   "anchor": "MultiPartParser.parse#assign:num_post_keys",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r19",
+   "anchor": "MultiPartParser.parse#assign:read_size",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r20",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:old_field_name/call:self.handle_file_complete",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r21",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/assign:num_post_keys",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r22",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/if:settings.DATA_UPLOAD_MAX_MEMORY_SIZE is not None",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r23",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/if:transfer_encoding=='base64'",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r24",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/assign:num_bytes_read",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r25",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/assign:file_name",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r26",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/try/for:chunk in field_stream/if:transfer_encoding=='base64'/assign:stripped_chunk",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r27",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/try/for:chunk in field_stream/if:transfer_encoding=='base64'/try/except:Exception/assign:msg",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r28",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/try/for:chunk in field_stream/for:i, handler in enumerate(handlers)/if:chunk is None/break",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r29",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/try/except:SkipFile/call:exhaust",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r30",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/elif:item_type==FILE/try/else/assign:old_field_name",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r31",
+   "anchor": "MultiPartParser.parse#try/for:item_type, meta_data, field_stream in Parser(stream, self._boundary)/if:item_type==FIELD/else/call:exhaust",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r32",
+   "anchor": "MultiPartParser.parse#try/else/call:exhaust",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r33",
+   "anchor": "MultiPartParser.parse#for:handler in handlers",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r34",
+   "anchor": "MultiPartParser.handle_file_complete",
+   "kind": "doc",
+   "line": 293
+  },
+  {
+   "id": "r35",
+   "anchor": "MultiPartParser.handle_file_complete#for:i, handler in enumerate(self._upload_handlers)/if:file_obj/call:self._files.appendlist",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r36",
+   "anchor": "MultiPartParser.IE_sanitize",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r37",
+   "anchor": "MultiPartParser._close_files#for:handler in self._upload_handlers",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r38",
+   "anchor": "LazyStream",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r39",
+   "anchor": "LazyStream.__init__",
+   "kind": "doc",
+   "line": 325
+  },
+  {
+   "id": "r40",
+   "anchor": "LazyStream.read.parts#if:remaining is None",
+   "kind": "lead",
+   "line": 347
+  },
+  {
+   "id": "r41",
+   "anchor": "LazyStream.read.parts#while:remaining!=0",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r42",
+   "anchor": "LazyStream.__next__",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r43",
+   "anchor": "LazyStream.close",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r44",
+   "anchor": "LazyStream.unget",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r45",
+   "anchor": "LazyStream._update_unget_history",
+   "kind": "doc",
+   "line": 412
+  },
+  {
+   "id": "r46",
+   "anchor": "ChunkIter",
+   "kind": "doc",
+   "line": 434
+  },
+  {
+   "id": "r47",
+   "anchor": "InterBoundaryIter",
+   "kind": "doc",
+   "line": 458
+  },
+  {
+   "id": "r48",
+   "anchor": "BoundaryIter",
+   "kind": "doc",
+   "line": 476
+  },
+  {
+   "id": "r49",
+   "anchor": "BoundaryIter.__init__#assign:self._rollback",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r50",
+   "anchor": "BoundaryIter.__init__#assign:unused_char",
+   "kind": "lead",
+   "line": 498
+  },
+  {
+   "id": "r51",
+   "anchor": "BoundaryIter.__next__#if:boundary/else/if:not chunk[:-rollback]",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r52",
+   "anchor": "BoundaryIter.__next__#if:boundary/else/if:not chunk[:-rollback]",
+   "kind": "trail",
+   "line": 539
+  },
+  {
+   "id": "r53",
+   "anchor": "BoundaryIter.__next__#if:boundary/else/if:not chunk[:-rollback]/assign:self._done",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r54",
+   "anchor": "BoundaryIter._find_boundary",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r55",
+   "anchor": "BoundaryIter._find_boundary#if:index<0/else/assign:last",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r56",
+   "anchor": "exhaust",
+   "kind": "doc",
+   "line": 573
+  },
+  {
+   "id": "r57",
+   "anchor": "parse_boundary_stream",
+   "kind": "doc",
+   "line": 592
+  },
+  {
+   "id": "r58",
+   "anchor": "parse_boundary_stream#assign:chunk",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r59",
+   "anchor": "parse_boundary_stream#assign:header_end",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r60",
+   "anchor": "parse_boundary_stream#if:header_end==-1/call:stream.unget",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r61",
+   "anchor": "parse_boundary_stream#call:stream.unget",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r62",
+   "anchor": "parse_boundary_stream#for:line in header.split(b'\\r\\n')",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r63",
+   "anchor": "parse_boundary_stream#for:line in header.split(b'\\r\\n')/try",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r64",
+   "anchor": "Parser.__iter__#for:sub_stream in boundarystream/yield",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r65",
+   "anchor": "parse_header",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r66",
+   "anchor": "parse_header#for:p in plist/if:i>=0/if:name.endswith('*')/assign:name",
+   "kind": "lead",
+   "line": 681
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16911,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7095,
+  "thinking_tokens": 3379,
+  "opus_cost_usd": 0.3507765,
+  "total_cost_usd": 0.3630875,
+  "duration_ms": 63497,
+  "duration_api_ms": 65025,
+  "num_turns": 2
+ },
+ "wall_ms": 64354,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

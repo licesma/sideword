@@ -1,0 +1,37 @@
+{
+ "blob_sha": "f80fa8834e6a801f85d690ab769689cf4c124fff",
+ "path": "django/core/management/commands/createcachetable.py",
+ "repo": "django/django",
+ "records": 2,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#if:len(tablenames)/for:tablename in tablenames",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.create_table#assign:fields/item:models.CharField(name='cache_key', max_length=255, unique=True, primary_key=True)",
+   "kind": "lead",
+   "line": 60
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5093,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 335,
+  "thinking_tokens": 123,
+  "opus_cost_usd": 0.0635965,
+  "total_cost_usd": 0.0661885,
+  "duration_ms": 5237,
+  "duration_api_ms": 6204,
+  "num_turns": 2
+ },
+ "wall_ms": 6173,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

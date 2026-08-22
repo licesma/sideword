@@ -1,0 +1,277 @@
+{
+ "blob_sha": "9551bfadeb4b78668e426cfb78f0ba8f6f20e7bd",
+ "path": "astropy/coordinates/angles.py",
+ "repo": "astropy/astropy",
+ "records": 42,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "hms_tuple",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "Angle",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r5",
+   "anchor": "Angle.__new__#if:not isinstance(angle, u.Quantity)/elif:isinstance(angle, str)/if:angle_unit is not unit/assign:angle",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r6",
+   "anchor": "Angle._tuple_to_float",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r7",
+   "anchor": "Angle._tuple_to_float#if:unit == u.hourangle",
+   "kind": "todo",
+   "line": 151
+  },
+  {
+   "id": "r8",
+   "anchor": "Angle.hour",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r9",
+   "anchor": "Angle.hms",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r10",
+   "anchor": "Angle.dms",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r11",
+   "anchor": "Angle.signed_dms",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r12",
+   "anchor": "Angle.to_string",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r13",
+   "anchor": "Angle.to_string#assign:separators[\"latex_inline\"]",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r14",
+   "anchor": "Angle.to_string#assign:separators[None]",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r15",
+   "anchor": "Angle.to_string#if:not decimal and (unit_is_deg := unit == u.degree or unit == u.hourangle)",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r16",
+   "anchor": "Angle.to_string#if:not decimal and (unit_is_deg := unit == u.degree or unit == u.hourangle)/if:sep == \"fromunit\"",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r17",
+   "anchor": "Angle.to_string#if:not decimal and (unit_is_deg := unit == u.degree or unit == u.hourangle)/else/if:not (decimal and format is None)",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r18",
+   "anchor": "Angle.to_string#if:not decimal and (unit_is_deg := unit == u.degree or unit == u.hourangle)/else/if:not (decimal and format is None)/if:format == \"latex\" or format == \"latex_inline\"/if:\"^\" in unit_string",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r19",
+   "anchor": "Angle.to_string#if:not decimal and (unit_is_deg := unit == u.degree or unit == u.hourangle)/else/if:not (decimal and format is None)/if:format == \"latex\" or format == \"latex_inline\"/elif:len(unit_string) > 1/assign:unit_string",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r20",
+   "anchor": "Angle.to_string.do_format#if:not np.isnan(val)",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r21",
+   "anchor": "Angle._wrap_at",
+   "kind": "doc",
+   "line": 356
+  },
+  {
+   "id": "r22",
+   "anchor": "Angle._wrap_at#assign:a360",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r23",
+   "anchor": "Angle._wrap_at#with:np.errstate(invalid=\"ignore\")",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r24",
+   "anchor": "Angle._wrap_at#if:np.any(valid)/assign:self_angle[self_angle >= wrap_angle]",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r25",
+   "anchor": "Angle.wrap_at",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r26",
+   "anchor": "Angle.wrap_at#assign:wrap_angle",
+   "kind": "trail",
+   "line": 421
+  },
+  {
+   "id": "r27",
+   "anchor": "Angle.is_within_bounds",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r28",
+   "anchor": "_no_angle_subclass",
+   "kind": "doc",
+   "line": 483
+  },
+  {
+   "id": "r29",
+   "anchor": "Latitude",
+   "kind": "doc",
+   "line": 495
+  },
+  {
+   "id": "r30",
+   "anchor": "Latitude.__new__#if:isinstance(angle, Longitude)",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r31",
+   "anchor": "Latitude._validate_angles",
+   "kind": "doc",
+   "line": 550
+  },
+  {
+   "id": "r32",
+   "anchor": "Latitude._validate_angles#if:angles is None",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r33",
+   "anchor": "Latitude._validate_angles#if:angles.unit is u.deg",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r34",
+   "anchor": "Latitude._validate_angles#assign:angles_view",
+   "kind": "lead",
+   "line": 576
+  },
+  {
+   "id": "r35",
+   "anchor": "Latitude.__setitem__#if:isinstance(value, Longitude)",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r36",
+   "anchor": "Latitude.__setitem__#if:value is not np.ma.masked",
+   "kind": "lead",
+   "line": 589
+  },
+  {
+   "id": "r37",
+   "anchor": "Latitude.__array_ufunc__",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r38",
+   "anchor": "Longitude",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r39",
+   "anchor": "Longitude.__new__#if:isinstance(angle, Latitude)",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r40",
+   "anchor": "Longitude.__new__#assign:self.wrap_angle",
+   "kind": "trail",
+   "line": 670
+  },
+  {
+   "id": "r41",
+   "anchor": "Longitude.__setitem__#if:isinstance(value, Latitude)",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r42",
+   "anchor": "Longitude.__array_ufunc__",
+   "kind": "lead",
+   "line": 694
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17575,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4836,
+  "thinking_tokens": 2725,
+  "opus_cost_usd": 0.30094150000000003,
+  "total_cost_usd": 0.31361350000000005,
+  "duration_ms": 43632,
+  "duration_api_ms": 45559,
+  "num_turns": 2
+ },
+ "wall_ms": 44430,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

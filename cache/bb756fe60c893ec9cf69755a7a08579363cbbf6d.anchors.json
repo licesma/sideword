@@ -1,0 +1,283 @@
+{
+ "blob_sha": "bb756fe60c893ec9cf69755a7a08579363cbbf6d",
+ "path": "django/utils/cache.py",
+ "repo": "django/django",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "patch_cache_control",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "patch_cache_control#if:response.get('Cache-Control')/for:field in cc_delim_re.split(response.headers['Cache-Control'])/if:directive=='no-cache'/call:cc[directive].add",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "patch_cache_control#if:'max-age' in cc and 'max_age' in kwargs",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "patch_cache_control#if:'private' in cc and 'public' in kwargs",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r6",
+   "anchor": "patch_cache_control#for:(k, v) in kwargs.items()/if:directive == 'no-cache'/call:cc[directive].add",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r7",
+   "anchor": "patch_cache_control#for:directive, values in cc.items()/if:isinstance(values, set)/if:True in values/assign:values",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "get_max_age",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r9",
+   "anchor": "_not_modified#if:response/for:header in ('Cache-Control', 'Content-Location', 'Date', 'ETag', 'Expires', 'Last-Modified', 'Vary')",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "_not_modified#if:response/assign:new_response.cookies",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r11",
+   "anchor": "get_conditional_response#if:response and not (200 <= response.status_code < 300)",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r12",
+   "anchor": "get_conditional_response#assign:if_match_etags",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r13",
+   "anchor": "get_conditional_response#if:if_match_etags and not _if_match_passes(etag, if_match_etags)",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r14",
+   "anchor": "get_conditional_response#if:not if_match_etags and if_unmodified_since and not _if_unmodified_since_passes(last_modified, if_unmodified_since)",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r15",
+   "anchor": "get_conditional_response#if:if_none_match_etags and not _if_none_match_passes(etag, if_none_match_etags)",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r16",
+   "anchor": "get_conditional_response#if:not if_none_match_etags and if_modified_since and not _if_modified_since_passes(last_modified, if_modified_since) and request.method in ('GET', 'HEAD')",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r17",
+   "anchor": "get_conditional_response#return",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r18",
+   "anchor": "_if_match_passes",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r19",
+   "anchor": "_if_match_passes#if:not target_etag/return",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r20",
+   "anchor": "_if_match_passes#if:not target_etag/elif:etags == ['*']/return",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r21",
+   "anchor": "_if_match_passes#if:not target_etag/elif:target_etag.startswith('W/')/return",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r22",
+   "anchor": "_if_match_passes#if:not target_etag/else/return",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r23",
+   "anchor": "_if_unmodified_since_passes",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r24",
+   "anchor": "_if_none_match_passes",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r25",
+   "anchor": "_if_none_match_passes#if:not target_etag/return",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r26",
+   "anchor": "_if_none_match_passes#if:not target_etag/elif:etags == ['*']/return",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r27",
+   "anchor": "_if_none_match_passes#if:not target_etag/else/assign:target_etag",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r28",
+   "anchor": "_if_modified_since_passes",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r29",
+   "anchor": "patch_response_headers",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r30",
+   "anchor": "patch_response_headers#if:cache_timeout < 0/assign:cache_timeout",
+   "kind": "trail",
+   "line": 264
+  },
+  {
+   "id": "r31",
+   "anchor": "add_never_cache_headers",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r32",
+   "anchor": "patch_vary_headers",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r33",
+   "anchor": "patch_vary_headers#if:response.has_header('Vary')",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r34",
+   "anchor": "patch_vary_headers#assign:existing_headers",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r35",
+   "anchor": "has_vary_header",
+   "kind": "doc",
+   "line": 303
+  },
+  {
+   "id": "r36",
+   "anchor": "_i18n_cache_key_suffix",
+   "kind": "doc",
+   "line": 314
+  },
+  {
+   "id": "r37",
+   "anchor": "_i18n_cache_key_suffix#if:settings.USE_I18N/assign:cache_key",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r38",
+   "anchor": "_generate_cache_key",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r39",
+   "anchor": "_generate_cache_header_key",
+   "kind": "doc",
+   "line": 339
+  },
+  {
+   "id": "r40",
+   "anchor": "get_cache_key",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r41",
+   "anchor": "learn_cache_key",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r42",
+   "anchor": "learn_cache_key#if:response.has_header('Vary')/assign:headerlist",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r43",
+   "anchor": "learn_cache_key#if:response.has_header('Vary')/else/call:cache.set",
+   "kind": "lead",
+   "line": 406
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12565,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4145,
+  "thinking_tokens": 1979,
+  "opus_cost_usd": 0.23356649999999998,
+  "total_cost_usd": 0.24238549999999998,
+  "duration_ms": 37174,
+  "duration_api_ms": 38363,
+  "num_turns": 2
+ },
+ "wall_ms": 40744,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

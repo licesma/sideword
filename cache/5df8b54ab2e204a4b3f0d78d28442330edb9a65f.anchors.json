@@ -1,0 +1,337 @@
+{
+ "blob_sha": "5df8b54ab2e204a4b3f0d78d28442330edb9a65f",
+ "path": "django/contrib/gis/gdal/srs.py",
+ "repo": "django/django",
+ "records": 52,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "SpatialReference",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r3",
+   "anchor": "SpatialReference.__init__",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r4",
+   "anchor": "SpatialReference.__init__#if:srs_type=='wkt'/elif:isinstance(srs_input, str)/try/assign:srid",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r5",
+   "anchor": "SpatialReference.__init__#if:srs_type=='wkt'/elif:isinstance(srs_input, int)/assign:srs_type",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r6",
+   "anchor": "SpatialReference.__init__#if:srs_type=='ogr'/assign:srs",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r7",
+   "anchor": "SpatialReference.__init__#if:srs_type=='ogr'/else/assign:buf",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r8",
+   "anchor": "SpatialReference.__init__#if:not srs",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r9",
+   "anchor": "SpatialReference.__init__#if:srs_type=='user'",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "SpatialReference.__getitem__",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r11",
+   "anchor": "SpatialReference.__str__",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r12",
+   "anchor": "SpatialReference.attr_value",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r13",
+   "anchor": "SpatialReference.attr_value",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r14",
+   "anchor": "SpatialReference.auth_name",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r15",
+   "anchor": "SpatialReference.auth_code",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r16",
+   "anchor": "SpatialReference.clone",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r17",
+   "anchor": "SpatialReference.from_esri",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r18",
+   "anchor": "SpatialReference.identify_epsg",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r19",
+   "anchor": "SpatialReference.to_esri",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r20",
+   "anchor": "SpatialReference.validate",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r21",
+   "anchor": "SpatialReference.name",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r22",
+   "anchor": "SpatialReference.name",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r23",
+   "anchor": "SpatialReference.srid",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r24",
+   "anchor": "SpatialReference.linear_name",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r25",
+   "anchor": "SpatialReference.linear_name",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r26",
+   "anchor": "SpatialReference.linear_units",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r27",
+   "anchor": "SpatialReference.angular_name",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r28",
+   "anchor": "SpatialReference.angular_units",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r29",
+   "anchor": "SpatialReference.units",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r30",
+   "anchor": "SpatialReference.ellipsoid",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r31",
+   "anchor": "SpatialReference.ellipsoid",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r32",
+   "anchor": "SpatialReference.semi_major",
+   "kind": "doc",
+   "line": 257
+  },
+  {
+   "id": "r33",
+   "anchor": "SpatialReference.semi_minor",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r34",
+   "anchor": "SpatialReference.inverse_flattening",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r35",
+   "anchor": "SpatialReference.geographic",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r36",
+   "anchor": "SpatialReference.geographic",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r37",
+   "anchor": "SpatialReference.local",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r38",
+   "anchor": "SpatialReference.projected",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r39",
+   "anchor": "SpatialReference.import_epsg",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r40",
+   "anchor": "SpatialReference.import_epsg",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r41",
+   "anchor": "SpatialReference.import_proj",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r42",
+   "anchor": "SpatialReference.import_user_input",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r43",
+   "anchor": "SpatialReference.import_wkt",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r44",
+   "anchor": "SpatialReference.import_xml",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r45",
+   "anchor": "SpatialReference.wkt",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r46",
+   "anchor": "SpatialReference.wkt",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r47",
+   "anchor": "SpatialReference.pretty_wkt",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r48",
+   "anchor": "SpatialReference.proj",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r49",
+   "anchor": "SpatialReference.proj4",
+   "kind": "doc",
+   "line": 331
+  },
+  {
+   "id": "r50",
+   "anchor": "SpatialReference.xml",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r51",
+   "anchor": "CoordTransform",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r52",
+   "anchor": "CoordTransform.__init__",
+   "kind": "doc",
+   "line": 345
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11435,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2873,
+  "thinking_tokens": 776,
+  "opus_cost_usd": 0.19046649999999998,
+  "total_cost_usd": 0.19832149999999998,
+  "duration_ms": 24222,
+  "duration_api_ms": 25264,
+  "num_turns": 2
+ },
+ "wall_ms": 25267,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

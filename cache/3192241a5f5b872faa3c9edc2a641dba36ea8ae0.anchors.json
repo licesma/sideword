@@ -1,0 +1,55 @@
+{
+ "blob_sha": "3192241a5f5b872faa3c9edc2a641dba36ea8ae0",
+ "path": "django/core/management/commands/dumpdata.py",
+ "repo": "django/django",
+ "records": 5,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#if:len(app_labels)==0/else/for:label in app_labels/try/if:app_list_value is not None",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle#if:len(app_labels)==0/else/for:label in app_labels/try/except:ValueError/assign:app_label",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle#if:format not in serializers.get_public_serializer_formats()",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle.get_objects",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.handle#try/if:output and self.stdout.isatty() and options['verbosity'] > 0",
+   "kind": "lead",
+   "line": 177
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6633,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 754,
+  "thinking_tokens": 393,
+  "opus_cost_usd": 0.0894715,
+  "total_cost_usd": 0.0934115,
+  "duration_ms": 8683,
+  "duration_api_ms": 9688,
+  "num_turns": 2
+ },
+ "wall_ms": 9673,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,133 @@
+{
+ "blob_sha": "6846b33d2ac36d2fd34493b7f8d5bf9dcbae1cc2",
+ "path": "django/core/management/commands/migrate.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#for:app_config in apps.get_app_configs()",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle#assign:db",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle#call:connection.prepare_database",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle#assign:executor",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.handle#call:executor.loader.check_consistent_history",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.handle#assign:conflicts",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.handle#assign:target_app_labels_only",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.handle#if:self.verbosity>=1",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.handle#if:run_syncdb",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.handle#if:self.verbosity>=1",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.handle#if:not plan/if:self.verbosity>=1/assign:autodetector",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.handle#with:post_migrate_apps.bulk_update()",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.handle#call:emit_post_migrate_signal",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.sync_apps",
+   "kind": "doc",
+   "line": 261
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.sync_apps#try/assign:tables",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.sync_apps#try/assign:all_models",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.sync_apps.model_installed#return",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.sync_apps#try/if:self.verbosity>=1",
+   "kind": "lead",
+   "line": 293
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9621,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1474,
+  "thinking_tokens": 617,
+  "opus_cost_usd": 0.1373515,
+  "total_cost_usd": 0.14366449999999997,
+  "duration_ms": 14553,
+  "duration_api_ms": 15783,
+  "num_turns": 2
+ },
+ "wall_ms": 15530,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

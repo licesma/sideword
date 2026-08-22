@@ -1,0 +1,217 @@
+{
+ "blob_sha": "728e449703c977f128eea1fe3694a82283dacf6d",
+ "path": "django/core/handlers/base.py",
+ "repo": "django/django",
+ "records": 32,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BaseHandler.load_middleware",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseHandler.load_middleware#for:middleware_path in reversed(settings.MIDDLEWARE)/try/assign:adapted_handler",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseHandler.load_middleware#for:middleware_path in reversed(settings.MIDDLEWARE)/if:hasattr(mw_instance, 'process_exception')/call:self._exception_middleware.append",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseHandler.load_middleware#assign:handler",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseHandler.load_middleware#assign:self._middleware_chain",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseHandler.adapt_method_mode",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseHandler.get_response",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseHandler.get_response#call:set_urlconf",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseHandler.get_response_async",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseHandler.get_response_async#call:set_urlconf",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseHandler._get_response",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseHandler._get_response#for:middleware_method in self._view_middleware",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseHandler._get_response#if:response is None/if:asyncio.iscoroutinefunction(wrapped_callback)",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseHandler._get_response#call:self.check_response",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseHandler._get_response#if:hasattr(response, 'render') and callable(response.render)",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseHandler._get_response#if:hasattr(response, 'render') and callable(response.render)/for:middleware_method in self._template_response_middleware/call:self.check_response",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseHandler._get_response_async",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseHandler._get_response_async#for:middleware_method in self._view_middleware",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseHandler._get_response_async#if:response is None/if:not asyncio.iscoroutinefunction(wrapped_callback)",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseHandler._get_response_async#call:self.check_response",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseHandler._get_response_async#if:hasattr(response, 'render') and callable(response.render)",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseHandler._get_response_async#if:hasattr(response, 'render') and callable(response.render)/for:middleware_method in self._template_response_middleware/call:self.check_response",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseHandler._get_response_async#if:asyncio.iscoroutine(response)",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseHandler.resolve_request",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseHandler.resolve_request#if:hasattr(request, 'urlconf')",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseHandler.resolve_request#assign:resolver_match",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseHandler.check_response",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseHandler.check_response#if:not name/if:isinstance(callback, types.FunctionType)",
+   "kind": "trail",
+   "line": 301
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseHandler.check_response#if:not name/if:isinstance(callback, types.FunctionType)/else",
+   "kind": "trail",
+   "line": 303
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseHandler.make_view_atomic",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseHandler.process_exception_by_middleware",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r32",
+   "anchor": "reset_urlconf",
+   "kind": "doc",
+   "line": 345
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9943,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3540,
+  "thinking_tokens": 1781,
+  "opus_cost_usd": 0.1922215,
+  "total_cost_usd": 0.1988355,
+  "duration_ms": 32956,
+  "duration_api_ms": 34068,
+  "num_turns": 2
+ },
+ "wall_ms": 34003,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,91 @@
+{
+ "blob_sha": "729c484a6731b80efda459f80b737770e52cd702",
+ "path": "django/template/engine.py",
+ "repo": "django/django",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Engine.get_default",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r2",
+   "anchor": "Engine.get_default#import:django.template",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r3",
+   "anchor": "Engine.get_default#if:len(django_engines)==1/return",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r4",
+   "anchor": "Engine.find_template#for:loader in self.template_loaders/if:loader.supports_recursion/else/try",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r5",
+   "anchor": "Engine.from_string",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r6",
+   "anchor": "Engine.get_template",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r7",
+   "anchor": "Engine.get_template#if:not hasattr(template, 'render')/assign:template",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r8",
+   "anchor": "Engine.render_to_string",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r9",
+   "anchor": "Engine.render_to_string#if:isinstance(context, Context)",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r10",
+   "anchor": "Engine.select_template",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r11",
+   "anchor": "Engine.select_template#raise:TemplateDoesNotExist",
+   "kind": "lead",
+   "line": 199
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6736,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 937,
+  "thinking_tokens": 403,
+  "opus_cost_usd": 0.09507650000000001,
+  "total_cost_usd": 0.09908950000000001,
+  "duration_ms": 10621,
+  "duration_api_ms": 11650,
+  "num_turns": 2
+ },
+ "wall_ms": 11689,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

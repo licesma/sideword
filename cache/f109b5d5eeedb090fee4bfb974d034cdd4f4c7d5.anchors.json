@@ -1,0 +1,307 @@
+{
+ "blob_sha": "f109b5d5eeedb090fee4bfb974d034cdd4f4c7d5",
+ "path": "django/db/backends/sqlite3/introspection.py",
+ "repo": "django/django",
+ "records": 47,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "get_field_size",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "FlexibleFieldLookupDict",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "FlexibleFieldLookupDict.base_data_types_reverse",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseIntrospection.get_field_type#if:description.pk and field_type in {'BigIntegerField', 'IntegerField', 'SmallIntegerField'}/return",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseIntrospection.get_table_list",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseIntrospection.get_table_list#call:cursor.execute",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseIntrospection.get_table_description",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseIntrospection.get_relations",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseIntrospection.get_relations#assign:relations",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseIntrospection.get_relations#call:cursor.execute",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseIntrospection.get_relations#if:table_type == 'view'/return",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseIntrospection.get_relations#for:field_desc in results.split(',')",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseIntrospection.get_relations#for:field_desc in results.split(',')/if:field_desc.startswith(\"FOREIGN KEY\")/assign:m",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseIntrospection.get_key_columns",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseIntrospection.get_key_columns#call:cursor.execute",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseIntrospection.get_key_columns#for:field_index, field_desc in enumerate(results.split(','))",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r17",
+   "anchor": "DatabaseIntrospection.get_key_columns#for:field_index, field_desc in enumerate(results.split(','))/call:key_columns.append",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r18",
+   "anchor": "DatabaseIntrospection.get_primary_key_column",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r19",
+   "anchor": "DatabaseIntrospection.get_primary_key_column#call:cursor.execute",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r20",
+   "anchor": "DatabaseIntrospection.get_primary_key_column#if:table_type == 'view'/return",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r21",
+   "anchor": "DatabaseIntrospection._get_foreign_key_constraints#for:row in cursor.fetchall()/assign:id_, _, table, from_, to",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r22",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:token.match(sqlparse.tokens.Punctuation, '(')/elif:token.match(sqlparse.tokens.Punctuation, ')')/if:braces_deep < 0/break",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r23",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:token.match(sqlparse.tokens.Punctuation, '(')/elif:token.match(sqlparse.tokens.Punctuation, ')')/elif:braces_deep == 0 and token.match(sqlparse.tokens.Punctuation, ',')/break",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r24",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:is_constraint_definition is None",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r25",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:is_constraint_definition/if:constraint_name is None",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r26",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:is_constraint_definition/if:token.match(sqlparse.tokens.Keyword, 'UNIQUE')",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r27",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:is_constraint_definition/if:token.match(sqlparse.tokens.Keyword, 'UNIQUE')/elif:unique/if:unique_braces_deep == braces_deep/if:unique_columns/assign:unique",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r28",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:is_constraint_definition/else/if:field_name is None",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r29",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:token.match(sqlparse.tokens.Keyword, 'CHECK')",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r30",
+   "anchor": "DatabaseIntrospection._parse_column_or_constraint_definition#for:token in tokens/if:token.match(sqlparse.tokens.Keyword, 'CHECK')/elif:check/if:check_braces_deep == braces_deep/if:check_columns/assign:check",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r31",
+   "anchor": "DatabaseIntrospection._parse_table_constraints#assign:statement",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r32",
+   "anchor": "DatabaseIntrospection._parse_table_constraints#for:token in tokens",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r33",
+   "anchor": "DatabaseIntrospection._parse_table_constraints#while:True",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r34",
+   "anchor": "DatabaseIntrospection.get_constraints",
+   "kind": "doc",
+   "line": 361
+  },
+  {
+   "id": "r35",
+   "anchor": "DatabaseIntrospection.get_constraints#try",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r36",
+   "anchor": "DatabaseIntrospection.get_constraints#try/except:TypeError/pass",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r37",
+   "anchor": "DatabaseIntrospection.get_constraints#call:cursor.execute",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r38",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/assign:number, index, unique",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r39",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/assign:sql",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r40",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/if:not sql",
+   "kind": "lead",
+   "line": 399
+  },
+  {
+   "id": "r41",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/if:not sql/continue",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r42",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/call:cursor.execute",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r43",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/if:constraints[index]['index']",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r44",
+   "anchor": "DatabaseIntrospection.get_constraints#for:row in cursor.fetchall()/if:constraints[index]['index']/assign:constraints[index]['type']",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r45",
+   "anchor": "DatabaseIntrospection.get_constraints#assign:pk_column",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r46",
+   "anchor": "DatabaseIntrospection.get_constraints#if:pk_column/assign:constraints[\"__primary__\"]",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r47",
+   "anchor": "DatabaseIntrospection.get_constraints#if:pk_column/assign:constraints[\"__primary__\"]/key:unique",
+   "kind": "trail",
+   "line": 432
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13720,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6264,
+  "thinking_tokens": 3095,
+  "opus_cost_usd": 0.29809149999999995,
+  "total_cost_usd": 0.30762949999999994,
+  "duration_ms": 55366,
+  "duration_api_ms": 56572,
+  "num_turns": 2
+ },
+ "wall_ms": 56273,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

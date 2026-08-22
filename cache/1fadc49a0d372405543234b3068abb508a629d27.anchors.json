@@ -1,0 +1,151 @@
+{
+ "blob_sha": "1fadc49a0d372405543234b3068abb508a629d27",
+ "path": "lib/matplotlib/backends/_backend_gtk.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 21,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:gi.repository",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r3",
+   "anchor": "_application",
+   "kind": "trail",
+   "line": 28
+  },
+  {
+   "id": "r4",
+   "anchor": "_shutdown_application#for:win in app.get_windows()",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "_shutdown_application#assign:app._created_by_matplotlib",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r6",
+   "anchor": "_create_application#if:_application is None/if:app is None or getattr(app, '_created_by_matplotlib', False)/if:not mpl._c_internal_utils.display_is_valid()",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r7",
+   "anchor": "_create_application#if:_application is None/if:app is None or getattr(app, '_created_by_matplotlib', False)/call:_application.connect",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r8",
+   "anchor": "TimerGTK",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r9",
+   "anchor": "TimerGTK._timer_start#call:self._timer_stop",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r10",
+   "anchor": "TimerGTK._timer_set_interval#if:self._timer is not None",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r11",
+   "anchor": "TimerGTK._on_timer#if:self.callbacks and not self._single",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r12",
+   "anchor": "_FigureManagerGTK",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r13",
+   "anchor": "_FigureManagerGTK.__init__#assign:w, h",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r14",
+   "anchor": "_FigureManagerGTK.destroy#if:self._destroying/return",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r15",
+   "anchor": "_FigureManagerGTK.start_main_loop#try/call:_application.run",
+   "kind": "trail",
+   "line": 207
+  },
+  {
+   "id": "r16",
+   "anchor": "_FigureManagerGTK.start_main_loop#try/except:KeyboardInterrupt/assign:context",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r17",
+   "anchor": "_FigureManagerGTK.start_main_loop#try/finally/assign:_application",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r18",
+   "anchor": "_FigureManagerGTK.show#call:self.window.show",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r19",
+   "anchor": "_FigureManagerGTK.show#if:mpl.rcParams[\"figure.raise_window\"]/if:getattr(self.window, meth_name)()/else/call:_api.warn_external",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r20",
+   "anchor": "_FigureManagerGTK.resize#if:self._gtk_ver >= 4 or canvas_size.width == canvas_size.height == 1/call:self.window.set_default_size",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r21",
+   "anchor": "_NavigationToolbar2GTK.set_message",
+   "kind": "lead",
+   "line": 273
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9726,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2413,
+  "thinking_tokens": 1239,
+  "opus_cost_usd": 0.1618765,
+  "total_cost_usd": 0.16826850000000002,
+  "duration_ms": 23450,
+  "duration_api_ms": 24437,
+  "num_turns": 2
+ },
+ "wall_ms": 24269,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

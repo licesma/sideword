@@ -1,0 +1,55 @@
+{
+ "blob_sha": "49b47961a1b447b888904f346d7bcaca87dd6e8e",
+ "path": "django/db/backends/mysql/compiler.py",
+ "repo": "django/django",
+ "records": 5,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SQLDeleteCompiler.as_sql#assign:where, having",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r2",
+   "anchor": "SQLDeleteCompiler.as_sql#if:self.single_alias or having/return",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "SQLUpdateCompiler.as_sql#if:self.query.order_by",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r4",
+   "anchor": "SQLUpdateCompiler.as_sql#if:self.query.order_by/try/for:resolved, (sql, params, _) in self.get_order_by()/if:isinstance(resolved.expression, Col) and resolved.expression.alias != db_table/raise:FieldError",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "SQLUpdateCompiler.as_sql#if:self.query.order_by/try/except:FieldError/pass",
+   "kind": "lead",
+   "line": 66
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4825,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 775,
+  "thinking_tokens": 361,
+  "opus_cost_usd": 0.0719165,
+  "total_cost_usd": 0.0741935,
+  "duration_ms": 8000,
+  "duration_api_ms": 9103,
+  "num_turns": 2
+ },
+ "wall_ms": 8991,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,397 @@
+{
+ "blob_sha": "aca3ce81943391befdb06113c867356e4bea861e",
+ "path": "versioneer.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 62,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "get_root#assign:root",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r4",
+   "anchor": "get_root#if:not (os.path.exists(setup_py) or os.path.exists(versioneer_py))/assign:root",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r5",
+   "anchor": "get_root#try/assign:me",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r6",
+   "anchor": "get_config_from_root#assign:setup_cfg",
+   "kind": "lead",
+   "line": 398
+  },
+  {
+   "id": "r7",
+   "anchor": "LONG_VERSION_PY",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r8",
+   "anchor": "register_vcs_handler",
+   "kind": "trail",
+   "line": 432
+  },
+  {
+   "id": "r9",
+   "anchor": "run_command#for:c in commands/try/assign:p",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r10",
+   "anchor": "git_get_keywords#assign:keywords",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r11",
+   "anchor": "git_versions_from_keywords#assign:TAG",
+   "kind": "lead",
+   "line": 971
+  },
+  {
+   "id": "r12",
+   "anchor": "git_versions_from_keywords#if:not tags/assign:tags",
+   "kind": "lead",
+   "line": 981
+  },
+  {
+   "id": "r13",
+   "anchor": "git_versions_from_keywords#for:ref in sorted(tags)/if:ref.startswith(tag_prefix)",
+   "kind": "lead",
+   "line": 988
+  },
+  {
+   "id": "r14",
+   "anchor": "git_versions_from_keywords#if:verbose",
+   "kind": "lead",
+   "line": 997
+  },
+  {
+   "id": "r15",
+   "anchor": "git_pieces_from_vcs#if:not os.path.exists(os.path.join(root, \".git\"))",
+   "kind": "lead",
+   "line": 1011
+  },
+  {
+   "id": "r16",
+   "anchor": "git_pieces_from_vcs#assign:describe_out",
+   "kind": "lead",
+   "line": 1021
+  },
+  {
+   "id": "r17",
+   "anchor": "git_pieces_from_vcs#if:describe_out is None",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r18",
+   "anchor": "git_pieces_from_vcs#assign:pieces[\"short\"]",
+   "kind": "trail",
+   "line": 1035
+  },
+  {
+   "id": "r19",
+   "anchor": "git_pieces_from_vcs#assign:git_describe",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r20",
+   "anchor": "git_pieces_from_vcs#assign:dirty",
+   "kind": "lead",
+   "line": 1043
+  },
+  {
+   "id": "r21",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe",
+   "kind": "lead",
+   "line": 1050
+  },
+  {
+   "id": "r22",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/assign:mo",
+   "kind": "lead",
+   "line": 1052
+  },
+  {
+   "id": "r23",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/if:not mo/assign:pieces[\"error\"]",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r24",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/assign:full_tag",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r25",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/assign:pieces[\"distance\"]",
+   "kind": "lead",
+   "line": 1071
+  },
+  {
+   "id": "r26",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/assign:pieces[\"short\"]",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r27",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/else/assign:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1078
+  },
+  {
+   "id": "r28",
+   "anchor": "git_pieces_from_vcs#if:\"-\" in git_describe/else/assign:pieces[\"distance\"]",
+   "kind": "trail",
+   "line": 1081
+  },
+  {
+   "id": "r29",
+   "anchor": "versions_from_parentdir#assign:dirname",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r30",
+   "anchor": "render_pep440#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1188
+  },
+  {
+   "id": "r31",
+   "anchor": "render_pep440#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1188
+  },
+  {
+   "id": "r32",
+   "anchor": "render_pep440#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1197
+  },
+  {
+   "id": "r33",
+   "anchor": "render_pep440_pre#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1210
+  },
+  {
+   "id": "r34",
+   "anchor": "render_pep440_pre#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1210
+  },
+  {
+   "id": "r35",
+   "anchor": "render_pep440_pre#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r36",
+   "anchor": "render_pep440_post#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1229
+  },
+  {
+   "id": "r37",
+   "anchor": "render_pep440_post#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1229
+  },
+  {
+   "id": "r38",
+   "anchor": "render_pep440_post#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1239
+  },
+  {
+   "id": "r39",
+   "anchor": "render_pep440_old#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r40",
+   "anchor": "render_pep440_old#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r41",
+   "anchor": "render_pep440_old#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r42",
+   "anchor": "render_git_describe#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1273
+  },
+  {
+   "id": "r43",
+   "anchor": "render_git_describe#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1273
+  },
+  {
+   "id": "r44",
+   "anchor": "render_git_describe#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1279
+  },
+  {
+   "id": "r45",
+   "anchor": "render_git_describe_long#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r46",
+   "anchor": "render_git_describe_long#if:pieces[\"closest-tag\"]",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r47",
+   "anchor": "render_git_describe_long#if:pieces[\"closest-tag\"]/else/assign:rendered",
+   "kind": "lead",
+   "line": 1297
+  },
+  {
+   "id": "r48",
+   "anchor": "render#if:not style or style == \"default\"/assign:style",
+   "kind": "trail",
+   "line": 1311
+  },
+  {
+   "id": "r49",
+   "anchor": "get_versions#if:\"versioneer\" in sys.modules",
+   "kind": "lead",
+   "line": 1339
+  },
+  {
+   "id": "r50",
+   "anchor": "get_versions#if:\"versioneer\" in sys.modules/del:sys.modules[\"versioneer\"]",
+   "kind": "lead",
+   "line": 1341
+  },
+  {
+   "id": "r51",
+   "anchor": "get_versions#assign:get_keywords_f",
+   "kind": "lead",
+   "line": 1362
+  },
+  {
+   "id": "r52",
+   "anchor": "get_cmdclass#if:\"versioneer\" in sys.modules/del:sys.modules[\"versioneer\"]",
+   "kind": "post",
+   "line": 1415
+  },
+  {
+   "id": "r53",
+   "anchor": "get_cmdclass#import:distutils.core",
+   "kind": "lead",
+   "line": 1432
+  },
+  {
+   "id": "r54",
+   "anchor": "get_cmdclass#import:distutils.command.build_py",
+   "kind": "lead",
+   "line": 1464
+  },
+  {
+   "id": "r55",
+   "anchor": "get_cmdclass.cmd_build_py.run#if:cfg.versionfile_build",
+   "kind": "lead",
+   "line": 1474
+  },
+  {
+   "id": "r56",
+   "anchor": "get_cmdclass#if:\"cx_Freeze\" in sys.modules",
+   "kind": "trail",
+   "line": 1481
+  },
+  {
+   "id": "r57",
+   "anchor": "get_cmdclass#if:\"setuptools\" in sys.modules",
+   "kind": "lead",
+   "line": 1508
+  },
+  {
+   "id": "r58",
+   "anchor": "get_cmdclass.cmd_sdist.run#assign:self.distribution.metadata.version",
+   "kind": "lead",
+   "line": 1519
+  },
+  {
+   "id": "r59",
+   "anchor": "get_cmdclass.cmd_sdist.make_release_tree#assign:target_versionfile",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r60",
+   "anchor": "do_setup#assign:manifest_in",
+   "kind": "lead",
+   "line": 1628
+  },
+  {
+   "id": "r61",
+   "anchor": "do_setup#if:\"versioneer.py\" not in simple_includes",
+   "kind": "lead",
+   "line": 1642
+  },
+  {
+   "id": "r62",
+   "anchor": "do_setup#call:do_vcs_install",
+   "kind": "lead",
+   "line": 1659
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 37323,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7610,
+  "thinking_tokens": 4351,
+  "opus_cost_usd": 0.5677715,
+  "total_cost_usd": 0.5968264999999999,
+  "duration_ms": 69726,
+  "duration_api_ms": 70694,
+  "num_turns": 2
+ },
+ "wall_ms": 70619,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

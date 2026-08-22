@@ -1,0 +1,301 @@
+{
+ "blob_sha": "dd19f4acd4c7ef825128d699617378cefb5a1ea6",
+ "path": "astropy/io/registry/base.py",
+ "repo": "astropy/astropy",
+ "records": 46,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:abc",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "IORegistryError",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "_UnifiedIORegistryBase",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "_UnifiedIORegistryBase",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r5",
+   "anchor": "_UnifiedIORegistryBase._identifiers",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "_UnifiedIORegistryBase._registries",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "_UnifiedIORegistryBase._registries_order",
+   "kind": "trail",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "_UnifiedIORegistryBase._delayed_docs_classes",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r9",
+   "anchor": "_UnifiedIORegistryBase.available_registries",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r10",
+   "anchor": "_UnifiedIORegistryBase.get_formats",
+   "kind": "doc",
+   "line": 64
+  },
+  {
+   "id": "r11",
+   "anchor": "_UnifiedIORegistryBase.get_formats#assign:colnames",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r12",
+   "anchor": "_UnifiedIORegistryBase.get_formats#assign:regs",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r13",
+   "anchor": "_UnifiedIORegistryBase.get_formats#assign:format_classes",
+   "kind": "post",
+   "line": 102
+  },
+  {
+   "id": "r14",
+   "anchor": "_UnifiedIORegistryBase.get_formats#for:(fmt, cls) in format_classes/if:data_class is not None and not self._is_best_match(data_class, cls, format_classes)",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r15",
+   "anchor": "_UnifiedIORegistryBase.get_formats#for:(fmt, cls) in format_classes/assign:has_",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r16",
+   "anchor": "_UnifiedIORegistryBase.get_formats#for:(fmt, cls) in format_classes/assign:ascii_format_class",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r17",
+   "anchor": "_UnifiedIORegistryBase.get_formats#for:(fmt, cls) in format_classes/assign:deprecated",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r18",
+   "anchor": "_UnifiedIORegistryBase.get_formats#for:(fmt, cls) in format_classes/call:rows.append",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r19",
+   "anchor": "_UnifiedIORegistryBase.get_formats#if:str(filter_on).lower() in self._registries_order",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r20",
+   "anchor": "_UnifiedIORegistryBase.get_formats#if:rows",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r21",
+   "anchor": "_UnifiedIORegistryBase.get_formats#if:rows/assign:data",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r22",
+   "anchor": "_UnifiedIORegistryBase.get_formats#with:warnings.catch_warnings()",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r23",
+   "anchor": "_UnifiedIORegistryBase.delay_doc_updates",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r24",
+   "anchor": "_UnifiedIORegistryBase.register_identifier",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r25",
+   "anchor": "_UnifiedIORegistryBase.register_identifier",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r26",
+   "anchor": "_UnifiedIORegistryBase.unregister_identifier",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r27",
+   "anchor": "_UnifiedIORegistryBase.identify_format",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r28",
+   "anchor": "_UnifiedIORegistryBase._get_format_table_str",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r29",
+   "anchor": "_UnifiedIORegistryBase._get_format_table_str",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r30",
+   "anchor": "_UnifiedIORegistryBase._is_best_match",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r31",
+   "anchor": "_UnifiedIORegistryBase._is_best_match#if:issubclass(class1, class2)/for:parent in class1.__mro__/if:parent is class2",
+   "kind": "trail",
+   "line": 322
+  },
+  {
+   "id": "r32",
+   "anchor": "_UnifiedIORegistryBase._is_best_match#if:issubclass(class1, class2)/for:parent in class1.__mro__/if:parent in classes",
+   "kind": "trail",
+   "line": 324
+  },
+  {
+   "id": "r33",
+   "anchor": "_UnifiedIORegistryBase._get_valid_format",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r34",
+   "anchor": "_UnifiedIORegistryBase._get_highest_priority_format",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r35",
+   "anchor": "_UnifiedIORegistryBase._get_highest_priority_format#for:format in valid_formats/try/except:KeyError/assign:priority",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r36",
+   "anchor": "_UnifiedIORegistryBase._update__doc__",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r37",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#if:not hasattr(data_class, readwrite)",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r38",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#assign:class_readwrite_func",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r39",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#if:not isinstance(class_readwrite_func.__doc__, str)/return",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r40",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#assign:sep_indices",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r41",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#if:sep_indices/assign:chop_index",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r42",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#assign:matches",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r43",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#assign:format_table",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r44",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#assign:new_lines",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r45",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#if:'Deprecated' in format_table.colnames",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r46",
+   "anchor": "_UnifiedIORegistryBase._update__doc__#if:isinstance(class_readwrite_func, UnifiedReadWrite)",
+   "kind": "lead",
+   "line": 441
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12390,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4331,
+  "thinking_tokens": 1759,
+  "opus_cost_usd": 0.23646649999999997,
+  "total_cost_usd": 0.24513249999999998,
+  "duration_ms": 38977,
+  "duration_api_ms": 40293,
+  "num_turns": 2
+ },
+ "wall_ms": 39920,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

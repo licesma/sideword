@@ -1,0 +1,493 @@
+{
+ "blob_sha": "2404038444af44e7c04d725be5185931913aa4e1",
+ "path": "astropy/utils/data.py",
+ "repo": "astropy/astropy",
+ "records": 78,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "Conf",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "Conf.compute_hash_block_size#arg:2 ** 16",
+   "kind": "trail",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "Conf.download_block_size#arg:2 ** 16",
+   "kind": "trail",
+   "line": 61
+  },
+  {
+   "id": "r6",
+   "anchor": "CacheMissingWarning",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r7",
+   "anchor": "_is_url",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r8",
+   "anchor": "_is_url#return",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r9",
+   "anchor": "_is_inside#return",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r10",
+   "anchor": "get_readable_fileobj",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r11",
+   "anchor": "get_readable_fileobj#assign:PATH_TYPES",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r12",
+   "anchor": "get_readable_fileobj#if:remote_timeout is None/assign:remote_timeout",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r13",
+   "anchor": "get_readable_fileobj#if:isinstance(name_or_obj, PATH_TYPES)",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r14",
+   "anchor": "get_readable_fileobj#if:isinstance(name_or_obj, PATH_TYPES)/assign:name_or_obj",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r15",
+   "anchor": "get_readable_fileobj#if:not hasattr(fileobj, 'seek')",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r16",
+   "anchor": "get_readable_fileobj#assign:signature",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r17",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'",
+   "kind": "trail",
+   "line": 212
+  },
+  {
+   "id": "r18",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/try/call:fileobj_new.read",
+   "kind": "trail",
+   "line": 217
+  },
+  {
+   "id": "r19",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/try/except:(OSError, EOFError, struct.error)",
+   "kind": "trail",
+   "line": 218
+  },
+  {
+   "id": "r20",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'",
+   "kind": "trail",
+   "line": 224
+  },
+  {
+   "id": "r21",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/try/with:NamedTemporaryFile(\"wb\", delete=False)",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r22",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/try/call:fileobj_new.read",
+   "kind": "trail",
+   "line": 240
+  },
+  {
+   "id": "r23",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/try/except:OSError",
+   "kind": "trail",
+   "line": 241
+  },
+  {
+   "id": "r24",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/try/except:OSError/call:fileobj_new.close",
+   "kind": "post",
+   "line": 243
+  },
+  {
+   "id": "r25",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/elif:signature[:3] == b'\\xfd7z'",
+   "kind": "trail",
+   "line": 249
+  },
+  {
+   "id": "r26",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/elif:signature[:3] == b'\\xfd7z'/try/call:fileobj_new.read",
+   "kind": "trail",
+   "line": 253
+  },
+  {
+   "id": "r27",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/elif:signature[:3] == b'\\xfd7z'/try/except:(OSError, EOFError)",
+   "kind": "trail",
+   "line": 260
+  },
+  {
+   "id": "r28",
+   "anchor": "get_readable_fileobj#if:signature[:3] == b'\\x1f\\x8b\\x08'/elif:signature[:3] == b'BZh'/elif:signature[:3] == b'\\xfd7z'/try/except:(OSError, EOFError)/call:fileobj_new.close",
+   "kind": "post",
+   "line": 262
+  },
+  {
+   "id": "r29",
+   "anchor": "get_readable_fileobj#assign:needs_textio_wrapper",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r30",
+   "anchor": "get_readable_fileobj#if:needs_textio_wrapper/try",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r31",
+   "anchor": "get_readable_fileobj#if:needs_textio_wrapper/call:fileobj.seek",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r32",
+   "anchor": "get_file_contents",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r33",
+   "anchor": "get_pkg_data_fileobj",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r34",
+   "anchor": "get_pkg_data_fileobj#if:os.path.isdir(datafn)/elif:os.path.isfile(datafn)",
+   "kind": "trail",
+   "line": 444
+  },
+  {
+   "id": "r35",
+   "anchor": "get_pkg_data_fileobj#if:os.path.isdir(datafn)/elif:os.path.isfile(datafn)/else",
+   "kind": "trail",
+   "line": 447
+  },
+  {
+   "id": "r36",
+   "anchor": "get_pkg_data_fileobj#if:os.path.isdir(datafn)/elif:os.path.isfile(datafn)/else/for:url in all_urls/try/with:get_readable_fileobj(url + data_name, encoding=encoding, cache=cache)/call:fileobj.read",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r37",
+   "anchor": "get_pkg_data_filename",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r38",
+   "anchor": "get_pkg_data_filename#if:remote_timeout is None/assign:remote_timeout",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r39",
+   "anchor": "get_pkg_data_filename#if:data_name.startswith('hash/')/assign:hashfn",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r40",
+   "anchor": "get_pkg_data_filename#if:data_name.startswith('hash/')/else/if:os.path.isdir(datafn)/elif:os.path.isfile(datafn)",
+   "kind": "trail",
+   "line": 580
+  },
+  {
+   "id": "r41",
+   "anchor": "get_pkg_data_filename#if:data_name.startswith('hash/')/else/if:os.path.isdir(datafn)/elif:os.path.isfile(datafn)/else",
+   "kind": "trail",
+   "line": 582
+  },
+  {
+   "id": "r42",
+   "anchor": "get_pkg_data_contents",
+   "kind": "doc",
+   "line": 596
+  },
+  {
+   "id": "r43",
+   "anchor": "get_pkg_data_filenames",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r44",
+   "anchor": "get_pkg_data_fileobjs",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r45",
+   "anchor": "compute_hash",
+   "kind": "doc",
+   "line": 793
+  },
+  {
+   "id": "r46",
+   "anchor": "_find_pkg_data_path",
+   "kind": "doc",
+   "line": 830
+  },
+  {
+   "id": "r47",
+   "anchor": "_find_pkg_data_path#if:package is None/if:module is None/return",
+   "kind": "lead",
+   "line": 841
+  },
+  {
+   "id": "r48",
+   "anchor": "_find_pkg_data_path#if:package is None/if:not hasattr(module, '__package__') or not module.__package__/if:'.' in module.__name__",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r49",
+   "anchor": "_find_hash_fn",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r50",
+   "anchor": "get_free_space_in_dir",
+   "kind": "doc",
+   "line": 889
+  },
+  {
+   "id": "r51",
+   "anchor": "check_free_space_in_dir",
+   "kind": "doc",
+   "line": 920
+  },
+  {
+   "id": "r52",
+   "anchor": "download_file",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r53",
+   "anchor": "download_file#if:cache/try/except:OSError/assign:missing_cache",
+   "kind": "trail",
+   "line": 996
+  },
+  {
+   "id": "r54",
+   "anchor": "download_file#if:url_key.startswith(conf.dataurl) and conf.dataurl not in _dataurls_to_alias",
+   "kind": "lead",
+   "line": 1001
+  },
+  {
+   "id": "r55",
+   "anchor": "download_file#try/if:cache/with:shelve.open(urlmapfn)",
+   "kind": "lead",
+   "line": 1009
+  },
+  {
+   "id": "r56",
+   "anchor": "download_file#try/if:cache/with:shelve.open(urlmapfn)/if:url_key in url2hash/else",
+   "kind": "lead",
+   "line": 1013
+  },
+  {
+   "id": "r57",
+   "anchor": "download_file#try/with:urllib.request.urlopen(remote_url, timeout=timeout)/assign:hash",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r58",
+   "anchor": "download_file#try/if:cache/try/with:shelve.open(urlmapfn)/if:url_key in url2hash",
+   "kind": "lead",
+   "line": 1068
+  },
+  {
+   "id": "r59",
+   "anchor": "download_file#try/except:socket.timeout/raise:urllib.error.URLError",
+   "kind": "lead",
+   "line": 1094
+  },
+  {
+   "id": "r60",
+   "anchor": "is_url_in_cache",
+   "kind": "doc",
+   "line": 1099
+  },
+  {
+   "id": "r61",
+   "anchor": "is_url_in_cache#try",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r62",
+   "anchor": "download_files_in_parallel",
+   "kind": "doc",
+   "line": 1132
+  },
+  {
+   "id": "r63",
+   "anchor": "download_files_in_parallel#if:not cache/call:warn",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r64",
+   "anchor": "download_files_in_parallel#assign:combined_urls",
+   "kind": "lead",
+   "line": 1186
+  },
+  {
+   "id": "r65",
+   "anchor": "_tempfilestodel",
+   "kind": "lead",
+   "line": 1200
+  },
+  {
+   "id": "r66",
+   "anchor": "clear_download_cache",
+   "kind": "doc",
+   "line": 1215
+  },
+  {
+   "id": "r67",
+   "anchor": "clear_download_cache#try/if:hashorurl is None/if:os.path.exists(dldir)",
+   "kind": "lead",
+   "line": 1240
+  },
+  {
+   "id": "r68",
+   "anchor": "clear_download_cache#try/if:hashorurl is None/else/with:shelve.open(urlmapfn)/if:os.path.exists(filepath)/elif:hash_key in url2hash/if:os.path.exists(filepath)/call:os.unlink",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r69",
+   "anchor": "clear_download_cache#try/if:hashorurl is None/else/with:shelve.open(urlmapfn)/if:os.path.exists(filepath)",
+   "kind": "post",
+   "line": 1251
+  },
+  {
+   "id": "r70",
+   "anchor": "clear_download_cache#try/finally/if:os.path.exists(os.path.join(dldir, 'lock'))",
+   "kind": "lead",
+   "line": 1268
+  },
+  {
+   "id": "r71",
+   "anchor": "_get_download_cache_locs",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r72",
+   "anchor": "_get_download_cache_locs#assign:py_version",
+   "kind": "lead",
+   "line": 1290
+  },
+  {
+   "id": "r73",
+   "anchor": "_acquire_download_cache_lock",
+   "kind": "lead",
+   "line": 1313
+  },
+  {
+   "id": "r74",
+   "anchor": "_acquire_download_cache_lock",
+   "kind": "doc",
+   "line": 1313
+  },
+  {
+   "id": "r75",
+   "anchor": "_acquire_download_cache_lock#for:i in range(conf.download_cache_lock_attempts)/try/with:open(os.path.join(lockdir, 'pid'), 'w')",
+   "kind": "lead",
+   "line": 1324
+  },
+  {
+   "id": "r76",
+   "anchor": "_release_download_cache_lock#if:os.path.isdir(lockdir)/assign:pidfn",
+   "kind": "lead",
+   "line": 1342
+  },
+  {
+   "id": "r77",
+   "anchor": "get_cached_urls",
+   "kind": "doc",
+   "line": 1352
+  },
+  {
+   "id": "r78",
+   "anchor": "get_cached_urls#try",
+   "kind": "lead",
+   "line": 1363
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 29111,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9480,
+  "thinking_tokens": 4954,
+  "opus_cost_usd": 0.5324015000000001,
+  "total_cost_usd": 0.5551725000000001,
+  "duration_ms": 81940,
+  "duration_api_ms": 83181,
+  "num_turns": 2
+ },
+ "wall_ms": 82842,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

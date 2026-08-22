@@ -1,0 +1,487 @@
+{
+ "blob_sha": "33a7473e1cc7c574cad8ebb19c4a21e8d6864ba2",
+ "path": "astropy/io/ascii/mrt.py",
+ "repo": "astropy/astropy",
+ "records": 77,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "MrtSplitter",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "MrtHeader._split_float_format",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r5",
+   "anchor": "MrtHeader._set_column_val_limits",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r6",
+   "anchor": "MrtHeader.column_float_formatter",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r7",
+   "anchor": "MrtHeader.column_float_formatter#assign:maxsize, maxprec, maxent, maxdec",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r8",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r9",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/if:val is None or val == ''",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r10",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/assign:fmt",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r11",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/if:fmt[4] is True",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r12",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/if:fmt[4] is True/if:fformat == 'F'",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r13",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/if:fmt[4] is True/assign:fformat",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r14",
+   "anchor": "MrtHeader.column_float_formatter#for:val in col.str_vals/if:fmt[4] is True/else/if:fformat == 'E'",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r15",
+   "anchor": "MrtHeader.column_float_formatter#if:fformat == 'E'/if:getattr(col, 'formatted_width', None) is None",
+   "kind": "trail",
+   "line": 177
+  },
+  {
+   "id": "r16",
+   "anchor": "MrtHeader.column_float_formatter#if:fformat == 'E'/assign:col.fortran_format",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r17",
+   "anchor": "MrtHeader.column_float_formatter#if:fformat == 'E'/else/if:getattr(col, 'formatted_width', None) is None",
+   "kind": "trail",
+   "line": 187
+  },
+  {
+   "id": "r18",
+   "anchor": "MrtHeader.column_float_formatter#if:fformat == 'E'/else/if:getattr(col, 'formatted_width', None) is None/elif:col.format.startswith('0')/assign:lead",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r19",
+   "anchor": "MrtHeader.write_byte_by_byte",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r20",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:vals_list",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r21",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:startb",
+   "kind": "trail",
+   "line": 246
+  },
+  {
+   "id": "r22",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:byte_count_width",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r23",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:singlebfmt",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r24",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:singlebfmt",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r25",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:max_label_width, max_descrip_size",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r26",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r27",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/assign:col.has_null",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r28",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r29",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)/call:self._set_column_val_limits",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r30",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)/if:getattr(col, 'formatted_width', None) is None",
+   "kind": "trail",
+   "line": 278
+  },
+  {
+   "id": "r31",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)/elif:np.issubdtype(col.dtype, np.dtype(float).type)/call:self._set_column_val_limits",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r32",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)/else/assign:dtype",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r33",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:np.issubdtype(col.dtype, np.integer)/else/if:getattr(col, 'formatted_width', None) is None",
+   "kind": "trail",
+   "line": 297
+  },
+  {
+   "id": "r34",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.name is None",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r35",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.description is not None",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r36",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/assign:nullflag",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r37",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.unit is not None",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r38",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.unit is not None/elif:col.name.lower().find(\"magnitude\") > -1/assign:col_unit",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r39",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/assign:lim_vals",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r40",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.min and col.max and not any(x in col.name for x in ['RA', 'DE', 'LON', 'LAT', 'PLN', 'PLT'])/if:col.fortran_format[0] == 'I'",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r41",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:len(col.name) > max_label_width",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r42",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/if:col.name == 'DEd'",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r43",
+   "anchor": "MrtHeader.write_byte_by_byte#for:i, col in enumerate(self.cols)/call:bbb.add_row",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r44",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:bbblines",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r45",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:bbblines",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r46",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:nsplit",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r47",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:buff",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r48",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:self.linewidth",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r49",
+   "anchor": "MrtHeader.write_byte_by_byte#assign:buff",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r50",
+   "anchor": "MrtHeader.write",
+   "kind": "doc",
+   "line": 412
+  },
+  {
+   "id": "r51",
+   "anchor": "MrtHeader.write#assign:coord_systems",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r52",
+   "anchor": "MrtHeader.write#assign:coord_systems/key:ecliptic",
+   "kind": "trail",
+   "line": 421
+  },
+  {
+   "id": "r53",
+   "anchor": "MrtHeader.write#assign:coord_systems/key:heliographic",
+   "kind": "trail",
+   "line": 422
+  },
+  {
+   "id": "r54",
+   "anchor": "MrtHeader.write#assign:to_pop",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r55",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r56",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:not isinstance(col, SkyCoord) and isinstance(col[0], SkyCoord)",
+   "kind": "lead",
+   "line": 435
+  },
+  {
+   "id": "r57",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:not isinstance(col, SkyCoord) and isinstance(col[0], SkyCoord)/try/except:(ValueError, TypeError)/if:not isinstance(col, Column)",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r58",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r59",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r60",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6/for:coord, name, coord_unit, descrip in zip(coords, eqtnames, coord_units, coord_descrip)/if:name in ['DEm', 'DEs']",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r61",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6/for:coord, name, coord_unit, descrip in zip(coords, eqtnames, coord_units, coord_descrip)/if:name == 'RAs'",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r62",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6/call:to_pop.append",
+   "kind": "trail",
+   "line": 486
+  },
+  {
+   "id": "r63",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6/else",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r64",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:'ra' in col.representation_component_names.keys() and len(set(eqtnames) - set(self.colnames)) == 6/else/for:frame, latlon in coord_systems.items()/if:frame in col.name and len(set(latlon[:2]) - set(self.colnames)) == 2/call:to_pop.append",
+   "kind": "trail",
+   "line": 507
+  },
+  {
+   "id": "r65",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:i not in to_pop",
+   "kind": "lead",
+   "line": 517
+  },
+  {
+   "id": "r66",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/if:i not in to_pop/call:to_pop.append",
+   "kind": "trail",
+   "line": 523
+  },
+  {
+   "id": "r67",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/elif:not isinstance(col, Column)",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r68",
+   "anchor": "MrtHeader.write#for:i, col in enumerate(self.cols)/if:isinstance(col, SkyCoord)/elif:not isinstance(col, Column)/if:np.issubdtype(col.dtype, np.dtype(object).type)",
+   "kind": "lead",
+   "line": 530
+  },
+  {
+   "id": "r69",
+   "anchor": "MrtHeader.write#for:i in to_pop[::-1]",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r70",
+   "anchor": "MrtHeader.write#if:any(x in self.colnames for x in ['RAh', 'DEd', 'ELON', 'GLAT'])",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r71",
+   "anchor": "MrtHeader.write#if:any(x in self.colnames for x in ['RAh', 'DEd', 'ELON', 'GLAT'])/for:i, col in enumerate(self.cols)",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r72",
+   "anchor": "MrtHeader.write#assign:bbb_template",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r73",
+   "anchor": "MrtHeader.write#assign:rm_template",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r74",
+   "anchor": "MrtData",
+   "kind": "doc",
+   "line": 562
+  },
+  {
+   "id": "r75",
+   "anchor": "Mrt",
+   "kind": "doc",
+   "line": 573
+  },
+  {
+   "id": "r76",
+   "anchor": "Mrt.write#if:len(table) == 0",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r77",
+   "anchor": "Mrt.write#assign:table",
+   "kind": "lead",
+   "line": 617
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18408,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9830,
+  "thinking_tokens": 4368,
+  "opus_cost_usd": 0.43412150000000005,
+  "total_cost_usd": 0.44773450000000004,
+  "duration_ms": 83207,
+  "duration_api_ms": 84247,
+  "num_turns": 2
+ },
+ "wall_ms": 85701,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,403 @@
+{
+ "blob_sha": "a2a70fdc0212c0301dd277b6d659ad95c49249b8",
+ "path": "lib/matplotlib/_constrained_layout.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 63,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:logging",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:logging",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r4",
+   "anchor": "_axes_all_finite_sized",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r5",
+   "anchor": "do_constrained_layout",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r6",
+   "anchor": "do_constrained_layout",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "do_constrained_layout",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r8",
+   "anchor": "do_constrained_layout#assign:gss",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r9",
+   "anchor": "do_constrained_layout#if:fig._layoutbox.constrained_layout_called < 1/for:gs in gss/call:_make_ghost_gridspec_slots",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r10",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/for:ax in fig.axes",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r11",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/for:ax in fig.axes/if:ax._layoutbox is not None/call:_make_layout_margins",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r12",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/assign:suptitle",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r13",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:do_suptitle/if:np.isfinite(height)/call:suptitle._layoutbox.edit_height",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r14",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:fig._layoutbox.constrained_layout_called < 1",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r15",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:fig._layoutbox.constrained_layout_called < 1/assign:figlb",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r16",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:fig._layoutbox.constrained_layout_called < 1/for:child in figlb.children/if:child._is_gridspec_layoutbox()/call:_arrange_subplotspecs",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r17",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:_axes_all_finite_sized(fig)",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r18",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:_axes_all_finite_sized(fig)/for:ax in fig.axes",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "do_constrained_layout#for:nnn in range(2)/if:_axes_all_finite_sized(fig)/for:ax in fig.axes/if:ax._layoutbox is not None/call:ax._set_position",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r20",
+   "anchor": "_make_ghost_gridspec_slots",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r21",
+   "anchor": "_make_ghost_gridspec_slots#for:nn, hss in enumerate(hassubplotspec)/if:not hss/assign:ax",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r22",
+   "anchor": "_make_layout_margins",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r23",
+   "anchor": "_make_layout_margins#if:not (np.isfinite(bbox.width) and np.isfinite(bbox.height))",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r24",
+   "anchor": "_make_layout_margins#if:not (np.isfinite(bbox.width) and np.isfinite(bbox.height))/return",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r25",
+   "anchor": "_make_layout_margins#assign:h_padt",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r26",
+   "anchor": "_make_layout_margins#if:fig._layoutbox.constrained_layout_called < 1",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r27",
+   "anchor": "_align_spines",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r28",
+   "anchor": "_align_spines#assign:nrows, ncols",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r29",
+   "anchor": "_align_spines#assign:axs",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r30",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/assign:rownum0min, colnum0min",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r31",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignleft and colnum0min == colnumCmin",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r32",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignleft and colnum0min == colnumCmin/call:layoutbox.align",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r33",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignright and colnum0max == colnumCmax/call:layoutbox.align",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r34",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not aligntop and rownum0min == rownumCmin",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r35",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not aligntop and rownum0min == rownumCmin/call:_log.debug",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r36",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignbot and rownum0max == rownumCmax/call:_log.debug",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r37",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/assign:drowsC",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r38",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignheight and drows0 == drowsC/elif:_in_same_column(colnum0min, colnum0max, colnumCmin, colnumCmax)/if:height0 > heightC/call:axc._poslayoutbox.constrain_height_min",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r39",
+   "anchor": "_align_spines#for:nn, ax in enumerate(axs[:-1])/for:mm in range(nn+1, len(axs))/if:not alignwidth and dcols0 == dcolsC",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r40",
+   "anchor": "_arrange_subplotspecs",
+   "kind": "doc",
+   "line": 480
+  },
+  {
+   "id": "r41",
+   "anchor": "_arrange_subplotspecs#for:child in gs.children/if:child._is_subplotspec_layoutbox()/for:child2 in child.children/if:child2._is_gridspec_layoutbox()",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r42",
+   "anchor": "_arrange_subplotspecs#for:child0 in sschildren",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r43",
+   "anchor": "_arrange_subplotspecs#for:child0 in sschildren/for:childc in sschildren/assign:thepad",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r44",
+   "anchor": "_arrange_subplotspecs#for:child0 in sschildren/for:childc in sschildren/assign:thepad",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r45",
+   "anchor": "layoutcolorbarsingle",
+   "kind": "doc",
+   "line": 531
+  },
+  {
+   "id": "r46",
+   "anchor": "layoutcolorbarsingle#if:location in ('left', 'right')/if:location == 'right'/call:layoutbox.hstack",
+   "kind": "lead",
+   "line": 556
+  },
+  {
+   "id": "r47",
+   "anchor": "layoutcolorbarsingle#if:location in ('left', 'right')/call:layoutbox.match_heights",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r48",
+   "anchor": "layoutcolorbarsingle#if:location in ('left', 'right')/call:lbpos.constrain_width",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r49",
+   "anchor": "layoutcolorbarsingle#if:location in ('left', 'right')/elif:location in ('bottom', 'top')/call:layoutbox.match_widths",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r50",
+   "anchor": "layoutcolorbarsingle#if:location in ('left', 'right')/elif:location in ('bottom', 'top')/call:lbpos.constrain_height",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r51",
+   "anchor": "_getmaxminrowcolumn#assign:maxrow",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r52",
+   "anchor": "layoutcolorbargridspec",
+   "kind": "doc",
+   "line": 620
+  },
+  {
+   "id": "r53",
+   "anchor": "layoutcolorbargridspec#assign:gslb",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r54",
+   "anchor": "layoutcolorbargridspec#assign:(minrow, maxrow, minax_row, maxax_row, mincol, maxcol, minax_col, maxax_col)",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r55",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/for:ch in gslb.children",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r56",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/for:ch in gslb.children",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r57",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/for:ch in gslb.children/if:location == 'right'/if:col_stop <= maxcol/assign:order",
+   "kind": "post",
+   "line": 665
+  },
+  {
+   "id": "r58",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/assign:maxposlb",
+   "kind": "lead",
+   "line": 678
+  },
+  {
+   "id": "r59",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/call:lbpos.constrain_height",
+   "kind": "lead",
+   "line": 686
+  },
+  {
+   "id": "r60",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/call:lbpos.constrain_width",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r61",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/elif:location in ('bottom', 'top')/for:ch in gslb.children",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r62",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/elif:location in ('bottom', 'top')/assign:maxposlb",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r63",
+   "anchor": "layoutcolorbargridspec#if:location in ('left', 'right')/elif:location in ('bottom', 'top')/call:lbpos.constrain_height",
+   "kind": "lead",
+   "line": 741
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20331,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9115,
+  "thinking_tokens": 4915,
+  "opus_cost_usd": 0.4354765,
+  "total_cost_usd": 0.4506795,
+  "duration_ms": 106219,
+  "duration_api_ms": 107422,
+  "num_turns": 2
+ },
+ "wall_ms": 107100,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

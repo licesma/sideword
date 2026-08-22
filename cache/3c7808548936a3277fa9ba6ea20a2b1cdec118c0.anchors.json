@@ -1,0 +1,565 @@
+{
+ "blob_sha": "3c7808548936a3277fa9ba6ea20a2b1cdec118c0",
+ "path": "django/contrib/gis/utils/layermapping.py",
+ "repo": "django/django",
+ "records": 90,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "LayerMapError",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r4",
+   "anchor": "LayerMapping",
+   "kind": "doc",
+   "line": 49
+  },
+  {
+   "id": "r5",
+   "anchor": "LayerMapping.MULTI_TYPES",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "LayerMapping.FIELD_TYPES",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r7",
+   "anchor": "LayerMapping.__init__",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "LayerMapping.__init__#if:isinstance(data, (str, Path))",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r9",
+   "anchor": "LayerMapping.mapping",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "LayerMapping.__init__#call:self.check_layer",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r11",
+   "anchor": "LayerMapping.__init__#if:connection.features.supports_transform",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r12",
+   "anchor": "LayerMapping.__init__#if:transform",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r13",
+   "anchor": "LayerMapping.__init__#if:encoding",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r14",
+   "anchor": "LayerMapping.__init__#if:encoding/import:codecs",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r15",
+   "anchor": "LayerMapping.__init__#if:unique/assign:transaction_mode",
+   "kind": "trail",
+   "line": 143
+  },
+  {
+   "id": "r16",
+   "anchor": "LayerMapping.transaction_mode",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r17",
+   "anchor": "LayerMapping.check_fid_range",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r18",
+   "anchor": "LayerMapping.check_fid_range",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r19",
+   "anchor": "LayerMapping.check_layer",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r20",
+   "anchor": "LayerMapping.geom_field",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r21",
+   "anchor": "LayerMapping.check_layer#assign:ogr_fields",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r22",
+   "anchor": "LayerMapping.check_layer.check_ogr_fld",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r23",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r24",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/try",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r25",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/assign:fld_name",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r26",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/assign:coord_dim",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r27",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/assign:ltype",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r28",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/assign:self.geom_field",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r29",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/elif:isinstance(model_field, models.ForeignKey)/if:isinstance(ogr_name, dict)/assign:rel_model",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r30",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/else/if:model_field.__class__ not in self.FIELD_TYPES",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r31",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/else/assign:idx",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r32",
+   "anchor": "LayerMapping.check_layer#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/else/if:not issubclass(ogr_field, self.FIELD_TYPES[model_field.__class__])",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r33",
+   "anchor": "LayerMapping.check_srs",
+   "kind": "doc",
+   "line": 268
+  },
+  {
+   "id": "r34",
+   "anchor": "LayerMapping.check_srs#if:isinstance(source_srs, SpatialReference)/else/assign:sr",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r35",
+   "anchor": "LayerMapping.check_unique",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r36",
+   "anchor": "LayerMapping.check_unique#if:isinstance(unique, (list, tuple))/for:attr in unique",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r37",
+   "anchor": "LayerMapping.check_unique#if:isinstance(unique, (list, tuple))/elif:isinstance(unique, str)/if:unique not in self.mapping",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r38",
+   "anchor": "LayerMapping.feature_kwargs",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r39",
+   "anchor": "LayerMapping.feature_kwargs",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r40",
+   "anchor": "LayerMapping.feature_kwargs#assign:kwargs",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r41",
+   "anchor": "LayerMapping.feature_kwargs#for:field_name, ogr_name in self.mapping.items()",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r42",
+   "anchor": "LayerMapping.feature_kwargs#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/try",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r43",
+   "anchor": "LayerMapping.feature_kwargs#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/elif:isinstance(model_field, models.base.ModelBase)/assign:val",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r44",
+   "anchor": "LayerMapping.feature_kwargs#for:field_name, ogr_name in self.mapping.items()/if:isinstance(model_field, GeometryField)/else/assign:val",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r45",
+   "anchor": "LayerMapping.feature_kwargs#for:field_name, ogr_name in self.mapping.items()/assign:kwargs[field_name]",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r46",
+   "anchor": "LayerMapping.unique_kwargs",
+   "kind": "doc",
+   "line": 334
+  },
+  {
+   "id": "r47",
+   "anchor": "LayerMapping.verify_ogr_field",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r48",
+   "anchor": "LayerMapping.verify_ogr_field",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r49",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/if:self.encoding and ogr_field.value is not None/assign:val",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r50",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/try/assign:d",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r51",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/assign:dtup",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r52",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/assign:d_idx",
+   "kind": "trail",
+   "line": 372
+  },
+  {
+   "id": "r53",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/assign:max_prec",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r54",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/if:d_idx<0",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r55",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/if:n_prec>max_prec",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r56",
+   "anchor": "LayerMapping.verify_ogr_field#if:isinstance(ogr_field, OFTString) and isinstance(model_field, (models.CharField, models.TextField))/elif:isinstance(ogr_field, OFTReal) and isinstance(model_field, models.DecimalField)/elif:isinstance(ogr_field, (OFTReal, OFTString)) and isinstance(model_field, models.IntegerField)/try",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r57",
+   "anchor": "LayerMapping.verify_fk",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r58",
+   "anchor": "LayerMapping.verify_fk#assign:fk_kwargs",
+   "kind": "todo",
+   "line": 413
+  },
+  {
+   "id": "r59",
+   "anchor": "LayerMapping.verify_fk#assign:fk_kwargs",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r60",
+   "anchor": "LayerMapping.verify_fk#try",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r61",
+   "anchor": "LayerMapping.verify_geom",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r62",
+   "anchor": "LayerMapping.verify_geom#if:self.coord_dim != geom.coord_dim",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r63",
+   "anchor": "LayerMapping.verify_geom#if:self.make_multi(geom.geom_type, model_field)/assign:multi_type",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r64",
+   "anchor": "LayerMapping.verify_geom#if:self.transform",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r65",
+   "anchor": "LayerMapping.verify_geom#return",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r66",
+   "anchor": "LayerMapping.coord_transform",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r67",
+   "anchor": "LayerMapping.coord_transform",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r68",
+   "anchor": "LayerMapping.coord_transform#try/assign:target_srs",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r69",
+   "anchor": "LayerMapping.coord_transform#try/return",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r70",
+   "anchor": "LayerMapping.geometry_field",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r71",
+   "anchor": "LayerMapping.geometry_field#assign:opts",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r72",
+   "anchor": "LayerMapping.make_multi",
+   "kind": "doc",
+   "line": 475
+  },
+  {
+   "id": "r73",
+   "anchor": "LayerMapping.save",
+   "kind": "doc",
+   "line": 483
+  },
+  {
+   "id": "r74",
+   "anchor": "LayerMapping.save#assign:default_range",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r75",
+   "anchor": "LayerMapping.save#if:progress",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r76",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r77",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/except:LayerMapError/if:strict",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r78",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/assign:is_update",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r79",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/if:self.unique/try",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r80",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/if:self.unique/try/assign:u_kwargs",
+   "kind": "lead",
+   "line": 560
+  },
+  {
+   "id": "r81",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/if:self.unique/try/assign:geom_value",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r82",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/if:self.unique/try/except:ObjectDoesNotExist/assign:m",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r83",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/try/call:m.save",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r84",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/try/else/try/except:Exception/if:strict/if:not silent",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r85",
+   "anchor": "LayerMapping.save._save#for:feat in layer_iter/if:progress and num_feat % progress_interval == 0",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r86",
+   "anchor": "LayerMapping.save._save#return",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r87",
+   "anchor": "LayerMapping.save#if:step and isinstance(step, int) and step < nfeat/if:default_range",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r88",
+   "anchor": "LayerMapping.save#if:step and isinstance(step, int) and step < nfeat/for:i, end in enumerate(indices)/if:i + 1 == n_i",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r89",
+   "anchor": "LayerMapping.save#if:step and isinstance(step, int) and step < nfeat/for:i, end in enumerate(indices)/try/except:Exception",
+   "kind": "trail",
+   "line": 633
+  },
+  {
+   "id": "r90",
+   "anchor": "LayerMapping.save#if:step and isinstance(step, int) and step < nfeat/else/call:_save",
+   "kind": "lead",
+   "line": 638
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18200,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 11205,
+  "thinking_tokens": 5587,
+  "opus_cost_usd": 0.4664165,
+  "total_cost_usd": 0.4796875,
+  "duration_ms": 96172,
+  "duration_api_ms": 97433,
+  "num_turns": 2
+ },
+ "wall_ms": 97109,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

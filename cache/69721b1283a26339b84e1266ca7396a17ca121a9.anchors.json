@@ -1,0 +1,133 @@
+{
+ "blob_sha": "69721b1283a26339b84e1266ca7396a17ca121a9",
+ "path": "django/core/management/commands/inspectdb.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle_inspection#assign:table_name_filter",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/assign:used_column_names",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/assign:column_to_field_name",
+   "kind": "trail",
+   "line": 94
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/assign:comment_notes",
+   "kind": "trail",
+   "line": 96
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/assign:extra_params",
+   "kind": "trail",
+   "line": 97
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/if:column_name==primary_key_column",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/if:is_relation/else/assign:field_type, field_params, field_notes",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/if:att_name=='id' and extra_params=={'primary_key': True}",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/if:row[6]",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/if:row[6]",
+   "kind": "trail",
+   "line": 143
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.handle_inspection#with:connection.cursor()/for:table_name in tables_to_introspect/for:row in table_description/assign:field_desc/item:'' if '.' in field_type else 'models.'",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.normalize_col_name",
+   "kind": "doc",
+   "line": 172
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.normalize_col_name#if:new_name.find(LOOKUP_SEP)>=0/if:col_name.lower().find(LOOKUP_SEP)>=0/call:field_notes.append",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.get_field_type",
+   "kind": "doc",
+   "line": 228
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.get_field_type#if:type(field_type) is tuple",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.get_field_type#if:field_type=='CharField' and row[3]",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.get_meta",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.get_meta#for:index, params in constraints.items()/if:params['unique']/if:len(columns)>1/assign:tup",
+   "kind": "lead",
+   "line": 279
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8823,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2645,
+  "thinking_tokens": 1350,
+  "opus_cost_usd": 0.15864649999999997,
+  "total_cost_usd": 0.16453049999999997,
+  "duration_ms": 25203,
+  "duration_api_ms": 26121,
+  "num_turns": 2
+ },
+ "wall_ms": 26140,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

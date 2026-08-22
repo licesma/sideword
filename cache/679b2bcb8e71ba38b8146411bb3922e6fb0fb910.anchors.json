@@ -1,0 +1,37 @@
+{
+ "blob_sha": "679b2bcb8e71ba38b8146411bb3922e6fb0fb910",
+ "path": "django/contrib/gis/db/backends/mysql/schema.py",
+ "repo": "django/django",
+ "records": 2,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MySQLGISSchemaEditor.skip_default#if:isinstance(field, GeometryField) and not self._supports_limited_data_type_defaults",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "MySQLGISSchemaEditor.column_sql#if:isinstance(field, GeometryField) and field.spatial_index and not field.null",
+   "kind": "lead",
+   "line": 28
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4619,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 317,
+  "thinking_tokens": 79,
+  "opus_cost_usd": 0.05840649999999999,
+  "total_cost_usd": 0.06060549999999999,
+  "duration_ms": 5197,
+  "duration_api_ms": 5819,
+  "num_turns": 2
+ },
+ "wall_ms": 6178,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

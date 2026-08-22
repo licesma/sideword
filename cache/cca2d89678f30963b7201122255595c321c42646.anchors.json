@@ -1,0 +1,265 @@
+{
+ "blob_sha": "cca2d89678f30963b7201122255595c321c42646",
+ "path": "xarray/backends/zarr.py",
+ "repo": "pydata/xarray",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DIMENSION_KEY",
+   "kind": "lead",
+   "line": 25
+  },
+  {
+   "id": "r2",
+   "anchor": "encode_zarr_attr_value",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "encode_zarr_attr_value#if:isinstance(value, np.ndarray)/elif:isinstance(value, np.generic)",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "ZarrArrayWrapper.__getitem__#if:isinstance(key, indexing.BasicIndexer)/else/return",
+   "kind": "post",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "_determine_zarr_chunks",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r6",
+   "anchor": "_determine_zarr_chunks#if:not var_chunks and not enc_chunks",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r7",
+   "anchor": "_determine_zarr_chunks#if:not var_chunks and not enc_chunks",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r8",
+   "anchor": "_determine_zarr_chunks#if:var_chunks and not enc_chunks",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r9",
+   "anchor": "_determine_zarr_chunks#if:var_chunks and not enc_chunks/return",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r10",
+   "anchor": "_determine_zarr_chunks#if:isinstance(enc_chunks, integer_types)",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r11",
+   "anchor": "_determine_zarr_chunks#if:len(enc_chunks_tuple) != ndim/return",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r12",
+   "anchor": "_determine_zarr_chunks#if:not var_chunks",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r13",
+   "anchor": "_determine_zarr_chunks#if:var_chunks and enc_chunks_tuple",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_zarr_dims_and_attrs#try",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r15",
+   "anchor": "_get_zarr_dims_and_attrs#try/assign:dimensions",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r16",
+   "anchor": "_get_zarr_dims_and_attrs#try/except:KeyError/assign:zarray_path",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r17",
+   "anchor": "_get_zarr_dims_and_attrs#try/except:KeyError/try/assign:dimensions",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r18",
+   "anchor": "extract_zarr_variable_encoding",
+   "kind": "doc",
+   "line": 210
+  },
+  {
+   "id": "r19",
+   "anchor": "encode_zarr_variable",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r20",
+   "anchor": "encode_zarr_variable",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r21",
+   "anchor": "encode_zarr_variable#assign:coder",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r22",
+   "anchor": "_validate_existing_dims#for:dim, size in existing_var.sizes.items()/if:region is not None and dim in region/assert:stride == 1",
+   "kind": "trail",
+   "line": 302
+  },
+  {
+   "id": "r23",
+   "anchor": "_put_attrs",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r24",
+   "anchor": "ZarrStore",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r25",
+   "anchor": "ZarrStore.open_group#if:isinstance(store, os.PathLike)",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r26",
+   "anchor": "ZarrStore.open_group#if:zarr_version is None/assign:zarr_version",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r27",
+   "anchor": "ZarrStore.open_group#if:consolidated is None/elif:consolidated/assign:zarr_group",
+   "kind": "todo",
+   "line": 418
+  },
+  {
+   "id": "r28",
+   "anchor": "ZarrStore.ds#return",
+   "kind": "todo",
+   "line": 452
+  },
+  {
+   "id": "r29",
+   "anchor": "ZarrStore.open_store_variable#call:attributes.pop",
+   "kind": "todo",
+   "line": 464
+  },
+  {
+   "id": "r30",
+   "anchor": "ZarrStore.open_store_variable#if:getattr(zarr_array, \"fill_value\") is not None",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r31",
+   "anchor": "ZarrStore.store",
+   "kind": "doc",
+   "line": 521
+  },
+  {
+   "id": "r32",
+   "anchor": "ZarrStore.store#if:existing_variable_names/assign:existing_vars, _, _",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r33",
+   "anchor": "ZarrStore.store#if:existing_variable_names/assign:vars_with_encoding",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r34",
+   "anchor": "ZarrStore.set_variables",
+   "kind": "doc",
+   "line": 601
+  },
+  {
+   "id": "r35",
+   "anchor": "ZarrStore.set_variables#for:vn, v in variables.items()/if:name in self.zarr_group/assign:zarr_array",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r36",
+   "anchor": "ZarrStore.set_variables#for:vn, v in variables.items()/if:name in self.zarr_group/else/assign:encoding",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r37",
+   "anchor": "ZarrStore.set_variables#for:vn, v in variables.items()/if:name in self.zarr_group/else/assign:encoded_attrs[DIMENSION_KEY]",
+   "kind": "lead",
+   "line": 644
+  },
+  {
+   "id": "r38",
+   "anchor": "ZarrStore.set_variables#for:vn, v in variables.items()/if:self._append_dim is not None and self._append_dim in dims/assign:append_axis",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r39",
+   "anchor": "open_zarr",
+   "kind": "doc",
+   "line": 677
+  },
+  {
+   "id": "r40",
+   "anchor": "ZarrBackendEntrypoint",
+   "kind": "doc",
+   "line": 838
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20239,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4004,
+  "thinking_tokens": 1859,
+  "opus_cost_usd": 0.3067815,
+  "total_cost_usd": 0.3213315,
+  "duration_ms": 36645,
+  "duration_api_ms": 40828,
+  "num_turns": 2
+ },
+ "wall_ms": 38223,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

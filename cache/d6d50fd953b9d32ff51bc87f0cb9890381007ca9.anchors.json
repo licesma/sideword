@@ -1,0 +1,409 @@
+{
+ "blob_sha": "d6d50fd953b9d32ff51bc87f0cb9890381007ca9",
+ "path": "lib/mpl_toolkits/mplot3d/axis3d.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 64,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:inspect",
+   "kind": "lead",
+   "line": 5
+  },
+  {
+   "id": "r2",
+   "anchor": "move_from_center",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r3",
+   "anchor": "_move_from_center",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r4",
+   "anchor": "tick_update_position",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r5",
+   "anchor": "_tick_update_position",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r6",
+   "anchor": "Axis",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r7",
+   "anchor": "Axis._PLANES",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r8",
+   "anchor": "Axis._PLANES#item:(1, 2, 6, 5)",
+   "kind": "trail",
+   "line": 57
+  },
+  {
+   "id": "r9",
+   "anchor": "Axis._PLANES#item:(3, 2, 6, 7)",
+   "kind": "trail",
+   "line": 58
+  },
+  {
+   "id": "r10",
+   "anchor": "Axis._PLANES#item:(4, 5, 6, 7)",
+   "kind": "trail",
+   "line": 59
+  },
+  {
+   "id": "r11",
+   "anchor": "Axis._AXINFO",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r12",
+   "anchor": "Axis._axinfo",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r13",
+   "anchor": "Axis.__init__#call:self._axinfo.update",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r14",
+   "anchor": "Axis.__init__#if:mpl.rcParams['_internal.classic_mode']/call:self._axinfo['tick'].update/arg:{'linewidth': {True: mpl.rcParams['lines.linewidth'], False: mpl.rcParams['lines/key:linewidth/key:True",
+   "kind": "trail",
+   "line": 119
+  },
+  {
+   "id": "r15",
+   "anchor": "Axis.__init__#if:mpl.rcParams['_internal.classic_mode']/call:self._axinfo['tick'].update/arg:{'linewidth': {True: mpl.rcParams['lines.linewidth'], False: mpl.rcParams['lines/key:linewidth/key:False",
+   "kind": "trail",
+   "line": 120
+  },
+  {
+   "id": "r16",
+   "anchor": "Axis.__init__#if:mpl.rcParams['_internal.classic_mode']/else/call:self._axinfo['tick'].update/arg:{'linewidth': {True: (mpl.rcParams['xtick.major.width'] if name in 'xz' else mpl/key:linewidth/key:True",
+   "kind": "trail",
+   "line": 137
+  },
+  {
+   "id": "r17",
+   "anchor": "Axis.__init__#if:mpl.rcParams['_internal.classic_mode']/else/call:self._axinfo['tick'].update/arg:{'linewidth': {True: (mpl.rcParams['xtick.major.width'] if name in 'xz' else mpl/key:linewidth/key:False",
+   "kind": "trail",
+   "line": 140
+  },
+  {
+   "id": "r18",
+   "anchor": "Axis.__init__#if:\"d_intervalx\" in params",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r19",
+   "anchor": "Axis.__init__#call:self._init3d",
+   "kind": "trail",
+   "line": 154
+  },
+  {
+   "id": "r20",
+   "anchor": "Axis.pane",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r21",
+   "anchor": "Axis._init3d#assign:self.label._transform",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r22",
+   "anchor": "Axis.init3d",
+   "kind": "trail",
+   "line": 182
+  },
+  {
+   "id": "r23",
+   "anchor": "Axis.set_pane_pos",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r24",
+   "anchor": "Axis.set_pane_color",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r25",
+   "anchor": "Axis.set_rotate_label",
+   "kind": "doc",
+   "line": 230
+  },
+  {
+   "id": "r26",
+   "anchor": "Axis._get_coord_info#assign:centers",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r27",
+   "anchor": "Axis._get_coord_info#assign:deltas",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r28",
+   "anchor": "Axis._get_coord_info#assign:bounds",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r29",
+   "anchor": "Axis._get_coord_info#assign:means_z0",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r30",
+   "anchor": "Axis._get_coord_info#assign:equals",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r31",
+   "anchor": "Axis._get_coord_info#if:np.sum(equals) == 2/if:vertical == 2",
+   "kind": "trail",
+   "line": 276
+  },
+  {
+   "id": "r32",
+   "anchor": "Axis._get_coord_info#if:np.sum(equals) == 2/if:vertical == 2/elif:vertical == 1",
+   "kind": "trail",
+   "line": 278
+  },
+  {
+   "id": "r33",
+   "anchor": "Axis._get_coord_info#if:np.sum(equals) == 2/if:vertical == 2/elif:vertical == 1/elif:vertical == 0",
+   "kind": "trail",
+   "line": 280
+  },
+  {
+   "id": "r34",
+   "anchor": "Axis._get_axis_line_edge_points",
+   "kind": "doc",
+   "line": 285
+  },
+  {
+   "id": "r35",
+   "anchor": "Axis._get_axis_line_edge_points#assign:mb",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r36",
+   "anchor": "Axis._get_tickdir",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r37",
+   "anchor": "Axis._get_tickdir#assign:tickdirs_base",
+   "kind": "todo",
+   "line": 315
+  },
+  {
+   "id": "r38",
+   "anchor": "Axis._get_tickdir#assign:tickdir",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r39",
+   "anchor": "Axis.draw_pane",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r40",
+   "anchor": "Axis.draw#assign:info",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r41",
+   "anchor": "Axis.draw#assign:edgep1, edgep2",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r42",
+   "anchor": "Axis.draw#assign:pep",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r43",
+   "anchor": "Axis.draw#assign:dx, dy",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r44",
+   "anchor": "Axis.draw#assign:reltoinches",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r45",
+   "anchor": "Axis.draw#if:juggled[2] == 2",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r46",
+   "anchor": "Axis.draw#if:juggled[2] == 2",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r47",
+   "anchor": "Axis.draw#call:self.offsetText.set_rotation_mode",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r48",
+   "anchor": "Axis.draw#assign:centpt",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r49",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/if:centpt[index] <= pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r50",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/if:centpt[index] <= pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0/if:highs.tolist() == [False, True, True] and index in (1, 2)",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r51",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/if:centpt[index] <= pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0/else/assign:align",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r52",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/else/if:centpt[index] > pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r53",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/else/if:centpt[index] > pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0/assign:align",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r54",
+   "anchor": "Axis.draw#if:centpt[info['tickdir']] > pep[info['tickdir'], outerindex]/else/if:centpt[index] > pep[index, outerindex] and np.count_nonzero(highs) % 2 == 0/else/assign:align",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r55",
+   "anchor": "Axis.draw#if:self.axes._draw_grid and len(ticks)/assign:xyz0",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r56",
+   "anchor": "Axis.draw#if:self.axes._draw_grid and len(ticks)/assign:lines",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r57",
+   "anchor": "Axis.draw#assign:tickdir",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r58",
+   "anchor": "Axis.draw#assign:default_label_offset",
+   "kind": "trail",
+   "line": 505
+  },
+  {
+   "id": "r59",
+   "anchor": "Axis.draw#for:tick in ticks/assign:pos",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r60",
+   "anchor": "Axis.draw#for:tick in ticks/assign:labeldeltas",
+   "kind": "lead",
+   "line": 517
+  },
+  {
+   "id": "r61",
+   "anchor": "Axis.get_tightbbox",
+   "kind": "todo",
+   "line": 532
+  },
+  {
+   "id": "r62",
+   "anchor": "Axis.get_tightbbox#if:not self.get_visible()",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r63",
+   "anchor": "Axis.get_tightbbox#assign:major_locs",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r64",
+   "anchor": "Axis.get_tightbbox#for:tick in ticks/try/except:AssertionError/pass",
+   "kind": "lead",
+   "line": 560
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17160,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10381,
+  "thinking_tokens": 6784,
+  "opus_cost_usd": 0.43541650000000004,
+  "total_cost_usd": 0.44822550000000005,
+  "duration_ms": 120613,
+  "duration_api_ms": 121762,
+  "num_turns": 2
+ },
+ "wall_ms": 121672,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

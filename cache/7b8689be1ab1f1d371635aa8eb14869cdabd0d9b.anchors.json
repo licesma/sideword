@@ -1,0 +1,169 @@
+{
+ "blob_sha": "7b8689be1ab1f1d371635aa8eb14869cdabd0d9b",
+ "path": "astropy/coordinates/solar_system.py",
+ "repo": "astropy/astropy",
+ "records": 24,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "DEFAULT_JPL_EPHEMERIS",
+   "kind": "post",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "BODY_NAME_TO_KERNEL_SPEC",
+   "kind": "post",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "solar_system_ephemeris",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r6",
+   "anchor": "solar_system_ephemeris.validate#if:value is None",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r7",
+   "anchor": "solar_system_ephemeris.validate#call:cls.get_kernel",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r8",
+   "anchor": "solar_system_ephemeris.get_kernel#if:cls._kernel is None or cls._kernel.origin != value",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r9",
+   "anchor": "_get_kernel",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r10",
+   "anchor": "_get_body_barycentric_posvel",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r11",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/if:isinstance(body, str)/try",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r12",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/if:isinstance(body, str)/else/assign:kernel_spec",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r13",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/assign:jd1_shape",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/assign:body_posvel_bary",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r15",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/for:pair in kernel_spec/if:spk.data_type == 3/assign:posvel",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r16",
+   "anchor": "_get_body_barycentric_posvel#if:kernel is None/else/for:pair in kernel_spec/if:spk.data_type == 3/else/for:body_p_or_v, p_or_v in zip(body_posvel_bary, spk.generate(jd1, jd2))",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r17",
+   "anchor": "get_body_barycentric_posvel",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r18",
+   "anchor": "get_body_barycentric",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r19",
+   "anchor": "_get_apparent_body_position",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r20",
+   "anchor": "_get_apparent_body_position#if:ephemeris == 'builtin' and body.lower() == 'moon'",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r21",
+   "anchor": "_get_apparent_body_position#assign:delta_light_travel_time",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r22",
+   "anchor": "get_body",
+   "kind": "doc",
+   "line": 419
+  },
+  {
+   "id": "r23",
+   "anchor": "get_moon",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r24",
+   "anchor": "_apparent_position_in_true_coordinates",
+   "kind": "doc",
+   "line": 500
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13445,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2465,
+  "thinking_tokens": 1219,
+  "opus_cost_usd": 0.2003665,
+  "total_cost_usd": 0.2096865,
+  "duration_ms": 24458,
+  "duration_api_ms": 25546,
+  "num_turns": 2
+ },
+ "wall_ms": 25299,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

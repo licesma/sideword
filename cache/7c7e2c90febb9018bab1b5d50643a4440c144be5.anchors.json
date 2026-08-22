@@ -1,0 +1,379 @@
+{
+ "blob_sha": "7c7e2c90febb9018bab1b5d50643a4440c144be5",
+ "path": "django/forms/widgets.py",
+ "repo": "django/django",
+ "records": 59,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Media.render_css#assign:media",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r3",
+   "anchor": "Media.absolute_path",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r4",
+   "anchor": "Media.__getitem__",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r5",
+   "anchor": "media_property._media#assign:sup_cls",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r6",
+   "anchor": "media_property._media#assign:definition",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r7",
+   "anchor": "MediaDefiningClass",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r8",
+   "anchor": "SubWidget",
+   "kind": "doc",
+   "line": 162
+  },
+  {
+   "id": "r9",
+   "anchor": "Widget.needs_multipart_form",
+   "kind": "trail",
+   "line": 186
+  },
+  {
+   "id": "r10",
+   "anchor": "Widget.subwidgets",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r11",
+   "anchor": "Widget.render",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r12",
+   "anchor": "Widget.build_attrs",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r13",
+   "anchor": "Widget.value_from_datadict",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r14",
+   "anchor": "Widget.id_for_label",
+   "kind": "doc",
+   "line": 242
+  },
+  {
+   "id": "r15",
+   "anchor": "Input",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r16",
+   "anchor": "Input.input_type",
+   "kind": "trail",
+   "line": 263
+  },
+  {
+   "id": "r17",
+   "anchor": "Input.render#if:value != ''/assign:final_attrs['value']",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r18",
+   "anchor": "MultipleHiddenInput",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r19",
+   "anchor": "MultipleHiddenInput.render#for:i, v in enumerate(value)/if:id_/assign:input_attrs['id']",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r20",
+   "anchor": "FileInput.value_from_datadict",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r21",
+   "anchor": "ClearableFileInput.clear_checkbox_name",
+   "kind": "doc",
+   "line": 376
+  },
+  {
+   "id": "r22",
+   "anchor": "ClearableFileInput.clear_checkbox_id",
+   "kind": "doc",
+   "line": 383
+  },
+  {
+   "id": "r23",
+   "anchor": "ClearableFileInput.is_initial",
+   "kind": "doc",
+   "line": 389
+  },
+  {
+   "id": "r24",
+   "anchor": "ClearableFileInput.get_template_substitution_values",
+   "kind": "doc",
+   "line": 395
+  },
+  {
+   "id": "r25",
+   "anchor": "ClearableFileInput.value_from_datadict#if:not self.is_required and CheckboxInput().value_from_datadict(data, files, self.clear_checkbox_name(name))/if:upload/return",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r26",
+   "anchor": "ClearableFileInput.value_from_datadict#if:not self.is_required and CheckboxInput().value_from_datadict(data, files, self.clear_checkbox_name(name))/return",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r27",
+   "anchor": "Textarea.__init__#assign:default_attrs",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r28",
+   "anchor": "boolean_check",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r29",
+   "anchor": "CheckboxInput.check_test",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r30",
+   "anchor": "CheckboxInput.render#if:not (value is True or value is False or value is None or value == '')/assign:final_attrs['value']",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r31",
+   "anchor": "CheckboxInput.value_from_datadict#if:name not in data/return",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r32",
+   "anchor": "CheckboxInput.value_from_datadict#assign:values",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r33",
+   "anchor": "CheckboxInput.value_omitted_from_data#return",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r34",
+   "anchor": "Select.choices",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r35",
+   "anchor": "Select.render_option#if:option_value in selected_choices/if:not self.allow_multiple_selected/call:selected_choices.remove",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r36",
+   "anchor": "Select.render_options#assign:selected_choices",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r37",
+   "anchor": "NullBooleanSelect",
+   "kind": "doc",
+   "line": 577
+  },
+  {
+   "id": "r38",
+   "anchor": "ChoiceInput",
+   "kind": "doc",
+   "line": 632
+  },
+  {
+   "id": "r39",
+   "anchor": "ChoiceInput.input_type",
+   "kind": "trail",
+   "line": 637
+  },
+  {
+   "id": "r40",
+   "anchor": "ChoiceFieldRenderer",
+   "kind": "doc",
+   "line": 702
+  },
+  {
+   "id": "r41",
+   "anchor": "ChoiceFieldRenderer.render",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r42",
+   "anchor": "RendererMixin.renderer",
+   "kind": "trail",
+   "line": 771
+  },
+  {
+   "id": "r43",
+   "anchor": "RendererMixin.__init__#assign:renderer",
+   "kind": "lead",
+   "line": 776
+  },
+  {
+   "id": "r44",
+   "anchor": "RendererMixin.get_renderer",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r45",
+   "anchor": "RendererMixin.id_for_label#if:id_",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r46",
+   "anchor": "CheckboxSelectMultiple.use_required_attribute#return",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r47",
+   "anchor": "CheckboxSelectMultiple.value_omitted_from_data#return",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r48",
+   "anchor": "MultiWidget",
+   "kind": "doc",
+   "line": 826
+  },
+  {
+   "id": "r49",
+   "anchor": "MultiWidget.render#if:not isinstance(value, list)",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r50",
+   "anchor": "MultiWidget.id_for_label#if:id_",
+   "kind": "lead",
+   "line": 884
+  },
+  {
+   "id": "r51",
+   "anchor": "MultiWidget.format_output",
+   "kind": "doc",
+   "line": 897
+  },
+  {
+   "id": "r52",
+   "anchor": "MultiWidget.decompress",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r53",
+   "anchor": "MultiWidget._get_media",
+   "kind": "doc",
+   "line": 915
+  },
+  {
+   "id": "r54",
+   "anchor": "SplitDateTimeWidget",
+   "kind": "doc",
+   "line": 933
+  },
+  {
+   "id": "r55",
+   "anchor": "SplitHiddenDateTimeWidget",
+   "kind": "doc",
+   "line": 953
+  },
+  {
+   "id": "r56",
+   "anchor": "SelectDateWidget",
+   "kind": "doc",
+   "line": 963
+  },
+  {
+   "id": "r57",
+   "anchor": "SelectDateWidget.__init__#if:years",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r58",
+   "anchor": "SelectDateWidget.__init__#if:months",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r59",
+   "anchor": "SelectDateWidget.__init__#if:isinstance(empty_label, (list, tuple))",
+   "kind": "lead",
+   "line": 995
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 23087,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4592,
+  "thinking_tokens": 2033,
+  "opus_cost_usd": 0.3499615,
+  "total_cost_usd": 0.3676025,
+  "duration_ms": 41901,
+  "duration_api_ms": 43174,
+  "num_turns": 2
+ },
+ "wall_ms": 42718,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

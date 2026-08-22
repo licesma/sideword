@@ -1,0 +1,385 @@
+{
+ "blob_sha": "12edd02775828bd9a9611168fab0f1b882eacd01",
+ "path": "astropy/config/configuration.py",
+ "repo": "astropy/astropy",
+ "records": 60,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "InvalidConfigurationItemWarning",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r4",
+   "anchor": "ConfigurationMissingWarning",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r5",
+   "anchor": "ConfigurationMissingWarning",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "ConfigurationDefaultMissingError",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r7",
+   "anchor": "ConfigurationDefaultMissingError",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r8",
+   "anchor": "ConfigurationDefaultMissingWarning",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r9",
+   "anchor": "ConfigurationDefaultMissingWarning",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r10",
+   "anchor": "ConfigurationChangedWarning",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r11",
+   "anchor": "ConfigNamespace",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r12",
+   "anchor": "ConfigNamespace.keys",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r13",
+   "anchor": "ConfigNamespace.values",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r14",
+   "anchor": "ConfigNamespace.items",
+   "kind": "doc",
+   "line": 124
+  },
+  {
+   "id": "r15",
+   "anchor": "ConfigNamespace.set_temp",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r16",
+   "anchor": "ConfigNamespace.reload",
+   "kind": "doc",
+   "line": 154
+  },
+  {
+   "id": "r17",
+   "anchor": "ConfigNamespace.reset",
+   "kind": "doc",
+   "line": 172
+  },
+  {
+   "id": "r18",
+   "anchor": "ConfigItem",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r19",
+   "anchor": "ConfigItem._validator",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r20",
+   "anchor": "ConfigItem.cfgtype",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r21",
+   "anchor": "ConfigItem.rootname",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r22",
+   "anchor": "ConfigItem.__init__#if:cfgtype is None",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r23",
+   "anchor": "ConfigItem.__init__#if:cfgtype is None/if:isiterable(defaultvalue) and not isinstance(defaultvalue, str)/assign:dvstr",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r24",
+   "anchor": "ConfigItem.set",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r25",
+   "anchor": "ConfigItem.set_temp",
+   "kind": "doc",
+   "line": 343
+  },
+  {
+   "id": "r26",
+   "anchor": "ConfigItem.reload",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r27",
+   "anchor": "ConfigItem.reload#while:cobj.parent is not cobj",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r28",
+   "anchor": "ConfigItem.__call__",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r29",
+   "anchor": "ConfigItem._validate_val",
+   "kind": "doc",
+   "line": 488
+  },
+  {
+   "id": "r30",
+   "anchor": "ConfigItem._validate_val#return",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r31",
+   "anchor": "_cfgobjs",
+   "kind": "lead",
+   "line": 502
+  },
+  {
+   "id": "r32",
+   "anchor": "get_config_filename",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r33",
+   "anchor": "_override_config_file",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r34",
+   "anchor": "get_config",
+   "kind": "doc",
+   "line": 522
+  },
+  {
+   "id": "r35",
+   "anchor": "get_config#if:rootname is None/if:_autopkg/else/assign:rootname",
+   "kind": "trail",
+   "line": 577
+  },
+  {
+   "id": "r36",
+   "anchor": "get_config#if:cobj is None or reload/try/if:_override_config_file is not None",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r37",
+   "anchor": "get_config#if:cobj is None or reload/try/except:OSError/assign:cobj",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r38",
+   "anchor": "get_config#if:cobj is None or reload/assign:_cfgobjs[pkgname]",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r39",
+   "anchor": "get_config#if:secname",
+   "kind": "trail",
+   "line": 598
+  },
+  {
+   "id": "r40",
+   "anchor": "generate_config",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r41",
+   "anchor": "generate_config#with:verbosity(), warnings.catch_warnings()/for:mod in pkgutil.walk_packages(path=package.__path__, prefix=package.__name__ + \".\")/if:mod.module_finder.path.endswith((\"test\", \"tests\")) or mod.name.endswith(\"setup_package\")/continue",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r42",
+   "anchor": "generate_config#with:verbosity(), warnings.catch_warnings()/for:mod in pkgutil.walk_packages(path=package.__path__, prefix=package.__name__ + \".\")/if:mod.name.split(\".\")[-1].startswith(\"_\")/continue",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r43",
+   "anchor": "generate_config#with:contextlib.ExitStack() as stack/if:isinstance(filename, (str, os.PathLike))/else/assign:fp",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r44",
+   "anchor": "generate_config#with:contextlib.ExitStack() as stack/assign:subclasses",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r45",
+   "anchor": "generate_config#with:contextlib.ExitStack() as stack/for:conf in sorted(subclasses, key=lambda x: x.__module__)/if:mod.split(\".\")[0] != pkgname",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r46",
+   "anchor": "generate_config#with:contextlib.ExitStack() as stack/for:conf in sorted(subclasses, key=lambda x: x.__module__)/if:mod in processed",
+   "kind": "lead",
+   "line": 671
+  },
+  {
+   "id": "r47",
+   "anchor": "generate_config#with:contextlib.ExitStack() as stack/for:conf in sorted(subclasses, key=lambda x: x.__module__)/for:item in conf().values()/if:print_module/if:item.module != pkgname",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r48",
+   "anchor": "reload_config",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r49",
+   "anchor": "reload_config#while:sec.parent is not sec",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r50",
+   "anchor": "is_unedited_config_file",
+   "kind": "doc",
+   "line": 726
+  },
+  {
+   "id": "r51",
+   "anchor": "is_unedited_config_file#return",
+   "kind": "lead",
+   "line": 735
+  },
+  {
+   "id": "r52",
+   "anchor": "update_default_config",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r53",
+   "anchor": "update_default_config",
+   "kind": "doc",
+   "line": 743
+  },
+  {
+   "id": "r54",
+   "anchor": "update_default_config#if:not path.isfile(default_cfgfn)/return",
+   "kind": "lead",
+   "line": 784
+  },
+  {
+   "id": "r55",
+   "anchor": "update_default_config#if:version and \"dev\" not in version and cfgfn is not None",
+   "kind": "lead",
+   "line": 810
+  },
+  {
+   "id": "r56",
+   "anchor": "update_default_config#if:doupdate or needs_template/if:needs_template/if:not identical and not doupdate",
+   "kind": "lead",
+   "line": 825
+  },
+  {
+   "id": "r57",
+   "anchor": "create_config_file",
+   "kind": "doc",
+   "line": 842
+  },
+  {
+   "id": "r58",
+   "anchor": "create_config_file#import:astropy.logger",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r59",
+   "anchor": "create_config_file#assign:template_content",
+   "kind": "lead",
+   "line": 869
+  },
+  {
+   "id": "r60",
+   "anchor": "create_config_file#if:cfgfn is not None and path.exists(cfgfn)",
+   "kind": "lead",
+   "line": 877
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18742,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5944,
+  "thinking_tokens": 3074,
+  "opus_cost_usd": 0.3403115,
+  "total_cost_usd": 0.3542685,
+  "duration_ms": 54131,
+  "duration_api_ms": 55247,
+  "num_turns": 2
+ },
+ "wall_ms": 55331,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

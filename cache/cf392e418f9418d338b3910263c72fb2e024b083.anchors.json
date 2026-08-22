@@ -1,0 +1,247 @@
+{
+ "blob_sha": "cf392e418f9418d338b3910263c72fb2e024b083",
+ "path": "django/contrib/admin/views/main.py",
+ "repo": "django/django",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "ALL_VAR",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r2",
+   "anchor": "ChangeList.__init__#try",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r3",
+   "anchor": "ChangeList.get_filters_params",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r4",
+   "anchor": "ChangeList.get_filters_params#assign:lookup_params",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r5",
+   "anchor": "ChangeList.get_filters_params#for:ignored in IGNORED_PARAMS",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r6",
+   "anchor": "ChangeList.get_filters#if:self.list_filter/for:list_filter in self.list_filter/if:callable(list_filter)/assign:spec",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r7",
+   "anchor": "ChangeList.get_filters#if:self.list_filter/for:list_filter in self.list_filter/if:callable(list_filter)/else/if:isinstance(list_filter, (tuple, list))/assign:field, field_list_filter_class",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r8",
+   "anchor": "ChangeList.get_filters#if:self.list_filter/for:list_filter in self.list_filter/if:callable(list_filter)/else/if:isinstance(list_filter, (tuple, list))/else/assign:field, field_list_filter_class",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r9",
+   "anchor": "ChangeList.get_filters#if:self.list_filter/for:list_filter in self.list_filter/if:callable(list_filter)/else/assign:use_distinct",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r10",
+   "anchor": "ChangeList.get_filters#try",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r11",
+   "anchor": "ChangeList.get_results#assign:result_count",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r12",
+   "anchor": "ChangeList.get_results#if:self.model_admin.show_full_result_count",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r13",
+   "anchor": "ChangeList.get_results#if:(self.show_all and can_show_all) or not multi_page",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r14",
+   "anchor": "ChangeList.get_results#assign:self.show_admin_actions",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r15",
+   "anchor": "ChangeList.get_ordering_field",
+   "kind": "doc",
+   "line": 210
+  },
+  {
+   "id": "r16",
+   "anchor": "ChangeList.get_ordering_field#try/except:FieldDoesNotExist/if:callable(field_name)",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r17",
+   "anchor": "ChangeList.get_ordering",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r18",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/assign:ordering",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r19",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/if:not order_field/continue",
+   "kind": "trail",
+   "line": 253
+  },
+  {
+   "id": "r20",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/if:order_field.startswith('-') and pfx == \"-\"",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r21",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/except:(IndexError, ValueError)/continue",
+   "kind": "trail",
+   "line": 260
+  },
+  {
+   "id": "r22",
+   "anchor": "ChangeList.get_ordering#call:ordering.extend",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r23",
+   "anchor": "ChangeList.get_ordering#assign:pk_name",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r24",
+   "anchor": "ChangeList.get_ordering#if:not (set(ordering) & {'pk', '-pk', pk_name, '-' + pk_name})/call:ordering.append",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r25",
+   "anchor": "ChangeList.get_ordering_field_columns",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r26",
+   "anchor": "ChangeList.get_ordering_field_columns#assign:ordering",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r27",
+   "anchor": "ChangeList.get_ordering_field_columns#if:ORDER_VAR not in self.params/for:field in ordering",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r28",
+   "anchor": "ChangeList.get_ordering_field_columns#if:ORDER_VAR not in self.params/else/for:p in self.params[ORDER_VAR].split('.')/try/except:ValueError/continue",
+   "kind": "trail",
+   "line": 305
+  },
+  {
+   "id": "r29",
+   "anchor": "ChangeList.get_queryset#assign:(self.filter_specs, self.has_filters, remaining_lookup_params, filters_use_distinct)",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r30",
+   "anchor": "ChangeList.get_queryset#assign:qs",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r31",
+   "anchor": "ChangeList.get_queryset#try/assign:qs",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r32",
+   "anchor": "ChangeList.get_queryset#try/except:(SuspiciousOperation, ImproperlyConfigured)/raise",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r33",
+   "anchor": "ChangeList.get_queryset#try/except:Exception/raise:IncorrectLookupParameters",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r34",
+   "anchor": "ChangeList.get_queryset#assign:ordering",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r35",
+   "anchor": "ChangeList.get_queryset#assign:qs, search_use_distinct",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r36",
+   "anchor": "ChangeList.get_queryset#if:filters_use_distinct | search_use_distinct",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r37",
+   "anchor": "ChangeList.has_related_field_in_list_display#for:field_name in self.list_display/try/else/if:isinstance(field.remote_field, models.ManyToOneRel)/if:field_name == field.get_attname()",
+   "kind": "lead",
+   "line": 375
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11463,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5098,
+  "thinking_tokens": 2844,
+  "opus_cost_usd": 0.24637150000000002,
+  "total_cost_usd": 0.25435850000000004,
+  "duration_ms": 47837,
+  "duration_api_ms": 49016,
+  "num_turns": 2
+ },
+ "wall_ms": 48681,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

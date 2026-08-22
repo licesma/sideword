@@ -1,0 +1,883 @@
+{
+ "blob_sha": "f00d81869dae11ed06d91f23150104bd8b9d7e7e",
+ "path": "xarray/core/variable.py",
+ "repo": "pydata/xarray",
+ "records": 143,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:xarray",
+   "kind": "trail",
+   "line": 24
+  },
+  {
+   "id": "r2",
+   "anchor": "BASIC_INDEXING_TYPES",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r3",
+   "anchor": "VariableType",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "MissingDimensionsError",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r5",
+   "anchor": "MissingDimensionsError",
+   "kind": "post",
+   "line": 66
+  },
+  {
+   "id": "r6",
+   "anchor": "as_variable",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r7",
+   "anchor": "as_variable#if:isinstance(obj, DataArray)",
+   "kind": "todo",
+   "line": 104
+  },
+  {
+   "id": "r8",
+   "anchor": "as_variable#if:isinstance(obj, DataArray)/assign:obj",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r9",
+   "anchor": "as_variable#if:isinstance(obj, Variable)/elif:isinstance(obj, tuple)/try/except:(TypeError, ValueError)/raise:error.__class__",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r10",
+   "anchor": "as_variable#if:name is not None and name in obj.dims/if:obj.ndim!=1",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r11",
+   "anchor": "_maybe_wrap_data",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r12",
+   "anchor": "_possibly_convert_objects",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r13",
+   "anchor": "as_compatible_data",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r14",
+   "anchor": "as_compatible_data#if:fastpath and getattr(data, \"ndim\", 0)>0/return",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r15",
+   "anchor": "as_compatible_data#if:isinstance(data, pd.Timestamp)/assign:data",
+   "kind": "todo",
+   "line": 201
+  },
+  {
+   "id": "r16",
+   "anchor": "as_compatible_data#assign:data",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r17",
+   "anchor": "as_compatible_data#assign:data",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r18",
+   "anchor": "_as_array_or_item",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r19",
+   "anchor": "Variable",
+   "kind": "doc",
+   "line": 271
+  },
+  {
+   "id": "r20",
+   "anchor": "Variable.__init__",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r21",
+   "anchor": "Variable.astype",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r22",
+   "anchor": "Variable.load",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r23",
+   "anchor": "Variable.compute",
+   "kind": "doc",
+   "line": 432
+  },
+  {
+   "id": "r24",
+   "anchor": "Variable.__dask_tokenize__#import:dask.base",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r25",
+   "anchor": "Variable._dask_finalize#if:isinstance(results, dict)",
+   "kind": "trail",
+   "line": 496
+  },
+  {
+   "id": "r26",
+   "anchor": "Variable.values",
+   "kind": "doc",
+   "line": 503
+  },
+  {
+   "id": "r27",
+   "anchor": "Variable.to_base_variable",
+   "kind": "doc",
+   "line": 511
+  },
+  {
+   "id": "r28",
+   "anchor": "Variable.to_index_variable",
+   "kind": "doc",
+   "line": 519
+  },
+  {
+   "id": "r29",
+   "anchor": "Variable.to_index",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r30",
+   "anchor": "Variable.to_dict",
+   "kind": "doc",
+   "line": 531
+  },
+  {
+   "id": "r31",
+   "anchor": "Variable.dims",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r32",
+   "anchor": "Variable._broadcast_indexes",
+   "kind": "doc",
+   "line": 567
+  },
+  {
+   "id": "r33",
+   "anchor": "Variable._broadcast_indexes#assign:key",
+   "kind": "trail",
+   "line": 588
+  },
+  {
+   "id": "r34",
+   "anchor": "Variable._broadcast_indexes#assign:key",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r35",
+   "anchor": "Variable._broadcast_indexes#assign:key",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r36",
+   "anchor": "Variable._broadcast_indexes#assign:key",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r37",
+   "anchor": "Variable._broadcast_indexes#if:all(not isinstance(k, Variable) for k in key)",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r38",
+   "anchor": "Variable._broadcast_indexes#assign:dims",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r39",
+   "anchor": "Variable._validate_indexers",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r40",
+   "anchor": "Variable._broadcast_indexes_outer#for:k in key/if:not isinstance(k, BASIC_INDEXING_TYPES)/if:k.size==0/assign:k",
+   "kind": "lead",
+   "line": 679
+  },
+  {
+   "id": "r41",
+   "anchor": "Variable._nonzero",
+   "kind": "doc",
+   "line": 686
+  },
+  {
+   "id": "r42",
+   "anchor": "Variable._nonzero#assign:nonzeros",
+   "kind": "todo",
+   "line": 690
+  },
+  {
+   "id": "r43",
+   "anchor": "Variable._broadcast_indexes_vectorized#for:dim, value in zip(self.dims, key)/if:isinstance(value, slice)/else/if:variable.dtype.kind==\"b\"",
+   "kind": "trail",
+   "line": 705
+  },
+  {
+   "id": "r44",
+   "anchor": "Variable._broadcast_indexes_vectorized#for:i, (dim, value) in enumerate(zip(self.dims, key))/if:isinstance(value, slice)/if:dim in variable_dims/assign:values",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r45",
+   "anchor": "Variable.__getitem__",
+   "kind": "doc",
+   "line": 749
+  },
+  {
+   "id": "r46",
+   "anchor": "Variable._finalize_indexing_result",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r47",
+   "anchor": "Variable._getitem_with_mask",
+   "kind": "doc",
+   "line": 773
+  },
+  {
+   "id": "r48",
+   "anchor": "Variable._getitem_with_mask#if:fill_value is dtypes.NA",
+   "kind": "todo",
+   "line": 783
+  },
+  {
+   "id": "r49",
+   "anchor": "Variable._getitem_with_mask#if:self.size/if:isinstance(self._data, dask_array_type)/assign:actual_indexer",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r50",
+   "anchor": "Variable._getitem_with_mask#if:self.size/assign:data",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r51",
+   "anchor": "Variable._getitem_with_mask#if:self.size/else/assign:mask",
+   "kind": "lead",
+   "line": 806
+  },
+  {
+   "id": "r52",
+   "anchor": "Variable.__setitem__",
+   "kind": "doc",
+   "line": 813
+  },
+  {
+   "id": "r53",
+   "anchor": "Variable.__setitem__#assign:value",
+   "kind": "lead",
+   "line": 834
+  },
+  {
+   "id": "r54",
+   "anchor": "Variable.attrs",
+   "kind": "doc",
+   "line": 845
+  },
+  {
+   "id": "r55",
+   "anchor": "Variable.encoding",
+   "kind": "doc",
+   "line": 857
+  },
+  {
+   "id": "r56",
+   "anchor": "Variable.copy",
+   "kind": "doc",
+   "line": 871
+  },
+  {
+   "id": "r57",
+   "anchor": "Variable.copy#if:data is None/if:isinstance(data, indexing.MemoryCachedArray)/assign:data",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r58",
+   "anchor": "Variable.copy#if:data is None/if:deep/if:hasattr(data, \"__array_function__\") or isinstance(data, dask_array_type)/elif:not isinstance(data, PandasIndexAdapter)/assign:data",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r59",
+   "anchor": "Variable.copy#return",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r60",
+   "anchor": "Variable.__deepcopy__#return",
+   "kind": "lead",
+   "line": 976
+  },
+  {
+   "id": "r61",
+   "anchor": "Variable.__hash__",
+   "kind": "lead",
+   "line": 980
+  },
+  {
+   "id": "r62",
+   "anchor": "Variable.chunks",
+   "kind": "doc",
+   "line": 983
+  },
+  {
+   "id": "r63",
+   "anchor": "Variable.chunk",
+   "kind": "doc",
+   "line": 991
+  },
+  {
+   "id": "r64",
+   "anchor": "Variable.chunk#if:isinstance(data, da.Array)/else/if:isinstance(data, indexing.ExplicitlyIndexed)/assign:data",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r65",
+   "anchor": "Variable.chunk#if:isinstance(data, da.Array)/else/if:isinstance(data, indexing.ExplicitlyIndexed)/if:LooseVersion(dask.__version__)<\"2.0.0\"/else/assign:kwargs",
+   "kind": "lead",
+   "line": 1048
+  },
+  {
+   "id": "r66",
+   "anchor": "Variable._as_sparse",
+   "kind": "doc",
+   "line": 1059
+  },
+  {
+   "id": "r67",
+   "anchor": "Variable._as_sparse#if:fill_value is dtypes.NA",
+   "kind": "todo",
+   "line": 1066
+  },
+  {
+   "id": "r68",
+   "anchor": "Variable._to_dense",
+   "kind": "doc",
+   "line": 1081
+  },
+  {
+   "id": "r69",
+   "anchor": "Variable.isel",
+   "kind": "doc",
+   "line": 1089
+  },
+  {
+   "id": "r70",
+   "anchor": "Variable.squeeze",
+   "kind": "doc",
+   "line": 1124
+  },
+  {
+   "id": "r71",
+   "anchor": "Variable._shift_one_dim#if:isinstance(data, dask_array_type)/assign:data",
+   "kind": "lead",
+   "line": 1179
+  },
+  {
+   "id": "r72",
+   "anchor": "Variable.shift",
+   "kind": "doc",
+   "line": 1183
+  },
+  {
+   "id": "r73",
+   "anchor": "Variable.pad",
+   "kind": "doc",
+   "line": 1222
+  },
+  {
+   "id": "r74",
+   "anchor": "Variable.pad#if:mode==\"constant\" and (constant_values is None or constant_values is dtypes.NA)",
+   "kind": "lead",
+   "line": 1274
+  },
+  {
+   "id": "r75",
+   "anchor": "Variable.pad#if:isinstance(stat_length, dict)",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r76",
+   "anchor": "Variable.pad#if:stat_length is None and mode in [\"maximum\", \"mean\", \"median\", \"minimum\"]",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r77",
+   "anchor": "Variable.pad#for:k, v in pad_width.items()",
+   "kind": "lead",
+   "line": 1296
+  },
+  {
+   "id": "r78",
+   "anchor": "Variable.pad#assign:pad_option_kwargs",
+   "kind": "lead",
+   "line": 1302
+  },
+  {
+   "id": "r79",
+   "anchor": "Variable._roll_one_dim#if:isinstance(data, dask_array_type)/assign:data",
+   "kind": "lead",
+   "line": 1338
+  },
+  {
+   "id": "r80",
+   "anchor": "Variable.roll",
+   "kind": "doc",
+   "line": 1342
+  },
+  {
+   "id": "r81",
+   "anchor": "Variable.transpose",
+   "kind": "doc",
+   "line": 1368
+  },
+  {
+   "id": "r82",
+   "anchor": "Variable.transpose#if:len(dims)<2 or dims==self.dims/return",
+   "kind": "lead",
+   "line": 1399
+  },
+  {
+   "id": "r83",
+   "anchor": "Variable.set_dims",
+   "kind": "doc",
+   "line": 1408
+  },
+  {
+   "id": "r84",
+   "anchor": "Variable.set_dims#if:self.dims==expanded_dims/assign:expanded_data",
+   "kind": "lead",
+   "line": 1444
+  },
+  {
+   "id": "r85",
+   "anchor": "Variable._stack_once#if:len(dims)==0/return",
+   "kind": "lead",
+   "line": 1469
+  },
+  {
+   "id": "r86",
+   "anchor": "Variable.stack",
+   "kind": "doc",
+   "line": 1481
+  },
+  {
+   "id": "r87",
+   "anchor": "Variable.unstack",
+   "kind": "doc",
+   "line": 1542
+  },
+  {
+   "id": "r88",
+   "anchor": "Variable.reduce",
+   "kind": "doc",
+   "line": 1580
+  },
+  {
+   "id": "r89",
+   "anchor": "Variable.reduce#if:getattr(data, \"shape\", ())==self.shape/else/if:keepdims/assign:slices",
+   "kind": "lead",
+   "line": 1652
+  },
+  {
+   "id": "r90",
+   "anchor": "Variable.reduce#if:getattr(data, \"shape\", ())==self.shape/else/if:keepdims/if:getattr(data, \"shape\", None) is None/assign:data",
+   "kind": "lead",
+   "line": 1658
+  },
+  {
+   "id": "r91",
+   "anchor": "Variable.concat",
+   "kind": "doc",
+   "line": 1674
+  },
+  {
+   "id": "r92",
+   "anchor": "Variable.concat#assign:variables",
+   "kind": "lead",
+   "line": 1709
+  },
+  {
+   "id": "r93",
+   "anchor": "Variable.concat#if:dim in first_var.dims/if:positions is not None/assign:indices",
+   "kind": "todo",
+   "line": 1721
+  },
+  {
+   "id": "r94",
+   "anchor": "Variable.equals",
+   "kind": "doc",
+   "line": 1739
+  },
+  {
+   "id": "r95",
+   "anchor": "Variable.broadcast_equals",
+   "kind": "doc",
+   "line": 1757
+  },
+  {
+   "id": "r96",
+   "anchor": "Variable.identical",
+   "kind": "doc",
+   "line": 1770
+  },
+  {
+   "id": "r97",
+   "anchor": "Variable.no_conflicts",
+   "kind": "doc",
+   "line": 1780
+  },
+  {
+   "id": "r98",
+   "anchor": "Variable.quantile",
+   "kind": "doc",
+   "line": 1789
+  },
+  {
+   "id": "r99",
+   "anchor": "Variable.quantile._wrapper#return",
+   "kind": "lead",
+   "line": 1854
+  },
+  {
+   "id": "r100",
+   "anchor": "Variable.quantile#assign:result",
+   "kind": "lead",
+   "line": 1870
+  },
+  {
+   "id": "r101",
+   "anchor": "Variable.rank",
+   "kind": "doc",
+   "line": 1877
+  },
+  {
+   "id": "r102",
+   "anchor": "Variable.rolling_window",
+   "kind": "doc",
+   "line": 1926
+  },
+  {
+   "id": "r103",
+   "anchor": "Variable.rolling_window#if:fill_value is dtypes.NA",
+   "kind": "trail",
+   "line": 1969
+  },
+  {
+   "id": "r104",
+   "anchor": "Variable.coarsen",
+   "kind": "doc",
+   "line": 1994
+  },
+  {
+   "id": "r105",
+   "anchor": "Variable._coarsen_reshape",
+   "kind": "doc",
+   "line": 2010
+  },
+  {
+   "id": "r106",
+   "anchor": "Variable._coarsen_reshape#assign:boundary",
+   "kind": "lead",
+   "line": 2021
+  },
+  {
+   "id": "r107",
+   "anchor": "Variable._coarsen_reshape#for:d, window in windows.items()/assign:size",
+   "kind": "lead",
+   "line": 2031
+  },
+  {
+   "id": "r108",
+   "anchor": "Variable._coarsen_reshape#for:d, window in windows.items()/if:boundary[d]==\"exact\"/elif:boundary[d]==\"trim\"/elif:boundary[d]==\"pad\"",
+   "kind": "trail",
+   "line": 2045
+  },
+  {
+   "id": "r109",
+   "anchor": "Variable._to_numeric",
+   "kind": "doc",
+   "line": 2133
+  },
+  {
+   "id": "r110",
+   "anchor": "Variable._unravel_argminmax",
+   "kind": "doc",
+   "line": 2142
+  },
+  {
+   "id": "r111",
+   "anchor": "Variable._unravel_argminmax#if:dim is .../assign:dim",
+   "kind": "lead",
+   "line": 2167
+  },
+  {
+   "id": "r112",
+   "anchor": "Variable._unravel_argminmax#if:dim is None or axis is not None or not isinstance(dim, Sequence) or isinstance(dim, str)/return",
+   "kind": "lead",
+   "line": 2176
+  },
+  {
+   "id": "r113",
+   "anchor": "Variable._unravel_argminmax#assign:newdimname",
+   "kind": "lead",
+   "line": 2182
+  },
+  {
+   "id": "r114",
+   "anchor": "Variable.argmin",
+   "kind": "doc",
+   "line": 2212
+  },
+  {
+   "id": "r115",
+   "anchor": "Variable.argmax",
+   "kind": "doc",
+   "line": 2257
+  },
+  {
+   "id": "r116",
+   "anchor": "IndexVariable",
+   "kind": "doc",
+   "line": 2306
+  },
+  {
+   "id": "r117",
+   "anchor": "IndexVariable.__init__#if:not isinstance(self._data, PandasIndexAdapter)",
+   "kind": "lead",
+   "line": 2325
+  },
+  {
+   "id": "r118",
+   "anchor": "IndexVariable.__dask_tokenize__#return",
+   "kind": "lead",
+   "line": 2332
+  },
+  {
+   "id": "r119",
+   "anchor": "IndexVariable.load#return",
+   "kind": "lead",
+   "line": 2336
+  },
+  {
+   "id": "r120",
+   "anchor": "IndexVariable.data#decorator:Variable.data.setter",
+   "kind": "lead",
+   "line": 2339
+  },
+  {
+   "id": "r121",
+   "anchor": "IndexVariable.chunk#return",
+   "kind": "lead",
+   "line": 2355
+  },
+  {
+   "id": "r122",
+   "anchor": "IndexVariable._as_sparse#return",
+   "kind": "lead",
+   "line": 2359
+  },
+  {
+   "id": "r123",
+   "anchor": "IndexVariable._to_dense#return",
+   "kind": "lead",
+   "line": 2363
+  },
+  {
+   "id": "r124",
+   "anchor": "IndexVariable._finalize_indexing_result#if:getattr(data, \"ndim\", 0)!=1/return",
+   "kind": "lead",
+   "line": 2368
+  },
+  {
+   "id": "r125",
+   "anchor": "IndexVariable.concat",
+   "kind": "doc",
+   "line": 2376
+  },
+  {
+   "id": "r126",
+   "anchor": "IndexVariable.copy",
+   "kind": "doc",
+   "line": 2414
+  },
+  {
+   "id": "r127",
+   "anchor": "IndexVariable.equals#if:equiv is not None",
+   "kind": "lead",
+   "line": 2452
+  },
+  {
+   "id": "r128",
+   "anchor": "IndexVariable.equals#assign:other",
+   "kind": "lead",
+   "line": 2456
+  },
+  {
+   "id": "r129",
+   "anchor": "IndexVariable.to_index_variable",
+   "kind": "doc",
+   "line": 2465
+  },
+  {
+   "id": "r130",
+   "anchor": "IndexVariable.to_index",
+   "kind": "doc",
+   "line": 2471
+  },
+  {
+   "id": "r131",
+   "anchor": "IndexVariable.to_index#assert:self.ndim==1",
+   "kind": "lead",
+   "line": 2475
+  },
+  {
+   "id": "r132",
+   "anchor": "IndexVariable.to_index#if:isinstance(index, pd.MultiIndex)/assign:valid_level_names",
+   "kind": "lead",
+   "line": 2480
+  },
+  {
+   "id": "r133",
+   "anchor": "IndexVariable.level_names",
+   "kind": "doc",
+   "line": 2490
+  },
+  {
+   "id": "r134",
+   "anchor": "IndexVariable.get_level_variable",
+   "kind": "doc",
+   "line": 2500
+  },
+  {
+   "id": "r135",
+   "anchor": "Coordinate",
+   "kind": "lead",
+   "line": 2517
+  },
+  {
+   "id": "r136",
+   "anchor": "_unified_dims#assign:all_dims",
+   "kind": "lead",
+   "line": 2522
+  },
+  {
+   "id": "r137",
+   "anchor": "_broadcast_compat_variables",
+   "kind": "doc",
+   "line": 2542
+  },
+  {
+   "id": "r138",
+   "anchor": "broadcast_variables",
+   "kind": "doc",
+   "line": 2552
+  },
+  {
+   "id": "r139",
+   "anchor": "_broadcast_compat_data#if:all(hasattr(other, attr) for attr in [\"dims\", \"data\", \"shape\", \"encoding\"])/assign:new_self, new_other",
+   "kind": "lead",
+   "line": 2572
+  },
+  {
+   "id": "r140",
+   "anchor": "_broadcast_compat_data#if:all(hasattr(other, attr) for attr in [\"dims\", \"data\", \"shape\", \"encoding\"])/else/assign:self_data",
+   "kind": "lead",
+   "line": 2578
+  },
+  {
+   "id": "r141",
+   "anchor": "concat",
+   "kind": "doc",
+   "line": 2584
+  },
+  {
+   "id": "r142",
+   "anchor": "assert_unique_multiindex_level_names",
+   "kind": "doc",
+   "line": 2621
+  },
+  {
+   "id": "r143",
+   "anchor": "assert_unique_multiindex_level_names#for:k, v in variables.items()",
+   "kind": "lead",
+   "line": 2648
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 54125,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14070,
+  "thinking_tokens": 7419,
+  "opus_cost_usd": 0.8972915,
+  "total_cost_usd": 0.9398335,
+  "duration_ms": 117756,
+  "duration_api_ms": 119466,
+  "num_turns": 2
+ },
+ "wall_ms": 118870,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

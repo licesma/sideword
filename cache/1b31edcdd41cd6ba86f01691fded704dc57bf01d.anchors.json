@@ -1,0 +1,727 @@
+{
+ "blob_sha": "1b31edcdd41cd6ba86f01691fded704dc57bf01d",
+ "path": "lib/matplotlib/image.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 117,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:matplotlib._image",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:matplotlib._image",
+   "kind": "lead",
+   "line": 27
+  },
+  {
+   "id": "r4",
+   "anchor": "_interpd_",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r5",
+   "anchor": "_interpd_#key:none",
+   "kind": "trail",
+   "line": 36
+  },
+  {
+   "id": "r6",
+   "anchor": "composite_images",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "_draw_list_compositing_images",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r8",
+   "anchor": "_draw_list_compositing_images#assign:not_composite",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r9",
+   "anchor": "_draw_list_compositing_images#if:not_composite or not has_images/else/assign:image_group",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r10",
+   "anchor": "_rgb_to_rgba",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r11",
+   "anchor": "_ImageBase.__init__",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r12",
+   "anchor": "_ImageBase.__getstate__#assign:state['_imcache']",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r13",
+   "anchor": "_ImageBase.get_size",
+   "kind": "doc",
+   "line": 228
+  },
+  {
+   "id": "r14",
+   "anchor": "_ImageBase.set_alpha",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r15",
+   "anchor": "_ImageBase.changed",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r16",
+   "anchor": "_ImageBase._make_image",
+   "kind": "doc",
+   "line": 255
+  },
+  {
+   "id": "r17",
+   "anchor": "_ImageBase._make_image#if:self.origin=='upper'/assign:t0",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r18",
+   "anchor": "_ImageBase._make_image#if:t.is_affine and round_to_pixel_border and (out_width_base % 1.0 != 0.0 or out_height_base % 1.0 != 0.0)",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r19",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:inp_dtype",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r20",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:inp_dtype",
+   "kind": "todo",
+   "line": 354
+  },
+  {
+   "id": "r21",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:a_min is np.ma.masked",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r22",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:a_min is np.ma.masked/assign:a_min, a_max",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r23",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:inp_dtype.kind=='f'/if:A.dtype not in (np.float32, np.float16)",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r24",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:inp_dtype.kind=='f'/else/assign:da",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r25",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:inp_dtype.kind=='f'/else/if:da>1e8/assign:scaled_dtype",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r26",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:A_scaled",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r27",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/call:self.norm.autoscale_None",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r28",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:a_min",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r29",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/call:_image.resample",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r30",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/del:A_scaled",
+   "kind": "lead",
+   "line": 435
+  },
+  {
+   "id": "r31",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:A_resampled",
+   "kind": "lead",
+   "line": 441
+  },
+  {
+   "id": "r32",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:isinstance(self.norm, mcolors.NoNorm)",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r33",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/if:A.mask.shape==A.shape/assign:mask[:]",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r34",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:out_mask",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r35",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/del:mask",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r36",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:out_alpha",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r37",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/assign:output",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r38",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/else/if:A.shape[2]==3",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r39",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/else/assign:alpha_channel",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r40",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/else/assign:A",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r41",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2/else/assign:output[..., 3]",
+   "kind": "lead",
+   "line": 515
+  },
+  {
+   "id": "r42",
+   "anchor": "_ImageBase._make_image#if:not unsampled/assign:output",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r43",
+   "anchor": "_ImageBase._make_image#if:not unsampled/assign:output",
+   "kind": "post",
+   "line": 520
+  },
+  {
+   "id": "r44",
+   "anchor": "_ImageBase._make_image#if:not unsampled/if:A.ndim==2",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r45",
+   "anchor": "_ImageBase._make_image#if:not unsampled/else/assign:subset",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r46",
+   "anchor": "_ImageBase.make_image",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r47",
+   "anchor": "_ImageBase._draw_unsampled_image",
+   "kind": "doc",
+   "line": 573
+  },
+  {
+   "id": "r48",
+   "anchor": "_ImageBase._check_unsampled_image",
+   "kind": "doc",
+   "line": 588
+  },
+  {
+   "id": "r49",
+   "anchor": "_ImageBase.draw#if:not self.get_visible()",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r50",
+   "anchor": "_ImageBase.draw#if:self.get_array().size==0",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r51",
+   "anchor": "_ImageBase.draw#assign:gc",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r52",
+   "anchor": "_ImageBase.contains",
+   "kind": "doc",
+   "line": 625
+  },
+  {
+   "id": "r53",
+   "anchor": "_ImageBase.contains#if:self.axes is not mouseevent.inaxes",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r54",
+   "anchor": "_ImageBase.contains#assign:x, y",
+   "kind": "todo",
+   "line": 642
+  },
+  {
+   "id": "r55",
+   "anchor": "_ImageBase.write_png",
+   "kind": "doc",
+   "line": 656
+  },
+  {
+   "id": "r56",
+   "anchor": "_ImageBase.set_data",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r57",
+   "anchor": "_ImageBase.set_data#try/else/if:isinstance(A, Image.Image)/assign:A",
+   "kind": "trail",
+   "line": 679
+  },
+  {
+   "id": "r58",
+   "anchor": "_ImageBase.set_data#if:self._A.ndim==3/assign:high",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r59",
+   "anchor": "_ImageBase.set_data#if:self._A.ndim==3/if:self._A.dtype != np.uint8 and np.issubdtype(self._A.dtype, np.integer)",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r60",
+   "anchor": "_ImageBase.set_array",
+   "kind": "doc",
+   "line": 713
+  },
+  {
+   "id": "r61",
+   "anchor": "_ImageBase.set_array#call:self.set_data",
+   "kind": "lead",
+   "line": 723
+  },
+  {
+   "id": "r62",
+   "anchor": "_ImageBase.get_interpolation",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r63",
+   "anchor": "_ImageBase.set_interpolation",
+   "kind": "doc",
+   "line": 736
+  },
+  {
+   "id": "r64",
+   "anchor": "_ImageBase.can_composite",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r65",
+   "anchor": "_ImageBase.set_resample",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r66",
+   "anchor": "_ImageBase.get_resample",
+   "kind": "doc",
+   "line": 782
+  },
+  {
+   "id": "r67",
+   "anchor": "_ImageBase.set_filternorm",
+   "kind": "doc",
+   "line": 786
+  },
+  {
+   "id": "r68",
+   "anchor": "_ImageBase.get_filternorm",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r69",
+   "anchor": "_ImageBase.set_filterrad",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r70",
+   "anchor": "_ImageBase.get_filterrad",
+   "kind": "doc",
+   "line": 818
+  },
+  {
+   "id": "r71",
+   "anchor": "AxesImage.__init__",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r72",
+   "anchor": "AxesImage.make_image#assign:trans",
+   "kind": "lead",
+   "line": 874
+  },
+  {
+   "id": "r73",
+   "anchor": "AxesImage.make_image#assign:x1, x2, y1, y2",
+   "kind": "lead",
+   "line": 876
+  },
+  {
+   "id": "r74",
+   "anchor": "AxesImage._check_unsampled_image",
+   "kind": "doc",
+   "line": 883
+  },
+  {
+   "id": "r75",
+   "anchor": "AxesImage.set_extent",
+   "kind": "doc",
+   "line": 890
+  },
+  {
+   "id": "r76",
+   "anchor": "AxesImage.get_extent",
+   "kind": "doc",
+   "line": 910
+  },
+  {
+   "id": "r77",
+   "anchor": "AxesImage.get_cursor_data",
+   "kind": "doc",
+   "line": 922
+  },
+  {
+   "id": "r78",
+   "anchor": "AxesImage.get_cursor_data#if:not (0 <= i < arr.shape[0]) or not (0 <= j < arr.shape[1])",
+   "kind": "lead",
+   "line": 944
+  },
+  {
+   "id": "r79",
+   "anchor": "NonUniformImage.__init__",
+   "kind": "doc",
+   "line": 961
+  },
+  {
+   "id": "r80",
+   "anchor": "NonUniformImage._check_unsampled_image",
+   "kind": "doc",
+   "line": 970
+  },
+  {
+   "id": "r81",
+   "anchor": "NonUniformImage.make_image#if:self._A is None",
+   "kind": "lead",
+   "line": 978
+  },
+  {
+   "id": "r82",
+   "anchor": "NonUniformImage.set_data",
+   "kind": "doc",
+   "line": 1012
+  },
+  {
+   "id": "r83",
+   "anchor": "NonUniformImage.set_interpolation",
+   "kind": "doc",
+   "line": 1045
+  },
+  {
+   "id": "r84",
+   "anchor": "PcolorImage",
+   "kind": "doc",
+   "line": 1079
+  },
+  {
+   "id": "r85",
+   "anchor": "PcolorImage.__init__",
+   "kind": "doc",
+   "line": 1086
+  },
+  {
+   "id": "r86",
+   "anchor": "PcolorImage.make_image#if:self._A is None",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r87",
+   "anchor": "PcolorImage.make_image#assign:width",
+   "kind": "lead",
+   "line": 1120
+  },
+  {
+   "id": "r88",
+   "anchor": "PcolorImage.set_data",
+   "kind": "doc",
+   "line": 1140
+  },
+  {
+   "id": "r89",
+   "anchor": "PcolorImage.set_data#if:x[-1]<x[0]",
+   "kind": "lead",
+   "line": 1182
+  },
+  {
+   "id": "r90",
+   "anchor": "PcolorImage.get_cursor_data#assign:x, y",
+   "kind": "lead",
+   "line": 1200
+  },
+  {
+   "id": "r91",
+   "anchor": "FigureImage.__init__",
+   "kind": "doc",
+   "line": 1217
+  },
+  {
+   "id": "r92",
+   "anchor": "FigureImage.get_extent",
+   "kind": "doc",
+   "line": 1243
+  },
+  {
+   "id": "r93",
+   "anchor": "FigureImage.make_image#assign:fac",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r94",
+   "anchor": "FigureImage.make_image#assign:bbox",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r95",
+   "anchor": "FigureImage.set_data",
+   "kind": "doc",
+   "line": 1266
+  },
+  {
+   "id": "r96",
+   "anchor": "BboxImage",
+   "kind": "doc",
+   "line": 1273
+  },
+  {
+   "id": "r97",
+   "anchor": "BboxImage.__init__",
+   "kind": "doc",
+   "line": 1277
+  },
+  {
+   "id": "r98",
+   "anchor": "BboxImage.contains",
+   "kind": "doc",
+   "line": 1329
+  },
+  {
+   "id": "r99",
+   "anchor": "BboxImage.contains#if:not self.get_visible()",
+   "kind": "trail",
+   "line": 1334
+  },
+  {
+   "id": "r100",
+   "anchor": "BboxImage.make_image#assign:width, height",
+   "kind": "lead",
+   "line": 1344
+  },
+  {
+   "id": "r101",
+   "anchor": "imread",
+   "kind": "doc",
+   "line": 1355
+  },
+  {
+   "id": "r102",
+   "anchor": "imread#if:format is None/if:isinstance(fname, str)/if:len(parsed.scheme)>1",
+   "kind": "lead",
+   "line": 1397
+  },
+  {
+   "id": "r103",
+   "anchor": "imread#if:ext not in handlers",
+   "kind": "trail",
+   "line": 1410
+  },
+  {
+   "id": "r104",
+   "anchor": "imread#if:isinstance(fname, str)",
+   "kind": "lead",
+   "line": 1425
+  },
+  {
+   "id": "r105",
+   "anchor": "imread#if:isinstance(fname, str)/if:len(parsed.scheme)>1",
+   "kind": "lead",
+   "line": 1428
+  },
+  {
+   "id": "r106",
+   "anchor": "imsave",
+   "kind": "doc",
+   "line": 1439
+  },
+  {
+   "id": "r107",
+   "anchor": "imsave#if:format in [\"pdf\", \"ps\", \"eps\", \"svg\"]/assign:fig",
+   "kind": "lead",
+   "line": 1483
+  },
+  {
+   "id": "r108",
+   "anchor": "imsave#if:format in [\"pdf\", \"ps\", \"eps\", \"svg\"]/else/assign:sm",
+   "kind": "lead",
+   "line": 1490
+  },
+  {
+   "id": "r109",
+   "anchor": "imsave#if:format in [\"pdf\", \"ps\", \"eps\", \"svg\"]/else/if:format==\"png\"/else/if:format in [\"jpg\", \"jpeg\"]/assign:format",
+   "kind": "trail",
+   "line": 1509
+  },
+  {
+   "id": "r110",
+   "anchor": "pil_to_array",
+   "kind": "doc",
+   "line": 1519
+  },
+  {
+   "id": "r111",
+   "anchor": "pil_to_array#if:pilImage.mode in ['RGBA', 'RGBX', 'RGB', 'L']/return",
+   "kind": "lead",
+   "line": 1537
+  },
+  {
+   "id": "r112",
+   "anchor": "pil_to_array#if:pilImage.mode in ['RGBA', 'RGBX', 'RGB', 'L']/elif:pilImage.mode.startswith('I;16')/assign:raw",
+   "kind": "lead",
+   "line": 1540
+  },
+  {
+   "id": "r113",
+   "anchor": "pil_to_array#if:pilImage.mode in ['RGBA', 'RGBX', 'RGB', 'L']/else",
+   "kind": "trail",
+   "line": 1546
+  },
+  {
+   "id": "r114",
+   "anchor": "pil_to_array#if:pilImage.mode in ['RGBA', 'RGBX', 'RGB', 'L']/else/return",
+   "kind": "trail",
+   "line": 1551
+  },
+  {
+   "id": "r115",
+   "anchor": "thumbnail",
+   "kind": "doc",
+   "line": 1554
+  },
+  {
+   "id": "r116",
+   "anchor": "thumbnail#assign:dpi",
+   "kind": "lead",
+   "line": 1596
+  },
+  {
+   "id": "r117",
+   "anchor": "thumbnail#if:preview/import:matplotlib.pyplot",
+   "kind": "lead",
+   "line": 1603
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 35421,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12401,
+  "thinking_tokens": 6512,
+  "opus_cost_usd": 0.6685265,
+  "total_cost_usd": 0.6967575,
+  "duration_ms": 113573,
+  "duration_api_ms": 114913,
+  "num_turns": 2
+ },
+ "wall_ms": 114949,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

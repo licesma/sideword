@@ -1,0 +1,181 @@
+{
+ "blob_sha": "8b28a60485684c2dbfd624e42b489897a489ad56",
+ "path": "django/db/backends/mysql/base.py",
+ "repo": "django/django",
+ "records": 26,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:.client",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "django_conversions",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "server_version_re",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r5",
+   "anchor": "CursorWrapper",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "CursorWrapper.codes_for_integrityerror#item:1048",
+   "kind": "trail",
+   "line": 61
+  },
+  {
+   "id": "r7",
+   "anchor": "CursorWrapper.codes_for_integrityerror#item:1690",
+   "kind": "trail",
+   "line": 62
+  },
+  {
+   "id": "r8",
+   "anchor": "CursorWrapper.codes_for_integrityerror#item:3819",
+   "kind": "trail",
+   "line": 63
+  },
+  {
+   "id": "r9",
+   "anchor": "CursorWrapper.codes_for_integrityerror#item:4025",
+   "kind": "trail",
+   "line": 64
+  },
+  {
+   "id": "r10",
+   "anchor": "CursorWrapper.execute#try/return",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r11",
+   "anchor": "CursorWrapper.execute#try/except:Database.OperationalError/if:e.args[0] in self.codes_for_integrityerror",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r12",
+   "anchor": "CursorWrapper.executemany#try/except:Database.OperationalError/if:e.args[0] in self.codes_for_integrityerror",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseWrapper.data_types",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseWrapper._limited_data_types",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseWrapper.pattern_esc",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseWrapper.client_class",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r17",
+   "anchor": "DatabaseWrapper.get_connection_params#assign:kwargs['client_flag']",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r18",
+   "anchor": "DatabaseWrapper.get_connection_params#assign:options",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r19",
+   "anchor": "DatabaseWrapper.get_new_connection#if:connection.encoders.get(bytes) is bytes",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r20",
+   "anchor": "DatabaseWrapper.init_connection_state#if:self.features.is_sql_auto_is_null_enabled/call:assignments.append",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r21",
+   "anchor": "DatabaseWrapper.disable_constraint_checking",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r22",
+   "anchor": "DatabaseWrapper.enable_constraint_checking",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r23",
+   "anchor": "DatabaseWrapper.enable_constraint_checking#assign:self.needs_rollback, needs_rollback",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r24",
+   "anchor": "DatabaseWrapper.check_constraints",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r25",
+   "anchor": "DatabaseWrapper.data_type_check_constraints#if:self.features.supports_column_check_constraints/if:self.mysql_is_mariadb and self.mysql_version < (10, 4, 3)/assign:check_constraints['JSONField']",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r26",
+   "anchor": "DatabaseWrapper.mysql_server_data#with:self.temporary_connection()/call:cursor.execute",
+   "kind": "lead",
+   "line": 369
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12134,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2497,
+  "thinking_tokens": 1112,
+  "opus_cost_usd": 0.18805650000000002,
+  "total_cost_usd": 0.19608550000000002,
+  "duration_ms": 22531,
+  "duration_api_ms": 23750,
+  "num_turns": 2
+ },
+ "wall_ms": 23427,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

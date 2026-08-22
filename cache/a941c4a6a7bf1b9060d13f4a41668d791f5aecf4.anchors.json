@@ -1,0 +1,289 @@
+{
+ "blob_sha": "a941c4a6a7bf1b9060d13f4a41668d791f5aecf4",
+ "path": "astropy/io/ascii/daophot.py",
+ "repo": "astropy/astropy",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "DaophotHeader",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "DaophotHeader.re_format",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r5",
+   "anchor": "DaophotHeader.parse_col_defs",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r6",
+   "anchor": "DaophotHeader.parse_col_defs#assign:stripper",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r7",
+   "anchor": "DaophotHeader.parse_col_defs#if:self.data.is_multiline",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r8",
+   "anchor": "DaophotHeader.parse_col_defs#if:self.data.is_multiline/assign:last_names, last_units, last_formats",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r9",
+   "anchor": "DaophotHeader.parse_col_defs#if:self.data.is_multiline/for:i in np.arange(1, N_multiline + 1).astype('U2')/assign:extended_names",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r10",
+   "anchor": "DaophotHeader.parse_col_defs#if:self.data.is_multiline/for:i in np.arange(1, N_multiline + 1).astype('U2')/if:i=='1'",
+   "kind": "trail",
+   "line": 68
+  },
+  {
+   "id": "r11",
+   "anchor": "DaophotHeader.parse_col_defs#assign:get_col_width",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r12",
+   "anchor": "DaophotHeader.parse_col_defs#assign:row_widths",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r13",
+   "anchor": "DaophotHeader.parse_col_defs#for:w, r in zip(col_widths, row_short)",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r14",
+   "anchor": "DaophotHeader.parse_col_defs#assign:coldef_dict",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r15",
+   "anchor": "DaophotHeader.update_meta",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r16",
+   "anchor": "DaophotHeader.update_meta#assign:Nlines",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r17",
+   "anchor": "DaophotHeader.update_meta#if:Nlines>0/assign:get_line_id",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r18",
+   "anchor": "DaophotHeader.update_meta#if:Nlines>0/assign:gid, groups",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r19",
+   "anchor": "DaophotHeader.update_meta#if:Nlines>0/assign:grouped_lines, gix",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r20",
+   "anchor": "DaophotHeader.update_meta#if:Nlines>0/assign:grouped_lines_dict",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r21",
+   "anchor": "DaophotHeader.update_meta#if:Nlines>0/if:'#K' in grouped_lines_dict",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r22",
+   "anchor": "DaophotHeader.extract_keyword_line",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r23",
+   "anchor": "DaophotHeader.get_cols",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r24",
+   "anchor": "DaophotHeader.get_cols#call:self._set_cols_from_names",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r25",
+   "anchor": "DaophotHeader.get_cols#assign:coldefs",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r26",
+   "anchor": "DaophotHeader.get_cols#assign:col_width",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r27",
+   "anchor": "DaophotHeader.get_cols#call:self.data.fill_values.append",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r28",
+   "anchor": "DaophotData.get_data_lines#if:self.is_multiline",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r29",
+   "anchor": "DaophotData.get_data_lines#if:self.is_multiline/assign:aplist",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r30",
+   "anchor": "DaophotData.get_data_lines#call:core.BaseData.get_data_lines",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r31",
+   "anchor": "DaophotInputter.search_multiline",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r32",
+   "anchor": "DaophotInputter.search_multiline#assign:comment, special, cont",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r33",
+   "anchor": "DaophotInputter.search_multiline#assign:data_start",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r34",
+   "anchor": "DaophotInputter.search_multiline#if:data_start is None",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r35",
+   "anchor": "DaophotInputter.search_multiline#assign:first_special",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r36",
+   "anchor": "DaophotInputter.search_multiline#if:first_special is None",
+   "kind": "trail",
+   "line": 256
+  },
+  {
+   "id": "r37",
+   "anchor": "DaophotInputter.search_multiline#assign:last_special",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r38",
+   "anchor": "DaophotInputter.search_multiline#assign:last_special",
+   "kind": "post",
+   "line": 260
+  },
+  {
+   "id": "r39",
+   "anchor": "DaophotInputter.search_multiline#assign:last_special",
+   "kind": "post",
+   "line": 260
+  },
+  {
+   "id": "r40",
+   "anchor": "DaophotInputter.search_multiline#assign:markers",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r41",
+   "anchor": "DaophotInputter.search_multiline#assign:multiline_block",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r42",
+   "anchor": "DaophotInputter.process_lines#assign:self.data.header.lines",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r43",
+   "anchor": "Daophot",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r44",
+   "anchor": "Daophot.__init__#assign:self.inputter.data",
+   "kind": "lead",
+   "line": 389
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11572,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4219,
+  "thinking_tokens": 2018,
+  "opus_cost_usd": 0.22548649999999998,
+  "total_cost_usd": 0.23357649999999996,
+  "duration_ms": 39895,
+  "duration_api_ms": 41027,
+  "num_turns": 2
+ },
+ "wall_ms": 41420,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,97 @@
+{
+ "blob_sha": "0ceb676e90a34544f42525cf5c779d4217ad4c0f",
+ "path": "django/core/serializers/python.py",
+ "repo": "django/django",
+ "records": 12,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Serializer",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r3",
+   "anchor": "Serializer._value_from_field#return",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r4",
+   "anchor": "Deserializer",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r5",
+   "anchor": "Deserializer#assign:field_names_cache",
+   "kind": "trail",
+   "line": 88
+  },
+  {
+   "id": "r6",
+   "anchor": "Deserializer#for:d in object_list/try",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r7",
+   "anchor": "Deserializer#for:d in object_list/for:(field_name, field_value) in d[\"fields\"].items()",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r8",
+   "anchor": "Deserializer#for:d in object_list/for:(field_name, field_value) in d[\"fields\"].items()/if:ignorenonexistent and field_name not in field_names/continue",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r9",
+   "anchor": "Deserializer#for:d in object_list/for:(field_name, field_value) in d[\"fields\"].items()/if:field.remote_field and isinstance(field.remote_field, models.ManyToManyRel)",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r10",
+   "anchor": "Deserializer#for:d in object_list/for:(field_name, field_value) in d[\"fields\"].items()/if:field.remote_field and isinstance(field.remote_field, models.ManyToManyRel)/elif:field.remote_field and isinstance(field.remote_field, models.ManyToOneRel)",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r11",
+   "anchor": "Deserializer#for:d in object_list/for:(field_name, field_value) in d[\"fields\"].items()/if:field.remote_field and isinstance(field.remote_field, models.ManyToManyRel)/else",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r12",
+   "anchor": "_get_model",
+   "kind": "doc",
+   "line": 152
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6178,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1357,
+  "thinking_tokens": 575,
+  "opus_cost_usd": 0.0999965,
+  "total_cost_usd": 0.1035725,
+  "duration_ms": 14472,
+  "duration_api_ms": 15486,
+  "num_turns": 2
+ },
+ "wall_ms": 15433,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

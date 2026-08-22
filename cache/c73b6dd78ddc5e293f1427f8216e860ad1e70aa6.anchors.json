@@ -1,0 +1,73 @@
+{
+ "blob_sha": "c73b6dd78ddc5e293f1427f8216e860ad1e70aa6",
+ "path": "astropy/io/fits/setup_package.py",
+ "repo": "astropy/astropy",
+ "records": 8,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:os",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_compression_extension#assign:cfg",
+   "kind": "lead",
+   "line": 14
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_compression_extension#if:not setup_helpers.use_system_library('cfitsio')/if:setup_helpers.get_compiler_option()=='msvc'/call:cfg['extra_compile_args'].extend",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_compression_extension#if:not setup_helpers.use_system_library('cfitsio')/else/if:not get_distutils_build_option('debug')/call:cfg['extra_compile_args'].extend",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_compression_extension#if:not setup_helpers.use_system_library('cfitsio')/else/if:not get_distutils_build_option('debug')/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-res/item:'-Wno-unused-result'",
+   "kind": "trail",
+   "line": 44
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_compression_extension#if:not setup_helpers.use_system_library('cfitsio')/else/if:not get_distutils_build_option('debug')/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-res/item:'-Wno-misleading-indentation'",
+   "kind": "trail",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_compression_extension#if:not setup_helpers.use_system_library('cfitsio')/else/if:not get_distutils_build_option('debug')/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-res/item:'-Wno-format-overflow'",
+   "kind": "trail",
+   "line": 46
+  },
+  {
+   "id": "r8",
+   "anchor": "get_package_data#return",
+   "kind": "lead",
+   "line": 69
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4943,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2777,
+  "thinking_tokens": 1890,
+  "opus_cost_usd": 0.12314649999999999,
+  "total_cost_usd": 0.1255955,
+  "duration_ms": 29154,
+  "duration_api_ms": 30342,
+  "num_turns": 2
+ },
+ "wall_ms": 30222,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

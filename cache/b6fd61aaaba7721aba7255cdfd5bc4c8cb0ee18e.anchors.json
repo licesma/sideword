@@ -1,0 +1,715 @@
+{
+ "blob_sha": "b6fd61aaaba7721aba7255cdfd5bc4c8cb0ee18e",
+ "path": "lib/matplotlib/projections/polar.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 115,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "PolarTransform",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "PolarTransform.transform_non_affine#assign:t, r",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r3",
+   "anchor": "PolarTransform.transform_non_affine#if:self._apply_theta_transforms and self._axis is not None",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r4",
+   "anchor": "PolarTransform.transform_path_non_affine#if:not len(path) or path._interpolation_steps == 1",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r5",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/if:c == Path.LINETO/if:t == last_t",
+   "kind": "trail",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/if:c == Path.LINETO/elif:r == last_r",
+   "kind": "trail",
+   "line": 65
+  },
+  {
+   "id": "r7",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/if:c == Path.LINETO/elif:r == last_r/assign:last_td, td",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/if:c == Path.LINETO/elif:r == last_r/if:last_td <= td/else/while:last_td - td > 360",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r9",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/if:c == Path.LINETO/else",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "PolarTransform.transform_path_non_affine#for:trs, c in path.iter_segments()/else",
+   "kind": "trail",
+   "line": 99
+  },
+  {
+   "id": "r11",
+   "anchor": "PolarTransform.inverted#return",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r12",
+   "anchor": "PolarAffine",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r13",
+   "anchor": "PolarAffine.__init__",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r14",
+   "anchor": "PolarAffine.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r15",
+   "anchor": "InvertedPolarTransform",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r16",
+   "anchor": "InvertedPolarTransform.transform_non_affine#assign:x, y",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r17",
+   "anchor": "InvertedPolarTransform.transform_non_affine#if:self._apply_theta_transforms and self._axis is not None",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r18",
+   "anchor": "InvertedPolarTransform.inverted#return",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r19",
+   "anchor": "ThetaFormatter",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r20",
+   "anchor": "ThetaFormatter.__call__#return",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r21",
+   "anchor": "ThetaLocator",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r22",
+   "anchor": "ThetaLocator.refresh#return",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r23",
+   "anchor": "ThetaTick",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r24",
+   "anchor": "ThetaTick._apply_params#assign:trans",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r25",
+   "anchor": "ThetaTick.update_position#if:marker in (mmarkers.TICKUP, '|')/else/assign:trans",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r26",
+   "anchor": "ThetaTick.update_position#if:marker in (mmarkers.TICKUP, '|')/else/assign:trans",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r27",
+   "anchor": "ThetaTick.update_position#assign:pad",
+   "kind": "lead",
+   "line": 345
+  },
+  {
+   "id": "r28",
+   "anchor": "ThetaAxis",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r29",
+   "anchor": "ThetaAxis.axis_name",
+   "kind": "trail",
+   "line": 359
+  },
+  {
+   "id": "r30",
+   "anchor": "ThetaAxis.clear#call:super().clear",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r31",
+   "anchor": "ThetaAxis._set_scale#call:self.get_major_locator().set_params",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r32",
+   "anchor": "ThetaAxis._copy_tick_props",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r33",
+   "anchor": "ThetaAxis._copy_tick_props#assign:trans",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r34",
+   "anchor": "RadialLocator",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r35",
+   "anchor": "RadialLocator.__call__#if:self._axes",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r36",
+   "anchor": "RadialLocator.nonsingular#return",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r37",
+   "anchor": "RadialLocator.nonsingular#return",
+   "kind": "trail",
+   "line": 425
+  },
+  {
+   "id": "r38",
+   "anchor": "RadialLocator.view_limits#if:vmax > vmin/assign:vmin",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r39",
+   "anchor": "_ThetaShift",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r40",
+   "anchor": "RadialTick",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r41",
+   "anchor": "RadialTick._determine_anchor#if:mode == 'auto'",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r42",
+   "anchor": "RadialTick.update_position#assign:text_angle",
+   "kind": "trail",
+   "line": 576
+  },
+  {
+   "id": "r43",
+   "anchor": "RadialTick.update_position#if:marker == mmarkers.TICKLEFT/else/assign:trans",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r44",
+   "anchor": "RadialTick.update_position#assign:text_angle",
+   "kind": "trail",
+   "line": 612
+  },
+  {
+   "id": "r45",
+   "anchor": "RadialTick.update_position#if:marker == mmarkers.TICKLEFT/else/assign:trans",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r46",
+   "anchor": "RadialAxis",
+   "kind": "doc",
+   "line": 637
+  },
+  {
+   "id": "r47",
+   "anchor": "RadialAxis.axis_name",
+   "kind": "trail",
+   "line": 645
+  },
+  {
+   "id": "r48",
+   "anchor": "RadialAxis.clear#call:super().clear",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r49",
+   "anchor": "_is_full_circle_deg",
+   "kind": "doc",
+   "line": 668
+  },
+  {
+   "id": "r50",
+   "anchor": "_is_full_circle_rad",
+   "kind": "doc",
+   "line": 677
+  },
+  {
+   "id": "r51",
+   "anchor": "_WedgeBbox",
+   "kind": "doc",
+   "line": 686
+  },
+  {
+   "id": "r52",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r53",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid/assign:points[:, 0]",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r54",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid/assign:points[:, 1]",
+   "kind": "lead",
+   "line": 718
+  },
+  {
+   "id": "r55",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid/assign:rscale",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r56",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid/assign:wedge",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r57",
+   "anchor": "_WedgeBbox.get_points#if:self._invalid/assign:w, h",
+   "kind": "lead",
+   "line": 732
+  },
+  {
+   "id": "r58",
+   "anchor": "PolarAxes",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r59",
+   "anchor": "PolarAxes.__init__#assign:self._default_theta_offset",
+   "kind": "lead",
+   "line": 754
+  },
+  {
+   "id": "r60",
+   "anchor": "PolarAxes.clear#call:super().clear",
+   "kind": "lead",
+   "line": 764
+  },
+  {
+   "id": "r61",
+   "anchor": "PolarAxes._init_axis#assign:self.xaxis",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r62",
+   "anchor": "PolarAxes._init_axis#call:self._update_transScale",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r63",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._originViewLim",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r64",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._direction",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r65",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._realViewLim",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r66",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transScale",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r67",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.axesLim",
+   "kind": "lead",
+   "line": 819
+  },
+  {
+   "id": "r68",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transWedge",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r69",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transAxes",
+   "kind": "lead",
+   "line": 826
+  },
+  {
+   "id": "r70",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transProjection",
+   "kind": "lead",
+   "line": 830
+  },
+  {
+   "id": "r71",
+   "anchor": "PolarAxes._set_lim_and_transforms#call:self.transProjection.set_children",
+   "kind": "lead",
+   "line": 834
+  },
+  {
+   "id": "r72",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transProjectionAffine",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r73",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self.transData",
+   "kind": "lead",
+   "line": 843
+  },
+  {
+   "id": "r74",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._xaxis_transform",
+   "kind": "lead",
+   "line": 850
+  },
+  {
+   "id": "r75",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:flipr_transform",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r76",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._yaxis_transform",
+   "kind": "lead",
+   "line": 866
+  },
+  {
+   "id": "r77",
+   "anchor": "PolarAxes._set_lim_and_transforms#assign:self._r_label_position",
+   "kind": "lead",
+   "line": 872
+  },
+  {
+   "id": "r78",
+   "anchor": "PolarAxes.draw#if:isinstance(self.patch, mpatches.Wedge)/assign:center",
+   "kind": "lead",
+   "line": 926
+  },
+  {
+   "id": "r79",
+   "anchor": "PolarAxes.draw#assign:start",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r80",
+   "anchor": "PolarAxes.set_thetamax",
+   "kind": "doc",
+   "line": 978
+  },
+  {
+   "id": "r81",
+   "anchor": "PolarAxes.get_thetamax",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r82",
+   "anchor": "PolarAxes.set_thetamin",
+   "kind": "doc",
+   "line": 986
+  },
+  {
+   "id": "r83",
+   "anchor": "PolarAxes.get_thetamin",
+   "kind": "doc",
+   "line": 990
+  },
+  {
+   "id": "r84",
+   "anchor": "PolarAxes.set_thetalim",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r85",
+   "anchor": "PolarAxes.set_thetalim#assign:orig_lim",
+   "kind": "trail",
+   "line": 1010
+  },
+  {
+   "id": "r86",
+   "anchor": "PolarAxes.set_thetalim#if:abs(new_max - new_min) > 2 * np.pi",
+   "kind": "lead",
+   "line": 1018
+  },
+  {
+   "id": "r87",
+   "anchor": "PolarAxes.set_thetalim#if:abs(new_max - new_min) > 2 * np.pi/call:self.set_xlim",
+   "kind": "trail",
+   "line": 1019
+  },
+  {
+   "id": "r88",
+   "anchor": "PolarAxes.set_theta_offset",
+   "kind": "doc",
+   "line": 1023
+  },
+  {
+   "id": "r89",
+   "anchor": "PolarAxes.get_theta_offset",
+   "kind": "doc",
+   "line": 1031
+  },
+  {
+   "id": "r90",
+   "anchor": "PolarAxes.set_theta_zero_location",
+   "kind": "doc",
+   "line": 1037
+  },
+  {
+   "id": "r91",
+   "anchor": "PolarAxes.set_theta_direction",
+   "kind": "doc",
+   "line": 1063
+  },
+  {
+   "id": "r92",
+   "anchor": "PolarAxes.get_theta_direction",
+   "kind": "doc",
+   "line": 1084
+  },
+  {
+   "id": "r93",
+   "anchor": "PolarAxes.set_rmax",
+   "kind": "doc",
+   "line": 1096
+  },
+  {
+   "id": "r94",
+   "anchor": "PolarAxes.get_rmax",
+   "kind": "doc",
+   "line": 1106
+  },
+  {
+   "id": "r95",
+   "anchor": "PolarAxes.set_rmin",
+   "kind": "doc",
+   "line": 1115
+  },
+  {
+   "id": "r96",
+   "anchor": "PolarAxes.get_rmin",
+   "kind": "doc",
+   "line": 1125
+  },
+  {
+   "id": "r97",
+   "anchor": "PolarAxes.set_rorigin",
+   "kind": "doc",
+   "line": 1134
+  },
+  {
+   "id": "r98",
+   "anchor": "PolarAxes.get_rorigin",
+   "kind": "doc",
+   "line": 1144
+  },
+  {
+   "id": "r99",
+   "anchor": "PolarAxes.set_rlim",
+   "kind": "doc",
+   "line": 1156
+  },
+  {
+   "id": "r100",
+   "anchor": "PolarAxes.get_rlabel_position",
+   "kind": "doc",
+   "line": 1182
+  },
+  {
+   "id": "r101",
+   "anchor": "PolarAxes.set_rlabel_position",
+   "kind": "doc",
+   "line": 1191
+  },
+  {
+   "id": "r102",
+   "anchor": "PolarAxes.set_thetagrids",
+   "kind": "doc",
+   "line": 1213
+  },
+  {
+   "id": "r103",
+   "anchor": "PolarAxes.set_thetagrids#assign:angles",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r104",
+   "anchor": "PolarAxes.set_rgrids",
+   "kind": "doc",
+   "line": 1263
+  },
+  {
+   "id": "r105",
+   "anchor": "PolarAxes.set_rgrids#assign:radii",
+   "kind": "lead",
+   "line": 1303
+  },
+  {
+   "id": "r106",
+   "anchor": "PolarAxes.format_coord#assign:screen_xy",
+   "kind": "lead",
+   "line": 1320
+  },
+  {
+   "id": "r107",
+   "anchor": "PolarAxes.format_coord.format_sig",
+   "kind": "lead",
+   "line": 1336
+  },
+  {
+   "id": "r108",
+   "anchor": "PolarAxes.format_coord.format_sig#assign:prec",
+   "kind": "lead",
+   "line": 1338
+  },
+  {
+   "id": "r109",
+   "anchor": "PolarAxes.get_data_ratio",
+   "kind": "doc",
+   "line": 1349
+  },
+  {
+   "id": "r110",
+   "anchor": "PolarAxes.can_zoom",
+   "kind": "lead",
+   "line": 1358
+  },
+  {
+   "id": "r111",
+   "anchor": "PolarAxes.can_zoom",
+   "kind": "doc",
+   "line": 1358
+  },
+  {
+   "id": "r112",
+   "anchor": "PolarAxes.can_pan",
+   "kind": "doc",
+   "line": 1366
+  },
+  {
+   "id": "r113",
+   "anchor": "PolarAxes.drag_pan#if:p.mode == 'drag_r_labels'/assign:dt",
+   "kind": "lead",
+   "line": 1407
+  },
+  {
+   "id": "r114",
+   "anchor": "PolarAxes.drag_pan#if:p.mode == 'drag_r_labels'/elif:p.mode == 'zoom'/assign:scale",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r115",
+   "anchor": "<module>#assign:PolarAxes.PolarTransform",
+   "kind": "lead",
+   "line": 1433
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 33028,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10173,
+  "thinking_tokens": 4616,
+  "opus_cost_usd": 0.5888964999999999,
+  "total_cost_usd": 0.6148914999999999,
+  "duration_ms": 89642,
+  "duration_api_ms": 90877,
+  "num_turns": 2
+ },
+ "wall_ms": 90629,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

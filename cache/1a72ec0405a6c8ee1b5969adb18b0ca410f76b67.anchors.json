@@ -1,0 +1,313 @@
+{
+ "blob_sha": "1a72ec0405a6c8ee1b5969adb18b0ca410f76b67",
+ "path": "django/views/debug.py",
+ "repo": "django/django",
+ "records": 48,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DEBUG_ENGINE",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r2",
+   "anchor": "CallableSettingWrapper",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r3",
+   "anchor": "cleanse_setting",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "cleanse_setting#try/except:TypeError/assign:cleansed",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "cleanse_setting#if:callable(cleansed)/assign:cleansed",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r6",
+   "anchor": "get_safe_settings",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r7",
+   "anchor": "technical_500_response",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r8",
+   "anchor": "get_default_exception_reporter_filter#return",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r9",
+   "anchor": "ExceptionReporterFilter",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r10",
+   "anchor": "SafeExceptionReporterFilter",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "SafeExceptionReporterFilter.is_active",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r12",
+   "anchor": "SafeExceptionReporterFilter.get_cleansed_multivaluedict",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r13",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r14",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters#if:request is None/else/if:self.is_active(request) and sensitive_post_parameters/if:sensitive_post_parameters == '__ALL__'/for:k, v in cleansed.items()",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r15",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters#if:request is None/else/if:self.is_active(request) and sensitive_post_parameters/if:sensitive_post_parameters == '__ALL__'/else/for:param in sensitive_post_parameters",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r16",
+   "anchor": "SafeExceptionReporterFilter.cleanse_special_types#try/assign:is_multivalue_dict",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r17",
+   "anchor": "SafeExceptionReporterFilter.cleanse_special_types#if:is_multivalue_dict/assign:value",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r18",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r19",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#assign:current_frame",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r20",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#while:current_frame is not None/if:current_frame.f_code.co_name == 'sensitive_variables_wrapper' and 'sensitive_variables_wrapper' in current_frame.f_locals/assign:wrapper",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r21",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/if:sensitive_variables == '__ALL__'/for:name, value in tb_frame.f_locals.items()",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r22",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/if:sensitive_variables == '__ALL__'/else/for:name, value in tb_frame.f_locals.items()",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r23",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/else/for:name, value in tb_frame.f_locals.items()",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r24",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:tb_frame.f_code.co_name == 'sensitive_variables_wrapper' and 'sensitive_variables_wrapper' in tb_frame.f_locals/assign:cleansed['func_args']",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r25",
+   "anchor": "ExceptionReporter",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r26",
+   "anchor": "ExceptionReporter.__init__#if:isinstance(self.exc_type, six.string_types)",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r27",
+   "anchor": "ExceptionReporter.get_traceback_data",
+   "kind": "doc",
+   "line": 255
+  },
+  {
+   "id": "r28",
+   "anchor": "ExceptionReporter.get_traceback_data#for:i, frame in enumerate(frames)/if:'vars' in frame/for:k, v in frame['vars']/if:isinstance(v, six.binary_type)",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r29",
+   "anchor": "ExceptionReporter.get_traceback_data#for:i, frame in enumerate(frames)/if:'vars' in frame/for:k, v in frame['vars']/if:isinstance(v, six.binary_type)/assign:v",
+   "kind": "trail",
+   "line": 269
+  },
+  {
+   "id": "r30",
+   "anchor": "ExceptionReporter.get_traceback_data#for:i, frame in enumerate(frames)/if:'vars' in frame/for:k, v in frame['vars']/if:len(v) > 4096",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r31",
+   "anchor": "ExceptionReporter.get_traceback_data#if:self.exc_type",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r32",
+   "anchor": "ExceptionReporter.get_traceback_html",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r33",
+   "anchor": "ExceptionReporter.get_traceback_text",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r34",
+   "anchor": "ExceptionReporter._get_lines_from_file",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r35",
+   "anchor": "ExceptionReporter._get_lines_from_file#if:isinstance(source[0], six.binary_type)",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r36",
+   "anchor": "ExceptionReporter._get_lines_from_file#if:isinstance(source[0], six.binary_type)/for:line in source[:2]/assign:match",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r37",
+   "anchor": "ExceptionReporter.get_traceback_frames#assign:exceptions",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r38",
+   "anchor": "ExceptionReporter.get_traceback_frames#if:not exceptions",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r39",
+   "anchor": "ExceptionReporter.get_traceback_frames#assign:exc_value",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r40",
+   "anchor": "ExceptionReporter.get_traceback_frames#while:tb is not None/if:tb.tb_frame.f_locals.get('__traceback_hide__')",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r41",
+   "anchor": "ExceptionReporter.get_traceback_frames#while:tb is not None/if:six.PY2",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r42",
+   "anchor": "ExceptionReporter.format_exception",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r43",
+   "anchor": "technical_404_response",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r44",
+   "anchor": "technical_404_response#try/except:(IndexError, TypeError, KeyError)/assign:error_url",
+   "kind": "trail",
+   "line": 459
+  },
+  {
+   "id": "r45",
+   "anchor": "technical_404_response#try/except:(IndexError, TypeError, KeyError)/else/if:not tried or (request.path == '/' and len(tried) == 1 and len(tried[0]) == 1 and getattr(tried[0][0], 'app_name', '') == getattr(tried[0][0], 'namespace', '') == 'admin')",
+   "kind": "trail",
+   "line": 466
+  },
+  {
+   "id": "r46",
+   "anchor": "technical_404_response#try/except:(IndexError, TypeError, KeyError)/else/if:not tried or (request.path == '/' and len(tried) == 1 and len(tried[0]) == 1 and getattr(tried[0][0], 'app_name', '') == getattr(tried[0][0], 'namespace', '') == 'admin')",
+   "kind": "trail",
+   "line": 468
+  },
+  {
+   "id": "r47",
+   "anchor": "default_urlconf",
+   "kind": "doc",
+   "line": 509
+  },
+  {
+   "id": "r48",
+   "anchor": "TECHNICAL_500_TEMPLATE",
+   "kind": "lead",
+   "line": 533
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28441,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6417,
+  "thinking_tokens": 3260,
+  "opus_cost_usd": 0.4491265,
+  "total_cost_usd": 0.47042849999999997,
+  "duration_ms": 58355,
+  "duration_api_ms": 59413,
+  "num_turns": 2
+ },
+ "wall_ms": 59183,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

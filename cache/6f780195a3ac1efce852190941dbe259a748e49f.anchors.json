@@ -1,0 +1,139 @@
+{
+ "blob_sha": "6f780195a3ac1efce852190941dbe259a748e49f",
+ "path": "astropy/visualization/wcsaxes/ticklabels.py",
+ "repo": "astropy/astropy",
+ "records": 19,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:collections",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "TickLabels.__init__#assign:self._stale",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "TickLabels.__init__#if:'color' not in kwargs",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "TickLabels.sort",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r5",
+   "anchor": "TickLabels.simplify_labels",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r6",
+   "anchor": "TickLabels.simplify_labels#for:axis in self.world/for:i in range(1, len(self.world[axis]))/for:j in range(len(t1) - 1)",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r7",
+   "anchor": "TickLabels.simplify_labels#for:axis in self.world/for:i in range(1, len(self.world[axis]))/if:self.text[axis][i] == '$$'",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "TickLabels._set_xy_alignments",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r9",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:self.text[axis][i] == ''",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r10",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/if:np.abs(self.angle[axis][i]) < 45.",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r11",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/call:self.set_text",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r12",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/call:self.set_text",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r13",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/assign:width",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r14",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/assign:ax",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r15",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/if:np.abs(self.angle[axis][i]) < 45.",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r16",
+   "anchor": "TickLabels._set_xy_alignments#for:axis in visible_axes/for:i in range(len(self.world[axis]))/if:isinstance(self._frame, RectangularFrame)/else/assign:dist",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r17",
+   "anchor": "TickLabels._get_bb",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r18",
+   "anchor": "TickLabels.draw#for:axis in self.get_visible_axes()/for:i in range(len(self.world[axis]))/assign:bb",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r19",
+   "anchor": "TickLabels.draw#for:axis in self.get_visible_axes()/for:i in range(len(self.world[axis]))/if:not self._exclude_overlapping or bb.count_overlaps(bboxes) == 0",
+   "kind": "todo",
+   "line": 266
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8278,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2990,
+  "thinking_tokens": 1503,
+  "opus_cost_usd": 0.1618215,
+  "total_cost_usd": 0.1672295,
+  "duration_ms": 33376,
+  "duration_api_ms": 35850,
+  "num_turns": 2
+ },
+ "wall_ms": 34283,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

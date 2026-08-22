@@ -1,0 +1,151 @@
+{
+ "blob_sha": "5fd8d9986e4d04e43acdf0ad39a8692e1815b942",
+ "path": "astropy/timeseries/downsample.py",
+ "repo": "astropy/astropy",
+ "records": 21,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:warnings",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "reduceat",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r3",
+   "anchor": "_to_relative_longdouble#return",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r4",
+   "anchor": "aggregate_downsample",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r5",
+   "anchor": "aggregate_downsample#assign:ts_sorted",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r6",
+   "anchor": "aggregate_downsample#if:time_bin_start is None",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r7",
+   "anchor": "aggregate_downsample#if:time_bin_start.isscalar",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r8",
+   "anchor": "aggregate_downsample#if:time_bin_size is None and time_bin_end is None/if:time_bin_start.isscalar/if:n_bins is None/else/assign:time_bin_size",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r9",
+   "anchor": "aggregate_downsample#if:time_bin_start.isscalar/if:time_bin_size is not None/if:time_bin_size.isscalar/if:n_bins is None",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r10",
+   "anchor": "aggregate_downsample#if:time_bin_start.isscalar/if:time_bin_size is not None/elif:time_bin_end is not None/if:not time_bin_end.isscalar/assign:scalar_start_time",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r11",
+   "anchor": "aggregate_downsample#if:time_bin_end is not None",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r12",
+   "anchor": "aggregate_downsample#assign:bin_start",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r13",
+   "anchor": "aggregate_downsample#if:n_bins is None or not time_bin_start.isscalar",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r14",
+   "anchor": "aggregate_downsample#assign:rel_base",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r15",
+   "anchor": "aggregate_downsample#assign:noncontiguous_bins_indices",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r16",
+   "anchor": "aggregate_downsample#assign:indices",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r17",
+   "anchor": "aggregate_downsample#if:len(indices) and np.all(rel_bin_start[1:] >= rel_bin_end[:-1])",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r18",
+   "anchor": "aggregate_downsample#if:len(indices)",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r19",
+   "anchor": "aggregate_downsample#assign:unique_indices",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r20",
+   "anchor": "aggregate_downsample#assign:subset",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r21",
+   "anchor": "aggregate_downsample#for:colname in subset.colnames/if:not isinstance(values, (np.ndarray, u.Quantity))",
+   "kind": "todo",
+   "line": 250
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9402,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2308,
+  "thinking_tokens": 1158,
+  "opus_cost_usd": 0.15601150000000003,
+  "total_cost_usd": 0.16221950000000002,
+  "duration_ms": 22215,
+  "duration_api_ms": 23460,
+  "num_turns": 2
+ },
+ "wall_ms": 23097,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

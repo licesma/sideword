@@ -1,0 +1,49 @@
+{
+ "blob_sha": "dd3d40c0645a4703385c3c4dbadc7e0199fe060c",
+ "path": "django/db/backends/postgresql/client.py",
+ "repo": "django/django",
+ "records": 4,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_escape_pgpass",
+   "kind": "doc",
+   "line": 9
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseClient.runshell_db#try/if:passwd/assign:temp_pgpass",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseClient.runshell_db#try/if:passwd/try/except:UnicodeEncodeError/pass",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseClient.runshell_db#try/finally/if:temp_pgpass/if:'PGPASSFILE' in os.environ",
+   "kind": "trail",
+   "line": 62
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4288,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 544,
+  "thinking_tokens": 238,
+  "opus_cost_usd": 0.0607715,
+  "total_cost_usd": 0.0626915,
+  "duration_ms": 7085,
+  "duration_api_ms": 8103,
+  "num_turns": 2
+ },
+ "wall_ms": 8180,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

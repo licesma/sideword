@@ -1,0 +1,265 @@
+{
+ "blob_sha": "41cf4c6e920cd74daa23e2b0a993df634faeb063",
+ "path": "astropy/units/structured.py",
+ "repo": "astropy/astropy",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:__future__",
+   "kind": "trail",
+   "line": 6
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:operator",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r5",
+   "anchor": "_names_from_dtype",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r6",
+   "anchor": "_normalize_names",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r7",
+   "anchor": "StructuredUnit",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r8",
+   "anchor": "StructuredUnit.__new__#if:not isinstance(units, tuple)/if:isinstance(units, StructuredUnit)/if:names is None or units.field_names == names",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r9",
+   "anchor": "StructuredUnit.__new__#if:not isinstance(units, tuple)/if:isinstance(units, StructuredUnit)/assign:units",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r10",
+   "anchor": "StructuredUnit.__new__#if:not isinstance(units, tuple)/if:isinstance(units, StructuredUnit)/else/assign:units",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r11",
+   "anchor": "StructuredUnit.__new__#for:unit, name in zip(units, names)/if:isinstance(name, list)/assign:unit",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r12",
+   "anchor": "StructuredUnit.__new__#for:unit, name in zip(units, names)/if:isinstance(name, list)/else/assign:unit",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r13",
+   "anchor": "StructuredUnit._units",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r14",
+   "anchor": "StructuredUnit.__getnewargs__",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r15",
+   "anchor": "StructuredUnit.field_names",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r16",
+   "anchor": "StructuredUnit.__len__",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r17",
+   "anchor": "StructuredUnit.__getitem__#return",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r18",
+   "anchor": "StructuredUnit._recursively_apply",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r19",
+   "anchor": "StructuredUnit._recursively_apply",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r20",
+   "anchor": "StructuredUnit._recursively_apply#assign:results",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r21",
+   "anchor": "StructuredUnit._recursively_apply#assign:result",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r22",
+   "anchor": "StructuredUnit._recursively_get_dtype",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r23",
+   "anchor": "StructuredUnit._recursively_get_dtype#for:(name, unit), part in zip(self.items(), value)/if:isinstance(unit, StructuredUnit)/else/assign:part",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r24",
+   "anchor": "StructuredUnit.si",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r25",
+   "anchor": "StructuredUnit.cgs",
+   "kind": "doc",
+   "line": 293
+  },
+  {
+   "id": "r26",
+   "anchor": "StructuredUnit._get_physical_type_id",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r27",
+   "anchor": "StructuredUnit.physical_type",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r28",
+   "anchor": "StructuredUnit.decompose",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r29",
+   "anchor": "StructuredUnit.is_equivalent",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r30",
+   "anchor": "StructuredUnit._get_converter.converter#return",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r31",
+   "anchor": "StructuredUnit.to",
+   "kind": "doc",
+   "line": 379
+  },
+  {
+   "id": "r32",
+   "anchor": "StructuredUnit.to#if:value is np._NoValue/assign:value",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r33",
+   "anchor": "StructuredUnit.to_string",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r34",
+   "anchor": "StructuredUnit.to_string#if:format.startswith(\"latex\")/assign:parts",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r35",
+   "anchor": "StructuredUnit.__mul__#try",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r36",
+   "anchor": "Structure",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r37",
+   "anchor": "Structure.__eq__",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r38",
+   "anchor": "_structured_unit_like_dtype",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r39",
+   "anchor": "_structured_unit_like_dtype#if:isinstance(unit, StructuredUnit)/return",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r40",
+   "anchor": "_structured_unit_like_dtype#assign:units",
+   "kind": "lead",
+   "line": 564
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13788,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4300,
+  "thinking_tokens": 2465,
+  "opus_cost_usd": 0.2496715,
+  "total_cost_usd": 0.2594725,
+  "duration_ms": 40143,
+  "duration_api_ms": 41455,
+  "num_turns": 2
+ },
+ "wall_ms": 40987,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

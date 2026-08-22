@@ -1,0 +1,163 @@
+{
+ "blob_sha": "34fcb9bc584deb0dd93bf35899b2c31e5258a6d3",
+ "path": "django/core/management/commands/migrate.py",
+ "repo": "django/django",
+ "records": 23,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#for:app_config in apps.get_app_configs()",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle#assign:connection",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle#call:connection.prepare_database",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle#assign:executor",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.handle#call:executor.loader.check_consistent_history",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.handle#assign:conflicts",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.handle#assign:run_syncdb",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.handle#if:options['app_label']/assign:app_label",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.handle#if:options['app_label'] and options['migration_name']/if:migration_name == \"zero\"/else/if:target not in executor.loader.graph.nodes and target in executor.loader.replacements",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.handle#assign:run_syncdb",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.handle#if:self.verbosity >= 1",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.handle#if:run_syncdb",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.handle#if:self.verbosity >= 1",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.handle#if:not plan/if:self.verbosity >= 1/assign:autodetector",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.handle#call:post_migrate_state.clear_delayed_apps_cache",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.handle#with:post_migrate_apps.bulk_update()",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.handle#call:emit_post_migrate_signal",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.sync_apps",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r19",
+   "anchor": "Command.sync_apps#assign:all_models",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r20",
+   "anchor": "Command.sync_apps#if:self.verbosity >= 1",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r21",
+   "anchor": "Command.sync_apps#with:connection.schema_editor()/for:app_name, model_list in manifest.items()/for:model in model_list/if:not model._meta.can_migrate(connection)",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r22",
+   "anchor": "Command.sync_apps#with:connection.schema_editor()/if:self.verbosity >= 1",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r23",
+   "anchor": "Command.describe_operation",
+   "kind": "doc",
+   "line": 365
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10903,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2624,
+  "thinking_tokens": 1432,
+  "opus_cost_usd": 0.17892149999999998,
+  "total_cost_usd": 0.1862515,
+  "duration_ms": 27023,
+  "duration_api_ms": 27947,
+  "num_turns": 2
+ },
+ "wall_ms": 27902,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,517 @@
+{
+ "blob_sha": "eb18d18d660d93ae57926a2fa59897be032f1c24",
+ "path": "lib/matplotlib/backends/backend_ps.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 82,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "__getattr__.ps_backend_helper",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r3",
+   "anchor": "quote_ps_string",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r4",
+   "anchor": "_move_path_to_path_or_stream",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r5",
+   "anchor": "_font_to_ps_type3",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r6",
+   "anchor": "_font_to_ps_type3#for:glyph_id in glyph_ids/call:entries.append",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r7",
+   "anchor": "_font_to_ps_type3#for:glyph_id in glyph_ids/call:entries.append",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r8",
+   "anchor": "_font_to_ps_type42",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r9",
+   "anchor": "_font_to_ps_type42#try/assign:font",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r10",
+   "anchor": "_font_to_ps_type42#try/with:TemporaryDirectory()/call:convert_ttf_to_ps",
+   "kind": "todo",
+   "line": 236
+  },
+  {
+   "id": "r11",
+   "anchor": "_log_if_debug_on",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r12",
+   "anchor": "RendererPS",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r13",
+   "anchor": "RendererPS.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r14",
+   "anchor": "RendererPS.color",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r15",
+   "anchor": "RendererPS._is_transparent#if:rgb_or_rgba is None/return",
+   "kind": "trail",
+   "line": 296
+  },
+  {
+   "id": "r16",
+   "anchor": "RendererPS._is_transparent#if:rgb_or_rgba is None/elif:len(rgb_or_rgba) == 4/else",
+   "kind": "trail",
+   "line": 305
+  },
+  {
+   "id": "r17",
+   "anchor": "RendererPS._linejoin_cmd#assign:linejoin",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r18",
+   "anchor": "RendererPS._linecap_cmd#assign:linecap",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r19",
+   "anchor": "RendererPS.get_image_magnification",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r20",
+   "anchor": "RendererPS.draw_image#assign:h, w",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r21",
+   "anchor": "RendererPS.draw_image#assign:data",
+   "kind": "trail",
+   "line": 448
+  },
+  {
+   "id": "r22",
+   "anchor": "RendererPS.draw_image#assign:hexdata",
+   "kind": "trail",
+   "line": 449
+  },
+  {
+   "id": "r23",
+   "anchor": "RendererPS.draw_path#assign:clip",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r24",
+   "anchor": "RendererPS.draw_markers#assign:ps_color",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r25",
+   "anchor": "RendererPS.draw_markers#assign:ps_cmd",
+   "kind": "lead",
+   "line": 498
+  },
+  {
+   "id": "r26",
+   "anchor": "RendererPS.draw_markers#assign:ps_cmd",
+   "kind": "lead",
+   "line": 498
+  },
+  {
+   "id": "r27",
+   "anchor": "RendererPS.draw_path_collection#assign:len_path",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r28",
+   "anchor": "RendererPS.draw_tex#if:self._is_transparent(gc.get_rgb())",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r29",
+   "anchor": "RendererPS.draw_tex#if:self._is_transparent(gc.get_rgb())/return",
+   "kind": "trail",
+   "line": 585
+  },
+  {
+   "id": "r30",
+   "anchor": "RendererPS.draw_tex#assign:pos",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r31",
+   "anchor": "RendererPS.draw_text#if:self._is_transparent(gc.get_rgb())",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r32",
+   "anchor": "RendererPS.draw_text#if:self._is_transparent(gc.get_rgb())/return",
+   "kind": "trail",
+   "line": 626
+  },
+  {
+   "id": "r33",
+   "anchor": "RendererPS.draw_text#assign:stream",
+   "kind": "trail",
+   "line": 634
+  },
+  {
+   "id": "r34",
+   "anchor": "RendererPS.draw_text#if:mpl.rcParams['ps.useafm']/assign:last_name",
+   "kind": "trail",
+   "line": 642
+  },
+  {
+   "id": "r35",
+   "anchor": "RendererPS.draw_mathtext",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r36",
+   "anchor": "RendererPS.draw_gouraud_triangles#assign:hexdata",
+   "kind": "trail",
+   "line": 739
+  },
+  {
+   "id": "r37",
+   "anchor": "RendererPS._draw_ps",
+   "kind": "doc",
+   "line": 758
+  },
+  {
+   "id": "r38",
+   "anchor": "FigureCanvasPS._print_ps#assign:self.figure.dpi",
+   "kind": "trail",
+   "line": 831
+  },
+  {
+   "id": "r39",
+   "anchor": "FigureCanvasPS._print_ps#assign:source_date_epoch",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r40",
+   "anchor": "FigureCanvasPS._print_figure",
+   "kind": "doc",
+   "line": 866
+  },
+  {
+   "id": "r41",
+   "anchor": "FigureCanvasPS._print_figure#assign:width, height",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r42",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/if:width > paper_width or height > paper_height",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r43",
+   "anchor": "FigureCanvasPS._print_figure#assign:xo",
+   "kind": "lead",
+   "line": 899
+  },
+  {
+   "id": "r44",
+   "anchor": "FigureCanvasPS._print_figure#assign:ps_renderer",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r45",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:is_eps",
+   "kind": "lead",
+   "line": 925
+  },
+  {
+   "id": "r46",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:not mpl.rcParams['ps.useafm']/for:font_path, chars in ps_renderer._character_tracker.used.items()/if:len(chars) > 255",
+   "kind": "lead",
+   "line": 952
+  },
+  {
+   "id": "r47",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:not mpl.rcParams['ps.useafm']/for:font_path, chars in ps_renderer._character_tracker.used.items()/if:fonttype == 3/else",
+   "kind": "trail",
+   "line": 957
+  },
+  {
+   "id": "r48",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#call:print",
+   "kind": "lead",
+   "line": 973
+  },
+  {
+   "id": "r49",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#call:print",
+   "kind": "lead",
+   "line": 976
+  },
+  {
+   "id": "r50",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 985
+  },
+  {
+   "id": "r51",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/else",
+   "kind": "trail",
+   "line": 997
+  },
+  {
+   "id": "r52",
+   "anchor": "FigureCanvasPS._print_figure_tex",
+   "kind": "doc",
+   "line": 1003
+  },
+  {
+   "id": "r53",
+   "anchor": "FigureCanvasPS._print_figure_tex#assign:ps_renderer",
+   "kind": "lead",
+   "line": 1029
+  },
+  {
+   "id": "r54",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r55",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()/if:orientation is _Orientation.landscape",
+   "kind": "trail",
+   "line": 1060
+  },
+  {
+   "id": "r56",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()/if:is_eps",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r57",
+   "anchor": "_convert_psfrags",
+   "kind": "doc",
+   "line": 1106
+  },
+  {
+   "id": "r58",
+   "anchor": "_convert_psfrags#with:mpl.rc_context({ \"text.latex.preamble\": mpl.rcParams[\"text.latex.preamble\"] + mp/assign:dvifile/arg:fontsize",
+   "kind": "trail",
+   "line": 1135
+  },
+  {
+   "id": "r59",
+   "anchor": "_convert_psfrags#with:open(tmppath)",
+   "kind": "lead",
+   "line": 1150
+  },
+  {
+   "id": "r60",
+   "anchor": "gs_distill",
+   "kind": "doc",
+   "line": 1162
+  },
+  {
+   "id": "r61",
+   "anchor": "gs_distill#if:eps",
+   "kind": "lead",
+   "line": 1190
+  },
+  {
+   "id": "r62",
+   "anchor": "gs_distill#if:eps/call:pstoeps",
+   "kind": "lead",
+   "line": 1193
+  },
+  {
+   "id": "r63",
+   "anchor": "xpdf_distill",
+   "kind": "doc",
+   "line": 1196
+  },
+  {
+   "id": "r64",
+   "anchor": "xpdf_distill#call:mpl._get_executable_info",
+   "kind": "trail",
+   "line": 1203
+  },
+  {
+   "id": "r65",
+   "anchor": "xpdf_distill#with:TemporaryDirectory()/call:cbook._check_and_log_subprocess",
+   "kind": "lead",
+   "line": 1211
+  },
+  {
+   "id": "r66",
+   "anchor": "get_bbox_header",
+   "kind": "doc",
+   "line": 1227
+  },
+  {
+   "id": "r67",
+   "anchor": "pstoeps",
+   "kind": "doc",
+   "line": 1244
+  },
+  {
+   "id": "r68",
+   "anchor": "pstoeps#if:bbox",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r69",
+   "anchor": "pstoeps#with:open(epsfile, 'wb')/for:line in tmph",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r70",
+   "anchor": "pstoeps#with:open(epsfile, 'wb')/for:line in tmph",
+   "kind": "lead",
+   "line": 1288
+  },
+  {
+   "id": "r71",
+   "anchor": "psDefs",
+   "kind": "lead",
+   "line": 1320
+  },
+  {
+   "id": "r72",
+   "anchor": "psDefs",
+   "kind": "lead",
+   "line": 1320
+  },
+  {
+   "id": "r73",
+   "anchor": "psDefs#item:\"/_d { bind def } bind def\"",
+   "kind": "lead",
+   "line": 1325
+  },
+  {
+   "id": "r74",
+   "anchor": "psDefs#item:\"/m { moveto } _d\"",
+   "kind": "lead",
+   "line": 1327
+  },
+  {
+   "id": "r75",
+   "anchor": "psDefs#item:\"/l { lineto } _d\"",
+   "kind": "lead",
+   "line": 1329
+  },
+  {
+   "id": "r76",
+   "anchor": "psDefs#item:\"/r { rlineto } _d\"",
+   "kind": "lead",
+   "line": 1331
+  },
+  {
+   "id": "r77",
+   "anchor": "psDefs#item:\"/c { curveto } _d\"",
+   "kind": "lead",
+   "line": 1333
+  },
+  {
+   "id": "r78",
+   "anchor": "psDefs#item:\"/cl { closepath } _d\"",
+   "kind": "lead",
+   "line": 1335
+  },
+  {
+   "id": "r79",
+   "anchor": "psDefs#item:\"/ce { closepath eofill } _d\"",
+   "kind": "lead",
+   "line": 1337
+  },
+  {
+   "id": "r80",
+   "anchor": "psDefs#item:\"\"\"/box { m 1 index 0 r 0 exch r neg 0 r cl } _d\"\"\"",
+   "kind": "lead",
+   "line": 1339
+  },
+  {
+   "id": "r81",
+   "anchor": "psDefs#item:\"\"\"/clipbox { box clip newpath } _d\"\"\"",
+   "kind": "lead",
+   "line": 1347
+  },
+  {
+   "id": "r82",
+   "anchor": "psDefs#item:\"/sc { setcachedevice } _d\"",
+   "kind": "lead",
+   "line": 1353
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 31211,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 11353,
+  "thinking_tokens": 7173,
+  "opus_cost_usd": 0.6002265,
+  "total_cost_usd": 0.6248415,
+  "duration_ms": 108515,
+  "duration_api_ms": 111829,
+  "num_turns": 2
+ },
+ "wall_ms": 110649,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

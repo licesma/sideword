@@ -1,0 +1,4352 @@
+{
+ "instance_id": "scikit-learn__scikit-learn-25102",
+ "repo": "scikit-learn/scikit-learn",
+ "base_commit": "f9a1cf072da9d7375d6c2163f68a6038b13b310f",
+ "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
+ "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "cache_dir": "/Users/esteban/repos/sideword/cache",
+ "selected": 619,
+ "skipped": {
+  "not_py": 617,
+  "test_path": 287
+ },
+ "test_patch_paths": [
+  "sklearn/feature_selection/tests/test_base.py",
+  "sklearn/feature_selection/tests/test_feature_select.py"
+ ],
+ "files": [
+  {
+   "path": ".github/scripts/label_title_regex.py",
+   "blob_sha": "ddf9bda3492debbf43d3ebd97f792c7172924568",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/__init__.py",
+   "blob_sha": "27dd4763446f0f71a5c68f91bd860996d32956e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/cluster.py",
+   "blob_sha": "ba460e6b503a62365f513c4116c56a59572f613a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/common.py",
+   "blob_sha": "c3e114a21204784ed8ba8b18a1d1a68898b7eb15",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/datasets.py",
+   "blob_sha": "dbe0eac0b822c461723289e89a6b0f4549485b6b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/decomposition.py",
+   "blob_sha": "02a7862caeb699cd17a54f928f41a04314d86b3a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/ensemble.py",
+   "blob_sha": "8c5a28e3da90f37ac6f2b782f6e030518fdae940",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/linear_model.py",
+   "blob_sha": "663ceca61d0630208f9f84252e470f5e83f7be9a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/manifold.py",
+   "blob_sha": "c32f3e061dc3384512175442ab6de43b41f7e046",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/metrics.py",
+   "blob_sha": "597e5dc789f6cc1cc4e91b6c21978a20599df341",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/model_selection.py",
+   "blob_sha": "335ffe498adaa6187b128398e2c303800db71fa8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/neighbors.py",
+   "blob_sha": "b0bf6aba1d85bdca0bcecace34974519be414115",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/svm.py",
+   "blob_sha": "36d3066484ee511fe8de2c72837ab5432d42d5f2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "asv_benchmarks/benchmarks/utils.py",
+   "blob_sha": "fca30579e529be253e077378d593aa2832e9e025",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_20newsgroups.py",
+   "blob_sha": "cf38bc73a38ec62f5c09c5232a7cc8f924e674e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_covertype.py",
+   "blob_sha": "8a13a2d9806c65bc58fdf4186740f79745f1f0b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_feature_expansions.py",
+   "blob_sha": "98fa17b99f47a9519df0ece788eb6febfab64e62",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_glm.py",
+   "blob_sha": "06ca4d1276e1cc699ce6afc7a0b4548f9d5f3486",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_glmnet.py",
+   "blob_sha": "8a0a0545bb6273b2e253b7d81efd39c2ccc22e4c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_hist_gradient_boosting.py",
+   "blob_sha": "163e21f98ed0d5b665a043d6418d54d0782b0618",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_hist_gradient_boosting_adult.py",
+   "blob_sha": "1b5905b1cf4e8e34eda0aca91282ead86c448da1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_hist_gradient_boosting_categorical_only.py",
+   "blob_sha": "e8d215170f9c847bbd312d964a6777bf4d185c58",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_hist_gradient_boosting_higgsboson.py",
+   "blob_sha": "d6ed3b8e9700f82c531b3d70563ec889a9c3563a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_hist_gradient_boosting_threading.py",
+   "blob_sha": "70787fd2eb479c5955bd580b9f87e108e3413456",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_isolation_forest.py",
+   "blob_sha": "968ecf20876ae49ab5a556c88bcc91bc9d66218f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_isotonic.py",
+   "blob_sha": "458a04a463303ec64273ce9a9b909d8892d8d56a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_kernel_pca_solvers_time_vs_n_components.py",
+   "blob_sha": "e4eddf9cb745a9d4eb06cd9a7260d72893fa0a23",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_kernel_pca_solvers_time_vs_n_samples.py",
+   "blob_sha": "b6d82647012d52a14a15eaeb2ec857ca25c79aa1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_lasso.py",
+   "blob_sha": "9a893545fbb283114836bed0de65687d0451ce97",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_lof.py",
+   "blob_sha": "31057e2e4067bb9b7745405f754e044b04f6c731",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_mnist.py",
+   "blob_sha": "c50bfc2e594d64f6425cb8e920201aa36837f69a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_multilabel_metrics.py",
+   "blob_sha": "2a87b388e91a25d8ebe117bd5d490c703b127827",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_online_ocsvm.py",
+   "blob_sha": "c7eaefe0829489cd85524605d57490e630f26556",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_fastkmeans.py",
+   "blob_sha": "edbf9412deca2efea2cce72d61f62ff39eca2917",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_hierarchical.py",
+   "blob_sha": "856203259e8ee5f1c94b0b7d038e0c9adda5bccd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_incremental_pca.py",
+   "blob_sha": "0f42e4b630f1d43fca3486e6a13c7b294d2a9690",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_lasso_path.py",
+   "blob_sha": "4373c7022397695f34f8f0799b21a37c877928f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_neighbors.py",
+   "blob_sha": "c6e5541eda6f3d1ff301bd4c1696bb9c859c7111",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_nmf.py",
+   "blob_sha": "78d6ad875cc3466fb9606633286702546a27b37f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_omp_lars.py",
+   "blob_sha": "4325e1fb17f3ca26eb27fdba2e137d89ddb546bb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_parallel_pairwise.py",
+   "blob_sha": "a41e3fab205898a1571c60df9ff04a96a93f8d94",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_polynomial_kernel_approximation.py",
+   "blob_sha": "b21589263a49f02b2afa99fe1b84f36742a3bee1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_randomized_svd.py",
+   "blob_sha": "ecc1bbb92ce6162ea4ef288dc8663f89f77cdc31",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_svd.py",
+   "blob_sha": "52d22f6a9c8a03919270eb62bf326e8eab9fc127",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_plot_ward.py",
+   "blob_sha": "696e833eede20a6c394e3d3a92aeea302c886383",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_random_projections.py",
+   "blob_sha": "89a4550944f3fe3ab872edaf3e605e80d39c82b3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_rcv1_logreg_convergence.py",
+   "blob_sha": "e8fce1c414abffaf926151ff8ab604d26c95cab7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_saga.py",
+   "blob_sha": "340549ef240e18056d9866dfbc49efa0362a88b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_sample_without_replacement.py",
+   "blob_sha": "4f1041a6d10226e8e4d5e8d4485c15ccac956b1d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_sgd_regression.py",
+   "blob_sha": "47dd9e9fc758b90461a2a156eeff75658622a344",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_sparsify.py",
+   "blob_sha": "f1aa482b8b732742472838faff1aae45ecea3bb7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_text_vectorizers.py",
+   "blob_sha": "4f40e87f74e14dbc2e9d823819848c4bd7720dcc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_tree.py",
+   "blob_sha": "1809cb7c5e9c0fa5bacc44d3a437cc25fbdb3501",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/bench_tsne_mnist.py",
+   "blob_sha": "aa1a07a67ef44c45b1d362cdbe02d83ff5afdc62",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "benchmarks/plot_tsne_mnist.py",
+   "blob_sha": "d32e3dd769d6a494acbf86ce71de2b0c75ab7581",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/azure/get_commit_message.py",
+   "blob_sha": "239da5b8c449820711177f60bd892ef79310416a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/azure/get_selected_tests.py",
+   "blob_sha": "f453748f843c4285950d6ffc7438d32248284b04",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/circle/list_versions.py",
+   "blob_sha": "dfcc60095746920b013ba8538175083edd7e2ad8",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/generate_authors_table.py",
+   "blob_sha": "1ecb99626ad5a1f45f55cf6125f73aa8c8cbca0b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/github/check_wheels.py",
+   "blob_sha": "99d319cba4dc5c5526eb96ad0944dbfbdd82ab24",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/github/vendor.py",
+   "blob_sha": "2997688423b84b26419a6f5e6973f878f4fb2b61",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "build_tools/update_environments_and_lock_files.py",
+   "blob_sha": "8e2bc193c92f3bcf48cc2c796dce59dedcc609ef",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/conf.py",
+   "blob_sha": "2e370b2d7b4ede455be6d7fc0ca0b223ba10a808",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/sphinxext/add_toctree_functions.py",
+   "blob_sha": "4459ab971f4c4d88046da8ac77f54d3b042b1fac",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/sphinxext/allow_nan_estimators.py",
+   "blob_sha": "89af4bbee667020f2ba78bed7ca007874b54550d",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/sphinxext/doi_role.py",
+   "blob_sha": "f851a12ec69ea873eafb483142050068619350f8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/sphinxext/github_link.py",
+   "blob_sha": "3992d814b825eb30b83133e3e3f52fa9311b2adf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/sphinxext/sphinx_issues.py",
+   "blob_sha": "aa33a6f38e7624b7e6108dc64e103a1ebde8ca55",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/machine_learning_map/parse_path.py",
+   "blob_sha": "b1c68cec7f76b14d55c65070e213fb9f264b1efe",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/machine_learning_map/pyparsing.py",
+   "blob_sha": "a0f4a66c7291e75db0213f3794d3c18bad3d6122",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/machine_learning_map/svg2imagemap.py",
+   "blob_sha": "80f06c8fb97380eb6fa2d8bdaad626f1eb9611f2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/data/languages/fetch_data.py",
+   "blob_sha": "2dd0f208ade86fb7326afa13e0dc645c825cbb3f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/data/movie_reviews/fetch_data.py",
+   "blob_sha": "67def14889774e3f8b5826e04f417faf5c39826d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/skeletons/exercise_01_language_train_model.py",
+   "blob_sha": "438481120d126653c2582273c4980784cb4fe7dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/skeletons/exercise_02_sentiment.py",
+   "blob_sha": "23299f5f01b3d91045cb6f92f2cbe9f98140c517",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/solutions/exercise_01_language_train_model.py",
+   "blob_sha": "21cee0c80e00e0befb6bb61246d60ba999fdfe59",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/solutions/exercise_02_sentiment.py",
+   "blob_sha": "434bece3419752b05dd57d571cb37ef9ae673210",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/tutorial/text_analytics/solutions/generate_skeletons.py",
+   "blob_sha": "4729b976530c7088e57e253e791603b40da3db4c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_cyclical_feature_engineering.py",
+   "blob_sha": "260c7a0cc34152530d45db4246d74a4dd28103cf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_digits_denoising.py",
+   "blob_sha": "84702034152f5d5975aad5da0297ab3ce5f0f7c6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_face_recognition.py",
+   "blob_sha": "069f0f5aad2026e7aeb7437f1ee994e4d4339dd7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_model_complexity_influence.py",
+   "blob_sha": "812539aa1ff468546a19666fd2900385ed83a30c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_out_of_core_classification.py",
+   "blob_sha": "721ba0159e6921b88c326c5939f8fc98bd00b966",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_outlier_detection_wine.py",
+   "blob_sha": "45e4c64d9fcc40d4944d2b8972f2e5c8ef153e79",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_prediction_latency.py",
+   "blob_sha": "9b99bcbfdfaf109ef8dd3021160f5d88768eb12a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_species_distribution_modeling.py",
+   "blob_sha": "e3d5778f3307d2305d0b95602d4e75c0dde9bb18",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_stock_market.py",
+   "blob_sha": "b7f46c17fe5499f42e1b4c047ff9a2870f82ed10",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_tomography_l1_reconstruction.py",
+   "blob_sha": "9ac351c12206cebc1124ba2dbd158924029fca4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/plot_topics_extraction_with_nmf_lda.py",
+   "blob_sha": "38945241ab68b4e72253ae5c3b19cadd29d43cbf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/svm_gui.py",
+   "blob_sha": "c8019fa72ae91248dfaa13c3fbe7c8a0cabac7a6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/applications/wikipedia_principal_eigenvector.py",
+   "blob_sha": "fcc337b0a4e0024763ff7cf7447871fd78dbf3cc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/bicluster/plot_bicluster_newsgroups.py",
+   "blob_sha": "a54f7099c9a74e4aacec8f0fb624b12626f6169d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/bicluster/plot_spectral_biclustering.py",
+   "blob_sha": "3a0af07815c02cece724ad8da2f761c8bc3fec48",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/bicluster/plot_spectral_coclustering.py",
+   "blob_sha": "0df275e83e3bde9cd4b39e06569721410222576d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/calibration/plot_calibration.py",
+   "blob_sha": "75d1ea15b8fbd46d46d70172967d6abe1f0df80e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/calibration/plot_calibration_curve.py",
+   "blob_sha": "3ba7c2c6404c7535ee950d2e550bea12b85af134",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/calibration/plot_calibration_multiclass.py",
+   "blob_sha": "24962a786ea03f116a38ff95917793fb2674d273",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/calibration/plot_compare_calibration.py",
+   "blob_sha": "026737ee0e4553fa9cdd66fd3b2a8e60f63c4823",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/classification/plot_classification_probability.py",
+   "blob_sha": "87c3f51db5eb24b9d9bf8152cc3ded7c12ff7c9f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/classification/plot_classifier_comparison.py",
+   "blob_sha": "b6fb666a4cd7176fd6cd5c0b514a4adc6d071f8b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/classification/plot_digits_classification.py",
+   "blob_sha": "f760916d1f66e3862c113eedc65a393614bdc031",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/classification/plot_lda.py",
+   "blob_sha": "4213fc614a31a60535e170ae917c7c43725040ef",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/classification/plot_lda_qda.py",
+   "blob_sha": "712354f7f7f443395da025e68709c41bdf0d111c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_adjusted_for_chance_measures.py",
+   "blob_sha": "ff361b3a1882684dce37090cf22021476246964a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_affinity_propagation.py",
+   "blob_sha": "d2bc345c00b3e0c8373477a4d701764702029c4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_agglomerative_clustering.py",
+   "blob_sha": "5bb87a9386bf841f6e379d6b2be1c09db557ec03",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_agglomerative_clustering_metrics.py",
+   "blob_sha": "f1a77d442dbe8572d08de050e06540fef47d5b2b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_agglomerative_dendrogram.py",
+   "blob_sha": "2de5030d68f6d8b42874c20d8d9f857e2aa8b991",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_birch_vs_minibatchkmeans.py",
+   "blob_sha": "3d4185dc9368ad910914ee9f33b73fa0ccf9c9ae",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_bisect_kmeans.py",
+   "blob_sha": "a6be3545e0b27d95f0d8bc7dd9b14b3271e6fcbc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_cluster_comparison.py",
+   "blob_sha": "c27c1f2d45ce3a6edf8c8988ca9f4f1afd3e5b54",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_cluster_iris.py",
+   "blob_sha": "f83638f85366572ee8c9f31cd8994340ec3357aa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_coin_segmentation.py",
+   "blob_sha": "bec68d1221646e70903cc1be2752a6b311138c02",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_coin_ward_segmentation.py",
+   "blob_sha": "1a505dbc4efaac7afe57495cfced1e161405e8c3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_color_quantization.py",
+   "blob_sha": "a1858e72f33af2d8e8aa9d1169bac6b071319579",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_dbscan.py",
+   "blob_sha": "74d71b2042b59e34b1ed321a5438ddfe81028c15",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_dict_face_patches.py",
+   "blob_sha": "99b241bfdeea9760220bda8a203be5816a83df44",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_digits_agglomeration.py",
+   "blob_sha": "18288da2520243197366c35b54c7e85861cb0c5f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_digits_linkage.py",
+   "blob_sha": "730f85c54335696b7d76bb8e784c5aa20314ff03",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_face_compress.py",
+   "blob_sha": "7f2c0e9a9e844d6020a5e443ee2526269211c79f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_feature_agglomeration_vs_univariate_selection.py",
+   "blob_sha": "e2273326b9a12b9e5e62ca91ca360bb953edb9a4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_inductive_clustering.py",
+   "blob_sha": "e395571a1caad003e4a94510075c1c2997b26108",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_kmeans_assumptions.py",
+   "blob_sha": "bc1f01cb1cdd712de474575f73057acac8537fd3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_kmeans_digits.py",
+   "blob_sha": "fc79c867a85898b51a8bec71b203280a695c840f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_kmeans_plusplus.py",
+   "blob_sha": "eea2c2ec8509381e14e12c94a05831685747a3a0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_kmeans_silhouette_analysis.py",
+   "blob_sha": "c7d0dc31d4873f903bff63d1d5827325f6296f9f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_kmeans_stability_low_dim_dense.py",
+   "blob_sha": "774be277037c74398624d79855048c2ad39eef3b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_linkage_comparison.py",
+   "blob_sha": "af4c3cd2894af76aea4af6a240ef46b3e0e26733",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_mean_shift.py",
+   "blob_sha": "46ded7bc4342128eb36fcf8dc0e54cdd3e042211",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_mini_batch_kmeans.py",
+   "blob_sha": "de0a18594997236ae5380e48f0d54820ecb886c2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_optics.py",
+   "blob_sha": "7915abd20ce53a478687f80bc4dec15670735c7f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_segmentation_toy.py",
+   "blob_sha": "0880cdb8938395d568b8abbbfdce78e7e578d8b4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cluster/plot_ward_structured_vs_unstructured.py",
+   "blob_sha": "430d00a8b3730a3e2bf3594d9a4c89dbcf269b52",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_column_transformer.py",
+   "blob_sha": "d4798d828b32125769c6084c8a00cce13c8eb6e3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_column_transformer_mixed_types.py",
+   "blob_sha": "5ed3239db8478463e1a9d1fd152c9b32d6e0922d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_compare_reduction.py",
+   "blob_sha": "47975f84325b8a6f314f156b0531fe9d9aa99f24",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_digits_pipe.py",
+   "blob_sha": "dcedfe0da2beb81a8626912cfa0a5524832779ad",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_feature_union.py",
+   "blob_sha": "e014b8b8808b90ba21f73a82c4b4a1d51da05e8b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/compose/plot_transformed_target.py",
+   "blob_sha": "7e45d8b6c1c0fe38ec155eab4302005a7e68ccda",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/covariance/plot_covariance_estimation.py",
+   "blob_sha": "be3bf4837eb9fc7196681376294b2ee9c6d36bfc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/covariance/plot_lw_vs_oas.py",
+   "blob_sha": "1fd84b180f50ac1fe94ef0b0ddff0fc50fcf1343",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/covariance/plot_mahalanobis_distances.py",
+   "blob_sha": "b93d68a2697067a6a5c0290329982e98a3cef7b4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/covariance/plot_robust_vs_empirical_covariance.py",
+   "blob_sha": "9cffa57beda0a14e13f00ab113d4a78c4dfb1266",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/covariance/plot_sparse_cov.py",
+   "blob_sha": "96a5486dc964ee7a42e9aaed2575d042238cc8ba",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cross_decomposition/plot_compare_cross_decomposition.py",
+   "blob_sha": "762c42dfdf31cf7f0d92df4c8fd005752a44af08",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/cross_decomposition/plot_pcr_vs_pls.py",
+   "blob_sha": "529225d11eeadc3c1ac1fcc20d63c6f415851af6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/datasets/plot_digits_last_image.py",
+   "blob_sha": "a148dd37626e0446c4dd5c878875555f5b020b13",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/datasets/plot_iris_dataset.py",
+   "blob_sha": "56fc4441807dfaeca4243d66686332c4b3b831fb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/datasets/plot_random_dataset.py",
+   "blob_sha": "4f3fdbbb11ef55907c4acff7a81c2075fcec0e4b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/datasets/plot_random_multilabel_dataset.py",
+   "blob_sha": "f22c7b9695c428bce9f41755d8c3d1eaea39cc50",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_beta_divergence.py",
+   "blob_sha": "2a69f9a22ffb47f0e0d110315f4a3b82529bc483",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_faces_decomposition.py",
+   "blob_sha": "12c091c8e14cbfa2925f85e7ce959e36dc4b0021",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_ica_blind_source_separation.py",
+   "blob_sha": "8c1529a3256fb4e044ede2e2f7cebc2112853f12",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_ica_vs_pca.py",
+   "blob_sha": "e5ab3b0ee1ca2a5d9693ba1860ed3b60097ffedd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_image_denoising.py",
+   "blob_sha": "2840905f0f604d3bc0c64a145cd254e1754231ad",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_incremental_pca.py",
+   "blob_sha": "adc7f83f3cda0c00b9a34ffda954d38e580eb0cf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_kernel_pca.py",
+   "blob_sha": "8b04f6809d2dab2220d2b441ed3c93a2bec511d7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_pca_3d.py",
+   "blob_sha": "8e26f39d600b3343ad897e29ef3fae3c06b8c6b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_pca_iris.py",
+   "blob_sha": "9d3780d162b22486265eaf1c3647c06671f977b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_pca_vs_fa_model_selection.py",
+   "blob_sha": "4c934ab756c3ea00b36e61ec99583bb994818da8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_pca_vs_lda.py",
+   "blob_sha": "e88a0aff7882fdebb6d494c5bb2481355ba95e0f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_sparse_coding.py",
+   "blob_sha": "4f4602f1ff1ac2fc8dacebc648225bcd0be26cec",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/decomposition/plot_varimax_fa.py",
+   "blob_sha": "6e5070962032553dcca0a9171fce3b115f905377",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_adaboost_hastie_10_2.py",
+   "blob_sha": "13d3a90d3b05c48579273c2d9f936c55a1eef013",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_adaboost_multiclass.py",
+   "blob_sha": "fae87b4a42d3dfbb72807fcdb15c7bba6d7946d0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_adaboost_regression.py",
+   "blob_sha": "c2aa7e558c07ddc75d85d16454303f36edfe63eb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_adaboost_twoclass.py",
+   "blob_sha": "19679c6285d3bd8f2787a34cb6ff1c1fd77a28e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_bias_variance.py",
+   "blob_sha": "f8868a7003e4c11da6ee84f2caeeb9886fd6aab1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_ensemble_oob.py",
+   "blob_sha": "bd678af42a7d124ceba8f126a6b2e18cc238f150",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_feature_transformation.py",
+   "blob_sha": "36eb87bb757cd5f25583a9977111750575da9195",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_forest_importances.py",
+   "blob_sha": "fbda63b26faeeb7e32d4f26c1d31279f987004ef",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_forest_importances_faces.py",
+   "blob_sha": "3848873c297dec66cf3879e31a60de9dd17c4d49",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_forest_iris.py",
+   "blob_sha": "ee414db7125dc8ce0c0a6cc1fcc4f82c92220ad9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_categorical.py",
+   "blob_sha": "fa4b68be9cbb70532d9599e0da6119abf9368a8e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_early_stopping.py",
+   "blob_sha": "6f1013eed9564d6265200c9f9293dacb3b8ceb19",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_oob.py",
+   "blob_sha": "dd7f19a1fe2459406f1630906b2109292d0d8525",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_quantile.py",
+   "blob_sha": "2aa04c3988d9edbeabcf60b8cf442d765de86b81",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_regression.py",
+   "blob_sha": "3e378e8af72039bc9c2532ed0eb9745394c00ba0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_gradient_boosting_regularization.py",
+   "blob_sha": "a4ac69a822b926e28222507d0722ee41dcc44cf5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_isolation_forest.py",
+   "blob_sha": "aeabb60203ac60215355132e9e6da8c13ffee12f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_monotonic_constraints.py",
+   "blob_sha": "7e9e271256fa98cd17358cac2c991f608f8deb95",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_random_forest_embedding.py",
+   "blob_sha": "000b83e67b92a2536f847eba4022ec70cef49f35",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_random_forest_regression_multioutput.py",
+   "blob_sha": "4b3d4f4a9a728c9bb9c41826effb21624cadd152",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_stack_predictors.py",
+   "blob_sha": "56a82ded5b725eb954f691b05567c523c853a693",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_voting_decision_regions.py",
+   "blob_sha": "e6dc68eeadf98eda56bdacdebe020a57d6c3ed9f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_voting_probas.py",
+   "blob_sha": "54c290c3073e0fb4cab06b75d35f049e6814e41c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/ensemble/plot_voting_regressor.py",
+   "blob_sha": "23e709cc9e62ae3d57b6b9e3dd2c4f5922e9186b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/exercises/plot_cv_diabetes.py",
+   "blob_sha": "9d0232de9e660251d9c935a9c4460c36df6a10d2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/exercises/plot_cv_digits.py",
+   "blob_sha": "e43bbd86bb0275db0e0eb985abc288dace7637a9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/exercises/plot_digits_classification_exercise.py",
+   "blob_sha": "877e61565974357fcd9d488bfeb3f70484c03016",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/exercises/plot_iris_exercise.py",
+   "blob_sha": "74da8c27889c9c22e7fbcf1fe05bb00720fb948b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_f_test_vs_mi.py",
+   "blob_sha": "a8cfc5d426bbc5d5fad25f0f81f9412ef0ab4e62",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_feature_selection.py",
+   "blob_sha": "33ac2bd558dc52ded7f6236c3f869a26b5e96fba",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_feature_selection_pipeline.py",
+   "blob_sha": "1d7c44050ea783b66ed53741afec460f07c05850",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_rfe_digits.py",
+   "blob_sha": "9684f5fabd38305849e7471ac1028e68cc6153c3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_rfe_with_cross_validation.py",
+   "blob_sha": "2d52ea5a3fdf37a430a200b17b642e54a481d203",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/feature_selection/plot_select_from_model_diabetes.py",
+   "blob_sha": "16f63868feae033961f03d9df5147679ae916b4d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_compare_gpr_krr.py",
+   "blob_sha": "42c013523f79cf6f694fabf4e49fc86aa771a9d7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpc.py",
+   "blob_sha": "e2d78fa23f09e1e10c3d6cabf237ce5834776d53",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpc_iris.py",
+   "blob_sha": "ce0ed066a1377755183784a343378975ccaae2c7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpc_isoprobability.py",
+   "blob_sha": "84f1ecb98bd3cf0b60f666da933504bfb9eea98f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpc_xor.py",
+   "blob_sha": "6e6217dba8b9e9fda1e2d41600bc47ba405e58c4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpr_co2.py",
+   "blob_sha": "bfc1c21631b263326b84465f0b600963e4c58722",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpr_noisy.py",
+   "blob_sha": "e15c9a6470d38de73572946371598a3f2e04d21e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpr_noisy_targets.py",
+   "blob_sha": "b8c3be558831e99bba675ad36f3729c9be9c8540",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpr_on_structured_data.py",
+   "blob_sha": "ada50a0edf06b49510c03ba85425ac81e66bf05f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/gaussian_process/plot_gpr_prior_posterior.py",
+   "blob_sha": "f889eba202748d0a7ced673306bc3c6760ff171e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/impute/plot_iterative_imputer_variants_comparison.py",
+   "blob_sha": "d83922817e5def2c8f6a04016ee16c7685bc35b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/impute/plot_missing_values.py",
+   "blob_sha": "ca800ba3602b216ba118c83ffec8a74ad7be8322",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/inspection/plot_causal_interpretation.py",
+   "blob_sha": "68f10b53048420915bb1da35879ca739d6cef96b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/inspection/plot_linear_model_coefficient_interpretation.py",
+   "blob_sha": "d978ee860636cfb133ed5de68f49f910dfbf8ae3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/inspection/plot_partial_dependence.py",
+   "blob_sha": "ca4e040c7a3a5c78631882889aedbb9ac6d7ea6b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/inspection/plot_permutation_importance.py",
+   "blob_sha": "cf0907ce3fd37fdf300c8d49f678205ed62abfe6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/inspection/plot_permutation_importance_multicollinear.py",
+   "blob_sha": "59871c00946a63b008b65aed94e7871e673d68b3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/kernel_approximation/plot_scalable_poly_kernels.py",
+   "blob_sha": "ade27e16e349ae19699b7df52ccace1716083d11",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ard.py",
+   "blob_sha": "261fec8aeee3b670f949bbad4b44e0d0fa5f1521",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_bayesian_ridge_curvefit.py",
+   "blob_sha": "12f48b9ce347d14438cb0bf4252ed48ae860de9c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_elastic_net_precomputed_gram_matrix_with_weighted_samples.py",
+   "blob_sha": "3bca3101758ff91e79ed01ddebc57a26fa26ac44",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_huber_vs_ridge.py",
+   "blob_sha": "2ea5a190e35d8f64875754004cf5e33c61a7ff32",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_iris_logistic.py",
+   "blob_sha": "10a1f0f15ad79c696843643bdf6e980372b7266b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_and_elasticnet.py",
+   "blob_sha": "a62391fac943a4a992d2cfba3309f09ca6f0e505",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_coordinate_descent_path.py",
+   "blob_sha": "1796dc50116443b6a4f69520530e7b1313d25a57",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_dense_vs_sparse_data.py",
+   "blob_sha": "8da1820c0b0c430765f14c310f4d6744802a4733",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_lars.py",
+   "blob_sha": "6788b8b1d1598a7ab14085b3e182390dea4b54f6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_lars_ic.py",
+   "blob_sha": "95c0d0d66608d011345040150cdecc9a55c84c93",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_lasso_model_selection.py",
+   "blob_sha": "7735f01987aa93b467bc092a2b90f7675e4837dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_logistic.py",
+   "blob_sha": "9928dd11cca2ff91e19e4eaa77b0ec5a5fbb14d1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_logistic_l1_l2_sparsity.py",
+   "blob_sha": "ce0afef012a2b79e1728bd876c05ec222f065f1f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_logistic_multinomial.py",
+   "blob_sha": "814eeadaa68c401577eae0ae3fe2205d1b066432",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_logistic_path.py",
+   "blob_sha": "a52b082eaed3290dce657c644fe9ef9eb3bba0c0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_multi_task_lasso_support.py",
+   "blob_sha": "a30b51ed7a7fe3395da4fc6ceba4d5720e90c33a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_nnls.py",
+   "blob_sha": "c8ba2914d783ad3db3f972949f2452d0d64405e5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ols.py",
+   "blob_sha": "2d1930eab1b2af4776259687af2e24327b2e7542",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ols_3d.py",
+   "blob_sha": "06dda681f073dd426dce49bc182b213996dd4fcc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ols_ridge_variance.py",
+   "blob_sha": "4c668f97786bebe4f621a709db503c87e538b023",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_omp.py",
+   "blob_sha": "b0c8b5d093eee57f493c8358c75d32ec83f684ed",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_poisson_regression_non_normal_loss.py",
+   "blob_sha": "46f5c23578b5544516f3eb4361893031f9f6f1ed",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_polynomial_interpolation.py",
+   "blob_sha": "ac2fe28de870dd93b822b6dcf5d10571e48eb7b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_quantile_regression.py",
+   "blob_sha": "69b268a4955cc3d7d74a4028ef1ea45ffe2584d0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ransac.py",
+   "blob_sha": "0301dd0ba008805f57c66efb0dd8d1fba4aea1ee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ridge_coeffs.py",
+   "blob_sha": "bfe6d818b2f3733e525a0a4bfb174cd1619d2a34",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_ridge_path.py",
+   "blob_sha": "66f8fd9eb6c2388f64a0e83f535d70535cc2944a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_robust_fit.py",
+   "blob_sha": "c9fe49fc0d416090f6f7a46cddf330470e075acd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_comparison.py",
+   "blob_sha": "5ab0d6b1b2827e63ab99361642ddfa0b5fd955fd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_early_stopping.py",
+   "blob_sha": "4fb884804492db0bb337fc1cde9eeb512a343dea",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_iris.py",
+   "blob_sha": "64dca07396d540d11b689d897fea52e3fd80c3b9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_loss_functions.py",
+   "blob_sha": "a1f74dca4d6afbd613f77d462f65e45b1a203df2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_penalties.py",
+   "blob_sha": "0413751fb41a96ee6db42e1e6d7be5144794a75e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_separating_hyperplane.py",
+   "blob_sha": "af288fcd3dde0fb9dc5829d8103b321b10af5eed",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgd_weighted_samples.py",
+   "blob_sha": "2db52042b075f3347acbeca50e9db65cef74d955",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sgdocsvm_vs_ocsvm.py",
+   "blob_sha": "c25f4a84d91e0046e77d2f161b2b3e71806f3eac",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sparse_logistic_regression_20newsgroups.py",
+   "blob_sha": "507dda5c7690127e8ab981057c40b309e1dd8dff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_sparse_logistic_regression_mnist.py",
+   "blob_sha": "37327aeaa4cb772b3bda99cbb47b7f910708075a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_theilsen.py",
+   "blob_sha": "b380baf705a766f4b5c434a42ff3d1d03ddc30f3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/linear_model/plot_tweedie_regression_insurance_claims.py",
+   "blob_sha": "10a862127dc65ab0337982c84507924496f0a954",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_compare_methods.py",
+   "blob_sha": "3773f11605241f1c09332ceed702c7aad8db95ec",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_lle_digits.py",
+   "blob_sha": "7d4b6610cee49d04e9049ecda025fa466813a9df",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_manifold_sphere.py",
+   "blob_sha": "46c46a68423f54209e7d16863f6ae08bda0e7cd6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_mds.py",
+   "blob_sha": "51f9745a33f595cf71380d578bbd1aa6d7e63df6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_swissroll.py",
+   "blob_sha": "4a71eb83cc972064ac07ff8839230c7560ad7f07",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/manifold/plot_t_sne_perplexity.py",
+   "blob_sha": "014114a8a37d71b09b17bc5f8f6dde6f97ccfe64",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_anomaly_comparison.py",
+   "blob_sha": "efb4f6d86edfc0d310e2c68600572ebe28008759",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_display_object_visualization.py",
+   "blob_sha": "f108beced7a003a2b0ab404c1569656aa48f0187",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_estimator_representation.py",
+   "blob_sha": "304bb055e6762008e4f294ff9e9752163657737c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_isotonic_regression.py",
+   "blob_sha": "0240a8dec34b563806e1010833eeee01e6a1bdbd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_johnson_lindenstrauss_bound.py",
+   "blob_sha": "6fd9d3614804c33ba9b9532316d6182d729f3784",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_kernel_approximation.py",
+   "blob_sha": "afa0710695038305dc906788757e700aa401c052",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_kernel_ridge_regression.py",
+   "blob_sha": "59ce59a8205131f13e70bf3ee7358862a6a933fc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_multilabel.py",
+   "blob_sha": "aded595258fead02f244a7e60c7a083455d69c82",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_multioutput_face_completion.py",
+   "blob_sha": "31e73195747a5718c2923e38371173fc877a2b58",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_outlier_detection_bench.py",
+   "blob_sha": "f2d0b922710caf781e6cb04f1b2ab3627c852b51",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_partial_dependence_visualization_api.py",
+   "blob_sha": "336d7c36d1661a1ed0f6cb33d4a992071ce33ae0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_pipeline_display.py",
+   "blob_sha": "f0fea8d2f3a27a6509ef802fc9bf74dd7a0e6d30",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_roc_curve_visualization_api.py",
+   "blob_sha": "b4e08493c77d45531898db57f1169f83a0e7fcd8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/miscellaneous/plot_set_output.py",
+   "blob_sha": "2a122214f3e030ccc25c5bef0cccd17684c7b6e3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_concentration_prior.py",
+   "blob_sha": "a56ec6325068b5fa9d2780f2d5d5b4175993f10a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm.py",
+   "blob_sha": "efc89baa8159a20c926eb172fef7fb0a0a252ec9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm_covariances.py",
+   "blob_sha": "aa0b78ab42a0bcd285cc902f3f7559c8fe958224",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm_init.py",
+   "blob_sha": "23a4788b799b4d46c07649a8946edb0588ac190d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm_pdf.py",
+   "blob_sha": "70d58f22f8f410bcbea6032151f45a824f657060",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm_selection.py",
+   "blob_sha": "cd84c03ab7d13755da0337cd71f2d3508ba01cb1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/mixture/plot_gmm_sin.py",
+   "blob_sha": "c8656a69fe9fbe5422f12a24f9d2eb8a7f681941",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_confusion_matrix.py",
+   "blob_sha": "b891564db402515c8b45538e25219b03d6d930cb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_cv_indices.py",
+   "blob_sha": "8b70191e4abd1fc0b57d18a2a6d397fc52959eeb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_cv_predict.py",
+   "blob_sha": "7fd843c535c853d242d61bfddea82dd43dd3b969",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_det.py",
+   "blob_sha": "c3a66490773bda6e05dad0c2734c83ad19e0a3c0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_grid_search_digits.py",
+   "blob_sha": "ec4360692aaf353352dd8447ee8e11e7dd6d4cac",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_grid_search_refit_callable.py",
+   "blob_sha": "53513aa4ba1ecf56da40ca94c5439d14fcccaf28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_grid_search_stats.py",
+   "blob_sha": "179d860b421283466b92f293f0ca93807fcfb3af",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_grid_search_text_feature_extraction.py",
+   "blob_sha": "9ad4296aad9b46ac0060eac42bbabcbc50e0b96f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_learning_curve.py",
+   "blob_sha": "956c70aaabd82e28bc600bcdd1318b49927d24a9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_likelihood_ratios.py",
+   "blob_sha": "01a2962f3fe2fd8d6882c99c214e5ff08792c53d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_multi_metric_evaluation.py",
+   "blob_sha": "e47e67e086ccbfd11b2855ae3d1cba44b3031a50",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_nested_cross_validation_iris.py",
+   "blob_sha": "81d89d93afe91c65548c4537b4c7dd7152bea288",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_permutation_tests_for_classification.py",
+   "blob_sha": "23e3688c437f5bc1fc2f254c6af086388cc77006",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_precision_recall.py",
+   "blob_sha": "4d9ebcdc4abe2aa2b7ab79f4249e049a2b27fe82",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_randomized_search.py",
+   "blob_sha": "d5514a9b1c278813edbb596f5f9d98c64674ef24",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_roc.py",
+   "blob_sha": "e47d283e3e7834eedca8cf4de40fb750537cfe38",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_roc_crossval.py",
+   "blob_sha": "8abdb89a38da5ffc3ee83b4026e5ba7b6fdc4e11",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_successive_halving_heatmap.py",
+   "blob_sha": "ecdae48e640112bb4c831fd724011ab6e6aa1fa5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_successive_halving_iterations.py",
+   "blob_sha": "bd2d5635e376ecc04ee0747c700d16440e87c23c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_train_error_vs_test_error.py",
+   "blob_sha": "1aba6f4892cbe0bfe058231d5d3d7cbdb757380d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_underfitting_overfitting.py",
+   "blob_sha": "ae8450b50cea9a925cb9f24e63379ff1c236dc7e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/model_selection/plot_validation_curve.py",
+   "blob_sha": "1b3c5625941881888be130ccb8a803cfd3cea247",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/multioutput/plot_classifier_chain_yeast.py",
+   "blob_sha": "e1f9feed43a97957887c78cf4dcefc9e0ed46f37",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/approximate_nearest_neighbors.py",
+   "blob_sha": "8b73fa28b7a6e6cc50d96259507d18092aa607eb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_caching_nearest_neighbors.py",
+   "blob_sha": "00be6470c1591d8833a3b447ab96bf03757b169e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_classification.py",
+   "blob_sha": "cc4f0864ba9265652236cba09be3ff3bd179f4db",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_digits_kde_sampling.py",
+   "blob_sha": "e580f9fa178bc4fae8bcf23e1ba090956197a718",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_kde_1d.py",
+   "blob_sha": "8b139d4cc2335e41d38e72a609113c67fc9fbe59",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_lof_novelty_detection.py",
+   "blob_sha": "277134cc77673f4d8dea100aca5d096fbb44ba7e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_lof_outlier_detection.py",
+   "blob_sha": "1512173965889c386c26c45dd52d8ec66213d38e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_nca_classification.py",
+   "blob_sha": "17e6a667fcb3b29c1619e27eaaccf34158f142b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_nca_dim_reduction.py",
+   "blob_sha": "d245e0223ccfafd9a1c01d03799baae2269baa84",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_nca_illustration.py",
+   "blob_sha": "d722ffa5be0333409693d973fcc0ef28ca2b346e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_nearest_centroid.py",
+   "blob_sha": "0ea3c0c6b120968888bd0ae2b6de4f8989bbfa96",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_regression.py",
+   "blob_sha": "78b850d1a4e2c034b32dea3cddb2151f67306443",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neighbors/plot_species_kde.py",
+   "blob_sha": "35ea40158a45c7dab518b97a79ada29c307d1d7a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neural_networks/plot_mlp_alpha.py",
+   "blob_sha": "443d41f4707bfc519fb6ac5acc351498aaffe483",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neural_networks/plot_mlp_training_curves.py",
+   "blob_sha": "3fbddda8791622b1ff307fdddee39940afedb975",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neural_networks/plot_mnist_filters.py",
+   "blob_sha": "03f615786e8303b87d1f44e4f942f50ae927c451",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/neural_networks/plot_rbm_logistic_classification.py",
+   "blob_sha": "de939922d9514fcd1d21cbae93e3c0593b32f200",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_all_scaling.py",
+   "blob_sha": "d8a20ece5c56cf2857577b1775c038040d18586b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_discretization.py",
+   "blob_sha": "d064ea705903b67091cedcfbc9985737ffae96fc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_discretization_classification.py",
+   "blob_sha": "ff3d2973caff36a4d9ed50d2accf54d3b40ecf6e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_discretization_strategies.py",
+   "blob_sha": "d6b9cb16ee53c5d2cce5669fbad0aa5d93dd5dcc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_map_data_to_normal.py",
+   "blob_sha": "42a61d84fa3846aa41d205f3d027e95d7b583886",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/preprocessing/plot_scaling_importance.py",
+   "blob_sha": "4b85eace9b685e1a000cccdad077236ea89063e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_0_22_0.py",
+   "blob_sha": "02b99df3491ee1f03701af609cd61f8193a414be",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_0_23_0.py",
+   "blob_sha": "7c6836632e3f05c51a86964bea012c95b9ce8dd8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_0_24_0.py",
+   "blob_sha": "a55b4aabc7994e01bd832087349419452059ea2f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_1_0_0.py",
+   "blob_sha": "383612e611688ae2c812d0fd94171e6b67b9ddf1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_1_1_0.py",
+   "blob_sha": "8ab297ea07671a6b4ae39612fa41ed93cbf864e3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/release_highlights/plot_release_highlights_1_2_0.py",
+   "blob_sha": "8165c3bc4eed095b6c8b80ae3c32989949d92ae3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_label_propagation_digits.py",
+   "blob_sha": "f848e3b76e084544feebcc5abb5fff90e17d7721",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_label_propagation_digits_active_learning.py",
+   "blob_sha": "7d4a348cad9b6679cbad779d842af42528152afa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_label_propagation_structure.py",
+   "blob_sha": "5de6e9f20a7e33d36d15e5cdafd1b7a224b7e77c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_self_training_varying_threshold.py",
+   "blob_sha": "801e48b8411f5e90feccb6df3dd4825502d31d88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_semi_supervised_newsgroups.py",
+   "blob_sha": "609f5d10247c23e43f428176a261255d7f1fbeca",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/semi_supervised/plot_semi_supervised_versus_svm_iris.py",
+   "blob_sha": "402cd41d6a0f21d3c58984994b874e9de361c152",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_custom_kernel.py",
+   "blob_sha": "c2c3bc6e6ba2891bec0062775015bfdf2a4d3296",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_iris_svc.py",
+   "blob_sha": "5931ad57c263f2df741fe65fe286f517e85ff7ec",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_linearsvc_support_vectors.py",
+   "blob_sha": "7fdfea416013fa60b617009031d0fb323d965a01",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_oneclass.py",
+   "blob_sha": "082cbcd6de2be76c1fa04ece8d906919e754e0b9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_rbf_parameters.py",
+   "blob_sha": "fa4310134487ad73efab98791b6eec1604d6568f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_separating_hyperplane.py",
+   "blob_sha": "45bacff6a2b9783c44961d8737e55c979ebc2250",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_separating_hyperplane_unbalanced.py",
+   "blob_sha": "fe71420ffd0b33af2cc2e6d837af6cdee1b41018",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_anova.py",
+   "blob_sha": "3652fae3e979a133a6b7bd22d881e3225a378fc0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_kernels.py",
+   "blob_sha": "dd7eb43e15231f668defd4cdc3f874b4c655d00f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_margin.py",
+   "blob_sha": "9f52881f1faf289fd5e3869eb46fb8b68ed660aa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_nonlinear.py",
+   "blob_sha": "f88231b4b6af4b7e322cc1cf12ae31be6a8eb44e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_regression.py",
+   "blob_sha": "75a16b571c3ea9d10504128650bc5ce5681e9243",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_scale_c.py",
+   "blob_sha": "4ba025cffac8ea6766487a733dd9948f193bfa09",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_svm_tie_breaking.py",
+   "blob_sha": "e12460b494c024e0a1d7643a1f49552d0a63d693",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/svm/plot_weighted_samples.py",
+   "blob_sha": "f346599300aba93c9faf4ac8b00ece1f3a383656",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/text/plot_document_classification_20newsgroups.py",
+   "blob_sha": "f86e2a534b6ec65db56f84af2b2d31520e03f62d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/text/plot_document_clustering.py",
+   "blob_sha": "04446fd82f96496f930e1ba3e2b2b5d6dc0cf0cc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/text/plot_hashing_vs_dict_vectorizer.py",
+   "blob_sha": "8200c646f69ee57045134b86337faadf28ec17e7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/tree/plot_cost_complexity_pruning.py",
+   "blob_sha": "d21d163c9a1e3f2a820707421d8a47bd3b513abc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/tree/plot_iris_dtc.py",
+   "blob_sha": "14f6506b5810fff838ddd0b9aa969d3e495c2788",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/tree/plot_tree_regression.py",
+   "blob_sha": "6ed28a5cbfa99ff7693f0a5b77f919468ef2ae91",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/tree/plot_tree_regression_multioutput.py",
+   "blob_sha": "a75652a6ddd56f435974f4e9bc92ad60a7b95cb3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/tree/plot_unveil_tree_structure.py",
+   "blob_sha": "6313d0ccbb74fd3c0306a6cd420c8e19c5ac8125",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "maint_tools/check_pxd_in_installation.py",
+   "blob_sha": "e6f64c86a3383167d9e33eda3b74f1d532580631",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "maint_tools/sort_whats_new.py",
+   "blob_sha": "178e33bc87e5f9705c2031a010aba9ec8483bd51",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "maint_tools/update_tracking_issue.py",
+   "blob_sha": "4ddc9d1bfe8e6a0be807514e543b52fe65377f66",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "setup.py",
+   "blob_sha": "2ac07ec44c947c818d5f82f6b1ce28596cf2b30d",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/__check_build/__init__.py",
+   "blob_sha": "a52290962f9751f46a577cc710d5444e0cb952c8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/__init__.py",
+   "blob_sha": "47bb893bd00a0631d2623787570116cba4070f74",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_build_utils/__init__.py",
+   "blob_sha": "755171ee770c45052048cc4d76b3a58dd0024f13",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_build_utils/openmp_helpers.py",
+   "blob_sha": "b89d8e97f95c6423426799517fbceec23e04ebdf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_build_utils/pre_build_helpers.py",
+   "blob_sha": "9068390f2afad8da717b44534943294a49d20e27",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_config.py",
+   "blob_sha": "e4c398c9c5444ed6de2a8e233a3def5e92d36869",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_distributor_init.py",
+   "blob_sha": "a0142ac80878fea20373cff1801218809bcf2953",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_loss/__init__.py",
+   "blob_sha": "63ae3038df8aed6917998d2830b913237fa8a7f9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_loss/glm_distribution.py",
+   "blob_sha": "6fbe675fef53301a770c969009b68ef72ae12de8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_loss/link.py",
+   "blob_sha": "4cb46a15ef2635ccd096c1b6a4e19f93c15f2d94",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_loss/loss.py",
+   "blob_sha": "1a79abd90137684241d8ab544d21ee8ef203abc5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/_min_dependencies.py",
+   "blob_sha": "b06c7fb47afb48943a7bf3a65d9313d666c1f020",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/base.py",
+   "blob_sha": "5c7168adabc5e948c70ed761223f227dfaa76f9b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/calibration.py",
+   "blob_sha": "2c4a33616d22c4078a7f1c45079942ff6628d33a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/__init__.py",
+   "blob_sha": "9ba72d341c3898d71fd155ec6772fd318d8d3494",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_affinity_propagation.py",
+   "blob_sha": "586b6c2c905a4038dc5b7a36fd301ec7cd053dff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_agglomerative.py",
+   "blob_sha": "53c5ba0995128385e4b16810e3f20c75dadad8b9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_bicluster.py",
+   "blob_sha": "73cb1c35290167ad5188b4ddd835da0dab4d1689",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_birch.py",
+   "blob_sha": "4c9d7921fdc704fc95496fd683c2eaab1deb0b70",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_bisect_k_means.py",
+   "blob_sha": "b860596c03540be27e5930bce79e6fabf369de53",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_dbscan.py",
+   "blob_sha": "a1cd96263e056790483f27490b95b1facfd0f3ba",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_feature_agglomeration.py",
+   "blob_sha": "457a83dd41e71076e53d1d2a296c99edb2acf9ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_kmeans.py",
+   "blob_sha": "332e07d4fae6ffd735692b247f8b6d37374e45fb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_mean_shift.py",
+   "blob_sha": "cbed1c5be3b9efc267ebfd7cfee439589493d5a7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_optics.py",
+   "blob_sha": "fb8daa4db12260c060456a2d69d1b59b1b38e956",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cluster/_spectral.py",
+   "blob_sha": "8fdd47300b2d981af3aa1cfb660bedd2fda4324a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/compose/__init__.py",
+   "blob_sha": "8be8d17040e820f47e2027b59c92a7e5538ca41c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/compose/_column_transformer.py",
+   "blob_sha": "5f76c2cc90b0a37ad02b3cdfe66fac6a5245f67e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/compose/_target.py",
+   "blob_sha": "77a11619531f2f249199a00f3ee39319449becdf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/__init__.py",
+   "blob_sha": "011fde3647145c990e1898934bcda0159709ee4c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/_elliptic_envelope.py",
+   "blob_sha": "1ef0eedd62f64dd4bbf5c2e528fa7bdeba6426e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/_empirical_covariance.py",
+   "blob_sha": "2af0aadfb890d6f8238ba759cc4c0c4737a73fe7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/_graph_lasso.py",
+   "blob_sha": "dfbb7e75753c59e6d30258d01baddec403f8c8d1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/_robust_covariance.py",
+   "blob_sha": "f3dd6d60badf8c257e7e1d284e26db78f8b1fb84",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/covariance/_shrunk_covariance.py",
+   "blob_sha": "5cdc9f3d212adab3054cdb27e7bef8dbc334ed58",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cross_decomposition/__init__.py",
+   "blob_sha": "ec2f5fb3049afd7eadae67cab2e3c5f9e93f3ce2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/cross_decomposition/_pls.py",
+   "blob_sha": "bf3456791e6604eee40bd07aa6a13ccf5bcf6102",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/__init__.py",
+   "blob_sha": "7731fe84b8421183773579d62d4674a03a80b82f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_arff_parser.py",
+   "blob_sha": "a624cbe367a974ffac359bbb2dd88fe33f00928c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_base.py",
+   "blob_sha": "902deae119c4824e9a10d6b0250c8e7df1e48fb0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_california_housing.py",
+   "blob_sha": "98e3bfcb37a985c0eb6d012a58bd708aadafaea0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_covtype.py",
+   "blob_sha": "b43ea24141eedce22419afa908f713df8a5cbbe8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_kddcup99.py",
+   "blob_sha": "3a49d612af8501603c761a5011e1dcfc8c5ef43b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_lfw.py",
+   "blob_sha": "7252c050bef3ce23661be5e015a93e52c84bdb8e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_olivetti_faces.py",
+   "blob_sha": "296a3868081d917a0ade223e1b82c46af0d88161",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_openml.py",
+   "blob_sha": "be85e72d822b0c78082111902daf073197c718da",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_rcv1.py",
+   "blob_sha": "cca30afefff3412548c734300de82efbfdd69166",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_samples_generator.py",
+   "blob_sha": "bc2cf1bcb521b292fb9ad7a239120657823d1d23",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_species_distributions.py",
+   "blob_sha": "091708e6f8ee47f0882991302164b6a46cc28c9c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_svmlight_format_io.py",
+   "blob_sha": "2a141e1732ff7421ece7c3c227d4f561e91b32f3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/_twenty_newsgroups.py",
+   "blob_sha": "22bea7e59482d1b9c0b4230479e998eaf0b4c599",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/data/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/descr/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/datasets/images/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/__init__.py",
+   "blob_sha": "c5f323d3c5d72d094c5b2f2cd14b2bcfba37c266",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_base.py",
+   "blob_sha": "20bf7af4f284a67ccd84966e096ccb1ac24ab1d5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_dict_learning.py",
+   "blob_sha": "1418897329e6e9fad27e290634552500d7eefb27",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_factor_analysis.py",
+   "blob_sha": "a6507d167b9cbc6fe9fa4d8cd32a34f5a98e1d39",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_fastica.py",
+   "blob_sha": "bb0c4ccdd78ea5a9e716b21e92558cf1d63a98e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_incremental_pca.py",
+   "blob_sha": "d98a5f4fb3b7a6e66516c4c8dbc98f72f89de9ce",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_kernel_pca.py",
+   "blob_sha": "72f20d99bd5480ca3ea15fc67924c3501ca66128",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_lda.py",
+   "blob_sha": "b7ef0af8eafd97e4a0ccbb2c2ad24d3446dca90a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_nmf.py",
+   "blob_sha": "5243946a93e44710e794c7634586fa4ee4d1f202",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_pca.py",
+   "blob_sha": "789b38c9cd455435ea63beb457a259a6620b94a0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_sparse_pca.py",
+   "blob_sha": "5974b86381e1a4b644c35a446fba9c42a6fd1b27",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/decomposition/_truncated_svd.py",
+   "blob_sha": "999266a4f3f781e3ff550bcaea9cc924ab2b149b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/discriminant_analysis.py",
+   "blob_sha": "0017c218e2fe0df2ad086daca490f856652394a3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/dummy.py",
+   "blob_sha": "826b9f7fd19795001eedac43594110740a4693cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/__init__.py",
+   "blob_sha": "e892d36a0ce4657d5a45158db840651021043071",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_bagging.py",
+   "blob_sha": "d10f89102ea820856d34a84cfda3de0b9623dd93",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_base.py",
+   "blob_sha": "508c4b4e100dd9ae860662c29261bd6ab04ec964",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_forest.py",
+   "blob_sha": "c60a7177133ec6d6d5190ad4e0ac0ff35912b775",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_gb.py",
+   "blob_sha": "d80366141bdf944379971a121b96efe57e45b617",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_gb_losses.py",
+   "blob_sha": "228250910b94f30e60fb6fa2c686a49f2073c321",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_hist_gradient_boosting/__init__.py",
+   "blob_sha": "879fae1189f87e24b9a704f7bb713836e9debf74",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_hist_gradient_boosting/binning.py",
+   "blob_sha": "a553a307d262b0b7bdfde7e8d6eb2ec83ed1987c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py",
+   "blob_sha": "31069fe14ee410f52594afea45d183cd125c958b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_hist_gradient_boosting/grower.py",
+   "blob_sha": "c4669da4a60a94f5d41e3887b9111e33a4fefc5c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_hist_gradient_boosting/predictor.py",
+   "blob_sha": "746fa34753121fa892fb715f771b2a73159cf67a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_iforest.py",
+   "blob_sha": "4e5422c50e6145d101b8c4b76d6c9f28821e1442",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_stacking.py",
+   "blob_sha": "e64bb891dacad463dfd239232cfae246aa605b1e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_voting.py",
+   "blob_sha": "1c250cbe11a06022c0b20755bfe82f61ff4e4e1b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/ensemble/_weight_boosting.py",
+   "blob_sha": "99ea4acfa1d8b613de87b1a890d19ab56887bf37",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/exceptions.py",
+   "blob_sha": "627190b848f8e0993b67667603ba86f39fe61d68",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/experimental/__init__.py",
+   "blob_sha": "0effaf5b05fa0cb20c05f807e57bcc51f7924de1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/experimental/enable_halving_search_cv.py",
+   "blob_sha": "f6937b0d14c016b56e9f6646ca738c6f7580e10a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/experimental/enable_hist_gradient_boosting.py",
+   "blob_sha": "f0416ac013e96e8d74f8aac18c17a4b114885538",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/experimental/enable_iterative_imputer.py",
+   "blob_sha": "9ef9f6a0dbdf07f523672e2dcb29645815239294",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/__init__.py",
+   "blob_sha": "97cda1858d5655b4179183372d271299298c62be",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/_arff.py",
+   "blob_sha": "7c9d51d0702ff5cbe70b80d405747e37a5e6cb1d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/_lobpcg.py",
+   "blob_sha": "398800679d295b2e6b6b5f477e574e590c2dca28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/_packaging/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/_packaging/_structures.py",
+   "blob_sha": "837e3a7946d70355b46606d20a4b6c0f038b0815",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/externals/_packaging/version.py",
+   "blob_sha": "0f1e5b833699c38690679515bb788820de4168b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/__init__.py",
+   "blob_sha": "a9c1496181b3b4acaa23e0dca44461c367673ca2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/_dict_vectorizer.py",
+   "blob_sha": "b51ccceaac9d182142752e9524b0a10bb2c8a030",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/_hash.py",
+   "blob_sha": "1f2513e70eed5d4accc0e5a41b95912d93623c4d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/_stop_words.py",
+   "blob_sha": "37ae02a0f36c54fb47b87d8368bc1a2507404cfb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/image.py",
+   "blob_sha": "9d5f3f618f7e78d60dc75804c5d419abc2a39b20",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_extraction/text.py",
+   "blob_sha": "c03a4767a3330f50092c4da3c949fc097b06e949",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/__init__.py",
+   "blob_sha": "ce5fbc10ee45958ea0bbc405d134a8bc274b22f0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_base.py",
+   "blob_sha": "da2185eac337f67b4717645954be942310ae6c57",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_from_model.py",
+   "blob_sha": "7b8de4ae03585586763d75c7c2f6bde0d96021fa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_mutual_info.py",
+   "blob_sha": "2a03eb7dfd2fe98df56dd3e48f41b7142260368c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_rfe.py",
+   "blob_sha": "d105ba1ae3567173e87208128f41c48b1761a74c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_sequential.py",
+   "blob_sha": "9fa752fe333212130850c3e0d4937a401c732cd4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_univariate_selection.py",
+   "blob_sha": "a2a53b6c116ddc049a78fc2972447b33cfc630cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/feature_selection/_variance_threshold.py",
+   "blob_sha": "7c8db9cc7fa55cf79a442a8964a263d799df8032",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/gaussian_process/__init__.py",
+   "blob_sha": "719208b7951beb10aeb7c1b1b607b808706e2697",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/gaussian_process/_gpc.py",
+   "blob_sha": "4a88034768870dfe6116a122132fb80765bc3268",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/gaussian_process/_gpr.py",
+   "blob_sha": "c0a8dc71b73523366318ea25c633c176ec33b247",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/gaussian_process/kernels.py",
+   "blob_sha": "1e0866afb6a4d428054acd6e0a7bfba369f6c568",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/impute/__init__.py",
+   "blob_sha": "e305bc2a657dc042d63dfd42fb8aa9734365ccbf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/impute/_base.py",
+   "blob_sha": "95ba89bc35915e3298e2502976d7e225452db76c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/impute/_iterative.py",
+   "blob_sha": "41ed19b7a8948ce9b3419754dd06a1d567898991",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/impute/_knn.py",
+   "blob_sha": "5735709dd7f29bb542f4b2d688d5b007ec09aec7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/__init__.py",
+   "blob_sha": "f73ffe8cff26fbf754e9e94d1d3a02a0f6b3b650",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_partial_dependence.py",
+   "blob_sha": "75a88508e36268c48cb7cc7652ba387b3b23d2e8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_pd_utils.py",
+   "blob_sha": "76f4d626fd53c3e669f29335e65e724e5e33e382",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_permutation_importance.py",
+   "blob_sha": "a418cb34b354023d0da7c006f7774c89e4ac3c3c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_plot/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_plot/decision_boundary.py",
+   "blob_sha": "22b4590d9bc3cdb8351b17ea564a9a799fc116f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/inspection/_plot/partial_dependence.py",
+   "blob_sha": "bba8e0dea826fc1e28afcec405d5f506438631a1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/isotonic.py",
+   "blob_sha": "24d62dfe1c69a7a41878928b485b1772ca070ca7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/kernel_approximation.py",
+   "blob_sha": "cfc0683ca094f3dbde4afbc613df9de4235d3e6f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/kernel_ridge.py",
+   "blob_sha": "111e62938f096da431e9bcf2c73b86b5205489ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/__init__.py",
+   "blob_sha": "d5a14756c41a9d1d1b1d139dab473119df391908",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_base.py",
+   "blob_sha": "987ae57c12250e78945e4a97f765a68d7bb3b7e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_bayes.py",
+   "blob_sha": "7f712b12bca45324b4e3020f5b248b33dd549bb3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_coordinate_descent.py",
+   "blob_sha": "c1783be1ae45f1df7e158e81ff2365cf7c172e99",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_glm/__init__.py",
+   "blob_sha": "fea9c4d4cf6ba8a75c857802ccb2b217ee23a451",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_glm/_newton_solver.py",
+   "blob_sha": "d624d1399b1b9ab32ef3d050141a126ac2329886",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_glm/glm.py",
+   "blob_sha": "ee5656d332dd5e388a5290fa514ddda407783b25",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_huber.py",
+   "blob_sha": "a7b848f647560685ad8a9aa672ebf64ecb1a14f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_least_angle.py",
+   "blob_sha": "7ed7b27811ec6bde5d37da8f3dca1a0f00b95398",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_linear_loss.py",
+   "blob_sha": "e881c43ba4988221c330c67892ee40da52ec7262",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_logistic.py",
+   "blob_sha": "0d0da3983c66472f437eee68f50c0db9cdcb2423",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_omp.py",
+   "blob_sha": "f0bd04568c473b650a689f9aade9fc3e3f1c95a1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_passive_aggressive.py",
+   "blob_sha": "2cacd4f78cc548bbed1a4bb9af267e4f75826593",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_perceptron.py",
+   "blob_sha": "09b6ae48cb5e890db09ec69bcc95412b049a0226",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_quantile.py",
+   "blob_sha": "d26f060c4d8e8887f41e97d79072714c00770fbf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_ransac.py",
+   "blob_sha": "ff58e067cde35674bf1d633161aa042710576c4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_ridge.py",
+   "blob_sha": "fef5025bf547969aa23f6d653649788ab022919d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_sag.py",
+   "blob_sha": "b7860edd43031447460e88e7cadc7a8d23504fc0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_stochastic_gradient.py",
+   "blob_sha": "6d204719aaf0e5844c374b404380f6c48fb177c4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/linear_model/_theil_sen.py",
+   "blob_sha": "67d6ca532a8ab1badc4cf3367f11264de7dcefe3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/__init__.py",
+   "blob_sha": "ae708aa1fd65c04d2d05b8ecf9c172b38c035b1c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/_isomap.py",
+   "blob_sha": "e2451f31cc1c2c53d7fb1ee787cfbd66afc10245",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/_locally_linear.py",
+   "blob_sha": "84b2719b9eb99839355b948a10da9753335540e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/_mds.py",
+   "blob_sha": "d6f99c84f55f17e5c36d7bf0a56829a24e403289",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/_spectral_embedding.py",
+   "blob_sha": "b35ad3a147b5f9628d4ddb1aa55680abba4a65dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/manifold/_t_sne.py",
+   "blob_sha": "99ec6ea0876f2103db13848a01a875ee441f1904",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/__init__.py",
+   "blob_sha": "4224bfbb9c04cb62b04d9a1b06e14773cca1ed27",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_base.py",
+   "blob_sha": "dd0258f600cccce45213999a0f157aa6a497a0bf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_classification.py",
+   "blob_sha": "bde3773a573a0600b9871da58f4a5c02d453c407",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_pairwise_distances_reduction/__init__.py",
+   "blob_sha": "133c854682f0ca03116144b9b3e6bfead4ebb545",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_pairwise_distances_reduction/_dispatcher.py",
+   "blob_sha": "62403d1c334f0f5d4682db03e6d4df3effb8555c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/base.py",
+   "blob_sha": "60377e3b10f66de49b5f7fda128b984638ea9124",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/confusion_matrix.py",
+   "blob_sha": "1611bb9605d85e5e4840d7bc71bdd97aa741abea",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/det_curve.py",
+   "blob_sha": "b4a868b195dd086fcc6edb0c4fc56cd72cd93a51",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/precision_recall_curve.py",
+   "blob_sha": "35cf72e618e8406275aea9ed268212c910050104",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/regression.py",
+   "blob_sha": "46440c3e133b1c01951afc39780a96dd7072a89a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_plot/roc_curve.py",
+   "blob_sha": "256183787e4707333adb0ff3af7d5201a62fff87",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_ranking.py",
+   "blob_sha": "297e83173e47e8dcf91ed35d08ef241bbf41b62b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_regression.py",
+   "blob_sha": "fc8ccaac82c62e2f41185c9ba6957d2e016bf71b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/_scorer.py",
+   "blob_sha": "a414818f497d2e996a7557a8779e7492a33935f8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/cluster/__init__.py",
+   "blob_sha": "fefb47b11903a2e917b3d3a1e88e9d84866f0f68",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/cluster/_bicluster.py",
+   "blob_sha": "eef311afcf463545da2fd775f9a1b94bc358bdc4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/cluster/_supervised.py",
+   "blob_sha": "b6deeaac5f21b434a6ddf02eec8a46d265dcd11c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/cluster/_unsupervised.py",
+   "blob_sha": "3c25330cde707c7916f616d89a42453914531013",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/metrics/pairwise.py",
+   "blob_sha": "4105cd367663a4d81b04340646f1ebd2db37a046",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/mixture/__init__.py",
+   "blob_sha": "c5c20aa38eb181d6e3e90e93896815584071ce86",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/mixture/_base.py",
+   "blob_sha": "00721dc8d70ec838d87a9e96a2b2761ba57ba349",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/mixture/_bayesian_mixture.py",
+   "blob_sha": "d7419a6294808ac7ff897351a5c55b341f1dd863",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/mixture/_gaussian_mixture.py",
+   "blob_sha": "e0b630f37c163f045d0da6d433710023e51a940a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/__init__.py",
+   "blob_sha": "76dc02e625408ee846f437beb21b8248debcfb82",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/_plot.py",
+   "blob_sha": "6a6133a7222518ecf0a2f02e507025633f7c4794",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/_search.py",
+   "blob_sha": "301f617b7966d34eb9a945d48e3a9829af938a90",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/_search_successive_halving.py",
+   "blob_sha": "7f6470b4a77c485ea4eeece8639257472ba02171",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/_split.py",
+   "blob_sha": "fa83afa6378c73ce752cc9af09780d65f2466bc5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/model_selection/_validation.py",
+   "blob_sha": "8a626fe1ce1f31a2b0216b5c7c12b0bd29e32e6b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/multiclass.py",
+   "blob_sha": "f3f69a3c6bbf9831672e82a5ea2faa617cbcae0d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/multioutput.py",
+   "blob_sha": "4b7015dd40ece265f05cc7078d2d92bd985036a0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/naive_bayes.py",
+   "blob_sha": "bba20ca7130f4ef4b118f3464eec1a8899ae7d77",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/__init__.py",
+   "blob_sha": "12824e9cb684e7e6059742eb8034a3c03dddffd5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_base.py",
+   "blob_sha": "35bfbc00137e43d76fb5317455f02f7f7e56a035",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_classification.py",
+   "blob_sha": "b849d28e131a5f14fef0b720694385f5a50a888d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_distance_metric.py",
+   "blob_sha": "c973425d2e7b65641d77ba92570511f2240f7ced",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_graph.py",
+   "blob_sha": "418761c2d21ee0ff4137fe2d2d4919bc57c56e79",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_kde.py",
+   "blob_sha": "d7ffed501b1aed3c70fb009eefd2fdc0f8f865c8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_lof.py",
+   "blob_sha": "bf4e5e6d120695dd85cb5f09266425635050980f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_nca.py",
+   "blob_sha": "4a83fcc7bc080260a426fef0b3187460bc68579f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_nearest_centroid.py",
+   "blob_sha": "4e5ce354cc257a60e5682d320fd626bb010f7455",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_regression.py",
+   "blob_sha": "46eda7bbbc735506a77c94842689e2510d019338",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neighbors/_unsupervised.py",
+   "blob_sha": "53e69495b9ed432a87d80870e928ca8c6418f94d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neural_network/__init__.py",
+   "blob_sha": "7f6bad7bbd7e79cd11eb92aa7fb45c7eec666621",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neural_network/_base.py",
+   "blob_sha": "0e40739556e1805b2d73406e257b40ca90ff0bee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neural_network/_multilayer_perceptron.py",
+   "blob_sha": "61d97e37b32a3e0f86256c91a5263bcae45ee0ba",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neural_network/_rbm.py",
+   "blob_sha": "0624145116180480d8408ec5205c5be737c26def",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/neural_network/_stochastic_optimizers.py",
+   "blob_sha": "d9fbaec0098d077a4cee85e01255590754364579",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/pipeline.py",
+   "blob_sha": "94d9465d7f8195f1572012128102015626b60e06",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/__init__.py",
+   "blob_sha": "ccea91545a4678f183f937bd4cfbd7688cafa0e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_data.py",
+   "blob_sha": "a363db0bbc8c2a693f4e92c47f980b2778441d20",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_discretization.py",
+   "blob_sha": "abc5de750969e9b3e16fb55fc9c97295a2ddd351",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_encoders.py",
+   "blob_sha": "b8665f8be7b5901e18d52f5e53270d904b65dce8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_function_transformer.py",
+   "blob_sha": "a4f5448a0922cfd2e3b1e5f35cf7249eab127d7d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_label.py",
+   "blob_sha": "b9da2254ad60fc8494010521423772dc78c03ca5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/preprocessing/_polynomial.py",
+   "blob_sha": "46be5d2c13bbc299621d844bce4155096ed37d09",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/random_projection.py",
+   "blob_sha": "9e9620e089521ae3740f39c33a1d08db1d1f093f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/semi_supervised/__init__.py",
+   "blob_sha": "126906cdde1d781b64a443df1e97787fc638a94d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/semi_supervised/_label_propagation.py",
+   "blob_sha": "fddd96df67c3f00250ee00787f19e31842ffbbd5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/semi_supervised/_self_training.py",
+   "blob_sha": "a84ff1d32e050c3bcfe99c372722b4ee161830e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/svm/__init__.py",
+   "blob_sha": "f5b4123230f93d4c022bf88ba8dffb9e6df0d44c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/svm/_base.py",
+   "blob_sha": "3fb213f5ea20d4c7d3f147e6118dbebec1519da9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/svm/_bounds.py",
+   "blob_sha": "83cb72d30892c0ccc359771ab3419df9ed292ca0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/svm/_classes.py",
+   "blob_sha": "7a7236d7a7bc7ee512dea13d428fe632c32eed32",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/tree/__init__.py",
+   "blob_sha": "f7a8fd183c7cc32922097808ba2130bde85411a2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/tree/_classes.py",
+   "blob_sha": "e2e41f9aea78ba762030a680f331e885c0e99920",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/tree/_export.py",
+   "blob_sha": "3e65c4a2b0dc57275f159ef010d1d953b6feaec4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/tree/_reingold_tilford.py",
+   "blob_sha": "8f0b6af08bd517b3cd5f9450ebe155d52c6f24eb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/__init__.py",
+   "blob_sha": "923c08d44c6f461c70ab9d8ee27391a82a28ebb9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_arpack.py",
+   "blob_sha": "3465ac98c2e81a2fb1ad0c971e6494867d2cec1b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_array_api.py",
+   "blob_sha": "fff8e1ee33a49eb99fcbed856c2c2b48b4cc5124",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_available_if.py",
+   "blob_sha": "643f71d44ad494a5fb47f67914c5d487481a4800",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_bunch.py",
+   "blob_sha": "9c39ca309133fbcd82d6b8365784a041e4f82e97",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_encode.py",
+   "blob_sha": "de48890fcaacfbd99cb02b8a0dcc5cfe38164ce9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_estimator_html_repr.py",
+   "blob_sha": "622137d4c256a99d3dbe9dafeac0bcd249fbff48",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_joblib.py",
+   "blob_sha": "8cbe084c94992a17c7cec434b7462a60922a248b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_mask.py",
+   "blob_sha": "d57cf839d962f04a11d0948acff481caeb50f518",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_mocking.py",
+   "blob_sha": "c7451dce1fbc576e44bbbf715c677007c83e6cf4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_param_validation.py",
+   "blob_sha": "aa8906071c6afa811c68da3c82a8b34ab98759e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_pprint.py",
+   "blob_sha": "c96b1ce764c4a35beb76ab9bd5c3c684bb450817",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_set_output.py",
+   "blob_sha": "335773c6af96c3245c70918d2c372494143f80a7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_show_versions.py",
+   "blob_sha": "066c7fc1bd6763bb882babc9892d4aa90550d04b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_tags.py",
+   "blob_sha": "a275c5dd1aa84d2403dfa69e649b84934cc1c1c4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/_testing.py",
+   "blob_sha": "482d3ea8185634ee22d3e01d4641d8de60b6b59e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/class_weight.py",
+   "blob_sha": "bdcee747129d91afdbef606bacf779792f05cd32",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/deprecation.py",
+   "blob_sha": "19d41aa1eaf85e6157ee4ea36ea92b24af9865e3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/discovery.py",
+   "blob_sha": "083dca5cfcea543ecb3e529d4e3996a3f29db4dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/estimator_checks.py",
+   "blob_sha": "bbfd12ad39b9c96418b12ebc182daca9b71c87a1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/extmath.py",
+   "blob_sha": "02e65704274c1fa12bf269109c2864149365238e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/fixes.py",
+   "blob_sha": "587a03fadc76d60aebce21ef9a51f4fd967b078b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/graph.py",
+   "blob_sha": "ffd4f63a466de6e23d4b19b2370fc3b768e0207f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/metaestimators.py",
+   "blob_sha": "53566e2d2c1253e19c0c6daf7c4bd3fd98a7a0ac",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/multiclass.py",
+   "blob_sha": "5eaef2fde87e4d4b4c152ac12b2687ef1730bad6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/optimize.py",
+   "blob_sha": "7e9b864afe04392cd11901840f316153985c8929",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/parallel.py",
+   "blob_sha": "48a31ee93d8a0dd65f58805943cc0a220730c0b1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/random.py",
+   "blob_sha": "e3bdf2c6c72984864c89cb30254d7eea8e4c7b67",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/sparsefuncs.py",
+   "blob_sha": "b9427f208b42ed0fa2ddae8ad09cb024e251f5b9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/stats.py",
+   "blob_sha": "d0e22ea3694f47a89f4c55f9da1dafdc9f54b815",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sklearn/utils/validation.py",
+   "blob_sha": "dd0c007602654f2b3ec36194c37fed5822acbd1e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  }
+ ]
+}

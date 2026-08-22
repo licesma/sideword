@@ -1,0 +1,67 @@
+{
+ "blob_sha": "f1d51c75ba6c425381b67c8aee8231456ab5f85c",
+ "path": "django/db/migrations/optimizer.py",
+ "repo": "django/django",
+ "records": 7,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MigrationOptimizer",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "MigrationOptimizer.optimize",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "MigrationOptimizer.optimize#assign:self._iterations",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "MigrationOptimizer.optimize_inner",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "MigrationOptimizer.optimize_inner#for:i, operation in enumerate(operations)/for:j, other in enumerate(operations[i + 1:])",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r6",
+   "anchor": "MigrationOptimizer.optimize_inner#for:i, operation in enumerate(operations)/for:j, other in enumerate(operations[i + 1:])/if:isinstance(result, list)/call:new_operations.extend",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r7",
+   "anchor": "MigrationOptimizer.optimize_inner#for:i, operation in enumerate(operations)/for:j, other in enumerate(operations[i + 1:])/if:not result/call:new_operations.append",
+   "kind": "lead",
+   "line": 62
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4484,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 893,
+  "thinking_tokens": 382,
+  "opus_cost_usd": 0.0714565,
+  "total_cost_usd": 0.0735095,
+  "duration_ms": 9155,
+  "duration_api_ms": 10106,
+  "num_turns": 2
+ },
+ "wall_ms": 10185,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

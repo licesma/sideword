@@ -1,0 +1,511 @@
+{
+ "blob_sha": "af9093c4e89171a3195bcb4908c53f101fdc8e08",
+ "path": "django/db/migrations/state.py",
+ "repo": "django/django",
+ "records": 81,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_get_related_models",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_related_models#assign:opts",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "get_related_models_tuples",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "get_related_models_recursive",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r5",
+   "anchor": "ProjectState",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r6",
+   "anchor": "ProjectState.real_apps",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r7",
+   "anchor": "ProjectState.relations",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "ProjectState.add_model#if:'apps' in self.__dict__",
+   "kind": "trail",
+   "line": 102
+  },
+  {
+   "id": "r9",
+   "anchor": "ProjectState.remove_model#if:'apps' in self.__dict__",
+   "kind": "trail",
+   "line": 107
+  },
+  {
+   "id": "r10",
+   "anchor": "ProjectState.remove_model#if:'apps' in self.__dict__/call:self.apps.clear_cache",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r11",
+   "anchor": "ProjectState.rename_model#assign:old_name_lower",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r12",
+   "anchor": "ProjectState.rename_model#assign:old_model_tuple",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r13",
+   "anchor": "ProjectState.rename_model#call:self.reload_models",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r14",
+   "anchor": "ProjectState.rename_model#call:self.remove_model",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r15",
+   "anchor": "ProjectState.add_field#if:not preserve_default",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r16",
+   "anchor": "ProjectState.add_field#assign:delay",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r17",
+   "anchor": "ProjectState.remove_field#assign:delay",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r18",
+   "anchor": "ProjectState.alter_field#assign:delay",
+   "kind": "todo",
+   "line": 210
+  },
+  {
+   "id": "r19",
+   "anchor": "ProjectState.rename_field#assign:fields",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r20",
+   "anchor": "ProjectState.rename_field#for:field in fields.values()/assign:from_fields",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r21",
+   "anchor": "ProjectState.rename_field#assign:options",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r22",
+   "anchor": "ProjectState.rename_field#assign:delay",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r23",
+   "anchor": "ProjectState._find_reload_model#try/else/if:delay",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r24",
+   "anchor": "ProjectState._find_reload_model#assign:model_state",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r25",
+   "anchor": "ProjectState._find_reload_model#assign:direct_related_models",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r26",
+   "anchor": "ProjectState._find_reload_model#call:related_models.update",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r27",
+   "anchor": "ProjectState._find_reload_model#call:related_models.add",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r28",
+   "anchor": "ProjectState.reload_model#if:'apps' in self.__dict__",
+   "kind": "trail",
+   "line": 308
+  },
+  {
+   "id": "r29",
+   "anchor": "ProjectState.reload_models#if:'apps' in self.__dict__",
+   "kind": "trail",
+   "line": 313
+  },
+  {
+   "id": "r30",
+   "anchor": "ProjectState._reload#with:self.apps.bulk_update()",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r31",
+   "anchor": "ProjectState._reload#for:model_state in self.apps.real_models",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r32",
+   "anchor": "ProjectState._reload#for:rel_app_label, rel_model_name in related_models",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r33",
+   "anchor": "ProjectState._reload#call:self.apps.render_multiple",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r34",
+   "anchor": "ProjectState.resolve_fields_and_relations#for:model_state in self.models.values()",
+   "kind": "lead",
+   "line": 347
+  },
+  {
+   "id": "r35",
+   "anchor": "ProjectState.resolve_fields_and_relations#assign:self.relations",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r36",
+   "anchor": "ProjectState._get_concrete_models_mapping_and_proxy_models#for:model_key, model_state in self.models.items()",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r37",
+   "anchor": "ProjectState._get_concrete_models_mapping_and_proxy_models#for:model_key, model_state in self.models.items()/if:model_state.options.get('proxy')/assign:concrete_models_mapping[model_key]",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r38",
+   "anchor": "ProjectState._find_concrete_model_from_proxy#for:base in model_state.bases/if:not base_state/return",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r39",
+   "anchor": "ProjectState.clone",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r40",
+   "anchor": "ProjectState.from_apps",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r41",
+   "anchor": "AppConfigStub",
+   "kind": "doc",
+   "line": 438
+  },
+  {
+   "id": "r42",
+   "anchor": "AppConfigStub.label",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r43",
+   "anchor": "StateApps",
+   "kind": "doc",
+   "line": 453
+  },
+  {
+   "id": "r44",
+   "anchor": "StateApps.real_models",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r45",
+   "anchor": "StateApps.__init__#assign:app_labels",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r46",
+   "anchor": "StateApps._lock",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r47",
+   "anchor": "StateApps.__init__#import:django.core.checks.model_checks",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r48",
+   "anchor": "StateApps.bulk_update#assign:ready",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r49",
+   "anchor": "StateApps.render_multiple#if:not model_states",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r50",
+   "anchor": "StateApps.render_multiple#with:self.bulk_update()",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r51",
+   "anchor": "StateApps.clone",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r52",
+   "anchor": "StateApps.clone#for:app_config in clone.app_configs.values()",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r53",
+   "anchor": "StateApps.clone#assign:clone.real_models",
+   "kind": "lead",
+   "line": 536
+  },
+  {
+   "id": "r54",
+   "anchor": "ModelState",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r55",
+   "anchor": "ModelState.__init__#for:name, field in self.fields.items()/if:hasattr(field, 'model')",
+   "kind": "lead",
+   "line": 578
+  },
+  {
+   "id": "r56",
+   "anchor": "ModelState.__init__#for:name, field in self.fields.items()/if:field.is_relation and hasattr(field.related_model, '_meta')",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r57",
+   "anchor": "ModelState.__init__#for:index in self.options['indexes']",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r58",
+   "anchor": "ModelState.from_model",
+   "kind": "doc",
+   "line": 614
+  },
+  {
+   "id": "r59",
+   "anchor": "ModelState.from_model#assign:fields",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r60",
+   "anchor": "ModelState.from_model#assign:options",
+   "kind": "lead",
+   "line": 644
+  },
+  {
+   "id": "r61",
+   "anchor": "ModelState.from_model#for:name in DEFAULT_NAMES/if:name in [\"apps\", \"app_label\"]",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r62",
+   "anchor": "ModelState.from_model#if:exclude_rels",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r63",
+   "anchor": "ModelState.from_model#if:exclude_rels/elif:options.get('order_with_respect_to') in {field.name for field in model._meta.private_fields}",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r64",
+   "anchor": "ModelState.from_model#assign:flattened_bases",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r65",
+   "anchor": "ModelState.from_model#assign:bases",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r66",
+   "anchor": "ModelState.from_model#if:not any((isinstance(base, str) or issubclass(base, models.Model)) for base in bases)",
+   "kind": "lead",
+   "line": 702
+  },
+  {
+   "id": "r67",
+   "anchor": "ModelState.from_model#for:manager in model._meta.managers/if:manager.name in manager_names/continue",
+   "kind": "lead",
+   "line": 711
+  },
+  {
+   "id": "r68",
+   "anchor": "ModelState.from_model#for:manager in model._meta.managers/if:manager.name in manager_names/elif:manager.use_in_migrations/assign:new_manager",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r69",
+   "anchor": "ModelState.from_model#for:manager in model._meta.managers/if:manager.name in manager_names/elif:manager.use_in_migrations/elif:manager is model._base_manager or manager is model._default_manager/assign:new_manager",
+   "kind": "lead",
+   "line": 718
+  },
+  {
+   "id": "r70",
+   "anchor": "ModelState.from_model#if:managers == [('objects', default_manager_shim)]",
+   "kind": "lead",
+   "line": 729
+  },
+  {
+   "id": "r71",
+   "anchor": "ModelState.from_model#return",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r72",
+   "anchor": "ModelState.construct_managers",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r73",
+   "anchor": "ModelState.construct_managers#assign:sorted_managers",
+   "kind": "lead",
+   "line": 745
+  },
+  {
+   "id": "r74",
+   "anchor": "ModelState.clone",
+   "kind": "doc",
+   "line": 755
+  },
+  {
+   "id": "r75",
+   "anchor": "ModelState.clone#return/arg:options",
+   "kind": "lead",
+   "line": 764
+  },
+  {
+   "id": "r76",
+   "anchor": "ModelState.render",
+   "kind": "doc",
+   "line": 769
+  },
+  {
+   "id": "r77",
+   "anchor": "ModelState.render#assign:meta_contents",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r78",
+   "anchor": "ModelState.render#try",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r79",
+   "anchor": "ModelState.render#assign:body",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r80",
+   "anchor": "ModelState.render#call:body.update",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r81",
+   "anchor": "ModelState.render#return",
+   "kind": "lead",
+   "line": 790
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20511,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7870,
+  "thinking_tokens": 4022,
+  "opus_cost_usd": 0.4061515,
+  "total_cost_usd": 0.4220835,
+  "duration_ms": 67032,
+  "duration_api_ms": 68266,
+  "num_turns": 2
+ },
+ "wall_ms": 67897,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

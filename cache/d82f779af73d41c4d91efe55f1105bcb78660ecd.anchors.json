@@ -1,0 +1,937 @@
+{
+ "blob_sha": "d82f779af73d41c4d91efe55f1105bcb78660ecd",
+ "path": "astropy/modeling/fitting.py",
+ "repo": "astropy/astropy",
+ "records": 152,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "STATISTICS",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "OPTIMIZERS",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "NonFiniteValueError",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r6",
+   "anchor": "Covariance",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r7",
+   "anchor": "Covariance.pprint#assign:longest_name",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r8",
+   "anchor": "Covariance.__getitem__#if:len(params) != 2",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r9",
+   "anchor": "StandardDeviations",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r10",
+   "anchor": "StandardDeviations._calc_stds#assign:stds",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r11",
+   "anchor": "ModelsError",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r12",
+   "anchor": "ModelLinearityError",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r13",
+   "anchor": "UnsupportedConstraintError",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r14",
+   "anchor": "_FitterMeta",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r15",
+   "anchor": "fitter_unit_support",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r16",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/assign:input_units_equivalencies",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r17",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/if:model.input_units is not None",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r18",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/assign:rename_data",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r19",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/assign:model",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r20",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/assign:add_back_units",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r21",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/if:z is None",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r22",
+   "anchor": "fitter_unit_support.wrapper#if:data_has_units or model_has_units/if:model._supports_unit_fitting/if:add_back_units",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r23",
+   "anchor": "Fitter",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r24",
+   "anchor": "Fitter.__init__#if:inspect.isclass(optimizer)/assign:self._opt_method",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r25",
+   "anchor": "Fitter.objective_function",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r26",
+   "anchor": "Fitter._add_fitting_uncertainties",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r27",
+   "anchor": "Fitter.__call__",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r28",
+   "anchor": "LinearLSQFitter",
+   "kind": "todo",
+   "line": 354
+  },
+  {
+   "id": "r29",
+   "anchor": "LinearLSQFitter",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r30",
+   "anchor": "LinearLSQFitter._is_invertible",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r31",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r32",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:not self._is_invertible(x_dot_x_prime)",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r33",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None",
+   "kind": "trail",
+   "line": 399
+  },
+  {
+   "id": "r34",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/if:len(model) == 1",
+   "kind": "trail",
+   "line": 400
+  },
+  {
+   "id": "r35",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/if:len(model) > 1",
+   "kind": "trail",
+   "line": 407
+  },
+  {
+   "id": "r36",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/if:len(model) > 1/assign:RSS",
+   "kind": "trail",
+   "line": 408
+  },
+  {
+   "id": "r37",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/else",
+   "kind": "trail",
+   "line": 418
+  },
+  {
+   "id": "r38",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/else/if:len(model) == 1/assign:RSS",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r39",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/else/else/for:j in range(len(model))/assign:mask",
+   "kind": "trail",
+   "line": 434
+  },
+  {
+   "id": "r40",
+   "anchor": "LinearLSQFitter._add_fitting_uncertainties#if:z is None/else/else/for:j in range(len(model))/if:model.model_set_axis == 1/assign:eval_z",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r41",
+   "anchor": "LinearLSQFitter._map_domain_window",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r42",
+   "anchor": "LinearLSQFitter.__call__",
+   "kind": "doc",
+   "line": 492
+  },
+  {
+   "id": "r43",
+   "anchor": "LinearLSQFitter.__call__#if:weights is not None",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r44",
+   "anchor": "LinearLSQFitter.__call__#if:has_fixed/assign:fixparam_indices",
+   "kind": "lead",
+   "line": 563
+  },
+  {
+   "id": "r45",
+   "anchor": "LinearLSQFitter.__call__#if:has_fixed/assign:fixparams",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r46",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/if:weights is not None/assign:_, weights",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r47",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/if:hasattr(model_copy, 'domain')",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r48",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:weights is not None/assign:_, _, weights",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r49",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:hasattr(model_copy, 'x_domain')",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r50",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/assign:model_axis",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r51",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:z.ndim > 2/assign:rhs",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r52",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:z.ndim > 2/else/assign:rhs",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r53",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:weights is not None/if:weights.ndim > 2",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r54",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:weights is not None/if:weights.ndim > 2/assign:weights",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r55",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:weights is not None/if:weights.ndim > 2/elif:weights.ndim == z.ndim/assign:weights",
+   "kind": "lead",
+   "line": 653
+  },
+  {
+   "id": "r56",
+   "anchor": "LinearLSQFitter.__call__#if:len(farg) == 2/else/if:len(model_copy) > 1/if:weights is not None/if:weights.ndim > 2/else/assign:weights",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r57",
+   "anchor": "LinearLSQFitter.__call__#if:model_copy.col_fit_deriv",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r58",
+   "anchor": "LinearLSQFitter.__call__#if:np.asanyarray(lhs).ndim > 2",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r59",
+   "anchor": "LinearLSQFitter.__call__#if:has_fixed",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r60",
+   "anchor": "LinearLSQFitter.__call__#if:has_fixed/if:model_copy.col_fit_deriv/assign:fixderivs",
+   "kind": "trail",
+   "line": 678
+  },
+  {
+   "id": "r61",
+   "anchor": "LinearLSQFitter.__call__#if:has_fixed/assign:rhs",
+   "kind": "trail",
+   "line": 679
+  },
+  {
+   "id": "r62",
+   "anchor": "LinearLSQFitter.__call__#if:sum_of_implicit_terms is not None",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r63",
+   "anchor": "LinearLSQFitter.__call__#if:sum_of_implicit_terms is not None/if:len(model_copy) > 1",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r64",
+   "anchor": "LinearLSQFitter.__call__#if:weights is not None/if:rhs.ndim == 2/if:weights.shape == rhs.shape/assign:lhs",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r65",
+   "anchor": "LinearLSQFitter.__call__#if:weights is not None/if:rhs.ndim == 2/if:weights.shape == rhs.shape/else/assign:rhs",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r66",
+   "anchor": "LinearLSQFitter.__call__#assign:a",
+   "kind": "trail",
+   "line": 720
+  },
+  {
+   "id": "r67",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/assign:lacoef",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r68",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/assign:lacoef",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r69",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/if:lhs.ndim > 2",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r70",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/for:model_lhs, model_rhs, model_lacoef in zip(lhs_stack, rhs.T, lacoef.T)",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r71",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/for:model_lhs, model_rhs, model_lacoef in zip(lhs_stack, rhs.T, lacoef.T)/assign:good",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r72",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/for:model_lhs, model_rhs, model_lacoef in zip(lhs_stack, rhs.T, lacoef.T)/assign:t_coef, resids, rank, sval",
+   "kind": "lead",
+   "line": 758
+  },
+  {
+   "id": "r73",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/else/assign:good",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r74",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/else/assign:good",
+   "kind": "trail",
+   "line": 768
+  },
+  {
+   "id": "r75",
+   "anchor": "LinearLSQFitter.__call__#if:(masked and len(model_copy) > 1) or (weights is not None and weights.ndim > 1)/else/assign:lacoef, resids, rank, sval",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r76",
+   "anchor": "LinearLSQFitter.__call__#if:hasattr(model_copy, '_order') and len(model_copy) == 1 and not has_fixed and rank != model_copy._order",
+   "kind": "todo",
+   "line": 785
+  },
+  {
+   "id": "r77",
+   "anchor": "LinearLSQFitter.__call__#if:self._calc_uncertainties",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r78",
+   "anchor": "FittingWithOutlierRemoval",
+   "kind": "doc",
+   "line": 801
+  },
+  {
+   "id": "r79",
+   "anchor": "FittingWithOutlierRemoval.__call__",
+   "kind": "doc",
+   "line": 854
+  },
+  {
+   "id": "r80",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:len(model) == 1",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r81",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:len(model) == 1/else/assign:model_set_axis",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r82",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:z is None",
+   "kind": "lead",
+   "line": 905
+  },
+  {
+   "id": "r83",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:model_set_axis is not None",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r84",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:model_set_axis is not None/if:'axis' not in self.outlier_kwargs",
+   "kind": "trail",
+   "line": 919
+  },
+  {
+   "id": "r85",
+   "anchor": "FittingWithOutlierRemoval.__call__#if:model_set_axis is not None/if:'axis' not in self.outlier_kwargs/assign:self.outlier_kwargs['axis']",
+   "kind": "lead",
+   "line": 921
+  },
+  {
+   "id": "r86",
+   "anchor": "FittingWithOutlierRemoval.__call__#assign:fitted_model",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r87",
+   "anchor": "FittingWithOutlierRemoval.__call__#assign:n",
+   "kind": "trail",
+   "line": 934
+  },
+  {
+   "id": "r88",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)",
+   "kind": "lead",
+   "line": 937
+  },
+  {
+   "id": "r89",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/assign:model_vals",
+   "kind": "lead",
+   "line": 940
+  },
+  {
+   "id": "r90",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop",
+   "kind": "lead",
+   "line": 943
+  },
+  {
+   "id": "r91",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop/try",
+   "kind": "lead",
+   "line": 947
+  },
+  {
+   "id": "r92",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop/try/except:TypeError",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r93",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop/try/except:TypeError/if:model_set_axis is None/else/assign:filtered_data",
+   "kind": "lead",
+   "line": 961
+  },
+  {
+   "id": "r94",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop/try/except:TypeError/if:model_set_axis is None/else/if:filtered_data.mask is np.ma.nomask",
+   "kind": "lead",
+   "line": 967
+  },
+  {
+   "id": "r95",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:not loop/try/except:TypeError/if:model_set_axis is None/else/assign:data_T",
+   "kind": "lead",
+   "line": 973
+  },
+  {
+   "id": "r96",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:loop/call:warnings.warn",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r97",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/assign:filtered_data",
+   "kind": "lead",
+   "line": 994
+  },
+  {
+   "id": "r98",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/if:model_set_axis is None",
+   "kind": "lead",
+   "line": 998
+  },
+  {
+   "id": "r99",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/assign:this_n_masked",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r100",
+   "anchor": "FittingWithOutlierRemoval.__call__#for:n in range(1, self.niter + 1)/assign:this_n_masked",
+   "kind": "trail",
+   "line": 1016
+  },
+  {
+   "id": "r101",
+   "anchor": "_NonLinearLSQFitter",
+   "kind": "doc",
+   "line": 1027
+  },
+  {
+   "id": "r102",
+   "anchor": "_NonLinearLSQFitter.supported_constraints",
+   "kind": "doc",
+   "line": 1042
+  },
+  {
+   "id": "r103",
+   "anchor": "_NonLinearLSQFitter.objective_function",
+   "kind": "doc",
+   "line": 1053
+  },
+  {
+   "id": "r104",
+   "anchor": "_NonLinearLSQFitter._add_fitting_uncertainties",
+   "kind": "doc",
+   "line": 1084
+  },
+  {
+   "id": "r105",
+   "anchor": "_NonLinearLSQFitter._wrap_deriv",
+   "kind": "doc",
+   "line": 1097
+  },
+  {
+   "id": "r106",
+   "anchor": "_NonLinearLSQFitter._wrap_deriv#if:any(model.fixed.values()) or any(model.tied.values())/call:fitter_to_model_params",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r107",
+   "anchor": "_NonLinearLSQFitter._compute_param_cov#if:(len(y) > len(init_values)) and cov_x is not None",
+   "kind": "lead",
+   "line": 1158
+  },
+  {
+   "id": "r108",
+   "anchor": "_NonLinearLSQFitter._filter_non_finite",
+   "kind": "doc",
+   "line": 1173
+  },
+  {
+   "id": "r109",
+   "anchor": "_NonLinearLSQFitter.__call__",
+   "kind": "doc",
+   "line": 1197
+  },
+  {
+   "id": "r110",
+   "anchor": "LevMarLSQFitter",
+   "kind": "doc",
+   "line": 1261
+  },
+  {
+   "id": "r111",
+   "anchor": "_NLLSQFitter",
+   "kind": "doc",
+   "line": 1330
+  },
+  {
+   "id": "r112",
+   "anchor": "_NLLSQFitter._run_fitter#if:self._use_min_max_bounds",
+   "kind": "lead",
+   "line": 1391
+  },
+  {
+   "id": "r113",
+   "anchor": "_NLLSQFitter._run_fitter#assign:_, s, VT",
+   "kind": "lead",
+   "line": 1403
+  },
+  {
+   "id": "r114",
+   "anchor": "TRFLSQFitter",
+   "kind": "doc",
+   "line": 1418
+  },
+  {
+   "id": "r115",
+   "anchor": "DogBoxLSQFitter",
+   "kind": "doc",
+   "line": 1444
+  },
+  {
+   "id": "r116",
+   "anchor": "LMLSQFitter",
+   "kind": "doc",
+   "line": 1470
+  },
+  {
+   "id": "r117",
+   "anchor": "SLSQPLSQFitter",
+   "kind": "doc",
+   "line": 1491
+  },
+  {
+   "id": "r118",
+   "anchor": "SLSQPLSQFitter.__call__",
+   "kind": "doc",
+   "line": 1514
+  },
+  {
+   "id": "r119",
+   "anchor": "SimplexLSQFitter",
+   "kind": "doc",
+   "line": 1568
+  },
+  {
+   "id": "r120",
+   "anchor": "SimplexLSQFitter.__call__",
+   "kind": "doc",
+   "line": 1586
+  },
+  {
+   "id": "r121",
+   "anchor": "JointFitter",
+   "kind": "doc",
+   "line": 1636
+  },
+  {
+   "id": "r122",
+   "anchor": "JointFitter.modeldims",
+   "kind": "lead",
+   "line": 1661
+  },
+  {
+   "id": "r123",
+   "anchor": "JointFitter.ndim",
+   "kind": "lead",
+   "line": 1663
+  },
+  {
+   "id": "r124",
+   "anchor": "JointFitter.objective_function",
+   "kind": "doc",
+   "line": 1678
+  },
+  {
+   "id": "r125",
+   "anchor": "JointFitter.objective_function#assign:jointfitparams",
+   "kind": "lead",
+   "line": 1698
+  },
+  {
+   "id": "r126",
+   "anchor": "JointFitter.objective_function#for:model in self.models/assign:numfp",
+   "kind": "lead",
+   "line": 1706
+  },
+  {
+   "id": "r127",
+   "anchor": "JointFitter.objective_function#for:model in self.models/assign:mparams",
+   "kind": "lead",
+   "line": 1711
+  },
+  {
+   "id": "r128",
+   "anchor": "JointFitter.objective_function#for:model in self.models/for:param_name in model.param_names/if:param_name in joint_params/call:mparams.extend",
+   "kind": "lead",
+   "line": 1718
+  },
+  {
+   "id": "r129",
+   "anchor": "JointFitter.__call__",
+   "kind": "doc",
+   "line": 1739
+  },
+  {
+   "id": "r130",
+   "anchor": "JointFitter.__call__#assign:jointfitparams",
+   "kind": "lead",
+   "line": 1757
+  },
+  {
+   "id": "r131",
+   "anchor": "JointFitter.__call__#for:model in self.models/assign:joint_params",
+   "kind": "lead",
+   "line": 1762
+  },
+  {
+   "id": "r132",
+   "anchor": "JointFitter.__call__#for:model in self.models/assign:mparams",
+   "kind": "lead",
+   "line": 1768
+  },
+  {
+   "id": "r133",
+   "anchor": "JointFitter.__call__#for:model in self.models/for:param_name in model.param_names/if:param_name in joint_params/call:mparams.extend",
+   "kind": "lead",
+   "line": 1775
+  },
+  {
+   "id": "r134",
+   "anchor": "_convert_input",
+   "kind": "doc",
+   "line": 1784
+  },
+  {
+   "id": "r135",
+   "anchor": "_convert_input#if:n_models > 1 or data_ndim > x.ndim",
+   "kind": "lead",
+   "line": 1798
+  },
+  {
+   "id": "r136",
+   "anchor": "_convert_input#if:n_models > 1 or data_ndim > x.ndim/if:z is None/assign:y",
+   "kind": "lead",
+   "line": 1815
+  },
+  {
+   "id": "r137",
+   "anchor": "_convert_input#if:n_models > 1 or data_ndim > x.ndim/if:z is None/else/assign:data_shape",
+   "kind": "lead",
+   "line": 1819
+  },
+  {
+   "id": "r138",
+   "anchor": "fitter_to_model_params",
+   "kind": "todo",
+   "line": 1841
+  },
+  {
+   "id": "r139",
+   "anchor": "fitter_to_model_params",
+   "kind": "doc",
+   "line": 1841
+  },
+  {
+   "id": "r140",
+   "anchor": "fitter_to_model_params#if:not (has_tied or has_fixed or has_bound)/assign:model.parameters",
+   "kind": "lead",
+   "line": 1867
+  },
+  {
+   "id": "r141",
+   "anchor": "fitter_to_model_params#for:idx, name in enumerate(model.param_names)/assign:size",
+   "kind": "lead",
+   "line": 1881
+  },
+  {
+   "id": "r142",
+   "anchor": "fitter_to_model_params#for:idx, name in enumerate(model.param_names)/if:model.bounds[name] != (None, None) and use_min_max_bounds",
+   "kind": "lead",
+   "line": 1886
+  },
+  {
+   "id": "r143",
+   "anchor": "fitter_to_model_params#call:model._array_to_parameters",
+   "kind": "lead",
+   "line": 1897
+  },
+  {
+   "id": "r144",
+   "anchor": "fitter_to_model_params#if:has_tied",
+   "kind": "lead",
+   "line": 1903
+  },
+  {
+   "id": "r145",
+   "anchor": "fitter_to_model_params#if:has_tied/for:idx, name in enumerate(model.param_names)/if:model.tied[name]/assign:parameters[slice_]",
+   "kind": "lead",
+   "line": 1911
+  },
+  {
+   "id": "r146",
+   "anchor": "model_to_fit_params",
+   "kind": "doc",
+   "line": 1920
+  },
+  {
+   "id": "r147",
+   "anchor": "_validate_constraints",
+   "kind": "doc",
+   "line": 1965
+  },
+  {
+   "id": "r148",
+   "anchor": "_validate_model",
+   "kind": "doc",
+   "line": 1991
+  },
+  {
+   "id": "r149",
+   "anchor": "_validate_model#if:model.linear/elif:len(model) != 1/raise:ValueError",
+   "kind": "lead",
+   "line": 2004
+  },
+  {
+   "id": "r150",
+   "anchor": "populate_entry_points",
+   "kind": "doc",
+   "line": 2012
+  },
+  {
+   "id": "r151",
+   "anchor": "populate_entry_points#for:entry_point in entry_points/try/except:Exception/call:warnings.warn",
+   "kind": "lead",
+   "line": 2036
+  },
+  {
+   "id": "r152",
+   "anchor": "_populate_ep#assign:ep",
+   "kind": "todo",
+   "line": 2055
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 47006,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 18579,
+  "thinking_tokens": 9605,
+  "opus_cost_usd": 0.9388265,
+  "total_cost_usd": 0.9761345,
+  "duration_ms": 161674,
+  "duration_api_ms": 164284,
+  "num_turns": 2
+ },
+ "wall_ms": 162716,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,457 @@
+{
+ "blob_sha": "f1275aa38748e0e6bde3d5d4ba9ff56e621ea874",
+ "path": "django/forms/fields.py",
+ "repo": "django/django",
+ "records": 72,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Field.widget",
+   "kind": "trail",
+   "line": 48
+  },
+  {
+   "id": "r3",
+   "anchor": "Field.hidden_widget",
+   "kind": "trail",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "Field.default_validators",
+   "kind": "trail",
+   "line": 50
+  },
+  {
+   "id": "r5",
+   "anchor": "Field.default_error_messages",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "Field.__init__#assign:self.required, self.label, self.initial",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r7",
+   "anchor": "Field.__init__#assign:self.localize",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r8",
+   "anchor": "Field.__init__#assign:widget.is_required",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r9",
+   "anchor": "Field.__init__#assign:extra_attrs",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r10",
+   "anchor": "Field.clean",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r11",
+   "anchor": "Field.bound_data",
+   "kind": "doc",
+   "line": 154
+  },
+  {
+   "id": "r12",
+   "anchor": "Field.widget_attrs",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r13",
+   "anchor": "Field.has_changed",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r14",
+   "anchor": "Field.has_changed#if:self.disabled",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r15",
+   "anchor": "Field.has_changed#assign:initial_value",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r16",
+   "anchor": "Field.get_bound_field",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r17",
+   "anchor": "CharField.to_python",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r18",
+   "anchor": "CharField.widget_attrs#if:self.max_length is not None and not widget.is_hidden/assign:attrs['maxlength']",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r19",
+   "anchor": "CharField.widget_attrs#if:self.min_length is not None and not widget.is_hidden/assign:attrs['minlength']",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r20",
+   "anchor": "IntegerField.__init__#if:kwargs.get('localize') and self.widget == NumberInput/call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r21",
+   "anchor": "IntegerField.to_python",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r22",
+   "anchor": "IntegerField.to_python#try",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r23",
+   "anchor": "FloatField.to_python",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r24",
+   "anchor": "DecimalField.to_python",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r25",
+   "anchor": "DecimalField.widget_attrs#if:isinstance(widget, NumberInput) and 'step' not in widget.attrs/if:self.decimal_places is not None/assign:step",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseTemporalField.to_python#for:format in self.input_formats",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r27",
+   "anchor": "DateField.to_python",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r28",
+   "anchor": "TimeField.to_python",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r29",
+   "anchor": "DateTimeField.to_python",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r30",
+   "anchor": "RegexField.__init__",
+   "kind": "doc",
+   "line": 503
+  },
+  {
+   "id": "r31",
+   "anchor": "FileField.to_python#try",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r32",
+   "anchor": "FileField.clean#if:data is FILE_INPUT_CONTRADICTION",
+   "kind": "lead",
+   "line": 575
+  },
+  {
+   "id": "r33",
+   "anchor": "FileField.clean#if:data is False",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r34",
+   "anchor": "FileField.clean#if:data is False/assign:data",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r35",
+   "anchor": "ImageField.to_python",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r36",
+   "anchor": "ImageField.to_python#if:hasattr(data, 'temporary_file_path')",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r37",
+   "anchor": "ImageField.to_python#try/assign:image",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r38",
+   "anchor": "ImageField.to_python#try/call:image.verify",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r39",
+   "anchor": "ImageField.to_python#try/assign:f.image",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r40",
+   "anchor": "ImageField.to_python#try/assign:f.content_type",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r41",
+   "anchor": "ImageField.to_python#try/except:Exception/raise:ValidationError",
+   "kind": "lead",
+   "line": 645
+  },
+  {
+   "id": "r42",
+   "anchor": "URLField.to_python.split_url",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r43",
+   "anchor": "URLField.to_python.split_url#try/except:ValueError/raise:ValidationError",
+   "kind": "lead",
+   "line": 682
+  },
+  {
+   "id": "r44",
+   "anchor": "URLField.to_python#if:value/if:not url_fields[0]/assign:url_fields[0]",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r45",
+   "anchor": "URLField.to_python#if:value/if:not url_fields[1]/assign:url_fields[1]",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r46",
+   "anchor": "URLField.to_python#if:value/if:not url_fields[1]/assign:url_fields",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r47",
+   "anchor": "BooleanField.to_python",
+   "kind": "doc",
+   "line": 705
+  },
+  {
+   "id": "r48",
+   "anchor": "BooleanField.to_python#if:isinstance(value, str) and value.lower() in ('false', '0')",
+   "kind": "lead",
+   "line": 711
+  },
+  {
+   "id": "r49",
+   "anchor": "BooleanField.has_changed#return",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r50",
+   "anchor": "NullBooleanField",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r51",
+   "anchor": "NullBooleanField.to_python",
+   "kind": "doc",
+   "line": 736
+  },
+  {
+   "id": "r52",
+   "anchor": "ChoiceField._set_choices#if:callable(value)",
+   "kind": "lead",
+   "line": 786
+  },
+  {
+   "id": "r53",
+   "anchor": "ChoiceField.to_python",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r54",
+   "anchor": "ChoiceField.validate",
+   "kind": "doc",
+   "line": 801
+  },
+  {
+   "id": "r55",
+   "anchor": "ChoiceField.valid_value",
+   "kind": "doc",
+   "line": 811
+  },
+  {
+   "id": "r56",
+   "anchor": "ChoiceField.valid_value#for:k, v in self.choices/if:isinstance(v, (list, tuple))/for:k2, v2 in v",
+   "kind": "lead",
+   "line": 817
+  },
+  {
+   "id": "r57",
+   "anchor": "TypedChoiceField._coerce",
+   "kind": "doc",
+   "line": 832
+  },
+  {
+   "id": "r58",
+   "anchor": "MultipleChoiceField.validate",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r59",
+   "anchor": "MultipleChoiceField.validate#for:val in value",
+   "kind": "lead",
+   "line": 873
+  },
+  {
+   "id": "r60",
+   "anchor": "TypedMultipleChoiceField._coerce",
+   "kind": "doc",
+   "line": 901
+  },
+  {
+   "id": "r61",
+   "anchor": "ComboField",
+   "kind": "doc",
+   "line": 931
+  },
+  {
+   "id": "r62",
+   "anchor": "ComboField.__init__#for:f in fields",
+   "kind": "lead",
+   "line": 940
+  },
+  {
+   "id": "r63",
+   "anchor": "ComboField.clean",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r64",
+   "anchor": "MultiValueField",
+   "kind": "doc",
+   "line": 955
+  },
+  {
+   "id": "r65",
+   "anchor": "MultiValueField.__init__#for:f in fields/if:self.require_all_fields/assign:f.required",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r66",
+   "anchor": "MultiValueField.clean",
+   "kind": "doc",
+   "line": 1000
+  },
+  {
+   "id": "r67",
+   "anchor": "MultiValueField.clean#for:i, field in enumerate(self.fields)/if:field_value in self.empty_values/if:self.require_all_fields/if:self.required",
+   "kind": "lead",
+   "line": 1030
+  },
+  {
+   "id": "r68",
+   "anchor": "MultiValueField.clean#for:i, field in enumerate(self.fields)/if:field_value in self.empty_values/if:self.require_all_fields/elif:field.required/if:field.error_messages['incomplete'] not in errors",
+   "kind": "lead",
+   "line": 1036
+  },
+  {
+   "id": "r69",
+   "anchor": "MultiValueField.clean#for:i, field in enumerate(self.fields)/try/except:ValidationError/call:errors.extend",
+   "kind": "lead",
+   "line": 1045
+  },
+  {
+   "id": "r70",
+   "anchor": "MultiValueField.compress",
+   "kind": "doc",
+   "line": 1054
+  },
+  {
+   "id": "r71",
+   "anchor": "SplitDateTimeField.compress#if:data_list/if:data_list[0] in self.empty_values",
+   "kind": "lead",
+   "line": 1156
+  },
+  {
+   "id": "r72",
+   "anchor": "JSONField.has_changed#return",
+   "kind": "lead",
+   "line": 1271
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 26693,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5589,
+  "thinking_tokens": 2301,
+  "opus_cost_usd": 0.4109465,
+  "total_cost_usd": 0.4316935,
+  "duration_ms": 47835,
+  "duration_api_ms": 48988,
+  "num_turns": 2
+ },
+ "wall_ms": 48750,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

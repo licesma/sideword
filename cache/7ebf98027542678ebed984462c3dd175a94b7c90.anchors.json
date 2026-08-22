@@ -1,0 +1,1489 @@
+{
+ "blob_sha": "7ebf98027542678ebed984462c3dd175a94b7c90",
+ "path": "lib/matplotlib/transforms.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 244,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:re",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r3",
+   "anchor": "_indent_str",
+   "kind": "trail",
+   "line": 50
+  },
+  {
+   "id": "r4",
+   "anchor": "TransformNode",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "TransformNode.INVALID_NON_AFFINE",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r6",
+   "anchor": "TransformNode.is_affine",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "TransformNode.pass_through",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r8",
+   "anchor": "TransformNode.__init__",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r9",
+   "anchor": "TransformNode._invalid",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r10",
+   "anchor": "TransformNode.__str__#return",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r11",
+   "anchor": "TransformNode.__getstate__#return",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r12",
+   "anchor": "TransformNode.__setstate__#assign:self._parents",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r13",
+   "anchor": "TransformNode.invalidate",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r14",
+   "anchor": "TransformNode._invalidate_internal",
+   "kind": "doc",
+   "line": 137
+  },
+  {
+   "id": "r15",
+   "anchor": "TransformNode._invalidate_internal#assign:status_changed",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r16",
+   "anchor": "TransformNode._invalidate_internal#assign:status_changed",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r17",
+   "anchor": "TransformNode._invalidate_internal#if:self.pass_through or status_changed/for:parent in list(self._parents.values())/assign:parent",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r18",
+   "anchor": "TransformNode.set_children",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r19",
+   "anchor": "TransformNode.set_children#for:child in children",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r20",
+   "anchor": "TransformNode.set_children#for:child in children/assign:ref",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r21",
+   "anchor": "TransformNode.frozen",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r22",
+   "anchor": "TransformNode.write_graphviz",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r23",
+   "anchor": "BboxBase",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r24",
+   "anchor": "BboxBase.is_unit",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r25",
+   "anchor": "BboxBase.x0",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r26",
+   "anchor": "BboxBase.y0",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r27",
+   "anchor": "BboxBase.x1",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r28",
+   "anchor": "BboxBase.y1",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r29",
+   "anchor": "BboxBase.p0",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r30",
+   "anchor": "BboxBase.p1",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r31",
+   "anchor": "BboxBase.xmin",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r32",
+   "anchor": "BboxBase.ymin",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r33",
+   "anchor": "BboxBase.xmax",
+   "kind": "doc",
+   "line": 358
+  },
+  {
+   "id": "r34",
+   "anchor": "BboxBase.ymax",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r35",
+   "anchor": "BboxBase.min",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r36",
+   "anchor": "BboxBase.max",
+   "kind": "doc",
+   "line": 373
+  },
+  {
+   "id": "r37",
+   "anchor": "BboxBase.intervalx",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r38",
+   "anchor": "BboxBase.intervaly",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r39",
+   "anchor": "BboxBase.width",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r40",
+   "anchor": "BboxBase.height",
+   "kind": "doc",
+   "line": 402
+  },
+  {
+   "id": "r41",
+   "anchor": "BboxBase.size",
+   "kind": "doc",
+   "line": 408
+  },
+  {
+   "id": "r42",
+   "anchor": "BboxBase.bounds",
+   "kind": "doc",
+   "line": 414
+  },
+  {
+   "id": "r43",
+   "anchor": "BboxBase.extents",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r44",
+   "anchor": "BboxBase.extents#return",
+   "kind": "trail",
+   "line": 422
+  },
+  {
+   "id": "r45",
+   "anchor": "BboxBase.containsx",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r46",
+   "anchor": "BboxBase.containsy",
+   "kind": "doc",
+   "line": 434
+  },
+  {
+   "id": "r47",
+   "anchor": "BboxBase.contains",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r48",
+   "anchor": "BboxBase.overlaps",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r49",
+   "anchor": "BboxBase.fully_containsx",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r50",
+   "anchor": "BboxBase.fully_containsy",
+   "kind": "doc",
+   "line": 474
+  },
+  {
+   "id": "r51",
+   "anchor": "BboxBase.fully_contains",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r52",
+   "anchor": "BboxBase.fully_overlaps",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r53",
+   "anchor": "BboxBase.transformed",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r54",
+   "anchor": "BboxBase.inverse_transformed",
+   "kind": "doc",
+   "line": 517
+  },
+  {
+   "id": "r55",
+   "anchor": "BboxBase.anchored",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r56",
+   "anchor": "BboxBase.shrunk",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r57",
+   "anchor": "BboxBase.shrunk_to_aspect",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r58",
+   "anchor": "BboxBase.splitx",
+   "kind": "doc",
+   "line": 605
+  },
+  {
+   "id": "r59",
+   "anchor": "BboxBase.splity",
+   "kind": "doc",
+   "line": 616
+  },
+  {
+   "id": "r60",
+   "anchor": "BboxBase.count_contains",
+   "kind": "doc",
+   "line": 627
+  },
+  {
+   "id": "r61",
+   "anchor": "BboxBase.count_overlaps",
+   "kind": "doc",
+   "line": 643
+  },
+  {
+   "id": "r62",
+   "anchor": "BboxBase.expanded",
+   "kind": "doc",
+   "line": 654
+  },
+  {
+   "id": "r63",
+   "anchor": "BboxBase.padded",
+   "kind": "doc",
+   "line": 666
+  },
+  {
+   "id": "r64",
+   "anchor": "BboxBase.translated",
+   "kind": "doc",
+   "line": 671
+  },
+  {
+   "id": "r65",
+   "anchor": "BboxBase.corners",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r66",
+   "anchor": "BboxBase.rotated",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r67",
+   "anchor": "BboxBase.union",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r68",
+   "anchor": "BboxBase.intersection",
+   "kind": "doc",
+   "line": 709
+  },
+  {
+   "id": "r69",
+   "anchor": "Bbox",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r70",
+   "anchor": "Bbox.__init__",
+   "kind": "doc",
+   "line": 726
+  },
+  {
+   "id": "r71",
+   "anchor": "Bbox._points_orig",
+   "kind": "lead",
+   "line": 750
+  },
+  {
+   "id": "r72",
+   "anchor": "Bbox.unit",
+   "kind": "doc",
+   "line": 763
+  },
+  {
+   "id": "r73",
+   "anchor": "Bbox.null",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r74",
+   "anchor": "Bbox.from_bounds",
+   "kind": "doc",
+   "line": 779
+  },
+  {
+   "id": "r75",
+   "anchor": "Bbox.from_extents",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r76",
+   "anchor": "Bbox.ignore",
+   "kind": "doc",
+   "line": 810
+  },
+  {
+   "id": "r77",
+   "anchor": "Bbox.update_from_path",
+   "kind": "doc",
+   "line": 824
+  },
+  {
+   "id": "r78",
+   "anchor": "Bbox.update_from_data_xy",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r79",
+   "anchor": "Bbox.get_points",
+   "kind": "doc",
+   "line": 946
+  },
+  {
+   "id": "r80",
+   "anchor": "Bbox.set_points",
+   "kind": "doc",
+   "line": 954
+  },
+  {
+   "id": "r81",
+   "anchor": "Bbox.set",
+   "kind": "doc",
+   "line": 964
+  },
+  {
+   "id": "r82",
+   "anchor": "Bbox.mutated",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r83",
+   "anchor": "Bbox.mutatedx",
+   "kind": "doc",
+   "line": 977
+  },
+  {
+   "id": "r84",
+   "anchor": "Bbox.mutatedy",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r85",
+   "anchor": "TransformedBbox",
+   "kind": "doc",
+   "line": 988
+  },
+  {
+   "id": "r86",
+   "anchor": "TransformedBbox.__init__",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r87",
+   "anchor": "TransformedBbox.get_points#if:self._invalid",
+   "kind": "lead",
+   "line": 1027
+  },
+  {
+   "id": "r88",
+   "anchor": "TransformedBbox.get_points#if:self._invalid/assign:points",
+   "kind": "lead",
+   "line": 1032
+  },
+  {
+   "id": "r89",
+   "anchor": "LockableBbox",
+   "kind": "doc",
+   "line": 1064
+  },
+  {
+   "id": "r90",
+   "anchor": "LockableBbox.__init__",
+   "kind": "doc",
+   "line": 1071
+  },
+  {
+   "id": "r91",
+   "anchor": "LockableBbox.get_points#if:self._invalid",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r92",
+   "anchor": "LockableBbox.locked_x0",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r93",
+   "anchor": "LockableBbox.locked_y0",
+   "kind": "doc",
+   "line": 1145
+  },
+  {
+   "id": "r94",
+   "anchor": "LockableBbox.locked_x1",
+   "kind": "doc",
+   "line": 1161
+  },
+  {
+   "id": "r95",
+   "anchor": "LockableBbox.locked_y1",
+   "kind": "doc",
+   "line": 1177
+  },
+  {
+   "id": "r96",
+   "anchor": "Transform",
+   "kind": "doc",
+   "line": 1193
+  },
+  {
+   "id": "r97",
+   "anchor": "Transform.input_dims",
+   "kind": "doc",
+   "line": 1218
+  },
+  {
+   "id": "r98",
+   "anchor": "Transform.output_dims",
+   "kind": "doc",
+   "line": 1224
+  },
+  {
+   "id": "r99",
+   "anchor": "Transform.has_inverse",
+   "kind": "doc",
+   "line": 1230
+  },
+  {
+   "id": "r100",
+   "anchor": "Transform.is_separable",
+   "kind": "doc",
+   "line": 1233
+  },
+  {
+   "id": "r101",
+   "anchor": "Transform.__add__",
+   "kind": "doc",
+   "line": 1236
+  },
+  {
+   "id": "r102",
+   "anchor": "Transform.__radd__",
+   "kind": "doc",
+   "line": 1246
+  },
+  {
+   "id": "r103",
+   "anchor": "Transform._iter_break_from_left_to_right",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r104",
+   "anchor": "Transform._iter_break_from_left_to_right",
+   "kind": "doc",
+   "line": 1260
+  },
+  {
+   "id": "r105",
+   "anchor": "Transform.depth",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r106",
+   "anchor": "Transform.contains_branch",
+   "kind": "doc",
+   "line": 1287
+  },
+  {
+   "id": "r107",
+   "anchor": "Transform.contains_branch#for:_, sub_tree in self._iter_break_from_left_to_right()",
+   "kind": "lead",
+   "line": 1302
+  },
+  {
+   "id": "r108",
+   "anchor": "Transform.contains_branch_seperately",
+   "kind": "doc",
+   "line": 1307
+  },
+  {
+   "id": "r109",
+   "anchor": "Transform.contains_branch_seperately#return",
+   "kind": "lead",
+   "line": 1323
+  },
+  {
+   "id": "r110",
+   "anchor": "Transform.__sub__",
+   "kind": "doc",
+   "line": 1325
+  },
+  {
+   "id": "r111",
+   "anchor": "Transform.__sub__#if:not isinstance(other, Transform)",
+   "kind": "lead",
+   "line": 1348
+  },
+  {
+   "id": "r112",
+   "anchor": "Transform.__sub__#if:other.has_inverse",
+   "kind": "lead",
+   "line": 1364
+  },
+  {
+   "id": "r113",
+   "anchor": "Transform.__array__",
+   "kind": "doc",
+   "line": 1371
+  },
+  {
+   "id": "r114",
+   "anchor": "Transform.transform",
+   "kind": "doc",
+   "line": 1377
+  },
+  {
+   "id": "r115",
+   "anchor": "Transform.transform#assign:values",
+   "kind": "lead",
+   "line": 1389
+  },
+  {
+   "id": "r116",
+   "anchor": "Transform.transform#assign:res",
+   "kind": "lead",
+   "line": 1394
+  },
+  {
+   "id": "r117",
+   "anchor": "Transform.transform#if:ndim == 0",
+   "kind": "lead",
+   "line": 1397
+  },
+  {
+   "id": "r118",
+   "anchor": "Transform.transform#if:ndim == 0/assert:not np.ma.is_masked(res)",
+   "kind": "trail",
+   "line": 1398
+  },
+  {
+   "id": "r119",
+   "anchor": "Transform.transform_affine",
+   "kind": "doc",
+   "line": 1408
+  },
+  {
+   "id": "r120",
+   "anchor": "Transform.transform_non_affine",
+   "kind": "doc",
+   "line": 1428
+  },
+  {
+   "id": "r121",
+   "anchor": "Transform.transform_bbox",
+   "kind": "doc",
+   "line": 1447
+  },
+  {
+   "id": "r122",
+   "anchor": "Transform.get_affine",
+   "kind": "doc",
+   "line": 1456
+  },
+  {
+   "id": "r123",
+   "anchor": "Transform.get_matrix",
+   "kind": "doc",
+   "line": 1462
+  },
+  {
+   "id": "r124",
+   "anchor": "Transform.transform_point",
+   "kind": "doc",
+   "line": 1470
+  },
+  {
+   "id": "r125",
+   "anchor": "Transform.transform_path",
+   "kind": "doc",
+   "line": 1483
+  },
+  {
+   "id": "r126",
+   "anchor": "Transform.transform_path_affine",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r127",
+   "anchor": "Transform.transform_path_non_affine",
+   "kind": "doc",
+   "line": 1506
+  },
+  {
+   "id": "r128",
+   "anchor": "Transform.transform_angles",
+   "kind": "doc",
+   "line": 1519
+  },
+  {
+   "id": "r129",
+   "anchor": "Transform.transform_angles#if:self.input_dims != 2 or self.output_dims != 2",
+   "kind": "lead",
+   "line": 1543
+  },
+  {
+   "id": "r130",
+   "anchor": "Transform.transform_angles#if:not radians",
+   "kind": "lead",
+   "line": 1554
+  },
+  {
+   "id": "r131",
+   "anchor": "Transform.transform_angles#assign:pts2",
+   "kind": "lead",
+   "line": 1558
+  },
+  {
+   "id": "r132",
+   "anchor": "Transform.transform_angles#assign:tpts",
+   "kind": "lead",
+   "line": 1561
+  },
+  {
+   "id": "r133",
+   "anchor": "Transform.transform_angles#assign:d",
+   "kind": "lead",
+   "line": 1565
+  },
+  {
+   "id": "r134",
+   "anchor": "Transform.transform_angles#if:not radians",
+   "kind": "lead",
+   "line": 1569
+  },
+  {
+   "id": "r135",
+   "anchor": "Transform.inverted",
+   "kind": "doc",
+   "line": 1574
+  },
+  {
+   "id": "r136",
+   "anchor": "TransformWrapper",
+   "kind": "doc",
+   "line": 1587
+  },
+  {
+   "id": "r137",
+   "anchor": "TransformWrapper.__init__",
+   "kind": "doc",
+   "line": 1603
+  },
+  {
+   "id": "r138",
+   "anchor": "TransformWrapper.frozen#return",
+   "kind": "lead",
+   "line": 1632
+  },
+  {
+   "id": "r139",
+   "anchor": "TransformWrapper._set#assign:self.get_matrix",
+   "kind": "post",
+   "line": 1645
+  },
+  {
+   "id": "r140",
+   "anchor": "TransformWrapper.set",
+   "kind": "doc",
+   "line": 1651
+  },
+  {
+   "id": "r141",
+   "anchor": "AffineBase",
+   "kind": "doc",
+   "line": 1676
+  },
+  {
+   "id": "r142",
+   "anchor": "AffineBase.__array__#return",
+   "kind": "lead",
+   "line": 1689
+  },
+  {
+   "id": "r143",
+   "anchor": "AffineBase.transform#return",
+   "kind": "lead",
+   "line": 1698
+  },
+  {
+   "id": "r144",
+   "anchor": "AffineBase.transform_affine#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1702
+  },
+  {
+   "id": "r145",
+   "anchor": "AffineBase.transform_non_affine#return",
+   "kind": "lead",
+   "line": 1707
+  },
+  {
+   "id": "r146",
+   "anchor": "AffineBase.transform_path#return",
+   "kind": "lead",
+   "line": 1711
+  },
+  {
+   "id": "r147",
+   "anchor": "AffineBase.transform_path_affine#return",
+   "kind": "lead",
+   "line": 1715
+  },
+  {
+   "id": "r148",
+   "anchor": "AffineBase.transform_path_non_affine#return",
+   "kind": "lead",
+   "line": 1720
+  },
+  {
+   "id": "r149",
+   "anchor": "AffineBase.get_affine#return",
+   "kind": "lead",
+   "line": 1724
+  },
+  {
+   "id": "r150",
+   "anchor": "Affine2DBase",
+   "kind": "doc",
+   "line": 1727
+  },
+  {
+   "id": "r151",
+   "anchor": "Affine2DBase.frozen#return",
+   "kind": "lead",
+   "line": 1750
+  },
+  {
+   "id": "r152",
+   "anchor": "Affine2DBase.to_values",
+   "kind": "doc",
+   "line": 1757
+  },
+  {
+   "id": "r153",
+   "anchor": "Affine2DBase.matrix_from_values",
+   "kind": "doc",
+   "line": 1765
+  },
+  {
+   "id": "r154",
+   "anchor": "Affine2DBase.transform_point#assign:mtx",
+   "kind": "lead",
+   "line": 1785
+  },
+  {
+   "id": "r155",
+   "anchor": "Affine2DBase.transform_affine#if:not isinstance(points, (np.ma.MaskedArray, np.ndarray))",
+   "kind": "lead",
+   "line": 1796
+  },
+  {
+   "id": "r156",
+   "anchor": "Affine2DBase.inverted#if:self._inverted is None or self._invalid",
+   "kind": "lead",
+   "line": 1804
+  },
+  {
+   "id": "r157",
+   "anchor": "Affine2D",
+   "kind": "doc",
+   "line": 1814
+  },
+  {
+   "id": "r158",
+   "anchor": "Affine2D.__init__",
+   "kind": "doc",
+   "line": 1819
+  },
+  {
+   "id": "r159",
+   "anchor": "Affine2D.__init__#if:matrix is None/assign:matrix",
+   "kind": "lead",
+   "line": 1832
+  },
+  {
+   "id": "r160",
+   "anchor": "Affine2D.from_values",
+   "kind": "doc",
+   "line": 1843
+  },
+  {
+   "id": "r161",
+   "anchor": "Affine2D.get_matrix",
+   "kind": "doc",
+   "line": 1857
+  },
+  {
+   "id": "r162",
+   "anchor": "Affine2D.set_matrix",
+   "kind": "doc",
+   "line": 1870
+  },
+  {
+   "id": "r163",
+   "anchor": "Affine2D.set",
+   "kind": "doc",
+   "line": 1883
+  },
+  {
+   "id": "r164",
+   "anchor": "Affine2D.identity",
+   "kind": "doc",
+   "line": 1895
+  },
+  {
+   "id": "r165",
+   "anchor": "Affine2D.clear",
+   "kind": "doc",
+   "line": 1905
+  },
+  {
+   "id": "r166",
+   "anchor": "Affine2D.clear#assign:self._mtx",
+   "kind": "lead",
+   "line": 1910
+  },
+  {
+   "id": "r167",
+   "anchor": "Affine2D.rotate",
+   "kind": "doc",
+   "line": 1914
+  },
+  {
+   "id": "r168",
+   "anchor": "Affine2D.rotate_deg",
+   "kind": "doc",
+   "line": 1930
+  },
+  {
+   "id": "r169",
+   "anchor": "Affine2D.rotate_around",
+   "kind": "doc",
+   "line": 1940
+  },
+  {
+   "id": "r170",
+   "anchor": "Affine2D.rotate_deg_around",
+   "kind": "doc",
+   "line": 1950
+  },
+  {
+   "id": "r171",
+   "anchor": "Affine2D.rotate_deg_around#assign:x, y",
+   "kind": "lead",
+   "line": 1959
+  },
+  {
+   "id": "r172",
+   "anchor": "Affine2D.translate",
+   "kind": "doc",
+   "line": 1962
+  },
+  {
+   "id": "r173",
+   "anchor": "Affine2D.scale",
+   "kind": "doc",
+   "line": 1976
+  },
+  {
+   "id": "r174",
+   "anchor": "Affine2D.skew",
+   "kind": "doc",
+   "line": 1995
+  },
+  {
+   "id": "r175",
+   "anchor": "Affine2D.skew_deg",
+   "kind": "doc",
+   "line": 2014
+  },
+  {
+   "id": "r176",
+   "anchor": "IdentityTransform",
+   "kind": "doc",
+   "line": 2028
+  },
+  {
+   "id": "r177",
+   "anchor": "IdentityTransform.frozen#return",
+   "kind": "lead",
+   "line": 2037
+  },
+  {
+   "id": "r178",
+   "anchor": "IdentityTransform.get_matrix#return",
+   "kind": "lead",
+   "line": 2045
+  },
+  {
+   "id": "r179",
+   "anchor": "IdentityTransform.transform#return",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r180",
+   "anchor": "IdentityTransform.transform_affine#return",
+   "kind": "lead",
+   "line": 2053
+  },
+  {
+   "id": "r181",
+   "anchor": "IdentityTransform.transform_non_affine#return",
+   "kind": "lead",
+   "line": 2057
+  },
+  {
+   "id": "r182",
+   "anchor": "IdentityTransform.transform_path#return",
+   "kind": "lead",
+   "line": 2061
+  },
+  {
+   "id": "r183",
+   "anchor": "IdentityTransform.transform_path_affine#return",
+   "kind": "lead",
+   "line": 2065
+  },
+  {
+   "id": "r184",
+   "anchor": "IdentityTransform.transform_path_non_affine#return",
+   "kind": "lead",
+   "line": 2069
+  },
+  {
+   "id": "r185",
+   "anchor": "IdentityTransform.get_affine#return",
+   "kind": "lead",
+   "line": 2073
+  },
+  {
+   "id": "r186",
+   "anchor": "IdentityTransform.inverted#return",
+   "kind": "lead",
+   "line": 2077
+  },
+  {
+   "id": "r187",
+   "anchor": "BlendedGenericTransform",
+   "kind": "doc",
+   "line": 2080
+  },
+  {
+   "id": "r188",
+   "anchor": "BlendedGenericTransform.__init__",
+   "kind": "doc",
+   "line": 2093
+  },
+  {
+   "id": "r189",
+   "anchor": "BlendedGenericTransform.__init__#call:Transform.__init__",
+   "kind": "lead",
+   "line": 2106
+  },
+  {
+   "id": "r190",
+   "anchor": "BlendedGenericTransform.__eq__#if:isinstance(other, (BlendedAffine2D, BlendedGenericTransform))",
+   "kind": "lead",
+   "line": 2114
+  },
+  {
+   "id": "r191",
+   "anchor": "BlendedGenericTransform.contains_branch_seperately#return",
+   "kind": "lead",
+   "line": 2123
+  },
+  {
+   "id": "r192",
+   "anchor": "BlendedGenericTransform.contains_branch#return",
+   "kind": "lead",
+   "line": 2131
+  },
+  {
+   "id": "r193",
+   "anchor": "BlendedGenericTransform.frozen#return",
+   "kind": "lead",
+   "line": 2139
+  },
+  {
+   "id": "r194",
+   "anchor": "BlendedGenericTransform.transform_non_affine#if:self._x.is_affine and self._y.is_affine",
+   "kind": "lead",
+   "line": 2151
+  },
+  {
+   "id": "r195",
+   "anchor": "BlendedGenericTransform.inverted#return",
+   "kind": "lead",
+   "line": 2179
+  },
+  {
+   "id": "r196",
+   "anchor": "BlendedGenericTransform.get_affine#if:self._invalid or self._affine is None",
+   "kind": "lead",
+   "line": 2183
+  },
+  {
+   "id": "r197",
+   "anchor": "BlendedGenericTransform.get_affine#if:self._invalid or self._affine is None/if:self._x == self._y/else/assign:mtx",
+   "kind": "lead",
+   "line": 2192
+  },
+  {
+   "id": "r198",
+   "anchor": "BlendedAffine2D",
+   "kind": "doc",
+   "line": 2198
+  },
+  {
+   "id": "r199",
+   "anchor": "BlendedAffine2D.__init__",
+   "kind": "doc",
+   "line": 2208
+  },
+  {
+   "id": "r200",
+   "anchor": "BlendedAffine2D.__eq__#if:isinstance(other, (BlendedAffine2D, BlendedGenericTransform))",
+   "kind": "lead",
+   "line": 2239
+  },
+  {
+   "id": "r201",
+   "anchor": "BlendedAffine2D.contains_branch_seperately#return",
+   "kind": "lead",
+   "line": 2248
+  },
+  {
+   "id": "r202",
+   "anchor": "BlendedAffine2D.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2260
+  },
+  {
+   "id": "r203",
+   "anchor": "BlendedAffine2D.get_matrix#if:self._invalid/if:self._x == self._y/else/assign:self._mtx",
+   "kind": "lead",
+   "line": 2269
+  },
+  {
+   "id": "r204",
+   "anchor": "blended_transform_factory",
+   "kind": "doc",
+   "line": 2275
+  },
+  {
+   "id": "r205",
+   "anchor": "CompositeGenericTransform",
+   "kind": "doc",
+   "line": 2289
+  },
+  {
+   "id": "r206",
+   "anchor": "CompositeGenericTransform.__init__",
+   "kind": "doc",
+   "line": 2299
+  },
+  {
+   "id": "r207",
+   "anchor": "CompositeGenericTransform.frozen#assign:self._invalid",
+   "kind": "lead",
+   "line": 2322
+  },
+  {
+   "id": "r208",
+   "anchor": "CompositeGenericTransform._invalidate_internal#if:value == Transform.INVALID_AFFINE and not self._b.is_affine and (not self._a.is_affine or invalidating_node is self._a)",
+   "kind": "lead",
+   "line": 2334
+  },
+  {
+   "id": "r209",
+   "anchor": "CompositeGenericTransform.transform_affine#return",
+   "kind": "lead",
+   "line": 2373
+  },
+  {
+   "id": "r210",
+   "anchor": "CompositeGenericTransform.transform_non_affine#if:self._a.is_affine and self._b.is_affine",
+   "kind": "lead",
+   "line": 2377
+  },
+  {
+   "id": "r211",
+   "anchor": "CompositeGenericTransform.transform_path_non_affine#if:self._a.is_affine and self._b.is_affine",
+   "kind": "lead",
+   "line": 2387
+  },
+  {
+   "id": "r212",
+   "anchor": "CompositeGenericTransform.get_affine#if:not self._b.is_affine",
+   "kind": "lead",
+   "line": 2397
+  },
+  {
+   "id": "r213",
+   "anchor": "CompositeGenericTransform.inverted#return",
+   "kind": "lead",
+   "line": 2405
+  },
+  {
+   "id": "r214",
+   "anchor": "CompositeAffine2D",
+   "kind": "doc",
+   "line": 2408
+  },
+  {
+   "id": "r215",
+   "anchor": "CompositeAffine2D.__init__",
+   "kind": "doc",
+   "line": 2415
+  },
+  {
+   "id": "r216",
+   "anchor": "CompositeAffine2D.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2461
+  },
+  {
+   "id": "r217",
+   "anchor": "composite_transform_factory",
+   "kind": "doc",
+   "line": 2470
+  },
+  {
+   "id": "r218",
+   "anchor": "composite_transform_factory#if:isinstance(a, IdentityTransform)",
+   "kind": "lead",
+   "line": 2488
+  },
+  {
+   "id": "r219",
+   "anchor": "BboxTransform",
+   "kind": "doc",
+   "line": 2497
+  },
+  {
+   "id": "r220",
+   "anchor": "BboxTransform.__init__",
+   "kind": "doc",
+   "line": 2504
+  },
+  {
+   "id": "r221",
+   "anchor": "BboxTransform.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2529
+  },
+  {
+   "id": "r222",
+   "anchor": "BboxTransformTo",
+   "kind": "doc",
+   "line": 2545
+  },
+  {
+   "id": "r223",
+   "anchor": "BboxTransformTo.__init__",
+   "kind": "doc",
+   "line": 2553
+  },
+  {
+   "id": "r224",
+   "anchor": "BboxTransformTo.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2575
+  },
+  {
+   "id": "r225",
+   "anchor": "BboxTransformToMaxOnly",
+   "kind": "doc",
+   "line": 2588
+  },
+  {
+   "id": "r226",
+   "anchor": "BboxTransformToMaxOnly.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2596
+  },
+  {
+   "id": "r227",
+   "anchor": "BboxTransformFrom",
+   "kind": "doc",
+   "line": 2609
+  },
+  {
+   "id": "r228",
+   "anchor": "BboxTransformFrom.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2634
+  },
+  {
+   "id": "r229",
+   "anchor": "ScaledTranslation",
+   "kind": "doc",
+   "line": 2649
+  },
+  {
+   "id": "r230",
+   "anchor": "ScaledTranslation.get_matrix#if:self._invalid",
+   "kind": "lead",
+   "line": 2670
+  },
+  {
+   "id": "r231",
+   "anchor": "TransformedPath",
+   "kind": "doc",
+   "line": 2681
+  },
+  {
+   "id": "r232",
+   "anchor": "TransformedPath.__init__",
+   "kind": "doc",
+   "line": 2694
+  },
+  {
+   "id": "r233",
+   "anchor": "TransformedPath._revalidate#if:(self._invalid & self.INVALID_NON_AFFINE == self.INVALID_NON_AFFINE) or self._transformed_path is None",
+   "kind": "lead",
+   "line": 2712
+  },
+  {
+   "id": "r234",
+   "anchor": "TransformedPath.get_transformed_points_and_affine",
+   "kind": "doc",
+   "line": 2722
+  },
+  {
+   "id": "r235",
+   "anchor": "TransformedPath.get_transformed_path_and_affine",
+   "kind": "doc",
+   "line": 2733
+  },
+  {
+   "id": "r236",
+   "anchor": "TransformedPath.get_fully_transformed_path",
+   "kind": "doc",
+   "line": 2742
+  },
+  {
+   "id": "r237",
+   "anchor": "TransformedPatchPath",
+   "kind": "doc",
+   "line": 2753
+  },
+  {
+   "id": "r238",
+   "anchor": "TransformedPatchPath.__init__",
+   "kind": "doc",
+   "line": 2759
+  },
+  {
+   "id": "r239",
+   "anchor": "TransformedPatchPath._revalidate#if:self._transformed_path is None or self._path != patch_path or (self._invalid & self.INVALID_NON_AFFINE == self.INVALID_NON_AFFINE)",
+   "kind": "lead",
+   "line": 2778
+  },
+  {
+   "id": "r240",
+   "anchor": "nonsingular",
+   "kind": "doc",
+   "line": 2791
+  },
+  {
+   "id": "r241",
+   "anchor": "interval_contains",
+   "kind": "doc",
+   "line": 2845
+  },
+  {
+   "id": "r242",
+   "anchor": "_interval_contains_close",
+   "kind": "doc",
+   "line": 2867
+  },
+  {
+   "id": "r243",
+   "anchor": "interval_contains_open",
+   "kind": "doc",
+   "line": 2894
+  },
+  {
+   "id": "r244",
+   "anchor": "offset_copy",
+   "kind": "doc",
+   "line": 2914
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 60548,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 19213,
+  "thinking_tokens": 9228,
+  "opus_cost_usd": 1.0900965,
+  "total_cost_usd": 1.1398665000000001,
+  "duration_ms": 162924,
+  "duration_api_ms": 164371,
+  "num_turns": 2
+ },
+ "wall_ms": 163922,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

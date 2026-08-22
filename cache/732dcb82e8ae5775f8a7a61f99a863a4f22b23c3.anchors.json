@@ -1,0 +1,175 @@
+{
+ "blob_sha": "732dcb82e8ae5775f8a7a61f99a863a4f22b23c3",
+ "path": "django/db/migrations/migration.py",
+ "repo": "django/django",
+ "records": 25,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Migration",
+   "kind": "doc",
+   "line": 10
+  },
+  {
+   "id": "r2",
+   "anchor": "Migration.operations",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "Migration.dependencies",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "Migration.run_before",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "Migration.replaces",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "Migration.initial",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r7",
+   "anchor": "Migration.atomic",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r8",
+   "anchor": "Migration.__init__#assign:self.operations",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r9",
+   "anchor": "Migration.mutate_state",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r10",
+   "anchor": "Migration.apply",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r11",
+   "anchor": "Migration.apply#for:operation in self.operations/if:collect_sql",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r12",
+   "anchor": "Migration.apply#for:operation in self.operations/assign:old_state",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r13",
+   "anchor": "Migration.apply#for:operation in self.operations/assign:atomic_operation",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r14",
+   "anchor": "Migration.apply#for:operation in self.operations/if:not schema_editor.atomic_migration and atomic_operation/with:atomic(schema_editor.connection.alias)",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r15",
+   "anchor": "Migration.apply#for:operation in self.operations/if:not schema_editor.atomic_migration and atomic_operation/else/call:operation.database_forwards",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r16",
+   "anchor": "Migration.unapply",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r17",
+   "anchor": "Migration.unapply#assign:to_run",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r18",
+   "anchor": "Migration.unapply#for:operation in self.operations",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r19",
+   "anchor": "Migration.unapply#for:operation in self.operations/if:not operation.reversible",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r20",
+   "anchor": "Migration.unapply#for:operation in self.operations/assign:new_state",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r21",
+   "anchor": "Migration.unapply#for:operation, to_state, from_state in to_run",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r22",
+   "anchor": "Migration.unapply#for:operation, to_state, from_state in to_run/if:not schema_editor.connection.features.can_rollback_ddl and operation.atomic/with:atomic(schema_editor.connection.alias)",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r23",
+   "anchor": "Migration.unapply#for:operation, to_state, from_state in to_run/if:not schema_editor.connection.features.can_rollback_ddl and operation.atomic/else/call:operation.database_backwards",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r24",
+   "anchor": "SwappableTuple",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r25",
+   "anchor": "swappable_dependency",
+   "kind": "doc",
+   "line": 194
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7574,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2046,
+  "thinking_tokens": 790,
+  "opus_cost_usd": 0.1311815,
+  "total_cost_usd": 0.1357905,
+  "duration_ms": 19088,
+  "duration_api_ms": 20410,
+  "num_turns": 2
+ },
+ "wall_ms": 19905,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

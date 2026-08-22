@@ -1,0 +1,481 @@
+{
+ "blob_sha": "65c38eabd006cb38fd4dfc5afe01481c3edf819d",
+ "path": "ah_bootstrap.py",
+ "repo": "astropy/astropy",
+ "records": 76,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#try/assign:_setuptools",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#try/if:_setuptools not in _setuptools_req/assign:_distribute",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#try/if:_setuptools not in _setuptools_req/if:_setuptools != _distribute/call:sys.path.insert",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#try/except:*/import:ez_setup",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r11",
+   "anchor": "<module>#try/except:*/pass",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r12",
+   "anchor": "<module>#import:pkg_resources",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r13",
+   "anchor": "<module>#import:pkg_resources",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r14",
+   "anchor": "DIST_NAME",
+   "kind": "todo",
+   "line": 144
+  },
+  {
+   "id": "r15",
+   "anchor": "DOWNLOAD_IF_NEEDED",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r16",
+   "anchor": "CFG_OPTIONS",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r17",
+   "anchor": "_Bootstrapper",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "_Bootstrapper.__init__#if:not isinstance(path, str)/assign:path",
+   "kind": "trail",
+   "line": 180
+  },
+  {
+   "id": "r19",
+   "anchor": "_Bootstrapper.index_url",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r20",
+   "anchor": "_Bootstrapper.__init__#if:self.offline",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r21",
+   "anchor": "_Bootstrapper.__init__#assign:git_dir_exists",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r22",
+   "anchor": "_Bootstrapper.is_submodule",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r23",
+   "anchor": "_Bootstrapper.main#if:auto_use/call:bootstrapper.run",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r24",
+   "anchor": "_Bootstrapper.parse_command_line#if:'--no-git' in argv",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r25",
+   "anchor": "_Bootstrapper.run#for:key in list(sys.modules)",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r26",
+   "anchor": "_Bootstrapper.run#for:key in list(sys.modules)/try/except:AttributeError/continue",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r27",
+   "anchor": "_Bootstrapper.run#assign:self.is_submodule",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r28",
+   "anchor": "_Bootstrapper.run#assign:dist",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r29",
+   "anchor": "_Bootstrapper.run#try",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r30",
+   "anchor": "_Bootstrapper.run#try/except:TypeError/if:dist.key in pkg_resources.working_set.by_key",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r31",
+   "anchor": "_Bootstrapper.config",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r32",
+   "anchor": "_Bootstrapper.get_local_directory_dist",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r33",
+   "anchor": "_Bootstrapper.get_local_directory_dist#if:dist is None/elif:self.auto_upgrade and not self.is_submodule/assign:upgrade",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r34",
+   "anchor": "_Bootstrapper.get_local_file_dist",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r35",
+   "anchor": "_Bootstrapper.get_local_file_dist#if:dist is not None and self.auto_upgrade/assign:upgrade",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r36",
+   "anchor": "_Bootstrapper.get_index_dist#return",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r37",
+   "anchor": "_Bootstrapper._directory_import",
+   "kind": "doc",
+   "line": 453
+  },
+  {
+   "id": "r38",
+   "anchor": "_Bootstrapper._directory_import#assign:path",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r39",
+   "anchor": "_Bootstrapper._directory_import#assign:ws",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r40",
+   "anchor": "_Bootstrapper._directory_import#if:dist is None/assign:setup_py",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r41",
+   "anchor": "_Bootstrapper._directory_import#if:dist is None/if:os.path.isfile(setup_py)/call:sp.check_output",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r42",
+   "anchor": "_Bootstrapper._directory_import#if:dist is None/if:os.path.isfile(setup_py)/for:dist in pkg_resources.find_distributions(path, True)/return",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r43",
+   "anchor": "_Bootstrapper._do_download._Distribution",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r44",
+   "anchor": "_Bootstrapper._do_download#try",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r45",
+   "anchor": "_Bootstrapper._do_download#try/with:context()/try/except:TypeError/pass",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r46",
+   "anchor": "_Bootstrapper._do_download#try/return",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r47",
+   "anchor": "_Bootstrapper._do_upgrade#assign:next_version",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r48",
+   "anchor": "_Bootstrapper._check_submodule",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r49",
+   "anchor": "_Bootstrapper._check_submodule_using_git",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r50",
+   "anchor": "_Bootstrapper._check_submodule_using_git#try/except:_CommandNotFound/return",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r51",
+   "anchor": "_Bootstrapper._check_submodule_using_git#if:returncode != 0 and stderr/assign:perl_warning",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r52",
+   "anchor": "_Bootstrapper._check_submodule_using_git#if:returncode != 0 and stderr/assign:perl_warning",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r53",
+   "anchor": "_Bootstrapper._check_submodule_using_git#if:returncode != 0 and stderr/if:not stderr.strip().endswith(perl_warning)/call:log.warn",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r54",
+   "anchor": "_Bootstrapper._check_submodule_using_git#assign:_git_submodule_status_re",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r55",
+   "anchor": "_Bootstrapper._check_submodule_using_git#assign:m",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r56",
+   "anchor": "_Bootstrapper._check_submodule_using_git#if:m/call:self._update_submodule",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r57",
+   "anchor": "_Bootstrapper._check_submodule_no_git",
+   "kind": "doc",
+   "line": 667
+  },
+  {
+   "id": "r58",
+   "anchor": "_Bootstrapper._check_submodule_no_git#assign:gitmodules_fileobj",
+   "kind": "lead",
+   "line": 687
+  },
+  {
+   "id": "r59",
+   "anchor": "_Bootstrapper._check_submodule_no_git#with:io.open(gitmodules_path)",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r60",
+   "anchor": "_Bootstrapper._check_submodule_no_git#with:io.open(gitmodules_path)/for:line in f/assign:line",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r61",
+   "anchor": "_Bootstrapper._check_submodule_no_git#with:io.open(gitmodules_path)/for:line in f/if:line and line[0] in (':', ';')",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r62",
+   "anchor": "_Bootstrapper._update_submodule#if:status == ' '/return",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r63",
+   "anchor": "_CommandNotFound",
+   "kind": "doc",
+   "line": 775
+  },
+  {
+   "id": "r64",
+   "anchor": "run_cmd",
+   "kind": "doc",
+   "line": 782
+  },
+  {
+   "id": "r65",
+   "anchor": "run_cmd#try/assign:stdout, stderr",
+   "kind": "todo",
+   "line": 795
+  },
+  {
+   "id": "r66",
+   "anchor": "run_cmd#try",
+   "kind": "lead",
+   "line": 812
+  },
+  {
+   "id": "r67",
+   "anchor": "run_cmd#try/except:ValueError/assign:stdio_encoding",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r68",
+   "anchor": "run_cmd#if:not isinstance(stdout, str)",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r69",
+   "anchor": "_next_version",
+   "kind": "doc",
+   "line": 829
+  },
+  {
+   "id": "r70",
+   "anchor": "_next_version#if:hasattr(version, 'base_version')/if:version.base_version",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r71",
+   "anchor": "_DummyFile",
+   "kind": "doc",
+   "line": 863
+  },
+  {
+   "id": "r72",
+   "anchor": "_DummyFile.errors",
+   "kind": "trail",
+   "line": 866
+  },
+  {
+   "id": "r73",
+   "anchor": "_silence",
+   "kind": "doc",
+   "line": 881
+  },
+  {
+   "id": "r74",
+   "anchor": "_silence#try/except:*/assign:sys.stdout",
+   "kind": "lead",
+   "line": 894
+  },
+  {
+   "id": "r75",
+   "anchor": "use_astropy_helpers",
+   "kind": "doc",
+   "line": 926
+  },
+  {
+   "id": "r76",
+   "anchor": "use_astropy_helpers#assign:BOOTSTRAPPER",
+   "kind": "lead",
+   "line": 988
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 24081,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7911,
+  "thinking_tokens": 4212,
+  "opus_cost_usd": 0.4428765,
+  "total_cost_usd": 0.4609045,
+  "duration_ms": 68747,
+  "duration_api_ms": 70625,
+  "num_turns": 2
+ },
+ "wall_ms": 69534,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

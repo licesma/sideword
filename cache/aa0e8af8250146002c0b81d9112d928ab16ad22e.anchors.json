@@ -1,0 +1,175 @@
+{
+ "blob_sha": "aa0e8af8250146002c0b81d9112d928ab16ad22e",
+ "path": "astropy/config/paths.py",
+ "repo": "astropy/astropy",
+ "records": 25,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "_find_home",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r4",
+   "anchor": "_find_home#if:os.name=='posix'",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r5",
+   "anchor": "_find_home#if:os.name=='posix'/if:'HOME' in os.environ",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r6",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'",
+   "kind": "trail",
+   "line": 38
+  },
+  {
+   "id": "r7",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'/if:'MSYSTEM' in os.environ and os.environ.get('HOME')/assign:homedir",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r8",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'/elif:'HOMESHARE' in os.environ",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r9",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'/elif:'HOMEDRIVE' in os.environ and 'HOMEPATH' in os.environ",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r10",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'/elif:'USERPROFILE' in os.environ",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r11",
+   "anchor": "_find_home#if:os.name=='posix'/elif:os.name=='nt'/else/try/except:Exception/if:'HOME' in os.environ",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r12",
+   "anchor": "_find_home#if:os.name=='posix'/else/if:'HOME' in os.environ",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r13",
+   "anchor": "get_config_dir",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r14",
+   "anchor": "get_config_dir#assign:linkto",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r15",
+   "anchor": "get_config_dir#if:set_temp_config._temp_path is not None",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r16",
+   "anchor": "get_config_dir#assign:xch",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r17",
+   "anchor": "get_cache_dir",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r18",
+   "anchor": "get_cache_dir#assign:linkto",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r19",
+   "anchor": "get_cache_dir#if:set_temp_cache._temp_path is not None",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r20",
+   "anchor": "get_cache_dir#assign:xch",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r21",
+   "anchor": "_SetTempPath.__call__",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r22",
+   "anchor": "set_temp_config",
+   "kind": "doc",
+   "line": 195
+  },
+  {
+   "id": "r23",
+   "anchor": "set_temp_config.__enter__#import:.configuration",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r24",
+   "anchor": "set_temp_cache",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r25",
+   "anchor": "_find_or_create_astropy_dir#if:not os.path.exists(maindir)/if:not os.path.exists(innerdir)",
+   "kind": "lead",
+   "line": 278
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8655,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2753,
+  "thinking_tokens": 1472,
+  "opus_cost_usd": 0.1596665,
+  "total_cost_usd": 0.16529749999999999,
+  "duration_ms": 25386,
+  "duration_api_ms": 26483,
+  "num_turns": 2
+ },
+ "wall_ms": 26218,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

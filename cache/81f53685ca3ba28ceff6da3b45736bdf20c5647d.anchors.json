@@ -1,0 +1,517 @@
+{
+ "blob_sha": "81f53685ca3ba28ceff6da3b45736bdf20c5647d",
+ "path": "django/db/backends/base/base.py",
+ "repo": "django/django",
+ "records": 82,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BaseDatabaseWrapper",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseDatabaseWrapper.data_types",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseDatabaseWrapper.data_types_suffix",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseDatabaseWrapper.data_type_check_constraints",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseDatabaseWrapper.client_class",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseDatabaseWrapper.connection",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseDatabaseWrapper.settings_dict",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseDatabaseWrapper.queries_log",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseDatabaseWrapper.autocommit",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseDatabaseWrapper.in_atomic_block",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseDatabaseWrapper.savepoint_state",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseDatabaseWrapper.savepoint_ids",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseDatabaseWrapper.commit_on_exit",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseDatabaseWrapper.needs_rollback",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseDatabaseWrapper.close_at",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseDatabaseWrapper.allow_thread_sharing",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseDatabaseWrapper.run_on_commit",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseDatabaseWrapper.run_commit_hooks_on_set_autocommit_on",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseDatabaseWrapper.ensure_timezone",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseDatabaseWrapper.timezone",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseDatabaseWrapper.timezone_name",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseDatabaseWrapper.get_connection_params",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseDatabaseWrapper.get_connection_params",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseDatabaseWrapper.get_new_connection",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseDatabaseWrapper.init_connection_state",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseDatabaseWrapper.create_cursor",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseDatabaseWrapper.connect",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseDatabaseWrapper.connect",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseDatabaseWrapper.connect#call:self.check_settings",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseDatabaseWrapper.connect#assign:self.in_atomic_block",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseDatabaseWrapper.connect#assign:max_age",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseDatabaseWrapper.connect#assign:conn_params",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseDatabaseWrapper.ensure_connection",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseDatabaseWrapper._cursor",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseDatabaseWrapper.cursor",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseDatabaseWrapper.cursor",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseDatabaseWrapper.commit",
+   "kind": "doc",
+   "line": 250
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseDatabaseWrapper.commit#assign:self.errors_occurred",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseDatabaseWrapper.rollback",
+   "kind": "doc",
+   "line": 261
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseDatabaseWrapper.rollback#assign:self.errors_occurred",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseDatabaseWrapper.close",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseDatabaseWrapper.close#if:self.closed_in_transaction or self.connection is None",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseDatabaseWrapper._savepoint",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseDatabaseWrapper._savepoint_allowed#return",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseDatabaseWrapper.savepoint",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseDatabaseWrapper.savepoint",
+   "kind": "doc",
+   "line": 314
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseDatabaseWrapper.savepoint_rollback",
+   "kind": "doc",
+   "line": 334
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseDatabaseWrapper.savepoint_rollback#assign:self.run_on_commit",
+   "kind": "lead",
+   "line": 345
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseDatabaseWrapper.savepoint_commit",
+   "kind": "doc",
+   "line": 349
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseDatabaseWrapper.clean_savepoints",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseDatabaseWrapper._set_autocommit",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseDatabaseWrapper._set_autocommit",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseDatabaseWrapper.get_autocommit",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseDatabaseWrapper.get_autocommit",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseDatabaseWrapper.set_autocommit",
+   "kind": "doc",
+   "line": 382
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseDatabaseWrapper.get_rollback",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseDatabaseWrapper.set_rollback",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseDatabaseWrapper.validate_no_atomic_block",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseDatabaseWrapper.constraint_checks_disabled",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseDatabaseWrapper.constraint_checks_disabled",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseDatabaseWrapper.disable_constraint_checking",
+   "kind": "doc",
+   "line": 459
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseDatabaseWrapper.enable_constraint_checking",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseDatabaseWrapper.check_constraints",
+   "kind": "doc",
+   "line": 474
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseDatabaseWrapper.is_usable",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseDatabaseWrapper.is_usable",
+   "kind": "doc",
+   "line": 484
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseDatabaseWrapper.close_if_unusable_or_obsolete",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseDatabaseWrapper.close_if_unusable_or_obsolete#if:self.connection is not None/if:self.get_autocommit() != self.settings_dict['AUTOCOMMIT']",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseDatabaseWrapper.close_if_unusable_or_obsolete#if:self.connection is not None/if:self.errors_occurred",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseDatabaseWrapper.validate_thread_sharing",
+   "kind": "lead",
+   "line": 523
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseDatabaseWrapper.validate_thread_sharing",
+   "kind": "doc",
+   "line": 523
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseDatabaseWrapper.prepare_database",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseDatabaseWrapper.prepare_database",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseDatabaseWrapper.wrap_database_errors",
+   "kind": "doc",
+   "line": 549
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseDatabaseWrapper.make_debug_cursor",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseDatabaseWrapper.make_cursor",
+   "kind": "doc",
+   "line": 562
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseDatabaseWrapper.temporary_connection",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseDatabaseWrapper._nodb_connection",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseDatabaseWrapper._start_transaction_under_autocommit",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseDatabaseWrapper.schema_editor",
+   "kind": "doc",
+   "line": 612
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseDatabaseWrapper.on_commit#if:self.in_atomic_block/call:self.run_on_commit.append",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseDatabaseWrapper.on_commit#if:self.in_atomic_block/else/call:func",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseDatabaseWrapper.copy",
+   "kind": "doc",
+   "line": 640
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17086,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6442,
+  "thinking_tokens": 2493,
+  "opus_cost_usd": 0.33620150000000004,
+  "total_cost_usd": 0.34816050000000004,
+  "duration_ms": 56817,
+  "duration_api_ms": 57898,
+  "num_turns": 2
+ },
+ "wall_ms": 57692,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

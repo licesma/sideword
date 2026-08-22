@@ -1,0 +1,205 @@
+{
+ "blob_sha": "cdc673a479aff2825afa3e60350f04e3132f7b85",
+ "path": "django/core/management/base.py",
+ "repo": "django/django",
+ "records": 30,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "CommandError",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r3",
+   "anchor": "SystemCheckError",
+   "kind": "doc",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "CommandParser",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r5",
+   "anchor": "CommandParser.parse_args#if:hasattr(self.cmd, 'missing_args_message') and not (args or any(not arg.startswith('-') for arg in args))",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r6",
+   "anchor": "handle_default_options",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r7",
+   "anchor": "OutputWrapper",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseCommand",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseCommand.help",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseCommand._called_from_command_line",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseCommand.output_transaction",
+   "kind": "trail",
+   "line": 195
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseCommand.get_version",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseCommand.create_parser",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseCommand.add_arguments",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseCommand.print_help",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseCommand.run_from_argv",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseCommand.run_from_argv#assign:args",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseCommand.run_from_argv#try/except:Exception/if:isinstance(e, SystemCheckError)",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseCommand.run_from_argv#try/finally/try/except:ImproperlyConfigured/pass",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseCommand.execute",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseCommand.execute#if:not self.leave_locale_alone/import:django.utils",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseCommand.check",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseCommand.check#assign:visible_issue_count",
+   "kind": "trail",
+   "line": 363
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseCommand.check_migrations",
+   "kind": "doc",
+   "line": 415
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseCommand.check_migrations#try/except:ImproperlyConfigured/return",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseCommand.handle",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r27",
+   "anchor": "AppCommand",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r28",
+   "anchor": "AppCommand.handle_app_config",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r29",
+   "anchor": "LabelCommand",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r30",
+   "anchor": "LabelCommand.handle_label",
+   "kind": "doc",
+   "line": 517
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12863,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1943,
+  "thinking_tokens": 656,
+  "opus_cost_usd": 0.1814965,
+  "total_cost_usd": 0.1903955,
+  "duration_ms": 18004,
+  "duration_api_ms": 19292,
+  "num_turns": 2
+ },
+ "wall_ms": 18924,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,218 @@
+{
+ "blob_sha": "72fbe155519b5d90bb89b446495f87278c1cffdc",
+ "path": "django/core/validators.py",
+ "repo": "django/django",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "EMPTY_VALUES",
+   "kind": "lead",
+   "line": 14
+  },
+  {
+   "id": "r2",
+   "anchor": "RegexValidator.__call__",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r3",
+   "anchor": "URLValidator.ul",
+   "kind": "trail",
+   "line": 64
+  },
+  {
+   "id": "r4",
+   "anchor": "URLValidator.ipv4_re",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r5",
+   "anchor": "URLValidator.ipv6_re",
+   "kind": "trail",
+   "line": 68
+  },
+  {
+   "id": "r6",
+   "anchor": "URLValidator.hostname_re",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r7",
+   "anchor": "URLValidator.domain_re",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r18",
+   "anchor": "URLValidator.__call__#assign:scheme",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r19",
+   "anchor": "URLValidator.__call__#try",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r20",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r21",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/except:ValueError",
+   "kind": "trail",
+   "line": 118
+  },
+  {
+   "id": "r22",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/assign:netloc",
+   "kind": "trail",
+   "line": 121
+  },
+  {
+   "id": "r23",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/except:UnicodeError",
+   "kind": "trail",
+   "line": 122
+  },
+  {
+   "id": "r24",
+   "anchor": "URLValidator.__call__#try/else/assign:host_match",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r25",
+   "anchor": "URLValidator.__call__#if:len(urlsplit(value).hostname)>253",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r28",
+   "anchor": "EmailValidator.domain_regex#arg:r'((?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\\.)+)(?:[A-Z0-9-]{2,63}(?<!-))\\Z'",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r29",
+   "anchor": "EmailValidator.literal_regex#arg:r'\\[([A-F0-9:.]+)\\]\\Z'",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r30",
+   "anchor": "EmailValidator.__call__#if:domain_part not in self.domain_allowlist and not self.validate_domain_part(domain_part)/try",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r31",
+   "anchor": "validate_ipv4_address#try/else/if:any(octet != '0' and octet[0] == '0' for octet in value.split('.'))",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r32",
+   "anchor": "ip_address_validators",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r33",
+   "anchor": "DecimalValidator",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r34",
+   "anchor": "DecimalValidator.__call__#if:exponent>=0/assign:digits",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r35",
+   "anchor": "DecimalValidator.__call__#if:exponent>=0/else/if:abs(exponent)>len(digit_tuple)",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r36",
+   "anchor": "ProhibitNullCharactersValidator",
+   "kind": "doc",
+   "line": 528
+  }
+ ],
+ "unanchorable": [
+  {
+   "id": "r8",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); concatenated string pieces are not key/arg/item elements."
+  },
+  {
+   "id": "r9",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); no element anchor exists for a concatenation part."
+  },
+  {
+   "id": "r10",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); no element anchor exists for a concatenation part."
+  },
+  {
+   "id": "r11",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); no element anchor exists for a concatenation part."
+  },
+  {
+   "id": "r12",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); no element anchor exists for a concatenation part."
+  },
+  {
+   "id": "r13",
+   "reason": "Comment on a fragment of an implicit string concatenation (tld_re); no element anchor exists for a concatenation part."
+  },
+  {
+   "id": "r14",
+   "reason": "Comment on a fragment of the single concatenated string argument to _lazy_re_compile; concatenation parts are not addressable elements."
+  },
+  {
+   "id": "r15",
+   "reason": "Comment on a fragment of the single concatenated string argument to _lazy_re_compile; concatenation parts are not addressable elements."
+  },
+  {
+   "id": "r16",
+   "reason": "Comment on a fragment of the single concatenated string argument to _lazy_re_compile; concatenation parts are not addressable elements."
+  },
+  {
+   "id": "r17",
+   "reason": "Comment on a fragment of the single concatenated string argument to _lazy_re_compile; concatenation parts are not addressable elements."
+  },
+  {
+   "id": "r26",
+   "reason": "Comment on a fragment of the concatenated user_regex pattern argument; concatenation parts are not addressable elements."
+  },
+  {
+   "id": "r27",
+   "reason": "Comment on a fragment of the concatenated user_regex pattern argument; concatenation parts are not addressable elements."
+  }
+ ],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13576,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4534,
+  "thinking_tokens": 2621,
+  "opus_cost_usd": 0.25340149999999995,
+  "total_cost_usd": 0.26304849999999996,
+  "duration_ms": 47491,
+  "duration_api_ms": 48660,
+  "num_turns": 2
+ },
+ "wall_ms": 48352,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

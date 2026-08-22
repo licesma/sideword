@@ -1,0 +1,391 @@
+{
+ "blob_sha": "b8e0d62fd92cd2a2ed10615e39e9067f8f817077",
+ "path": "django/forms/formsets.py",
+ "repo": "django/django",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "TOTAL_FORM_COUNT",
+   "kind": "lead",
+   "line": 14
+  },
+  {
+   "id": "r2",
+   "anchor": "DEFAULT_MIN_NUM",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "DEFAULT_MAX_NUM",
+   "kind": "lead",
+   "line": 25
+  },
+  {
+   "id": "r4",
+   "anchor": "ManagementForm",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "ManagementForm.__init__#assign:self.base_fields[MIN_NUM_FORM_COUNT]",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r6",
+   "anchor": "ManagementForm.clean#call:cleaned_data.setdefault",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseFormSet",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseFormSet.__iter__",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseFormSet.__getitem__",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseFormSet.__bool__",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseFormSet.management_form",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseFormSet.total_form_count",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseFormSet.total_form_count#if:self.is_bound/return",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseFormSet.total_form_count#if:self.is_bound/else/if:initial_forms > self.max_num >= 0",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseFormSet.initial_form_count",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseFormSet.initial_form_count#if:self.is_bound/else/assign:initial_forms",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseFormSet.forms",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseFormSet.forms#return",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseFormSet.get_form_kwargs",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseFormSet._construct_form",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseFormSet._construct_form#assign:defaults/key:use_required_attribute",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseFormSet._construct_form#if:i >= self.initial_form_count() and i >= self.min_num",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseFormSet.initial_forms",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseFormSet.extra_forms",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseFormSet.cleaned_data",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseFormSet.deleted_forms",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseFormSet.deleted_forms#if:not hasattr(self, '_deleted_form_indexes')",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseFormSet.deleted_forms#if:not hasattr(self, '_deleted_form_indexes')/for:i, form in enumerate(self.forms)/if:i >= self.initial_form_count() and not form.has_changed()",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseFormSet.ordered_forms",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseFormSet.ordered_forms#if:not hasattr(self, '_ordering')",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseFormSet.ordered_forms#if:not hasattr(self, '_ordering')/for:i, form in enumerate(self.forms)/if:i >= self.initial_form_count() and not form.has_changed()",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseFormSet.ordered_forms#if:not hasattr(self, '_ordering')/for:i, form in enumerate(self.forms)/if:self.can_delete and self._should_delete_form(form)",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseFormSet.ordered_forms.compare_ordering_key",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseFormSet.ordered_forms.compare_ordering_key#if:k[1] is None/return",
+   "kind": "trail",
+   "line": 275
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseFormSet.ordered_forms#return",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseFormSet.non_form_errors",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseFormSet.errors",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseFormSet.total_error_count",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseFormSet._should_delete_form",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseFormSet.is_valid",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseFormSet.is_valid#expr:self.errors",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseFormSet.is_valid#assign:forms_valid",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseFormSet.full_clean",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseFormSet.full_clean#if:not self.is_bound",
+   "kind": "trail",
+   "line": 339
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseFormSet.full_clean#for:i, form in enumerate(self.forms)/if:not form.has_changed() and i >= self.initial_form_count()",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseFormSet.full_clean#for:i, form in enumerate(self.forms)/assign:form_errors",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseFormSet.full_clean#try/call:self.clean",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseFormSet.clean",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseFormSet.has_changed",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseFormSet.add_fields",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseFormSet.add_fields#if:self.can_order/if:index is not None and index < initial_form_count",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseFormSet.is_multipart",
+   "kind": "doc",
+   "line": 425
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseFormSet.media#if:self.forms",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseFormSet.as_table",
+   "kind": "doc",
+   "line": 444
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseFormSet.as_table#assign:forms",
+   "kind": "todo",
+   "line": 449
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseFormSet.as_p",
+   "kind": "doc",
+   "line": 452
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseFormSet.as_ul",
+   "kind": "doc",
+   "line": 457
+  },
+  {
+   "id": "r58",
+   "anchor": "formset_factory",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r59",
+   "anchor": "formset_factory#if:absolute_max is None",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r60",
+   "anchor": "all_valid",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r61",
+   "anchor": "all_valid#return",
+   "kind": "lead",
+   "line": 499
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14689,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5416,
+  "thinking_tokens": 2487,
+  "opus_cost_usd": 0.28658150000000004,
+  "total_cost_usd": 0.29699450000000005,
+  "duration_ms": 47369,
+  "duration_api_ms": 48860,
+  "num_turns": 2
+ },
+ "wall_ms": 48164,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

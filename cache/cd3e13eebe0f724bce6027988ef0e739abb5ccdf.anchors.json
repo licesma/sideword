@@ -1,0 +1,121 @@
+{
+ "blob_sha": "cd3e13eebe0f724bce6027988ef0e739abb5ccdf",
+ "path": "django/db/backends/mysql/introspection.py",
+ "repo": "django/django",
+ "records": 16,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseIntrospection.get_field_type#if:description.has_json_constraint",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseIntrospection.get_table_list",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseIntrospection.get_table_description",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseIntrospection.get_table_description#if:self.connection.mysql_is_mariadb and self.connection.features.can_introspect_json_field/call:cursor.execute",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseIntrospection.get_table_description#call:cursor.execute",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseIntrospection.get_table_description#call:cursor.execute",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseIntrospection.get_sequences#for:field_info in self.get_table_description(cursor, table_name)/if:'auto_increment' in field_info.extra/return",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseIntrospection.get_relations",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseIntrospection.get_key_columns",
+   "kind": "doc",
+   "line": 162
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseIntrospection.get_storage_engine",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseIntrospection.get_constraints",
+   "kind": "doc",
+   "line": 205
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseIntrospection.get_constraints#assign:name_query",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseIntrospection.get_constraints#if:self.connection.features.can_introspect_check_constraints",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseIntrospection.get_constraints#if:self.connection.features.can_introspect_check_constraints/for:constraint, check_clause in cursor.fetchall()/if:set(constraint_columns) == {constraint}",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseIntrospection.get_constraints#call:cursor.execute",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseIntrospection.get_constraints#for:constraint in constraints.values()",
+   "kind": "lead",
+   "line": 304
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9709,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1498,
+  "thinking_tokens": 533,
+  "opus_cost_usd": 0.1388315,
+  "total_cost_usd": 0.14500949999999999,
+  "duration_ms": 14071,
+  "duration_api_ms": 15391,
+  "num_turns": 2
+ },
+ "wall_ms": 15070,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

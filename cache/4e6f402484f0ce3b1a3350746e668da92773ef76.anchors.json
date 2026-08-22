@@ -1,0 +1,289 @@
+{
+ "blob_sha": "4e6f402484f0ce3b1a3350746e668da92773ef76",
+ "path": "astropy/io/misc/parquet.py",
+ "repo": "astropy/astropy",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:astropy.utils.exceptions",
+   "kind": "lead",
+   "line": 16
+  },
+  {
+   "id": "r4",
+   "anchor": "__all__",
+   "kind": "trail",
+   "line": 24
+  },
+  {
+   "id": "r5",
+   "anchor": "parquet_identify",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r6",
+   "anchor": "parquet_identify#if:fileobj is not None/try",
+   "kind": "trail",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "parquet_identify#if:fileobj is not None/try/assign:pos",
+   "kind": "trail",
+   "line": 46
+  },
+  {
+   "id": "r8",
+   "anchor": "parquet_identify#if:fileobj is not None/assign:signature",
+   "kind": "trail",
+   "line": 50
+  },
+  {
+   "id": "r9",
+   "anchor": "parquet_identify#if:fileobj is not None/call:fileobj.seek",
+   "kind": "trail",
+   "line": 51
+  },
+  {
+   "id": "r10",
+   "anchor": "read_table_parquet",
+   "kind": "doc",
+   "line": 60
+  },
+  {
+   "id": "r11",
+   "anchor": "read_table_parquet#if:not isinstance(input, (str, os.PathLike))/if:not hasattr(input, 'read')",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r12",
+   "anchor": "read_table_parquet#if:schema.metadata is not None",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r13",
+   "anchor": "read_table_parquet#assign:meta_dict",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r14",
+   "anchor": "read_table_parquet#assign:full_table_columns",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r15",
+   "anchor": "read_table_parquet#if:include_names is not None",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r16",
+   "anchor": "read_table_parquet#assign:use_names",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r17",
+   "anchor": "read_table_parquet#assign:names_to_read",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r18",
+   "anchor": "read_table_parquet#if:has_serialized_columns",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r19",
+   "anchor": "read_table_parquet#if:not schema_only",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r20",
+   "anchor": "read_table_parquet#if:not schema_only/assign:pa_table",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r21",
+   "anchor": "read_table_parquet#assign:dtype",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r22",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:schema.field(name).type not in (pa.string(), pa.binary())",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r23",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:schema.field(name).type not in (pa.string(), pa.binary())/call:dtype.append",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r24",
+   "anchor": "read_table_parquet#for:name in names_to_read/assign:md_name",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r25",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/assign:strlen",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r26",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/elif:schema_only",
+   "kind": "trail",
+   "line": 207
+  },
+  {
+   "id": "r27",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/elif:schema_only/assign:strlen",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r28",
+   "anchor": "read_table_parquet#assign:data",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r29",
+   "anchor": "read_table_parquet#if:not schema_only/for:name in names_to_read",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r30",
+   "anchor": "read_table_parquet#if:meta_hdr is not None/assign:header_cols",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r31",
+   "anchor": "read_table_parquet#assign:table",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r32",
+   "anchor": "write_table_parquet",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r33",
+   "anchor": "write_table_parquet#with:serialize_context_as('parquet')",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r34",
+   "anchor": "write_table_parquet#assign:meta_yaml",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r35",
+   "anchor": "write_table_parquet#for:name, col in encode_table.columns.items()/if:col.dtype.type is np.str_",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r36",
+   "anchor": "write_table_parquet#assign:metadata_encode",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r37",
+   "anchor": "write_table_parquet#assign:type_list",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r38",
+   "anchor": "write_table_parquet#if:os.path.exists(output)/if:overwrite/call:os.remove",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r39",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r40",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/assign:arrays",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r41",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/assign:pa_table",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r42",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/call:writer.write_table",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r43",
+   "anchor": "_get_names",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r44",
+   "anchor": "register_parquet",
+   "kind": "doc",
+   "line": 341
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11273,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4836,
+  "thinking_tokens": 2655,
+  "opus_cost_usd": 0.2379215,
+  "total_cost_usd": 0.2456135,
+  "duration_ms": 44779,
+  "duration_api_ms": 45973,
+  "num_turns": 2
+ },
+ "wall_ms": 45723,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

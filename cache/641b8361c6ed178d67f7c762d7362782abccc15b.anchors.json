@@ -1,0 +1,415 @@
+{
+ "blob_sha": "641b8361c6ed178d67f7c762d7362782abccc15b",
+ "path": "lib/matplotlib/sankey.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 65,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "RIGHT",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "DOWN",
+   "kind": "lead",
+   "line": 27
+  },
+  {
+   "id": "r4",
+   "anchor": "Sankey",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r5",
+   "anchor": "Sankey.__init__",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "Sankey.__init__#if:gap < 0",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r7",
+   "anchor": "Sankey.__init__#if:ax is None",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r8",
+   "anchor": "Sankey.ax",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r9",
+   "anchor": "Sankey.extent",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r10",
+   "anchor": "Sankey.__init__#if:len(kwargs)",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r11",
+   "anchor": "Sankey._arc",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r12",
+   "anchor": "Sankey._arc#assign:ARC_CODES",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r13",
+   "anchor": "Sankey._arc#assign:ARC_VERTICES",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r14",
+   "anchor": "Sankey._arc#assign:ARC_VERTICES/item:[0.00000000e+00, 1.00000000e+00]",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r15",
+   "anchor": "Sankey._arc#if:quadrant == 0 or quadrant == 2/else/assign:vertices",
+   "kind": "trail",
+   "line": 207
+  },
+  {
+   "id": "r16",
+   "anchor": "Sankey._arc#if:quadrant == 0 or quadrant == 2/elif:quadrant == 1 or quadrant == 3/if:cw",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r17",
+   "anchor": "Sankey._arc#if:quadrant == 0 or quadrant == 2/elif:quadrant == 1 or quadrant == 3/if:cw/assign:vertices",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r18",
+   "anchor": "Sankey._arc#if:quadrant > 1/assign:radius",
+   "kind": "trail",
+   "line": 218
+  },
+  {
+   "id": "r19",
+   "anchor": "Sankey._add_input",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r20",
+   "anchor": "Sankey._add_input#if:angle is None/else/assign:x, y",
+   "kind": "trail",
+   "line": 229
+  },
+  {
+   "id": "r21",
+   "anchor": "Sankey._add_input#if:angle is None/else/if:angle == RIGHT/else",
+   "kind": "trail",
+   "line": 239
+  },
+  {
+   "id": "r22",
+   "anchor": "Sankey._add_input#if:angle is None/else/if:angle == RIGHT/else/if:self.radius",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r23",
+   "anchor": "Sankey._add_output",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r24",
+   "anchor": "Sankey._add_output#if:angle is None/else/assign:x, y",
+   "kind": "trail",
+   "line": 283
+  },
+  {
+   "id": "r25",
+   "anchor": "Sankey._add_output#if:angle is None/else/if:angle == RIGHT/else",
+   "kind": "trail",
+   "line": 295
+  },
+  {
+   "id": "r26",
+   "anchor": "Sankey._add_output#if:angle is None/else/if:angle == RIGHT/else/if:self.radius",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r27",
+   "anchor": "Sankey._revert",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r28",
+   "anchor": "Sankey._revert#return",
+   "kind": "post",
+   "line": 342
+  },
+  {
+   "id": "r29",
+   "anchor": "Sankey.add",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r30",
+   "anchor": "Sankey.add#if:flows is None",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r31",
+   "anchor": "Sankey.add#assign:n",
+   "kind": "trail",
+   "line": 441
+  },
+  {
+   "id": "r32",
+   "anchor": "Sankey.add#if:rotation is None/else/assign:rotation",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r33",
+   "anchor": "Sankey.add#assign:are_inputs",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r34",
+   "anchor": "Sankey.add#assign:angles",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r35",
+   "anchor": "Sankey.add#for:i, (orient, is_input) in enumerate(zip(orientations, are_inputs))/if:orient == 1/if:is_input/elif:not is_input/assign:angles[i]",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r36",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r37",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else",
+   "kind": "trail",
+   "line": 546
+  },
+  {
+   "id": "r38",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else/for:i, (angle, is_input, flow) in enumerate(zip(angles, are_inputs, scaled_flows))",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r39",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else/for:i, (angle, is_input, flow) in enumerate(zip(angles, are_inputs, scaled_flows))/if:angle == DOWN and is_input/elif:angle == UP and not is_input/assign:urlength",
+   "kind": "trail",
+   "line": 562
+  },
+  {
+   "id": "r40",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else/for:i, (angle, is_input, flow) in enumerate(reversed(list(zip(angles, are_inputs, scaled_flows))))",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r41",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else/assign:has_left_input",
+   "kind": "lead",
+   "line": 575
+  },
+  {
+   "id": "r42",
+   "anchor": "Sankey.add#if:np.iterable(pathlengths)/else/assign:has_right_output",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r43",
+   "anchor": "Sankey.add#assign:urpath",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r44",
+   "anchor": "Sankey.add#assign:urpath/item:(Path.MOVETO, [(self.gap - trunklength / 2.0), gain / 2.0])",
+   "kind": "trail",
+   "line": 598
+  },
+  {
+   "id": "r45",
+   "anchor": "Sankey.add#assign:llpath/item:(Path.LINETO, [(trunklength / 2.0 - self.gap), loss / 2.0])",
+   "kind": "trail",
+   "line": 610
+  },
+  {
+   "id": "r46",
+   "anchor": "Sankey.add#assign:lrpath/item:(Path.LINETO, [(trunklength / 2.0 - self.gap), loss / 2.0])",
+   "kind": "trail",
+   "line": 622
+  },
+  {
+   "id": "r47",
+   "anchor": "Sankey.add#assign:ulpath/item:(Path.LINETO, [self.gap - trunklength / 2.0, gain / 2.0])",
+   "kind": "trail",
+   "line": 624
+  },
+  {
+   "id": "r48",
+   "anchor": "Sankey.add#assign:tips",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r49",
+   "anchor": "Sankey.add#for:i, (angle, is_input, spec) in enumerate(zip(angles, are_inputs, list(zip(scaled_flows, pathlengths))))",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r50",
+   "anchor": "Sankey.add#for:i, (angle, is_input, spec) in enumerate(reversed(list(zip(angles, are_inputs, list(zip(scaled_flows, pathlengths))))))",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r51",
+   "anchor": "Sankey.add#assign:has_left_input",
+   "kind": "lead",
+   "line": 651
+  },
+  {
+   "id": "r52",
+   "anchor": "Sankey.add#for:i, (angle, is_input, spec) in enumerate(reversed(list(zip(angles, are_inputs, list(zip(scaled_flows, pathlengths))))))/if:angle == RIGHT and is_input/if:not has_left_input/if:llpath[-1][1][0] > ulpath[-1][1][0]",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r53",
+   "anchor": "Sankey.add#assign:has_right_output",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r54",
+   "anchor": "Sankey.add#for:i, (angle, is_input, spec) in enumerate(zip(angles, are_inputs, list(zip(scaled_flows, pathlengths))))/if:angle == RIGHT and not is_input/if:not has_right_output/if:urpath[-1][1][0] < lrpath[-1][1][0]",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r55",
+   "anchor": "Sankey.add#if:not has_left_input",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r56",
+   "anchor": "Sankey.add#assign:path",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r57",
+   "anchor": "Sankey.add#assign:codes, vertices",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r58",
+   "anchor": "Sankey.add#if:prior is None/if:rotation != 0",
+   "kind": "trail",
+   "line": 702
+  },
+  {
+   "id": "r59",
+   "anchor": "Sankey.add#assign:texts",
+   "kind": "lead",
+   "line": 734
+  },
+  {
+   "id": "r60",
+   "anchor": "Sankey.add#for:number, angle, label, location in zip(flows, angles, labels, label_locations)",
+   "kind": "post",
+   "line": 735
+  },
+  {
+   "id": "r61",
+   "anchor": "Sankey.add#assign:self.extent",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r62",
+   "anchor": "Sankey.add#assign:self.extent",
+   "kind": "post",
+   "line": 752
+  },
+  {
+   "id": "r63",
+   "anchor": "Sankey.add#call:self.diagrams.append",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r64",
+   "anchor": "Sankey.add#return",
+   "kind": "lead",
+   "line": 773
+  },
+  {
+   "id": "r65",
+   "anchor": "Sankey.finish",
+   "kind": "doc",
+   "line": 775
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20491,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8722,
+  "thinking_tokens": 5189,
+  "opus_cost_usd": 0.4272515,
+  "total_cost_usd": 0.44253950000000003,
+  "duration_ms": 84587,
+  "duration_api_ms": 85806,
+  "num_turns": 2
+ },
+ "wall_ms": 85577,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

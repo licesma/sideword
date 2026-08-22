@@ -1,0 +1,685 @@
+{
+ "blob_sha": "3fadc2e3b59ad312e39f6e942a5c687a03f69053",
+ "path": "django/forms/models.py",
+ "repo": "django/django",
+ "records": 110,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "construct_instance",
+   "kind": "doc",
+   "line": 36
+  },
+  {
+   "id": "r3",
+   "anchor": "construct_instance#for:f in opts.fields/if:f.has_default() and form[f.name].field.widget.value_omitted_from_data(form.data, form.files, form.add_prefix(f.name))",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "construct_instance#for:f in opts.fields/if:isinstance(f, models.FileField)",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r5",
+   "anchor": "model_to_dict",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r6",
+   "anchor": "model_to_dict",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r7",
+   "anchor": "fields_for_model",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r8",
+   "anchor": "fields_for_model#import:django.db.models.fields",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r9",
+   "anchor": "ModelFormMetaclass.__new__#for:opt in ['fields', 'exclude', 'localized_fields']",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r10",
+   "anchor": "ModelFormMetaclass.__new__#if:opts.model/if:opts.fields is None and opts.exclude is None",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r11",
+   "anchor": "ModelFormMetaclass.__new__#if:opts.model/if:opts.fields==ALL_FIELDS/assign:opts.fields",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r12",
+   "anchor": "ModelFormMetaclass.__new__#if:opts.model/assign:none_model_fields",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r13",
+   "anchor": "ModelFormMetaclass.__new__#if:opts.model/call:fields.update",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseModelForm.instance",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseModelForm.__init__#if:initial is not None",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseModelForm._validate_unique",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseModelForm.__init__#for:field_name in self.fields",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseModelForm._get_validation_exclusions",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseModelForm._get_validation_exclusions#for:f in self.instance._meta.fields",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseModelForm._get_validation_exclusions#for:f in self.instance._meta.fields/if:field not in self.fields",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseModelForm._get_validation_exclusions#for:f in self.instance._meta.fields/if:field not in self.fields/elif:self._meta.fields and field not in self._meta.fields",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseModelForm._get_validation_exclusions#for:f in self.instance._meta.fields/if:field not in self.fields/elif:self._meta.fields and field not in self._meta.fields/elif:self._meta.exclude and field in self._meta.exclude/elif:field in self._errors.keys()",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseModelForm._get_validation_exclusions#for:f in self.instance._meta.fields/if:field not in self.fields/elif:self._meta.fields and field not in self._meta.fields/elif:self._meta.exclude and field in self._meta.exclude/elif:field in self._errors.keys()/else",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseModelForm._update_errors#assign:opts",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseModelForm._update_errors#if:hasattr(errors, 'error_dict')",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseModelForm._post_clean#for:name, field in self.fields.items()",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseModelForm._post_clean#if:self._validate_unique",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseModelForm.validate_unique",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseModelForm._save_m2m",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseModelForm._save_m2m#for:f in chain(opts.many_to_many, opts.private_fields)",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseModelForm.save",
+   "kind": "doc",
+   "line": 438
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseModelForm.save#if:commit/call:self.instance.save",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseModelForm.save_m2m",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r34",
+   "anchor": "modelform_factory",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r35",
+   "anchor": "modelform_factory#assign:attrs",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r36",
+   "anchor": "modelform_factory#assign:attrs",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r37",
+   "anchor": "modelform_factory#assign:parent",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r38",
+   "anchor": "modelform_factory#assign:class_name",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r39",
+   "anchor": "modelform_factory#assign:form_class_attrs",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r40",
+   "anchor": "modelform_factory#return",
+   "kind": "lead",
+   "line": 548
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseModelFormSet",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseModelFormSet",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseModelFormSet.unique_fields",
+   "kind": "lead",
+   "line": 560
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseModelFormSet.initial_form_count",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseModelFormSet._get_to_python",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseModelFormSet._construct_form#if:i >= self.initial_form_count() and self.initial_extra/try",
+   "kind": "lead",
+   "line": 602
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseModelFormSet.get_queryset#if:not hasattr(self, '_queryset')/if:not qs.ordered",
+   "kind": "lead",
+   "line": 618
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseModelFormSet._queryset",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseModelFormSet.save_new",
+   "kind": "doc",
+   "line": 627
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseModelFormSet.save_existing",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseModelFormSet.delete_existing",
+   "kind": "doc",
+   "line": 635
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseModelFormSet.save",
+   "kind": "doc",
+   "line": 640
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseModelFormSet.validate_unique#assign:all_unique_checks",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks",
+   "kind": "lead",
+   "line": 672
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/assign:row_data",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/assign:row_data",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/if:row_data and None not in row_data/if:row_data in seen_data",
+   "kind": "lead",
+   "line": 685
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/if:row_data and None not in row_data/if:row_data in seen_data/call:errors.append",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/if:row_data and None not in row_data/if:row_data in seen_data/for:field in unique_check",
+   "kind": "lead",
+   "line": 691
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseModelFormSet.validate_unique#for:uclass, unique_check in all_unique_checks/for:form in valid_forms/if:row_data and None not in row_data/call:seen_data.add",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None",
+   "kind": "lead",
+   "line": 702
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/if:lookup=='date'",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/if:lookup=='date'/else",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/if:data in seen_data",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/if:data in seen_data/call:errors.append",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/if:data in seen_data/del:form.cleaned_data[field]",
+   "kind": "lead",
+   "line": 720
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseModelFormSet.validate_unique#for:date_check in all_date_checks/for:form in valid_forms/if:form.cleaned_data and form.cleaned_data[field] is not None and form.cleaned_data[unique_for] is not None/call:seen_data.add",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseModelFormSet.save_existing_objects#for:form in self.initial_forms/if:form in forms_to_delete/if:obj.pk is None",
+   "kind": "lead",
+   "line": 764
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseModelFormSet.save_new_objects#for:form in self.extra_forms/if:self.can_delete and self._should_delete_form(form)",
+   "kind": "lead",
+   "line": 782
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseModelFormSet.add_fields",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseModelFormSet.add_fields.pk_is_not_editable",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseModelFormSet.add_fields#if:pk_is_not_editable(pk) or pk.name not in form.fields/if:form.is_bound/assign:pk_value",
+   "kind": "lead",
+   "line": 811
+  },
+  {
+   "id": "r74",
+   "anchor": "modelformset_factory",
+   "kind": "doc",
+   "line": 833
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseInlineFormSet",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseInlineFormSet",
+   "kind": "doc",
+   "line": 864
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseInlineFormSet.__init__#if:self.form._meta.fields and self.fk.name not in self.form._meta.fields",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseInlineFormSet._construct_form#if:self.save_as_new/assign:form.data[form.add_prefix(self._pk_field.name)]",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseInlineFormSet._construct_form#if:self.save_as_new/assign:form.data[form.add_prefix(self.fk.name)]",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseInlineFormSet._construct_form#assign:fk_value",
+   "kind": "lead",
+   "line": 906
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseInlineFormSet.save_new#call:setattr",
+   "kind": "lead",
+   "line": 921
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseInlineFormSet.save_new#assign:obj",
+   "kind": "lead",
+   "line": 924
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseInlineFormSet.save_new#if:commit and hasattr(form, 'save_m2m')",
+   "kind": "lead",
+   "line": 930
+  },
+  {
+   "id": "r84",
+   "anchor": "BaseInlineFormSet.add_fields#if:self._pk_field==self.fk/else/assign:name",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r85",
+   "anchor": "BaseInlineFormSet.add_fields#if:self.instance._state.adding",
+   "kind": "lead",
+   "line": 951
+  },
+  {
+   "id": "r86",
+   "anchor": "_get_foreign_key",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r87",
+   "anchor": "_get_foreign_key#import:django.db.models",
+   "kind": "lead",
+   "line": 975
+  },
+  {
+   "id": "r88",
+   "anchor": "_get_foreign_key#if:fk_name/else/assign:fks_to_parent",
+   "kind": "lead",
+   "line": 993
+  },
+  {
+   "id": "r89",
+   "anchor": "inlineformset_factory",
+   "kind": "doc",
+   "line": 1021
+  },
+  {
+   "id": "r90",
+   "anchor": "inlineformset_factory#if:fk.unique",
+   "kind": "lead",
+   "line": 1036
+  },
+  {
+   "id": "r91",
+   "anchor": "InlineForeignKeyField",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r92",
+   "anchor": "InlineForeignKeyField",
+   "kind": "doc",
+   "line": 1065
+  },
+  {
+   "id": "r93",
+   "anchor": "InlineForeignKeyField.clean#if:value in self.empty_values/return",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r94",
+   "anchor": "InlineForeignKeyField.clean#if:self.to_field",
+   "kind": "lead",
+   "line": 1094
+  },
+  {
+   "id": "r95",
+   "anchor": "ModelChoiceIterator.__iter__#if:not queryset._prefetch_related_lookups",
+   "kind": "lead",
+   "line": 1116
+  },
+  {
+   "id": "r96",
+   "anchor": "ModelChoiceField",
+   "kind": "doc",
+   "line": 1128
+  },
+  {
+   "id": "r97",
+   "anchor": "ModelChoiceField.default_error_messages",
+   "kind": "lead",
+   "line": 1132
+  },
+  {
+   "id": "r98",
+   "anchor": "ModelChoiceField.__init__#call:Field.__init__",
+   "kind": "lead",
+   "line": 1149
+  },
+  {
+   "id": "r99",
+   "anchor": "ModelChoiceField.limit_choices_to",
+   "kind": "trail",
+   "line": 1152
+  },
+  {
+   "id": "r100",
+   "anchor": "ModelChoiceField.get_limit_choices_to",
+   "kind": "doc",
+   "line": 1155
+  },
+  {
+   "id": "r101",
+   "anchor": "ModelChoiceField.__deepcopy__#assign:result.queryset",
+   "kind": "lead",
+   "line": 1169
+  },
+  {
+   "id": "r102",
+   "anchor": "ModelChoiceField.label_from_instance",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r103",
+   "anchor": "ModelChoiceField.label_from_instance",
+   "kind": "doc",
+   "line": 1183
+  },
+  {
+   "id": "r104",
+   "anchor": "ModelChoiceField._get_choices#if:hasattr(self, '_choices')",
+   "kind": "lead",
+   "line": 1194
+  },
+  {
+   "id": "r105",
+   "anchor": "ModelChoiceField._get_choices#return",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r106",
+   "anchor": "ModelMultipleChoiceField",
+   "kind": "doc",
+   "line": 1235
+  },
+  {
+   "id": "r107",
+   "anchor": "ModelMultipleChoiceField.clean#call:self.run_validators",
+   "kind": "lead",
+   "line": 1269
+  },
+  {
+   "id": "r108",
+   "anchor": "ModelMultipleChoiceField._check_values",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r109",
+   "anchor": "ModelMultipleChoiceField._check_values#try",
+   "kind": "lead",
+   "line": 1281
+  },
+  {
+   "id": "r110",
+   "anchor": "ModelMultipleChoiceField._check_values#try/except:TypeError/raise:ValidationError",
+   "kind": "lead",
+   "line": 1285
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 31911,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13364,
+  "thinking_tokens": 7042,
+  "opus_cost_usd": 0.6575015,
+  "total_cost_usd": 0.6824895,
+  "duration_ms": 115919,
+  "duration_api_ms": 117029,
+  "num_turns": 2
+ },
+ "wall_ms": 117108,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

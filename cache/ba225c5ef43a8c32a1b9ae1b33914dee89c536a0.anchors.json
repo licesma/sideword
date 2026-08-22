@@ -1,0 +1,163 @@
+{
+ "blob_sha": "ba225c5ef43a8c32a1b9ae1b33914dee89c536a0",
+ "path": "requests/packages/chardet/hebrewprober.py",
+ "repo": "psf/requests",
+ "records": 23,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:.charsetprober",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:.compat",
+   "kind": "post",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:.compat",
+   "kind": "post",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "FINAL_KAF",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r5",
+   "anchor": "MIN_FINAL_CHAR_DISTANCE",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r6",
+   "anchor": "MIN_MODEL_DISTANCE",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r7",
+   "anchor": "HebrewProber._mPrev",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r8",
+   "anchor": "HebrewProber._mBeforePrev",
+   "kind": "post",
+   "line": 169
+  },
+  {
+   "id": "r9",
+   "anchor": "HebrewProber.is_non_final#return",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "HebrewProber.feed#if:self.get_state()==eNotMe",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r11",
+   "anchor": "HebrewProber.feed#if:self.get_state()==eNotMe/return",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r12",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/if:self._mBeforePrev!=' '",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r13",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/if:self._mBeforePrev!=' '/if:self.is_final(self._mPrev)",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r14",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/if:self._mBeforePrev!=' '/if:self.is_final(self._mPrev)/assign:self._mFinalCharLogicalScore",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r15",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/if:self._mBeforePrev!=' '/if:self.is_final(self._mPrev)/elif:self.is_non_final(self._mPrev)/assign:self._mFinalCharVisualScore",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r16",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/else/if:(self._mBeforePrev==' ') and (self.is_final(self._mPrev)) and (cur!=' ')",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r17",
+   "anchor": "HebrewProber.feed#for:cur in aBuf/if:cur==' '/else/if:(self._mBeforePrev==' ') and (self.is_final(self._mPrev)) and (cur!=' ')/assign:self._mFinalCharVisualScore",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r18",
+   "anchor": "HebrewProber.feed#return",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r19",
+   "anchor": "HebrewProber.get_charset_name#assign:finalsub",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r20",
+   "anchor": "HebrewProber.get_charset_name#assign:modelsub",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r21",
+   "anchor": "HebrewProber.get_charset_name#if:finalsub<0.0",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r22",
+   "anchor": "HebrewProber.get_charset_name#return",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r23",
+   "anchor": "HebrewProber.get_state#if:(self._mLogicalProber.get_state()==eNotMe) and (self._mVisualProber.get_state()==eNotMe)",
+   "kind": "lead",
+   "line": 280
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13218,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3135,
+  "thinking_tokens": 1738,
+  "opus_cost_usd": 0.2148465,
+  "total_cost_usd": 0.22365849999999998,
+  "duration_ms": 30810,
+  "duration_api_ms": 32021,
+  "num_turns": 2
+ },
+ "wall_ms": 31744,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

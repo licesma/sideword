@@ -1,0 +1,565 @@
+{
+ "blob_sha": "e1bdb22b365f0bb253b7044b02d2d6238d474c84",
+ "path": "astropy/coordinates/transformations.py",
+ "repo": "astropy/astropy",
+ "records": 90,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "frame_attrs_from_set",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r4",
+   "anchor": "frame_comps_from_set",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r5",
+   "anchor": "TransformGraph",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r6",
+   "anchor": "TransformGraph.__init__#call:self.invalidate_cache",
+   "kind": "trail",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "TransformGraph.frame_set",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "TransformGraph.frame_attributes",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r9",
+   "anchor": "TransformGraph.frame_component_names",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r10",
+   "anchor": "TransformGraph.invalidate_cache",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r11",
+   "anchor": "TransformGraph.add_transform",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r12",
+   "anchor": "TransformGraph.add_transform#assign:attrs",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r13",
+   "anchor": "TransformGraph.remove_transform",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r14",
+   "anchor": "TransformGraph.remove_transform#if:fromsys is None or tosys is None/for:a in self._graph",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r15",
+   "anchor": "TransformGraph.find_shortest_path",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r16",
+   "anchor": "TransformGraph.find_shortest_path#if:tosys is fromsys",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r17",
+   "anchor": "TransformGraph.find_shortest_path#if:tosys is fromsys/if:tosys not in self._graph[fromsys]/return",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r18",
+   "anchor": "TransformGraph.find_shortest_path#if:tosys in self._graph[fromsys]/assign:t",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r19",
+   "anchor": "TransformGraph.find_shortest_path#if:fromsys in self._shortestpaths",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r20",
+   "anchor": "TransformGraph.find_shortest_path#if:fromsys in self._shortestpaths/assign:fpaths",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r21",
+   "anchor": "TransformGraph.find_shortest_path#assign:nodes",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r22",
+   "anchor": "TransformGraph.find_shortest_path#for:a in self._graph",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r23",
+   "anchor": "TransformGraph.find_shortest_path#if:fromsys not in nodes or tosys not in nodes/return",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r24",
+   "anchor": "TransformGraph.find_shortest_path#for:a in self._graph",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r25",
+   "anchor": "TransformGraph.find_shortest_path#assign:q",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r26",
+   "anchor": "TransformGraph.find_shortest_path#assign:result",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r27",
+   "anchor": "TransformGraph.find_shortest_path#while:len(q)>0",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r28",
+   "anchor": "TransformGraph.find_shortest_path#while:len(q)>0/if:d==inf/assign:result[n]",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r29",
+   "anchor": "TransformGraph.find_shortest_path#while:len(q)>0/if:d==inf/else/if:n not in edgeweights/continue",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r30",
+   "anchor": "TransformGraph.find_shortest_path#while:len(q)>0/if:d==inf/else/for:n2 in edgeweights[n]/if:n2 not in result",
+   "kind": "trail",
+   "line": 352
+  },
+  {
+   "id": "r31",
+   "anchor": "TransformGraph.find_shortest_path#while:len(q)>0/if:d==inf/else/for:n2 in edgeweights[n]/if:n2 not in result/for:i in range(len(q))",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r32",
+   "anchor": "TransformGraph.find_shortest_path#assign:self._shortestpaths[fromsys]",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r33",
+   "anchor": "TransformGraph.get_transform",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r34",
+   "anchor": "TransformGraph.get_transform#for:p in path[1:]",
+   "kind": "trail",
+   "line": 410
+  },
+  {
+   "id": "r35",
+   "anchor": "TransformGraph.lookup_name",
+   "kind": "doc",
+   "line": 421
+  },
+  {
+   "id": "r36",
+   "anchor": "TransformGraph.get_names",
+   "kind": "doc",
+   "line": 439
+  },
+  {
+   "id": "r37",
+   "anchor": "TransformGraph.to_dot_graph",
+   "kind": "doc",
+   "line": 451
+  },
+  {
+   "id": "r38",
+   "anchor": "TransformGraph.to_dot_graph#for:a in self._graph",
+   "kind": "lead",
+   "line": 492
+  },
+  {
+   "id": "r39",
+   "anchor": "TransformGraph.to_dot_graph#for:a in self._graph",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r40",
+   "anchor": "TransformGraph.to_dot_graph#assign:lines",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r41",
+   "anchor": "TransformGraph.to_networkx_graph",
+   "kind": "doc",
+   "line": 560
+  },
+  {
+   "id": "r42",
+   "anchor": "TransformGraph.to_networkx_graph#for:a in self._graph",
+   "kind": "lead",
+   "line": 578
+  },
+  {
+   "id": "r43",
+   "anchor": "TransformGraph.to_networkx_graph#for:a in self._graph",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r44",
+   "anchor": "TransformGraph.transform",
+   "kind": "doc",
+   "line": 596
+  },
+  {
+   "id": "r45",
+   "anchor": "TransformGraph.transform.deco#call:transcls",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r46",
+   "anchor": "CoordinateTransform",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r47",
+   "anchor": "CoordinateTransform",
+   "kind": "doc",
+   "line": 665
+  },
+  {
+   "id": "r48",
+   "anchor": "CoordinateTransform.__init__#if:register_graph/call:self.register",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r49",
+   "anchor": "CoordinateTransform.__init__#if:hasattr(fromsys, 'get_frame_attr_names') and hasattr(tosys, 'get_frame_attr_names')/for:from_nm in fromsys.get_frame_attr_names()",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r50",
+   "anchor": "CoordinateTransform.register",
+   "kind": "doc",
+   "line": 712
+  },
+  {
+   "id": "r51",
+   "anchor": "CoordinateTransform.unregister",
+   "kind": "doc",
+   "line": 724
+  },
+  {
+   "id": "r52",
+   "anchor": "CoordinateTransform.__call__",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r53",
+   "anchor": "FunctionTransform",
+   "kind": "doc",
+   "line": 765
+  },
+  {
+   "id": "r54",
+   "anchor": "FunctionTransformWithFiniteDifference",
+   "kind": "doc",
+   "line": 826
+  },
+  {
+   "id": "r55",
+   "anchor": "FunctionTransformWithFiniteDifference.__call__#if:fromcoord.data.differentials/if:callable(self.finite_difference_dt)",
+   "kind": "lead",
+   "line": 905
+  },
+  {
+   "id": "r56",
+   "anchor": "FunctionTransformWithFiniteDifference.__call__#if:fromcoord.data.differentials/assign:fromcoord_cart",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r57",
+   "anchor": "FunctionTransformWithFiniteDifference.__call__#if:fromcoord.data.differentials/assign:attrname",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseAffineTransform",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseAffineTransform._apply_transform#assign:_unit_diffs",
+   "kind": "lead",
+   "line": 1006
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(data, UnitSphericalRepresentation) and offset is not None",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(data, UnitSphericalRepresentation) and offset is not None/elif:has_velocity and (unit_vel_diff or rad_vel_diff) and offset is not None and 's' in offset.differentials/raise:TypeError",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(data, UnitSphericalRepresentation) and offset is not None/elif:has_velocity and (unit_vel_diff or rad_vel_diff) and offset is not None and 's' in offset.differentials/elif:len(data.differentials)>1/raise:ValueError",
+   "kind": "lead",
+   "line": 1034
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and isinstance(data, UnitSphericalRepresentation) and not unit_vel_diff and not rad_vel_diff",
+   "kind": "lead",
+   "line": 1045
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and isinstance(data, UnitSphericalRepresentation) and not unit_vel_diff and not rad_vel_diff/assign:unit_diff",
+   "kind": "lead",
+   "line": 1048
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and isinstance(data, UnitSphericalRepresentation) and not unit_vel_diff and not rad_vel_diff/assign:data",
+   "kind": "trail",
+   "line": 1050
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and isinstance(data, UnitSphericalRepresentation) and not unit_vel_diff and not rad_vel_diff/elif:rad_vel_diff",
+   "kind": "lead",
+   "line": 1056
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseAffineTransform._apply_transform#assign:rep",
+   "kind": "lead",
+   "line": 1061
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseAffineTransform._apply_transform#if:matrix is not None",
+   "kind": "lead",
+   "line": 1068
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseAffineTransform._apply_transform#if:matrix is not None/assign:rep",
+   "kind": "lead",
+   "line": 1070
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseAffineTransform._apply_transform#if:offset is not None",
+   "kind": "todo",
+   "line": 1074
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and not rad_vel_diff",
+   "kind": "lead",
+   "line": 1082
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and not rad_vel_diff/assign:veldiff",
+   "kind": "trail",
+   "line": 1083
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(fromcoord.data, UnitSphericalRepresentation)/if:has_velocity and not unit_vel_diff and not rad_vel_diff",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(fromcoord.data, UnitSphericalRepresentation)/if:has_velocity and not unit_vel_diff and not rad_vel_diff/assign:newdiff",
+   "kind": "lead",
+   "line": 1099
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(fromcoord.data, UnitSphericalRepresentation)/assign:newrep",
+   "kind": "trail",
+   "line": 1117
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseAffineTransform._apply_transform#if:isinstance(fromcoord.data, UnitSphericalRepresentation)/elif:has_velocity and unit_vel_diff/assign:diff_cls",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseAffineTransform._apply_transform#if:has_velocity and rad_vel_diff",
+   "kind": "lead",
+   "line": 1139
+  },
+  {
+   "id": "r78",
+   "anchor": "AffineTransform",
+   "kind": "doc",
+   "line": 1147
+  },
+  {
+   "id": "r79",
+   "anchor": "StaticMatrixTransform",
+   "kind": "doc",
+   "line": 1200
+  },
+  {
+   "id": "r80",
+   "anchor": "DynamicMatrixTransform",
+   "kind": "doc",
+   "line": 1249
+  },
+  {
+   "id": "r81",
+   "anchor": "CompositeTransform",
+   "kind": "doc",
+   "line": 1299
+  },
+  {
+   "id": "r82",
+   "anchor": "CompositeTransform._combine_statics",
+   "kind": "doc",
+   "line": 1339
+  },
+  {
+   "id": "r83",
+   "anchor": "CompositeTransform.__call__#for:t in self.transforms/assign:frattrs",
+   "kind": "lead",
+   "line": 1366
+  },
+  {
+   "id": "r84",
+   "anchor": "CompositeTransform.__call__#return",
+   "kind": "lead",
+   "line": 1380
+  },
+  {
+   "id": "r85",
+   "anchor": "trans_to_color",
+   "kind": "lead",
+   "line": 1384
+  },
+  {
+   "id": "r86",
+   "anchor": "<module>#assign:trans_to_color[AffineTransform]",
+   "kind": "trail",
+   "line": 1385
+  },
+  {
+   "id": "r87",
+   "anchor": "<module>#assign:trans_to_color[FunctionTransform]",
+   "kind": "trail",
+   "line": 1386
+  },
+  {
+   "id": "r88",
+   "anchor": "<module>#assign:trans_to_color[FunctionTransformWithFiniteDifference]",
+   "kind": "trail",
+   "line": 1387
+  },
+  {
+   "id": "r89",
+   "anchor": "<module>#assign:trans_to_color[StaticMatrixTransform]",
+   "kind": "trail",
+   "line": 1388
+  },
+  {
+   "id": "r90",
+   "anchor": "<module>#assign:trans_to_color[DynamicMatrixTransform]",
+   "kind": "trail",
+   "line": 1389
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30877,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9049,
+  "thinking_tokens": 4013,
+  "opus_cost_usd": 0.5392865,
+  "total_cost_usd": 0.5629745,
+  "duration_ms": 77740,
+  "duration_api_ms": 78882,
+  "num_turns": 2
+ },
+ "wall_ms": 78607,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,367 @@
+{
+ "blob_sha": "a6bed40816445ebba008513b2371da69550573d7",
+ "path": "xarray/core/missing.py",
+ "repo": "pydata/xarray",
+ "records": 57,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_get_nan_block_lengths",
+   "kind": "doc",
+   "line": 19
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_nan_block_lengths#assign:index",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_nan_block_lengths#assign:arange",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseInterpolator",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "NumpyInterpolator",
+   "kind": "doc",
+   "line": 64
+  },
+  {
+   "id": "r6",
+   "anchor": "ScipyInterpolator",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r7",
+   "anchor": "SplineInterpolator",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r8",
+   "anchor": "_apply_over_vars_with_dim",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r9",
+   "anchor": "get_clean_interp_index",
+   "kind": "doc",
+   "line": 211
+  },
+  {
+   "id": "r10",
+   "anchor": "get_clean_interp_index#import:xarray.coding.cftimeindex",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r11",
+   "anchor": "get_clean_interp_index#if:use_coordinate is True/else",
+   "kind": "trail",
+   "line": 250
+  },
+  {
+   "id": "r12",
+   "anchor": "get_clean_interp_index#if:isinstance(index, pd.MultiIndex)",
+   "kind": "todo",
+   "line": 261
+  },
+  {
+   "id": "r13",
+   "anchor": "get_clean_interp_index#if:isinstance(index, (CFTimeIndex, pd.DatetimeIndex))",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r14",
+   "anchor": "get_clean_interp_index#try",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r15",
+   "anchor": "get_clean_interp_index#try/except:(TypeError, ValueError)/raise:TypeError",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r16",
+   "anchor": "interp_na",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r17",
+   "anchor": "interp_na#if:max_gap is not None/if:dim in self.indexes and isinstance(self.indexes[dim], (pd.DatetimeIndex, CFTimeIndex)) and use_coordinate/assign:max_gap",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r18",
+   "anchor": "interp_na#assign:index",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r19",
+   "anchor": "func_interpolate_na",
+   "kind": "doc",
+   "line": 372
+  },
+  {
+   "id": "r20",
+   "anchor": "func_interpolate_na#assign:out",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r21",
+   "anchor": "func_interpolate_na#assign:n_nans",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r22",
+   "anchor": "_bfill",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r23",
+   "anchor": "_bfill#assign:arr",
+   "kind": "lead",
+   "line": 399
+  },
+  {
+   "id": "r24",
+   "anchor": "_bfill#return",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r25",
+   "anchor": "ffill",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r26",
+   "anchor": "ffill#assign:_limit",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r27",
+   "anchor": "bfill",
+   "kind": "doc",
+   "line": 424
+  },
+  {
+   "id": "r28",
+   "anchor": "bfill#assign:_limit",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r29",
+   "anchor": "_get_interpolator",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r30",
+   "anchor": "_get_interpolator#if:method == \"linear\" and not kwargs.get(\"fill_value\", None) == \"extrapolate\" and not vectorizeable_only",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r31",
+   "anchor": "_get_interpolator_nd",
+   "kind": "doc",
+   "line": 509
+  },
+  {
+   "id": "r32",
+   "anchor": "_get_valid_fill_mask",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r33",
+   "anchor": "_get_valid_fill_mask#assign:new_dim",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r34",
+   "anchor": "_localize",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r35",
+   "anchor": "_floatize_x",
+   "kind": "doc",
+   "line": 562
+  },
+  {
+   "id": "r36",
+   "anchor": "_floatize_x#for:i in range(len(x))/if:_contains_datetime_like_objects(x[i])/assign:xmin",
+   "kind": "lead",
+   "line": 576
+  },
+  {
+   "id": "r37",
+   "anchor": "interp",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r38",
+   "anchor": "interp#assign:kwargs[\"bounds_error\"]",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r39",
+   "anchor": "interp#for:indexes_coords in decompose_interp(indexes_coords)",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r40",
+   "anchor": "interp#for:indexes_coords in decompose_interp(indexes_coords)/if:method in [\"linear\", \"nearest\"]",
+   "kind": "lead",
+   "line": 620
+  },
+  {
+   "id": "r41",
+   "anchor": "interp#for:indexes_coords in decompose_interp(indexes_coords)/assign:dims",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r42",
+   "anchor": "interp#for:indexes_coords in decompose_interp(indexes_coords)/assign:broadcast_dims",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r43",
+   "anchor": "interp#for:indexes_coords in decompose_interp(indexes_coords)/assign:out_dims",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r44",
+   "anchor": "interp_func",
+   "kind": "doc",
+   "line": 649
+  },
+  {
+   "id": "r45",
+   "anchor": "interp_func#if:isinstance(var, dask_array_type)/assign:x_arginds",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r46",
+   "anchor": "interp_func#if:isinstance(var, dask_array_type)/assign:localize",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r47",
+   "anchor": "_interp1d#assign:x, new_x",
+   "kind": "lead",
+   "line": 745
+  },
+  {
+   "id": "r48",
+   "anchor": "_interpnd#assign:var",
+   "kind": "lead",
+   "line": 761
+  },
+  {
+   "id": "r49",
+   "anchor": "_interpnd#assign:xi",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r50",
+   "anchor": "_interpnd#assign:rslt",
+   "kind": "lead",
+   "line": 766
+  },
+  {
+   "id": "r51",
+   "anchor": "_dask_aware_interpnd",
+   "kind": "doc",
+   "line": 770
+  },
+  {
+   "id": "r52",
+   "anchor": "_dask_aware_interpnd#assign:x",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r53",
+   "anchor": "_dask_aware_interpnd#if:localize/assign:var",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r54",
+   "anchor": "_dask_aware_interpnd#if:localize/assign:var, indexes_coords",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r55",
+   "anchor": "_dask_aware_interpnd#if:localize/assign:var",
+   "kind": "lead",
+   "line": 797
+  },
+  {
+   "id": "r56",
+   "anchor": "decompose_interp",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r57",
+   "anchor": "decompose_interp#for:i, index_coords in enumerate(indexes_coords.items())/if:not s_partial_dest_dims.intersection(s_other_dims)/yield",
+   "kind": "lead",
+   "line": 826
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17823,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5706,
+  "thinking_tokens": 3084,
+  "opus_cost_usd": 0.3251715,
+  "total_cost_usd": 0.3382275,
+  "duration_ms": 54238,
+  "duration_api_ms": 55522,
+  "num_turns": 2
+ },
+ "wall_ms": 55166,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

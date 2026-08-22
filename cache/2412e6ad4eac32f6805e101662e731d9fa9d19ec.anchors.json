@@ -1,0 +1,1243 @@
+{
+ "blob_sha": "2412e6ad4eac32f6805e101662e731d9fa9d19ec",
+ "path": "django/db/models/sql/query.py",
+ "repo": "django/django",
+ "records": 203,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "RawQuery",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r3",
+   "anchor": "RawQuery.__init__#assign:self.low_mark, self.high_mark",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r4",
+   "anchor": "RawQuery.__init__#assign:self.low_mark, self.high_mark",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r5",
+   "anchor": "RawQuery.__iter__#call:self._execute_query",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r6",
+   "anchor": "RawQuery.__iter__#if:not connections[self.using].features.can_use_chunked_reads/assign:result",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r7",
+   "anchor": "RawQuery._execute_query#assign:params_type",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r8",
+   "anchor": "Query",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r9",
+   "anchor": "Query.alias_map",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r10",
+   "anchor": "Query.alias_cols",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "Query.external_aliases",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r12",
+   "anchor": "Query.table_map",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r13",
+   "anchor": "Query.select",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r14",
+   "anchor": "Query.group_by",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r15",
+   "anchor": "Query.__init__#assign:self.low_mark, self.high_mark",
+   "kind": "trail",
+   "line": 188
+  },
+  {
+   "id": "r16",
+   "anchor": "Query.max_depth",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r17",
+   "anchor": "Query.values_select",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r18",
+   "anchor": "Query.annotations",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r19",
+   "anchor": "Query.annotations",
+   "kind": "trail",
+   "line": 206
+  },
+  {
+   "id": "r20",
+   "anchor": "Query.combinator",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r21",
+   "anchor": "Query.extra",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r22",
+   "anchor": "Query.extra",
+   "kind": "trail",
+   "line": 217
+  },
+  {
+   "id": "r23",
+   "anchor": "Query.deferred_loading",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r24",
+   "anchor": "Query.__str__",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r25",
+   "anchor": "Query.sql_with_params",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r26",
+   "anchor": "Query.__deepcopy__",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r27",
+   "anchor": "Query.get_meta",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r28",
+   "anchor": "Query.clone",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r29",
+   "anchor": "Query.clone#assign:obj.__dict__",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r30",
+   "anchor": "Query.clone#assign:obj.alias_refcount",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r31",
+   "anchor": "Query.clone#assign:obj._annotation_select_cache",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r32",
+   "anchor": "Query.clone#if:self.select_related is not False/assign:obj.select_related",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r33",
+   "anchor": "Query.clone#try",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r34",
+   "anchor": "Query.chain",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r35",
+   "anchor": "Query.rewrite_cols#assign:orig_exprs",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r36",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)",
+   "kind": "todo",
+   "line": 385
+  },
+  {
+   "id": "r37",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/call:new_exprs.append",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r38",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/elif:isinstance(expr, (WhereNode, Lookup))/assign:new_expr, col_cnt",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r39",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/else/for:col_alias, selected_annotation in self.annotation_select.items()",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r40",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/else/for:col_alias, selected_annotation in self.annotation_select.items()/else/if:isinstance(expr, Col) or (expr.contains_aggregate and not expr.is_summary)",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r41",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/else/for:col_alias, selected_annotation in self.annotation_select.items()/else/if:isinstance(expr, Col) or (expr.contains_aggregate and not expr.is_summary)/assign:col_cnt",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r42",
+   "anchor": "Query.rewrite_cols#for:expr in orig_exprs/if:isinstance(expr, Ref)/else/for:col_alias, selected_annotation in self.annotation_select.items()/else/if:isinstance(expr, Col) or (expr.contains_aggregate and not expr.is_summary)/else/assign:new_expr, col_cnt",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r43",
+   "anchor": "Query.get_aggregation",
+   "kind": "doc",
+   "line": 419
+  },
+  {
+   "id": "r44",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator",
+   "kind": "lead",
+   "line": 441
+  },
+  {
+   "id": "r45",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator/call:inner_query.clear_ordering",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r46",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator/if:not inner_query.distinct/assign:has_existing_aggregate_annotations",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r47",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator/assign:col_cnt",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r48",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator/for:alias, expression in list(inner_query.annotation_select.items())/call:inner_query.set_annotation_mask",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r49",
+   "anchor": "Query.get_aggregation#if:isinstance(self.group_by, tuple) or self.is_sliced or existing_annotations or self.distinct or self.combinator/if:inner_query.select == () and not inner_query.default_cols and not inner_query.annotation_select_mask/assign:inner_query.select",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r50",
+   "anchor": "Query.get_count",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r51",
+   "anchor": "Query.exists#if:not q.distinct/if:q.group_by is True/call:q.set_group_by",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r52",
+   "anchor": "Query.combine",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r53",
+   "anchor": "Query.combine#assign:change_map",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r54",
+   "anchor": "Query.combine#assign:reuse",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r55",
+   "anchor": "Query.combine#call:self.get_initial_alias",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r56",
+   "anchor": "Query.combine#assign:rhs_tables",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r57",
+   "anchor": "Query.combine#for:alias in rhs_tables/assign:join",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r58",
+   "anchor": "Query.combine#for:alias in rhs_tables/call:reuse.discard",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r59",
+   "anchor": "Query.combine#for:alias in rhs_tables/if:not rhs.alias_refcount[alias]/call:self.unref_alias",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r60",
+   "anchor": "Query.combine#assign:self.subq_aliases",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r61",
+   "anchor": "Query.combine#assign:w",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r62",
+   "anchor": "Query.combine#if:rhs.select",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r63",
+   "anchor": "Query.combine#if:connector == OR/if:self.extra and rhs.extra",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r64",
+   "anchor": "Query.combine#assign:self.order_by",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r65",
+   "anchor": "Query.deferred_to_data",
+   "kind": "doc",
+   "line": 666
+  },
+  {
+   "id": "r66",
+   "anchor": "Query.deferred_to_data#for:field_name in field_names/for:name in parts[:-1]/if:not is_reverse_o2o(source)",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r67",
+   "anchor": "Query.deferred_to_data#if:defer/assign:workset",
+   "kind": "lead",
+   "line": 720
+  },
+  {
+   "id": "r68",
+   "anchor": "Query.deferred_to_data#if:defer/for:model, values in must_include.items()/if:model in workset",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r69",
+   "anchor": "Query.deferred_to_data#if:defer/else/for:model, values in must_include.items()/if:model in seen/else/assign:seen[model]",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r70",
+   "anchor": "Query.deferred_to_data#if:defer/else/for:model in orig_opts.get_parent_list()",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r71",
+   "anchor": "Query.table_alias",
+   "kind": "doc",
+   "line": 752
+  },
+  {
+   "id": "r72",
+   "anchor": "Query.table_alias#if:alias_list",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r73",
+   "anchor": "Query.table_alias#if:alias_list/else/assign:alias",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r74",
+   "anchor": "Query.ref_alias",
+   "kind": "doc",
+   "line": 777
+  },
+  {
+   "id": "r75",
+   "anchor": "Query.unref_alias",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r76",
+   "anchor": "Query.promote_joins",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r77",
+   "anchor": "Query.promote_joins#while:aliases/if:self.alias_map[alias].join_type is None/continue",
+   "kind": "lead",
+   "line": 803
+  },
+  {
+   "id": "r78",
+   "anchor": "Query.promote_joins#while:aliases/assert:self.alias_map[alias].join_type is not None",
+   "kind": "lead",
+   "line": 805
+  },
+  {
+   "id": "r79",
+   "anchor": "Query.promote_joins#while:aliases/if:(self.alias_map[alias].nullable or parent_louter) and not already_louter/call:aliases.extend",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r80",
+   "anchor": "Query.demote_joins",
+   "kind": "doc",
+   "line": 819
+  },
+  {
+   "id": "r81",
+   "anchor": "Query.reset_refcounts",
+   "kind": "doc",
+   "line": 838
+  },
+  {
+   "id": "r82",
+   "anchor": "Query.change_aliases",
+   "kind": "doc",
+   "line": 847
+  },
+  {
+   "id": "r83",
+   "anchor": "Query.change_aliases#call:self.where.relabel_aliases",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r84",
+   "anchor": "Query.change_aliases#for:old_alias, new_alias in change_map.items()",
+   "kind": "lead",
+   "line": 866
+  },
+  {
+   "id": "r85",
+   "anchor": "Query.change_aliases#assign:self.external_aliases",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r86",
+   "anchor": "Query.bump_prefix",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r87",
+   "anchor": "Query.bump_prefix.prefix_gen",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r88",
+   "anchor": "Query.bump_prefix#if:self.alias_prefix != outer_query.alias_prefix/return",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r89",
+   "anchor": "Query.bump_prefix#assign:local_recursion_limit",
+   "kind": "lead",
+   "line": 919
+  },
+  {
+   "id": "r90",
+   "anchor": "Query.get_initial_alias",
+   "kind": "doc",
+   "line": 935
+  },
+  {
+   "id": "r91",
+   "anchor": "Query.count_active_tables",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r92",
+   "anchor": "Query.join",
+   "kind": "doc",
+   "line": 955
+  },
+  {
+   "id": "r93",
+   "anchor": "Query.join#if:reuse_aliases/if:join.table_alias in reuse_aliases/else/assign:reuse_alias",
+   "kind": "lead",
+   "line": 978
+  },
+  {
+   "id": "r94",
+   "anchor": "Query.join#assign:alias, _",
+   "kind": "lead",
+   "line": 983
+  },
+  {
+   "id": "r95",
+   "anchor": "Query.join_parent_model",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r96",
+   "anchor": "Query.join_parent_model#for:int_model in chain/if:not curr_opts.parents[int_model]",
+   "kind": "lead",
+   "line": 1018
+  },
+  {
+   "id": "r97",
+   "anchor": "Query.add_annotation",
+   "kind": "doc",
+   "line": 1027
+  },
+  {
+   "id": "r98",
+   "anchor": "Query.resolve_expression#call:clone.bump_prefix",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r99",
+   "anchor": "Query.resolve_expression#for:alias, table in query.alias_map.items()",
+   "kind": "lead",
+   "line": 1049
+  },
+  {
+   "id": "r100",
+   "anchor": "Query.as_sql#if:self.subquery and not connection.features.ignores_unnecessary_order_by_in_subqueries",
+   "kind": "lead",
+   "line": 1066
+  },
+  {
+   "id": "r101",
+   "anchor": "Query.resolve_lookup_value#if:hasattr(value, 'resolve_expression')/elif:isinstance(value, (list, tuple))/assign:values",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r102",
+   "anchor": "Query.resolve_lookup_value#if:hasattr(value, 'resolve_expression')/elif:isinstance(value, (list, tuple))/if:hasattr(type_, '_make')",
+   "kind": "trail",
+   "line": 1089
+  },
+  {
+   "id": "r103",
+   "anchor": "Query.solve_lookup_type",
+   "kind": "doc",
+   "line": 1094
+  },
+  {
+   "id": "r104",
+   "anchor": "Query.check_query_object_type",
+   "kind": "doc",
+   "line": 1112
+  },
+  {
+   "id": "r105",
+   "anchor": "Query.check_related_objects",
+   "kind": "doc",
+   "line": 1123
+  },
+  {
+   "id": "r106",
+   "anchor": "Query.check_related_objects#if:field.is_relation/if:isinstance(value, Query) and not value.has_select_fields and not check_rel_lookup_compatibility(value.model, opts, field)",
+   "kind": "lead",
+   "line": 1131
+  },
+  {
+   "id": "r107",
+   "anchor": "Query.check_filterable",
+   "kind": "doc",
+   "line": 1143
+  },
+  {
+   "id": "r108",
+   "anchor": "Query.build_lookup",
+   "kind": "doc",
+   "line": 1157
+  },
+  {
+   "id": "r109",
+   "anchor": "Query.build_lookup#assign:*transforms, lookup_name",
+   "kind": "lead",
+   "line": 1167
+  },
+  {
+   "id": "r110",
+   "anchor": "Query.build_lookup#assign:lookup_class",
+   "kind": "lead",
+   "line": 1172
+  },
+  {
+   "id": "r111",
+   "anchor": "Query.build_lookup#if:not lookup_class/assign:lhs",
+   "kind": "lead",
+   "line": 1178
+  },
+  {
+   "id": "r112",
+   "anchor": "Query.build_lookup#if:lookup.rhs is None and not lookup.can_use_none_as_rhs",
+   "kind": "lead",
+   "line": 1187
+  },
+  {
+   "id": "r113",
+   "anchor": "Query.build_lookup#if:connections[DEFAULT_DB_ALIAS].features.interprets_empty_strings_as_nulls and lookup_name == 'exact' and lookup.rhs == ''",
+   "kind": "lead",
+   "line": 1196
+  },
+  {
+   "id": "r114",
+   "anchor": "Query.try_transform",
+   "kind": "doc",
+   "line": 1202
+  },
+  {
+   "id": "r115",
+   "anchor": "Query.build_filter",
+   "kind": "doc",
+   "line": 1222
+  },
+  {
+   "id": "r116",
+   "anchor": "Query.build_filter#try/if:isinstance(value, Iterator)",
+   "kind": "lead",
+   "line": 1305
+  },
+  {
+   "id": "r117",
+   "anchor": "Query.build_filter#try/assign:self._lookup_joins",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r118",
+   "anchor": "Query.build_filter#call:used_joins.update",
+   "kind": "lead",
+   "line": 1317
+  },
+  {
+   "id": "r119",
+   "anchor": "Query.build_filter#if:join_info.final_field.is_relation/assign:num_lookups",
+   "kind": "lead",
+   "line": 1324
+  },
+  {
+   "id": "r120",
+   "anchor": "Query.build_filter#if:current_negated and (lookup_type != 'isnull' or condition.rhs is False) and condition.rhs is not None/if:lookup_type != 'isnull'/if:self.is_nullable(targets[0]) or self.alias_map[join_list[-1]].join_type == LOUTER",
+   "kind": "lead",
+   "line": 1351
+  },
+  {
+   "id": "r121",
+   "anchor": "Query.build_filter#if:current_negated and (lookup_type != 'isnull' or condition.rhs is False) and condition.rhs is not None/if:lookup_type != 'isnull'/if:isinstance(value, Col) and self.is_nullable(value.target)",
+   "kind": "lead",
+   "line": 1360
+  },
+  {
+   "id": "r122",
+   "anchor": "Query.add_q",
+   "kind": "doc",
+   "line": 1368
+  },
+  {
+   "id": "r123",
+   "anchor": "Query.add_q#assign:existing_inner",
+   "kind": "lead",
+   "line": 1379
+  },
+  {
+   "id": "r124",
+   "anchor": "Query._add_q",
+   "kind": "doc",
+   "line": 1388
+  },
+  {
+   "id": "r125",
+   "anchor": "Query.build_filtered_relation_q",
+   "kind": "doc",
+   "line": 1410
+  },
+  {
+   "id": "r126",
+   "anchor": "Query.names_to_path",
+   "kind": "doc",
+   "line": 1460
+  },
+  {
+   "id": "r127",
+   "anchor": "Query.names_to_path#for:pos, name in enumerate(names)/if:field is not None/if:field.is_relation and not field.related_model",
+   "kind": "lead",
+   "line": 1502
+  },
+  {
+   "id": "r128",
+   "anchor": "Query.names_to_path#for:pos, name in enumerate(names)/if:field is not None/try/except:AttributeError/assign:model",
+   "kind": "lead",
+   "line": 1514
+  },
+  {
+   "id": "r129",
+   "anchor": "Query.names_to_path#for:pos, name in enumerate(names)/if:field is not None/else/assign:pos",
+   "kind": "lead",
+   "line": 1518
+  },
+  {
+   "id": "r130",
+   "anchor": "Query.names_to_path#for:pos, name in enumerate(names)/if:model is not opts.model",
+   "kind": "lead",
+   "line": 1531
+  },
+  {
+   "id": "r131",
+   "anchor": "Query.names_to_path#for:pos, name in enumerate(names)/if:hasattr(field, 'get_path_info')/else/assign:final_field",
+   "kind": "lead",
+   "line": 1554
+  },
+  {
+   "id": "r132",
+   "anchor": "Query.setup_joins",
+   "kind": "doc",
+   "line": 1563
+  },
+  {
+   "id": "r133",
+   "anchor": "Query.setup_joins.final_transformer",
+   "kind": "lead",
+   "line": 1597
+  },
+  {
+   "id": "r134",
+   "anchor": "Query.setup_joins#assign:last_field_exception",
+   "kind": "lead",
+   "line": 1604
+  },
+  {
+   "id": "r135",
+   "anchor": "Query.setup_joins#for:pivot in range(len(names), 0, -1)/try/except:FieldError/if:pivot == 1/raise",
+   "kind": "lead",
+   "line": 1614
+  },
+  {
+   "id": "r136",
+   "anchor": "Query.setup_joins#for:pivot in range(len(names), 0, -1)/try/else/assign:transforms",
+   "kind": "lead",
+   "line": 1620
+  },
+  {
+   "id": "r137",
+   "anchor": "Query.setup_joins.transform#try/except:FieldError/if:isinstance(final_field, Field) and last_field_exception",
+   "kind": "lead",
+   "line": 1629
+  },
+  {
+   "id": "r138",
+   "anchor": "Query.setup_joins#for:join in path",
+   "kind": "lead",
+   "line": 1637
+  },
+  {
+   "id": "r139",
+   "anchor": "Query.trim_joins",
+   "kind": "doc",
+   "line": 1660
+  },
+  {
+   "id": "r140",
+   "anchor": "Query.resolve_ref#if:annotation is not None/if:summarize/if:name not in self.annotation_select",
+   "kind": "lead",
+   "line": 1720
+  },
+  {
+   "id": "r141",
+   "anchor": "Query.resolve_ref#if:annotation is not None/else/assign:transform",
+   "kind": "lead",
+   "line": 1744
+  },
+  {
+   "id": "r142",
+   "anchor": "Query.split_exclude",
+   "kind": "doc",
+   "line": 1749
+  },
+  {
+   "id": "r143",
+   "anchor": "Query.split_exclude#assign:query",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r144",
+   "anchor": "Query.split_exclude#assign:trimmed_prefix, contains_louter",
+   "kind": "lead",
+   "line": 1780
+  },
+  {
+   "id": "r145",
+   "anchor": "Query.split_exclude#if:alias in can_reuse/call:query.bump_prefix",
+   "kind": "lead",
+   "line": 1789
+  },
+  {
+   "id": "r146",
+   "anchor": "Query.split_exclude#if:alias in can_reuse/assign:lookup",
+   "kind": "lead",
+   "line": 1793
+  },
+  {
+   "id": "r147",
+   "anchor": "Query.split_exclude#if:contains_louter/call:condition.add",
+   "kind": "post",
+   "line": 1807
+  },
+  {
+   "id": "r148",
+   "anchor": "Query.set_limits",
+   "kind": "doc",
+   "line": 1824
+  },
+  {
+   "id": "r149",
+   "anchor": "Query.clear_limits",
+   "kind": "doc",
+   "line": 1847
+  },
+  {
+   "id": "r150",
+   "anchor": "Query.can_filter",
+   "kind": "doc",
+   "line": 1858
+  },
+  {
+   "id": "r151",
+   "anchor": "Query.clear_select_clause",
+   "kind": "doc",
+   "line": 1866
+  },
+  {
+   "id": "r152",
+   "anchor": "Query.clear_select_fields",
+   "kind": "doc",
+   "line": 1874
+  },
+  {
+   "id": "r153",
+   "anchor": "Query.add_distinct_fields",
+   "kind": "doc",
+   "line": 1891
+  },
+  {
+   "id": "r154",
+   "anchor": "Query.add_fields",
+   "kind": "doc",
+   "line": 1898
+  },
+  {
+   "id": "r155",
+   "anchor": "Query.add_fields#try/for:name in field_names/assign:join_info",
+   "kind": "lead",
+   "line": 1911
+  },
+  {
+   "id": "r156",
+   "anchor": "Query.add_fields#try/except:FieldError/if:LOOKUP_SEP in name/raise",
+   "kind": "lead",
+   "line": 1927
+  },
+  {
+   "id": "r157",
+   "anchor": "Query.add_ordering",
+   "kind": "doc",
+   "line": 1941
+  },
+  {
+   "id": "r158",
+   "anchor": "Query.add_ordering#for:item in ordering/if:isinstance(item, str)/call:self.names_to_path",
+   "kind": "lead",
+   "line": 1963
+  },
+  {
+   "id": "r159",
+   "anchor": "Query.clear_ordering",
+   "kind": "doc",
+   "line": 1978
+  },
+  {
+   "id": "r160",
+   "anchor": "Query.set_group_by",
+   "kind": "doc",
+   "line": 1992
+  },
+  {
+   "id": "r161",
+   "anchor": "Query.set_group_by#if:allow_aliases",
+   "kind": "lead",
+   "line": 2002
+  },
+  {
+   "id": "r162",
+   "anchor": "Query.set_group_by#if:allow_aliases/for:join in list(self.alias_map.values())[1:]",
+   "kind": "trail",
+   "line": 2005
+  },
+  {
+   "id": "r163",
+   "anchor": "Query.add_select_related",
+   "kind": "doc",
+   "line": 2023
+  },
+  {
+   "id": "r164",
+   "anchor": "Query.add_extra",
+   "kind": "doc",
+   "line": 2039
+  },
+  {
+   "id": "r165",
+   "anchor": "Query.add_extra#if:select/assign:select_pairs",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r166",
+   "anchor": "Query.clear_deferred_loading",
+   "kind": "doc",
+   "line": 2071
+  },
+  {
+   "id": "r167",
+   "anchor": "Query.add_deferred_loading",
+   "kind": "doc",
+   "line": 2075
+  },
+  {
+   "id": "r168",
+   "anchor": "Query.add_deferred_loading#assign:existing, defer",
+   "kind": "lead",
+   "line": 2087
+  },
+  {
+   "id": "r169",
+   "anchor": "Query.add_deferred_loading#if:defer/assign:self.deferred_loading",
+   "kind": "lead",
+   "line": 2090
+  },
+  {
+   "id": "r170",
+   "anchor": "Query.add_deferred_loading#if:defer/else/assign:self.deferred_loading",
+   "kind": "lead",
+   "line": 2093
+  },
+  {
+   "id": "r171",
+   "anchor": "Query.add_immediate_loading",
+   "kind": "doc",
+   "line": 2095
+  },
+  {
+   "id": "r172",
+   "anchor": "Query.add_immediate_loading#if:defer/assign:self.deferred_loading",
+   "kind": "lead",
+   "line": 2114
+  },
+  {
+   "id": "r173",
+   "anchor": "Query.add_immediate_loading#if:defer/else/assign:self.deferred_loading",
+   "kind": "lead",
+   "line": 2117
+  },
+  {
+   "id": "r174",
+   "anchor": "Query.get_loaded_field_names",
+   "kind": "doc",
+   "line": 2119
+  },
+  {
+   "id": "r175",
+   "anchor": "Query.get_loaded_field_names#try",
+   "kind": "lead",
+   "line": 2130
+  },
+  {
+   "id": "r176",
+   "anchor": "Query.get_loaded_field_names_cb",
+   "kind": "doc",
+   "line": 2138
+  },
+  {
+   "id": "r177",
+   "anchor": "Query.set_annotation_mask",
+   "kind": "doc",
+   "line": 2142
+  },
+  {
+   "id": "r178",
+   "anchor": "Query.set_extra_mask",
+   "kind": "doc",
+   "line": 2154
+  },
+  {
+   "id": "r179",
+   "anchor": "Query.set_values#if:fields/if:not self.extra and not self.annotations/assign:field_names",
+   "kind": "lead",
+   "line": 2177
+  },
+  {
+   "id": "r180",
+   "anchor": "Query.set_values#if:self.group_by is True",
+   "kind": "lead",
+   "line": 2195
+  },
+  {
+   "id": "r181",
+   "anchor": "Query.set_values#if:self.group_by is True/call:self.set_group_by",
+   "kind": "lead",
+   "line": 2199
+  },
+  {
+   "id": "r182",
+   "anchor": "Query.set_values#if:self.group_by is True/elif:self.group_by/assign:group_by",
+   "kind": "lead",
+   "line": 2204
+  },
+  {
+   "id": "r183",
+   "anchor": "Query.annotation_select",
+   "kind": "doc",
+   "line": 2215
+  },
+  {
+   "id": "r184",
+   "anchor": "Query.trim_start",
+   "kind": "doc",
+   "line": 2248
+  },
+  {
+   "id": "r185",
+   "anchor": "Query.trim_start#assign:lookup_tables",
+   "kind": "lead",
+   "line": 2268
+  },
+  {
+   "id": "r186",
+   "anchor": "Query.trim_start#assign:join_field",
+   "kind": "lead",
+   "line": 2280
+  },
+  {
+   "id": "r187",
+   "anchor": "Query.trim_start#assign:paths_in_prefix",
+   "kind": "lead",
+   "line": 2282
+  },
+  {
+   "id": "r188",
+   "anchor": "Query.trim_start#assign:first_join",
+   "kind": "lead",
+   "line": 2298
+  },
+  {
+   "id": "r189",
+   "anchor": "Query.trim_start#if:first_join.join_type != LOUTER and not first_join.filtered_relation/else/assign:select_fields",
+   "kind": "todo",
+   "line": 2311
+  },
+  {
+   "id": "r190",
+   "anchor": "Query.trim_start#for:table in self.alias_map",
+   "kind": "lead",
+   "line": 2315
+  },
+  {
+   "id": "r191",
+   "anchor": "Query.is_nullable",
+   "kind": "doc",
+   "line": 2322
+  },
+  {
+   "id": "r192",
+   "anchor": "Query.is_nullable#return",
+   "kind": "lead",
+   "line": 2335
+  },
+  {
+   "id": "r193",
+   "anchor": "get_order_dir",
+   "kind": "doc",
+   "line": 2341
+  },
+  {
+   "id": "r194",
+   "anchor": "add_to_dict",
+   "kind": "doc",
+   "line": 2355
+  },
+  {
+   "id": "r195",
+   "anchor": "is_reverse_o2o",
+   "kind": "doc",
+   "line": 2366
+  },
+  {
+   "id": "r196",
+   "anchor": "JoinPromoter",
+   "kind": "doc",
+   "line": 2374
+  },
+  {
+   "id": "r197",
+   "anchor": "JoinPromoter.votes",
+   "kind": "lead",
+   "line": 2393
+  },
+  {
+   "id": "r198",
+   "anchor": "JoinPromoter.add_votes",
+   "kind": "doc",
+   "line": 2395
+  },
+  {
+   "id": "r199",
+   "anchor": "JoinPromoter.update_join_types",
+   "kind": "doc",
+   "line": 2402
+  },
+  {
+   "id": "r200",
+   "anchor": "JoinPromoter.update_join_types#for:table, votes in self.votes.items()",
+   "kind": "lead",
+   "line": 2413
+  },
+  {
+   "id": "r201",
+   "anchor": "JoinPromoter.update_join_types#for:table, votes in self.votes.items()/if:self.effective_connector == 'OR' and votes < self.num_children",
+   "kind": "lead",
+   "line": 2424
+  },
+  {
+   "id": "r202",
+   "anchor": "JoinPromoter.update_join_types#for:table, votes in self.votes.items()/if:self.effective_connector == 'AND' or (self.effective_connector == 'OR' and votes == self.num_children)",
+   "kind": "lead",
+   "line": 2436
+  },
+  {
+   "id": "r203",
+   "anchor": "JoinPromoter.update_join_types#for:table, votes in self.votes.items()/if:self.effective_connector == 'AND' or (self.effective_connector == 'OR' and votes == self.num_children)/call:to_demote.add",
+   "kind": "post",
+   "line": 2438
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 60481,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 22634,
+  "thinking_tokens": 12294,
+  "opus_cost_usd": 1.1749515000000001,
+  "total_cost_usd": 1.2237445000000002,
+  "duration_ms": 192749,
+  "duration_api_ms": 194145,
+  "num_turns": 2
+ },
+ "wall_ms": 193625,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

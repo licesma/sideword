@@ -1,0 +1,1129 @@
+{
+ "blob_sha": "192af381bfd3ec99d09d643f8358f80c69203bd6",
+ "path": "seaborn/_oldcore.py",
+ "repo": "mwaskom/seaborn",
+ "records": 184,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SemanticMapping",
+   "kind": "doc",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "SemanticMapping.map_type",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "SemanticMapping.map_type",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r4",
+   "anchor": "SemanticMapping.levels",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "SemanticMapping.lookup_table",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r6",
+   "anchor": "SemanticMapping.plotter",
+   "kind": "todo",
+   "line": 50
+  },
+  {
+   "id": "r7",
+   "anchor": "SemanticMapping.map#assign:method_name",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "SemanticMapping._check_list_length",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r9",
+   "anchor": "SemanticMapping._check_list_length#assign:message",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r10",
+   "anchor": "SemanticMapping._lookup_single",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r11",
+   "anchor": "SemanticMapping.__call__",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r12",
+   "anchor": "HueMapping",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r13",
+   "anchor": "HueMapping.palette",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r14",
+   "anchor": "HueMapping.norm",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r15",
+   "anchor": "HueMapping.cmap",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r16",
+   "anchor": "HueMapping.__init__",
+   "kind": "doc",
+   "line": 106
+  },
+  {
+   "id": "r17",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r18",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r19",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"/elif:map_type == \"categorical\"",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r20",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"/else",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r21",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"/else/assign:cmap",
+   "kind": "todo",
+   "line": 156
+  },
+  {
+   "id": "r22",
+   "anchor": "HueMapping.__init__#if:data.isna().all()/else/if:map_type == \"numeric\"/else/assign:levels, lookup_table/arg:list(data)",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r23",
+   "anchor": "HueMapping._lookup_single",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r24",
+   "anchor": "HueMapping._lookup_single#try/assign:value",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r25",
+   "anchor": "HueMapping._lookup_single#try/except:KeyError/if:self.norm is None/return",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r26",
+   "anchor": "HueMapping._lookup_single#try/except:KeyError/try",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r27",
+   "anchor": "HueMapping.infer_map_type",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r28",
+   "anchor": "HueMapping.categorical_mapping",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r29",
+   "anchor": "HueMapping.categorical_mapping#assign:levels",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r30",
+   "anchor": "HueMapping.categorical_mapping#if:isinstance(palette, dict)",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r31",
+   "anchor": "HueMapping.numeric_mapping",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r32",
+   "anchor": "HueMapping.numeric_mapping#if:isinstance(palette, dict)/assign:levels",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r33",
+   "anchor": "HueMapping.numeric_mapping#if:isinstance(palette, dict)/else/assign:levels",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r34",
+   "anchor": "HueMapping.numeric_mapping#if:isinstance(palette, dict)/else/assign:palette",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r35",
+   "anchor": "HueMapping.numeric_mapping#if:isinstance(palette, dict)/else/assign:palette",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r36",
+   "anchor": "HueMapping.numeric_mapping#if:isinstance(palette, dict)/else/if:norm is None",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r37",
+   "anchor": "SizeMapping",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r38",
+   "anchor": "SizeMapping.norm",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r39",
+   "anchor": "SizeMapping.__init__",
+   "kind": "doc",
+   "line": 297
+  },
+  {
+   "id": "r40",
+   "anchor": "SizeMapping.__init__#if:data.notna().any()/if:map_type == \"numeric\"",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r41",
+   "anchor": "SizeMapping.__init__#if:data.notna().any()/if:map_type == \"numeric\"/elif:map_type == \"categorical\"",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r42",
+   "anchor": "SizeMapping.__init__#if:data.notna().any()/if:map_type == \"numeric\"/else",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r43",
+   "anchor": "SizeMapping.__init__#if:data.notna().any()/if:map_type == \"numeric\"/else",
+   "kind": "todo",
+   "line": 337
+  },
+  {
+   "id": "r44",
+   "anchor": "SizeMapping.__init__#if:data.notna().any()/if:map_type == \"numeric\"/else/assign:levels, lookup_table/arg:list(data)",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r45",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/assign:missing",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r46",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/elif:isinstance(sizes, list)/assign:sizes",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r47",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/else/if:isinstance(sizes, tuple)/if:len(sizes) != 2",
+   "kind": "lead",
+   "line": 399
+  },
+  {
+   "id": "r48",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/else/if:isinstance(sizes, tuple)/else/assign:sizes",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r49",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/else/if:isinstance(sizes, tuple)/else/assign:sizes",
+   "kind": "todo",
+   "line": 421
+  },
+  {
+   "id": "r50",
+   "anchor": "SizeMapping.categorical_mapping#if:isinstance(sizes, dict)/else/assign:sizes",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r51",
+   "anchor": "SizeMapping.numeric_mapping#if:isinstance(sizes, dict)/assign:levels",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r52",
+   "anchor": "SizeMapping.numeric_mapping#if:isinstance(sizes, dict)/else/assign:levels",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r53",
+   "anchor": "SizeMapping.numeric_mapping#if:isinstance(sizes, dict)/else/if:isinstance(sizes, tuple)/if:len(sizes) != 2",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r54",
+   "anchor": "SizeMapping.numeric_mapping#if:isinstance(sizes, dict)/else/if:isinstance(sizes, tuple)/else/assign:size_range",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r55",
+   "anchor": "SizeMapping.numeric_mapping#if:norm is None",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r56",
+   "anchor": "SizeMapping.numeric_mapping#if:norm is None/assign:norm",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r57",
+   "anchor": "SizeMapping.numeric_mapping#if:norm is None/elif:isinstance(norm, tuple)/assign:norm",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r58",
+   "anchor": "SizeMapping.numeric_mapping#if:norm is None/else/assign:norm",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r59",
+   "anchor": "SizeMapping.numeric_mapping#assign:norm.clip",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r60",
+   "anchor": "SizeMapping.numeric_mapping#if:not norm.scaled()",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r61",
+   "anchor": "SizeMapping.numeric_mapping#assign:sizes_scaled",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r62",
+   "anchor": "SizeMapping.numeric_mapping#if:isinstance(sizes, dict)",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r63",
+   "anchor": "StyleMapping",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r64",
+   "anchor": "StyleMapping.map_type",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r65",
+   "anchor": "StyleMapping.__init__",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r66",
+   "anchor": "StyleMapping.__init__#if:data.notna().any()/if:variable_type(data) == \"datetime\"",
+   "kind": "lead",
+   "line": 537
+  },
+  {
+   "id": "r67",
+   "anchor": "StyleMapping.__init__#if:data.notna().any()/assign:levels",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r68",
+   "anchor": "StyleMapping.__init__#if:data.notna().any()/assign:paths",
+   "kind": "lead",
+   "line": 551
+  },
+  {
+   "id": "r69",
+   "anchor": "StyleMapping.__init__#if:data.notna().any()/if:any(filled_markers) and not all(filled_markers)",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r70",
+   "anchor": "StyleMapping._lookup_single",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r71",
+   "anchor": "StyleMapping._map_attributes",
+   "kind": "doc",
+   "line": 588
+  },
+  {
+   "id": "r72",
+   "anchor": "VectorPlotter",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r73",
+   "anchor": "VectorPlotter",
+   "kind": "doc",
+   "line": 613
+  },
+  {
+   "id": "r74",
+   "anchor": "VectorPlotter.semantics",
+   "kind": "todo",
+   "line": 624
+  },
+  {
+   "id": "r75",
+   "anchor": "VectorPlotter._default_size_range",
+   "kind": "trail",
+   "line": 630
+  },
+  {
+   "id": "r76",
+   "anchor": "VectorPlotter._var_ordered",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r77",
+   "anchor": "VectorPlotter._var_ordered",
+   "kind": "trail",
+   "line": 639
+  },
+  {
+   "id": "r78",
+   "anchor": "VectorPlotter.__init__#for:var, cls in self._semantic_mappings.items()/assign:map_func",
+   "kind": "lead",
+   "line": 645
+  },
+  {
+   "id": "r79",
+   "anchor": "VectorPlotter.__init__#for:var, cls in self._semantic_mappings.items()/call:getattr(self, f\"map_{var}\")",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r80",
+   "anchor": "VectorPlotter.get_semantics",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r81",
+   "anchor": "VectorPlotter.get_semantics#if:semantics is None",
+   "kind": "todo",
+   "line": 655
+  },
+  {
+   "id": "r82",
+   "anchor": "VectorPlotter.has_xy_data",
+   "kind": "doc",
+   "line": 664
+  },
+  {
+   "id": "r83",
+   "anchor": "VectorPlotter.var_levels",
+   "kind": "doc",
+   "line": 669
+  },
+  {
+   "id": "r84",
+   "anchor": "VectorPlotter.assign_variables",
+   "kind": "doc",
+   "line": 689
+  },
+  {
+   "id": "r85",
+   "anchor": "VectorPlotter._assign_variables_wideform",
+   "kind": "doc",
+   "line": 717
+  },
+  {
+   "id": "r86",
+   "anchor": "VectorPlotter._assign_variables_wideform#assign:assigned",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r87",
+   "anchor": "VectorPlotter._assign_variables_wideform#assign:empty",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r88",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:isinstance(data, dict)",
+   "kind": "lead",
+   "line": 751
+  },
+  {
+   "id": "r89",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/assign:plot_data",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r90",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/elif:flat/assign:flat_data",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r91",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/if:isinstance(data, Sequence)",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r92",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/if:isinstance(data, Sequence)",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r93",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/if:isinstance(data, Sequence)/for:i, var in enumerate(data)/assign:data_dict[key]",
+   "kind": "todo",
+   "line": 801
+  },
+  {
+   "id": "r94",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/if:isinstance(data, Mapping)",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r95",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/assign:wide_data",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r96",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/assign:numeric_cols",
+   "kind": "lead",
+   "line": 817
+  },
+  {
+   "id": "r97",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/assign:melt_kws",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r98",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/for:var, attr in self.wide_structure.items()",
+   "kind": "lead",
+   "line": 845
+  },
+  {
+   "id": "r99",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/assign:variables",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r100",
+   "anchor": "VectorPlotter._assign_variables_wideform#if:empty/else/assign:plot_data",
+   "kind": "lead",
+   "line": 855
+  },
+  {
+   "id": "r101",
+   "anchor": "VectorPlotter._assign_variables_longform",
+   "kind": "doc",
+   "line": 859
+  },
+  {
+   "id": "r102",
+   "anchor": "VectorPlotter._assign_variables_longform#if:data is None",
+   "kind": "lead",
+   "line": 890
+  },
+  {
+   "id": "r103",
+   "anchor": "VectorPlotter._assign_variables_longform#try",
+   "kind": "todo",
+   "line": 902
+  },
+  {
+   "id": "r104",
+   "anchor": "VectorPlotter._assign_variables_longform#try",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r105",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()",
+   "kind": "lead",
+   "line": 908
+  },
+  {
+   "id": "r106",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/try",
+   "kind": "lead",
+   "line": 915
+  },
+  {
+   "id": "r107",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/if:val_as_data_key/if:val in data",
+   "kind": "lead",
+   "line": 927
+  },
+  {
+   "id": "r108",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/if:val_as_data_key/elif:isinstance(val, (str, bytes))/assign:err",
+   "kind": "lead",
+   "line": 937
+  },
+  {
+   "id": "r109",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/if:val_as_data_key/else/if:isinstance(data, pd.DataFrame) and not isinstance(val, pd.Series)",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r110",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/if:val_as_data_key/else/if:isinstance(data, pd.DataFrame) and not isinstance(val, pd.Series)",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r111",
+   "anchor": "VectorPlotter._assign_variables_longform#for:key, val in kwargs.items()/if:val_as_data_key/else/assign:variables[key]",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r112",
+   "anchor": "VectorPlotter._assign_variables_longform#assign:plot_data",
+   "kind": "lead",
+   "line": 962
+  },
+  {
+   "id": "r113",
+   "anchor": "VectorPlotter._assign_variables_longform#assign:variables",
+   "kind": "lead",
+   "line": 965
+  },
+  {
+   "id": "r114",
+   "anchor": "VectorPlotter.iter_data",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r115",
+   "anchor": "VectorPlotter.iter_data#if:grouping_vars is None",
+   "kind": "todo",
+   "line": 1008
+  },
+  {
+   "id": "r116",
+   "anchor": "VectorPlotter.iter_data#if:by_facet",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r117",
+   "anchor": "VectorPlotter.iter_data#assign:grouping_vars",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r118",
+   "anchor": "VectorPlotter.iter_data#if:from_comp_data/for:axis in {\"x\", \"y\"} & set(grouping_vars)/if:self.var_types[axis] == \"categorical\"/if:self._var_ordered[axis]/assign:converter",
+   "kind": "lead",
+   "line": 1044
+  },
+  {
+   "id": "r119",
+   "anchor": "VectorPlotter.iter_data#if:from_comp_data/for:axis in {\"x\", \"y\"} & set(grouping_vars)/if:self.var_types[axis] == \"categorical\"/if:self._var_ordered[axis]/else/assign:levels[axis]",
+   "kind": "lead",
+   "line": 1049
+  },
+  {
+   "id": "r120",
+   "anchor": "VectorPlotter.iter_data#if:grouping_vars/for:key in iter_keys/assign:pd_key",
+   "kind": "lead",
+   "line": 1072
+  },
+  {
+   "id": "r121",
+   "anchor": "VectorPlotter.iter_data#if:grouping_vars/for:key in iter_keys/try/except:KeyError/assign:data_subset",
+   "kind": "todo",
+   "line": 1081
+  },
+  {
+   "id": "r122",
+   "anchor": "VectorPlotter.comp_data",
+   "kind": "doc",
+   "line": 1095
+  },
+  {
+   "id": "r123",
+   "anchor": "VectorPlotter.comp_data#if:not hasattr(self, \"ax\")/return",
+   "kind": "lead",
+   "line": 1102
+  },
+  {
+   "id": "r124",
+   "anchor": "VectorPlotter.comp_data#if:not hasattr(self, \"_comp_data\")/for:var in \"yx\"/for:converter, orig in grouped/with:pd.option_context('mode.use_inf_as_null', True)/if:var in self.var_levels/assign:orig",
+   "kind": "todo",
+   "line": 1125
+  },
+  {
+   "id": "r125",
+   "anchor": "VectorPlotter._get_axes",
+   "kind": "doc",
+   "line": 1140
+  },
+  {
+   "id": "r126",
+   "anchor": "VectorPlotter._attach",
+   "kind": "doc",
+   "line": 1155
+  },
+  {
+   "id": "r127",
+   "anchor": "VectorPlotter._attach#assign:axis_variables",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r128",
+   "anchor": "VectorPlotter._attach#if:allowed_types is None",
+   "kind": "lead",
+   "line": 1199
+  },
+  {
+   "id": "r129",
+   "anchor": "VectorPlotter._attach#assign:facet_dim",
+   "kind": "lead",
+   "line": 1215
+  },
+  {
+   "id": "r130",
+   "anchor": "VectorPlotter._attach#for:var in axis_variables/if:share_state is True or share_state == facet_dim[other_var]",
+   "kind": "lead",
+   "line": 1227
+  },
+  {
+   "id": "r131",
+   "anchor": "VectorPlotter._attach#for:var in axis_variables/if:share_state is True or share_state == facet_dim[other_var]/else/if:share_state is False",
+   "kind": "lead",
+   "line": 1234
+  },
+  {
+   "id": "r132",
+   "anchor": "VectorPlotter._attach#for:var in axis_variables/if:share_state is True or share_state == facet_dim[other_var]/else/if:share_state is False/else",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r133",
+   "anchor": "VectorPlotter._attach#for:var in axis_variables/assign:self.converters[var]",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r134",
+   "anchor": "VectorPlotter._attach#for:var in axis_variables/assign:grouped",
+   "kind": "lead",
+   "line": 1254
+  },
+  {
+   "id": "r135",
+   "anchor": "VectorPlotter._attach#if:log_scale is None",
+   "kind": "lead",
+   "line": 1267
+  },
+  {
+   "id": "r136",
+   "anchor": "VectorPlotter._attach#if:log_scale is None",
+   "kind": "lead",
+   "line": 1267
+  },
+  {
+   "id": "r137",
+   "anchor": "VectorPlotter._attach#if:log_scale is None/else/try",
+   "kind": "lead",
+   "line": 1271
+  },
+  {
+   "id": "r138",
+   "anchor": "VectorPlotter._attach#for:axis, scale in zip(\"xy\", (scalex, scaley))",
+   "kind": "lead",
+   "line": 1278
+  },
+  {
+   "id": "r139",
+   "anchor": "VectorPlotter._attach#if:self.var_types.get(\"y\", None) == \"categorical\"",
+   "kind": "lead",
+   "line": 1291
+  },
+  {
+   "id": "r140",
+   "anchor": "VectorPlotter._attach#if:self.var_types.get(\"y\", None) == \"categorical\"/for:ax in ax_list/try/except:AttributeError",
+   "kind": "trail",
+   "line": 1295
+  },
+  {
+   "id": "r141",
+   "anchor": "VectorPlotter._attach#if:self.var_types.get(\"y\", None) == \"categorical\"",
+   "kind": "post",
+   "line": 1291
+  },
+  {
+   "id": "r142",
+   "anchor": "VectorPlotter._log_scaled",
+   "kind": "doc",
+   "line": 1301
+  },
+  {
+   "id": "r143",
+   "anchor": "VectorPlotter._add_axis_labels",
+   "kind": "doc",
+   "line": 1321
+  },
+  {
+   "id": "r144",
+   "anchor": "VectorPlotter._add_axis_labels#if:not ax.get_xlabel()",
+   "kind": "todo",
+   "line": 1327
+  },
+  {
+   "id": "r145",
+   "anchor": "VectorPlotter.scale_native",
+   "kind": "todo",
+   "line": 1339
+  },
+  {
+   "id": "r146",
+   "anchor": "VectorPlotter.scale_native#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1343
+  },
+  {
+   "id": "r147",
+   "anchor": "VectorPlotter.scale_numeric#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1350
+  },
+  {
+   "id": "r148",
+   "anchor": "VectorPlotter.scale_datetime#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1357
+  },
+  {
+   "id": "r149",
+   "anchor": "VectorPlotter.scale_categorical",
+   "kind": "doc",
+   "line": 1359
+  },
+  {
+   "id": "r150",
+   "anchor": "VectorPlotter.scale_categorical#call:_check_argument",
+   "kind": "lead",
+   "line": 1401
+  },
+  {
+   "id": "r151",
+   "anchor": "VectorPlotter.scale_categorical#call:_check_argument",
+   "kind": "todo",
+   "line": 1401
+  },
+  {
+   "id": "r152",
+   "anchor": "VectorPlotter.scale_categorical#call:_check_argument",
+   "kind": "todo",
+   "line": 1401
+  },
+  {
+   "id": "r153",
+   "anchor": "VectorPlotter.scale_categorical#call:_check_argument",
+   "kind": "todo",
+   "line": 1401
+  },
+  {
+   "id": "r154",
+   "anchor": "VectorPlotter.scale_categorical#if:axis not in self.variables",
+   "kind": "lead",
+   "line": 1405
+  },
+  {
+   "id": "r155",
+   "anchor": "VectorPlotter.scale_categorical#if:self.var_types[axis] == \"numeric\"",
+   "kind": "lead",
+   "line": 1417
+  },
+  {
+   "id": "r156",
+   "anchor": "VectorPlotter.scale_categorical#assign:cat_data",
+   "kind": "lead",
+   "line": 1421
+  },
+  {
+   "id": "r157",
+   "anchor": "VectorPlotter.scale_categorical#assign:self._var_ordered[axis]",
+   "kind": "lead",
+   "line": 1427
+  },
+  {
+   "id": "r158",
+   "anchor": "VectorPlotter.scale_categorical#if:formatter is not None",
+   "kind": "lead",
+   "line": 1434
+  },
+  {
+   "id": "r159",
+   "anchor": "VectorPlotter.scale_categorical#assign:self.var_levels[axis]",
+   "kind": "lead",
+   "line": 1442
+  },
+  {
+   "id": "r160",
+   "anchor": "VectorPlotter.scale_categorical#assign:self.var_types[axis]",
+   "kind": "lead",
+   "line": 1445
+  },
+  {
+   "id": "r161",
+   "anchor": "VectorPlotter.scale_categorical#assign:self.plot_data[axis]",
+   "kind": "lead",
+   "line": 1448
+  },
+  {
+   "id": "r162",
+   "anchor": "VariableType",
+   "kind": "doc",
+   "line": 1453
+  },
+  {
+   "id": "r163",
+   "anchor": "VariableType.allowed",
+   "kind": "todo",
+   "line": 1462
+  },
+  {
+   "id": "r164",
+   "anchor": "variable_type",
+   "kind": "doc",
+   "line": 1473
+  },
+  {
+   "id": "r165",
+   "anchor": "variable_type#if:pd.api.types.is_categorical_dtype(vector)",
+   "kind": "lead",
+   "line": 1498
+  },
+  {
+   "id": "r166",
+   "anchor": "variable_type#if:pd.isna(vector).all()",
+   "kind": "lead",
+   "line": 1502
+  },
+  {
+   "id": "r167",
+   "anchor": "variable_type#with:warnings.catch_warnings()",
+   "kind": "lead",
+   "line": 1513
+  },
+  {
+   "id": "r168",
+   "anchor": "variable_type#if:pd.api.types.is_numeric_dtype(vector)",
+   "kind": "lead",
+   "line": 1521
+  },
+  {
+   "id": "r169",
+   "anchor": "variable_type.all_numeric",
+   "kind": "lead",
+   "line": 1531
+  },
+  {
+   "id": "r170",
+   "anchor": "variable_type.all_numeric",
+   "kind": "lead",
+   "line": 1531
+  },
+  {
+   "id": "r171",
+   "anchor": "variable_type.all_datetime",
+   "kind": "lead",
+   "line": 1542
+  },
+  {
+   "id": "r172",
+   "anchor": "variable_type#return",
+   "kind": "lead",
+   "line": 1553
+  },
+  {
+   "id": "r173",
+   "anchor": "infer_orient",
+   "kind": "doc",
+   "line": 1556
+  },
+  {
+   "id": "r174",
+   "anchor": "unique_dashes",
+   "kind": "doc",
+   "line": 1638
+  },
+  {
+   "id": "r175",
+   "anchor": "unique_dashes#assign:dashes",
+   "kind": "lead",
+   "line": 1656
+  },
+  {
+   "id": "r176",
+   "anchor": "unique_dashes#assign:p",
+   "kind": "lead",
+   "line": 1665
+  },
+  {
+   "id": "r177",
+   "anchor": "unique_dashes#while:len(dashes) < n/assign:a",
+   "kind": "lead",
+   "line": 1669
+  },
+  {
+   "id": "r178",
+   "anchor": "unique_dashes#while:len(dashes) < n/assign:segment_list",
+   "kind": "lead",
+   "line": 1673
+  },
+  {
+   "id": "r179",
+   "anchor": "unique_dashes#while:len(dashes) < n/for:segments in segment_list",
+   "kind": "lead",
+   "line": 1679
+  },
+  {
+   "id": "r180",
+   "anchor": "unique_markers",
+   "kind": "doc",
+   "line": 1689
+  },
+  {
+   "id": "r181",
+   "anchor": "unique_markers#assign:markers",
+   "kind": "lead",
+   "line": 1705
+  },
+  {
+   "id": "r182",
+   "anchor": "unique_markers#assign:s",
+   "kind": "lead",
+   "line": 1718
+  },
+  {
+   "id": "r183",
+   "anchor": "unique_markers#return",
+   "kind": "lead",
+   "line": 1732
+  },
+  {
+   "id": "r184",
+   "anchor": "categorical_order",
+   "kind": "doc",
+   "line": 1735
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 40838,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 20916,
+  "thinking_tokens": 11242,
+  "opus_cost_usd": 0.9355715,
+  "total_cost_usd": 0.9676085,
+  "duration_ms": 179938,
+  "duration_api_ms": 181731,
+  "num_turns": 2
+ },
+ "wall_ms": 180995,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

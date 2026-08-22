@@ -1,0 +1,469 @@
+{
+ "blob_sha": "c8b068165f7bba48ec7096f336c3fe8a0a9f9594",
+ "path": "lib/mpl_toolkits/mplot3d/art3d.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 74,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 5
+  },
+  {
+   "id": "r3",
+   "anchor": "_norm_angle",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "norm_angle",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "_norm_text_angle",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r6",
+   "anchor": "norm_text_angle",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r7",
+   "anchor": "get_dir_vector",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r8",
+   "anchor": "Text3D",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r9",
+   "anchor": "Text3D.get_tightbbox#return",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r10",
+   "anchor": "text_2d_to_3d",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r11",
+   "anchor": "Line3D",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r12",
+   "anchor": "Line3D.__init__",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r13",
+   "anchor": "Line3D.set_3d_properties#try/assign:zs",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r14",
+   "anchor": "Line3D.set_data_3d",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r15",
+   "anchor": "Line3D.get_data_3d",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r16",
+   "anchor": "line_2d_to_3d",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r17",
+   "anchor": "_path_to_3d_segment",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r18",
+   "anchor": "path_to_3d_segment",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r19",
+   "anchor": "_paths_to_3d_segments",
+   "kind": "doc",
+   "line": 231
+  },
+  {
+   "id": "r20",
+   "anchor": "paths_to_3d_segments",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r21",
+   "anchor": "_path_to_3d_segment_with_codes",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r22",
+   "anchor": "path_to_3d_segment_with_codes",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r23",
+   "anchor": "_paths_to_3d_segments_with_codes",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r24",
+   "anchor": "paths_to_3d_segments_with_codes",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r25",
+   "anchor": "Line3DCollection",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r26",
+   "anchor": "Line3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r27",
+   "anchor": "Line3DCollection.set_segments",
+   "kind": "doc",
+   "line": 300
+  },
+  {
+   "id": "r28",
+   "anchor": "Line3DCollection.do_3d_projection",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r29",
+   "anchor": "Line3DCollection.do_3d_projection#assign:minz",
+   "kind": "todo",
+   "line": 318
+  },
+  {
+   "id": "r30",
+   "anchor": "line_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r31",
+   "anchor": "Patch3D",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r32",
+   "anchor": "Patch3D.do_3d_projection#assign:self._facecolor2d",
+   "kind": "todo",
+   "line": 364
+  },
+  {
+   "id": "r33",
+   "anchor": "PathPatch3D",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r34",
+   "anchor": "PathPatch3D.do_3d_projection#assign:self._facecolor2d",
+   "kind": "todo",
+   "line": 387
+  },
+  {
+   "id": "r35",
+   "anchor": "_get_patch_verts",
+   "kind": "doc",
+   "line": 391
+  },
+  {
+   "id": "r36",
+   "anchor": "get_patch_verts",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r37",
+   "anchor": "patch_2d_to_3d",
+   "kind": "doc",
+   "line": 408
+  },
+  {
+   "id": "r38",
+   "anchor": "pathpatch_2d_to_3d",
+   "kind": "doc",
+   "line": 415
+  },
+  {
+   "id": "r39",
+   "anchor": "Patch3DCollection",
+   "kind": "doc",
+   "line": 425
+  },
+  {
+   "id": "r40",
+   "anchor": "Patch3DCollection.__init__",
+   "kind": "doc",
+   "line": 430
+  },
+  {
+   "id": "r41",
+   "anchor": "Patch3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r42",
+   "anchor": "Patch3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r43",
+   "anchor": "Path3DCollection",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r44",
+   "anchor": "Path3DCollection.__init__",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r45",
+   "anchor": "Path3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 516
+  },
+  {
+   "id": "r46",
+   "anchor": "Path3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r47",
+   "anchor": "patch_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 554
+  },
+  {
+   "id": "r48",
+   "anchor": "Poly3DCollection",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r49",
+   "anchor": "Poly3DCollection.__init__",
+   "kind": "doc",
+   "line": 585
+  },
+  {
+   "id": "r50",
+   "anchor": "Poly3DCollection.set_zsort",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r51",
+   "anchor": "Poly3DCollection.get_vector",
+   "kind": "doc",
+   "line": 628
+  },
+  {
+   "id": "r52",
+   "anchor": "Poly3DCollection.get_vector#if:len(segments3d)/else/assign:xs, ys, zs",
+   "kind": "lead",
+   "line": 644
+  },
+  {
+   "id": "r53",
+   "anchor": "Poly3DCollection.set_verts",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r54",
+   "anchor": "Poly3DCollection.set_verts#call:PolyCollection.set_verts",
+   "kind": "lead",
+   "line": 654
+  },
+  {
+   "id": "r55",
+   "anchor": "Poly3DCollection.set_verts_and_codes",
+   "kind": "doc",
+   "line": 657
+  },
+  {
+   "id": "r56",
+   "anchor": "Poly3DCollection.set_verts_and_codes#call:self.set_verts",
+   "kind": "lead",
+   "line": 661
+  },
+  {
+   "id": "r57",
+   "anchor": "Poly3DCollection.set_verts_and_codes#assign:self._codes3d",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r58",
+   "anchor": "Poly3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r59",
+   "anchor": "Poly3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 676
+  },
+  {
+   "id": "r60",
+   "anchor": "Poly3DCollection.do_3d_projection",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r61",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._A is not None",
+   "kind": "todo",
+   "line": 686
+  },
+  {
+   "id": "r62",
+   "anchor": "Poly3DCollection.do_3d_projection#assign:cface",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r63",
+   "anchor": "Poly3DCollection.do_3d_projection#assign:z_segments_2d",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r64",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._sort_zpos is not None",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r65",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._sort_zpos is not None/elif:tzs.size > 0/return",
+   "kind": "todo",
+   "line": 734
+  },
+  {
+   "id": "r66",
+   "anchor": "Poly3DCollection.set_alpha",
+   "kind": "doc",
+   "line": 746
+  },
+  {
+   "id": "r67",
+   "anchor": "poly_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 779
+  },
+  {
+   "id": "r68",
+   "anchor": "juggle_axes",
+   "kind": "doc",
+   "line": 788
+  },
+  {
+   "id": "r69",
+   "anchor": "rotate_axes",
+   "kind": "doc",
+   "line": 804
+  },
+  {
+   "id": "r70",
+   "anchor": "_get_colors",
+   "kind": "doc",
+   "line": 824
+  },
+  {
+   "id": "r71",
+   "anchor": "get_colors",
+   "kind": "doc",
+   "line": 832
+  },
+  {
+   "id": "r72",
+   "anchor": "_zalpha",
+   "kind": "doc",
+   "line": 837
+  },
+  {
+   "id": "r73",
+   "anchor": "_zalpha#if:len(zs) == 0",
+   "kind": "todo",
+   "line": 843
+  },
+  {
+   "id": "r74",
+   "anchor": "zalpha",
+   "kind": "doc",
+   "line": 852
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20483,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5477,
+  "thinking_tokens": 2438,
+  "opus_cost_usd": 0.34604650000000003,
+  "total_cost_usd": 0.3617305,
+  "duration_ms": 47359,
+  "duration_api_ms": 49791,
+  "num_turns": 2
+ },
+ "wall_ms": 48243,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

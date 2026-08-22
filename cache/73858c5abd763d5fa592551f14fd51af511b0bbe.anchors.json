@@ -1,0 +1,247 @@
+{
+ "blob_sha": "73858c5abd763d5fa592551f14fd51af511b0bbe",
+ "path": "django/http/request.py",
+ "repo": "django/django",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "RawPostDataException",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r2",
+   "anchor": "HttpRequest",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r3",
+   "anchor": "HttpRequest._encoding",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r4",
+   "anchor": "HttpRequest.GET",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r5",
+   "anchor": "HttpRequest._get_raw_host",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r6",
+   "anchor": "HttpRequest._get_raw_host#if:settings.USE_X_FORWARDED_HOST and ('HTTP_X_FORWARDED_HOST' in self.META)",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "HttpRequest._get_raw_host#if:settings.USE_X_FORWARDED_HOST and ('HTTP_X_FORWARDED_HOST' in self.META)/else/assign:host",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r8",
+   "anchor": "HttpRequest.get_host",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r9",
+   "anchor": "HttpRequest.get_host#assign:allowed_hosts",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r10",
+   "anchor": "HttpRequest.get_port",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "HttpRequest.get_full_path#return",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r12",
+   "anchor": "HttpRequest.get_signed_cookie",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r13",
+   "anchor": "HttpRequest.get_raw_uri",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r14",
+   "anchor": "HttpRequest.build_absolute_uri",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r15",
+   "anchor": "HttpRequest.build_absolute_uri#if:location is None/assign:location",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r16",
+   "anchor": "HttpRequest.build_absolute_uri#if:not (bits.scheme and bits.netloc)/assign:location",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r17",
+   "anchor": "HttpRequest._get_scheme",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r18",
+   "anchor": "HttpRequest.encoding",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "HttpRequest.upload_handlers#if:not self._upload_handlers/call:self._initialize_handlers",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r20",
+   "anchor": "HttpRequest.parse_file_upload",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r21",
+   "anchor": "HttpRequest.body#if:not hasattr(self, '_body')/if:settings.DATA_UPLOAD_MAX_MEMORY_SIZE is not None and int(self.META.get('CONTENT_LENGTH') or 0) > settings.DATA_UPLOAD_MAX_MEMORY_SIZE",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r22",
+   "anchor": "HttpRequest._load_post_and_files",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r23",
+   "anchor": "HttpRequest._load_post_and_files#if:self.content_type == 'multipart/form-data'/if:hasattr(self, '_body')/assign:data",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r24",
+   "anchor": "HttpRequest._load_post_and_files#if:self.content_type == 'multipart/form-data'/try/except:MultiPartParserError/call:self._mark_post_parse_error",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r25",
+   "anchor": "HttpRequest.read",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r26",
+   "anchor": "QueryDict",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r27",
+   "anchor": "QueryDict._mutable",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r28",
+   "anchor": "QueryDict.__init__#if:six.PY3/if:isinstance(query_string, bytes)/try",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r29",
+   "anchor": "QueryDict.__init__#if:six.PY3/if:isinstance(query_string, bytes)/try/except:UnicodeDecodeError/assign:query_string",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r30",
+   "anchor": "QueryDict.fromkeys",
+   "kind": "doc",
+   "line": 407
+  },
+  {
+   "id": "r31",
+   "anchor": "QueryDict.copy",
+   "kind": "doc",
+   "line": 490
+  },
+  {
+   "id": "r32",
+   "anchor": "QueryDict.urlencode",
+   "kind": "doc",
+   "line": 494
+  },
+  {
+   "id": "r33",
+   "anchor": "bytes_to_text",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r34",
+   "anchor": "bytes_to_text",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r35",
+   "anchor": "split_domain_port",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r36",
+   "anchor": "split_domain_port#if:host[-1] == ']'/return",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r37",
+   "anchor": "validate_host",
+   "kind": "doc",
+   "line": 562
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14603,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4074,
+  "thinking_tokens": 2237,
+  "opus_cost_usd": 0.2521715,
+  "total_cost_usd": 0.2624165,
+  "duration_ms": 39798,
+  "duration_api_ms": 40965,
+  "num_turns": 2
+ },
+ "wall_ms": 40625,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

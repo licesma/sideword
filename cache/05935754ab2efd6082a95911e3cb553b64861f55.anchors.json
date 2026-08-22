@@ -1,0 +1,919 @@
+{
+ "blob_sha": "05935754ab2efd6082a95911e3cb553b64861f55",
+ "path": "astropy/units/core.py",
+ "repo": "astropy/astropy",
+ "records": 149,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "_flatten_units_collection",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r4",
+   "anchor": "_normalize_equivalencies",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r5",
+   "anchor": "_UnitRegistry",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r6",
+   "anchor": "_UnitRegistry.__init__#if:isinstance(init, _UnitRegistry)/assign:self._equivalencies",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r7",
+   "anchor": "_UnitRegistry.__init__#if:isinstance(init, _UnitRegistry)/assign:self._by_physical_type",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r8",
+   "anchor": "_UnitRegistry.set_enabled_units",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r9",
+   "anchor": "_UnitRegistry.add_enabled_units",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r10",
+   "anchor": "_UnitRegistry.add_enabled_units#for:unit in units/for:st in unit._names",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r11",
+   "anchor": "_UnitRegistry.get_units_with_physical_type",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r12",
+   "anchor": "_UnitRegistry.set_enabled_equivalencies",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r13",
+   "anchor": "_UnitRegistry.add_enabled_equivalencies",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r14",
+   "anchor": "_UnitRegistry.add_enabled_equivalencies#assign:equivalencies",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r15",
+   "anchor": "_UnitRegistry.set_enabled_aliases",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r16",
+   "anchor": "_UnitRegistry.add_enabled_aliases",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r17",
+   "anchor": "set_enabled_units",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r18",
+   "anchor": "set_enabled_units#assign:context",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r19",
+   "anchor": "set_enabled_units#call:get_current_unit_registry().set_enabled_units",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r20",
+   "anchor": "add_enabled_units",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r21",
+   "anchor": "add_enabled_units#assign:context",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r22",
+   "anchor": "add_enabled_units#call:get_current_unit_registry().add_enabled_units",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r23",
+   "anchor": "set_enabled_equivalencies",
+   "kind": "doc",
+   "line": 472
+  },
+  {
+   "id": "r24",
+   "anchor": "set_enabled_equivalencies#assign:context",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r25",
+   "anchor": "set_enabled_equivalencies#call:get_current_unit_registry().set_enabled_equivalencies",
+   "kind": "lead",
+   "line": 502
+  },
+  {
+   "id": "r26",
+   "anchor": "add_enabled_equivalencies",
+   "kind": "doc",
+   "line": 506
+  },
+  {
+   "id": "r27",
+   "anchor": "add_enabled_equivalencies#assign:context",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r28",
+   "anchor": "add_enabled_equivalencies#call:get_current_unit_registry().add_enabled_equivalencies",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r29",
+   "anchor": "set_enabled_aliases",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r30",
+   "anchor": "set_enabled_aliases#assign:context",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r31",
+   "anchor": "set_enabled_aliases#call:get_current_unit_registry().set_enabled_aliases",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r32",
+   "anchor": "add_enabled_aliases",
+   "kind": "doc",
+   "line": 565
+  },
+  {
+   "id": "r33",
+   "anchor": "add_enabled_aliases#assign:context",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r34",
+   "anchor": "add_enabled_aliases#call:get_current_unit_registry().add_enabled_aliases",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r35",
+   "anchor": "UnitsError",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r36",
+   "anchor": "UnitScaleError",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r37",
+   "anchor": "UnitConversionError",
+   "kind": "doc",
+   "line": 618
+  },
+  {
+   "id": "r38",
+   "anchor": "UnitTypeError",
+   "kind": "doc",
+   "line": 625
+  },
+  {
+   "id": "r39",
+   "anchor": "UnitsWarning",
+   "kind": "doc",
+   "line": 634
+  },
+  {
+   "id": "r40",
+   "anchor": "UnitBase",
+   "kind": "doc",
+   "line": 640
+  },
+  {
+   "id": "r41",
+   "anchor": "UnitBase.__array_priority__",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r42",
+   "anchor": "UnitBase.__deepcopy__#return",
+   "kind": "lead",
+   "line": 661
+  },
+  {
+   "id": "r43",
+   "anchor": "UnitBase._repr_latex_",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r44",
+   "anchor": "UnitBase.__bytes__",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r45",
+   "anchor": "UnitBase.__str__",
+   "kind": "doc",
+   "line": 678
+  },
+  {
+   "id": "r46",
+   "anchor": "UnitBase._get_physical_type_id",
+   "kind": "doc",
+   "line": 687
+  },
+  {
+   "id": "r47",
+   "anchor": "UnitBase.names",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r48",
+   "anchor": "UnitBase.name",
+   "kind": "doc",
+   "line": 710
+  },
+  {
+   "id": "r49",
+   "anchor": "UnitBase.aliases",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r50",
+   "anchor": "UnitBase.scale",
+   "kind": "doc",
+   "line": 728
+  },
+  {
+   "id": "r51",
+   "anchor": "UnitBase.bases",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r52",
+   "anchor": "UnitBase.powers",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r53",
+   "anchor": "UnitBase.to_string",
+   "kind": "doc",
+   "line": 748
+  },
+  {
+   "id": "r54",
+   "anchor": "UnitBase.__format__",
+   "kind": "doc",
+   "line": 793
+  },
+  {
+   "id": "r55",
+   "anchor": "UnitBase._normalize_equivalencies",
+   "kind": "doc",
+   "line": 801
+  },
+  {
+   "id": "r56",
+   "anchor": "UnitBase.__truediv__#try/import:.quantity",
+   "kind": "lead",
+   "line": 843
+  },
+  {
+   "id": "r57",
+   "anchor": "UnitBase.__rtruediv__#try/import:.quantity",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r58",
+   "anchor": "UnitBase.__mul__#try",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r59",
+   "anchor": "UnitBase.__rmul__#try",
+   "kind": "lead",
+   "line": 894
+  },
+  {
+   "id": "r60",
+   "anchor": "UnitBase.__getstate__#assign:state",
+   "kind": "lead",
+   "line": 935
+  },
+  {
+   "id": "r61",
+   "anchor": "UnitBase.__eq__#if:not isinstance(other, UnitBase)",
+   "kind": "lead",
+   "line": 951
+  },
+  {
+   "id": "r62",
+   "anchor": "UnitBase.is_equivalent",
+   "kind": "doc",
+   "line": 979
+  },
+  {
+   "id": "r63",
+   "anchor": "UnitBase._is_equivalent",
+   "kind": "doc",
+   "line": 1009
+  },
+  {
+   "id": "r64",
+   "anchor": "UnitBase._is_equivalent#if:self._get_physical_type_id()==other._get_physical_type_id()/elif:len(equivalencies)/for:a, b, forward, backward in equivalencies/if:b is None/try",
+   "kind": "lead",
+   "line": 1027
+  },
+  {
+   "id": "r65",
+   "anchor": "UnitBase._apply_equivalencies",
+   "kind": "doc",
+   "line": 1039
+  },
+  {
+   "id": "r66",
+   "anchor": "UnitBase._get_converter",
+   "kind": "doc",
+   "line": 1087
+  },
+  {
+   "id": "r67",
+   "anchor": "UnitBase._get_converter#try",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r68",
+   "anchor": "UnitBase._get_converter#try",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r69",
+   "anchor": "UnitBase._get_converter#try/except:UnitsError/if:hasattr(other, \"equivalencies\")",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r70",
+   "anchor": "UnitBase._to",
+   "kind": "doc",
+   "line": 1126
+  },
+  {
+   "id": "r71",
+   "anchor": "UnitBase._to#if:self is other",
+   "kind": "lead",
+   "line": 1138
+  },
+  {
+   "id": "r72",
+   "anchor": "UnitBase._to#if:isinstance(other, UnitBase)",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r73",
+   "anchor": "UnitBase._to#if:isinstance(other, UnitBase)/if:self_decomposed.powers==other_decomposed.powers and all(self_base is other_base for (self_base, other_base) in zip(self_decomposed.bases, other_decomposed.bases))",
+   "kind": "lead",
+   "line": 1151
+  },
+  {
+   "id": "r74",
+   "anchor": "UnitBase.to",
+   "kind": "doc",
+   "line": 1161
+  },
+  {
+   "id": "r75",
+   "anchor": "UnitBase.in_units",
+   "kind": "doc",
+   "line": 1197
+  },
+  {
+   "id": "r76",
+   "anchor": "UnitBase.decompose",
+   "kind": "doc",
+   "line": 1203
+  },
+  {
+   "id": "r77",
+   "anchor": "UnitBase._compose.is_final_result#return",
+   "kind": "lead",
+   "line": 1229
+  },
+  {
+   "id": "r78",
+   "anchor": "UnitBase._compose#if:depth>=max_depth",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r79",
+   "anchor": "UnitBase._compose#assign:units",
+   "kind": "lead",
+   "line": 1247
+  },
+  {
+   "id": "r80",
+   "anchor": "UnitBase._compose#assign:partial_results",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r81",
+   "anchor": "UnitBase._compose#if:len(unit.bases)==0",
+   "kind": "lead",
+   "line": 1264
+  },
+  {
+   "id": "r82",
+   "anchor": "UnitBase._compose#for:tunit in namespace/for:u in units/if:len(tunit_decomposed.bases)==1",
+   "kind": "lead",
+   "line": 1277
+  },
+  {
+   "id": "r83",
+   "anchor": "UnitBase._compose#for:final_result in final_results",
+   "kind": "lead",
+   "line": 1293
+  },
+  {
+   "id": "r84",
+   "anchor": "UnitBase._compose#assign:results",
+   "kind": "lead",
+   "line": 1302
+  },
+  {
+   "id": "r85",
+   "anchor": "UnitBase.compose",
+   "kind": "doc",
+   "line": 1344
+  },
+  {
+   "id": "r86",
+   "anchor": "UnitBase.compose#if:include_prefix_units is None",
+   "kind": "lead",
+   "line": 1385
+  },
+  {
+   "id": "r87",
+   "anchor": "UnitBase.compose#assign:equivalencies",
+   "kind": "lead",
+   "line": 1389
+  },
+  {
+   "id": "r88",
+   "anchor": "UnitBase.compose.has_bases_in_common",
+   "kind": "lead",
+   "line": 1396
+  },
+  {
+   "id": "r89",
+   "anchor": "UnitBase.compose.sort_results#assign:results",
+   "kind": "lead",
+   "line": 1455
+  },
+  {
+   "id": "r90",
+   "anchor": "UnitBase.to_system",
+   "kind": "doc",
+   "line": 1480
+  },
+  {
+   "id": "r91",
+   "anchor": "UnitBase.to_system.score#assign:compose_bases",
+   "kind": "lead",
+   "line": 1509
+  },
+  {
+   "id": "r92",
+   "anchor": "UnitBase.si",
+   "kind": "doc",
+   "line": 1526
+  },
+  {
+   "id": "r93",
+   "anchor": "UnitBase.cgs",
+   "kind": "doc",
+   "line": 1535
+  },
+  {
+   "id": "r94",
+   "anchor": "UnitBase.physical_type",
+   "kind": "doc",
+   "line": 1544
+  },
+  {
+   "id": "r95",
+   "anchor": "UnitBase._get_units_with_same_physical_type",
+   "kind": "doc",
+   "line": 1582
+  },
+  {
+   "id": "r96",
+   "anchor": "UnitBase.EquivalentUnitsList",
+   "kind": "doc",
+   "line": 1614
+  },
+  {
+   "id": "r97",
+   "anchor": "UnitBase.EquivalentUnitsList.ROW_LEN",
+   "kind": "trail",
+   "line": 1621
+  },
+  {
+   "id": "r98",
+   "anchor": "UnitBase.EquivalentUnitsList._repr_html_",
+   "kind": "doc",
+   "line": 1640
+  },
+  {
+   "id": "r99",
+   "anchor": "UnitBase.EquivalentUnitsList._repr_html_#if:len(self)==0/else/assign:blank_table",
+   "kind": "lead",
+   "line": 1648
+  },
+  {
+   "id": "r100",
+   "anchor": "UnitBase.EquivalentUnitsList._repr_html_#if:len(self)==0/else/assign:heading_row",
+   "kind": "lead",
+   "line": 1655
+  },
+  {
+   "id": "r101",
+   "anchor": "UnitBase.EquivalentUnitsList._process_equivalent_units",
+   "kind": "doc",
+   "line": 1666
+  },
+  {
+   "id": "r102",
+   "anchor": "UnitBase.find_equivalent_units",
+   "kind": "doc",
+   "line": 1679
+  },
+  {
+   "id": "r103",
+   "anchor": "UnitBase.is_unity",
+   "kind": "doc",
+   "line": 1718
+  },
+  {
+   "id": "r104",
+   "anchor": "NamedUnit",
+   "kind": "doc",
+   "line": 1725
+  },
+  {
+   "id": "r105",
+   "anchor": "NamedUnit._generate_doc",
+   "kind": "doc",
+   "line": 1801
+  },
+  {
+   "id": "r106",
+   "anchor": "NamedUnit.get_format_name",
+   "kind": "doc",
+   "line": 1813
+  },
+  {
+   "id": "r107",
+   "anchor": "NamedUnit.names",
+   "kind": "doc",
+   "line": 1834
+  },
+  {
+   "id": "r108",
+   "anchor": "NamedUnit.name",
+   "kind": "doc",
+   "line": 1841
+  },
+  {
+   "id": "r109",
+   "anchor": "NamedUnit.aliases",
+   "kind": "doc",
+   "line": 1848
+  },
+  {
+   "id": "r110",
+   "anchor": "NamedUnit.short_names",
+   "kind": "doc",
+   "line": 1855
+  },
+  {
+   "id": "r111",
+   "anchor": "NamedUnit.long_names",
+   "kind": "doc",
+   "line": 1862
+  },
+  {
+   "id": "r112",
+   "anchor": "NamedUnit._inject",
+   "kind": "doc",
+   "line": 1868
+  },
+  {
+   "id": "r113",
+   "anchor": "NamedUnit._inject#for:name in self._names",
+   "kind": "lead",
+   "line": 1878
+  },
+  {
+   "id": "r114",
+   "anchor": "_recreate_irreducible_unit",
+   "kind": "doc",
+   "line": 1889
+  },
+  {
+   "id": "r115",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/return",
+   "kind": "lead",
+   "line": 1897
+  },
+  {
+   "id": "r116",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/else/assign:unit",
+   "kind": "lead",
+   "line": 1900
+  },
+  {
+   "id": "r117",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/else/if:registered/call:get_current_unit_registry().add_enabled_units",
+   "kind": "lead",
+   "line": 1904
+  },
+  {
+   "id": "r118",
+   "anchor": "IrreducibleUnit",
+   "kind": "doc",
+   "line": 1909
+  },
+  {
+   "id": "r119",
+   "anchor": "IrreducibleUnit.__reduce__#assign:registry",
+   "kind": "lead",
+   "line": 1925
+  },
+  {
+   "id": "r120",
+   "anchor": "IrreducibleUnit.represents",
+   "kind": "doc",
+   "line": 1933
+  },
+  {
+   "id": "r121",
+   "anchor": "UnrecognizedUnit",
+   "kind": "doc",
+   "line": 1960
+  },
+  {
+   "id": "r122",
+   "anchor": "UnrecognizedUnit.__reduce__",
+   "kind": "lead",
+   "line": 1975
+  },
+  {
+   "id": "r123",
+   "anchor": "_UnitMetaClass",
+   "kind": "doc",
+   "line": 2027
+  },
+  {
+   "id": "r124",
+   "anchor": "_UnitMetaClass.__call__#if:hasattr(s, \"_get_physical_type_id\")",
+   "kind": "lead",
+   "line": 2045
+  },
+  {
+   "id": "r125",
+   "anchor": "_UnitMetaClass.__call__#import:.quantity",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r126",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(represents, UnitBase)",
+   "kind": "lead",
+   "line": 2074
+  },
+  {
+   "id": "r127",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(represents, UnitBase)/return",
+   "kind": "lead",
+   "line": 2077
+  },
+  {
+   "id": "r128",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)",
+   "kind": "lead",
+   "line": 2082
+  },
+  {
+   "id": "r129",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)/elif:isinstance(s, (bytes, str))/if:len(s.strip())==0/return",
+   "kind": "lead",
+   "line": 2088
+  },
+  {
+   "id": "r130",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)/elif:isinstance(s, (bytes, str))/try/except:Exception/if:parse_strict==\"silent\"/else/if:f is not unit_format.Generic",
+   "kind": "lead",
+   "line": 2107
+  },
+  {
+   "id": "r131",
+   "anchor": "Unit",
+   "kind": "doc",
+   "line": 2145
+  },
+  {
+   "id": "r132",
+   "anchor": "Unit.represents",
+   "kind": "doc",
+   "line": 2238
+  },
+  {
+   "id": "r133",
+   "anchor": "Unit._from_physical_type_id#assign:bases",
+   "kind": "lead",
+   "line": 2256
+  },
+  {
+   "id": "r134",
+   "anchor": "PrefixUnit",
+   "kind": "doc",
+   "line": 2267
+  },
+  {
+   "id": "r135",
+   "anchor": "CompositeUnit",
+   "kind": "doc",
+   "line": 2277
+  },
+  {
+   "id": "r136",
+   "anchor": "CompositeUnit.__init__#if:_error_check",
+   "kind": "lead",
+   "line": 2316
+  },
+  {
+   "id": "r137",
+   "anchor": "CompositeUnit.__init__#if:not decompose and len(bases)==1 and powers[0]>=0/assign:unit",
+   "kind": "lead",
+   "line": 2326
+  },
+  {
+   "id": "r138",
+   "anchor": "CompositeUnit.__init__#if:not decompose and len(bases)==1 and powers[0]>=0/else/assign:self._scale",
+   "kind": "lead",
+   "line": 2346
+  },
+  {
+   "id": "r139",
+   "anchor": "CompositeUnit.scale",
+   "kind": "doc",
+   "line": 2361
+  },
+  {
+   "id": "r140",
+   "anchor": "CompositeUnit.bases",
+   "kind": "doc",
+   "line": 2368
+  },
+  {
+   "id": "r141",
+   "anchor": "CompositeUnit.powers",
+   "kind": "doc",
+   "line": 2375
+  },
+  {
+   "id": "r142",
+   "anchor": "CompositeUnit.__copy__",
+   "kind": "doc",
+   "line": 2422
+  },
+  {
+   "id": "r143",
+   "anchor": "_add_prefixes",
+   "kind": "doc",
+   "line": 2492
+  },
+  {
+   "id": "r144",
+   "anchor": "_add_prefixes#for:short, full, factor in prefixes/for:prefix in short/for:alias in u.short_names/if:prefix==\"u\"",
+   "kind": "lead",
+   "line": 2530
+  },
+  {
+   "id": "r145",
+   "anchor": "def_unit",
+   "kind": "doc",
+   "line": 2553
+  },
+  {
+   "id": "r146",
+   "anchor": "_condition_arg",
+   "kind": "doc",
+   "line": 2629
+  },
+  {
+   "id": "r147",
+   "anchor": "unit_scale_converter",
+   "kind": "doc",
+   "line": 2661
+  },
+  {
+   "id": "r148",
+   "anchor": "one",
+   "kind": "lead",
+   "line": 2672
+  },
+  {
+   "id": "r149",
+   "anchor": "<module>#assign:unit_format.fits.UnitScaleError",
+   "kind": "lead",
+   "line": 2676
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 50941,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13436,
+  "thinking_tokens": 6738,
+  "opus_cost_usd": 0.8496015,
+  "total_cost_usd": 0.8903565,
+  "duration_ms": 115691,
+  "duration_api_ms": 117115,
+  "num_turns": 2
+ },
+ "wall_ms": 117522,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

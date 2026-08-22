@@ -1,0 +1,1225 @@
+{
+ "blob_sha": "55397b1fd58c2e073051504c9940c859801d0a5f",
+ "path": "lib/matplotlib/_mathtext.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 200,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "get_unicode_index",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "get_unicode_index",
+   "kind": "trail",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "get_unicode_index",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "get_unicode_index#if:math and symbol == '-'",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r6",
+   "anchor": "get_unicode_index#try",
+   "kind": "trail",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "get_unicode_index#try",
+   "kind": "trail",
+   "line": 61
+  },
+  {
+   "id": "r8",
+   "anchor": "Fonts",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r9",
+   "anchor": "Fonts.__init__",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r10",
+   "anchor": "Fonts.get_kern",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r11",
+   "anchor": "Fonts.get_metrics",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r12",
+   "anchor": "Fonts.render_glyph",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r13",
+   "anchor": "Fonts.render_rect_filled",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r14",
+   "anchor": "Fonts.get_xheight",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r15",
+   "anchor": "Fonts.get_underline_thickness",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r16",
+   "anchor": "Fonts.get_used_characters",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r17",
+   "anchor": "Fonts.get_sized_alternatives_for_symbol",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r18",
+   "anchor": "TruetypeFonts",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r19",
+   "anchor": "TruetypeFonts.__init__#assign:self._get_info",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r20",
+   "anchor": "TruetypeFonts._get_info",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r21",
+   "anchor": "TruetypeFonts._get_info#assign:metrics/arg:iceberg",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r22",
+   "anchor": "TruetypeFonts.get_xheight#if:pclt is None/assign:metrics",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r23",
+   "anchor": "TruetypeFonts.get_underline_thickness#return",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r24",
+   "anchor": "BakomaFonts",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r25",
+   "anchor": "BakomaFonts._size_alternatives",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r26",
+   "anchor": "BakomaFonts._size_alternatives#key:[",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r27",
+   "anchor": "UnicodeFonts",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r28",
+   "anchor": "UnicodeFonts.__init__#assign:fallback_rc",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r29",
+   "anchor": "UnicodeFonts.__init__#if:isinstance(self._fallback_font, StixFonts)",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r30",
+   "anchor": "UnicodeFonts._get_glyph#if:found_symbol",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r31",
+   "anchor": "UnicodeFonts._get_glyph#if:found_symbol/if:font is not None/if:font.family_name == \"cmr10\" and uniindex == 0x2212/assign:font",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r32",
+   "anchor": "UnicodeFonts._get_glyph#if:not found_symbol/if:self._fallback_font/else/assign:uniindex",
+   "kind": "trail",
+   "line": 495
+  },
+  {
+   "id": "r33",
+   "anchor": "DejaVuFonts.__init__#if:isinstance(self, DejaVuSerifFonts)",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r34",
+   "anchor": "DejaVuFonts.__init__#call:self._fontmap.update",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r35",
+   "anchor": "DejaVuFonts._get_glyph#if:sym == r'\\prime'",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r36",
+   "anchor": "DejaVuFonts._get_glyph#if:sym == r'\\prime'/else/assign:uniindex",
+   "kind": "lead",
+   "line": 537
+  },
+  {
+   "id": "r37",
+   "anchor": "DejaVuFonts._get_glyph#if:sym == r'\\prime'/else/return",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r38",
+   "anchor": "DejaVuSerifFonts",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r39",
+   "anchor": "DejaVuSansFonts",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r40",
+   "anchor": "StixFonts",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r41",
+   "anchor": "StixFonts._map_virtual_font#assign:mapping",
+   "kind": "lead",
+   "line": 621
+  },
+  {
+   "id": "r42",
+   "anchor": "StixFonts._map_virtual_font#if:mapping is not None/assign:lo",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r43",
+   "anchor": "StixFonts._map_virtual_font#if:mapping is not None/if:range[0] <= uniindex <= range[1]/elif:not doing_sans_conversion/assign:uniindex",
+   "kind": "lead",
+   "line": 654
+  },
+  {
+   "id": "r44",
+   "anchor": "StixFonts._map_virtual_font#if:fontname in ('rm', 'it')",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r45",
+   "anchor": "StixFonts._map_virtual_font#if:fontname in ('it', 'rm', 'bf') and 0xe000 <= uniindex <= 0xf8ff",
+   "kind": "lead",
+   "line": 662
+  },
+  {
+   "id": "r46",
+   "anchor": "StixFonts.get_sized_alternatives_for_symbol#if:sym == r'\\__sqrt__'",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r47",
+   "anchor": "StixSansFonts",
+   "kind": "doc",
+   "line": 688
+  },
+  {
+   "id": "r48",
+   "anchor": "SHRINK_FACTOR",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r49",
+   "anchor": "SHRINK_FACTOR",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r50",
+   "anchor": "SHRINK_FACTOR",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r51",
+   "anchor": "NUM_SIZE_LEVELS",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r52",
+   "anchor": "FontConstantsBase",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r53",
+   "anchor": "FontConstantsBase.script_space",
+   "kind": "lead",
+   "line": 734
+  },
+  {
+   "id": "r54",
+   "anchor": "FontConstantsBase.subdrop",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r55",
+   "anchor": "FontConstantsBase.sup1",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r56",
+   "anchor": "FontConstantsBase.sub1",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r57",
+   "anchor": "FontConstantsBase.sub2",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r58",
+   "anchor": "FontConstantsBase.delta",
+   "kind": "lead",
+   "line": 751
+  },
+  {
+   "id": "r59",
+   "anchor": "FontConstantsBase.delta_slanted",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r60",
+   "anchor": "FontConstantsBase.delta_integral",
+   "kind": "lead",
+   "line": 760
+  },
+  {
+   "id": "r61",
+   "anchor": "_font_constant_mapping",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r62",
+   "anchor": "_font_constant_mapping#key:Bitstream Vera Sans",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r63",
+   "anchor": "_get_font_constant_set#if:constants is STIXFontConstants and isinstance(state.font_output, StixSansFonts)",
+   "kind": "lead",
+   "line": 829
+  },
+  {
+   "id": "r64",
+   "anchor": "Node",
+   "kind": "doc",
+   "line": 835
+  },
+  {
+   "id": "r65",
+   "anchor": "Node.shrink",
+   "kind": "doc",
+   "line": 847
+  },
+  {
+   "id": "r66",
+   "anchor": "Node.render",
+   "kind": "doc",
+   "line": 854
+  },
+  {
+   "id": "r67",
+   "anchor": "Box",
+   "kind": "doc",
+   "line": 858
+  },
+  {
+   "id": "r68",
+   "anchor": "Vbox",
+   "kind": "doc",
+   "line": 878
+  },
+  {
+   "id": "r69",
+   "anchor": "Hbox",
+   "kind": "doc",
+   "line": 885
+  },
+  {
+   "id": "r70",
+   "anchor": "Char",
+   "kind": "doc",
+   "line": 892
+  },
+  {
+   "id": "r71",
+   "anchor": "Char.__init__#call:self._update_metrics",
+   "kind": "lead",
+   "line": 915
+  },
+  {
+   "id": "r72",
+   "anchor": "Char.get_kerning",
+   "kind": "doc",
+   "line": 933
+  },
+  {
+   "id": "r73",
+   "anchor": "Accent",
+   "kind": "doc",
+   "line": 962
+  },
+  {
+   "id": "r74",
+   "anchor": "List",
+   "kind": "doc",
+   "line": 985
+  },
+  {
+   "id": "r75",
+   "anchor": "List.shift_amount",
+   "kind": "trail",
+   "line": 990
+  },
+  {
+   "id": "r76",
+   "anchor": "List.children",
+   "kind": "trail",
+   "line": 991
+  },
+  {
+   "id": "r77",
+   "anchor": "List.glue_set",
+   "kind": "lead",
+   "line": 993
+  },
+  {
+   "id": "r78",
+   "anchor": "List.glue_set",
+   "kind": "trail",
+   "line": 993
+  },
+  {
+   "id": "r79",
+   "anchor": "List.glue_sign",
+   "kind": "trail",
+   "line": 994
+  },
+  {
+   "id": "r80",
+   "anchor": "List.glue_order",
+   "kind": "trail",
+   "line": 995
+  },
+  {
+   "id": "r81",
+   "anchor": "List._set_glue#assign:self.glue_order",
+   "kind": "lead",
+   "line": 1005
+  },
+  {
+   "id": "r82",
+   "anchor": "Hlist",
+   "kind": "doc",
+   "line": 1028
+  },
+  {
+   "id": "r83",
+   "anchor": "Hlist.kern",
+   "kind": "doc",
+   "line": 1037
+  },
+  {
+   "id": "r84",
+   "anchor": "Hlist.hpack",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r85",
+   "anchor": "Hlist.hpack",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r86",
+   "anchor": "Hlist.hpack",
+   "kind": "doc",
+   "line": 1076
+  },
+  {
+   "id": "r87",
+   "anchor": "Hlist.hpack#assign:h",
+   "kind": "lead",
+   "line": 1099
+  },
+  {
+   "id": "r88",
+   "anchor": "Vlist",
+   "kind": "doc",
+   "line": 1141
+  },
+  {
+   "id": "r89",
+   "anchor": "Vlist.vpack",
+   "kind": "doc",
+   "line": 1148
+  },
+  {
+   "id": "r90",
+   "anchor": "Vlist.vpack#assign:w",
+   "kind": "lead",
+   "line": 1170
+  },
+  {
+   "id": "r91",
+   "anchor": "Rule",
+   "kind": "doc",
+   "line": 1220
+  },
+  {
+   "id": "r92",
+   "anchor": "Hrule",
+   "kind": "doc",
+   "line": 1239
+  },
+  {
+   "id": "r93",
+   "anchor": "Vrule",
+   "kind": "doc",
+   "line": 1249
+  },
+  {
+   "id": "r94",
+   "anchor": "Glue",
+   "kind": "doc",
+   "line": 1271
+  },
+  {
+   "id": "r95",
+   "anchor": "HCentered",
+   "kind": "doc",
+   "line": 1296
+  },
+  {
+   "id": "r96",
+   "anchor": "VCentered",
+   "kind": "doc",
+   "line": 1306
+  },
+  {
+   "id": "r97",
+   "anchor": "Kern",
+   "kind": "doc",
+   "line": 1316
+  },
+  {
+   "id": "r98",
+   "anchor": "AutoHeightChar",
+   "kind": "doc",
+   "line": 1343
+  },
+  {
+   "id": "r99",
+   "anchor": "AutoHeightChar.__init__#for:fontname, sym in alternatives/if:char.height + char.depth >= target_total - 0.2 * xHeight",
+   "kind": "lead",
+   "line": 1366
+  },
+  {
+   "id": "r100",
+   "anchor": "AutoWidthChar",
+   "kind": "doc",
+   "line": 1382
+  },
+  {
+   "id": "r101",
+   "anchor": "ship",
+   "kind": "doc",
+   "line": 1410
+  },
+  {
+   "id": "r102",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/if:len(p.children) == 0",
+   "kind": "lead",
+   "line": 1447
+  },
+  {
+   "id": "r103",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/if:len(p.children) == 0/else/if:isinstance(p, Hlist)/else/call:vlist_out",
+   "kind": "lead",
+   "line": 1456
+  },
+  {
+   "id": "r104",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/assign:rule_height",
+   "kind": "lead",
+   "line": 1461
+  },
+  {
+   "id": "r105",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/assign:glue_spec",
+   "kind": "lead",
+   "line": 1476
+  },
+  {
+   "id": "r106",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/if:glue_sign != 0",
+   "kind": "trail",
+   "line": 1478
+  },
+  {
+   "id": "r107",
+   "anchor": "ship.hlist_out#for:p in box.children/if:isinstance(p, Char)/elif:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/if:glue_sign != 0/if:glue_sign == 1",
+   "kind": "trail",
+   "line": 1479
+  },
+  {
+   "id": "r108",
+   "anchor": "ship.vlist_out#for:p in box.children/if:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/if:glue_sign != 0",
+   "kind": "trail",
+   "line": 1531
+  },
+  {
+   "id": "r109",
+   "anchor": "ship.vlist_out#for:p in box.children/if:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/if:glue_sign != 0/if:glue_sign == 1",
+   "kind": "trail",
+   "line": 1532
+  },
+  {
+   "id": "r110",
+   "anchor": "ship.vlist_out#for:p in box.children/if:isinstance(p, Kern)/elif:isinstance(p, List)/elif:isinstance(p, Box)/elif:isinstance(p, Glue)/if:glue_sign != 0/if:glue_sign == 1/elif:glue_spec.shrink_order == glue_order",
+   "kind": "trail",
+   "line": 1536
+  },
+  {
+   "id": "r111",
+   "anchor": "Error",
+   "kind": "lead",
+   "line": 1552
+  },
+  {
+   "id": "r112",
+   "anchor": "Error",
+   "kind": "doc",
+   "line": 1552
+  },
+  {
+   "id": "r113",
+   "anchor": "ParserState",
+   "kind": "doc",
+   "line": 1560
+  },
+  {
+   "id": "r114",
+   "anchor": "ParserState.get_current_underline_thickness",
+   "kind": "doc",
+   "line": 1591
+  },
+  {
+   "id": "r115",
+   "anchor": "cmd",
+   "kind": "doc",
+   "line": 1597
+  },
+  {
+   "id": "r116",
+   "anchor": "Parser",
+   "kind": "doc",
+   "line": 1622
+  },
+  {
+   "id": "r117",
+   "anchor": "Parser.__init__.set_names_and_parse_actions#for:key, val in vars(p).items()/if:not key.startswith('_')/call:val.setName",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r118",
+   "anchor": "Parser.__init__.set_names_and_parse_actions#for:key, val in vars(p).items()/if:not key.startswith('_')/if:hasattr(self, key)",
+   "kind": "lead",
+   "line": 1715
+  },
+  {
+   "id": "r119",
+   "anchor": "Parser.__init__#assign:p.float_literal",
+   "kind": "lead",
+   "line": 1720
+  },
+  {
+   "id": "r120",
+   "anchor": "Parser.__init__#assign:p.single_symbol",
+   "kind": "trail",
+   "line": 1728
+  },
+  {
+   "id": "r121",
+   "anchor": "Parser.__init__#call:set_names_and_parse_actions",
+   "kind": "trail",
+   "line": 1744
+  },
+  {
+   "id": "r122",
+   "anchor": "Parser.__init__#assign:p.accent",
+   "kind": "lead",
+   "line": 1748
+  },
+  {
+   "id": "r123",
+   "anchor": "Parser.__init__#call:set_names_and_parse_actions",
+   "kind": "trail",
+   "line": 1769
+  },
+  {
+   "id": "r124",
+   "anchor": "Parser.__init__#assign:p.placeable",
+   "kind": "trail",
+   "line": 1819
+  },
+  {
+   "id": "r125",
+   "anchor": "Parser.__init__#assign:p.placeable",
+   "kind": "trail",
+   "line": 1820
+  },
+  {
+   "id": "r126",
+   "anchor": "Parser.__init__#assign:p.placeable",
+   "kind": "trail",
+   "line": 1821
+  },
+  {
+   "id": "r127",
+   "anchor": "Parser.__init__#assign:p.placeable",
+   "kind": "trail",
+   "line": 1822
+  },
+  {
+   "id": "r128",
+   "anchor": "Parser.__init__#assign:p.placeable",
+   "kind": "trail",
+   "line": 1823
+  },
+  {
+   "id": "r129",
+   "anchor": "Parser.__init__#assign:p.token",
+   "kind": "trail",
+   "line": 1855
+  },
+  {
+   "id": "r130",
+   "anchor": "Parser.__init__#assign:p.math",
+   "kind": "lead",
+   "line": 1865
+  },
+  {
+   "id": "r131",
+   "anchor": "Parser.__init__#call:set_names_and_parse_actions",
+   "kind": "trail",
+   "line": 1871
+  },
+  {
+   "id": "r132",
+   "anchor": "Parser._in_subscript_or_superscript",
+   "kind": "lead",
+   "line": 1877
+  },
+  {
+   "id": "r133",
+   "anchor": "Parser.parse",
+   "kind": "doc",
+   "line": 1879
+  },
+  {
+   "id": "r134",
+   "anchor": "Parser.parse#assign:self._em_width_cache",
+   "kind": "lead",
+   "line": 1899
+  },
+  {
+   "id": "r135",
+   "anchor": "Parser.get_state",
+   "kind": "doc",
+   "line": 1903
+  },
+  {
+   "id": "r136",
+   "anchor": "Parser.pop_state",
+   "kind": "doc",
+   "line": 1907
+  },
+  {
+   "id": "r137",
+   "anchor": "Parser.push_state",
+   "kind": "doc",
+   "line": 1911
+  },
+  {
+   "id": "r138",
+   "anchor": "Parser.non_math#call:self.push_state",
+   "kind": "lead",
+   "line": 1931
+  },
+  {
+   "id": "r139",
+   "anchor": "Parser._make_space#assign:state",
+   "kind": "lead",
+   "line": 1939
+  },
+  {
+   "id": "r140",
+   "anchor": "Parser._space_widths#key:\\,",
+   "kind": "trail",
+   "line": 1951
+  },
+  {
+   "id": "r141",
+   "anchor": "Parser._space_widths#key:\\thinspace",
+   "kind": "trail",
+   "line": 1952
+  },
+  {
+   "id": "r142",
+   "anchor": "Parser._space_widths#key:\\/",
+   "kind": "trail",
+   "line": 1953
+  },
+  {
+   "id": "r143",
+   "anchor": "Parser._space_widths#key:\\>",
+   "kind": "trail",
+   "line": 1954
+  },
+  {
+   "id": "r144",
+   "anchor": "Parser._space_widths#key:\\:",
+   "kind": "trail",
+   "line": 1955
+  },
+  {
+   "id": "r145",
+   "anchor": "Parser._space_widths#key:\\;",
+   "kind": "trail",
+   "line": 1956
+  },
+  {
+   "id": "r146",
+   "anchor": "Parser._space_widths#key:\\ ",
+   "kind": "trail",
+   "line": 1957
+  },
+  {
+   "id": "r147",
+   "anchor": "Parser._space_widths#key:~",
+   "kind": "trail",
+   "line": 1958
+  },
+  {
+   "id": "r148",
+   "anchor": "Parser._space_widths#key:\\enspace",
+   "kind": "trail",
+   "line": 1959
+  },
+  {
+   "id": "r149",
+   "anchor": "Parser._space_widths#key:\\quad",
+   "kind": "trail",
+   "line": 1960
+  },
+  {
+   "id": "r150",
+   "anchor": "Parser._space_widths#key:\\qquad",
+   "kind": "trail",
+   "line": 1961
+  },
+  {
+   "id": "r151",
+   "anchor": "Parser._space_widths#key:\\!",
+   "kind": "trail",
+   "line": 1962
+  },
+  {
+   "id": "r152",
+   "anchor": "Parser.symbol#if:c == \"-\"/assign:c",
+   "kind": "lead",
+   "line": 1981
+  },
+  {
+   "id": "r153",
+   "anchor": "Parser.symbol#if:c in self._spaced_symbols/assign:prev_char",
+   "kind": "lead",
+   "line": 1991
+  },
+  {
+   "id": "r154",
+   "anchor": "Parser.symbol#if:c in self._spaced_symbols/if:c in self._binary_operators and (len(s[:loc].split()) == 0 or prev_char == '{' or prev_char in self._left_delims)",
+   "kind": "lead",
+   "line": 1993
+  },
+  {
+   "id": "r155",
+   "anchor": "Parser.symbol#if:c in self._spaced_symbols/elif:c in self._punctuation_symbols/if:c == ','",
+   "kind": "lead",
+   "line": 2005
+  },
+  {
+   "id": "r156",
+   "anchor": "Parser.symbol#if:c in self._spaced_symbols/elif:c in self._punctuation_symbols/if:c == '.' and s[loc - 1].isdigit() and s[loc + 1].isdigit()",
+   "kind": "lead",
+   "line": 2012
+  },
+  {
+   "id": "r157",
+   "anchor": "Parser._accentprefixed",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r158",
+   "anchor": "Parser.operatorname#assign:name",
+   "kind": "lead",
+   "line": 2086
+  },
+  {
+   "id": "r159",
+   "anchor": "Parser.operatorname#if:next_char not in delimiters and name not in self._overunder_functions/assign:hlist_list",
+   "kind": "lead",
+   "line": 2104
+  },
+  {
+   "id": "r160",
+   "anchor": "Parser.operatorname#if:next_char in {'^', '_'}",
+   "kind": "lead",
+   "line": 2108
+  },
+  {
+   "id": "r161",
+   "anchor": "Parser.start_group#if:toks.get(\"font\")",
+   "kind": "lead",
+   "line": 2118
+  },
+  {
+   "id": "r162",
+   "anchor": "Parser.subsuper#if:napostrophes/call:super.kern",
+   "kind": "lead",
+   "line": 2192
+  },
+  {
+   "id": "r163",
+   "anchor": "Parser.subsuper#if:self.is_overunder(nucleus)",
+   "kind": "lead",
+   "line": 2196
+  },
+  {
+   "id": "r164",
+   "anchor": "Parser.subsuper#assign:last_char",
+   "kind": "lead",
+   "line": 2232
+  },
+  {
+   "id": "r165",
+   "anchor": "Parser.subsuper#if:isinstance(nucleus, Hlist)/if:len(new_children)/if:isinstance(new_children[-1], Kern) and hasattr(new_children[-2], '_metrics')",
+   "kind": "lead",
+   "line": 2237
+  },
+  {
+   "id": "r166",
+   "anchor": "Parser.subsuper#if:isinstance(nucleus, Hlist)/assign:nucleus",
+   "kind": "lead",
+   "line": 2244
+  },
+  {
+   "id": "r167",
+   "anchor": "Parser.subsuper#assign:constants",
+   "kind": "lead",
+   "line": 2251
+  },
+  {
+   "id": "r168",
+   "anchor": "Parser.subsuper#assign:superkern",
+   "kind": "lead",
+   "line": 2258
+  },
+  {
+   "id": "r169",
+   "anchor": "Parser.subsuper#if:super is None/assign:x",
+   "kind": "lead",
+   "line": 2274
+  },
+  {
+   "id": "r170",
+   "anchor": "Parser.subsuper#if:super is None/else/if:sub is None/else",
+   "kind": "trail",
+   "line": 2290
+  },
+  {
+   "id": "r171",
+   "anchor": "Parser.subsuper#if:super is None/else/if:sub is None/else/assign:clr",
+   "kind": "lead",
+   "line": 2298
+  },
+  {
+   "id": "r172",
+   "anchor": "Parser.subsuper#assign:spaced_nucleus",
+   "kind": "lead",
+   "line": 2313
+  },
+  {
+   "id": "r173",
+   "anchor": "Parser._genfrac#assign:vlist/arg:[cnum, Vbox(0, thickness * 2.0), Hrule(state, rule), Vbox(0, thickness * 2.0), cden]/item:cnum",
+   "kind": "trail",
+   "line": 2333
+  },
+  {
+   "id": "r174",
+   "anchor": "Parser._genfrac#assign:vlist/arg:[cnum, Vbox(0, thickness * 2.0), Hrule(state, rule), Vbox(0, thickness * 2.0), cden]/item:Vbox(0, thickness * 2.0)",
+   "kind": "trail",
+   "line": 2334
+  },
+  {
+   "id": "r175",
+   "anchor": "Parser._genfrac#assign:vlist/arg:[cnum, Vbox(0, thickness * 2.0), Hrule(state, rule), Vbox(0, thickness * 2.0), cden]/item:Hrule(state, rule)",
+   "kind": "trail",
+   "line": 2335
+  },
+  {
+   "id": "r176",
+   "anchor": "Parser._genfrac#assign:vlist/arg:[cnum, Vbox(0, thickness * 2.0), Hrule(state, rule), Vbox(0, thickness * 2.0), cden]/item:Vbox(0, thickness * 2.0)",
+   "kind": "trail",
+   "line": 2336
+  },
+  {
+   "id": "r177",
+   "anchor": "Parser._genfrac#assign:vlist/arg:[cnum, Vbox(0, thickness * 2.0), Hrule(state, rule), Vbox(0, thickness * 2.0), cden]/item:cden",
+   "kind": "trail",
+   "line": 2337
+  },
+  {
+   "id": "r178",
+   "anchor": "Parser._genfrac#assign:metrics",
+   "kind": "lead",
+   "line": 2342
+  },
+  {
+   "id": "r179",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"",
+   "kind": "trail",
+   "line": 2396
+  },
+  {
+   "id": "r180",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/assign:vlist/arg:[cbody, Vbox(0, vgap), cannotation]/item:cbody",
+   "kind": "trail",
+   "line": 2397
+  },
+  {
+   "id": "r181",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/assign:vlist/arg:[cbody, Vbox(0, vgap), cannotation]/item:Vbox(0, vgap)",
+   "kind": "trail",
+   "line": 2398
+  },
+  {
+   "id": "r182",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/assign:vlist/arg:[cbody, Vbox(0, vgap), cannotation]/item:cannotation",
+   "kind": "trail",
+   "line": 2399
+  },
+  {
+   "id": "r183",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/assign:vlist.shift_amount",
+   "kind": "lead",
+   "line": 2402
+  },
+  {
+   "id": "r184",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/else",
+   "kind": "trail",
+   "line": 2403
+  },
+  {
+   "id": "r185",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/else/assign:vlist/arg:[cannotation, Vbox(0, vgap), cbody]/item:cannotation",
+   "kind": "trail",
+   "line": 2404
+  },
+  {
+   "id": "r186",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/else/assign:vlist/arg:[cannotation, Vbox(0, vgap), cbody]/item:Vbox(0, vgap)",
+   "kind": "trail",
+   "line": 2405
+  },
+  {
+   "id": "r187",
+   "anchor": "Parser._genset#if:s[loc + 1] == \"u\"/else/assign:vlist/arg:[cannotation, Vbox(0, vgap), cbody]/item:cbody",
+   "kind": "trail",
+   "line": 2406
+  },
+  {
+   "id": "r188",
+   "anchor": "Parser._genset#return",
+   "kind": "lead",
+   "line": 2411
+  },
+  {
+   "id": "r189",
+   "anchor": "Parser.sqrt#assign:height",
+   "kind": "lead",
+   "line": 2423
+  },
+  {
+   "id": "r190",
+   "anchor": "Parser.sqrt#assign:padded_body",
+   "kind": "lead",
+   "line": 2430
+  },
+  {
+   "id": "r191",
+   "anchor": "Parser.sqrt#call:rightside.vpack",
+   "kind": "lead",
+   "line": 2433
+  },
+  {
+   "id": "r192",
+   "anchor": "Parser.sqrt#if:not root",
+   "kind": "lead",
+   "line": 2438
+  },
+  {
+   "id": "r193",
+   "anchor": "Parser.sqrt#assign:hlist/arg:[root_vlist, Kern(-check.width * 0.5), check, rightside]/item:root_vlist",
+   "kind": "trail",
+   "line": 2448
+  },
+  {
+   "id": "r194",
+   "anchor": "Parser.sqrt#assign:hlist/arg:[root_vlist, Kern(-check.width * 0.5), check, rightside]/item:Kern(-check.width * 0.5)",
+   "kind": "lead",
+   "line": 2450
+  },
+  {
+   "id": "r195",
+   "anchor": "Parser.sqrt#assign:hlist/arg:[root_vlist, Kern(-check.width * 0.5), check, rightside]/item:check",
+   "kind": "trail",
+   "line": 2451
+  },
+  {
+   "id": "r196",
+   "anchor": "Parser.sqrt#assign:hlist/arg:[root_vlist, Kern(-check.width * 0.5), check, rightside]/item:rightside",
+   "kind": "trail",
+   "line": 2452
+  },
+  {
+   "id": "r197",
+   "anchor": "Parser.overline#assign:rightside",
+   "kind": "lead",
+   "line": 2465
+  },
+  {
+   "id": "r198",
+   "anchor": "Parser.overline#call:rightside.vpack",
+   "kind": "lead",
+   "line": 2468
+  },
+  {
+   "id": "r199",
+   "anchor": "Parser._auto_sized_delimiter#if:front != '.'",
+   "kind": "lead",
+   "line": 2486
+  },
+  {
+   "id": "r200",
+   "anchor": "Parser.auto_delim#return/arg:toks[\"mid\"].asList() if \"mid\" in toks else []",
+   "kind": "lead",
+   "line": 2500
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 55114,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 21599,
+  "thinking_tokens": 11392,
+  "opus_cost_usd": 1.0954065000000002,
+  "total_cost_usd": 1.1406395000000003,
+  "duration_ms": 191753,
+  "duration_api_ms": 193399,
+  "num_turns": 2
+ },
+ "wall_ms": 192900,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

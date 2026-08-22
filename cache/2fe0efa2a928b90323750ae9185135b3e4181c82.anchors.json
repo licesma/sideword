@@ -1,0 +1,505 @@
+{
+ "blob_sha": "2fe0efa2a928b90323750ae9185135b3e4181c82",
+ "path": "lib/matplotlib/dviread.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 80,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_dvistate",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r3",
+   "anchor": "_dvistate",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "Page",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r5",
+   "anchor": "Text",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r6",
+   "anchor": "Text",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r7",
+   "anchor": "Text.font_path",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r8",
+   "anchor": "Text.font_size",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r9",
+   "anchor": "Text.font_effects",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r10",
+   "anchor": "Text.glyph_name_or_index",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r11",
+   "anchor": "_arg_raw",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r12",
+   "anchor": "_arg_raw",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r13",
+   "anchor": "_arg",
+   "kind": "doc",
+   "line": 138
+  },
+  {
+   "id": "r14",
+   "anchor": "_arg_slen",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r15",
+   "anchor": "_arg_slen1",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r16",
+   "anchor": "_arg_ulen1",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r17",
+   "anchor": "_arg_olen1",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r18",
+   "anchor": "_dispatch",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r19",
+   "anchor": "Dvi",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r20",
+   "anchor": "Dvi._dtable",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r21",
+   "anchor": "Dvi.__init__",
+   "kind": "doc",
+   "line": 257
+  },
+  {
+   "id": "r22",
+   "anchor": "Dvi.__enter__",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r23",
+   "anchor": "Dvi.__exit__",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r24",
+   "anchor": "Dvi.__iter__",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r25",
+   "anchor": "Dvi.close",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r26",
+   "anchor": "Dvi._output",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r27",
+   "anchor": "Dvi._output#for:elt in self.text + self.boxes/if:isinstance(elt, Box)/assign:e",
+   "kind": "trail",
+   "line": 316
+  },
+  {
+   "id": "r28",
+   "anchor": "Dvi._output#for:elt in self.text + self.boxes/if:isinstance(elt, Box)/else",
+   "kind": "trail",
+   "line": 317
+  },
+  {
+   "id": "r29",
+   "anchor": "Dvi._output#if:self._baseline_v is not None/assign:maxy_pure",
+   "kind": "trail",
+   "line": 326
+  },
+  {
+   "id": "r30",
+   "anchor": "Dvi._output#if:not self.text and not self.boxes",
+   "kind": "trail",
+   "line": 329
+  },
+  {
+   "id": "r31",
+   "anchor": "Dvi._output#if:self.dpi is None/return",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r32",
+   "anchor": "Dvi._output#assign:d",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r33",
+   "anchor": "Dvi._read",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r34",
+   "anchor": "Dvi._read#while:True/if:byte == 140",
+   "kind": "trail",
+   "line": 360
+  },
+  {
+   "id": "r35",
+   "anchor": "Dvi._read#while:True/if:self.state is _dvistate.post_post",
+   "kind": "trail",
+   "line": 362
+  },
+  {
+   "id": "r36",
+   "anchor": "Dvi._arg",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r37",
+   "anchor": "Dvi.text",
+   "kind": "trail",
+   "line": 433
+  },
+  {
+   "id": "r38",
+   "anchor": "Dvi.boxes",
+   "kind": "trail",
+   "line": 434
+  },
+  {
+   "id": "r39",
+   "anchor": "Dvi._pre#call:self.file.read",
+   "kind": "trail",
+   "line": 517
+  },
+  {
+   "id": "r40",
+   "anchor": "Dvi._pre#if:num != 25400000 or den != 7227 * 2**16/raise:ValueError",
+   "kind": "post",
+   "line": 521
+  },
+  {
+   "id": "r41",
+   "anchor": "Dvi._pre#if:mag != 1000/raise:ValueError",
+   "kind": "post",
+   "line": 528
+  },
+  {
+   "id": "r42",
+   "anchor": "Dvi._post#assign:self.state",
+   "kind": "todo",
+   "line": 535
+  },
+  {
+   "id": "r43",
+   "anchor": "DviFont",
+   "kind": "doc",
+   "line": 548
+  },
+  {
+   "id": "r44",
+   "anchor": "DviFont._width_of",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r45",
+   "anchor": "DviFont._height_depth_of",
+   "kind": "doc",
+   "line": 617
+  },
+  {
+   "id": "r46",
+   "anchor": "DviFont._height_depth_of#if:re.match(br'^cmsy\\d+$', self.texname) and char == 0",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r47",
+   "anchor": "Vf",
+   "kind": "doc",
+   "line": 639
+  },
+  {
+   "id": "r48",
+   "anchor": "Vf._read",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r49",
+   "anchor": "Vf._read#while:True/if:self.state is _dvistate.inpage",
+   "kind": "lead",
+   "line": 685
+  },
+  {
+   "id": "r50",
+   "anchor": "Vf._read#while:True/if:self.state is _dvistate.inpage/if:byte_at == packet_ends/assign:packet_len, packet_char, packet_width",
+   "kind": "post",
+   "line": 689
+  },
+  {
+   "id": "r51",
+   "anchor": "Vf._read#while:True/if:byte < 242",
+   "kind": "lead",
+   "line": 701
+  },
+  {
+   "id": "r52",
+   "anchor": "Vf._read#while:True/if:byte < 242",
+   "kind": "trail",
+   "line": 701
+  },
+  {
+   "id": "r53",
+   "anchor": "Vf._read#while:True/if:byte < 242/elif:byte == 242",
+   "kind": "trail",
+   "line": 706
+  },
+  {
+   "id": "r54",
+   "anchor": "Vf._read#while:True/if:byte < 242/elif:byte == 247",
+   "kind": "trail",
+   "line": 716
+  },
+  {
+   "id": "r55",
+   "anchor": "Vf._read#while:True/if:byte < 242/elif:byte == 248",
+   "kind": "trail",
+   "line": 721
+  },
+  {
+   "id": "r56",
+   "anchor": "Vf._pre#assign:self.state",
+   "kind": "post",
+   "line": 747
+  },
+  {
+   "id": "r57",
+   "anchor": "_mul2012",
+   "kind": "doc",
+   "line": 751
+  },
+  {
+   "id": "r58",
+   "anchor": "_mul2012#return",
+   "kind": "lead",
+   "line": 754
+  },
+  {
+   "id": "r59",
+   "anchor": "Tfm",
+   "kind": "doc",
+   "line": 757
+  },
+  {
+   "id": "r60",
+   "anchor": "Tfm.__init__#with:open(filename, 'rb')/assign:char_info",
+   "kind": "lead",
+   "line": 790
+  },
+  {
+   "id": "r61",
+   "anchor": "PsfontsMap",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r62",
+   "anchor": "PsfontsMap.__new__#decorator:lru_cache",
+   "kind": "lead",
+   "line": 855
+  },
+  {
+   "id": "r63",
+   "anchor": "PsfontsMap.__new__#with:open(filename, 'rb')",
+   "kind": "lead",
+   "line": 863
+  },
+  {
+   "id": "r64",
+   "anchor": "PsfontsMap._parse_and_cache_line",
+   "kind": "doc",
+   "line": 887
+  },
+  {
+   "id": "r65",
+   "anchor": "PsfontsMap._parse_and_cache_line#if:not line or line.startswith((b\" \", b\"%\", b\"*\", b\";\", b\"#\"))",
+   "kind": "lead",
+   "line": 915
+  },
+  {
+   "id": "r66",
+   "anchor": "PsfontsMap._parse_and_cache_line#for:match in matches/if:unquoted/if:unquoted.startswith(b\"<<\")",
+   "kind": "trail",
+   "line": 923
+  },
+  {
+   "id": "r67",
+   "anchor": "PsfontsMap._parse_and_cache_line#for:match in matches/if:unquoted/if:unquoted.startswith(b\"<<\")/elif:unquoted.startswith(b\"<[\")",
+   "kind": "trail",
+   "line": 925
+  },
+  {
+   "id": "r68",
+   "anchor": "PsfontsMap._parse_and_cache_line#for:match in matches/if:unquoted/if:unquoted.startswith(b\"<<\")/elif:unquoted.startswith(b\"<\")",
+   "kind": "trail",
+   "line": 927
+  },
+  {
+   "id": "r69",
+   "anchor": "PsfontsMap._parse_and_cache_line#for:match in matches/if:unquoted/if:unquoted.startswith(b\"<<\")/elif:unquoted.startswith(b\"<\")/assign:word",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r70",
+   "anchor": "PsfontsMap._parse_and_cache_line#for:match in matches/if:unquoted/if:unquoted.startswith(b\"<<\")/elif:unquoted.startswith(b\"<\")/assign:word",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r71",
+   "anchor": "PsfontsMap._parse_and_cache_line#if:fontfile is not None",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r72",
+   "anchor": "_parse_enc",
+   "kind": "doc",
+   "line": 983
+  },
+  {
+   "id": "r73",
+   "anchor": "_LuatexKpsewhich.__new__#decorator:lru_cache",
+   "kind": "trail",
+   "line": 1010
+  },
+  {
+   "id": "r74",
+   "anchor": "_LuatexKpsewhich.search#if:self._proc.poll() is not None",
+   "kind": "trail",
+   "line": 1023
+  },
+  {
+   "id": "r75",
+   "anchor": "_find_tex_file",
+   "kind": "doc",
+   "line": 1033
+  },
+  {
+   "id": "r76",
+   "anchor": "_find_tex_file#if:isinstance(filename, bytes)",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r77",
+   "anchor": "_find_tex_file#try/except:FileNotFoundError/assign:lk",
+   "kind": "trail",
+   "line": 1067
+  },
+  {
+   "id": "r78",
+   "anchor": "_find_tex_file#if:lk and format is None/else/if:os.name == 'nt'/assign:kwargs",
+   "kind": "lead",
+   "line": 1077
+  },
+  {
+   "id": "r79",
+   "anchor": "_find_tex_file#if:lk and format is None/else/if:os.name == 'nt'/else",
+   "kind": "trail",
+   "line": 1079
+  },
+  {
+   "id": "r80",
+   "anchor": "find_tex_file#decorator:_api.delete_parameter",
+   "kind": "lead",
+   "line": 1103
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 26588,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8172,
+  "thinking_tokens": 4520,
+  "opus_cost_usd": 0.47447150000000005,
+  "total_cost_usd": 0.49539350000000004,
+  "duration_ms": 77265,
+  "duration_api_ms": 78333,
+  "num_turns": 2
+ },
+ "wall_ms": 78153,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

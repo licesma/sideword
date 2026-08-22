@@ -1,0 +1,355 @@
+{
+ "blob_sha": "04b2d773e2e54ab84567136bba15062fa8e7beba",
+ "path": "xarray/coding/cftime_offsets.py",
+ "repo": "pydata/xarray",
+ "records": 55,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r11",
+   "anchor": "get_date_type",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseCFTimeOffset.onOffset",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseCFTimeOffset._get_offset_day#return",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r14",
+   "anchor": "Tick._next_higher_resolution",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r15",
+   "anchor": "Tick.__mul__#if:not isinstance(other, (int, float))/else/if:isinstance(other, float)/if:np.isclose(n % 1, 0)",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r16",
+   "anchor": "Tick.as_timedelta",
+   "kind": "doc",
+   "line": 210
+  },
+  {
+   "id": "r17",
+   "anchor": "_get_day_of_month",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r18",
+   "anchor": "_get_day_of_month#if:day_option == \"start\"/elif:day_option == \"end\"/elif:day_option is None/raise:NotImplementedError",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r19",
+   "anchor": "_days_in_month",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r20",
+   "anchor": "_adjust_n_months",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r21",
+   "anchor": "_adjust_n_years",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r22",
+   "anchor": "_shift_month",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r23",
+   "anchor": "roll_qtrday",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r24",
+   "anchor": "roll_qtrday#if:n > 0/if:months_since < 0 or (months_since == 0 and other.day < _get_day_of_month(other, day_option))/assign:n",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r25",
+   "anchor": "roll_qtrday#if:n > 0/else/if:months_since > 0 or (months_since == 0 and other.day > _get_day_of_month(other, day_option))/assign:n",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r26",
+   "anchor": "MonthBegin.onOffset",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r27",
+   "anchor": "MonthEnd.onOffset",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r28",
+   "anchor": "QuarterOffset",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r29",
+   "anchor": "QuarterOffset.__apply__#assign:months_since",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r30",
+   "anchor": "QuarterOffset.onOffset",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r31",
+   "anchor": "QuarterBegin._default_month",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r32",
+   "anchor": "QuarterBegin.rollforward",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r33",
+   "anchor": "QuarterBegin.rollback",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r34",
+   "anchor": "QuarterEnd._default_month",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r35",
+   "anchor": "QuarterEnd.rollforward",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r36",
+   "anchor": "QuarterEnd.rollback",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r37",
+   "anchor": "YearBegin.onOffset",
+   "kind": "doc",
+   "line": 544
+  },
+  {
+   "id": "r38",
+   "anchor": "YearBegin.rollforward",
+   "kind": "doc",
+   "line": 549
+  },
+  {
+   "id": "r39",
+   "anchor": "YearBegin.rollback",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r40",
+   "anchor": "YearEnd.onOffset",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r41",
+   "anchor": "YearEnd.rollforward",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r42",
+   "anchor": "YearEnd.rollback",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r43",
+   "anchor": "CFTIME_TICKS",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r44",
+   "anchor": "to_offset",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r45",
+   "anchor": "normalize_date",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r46",
+   "anchor": "_maybe_normalize_date",
+   "kind": "doc",
+   "line": 773
+  },
+  {
+   "id": "r47",
+   "anchor": "_generate_linear_range",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r48",
+   "anchor": "_generate_range",
+   "kind": "doc",
+   "line": 796
+  },
+  {
+   "id": "r49",
+   "anchor": "cftime_range",
+   "kind": "doc",
+   "line": 852
+  },
+  {
+   "id": "r50",
+   "anchor": "cftime_range#if:count_not_none(start, end, periods, freq) != 3",
+   "kind": "lead",
+   "line": 1031
+  },
+  {
+   "id": "r51",
+   "anchor": "date_range",
+   "kind": "doc",
+   "line": 1071
+  },
+  {
+   "id": "r52",
+   "anchor": "date_range_like",
+   "kind": "doc",
+   "line": 1166
+  },
+  {
+   "id": "r53",
+   "anchor": "date_range_like#if:is_np_datetime_like(source.dtype)/assign:source_calendar",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r54",
+   "anchor": "date_range_like#if:is_np_datetime_like(source.dtype)/else/if:isinstance(source, CFTimeIndex)/else",
+   "kind": "trail",
+   "line": 1222
+  },
+  {
+   "id": "r55",
+   "anchor": "date_range_like#if:source_end.day == source_end.daysinmonth and isinstance(to_offset(freq), (YearEnd, QuarterEnd, MonthEnd, Day))",
+   "kind": "lead",
+   "line": 1233
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27383,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4167,
+  "thinking_tokens": 1879,
+  "opus_cost_usd": 0.3822965,
+  "total_cost_usd": 0.4027055,
+  "duration_ms": 39503,
+  "duration_api_ms": 40759,
+  "num_turns": 2
+ },
+ "wall_ms": 40358,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

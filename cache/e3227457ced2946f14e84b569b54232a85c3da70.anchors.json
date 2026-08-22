@@ -1,0 +1,103 @@
+{
+ "blob_sha": "e3227457ced2946f14e84b569b54232a85c3da70",
+ "path": "django/core/management/commands/showmigrations.py",
+ "repo": "django/django",
+ "records": 13,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#assign:db",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.show_list",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.show_list#assign:loader",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.show_list#if:app_names",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.show_list#if:app_names/else",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.show_list#for:app_name in app_names",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.show_list#for:app_name in app_names/for:node in graph.leaf_nodes(app_name)/for:plan_node in graph.forwards_plan(node)/if:plan_node not in shown and plan_node[0] == app_name/assign:title",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.show_list#for:app_name in app_names/for:node in graph.leaf_nodes(app_name)/for:plan_node in graph.forwards_plan(node)/if:plan_node not in shown and plan_node[0] == app_name/if:applied_migration",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.show_list#for:app_name in app_names/if:not shown",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.show_plan",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.show_plan#assign:loader",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.show_plan#for:target in targets",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.show_plan.print_deps",
+   "kind": "lead",
+   "line": 140
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6154,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1239,
+  "thinking_tokens": 524,
+  "opus_cost_usd": 0.09680649999999999,
+  "total_cost_usd": 0.10030649999999999,
+  "duration_ms": 13055,
+  "duration_api_ms": 13658,
+  "num_turns": 2
+ },
+ "wall_ms": 14000,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

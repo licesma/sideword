@@ -1,0 +1,271 @@
+{
+ "blob_sha": "0413cb0016a0973e1564bff299acb6a64a46ea00",
+ "path": "lib/matplotlib/_type1font.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 41,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_Token",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r3",
+   "anchor": "_Token.endpos",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r4",
+   "anchor": "_Token.is_keyword",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r5",
+   "anchor": "_Token.is_slash_name",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r6",
+   "anchor": "_Token.is_delim",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r7",
+   "anchor": "_Token.is_number",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "_tokenize",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r9",
+   "anchor": "_tokenize#while:pos < len(text)/if:match/elif:text[pos] == '('/assign:start",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r10",
+   "anchor": "_tokenize#while:pos < len(text)/if:match/elif:text[pos] == '('/while:depth/if:match.group() == '('/elif:match.group() == ')'/else",
+   "kind": "trail",
+   "line": 229
+  },
+  {
+   "id": "r11",
+   "anchor": "_tokenize#while:pos < len(text)/if:match/elif:text[pos] == '('/while:depth/if:match.group() == '('/elif:match.group() == ')'/else/if:char in r'\\()nrtbf'/else/if:octal/else/pass",
+   "kind": "trail",
+   "line": 238
+  },
+  {
+   "id": "r12",
+   "anchor": "_expression",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r13",
+   "anchor": "Type1Font",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r14",
+   "anchor": "Type1Font.__slots__",
+   "kind": "post",
+   "line": 345
+  },
+  {
+   "id": "r15",
+   "anchor": "Type1Font.__init__",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r16",
+   "anchor": "Type1Font._read",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r17",
+   "anchor": "Type1Font._read#while:rawdata/if:type == 1",
+   "kind": "trail",
+   "line": 392
+  },
+  {
+   "id": "r18",
+   "anchor": "Type1Font._read#while:rawdata/if:type == 1/elif:type == 2",
+   "kind": "trail",
+   "line": 394
+  },
+  {
+   "id": "r19",
+   "anchor": "Type1Font._read#while:rawdata/if:type == 1/elif:type == 3",
+   "kind": "trail",
+   "line": 396
+  },
+  {
+   "id": "r20",
+   "anchor": "Type1Font._split",
+   "kind": "doc",
+   "line": 404
+  },
+  {
+   "id": "r21",
+   "anchor": "Type1Font._split#assign:idx",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r22",
+   "anchor": "Type1Font._split#assign:idx",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r23",
+   "anchor": "Type1Font._split#if:zeros/call:_log.info",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r24",
+   "anchor": "Type1Font._split#assign:idx1",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r25",
+   "anchor": "Type1Font._split#assign:idx1",
+   "kind": "trail",
+   "line": 438
+  },
+  {
+   "id": "r26",
+   "anchor": "Type1Font._decrypt",
+   "kind": "doc",
+   "line": 443
+  },
+  {
+   "id": "r27",
+   "anchor": "Type1Font._encrypt",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r28",
+   "anchor": "Type1Font._parse",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r29",
+   "anchor": "Type1Font._parse#assign:prop",
+   "kind": "lead",
+   "line": 498
+  },
+  {
+   "id": "r30",
+   "anchor": "Type1Font._parse#while:True/try",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r31",
+   "anchor": "Type1Font._parse#while:True/if:token.is_delim()/call:_expression",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r32",
+   "anchor": "Type1Font._parse#while:True/if:key in ('Subrs', 'CharStrings', 'Encoding', 'OtherSubrs')",
+   "kind": "lead",
+   "line": 521
+  },
+  {
+   "id": "r33",
+   "anchor": "Type1Font._parse#while:True/if:isinstance(token, _KeywordToken)/continue",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r34",
+   "anchor": "Type1Font._parse#while:True/try",
+   "kind": "lead",
+   "line": 548
+  },
+  {
+   "id": "r35",
+   "anchor": "Type1Font._parse#while:True/if:kw.is_keyword('def', self._abbr['ND'], self._abbr['NP'])",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r36",
+   "anchor": "Type1Font._parse#while:True/if:value == '{noaccess def}'",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r37",
+   "anchor": "Type1Font._parse#if:'FontName' not in prop",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r38",
+   "anchor": "Type1Font._parse#assign:ndiscard",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r39",
+   "anchor": "Type1Font._parse_charstrings#while:True/call:next",
+   "kind": "trail",
+   "line": 651
+  },
+  {
+   "id": "r40",
+   "anchor": "Type1Font._parse_encoding#assign:encoding",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r41",
+   "anchor": "Type1Font.transform",
+   "kind": "doc",
+   "line": 694
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18356,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4389,
+  "thinking_tokens": 2477,
+  "opus_cost_usd": 0.29757649999999997,
+  "total_cost_usd": 0.3114185,
+  "duration_ms": 45207,
+  "duration_api_ms": 46331,
+  "num_turns": 2
+ },
+ "wall_ms": 46106,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

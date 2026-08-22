@@ -1,0 +1,91 @@
+{
+ "blob_sha": "39450dd50df409025b490831f650b174d449a1bf",
+ "path": "django/db/backends/mysql/schema.py",
+ "repo": "django/django",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseSchemaEditor.sql_delete_column",
+   "kind": "lead",
+   "line": 16
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseSchemaEditor.sql_delete_check#if:self.connection.mysql_is_mariadb/return",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseSchemaEditor.sql_rename_column#if:self.connection.mysql_is_mariadb",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseSchemaEditor.quote_value#assign:quoted",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseSchemaEditor.skip_default_on_alter#if:self._is_limited_data_type(field) and not self.connection.mysql_is_mariadb/return",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseSchemaEditor._supports_limited_data_type_defaults#if:self.connection.mysql_is_mariadb",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseSchemaEditor._column_default_sql#if:not self.connection.mysql_is_mariadb and self._supports_limited_data_type_defaults and self._is_limited_data_type(field)/return",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseSchemaEditor.add_field#if:self.skip_default(field) and field.default not in (None, NOT_PROVIDED)",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseSchemaEditor._field_should_be_indexed#if:storage == \"InnoDB\" and create_index and field.get_internal_type() == 'ForeignKey' and field.db_constraint",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseSchemaEditor._delete_composed_index",
+   "kind": "doc",
+   "line": 124
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseSchemaEditor._set_field_new_type_null_status",
+   "kind": "doc",
+   "line": 142
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7124,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1706,
+  "thinking_tokens": 896,
+  "opus_cost_usd": 0.1181815,
+  "total_cost_usd": 0.1223445,
+  "duration_ms": 16089,
+  "duration_api_ms": 17275,
+  "num_turns": 2
+ },
+ "wall_ms": 16931,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

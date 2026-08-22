@@ -1,0 +1,709 @@
+{
+ "blob_sha": "c1f478391588da1d4c8f2290427560405986a8d3",
+ "path": "lib/matplotlib/tri/triinterpolate.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 114,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "TriInterpolator",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "TriInterpolator._unit_x",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "TriInterpolator._tri_renum",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "TriInterpolator._docstring__call__",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "TriInterpolator._interpolate_multikeys",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "TriInterpolator._interpolate_multikeys#assign:x",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r8",
+   "anchor": "TriInterpolator._interpolate_multikeys#if:tri_index is None",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r9",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/try",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/assign:scale",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r11",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/assign:ret_loc",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r12",
+   "anchor": "TriInterpolator._interpolate_single_key",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r13",
+   "anchor": "LinearTriInterpolator",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r14",
+   "anchor": "LinearTriInterpolator._plane_coefficients",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r15",
+   "anchor": "CubicTriInterpolator",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r16",
+   "anchor": "CubicTriInterpolator.__init__#call:self._triangulation.get_cpp_triangulation",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r17",
+   "anchor": "CubicTriInterpolator.__init__#assign:tri_analyzer",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r18",
+   "anchor": "CubicTriInterpolator.__init__#assign:valid_node",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r19",
+   "anchor": "CubicTriInterpolator._unit_x",
+   "kind": "lead",
+   "line": 407
+  },
+  {
+   "id": "r20",
+   "anchor": "CubicTriInterpolator._tris_pts",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r21",
+   "anchor": "CubicTriInterpolator._eccs",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r22",
+   "anchor": "CubicTriInterpolator._dof",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r23",
+   "anchor": "CubicTriInterpolator._ReferenceElement",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r24",
+   "anchor": "CubicTriInterpolator._compute_dof",
+   "kind": "doc",
+   "line": 449
+  },
+  {
+   "id": "r25",
+   "anchor": "CubicTriInterpolator._get_alpha_vec",
+   "kind": "doc",
+   "line": 482
+  },
+  {
+   "id": "r26",
+   "anchor": "CubicTriInterpolator._get_alpha_vec#assign:metric_inv",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r27",
+   "anchor": "CubicTriInterpolator._get_jacobian",
+   "kind": "doc",
+   "line": 521
+  },
+  {
+   "id": "r28",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities",
+   "kind": "doc",
+   "line": 549
+  },
+  {
+   "id": "r29",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities#assign:dot_a",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r30",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities#return",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r31",
+   "anchor": "_ReducedHCT_Element",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r32",
+   "anchor": "_ReducedHCT_Element",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r33",
+   "anchor": "_ReducedHCT_Element.M",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r34",
+   "anchor": "_ReducedHCT_Element.rotate_dV",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r35",
+   "anchor": "_ReducedHCT_Element.n_gauss",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r36",
+   "anchor": "_ReducedHCT_Element.E",
+   "kind": "lead",
+   "line": 671
+  },
+  {
+   "id": "r37",
+   "anchor": "_ReducedHCT_Element.J0_to_J1",
+   "kind": "lead",
+   "line": 674
+  },
+  {
+   "id": "r38",
+   "anchor": "_ReducedHCT_Element.get_function_values",
+   "kind": "doc",
+   "line": 677
+  },
+  {
+   "id": "r39",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r40",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives#assign:dV",
+   "kind": "lead",
+   "line": 751
+  },
+  {
+   "id": "r41",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives#assign:J_inv",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r42",
+   "anchor": "_ReducedHCT_Element.get_function_hessians",
+   "kind": "doc",
+   "line": 767
+  },
+  {
+   "id": "r43",
+   "anchor": "_ReducedHCT_Element.get_d2Sidksij2",
+   "kind": "doc",
+   "line": 792
+  },
+  {
+   "id": "r44",
+   "anchor": "_ReducedHCT_Element.get_d2Sidksij2#assign:d2V",
+   "kind": "lead",
+   "line": 824
+  },
+  {
+   "id": "r45",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices",
+   "kind": "doc",
+   "line": 833
+  },
+  {
+   "id": "r46",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:J1",
+   "kind": "lead",
+   "line": 852
+  },
+  {
+   "id": "r47",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:H_rot, area",
+   "kind": "lead",
+   "line": 863
+  },
+  {
+   "id": "r48",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:K",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r49",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:K",
+   "kind": "lead",
+   "line": 879
+  },
+  {
+   "id": "r50",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#return",
+   "kind": "lead",
+   "line": 882
+  },
+  {
+   "id": "r51",
+   "anchor": "_ReducedHCT_Element.get_Hrot_from_J",
+   "kind": "doc",
+   "line": 884
+  },
+  {
+   "id": "r52",
+   "anchor": "_ReducedHCT_Element.get_Hrot_from_J#assign:J_inv",
+   "kind": "lead",
+   "line": 899
+  },
+  {
+   "id": "r53",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff",
+   "kind": "doc",
+   "line": 914
+  },
+  {
+   "id": "r54",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:c_indices",
+   "kind": "trail",
+   "line": 940
+  },
+  {
+   "id": "r55",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:f_dof_indices",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r56",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kff_vals",
+   "kind": "lead",
+   "line": 968
+  },
+  {
+   "id": "r57",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kff_vals",
+   "kind": "lead",
+   "line": 968
+  },
+  {
+   "id": "r58",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kfc_elem",
+   "kind": "lead",
+   "line": 973
+  },
+  {
+   "id": "r59",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Ff",
+   "kind": "lead",
+   "line": 980
+  },
+  {
+   "id": "r60",
+   "anchor": "_DOF_estimator",
+   "kind": "lead",
+   "line": 988
+  },
+  {
+   "id": "r61",
+   "anchor": "_DOF_estimator",
+   "kind": "doc",
+   "line": 988
+  },
+  {
+   "id": "r62",
+   "anchor": "_DOF_estimator.compute_dof_from_df",
+   "kind": "doc",
+   "line": 1012
+  },
+  {
+   "id": "r63",
+   "anchor": "_DOF_estimator.get_dof_vec",
+   "kind": "doc",
+   "line": 1023
+  },
+  {
+   "id": "r64",
+   "anchor": "_DOF_estimator_user",
+   "kind": "doc",
+   "line": 1064
+  },
+  {
+   "id": "r65",
+   "anchor": "_DOF_estimator_geom",
+   "kind": "doc",
+   "line": 1074
+  },
+  {
+   "id": "r66",
+   "anchor": "_DOF_estimator_geom.compute_dz",
+   "kind": "doc",
+   "line": 1077
+  },
+  {
+   "id": "r67",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:w_node_sum",
+   "kind": "lead",
+   "line": 1091
+  },
+  {
+   "id": "r68",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:dfx_el_w",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r69",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:dfx_estim",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r70",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights",
+   "kind": "doc",
+   "line": 1110
+  },
+  {
+   "id": "r71",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights#for:ipt in range(3)/assign:angle",
+   "kind": "lead",
+   "line": 1125
+  },
+  {
+   "id": "r72",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights#for:ipt in range(3)/assign:weights[:, ipt]",
+   "kind": "lead",
+   "line": 1129
+  },
+  {
+   "id": "r73",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads",
+   "kind": "doc",
+   "line": 1132
+  },
+  {
+   "id": "r74",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads#assign:dM_inv",
+   "kind": "lead",
+   "line": 1146
+  },
+  {
+   "id": "r75",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads#assign:df[:, 0]",
+   "kind": "lead",
+   "line": 1154
+  },
+  {
+   "id": "r76",
+   "anchor": "_DOF_estimator_min_E",
+   "kind": "doc",
+   "line": 1159
+  },
+  {
+   "id": "r77",
+   "anchor": "_DOF_estimator_min_E.compute_dz",
+   "kind": "doc",
+   "line": 1169
+  },
+  {
+   "id": "r78",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:dz_init",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r79",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:Kff_rows, Kff_cols, Kff_vals, Ff",
+   "kind": "lead",
+   "line": 1185
+  },
+  {
+   "id": "r80",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:tol",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r81",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:err0",
+   "kind": "lead",
+   "line": 1200
+  },
+  {
+   "id": "r82",
+   "anchor": "_DOF_estimator_min_E.compute_dz#if:err0 < err/call:_api.warn_external",
+   "kind": "lead",
+   "line": 1203
+  },
+  {
+   "id": "r83",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:dz",
+   "kind": "lead",
+   "line": 1210
+  },
+  {
+   "id": "r84",
+   "anchor": "_Sparse_Matrix_coo",
+   "kind": "lead",
+   "line": 1218
+  },
+  {
+   "id": "r85",
+   "anchor": "_Sparse_Matrix_coo.__init__",
+   "kind": "doc",
+   "line": 1219
+  },
+  {
+   "id": "r86",
+   "anchor": "_Sparse_Matrix_coo.dot",
+   "kind": "doc",
+   "line": 1232
+  },
+  {
+   "id": "r87",
+   "anchor": "_Sparse_Matrix_coo.compress_csc",
+   "kind": "doc",
+   "line": 1242
+  },
+  {
+   "id": "r88",
+   "anchor": "_Sparse_Matrix_coo.compress_csr",
+   "kind": "doc",
+   "line": 1253
+  },
+  {
+   "id": "r89",
+   "anchor": "_Sparse_Matrix_coo.to_dense",
+   "kind": "doc",
+   "line": 1264
+  },
+  {
+   "id": "r90",
+   "anchor": "_Sparse_Matrix_coo.diag",
+   "kind": "doc",
+   "line": 1278
+  },
+  {
+   "id": "r91",
+   "anchor": "_Sparse_Matrix_coo.diag#assign:diag",
+   "kind": "trail",
+   "line": 1281
+  },
+  {
+   "id": "r92",
+   "anchor": "_cg",
+   "kind": "doc",
+   "line": 1286
+  },
+  {
+   "id": "r93",
+   "anchor": "_cg#assign:kvec",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r94",
+   "anchor": "_cg#assign:kvec",
+   "kind": "lead",
+   "line": 1323
+  },
+  {
+   "id": "r95",
+   "anchor": "_cg#if:x0 is None",
+   "kind": "lead",
+   "line": 1326
+  },
+  {
+   "id": "r96",
+   "anchor": "_cg#while:(np.sqrt(abs(rho)) > tol*b_norm) and (k < maxiter)",
+   "kind": "lead",
+   "line": 1340
+  },
+  {
+   "id": "r97",
+   "anchor": "_cg#while:(np.sqrt(abs(rho)) > tol*b_norm) and (k < maxiter)/assign:k",
+   "kind": "lead",
+   "line": 1351
+  },
+  {
+   "id": "r98",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "lead",
+   "line": 1402
+  },
+  {
+   "id": "r99",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "lead",
+   "line": 1402
+  },
+  {
+   "id": "r100",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "doc",
+   "line": 1402
+  },
+  {
+   "id": "r101",
+   "anchor": "_safe_inv22_vectorized#assign:rank2",
+   "kind": "lead",
+   "line": 1416
+  },
+  {
+   "id": "r102",
+   "anchor": "_safe_inv22_vectorized#if:np.all(rank2)/assign:delta_inv",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r103",
+   "anchor": "_safe_inv22_vectorized#if:np.all(rank2)/else/assign:delta_inv",
+   "kind": "lead",
+   "line": 1422
+  },
+  {
+   "id": "r104",
+   "anchor": "_pseudo_inv22sym_vectorized",
+   "kind": "doc",
+   "line": 1432
+  },
+  {
+   "id": "r105",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/assign:M_inv[:, 0, 0]",
+   "kind": "lead",
+   "line": 1451
+  },
+  {
+   "id": "r106",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:delta",
+   "kind": "lead",
+   "line": 1459
+  },
+  {
+   "id": "r107",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:rank01",
+   "kind": "lead",
+   "line": 1465
+  },
+  {
+   "id": "r108",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:M_inv[rank01, 0, 0]",
+   "kind": "lead",
+   "line": 1470
+  },
+  {
+   "id": "r109",
+   "anchor": "_scalar_vectorized",
+   "kind": "doc",
+   "line": 1478
+  },
+  {
+   "id": "r110",
+   "anchor": "_transpose_vectorized",
+   "kind": "doc",
+   "line": 1485
+  },
+  {
+   "id": "r111",
+   "anchor": "_roll_vectorized",
+   "kind": "doc",
+   "line": 1492
+  },
+  {
+   "id": "r112",
+   "anchor": "_roll_vectorized#assign:M_roll",
+   "kind": "lead",
+   "line": 1508
+  },
+  {
+   "id": "r113",
+   "anchor": "_to_matrix_vectorized",
+   "kind": "doc",
+   "line": 1520
+  },
+  {
+   "id": "r114",
+   "anchor": "_extract_submatrices",
+   "kind": "doc",
+   "line": 1550
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 43075,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10530,
+  "thinking_tokens": 4991,
+  "opus_cost_usd": 0.6982915000000001,
+  "total_cost_usd": 0.7325925000000001,
+  "duration_ms": 88365,
+  "duration_api_ms": 89842,
+  "num_turns": 2
+ },
+ "wall_ms": 89320,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

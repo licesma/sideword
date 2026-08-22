@@ -1,0 +1,187 @@
+{
+ "blob_sha": "35e62a3ae0510df8d1070f411132ade10aed588f",
+ "path": "django/contrib/staticfiles/finders.py",
+ "repo": "django/django",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "searched_locations",
+   "kind": "lead",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseFinder",
+   "kind": "doc",
+   "line": 20
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseFinder.find",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseFinder.list",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r5",
+   "anchor": "FileSystemFinder",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r6",
+   "anchor": "FileSystemFinder.__init__#assign:self.locations",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r7",
+   "anchor": "FileSystemFinder.__init__#assign:self.storages",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r8",
+   "anchor": "FileSystemFinder.find",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r9",
+   "anchor": "FileSystemFinder.find_location",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r10",
+   "anchor": "FileSystemFinder.list",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r11",
+   "anchor": "FileSystemFinder.list#for:prefix, root in self.locations/if:os.path.isdir(root)",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r12",
+   "anchor": "AppDirectoriesFinder",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r13",
+   "anchor": "AppDirectoriesFinder.__init__#assign:self.apps",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r14",
+   "anchor": "AppDirectoriesFinder.__init__#assign:self.storages",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r15",
+   "anchor": "AppDirectoriesFinder.list",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r16",
+   "anchor": "AppDirectoriesFinder.list#for:storage in self.storages.values()/if:storage.exists('')",
+   "kind": "trail",
+   "line": 174
+  },
+  {
+   "id": "r17",
+   "anchor": "AppDirectoriesFinder.find",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r18",
+   "anchor": "AppDirectoriesFinder.find_in_app",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r19",
+   "anchor": "AppDirectoriesFinder.find_in_app#if:storage and storage.exists(path)",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseStorageFinder",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseStorageFinder.__init__#if:not isinstance(self.storage, (Storage, LazyObject))",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseStorageFinder.find",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseStorageFinder.list",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r24",
+   "anchor": "DefaultStorageFinder",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r25",
+   "anchor": "find",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r26",
+   "anchor": "find#return",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r27",
+   "anchor": "get_finder",
+   "kind": "doc",
+   "line": 294
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8649,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1862,
+  "thinking_tokens": 683,
+  "opus_cost_usd": 0.13733150000000002,
+  "total_cost_usd": 0.14290150000000001,
+  "duration_ms": 18143,
+  "duration_api_ms": 19399,
+  "num_turns": 2
+ },
+ "wall_ms": 19072,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

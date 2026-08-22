@@ -1,0 +1,259 @@
+{
+ "blob_sha": "3306b0f2e96f90a37c3004ff50f47b9ebbcf9a4c",
+ "path": "seaborn/palettes.py",
+ "repo": "mwaskom/seaborn",
+ "records": 39,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_ColorPalette",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r2",
+   "anchor": "_ColorPalette.__enter__",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r3",
+   "anchor": "_ColorPalette.__exit__",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r4",
+   "anchor": "_ColorPalette.as_hex",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "_ColorPalette._repr_html_",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r6",
+   "anchor": "_patch_colormap_display",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r7",
+   "anchor": "_patch_colormap_display._repr_png_",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r8",
+   "anchor": "_patch_colormap_display._repr_html_",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r9",
+   "anchor": "color_palette",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r10",
+   "anchor": "color_palette#if:palette is None/else/if:n_colors is None/assign:n_colors",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r11",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/assign:palette",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r12",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette == \"hls\"/assign:palette",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r13",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette == \"husl\"/assign:palette",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r14",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette.lower() == \"jet\"/raise:ValueError",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r15",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette.startswith(\"ch:\")/assign:args, kwargs",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r16",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette.startswith(\"light:\")/assign:_, color",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r17",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette.startswith(\"dark:\")/assign:_, color",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r18",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/elif:palette.startswith(\"blend:\")/assign:_, colors",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r19",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/else/try/assign:palette",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r20",
+   "anchor": "color_palette#if:palette is None/else/if:palette in SEABORN_PALETTES/else/try/except:(ValueError, KeyError)",
+   "kind": "trail",
+   "line": 236
+  },
+  {
+   "id": "r21",
+   "anchor": "color_palette#if:not as_cmap/assign:pal_cycle",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r22",
+   "anchor": "color_palette#if:not as_cmap/try",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r23",
+   "anchor": "hls_palette",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r24",
+   "anchor": "husl_palette",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r25",
+   "anchor": "mpl_palette",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r26",
+   "anchor": "_color_to_rgb",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r27",
+   "anchor": "dark_palette",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r28",
+   "anchor": "light_palette",
+   "kind": "doc",
+   "line": 484
+  },
+  {
+   "id": "r29",
+   "anchor": "diverging_palette",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r30",
+   "anchor": "blend_palette",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r31",
+   "anchor": "blend_palette#if:not as_cmap/assign:rgb_array",
+   "kind": "trail",
+   "line": 607
+  },
+  {
+   "id": "r32",
+   "anchor": "xkcd_palette",
+   "kind": "doc",
+   "line": 612
+  },
+  {
+   "id": "r33",
+   "anchor": "crayon_palette",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r34",
+   "anchor": "cubehelix_palette",
+   "kind": "doc",
+   "line": 665
+  },
+  {
+   "id": "r35",
+   "anchor": "cubehelix_palette.get_color_function.color",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r36",
+   "anchor": "cubehelix_palette.get_color_function.color#assign:xg",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r37",
+   "anchor": "cubehelix_palette.get_color_function.color#assign:a",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r38",
+   "anchor": "_parse_cubehelix_args",
+   "kind": "doc",
+   "line": 764
+  },
+  {
+   "id": "r39",
+   "anchor": "set_color_codes",
+   "kind": "doc",
+   "line": 799
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18683,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4126,
+  "thinking_tokens": 2201,
+  "opus_cost_usd": 0.2942715,
+  "total_cost_usd": 0.30799350000000003,
+  "duration_ms": 41396,
+  "duration_api_ms": 42653,
+  "num_turns": 2
+ },
+ "wall_ms": 42341,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

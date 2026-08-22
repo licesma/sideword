@@ -1,0 +1,295 @@
+{
+ "blob_sha": "c7922e59e91087f6383fd830c8acd8d654a72bf9",
+ "path": "django/http/request.py",
+ "repo": "django/django",
+ "records": 45,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "RawPostDataException",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r2",
+   "anchor": "HttpRequest",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r3",
+   "anchor": "HttpRequest._encoding",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r4",
+   "anchor": "HttpRequest.GET",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "HttpRequest.accepted_types",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r6",
+   "anchor": "HttpRequest._set_content_type_params",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r7",
+   "anchor": "HttpRequest._get_raw_host",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r8",
+   "anchor": "HttpRequest._get_raw_host#if:settings.USE_X_FORWARDED_HOST and ('HTTP_X_FORWARDED_HOST' in self.META)",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r9",
+   "anchor": "HttpRequest._get_raw_host#if:settings.USE_X_FORWARDED_HOST and ('HTTP_X_FORWARDED_HOST' in self.META)/else/assign:host",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r10",
+   "anchor": "HttpRequest.get_host",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r11",
+   "anchor": "HttpRequest.get_host#assign:allowed_hosts",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r12",
+   "anchor": "HttpRequest.get_port",
+   "kind": "doc",
+   "line": 137
+  },
+  {
+   "id": "r13",
+   "anchor": "HttpRequest._get_full_path#return",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r14",
+   "anchor": "HttpRequest.get_signed_cookie",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r15",
+   "anchor": "HttpRequest.build_absolute_uri",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r16",
+   "anchor": "HttpRequest.build_absolute_uri#if:location is None/assign:location",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r17",
+   "anchor": "HttpRequest.build_absolute_uri#if:location is None/else/assign:location",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r18",
+   "anchor": "HttpRequest.build_absolute_uri#if:not (bits.scheme and bits.netloc)/if:bits.path.startswith('/') and not bits.scheme and not bits.netloc and '/./' not in bits.path and '/../' not in bits.path",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r19",
+   "anchor": "HttpRequest.build_absolute_uri#if:not (bits.scheme and bits.netloc)/if:bits.path.startswith('/') and not bits.scheme and not bits.netloc and '/./' not in bits.path and '/../' not in bits.path/if:location.startswith('//')",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r20",
+   "anchor": "HttpRequest.build_absolute_uri#if:not (bits.scheme and bits.netloc)/if:bits.path.startswith('/') and not bits.scheme and not bits.netloc and '/./' not in bits.path and '/../' not in bits.path/else/assign:location",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r21",
+   "anchor": "HttpRequest._get_scheme",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r22",
+   "anchor": "HttpRequest.encoding",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r23",
+   "anchor": "HttpRequest.upload_handlers#if:not self._upload_handlers/call:self._initialize_handlers",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r24",
+   "anchor": "HttpRequest.parse_file_upload",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r25",
+   "anchor": "HttpRequest.body#if:not hasattr(self, '_body')/if:settings.DATA_UPLOAD_MAX_MEMORY_SIZE is not None and int(self.META.get('CONTENT_LENGTH') or 0) > settings.DATA_UPLOAD_MAX_MEMORY_SIZE",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r26",
+   "anchor": "HttpRequest._load_post_and_files",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r27",
+   "anchor": "HttpRequest._load_post_and_files#if:self.content_type == 'multipart/form-data'/if:hasattr(self, '_body')/assign:data",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r28",
+   "anchor": "HttpRequest._load_post_and_files#if:self.content_type == 'multipart/form-data'/try/except:MultiPartParserError/call:self._mark_post_parse_error",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r29",
+   "anchor": "HttpRequest.read",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r30",
+   "anchor": "HttpHeaders.UNPREFIXED_HEADERS",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r31",
+   "anchor": "HttpHeaders.__getitem__",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r32",
+   "anchor": "QueryDict",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r33",
+   "anchor": "QueryDict._mutable",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r34",
+   "anchor": "QueryDict.__init__#if:isinstance(query_string, bytes)/try",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r35",
+   "anchor": "QueryDict.__init__#if:isinstance(query_string, bytes)/try/except:UnicodeDecodeError/assign:query_string",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r36",
+   "anchor": "QueryDict.__init__#try/except:ValueError/raise:TooManyFieldsSent",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r37",
+   "anchor": "QueryDict.fromkeys",
+   "kind": "doc",
+   "line": 452
+  },
+  {
+   "id": "r38",
+   "anchor": "QueryDict.copy",
+   "kind": "doc",
+   "line": 535
+  },
+  {
+   "id": "r39",
+   "anchor": "QueryDict.urlencode",
+   "kind": "doc",
+   "line": 539
+  },
+  {
+   "id": "r40",
+   "anchor": "bytes_to_text",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r41",
+   "anchor": "bytes_to_text",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r42",
+   "anchor": "split_domain_port",
+   "kind": "doc",
+   "line": 620
+  },
+  {
+   "id": "r43",
+   "anchor": "split_domain_port#if:host[-1] == ']'/return",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r44",
+   "anchor": "split_domain_port#assign:domain",
+   "kind": "lead",
+   "line": 638
+  },
+  {
+   "id": "r45",
+   "anchor": "validate_host",
+   "kind": "doc",
+   "line": 642
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16252,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4797,
+  "thinking_tokens": 2376,
+  "opus_cost_usd": 0.2867365,
+  "total_cost_usd": 0.2983865,
+  "duration_ms": 43781,
+  "duration_api_ms": 44936,
+  "num_turns": 2
+ },
+ "wall_ms": 44637,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

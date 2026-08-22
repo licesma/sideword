@@ -1,0 +1,55 @@
+{
+ "blob_sha": "16556b1ded5cc5d13b2e824bc0b94bf257190f7c",
+ "path": "django/core/cache/backends/redis.py",
+ "repo": "django/django",
+ "records": 5,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "RedisCacheClient._get_connection_pool_index#if:write or len(self._servers) == 1",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r3",
+   "anchor": "RedisCacheClient.get_client#assign:pool",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r4",
+   "anchor": "RedisCacheClient.set_many#if:timeout is not None/for:key in data",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r5",
+   "anchor": "RedisCache.get_backend_timeout#return",
+   "kind": "lead",
+   "line": 173
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6830,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 517,
+  "thinking_tokens": 214,
+  "opus_cost_usd": 0.0855165,
+  "total_cost_usd": 0.0897055,
+  "duration_ms": 6440,
+  "duration_api_ms": 7553,
+  "num_turns": 2
+ },
+ "wall_ms": 7455,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

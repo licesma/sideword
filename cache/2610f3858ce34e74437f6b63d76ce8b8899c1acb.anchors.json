@@ -1,0 +1,331 @@
+{
+ "blob_sha": "2610f3858ce34e74437f6b63d76ce8b8899c1acb",
+ "path": "astropy/modeling/parameters.py",
+ "repo": "astropy/astropy",
+ "records": 51,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "ParameterError",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "InputParameterError",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r5",
+   "anchor": "ParameterDefinitionError",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r6",
+   "anchor": "_tofloat",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r7",
+   "anchor": "_tofloat#if:isiterable(value)/try/except:(TypeError, ValueError)/raise:InputParameterError",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "_tofloat#if:isiterable(value)/elif:isinstance(value, Quantity)/pass",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r9",
+   "anchor": "_tofloat#if:isiterable(value)/elif:isinstance(value, np.ndarray)/assign:value",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r10",
+   "anchor": "_binary_arithmetic_operation",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r11",
+   "anchor": "Parameter",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r12",
+   "anchor": "Parameter.constraints",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r13",
+   "anchor": "Parameter.__init__#if:isinstance(default, Quantity)",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r14",
+   "anchor": "Parameter._internal_unit",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r15",
+   "anchor": "Parameter.__init__#if:bounds is not None",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r16",
+   "anchor": "Parameter.__getitem__#if:len(value.shape)==0/assign:value",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r17",
+   "anchor": "Parameter.__setitem__#assign:oldvalue",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r18",
+   "anchor": "Parameter.__setitem__#if:isinstance(key, slice)/else/try/except:IndexError/raise:InputParameterError",
+   "kind": "trail",
+   "line": 283
+  },
+  {
+   "id": "r19",
+   "anchor": "Parameter.__repr__#for:cons in self.constraints/if:val not in (None, False, (None, None))/assign:args",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r20",
+   "anchor": "Parameter.name",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r21",
+   "anchor": "Parameter.default",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r22",
+   "anchor": "Parameter.value",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r23",
+   "anchor": "Parameter.value#if:self._getter is None and self._setter is None/else/if:self.internal_unit",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r24",
+   "anchor": "Parameter.unit",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r25",
+   "anchor": "Parameter.internal_unit",
+   "kind": "doc",
+   "line": 373
+  },
+  {
+   "id": "r26",
+   "anchor": "Parameter.internal_unit",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r27",
+   "anchor": "Parameter.quantity",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r28",
+   "anchor": "Parameter.shape",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r29",
+   "anchor": "Parameter.size",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r30",
+   "anchor": "Parameter.std",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r31",
+   "anchor": "Parameter.fixed",
+   "kind": "doc",
+   "line": 453
+  },
+  {
+   "id": "r32",
+   "anchor": "Parameter.fixed",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r33",
+   "anchor": "Parameter.tied",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r34",
+   "anchor": "Parameter.tied",
+   "kind": "doc",
+   "line": 477
+  },
+  {
+   "id": "r35",
+   "anchor": "Parameter.bounds",
+   "kind": "doc",
+   "line": 485
+  },
+  {
+   "id": "r36",
+   "anchor": "Parameter.bounds",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r37",
+   "anchor": "Parameter.min",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r38",
+   "anchor": "Parameter.min",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r39",
+   "anchor": "Parameter.max",
+   "kind": "doc",
+   "line": 526
+  },
+  {
+   "id": "r40",
+   "anchor": "Parameter.max",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r41",
+   "anchor": "Parameter.validator",
+   "kind": "doc",
+   "line": 538
+  },
+  {
+   "id": "r42",
+   "anchor": "Parameter.validate",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r43",
+   "anchor": "Parameter.copy",
+   "kind": "doc",
+   "line": 566
+  },
+  {
+   "id": "r44",
+   "anchor": "Parameter.copy#for:key, value in kwargs.items()/if:value is None/if:key in ('min', 'max')",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r45",
+   "anchor": "Parameter.model",
+   "kind": "doc",
+   "line": 602
+  },
+  {
+   "id": "r46",
+   "anchor": "Parameter._raw_value",
+   "kind": "doc",
+   "line": 618
+  },
+  {
+   "id": "r47",
+   "anchor": "Parameter._create_value_wrapper",
+   "kind": "doc",
+   "line": 633
+  },
+  {
+   "id": "r48",
+   "anchor": "Parameter._create_value_wrapper#if:isinstance(wrapper, np.ufunc)/elif:wrapper is None/return",
+   "kind": "lead",
+   "line": 648
+  },
+  {
+   "id": "r49",
+   "anchor": "Parameter._create_value_wrapper#if:isinstance(wrapper, np.ufunc)/else/if:nargs==1/elif:nargs==2/if:model is not None/assign:model_arg",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r50",
+   "anchor": "Parameter.__array__#assign:arr",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r51",
+   "anchor": "param_repr_oneline",
+   "kind": "doc",
+   "line": 701
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 15392,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4859,
+  "thinking_tokens": 2704,
+  "opus_cost_usd": 0.27968649999999995,
+  "total_cost_usd": 0.29066749999999997,
+  "duration_ms": 45962,
+  "duration_api_ms": 47067,
+  "num_turns": 2
+ },
+ "wall_ms": 46823,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

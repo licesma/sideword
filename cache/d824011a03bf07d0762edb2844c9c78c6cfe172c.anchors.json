@@ -1,0 +1,109 @@
+{
+ "blob_sha": "d824011a03bf07d0762edb2844c9c78c6cfe172c",
+ "path": "django/core/management/commands/loaddata.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#if:transaction.get_autocommit(self.using)",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.loaddata#assign:self.fixture_count",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.loaddata#assign:self.compression_formats",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.loaddata#for:fixture_label in fixture_labels",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.loaddata#assign:table_names",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.loaddata#if:self.loaded_object_count>0",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.load_label",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.load_label#for:fixture_file, fixture_dir, fixture_name in self.find_fixtures(fixture_label)/try/if:objects and show_progress/call:self.stdout.write",
+   "kind": "trail",
+   "line": 190
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.load_label#for:fixture_file, fixture_dir, fixture_name in self.find_fixtures(fixture_label)/if:objects_in_fixture==0",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.find_fixtures",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.find_fixtures#for:fixture_dir in fixture_dirs/for:candidate in glob.iglob(glob_escape(path) + '*')/if:os.path.basename(candidate) in targets/call:fixture_files_in_dir.append",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.find_fixtures#for:fixture_dir in fixture_dirs/if:len(fixture_files_in_dir)>1",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.fixture_dirs",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.parse_name",
+   "kind": "doc",
+   "line": 296
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9832,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1652,
+  "thinking_tokens": 824,
+  "opus_cost_usd": 0.14391150000000003,
+  "total_cost_usd": 0.1502545,
+  "duration_ms": 18889,
+  "duration_api_ms": 19823,
+  "num_turns": 2
+ },
+ "wall_ms": 19774,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

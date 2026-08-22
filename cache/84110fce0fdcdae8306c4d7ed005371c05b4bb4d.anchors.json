@@ -1,0 +1,229 @@
+{
+ "blob_sha": "84110fce0fdcdae8306c4d7ed005371c05b4bb4d",
+ "path": "django/contrib/gis/db/backends/postgis/operations.py",
+ "repo": "django/django",
+ "records": 34,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BILATERAL",
+   "kind": "lead",
+   "line": 25
+  },
+  {
+   "id": "r2",
+   "anchor": "PostGISOperator.__init__#assign:self.geography",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "PostGISOperator.__init__#assign:self.raster",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "PostGISOperator.check_raster#assign:lhs_is_raster",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r5",
+   "anchor": "PostGISOperator.check_raster#if:lookup.band_lhs is not None and lhs_is_raster",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r6",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r7",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid/if:lhs_is_raster",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid/elif:self.raster == BILATERAL/if:lhs_is_raster and not rhs_is_raster",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r9",
+   "anchor": "PostGISOperations.gis_operators#key:exact",
+   "kind": "trail",
+   "line": 126
+  },
+  {
+   "id": "r10",
+   "anchor": "PostGISOperations.spatial_version",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r11",
+   "anchor": "PostGISOperations.spatial_version#if:hasattr(settings, 'POSTGIS_VERSION')",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r12",
+   "anchor": "PostGISOperations.spatial_version#if:hasattr(settings, 'POSTGIS_VERSION')/else/call:self._get_postgis_func",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r13",
+   "anchor": "PostGISOperations.convert_extent",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r14",
+   "anchor": "PostGISOperations.convert_extent3d",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r15",
+   "anchor": "PostGISOperations.geo_db_type",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r16",
+   "anchor": "PostGISOperations.geo_db_type#if:f.dim == 3",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r17",
+   "anchor": "PostGISOperations.get_distance",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r18",
+   "anchor": "PostGISOperations.get_distance#assign:value",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r19",
+   "anchor": "PostGISOperations.get_distance#assign:geodetic",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r20",
+   "anchor": "PostGISOperations.get_distance#if:isinstance(value, Distance)/else/assign:dist_param",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r21",
+   "anchor": "PostGISOperations.get_geom_placeholder",
+   "kind": "doc",
+   "line": 269
+  },
+  {
+   "id": "r22",
+   "anchor": "PostGISOperations.get_geom_placeholder#if:value is None",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r23",
+   "anchor": "PostGISOperations.get_geom_placeholder#if:value_srid is None or value_srid == f.srid",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r24",
+   "anchor": "PostGISOperations._get_postgis_func",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r25",
+   "anchor": "PostGISOperations._get_postgis_func#with:self.connection.temporary_connection()",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r26",
+   "anchor": "PostGISOperations.postgis_geos_version",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r27",
+   "anchor": "PostGISOperations.postgis_lib_version",
+   "kind": "doc",
+   "line": 311
+  },
+  {
+   "id": "r28",
+   "anchor": "PostGISOperations.postgis_proj_version",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r29",
+   "anchor": "PostGISOperations.postgis_version",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r30",
+   "anchor": "PostGISOperations.postgis_full_version",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r31",
+   "anchor": "PostGISOperations.postgis_version_tuple",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r32",
+   "anchor": "PostGISOperations.proj_version_tuple",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r33",
+   "anchor": "PostGISOperations.geometry_columns",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r34",
+   "anchor": "PostGISOperations.parse_raster",
+   "kind": "doc",
+   "line": 361
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12018,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2697,
+  "thinking_tokens": 978,
+  "opus_cost_usd": 0.19189649999999997,
+  "total_cost_usd": 0.20020349999999998,
+  "duration_ms": 24090,
+  "duration_api_ms": 25136,
+  "num_turns": 2
+ },
+ "wall_ms": 25021,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

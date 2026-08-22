@@ -1,0 +1,181 @@
+{
+ "blob_sha": "535fafe83f6f88f4ca3a386d86d9a1189e56cea2",
+ "path": "seaborn/_core/data.py",
+ "repo": "mwaskom/seaborn",
+ "records": 26,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "PlotData",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "PlotData.__init__#assign:self.frames",
+   "kind": "todo",
+   "line": 61
+  },
+  {
+   "id": "r4",
+   "anchor": "PlotData.__contains__",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r5",
+   "anchor": "PlotData.join",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r6",
+   "anchor": "PlotData.join#if:data is None",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r7",
+   "anchor": "PlotData.join#if:not variables",
+   "kind": "todo",
+   "line": 84
+  },
+  {
+   "id": "r8",
+   "anchor": "PlotData.join#assign:disinherit",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "PlotData.join#assign:new",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r10",
+   "anchor": "PlotData.join#assign:drop_cols",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r11",
+   "anchor": "PlotData.join#assign:frame",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r12",
+   "anchor": "PlotData.join#assign:new.source_data",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r13",
+   "anchor": "PlotData._assign_variables",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r14",
+   "anchor": "PlotData._assign_variables#if:data is not None/else/assign:source_data",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r15",
+   "anchor": "PlotData._assign_variables#if:isinstance(source_data, pd.DataFrame)",
+   "kind": "todo",
+   "line": 176
+  },
+  {
+   "id": "r16",
+   "anchor": "PlotData._assign_variables#if:isinstance(source_data, pd.DataFrame)",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r17",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val is None",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r18",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/try",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r19",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/try",
+   "kind": "todo",
+   "line": 195
+  },
+  {
+   "id": "r20",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/assign:val_as_data_key",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r21",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val_as_data_key/elif:isinstance(val, str)/assign:err",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r22",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val_as_data_key/else/if:isinstance(val, Sized) and len(val) == 0",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r23",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val_as_data_key/else/if:isinstance(val, Sized) and len(val) == 0",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r24",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val_as_data_key/else/if:isinstance(data, pd.DataFrame) and not isinstance(val, pd.Series)",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r25",
+   "anchor": "PlotData._assign_variables#for:key, val in variables.items()/if:val_as_data_key/else/if:hasattr(val, \"name\")",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r26",
+   "anchor": "PlotData._assign_variables#assign:frame",
+   "kind": "lead",
+   "line": 258
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8233,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2718,
+  "thinking_tokens": 1331,
+  "opus_cost_usd": 0.1545715,
+  "total_cost_usd": 0.1597535,
+  "duration_ms": 26253,
+  "duration_api_ms": 27606,
+  "num_turns": 2
+ },
+ "wall_ms": 27127,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

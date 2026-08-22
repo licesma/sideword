@@ -1,0 +1,625 @@
+{
+ "blob_sha": "7312f300a57bd1ac12f4a61afd1c96e726d04c60",
+ "path": "lib/matplotlib/backends/backend_pgf.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 100,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "__getattr__",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r2",
+   "anchor": "get_fontspec",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r3",
+   "anchor": "get_preamble",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_preamble",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_preamble#if:mpl.rcParams[\"pgf.texsystem\"] != \"pdflatex\"/if:mpl.rcParams[\"pgf.rcfonts\"]/for:family, command in zip(families, commands)/assign:path",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_preamble#call:preamble.append",
+   "kind": "trail",
+   "line": 72
+  },
+  {
+   "id": "r7",
+   "anchor": "latex_pt_to_in",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "_replace_escapetext#arg:re.compile(_NO_ESCAPE + \"(?=[%^])\").sub",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r9",
+   "anchor": "_replace_mathdefault#arg:re.compile(_NO_ESCAPE + r\"(\\\\mathdefault)\").sub",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r10",
+   "anchor": "_tex_escape",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r11",
+   "anchor": "_tex_escape#assign:text",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r12",
+   "anchor": "_tex_escape#assign:parts",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r13",
+   "anchor": "_tex_escape#for:i, s in enumerate(parts)/if:not i % 2/assign:s",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r14",
+   "anchor": "_tex_escape#for:i, s in enumerate(parts)/if:not i % 2/else/assign:s",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r15",
+   "anchor": "_writeln#call:fh.write",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r16",
+   "anchor": "_escape_and_apply_props",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r17",
+   "anchor": "_metadata_to_str",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r18",
+   "anchor": "make_pdf_to_png_converter",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r19",
+   "anchor": "LatexManager",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r20",
+   "anchor": "LatexManager._build_latex_header#assign:latex_header/item:rf\"% !TeX program = {mpl.rcParams['pgf.texsystem']}\"",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r21",
+   "anchor": "LatexManager._build_latex_header#assign:latex_header/item:r\"\\usepackage{graphicx}\"",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r22",
+   "anchor": "LatexManager._get_cached_or_new",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r23",
+   "anchor": "LatexManager._get_cached_or_new_impl",
+   "kind": "trail",
+   "line": 255
+  },
+  {
+   "id": "r24",
+   "anchor": "LatexManager._tmpdir",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r25",
+   "anchor": "LatexManager.__init__#try",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r26",
+   "anchor": "LatexManager.__init__#assign:self.latex",
+   "kind": "trail",
+   "line": 307
+  },
+  {
+   "id": "r27",
+   "anchor": "LatexManager.__init__#assign:self._get_box_metrics",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r28",
+   "anchor": "LatexManager._setup_latex_process#assign:self.latex",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r29",
+   "anchor": "LatexManager._setup_latex_process#call:self._stdin_writeln",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r30",
+   "anchor": "LatexManager._setup_latex_process#if:expect_reply",
+   "kind": "trail",
+   "line": 334
+  },
+  {
+   "id": "r31",
+   "anchor": "LatexManager.get_width_height_descent",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r32",
+   "anchor": "LatexManager._get_box_metrics",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r33",
+   "anchor": "LatexManager._get_box_metrics#call:self._stdin_writeln",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r34",
+   "anchor": "LatexManager._get_box_metrics#call:self._stdin_writeln",
+   "kind": "trail",
+   "line": 351
+  },
+  {
+   "id": "r35",
+   "anchor": "LatexManager._get_box_metrics#try/except:LatexError/raise:ValueError",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r36",
+   "anchor": "LatexManager._get_box_metrics#try/assign:width, height, offset",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r37",
+   "anchor": "LatexManager._get_box_metrics#return",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r38",
+   "anchor": "_get_image_inclusion_command#call:man._stdin_writeln",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r39",
+   "anchor": "_get_image_inclusion_command#try/except:LatexError/call:LatexManager._get_cached_or_new_impl.cache_clear",
+   "kind": "lead",
+   "line": 385
+  },
+  {
+   "id": "r40",
+   "anchor": "RendererPgf.__init__",
+   "kind": "doc",
+   "line": 391
+  },
+  {
+   "id": "r41",
+   "anchor": "RendererPgf.draw_markers#call:_writeln",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r42",
+   "anchor": "RendererPgf.draw_markers#assign:f",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r43",
+   "anchor": "RendererPgf.draw_markers#call:self._print_pgf_clip",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r44",
+   "anchor": "RendererPgf.draw_markers#assign:bl, tr",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r45",
+   "anchor": "RendererPgf.draw_markers#assign:maxcoord",
+   "kind": "trail",
+   "line": 434
+  },
+  {
+   "id": "r46",
+   "anchor": "RendererPgf.draw_markers#for:point, code in path.iter_segments(trans, simplify=False, clip=clip)",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r47",
+   "anchor": "RendererPgf.draw_path#call:_writeln",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r48",
+   "anchor": "RendererPgf.draw_path#call:self._print_pgf_clip",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r49",
+   "anchor": "RendererPgf.draw_path#if:gc.get_hatch()",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r50",
+   "anchor": "RendererPgf.draw_path#if:gc.get_hatch()/call:self._print_pgf_clip",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r51",
+   "anchor": "RendererPgf.draw_path#if:gc.get_hatch()/call:_writeln",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r52",
+   "anchor": "RendererPgf.draw_path#if:gc.get_hatch()/assign:f",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r53",
+   "anchor": "RendererPgf._print_pgf_clip#assign:bbox",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r54",
+   "anchor": "RendererPgf._print_pgf_clip#assign:clippath, clippath_trans",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r55",
+   "anchor": "RendererPgf._print_pgf_path_styles#assign:capstyles",
+   "kind": "lead",
+   "line": 523
+  },
+  {
+   "id": "r56",
+   "anchor": "RendererPgf._print_pgf_path_styles#assign:joinstyles",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r57",
+   "anchor": "RendererPgf._print_pgf_path_styles#assign:has_fill",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r58",
+   "anchor": "RendererPgf._print_pgf_path_styles#assign:lw",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r59",
+   "anchor": "RendererPgf._print_pgf_path_styles#assign:dash_offset, dash_list",
+   "kind": "lead",
+   "line": 563
+  },
+  {
+   "id": "r60",
+   "anchor": "RendererPgf._print_pgf_path#assign:bbox",
+   "kind": "lead",
+   "line": 575
+  },
+  {
+   "id": "r61",
+   "anchor": "RendererPgf._print_pgf_path#assign:maxcoord",
+   "kind": "trail",
+   "line": 576
+  },
+  {
+   "id": "r62",
+   "anchor": "RendererPgf._print_pgf_path#for:points, code in path.iter_segments(transform, clip=clip)",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r63",
+   "anchor": "RendererPgf._print_pgf_path#assign:sketch_params",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r64",
+   "anchor": "RendererPgf._print_pgf_path#if:sketch_params is not None/assign:scale, length, randomness",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r65",
+   "anchor": "RendererPgf._print_pgf_path#if:sketch_params is not None/if:scale is not None/assign:length",
+   "kind": "lead",
+   "line": 627
+  },
+  {
+   "id": "r66",
+   "anchor": "RendererPgf._print_pgf_path#if:sketch_params is not None/if:scale is not None/call:_writeln",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r67",
+   "anchor": "RendererPgf.option_scale_image#return",
+   "kind": "lead",
+   "line": 648
+  },
+  {
+   "id": "r68",
+   "anchor": "RendererPgf.option_image_nocomposite#return",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r69",
+   "anchor": "RendererPgf.draw_image#assign:h, w",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r70",
+   "anchor": "RendererPgf.draw_image#assign:path",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r71",
+   "anchor": "RendererPgf.draw_image#call:_writeln",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r72",
+   "anchor": "RendererPgf.draw_image#assign:f",
+   "kind": "trail",
+   "line": 675
+  },
+  {
+   "id": "r73",
+   "anchor": "RendererPgf.draw_image#if:transform is None/else/assign:w",
+   "kind": "trail",
+   "line": 686
+  },
+  {
+   "id": "r74",
+   "anchor": "RendererPgf.draw_image#assign:interp",
+   "kind": "trail",
+   "line": 687
+  },
+  {
+   "id": "r75",
+   "anchor": "RendererPgf.draw_tex#call:self.draw_text",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r76",
+   "anchor": "RendererPgf.draw_text#assign:s",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r77",
+   "anchor": "RendererPgf.draw_text#assign:s",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r78",
+   "anchor": "RendererPgf.draw_text#if:mtext and ((angle == 0 or mtext.get_rotation_mode() == \"anchor\") and mtext.get_verticalalignment() != \"center_baseline\")/assign:pos",
+   "kind": "lead",
+   "line": 725
+  },
+  {
+   "id": "r79",
+   "anchor": "RendererPgf.draw_text#if:mtext and ((angle == 0 or mtext.get_rotation_mode() == \"anchor\") and mtext.get_verticalalignment() != \"center_baseline\")/else/call:text_args.append",
+   "kind": "lead",
+   "line": 738
+  },
+  {
+   "id": "r80",
+   "anchor": "RendererPgf.get_text_width_height_descent#assign:w, h, d",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r81",
+   "anchor": "RendererPgf.get_text_width_height_descent#assign:f",
+   "kind": "todo",
+   "line": 754
+  },
+  {
+   "id": "r82",
+   "anchor": "RendererPgf.flipy#return",
+   "kind": "lead",
+   "line": 759
+  },
+  {
+   "id": "r83",
+   "anchor": "RendererPgf.get_canvas_width_height#return",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r84",
+   "anchor": "RendererPgf.points_to_pixels#return",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r85",
+   "anchor": "FigureCanvasPgf._print_pgf_to_fh#assign:header_info_preamble",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r86",
+   "anchor": "FigureCanvasPgf._print_pgf_to_fh#assign:w, h",
+   "kind": "lead",
+   "line": 811
+  },
+  {
+   "id": "r87",
+   "anchor": "FigureCanvasPgf._print_pgf_to_fh#call:fh.write",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r88",
+   "anchor": "FigureCanvasPgf._print_pgf_to_fh#call:_writeln",
+   "kind": "lead",
+   "line": 831
+  },
+  {
+   "id": "r89",
+   "anchor": "FigureCanvasPgf.print_pgf",
+   "kind": "doc",
+   "line": 835
+  },
+  {
+   "id": "r90",
+   "anchor": "FigureCanvasPgf.print_pdf",
+   "kind": "doc",
+   "line": 845
+  },
+  {
+   "id": "r91",
+   "anchor": "FigureCanvasPgf.print_pdf#with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 854
+  },
+  {
+   "id": "r92",
+   "anchor": "FigureCanvasPgf.print_pdf#with:TemporaryDirectory()/with:(tmppath / \"figure.pdf\").open(\"rb\")/call:shutil.copyfileobj",
+   "kind": "trail",
+   "line": 876
+  },
+  {
+   "id": "r93",
+   "anchor": "FigureCanvasPgf.print_png",
+   "kind": "doc",
+   "line": 878
+  },
+  {
+   "id": "r94",
+   "anchor": "FigureCanvasPgf.print_png#with:TemporaryDirectory()/with:png_path.open(\"rb\")/call:shutil.copyfileobj",
+   "kind": "trail",
+   "line": 889
+  },
+  {
+   "id": "r95",
+   "anchor": "PdfPages",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r96",
+   "anchor": "PdfPages.__init__",
+   "kind": "doc",
+   "line": 931
+  },
+  {
+   "id": "r97",
+   "anchor": "PdfPages.close",
+   "kind": "doc",
+   "line": 986
+  },
+  {
+   "id": "r98",
+   "anchor": "PdfPages.savefig",
+   "kind": "doc",
+   "line": 1009
+  },
+  {
+   "id": "r99",
+   "anchor": "PdfPages.savefig#try/if:self._n_figures == 0/else/call:self._file.write",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r100",
+   "anchor": "PdfPages.get_pagecount",
+   "kind": "doc",
+   "line": 1054
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27070,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 11555,
+  "thinking_tokens": 6481,
+  "opus_cost_usd": 0.5638665,
+  "total_cost_usd": 0.5844555,
+  "duration_ms": 102972,
+  "duration_api_ms": 103743,
+  "num_turns": 2
+ },
+ "wall_ms": 103937,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

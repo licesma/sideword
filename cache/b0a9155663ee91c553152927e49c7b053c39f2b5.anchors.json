@@ -1,0 +1,193 @@
+{
+ "blob_sha": "b0a9155663ee91c553152927e49c7b053c39f2b5",
+ "path": "astropy/coordinates/attributes.py",
+ "repo": "astropy/astropy",
+ "records": 28,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:astropy",
+   "kind": "lead",
+   "line": 7
+  },
+  {
+   "id": "r4",
+   "anchor": "Attribute",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r5",
+   "anchor": "Attribute.convert_input",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r6",
+   "anchor": "Attribute.__get__#if:instance is not None/assign:instance_shape",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r7",
+   "anchor": "Attribute.__get__#if:instance is not None/if:instance_shape is not None and (getattr(out, \"shape\", ()) and out.shape != instance_shape)/try",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r8",
+   "anchor": "Attribute.__get__#if:instance is not None/if:instance_shape is not None and (getattr(out, \"shape\", ()) and out.shape != instance_shape)/try/except:ValueError/raise:ValueError",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r9",
+   "anchor": "TimeAttribute",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r10",
+   "anchor": "TimeAttribute.convert_input",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "TimeAttribute.convert_input#if:out.shape",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r12",
+   "anchor": "CartesianRepresentationAttribute",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r13",
+   "anchor": "CartesianRepresentationAttribute.convert_input",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r14",
+   "anchor": "CartesianRepresentationAttribute.convert_input#if:isinstance(value, list) and len(value) == 3 and all(v == 0 for v in value) and self.unit is not None/else/if:hasattr(value, \"xyz\") and value.xyz.unit == self.unit",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r15",
+   "anchor": "CartesianRepresentationAttribute.convert_input#if:isinstance(value, list) and len(value) == 3 and all(v == 0 for v in value) and self.unit is not None/else/assign:value",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r16",
+   "anchor": "CartesianRepresentationAttribute.convert_input#if:isinstance(value, list) and len(value) == 3 and all(v == 0 for v in value) and self.unit is not None/else/assign:cartrep",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r17",
+   "anchor": "QuantityAttribute",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r18",
+   "anchor": "QuantityAttribute.convert_input",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r19",
+   "anchor": "QuantityAttribute.convert_input#if:self.shape is not None and value.shape != self.shape/if:value.shape == () and oldvalue == 0/assign:value",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r20",
+   "anchor": "EarthLocationAttribute",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r21",
+   "anchor": "EarthLocationAttribute.convert_input",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r22",
+   "anchor": "EarthLocationAttribute.convert_input#if:value is None/elif:isinstance(value, EarthLocation)/else/import:.builtin_frames",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r23",
+   "anchor": "CoordinateAttribute",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r24",
+   "anchor": "CoordinateAttribute.convert_input",
+   "kind": "doc",
+   "line": 437
+  },
+  {
+   "id": "r25",
+   "anchor": "CoordinateAttribute.convert_input#if:value is None/elif:isinstance(value, SkyCoord) and isinstance(value.frame, self._frame)/elif:isinstance(value, self._frame)/else/assign:value",
+   "kind": "trail",
+   "line": 467
+  },
+  {
+   "id": "r26",
+   "anchor": "DifferentialAttribute",
+   "kind": "doc",
+   "line": 472
+  },
+  {
+   "id": "r27",
+   "anchor": "DifferentialAttribute.convert_input",
+   "kind": "doc",
+   "line": 498
+  },
+  {
+   "id": "r28",
+   "anchor": "<module>#import:.earth",
+   "kind": "lead",
+   "line": 536
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11884,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2882,
+  "thinking_tokens": 1321,
+  "opus_cost_usd": 0.1951815,
+  "total_cost_usd": 0.2031735,
+  "duration_ms": 27827,
+  "duration_api_ms": 28724,
+  "num_turns": 2
+ },
+ "wall_ms": 28759,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

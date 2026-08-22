@@ -1,0 +1,247 @@
+{
+ "blob_sha": "35ec05ed8f1576028bc8e4651b0769f6fa8b1386",
+ "path": "astropy/coordinates/erfa_astrom.py",
+ "repo": "astropy/astropy",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "ErfaAstrom",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r4",
+   "anchor": "ErfaAstrom.apco",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r5",
+   "anchor": "ErfaAstrom.apco#if:hasattr(frame_or_coord, 'pressure')",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r6",
+   "anchor": "ErfaAstrom.apco#if:hasattr(frame_or_coord, 'pressure')/assign:refa, refb",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "ErfaAstrom.apco#if:hasattr(frame_or_coord, 'pressure')/else/assign:refa, refb",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r8",
+   "anchor": "ErfaAstrom.apcs",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r9",
+   "anchor": "ErfaAstrom.apio",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r10",
+   "anchor": "ErfaAstrom.apio#assign:sp",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r11",
+   "anchor": "ErfaAstrom.apio#assign:theta",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r12",
+   "anchor": "ErfaAstrom.apio#assign:lon, lat, height",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r13",
+   "anchor": "ErfaAstrom.apio#assign:xp, yp",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r14",
+   "anchor": "ErfaAstrom.apio#assign:astrom",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r15",
+   "anchor": "ErfaAstrom.apio#assign:r",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r16",
+   "anchor": "ErfaAstrom.apio#assign:a",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r17",
+   "anchor": "ErfaAstrom.apio#assign:c",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r18",
+   "anchor": "ErfaAstrom.apio#assign:astrom['along']",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r19",
+   "anchor": "ErfaAstrom.apio#assign:astrom['sphi']",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r20",
+   "anchor": "ErfaAstrom.apio#assign:astrom['cphi']",
+   "kind": "post",
+   "line": 154
+  },
+  {
+   "id": "r21",
+   "anchor": "ErfaAstrom.apio#assign:astrom['refa'], astrom['refb']",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r22",
+   "anchor": "ErfaAstromInterpolator",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r23",
+   "anchor": "ErfaAstromInterpolator._get_support_points",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r24",
+   "anchor": "ErfaAstromInterpolator._get_support_points#assign:mjd_u",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r25",
+   "anchor": "ErfaAstromInterpolator._prepare_earth_position_vel",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r26",
+   "anchor": "ErfaAstromInterpolator._prepare_earth_position_vel#assign:earth_pv",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r27",
+   "anchor": "ErfaAstromInterpolator._get_c2i",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r28",
+   "anchor": "ErfaAstromInterpolator._get_cip",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r29",
+   "anchor": "ErfaAstromInterpolator._get_polar_motion",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r30",
+   "anchor": "ErfaAstromInterpolator.apco",
+   "kind": "doc",
+   "line": 314
+  },
+  {
+   "id": "r31",
+   "anchor": "ErfaAstromInterpolator.apco#assign:earth_pv, earth_heliocentric",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r32",
+   "anchor": "ErfaAstromInterpolator.apco#if:hasattr(frame_or_coord, 'pressure')",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r33",
+   "anchor": "ErfaAstromInterpolator.apco#if:hasattr(frame_or_coord, 'pressure')/assign:refa, refb",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r34",
+   "anchor": "ErfaAstromInterpolator.apco#if:hasattr(frame_or_coord, 'pressure')/else/assign:refa, refb",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r35",
+   "anchor": "ErfaAstromInterpolator.apcs",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r36",
+   "anchor": "ErfaAstromInterpolator.apcs#assign:earth_pv, earth_heliocentric",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r37",
+   "anchor": "erfa_astrom",
+   "kind": "doc",
+   "line": 386
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12258,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3003,
+  "thinking_tokens": 1151,
+  "opus_cost_usd": 0.20194649999999997,
+  "total_cost_usd": 0.21035649999999997,
+  "duration_ms": 27093,
+  "duration_api_ms": 28076,
+  "num_turns": 2
+ },
+ "wall_ms": 30112,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

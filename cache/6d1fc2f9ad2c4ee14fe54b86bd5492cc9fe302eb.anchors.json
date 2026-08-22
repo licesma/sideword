@@ -1,0 +1,145 @@
+{
+ "blob_sha": "6d1fc2f9ad2c4ee14fe54b86bd5492cc9fe302eb",
+ "path": "lib/matplotlib/backends/qt_compat.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 20,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_ETS",
+   "kind": "trail",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#if:sys.modules.get(\"PyQt6.QtCore\")",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#if:sys.modules.get(\"PyQt6.QtCore\")/elif:(mpl.rcParams._get_backend_or_none() or \"\").lower().startswith(\"qt5\")",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#if:sys.modules.get(\"PyQt6.QtCore\")/elif:QT_API_ENV is None",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#if:QT_API in [QT_API_PYQT6, QT_API_PYQT5, QT_API_PYSIDE6, QT_API_PYSIDE2]/elif:QT_API is None",
+   "kind": "trail",
+   "line": 105
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#if:QT_API in [QT_API_PYQT6, QT_API_PYQT5, QT_API_PYSIDE6, QT_API_PYSIDE2]/else",
+   "kind": "trail",
+   "line": 129
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#if:sys.platform == 'darwin' and parse_version(platform.mac_ver()[0]) >= parse_version(\"10.16\") and QtCore.QLibraryInfo.version().segments() <= [5, 15, 2]",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r9",
+   "anchor": "_to_int",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r10",
+   "anchor": "_enum#return",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r11",
+   "anchor": "_exec",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r12",
+   "anchor": "_exec#expr:obj.exec() if hasattr(obj, \"exec\") else obj.exec_()",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r13",
+   "anchor": "_devicePixelRatioF",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r14",
+   "anchor": "_devicePixelRatioF#try/return",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r15",
+   "anchor": "_devicePixelRatioF#try/return",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r16",
+   "anchor": "_setDevicePixelRatio",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r17",
+   "anchor": "_setDevicePixelRatio#if:hasattr(obj, 'setDevicePixelRatio')/call:obj.setDevicePixelRatio",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r18",
+   "anchor": "_maybe_allow_interrupt",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r19",
+   "anchor": "_maybe_allow_interrupt#if:old_sigint_handler in (None, signal.SIG_IGN, signal.SIG_DFL)/else/call:rsock.setblocking",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r20",
+   "anchor": "_maybe_allow_interrupt._may_clear_sock",
+   "kind": "lead",
+   "line": 239
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9228,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2805,
+  "thinking_tokens": 1602,
+  "opus_cost_usd": 0.1666965,
+  "total_cost_usd": 0.1725925,
+  "duration_ms": 28116,
+  "duration_api_ms": 29218,
+  "num_turns": 2
+ },
+ "wall_ms": 29134,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

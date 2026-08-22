@@ -1,0 +1,241 @@
+{
+ "blob_sha": "02b8cf7693d8792eea5b5149aaea98a2ee724e8f",
+ "path": "src/flask/sessions.py",
+ "repo": "pallets/flask",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SessionMixin",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "SessionMixin.permanent",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r3",
+   "anchor": "SessionMixin.new",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "SessionMixin.modified",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r5",
+   "anchor": "SessionMixin.accessed",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r6",
+   "anchor": "SecureCookieSession",
+   "kind": "doc",
+   "line": 49
+  },
+  {
+   "id": "r7",
+   "anchor": "SecureCookieSession.modified",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r8",
+   "anchor": "SecureCookieSession.accessed",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r9",
+   "anchor": "NullSession",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r10",
+   "anchor": "SessionInterface",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r11",
+   "anchor": "SessionInterface.null_session_class",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r12",
+   "anchor": "SessionInterface.pickle_based",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r13",
+   "anchor": "SessionInterface.make_null_session",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r14",
+   "anchor": "SessionInterface.is_null_session",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r15",
+   "anchor": "SessionInterface.get_cookie_name",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r16",
+   "anchor": "SessionInterface.get_cookie_domain",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r17",
+   "anchor": "SessionInterface.get_cookie_domain#if:rv is not None",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r18",
+   "anchor": "SessionInterface.get_cookie_domain#if:not rv",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r19",
+   "anchor": "SessionInterface.get_cookie_domain#assign:rv",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r20",
+   "anchor": "SessionInterface.get_cookie_domain#if:\".\" not in rv/call:warnings.warn",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r21",
+   "anchor": "SessionInterface.get_cookie_domain#if:self.get_cookie_path(app) == \"/\" and not ip",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r22",
+   "anchor": "SessionInterface.get_cookie_path",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r23",
+   "anchor": "SessionInterface.get_cookie_httponly",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r24",
+   "anchor": "SessionInterface.get_cookie_secure",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r25",
+   "anchor": "SessionInterface.get_cookie_samesite",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r26",
+   "anchor": "SessionInterface.get_expiration_time",
+   "kind": "doc",
+   "line": 269
+  },
+  {
+   "id": "r27",
+   "anchor": "SessionInterface.should_set_cookie",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r28",
+   "anchor": "SessionInterface.open_session",
+   "kind": "doc",
+   "line": 297
+  },
+  {
+   "id": "r29",
+   "anchor": "SessionInterface.save_session",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r30",
+   "anchor": "SecureCookieSessionInterface",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r31",
+   "anchor": "SecureCookieSessionInterface.salt",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r32",
+   "anchor": "SecureCookieSessionInterface.digest_method",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r33",
+   "anchor": "SecureCookieSessionInterface.key_derivation",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r34",
+   "anchor": "SecureCookieSessionInterface.serializer",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r35",
+   "anchor": "SecureCookieSessionInterface.save_session#if:not session",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r36",
+   "anchor": "SecureCookieSessionInterface.save_session#if:session.accessed",
+   "kind": "lead",
+   "line": 402
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12125,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2268,
+  "thinking_tokens": 719,
+  "opus_cost_usd": 0.1822415,
+  "total_cost_usd": 0.1904475,
+  "duration_ms": 21019,
+  "duration_api_ms": 22051,
+  "num_turns": 2
+ },
+ "wall_ms": 22405,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

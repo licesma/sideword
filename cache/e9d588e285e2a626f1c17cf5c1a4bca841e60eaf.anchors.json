@@ -1,0 +1,127 @@
+{
+ "blob_sha": "e9d588e285e2a626f1c17cf5c1a4bca841e60eaf",
+ "path": "django/contrib/gis/gdal/datasource.py",
+ "repo": "django/django",
+ "records": 17,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "DataSource",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r3",
+   "anchor": "DataSource",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "DataSource.__init__#if:write",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r5",
+   "anchor": "DataSource.encoding",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "DataSource.__init__#if:isinstance(ds_input, six.string_types)/assign:ds_driver",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r7",
+   "anchor": "DataSource.__init__#if:isinstance(ds_input, six.string_types)/try/assign:ds",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "DataSource.__init__#if:isinstance(ds_input, six.string_types)/try/except:GDALException/raise:GDALException",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r9",
+   "anchor": "DataSource.__init__#if:ds/else/raise:GDALException",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r10",
+   "anchor": "DataSource.__del__",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r11",
+   "anchor": "DataSource.__del__#try/except:(AttributeError, TypeError)/pass",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r12",
+   "anchor": "DataSource.__iter__",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r13",
+   "anchor": "DataSource.__getitem__",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r14",
+   "anchor": "DataSource.__len__",
+   "kind": "doc",
+   "line": 114
+  },
+  {
+   "id": "r15",
+   "anchor": "DataSource.__str__",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r16",
+   "anchor": "DataSource.layer_count",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r17",
+   "anchor": "DataSource.name",
+   "kind": "doc",
+   "line": 128
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6015,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1333,
+  "thinking_tokens": 556,
+  "opus_cost_usd": 0.0977665,
+  "total_cost_usd": 0.1011755,
+  "duration_ms": 14475,
+  "duration_api_ms": 15487,
+  "num_turns": 2
+ },
+ "wall_ms": 15601,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

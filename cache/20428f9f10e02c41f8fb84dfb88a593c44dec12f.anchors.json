@@ -1,0 +1,133 @@
+{
+ "blob_sha": "20428f9f10e02c41f8fb84dfb88a593c44dec12f",
+ "path": "django/core/management/commands/loaddata.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#if:transaction.get_autocommit(self.using)",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.compression_formats",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.compression_formats#assign:compression_formats",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.reset_sequences",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.loaddata#assign:self.fixture_count",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.loaddata#for:fixture_label in fixture_labels",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.loaddata#assign:table_names",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.loaddata#if:self.loaded_object_count > 0",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.save_obj",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.save_obj#if:router.allow_migrate_model(self.using, obj.object.__class__)/try/except:(DatabaseError, IntegrityError, ValueError)",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.load_label",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.load_label#for:fixture_file, fixture_dir, fixture_name in self.find_fixtures(fixture_label)/if:objects_in_fixture and show_progress/call:self.stdout.write",
+   "kind": "trail",
+   "line": 231
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.load_label#for:fixture_file, fixture_dir, fixture_name in self.find_fixtures(fixture_label)/if:objects_in_fixture == 0",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.find_fixture_files_in_dir#for:candidate in glob.iglob(glob.escape(path) + '*')/if:os.path.basename(candidate) in targets/call:fixture_files_in_dir.append",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.find_fixtures",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.find_fixtures#for:fixture_dir in fixture_dirs/if:len(fixture_files_in_dir) > 1",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.fixture_dirs",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.parse_name",
+   "kind": "doc",
+   "line": 339
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10721,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1971,
+  "thinking_tokens": 948,
+  "opus_cost_usd": 0.1607765,
+  "total_cost_usd": 0.16784049999999998,
+  "duration_ms": 20145,
+  "duration_api_ms": 21172,
+  "num_turns": 2
+ },
+ "wall_ms": 20971,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

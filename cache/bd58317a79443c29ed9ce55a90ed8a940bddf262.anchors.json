@@ -1,0 +1,265 @@
+{
+ "blob_sha": "bd58317a79443c29ed9ce55a90ed8a940bddf262",
+ "path": "django/utils/html.py",
+ "repo": "django/django",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "TRAILING_PUNCTUATION_CHARS",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r3",
+   "anchor": "DOTS",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "escape",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#call:_js_escapes.update",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "escapejs",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r7",
+   "anchor": "json_script",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "conditional_escape",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r9",
+   "anchor": "format_html",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r10",
+   "anchor": "format_html_join",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r11",
+   "anchor": "linebreaks",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r12",
+   "anchor": "_strip_once",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r13",
+   "anchor": "strip_tags",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r14",
+   "anchor": "strip_tags#assign:value",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r15",
+   "anchor": "strip_tags#while:'<' in value and '>' in value/if:value.count('<') == new_value.count('<')/break",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r16",
+   "anchor": "strip_spaces_between_tags",
+   "kind": "doc",
+   "line": 195
+  },
+  {
+   "id": "r17",
+   "anchor": "smart_urlquote",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r18",
+   "anchor": "smart_urlquote.unquote_quote#return",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r19",
+   "anchor": "smart_urlquote#try",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r20",
+   "anchor": "smart_urlquote#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r21",
+   "anchor": "smart_urlquote#try/assign:netloc",
+   "kind": "trail",
+   "line": 217
+  },
+  {
+   "id": "r22",
+   "anchor": "smart_urlquote#try/except:UnicodeError",
+   "kind": "trail",
+   "line": 218
+  },
+  {
+   "id": "r23",
+   "anchor": "smart_urlquote#if:query/assign:query_parts",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r24",
+   "anchor": "smart_urlquote#if:query/assign:query",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r25",
+   "anchor": "urlize",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r26",
+   "anchor": "urlize.trim_punctuation",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r27",
+   "anchor": "urlize.trim_punctuation#assign:trimmed_something",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r28",
+   "anchor": "urlize.trim_punctuation#while:trimmed_something/for:opening, closing in WRAPPING_PUNCTUATION",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r29",
+   "anchor": "urlize.trim_punctuation#while:trimmed_something/for:opening, closing in WRAPPING_PUNCTUATION/if:middle.endswith(closing) and middle.count(closing) == middle.count(opening) + 1",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r30",
+   "anchor": "urlize.trim_punctuation#while:trimmed_something/assign:middle_unescaped",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r31",
+   "anchor": "urlize.is_email_simple",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r32",
+   "anchor": "urlize.is_email_simple#if:'@' not in value or value.startswith('@') or value.endswith('@')",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r33",
+   "anchor": "urlize.is_email_simple#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r34",
+   "anchor": "urlize.is_email_simple#if:'.' not in p2 or p2.startswith('.')",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r35",
+   "anchor": "urlize#for:i, word in enumerate(words)/if:'.' in word or '@' in word or ':' in word/assign:lead, middle, trail",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r36",
+   "anchor": "urlize#for:i, word in enumerate(words)/if:'.' in word or '@' in word or ':' in word/assign:lead, middle, trail",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r37",
+   "anchor": "urlize#for:i, word in enumerate(words)/if:'.' in word or '@' in word or ':' in word/assign:url",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r38",
+   "anchor": "urlize#for:i, word in enumerate(words)/if:'.' in word or '@' in word or ':' in word/if:url",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r39",
+   "anchor": "avoid_wrapping",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r40",
+   "anchor": "html_safe",
+   "kind": "doc",
+   "line": 361
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11124,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3640,
+  "thinking_tokens": 1783,
+  "opus_cost_usd": 0.20653149999999998,
+  "total_cost_usd": 0.21407949999999998,
+  "duration_ms": 32094,
+  "duration_api_ms": 33302,
+  "num_turns": 2
+ },
+ "wall_ms": 32948,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

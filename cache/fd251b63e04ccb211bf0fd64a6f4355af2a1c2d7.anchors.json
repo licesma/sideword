@@ -1,0 +1,151 @@
+{
+ "blob_sha": "fd251b63e04ccb211bf0fd64a6f4355af2a1c2d7",
+ "path": "django/contrib/gis/db/models/functions.py",
+ "repo": "django/django",
+ "records": 21,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GeoFunc.resolve_expression#for:pos, expr in enumerate(res.source_expressions[1:], start=1)/if:isinstance(expr, GeomValue) and expr.srid != base_srid/assign:res.source_expressions[pos]",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r2",
+   "anchor": "SQLiteDecimalToFloatMixin",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r3",
+   "anchor": "Area.as_sql#if:connection.ops.geography/else/assign:source_fields",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r4",
+   "anchor": "Area.as_sql#if:connection.ops.geography/else/if:len(source_fields)/if:source_field.geodetic(connection)/raise:NotImplementedError",
+   "kind": "todo",
+   "line": 135
+  },
+  {
+   "id": "r5",
+   "anchor": "Area.as_oracle#assign:self.output_field",
+   "kind": "trail",
+   "line": 142
+  },
+  {
+   "id": "r6",
+   "anchor": "AsKML.as_sqlite#call:self.source_expressions.pop",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r7",
+   "anchor": "DistanceResultMixin.convert_value#assign:geo_field",
+   "kind": "trail",
+   "line": 216
+  },
+  {
+   "id": "r8",
+   "anchor": "Distance.as_postgresql#assign:geo_field",
+   "kind": "trail",
+   "line": 242
+  },
+  {
+   "id": "r9",
+   "anchor": "Distance.as_postgresql#if:self.source_is_geography()/for:pos, expr in enumerate(self.source_expressions[self.geom_param_pos + 1:], start=self.geom_param_pos + 1)",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r10",
+   "anchor": "Distance.as_postgresql#if:self.source_is_geography()/elif:geo_field.geodetic(connection)/if:self.spheroid",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r11",
+   "anchor": "Distance.as_postgresql#if:self.source_is_geography()/elif:geo_field.geodetic(connection)/if:self.spheroid/assign:self.function",
+   "kind": "trail",
+   "line": 252
+  },
+  {
+   "id": "r12",
+   "anchor": "Distance.as_postgresql#if:self.source_is_geography()/elif:geo_field.geodetic(connection)/if:self.spheroid/assign:self.source_expressions[2]",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r13",
+   "anchor": "Length.as_sql#assign:geo_field",
+   "kind": "trail",
+   "line": 299
+  },
+  {
+   "id": "r14",
+   "anchor": "Length.as_postgresql#assign:geo_field",
+   "kind": "trail",
+   "line": 305
+  },
+  {
+   "id": "r15",
+   "anchor": "Length.as_postgresql#if:self.source_is_geography()/elif:geo_field.geodetic(connection)/assign:self.function",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r16",
+   "anchor": "Perimeter.as_postgresql#assign:geo_field",
+   "kind": "trail",
+   "line": 357
+  },
+  {
+   "id": "r17",
+   "anchor": "Perimeter.as_sqlite#assign:geo_field",
+   "kind": "trail",
+   "line": 366
+  },
+  {
+   "id": "r18",
+   "anchor": "SnapToGrid.__init__#if:nargs in (1, 2)/elif:nargs == 4/call:expressions.extend",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r19",
+   "anchor": "Transform.srid#return",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r20",
+   "anchor": "Transform.convert_value#if:not connection.ops.postgis and not value.srid/assign:value.srid",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r21",
+   "anchor": "Translate.as_sqlite#if:len(self.source_expressions) < 4/call:self.source_expressions.append",
+   "kind": "lead",
+   "line": 442
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11510,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2768,
+  "thinking_tokens": 1417,
+  "opus_cost_usd": 0.18859149999999997,
+  "total_cost_usd": 0.19648549999999998,
+  "duration_ms": 26644,
+  "duration_api_ms": 27927,
+  "num_turns": 2
+ },
+ "wall_ms": 27475,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

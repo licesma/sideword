@@ -1,0 +1,337 @@
+{
+ "blob_sha": "21099c8594d57b278067cfb19aacbbb3fda52dae",
+ "path": "lib/matplotlib/scale.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 52,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ScaleBase",
+   "kind": "doc",
+   "line": 29
+  },
+  {
+   "id": "r3",
+   "anchor": "ScaleBase.__init__",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "ScaleBase.get_transform",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "ScaleBase.set_default_locators_and_formatters",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r6",
+   "anchor": "ScaleBase.limit_range_for_scale",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r7",
+   "anchor": "LinearScale",
+   "kind": "doc",
+   "line": 89
+  },
+  {
+   "id": "r8",
+   "anchor": "LinearScale.__init__#expr:\"\"\" \"\"\"",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r9",
+   "anchor": "LinearScale.__init__",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r10",
+   "anchor": "LinearScale.set_default_locators_and_formatters#call:axis.set_major_locator",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r11",
+   "anchor": "LinearScale.set_default_locators_and_formatters#if:axis.axis_name == 'x' and mpl.rcParams['xtick.minor.visible'] or axis.axis_name",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "LinearScale.get_transform",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r13",
+   "anchor": "FuncTransform",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r14",
+   "anchor": "FuncTransform.__init__",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r15",
+   "anchor": "FuncScale",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r16",
+   "anchor": "FuncScale.__init__",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r17",
+   "anchor": "FuncScale.get_transform",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r18",
+   "anchor": "FuncScale.set_default_locators_and_formatters#call:axis.set_major_locator",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r19",
+   "anchor": "FuncScale.set_default_locators_and_formatters#if:axis.axis_name == 'x' and mpl.rcParams['xtick.minor.visible'] or axis.axis_name",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r20",
+   "anchor": "LogTransform.transform_non_affine#with:np.errstate(divide=\"ignore\", invalid=\"ignore\")",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r21",
+   "anchor": "LogTransform.transform_non_affine#with:np.errstate(divide=\"ignore\", invalid=\"ignore\")/if:log",
+   "kind": "trail",
+   "line": 220
+  },
+  {
+   "id": "r22",
+   "anchor": "LogTransform.transform_non_affine#with:np.errstate(divide=\"ignore\", invalid=\"ignore\")/if:self._clip/assign:out[a <= 0]",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r23",
+   "anchor": "LogScale",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r24",
+   "anchor": "LogScale.__init__",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r25",
+   "anchor": "LogScale.set_default_locators_and_formatters#call:axis.set_major_locator",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r26",
+   "anchor": "LogScale.get_transform",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r27",
+   "anchor": "LogScale.limit_range_for_scale",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r28",
+   "anchor": "LogScale.limit_range_for_scale#if:not np.isfinite(minpos)/assign:minpos",
+   "kind": "trail",
+   "line": 302
+  },
+  {
+   "id": "r29",
+   "anchor": "FuncScaleLog",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r30",
+   "anchor": "FuncScaleLog.__init__",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r31",
+   "anchor": "FuncScaleLog.base#return",
+   "kind": "trail",
+   "line": 339
+  },
+  {
+   "id": "r32",
+   "anchor": "FuncScaleLog.get_transform",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r33",
+   "anchor": "SymmetricalLogScale",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r34",
+   "anchor": "SymmetricalLogScale.set_default_locators_and_formatters#call:axis.set_major_locator",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r35",
+   "anchor": "SymmetricalLogScale.get_transform",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r36",
+   "anchor": "AsinhTransform",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r37",
+   "anchor": "InvertedAsinhTransform",
+   "kind": "doc",
+   "line": 478
+  },
+  {
+   "id": "r38",
+   "anchor": "AsinhScale",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r39",
+   "anchor": "AsinhScale.__init__",
+   "kind": "doc",
+   "line": 531
+  },
+  {
+   "id": "r40",
+   "anchor": "LogitTransform.transform_non_affine",
+   "kind": "doc",
+   "line": 586
+  },
+  {
+   "id": "r41",
+   "anchor": "LogitTransform.transform_non_affine#if:self._clip",
+   "kind": "trail",
+   "line": 590
+  },
+  {
+   "id": "r42",
+   "anchor": "LogisticTransform.transform_non_affine",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r43",
+   "anchor": "LogitScale",
+   "kind": "doc",
+   "line": 620
+  },
+  {
+   "id": "r44",
+   "anchor": "LogitScale.__init__",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r45",
+   "anchor": "LogitScale.get_transform",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r46",
+   "anchor": "LogitScale.set_default_locators_and_formatters#call:axis.set_major_locator",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r47",
+   "anchor": "LogitScale.limit_range_for_scale",
+   "kind": "doc",
+   "line": 673
+  },
+  {
+   "id": "r48",
+   "anchor": "LogitScale.limit_range_for_scale#if:not np.isfinite(minpos)/assign:minpos",
+   "kind": "trail",
+   "line": 678
+  },
+  {
+   "id": "r49",
+   "anchor": "get_scale_names",
+   "kind": "doc",
+   "line": 694
+  },
+  {
+   "id": "r50",
+   "anchor": "scale_factory",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r51",
+   "anchor": "register_scale",
+   "kind": "doc",
+   "line": 722
+  },
+  {
+   "id": "r52",
+   "anchor": "_get_scale_docs",
+   "kind": "doc",
+   "line": 734
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17362,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4260,
+  "thinking_tokens": 1920,
+  "opus_cost_usd": 0.2844115,
+  "total_cost_usd": 0.2971645,
+  "duration_ms": 40478,
+  "duration_api_ms": 41614,
+  "num_turns": 2
+ },
+ "wall_ms": 41514,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

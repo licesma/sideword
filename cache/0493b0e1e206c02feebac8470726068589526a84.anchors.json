@@ -1,0 +1,217 @@
+{
+ "blob_sha": "0493b0e1e206c02feebac8470726068589526a84",
+ "path": "django/db/models/deletion.py",
+ "repo": "django/django",
+ "records": 32,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "get_candidate_relations_to_delete#return",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r2",
+   "anchor": "Collector.data",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r3",
+   "anchor": "Collector.field_updates",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r4",
+   "anchor": "Collector.restricted_objects",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "Collector.fast_deletes",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r6",
+   "anchor": "Collector.dependencies",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r7",
+   "anchor": "Collector.dependencies",
+   "kind": "trail",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "Collector.add",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r9",
+   "anchor": "Collector.add#if:source is not None and not nullable",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r10",
+   "anchor": "Collector.add_field_update",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r11",
+   "anchor": "Collector.can_fast_delete",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r12",
+   "anchor": "Collector.can_fast_delete#assign:opts",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r13",
+   "anchor": "Collector.can_fast_delete#return",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r14",
+   "anchor": "Collector.can_fast_delete#return",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r15",
+   "anchor": "Collector.get_del_batches",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r16",
+   "anchor": "Collector.collect",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r17",
+   "anchor": "Collector.collect#if:not keep_parents/assign:concrete_model",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r18",
+   "anchor": "Collector.collect#for:related in get_candidate_relations_to_delete(model._meta)/if:keep_parents and related.model in parents",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r19",
+   "anchor": "Collector.collect#for:related in get_candidate_relations_to_delete(model._meta)/for:batch in batches/if:not (sub_objs.query.select_related or self._has_signal_listeners(related_model))",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r20",
+   "anchor": "Collector.collect#for:field in model._meta.private_fields/if:hasattr(field, 'bulk_related_objects')/assign:sub_objs",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r21",
+   "anchor": "Collector.collect#if:fail_on_restricted/for:related_model, instances in self.data.items()",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r22",
+   "anchor": "Collector.related_objects",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r23",
+   "anchor": "Collector.delete#for:model, instances in self.data.items()",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r24",
+   "anchor": "Collector.delete#call:self.sort",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r25",
+   "anchor": "Collector.delete#assign:deleted_counter",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r26",
+   "anchor": "Collector.delete#if:len(self.data) == 1 and len(instances) == 1",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r27",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, obj in self.instances_with_model()",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r28",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:qs in self.fast_deletes",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r29",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, instances_for_fieldvalues in self.field_updates.items()",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r30",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:instances in self.data.values()",
+   "kind": "lead",
+   "line": 422
+  },
+  {
+   "id": "r31",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, instances in self.data.items()",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r32",
+   "anchor": "Collector.delete#for:instances_for_fieldvalues in self.field_updates.values()",
+   "kind": "lead",
+   "line": 440
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12398,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3408,
+  "thinking_tokens": 1761,
+  "opus_cost_usd": 0.21347149999999998,
+  "total_cost_usd": 0.22218349999999998,
+  "duration_ms": 33421,
+  "duration_api_ms": 33778,
+  "num_turns": 2
+ },
+ "wall_ms": 34409,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

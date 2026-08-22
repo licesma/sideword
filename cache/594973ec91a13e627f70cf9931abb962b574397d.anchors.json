@@ -1,0 +1,103 @@
+{
+ "blob_sha": "594973ec91a13e627f70cf9931abb962b574397d",
+ "path": "django/contrib/sessions/backends/file.py",
+ "repo": "django/django",
+ "records": 13,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SessionStore",
+   "kind": "doc",
+   "line": 18
+  },
+  {
+   "id": "r2",
+   "anchor": "SessionStore._get_storage_path#try/except:AttributeError/if:not os.path.isdir(storage_path)",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "SessionStore._key_to_file",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r4",
+   "anchor": "SessionStore._key_to_file#if:not set(session_key).issubset(set(VALID_KEY_CHARS))",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "SessionStore._last_modification",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "SessionStore._expiry_date",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r7",
+   "anchor": "SessionStore.load#try/if:file_data",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r8",
+   "anchor": "SessionStore.load#try/if:file_data/assign:expiry_age",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r9",
+   "anchor": "SessionStore.save#assign:session_data",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r10",
+   "anchor": "SessionStore.save#try/assign:flags",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r11",
+   "anchor": "SessionStore.save#assign:dir, prefix",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r12",
+   "anchor": "SessionStore.save#try/try/call:shutil.move",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r13",
+   "anchor": "SessionStore.clear_expired#for:session_file in os.listdir(storage_path)/assign:session.create",
+   "kind": "lead",
+   "line": 211
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7296,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1675,
+  "thinking_tokens": 1013,
+  "opus_cost_usd": 0.1191265,
+  "total_cost_usd": 0.12358949999999999,
+  "duration_ms": 17337,
+  "duration_api_ms": 18542,
+  "num_turns": 2
+ },
+ "wall_ms": 18156,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

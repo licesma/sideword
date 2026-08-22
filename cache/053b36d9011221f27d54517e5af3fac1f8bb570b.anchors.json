@@ -1,0 +1,1309 @@
+{
+ "blob_sha": "053b36d9011221f27d54517e5af3fac1f8bb570b",
+ "path": "lib/matplotlib/backends/backend_pdf.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 214,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "fill",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r3",
+   "anchor": "fill",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r4",
+   "anchor": "fill",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r5",
+   "anchor": "fill",
+   "kind": "todo",
+   "line": 96
+  },
+  {
+   "id": "r6",
+   "anchor": "_fill",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r7",
+   "anchor": "_create_pdf_info_dict",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "_create_pdf_info_dict#assign:source_date_epoch",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r9",
+   "anchor": "_datetime_to_pdf",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r10",
+   "anchor": "_calculate_quad_point_coordinates",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r11",
+   "anchor": "_get_coordinates_of_block",
+   "kind": "doc",
+   "line": 250
+  },
+  {
+   "id": "r12",
+   "anchor": "_get_coordinates_of_block#assign:pad",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r13",
+   "anchor": "_get_link_annotation",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_link_annotation#if:angle % 90/assign:link_annotation['QuadPoints']",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r15",
+   "anchor": "_str_escapes",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r16",
+   "anchor": "pdfRepr",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r17",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r18",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, (float, np.floating))",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r19",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, bool)",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r20",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, (int, np.integer))",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r21",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, str)",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r22",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, bytes)",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r23",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, dict)",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r24",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, (list, tuple))",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r25",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:obj is None",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r26",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, datetime)",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r27",
+   "anchor": "pdfRepr#if:hasattr(obj, 'pdfRepr')/elif:isinstance(obj, BboxBase)",
+   "kind": "lead",
+   "line": 369
+  },
+  {
+   "id": "r28",
+   "anchor": "_font_supports_glyph",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r29",
+   "anchor": "Reference",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r30",
+   "anchor": "Name",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r31",
+   "anchor": "Verbatim",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r32",
+   "anchor": "Op",
+   "kind": "doc",
+   "line": 477
+  },
+  {
+   "id": "r33",
+   "anchor": "Op.paint_path",
+   "kind": "doc",
+   "line": 524
+  },
+  {
+   "id": "r34",
+   "anchor": "Stream",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r35",
+   "anchor": "Stream.__init__",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r36",
+   "anchor": "Stream.id",
+   "kind": "trail",
+   "line": 572
+  },
+  {
+   "id": "r37",
+   "anchor": "Stream.len",
+   "kind": "trail",
+   "line": 573
+  },
+  {
+   "id": "r38",
+   "anchor": "Stream.file",
+   "kind": "trail",
+   "line": 575
+  },
+  {
+   "id": "r39",
+   "anchor": "Stream.compressobj",
+   "kind": "trail",
+   "line": 576
+  },
+  {
+   "id": "r40",
+   "anchor": "Stream.end",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r41",
+   "anchor": "Stream.write",
+   "kind": "doc",
+   "line": 622
+  },
+  {
+   "id": "r42",
+   "anchor": "Stream._flush",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r43",
+   "anchor": "_get_pdf_charprocs#assign:conv",
+   "kind": "trail",
+   "line": 642
+  },
+  {
+   "id": "r44",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:d1",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r45",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:v",
+   "kind": "trail",
+   "line": 651
+  },
+  {
+   "id": "r46",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:quads",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r47",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:implicit",
+   "kind": "trail",
+   "line": 664
+  },
+  {
+   "id": "r48",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/if:(font.postscript_name, glyph_id) in [(\"DejaVuSerif-Italic\", 77), (\"DejaVuSerif-Italic\", 135)]/item:(\"DejaVuSerif-Italic\", 77)",
+   "kind": "trail",
+   "line": 669
+  },
+  {
+   "id": "r49",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/if:(font.postscript_name, glyph_id) in [(\"DejaVuSerif-Italic\", 77), (\"DejaVuSerif-Italic\", 135)]/item:(\"DejaVuSerif-Italic\", 135)",
+   "kind": "trail",
+   "line": 670
+  },
+  {
+   "id": "r50",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/if:(font.postscript_name, glyph_id) in [(\"DejaVuSerif-Italic\", 77), (\"DejaVuSerif-Italic\", 135)]/assign:v[:, 0]",
+   "kind": "trail",
+   "line": 672
+  },
+  {
+   "id": "r51",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:v",
+   "kind": "trail",
+   "line": 673
+  },
+  {
+   "id": "r52",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:v[implicit]",
+   "kind": "trail",
+   "line": 674
+  },
+  {
+   "id": "r53",
+   "anchor": "_get_pdf_charprocs#for:glyph_id in glyph_ids/assign:procs[font.get_glyph_name(glyph_id)]/arg:[b\"m\", b\"l\", b\"\", b\"c\", b\"h\"]",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r54",
+   "anchor": "PdfFile",
+   "kind": "doc",
+   "line": 686
+  },
+  {
+   "id": "r55",
+   "anchor": "PdfFile.__init__",
+   "kind": "doc",
+   "line": 689
+  },
+  {
+   "id": "r56",
+   "anchor": "PdfFile._object_seq",
+   "kind": "trail",
+   "line": 708
+  },
+  {
+   "id": "r57",
+   "anchor": "PdfFile.currentstream",
+   "kind": "trail",
+   "line": 725
+  },
+  {
+   "id": "r58",
+   "anchor": "PdfFile.__init__#call:fh.write",
+   "kind": "trail",
+   "line": 726
+  },
+  {
+   "id": "r59",
+   "anchor": "PdfFile.__init__#call:fh.write",
+   "kind": "lead",
+   "line": 730
+  },
+  {
+   "id": "r60",
+   "anchor": "PdfFile.fontNames",
+   "kind": "trail",
+   "line": 748
+  },
+  {
+   "id": "r61",
+   "anchor": "PdfFile.dviFontInfo",
+   "kind": "trail",
+   "line": 750
+  },
+  {
+   "id": "r62",
+   "anchor": "PdfFile.type1Descriptors",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r63",
+   "anchor": "PdfFile.alphaStates",
+   "kind": "trail",
+   "line": 755
+  },
+  {
+   "id": "r64",
+   "anchor": "PdfFile._annotations",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r65",
+   "anchor": "PdfFile.pageAnnotations",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r66",
+   "anchor": "PdfFile.__init__#assign:procsets",
+   "kind": "lead",
+   "line": 781
+  },
+  {
+   "id": "r67",
+   "anchor": "PdfFile.__init__#assign:resources",
+   "kind": "lead",
+   "line": 786
+  },
+  {
+   "id": "r68",
+   "anchor": "PdfFile.newPage#call:self.output",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r69",
+   "anchor": "PdfFile.newPage#assign:self.pageAnnotations",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r70",
+   "anchor": "PdfFile.newTextnote#assign:theNote",
+   "kind": "lead",
+   "line": 825
+  },
+  {
+   "id": "r71",
+   "anchor": "PdfFile._get_subsetted_psname#assign:hashed",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r72",
+   "anchor": "PdfFile._get_subsetted_psname#return",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r73",
+   "anchor": "PdfFile.finalize",
+   "kind": "doc",
+   "line": 848
+  },
+  {
+   "id": "r74",
+   "anchor": "PdfFile.finalize#call:self.writeXref",
+   "kind": "lead",
+   "line": 878
+  },
+  {
+   "id": "r75",
+   "anchor": "PdfFile.close",
+   "kind": "doc",
+   "line": 881
+  },
+  {
+   "id": "r76",
+   "anchor": "PdfFile.fontName",
+   "kind": "doc",
+   "line": 920
+  },
+  {
+   "id": "r77",
+   "anchor": "PdfFile.fontName#return",
+   "kind": "lead",
+   "line": 949
+  },
+  {
+   "id": "r78",
+   "anchor": "PdfFile.dviFontName",
+   "kind": "doc",
+   "line": 951
+  },
+  {
+   "id": "r79",
+   "anchor": "PdfFile.writeFonts#for:filename in sorted(self.fontNames)/if:filename.endswith('.afm')/call:_log.debug",
+   "kind": "lead",
+   "line": 992
+  },
+  {
+   "id": "r80",
+   "anchor": "PdfFile.writeFonts#for:filename in sorted(self.fontNames)/if:filename.endswith('.afm')/else/call:_log.debug",
+   "kind": "lead",
+   "line": 996
+  },
+  {
+   "id": "r81",
+   "anchor": "PdfFile._embedTeXFont#assign:widthsObject",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r82",
+   "anchor": "PdfFile._embedTeXFont#assign:fontdictObject",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r83",
+   "anchor": "PdfFile._embedTeXFont#if:fontinfo.encodingfile is not None",
+   "kind": "lead",
+   "line": 1033
+  },
+  {
+   "id": "r84",
+   "anchor": "PdfFile._embedTeXFont#if:fontinfo.fontfile is None",
+   "kind": "lead",
+   "line": 1041
+  },
+  {
+   "id": "r85",
+   "anchor": "PdfFile._embedTeXFont#assign:t1font",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r86",
+   "anchor": "PdfFile._embedTeXFont#assign:effects",
+   "kind": "lead",
+   "line": 1061
+  },
+  {
+   "id": "r87",
+   "anchor": "PdfFile.createType1Descriptor#assign:fontdescObject",
+   "kind": "lead",
+   "line": 1075
+  },
+  {
+   "id": "r88",
+   "anchor": "PdfFile.createType1Descriptor#if:fixed_pitch",
+   "kind": "lead",
+   "line": 1083
+  },
+  {
+   "id": "r89",
+   "anchor": "PdfFile.createType1Descriptor#if:0",
+   "kind": "todo",
+   "line": 1086
+  },
+  {
+   "id": "r90",
+   "anchor": "PdfFile.createType1Descriptor#if:1",
+   "kind": "todo",
+   "line": 1089
+  },
+  {
+   "id": "r91",
+   "anchor": "PdfFile.createType1Descriptor#if:1/else",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r92",
+   "anchor": "PdfFile.createType1Descriptor#if:italic_angle",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r93",
+   "anchor": "PdfFile.createType1Descriptor#if:0",
+   "kind": "todo",
+   "line": 1098
+  },
+  {
+   "id": "r94",
+   "anchor": "PdfFile.createType1Descriptor#if:0",
+   "kind": "todo",
+   "line": 1101
+  },
+  {
+   "id": "r95",
+   "anchor": "PdfFile.createType1Descriptor#if:0",
+   "kind": "todo",
+   "line": 1104
+  },
+  {
+   "id": "r96",
+   "anchor": "PdfFile.createType1Descriptor#assign:descriptor/key:CapHeight",
+   "kind": "todo",
+   "line": 1117
+  },
+  {
+   "id": "r97",
+   "anchor": "PdfFile.createType1Descriptor#assign:descriptor/key:XHeight",
+   "kind": "todo",
+   "line": 1118
+  },
+  {
+   "id": "r98",
+   "anchor": "PdfFile.createType1Descriptor#assign:descriptor/key:StemV",
+   "kind": "todo",
+   "line": 1121
+  },
+  {
+   "id": "r99",
+   "anchor": "PdfFile.createType1Descriptor#assign:descriptor/key:StemV",
+   "kind": "post",
+   "line": 1121
+  },
+  {
+   "id": "r100",
+   "anchor": "PdfFile.embedTTF",
+   "kind": "doc",
+   "line": 1163
+  },
+  {
+   "id": "r101",
+   "anchor": "PdfFile.embedTTF.cvt",
+   "kind": "doc",
+   "line": 1169
+  },
+  {
+   "id": "r102",
+   "anchor": "PdfFile.embedTTF.cvt#if:value < 0",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r103",
+   "anchor": "PdfFile.embedTTF.embedTTFType3",
+   "kind": "doc",
+   "line": 1180
+  },
+  {
+   "id": "r104",
+   "anchor": "PdfFile.embedTTF.embedTTFType3.get_char_width",
+   "kind": "lead",
+   "line": 1210
+  },
+  {
+   "id": "r105",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#with:warnings.catch_warnings()/call:warnings.filterwarnings",
+   "kind": "lead",
+   "line": 1219
+  },
+  {
+   "id": "r106",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#assign:glyph_ids",
+   "kind": "lead",
+   "line": 1227
+  },
+  {
+   "id": "r107",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#assign:rawcharprocs",
+   "kind": "lead",
+   "line": 1249
+  },
+  {
+   "id": "r108",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#for:charname in sorted(rawcharprocs)/if:charname in multi_byte_chars",
+   "kind": "lead",
+   "line": 1256
+  },
+  {
+   "id": "r109",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#for:charname in sorted(rawcharprocs)/if:charname in multi_byte_chars/assign:stream",
+   "kind": "lead",
+   "line": 1266
+  },
+  {
+   "id": "r110",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#for:charname in sorted(rawcharprocs)/if:charname in multi_byte_chars",
+   "kind": "lead",
+   "line": 1272
+  },
+  {
+   "id": "r111",
+   "anchor": "PdfFile.embedTTF.embedTTFType3#call:self.writeObject",
+   "kind": "lead",
+   "line": 1279
+  },
+  {
+   "id": "r112",
+   "anchor": "PdfFile.embedTTF.embedTTFType42",
+   "kind": "doc",
+   "line": 1286
+  },
+  {
+   "id": "r113",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:full_font",
+   "kind": "lead",
+   "line": 1305
+  },
+  {
+   "id": "r114",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:font",
+   "kind": "lead",
+   "line": 1310
+  },
+  {
+   "id": "r115",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:descriptor['FontFile2']",
+   "kind": "lead",
+   "line": 1335
+  },
+  {
+   "id": "r116",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:cid_to_gid_map",
+   "kind": "lead",
+   "line": 1342
+  },
+  {
+   "id": "r117",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#for:start, end in unicode_groups/if:start > 65535",
+   "kind": "lead",
+   "line": 1375
+  },
+  {
+   "id": "r118",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:glyph_ids",
+   "kind": "lead",
+   "line": 1387
+  },
+  {
+   "id": "r119",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#for:charname in sorted(rawcharprocs)/assign:stream",
+   "kind": "lead",
+   "line": 1406
+  },
+  {
+   "id": "r120",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#assign:cid_to_gid_map",
+   "kind": "lead",
+   "line": 1414
+  },
+  {
+   "id": "r121",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#call:self.outputStream",
+   "kind": "lead",
+   "line": 1418
+  },
+  {
+   "id": "r122",
+   "anchor": "PdfFile.embedTTF.embedTTFType42#call:self.writeObject",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r123",
+   "anchor": "PdfFile.embedTTF#assign:ps_name",
+   "kind": "lead",
+   "line": 1432
+  },
+  {
+   "id": "r124",
+   "anchor": "PdfFile.embedTTF#assign:symbolic",
+   "kind": "trail",
+   "line": 1444
+  },
+  {
+   "id": "r125",
+   "anchor": "PdfFile.embedTTF#if:0",
+   "kind": "todo",
+   "line": 1447
+  },
+  {
+   "id": "r126",
+   "anchor": "PdfFile.embedTTF#if:0",
+   "kind": "todo",
+   "line": 1455
+  },
+  {
+   "id": "r127",
+   "anchor": "PdfFile.embedTTF#if:0",
+   "kind": "todo",
+   "line": 1457
+  },
+  {
+   "id": "r128",
+   "anchor": "PdfFile.embedTTF#if:0",
+   "kind": "todo",
+   "line": 1459
+  },
+  {
+   "id": "r129",
+   "anchor": "PdfFile.embedTTF#assign:descriptor/key:ItalicAngle",
+   "kind": "trail",
+   "line": 1471
+  },
+  {
+   "id": "r130",
+   "anchor": "PdfFile.embedTTF#assign:descriptor/key:StemV",
+   "kind": "trail",
+   "line": 1472
+  },
+  {
+   "id": "r131",
+   "anchor": "PdfFile.alphaState",
+   "kind": "doc",
+   "line": 1480
+  },
+  {
+   "id": "r132",
+   "anchor": "PdfFile._soft_mask_state",
+   "kind": "doc",
+   "line": 1493
+  },
+  {
+   "id": "r133",
+   "anchor": "PdfFile.hatchPattern#if:hatch_style is not None",
+   "kind": "lead",
+   "line": 1562
+  },
+  {
+   "id": "r134",
+   "anchor": "PdfFile.writeHatches#for:hatch_style, name in self.hatchPatterns.items()/call:self.beginStream/key:Matrix",
+   "kind": "lead",
+   "line": 1594
+  },
+  {
+   "id": "r135",
+   "anchor": "PdfFile.addGouraudTriangles",
+   "kind": "doc",
+   "line": 1616
+  },
+  {
+   "id": "r136",
+   "anchor": "PdfFile.writeGouraudTriangles#for:name, ob, points, colors in self.gouraudTriangles/if:colordim == 4/assign:colordim",
+   "kind": "lead",
+   "line": 1650
+  },
+  {
+   "id": "r137",
+   "anchor": "PdfFile.imageObject",
+   "kind": "doc",
+   "line": 1683
+  },
+  {
+   "id": "r138",
+   "anchor": "PdfFile._unpack",
+   "kind": "doc",
+   "line": 1695
+  },
+  {
+   "id": "r139",
+   "anchor": "PdfFile._unpack#if:im.ndim == 2/else/if:im.shape[2] == 4",
+   "kind": "lead",
+   "line": 1708
+  },
+  {
+   "id": "r140",
+   "anchor": "PdfFile._writePng",
+   "kind": "doc",
+   "line": 1718
+  },
+  {
+   "id": "r141",
+   "anchor": "PdfFile._writePng#while:True/call:buffer.seek",
+   "kind": "trail",
+   "line": 1744
+  },
+  {
+   "id": "r142",
+   "anchor": "PdfFile._writeImg",
+   "kind": "doc",
+   "line": 1747
+  },
+  {
+   "id": "r143",
+   "anchor": "PdfFile._writeImg#if:mpl.rcParams['pdf.compression']/if:color_channels == 3 and img_colors is not None/assign:num_colors",
+   "kind": "lead",
+   "line": 1772
+  },
+  {
+   "id": "r144",
+   "anchor": "PdfFile._writeImg#if:mpl.rcParams['pdf.compression']/if:color_channels == 3 and img_colors is not None/assign:dither",
+   "kind": "lead",
+   "line": 1775
+  },
+  {
+   "id": "r145",
+   "anchor": "PdfFile._writeImg#if:mpl.rcParams['pdf.compression']/if:color_channels == 3 and img_colors is not None/assign:palette",
+   "kind": "trail",
+   "line": 1783
+  },
+  {
+   "id": "r146",
+   "anchor": "PdfFile.markerObject",
+   "kind": "doc",
+   "line": 1816
+  },
+  {
+   "id": "r147",
+   "anchor": "PdfFile.markerObject#assign:pathops",
+   "kind": "lead",
+   "line": 1831
+  },
+  {
+   "id": "r148",
+   "anchor": "PdfFile.writeMarkers#for:((pathops, fill, stroke, joinstyle, capstyle), (name, ob, bbox, lw)) in self.markers.items()/assign:bbox",
+   "kind": "lead",
+   "line": 1855
+  },
+  {
+   "id": "r149",
+   "anchor": "PdfFile.reserveObject",
+   "kind": "doc",
+   "line": 1916
+  },
+  {
+   "id": "r150",
+   "anchor": "PdfFile.writeXref",
+   "kind": "doc",
+   "line": 1934
+  },
+  {
+   "id": "r151",
+   "anchor": "PdfFile.writeInfoDict",
+   "kind": "doc",
+   "line": 1947
+  },
+  {
+   "id": "r152",
+   "anchor": "PdfFile.writeTrailer",
+   "kind": "doc",
+   "line": 1953
+  },
+  {
+   "id": "r153",
+   "anchor": "PdfFile.writeTrailer#call:self.write",
+   "kind": "lead",
+   "line": 1962
+  },
+  {
+   "id": "r154",
+   "anchor": "RendererPdf.check_gc#if:gc.get_rgb() is None/call:gc.set_foreground",
+   "kind": "lead",
+   "line": 1989
+  },
+  {
+   "id": "r155",
+   "anchor": "RendererPdf.check_gc#assign:gc._fillcolor",
+   "kind": "lead",
+   "line": 2003
+  },
+  {
+   "id": "r156",
+   "anchor": "RendererPdf.draw_image#assign:h, w",
+   "kind": "lead",
+   "line": 2012
+  },
+  {
+   "id": "r157",
+   "anchor": "RendererPdf.draw_image#if:transform is None/call:gc.set_alpha",
+   "kind": "lead",
+   "line": 2018
+  },
+  {
+   "id": "r158",
+   "anchor": "RendererPdf.draw_path#call:self.check_gc",
+   "kind": "lead",
+   "line": 2041
+  },
+  {
+   "id": "r159",
+   "anchor": "RendererPdf.draw_path_collection#assign:can_do_optimization",
+   "kind": "lead",
+   "line": 2055
+  },
+  {
+   "id": "r160",
+   "anchor": "RendererPdf.draw_path_collection#assign:len_path",
+   "kind": "lead",
+   "line": 2082
+  },
+  {
+   "id": "r161",
+   "anchor": "RendererPdf.draw_markers#assign:len_marker_path",
+   "kind": "lead",
+   "line": 2123
+  },
+  {
+   "id": "r162",
+   "anchor": "RendererPdf.draw_markers#assign:len_marker_path",
+   "kind": "lead",
+   "line": 2123
+  },
+  {
+   "id": "r163",
+   "anchor": "RendererPdf.draw_gouraud_triangles#if:colors.shape[2] == 1/call:gc.set_alpha",
+   "kind": "lead",
+   "line": 2180
+  },
+  {
+   "id": "r164",
+   "anchor": "RendererPdf.draw_gouraud_triangles#if:np.allclose(alpha, colors[:, :, 3])/call:gc.set_alpha",
+   "kind": "lead",
+   "line": 2188
+  },
+  {
+   "id": "r165",
+   "anchor": "RendererPdf.draw_gouraud_triangles#if:np.allclose(alpha, colors[:, :, 3])/else/assign:alpha",
+   "kind": "lead",
+   "line": 2193
+  },
+  {
+   "id": "r166",
+   "anchor": "RendererPdf.draw_mathtext#assign:width, height, descent, glyphs, rects",
+   "kind": "todo",
+   "line": 2212
+  },
+  {
+   "id": "r167",
+   "anchor": "RendererPdf.draw_mathtext#assign:a",
+   "kind": "lead",
+   "line": 2222
+  },
+  {
+   "id": "r168",
+   "anchor": "RendererPdf.draw_mathtext#for:font, fontsize, num, ox, oy in glyphs/if:not _font_supports_glyph(fonttype, num)/call:unsupported_chars.append",
+   "kind": "lead",
+   "line": 2240
+  },
+  {
+   "id": "r169",
+   "anchor": "RendererPdf.draw_mathtext#for:ox, oy, width, height in rects",
+   "kind": "lead",
+   "line": 2257
+  },
+  {
+   "id": "r170",
+   "anchor": "RendererPdf.draw_mathtext#call:self.file.output",
+   "kind": "lead",
+   "line": 2262
+  },
+  {
+   "id": "r171",
+   "anchor": "RendererPdf.draw_tex#assign:texmanager",
+   "kind": "lead",
+   "line": 2266
+  },
+  {
+   "id": "r172",
+   "anchor": "RendererPdf.draw_tex#assign:oldfont, seq",
+   "kind": "lead",
+   "line": 2285
+  },
+  {
+   "id": "r173",
+   "anchor": "RendererPdf.draw_tex#assign:i, curx, fontsize",
+   "kind": "lead",
+   "line": 2296
+  },
+  {
+   "id": "r174",
+   "anchor": "RendererPdf.draw_tex#assign:mytrans",
+   "kind": "lead",
+   "line": 2314
+  },
+  {
+   "id": "r175",
+   "anchor": "RendererPdf.draw_tex#call:self.check_gc",
+   "kind": "lead",
+   "line": 2317
+  },
+  {
+   "id": "r176",
+   "anchor": "RendererPdf.draw_tex#assign:boxgc",
+   "kind": "lead",
+   "line": 2337
+  },
+  {
+   "id": "r177",
+   "anchor": "RendererPdf.draw_text#call:self.check_gc",
+   "kind": "lead",
+   "line": 2357
+  },
+  {
+   "id": "r178",
+   "anchor": "RendererPdf.draw_text#call:self.check_gc",
+   "kind": "todo",
+   "line": 2357
+  },
+  {
+   "id": "r179",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]",
+   "kind": "lead",
+   "line": 2379
+  },
+  {
+   "id": "r180",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else",
+   "kind": "lead",
+   "line": 2398
+  },
+  {
+   "id": "r181",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/assign:singlebyte_chunks",
+   "kind": "lead",
+   "line": 2401
+  },
+  {
+   "id": "r182",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/assign:multibyte_glyphs",
+   "kind": "lead",
+   "line": 2403
+  },
+  {
+   "id": "r183",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/call:self.file.output",
+   "kind": "lead",
+   "line": 2423
+  },
+  {
+   "id": "r184",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/call:self.file.output",
+   "kind": "lead",
+   "line": 2430
+  },
+  {
+   "id": "r185",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/for:ft_object, start_x, kerns_or_chars in singlebyte_chunks/call:self.file.output",
+   "kind": "lead",
+   "line": 2436
+  },
+  {
+   "id": "r186",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/for:ft_object, start_x, kerns_or_chars in singlebyte_chunks/call:self.file.output",
+   "kind": "trail",
+   "line": 2436
+  },
+  {
+   "id": "r187",
+   "anchor": "RendererPdf.draw_text#if:fonttype not in [3, 42]/else/for:ft_object, start_x, glyph_idx in multibyte_glyphs",
+   "kind": "lead",
+   "line": 2446
+  },
+  {
+   "id": "r188",
+   "anchor": "RendererPdf._draw_xobject_glyph",
+   "kind": "doc",
+   "line": 2452
+  },
+  {
+   "id": "r189",
+   "anchor": "RendererPdf.new_gc#return",
+   "kind": "lead",
+   "line": 2465
+  },
+  {
+   "id": "r190",
+   "anchor": "GraphicsContextPdf.stroke",
+   "kind": "doc",
+   "line": 2483
+  },
+  {
+   "id": "r191",
+   "anchor": "GraphicsContextPdf.stroke#return",
+   "kind": "lead",
+   "line": 2491
+  },
+  {
+   "id": "r192",
+   "anchor": "GraphicsContextPdf.fill",
+   "kind": "doc",
+   "line": 2494
+  },
+  {
+   "id": "r193",
+   "anchor": "GraphicsContextPdf.paint",
+   "kind": "doc",
+   "line": 2509
+  },
+  {
+   "id": "r194",
+   "anchor": "GraphicsContextPdf.clip_cmd",
+   "kind": "doc",
+   "line": 2580
+  },
+  {
+   "id": "r195",
+   "anchor": "GraphicsContextPdf.clip_cmd#while:(self._cliprect, self._clippath) != (cliprect, clippath) and self.parent is not None",
+   "kind": "lead",
+   "line": 2584
+  },
+  {
+   "id": "r196",
+   "anchor": "GraphicsContextPdf.clip_cmd#if:(self._cliprect, self._clippath) != (cliprect, clippath) or self.parent is None",
+   "kind": "lead",
+   "line": 2588
+  },
+  {
+   "id": "r197",
+   "anchor": "GraphicsContextPdf.commands#item:(('_cliprect', '_clippath'), clip_cmd)",
+   "kind": "lead",
+   "line": 2602
+  },
+  {
+   "id": "r198",
+   "anchor": "GraphicsContextPdf.commands#item:(('_hatch', '_hatch_color'), hatch_cmd)",
+   "kind": "lead",
+   "line": 2611
+  },
+  {
+   "id": "r199",
+   "anchor": "GraphicsContextPdf.delta",
+   "kind": "doc",
+   "line": 2614
+  },
+  {
+   "id": "r200",
+   "anchor": "GraphicsContextPdf.delta#for:params, cmd in self.commands/if:params == ('_hatch', '_hatch_color') and fill_performed",
+   "kind": "lead",
+   "line": 2640
+  },
+  {
+   "id": "r201",
+   "anchor": "GraphicsContextPdf.copy_properties",
+   "kind": "doc",
+   "line": 2652
+  },
+  {
+   "id": "r202",
+   "anchor": "GraphicsContextPdf.finalize",
+   "kind": "doc",
+   "line": 2663
+  },
+  {
+   "id": "r203",
+   "anchor": "PdfPages",
+   "kind": "doc",
+   "line": 2673
+  },
+  {
+   "id": "r204",
+   "anchor": "PdfPages.__init__",
+   "kind": "doc",
+   "line": 2695
+  },
+  {
+   "id": "r205",
+   "anchor": "PdfPages.close",
+   "kind": "doc",
+   "line": 2729
+  },
+  {
+   "id": "r206",
+   "anchor": "PdfPages.infodict",
+   "kind": "doc",
+   "line": 2741
+  },
+  {
+   "id": "r207",
+   "anchor": "PdfPages.savefig",
+   "kind": "doc",
+   "line": 2749
+  },
+  {
+   "id": "r208",
+   "anchor": "PdfPages.savefig#with:cbook._setattr_cm(figure, canvas=FigureCanvasPdf(figure))",
+   "kind": "lead",
+   "line": 2769
+  },
+  {
+   "id": "r209",
+   "anchor": "PdfPages.get_pagecount",
+   "kind": "doc",
+   "line": 2772
+  },
+  {
+   "id": "r210",
+   "anchor": "PdfPages.attach_note",
+   "kind": "doc",
+   "line": 2776
+  },
+  {
+   "id": "r211",
+   "anchor": "FigureCanvasPdf.fixed_dpi",
+   "kind": "lead",
+   "line": 2789
+  },
+  {
+   "id": "r212",
+   "anchor": "FigureCanvasPdf.print_pdf#assign:self.figure.dpi",
+   "kind": "trail",
+   "line": 2799
+  },
+  {
+   "id": "r213",
+   "anchor": "FigureCanvasPdf.print_pdf#try/finally/if:isinstance(filename, PdfPages)",
+   "kind": "trail",
+   "line": 2816
+  },
+  {
+   "id": "r214",
+   "anchor": "FigureCanvasPdf.print_pdf#try/finally/if:isinstance(filename, PdfPages)/else",
+   "kind": "trail",
+   "line": 2818
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 64477,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 21597,
+  "thinking_tokens": 10502,
+  "opus_cost_usd": 1.1889865,
+  "total_cost_usd": 1.2411425,
+  "duration_ms": 189402,
+  "duration_api_ms": 191575,
+  "num_turns": 2
+ },
+ "wall_ms": 190410,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

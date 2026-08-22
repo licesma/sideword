@@ -1,0 +1,643 @@
+{
+ "blob_sha": "b2ee53917f18ea1484c37f9976b3882ef16f23a5",
+ "path": "django/db/migrations/autodetector.py",
+ "repo": "django/django",
+ "records": 103,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MigrationAutodetector",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r2",
+   "anchor": "MigrationAutodetector.changes",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r3",
+   "anchor": "MigrationAutodetector.deep_deconstruct",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "MigrationAutodetector.deep_deconstruct#if:isinstance(obj, list)/elif:isinstance(obj, type)/return",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "MigrationAutodetector.deep_deconstruct#if:isinstance(obj, list)/elif:hasattr(obj, 'deconstruct')/if:isinstance(obj, models.Field)/assign:deconstructed",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r6",
+   "anchor": "MigrationAutodetector.only_relation_agnostic_fields",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r7",
+   "anchor": "MigrationAutodetector._detect_changes",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r8",
+   "anchor": "MigrationAutodetector.generated_operations",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r9",
+   "anchor": "MigrationAutodetector.old_apps",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r10",
+   "anchor": "MigrationAutodetector._detect_changes#call:self.generate_renamed_models",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r11",
+   "anchor": "MigrationAutodetector._detect_changes#call:self._prepare_field_lists",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r12",
+   "anchor": "MigrationAutodetector._detect_changes#call:self.generate_deleted_models",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r13",
+   "anchor": "MigrationAutodetector._detect_changes#call:self.create_altered_indexes",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r14",
+   "anchor": "MigrationAutodetector._detect_changes#call:self.generate_removed_indexes",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r15",
+   "anchor": "MigrationAutodetector._detect_changes#call:self.generate_renamed_fields",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r16",
+   "anchor": "MigrationAutodetector._prepare_field_lists",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r17",
+   "anchor": "MigrationAutodetector._generate_through_model_map",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r18",
+   "anchor": "MigrationAutodetector._build_migration_list",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r19",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r20",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())/for:operation in list(self.generated_operations[app_label])/for:dep in operation._auto_deps/if:dep[0] == \"__setting__\"/assign:resolved_app_label, resolved_object_name",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r21",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())/for:operation in list(self.generated_operations[app_label])/for:dep in operation._auto_deps/if:dep[0] != app_label and dep[0] != \"__setting__\"/for:other_operation in self.generated_operations.get(dep[0], [])",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r22",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())/for:operation in list(self.generated_operations[app_label])/for:dep in operation._auto_deps/if:dep[0] != app_label and dep[0] != \"__setting__\"/if:not deps_satisfied/else/if:is_swappable_dep/else/if:chop_mode",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r23",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())/for:operation in list(self.generated_operations[app_label])/for:dep in operation._auto_deps/if:dep[0] != app_label and dep[0] != \"__setting__\"/if:not deps_satisfied/else/if:is_swappable_dep/else/if:chop_mode/if:graph and graph.leaf_nodes(dep[0])",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r24",
+   "anchor": "MigrationAutodetector._build_migration_list#while:num_ops/for:app_label in sorted(self.generated_operations.keys())/if:dependencies or chopped",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r25",
+   "anchor": "MigrationAutodetector._sort_migrations",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r26",
+   "anchor": "MigrationAutodetector._sort_migrations#for:app_label, ops in sorted(self.generated_operations.items())/assign:dependency_graph",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r27",
+   "anchor": "MigrationAutodetector._sort_migrations#for:app_label, ops in sorted(self.generated_operations.items())/assign:self.generated_operations[app_label]",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r28",
+   "anchor": "MigrationAutodetector._optimize_migrations#for:app_label, migrations in self.migrations.items()",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r29",
+   "anchor": "MigrationAutodetector._optimize_migrations#for:app_label, migrations in self.migrations.items()",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r30",
+   "anchor": "MigrationAutodetector._optimize_migrations#for:app_label, migrations in self.migrations.items()",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r31",
+   "anchor": "MigrationAutodetector.check_dependency",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r32",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r33",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is not None and dependency[3] is True",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r34",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is not None and dependency[3] is False",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r35",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is None and dependency[3] is False",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r36",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is not None and dependency[3] == \"alter\"",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r37",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is not None and dependency[3] == \"order_wrt_unset\"",
+   "kind": "lead",
+   "line": 410
+  },
+  {
+   "id": "r38",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/elif:dependency[2] is not None and dependency[3] == \"foo_together_change\"",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r39",
+   "anchor": "MigrationAutodetector.check_dependency#if:dependency[2] is None and dependency[3] is True/else",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r40",
+   "anchor": "MigrationAutodetector.add_operation#assign:operation._auto_deps",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r41",
+   "anchor": "MigrationAutodetector.swappable_first_key",
+   "kind": "doc",
+   "line": 435
+  },
+  {
+   "id": "r42",
+   "anchor": "MigrationAutodetector.generate_renamed_models",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r43",
+   "anchor": "MigrationAutodetector.generate_created_models",
+   "kind": "doc",
+   "line": 492
+  },
+  {
+   "id": "r44",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/assign:related_fields",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r45",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/for:field in model_opts.local_fields/if:field.remote_field/if:getattr(field.remote_field, \"through\", None) and not field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r46",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/assign:indexes",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r47",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/assign:dependencies",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r48",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/for:base in model_state.bases",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r49",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/if:primary_key_rel",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r50",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/call:self.add_operation",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r51",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/if:not model_opts.managed",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r52",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/for:name, field in sorted(related_fields.items())",
+   "kind": "lead",
+   "line": 573
+  },
+  {
+   "id": "r53",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/for:name, field in sorted(related_fields.items())/call:dependencies.append",
+   "kind": "lead",
+   "line": 576
+  },
+  {
+   "id": "r54",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/for:name, field in sorted(related_fields.items())/call:self.add_operation",
+   "kind": "lead",
+   "line": 578
+  },
+  {
+   "id": "r55",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/assign:related_dependencies",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r56",
+   "anchor": "MigrationAutodetector.generate_created_models#for:app_label, model_name in all_added_models/if:(app_label, model_name) in self.old_proxy_keys",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r57",
+   "anchor": "MigrationAutodetector.generate_created_proxies",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r58",
+   "anchor": "MigrationAutodetector.generate_created_proxies#for:app_label, model_name in sorted(added)/assign:dependencies",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r59",
+   "anchor": "MigrationAutodetector.generate_created_proxies#for:app_label, model_name in sorted(added)/for:base in model_state.bases",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r60",
+   "anchor": "MigrationAutodetector.generate_created_proxies#for:app_label, model_name in sorted(added)/call:self.add_operation",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r61",
+   "anchor": "MigrationAutodetector.generate_created_proxies#for:app_label, model_name in sorted(added)/call:self.add_operation/arg:dependencies",
+   "kind": "lead",
+   "line": 678
+  },
+  {
+   "id": "r62",
+   "anchor": "MigrationAutodetector.generate_deleted_models",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r63",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/if:not model._meta.managed/continue",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r64",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/assign:related_fields",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r65",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/for:field in model._meta.local_fields/if:field.remote_field/if:getattr(field.remote_field, \"through\", None) and not field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r66",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/assign:unique_together",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r67",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/for:name, field in sorted(related_fields.items())",
+   "kind": "lead",
+   "line": 738
+  },
+  {
+   "id": "r68",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/assign:dependencies",
+   "kind": "lead",
+   "line": 750
+  },
+  {
+   "id": "r69",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/assign:through_user",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r70",
+   "anchor": "MigrationAutodetector.generate_deleted_models#for:app_label, model_name in all_deleted_models/call:self.add_operation",
+   "kind": "lead",
+   "line": 766
+  },
+  {
+   "id": "r71",
+   "anchor": "MigrationAutodetector.generate_deleted_proxies",
+   "kind": "doc",
+   "line": 774
+  },
+  {
+   "id": "r72",
+   "anchor": "MigrationAutodetector.generate_renamed_fields",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r73",
+   "anchor": "MigrationAutodetector.generate_renamed_fields#for:app_label, model_name, field_name in sorted(self.new_field_keys - self.old_field_keys)/assign:field_dec",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r74",
+   "anchor": "MigrationAutodetector.generate_added_fields",
+   "kind": "doc",
+   "line": 822
+  },
+  {
+   "id": "r75",
+   "anchor": "MigrationAutodetector._generate_added_field#assign:dependencies",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r76",
+   "anchor": "MigrationAutodetector._generate_added_field#assign:preserve_default",
+   "kind": "lead",
+   "line": 837
+  },
+  {
+   "id": "r77",
+   "anchor": "MigrationAutodetector.generate_removed_fields",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r78",
+   "anchor": "MigrationAutodetector._generate_removed_field#call:self.add_operation/arg:dependencies",
+   "kind": "lead",
+   "line": 877
+  },
+  {
+   "id": "r79",
+   "anchor": "MigrationAutodetector.generate_altered_fields",
+   "kind": "doc",
+   "line": 883
+  },
+  {
+   "id": "r80",
+   "anchor": "MigrationAutodetector.generate_altered_fields#for:app_label, model_name, field_name in sorted(self.old_field_keys.intersection(self.new_field_keys))/assign:old_model_name",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r81",
+   "anchor": "MigrationAutodetector.generate_altered_fields#for:app_label, model_name, field_name in sorted(self.old_field_keys.intersection(self.new_field_keys))/if:hasattr(new_field, \"remote_field\") and getattr(new_field.remote_field, \"model\", None)",
+   "kind": "lead",
+   "line": 895
+  },
+  {
+   "id": "r82",
+   "anchor": "MigrationAutodetector.generate_altered_fields#for:app_label, model_name, field_name in sorted(self.old_field_keys.intersection(self.new_field_keys))/if:old_field_dec != new_field_dec/if:both_m2m or neither_m2m/assign:preserve_default",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r83",
+   "anchor": "MigrationAutodetector.generate_altered_fields#for:app_label, model_name, field_name in sorted(self.old_field_keys.intersection(self.new_field_keys))/if:old_field_dec != new_field_dec/if:both_m2m or neither_m2m/else/call:self._generate_removed_field",
+   "kind": "lead",
+   "line": 937
+  },
+  {
+   "id": "r84",
+   "anchor": "MigrationAutodetector._get_dependencies_for_foreign_key#assign:swappable_setting",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r85",
+   "anchor": "MigrationAutodetector._generate_altered_foo_together#for:app_label, model_name in sorted(self.kept_model_keys)/assign:old_value",
+   "kind": "lead",
+   "line": 1007
+  },
+  {
+   "id": "r86",
+   "anchor": "MigrationAutodetector.generate_altered_options",
+   "kind": "doc",
+   "line": 1061
+  },
+  {
+   "id": "r87",
+   "anchor": "MigrationAutodetector.generate_altered_options#assign:models_to_check/arg:set(self.old_unmanaged_keys).intersection(self.new_model_keys)",
+   "kind": "lead",
+   "line": 1073
+  },
+  {
+   "id": "r88",
+   "anchor": "MigrationAutodetector.generate_altered_options#assign:models_to_check/arg:set(self.old_model_keys).intersection(self.new_unmanaged_keys)",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r89",
+   "anchor": "MigrationAutodetector.generate_altered_order_with_respect_to#for:app_label, model_name in sorted(self.kept_model_keys)/if:old_model_state.options.get(\"order_with_respect_to\") != new_model_state.options.get(\"order_with_respect_to\")/assign:dependencies",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r90",
+   "anchor": "MigrationAutodetector.generate_altered_order_with_respect_to#for:app_label, model_name in sorted(self.kept_model_keys)/if:old_model_state.options.get(\"order_with_respect_to\") != new_model_state.options.get(\"order_with_respect_to\")/call:self.add_operation",
+   "kind": "lead",
+   "line": 1118
+  },
+  {
+   "id": "r91",
+   "anchor": "MigrationAutodetector.arrange_for_graph",
+   "kind": "doc",
+   "line": 1141
+  },
+  {
+   "id": "r92",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in list(changes.items())/assign:app_leaf",
+   "kind": "lead",
+   "line": 1153
+  },
+  {
+   "id": "r93",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in list(changes.items())/if:app_leaf is None and not self.questioner.ask_initial(app_label)",
+   "kind": "lead",
+   "line": 1159
+  },
+  {
+   "id": "r94",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in list(changes.items())/if:app_leaf is None and not self.questioner.ask_initial(app_label)/for:migration in migrations",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r95",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in list(changes.items())/if:app_leaf is None",
+   "kind": "lead",
+   "line": 1166
+  },
+  {
+   "id": "r96",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in list(changes.items())/for:i, migration in enumerate(migrations)",
+   "kind": "lead",
+   "line": 1171
+  },
+  {
+   "id": "r97",
+   "anchor": "MigrationAutodetector.arrange_for_graph#for:app_label, migrations in changes.items()",
+   "kind": "lead",
+   "line": 1185
+  },
+  {
+   "id": "r98",
+   "anchor": "MigrationAutodetector._trim_to_apps",
+   "kind": "doc",
+   "line": 1190
+  },
+  {
+   "id": "r99",
+   "anchor": "MigrationAutodetector._trim_to_apps#assign:app_dependencies",
+   "kind": "lead",
+   "line": 1199
+  },
+  {
+   "id": "r100",
+   "anchor": "MigrationAutodetector._trim_to_apps#while:old_required_apps != required_apps",
+   "kind": "lead",
+   "line": 1207
+  },
+  {
+   "id": "r101",
+   "anchor": "MigrationAutodetector._trim_to_apps#for:app_label in list(changes.keys())",
+   "kind": "lead",
+   "line": 1212
+  },
+  {
+   "id": "r102",
+   "anchor": "MigrationAutodetector.suggest_name",
+   "kind": "doc",
+   "line": 1218
+  },
+  {
+   "id": "r103",
+   "anchor": "MigrationAutodetector.parse_number",
+   "kind": "doc",
+   "line": 1240
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 29950,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13029,
+  "thinking_tokens": 5594,
+  "opus_cost_usd": 0.6295165,
+  "total_cost_usd": 0.6534155,
+  "duration_ms": 108964,
+  "duration_api_ms": 110908,
+  "num_turns": 2
+ },
+ "wall_ms": 109974,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

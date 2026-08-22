@@ -1,0 +1,577 @@
+{
+ "blob_sha": "c268a56724c93fcfd8efa5bf76cc99e098978dc0",
+ "path": "lib/matplotlib/__init__.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 92,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:.",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r3",
+   "anchor": "_VersionInfo",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r4",
+   "anchor": "_parse_to_version_info",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r5",
+   "anchor": "_parse_to_version_info#if:v.pre is None and v.post is None and v.dev is None/else/return",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_version",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_version#assign:root",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r8",
+   "anchor": "_get_version#if:(root / \".matplotlib-repo\").exists() and (root / \".git\").exists() and not (root / \".git/shallow\").exists()/else",
+   "kind": "trail",
+   "line": 181
+  },
+  {
+   "id": "r9",
+   "anchor": "__getattr__.URL_REGEX",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "_check_versions#import:.",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r11",
+   "anchor": "_ensure_handler",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r12",
+   "anchor": "_ensure_handler",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r13",
+   "anchor": "set_loglevel",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r14",
+   "anchor": "_logged_cached",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r15",
+   "anchor": "_logged_cached#if:func is None",
+   "kind": "trail",
+   "line": 269
+  },
+  {
+   "id": "r16",
+   "anchor": "ExecutableNotFoundError",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r17",
+   "anchor": "_get_executable_info",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r18",
+   "anchor": "_get_executable_info.impl#try",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r19",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"gs\"/assign:execs/item:\"mgs\"",
+   "kind": "trail",
+   "line": 369
+  },
+  {
+   "id": "r20",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"inkscape\"/try/return",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r21",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"inkscape\"/try/except:ExecutableNotFoundError/pass",
+   "kind": "trail",
+   "line": 385
+  },
+  {
+   "id": "r22",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"inkscape\"/return",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r23",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"magick\"/if:sys.platform == \"win32\"/import:winreg",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r24",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"magick\"/if:info.raw_version == \"7.0.10-34\"/raise:ExecutableNotFoundError",
+   "kind": "lead",
+   "line": 419
+  },
+  {
+   "id": "r25",
+   "anchor": "_get_executable_info#if:name == \"dvipng\"/elif:name == \"pdftops\"/if:info and not (3 <= info.version.major or parse_version(\"0.9\") <= info.version < parse_version(\"1.0\"))",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r26",
+   "anchor": "_get_xdg_config_dir",
+   "kind": "doc",
+   "line": 459
+  },
+  {
+   "id": "r27",
+   "anchor": "_get_xdg_cache_dir",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r28",
+   "anchor": "_get_config_or_cache_dir#if:configdir/elif:sys.platform.startswith(('linux', 'freebsd'))/assign:configdir",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r29",
+   "anchor": "_get_config_or_cache_dir#assign:tmpdir",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r30",
+   "anchor": "get_configdir",
+   "kind": "doc",
+   "line": 511
+  },
+  {
+   "id": "r31",
+   "anchor": "get_cachedir",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r32",
+   "anchor": "get_data_path",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r33",
+   "anchor": "matplotlib_fname",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r34",
+   "anchor": "matplotlib_fname.gen_candidates#yield",
+   "kind": "lead",
+   "line": 572
+  },
+  {
+   "id": "r35",
+   "anchor": "_deprecated_map",
+   "kind": "lead",
+   "line": 593
+  },
+  {
+   "id": "r36",
+   "anchor": "_deprecated_ignore_map",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r37",
+   "anchor": "_deprecated_remain_as_none",
+   "kind": "lead",
+   "line": 600
+  },
+  {
+   "id": "r38",
+   "anchor": "RcParams",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r39",
+   "anchor": "RcParams.__init__",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r40",
+   "anchor": "RcParams.__getitem__#if:key in _deprecated_map/elif:key == \"backend\" and self is globals().get(\"rcParams\")",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r41",
+   "anchor": "RcParams._get_backend_or_none",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r42",
+   "anchor": "RcParams.__iter__",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r43",
+   "anchor": "RcParams.find_all",
+   "kind": "doc",
+   "line": 706
+  },
+  {
+   "id": "r44",
+   "anchor": "RcParams.copy#for:k in self",
+   "kind": "trail",
+   "line": 724
+  },
+  {
+   "id": "r45",
+   "anchor": "rc_params",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r46",
+   "anchor": "is_url",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r47",
+   "anchor": "_rc_params_in_file",
+   "kind": "doc",
+   "line": 769
+  },
+  {
+   "id": "r48",
+   "anchor": "_rc_params_in_file#with:_open_file_or_url(fname)/try/for:line_no, line in enumerate(fd, 1)/if:val.startswith('\"') and val.endswith('\"')/assign:val",
+   "kind": "trail",
+   "line": 804
+  },
+  {
+   "id": "r49",
+   "anchor": "_rc_params_in_file#for:key, (val, line, line_no) in rc_temp.items()/if:key in rcsetup._validators/if:fail_on_error/assign:config[key]",
+   "kind": "trail",
+   "line": 819
+  },
+  {
+   "id": "r50",
+   "anchor": "_rc_params_in_file#for:key, (val, line, line_no) in rc_temp.items()/if:key in rcsetup._validators/if:fail_on_error/else/try/assign:config[key]",
+   "kind": "trail",
+   "line": 822
+  },
+  {
+   "id": "r51",
+   "anchor": "_rc_params_in_file#for:key, (val, line, line_no) in rc_temp.items()/if:key in rcsetup._validators/else/assign:version",
+   "kind": "lead",
+   "line": 834
+  },
+  {
+   "id": "r52",
+   "anchor": "rc_params_from_file",
+   "kind": "doc",
+   "line": 846
+  },
+  {
+   "id": "r53",
+   "anchor": "rcParamsDefault",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r54",
+   "anchor": "rcParamsDefault#arg:transform",
+   "kind": "lead",
+   "line": 888
+  },
+  {
+   "id": "r55",
+   "anchor": "<module>#call:dict.setdefault",
+   "kind": "lead",
+   "line": 896
+  },
+  {
+   "id": "r56",
+   "anchor": "rcParams",
+   "kind": "trail",
+   "line": 897
+  },
+  {
+   "id": "r57",
+   "anchor": "defaultParams",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r58",
+   "anchor": "defaultParams",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r59",
+   "anchor": "rc",
+   "kind": "doc",
+   "line": 914
+  },
+  {
+   "id": "r60",
+   "anchor": "rcdefaults",
+   "kind": "doc",
+   "line": 990
+  },
+  {
+   "id": "r61",
+   "anchor": "rcdefaults#with:_api.suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r62",
+   "anchor": "rc_file_defaults",
+   "kind": "doc",
+   "line": 1015
+  },
+  {
+   "id": "r63",
+   "anchor": "rc_file_defaults#with:_api.suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1024
+  },
+  {
+   "id": "r64",
+   "anchor": "rc_file",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r65",
+   "anchor": "rc_file#with:_api.suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1049
+  },
+  {
+   "id": "r66",
+   "anchor": "rc_context",
+   "kind": "doc",
+   "line": 1058
+  },
+  {
+   "id": "r67",
+   "anchor": "rc_context#try/finally/call:dict.update",
+   "kind": "trail",
+   "line": 1098
+  },
+  {
+   "id": "r68",
+   "anchor": "use",
+   "kind": "doc",
+   "line": 1101
+  },
+  {
+   "id": "r69",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name",
+   "kind": "lead",
+   "line": 1138
+  },
+  {
+   "id": "r70",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name/pass",
+   "kind": "lead",
+   "line": 1140
+  },
+  {
+   "id": "r71",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name/else/assign:plt",
+   "kind": "lead",
+   "line": 1145
+  },
+  {
+   "id": "r72",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name/else/if:plt is not None",
+   "kind": "lead",
+   "line": 1147
+  },
+  {
+   "id": "r73",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name/else/if:plt is not None/try/call:plt.switch_backend",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r74",
+   "anchor": "use#if:rcParams._get_backend_or_none() == name/else/if:plt is not None/else/assign:rcParams['backend']",
+   "kind": "lead",
+   "line": 1160
+  },
+  {
+   "id": "r75",
+   "anchor": "use#assign:rcParams['backend_fallback']",
+   "kind": "lead",
+   "line": 1163
+  },
+  {
+   "id": "r76",
+   "anchor": "get_backend",
+   "kind": "doc",
+   "line": 1170
+  },
+  {
+   "id": "r77",
+   "anchor": "interactive",
+   "kind": "doc",
+   "line": 1181
+  },
+  {
+   "id": "r78",
+   "anchor": "is_interactive",
+   "kind": "doc",
+   "line": 1188
+  },
+  {
+   "id": "r79",
+   "anchor": "_init_tests#assign:LOCAL_FREETYPE_VERSION",
+   "kind": "lead",
+   "line": 1209
+  },
+  {
+   "id": "r80",
+   "anchor": "test",
+   "kind": "doc",
+   "line": 1225
+  },
+  {
+   "id": "r81",
+   "anchor": "<module>#assign:test.__test__",
+   "kind": "trail",
+   "line": 1273
+  },
+  {
+   "id": "r82",
+   "anchor": "_replacer",
+   "kind": "doc",
+   "line": 1276
+  },
+  {
+   "id": "r83",
+   "anchor": "_replacer#try/if:isinstance(value, str)",
+   "kind": "lead",
+   "line": 1283
+  },
+  {
+   "id": "r84",
+   "anchor": "_replacer#try/if:isinstance(value, str)/assign:value",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r85",
+   "anchor": "_replacer#try/except:Exception/pass",
+   "kind": "lead",
+   "line": 1288
+  },
+  {
+   "id": "r86",
+   "anchor": "_add_data_doc",
+   "kind": "doc",
+   "line": 1301
+  },
+  {
+   "id": "r87",
+   "anchor": "_add_data_doc#if:_log.level <= logging.DEBUG",
+   "kind": "lead",
+   "line": 1335
+  },
+  {
+   "id": "r88",
+   "anchor": "_add_data_doc#if:_log.level <= logging.DEBUG/if:\"data : indexable object, optional\" not in docstring",
+   "kind": "lead",
+   "line": 1338
+  },
+  {
+   "id": "r89",
+   "anchor": "_preprocess_data",
+   "kind": "doc",
+   "line": 1345
+  },
+  {
+   "id": "r90",
+   "anchor": "_preprocess_data#if:func is None",
+   "kind": "trail",
+   "line": 1384
+  },
+  {
+   "id": "r91",
+   "anchor": "_preprocess_data#assign:arg_names",
+   "kind": "trail",
+   "line": 1407
+  },
+  {
+   "id": "r92",
+   "anchor": "<module>#import:matplotlib.cm",
+   "kind": "lead",
+   "line": 1458
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 32070,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10308,
+  "thinking_tokens": 6036,
+  "opus_cost_usd": 0.5826914999999999,
+  "total_cost_usd": 0.6071534999999999,
+  "duration_ms": 95006,
+  "duration_api_ms": 96200,
+  "num_turns": 2
+ },
+ "wall_ms": 96044,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

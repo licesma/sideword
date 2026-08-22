@@ -1,0 +1,469 @@
+{
+ "blob_sha": "bee7facf87824dabcb87419e66907457f5c7ae37",
+ "path": "astropy/table/index.py",
+ "repo": "astropy/astropy",
+ "records": 74,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "QueryError",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "Index",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "Index.__init__#import:.table",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r6",
+   "anchor": "Index.engine",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r7",
+   "anchor": "Index.__init__#assign:self.engine",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r8",
+   "anchor": "Index.__init__#if:columns is None",
+   "kind": "trail",
+   "line": 84
+  },
+  {
+   "id": "r9",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns) == 0/elif:len(columns) == 1/else/assign:new_columns",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r10",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns) == 0/elif:len(columns) == 1/else/assign:table",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r11",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns) == 0/elif:len(columns) == 1/else/try/except:TypeError",
+   "kind": "trail",
+   "line": 112
+  },
+  {
+   "id": "r12",
+   "anchor": "Index.__len__",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r13",
+   "anchor": "Index.replace_col",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r14",
+   "anchor": "Index.reload",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r15",
+   "anchor": "Index.col_position",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r16",
+   "anchor": "Index.insert_row",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r17",
+   "anchor": "Index.insert_row#for:i, col in enumerate(columns)/try/except:ValueError",
+   "kind": "trail",
+   "line": 176
+  },
+  {
+   "id": "r18",
+   "anchor": "Index.insert_row#if:pos < num_rows/call:self.data.shift_right",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r19",
+   "anchor": "Index.get_row_specifier",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r20",
+   "anchor": "Index.get_row_specifier#if:isinstance(row_specifier, (int, np.integer))/return",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r21",
+   "anchor": "Index.remove_rows",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r22",
+   "anchor": "Index.remove_rows#for:row in self.get_row_specifier(row_specifier)",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r23",
+   "anchor": "Index.remove_rows#for:row in reversed(sorted(rows))",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r24",
+   "anchor": "Index.remove_row",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r25",
+   "anchor": "Index.remove_row#if:not self.data.remove(tuple(col[row] for col in self.columns), row)",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r26",
+   "anchor": "Index.remove_row#if:reorder",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r27",
+   "anchor": "Index.find",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r28",
+   "anchor": "Index.same_prefix",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r29",
+   "anchor": "Index.same_prefix_range",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r30",
+   "anchor": "Index.same_prefix_range#assign:lower",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r31",
+   "anchor": "Index.range",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r32",
+   "anchor": "Index.replace",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r33",
+   "anchor": "Index.replace_rows",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r34",
+   "anchor": "Index.sort",
+   "kind": "doc",
+   "line": 343
+  },
+  {
+   "id": "r35",
+   "anchor": "Index.sorted_data",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r36",
+   "anchor": "Index.__getitem__",
+   "kind": "doc",
+   "line": 357
+  },
+  {
+   "id": "r37",
+   "anchor": "Index.__deepcopy__",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r38",
+   "anchor": "Index.__deepcopy__#assign:index",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r39",
+   "anchor": "Index.__deepcopy__#assign:index.columns",
+   "kind": "trail",
+   "line": 394
+  },
+  {
+   "id": "r40",
+   "anchor": "SlicedIndex",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r41",
+   "anchor": "SlicedIndex.__init__#if:isinstance(index_slice, tuple)/elif:isinstance(index_slice, slice)",
+   "kind": "trail",
+   "line": 427
+  },
+  {
+   "id": "r42",
+   "anchor": "SlicedIndex.stop",
+   "kind": "doc",
+   "line": 438
+  },
+  {
+   "id": "r43",
+   "anchor": "SlicedIndex.__getitem__",
+   "kind": "doc",
+   "line": 445
+  },
+  {
+   "id": "r44",
+   "anchor": "SlicedIndex.__getitem__#if:self.length <= 0/return",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r45",
+   "anchor": "SlicedIndex.sliced_coords",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r46",
+   "anchor": "SlicedIndex.orig_coords",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r47",
+   "anchor": "SlicedIndex.get_index_or_copy#if:not self.original/assign:self.index",
+   "kind": "lead",
+   "line": 530
+  },
+  {
+   "id": "r48",
+   "anchor": "SlicedIndex.get_slice",
+   "kind": "doc",
+   "line": 567
+  },
+  {
+   "id": "r49",
+   "anchor": "get_index",
+   "kind": "doc",
+   "line": 598
+  },
+  {
+   "id": "r50",
+   "anchor": "get_index_by_names",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r51",
+   "anchor": "_IndexModeContext",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r52",
+   "anchor": "_IndexModeContext.__init__",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r53",
+   "anchor": "_IndexModeContext._orig_classes",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r54",
+   "anchor": "_IndexModeContext._get_copy_on_getitem_shim",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r55",
+   "anchor": "TableIndices",
+   "kind": "doc",
+   "line": 758
+  },
+  {
+   "id": "r56",
+   "anchor": "TableIndices.__getitem__",
+   "kind": "doc",
+   "line": 772
+  },
+  {
+   "id": "r57",
+   "anchor": "TableIndices.__getitem__#if:isinstance(item, (list, tuple))/raise:IndexError",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r58",
+   "anchor": "TableLoc",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r59",
+   "anchor": "TableLoc._get_rows",
+   "kind": "doc",
+   "line": 816
+  },
+  {
+   "id": "r60",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/assign:start",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r61",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/else/if:not isinstance(item, (list, np.ndarray))",
+   "kind": "trail",
+   "line": 836
+  },
+  {
+   "id": "r62",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/else/assign:rows",
+   "kind": "lead",
+   "line": 839
+  },
+  {
+   "id": "r63",
+   "anchor": "TableLoc.__getitem__",
+   "kind": "doc",
+   "line": 848
+  },
+  {
+   "id": "r64",
+   "anchor": "TableLoc.__getitem__#if:len(rows) == 0",
+   "kind": "trail",
+   "line": 863
+  },
+  {
+   "id": "r65",
+   "anchor": "TableLoc.__getitem__#if:len(rows) == 0/elif:len(rows) == 1",
+   "kind": "trail",
+   "line": 865
+  },
+  {
+   "id": "r66",
+   "anchor": "TableLoc.__setitem__",
+   "kind": "doc",
+   "line": 869
+  },
+  {
+   "id": "r67",
+   "anchor": "TableLoc.__setitem__#if:len(rows) == 0",
+   "kind": "trail",
+   "line": 886
+  },
+  {
+   "id": "r68",
+   "anchor": "TableLoc.__setitem__#if:len(rows) == 0/elif:len(rows) == 1",
+   "kind": "trail",
+   "line": 888
+  },
+  {
+   "id": "r69",
+   "anchor": "TableLoc.__setitem__#if:len(rows) == 0/else",
+   "kind": "trail",
+   "line": 890
+  },
+  {
+   "id": "r70",
+   "anchor": "TableLocIndices.__getitem__",
+   "kind": "doc",
+   "line": 900
+  },
+  {
+   "id": "r71",
+   "anchor": "TableLocIndices.__getitem__#if:len(rows) == 0",
+   "kind": "trail",
+   "line": 914
+  },
+  {
+   "id": "r72",
+   "anchor": "TableLocIndices.__getitem__#if:len(rows) == 0/elif:len(rows) == 1",
+   "kind": "trail",
+   "line": 916
+  },
+  {
+   "id": "r73",
+   "anchor": "TableILoc",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r74",
+   "anchor": "TableILoc.__getitem__#if:len(table_slice) == 0",
+   "kind": "trail",
+   "line": 944
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19230,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6786,
+  "thinking_tokens": 3551,
+  "opus_cost_usd": 0.3662415,
+  "total_cost_usd": 0.3806915,
+  "duration_ms": 62730,
+  "duration_api_ms": 66540,
+  "num_turns": 2
+ },
+ "wall_ms": 63796,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,337 @@
+{
+ "blob_sha": "ae353d559c32ba98ae2c40af47e0f351a8eb89af",
+ "path": "astropy/convolution/convolve.py",
+ "repo": "astropy/astropy",
+ "records": 52,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:warnings",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "__doctest_skip__",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "convolve",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r4",
+   "anchor": "convolve#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r5",
+   "anchor": "convolve#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r6",
+   "anchor": "convolve#if:isinstance(kernel, Kernel)/if:isinstance(array, Kernel)",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r7",
+   "anchor": "convolve#if:isinstance(array, list)",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r8",
+   "anchor": "convolve#if:isinstance(array, list)/elif:isinstance(array, np.ndarray)/assign:array_dtype",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r9",
+   "anchor": "convolve#if:isinstance(kernel, list)/elif:isinstance(kernel, np.ndarray)/assign:kernel_internal",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r10",
+   "anchor": "convolve#if:array_internal.ndim != kernel_internal.ndim",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r11",
+   "anchor": "convolve#assign:array_internal_copied",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r12",
+   "anchor": "convolve#if:mask is not None/assign:array_internal[mask != 0]",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r13",
+   "anchor": "convolve#if:np.ma.is_masked(kernel)/assign:kernel_internal",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r14",
+   "anchor": "convolve#if:preserve_nan",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r15",
+   "anchor": "convolve#assign:kernel_sum",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r16",
+   "anchor": "convolve#if:not normalize_kernel and not kernel_sums_to_zero",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r17",
+   "anchor": "convolve#if:array_dtype.kind == 'f'",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r18",
+   "anchor": "convolve#if:array_dtype.kind == 'f'/try",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r19",
+   "anchor": "convolve_fft",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r20",
+   "anchor": "convolve_fft#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r21",
+   "anchor": "convolve_fft#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r22",
+   "anchor": "convolve_fft#assign:array",
+   "kind": "lead",
+   "line": 515
+  },
+  {
+   "id": "r23",
+   "anchor": "convolve_fft#if:array.ndim != kernel.ndim",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r24",
+   "anchor": "convolve_fft#if:np.ma.is_masked(array)",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r25",
+   "anchor": "convolve_fft#if:np.ma.is_masked(array)/elif:mask is not None/assign:array",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r26",
+   "anchor": "convolve_fft#if:mask is not None/assign:array[mask != 0]",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r27",
+   "anchor": "convolve_fft#if:np.ma.is_masked(kernel)",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r28",
+   "anchor": "convolve_fft#assign:nanmaskarray",
+   "kind": "lead",
+   "line": 550
+  },
+  {
+   "id": "r29",
+   "anchor": "convolve_fft#if:normalize_kernel is True/assign:kernel_scale",
+   "kind": "trail",
+   "line": 562
+  },
+  {
+   "id": "r30",
+   "anchor": "convolve_fft#if:normalize_kernel is True/elif:normalize_kernel/assign:kernel_scale",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r31",
+   "anchor": "convolve_fft#if:normalize_kernel is True/else/if:np.abs(kernel_scale) < normalization_zero_tol/if:nan_treatment == 'interpolate'/else/assign:kernel_scale",
+   "kind": "lead",
+   "line": 575
+  },
+  {
+   "id": "r32",
+   "anchor": "convolve_fft#if:normalize_kernel is True/else/if:np.abs(kernel_scale) < normalization_zero_tol/else/assign:normalized_kernel",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r33",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'fill'/if:psf_pad is False",
+   "kind": "lead",
+   "line": 593
+  },
+  {
+   "id": "r34",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'fill'/if:fft_pad is None/assign:fft_pad",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r35",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'wrap'/assign:fill_value",
+   "kind": "trail",
+   "line": 609
+  },
+  {
+   "id": "r36",
+   "anchor": "convolve_fft#if:fft_pad",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r37",
+   "anchor": "convolve_fft#if:fft_pad",
+   "kind": "trail",
+   "line": 616
+  },
+  {
+   "id": "r38",
+   "anchor": "convolve_fft#if:fft_pad/if:psf_pad",
+   "kind": "trail",
+   "line": 617
+  },
+  {
+   "id": "r39",
+   "anchor": "convolve_fft#if:fft_pad/if:psf_pad/assign:fsize",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r40",
+   "anchor": "convolve_fft#if:fft_pad/if:psf_pad/else/assign:fsize",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r41",
+   "anchor": "convolve_fft#if:fft_pad/else/if:psf_pad/assign:newshape",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r42",
+   "anchor": "convolve_fft#assign:array_size_C",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r43",
+   "anchor": "convolve_fft#assign:arrayslices",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r44",
+   "anchor": "convolve_fft#assign:arrayslices",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r45",
+   "anchor": "convolve_fft#assign:kernfft",
+   "kind": "lead",
+   "line": 684
+  },
+  {
+   "id": "r46",
+   "anchor": "convolve_fft#if:interpolate_nan/assign:wtfftmult",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r47",
+   "anchor": "convolve_fft#if:interpolate_nan/assign:bigimwt[arrayslices]",
+   "kind": "lead",
+   "line": 702
+  },
+  {
+   "id": "r48",
+   "anchor": "convolve_fft#if:np.isnan(fftmult).any()/raise:ValueError",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r49",
+   "anchor": "convolve_fft#assign:array[nanmaskarray]",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r50",
+   "anchor": "convolve_fft#if:interpolate_nan/if:not np.isscalar(bigimwt)/if:min_wt > 0./else/assign:rifft[bigimwt < 10 * np.finfo(bigimwt.dtype).eps]",
+   "kind": "lead",
+   "line": 729
+  },
+  {
+   "id": "r51",
+   "anchor": "interpolate_replace_nans",
+   "kind": "doc",
+   "line": 743
+  },
+  {
+   "id": "r52",
+   "anchor": "convolve_models",
+   "kind": "doc",
+   "line": 784
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 21743,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5841,
+  "thinking_tokens": 3144,
+  "opus_cost_usd": 0.3677465,
+  "total_cost_usd": 0.3837345,
+  "duration_ms": 51381,
+  "duration_api_ms": 52364,
+  "num_turns": 2
+ },
+ "wall_ms": 52841,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

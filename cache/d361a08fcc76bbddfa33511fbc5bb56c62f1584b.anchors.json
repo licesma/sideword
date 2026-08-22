@@ -1,0 +1,343 @@
+{
+ "blob_sha": "d361a08fcc76bbddfa33511fbc5bb56c62f1584b",
+ "path": "astropy/io/ascii/ecsv.py",
+ "repo": "astropy/astropy",
+ "records": 53,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "ECSV_DATATYPES",
+   "kind": "trail",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "InvalidEcsvDatatypeWarning",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r5",
+   "anchor": "EcsvHeader",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r6",
+   "anchor": "EcsvHeader.process_lines",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r7",
+   "anchor": "EcsvHeader.process_lines#for:line in lines/if:match/else/return",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r8",
+   "anchor": "EcsvHeader.write",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r9",
+   "anchor": "EcsvHeader.write#assign:header",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "EcsvHeader.write#if:self.splitter.delimiter != \" \"",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r11",
+   "anchor": "EcsvHeader.write_comments",
+   "kind": "doc",
+   "line": 110
+  },
+  {
+   "id": "r12",
+   "anchor": "EcsvHeader.update_meta",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r13",
+   "anchor": "EcsvHeader.get_cols",
+   "kind": "doc",
+   "line": 124
+  },
+  {
+   "id": "r14",
+   "anchor": "EcsvHeader.get_cols#assign:raw_lines",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r15",
+   "anchor": "EcsvHeader.get_cols#assign:lines",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r16",
+   "anchor": "EcsvHeader.get_cols#assign:ecsv_header_re",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r17",
+   "anchor": "EcsvHeader.get_cols#assign:header_cols",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r18",
+   "anchor": "EcsvHeader.get_cols#assign:header_line",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r19",
+   "anchor": "EcsvHeader.get_cols#if:header_names != self.names",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r20",
+   "anchor": "EcsvHeader.get_cols#call:self._set_cols_from_names",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r21",
+   "anchor": "EcsvHeader.get_cols#for:col in self.cols",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r22",
+   "anchor": "EcsvHeader.get_cols#for:col in self.cols/if:col.dtype not in ECSV_DATATYPES",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r23",
+   "anchor": "EcsvHeader.get_cols#for:col in self.cols/assign:subtype",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r24",
+   "anchor": "EcsvHeader.get_cols#for:col in self.cols/for:attr in (\"dtype\", \"subtype\")",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r25",
+   "anchor": "EcsvHeader.get_cols#for:col in self.cols/if:col.subtype == \"json\"",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r26",
+   "anchor": "EcsvOutputter",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r27",
+   "anchor": "EcsvOutputter.__call__#assign:out",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r28",
+   "anchor": "EcsvOutputter.__call__#assign:out",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r29",
+   "anchor": "EcsvOutputter._convert_vals",
+   "kind": "doc",
+   "line": 261
+  },
+  {
+   "id": "r30",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r31",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r32",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/if:hasattr(col, \"mask\")",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r33",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/assign:col_vals",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r34",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/for:str_val in col.str_vals/assign:obj_val",
+   "kind": "trail",
+   "line": 295
+  },
+  {
+   "id": "r35",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/for:str_val in col.str_vals/try/except:TypeError/assign:data",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r36",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/for:str_val in col.str_vals/try/except:TypeError/assign:mask",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r37",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape and col.shape[-1] is None/assign:col.data",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r38",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r39",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape/if:hasattr(col, \"mask\")",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r40",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape/assign:data",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r41",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape/if:not np.any(mask)/assign:col.data",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r42",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape/if:not np.any(mask)/else/assign:kind",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r43",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/elif:col.shape/if:not np.any(mask)/else/assign:col.data",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r44",
+   "anchor": "EcsvOutputter._convert_vals#for:col in cols/try/if:col.subtype == \"object\"/else",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r45",
+   "anchor": "EcsvData._set_fill_values",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r46",
+   "anchor": "EcsvData._set_fill_values#try",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r47",
+   "anchor": "EcsvData._set_fill_values#for:col in cols",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r48",
+   "anchor": "EcsvData._set_fill_values#for:col in cols/if:col.dtype == \"str\" and col.name in scs and scs[col.name][\"__class__\"] == \"astropy.table.column.MaskedColumn\"/assign:col.fill_values",
+   "kind": "trail",
+   "line": 407
+  },
+  {
+   "id": "r49",
+   "anchor": "EcsvData.str_vals",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r50",
+   "anchor": "EcsvData.str_vals#for:col in self.cols/if:hasattr(col, \"mask\") and col.ndim == 1",
+   "kind": "lead",
+   "line": 444
+  },
+  {
+   "id": "r51",
+   "anchor": "Ecsv",
+   "kind": "doc",
+   "line": 452
+  },
+  {
+   "id": "r52",
+   "anchor": "Ecsv.max_ndim",
+   "kind": "trail",
+   "line": 492
+  },
+  {
+   "id": "r53",
+   "anchor": "Ecsv.update_table_data",
+   "kind": "doc",
+   "line": 494
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14242,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6347,
+  "thinking_tokens": 3216,
+  "opus_cost_usd": 0.3053865,
+  "total_cost_usd": 0.3156155,
+  "duration_ms": 56507,
+  "duration_api_ms": 57666,
+  "num_turns": 2
+ },
+ "wall_ms": 57413,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

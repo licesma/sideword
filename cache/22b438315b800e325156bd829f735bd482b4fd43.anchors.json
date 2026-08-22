@@ -1,0 +1,109 @@
+{
+ "blob_sha": "22b438315b800e325156bd829f735bd482b4fd43",
+ "path": "django/core/signing.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "BadSignature",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r3",
+   "anchor": "SignatureExpired",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r4",
+   "anchor": "JSONSerializer",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "dumps",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r6",
+   "anchor": "dumps#assign:is_compressed",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r7",
+   "anchor": "dumps#if:compress/assign:compressed",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "loads",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r9",
+   "anchor": "loads#assign:base64d",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "loads#if:base64d[:1]==b'.'/assign:base64d",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r11",
+   "anchor": "Signer.key",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r12",
+   "anchor": "Signer.signature#return",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r13",
+   "anchor": "TimestampSigner.unsign",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r14",
+   "anchor": "TimestampSigner.unsign#if:max_age is not None/assign:age",
+   "kind": "lead",
+   "line": 206
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7234,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 946,
+  "thinking_tokens": 366,
+  "opus_cost_usd": 0.1002815,
+  "total_cost_usd": 0.10464849999999999,
+  "duration_ms": 10513,
+  "duration_api_ms": 11551,
+  "num_turns": 2
+ },
+ "wall_ms": 11487,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

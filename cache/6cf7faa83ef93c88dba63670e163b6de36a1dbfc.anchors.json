@@ -1,0 +1,463 @@
+{
+ "blob_sha": "6cf7faa83ef93c88dba63670e163b6de36a1dbfc",
+ "path": "astropy/io/fits/fitstime.py",
+ "repo": "astropy/astropy",
+ "records": 73,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:re",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "TCTYP_RE_TYPE",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "TCTYP_RE_TYPE",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "FITS_TIME_UNIT",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r5",
+   "anchor": "TIME_KEYWORDS",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r6",
+   "anchor": "COLUMN_TIME_KEYWORDS",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r7",
+   "anchor": "COLUMN_TIME_KEYWORD_REGEXP",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r8",
+   "anchor": "is_time_column_keyword",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r9",
+   "anchor": "GLOBAL_TIME_INFO",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r10",
+   "anchor": "_verify_global_info",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r11",
+   "anchor": "_verify_global_info#assign:global_info['scale']",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r12",
+   "anchor": "_verify_global_info#if:global_info['scale'] not in Time.SCALES",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r13",
+   "anchor": "_verify_global_info#if:global_info['scale'] not in Time.SCALES/if:global_info['scale']=='gps'",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r14",
+   "anchor": "_verify_global_info#if:global_info['scale'] not in Time.SCALES/if:global_info['scale']=='gps'/assign:global_info['scale']",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r15",
+   "anchor": "_verify_global_info#if:global_info['scale'] not in Time.SCALES/if:global_info['scale']=='local'/assign:global_info['scale']",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r16",
+   "anchor": "_verify_global_info#if:global_info['scale'] not in Time.SCALES/else/assign:global_info['format']",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r17",
+   "anchor": "_verify_global_info#assign:obs_geo",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r18",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r19",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3/else/if:obs_geo",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r20",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3/else/if:obs_geo",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r21",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3/else/assign:obs_geo",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r22",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3/else/if:len(obs_geo)==3/else/if:obs_geo",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r23",
+   "anchor": "_verify_global_info#if:len(obs_geo)==3/else/if:len(obs_geo)==3/else/if:obs_geo",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r24",
+   "anchor": "_verify_global_info#for:key, format_ in (('MJDREF','mjd'), ('JDREF','jd'), ('DATEREF','fits'))",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r25",
+   "anchor": "_verify_global_info#for:key, format_ in (('MJDREF','mjd'), ('JDREF','jd'), ('DATEREF','fits'))/else/assign:global_info['ref_time']",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r26",
+   "anchor": "_verify_column_info",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r27",
+   "anchor": "_verify_column_info#if:scale is not None/if:TCTYP_RE_TYPE.match(scale[:5]) and TCTYP_RE_ALGO.match(scale[5:])",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r28",
+   "anchor": "_verify_column_info#if:scale is not None/if:TCTYP_RE_TYPE.match(scale[:5]) and TCTYP_RE_ALGO.match(scale[5:])/elif:scale=='TIME'",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r29",
+   "anchor": "_verify_column_info#if:scale is not None/if:TCTYP_RE_TYPE.match(scale[:5]) and TCTYP_RE_ALGO.match(scale[5:])/else/return",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r30",
+   "anchor": "_verify_column_info#if:scale is not None/elif:(unit is not None and unit in FITS_TIME_UNIT) or location is not None",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r31",
+   "anchor": "_verify_column_info#if:scale is not None/else",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r32",
+   "anchor": "_verify_column_info#if:location is not None",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r33",
+   "anchor": "_verify_column_info#if:location is not None/if:location=='TOPOCENTER'",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r34",
+   "anchor": "_verify_column_info#if:location is not None/elif:global_info['TREFPOS']=='TOPOCENTER'",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r35",
+   "anchor": "_verify_column_info#assign:column_info['ref_time']",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r36",
+   "anchor": "_get_info_if_time_column",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r37",
+   "anchor": "_get_info_if_time_column#if:col.info.name.upper()=='TIME' and col.info.unit in FITS_TIME_UNIT",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r38",
+   "anchor": "_convert_global_time",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r39",
+   "anchor": "_convert_global_time#for:key, value in global_info.items()",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r40",
+   "anchor": "_convert_global_time#for:key, value in global_info.items()/if:key not in table.meta",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r41",
+   "anchor": "_convert_time_key",
+   "kind": "doc",
+   "line": 331
+  },
+  {
+   "id": "r42",
+   "anchor": "_convert_time_key#if:key.startswith('DATE')/elif:key.startswith('MJD-')",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r43",
+   "anchor": "_convert_time_column",
+   "kind": "doc",
+   "line": 365
+  },
+  {
+   "id": "r44",
+   "anchor": "_convert_time_column#try",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r45",
+   "anchor": "_convert_time_column#try/if:col.info.dtype.kind in ['S','U']",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r46",
+   "anchor": "_convert_time_column#try/if:col.info.dtype.kind in ['S','U']/assign:precision",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r47",
+   "anchor": "_convert_time_column#try/if:column_info['ref_time']['val']==0 and column_info['ref_time']['format'] in ['jd','mjd']",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r48",
+   "anchor": "_convert_time_column#try/if:column_info['ref_time']['val']==0 and column_info['ref_time']['format'] in ['jd','mjd']/if:col.shape[-1]==2 and col.ndim>1",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r49",
+   "anchor": "_convert_time_column#try/assign:ref_time",
+   "kind": "lead",
+   "line": 407
+  },
+  {
+   "id": "r50",
+   "anchor": "_convert_time_column#try/if:col.shape[-1]==2 and col.ndim>1",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r51",
+   "anchor": "fits_to_time",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r52",
+   "anchor": "fits_to_time#assign:global_info",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r53",
+   "anchor": "fits_to_time#assign:time_columns",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r54",
+   "anchor": "fits_to_time#assign:hcopy",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r55",
+   "anchor": "fits_to_time#for:key, value, comment in hdr.cards",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r56",
+   "anchor": "fits_to_time#call:_verify_global_info",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r57",
+   "anchor": "fits_to_time#if:time_columns",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r58",
+   "anchor": "fits_to_time#if:time_columns/for:idx, column_info in time_columns.items()/if:_verify_column_info(column_info, global_info)",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r59",
+   "anchor": "fits_to_time#if:time_columns/for:idx, column_info in time_columns.items()/if:_verify_column_info(column_info, global_info)/assign:table[colname]",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r60",
+   "anchor": "fits_to_time#for:idx, colname in enumerate(table.colnames)",
+   "kind": "lead",
+   "line": 492
+  },
+  {
+   "id": "r61",
+   "anchor": "time_to_fits",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r62",
+   "anchor": "time_to_fits#assign:new_cols",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r63",
+   "anchor": "time_to_fits#for:col in table.itercols()/if:isinstance(col, Column)/assign:new_col",
+   "kind": "trail",
+   "line": 529
+  },
+  {
+   "id": "r64",
+   "anchor": "time_to_fits#assign:hdr",
+   "kind": "lead",
+   "line": 537
+  },
+  {
+   "id": "r65",
+   "anchor": "time_to_fits#assign:newtable.meta['__coordinate_columns__']",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r66",
+   "anchor": "time_to_fits#assign:location",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r67",
+   "anchor": "time_to_fits#for:col in time_cols/assign:col_cls",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r68",
+   "anchor": "time_to_fits#for:col in time_cols/assign:jd12",
+   "kind": "lead",
+   "line": 560
+  },
+  {
+   "id": "r69",
+   "anchor": "time_to_fits#for:col in time_cols/call:newtable.replace_column",
+   "kind": "lead",
+   "line": 563
+  },
+  {
+   "id": "r70",
+   "anchor": "time_to_fits#for:col in time_cols/assign:coord_meta[col.info.name]['coord_type']",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r71",
+   "anchor": "time_to_fits#for:col in time_cols/if:getattr(col,'location') is None",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r72",
+   "anchor": "time_to_fits#for:col in time_cols/if:getattr(col,'location') is None/else/if:col.scale in BARYCENTRIC_SCALES",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r73",
+   "anchor": "time_to_fits#for:col in time_cols/if:getattr(col,'location') is None/else/if:location is None/assign:location",
+   "kind": "lead",
+   "line": 589
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16912,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8333,
+  "thinking_tokens": 4301,
+  "opus_cost_usd": 0.38173650000000003,
+  "total_cost_usd": 0.39400350000000006,
+  "duration_ms": 73774,
+  "duration_api_ms": 74923,
+  "num_turns": 2
+ },
+ "wall_ms": 74787,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

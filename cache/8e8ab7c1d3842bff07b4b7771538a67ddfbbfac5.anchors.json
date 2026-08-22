@@ -1,0 +1,199 @@
+{
+ "blob_sha": "8e8ab7c1d3842bff07b4b7771538a67ddfbbfac5",
+ "path": "astropy/visualization/wcsaxes/core.py",
+ "repo": "astropy/astropy",
+ "records": 29,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:functools",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_WCSAxesArtist",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "WCSAxes",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "WCSAxes.__init__#if:not (transData is None)/assign:self.transData",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r5",
+   "anchor": "WCSAxes._hide_parent_artists#for:s in self.spines.values()",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r6",
+   "anchor": "WCSAxes.imshow",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r7",
+   "anchor": "WCSAxes.imshow",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r8",
+   "anchor": "WCSAxes.imshow#try",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r9",
+   "anchor": "WCSAxes.imshow#try/except:ImportError/pass",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "WCSAxes.plot_coord",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r11",
+   "anchor": "WCSAxes.plot_coord#if:isinstance(args[0], (SkyCoord, BaseCoordinateFrame))/assign:frame0",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r12",
+   "anchor": "WCSAxes.reset_wcs",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r13",
+   "anchor": "WCSAxes.reset_wcs#if:wcs is None and transform is None",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r14",
+   "anchor": "WCSAxes.reset_wcs#if:wcs is None and transform is None/else/if:wcs is not None",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r15",
+   "anchor": "WCSAxes.reset_wcs#if:hasattr(self, 'coords')",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r16",
+   "anchor": "WCSAxes.reset_wcs#if:self.frame_class is RectangularFrame",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r17",
+   "anchor": "WCSAxes.reset_wcs#if:self.frame_class is RectangularFrame/elif:self.frame_class is EllipticalFrame",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r18",
+   "anchor": "WCSAxes.draw_wcsaxes#assign:self._bboxes",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r19",
+   "anchor": "WCSAxes.draw_wcsaxes#assign:ticklabels_bbox",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r20",
+   "anchor": "WCSAxes.draw#assign:locator",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r21",
+   "anchor": "WCSAxes.draw#if:self._axisbelow is True/elif:self._axisbelow is False/else/call:self._wcsaxesartist.set_zorder",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r22",
+   "anchor": "WCSAxes.draw#call:self.coords.frame._update_patch_path",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r23",
+   "anchor": "WCSAxes.get_coords_overlay#if:isinstance(frame, WCS)",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r24",
+   "anchor": "WCSAxes.get_coords_overlay#call:coords[0].set_axislabel_position",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r25",
+   "anchor": "WCSAxes.get_transform",
+   "kind": "doc",
+   "line": 434
+  },
+  {
+   "id": "r26",
+   "anchor": "WCSAxes._get_transform_no_transdata",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r27",
+   "anchor": "WCSAxes.grid",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r28",
+   "anchor": "WCSAxesSubplot",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r29",
+   "anchor": "WCSAxesSubplot",
+   "kind": "doc",
+   "line": 566
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14869,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3043,
+  "thinking_tokens": 1559,
+  "opus_cost_usd": 0.2290565,
+  "total_cost_usd": 0.2394925,
+  "duration_ms": 28048,
+  "duration_api_ms": 29217,
+  "num_turns": 2
+ },
+ "wall_ms": 28865,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

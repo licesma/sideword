@@ -1,0 +1,313 @@
+{
+ "blob_sha": "5fa088a29abd05c67a0c780c8067be723614fbd0",
+ "path": "django/contrib/staticfiles/storage.py",
+ "repo": "django/django",
+ "records": 48,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "StaticFilesStorage",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r2",
+   "anchor": "StaticFilesStorage.__init__#if:not location",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "HashedFilesMixin.file_hash",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r4",
+   "anchor": "HashedFilesMixin.hashed_name#assign:parsed_name",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "HashedFilesMixin.hashed_name#try/except:OSError/return",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r6",
+   "anchor": "HashedFilesMixin.hashed_name#if:'?#' in name and not unparsed_name[3]",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r7",
+   "anchor": "HashedFilesMixin._url",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r8",
+   "anchor": "HashedFilesMixin._url#if:settings.DEBUG and not force/else/if:urlsplit(clean_name).path.endswith('/')",
+   "kind": "trail",
+   "line": 138
+  },
+  {
+   "id": "r9",
+   "anchor": "HashedFilesMixin._url#assign:query_fragment",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r10",
+   "anchor": "HashedFilesMixin._url#assign:query_fragment",
+   "kind": "trail",
+   "line": 150
+  },
+  {
+   "id": "r11",
+   "anchor": "HashedFilesMixin.url",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r12",
+   "anchor": "HashedFilesMixin.url_converter",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r13",
+   "anchor": "HashedFilesMixin.url_converter.converter",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r14",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:re.match(r'^[a-z]+:', url)",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r15",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url.startswith('/') and not url.startswith(settings.STATIC_URL)",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r16",
+   "anchor": "HashedFilesMixin.url_converter.converter#assign:url_path, fragment",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r17",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url_path.startswith('/')/assert:url_path.startswith(settings.STATIC_URL)",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r18",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:url_path.startswith('/')/else/assign:source_name",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r19",
+   "anchor": "HashedFilesMixin.url_converter.converter#assign:hashed_url",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r20",
+   "anchor": "HashedFilesMixin.url_converter.converter#if:fragment",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r21",
+   "anchor": "HashedFilesMixin.url_converter.converter#assign:matches['url']",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r22",
+   "anchor": "HashedFilesMixin.post_process",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r23",
+   "anchor": "HashedFilesMixin.post_process#if:dry_run",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r24",
+   "anchor": "HashedFilesMixin.post_process#assign:hashed_files",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r25",
+   "anchor": "HashedFilesMixin.post_process#assign:adjustable_paths",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r26",
+   "anchor": "HashedFilesMixin.post_process#assign:processed_adjustable_paths",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r27",
+   "anchor": "HashedFilesMixin.post_process#for:name, hashed_name, processed, _ in self._post_process(paths, adjustable_paths, hashed_files)",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r28",
+   "anchor": "HashedFilesMixin.post_process#for:i in range(self.max_post_process_passes)/for:name, hashed_name, processed, subst in self._post_process(paths, adjustable_paths, hashed_files)/assign:processed_adjustable_paths[name]",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r29",
+   "anchor": "HashedFilesMixin.post_process#call:self.hashed_files.update",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r30",
+   "anchor": "HashedFilesMixin.post_process#yield",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r31",
+   "anchor": "HashedFilesMixin._post_process.path_level",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r32",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/assign:storage, path",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r33",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:hash_key not in hashed_files",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r34",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:hasattr(original_file, 'seek')",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r35",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r36",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths/assign:content_file",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r37",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths/if:self.keep_intermediate_files/call:self._save",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r38",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:name in adjustable_paths/if:old_hashed_name == hashed_name",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r39",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/if:not processed/if:not hashed_file_exists",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r40",
+   "anchor": "HashedFilesMixin._post_process#for:name in sorted(paths, key=path_level, reverse=True)/with:storage.open(path)/assign:hashed_files[hash_key]",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r41",
+   "anchor": "HashedFilesMixin._stored_name#assign:name",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r42",
+   "anchor": "HashedFilesMixin.stored_name#assign:intermediate_name",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r43",
+   "anchor": "HashedFilesMixin.stored_name#for:i in range(self.max_post_process_passes + 1)/if:intermediate_name == cache_name/assign:self.hashed_files[hash_key]",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r44",
+   "anchor": "HashedFilesMixin.stored_name#for:i in range(self.max_post_process_passes + 1)/if:intermediate_name == cache_name/else/assign:intermediate_name",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r45",
+   "anchor": "HashedFilesMixin.stored_name#raise:ValueError",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r46",
+   "anchor": "ManifestFilesMixin.manifest_version",
+   "kind": "trail",
+   "line": 399
+  },
+  {
+   "id": "r47",
+   "anchor": "ManifestFilesMixin.stored_name#if:'?#' in name and not unparsed_name[3]",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r48",
+   "anchor": "ManifestStaticFilesStorage",
+   "kind": "doc",
+   "line": 464
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13283,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5912,
+  "thinking_tokens": 2901,
+  "opus_cost_usd": 0.2849215,
+  "total_cost_usd": 0.2943535,
+  "duration_ms": 52125,
+  "duration_api_ms": 53170,
+  "num_turns": 2
+ },
+ "wall_ms": 52977,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

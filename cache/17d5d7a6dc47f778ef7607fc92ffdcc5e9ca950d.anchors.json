@@ -1,0 +1,1291 @@
+{
+ "blob_sha": "17d5d7a6dc47f778ef7607fc92ffdcc5e9ca950d",
+ "path": "lib/matplotlib/rcsetup.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 211,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:cycler",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "interactive_bk",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "ValidateInStrings.__init__",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/try/except:Exception/if:allow_stringlist/return",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r6",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/elif:isinstance(s, Iterable) and not isinstance(s, Mapping)",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r7",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/elif:isinstance(s, Iterable) and not isinstance(s, Mapping)/return",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r8",
+   "anchor": "_listify_validator#try/except:AttributeError",
+   "kind": "trail",
+   "line": 97
+  },
+  {
+   "id": "r9",
+   "anchor": "validate_path_exists",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "validate_bool",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r11",
+   "anchor": "validate_bool_maybe_none",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r12",
+   "anchor": "validate_float",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r13",
+   "anchor": "validate_float_or_None",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r14",
+   "anchor": "validate_float_or_None#if:s is None or s == 'None'",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r15",
+   "anchor": "validate_string_or_None",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r16",
+   "anchor": "validate_dpi",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r17",
+   "anchor": "validate_int",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r18",
+   "anchor": "validate_int_or_None",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r19",
+   "anchor": "validate_fonttype",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r20",
+   "anchor": "validate_nseq_float.__call__",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r21",
+   "anchor": "validate_nseq_int.__call__",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r22",
+   "anchor": "validate_color_or_inherit",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r23",
+   "anchor": "validate_color_for_prop_cycle#if:isinstance(s, bytes)",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r24",
+   "anchor": "validate_color",
+   "kind": "doc",
+   "line": 374
+  },
+  {
+   "id": "r25",
+   "anchor": "validate_color#assign:colorarg",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r26",
+   "anchor": "validate_color#if:s.find(',') >= 0/assign:stmp",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r27",
+   "anchor": "validate_string#if:isinstance(s, str)/return",
+   "kind": "lead",
+   "line": 419
+  },
+  {
+   "id": "r28",
+   "anchor": "update_savefig_format#assign:value",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r29",
+   "anchor": "validate_markevery",
+   "kind": "doc",
+   "line": 568
+  },
+  {
+   "id": "r30",
+   "anchor": "validate_markevery#if:isinstance(s, slice)",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r31",
+   "anchor": "validate_markevery#if:isinstance(s, tuple)",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r32",
+   "anchor": "validate_markevery#if:isinstance(s, tuple)/elif:isinstance(s, list)",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r33",
+   "anchor": "validate_markevery#if:isinstance(s, tuple)/elif:not isinstance(s, (float, int))",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r34",
+   "anchor": "validate_bbox#if:isinstance(s, str)/elif:s is not None/raise:ValueError",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r35",
+   "anchor": "ValidateInterval",
+   "kind": "doc",
+   "line": 694
+  },
+  {
+   "id": "r36",
+   "anchor": "validate_hatch",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r37",
+   "anchor": "cycler",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r38",
+   "anchor": "cycler#for:prop, vals in pairs/call:validated.append",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r39",
+   "anchor": "validate_cycler",
+   "kind": "doc",
+   "line": 866
+  },
+  {
+   "id": "r40",
+   "anchor": "validate_cycler#if:isinstance(s, str)/try/if:'.__' in s.replace(' ', '')",
+   "kind": "todo",
+   "line": 884
+  },
+  {
+   "id": "r41",
+   "anchor": "validate_cycler#if:isinstance(s, Cycler)",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r42",
+   "anchor": "validate_cycler#assign:checker",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r43",
+   "anchor": "validate_cycler#assert:len(checker) == len(cycler_inst.keys)",
+   "kind": "lead",
+   "line": 918
+  },
+  {
+   "id": "r44",
+   "anchor": "validate_cycler#for:prop in cycler_inst.keys",
+   "kind": "lead",
+   "line": 921
+  },
+  {
+   "id": "r45",
+   "anchor": "validate_animation_writer_path#if:not isinstance(p, str)",
+   "kind": "lead",
+   "line": 951
+  },
+  {
+   "id": "r46",
+   "anchor": "validate_animation_writer_path#if:\"matplotlib.animation\" in modules",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r47",
+   "anchor": "_validate_named_linestyle",
+   "kind": "lead",
+   "line": 976
+  },
+  {
+   "id": "r48",
+   "anchor": "_validate_linestyle",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r49",
+   "anchor": "_validate_linestyle#if:isinstance(ls, (str, bytes, bytearray))",
+   "kind": "lead",
+   "line": 992
+  },
+  {
+   "id": "r50",
+   "anchor": "_validate_linestyle#try",
+   "kind": "lead",
+   "line": 997
+  },
+  {
+   "id": "r51",
+   "anchor": "_validate_linestyle#try/except:(ValueError, TypeError)/raise:ValueError",
+   "kind": "lead",
+   "line": 1007
+  },
+  {
+   "id": "r52",
+   "anchor": "defaultParams",
+   "kind": "lead",
+   "line": 1012
+  },
+  {
+   "id": "r53",
+   "anchor": "defaultParams#key:datapath",
+   "kind": "trail",
+   "line": 1020
+  },
+  {
+   "id": "r54",
+   "anchor": "defaultParams#key:datapath",
+   "kind": "post",
+   "line": 1020
+  },
+  {
+   "id": "r55",
+   "anchor": "defaultParams#key:verbose.level",
+   "kind": "lead",
+   "line": 1026
+  },
+  {
+   "id": "r56",
+   "anchor": "defaultParams#key:lines.linewidth",
+   "kind": "lead",
+   "line": 1030
+  },
+  {
+   "id": "r57",
+   "anchor": "defaultParams#key:lines.linewidth",
+   "kind": "trail",
+   "line": 1030
+  },
+  {
+   "id": "r58",
+   "anchor": "defaultParams#key:lines.linestyle",
+   "kind": "trail",
+   "line": 1031
+  },
+  {
+   "id": "r59",
+   "anchor": "defaultParams#key:lines.color",
+   "kind": "trail",
+   "line": 1032
+  },
+  {
+   "id": "r60",
+   "anchor": "defaultParams#key:lines.marker",
+   "kind": "trail",
+   "line": 1033
+  },
+  {
+   "id": "r61",
+   "anchor": "defaultParams#key:lines.markerfacecolor",
+   "kind": "trail",
+   "line": 1034
+  },
+  {
+   "id": "r62",
+   "anchor": "defaultParams#key:lines.markeredgecolor",
+   "kind": "trail",
+   "line": 1035
+  },
+  {
+   "id": "r63",
+   "anchor": "defaultParams#key:lines.markersize",
+   "kind": "trail",
+   "line": 1037
+  },
+  {
+   "id": "r64",
+   "anchor": "defaultParams#key:lines.antialiased",
+   "kind": "trail",
+   "line": 1038
+  },
+  {
+   "id": "r65",
+   "anchor": "defaultParams#key:markers.fillstyle",
+   "kind": "lead",
+   "line": 1050
+  },
+  {
+   "id": "r66",
+   "anchor": "defaultParams#key:patch.linewidth",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r67",
+   "anchor": "defaultParams#key:patch.linewidth",
+   "kind": "trail",
+   "line": 1053
+  },
+  {
+   "id": "r68",
+   "anchor": "defaultParams#key:patch.facecolor",
+   "kind": "trail",
+   "line": 1056
+  },
+  {
+   "id": "r69",
+   "anchor": "defaultParams#key:patch.antialiased",
+   "kind": "trail",
+   "line": 1057
+  },
+  {
+   "id": "r70",
+   "anchor": "defaultParams#key:hatch.color",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r71",
+   "anchor": "defaultParams#key:hist.bins",
+   "kind": "lead",
+   "line": 1064
+  },
+  {
+   "id": "r72",
+   "anchor": "defaultParams#key:boxplot.notch",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r73",
+   "anchor": "defaultParams#key:font.family",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r74",
+   "anchor": "defaultParams#key:font.family",
+   "kind": "trail",
+   "line": 1112
+  },
+  {
+   "id": "r75",
+   "anchor": "defaultParams#key:font.size",
+   "kind": "trail",
+   "line": 1117
+  },
+  {
+   "id": "r76",
+   "anchor": "defaultParams#key:text.color",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r77",
+   "anchor": "defaultParams#key:image.aspect",
+   "kind": "trail",
+   "line": 1162
+  },
+  {
+   "id": "r78",
+   "anchor": "defaultParams#key:image.cmap",
+   "kind": "trail",
+   "line": 1164
+  },
+  {
+   "id": "r79",
+   "anchor": "defaultParams#key:image.lut",
+   "kind": "trail",
+   "line": 1165
+  },
+  {
+   "id": "r80",
+   "anchor": "defaultParams#key:image.composite_image",
+   "kind": "lead",
+   "line": 1171
+  },
+  {
+   "id": "r81",
+   "anchor": "defaultParams#key:contour.negative_linestyle",
+   "kind": "lead",
+   "line": 1174
+  },
+  {
+   "id": "r82",
+   "anchor": "defaultParams#key:errorbar.capsize",
+   "kind": "lead",
+   "line": 1178
+  },
+  {
+   "id": "r83",
+   "anchor": "defaultParams#key:axes.axisbelow",
+   "kind": "lead",
+   "line": 1181
+  },
+  {
+   "id": "r84",
+   "anchor": "defaultParams#key:axes.facecolor",
+   "kind": "trail",
+   "line": 1182
+  },
+  {
+   "id": "r85",
+   "anchor": "defaultParams#key:axes.edgecolor",
+   "kind": "trail",
+   "line": 1183
+  },
+  {
+   "id": "r86",
+   "anchor": "defaultParams#key:axes.linewidth",
+   "kind": "trail",
+   "line": 1184
+  },
+  {
+   "id": "r87",
+   "anchor": "defaultParams#key:axes.spines.left",
+   "kind": "trail",
+   "line": 1186
+  },
+  {
+   "id": "r88",
+   "anchor": "defaultParams#key:axes.spines.right",
+   "kind": "trail",
+   "line": 1187
+  },
+  {
+   "id": "r89",
+   "anchor": "defaultParams#key:axes.spines.bottom",
+   "kind": "trail",
+   "line": 1188
+  },
+  {
+   "id": "r90",
+   "anchor": "defaultParams#key:axes.spines.top",
+   "kind": "trail",
+   "line": 1189
+  },
+  {
+   "id": "r91",
+   "anchor": "defaultParams#key:axes.titlesize",
+   "kind": "trail",
+   "line": 1191
+  },
+  {
+   "id": "r92",
+   "anchor": "defaultParams#key:axes.titlesize",
+   "kind": "post",
+   "line": 1191
+  },
+  {
+   "id": "r93",
+   "anchor": "defaultParams#key:axes.titleweight",
+   "kind": "trail",
+   "line": 1193
+  },
+  {
+   "id": "r94",
+   "anchor": "defaultParams#key:axes.titlepad",
+   "kind": "trail",
+   "line": 1194
+  },
+  {
+   "id": "r95",
+   "anchor": "defaultParams#key:axes.grid",
+   "kind": "trail",
+   "line": 1195
+  },
+  {
+   "id": "r96",
+   "anchor": "defaultParams#key:axes.grid.which",
+   "kind": "trail",
+   "line": 1196
+  },
+  {
+   "id": "r97",
+   "anchor": "defaultParams#key:axes.grid.which",
+   "kind": "post",
+   "line": 1196
+  },
+  {
+   "id": "r98",
+   "anchor": "defaultParams#key:axes.grid.axis",
+   "kind": "trail",
+   "line": 1200
+  },
+  {
+   "id": "r99",
+   "anchor": "defaultParams#key:axes.grid.axis",
+   "kind": "post",
+   "line": 1200
+  },
+  {
+   "id": "r100",
+   "anchor": "defaultParams#key:axes.labelsize",
+   "kind": "trail",
+   "line": 1202
+  },
+  {
+   "id": "r101",
+   "anchor": "defaultParams#key:axes.labelsize",
+   "kind": "post",
+   "line": 1202
+  },
+  {
+   "id": "r102",
+   "anchor": "defaultParams#key:axes.labelpad",
+   "kind": "trail",
+   "line": 1204
+  },
+  {
+   "id": "r103",
+   "anchor": "defaultParams#key:axes.labelweight",
+   "kind": "trail",
+   "line": 1205
+  },
+  {
+   "id": "r104",
+   "anchor": "defaultParams#key:axes.labelcolor",
+   "kind": "trail",
+   "line": 1206
+  },
+  {
+   "id": "r105",
+   "anchor": "defaultParams#key:axes.formatter.limits",
+   "kind": "post",
+   "line": 1207
+  },
+  {
+   "id": "r106",
+   "anchor": "defaultParams#key:axes.formatter.use_locale",
+   "kind": "post",
+   "line": 1211
+  },
+  {
+   "id": "r107",
+   "anchor": "defaultParams#key:axes.formatter.min_exponent",
+   "kind": "trail",
+   "line": 1214
+  },
+  {
+   "id": "r108",
+   "anchor": "defaultParams#key:axes.prop_cycle",
+   "kind": "lead",
+   "line": 1221
+  },
+  {
+   "id": "r109",
+   "anchor": "defaultParams#key:axes.autolimit_mode",
+   "kind": "lead",
+   "line": 1229
+  },
+  {
+   "id": "r110",
+   "anchor": "defaultParams#key:axes.xmargin",
+   "kind": "trail",
+   "line": 1232
+  },
+  {
+   "id": "r111",
+   "anchor": "defaultParams#key:axes.ymargin",
+   "kind": "trail",
+   "line": 1235
+  },
+  {
+   "id": "r112",
+   "anchor": "defaultParams#key:polaraxes.grid",
+   "kind": "trail",
+   "line": 1239
+  },
+  {
+   "id": "r113",
+   "anchor": "defaultParams#key:polaraxes.grid",
+   "kind": "post",
+   "line": 1239
+  },
+  {
+   "id": "r114",
+   "anchor": "defaultParams#key:axes3d.grid",
+   "kind": "trail",
+   "line": 1241
+  },
+  {
+   "id": "r115",
+   "anchor": "defaultParams#key:scatter.marker",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r116",
+   "anchor": "defaultParams#key:date.autoformatter.year",
+   "kind": "todo",
+   "line": 1248
+  },
+  {
+   "id": "r117",
+   "anchor": "defaultParams#key:legend.fancybox",
+   "kind": "lead",
+   "line": 1257
+  },
+  {
+   "id": "r118",
+   "anchor": "defaultParams#key:legend.numpoints",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r119",
+   "anchor": "defaultParams#key:legend.scatterpoints",
+   "kind": "lead",
+   "line": 1262
+  },
+  {
+   "id": "r120",
+   "anchor": "defaultParams#key:legend.markerscale",
+   "kind": "lead",
+   "line": 1266
+  },
+  {
+   "id": "r121",
+   "anchor": "defaultParams#key:legend.frameon",
+   "kind": "lead",
+   "line": 1269
+  },
+  {
+   "id": "r122",
+   "anchor": "defaultParams#key:legend.framealpha",
+   "kind": "lead",
+   "line": 1271
+  },
+  {
+   "id": "r123",
+   "anchor": "defaultParams#key:legend.borderpad",
+   "kind": "lead",
+   "line": 1274
+  },
+  {
+   "id": "r124",
+   "anchor": "defaultParams#key:legend.borderpad",
+   "kind": "trail",
+   "line": 1274
+  },
+  {
+   "id": "r125",
+   "anchor": "defaultParams#key:legend.labelspacing",
+   "kind": "lead",
+   "line": 1276
+  },
+  {
+   "id": "r126",
+   "anchor": "defaultParams#key:legend.handlelength",
+   "kind": "lead",
+   "line": 1278
+  },
+  {
+   "id": "r127",
+   "anchor": "defaultParams#key:legend.handleheight",
+   "kind": "lead",
+   "line": 1280
+  },
+  {
+   "id": "r128",
+   "anchor": "defaultParams#key:legend.handletextpad",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r129",
+   "anchor": "defaultParams#key:legend.borderaxespad",
+   "kind": "lead",
+   "line": 1284
+  },
+  {
+   "id": "r130",
+   "anchor": "defaultParams#key:legend.columnspacing",
+   "kind": "lead",
+   "line": 1286
+  },
+  {
+   "id": "r131",
+   "anchor": "defaultParams#key:xtick.top",
+   "kind": "lead",
+   "line": 1291
+  },
+  {
+   "id": "r132",
+   "anchor": "defaultParams#key:xtick.top",
+   "kind": "trail",
+   "line": 1291
+  },
+  {
+   "id": "r133",
+   "anchor": "defaultParams#key:xtick.bottom",
+   "kind": "trail",
+   "line": 1292
+  },
+  {
+   "id": "r134",
+   "anchor": "defaultParams#key:xtick.labeltop",
+   "kind": "trail",
+   "line": 1293
+  },
+  {
+   "id": "r135",
+   "anchor": "defaultParams#key:xtick.labelbottom",
+   "kind": "trail",
+   "line": 1294
+  },
+  {
+   "id": "r136",
+   "anchor": "defaultParams#key:xtick.major.size",
+   "kind": "trail",
+   "line": 1295
+  },
+  {
+   "id": "r137",
+   "anchor": "defaultParams#key:xtick.minor.size",
+   "kind": "trail",
+   "line": 1296
+  },
+  {
+   "id": "r138",
+   "anchor": "defaultParams#key:xtick.major.width",
+   "kind": "trail",
+   "line": 1297
+  },
+  {
+   "id": "r139",
+   "anchor": "defaultParams#key:xtick.minor.width",
+   "kind": "trail",
+   "line": 1298
+  },
+  {
+   "id": "r140",
+   "anchor": "defaultParams#key:xtick.major.pad",
+   "kind": "trail",
+   "line": 1299
+  },
+  {
+   "id": "r141",
+   "anchor": "defaultParams#key:xtick.minor.pad",
+   "kind": "trail",
+   "line": 1300
+  },
+  {
+   "id": "r142",
+   "anchor": "defaultParams#key:xtick.color",
+   "kind": "trail",
+   "line": 1301
+  },
+  {
+   "id": "r143",
+   "anchor": "defaultParams#key:xtick.minor.visible",
+   "kind": "trail",
+   "line": 1302
+  },
+  {
+   "id": "r144",
+   "anchor": "defaultParams#key:xtick.minor.top",
+   "kind": "trail",
+   "line": 1303
+  },
+  {
+   "id": "r145",
+   "anchor": "defaultParams#key:xtick.minor.bottom",
+   "kind": "trail",
+   "line": 1304
+  },
+  {
+   "id": "r146",
+   "anchor": "defaultParams#key:xtick.major.top",
+   "kind": "trail",
+   "line": 1305
+  },
+  {
+   "id": "r147",
+   "anchor": "defaultParams#key:xtick.major.bottom",
+   "kind": "trail",
+   "line": 1306
+  },
+  {
+   "id": "r148",
+   "anchor": "defaultParams#key:xtick.labelsize",
+   "kind": "lead",
+   "line": 1309
+  },
+  {
+   "id": "r149",
+   "anchor": "defaultParams#key:xtick.direction",
+   "kind": "trail",
+   "line": 1310
+  },
+  {
+   "id": "r150",
+   "anchor": "defaultParams#key:ytick.left",
+   "kind": "trail",
+   "line": 1313
+  },
+  {
+   "id": "r151",
+   "anchor": "defaultParams#key:ytick.right",
+   "kind": "trail",
+   "line": 1314
+  },
+  {
+   "id": "r152",
+   "anchor": "defaultParams#key:ytick.labelleft",
+   "kind": "trail",
+   "line": 1315
+  },
+  {
+   "id": "r153",
+   "anchor": "defaultParams#key:ytick.labelright",
+   "kind": "trail",
+   "line": 1316
+  },
+  {
+   "id": "r154",
+   "anchor": "defaultParams#key:ytick.major.size",
+   "kind": "trail",
+   "line": 1317
+  },
+  {
+   "id": "r155",
+   "anchor": "defaultParams#key:ytick.minor.size",
+   "kind": "trail",
+   "line": 1318
+  },
+  {
+   "id": "r156",
+   "anchor": "defaultParams#key:ytick.major.width",
+   "kind": "trail",
+   "line": 1319
+  },
+  {
+   "id": "r157",
+   "anchor": "defaultParams#key:ytick.minor.width",
+   "kind": "trail",
+   "line": 1320
+  },
+  {
+   "id": "r158",
+   "anchor": "defaultParams#key:ytick.major.pad",
+   "kind": "trail",
+   "line": 1321
+  },
+  {
+   "id": "r159",
+   "anchor": "defaultParams#key:ytick.minor.pad",
+   "kind": "trail",
+   "line": 1322
+  },
+  {
+   "id": "r160",
+   "anchor": "defaultParams#key:ytick.color",
+   "kind": "trail",
+   "line": 1323
+  },
+  {
+   "id": "r161",
+   "anchor": "defaultParams#key:ytick.minor.visible",
+   "kind": "trail",
+   "line": 1324
+  },
+  {
+   "id": "r162",
+   "anchor": "defaultParams#key:ytick.minor.left",
+   "kind": "trail",
+   "line": 1325
+  },
+  {
+   "id": "r163",
+   "anchor": "defaultParams#key:ytick.minor.right",
+   "kind": "trail",
+   "line": 1326
+  },
+  {
+   "id": "r164",
+   "anchor": "defaultParams#key:ytick.major.left",
+   "kind": "trail",
+   "line": 1327
+  },
+  {
+   "id": "r165",
+   "anchor": "defaultParams#key:ytick.major.right",
+   "kind": "trail",
+   "line": 1328
+  },
+  {
+   "id": "r166",
+   "anchor": "defaultParams#key:ytick.labelsize",
+   "kind": "lead",
+   "line": 1331
+  },
+  {
+   "id": "r167",
+   "anchor": "defaultParams#key:ytick.direction",
+   "kind": "trail",
+   "line": 1332
+  },
+  {
+   "id": "r168",
+   "anchor": "defaultParams#key:grid.color",
+   "kind": "trail",
+   "line": 1335
+  },
+  {
+   "id": "r169",
+   "anchor": "defaultParams#key:grid.linestyle",
+   "kind": "trail",
+   "line": 1336
+  },
+  {
+   "id": "r170",
+   "anchor": "defaultParams#key:grid.linewidth",
+   "kind": "trail",
+   "line": 1337
+  },
+  {
+   "id": "r171",
+   "anchor": "defaultParams#key:figure.titlesize",
+   "kind": "lead",
+   "line": 1342
+  },
+  {
+   "id": "r172",
+   "anchor": "defaultParams#key:figure.figsize",
+   "kind": "lead",
+   "line": 1346
+  },
+  {
+   "id": "r173",
+   "anchor": "defaultParams#key:figure.dpi",
+   "kind": "trail",
+   "line": 1347
+  },
+  {
+   "id": "r174",
+   "anchor": "defaultParams#key:figure.constrained_layout.use",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r175",
+   "anchor": "defaultParams#key:figure.constrained_layout.hspace",
+   "kind": "lead",
+   "line": 1372
+  },
+  {
+   "id": "r176",
+   "anchor": "defaultParams#key:figure.constrained_layout.h_pad",
+   "kind": "lead",
+   "line": 1377
+  },
+  {
+   "id": "r177",
+   "anchor": "defaultParams#key:savefig.dpi",
+   "kind": "lead",
+   "line": 1381
+  },
+  {
+   "id": "r178",
+   "anchor": "defaultParams#key:savefig.dpi",
+   "kind": "trail",
+   "line": 1381
+  },
+  {
+   "id": "r179",
+   "anchor": "defaultParams#key:savefig.format",
+   "kind": "lead",
+   "line": 1388
+  },
+  {
+   "id": "r180",
+   "anchor": "defaultParams#key:savefig.bbox",
+   "kind": "lead",
+   "line": 1390
+  },
+  {
+   "id": "r181",
+   "anchor": "defaultParams#key:savefig.directory",
+   "kind": "lead",
+   "line": 1393
+  },
+  {
+   "id": "r182",
+   "anchor": "defaultParams#key:tk.window_focus",
+   "kind": "lead",
+   "line": 1397
+  },
+  {
+   "id": "r183",
+   "anchor": "defaultParams#key:ps.papersize",
+   "kind": "lead",
+   "line": 1400
+  },
+  {
+   "id": "r184",
+   "anchor": "defaultParams#key:ps.usedistiller",
+   "kind": "lead",
+   "line": 1403
+  },
+  {
+   "id": "r185",
+   "anchor": "defaultParams#key:ps.distiller.res",
+   "kind": "trail",
+   "line": 1404
+  },
+  {
+   "id": "r186",
+   "anchor": "defaultParams#key:ps.fonttype",
+   "kind": "trail",
+   "line": 1405
+  },
+  {
+   "id": "r187",
+   "anchor": "defaultParams#key:pdf.compression",
+   "kind": "lead",
+   "line": 1407
+  },
+  {
+   "id": "r188",
+   "anchor": "defaultParams#key:pdf.inheritcolor",
+   "kind": "lead",
+   "line": 1409
+  },
+  {
+   "id": "r189",
+   "anchor": "defaultParams#key:pdf.use14corefonts",
+   "kind": "lead",
+   "line": 1411
+  },
+  {
+   "id": "r190",
+   "anchor": "defaultParams#key:pdf.fonttype",
+   "kind": "trail",
+   "line": 1412
+  },
+  {
+   "id": "r191",
+   "anchor": "defaultParams#key:pgf.debug",
+   "kind": "trail",
+   "line": 1414
+  },
+  {
+   "id": "r192",
+   "anchor": "defaultParams#key:pgf.texsystem",
+   "kind": "lead",
+   "line": 1416
+  },
+  {
+   "id": "r193",
+   "anchor": "defaultParams#key:pgf.rcfonts",
+   "kind": "lead",
+   "line": 1418
+  },
+  {
+   "id": "r194",
+   "anchor": "defaultParams#key:pgf.preamble",
+   "kind": "lead",
+   "line": 1420
+  },
+  {
+   "id": "r195",
+   "anchor": "defaultParams#key:svg.image_inline",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r196",
+   "anchor": "defaultParams#key:svg.fonttype",
+   "kind": "lead",
+   "line": 1425
+  },
+  {
+   "id": "r197",
+   "anchor": "defaultParams#key:docstring.hardcopy",
+   "kind": "lead",
+   "line": 1429
+  },
+  {
+   "id": "r198",
+   "anchor": "defaultParams#key:agg.path.chunksize",
+   "kind": "trail",
+   "line": 1436
+  },
+  {
+   "id": "r199",
+   "anchor": "defaultParams#key:keymap.fullscreen",
+   "kind": "lead",
+   "line": 1439
+  },
+  {
+   "id": "r200",
+   "anchor": "defaultParams#key:examples.directory",
+   "kind": "lead",
+   "line": 1459
+  },
+  {
+   "id": "r201",
+   "anchor": "defaultParams#key:animation.html",
+   "kind": "lead",
+   "line": 1462
+  },
+  {
+   "id": "r202",
+   "anchor": "defaultParams#key:animation.embed_limit",
+   "kind": "lead",
+   "line": 1465
+  },
+  {
+   "id": "r203",
+   "anchor": "defaultParams#key:animation.frame_format",
+   "kind": "lead",
+   "line": 1470
+  },
+  {
+   "id": "r204",
+   "anchor": "defaultParams#key:animation.html_args",
+   "kind": "lead",
+   "line": 1472
+  },
+  {
+   "id": "r205",
+   "anchor": "defaultParams#key:animation.ffmpeg_path",
+   "kind": "lead",
+   "line": 1474
+  },
+  {
+   "id": "r206",
+   "anchor": "defaultParams#key:animation.ffmpeg_args",
+   "kind": "lead",
+   "line": 1476
+  },
+  {
+   "id": "r207",
+   "anchor": "defaultParams#key:animation.avconv_path",
+   "kind": "lead",
+   "line": 1478
+  },
+  {
+   "id": "r208",
+   "anchor": "defaultParams#key:animation.avconv_args",
+   "kind": "lead",
+   "line": 1480
+  },
+  {
+   "id": "r209",
+   "anchor": "defaultParams#key:animation.convert_path",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r210",
+   "anchor": "defaultParams#key:animation.convert_args",
+   "kind": "lead",
+   "line": 1484
+  },
+  {
+   "id": "r211",
+   "anchor": "defaultParams#key:_internal.classic_mode",
+   "kind": "lead",
+   "line": 1490
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 38413,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15119,
+  "thinking_tokens": 6105,
+  "opus_cost_usd": 0.7663965,
+  "total_cost_usd": 0.7966595000000001,
+  "duration_ms": 127654,
+  "duration_api_ms": 129696,
+  "num_turns": 2
+ },
+ "wall_ms": 128880,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

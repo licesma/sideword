@@ -1,0 +1,169 @@
+{
+ "blob_sha": "3ba96e7c82832114a56b55dd11212174a3fcd7d8",
+ "path": "astropy/visualization/lupton_rgb.py",
+ "repo": "astropy/astropy",
+ "records": 24,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "compute_intensity",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r4",
+   "anchor": "compute_intensity#return",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "Mapping",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r6",
+   "anchor": "Mapping.make_rgb_image",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r7",
+   "anchor": "Mapping.intensity",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r8",
+   "anchor": "Mapping.map_intensity_to_uint8",
+   "kind": "doc",
+   "line": 128
+  },
+  {
+   "id": "r9",
+   "anchor": "Mapping._convert_images_to_uint8",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r10",
+   "anchor": "Mapping._convert_images_to_uint8#assign:image_r",
+   "kind": "trail",
+   "line": 153
+  },
+  {
+   "id": "r11",
+   "anchor": "Mapping._convert_images_to_uint8#for:c in image_rgb/with:np.errstate(invalid=\"ignore\")/assign:c[c<0]",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r12",
+   "anchor": "Mapping._convert_images_to_uint8#assign:r0, g0, b0",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r13",
+   "anchor": "Mapping._convert_images_to_uint8#with:np.errstate(invalid=\"ignore\", divide=\"ignore\")",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r14",
+   "anchor": "LinearMapping",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r15",
+   "anchor": "LinearMapping.map_intensity_to_uint8#with:np.errstate(invalid=\"ignore\", divide=\"ignore\")",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r16",
+   "anchor": "AsinhMapping",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r17",
+   "anchor": "AsinhMapping.__init__#assign:epsilon",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r18",
+   "anchor": "AsinhMapping.__init__#assign:frac",
+   "kind": "trail",
+   "line": 273
+  },
+  {
+   "id": "r19",
+   "anchor": "AsinhMapping.map_intensity_to_uint8#with:np.errstate(invalid=\"ignore\", divide=\"ignore\")",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r20",
+   "anchor": "AsinhZScaleMapping",
+   "kind": "doc",
+   "line": 284
+  },
+  {
+   "id": "r21",
+   "anchor": "AsinhZScaleMapping.__init__#if:pedestal is not None/assign:image",
+   "kind": "trail",
+   "line": 329
+  },
+  {
+   "id": "r22",
+   "anchor": "AsinhZScaleMapping.__init__#if:pedestal is not None/for:i, im in enumerate(image)/if:pedestal[i]!=0.0/assign:image[i]",
+   "kind": "trail",
+   "line": 332
+  },
+  {
+   "id": "r23",
+   "anchor": "AsinhZScaleMapping.__init__#assign:stretch",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r24",
+   "anchor": "make_lupton_rgb",
+   "kind": "doc",
+   "line": 351
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10190,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2580,
+  "thinking_tokens": 1395,
+  "opus_cost_usd": 0.1706915,
+  "total_cost_usd": 0.1775005,
+  "duration_ms": 25816,
+  "duration_api_ms": 26893,
+  "num_turns": 2
+ },
+ "wall_ms": 26692,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

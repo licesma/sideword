@@ -1,0 +1,259 @@
+{
+ "blob_sha": "9aa20f2b87ee5d1a8325ff2ee6fee717c8ef752a",
+ "path": "xarray/core/formatting.py",
+ "repo": "pydata/xarray",
+ "records": 39,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "pretty_print",
+   "kind": "doc",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "first_n_items",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r4",
+   "anchor": "first_n_items#if:n_desired<1",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r5",
+   "anchor": "first_n_items#if:array.size==0/return",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r6",
+   "anchor": "last_n_items",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "last_n_items#if:(n_desired == 0) or (array.size == 0)",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "last_item",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "last_item#if:array.size==0/return",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r10",
+   "anchor": "format_timestamp",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r11",
+   "anchor": "format_timestamp#try",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r12",
+   "anchor": "format_timestamp#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r13",
+   "anchor": "format_timedelta",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r14",
+   "anchor": "format_timedelta#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r15",
+   "anchor": "format_item",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r16",
+   "anchor": "format_items",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r17",
+   "anchor": "format_array_flat",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r18",
+   "anchor": "format_array_flat#assign:max_possibly_relevant",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r19",
+   "anchor": "format_array_flat#assign:relevant_items",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r20",
+   "anchor": "format_array_flat#assign:pprint_str",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r21",
+   "anchor": "format_array_flat#if:len(pprint_str) > max_width",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r22",
+   "anchor": "inline_dask_repr",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r23",
+   "anchor": "inline_sparse_repr",
+   "kind": "doc",
+   "line": 248
+  },
+  {
+   "id": "r24",
+   "anchor": "inline_variable_array_repr",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r25",
+   "anchor": "inline_variable_array_repr#if:var._in_memory/else/return",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r26",
+   "anchor": "summarize_variable",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r27",
+   "anchor": "summarize_attr",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r28",
+   "anchor": "summarize_attr#assign:k_str",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r29",
+   "anchor": "summarize_attr#assign:v_str",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r30",
+   "anchor": "summarize_attr#return",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r31",
+   "anchor": "_get_col_items",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r32",
+   "anchor": "limit_lines",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r33",
+   "anchor": "short_numpy_repr#assign:options",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r34",
+   "anchor": "short_data_repr",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r35",
+   "anchor": "short_data_repr#if:isinstance(array, np.ndarray)/else/return",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r36",
+   "anchor": "array_repr#if:hasattr(arr, \"name\") and arr.name is not None",
+   "kind": "lead",
+   "line": 473
+  },
+  {
+   "id": "r37",
+   "anchor": "_diff_mapping_repr#for:k in a_keys & b_keys/try/if:not callable(compat)",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r38",
+   "anchor": "_diff_mapping_repr#for:k in a_keys & b_keys/try/except:AttributeError/if:is_array_like(a_mapping[k]) or is_array_like(b_mapping[k])",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r39",
+   "anchor": "diff_array_repr#assign:summary",
+   "kind": "lead",
+   "line": 628
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 15813,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3279,
+  "thinking_tokens": 1663,
+  "opus_cost_usd": 0.24439649999999996,
+  "total_cost_usd": 0.25611549999999994,
+  "duration_ms": 30024,
+  "duration_api_ms": 31214,
+  "num_turns": 2
+ },
+ "wall_ms": 30931,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

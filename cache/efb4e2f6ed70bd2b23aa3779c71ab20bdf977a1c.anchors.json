@@ -1,0 +1,103 @@
+{
+ "blob_sha": "efb4e2f6ed70bd2b23aa3779c71ab20bdf977a1c",
+ "path": "django/db/models/fields/json.py",
+ "repo": "django/django",
+ "records": 13,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "JSONField.from_db_value#if:isinstance(expression, KeyTransform) and not isinstance(value, str)",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r2",
+   "anchor": "compile_json_path#for:key_transform in key_transforms/try/except:ValueError",
+   "kind": "trail",
+   "line": 129
+  },
+  {
+   "id": "r3",
+   "anchor": "HasKeyLookup.as_sql#if:isinstance(self.lhs, KeyTransform)",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r4",
+   "anchor": "HasKeyLookup.as_sql#assign:rhs",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r5",
+   "anchor": "HasKeyLookup.as_sql#if:self.logical_operator",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r6",
+   "anchor": "HasKeyLookup.as_oracle#return",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r7",
+   "anchor": "CaseInsensitiveMixin",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r8",
+   "anchor": "JSONExact.process_rhs#if:rhs == '%s' and rhs_params == [None]",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r9",
+   "anchor": "KeyTransform.preprocess_lhs#if:connection.vendor == 'oracle'/assign:key_transforms",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r10",
+   "anchor": "KeyTransformTextLookupMixin",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r11",
+   "anchor": "KeyTransformIsNull.as_oracle",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r12",
+   "anchor": "KeyTransformIsNull.as_oracle#assign:lhs, lhs_params, _",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r13",
+   "anchor": "KeyTransformExact.as_oracle#if:rhs_params == ['null']/assign:has_key_expr",
+   "kind": "lead",
+   "line": 447
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13062,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1561,
+  "thinking_tokens": 813,
+  "opus_cost_usd": 0.17393650000000002,
+  "total_cost_usd": 0.18279950000000003,
+  "duration_ms": 15464,
+  "duration_api_ms": 16467,
+  "num_turns": 2
+ },
+ "wall_ms": 16510,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

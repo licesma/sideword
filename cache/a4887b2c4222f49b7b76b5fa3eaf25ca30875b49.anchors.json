@@ -1,0 +1,415 @@
+{
+ "blob_sha": "a4887b2c4222f49b7b76b5fa3eaf25ca30875b49",
+ "path": "seaborn/utils.py",
+ "repo": "mwaskom/seaborn",
+ "records": 65,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ci_to_errsize",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "_normal_quantile_func",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r4",
+   "anchor": "_draw_figure",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r5",
+   "anchor": "_draw_figure#call:fig.canvas.draw",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r6",
+   "anchor": "_default_color",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r7",
+   "anchor": "_default_color#if:hue is not None/return",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r8",
+   "anchor": "_default_color#if:color is not None/elif:method.__name__ == \"scatter\"/assign:scout_size",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r9",
+   "anchor": "_default_color#if:color is not None/elif:method.__name__ == \"scatter\"/if:not len(facecolors)/assign:single_color",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r10",
+   "anchor": "_default_color#if:color is not None/elif:method.__name__ == \"scatter\"/if:\"c\" not in kws and single_color",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r11",
+   "anchor": "_default_color#if:color is not None/elif:method.__name__ == \"bar\"/assign:scout",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r12",
+   "anchor": "_default_color#if:color is not None/elif:method.__name__ == \"fill_between\"/assign:ax",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r13",
+   "anchor": "desaturate",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r14",
+   "anchor": "desaturate#if:not 0 <= prop <= 1",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r15",
+   "anchor": "desaturate#assign:rgb",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r16",
+   "anchor": "desaturate#assign:h, l, s",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r17",
+   "anchor": "desaturate#assign:s",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r18",
+   "anchor": "desaturate#assign:new_color",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r19",
+   "anchor": "saturate",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r20",
+   "anchor": "set_hls_values",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r21",
+   "anchor": "set_hls_values#assign:rgb",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r22",
+   "anchor": "axlabel",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r23",
+   "anchor": "remove_na",
+   "kind": "doc",
+   "line": 260
+  },
+  {
+   "id": "r24",
+   "anchor": "get_color_cycle",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r25",
+   "anchor": "despine",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r26",
+   "anchor": "despine#if:fig is None and ax is None",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r27",
+   "anchor": "despine#for:ax_i in axes/for:side in [\"top\", \"right\", \"left\", \"bottom\"]/assign:is_visible",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r28",
+   "anchor": "despine#for:ax_i in axes/if:left and not right",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r29",
+   "anchor": "despine#for:ax_i in axes/if:trim/assign:xticks",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r30",
+   "anchor": "move_legend",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r31",
+   "anchor": "move_legend#import:seaborn.axisgrid",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r32",
+   "anchor": "move_legend#import:seaborn.axisgrid",
+   "kind": "trail",
+   "line": 428
+  },
+  {
+   "id": "r33",
+   "anchor": "move_legend#if:isinstance(obj, Grid)",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r34",
+   "anchor": "move_legend#assign:handles",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r35",
+   "anchor": "move_legend#assign:legend_kws",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r36",
+   "anchor": "move_legend#call:props.pop",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r37",
+   "anchor": "move_legend#assign:title",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r38",
+   "anchor": "move_legend#call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 473
+  },
+  {
+   "id": "r39",
+   "anchor": "move_legend#call:props.update",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r40",
+   "anchor": "move_legend#if:isinstance(obj, Grid)",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r41",
+   "anchor": "_kde_support",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r42",
+   "anchor": "ci",
+   "kind": "doc",
+   "line": 495
+  },
+  {
+   "id": "r43",
+   "anchor": "get_dataset_names",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r44",
+   "anchor": "get_data_home",
+   "kind": "doc",
+   "line": 516
+  },
+  {
+   "id": "r45",
+   "anchor": "load_dataset",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r46",
+   "anchor": "load_dataset#if:isinstance(name, pd.DataFrame)",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r47",
+   "anchor": "load_dataset#if:name == \"tips\"",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r48",
+   "anchor": "axis_ticklabels_overlap",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r49",
+   "anchor": "axis_ticklabels_overlap#try/except:RuntimeError/return",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r50",
+   "anchor": "axes_ticklabels_overlap",
+   "kind": "doc",
+   "line": 666
+  },
+  {
+   "id": "r51",
+   "anchor": "locator_to_legend_entries",
+   "kind": "doc",
+   "line": 683
+  },
+  {
+   "id": "r52",
+   "anchor": "locator_to_legend_entries#assign:raw_levels",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r53",
+   "anchor": "locator_to_legend_entries#call:formatter.set_locs",
+   "kind": "todo",
+   "line": 703
+  },
+  {
+   "id": "r54",
+   "anchor": "relative_luminance",
+   "kind": "doc",
+   "line": 709
+  },
+  {
+   "id": "r55",
+   "anchor": "to_utf8",
+   "kind": "doc",
+   "line": 731
+  },
+  {
+   "id": "r56",
+   "anchor": "to_utf8#try/except:AttributeError",
+   "kind": "trail",
+   "line": 756
+  },
+  {
+   "id": "r57",
+   "anchor": "_normalize_kwargs",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r58",
+   "anchor": "_check_argument",
+   "kind": "doc",
+   "line": 780
+  },
+  {
+   "id": "r59",
+   "anchor": "_assign_default_kwargs",
+   "kind": "doc",
+   "line": 788
+  },
+  {
+   "id": "r60",
+   "anchor": "_assign_default_kwargs#assign:needed",
+   "kind": "lead",
+   "line": 797
+  },
+  {
+   "id": "r61",
+   "anchor": "adjust_legend_subtitles",
+   "kind": "doc",
+   "line": 807
+  },
+  {
+   "id": "r62",
+   "anchor": "adjust_legend_subtitles#assign:font_size",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r63",
+   "anchor": "_deprecate_ci",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r64",
+   "anchor": "_disable_autolayout",
+   "kind": "doc",
+   "line": 853
+  },
+  {
+   "id": "r65",
+   "anchor": "_disable_autolayout#assign:orig_val",
+   "kind": "lead",
+   "line": 863
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19992,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4921,
+  "thinking_tokens": 2243,
+  "opus_cost_usd": 0.3272365,
+  "total_cost_usd": 0.3418635,
+  "duration_ms": 44593,
+  "duration_api_ms": 45964,
+  "num_turns": 2
+ },
+ "wall_ms": 45479,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

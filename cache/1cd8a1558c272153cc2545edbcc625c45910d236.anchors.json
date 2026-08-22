@@ -1,0 +1,1705 @@
+{
+ "blob_sha": "1cd8a1558c272153cc2545edbcc625c45910d236",
+ "path": "astropy/modeling/core.py",
+ "repo": "astropy/astropy",
+ "records": 280,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "_model_oper",
+   "kind": "doc",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "ModelDefinitionError",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "_ModelMeta",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "_ModelMeta._is_dynamic",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r7",
+   "anchor": "_ModelMeta.__new__",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "_ModelMeta.__new__#if:'_is_dynamic' not in members",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "_ModelMeta.__new__#for:base in bases",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r10",
+   "anchor": "_ModelMeta.__new__#for:base in bases/for:tbase in base.__mro__/if:issubclass(tbase, Model)/assign:param_names",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "_ModelMeta.__new__#assign:param_names",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r12",
+   "anchor": "_ModelMeta.__new__#if:cls._parameters_/if:hasattr(cls, '_param_names')/assign:cls._param_names",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r13",
+   "anchor": "_ModelMeta.__repr__",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r14",
+   "anchor": "_ModelMeta._repr_pretty_",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r15",
+   "anchor": "_ModelMeta.__reduce__#if:not cls._is_dynamic/return",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r16",
+   "anchor": "_ModelMeta.__reduce__#for:key in list(members)",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r17",
+   "anchor": "_ModelMeta.__reduce__#for:key in ('__init__', '__call__')",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r18",
+   "anchor": "_ModelMeta.name",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r19",
+   "anchor": "_ModelMeta._is_concrete",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r20",
+   "anchor": "_ModelMeta.rename",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r21",
+   "anchor": "_ModelMeta._create_inverse_property#if:inverse is None or cls.__bases__[0] is object/return",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r22",
+   "anchor": "_ModelMeta._create_inverse_property#if:isinstance(inverse, property)/assign:inverse",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r23",
+   "anchor": "_ModelMeta._create_inverse_property#assign:cls._inverse",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r24",
+   "anchor": "_ModelMeta._create_bounding_box_property",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r25",
+   "anchor": "_ModelMeta._create_bounding_box_property#assign:bounding_box",
+   "kind": "todo",
+   "line": 276
+  },
+  {
+   "id": "r26",
+   "anchor": "_ModelMeta._create_bounding_box_property#if:not callable(bounding_box)/try",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r27",
+   "anchor": "_ModelMeta._create_bounding_box_property#if:not callable(bounding_box)/else/if:len(sig.parameters) > 1",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r28",
+   "anchor": "_ModelMeta._create_bounding_box_property#assign:cls._bounding_box",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r29",
+   "anchor": "_ModelMeta._create_bounding_box_subclass",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r30",
+   "anchor": "_ModelMeta._create_bounding_box_subclass.__call__",
+   "kind": "todo",
+   "line": 328
+  },
+  {
+   "id": "r31",
+   "anchor": "_ModelMeta._create_bounding_box_subclass#for:idx, param in enumerate(sig.parameters.values())/if:idx == 0/continue",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r32",
+   "anchor": "_ModelMeta._handle_special_methods.update_wrapper",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r33",
+   "anchor": "_ModelMeta._handle_special_methods.update_wrapper#assign:wrapper.__module__",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r34",
+   "anchor": "_ModelMeta._handle_special_methods.__call__",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r35",
+   "anchor": "_ModelMeta._handle_special_methods.__call__",
+   "kind": "doc",
+   "line": 372
+  },
+  {
+   "id": "r36",
+   "anchor": "_ModelMeta._handle_special_methods#if:'__call__' not in members and 'n_inputs' in members and isinstance(members['n_inputs'], int) and members['n_inputs'] > 0/assign:args",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r37",
+   "anchor": "_ModelMeta._handle_special_methods#if:'__call__' not in members and 'n_inputs' in members and isinstance(members['n_inputs'], int) and members['n_inputs'] > 0/call:update_wrapper",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r38",
+   "anchor": "_ModelMeta._handle_special_methods#if:'__init__' not in members and not inspect.isabstract(cls) and cls._parameters_/if:all(p.default is not None for p in pdict.values())",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r39",
+   "anchor": "_ModelMeta._handle_special_methods#if:'__init__' not in members and not inspect.isabstract(cls) and cls._parameters_/if:all(p.default is not None for p in pdict.values())",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r40",
+   "anchor": "_ModelMeta._handle_special_methods#if:'__init__' not in members and not inspect.isabstract(cls) and cls._parameters_/if:all(p.default is not None for p in pdict.values())/for:param_name, param_val in pdict.items()/if:unit is not None",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r41",
+   "anchor": "_ModelMeta.__add__",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r42",
+   "anchor": "_ModelMeta._format_cls_repr",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r43",
+   "anchor": "_ModelMeta._format_cls_repr",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r44",
+   "anchor": "_ModelMeta._format_cls_repr#assign:parts",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r45",
+   "anchor": "_ModelMeta._format_cls_repr#try/except:Exception/return",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r46",
+   "anchor": "Model",
+   "kind": "doc",
+   "line": 498
+  },
+  {
+   "id": "r47",
+   "anchor": "Model.parameter_constraints",
+   "kind": "doc",
+   "line": 618
+  },
+  {
+   "id": "r48",
+   "anchor": "Model.model_constraints",
+   "kind": "doc",
+   "line": 624
+  },
+  {
+   "id": "r49",
+   "anchor": "Model.param_names",
+   "kind": "doc",
+   "line": 630
+  },
+  {
+   "id": "r50",
+   "anchor": "Model#assign:n_inputs",
+   "kind": "doc",
+   "line": 644
+  },
+  {
+   "id": "r51",
+   "anchor": "Model#assign:n_outputs",
+   "kind": "doc",
+   "line": 646
+  },
+  {
+   "id": "r52",
+   "anchor": "Model._separable",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r53",
+   "anchor": "Model.meta",
+   "kind": "doc",
+   "line": 654
+  },
+  {
+   "id": "r54",
+   "anchor": "Model._inverse",
+   "kind": "lead",
+   "line": 662
+  },
+  {
+   "id": "r55",
+   "anchor": "Model._n_models",
+   "kind": "lead",
+   "line": 672
+  },
+  {
+   "id": "r56",
+   "anchor": "Model._input_units_strict",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r57",
+   "anchor": "Model._input_units_allow_dimensionless",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r58",
+   "anchor": "Model.input_units_equivalencies",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r59",
+   "anchor": "Model._cov_matrix",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r60",
+   "anchor": "Model.__init__#assign:mro",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r61",
+   "anchor": "Model.__init__#call:self._initialize_parameters",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r62",
+   "anchor": "Model._default_inputs_outputs#try/except:TypeError/assign:self._inputs",
+   "kind": "lead",
+   "line": 738
+  },
+  {
+   "id": "r63",
+   "anchor": "Model._initialize_setters",
+   "kind": "doc",
+   "line": 741
+  },
+  {
+   "id": "r64",
+   "anchor": "Model.n_inputs#if:hasattr(self.__class__, 'n_inputs') and isinstance(self.__class__.n_inputs, property)",
+   "kind": "todo",
+   "line": 779
+  },
+  {
+   "id": "r65",
+   "anchor": "Model.n_outputs#if:hasattr(self.__class__, 'n_outputs') and isinstance(self.__class__.n_outputs, property)",
+   "kind": "todo",
+   "line": 794
+  },
+  {
+   "id": "r66",
+   "anchor": "Model._calculate_separability_matrix",
+   "kind": "doc",
+   "line": 805
+  },
+  {
+   "id": "r67",
+   "anchor": "Model._initialize_unit_support",
+   "kind": "doc",
+   "line": 814
+  },
+  {
+   "id": "r68",
+   "anchor": "Model.input_units_strict",
+   "kind": "doc",
+   "line": 828
+  },
+  {
+   "id": "r69",
+   "anchor": "Model.input_units_allow_dimensionless",
+   "kind": "doc",
+   "line": 842
+  },
+  {
+   "id": "r70",
+   "anchor": "Model.uses_quantity",
+   "kind": "doc",
+   "line": 857
+  },
+  {
+   "id": "r71",
+   "anchor": "Model.__setattr__#if:param_names is not None and attr in self.param_names/assign:eshape",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r72",
+   "anchor": "Model._pre_evaluate",
+   "kind": "doc",
+   "line": 924
+  },
+  {
+   "id": "r73",
+   "anchor": "Model._pre_evaluate#assign:inputs, broadcasted_shapes",
+   "kind": "lead",
+   "line": 930
+  },
+  {
+   "id": "r74",
+   "anchor": "Model._pre_evaluate#assign:parameters",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r75",
+   "anchor": "Model.get_bounding_box",
+   "kind": "doc",
+   "line": 940
+  },
+  {
+   "id": "r76",
+   "anchor": "Model._argnames",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r77",
+   "anchor": "Model._validate_input_shape",
+   "kind": "doc",
+   "line": 970
+  },
+  {
+   "id": "r78",
+   "anchor": "Model._validate_input_shape#if:input_shape and check_model_set_axis",
+   "kind": "lead",
+   "line": 980
+  },
+  {
+   "id": "r79",
+   "anchor": "Model._validate_input_shape#if:input_shape and check_model_set_axis/if:len(input_shape) < model_set_axis + 1",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r80",
+   "anchor": "Model._validate_input_shape#if:input_shape and check_model_set_axis/if:input_shape[model_set_axis] != self._n_models/try/except:IndexError/assign:argname",
+   "kind": "lead",
+   "line": 991
+  },
+  {
+   "id": "r81",
+   "anchor": "Model._validate_input_shapes",
+   "kind": "doc",
+   "line": 1000
+  },
+  {
+   "id": "r82",
+   "anchor": "Model.input_shape",
+   "kind": "doc",
+   "line": 1024
+  },
+  {
+   "id": "r83",
+   "anchor": "Model._generic_evaluate",
+   "kind": "doc",
+   "line": 1028
+  },
+  {
+   "id": "r84",
+   "anchor": "Model._generic_evaluate#assign:bbox",
+   "kind": "lead",
+   "line": 1036
+  },
+  {
+   "id": "r85",
+   "anchor": "Model._post_evaluate",
+   "kind": "doc",
+   "line": 1043
+  },
+  {
+   "id": "r86",
+   "anchor": "Model.__call__",
+   "kind": "doc",
+   "line": 1061
+  },
+  {
+   "id": "r87",
+   "anchor": "Model.__call__#assign:args, kwargs",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r88",
+   "anchor": "Model.__call__#assign:with_bbox",
+   "kind": "lead",
+   "line": 1070
+  },
+  {
+   "id": "r89",
+   "anchor": "Model.__call__#assign:evaluate, inputs, broadcasted_shapes, kwargs",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r90",
+   "anchor": "Model.__call__#return",
+   "kind": "lead",
+   "line": 1080
+  },
+  {
+   "id": "r91",
+   "anchor": "Model._get_renamed_inputs_as_positional._keyword2positional#assign:keys",
+   "kind": "lead",
+   "line": 1094
+  },
+  {
+   "id": "r92",
+   "anchor": "Model._get_renamed_inputs_as_positional._keyword2positional#assign:keys",
+   "kind": "lead",
+   "line": 1094
+  },
+  {
+   "id": "r93",
+   "anchor": "Model._get_renamed_inputs_as_positional._keyword2positional#assign:allkeys",
+   "kind": "lead",
+   "line": 1099
+  },
+  {
+   "id": "r94",
+   "anchor": "Model._get_renamed_inputs_as_positional._keyword2positional#for:key in allkeys",
+   "kind": "lead",
+   "line": 1102
+  },
+  {
+   "id": "r95",
+   "anchor": "Model._get_renamed_inputs_as_positional#if:n_args == 0/assign:new_args",
+   "kind": "lead",
+   "line": 1120
+  },
+  {
+   "id": "r96",
+   "anchor": "Model._get_renamed_inputs_as_positional#if:n_args == 0/elif:n_args != self.n_inputs/assign:args",
+   "kind": "lead",
+   "line": 1125
+  },
+  {
+   "id": "r97",
+   "anchor": "Model._get_renamed_inputs_as_positional#if:n_args == 0/elif:n_args != self.n_inputs/assign:new_args",
+   "kind": "lead",
+   "line": 1128
+  },
+  {
+   "id": "r98",
+   "anchor": "Model.name",
+   "kind": "lead",
+   "line": 1141
+  },
+  {
+   "id": "r99",
+   "anchor": "Model.name",
+   "kind": "doc",
+   "line": 1141
+  },
+  {
+   "id": "r100",
+   "anchor": "Model.name",
+   "kind": "doc",
+   "line": 1147
+  },
+  {
+   "id": "r101",
+   "anchor": "Model.model_set_axis",
+   "kind": "doc",
+   "line": 1153
+  },
+  {
+   "id": "r102",
+   "anchor": "Model.param_sets",
+   "kind": "doc",
+   "line": 1166
+  },
+  {
+   "id": "r103",
+   "anchor": "Model.parameters",
+   "kind": "doc",
+   "line": 1178
+  },
+  {
+   "id": "r104",
+   "anchor": "Model.parameters#if:not self.param_names",
+   "kind": "lead",
+   "line": 1189
+  },
+  {
+   "id": "r105",
+   "anchor": "Model.parameters#if:not self.param_names/return",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r106",
+   "anchor": "Model.parameters",
+   "kind": "doc",
+   "line": 1200
+  },
+  {
+   "id": "r107",
+   "anchor": "Model.sync_constraints",
+   "kind": "doc",
+   "line": 1222
+  },
+  {
+   "id": "r108",
+   "anchor": "Model.fixed",
+   "kind": "doc",
+   "line": 1240
+  },
+  {
+   "id": "r109",
+   "anchor": "Model.bounds",
+   "kind": "doc",
+   "line": 1249
+  },
+  {
+   "id": "r110",
+   "anchor": "Model.tied",
+   "kind": "doc",
+   "line": 1259
+  },
+  {
+   "id": "r111",
+   "anchor": "Model.eqcons",
+   "kind": "doc",
+   "line": 1268
+  },
+  {
+   "id": "r112",
+   "anchor": "Model.ineqcons",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r113",
+   "anchor": "Model.has_inverse",
+   "kind": "doc",
+   "line": 1279
+  },
+  {
+   "id": "r114",
+   "anchor": "Model.inverse",
+   "kind": "doc",
+   "line": 1292
+  },
+  {
+   "id": "r115",
+   "anchor": "Model.inverse",
+   "kind": "doc",
+   "line": 1336
+  },
+  {
+   "id": "r116",
+   "anchor": "Model.has_user_inverse",
+   "kind": "doc",
+   "line": 1348
+  },
+  {
+   "id": "r117",
+   "anchor": "Model.bounding_box",
+   "kind": "doc",
+   "line": 1356
+  },
+  {
+   "id": "r118",
+   "anchor": "Model.bounding_box#if:self._user_bounding_box is not None/elif:isinstance(self._bounding_box, ModelBoundingBox)/return",
+   "kind": "lead",
+   "line": 1429
+  },
+  {
+   "id": "r119",
+   "anchor": "Model.bounding_box#if:self._user_bounding_box is not None/else/assign:bounding_box",
+   "kind": "lead",
+   "line": 1438
+  },
+  {
+   "id": "r120",
+   "anchor": "Model.bounding_box",
+   "kind": "doc",
+   "line": 1442
+  },
+  {
+   "id": "r121",
+   "anchor": "Model.bounding_box#if:bounding_box is None/assign:bounding_box",
+   "kind": "lead",
+   "line": 1451
+  },
+  {
+   "id": "r122",
+   "anchor": "Model.has_user_bounding_box",
+   "kind": "doc",
+   "line": 1480
+  },
+  {
+   "id": "r123",
+   "anchor": "Model.cov_matrix",
+   "kind": "doc",
+   "line": 1490
+  },
+  {
+   "id": "r124",
+   "anchor": "Model.cov_matrix#if:type(cov) == list",
+   "kind": "trail",
+   "line": 1503
+  },
+  {
+   "id": "r125",
+   "anchor": "Model.stds",
+   "kind": "doc",
+   "line": 1519
+  },
+  {
+   "id": "r126",
+   "anchor": "Model.separable",
+   "kind": "doc",
+   "line": 1530
+  },
+  {
+   "id": "r127",
+   "anchor": "Model.without_units_for_data",
+   "kind": "lead",
+   "line": 1541
+  },
+  {
+   "id": "r128",
+   "anchor": "Model.without_units_for_data",
+   "kind": "doc",
+   "line": 1541
+  },
+  {
+   "id": "r129",
+   "anchor": "Model.output_units",
+   "kind": "doc",
+   "line": 1586
+  },
+  {
+   "id": "r130",
+   "anchor": "Model.with_units_from_data",
+   "kind": "doc",
+   "line": 1626
+  },
+  {
+   "id": "r131",
+   "anchor": "Model.with_units_from_data#for:name, unit in parameter_units.items()",
+   "kind": "lead",
+   "line": 1662
+  },
+  {
+   "id": "r132",
+   "anchor": "Model._has_units#for:param in self.param_names",
+   "kind": "lead",
+   "line": 1671
+  },
+  {
+   "id": "r133",
+   "anchor": "Model._supports_unit_fitting#return",
+   "kind": "lead",
+   "line": 1682
+  },
+  {
+   "id": "r134",
+   "anchor": "Model.evaluate",
+   "kind": "doc",
+   "line": 1685
+  },
+  {
+   "id": "r135",
+   "anchor": "Model.sum_of_implicit_terms",
+   "kind": "doc",
+   "line": 1688
+  },
+  {
+   "id": "r136",
+   "anchor": "Model.render",
+   "kind": "doc",
+   "line": 1701
+  },
+  {
+   "id": "r137",
+   "anchor": "Model.render#if:ndim == 1",
+   "kind": "lead",
+   "line": 1758
+  },
+  {
+   "id": "r138",
+   "anchor": "Model.render#if:coords is not None/assert:len(coords) == ndim",
+   "kind": "lead",
+   "line": 1767
+  },
+  {
+   "id": "r139",
+   "anchor": "Model.render#if:bbox is not None/assign:pd",
+   "kind": "lead",
+   "line": 1783
+  },
+  {
+   "id": "r140",
+   "anchor": "Model.input_units",
+   "kind": "doc",
+   "line": 1820
+  },
+  {
+   "id": "r141",
+   "anchor": "Model.input_units#if:hasattr(self, '_input_units')/elif:hasattr(self.evaluate, '__annotations__')/if:annotations/return",
+   "kind": "lead",
+   "line": 1838
+  },
+  {
+   "id": "r142",
+   "anchor": "Model.input_units#if:hasattr(self, '_input_units')/else/return",
+   "kind": "lead",
+   "line": 1841
+  },
+  {
+   "id": "r143",
+   "anchor": "Model.return_units",
+   "kind": "doc",
+   "line": 1844
+  },
+  {
+   "id": "r144",
+   "anchor": "Model.return_units#if:hasattr(self, '_return_units')/else/return",
+   "kind": "lead",
+   "line": 1861
+  },
+  {
+   "id": "r145",
+   "anchor": "Model._prepare_inputs_single_model#for:idx, _input in enumerate(inputs)/if:not input_shape",
+   "kind": "lead",
+   "line": 1871
+  },
+  {
+   "id": "r146",
+   "anchor": "Model._prepare_inputs_single_model#if:self.n_outputs > self.n_inputs/if:not broadcasts/call:broadcasts.append",
+   "kind": "lead",
+   "line": 1904
+  },
+  {
+   "id": "r147",
+   "anchor": "Model._remove_axes_from_shape",
+   "kind": "doc",
+   "line": 1910
+  },
+  {
+   "id": "r148",
+   "anchor": "Model._prepare_inputs_model_set#assign:model_set_axis_param",
+   "kind": "trail",
+   "line": 1931
+  },
+  {
+   "id": "r149",
+   "anchor": "Model._prepare_inputs_model_set#for:idx, _input in enumerate(inputs)/if:self._n_models > 1 and model_set_axis_input is not False/assign:input_shape",
+   "kind": "lead",
+   "line": 1936
+  },
+  {
+   "id": "r150",
+   "anchor": "Model._prepare_inputs_model_set#for:idx, _input in enumerate(inputs)/assign:input_ndim",
+   "kind": "lead",
+   "line": 1958
+  },
+  {
+   "id": "r151",
+   "anchor": "Model._prepare_inputs_model_set#for:idx, _input in enumerate(inputs)/if:model_set_axis_input is False/if:len(max_param_shape) > input_ndim/assign:n_new_axes",
+   "kind": "lead",
+   "line": 1962
+  },
+  {
+   "id": "r152",
+   "anchor": "Model.prepare_inputs",
+   "kind": "doc",
+   "line": 1991
+  },
+  {
+   "id": "r153",
+   "anchor": "Model.prepare_inputs#if:model_set_axis is None",
+   "kind": "lead",
+   "line": 2004
+  },
+  {
+   "id": "r154",
+   "anchor": "Model.prepare_inputs#if:model_set_axis is None/assign:model_set_axis",
+   "kind": "lead",
+   "line": 2008
+  },
+  {
+   "id": "r155",
+   "anchor": "Model.prepare_inputs#if:self._n_models == 1",
+   "kind": "lead",
+   "line": 2022
+  },
+  {
+   "id": "r156",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None",
+   "kind": "lead",
+   "line": 2033
+  },
+  {
+   "id": "r157",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/if:inputs_map",
+   "kind": "lead",
+   "line": 2037
+  },
+  {
+   "id": "r158",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/assign:input_units_equivalencies",
+   "kind": "lead",
+   "line": 2046
+  },
+  {
+   "id": "r159",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/for:i in range(len(inputs))",
+   "kind": "lead",
+   "line": 2052
+  },
+  {
+   "id": "r160",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/for:i in range(len(inputs))/if:isinstance(inputs[i], Quantity)/if:inputs[i].unit.is_equivalent(input_unit, equivalencies=input_units_equivalencies[input_name])",
+   "kind": "lead",
+   "line": 2065
+  },
+  {
+   "id": "r161",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/for:i in range(len(inputs))/if:isinstance(inputs[i], Quantity)/if:inputs[i].unit.is_equivalent(input_unit, equivalencies=input_units_equivalencies[input_name])/if:len(input_units_equivalencies) > 0 or self.input_units_strict[input_name]",
+   "kind": "lead",
+   "line": 2075
+  },
+  {
+   "id": "r162",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/for:i in range(len(inputs))/if:isinstance(inputs[i], Quantity)/if:inputs[i].unit.is_equivalent(input_unit, equivalencies=input_units_equivalencies[input_name])/else/if:input_unit is dimensionless_unscaled",
+   "kind": "lead",
+   "line": 2086
+  },
+  {
+   "id": "r163",
+   "anchor": "Model._validate_input_units#if:self.input_units is not None/for:i in range(len(inputs))/if:isinstance(inputs[i], Quantity)/else/if:not self.input_units_allow_dimensionless[input_name] and input_unit is not dimensionless_unscaled and input_unit is not None",
+   "kind": "lead",
+   "line": 2104
+  },
+  {
+   "id": "r164",
+   "anchor": "Model._process_output_units#if:self.return_units and inputs_are_quantity/if:self.n_outputs == 1 and not isiterable(self.return_units)",
+   "kind": "lead",
+   "line": 2118
+  },
+  {
+   "id": "r165",
+   "anchor": "Model._prepare_outputs_model_set#if:model_set_axis is None or model_set_axis is False",
+   "kind": "lead",
+   "line": 2159
+  },
+  {
+   "id": "r166",
+   "anchor": "Model.copy",
+   "kind": "doc",
+   "line": 2177
+  },
+  {
+   "id": "r167",
+   "anchor": "Model.deepcopy",
+   "kind": "doc",
+   "line": 2187
+  },
+  {
+   "id": "r168",
+   "anchor": "Model.rename",
+   "kind": "doc",
+   "line": 2196
+  },
+  {
+   "id": "r169",
+   "anchor": "Model.coerce_units",
+   "kind": "doc",
+   "line": 2204
+  },
+  {
+   "id": "r170",
+   "anchor": "Model.n_submodels",
+   "kind": "doc",
+   "line": 2350
+  },
+  {
+   "id": "r171",
+   "anchor": "Model._initialize_constraints",
+   "kind": "doc",
+   "line": 2357
+  },
+  {
+   "id": "r172",
+   "anchor": "Model._initialize_constraints#for:constraint in self.parameter_constraints",
+   "kind": "lead",
+   "line": 2364
+  },
+  {
+   "id": "r173",
+   "anchor": "Model._initialize_parameters",
+   "kind": "doc",
+   "line": 2374
+  },
+  {
+   "id": "r174",
+   "anchor": "Model._initialize_parameters#if:model_set_axis is None/if:n_models is not None and n_models > 1/assign:model_set_axis",
+   "kind": "lead",
+   "line": 2395
+  },
+  {
+   "id": "r175",
+   "anchor": "Model._initialize_parameters#if:model_set_axis is None/if:n_models is not None and n_models > 1/else/assign:model_set_axis",
+   "kind": "lead",
+   "line": 2398
+  },
+  {
+   "id": "r176",
+   "anchor": "Model._initialize_parameters#assign:params",
+   "kind": "lead",
+   "line": 2410
+  },
+  {
+   "id": "r177",
+   "anchor": "Model._initialize_parameters#for:idx, arg in enumerate(args)/if:arg is None/continue",
+   "kind": "lead",
+   "line": 2422
+  },
+  {
+   "id": "r178",
+   "anchor": "Model._initialize_parameters#for:idx, arg in enumerate(args)/assign:param_name",
+   "kind": "lead",
+   "line": 2426
+  },
+  {
+   "id": "r179",
+   "anchor": "Model._initialize_parameters#for:param_name in self.param_names",
+   "kind": "lead",
+   "line": 2436
+  },
+  {
+   "id": "r180",
+   "anchor": "Model._initialize_parameters#for:param_name in self.param_names/if:param_name in kwargs/assign:value",
+   "kind": "lead",
+   "line": 2448
+  },
+  {
+   "id": "r181",
+   "anchor": "Model._initialize_parameters#for:param_name in self.param_names",
+   "kind": "lead",
+   "line": 2452
+  },
+  {
+   "id": "r182",
+   "anchor": "Model._initialize_parameters#if:kwargs/for:kwarg in kwargs",
+   "kind": "lead",
+   "line": 2460
+  },
+  {
+   "id": "r183",
+   "anchor": "Model._initialize_parameters#if:kwargs/for:kwarg in kwargs/raise:TypeError",
+   "kind": "lead",
+   "line": 2462
+  },
+  {
+   "id": "r184",
+   "anchor": "Model._initialize_parameters#if:model_set_axis is not False and n_models != 1 and params",
+   "kind": "lead",
+   "line": 2471
+  },
+  {
+   "id": "r185",
+   "anchor": "Model._initialize_parameters#if:model_set_axis is not False and n_models != 1 and params/for:name in self.param_names/if:n_models is None/assign:n_models",
+   "kind": "lead",
+   "line": 2492
+  },
+  {
+   "id": "r186",
+   "anchor": "Model._initialize_parameters#for:name in params",
+   "kind": "lead",
+   "line": 2508
+  },
+  {
+   "id": "r187",
+   "anchor": "Model._initialize_parameter_value",
+   "kind": "doc",
+   "line": 2513
+  },
+  {
+   "id": "r188",
+   "anchor": "Model._initialize_parameter_value#if:value is None",
+   "kind": "lead",
+   "line": 2520
+  },
+  {
+   "id": "r189",
+   "anchor": "Model._initialize_parameter_value#if:value is None/if:default is None/raise:TypeError",
+   "kind": "lead",
+   "line": 2526
+  },
+  {
+   "id": "r190",
+   "anchor": "Model._parameters_to_array#assign:param_metrics",
+   "kind": "lead",
+   "line": 2576
+  },
+  {
+   "id": "r191",
+   "anchor": "Model._parameters_to_array#for:name in self.param_names",
+   "kind": "post",
+   "line": 2577
+  },
+  {
+   "id": "r192",
+   "anchor": "Model._check_param_broadcast",
+   "kind": "doc",
+   "line": 2596
+  },
+  {
+   "id": "r193",
+   "anchor": "Model._check_param_broadcast#for:name in self.param_names/if:max_ndim is not None and param_ndim < max_ndim/assign:new_axes",
+   "kind": "lead",
+   "line": 2622
+  },
+  {
+   "id": "r194",
+   "anchor": "Model._check_param_broadcast#for:name in self.param_names/if:max_ndim is not None and param_ndim < max_ndim/if:model_set_axis < 0/assign:broadcast_shape",
+   "kind": "lead",
+   "line": 2626
+  },
+  {
+   "id": "r195",
+   "anchor": "Model._check_param_broadcast#try",
+   "kind": "lead",
+   "line": 2637
+  },
+  {
+   "id": "r196",
+   "anchor": "Model._param_sets",
+   "kind": "doc",
+   "line": 2650
+  },
+  {
+   "id": "r197",
+   "anchor": "Model._param_sets#for:name in self.param_names/if:len(self) == 1/assign:value",
+   "kind": "lead",
+   "line": 2684
+  },
+  {
+   "id": "r198",
+   "anchor": "Model._param_sets#if:len(set(shapes)) != 1 or units/assign:psets",
+   "kind": "lead",
+   "line": 2705
+  },
+  {
+   "id": "r199",
+   "anchor": "Model._format_repr",
+   "kind": "doc",
+   "line": 2711
+  },
+  {
+   "id": "r200",
+   "anchor": "Model._format_str",
+   "kind": "doc",
+   "line": 2739
+  },
+  {
+   "id": "r201",
+   "anchor": "Model._format_str#if:columns/for:name in self.param_names",
+   "kind": "lead",
+   "line": 2776
+  },
+  {
+   "id": "r202",
+   "anchor": "FittableModel",
+   "kind": "doc",
+   "line": 2783
+  },
+  {
+   "id": "r203",
+   "anchor": "FittableModel.fit_deriv",
+   "kind": "lead",
+   "line": 2791
+  },
+  {
+   "id": "r204",
+   "anchor": "FittableModel.fit_deriv",
+   "kind": "doc",
+   "line": 2791
+  },
+  {
+   "id": "r205",
+   "anchor": "FittableModel.col_fit_deriv",
+   "kind": "lead",
+   "line": 2800
+  },
+  {
+   "id": "r206",
+   "anchor": "Fittable1DModel",
+   "kind": "doc",
+   "line": 2804
+  },
+  {
+   "id": "r207",
+   "anchor": "Fittable2DModel",
+   "kind": "doc",
+   "line": 2816
+  },
+  {
+   "id": "r208",
+   "anchor": "_make_arithmetic_operator.op",
+   "kind": "lead",
+   "line": 2835
+  },
+  {
+   "id": "r209",
+   "anchor": "_composition_operator#return",
+   "kind": "lead",
+   "line": 2848
+  },
+  {
+   "id": "r210",
+   "anchor": "_join_operator#return",
+   "kind": "lead",
+   "line": 2859
+  },
+  {
+   "id": "r211",
+   "anchor": "CompoundModel",
+   "kind": "doc",
+   "line": 2881
+  },
+  {
+   "id": "r212",
+   "anchor": "CompoundModel.__init__#if:op != 'fix_inputs' and ((left.model_set_axis != right.model_set_axis) or left.model_set_axis)",
+   "kind": "trail",
+   "line": 2908
+  },
+  {
+   "id": "r213",
+   "anchor": "CompoundModel.__init__#if:op in ['+', '-', '*', '/', '**'] or op in SPECIAL_OPERATORS/elif:op == 'fix_inputs'/assign:self.n_inputs",
+   "kind": "lead",
+   "line": 2949
+  },
+  {
+   "id": "r214",
+   "anchor": "CompoundModel.__init__#if:op in ['+', '-', '*', '/', '**'] or op in SPECIAL_OPERATORS/elif:op == 'fix_inputs'/assign:self._outputs",
+   "kind": "lead",
+   "line": 2952
+  },
+  {
+   "id": "r215",
+   "anchor": "CompoundModel.__init__#if:op in ['+', '-', '*', '/', '**'] or op in SPECIAL_OPERATORS/elif:op == 'fix_inputs'/for:key in keys/if:np.issubdtype(type(key), np.integer)/elif:isinstance(key, str)/assign:ind",
+   "kind": "lead",
+   "line": 2974
+  },
+  {
+   "id": "r216",
+   "anchor": "CompoundModel.__init__#if:op in ['+', '-', '*', '/', '**'] or op in SPECIAL_OPERATORS/elif:op == 'fix_inputs'/call:input_ind.sort",
+   "kind": "lead",
+   "line": 2980
+  },
+  {
+   "id": "r217",
+   "anchor": "CompoundModel.__init__#if:op in ['+', '-', '*', '/', '**'] or op in SPECIAL_OPERATORS/elif:op == 'fix_inputs'/try",
+   "kind": "lead",
+   "line": 2988
+  },
+  {
+   "id": "r218",
+   "anchor": "CompoundModel._get_right_inputs_from_args#if:op == '&'/return",
+   "kind": "lead",
+   "line": 3015
+  },
+  {
+   "id": "r219",
+   "anchor": "CompoundModel._get_left_params_from_args#if:op == '&'/assign:n_inputs",
+   "kind": "lead",
+   "line": 3025
+  },
+  {
+   "id": "r220",
+   "anchor": "CompoundModel._get_right_params_from_args#if:op == '&'/return",
+   "kind": "lead",
+   "line": 3036
+  },
+  {
+   "id": "r221",
+   "anchor": "CompoundModel._get_kwarg_model_parameters_as_positional#if:self.op == \"&\"",
+   "kind": "lead",
+   "line": 3044
+  },
+  {
+   "id": "r222",
+   "anchor": "CompoundModel._get_kwarg_model_parameters_as_positional#if:self.op == \"&\"",
+   "kind": "todo",
+   "line": 3044
+  },
+  {
+   "id": "r223",
+   "anchor": "CompoundModel.submodel_names",
+   "kind": "doc",
+   "line": 3131
+  },
+  {
+   "id": "r224",
+   "anchor": "CompoundModel.both_inverses_exist",
+   "kind": "doc",
+   "line": 3146
+  },
+  {
+   "id": "r225",
+   "anchor": "CompoundModel._pre_evaluate",
+   "kind": "doc",
+   "line": 3169
+  },
+  {
+   "id": "r226",
+   "anchor": "CompoundModel._pre_evaluate#if:'equivalencies' in kwargs",
+   "kind": "lead",
+   "line": 3184
+  },
+  {
+   "id": "r227",
+   "anchor": "CompoundModel._pre_evaluate#if:'equivalencies' in kwargs/assign:kwargs['inputs_map']",
+   "kind": "lead",
+   "line": 3186
+  },
+  {
+   "id": "r228",
+   "anchor": "CompoundModel._pre_evaluate.evaluate",
+   "kind": "lead",
+   "line": 3190
+  },
+  {
+   "id": "r229",
+   "anchor": "CompoundModel._argnames",
+   "kind": "doc",
+   "line": 3196
+  },
+  {
+   "id": "r230",
+   "anchor": "CompoundModel._post_evaluate",
+   "kind": "doc",
+   "line": 3200
+  },
+  {
+   "id": "r231",
+   "anchor": "CompoundModel._evaluate#if:op != 'fix_inputs'/else/assign:kwind",
+   "kind": "lead",
+   "line": 3250
+  },
+  {
+   "id": "r232",
+   "anchor": "CompoundModel._evaluate#if:op != 'fix_inputs'/else/if:kwind",
+   "kind": "lead",
+   "line": 3263
+  },
+  {
+   "id": "r233",
+   "anchor": "CompoundModel._evaluate#if:op != 'fix_inputs'/else/if:subinds/for:ind, val in subargs",
+   "kind": "lead",
+   "line": 3273
+  },
+  {
+   "id": "r234",
+   "anchor": "CompoundModel.param_names",
+   "kind": "doc",
+   "line": 3278
+  },
+  {
+   "id": "r235",
+   "anchor": "CompoundModel.__getattr__",
+   "kind": "doc",
+   "line": 3289
+  },
+  {
+   "id": "r236",
+   "anchor": "CompoundModel.__getattr__#if:name == '__setstate__'",
+   "kind": "lead",
+   "line": 3297
+  },
+  {
+   "id": "r237",
+   "anchor": "CompoundModel.__getitem__#if:isinstance(index, slice)/if:stop == start",
+   "kind": "lead",
+   "line": 3334
+  },
+  {
+   "id": "r238",
+   "anchor": "CompoundModel.__getitem__#if:isinstance(index, slice)/if:stop == start",
+   "kind": "trail",
+   "line": 3334
+  },
+  {
+   "id": "r239",
+   "anchor": "CompoundModel._str_index_to_int#assign:found",
+   "kind": "lead",
+   "line": 3351
+  },
+  {
+   "id": "r240",
+   "anchor": "CompoundModel.n_inputs",
+   "kind": "doc",
+   "line": 3363
+  },
+  {
+   "id": "r241",
+   "anchor": "CompoundModel.n_outputs",
+   "kind": "doc",
+   "line": 3372
+  },
+  {
+   "id": "r242",
+   "anchor": "CompoundModel.traverse_postorder",
+   "kind": "doc",
+   "line": 3396
+  },
+  {
+   "id": "r243",
+   "anchor": "CompoundModel.fittable",
+   "kind": "doc",
+   "line": 3480
+  },
+  {
+   "id": "r244",
+   "anchor": "CompoundModel._map_parameters",
+   "kind": "doc",
+   "line": 3496
+  },
+  {
+   "id": "r245",
+   "anchor": "CompoundModel._map_parameters#if:self._parameters is not None/return",
+   "kind": "lead",
+   "line": 3520
+  },
+  {
+   "id": "r246",
+   "anchor": "CompoundModel.inputs_map",
+   "kind": "doc",
+   "line": 3564
+  },
+  {
+   "id": "r247",
+   "anchor": "CompoundModel.inputs_map#if:not isinstance(self.op, str)",
+   "kind": "trail",
+   "line": 3569
+  },
+  {
+   "id": "r248",
+   "anchor": "CompoundModel.inputs_map#if:not isinstance(self.op, str)/elif:self.op == '&'/for:i, inp in enumerate(self.inputs)/if:i < len(self.left.inputs)",
+   "kind": "trail",
+   "line": 3586
+  },
+  {
+   "id": "r249",
+   "anchor": "CompoundModel.inputs_map#if:not isinstance(self.op, str)/elif:self.op == '&'/for:i, inp in enumerate(self.inputs)/else",
+   "kind": "trail",
+   "line": 3591
+  },
+  {
+   "id": "r250",
+   "anchor": "CompoundModel.outputs_map",
+   "kind": "doc",
+   "line": 3667
+  },
+  {
+   "id": "r251",
+   "anchor": "CompoundModel.outputs_map#if:not isinstance(self.op, str)",
+   "kind": "trail",
+   "line": 3672
+  },
+  {
+   "id": "r252",
+   "anchor": "CompoundModel.outputs_map#if:not isinstance(self.op, str)/elif:self.op == '&'/for:i, out in enumerate(self.outputs)/if:i < len(self.left.outputs)",
+   "kind": "trail",
+   "line": 3690
+  },
+  {
+   "id": "r253",
+   "anchor": "CompoundModel.outputs_map#if:not isinstance(self.op, str)/elif:self.op == '&'/for:i, out in enumerate(self.outputs)/else",
+   "kind": "trail",
+   "line": 3695
+  },
+  {
+   "id": "r254",
+   "anchor": "CompoundModel.has_user_bounding_box",
+   "kind": "doc",
+   "line": 3715
+  },
+  {
+   "id": "r255",
+   "anchor": "CompoundModel.render",
+   "kind": "doc",
+   "line": 3724
+  },
+  {
+   "id": "r256",
+   "anchor": "CompoundModel.render#if:ndim == 1",
+   "kind": "lead",
+   "line": 3775
+  },
+  {
+   "id": "r257",
+   "anchor": "CompoundModel.render#if:coords is not None/assert:len(coords) == ndim",
+   "kind": "lead",
+   "line": 3784
+  },
+  {
+   "id": "r258",
+   "anchor": "CompoundModel.render#if:bbox is not None/assign:pd",
+   "kind": "lead",
+   "line": 3800
+  },
+  {
+   "id": "r259",
+   "anchor": "CompoundModel.replace_submodel",
+   "kind": "doc",
+   "line": 3836
+  },
+  {
+   "id": "r260",
+   "anchor": "CompoundModel.replace_submodel#if:submodels/if:old_model.n_inputs != model.n_inputs or old_model.n_outputs != model.n_outputs",
+   "kind": "lead",
+   "line": 3865
+  },
+  {
+   "id": "r261",
+   "anchor": "CompoundModel._set_sub_models_and_parameter_units",
+   "kind": "doc",
+   "line": 3884
+  },
+  {
+   "id": "r262",
+   "anchor": "CompoundModel.without_units_for_data",
+   "kind": "doc",
+   "line": 3902
+  },
+  {
+   "id": "r263",
+   "anchor": "CompoundModel.with_units_from_data",
+   "kind": "doc",
+   "line": 3963
+  },
+  {
+   "id": "r264",
+   "anchor": "_get_submodel_path",
+   "kind": "doc",
+   "line": 3997
+  },
+  {
+   "id": "r265",
+   "anchor": "binary_operation",
+   "kind": "doc",
+   "line": 4012
+  },
+  {
+   "id": "r266",
+   "anchor": "get_ops",
+   "kind": "doc",
+   "line": 4022
+  },
+  {
+   "id": "r267",
+   "anchor": "make_subtree_dict",
+   "kind": "doc",
+   "line": 4034
+  },
+  {
+   "id": "r268",
+   "anchor": "make_subtree_dict#if:not hasattr(tree, 'isleaf')",
+   "kind": "lead",
+   "line": 4046
+  },
+  {
+   "id": "r269",
+   "anchor": "fix_inputs",
+   "kind": "doc",
+   "line": 4064
+  },
+  {
+   "id": "r270",
+   "anchor": "bind_bounding_box",
+   "kind": "doc",
+   "line": 4102
+  },
+  {
+   "id": "r271",
+   "anchor": "bind_compound_bounding_box",
+   "kind": "doc",
+   "line": 4124
+  },
+  {
+   "id": "r272",
+   "anchor": "custom_model",
+   "kind": "doc",
+   "line": 4158
+  },
+  {
+   "id": "r273",
+   "anchor": "_custom_model_inputs",
+   "kind": "doc",
+   "line": 4248
+  },
+  {
+   "id": "r274",
+   "anchor": "_custom_model_wrapper",
+   "kind": "doc",
+   "line": 4292
+  },
+  {
+   "id": "r275",
+   "anchor": "render_model",
+   "kind": "doc",
+   "line": 4350
+  },
+  {
+   "id": "r276",
+   "anchor": "render_model#if:model.n_inputs == 1",
+   "kind": "lead",
+   "line": 4386
+  },
+  {
+   "id": "r277",
+   "anchor": "render_model#if:arr is not None/if:arr.ndim != model.n_inputs",
+   "kind": "lead",
+   "line": 4395
+  },
+  {
+   "id": "r278",
+   "anchor": "render_model#if:coords is not None/assign:coords",
+   "kind": "lead",
+   "line": 4400
+  },
+  {
+   "id": "r279",
+   "anchor": "render_model#if:bbox is not None/assign:pd",
+   "kind": "lead",
+   "line": 4413
+  },
+  {
+   "id": "r280",
+   "anchor": "hide_inverse",
+   "kind": "doc",
+   "line": 4447
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 93527,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 32631,
+  "thinking_tokens": 18680,
+  "opus_cost_usd": 1.7553365,
+  "total_cost_usd": 1.8312945,
+  "duration_ms": 282589,
+  "duration_api_ms": 284728,
+  "num_turns": 2
+ },
+ "wall_ms": 283597,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

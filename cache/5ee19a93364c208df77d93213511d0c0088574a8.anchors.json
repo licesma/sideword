@@ -1,0 +1,109 @@
+{
+ "blob_sha": "5ee19a93364c208df77d93213511d0c0088574a8",
+ "path": "django/core/signing.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "BadSignature",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r3",
+   "anchor": "SignatureExpired",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "get_cookie_signer#assign:key",
+   "kind": "trail",
+   "line": 102
+  },
+  {
+   "id": "r5",
+   "anchor": "JSONSerializer",
+   "kind": "doc",
+   "line": 106
+  },
+  {
+   "id": "r6",
+   "anchor": "dumps",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r7",
+   "anchor": "loads",
+   "kind": "doc",
+   "line": 138
+  },
+  {
+   "id": "r8",
+   "anchor": "Signer.sign_object",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r9",
+   "anchor": "Signer.sign_object#assign:is_compressed",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r10",
+   "anchor": "Signer.sign_object#if:compress/assign:compressed",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r11",
+   "anchor": "Signer.unsign_object#assign:base64d",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r12",
+   "anchor": "Signer.unsign_object#if:decompress/assign:base64d",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r13",
+   "anchor": "TimestampSigner.unsign",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r14",
+   "anchor": "TimestampSigner.unsign#if:max_age is not None/assign:age",
+   "kind": "lead",
+   "line": 233
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7811,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 948,
+  "thinking_tokens": 358,
+  "opus_cost_usd": 0.1061015,
+  "total_cost_usd": 0.1109045,
+  "duration_ms": 10093,
+  "duration_api_ms": 11166,
+  "num_turns": 2
+ },
+ "wall_ms": 11143,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

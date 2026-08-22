@@ -1,0 +1,1213 @@
+{
+ "blob_sha": "99e3b1e7581cf5c0e5a586abd3447d1ba5571666",
+ "path": "xarray/core/dataset.py",
+ "repo": "pydata/xarray",
+ "records": 198,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_DATETIMEINDEX_COMPONENTS",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_virtual_variable",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r3",
+   "anchor": "calculate_dimensions",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r4",
+   "anchor": "merge_indexes",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r5",
+   "anchor": "merge_indexes#for:dim, var_names in indexes.items()/if:not len(names) and len(var_names) == 1/else",
+   "kind": "trail",
+   "line": 268
+  },
+  {
+   "id": "r6",
+   "anchor": "merge_indexes#for:k, v in new_variables.items()",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r7",
+   "anchor": "split_indexes",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r8",
+   "anchor": "as_dataset",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r9",
+   "anchor": "DataVariables._ipython_key_completions_",
+   "kind": "doc",
+   "line": 407
+  },
+  {
+   "id": "r10",
+   "anchor": "Dataset",
+   "kind": "doc",
+   "line": 428
+  },
+  {
+   "id": "r11",
+   "anchor": "Dataset.__init__#param:data_vars",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r12",
+   "anchor": "Dataset.__init__",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r13",
+   "anchor": "Dataset.__init__#if:data_vars is None",
+   "kind": "todo",
+   "line": 528
+  },
+  {
+   "id": "r14",
+   "anchor": "Dataset.load_store",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r15",
+   "anchor": "Dataset.variables",
+   "kind": "doc",
+   "line": 568
+  },
+  {
+   "id": "r16",
+   "anchor": "Dataset.attrs",
+   "kind": "doc",
+   "line": 579
+  },
+  {
+   "id": "r17",
+   "anchor": "Dataset.encoding",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r18",
+   "anchor": "Dataset.dims",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r19",
+   "anchor": "Dataset.sizes",
+   "kind": "doc",
+   "line": 615
+  },
+  {
+   "id": "r20",
+   "anchor": "Dataset.load",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r21",
+   "anchor": "Dataset.load#assign:lazy_data",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r22",
+   "anchor": "Dataset.load#if:lazy_data/assign:evaluated_data",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r23",
+   "anchor": "Dataset.load#for:k, v in self.variables.items()",
+   "kind": "lead",
+   "line": 664
+  },
+  {
+   "id": "r24",
+   "anchor": "Dataset.compute",
+   "kind": "doc",
+   "line": 794
+  },
+  {
+   "id": "r25",
+   "anchor": "Dataset._persist_inplace",
+   "kind": "doc",
+   "line": 816
+  },
+  {
+   "id": "r26",
+   "anchor": "Dataset._persist_inplace#assign:lazy_data",
+   "kind": "lead",
+   "line": 820
+  },
+  {
+   "id": "r27",
+   "anchor": "Dataset._persist_inplace#if:lazy_data/assign:evaluated_data",
+   "kind": "lead",
+   "line": 829
+  },
+  {
+   "id": "r28",
+   "anchor": "Dataset.persist",
+   "kind": "doc",
+   "line": 836
+  },
+  {
+   "id": "r29",
+   "anchor": "Dataset._construct_direct",
+   "kind": "doc",
+   "line": 858
+  },
+  {
+   "id": "r30",
+   "anchor": "Dataset._replace",
+   "kind": "doc",
+   "line": 883
+  },
+  {
+   "id": "r31",
+   "anchor": "Dataset._replace_with_new_dims",
+   "kind": "doc",
+   "line": 933
+  },
+  {
+   "id": "r32",
+   "anchor": "Dataset._replace_vars_and_dims",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r33",
+   "anchor": "Dataset._overwrite_indexes#assign:dim_names",
+   "kind": "lead",
+   "line": 978
+  },
+  {
+   "id": "r34",
+   "anchor": "Dataset.copy",
+   "kind": "doc",
+   "line": 986
+  },
+  {
+   "id": "r35",
+   "anchor": "Dataset._level_coords",
+   "kind": "doc",
+   "line": 1112
+  },
+  {
+   "id": "r36",
+   "anchor": "Dataset._copy_listed",
+   "kind": "doc",
+   "line": 1124
+  },
+  {
+   "id": "r37",
+   "anchor": "Dataset._construct_dataarray",
+   "kind": "doc",
+   "line": 1160
+  },
+  {
+   "id": "r38",
+   "anchor": "Dataset.__deepcopy__#return",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r39",
+   "anchor": "Dataset._attr_sources",
+   "kind": "doc",
+   "line": 1195
+  },
+  {
+   "id": "r40",
+   "anchor": "Dataset._item_sources",
+   "kind": "doc",
+   "line": 1201
+  },
+  {
+   "id": "r41",
+   "anchor": "Dataset.__contains__",
+   "kind": "doc",
+   "line": 1211
+  },
+  {
+   "id": "r42",
+   "anchor": "Dataset.loc",
+   "kind": "doc",
+   "line": 1239
+  },
+  {
+   "id": "r43",
+   "anchor": "Dataset.__getitem__#decorator:overload",
+   "kind": "todo",
+   "line": 1246
+  },
+  {
+   "id": "r44",
+   "anchor": "Dataset.__getitem__",
+   "kind": "doc",
+   "line": 1258
+  },
+  {
+   "id": "r45",
+   "anchor": "Dataset.__setitem__",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r46",
+   "anchor": "Dataset.__delitem__",
+   "kind": "doc",
+   "line": 1290
+  },
+  {
+   "id": "r47",
+   "anchor": "Dataset.__hash__",
+   "kind": "lead",
+   "line": 1302
+  },
+  {
+   "id": "r48",
+   "anchor": "Dataset._all_compat",
+   "kind": "doc",
+   "line": 1304
+  },
+  {
+   "id": "r49",
+   "anchor": "Dataset._all_compat.compat",
+   "kind": "lead",
+   "line": 1310
+  },
+  {
+   "id": "r50",
+   "anchor": "Dataset.broadcast_equals",
+   "kind": "doc",
+   "line": 1317
+  },
+  {
+   "id": "r51",
+   "anchor": "Dataset.equals",
+   "kind": "doc",
+   "line": 1335
+  },
+  {
+   "id": "r52",
+   "anchor": "Dataset.identical",
+   "kind": "doc",
+   "line": 1355
+  },
+  {
+   "id": "r53",
+   "anchor": "Dataset.indexes",
+   "kind": "doc",
+   "line": 1372
+  },
+  {
+   "id": "r54",
+   "anchor": "Dataset.coords",
+   "kind": "doc",
+   "line": 1380
+  },
+  {
+   "id": "r55",
+   "anchor": "Dataset.data_vars",
+   "kind": "doc",
+   "line": 1387
+  },
+  {
+   "id": "r56",
+   "anchor": "Dataset.set_coords",
+   "kind": "doc",
+   "line": 1392
+  },
+  {
+   "id": "r57",
+   "anchor": "Dataset.set_coords#call:_check_inplace",
+   "kind": "todo",
+   "line": 1414
+  },
+  {
+   "id": "r58",
+   "anchor": "Dataset.reset_coords",
+   "kind": "doc",
+   "line": 1424
+  },
+  {
+   "id": "r59",
+   "anchor": "Dataset.dump_to_store",
+   "kind": "doc",
+   "line": 1466
+  },
+  {
+   "id": "r60",
+   "anchor": "Dataset.dump_to_store#call:dump_to_store",
+   "kind": "todo",
+   "line": 1473
+  },
+  {
+   "id": "r61",
+   "anchor": "Dataset.to_netcdf",
+   "kind": "doc",
+   "line": 1475
+  },
+  {
+   "id": "r62",
+   "anchor": "Dataset.to_zarr",
+   "kind": "doc",
+   "line": 1571
+  },
+  {
+   "id": "r63",
+   "anchor": "Dataset.to_zarr#if:mode not in [\"w\", \"w-\", \"a\"]/raise:ValueError",
+   "kind": "todo",
+   "line": 1644
+  },
+  {
+   "id": "r64",
+   "anchor": "Dataset.info",
+   "kind": "doc",
+   "line": 1669
+  },
+  {
+   "id": "r65",
+   "anchor": "Dataset.chunks",
+   "kind": "doc",
+   "line": 1705
+  },
+  {
+   "id": "r66",
+   "anchor": "Dataset.chunk",
+   "kind": "doc",
+   "line": 1721
+  },
+  {
+   "id": "r67",
+   "anchor": "Dataset.chunk.maybe_chunk#if:var.ndim > 0/assign:token2",
+   "kind": "lead",
+   "line": 1786
+  },
+  {
+   "id": "r68",
+   "anchor": "Dataset._validate_indexers",
+   "kind": "doc",
+   "line": 1795
+  },
+  {
+   "id": "r69",
+   "anchor": "Dataset._validate_indexers#for:k, v in indexers.items()",
+   "kind": "lead",
+   "line": 1809
+  },
+  {
+   "id": "r70",
+   "anchor": "Dataset._validate_interp_indexers",
+   "kind": "doc",
+   "line": 1837
+  },
+  {
+   "id": "r71",
+   "anchor": "Dataset._validate_interp_indexers#for:k, v in self._validate_indexers(indexers)/if:isinstance(v, Variable)/elif:isinstance(v, np.ndarray)/if:v.ndim == 0/elif:v.ndim == 1/else/raise:AssertionError",
+   "kind": "trail",
+   "line": 1856
+  },
+  {
+   "id": "r72",
+   "anchor": "Dataset._get_indexers_coords_and_indexes",
+   "kind": "doc",
+   "line": 1860
+  },
+  {
+   "id": "r73",
+   "anchor": "Dataset._get_indexers_coords_and_indexes#for:k, v in indexers.items()/if:isinstance(v, DataArray)/if:v.dtype.kind == \"b\"/if:v.ndim != 1",
+   "kind": "trail",
+   "line": 1872
+  },
+  {
+   "id": "r74",
+   "anchor": "Dataset._get_indexers_coords_and_indexes#for:k, v in indexers.items()/if:isinstance(v, DataArray)/if:v.dtype.kind == \"b\"/assign:v_coords",
+   "kind": "lead",
+   "line": 1880
+  },
+  {
+   "id": "r75",
+   "anchor": "Dataset._get_indexers_coords_and_indexes#assign:coords, indexes",
+   "kind": "lead",
+   "line": 1888
+  },
+  {
+   "id": "r76",
+   "anchor": "Dataset._get_indexers_coords_and_indexes#assign:attached_coords",
+   "kind": "lead",
+   "line": 1892
+  },
+  {
+   "id": "r77",
+   "anchor": "Dataset.isel",
+   "kind": "doc",
+   "line": 1898
+  },
+  {
+   "id": "r78",
+   "anchor": "Dataset.isel#assign:indexers",
+   "kind": "lead",
+   "line": 1956
+  },
+  {
+   "id": "r79",
+   "anchor": "Dataset._isel_fancy#assign:indexers_list",
+   "kind": "lead",
+   "line": 1999
+  },
+  {
+   "id": "r80",
+   "anchor": "Dataset._isel_fancy#for:name, var in self.variables.items()/if:drop and name in var_indexers/continue",
+   "kind": "trail",
+   "line": 2007
+  },
+  {
+   "id": "r81",
+   "anchor": "Dataset._isel_fancy#assign:coord_vars, new_indexes",
+   "kind": "lead",
+   "line": 2026
+  },
+  {
+   "id": "r82",
+   "anchor": "Dataset.sel",
+   "kind": "doc",
+   "line": 2032
+  },
+  {
+   "id": "r83",
+   "anchor": "Dataset.head",
+   "kind": "doc",
+   "line": 2108
+  },
+  {
+   "id": "r84",
+   "anchor": "Dataset.tail",
+   "kind": "doc",
+   "line": 2155
+  },
+  {
+   "id": "r85",
+   "anchor": "Dataset.thin",
+   "kind": "doc",
+   "line": 2205
+  },
+  {
+   "id": "r86",
+   "anchor": "Dataset.broadcast_like",
+   "kind": "doc",
+   "line": 2255
+  },
+  {
+   "id": "r87",
+   "anchor": "Dataset.reindex_like",
+   "kind": "doc",
+   "line": 2279
+  },
+  {
+   "id": "r88",
+   "anchor": "Dataset.reindex",
+   "kind": "doc",
+   "line": 2339
+  },
+  {
+   "id": "r89",
+   "anchor": "Dataset._reindex",
+   "kind": "doc",
+   "line": 2538
+  },
+  {
+   "id": "r90",
+   "anchor": "Dataset.interp",
+   "kind": "doc",
+   "line": 2572
+  },
+  {
+   "id": "r91",
+   "anchor": "Dataset.interp#if:coords/assign:sdims",
+   "kind": "lead",
+   "line": 2632
+  },
+  {
+   "id": "r92",
+   "anchor": "Dataset.interp.maybe_variable#try",
+   "kind": "lead",
+   "line": 2643
+  },
+  {
+   "id": "r93",
+   "anchor": "Dataset.interp._validate_interp_indexer#if:_contains_datetime_like_objects(x) and not _contains_datetime_like_objects(new_x)",
+   "kind": "lead",
+   "line": 2652
+  },
+  {
+   "id": "r94",
+   "anchor": "Dataset.interp#for:name, var in obj._variables.items()/if:var.dtype.kind in \"uifc\"/elif:all(d not in indexers for d in var.dims)/assign:variables[name]",
+   "kind": "lead",
+   "line": 2678
+  },
+  {
+   "id": "r95",
+   "anchor": "Dataset.interp#call:variables.update",
+   "kind": "lead",
+   "line": 2687
+  },
+  {
+   "id": "r96",
+   "anchor": "Dataset.interp#assign:coord_vars, new_indexes",
+   "kind": "lead",
+   "line": 2694
+  },
+  {
+   "id": "r97",
+   "anchor": "Dataset.interp_like",
+   "kind": "doc",
+   "line": 2701
+  },
+  {
+   "id": "r98",
+   "anchor": "Dataset.interp_like#if:object_coords/assign:ds",
+   "kind": "lead",
+   "line": 2762
+  },
+  {
+   "id": "r99",
+   "anchor": "Dataset._rename_vars",
+   "kind": "lead",
+   "line": 2766
+  },
+  {
+   "id": "r100",
+   "anchor": "Dataset.rename",
+   "kind": "doc",
+   "line": 2805
+  },
+  {
+   "id": "r101",
+   "anchor": "Dataset.rename_dims",
+   "kind": "doc",
+   "line": 2849
+  },
+  {
+   "id": "r102",
+   "anchor": "Dataset.rename_vars",
+   "kind": "doc",
+   "line": 2894
+  },
+  {
+   "id": "r103",
+   "anchor": "Dataset.swap_dims",
+   "kind": "doc",
+   "line": 2932
+  },
+  {
+   "id": "r104",
+   "anchor": "Dataset.swap_dims#call:_check_inplace",
+   "kind": "todo",
+   "line": 2993
+  },
+  {
+   "id": "r105",
+   "anchor": "Dataset.swap_dims#for:k, v in self.variables.items()/if:k in result_dims/if:k in self.indexes/else/if:new_index.nlevels == 1/assign:new_index",
+   "kind": "lead",
+   "line": 3023
+  },
+  {
+   "id": "r106",
+   "anchor": "Dataset.expand_dims",
+   "kind": "doc",
+   "line": 3032
+  },
+  {
+   "id": "r107",
+   "anchor": "Dataset.expand_dims#if:dim is None/elif:isinstance(dim, Mapping)/assign:dim",
+   "kind": "lead",
+   "line": 3076
+  },
+  {
+   "id": "r108",
+   "anchor": "Dataset.expand_dims#for:k, v in dim.items()",
+   "kind": "lead",
+   "line": 3111
+  },
+  {
+   "id": "r109",
+   "anchor": "Dataset.expand_dims#for:k, v in dim.items()/if:hasattr(v, \"__iter__\")/assign:variables[k]",
+   "kind": "lead",
+   "line": 3117
+  },
+  {
+   "id": "r110",
+   "anchor": "Dataset.expand_dims#for:k, v in dim.items()/if:hasattr(v, \"__iter__\")/elif:isinstance(v, int)/pass",
+   "kind": "trail",
+   "line": 3121
+  },
+  {
+   "id": "r111",
+   "anchor": "Dataset.expand_dims#for:k, v in self._variables.items()/if:k not in dim/if:k in coord_names",
+   "kind": "trail",
+   "line": 3130
+  },
+  {
+   "id": "r112",
+   "anchor": "Dataset.expand_dims#for:k, v in self._variables.items()/if:k not in dim/if:k in coord_names/else/assign:zip_axis_dim",
+   "kind": "lead",
+   "line": 3146
+  },
+  {
+   "id": "r113",
+   "anchor": "Dataset.expand_dims#for:k, v in self._variables.items()/if:k not in dim/else/assign:variables[k]",
+   "kind": "lead",
+   "line": 3155
+  },
+  {
+   "id": "r114",
+   "anchor": "Dataset.set_index",
+   "kind": "doc",
+   "line": 3164
+  },
+  {
+   "id": "r115",
+   "anchor": "Dataset.reset_index",
+   "kind": "doc",
+   "line": 3230
+  },
+  {
+   "id": "r116",
+   "anchor": "Dataset.reorder_levels",
+   "kind": "doc",
+   "line": 3266
+  },
+  {
+   "id": "r117",
+   "anchor": "Dataset._stack_once#assign:levels",
+   "kind": "lead",
+   "line": 3322
+  },
+  {
+   "id": "r118",
+   "anchor": "Dataset.stack",
+   "kind": "doc",
+   "line": 3335
+  },
+  {
+   "id": "r119",
+   "anchor": "Dataset.to_stacked_array",
+   "kind": "doc",
+   "line": 3373
+  },
+  {
+   "id": "r120",
+   "anchor": "Dataset.to_stacked_array.ensure_stackable#assign:expand_dims",
+   "kind": "lead",
+   "line": 3466
+  },
+  {
+   "id": "r121",
+   "anchor": "Dataset.to_stacked_array#assign:stackable_vars",
+   "kind": "lead",
+   "line": 3475
+  },
+  {
+   "id": "r122",
+   "anchor": "Dataset.to_stacked_array#assign:idx",
+   "kind": "lead",
+   "line": 3481
+  },
+  {
+   "id": "r123",
+   "anchor": "Dataset._unstack_once#if:index.equals(full_idx)",
+   "kind": "lead",
+   "line": 3499
+  },
+  {
+   "id": "r124",
+   "anchor": "Dataset.unstack",
+   "kind": "doc",
+   "line": 3530
+  },
+  {
+   "id": "r125",
+   "anchor": "Dataset.update",
+   "kind": "doc",
+   "line": 3591
+  },
+  {
+   "id": "r126",
+   "anchor": "Dataset.merge",
+   "kind": "doc",
+   "line": 3621
+  },
+  {
+   "id": "r127",
+   "anchor": "Dataset.drop_vars",
+   "kind": "doc",
+   "line": 3703
+  },
+  {
+   "id": "r128",
+   "anchor": "Dataset.drop_vars#if:is_scalar(names) or not isinstance(names, Iterable)",
+   "kind": "lead",
+   "line": 3723
+  },
+  {
+   "id": "r129",
+   "anchor": "Dataset.drop",
+   "kind": "doc",
+   "line": 3737
+  },
+  {
+   "id": "r130",
+   "anchor": "Dataset.drop_sel",
+   "kind": "doc",
+   "line": 3786
+  },
+  {
+   "id": "r131",
+   "anchor": "Dataset.drop_sel#for:dim, labels_for_dim in labels.items()/if:utils.is_scalar(labels_for_dim)",
+   "kind": "lead",
+   "line": 3836
+  },
+  {
+   "id": "r132",
+   "anchor": "Dataset.drop_dims",
+   "kind": "doc",
+   "line": 3847
+  },
+  {
+   "id": "r133",
+   "anchor": "Dataset.transpose",
+   "kind": "doc",
+   "line": 3890
+  },
+  {
+   "id": "r134",
+   "anchor": "Dataset.dropna",
+   "kind": "doc",
+   "line": 3931
+  },
+  {
+   "id": "r135",
+   "anchor": "Dataset.dropna#if:dim not in self.dims",
+   "kind": "todo",
+   "line": 3963
+  },
+  {
+   "id": "r136",
+   "anchor": "Dataset.fillna",
+   "kind": "doc",
+   "line": 3992
+  },
+  {
+   "id": "r137",
+   "anchor": "Dataset.interpolate_na",
+   "kind": "doc",
+   "line": 4075
+  },
+  {
+   "id": "r138",
+   "anchor": "Dataset.ffill",
+   "kind": "doc",
+   "line": 4166
+  },
+  {
+   "id": "r139",
+   "anchor": "Dataset.bfill",
+   "kind": "doc",
+   "line": 4191
+  },
+  {
+   "id": "r140",
+   "anchor": "Dataset.combine_first",
+   "kind": "doc",
+   "line": 4216
+  },
+  {
+   "id": "r141",
+   "anchor": "Dataset.reduce",
+   "kind": "doc",
+   "line": 4235
+  },
+  {
+   "id": "r142",
+   "anchor": "Dataset.reduce#for:name, var in self._variables.items()/if:name in self.coords/else/if:not numeric_only or np.issubdtype(var.dtype, np.number) or (var.dtype == np.bool_)/if:len(reduce_dims) == 1/assign:reduce_dims",
+   "kind": "lead",
+   "line": 4306
+  },
+  {
+   "id": "r143",
+   "anchor": "Dataset.reduce#for:name, var in self._variables.items()/if:name in self.coords/else/if:not numeric_only or np.issubdtype(var.dtype, np.number) or (var.dtype == np.bool_)/if:len(reduce_dims) == 1/elif:len(reduce_dims) == var.ndim/assign:reduce_dims",
+   "kind": "lead",
+   "line": 4311
+  },
+  {
+   "id": "r144",
+   "anchor": "Dataset.map",
+   "kind": "doc",
+   "line": 4328
+  },
+  {
+   "id": "r145",
+   "anchor": "Dataset.apply",
+   "kind": "doc",
+   "line": 4385
+  },
+  {
+   "id": "r146",
+   "anchor": "Dataset.assign",
+   "kind": "doc",
+   "line": 4406
+  },
+  {
+   "id": "r147",
+   "anchor": "Dataset.assign#assign:results",
+   "kind": "lead",
+   "line": 4493
+  },
+  {
+   "id": "r148",
+   "anchor": "Dataset.assign#call:data.update",
+   "kind": "lead",
+   "line": 4495
+  },
+  {
+   "id": "r149",
+   "anchor": "Dataset.to_array",
+   "kind": "doc",
+   "line": 4498
+  },
+  {
+   "id": "r150",
+   "anchor": "Dataset._normalize_dim_order",
+   "kind": "doc",
+   "line": 4532
+  },
+  {
+   "id": "r151",
+   "anchor": "Dataset.to_dataframe",
+   "kind": "doc",
+   "line": 4571
+  },
+  {
+   "id": "r152",
+   "anchor": "Dataset._set_sparse_data_from_dataframe#for:name, values in arrays/assign:dtype, fill_value",
+   "kind": "lead",
+   "line": 4621
+  },
+  {
+   "id": "r153",
+   "anchor": "Dataset._set_numpy_data_from_dataframe#assign:missing_values",
+   "kind": "lead",
+   "line": 4648
+  },
+  {
+   "id": "r154",
+   "anchor": "Dataset._set_numpy_data_from_dataframe#for:name, values in arrays/if:missing_values",
+   "kind": "lead",
+   "line": 4654
+  },
+  {
+   "id": "r155",
+   "anchor": "Dataset._set_numpy_data_from_dataframe#for:name, values in arrays/if:missing_values/else/assign:data",
+   "kind": "lead",
+   "line": 4663
+  },
+  {
+   "id": "r156",
+   "anchor": "Dataset.from_dataframe",
+   "kind": "doc",
+   "line": 4668
+  },
+  {
+   "id": "r157",
+   "anchor": "Dataset.from_dataframe#if:not dataframe.columns.is_unique",
+   "kind": "todo",
+   "line": 4701
+  },
+  {
+   "id": "r158",
+   "anchor": "Dataset.from_dataframe#assign:arrays",
+   "kind": "lead",
+   "line": 4715
+  },
+  {
+   "id": "r159",
+   "anchor": "Dataset.to_dask_dataframe",
+   "kind": "doc",
+   "line": 4737
+  },
+  {
+   "id": "r160",
+   "anchor": "Dataset.to_dask_dataframe#for:name in columns/try/except:KeyError/assign:size",
+   "kind": "lead",
+   "line": 4781
+  },
+  {
+   "id": "r161",
+   "anchor": "Dataset.to_dask_dataframe#for:name in columns/if:isinstance(var, IndexVariable)",
+   "kind": "lead",
+   "line": 4786
+  },
+  {
+   "id": "r162",
+   "anchor": "Dataset.to_dask_dataframe#if:set_index/if:len(dim_order) == 1/else/assign:df",
+   "kind": "lead",
+   "line": 4804
+  },
+  {
+   "id": "r163",
+   "anchor": "Dataset.to_dict",
+   "kind": "doc",
+   "line": 4808
+  },
+  {
+   "id": "r164",
+   "anchor": "Dataset.from_dict",
+   "kind": "doc",
+   "line": 4840
+  },
+  {
+   "id": "r165",
+   "anchor": "Dataset.from_dict#assign:coords",
+   "kind": "lead",
+   "line": 4904
+  },
+  {
+   "id": "r166",
+   "anchor": "Dataset._inplace_binary_op.func#if:isinstance(other, (DataArray, Dataset))",
+   "kind": "lead",
+   "line": 4956
+  },
+  {
+   "id": "r167",
+   "anchor": "Dataset._calculate_binary_op#if:utils.is_dict_like(other) and not isinstance(other, Dataset)/assign:new_data_vars",
+   "kind": "lead",
+   "line": 4995
+  },
+  {
+   "id": "r168",
+   "anchor": "Dataset.diff",
+   "kind": "doc",
+   "line": 5020
+  },
+  {
+   "id": "r169",
+   "anchor": "Dataset.diff#assign:kwargs_start",
+   "kind": "lead",
+   "line": 5073
+  },
+  {
+   "id": "r170",
+   "anchor": "Dataset.diff#if:label == \"upper\"",
+   "kind": "lead",
+   "line": 5077
+  },
+  {
+   "id": "r171",
+   "anchor": "Dataset.shift",
+   "kind": "doc",
+   "line": 5108
+  },
+  {
+   "id": "r172",
+   "anchor": "Dataset.roll",
+   "kind": "doc",
+   "line": 5163
+  },
+  {
+   "id": "r173",
+   "anchor": "Dataset.sortby",
+   "kind": "doc",
+   "line": 5245
+  },
+  {
+   "id": "r174",
+   "anchor": "Dataset.quantile",
+   "kind": "doc",
+   "line": 5300
+  },
+  {
+   "id": "r175",
+   "anchor": "Dataset.quantile#for:name, var in self.variables.items()/if:reduce_dims or not var.dims/if:name not in self.coords/if:not numeric_only or np.issubdtype(var.dtype, np.number) or var.dtype == np.bool_/if:len(reduce_dims) == var.ndim/assign:reduce_dims",
+   "kind": "lead",
+   "line": 5421
+  },
+  {
+   "id": "r176",
+   "anchor": "Dataset.quantile#assign:coord_names",
+   "kind": "lead",
+   "line": 5434
+  },
+  {
+   "id": "r177",
+   "anchor": "Dataset.rank",
+   "kind": "doc",
+   "line": 5444
+  },
+  {
+   "id": "r178",
+   "anchor": "Dataset.differentiate",
+   "kind": "doc",
+   "line": 5489
+  },
+  {
+   "id": "r179",
+   "anchor": "Dataset.differentiate#if:_contains_datetime_like_objects(coord_var)/if:coord_var.dtype.kind in \"mM\" and datetime_unit is None/elif:datetime_unit is None/assign:datetime_unit",
+   "kind": "trail",
+   "line": 5532
+  },
+  {
+   "id": "r180",
+   "anchor": "Dataset.integrate",
+   "kind": "doc",
+   "line": 5548
+  },
+  {
+   "id": "r181",
+   "anchor": "Dataset._integrate_one#if:_contains_datetime_like_objects(coord_var)/if:coord_var.dtype.kind in \"mM\" and datetime_unit is None/elif:datetime_unit is None/assign:datetime_unit",
+   "kind": "trail",
+   "line": 5625
+  },
+  {
+   "id": "r182",
+   "anchor": "Dataset.filter_by_attrs",
+   "kind": "doc",
+   "line": 5664
+  },
+  {
+   "id": "r183",
+   "anchor": "Dataset.unify_chunks",
+   "kind": "doc",
+   "line": 5760
+  },
+  {
+   "id": "r184",
+   "anchor": "Dataset.unify_chunks#try/except:ValueError",
+   "kind": "trail",
+   "line": 5776
+  },
+  {
+   "id": "r185",
+   "anchor": "Dataset.unify_chunks#try/else/return",
+   "kind": "lead",
+   "line": 5780
+  },
+  {
+   "id": "r186",
+   "anchor": "Dataset.unify_chunks#import:dask.array",
+   "kind": "lead",
+   "line": 5784
+  },
+  {
+   "id": "r187",
+   "anchor": "Dataset.map_blocks",
+   "kind": "doc",
+   "line": 5806
+  },
+  {
+   "id": "r188",
+   "anchor": "Dataset.polyfit",
+   "kind": "doc",
+   "line": 5912
+  },
+  {
+   "id": "r189",
+   "anchor": "Dataset.polyfit#if:w is not None",
+   "kind": "lead",
+   "line": 5983
+  },
+  {
+   "id": "r190",
+   "anchor": "Dataset.polyfit#assign:scale",
+   "kind": "lead",
+   "line": 5994
+  },
+  {
+   "id": "r191",
+   "anchor": "Dataset.polyfit#for:name, da in self.data_vars.items()/if:isinstance(name, str)/else/assign:name",
+   "kind": "lead",
+   "line": 6051
+  },
+  {
+   "id": "r192",
+   "anchor": "Dataset.pad",
+   "kind": "doc",
+   "line": 6090
+  },
+  {
+   "id": "r193",
+   "anchor": "Dataset.idxmin",
+   "kind": "doc",
+   "line": 6257
+  },
+  {
+   "id": "r194",
+   "anchor": "Dataset.idxmax",
+   "kind": "doc",
+   "line": 6355
+  },
+  {
+   "id": "r195",
+   "anchor": "Dataset.argmin",
+   "kind": "doc",
+   "line": 6453
+  },
+  {
+   "id": "r196",
+   "anchor": "Dataset.argmin#if:dim is None or axis is not None or (not isinstance(dim, Sequence) and dim is not ...) or isinstance(dim, str)/assign:argmin_func",
+   "kind": "lead",
+   "line": 6507
+  },
+  {
+   "id": "r197",
+   "anchor": "Dataset.argmax",
+   "kind": "doc",
+   "line": 6516
+  },
+  {
+   "id": "r198",
+   "anchor": "Dataset.argmax#if:dim is None or axis is not None or (not isinstance(dim, Sequence) and dim is not ...) or isinstance(dim, str)/assign:argmax_func",
+   "kind": "lead",
+   "line": 6570
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 125496,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 18398,
+  "thinking_tokens": 9089,
+  "opus_cost_usd": 1.7192015,
+  "total_cost_usd": 1.8199585,
+  "duration_ms": 156615,
+  "duration_api_ms": 159587,
+  "num_turns": 2
+ },
+ "wall_ms": 157678,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

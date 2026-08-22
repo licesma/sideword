@@ -1,0 +1,109 @@
+{
+ "blob_sha": "4fba0fe1a0722bb1a6e3d248fc51140c23f4efd3",
+ "path": "django/utils/autoreload.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:os",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#try/import:pyinotify",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r4",
+   "anchor": "gen_filenames",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r5",
+   "anchor": "gen_filenames#global:_cached_modules",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r6",
+   "anchor": "gen_filenames#if:_cached_modules == module_values/if:only_new",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r7",
+   "anchor": "gen_filenames#if:not _cached_filenames and settings.USE_I18N/assign:basedirs",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r8",
+   "anchor": "inotify_code_changed",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r9",
+   "anchor": "inotify_code_changed.update_watch#if:sender and getattr(sender, 'handles_files', False)/return",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r10",
+   "anchor": "inotify_code_changed#call:request_finished.connect",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r11",
+   "anchor": "inotify_code_changed#call:update_watch",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r12",
+   "anchor": "inotify_code_changed#return",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r13",
+   "anchor": "check_errors.wrapper#try/except:Exception/if:getattr(ev, 'filename', None) is None/assign:filename",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r14",
+   "anchor": "reloader_thread#while:RUN_RELOADER/if:change == FILE_MODIFIED/call:sys.exit",
+   "kind": "trail",
+   "line": 277
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10017,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1425,
+  "thinking_tokens": 717,
+  "opus_cost_usd": 0.1400865,
+  "total_cost_usd": 0.1462545,
+  "duration_ms": 14920,
+  "duration_api_ms": 16103,
+  "num_turns": 2
+ },
+ "wall_ms": 15822,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

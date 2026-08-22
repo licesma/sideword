@@ -1,0 +1,200 @@
+{
+ "blob_sha": "0b081a50c0a72a01c315b19224bf6c18702f8298",
+ "path": "astropy/io/ascii/cds.py",
+ "repo": "astropy/astropy",
+ "records": 32,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "CdsHeader.col_type_map",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "CdsHeader.get_cols",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r5",
+   "anchor": "CdsHeader.get_cols#if:self.readme and self.data.table_name",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "CdsHeader.get_cols#if:self.readme and self.data.table_name/assign:lines",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r7",
+   "anchor": "CdsHeader.get_cols#if:self.readme and self.data.table_name/for:line in f/if:in_header/else/if:match/assign:names",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "CdsHeader.get_cols#if:self.readme and self.data.table_name/for:line in f/if:in_header/else/if:match/for:pattern in names",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r9",
+   "anchor": "CdsHeader.get_cols#for:i_col_def, line in enumerate(lines)/if:re.match(r'Byte-by-byte Description', line, re.IGNORECASE)/elif:found_line",
+   "kind": "trail",
+   "line": 98
+  },
+  {
+   "id": "r10",
+   "anchor": "CdsHeader.get_cols#for:i_col_def, line in enumerate(lines)/if:re.match(r'Byte-by-byte Description', line, re.IGNORECASE)/elif:found_line/assign:i_col_def",
+   "kind": "trail",
+   "line": 99
+  },
+  {
+   "id": "r11",
+   "anchor": "CdsHeader.get_cols#for:line in itertools.islice(lines, i_col_def + 4, None)/if:match/if:unit == '---'/assign:col.unit",
+   "kind": "trail",
+   "line": 125
+  },
+  {
+   "id": "r21",
+   "anchor": "CdsHeader.get_cols#for:line in itertools.islice(lines, i_col_def + 4, None)/if:match/if:match/if:match.group('nullval') == '-'/for:i in [1, 2, 3, 4]",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r22",
+   "anchor": "CdsHeader.get_cols#for:line in itertools.islice(lines, i_col_def + 4, None)/if:match/else",
+   "kind": "trail",
+   "line": 164
+  },
+  {
+   "id": "r23",
+   "anchor": "CdsData",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r24",
+   "anchor": "CdsData.process_lines",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r25",
+   "anchor": "CdsData.process_lines#if:self.header.readme and self.table_name",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r26",
+   "anchor": "Cds",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r27",
+   "anchor": "Cds.write",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r28",
+   "anchor": "Cds.read#if:self.data.start_line == 'guess'",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r29",
+   "anchor": "Cds.read#if:self.data.start_line == 'guess'/with:suppress(TypeError)",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r30",
+   "anchor": "Cds.read#if:self.data.start_line == 'guess'/with:suppress(TypeError)/if:os.linesep not in table + ''",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r31",
+   "anchor": "Cds.read#if:self.data.start_line == 'guess'/assign:lines",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r32",
+   "anchor": "Cds.read#if:self.data.start_line == 'guess'/for:data_start in range(len(lines))",
+   "kind": "lead",
+   "line": 337
+  }
+ ],
+ "unanchorable": [
+  {
+   "id": "r12",
+   "reason": "Sits inside a multi-line implicitly-concatenated string literal that is one positional argument; the grammar has no element below a single expression."
+  },
+  {
+   "id": "r13",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r14",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r15",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r16",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r17",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r18",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r19",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  },
+  {
+   "id": "r20",
+   "reason": "Interior to the same concatenated regex string argument; no addressable sub-element exists."
+  }
+ ],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10316,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4281,
+  "thinking_tokens": 2528,
+  "opus_cost_usd": 0.21447650000000001,
+  "total_cost_usd": 0.2215155,
+  "duration_ms": 44625,
+  "duration_api_ms": 45853,
+  "num_turns": 2
+ },
+ "wall_ms": 45769,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

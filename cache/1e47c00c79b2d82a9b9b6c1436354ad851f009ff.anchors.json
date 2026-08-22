@@ -1,0 +1,901 @@
+{
+ "blob_sha": "1e47c00c79b2d82a9b9b6c1436354ad851f009ff",
+ "path": "lib/matplotlib/colors.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 146,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#call:_colors_full_map.update",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r3",
+   "anchor": "get_named_colors_mapping",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r4",
+   "anchor": "_is_nth_color",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r5",
+   "anchor": "is_color_like",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r6",
+   "anchor": "is_color_like#if:_is_nth_color(c)",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r7",
+   "anchor": "same_color",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r8",
+   "anchor": "to_rgba",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r9",
+   "anchor": "to_rgba#if:_is_nth_color(c)",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r10",
+   "anchor": "to_rgba#try/except:(KeyError, TypeError)",
+   "kind": "trail",
+   "line": 174
+  },
+  {
+   "id": "r11",
+   "anchor": "to_rgba#if:rgba is None",
+   "kind": "trail",
+   "line": 176
+  },
+  {
+   "id": "r12",
+   "anchor": "_to_rgba_no_colorcycle",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r13",
+   "anchor": "_to_rgba_no_colorcycle#if:isinstance(c, str)/try",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r14",
+   "anchor": "_to_rgba_no_colorcycle#if:isinstance(c, str)/try/assign:c",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r15",
+   "anchor": "_to_rgba_no_colorcycle#if:isinstance(c, str)/assign:match",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r16",
+   "anchor": "_to_rgba_no_colorcycle#if:isinstance(c, str)/assign:match",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r17",
+   "anchor": "_to_rgba_no_colorcycle#if:isinstance(c, str)/try",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r18",
+   "anchor": "_to_rgba_no_colorcycle#assign:c",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r19",
+   "anchor": "_to_rgba_no_colorcycle#if:not np.can_cast(c.dtype, float, \"same_kind\") or c.ndim != 1/raise:ValueError",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r20",
+   "anchor": "_to_rgba_no_colorcycle#assign:c",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r21",
+   "anchor": "to_rgba_array",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r22",
+   "anchor": "to_rgba_array#if:isinstance(c, np.ndarray) and c.dtype.kind in \"if\" and c.ndim == 2 and c.shape[1] in [3, 4]",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r23",
+   "anchor": "to_rgba_array#if:cbook._str_lower_equal(c, \"none\")",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r24",
+   "anchor": "to_rgba_array#assign:result",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r25",
+   "anchor": "to_rgb",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r26",
+   "anchor": "to_hex",
+   "kind": "doc",
+   "line": 303
+  },
+  {
+   "id": "r27",
+   "anchor": "cnames",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r28",
+   "anchor": "ColorConverter",
+   "kind": "doc",
+   "line": 325
+  },
+  {
+   "id": "r29",
+   "anchor": "colorConverter",
+   "kind": "post",
+   "line": 338
+  },
+  {
+   "id": "r30",
+   "anchor": "makeMappingArray",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r31",
+   "anchor": "makeMappingArray#if:N == 1",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r32",
+   "anchor": "makeMappingArray#if:N == 1/assign:lut",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r33",
+   "anchor": "makeMappingArray#return",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r34",
+   "anchor": "Colormap",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r35",
+   "anchor": "Colormap.__init__",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r36",
+   "anchor": "Colormap.N",
+   "kind": "trail",
+   "line": 465
+  },
+  {
+   "id": "r37",
+   "anchor": "Colormap._rgba_bad",
+   "kind": "trail",
+   "line": 466
+  },
+  {
+   "id": "r38",
+   "anchor": "Colormap.colorbar_extend",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r39",
+   "anchor": "Colormap.__call__",
+   "kind": "doc",
+   "line": 480
+  },
+  {
+   "id": "r40",
+   "anchor": "Colormap.__call__#if:not self._isinit",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r41",
+   "anchor": "Colormap.__call__#if:not np.iterable(X)/else/assign:xma",
+   "kind": "trail",
+   "line": 512
+  },
+  {
+   "id": "r42",
+   "anchor": "Colormap.__call__#if:not np.iterable(X)/else/assign:mask_bad",
+   "kind": "trail",
+   "line": 513
+  },
+  {
+   "id": "r43",
+   "anchor": "Colormap.__call__#if:not np.iterable(X)/else/assign:xa",
+   "kind": "trail",
+   "line": 514
+  },
+  {
+   "id": "r44",
+   "anchor": "Colormap.__call__#if:not xa.dtype.isnative",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r45",
+   "anchor": "Colormap.__call__#if:xa.dtype.kind == \"f\"/assign:xa[xa < 0]",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r46",
+   "anchor": "Colormap.__call__#if:xa.dtype.kind == \"f\"/assign:xa[xa == self.N]",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r47",
+   "anchor": "Colormap.__call__#if:xa.dtype.kind == \"f\"/call:np.clip",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r48",
+   "anchor": "Colormap.__call__#assign:xa[xa > self.N - 1]",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r49",
+   "anchor": "Colormap.__call__#if:bytes/else/assign:lut",
+   "kind": "trail",
+   "line": 545
+  },
+  {
+   "id": "r50",
+   "anchor": "Colormap.__call__#if:alpha is not None/if:(lut[-1] == 0).all()/assign:lut[:-1, -1]",
+   "kind": "post",
+   "line": 552
+  },
+  {
+   "id": "r51",
+   "anchor": "Colormap.__call__#if:alpha is not None/if:(lut[-1] == 0).all()/else/assign:lut[:, -1]",
+   "kind": "post",
+   "line": 557
+  },
+  {
+   "id": "r52",
+   "anchor": "Colormap.__copy__",
+   "kind": "doc",
+   "line": 566
+  },
+  {
+   "id": "r53",
+   "anchor": "Colormap.set_bad",
+   "kind": "doc",
+   "line": 576
+  },
+  {
+   "id": "r54",
+   "anchor": "Colormap.set_under",
+   "kind": "doc",
+   "line": 583
+  },
+  {
+   "id": "r55",
+   "anchor": "Colormap.set_over",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r56",
+   "anchor": "Colormap._init",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r57",
+   "anchor": "Colormap._resample",
+   "kind": "doc",
+   "line": 620
+  },
+  {
+   "id": "r58",
+   "anchor": "Colormap.reversed",
+   "kind": "doc",
+   "line": 626
+  },
+  {
+   "id": "r59",
+   "anchor": "LinearSegmentedColormap",
+   "kind": "doc",
+   "line": 646
+  },
+  {
+   "id": "r60",
+   "anchor": "LinearSegmentedColormap.__init__",
+   "kind": "doc",
+   "line": 655
+  },
+  {
+   "id": "r61",
+   "anchor": "LinearSegmentedColormap.monochrome",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r62",
+   "anchor": "LinearSegmentedColormap.set_gamma",
+   "kind": "doc",
+   "line": 722
+  },
+  {
+   "id": "r63",
+   "anchor": "LinearSegmentedColormap.from_list",
+   "kind": "doc",
+   "line": 730
+  },
+  {
+   "id": "r64",
+   "anchor": "LinearSegmentedColormap.from_list#if:isinstance(colors[0], Sized) and len(colors[0]) == 2 and not isinstance(colors[0], str)/assign:vals, colors",
+   "kind": "lead",
+   "line": 746
+  },
+  {
+   "id": "r65",
+   "anchor": "LinearSegmentedColormap._resample",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r66",
+   "anchor": "LinearSegmentedColormap.reversed",
+   "kind": "doc",
+   "line": 766
+  },
+  {
+   "id": "r67",
+   "anchor": "LinearSegmentedColormap.reversed.factory",
+   "kind": "lead",
+   "line": 785
+  },
+  {
+   "id": "r68",
+   "anchor": "ListedColormap",
+   "kind": "doc",
+   "line": 797
+  },
+  {
+   "id": "r69",
+   "anchor": "ListedColormap.monochrome",
+   "kind": "trail",
+   "line": 826
+  },
+  {
+   "id": "r70",
+   "anchor": "ListedColormap.monochrome",
+   "kind": "post",
+   "line": 826
+  },
+  {
+   "id": "r71",
+   "anchor": "ListedColormap._resample",
+   "kind": "doc",
+   "line": 856
+  },
+  {
+   "id": "r72",
+   "anchor": "ListedColormap.reversed",
+   "kind": "doc",
+   "line": 863
+  },
+  {
+   "id": "r73",
+   "anchor": "Normalize",
+   "kind": "doc",
+   "line": 885
+  },
+  {
+   "id": "r74",
+   "anchor": "Normalize.__init__",
+   "kind": "doc",
+   "line": 891
+  },
+  {
+   "id": "r75",
+   "anchor": "Normalize.process_value",
+   "kind": "doc",
+   "line": 914
+  },
+  {
+   "id": "r76",
+   "anchor": "Normalize.process_value#if:np.issubdtype(dtype, np.integer) or dtype.type is np.bool_/assign:dtype",
+   "kind": "lead",
+   "line": 936
+  },
+  {
+   "id": "r77",
+   "anchor": "Normalize.process_value#assign:mask",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r78",
+   "anchor": "Normalize.__call__",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r79",
+   "anchor": "Normalize.__call__#assign:(vmin,), _",
+   "kind": "lead",
+   "line": 959
+  },
+  {
+   "id": "r80",
+   "anchor": "Normalize.__call__#if:vmin == vmax/call:result.fill",
+   "kind": "trail",
+   "line": 962
+  },
+  {
+   "id": "r81",
+   "anchor": "Normalize.__call__#if:vmin == vmax/elif:vmin > vmax/else/assign:resdat",
+   "kind": "lead",
+   "line": 971
+  },
+  {
+   "id": "r82",
+   "anchor": "Normalize.autoscale",
+   "kind": "doc",
+   "line": 991
+  },
+  {
+   "id": "r83",
+   "anchor": "Normalize.autoscale_None",
+   "kind": "doc",
+   "line": 997
+  },
+  {
+   "id": "r84",
+   "anchor": "Normalize.scaled",
+   "kind": "doc",
+   "line": 1005
+  },
+  {
+   "id": "r85",
+   "anchor": "DivergingNorm.__init__",
+   "kind": "doc",
+   "line": 1011
+  },
+  {
+   "id": "r86",
+   "anchor": "DivergingNorm.autoscale_None",
+   "kind": "doc",
+   "line": 1053
+  },
+  {
+   "id": "r87",
+   "anchor": "DivergingNorm.__call__",
+   "kind": "doc",
+   "line": 1063
+  },
+  {
+   "id": "r88",
+   "anchor": "DivergingNorm.__call__#call:self.autoscale_None",
+   "kind": "trail",
+   "line": 1068
+  },
+  {
+   "id": "r89",
+   "anchor": "LogNorm",
+   "kind": "doc",
+   "line": 1080
+  },
+  {
+   "id": "r90",
+   "anchor": "LogNorm.__call__#if:vmin > vmax/elif:vmin <= 0/elif:vmin == vmax/else/assign:resdat",
+   "kind": "lead",
+   "line": 1105
+  },
+  {
+   "id": "r91",
+   "anchor": "LogNorm.autoscale#call:super().autoscale",
+   "kind": "lead",
+   "line": 1133
+  },
+  {
+   "id": "r92",
+   "anchor": "LogNorm.autoscale_None#call:super().autoscale_None",
+   "kind": "lead",
+   "line": 1137
+  },
+  {
+   "id": "r93",
+   "anchor": "SymLogNorm",
+   "kind": "doc",
+   "line": 1140
+  },
+  {
+   "id": "r94",
+   "anchor": "SymLogNorm.__init__",
+   "kind": "doc",
+   "line": 1150
+  },
+  {
+   "id": "r95",
+   "anchor": "SymLogNorm.__call__#if:vmin > vmax/elif:vmin == vmax/else/assign:resdat",
+   "kind": "lead",
+   "line": 1190
+  },
+  {
+   "id": "r96",
+   "anchor": "SymLogNorm._transform",
+   "kind": "doc",
+   "line": 1198
+  },
+  {
+   "id": "r97",
+   "anchor": "SymLogNorm._inv_transform",
+   "kind": "doc",
+   "line": 1209
+  },
+  {
+   "id": "r98",
+   "anchor": "SymLogNorm._transform_vmin_vmax",
+   "kind": "doc",
+   "line": 1219
+  },
+  {
+   "id": "r99",
+   "anchor": "SymLogNorm.autoscale#call:super().autoscale",
+   "kind": "lead",
+   "line": 1234
+  },
+  {
+   "id": "r100",
+   "anchor": "SymLogNorm.autoscale_None#call:super().autoscale_None",
+   "kind": "lead",
+   "line": 1239
+  },
+  {
+   "id": "r101",
+   "anchor": "PowerNorm",
+   "kind": "doc",
+   "line": 1243
+  },
+  {
+   "id": "r102",
+   "anchor": "BoundaryNorm",
+   "kind": "doc",
+   "line": 1294
+  },
+  {
+   "id": "r103",
+   "anchor": "BoundaryNorm.__init__",
+   "kind": "doc",
+   "line": 1305
+  },
+  {
+   "id": "r104",
+   "anchor": "BoundaryNorm.__call__#if:is_scalar/assign:ret",
+   "kind": "trail",
+   "line": 1364
+  },
+  {
+   "id": "r105",
+   "anchor": "BoundaryNorm.inverse",
+   "kind": "doc",
+   "line": 1367
+  },
+  {
+   "id": "r106",
+   "anchor": "NoNorm",
+   "kind": "doc",
+   "line": 1378
+  },
+  {
+   "id": "r107",
+   "anchor": "rgb_to_hsv",
+   "kind": "doc",
+   "line": 1390
+  },
+  {
+   "id": "r108",
+   "anchor": "rgb_to_hsv#if:arr.shape[-1] != 3",
+   "kind": "lead",
+   "line": 1408
+  },
+  {
+   "id": "r109",
+   "anchor": "rgb_to_hsv#assign:arr/arg:dtype",
+   "kind": "trail",
+   "line": 1415
+  },
+  {
+   "id": "r110",
+   "anchor": "rgb_to_hsv#assign:arr/arg:ndmin",
+   "kind": "trail",
+   "line": 1416
+  },
+  {
+   "id": "r111",
+   "anchor": "rgb_to_hsv#assign:idx",
+   "kind": "lead",
+   "line": 1426
+  },
+  {
+   "id": "r112",
+   "anchor": "rgb_to_hsv#assign:idx",
+   "kind": "lead",
+   "line": 1429
+  },
+  {
+   "id": "r113",
+   "anchor": "rgb_to_hsv#assign:idx",
+   "kind": "lead",
+   "line": 1432
+  },
+  {
+   "id": "r114",
+   "anchor": "hsv_to_rgb",
+   "kind": "doc",
+   "line": 1442
+  },
+  {
+   "id": "r115",
+   "anchor": "hsv_to_rgb#if:hsv.shape[-1] != 3",
+   "kind": "lead",
+   "line": 1459
+  },
+  {
+   "id": "r116",
+   "anchor": "hsv_to_rgb#assign:hsv/arg:dtype",
+   "kind": "trail",
+   "line": 1466
+  },
+  {
+   "id": "r117",
+   "anchor": "hsv_to_rgb#assign:hsv/arg:ndmin",
+   "kind": "trail",
+   "line": 1467
+  },
+  {
+   "id": "r118",
+   "anchor": "_vector_magnitude#assign:sum_sq",
+   "kind": "lead",
+   "line": 1532
+  },
+  {
+   "id": "r119",
+   "anchor": "LightSource",
+   "kind": "doc",
+   "line": 1538
+  },
+  {
+   "id": "r120",
+   "anchor": "LightSource.__init__",
+   "kind": "doc",
+   "line": 1549
+  },
+  {
+   "id": "r121",
+   "anchor": "LightSource.direction",
+   "kind": "doc",
+   "line": 1581
+  },
+  {
+   "id": "r122",
+   "anchor": "LightSource.direction#assign:az",
+   "kind": "lead",
+   "line": 1585
+  },
+  {
+   "id": "r123",
+   "anchor": "LightSource.hillshade",
+   "kind": "doc",
+   "line": 1593
+  },
+  {
+   "id": "r124",
+   "anchor": "LightSource.hillshade#assign:dy",
+   "kind": "lead",
+   "line": 1632
+  },
+  {
+   "id": "r125",
+   "anchor": "LightSource.hillshade#assign:e_dy, e_dx",
+   "kind": "lead",
+   "line": 1635
+  },
+  {
+   "id": "r126",
+   "anchor": "LightSource.hillshade#assign:normal",
+   "kind": "lead",
+   "line": 1638
+  },
+  {
+   "id": "r127",
+   "anchor": "LightSource.shade_normals",
+   "kind": "doc",
+   "line": 1646
+  },
+  {
+   "id": "r128",
+   "anchor": "LightSource.shade_normals#assign:imin, imax",
+   "kind": "lead",
+   "line": 1675
+  },
+  {
+   "id": "r129",
+   "anchor": "LightSource.shade_normals#if:(imax - imin) > 1e-6",
+   "kind": "lead",
+   "line": 1681
+  },
+  {
+   "id": "r130",
+   "anchor": "LightSource.shade_normals#if:(imax - imin) > 1e-6/assign:intensity",
+   "kind": "lead",
+   "line": 1686
+  },
+  {
+   "id": "r131",
+   "anchor": "LightSource.shade",
+   "kind": "doc",
+   "line": 1692
+  },
+  {
+   "id": "r132",
+   "anchor": "LightSource.shade#assign:rgb0[..., :3]",
+   "kind": "lead",
+   "line": 1765
+  },
+  {
+   "id": "r133",
+   "anchor": "LightSource.shade_rgb",
+   "kind": "doc",
+   "line": 1768
+  },
+  {
+   "id": "r134",
+   "anchor": "LightSource.shade_rgb#assign:intensity",
+   "kind": "lead",
+   "line": 1814
+  },
+  {
+   "id": "r135",
+   "anchor": "LightSource.shade_rgb#assign:lookup",
+   "kind": "lead",
+   "line": 1818
+  },
+  {
+   "id": "r136",
+   "anchor": "LightSource.shade_rgb#if:hasattr(intensity, 'mask')",
+   "kind": "lead",
+   "line": 1833
+  },
+  {
+   "id": "r137",
+   "anchor": "LightSource.blend_hsv",
+   "kind": "doc",
+   "line": 1840
+  },
+  {
+   "id": "r138",
+   "anchor": "LightSource.blend_hsv#if:hsv_max_sat is None",
+   "kind": "lead",
+   "line": 1880
+  },
+  {
+   "id": "r139",
+   "anchor": "LightSource.blend_hsv#assign:intensity",
+   "kind": "lead",
+   "line": 1890
+  },
+  {
+   "id": "r140",
+   "anchor": "LightSource.blend_hsv#assign:hsv",
+   "kind": "lead",
+   "line": 1894
+  },
+  {
+   "id": "r141",
+   "anchor": "LightSource.blend_hsv#call:np.putmask",
+   "kind": "lead",
+   "line": 1897
+  },
+  {
+   "id": "r142",
+   "anchor": "LightSource.blend_hsv#call:np.putmask/arg:hsv[:, :, 1]",
+   "kind": "trail",
+   "line": 1897
+  },
+  {
+   "id": "r143",
+   "anchor": "LightSource.blend_hsv#return",
+   "kind": "lead",
+   "line": 1911
+  },
+  {
+   "id": "r144",
+   "anchor": "LightSource.blend_soft_light",
+   "kind": "doc",
+   "line": 1913
+  },
+  {
+   "id": "r145",
+   "anchor": "LightSource.blend_overlay",
+   "kind": "doc",
+   "line": 1932
+  },
+  {
+   "id": "r146",
+   "anchor": "from_levels_and_colors",
+   "kind": "doc",
+   "line": 1953
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 44694,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13083,
+  "thinking_tokens": 6623,
+  "opus_cost_usd": 0.7783065,
+  "total_cost_usd": 0.8140705,
+  "duration_ms": 113832,
+  "duration_api_ms": 115542,
+  "num_turns": 2
+ },
+ "wall_ms": 330549,
+ "attempts": 4,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

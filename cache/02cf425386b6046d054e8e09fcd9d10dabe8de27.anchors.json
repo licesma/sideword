@@ -1,0 +1,313 @@
+{
+ "blob_sha": "02cf425386b6046d054e8e09fcd9d10dabe8de27",
+ "path": "xarray/backends/api.py",
+ "repo": "pydata/xarray",
+ "records": 48,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "T_Engine#item:str",
+   "kind": "trail",
+   "line": 63
+  },
+  {
+   "id": "r2",
+   "anchor": "_validate_dataset_names",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r3",
+   "anchor": "_validate_attrs",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r4",
+   "anchor": "_validate_attrs#for:k, v in dataset.attrs.items()",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r5",
+   "anchor": "_validate_attrs#for:variable in dataset.variables.values()",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_mtime#assign:mtime",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r7",
+   "anchor": "_protect_dataset_variables_inplace#for:name, variable in dataset.variables.items()/if:name not in dataset._indexes/assign:data",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r8",
+   "anchor": "_finalize_store",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r9",
+   "anchor": "_finalize_store#del:write",
+   "kind": "trail",
+   "line": 248
+  },
+  {
+   "id": "r10",
+   "anchor": "load_dataset",
+   "kind": "doc",
+   "line": 257
+  },
+  {
+   "id": "r11",
+   "anchor": "load_dataarray",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r12",
+   "anchor": "_dataset_from_backend_dataset#if:\"source\" not in ds.encoding and isinstance(filename_or_obj, (str, os.PathLike))",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r13",
+   "anchor": "open_dataset",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r14",
+   "anchor": "open_dataarray",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r15",
+   "anchor": "open_dataarray#if:DATAARRAY_NAME in dataset.attrs",
+   "kind": "lead",
+   "line": 732
+  },
+  {
+   "id": "r16",
+   "anchor": "open_mfdataset",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r17",
+   "anchor": "open_mfdataset#if:isinstance(paths, str)/if:is_remote_uri(paths) and engine == \"zarr\"/assign:tmp_paths",
+   "kind": "trail",
+   "line": 946
+  },
+  {
+   "id": "r18",
+   "anchor": "open_mfdataset#if:combine == \"nested\"/assign:combined_ids_paths",
+   "kind": "lead",
+   "line": 971
+  },
+  {
+   "id": "r19",
+   "anchor": "open_mfdataset#if:parallel/assign:open_",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r20",
+   "anchor": "open_mfdataset#if:parallel/assign:datasets, closers",
+   "kind": "lead",
+   "line": 1005
+  },
+  {
+   "id": "r21",
+   "anchor": "open_mfdataset#try",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r22",
+   "anchor": "open_mfdataset#try/if:combine == \"nested\"/assign:combined",
+   "kind": "lead",
+   "line": 1012
+  },
+  {
+   "id": "r23",
+   "anchor": "open_mfdataset#try/if:combine == \"nested\"/elif:combine == \"by_coords\"/assign:combined",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r24",
+   "anchor": "open_mfdataset#if:attrs_file is not None",
+   "kind": "lead",
+   "line": 1046
+  },
+  {
+   "id": "r25",
+   "anchor": "to_netcdf",
+   "kind": "lead",
+   "line": 1063
+  },
+  {
+   "id": "r26",
+   "anchor": "to_netcdf",
+   "kind": "lead",
+   "line": 1082
+  },
+  {
+   "id": "r27",
+   "anchor": "to_netcdf",
+   "kind": "lead",
+   "line": 1100
+  },
+  {
+   "id": "r28",
+   "anchor": "to_netcdf",
+   "kind": "lead",
+   "line": 1119
+  },
+  {
+   "id": "r29",
+   "anchor": "to_netcdf",
+   "kind": "doc",
+   "line": 1135
+  },
+  {
+   "id": "r30",
+   "anchor": "to_netcdf#if:path_or_file is None/elif:isinstance(path_or_file, str)/else",
+   "kind": "trail",
+   "line": 1179
+  },
+  {
+   "id": "r31",
+   "anchor": "to_netcdf#call:_validate_dataset_names",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r32",
+   "anchor": "to_netcdf#assign:scheduler",
+   "kind": "lead",
+   "line": 1195
+  },
+  {
+   "id": "r33",
+   "anchor": "to_netcdf#try",
+   "kind": "todo",
+   "line": 1228
+  },
+  {
+   "id": "r34",
+   "anchor": "to_netcdf#try/call:dump_to_store",
+   "kind": "todo",
+   "line": 1231
+  },
+  {
+   "id": "r35",
+   "anchor": "dump_to_store",
+   "kind": "doc",
+   "line": 1256
+  },
+  {
+   "id": "r36",
+   "anchor": "dump_to_store#for:k, enc in encoding.items()/assign:variables[k].encoding",
+   "kind": "lead",
+   "line": 1272
+  },
+  {
+   "id": "r37",
+   "anchor": "save_mfdataset",
+   "kind": "doc",
+   "line": 1281
+  },
+  {
+   "id": "r38",
+   "anchor": "_validate_datatypes_for_zarr_append",
+   "kind": "doc",
+   "line": 1455
+  },
+  {
+   "id": "r39",
+   "anchor": "_validate_datatypes_for_zarr_append.check_dtype#if:vname not in existing_vars or np.issubdtype(var.dtype, np.number) or np.issubdty/pass",
+   "kind": "lead",
+   "line": 1479
+  },
+  {
+   "id": "r40",
+   "anchor": "to_zarr",
+   "kind": "lead",
+   "line": 1493
+  },
+  {
+   "id": "r41",
+   "anchor": "to_zarr",
+   "kind": "lead",
+   "line": 1514
+  },
+  {
+   "id": "r42",
+   "anchor": "to_zarr",
+   "kind": "doc",
+   "line": 1534
+  },
+  {
+   "id": "r43",
+   "anchor": "to_zarr#for:v in dataset.variables.values()",
+   "kind": "lead",
+   "line": 1557
+  },
+  {
+   "id": "r44",
+   "anchor": "to_zarr#assign:store",
+   "kind": "lead",
+   "line": 1562
+  },
+  {
+   "id": "r45",
+   "anchor": "to_zarr#call:_validate_dataset_names",
+   "kind": "lead",
+   "line": 1605
+  },
+  {
+   "id": "r46",
+   "anchor": "to_zarr#if:zarr_version is None/assign:zarr_version",
+   "kind": "lead",
+   "line": 1617
+  },
+  {
+   "id": "r47",
+   "anchor": "to_zarr#assign:zstore/arg:stacklevel",
+   "kind": "trail",
+   "line": 1639
+  },
+  {
+   "id": "r48",
+   "anchor": "to_zarr#call:dump_to_store",
+   "kind": "todo",
+   "line": 1669
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 34941,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5157,
+  "thinking_tokens": 2951,
+  "opus_cost_usd": 0.4826265,
+  "total_cost_usd": 0.5091605,
+  "duration_ms": 50170,
+  "duration_api_ms": 51106,
+  "num_turns": 2
+ },
+ "wall_ms": 51086,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

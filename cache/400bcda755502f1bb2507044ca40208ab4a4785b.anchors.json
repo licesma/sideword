@@ -1,0 +1,811 @@
+{
+ "blob_sha": "400bcda755502f1bb2507044ca40208ab4a4785b",
+ "path": "astropy/wcs/wcs.py",
+ "repo": "astropy/astropy",
+ "records": 131,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:packaging.version",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:astropy",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#import:.wcsapi.fitswcs",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#if:_wcs is not None/for:key, val in _wcs.__dict__.items()",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r8",
+   "anchor": "_load_tab_bintable",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r9",
+   "anchor": "WCSHDO_SIP",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r10",
+   "anchor": "SIP_KW",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r11",
+   "anchor": "NoConvergence",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r12",
+   "anchor": "FITSFixedWarning",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r13",
+   "anchor": "WCS",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r14",
+   "anchor": "WCS._init_kwargs",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r15",
+   "anchor": "WCS.__init__#if:header is None/assign:det2im",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r16",
+   "anchor": "WCS.__init__#if:header is None/else/if:isinstance(header, (str, bytes))/elif:not isinstance(header, fits.Header)/try/assign:orig_header",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r17",
+   "anchor": "WCS.__init__#if:header is None/else/if:isinstance(header_string, str)",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r18",
+   "anchor": "WCS.__init__#if:header is None/else/try/except:_wcs.NoWcsKeywordsFoundError/if:colsel is None",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r19",
+   "anchor": "WCS.copy",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r20",
+   "anchor": "WCS.deepcopy",
+   "kind": "doc",
+   "line": 593
+  },
+  {
+   "id": "r21",
+   "anchor": "WCS.sub#assign:cname_uuid",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r22",
+   "anchor": "WCS.sub#assign:copy.wcs",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r23",
+   "anchor": "WCS.sub#assign:keep",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r24",
+   "anchor": "WCS.sub#assign:copy.wcs.cname",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r25",
+   "anchor": "WCS.sub#if:self.pixel_shape",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r26",
+   "anchor": "WCS._fix_scamp",
+   "kind": "doc",
+   "line": 636
+  },
+  {
+   "id": "r27",
+   "anchor": "WCS._fix_scamp#if:self.wcs is None",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r28",
+   "anchor": "WCS._fix_scamp#assign:pv",
+   "kind": "lead",
+   "line": 651
+  },
+  {
+   "id": "r29",
+   "anchor": "WCS._fix_scamp#if:self.sip is None",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r30",
+   "anchor": "WCS._fix_scamp#assign:pv",
+   "kind": "lead",
+   "line": 664
+  },
+  {
+   "id": "r31",
+   "anchor": "WCS._fix_scamp#for:i in set(pv[:, 0])",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r32",
+   "anchor": "WCS._fix_scamp#for:i in set(pv[:, 0])/assign:js",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r33",
+   "anchor": "WCS._fix_scamp#for:i in set(pv[:, 0])/assign:max_j",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r34",
+   "anchor": "WCS.fix",
+   "kind": "doc",
+   "line": 679
+  },
+  {
+   "id": "r35",
+   "anchor": "WCS.calc_footprint",
+   "kind": "doc",
+   "line": 730
+  },
+  {
+   "id": "r36",
+   "anchor": "WCS.calc_footprint#if:axes is not None/else/if:header is None/try/assign:naxis1, naxis2",
+   "kind": "lead",
+   "line": 770
+  },
+  {
+   "id": "r37",
+   "anchor": "WCS._read_det2im_kw",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r38",
+   "anchor": "WCS._write_det2im",
+   "kind": "doc",
+   "line": 902
+  },
+  {
+   "id": "r39",
+   "anchor": "WCS._read_distortion_kw",
+   "kind": "doc",
+   "line": 949
+  },
+  {
+   "id": "r40",
+   "anchor": "WCS._write_distortion_kw",
+   "kind": "doc",
+   "line": 1023
+  },
+  {
+   "id": "r41",
+   "anchor": "WCS._remove_sip_kw",
+   "kind": "doc",
+   "line": 1068
+  },
+  {
+   "id": "r42",
+   "anchor": "WCS._remove_sip_kw#for:key in {m.group() for m in map(SIP_KW.match, list(header)) if m is not None}",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r43",
+   "anchor": "WCS._read_sip_kw",
+   "kind": "doc",
+   "line": 1078
+  },
+  {
+   "id": "r44",
+   "anchor": "WCS._read_sip_kw#if:isinstance(header, (str, bytes))/return",
+   "kind": "todo",
+   "line": 1087
+  },
+  {
+   "id": "r45",
+   "anchor": "WCS._write_sip_kw",
+   "kind": "doc",
+   "line": 1197
+  },
+  {
+   "id": "r46",
+   "anchor": "WCS._denormalize_sky#if:self.wcs.naxis == 2/if:self.wcs.lng == 0 and self.wcs.lat == 1/elif:self.wcs.lng == 1 and self.wcs.lat == 0/return",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r47",
+   "anchor": "WCS._normalize_sky#if:self.wcs.naxis == 2/if:self.wcs.lng == 0 and self.wcs.lat == 1/elif:self.wcs.lng == 1 and self.wcs.lat == 0/return",
+   "kind": "lead",
+   "line": 1274
+  },
+  {
+   "id": "r48",
+   "anchor": "WCS._array_converter",
+   "kind": "doc",
+   "line": 1289
+  },
+  {
+   "id": "r49",
+   "anchor": "WCS._all_world2pix#assign:pix0",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r50",
+   "anchor": "WCS._all_world2pix#assign:pix0",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r51",
+   "anchor": "WCS._all_world2pix#assign:pix0",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r52",
+   "anchor": "WCS._all_world2pix#if:not self.has_distortion",
+   "kind": "lead",
+   "line": 1719
+  },
+  {
+   "id": "r53",
+   "anchor": "WCS._all_world2pix#if:not self.has_distortion/return",
+   "kind": "lead",
+   "line": 1722
+  },
+  {
+   "id": "r54",
+   "anchor": "WCS._all_world2pix#assign:pix",
+   "kind": "trail",
+   "line": 1724
+  },
+  {
+   "id": "r55",
+   "anchor": "WCS._all_world2pix#assign:dpix",
+   "kind": "lead",
+   "line": 1727
+  },
+  {
+   "id": "r56",
+   "anchor": "WCS._all_world2pix#assign:pix",
+   "kind": "lead",
+   "line": 1730
+  },
+  {
+   "id": "r57",
+   "anchor": "WCS._all_world2pix#assign:dn",
+   "kind": "lead",
+   "line": 1733
+  },
+  {
+   "id": "r58",
+   "anchor": "WCS._all_world2pix#assign:dnprev",
+   "kind": "trail",
+   "line": 1734
+  },
+  {
+   "id": "r59",
+   "anchor": "WCS._all_world2pix#assign:k",
+   "kind": "lead",
+   "line": 1738
+  },
+  {
+   "id": "r60",
+   "anchor": "WCS._all_world2pix#assign:old_invalid",
+   "kind": "lead",
+   "line": 1743
+  },
+  {
+   "id": "r61",
+   "anchor": "WCS._all_world2pix#if:not adaptive",
+   "kind": "lead",
+   "line": 1750
+  },
+  {
+   "id": "r62",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)",
+   "kind": "lead",
+   "line": 1752
+  },
+  {
+   "id": "r63",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/assign:dpix",
+   "kind": "lead",
+   "line": 1754
+  },
+  {
+   "id": "r64",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/assign:dn",
+   "kind": "lead",
+   "line": 1757
+  },
+  {
+   "id": "r65",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence",
+   "kind": "lead",
+   "line": 1762
+  },
+  {
+   "id": "r66",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/if:np.any(divergent)/assign:slowconv",
+   "kind": "lead",
+   "line": 1766
+  },
+  {
+   "id": "r67",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/if:np.any(divergent)/if:inddiv.shape[0] > 0/assign:conv",
+   "kind": "lead",
+   "line": 1772
+  },
+  {
+   "id": "r68",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/if:np.any(divergent)/if:inddiv.shape[0] > 0/assign:dpixgood",
+   "kind": "lead",
+   "line": 1776
+  },
+  {
+   "id": "r69",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/if:np.any(divergent)/if:inddiv.shape[0] > 0/assign:ind",
+   "kind": "lead",
+   "line": 1783
+  },
+  {
+   "id": "r70",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/if:np.any(divergent)/if:inddiv.shape[0] > 0/assign:adaptive",
+   "kind": "lead",
+   "line": 1789
+  },
+  {
+   "id": "r71",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/if:detect_divergence/assign:dnprev",
+   "kind": "lead",
+   "line": 1792
+  },
+  {
+   "id": "r72",
+   "anchor": "WCS._all_world2pix#if:not adaptive/while:(np.nanmax(dn) >= tol2 and k < maxiter)/assign:pix",
+   "kind": "lead",
+   "line": 1795
+  },
+  {
+   "id": "r73",
+   "anchor": "WCS._all_world2pix#if:adaptive",
+   "kind": "lead",
+   "line": 1801
+  },
+  {
+   "id": "r74",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)",
+   "kind": "lead",
+   "line": 1807
+  },
+  {
+   "id": "r75",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/assign:dpixnew",
+   "kind": "lead",
+   "line": 1809
+  },
+  {
+   "id": "r76",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/assign:dnnew",
+   "kind": "lead",
+   "line": 1812
+  },
+  {
+   "id": "r77",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/assign:dnprev[ind]",
+   "kind": "lead",
+   "line": 1815
+  },
+  {
+   "id": "r78",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/if:detect_divergence/assign:conv",
+   "kind": "lead",
+   "line": 1820
+  },
+  {
+   "id": "r79",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/if:detect_divergence/assign:dpixgood",
+   "kind": "lead",
+   "line": 1825
+  },
+  {
+   "id": "r80",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/if:detect_divergence/assign:subind",
+   "kind": "lead",
+   "line": 1832
+  },
+  {
+   "id": "r81",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/if:detect_divergence/else/assign:pix[ind]",
+   "kind": "lead",
+   "line": 1836
+  },
+  {
+   "id": "r82",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/if:detect_divergence/else/assign:subind",
+   "kind": "lead",
+   "line": 1841
+  },
+  {
+   "id": "r83",
+   "anchor": "WCS._all_world2pix#if:adaptive/while:(ind.shape[0] > 0 and k < maxiter)/assign:ind",
+   "kind": "lead",
+   "line": 1844
+  },
+  {
+   "id": "r84",
+   "anchor": "WCS._all_world2pix#assign:invalid",
+   "kind": "lead",
+   "line": 1854
+  },
+  {
+   "id": "r85",
+   "anchor": "WCS._all_world2pix#assign:inddiv",
+   "kind": "lead",
+   "line": 1860
+  },
+  {
+   "id": "r86",
+   "anchor": "WCS._all_world2pix#if:k >= maxiter",
+   "kind": "lead",
+   "line": 1866
+  },
+  {
+   "id": "r87",
+   "anchor": "WCS._all_world2pix#call:np.seterr",
+   "kind": "lead",
+   "line": 1874
+  },
+  {
+   "id": "r88",
+   "anchor": "WCS._all_world2pix#if:(ind is not None or inddiv is not None) and not quiet",
+   "kind": "lead",
+   "line": 1880
+  },
+  {
+   "id": "r89",
+   "anchor": "WCS.proj_plane_pixel_scales",
+   "kind": "doc",
+   "line": 2470
+  },
+  {
+   "id": "r90",
+   "anchor": "WCS.proj_plane_pixel_scales#import:astropy.wcs.utils",
+   "kind": "trail",
+   "line": 2499
+  },
+  {
+   "id": "r91",
+   "anchor": "WCS.proj_plane_pixel_scales#return",
+   "kind": "trail",
+   "line": 2502
+  },
+  {
+   "id": "r92",
+   "anchor": "WCS.proj_plane_pixel_area",
+   "kind": "doc",
+   "line": 2504
+  },
+  {
+   "id": "r93",
+   "anchor": "WCS.proj_plane_pixel_area#import:astropy.wcs.utils",
+   "kind": "trail",
+   "line": 2546
+  },
+  {
+   "id": "r94",
+   "anchor": "WCS.proj_plane_pixel_area#assign:unit",
+   "kind": "trail",
+   "line": 2548
+  },
+  {
+   "id": "r95",
+   "anchor": "WCS.to_fits",
+   "kind": "doc",
+   "line": 2551
+  },
+  {
+   "id": "r96",
+   "anchor": "WCS.to_header",
+   "kind": "doc",
+   "line": 2594
+  },
+  {
+   "id": "r97",
+   "anchor": "WCS.to_header#assign:precision",
+   "kind": "lead",
+   "line": 2669
+  },
+  {
+   "id": "r98",
+   "anchor": "WCS.to_header#if:self.wcs is not None/if:_WCS_TPD_WARN_LT71",
+   "kind": "lead",
+   "line": 2695
+  },
+  {
+   "id": "r99",
+   "anchor": "WCS.to_header#if:not do_sip and self.wcs is not None and any(self.wcs.ctype) and self.sip is not None/assign:header",
+   "kind": "lead",
+   "line": 2723
+  },
+  {
+   "id": "r100",
+   "anchor": "WCS.to_header#if:display_warning/if:any(self.wcs.ctype) and self.sip is not None",
+   "kind": "lead",
+   "line": 2740
+  },
+  {
+   "id": "r101",
+   "anchor": "WCS.to_header#if:key is not None",
+   "kind": "lead",
+   "line": 2743
+  },
+  {
+   "id": "r102",
+   "anchor": "WCS._fix_ctype",
+   "kind": "doc",
+   "line": 2747
+  },
+  {
+   "id": "r103",
+   "anchor": "WCS._fix_ctype#for:i in range(1, self.naxis+1)/assign:kw",
+   "kind": "lead",
+   "line": 2787
+  },
+  {
+   "id": "r104",
+   "anchor": "WCS.to_header_string",
+   "kind": "doc",
+   "line": 2798
+  },
+  {
+   "id": "r105",
+   "anchor": "WCS.footprint_to_file",
+   "kind": "doc",
+   "line": 2805
+  },
+  {
+   "id": "r106",
+   "anchor": "WCS.__repr__",
+   "kind": "doc",
+   "line": 2869
+  },
+  {
+   "id": "r107",
+   "anchor": "WCS.get_axis_types",
+   "kind": "doc",
+   "line": 2903
+  },
+  {
+   "id": "r108",
+   "anchor": "WCS.__reduce__",
+   "kind": "doc",
+   "line": 3000
+  },
+  {
+   "id": "r109",
+   "anchor": "WCS.dropaxis",
+   "kind": "doc",
+   "line": 3017
+  },
+  {
+   "id": "r110",
+   "anchor": "WCS.dropaxis#return",
+   "kind": "lead",
+   "line": 3040
+  },
+  {
+   "id": "r111",
+   "anchor": "WCS.swapaxes",
+   "kind": "doc",
+   "line": 3042
+  },
+  {
+   "id": "r112",
+   "anchor": "WCS.reorient_celestial_first",
+   "kind": "doc",
+   "line": 3066
+  },
+  {
+   "id": "r113",
+   "anchor": "WCS.slice",
+   "kind": "doc",
+   "line": 3074
+  },
+  {
+   "id": "r114",
+   "anchor": "WCS.slice#if:hasattr(view, '__len__') and len(view) > self.wcs.naxis/elif:not hasattr(view, '__len__')",
+   "kind": "trail",
+   "line": 3099
+  },
+  {
+   "id": "r115",
+   "anchor": "WCS.slice#if:not all(isinstance(x, slice) for x in view)/return",
+   "kind": "lead",
+   "line": 3106
+  },
+  {
+   "id": "r116",
+   "anchor": "WCS.slice#assign:wcs_new",
+   "kind": "lead",
+   "line": 3113
+  },
+  {
+   "id": "r117",
+   "anchor": "WCS.slice#for:i, iview in enumerate(view)/if:iview.step is not None and iview.start is None/assign:iview",
+   "kind": "lead",
+   "line": 3131
+  },
+  {
+   "id": "r118",
+   "anchor": "WCS.slice#for:i, iview in enumerate(view)/if:iview.start is not None/if:iview.step not in (None, 1)/assign:crp",
+   "kind": "lead",
+   "line": 3140
+  },
+  {
+   "id": "r119",
+   "anchor": "WCS.slice#for:i, iview in enumerate(view)/try/assign:nitems",
+   "kind": "lead",
+   "line": 3154
+  },
+  {
+   "id": "r120",
+   "anchor": "WCS.__getitem__#return",
+   "kind": "lead",
+   "line": 3175
+  },
+  {
+   "id": "r121",
+   "anchor": "WCS.__iter__#raise:TypeError",
+   "kind": "lead",
+   "line": 3181
+  },
+  {
+   "id": "r122",
+   "anchor": "WCS.axis_type_names",
+   "kind": "doc",
+   "line": 3184
+  },
+  {
+   "id": "r123",
+   "anchor": "WCS.celestial",
+   "kind": "doc",
+   "line": 3202
+  },
+  {
+   "id": "r124",
+   "anchor": "WCS.spectral",
+   "kind": "doc",
+   "line": 3220
+  },
+  {
+   "id": "r125",
+   "anchor": "WCS.temporal",
+   "kind": "doc",
+   "line": 3238
+  },
+  {
+   "id": "r126",
+   "anchor": "WCS.has_distortion",
+   "kind": "doc",
+   "line": 3259
+  },
+  {
+   "id": "r127",
+   "anchor": "WCS.pixel_scale_matrix#try/except:InconsistentAxisTypesError/try/with:warnings.catch_warnings()",
+   "kind": "lead",
+   "line": 3276
+  },
+  {
+   "id": "r128",
+   "anchor": "WCS.footprint_contains",
+   "kind": "doc",
+   "line": 3292
+  },
+  {
+   "id": "r129",
+   "anchor": "__WCS_unpickle__",
+   "kind": "doc",
+   "line": 3312
+  },
+  {
+   "id": "r130",
+   "anchor": "find_all_wcs",
+   "kind": "doc",
+   "line": 3339
+  },
+  {
+   "id": "r131",
+   "anchor": "validate",
+   "kind": "doc",
+   "line": 3430
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 75641,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15063,
+  "thinking_tokens": 8100,
+  "opus_cost_usd": 1.1372765,
+  "total_cost_usd": 1.1988925,
+  "duration_ms": 133880,
+  "duration_api_ms": 135781,
+  "num_turns": 2
+ },
+ "wall_ms": 135180,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

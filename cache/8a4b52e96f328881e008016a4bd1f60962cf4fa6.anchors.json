@@ -1,0 +1,769 @@
+{
+ "blob_sha": "8a4b52e96f328881e008016a4bd1f60962cf4fa6",
+ "path": "lib/matplotlib/font_manager.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 124,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:base64",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "_weight_regexes#item:(\"thin\", 100)",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r4",
+   "anchor": "_weight_regexes#item:(\"light\", 300)",
+   "kind": "trail",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "_weight_regexes#item:(\"bold\", 700)",
+   "kind": "trail",
+   "line": 111
+  },
+  {
+   "id": "r6",
+   "anchor": "_weight_regexes#item:(\"black\", 900)",
+   "kind": "trail",
+   "line": 116
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#try/except:Exception",
+   "kind": "trail",
+   "line": 133
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#try/except:Exception/assign:_HOME",
+   "kind": "trail",
+   "line": 134
+  },
+  {
+   "id": "r10",
+   "anchor": "X11FontDirectories#item:\"/usr/X11R6/lib/X11/fonts/TTF/\"",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r11",
+   "anchor": "X11FontDirectories#item:\"/usr/share/fonts/\"",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r12",
+   "anchor": "X11FontDirectories#item:\"/usr/local/share/fonts/\"",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r13",
+   "anchor": "X11FontDirectories#item:\"/usr/lib/openoffice/share/fonts/truetype/\"",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r14",
+   "anchor": "X11FontDirectories#item:str((Path(os.environ.get('XDG_DATA_HOME') or _HOME / \".local/share\")) / \"fonts\")",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r15",
+   "anchor": "OSXFontDirectories#item:\"/opt/local/share/fonts\"",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r16",
+   "anchor": "OSXFontDirectories#item:str(_HOME / \"Library/Fonts\")",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r17",
+   "anchor": "get_fontext_synonyms",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r18",
+   "anchor": "list_fonts",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r19",
+   "anchor": "list_fonts#return",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r20",
+   "anchor": "win32FontDirectory",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r21",
+   "anchor": "_get_win32_installed_fonts",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r22",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r23",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]/item:(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()])",
+   "kind": "trail",
+   "line": 219
+  },
+  {
+   "id": "r24",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]/item:(winreg.HKEY_CURRENT_USER, MSUserFontDirectories)",
+   "kind": "trail",
+   "line": 220
+  },
+  {
+   "id": "r25",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]/for:base_dir in base_dirs/for:reg_path in MSFontDirectories/try/with:winreg.OpenKey(domain, reg_path)/for:j in range(winreg.QueryInfoKey(local)[1])/assign:key, value, tp",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r26",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]/for:base_dir in base_dirs/for:reg_path in MSFontDirectories/try/with:winreg.OpenKey(domain, reg_path)/for:j in range(winreg.QueryInfoKey(local)[1])/try/assign:path",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r27",
+   "anchor": "_get_win32_installed_fonts#for:domain, base_dirs in [(winreg.HKEY_LOCAL_MACHINE, [win32FontDirectory()]), (winreg.HKEY_CURRENT_USER, MSUserFontDirectories)]/for:base_dir in base_dirs/for:reg_path in MSFontDirectories/try/with:winreg.OpenKey(domain, reg_path)/for:j in range(winreg.QueryInfoKey(local)[1])/try/except:RuntimeError/continue",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r28",
+   "anchor": "_get_fontconfig_fonts",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r29",
+   "anchor": "_get_fontconfig_fonts#try/if:b'--format' not in subprocess.check_output(['fc-list', '--help'])/call:_log.warning",
+   "kind": "trail",
+   "line": 250
+  },
+  {
+   "id": "r30",
+   "anchor": "findSystemFonts",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r31",
+   "anchor": "_fontentry_helper_repr_png#import:matplotlib.figure",
+   "kind": "trail",
+   "line": 293
+  },
+  {
+   "id": "r32",
+   "anchor": "ttfFontProperty",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r33",
+   "anchor": "ttfFontProperty#assign:sfnt",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r34",
+   "anchor": "ttfFontProperty#assign:mac_key/item:1",
+   "kind": "trail",
+   "line": 350
+  },
+  {
+   "id": "r35",
+   "anchor": "ttfFontProperty#assign:mac_key/item:0",
+   "kind": "trail",
+   "line": 351
+  },
+  {
+   "id": "r36",
+   "anchor": "ttfFontProperty#assign:mac_key/item:0",
+   "kind": "trail",
+   "line": 352
+  },
+  {
+   "id": "r37",
+   "anchor": "ttfFontProperty#assign:ms_key/item:3",
+   "kind": "trail",
+   "line": 353
+  },
+  {
+   "id": "r38",
+   "anchor": "ttfFontProperty#assign:ms_key/item:1",
+   "kind": "trail",
+   "line": 354
+  },
+  {
+   "id": "r39",
+   "anchor": "ttfFontProperty#assign:ms_key/item:0x0409",
+   "kind": "trail",
+   "line": 355
+  },
+  {
+   "id": "r40",
+   "anchor": "ttfFontProperty#assign:sfnt2",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r41",
+   "anchor": "ttfFontProperty#if:name.lower() in ['capitals', 'small-caps']",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r42",
+   "anchor": "ttfFontProperty#if:name.lower() in ['capitals', 'small-caps']",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r43",
+   "anchor": "ttfFontProperty#assign:wws_subfamily",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r44",
+   "anchor": "ttfFontProperty.get_weight",
+   "kind": "trail",
+   "line": 400
+  },
+  {
+   "id": "r45",
+   "anchor": "ttfFontProperty.get_weight#assign:os2",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r46",
+   "anchor": "ttfFontProperty.get_weight#try",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r47",
+   "anchor": "ttfFontProperty.get_weight#for:style in styles",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r48",
+   "anchor": "ttfFontProperty.get_weight#if:font.style_flags & ft2font.BOLD/return",
+   "kind": "trail",
+   "line": 422
+  },
+  {
+   "id": "r49",
+   "anchor": "ttfFontProperty.get_weight#return",
+   "kind": "trail",
+   "line": 423
+  },
+  {
+   "id": "r50",
+   "anchor": "ttfFontProperty#if:any(word in sfnt4 for word in ['narrow', 'condensed', 'cond'])",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r51",
+   "anchor": "ttfFontProperty#if:not font.scalable",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r52",
+   "anchor": "afmFontProperty",
+   "kind": "doc",
+   "line": 457
+  },
+  {
+   "id": "r53",
+   "anchor": "afmFontProperty#if:font.get_angle() != 0 or 'italic' in name.lower()",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r54",
+   "anchor": "afmFontProperty#if:name.lower() in ['capitals', 'small-caps']",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r55",
+   "anchor": "afmFontProperty#if:name.lower() in ['capitals', 'small-caps']",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r56",
+   "anchor": "afmFontProperty#if:'demi cond' in fontname",
+   "kind": "lead",
+   "line": 502
+  },
+  {
+   "id": "r57",
+   "anchor": "afmFontProperty#assign:size",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r58",
+   "anchor": "afmFontProperty#assign:size",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r59",
+   "anchor": "FontProperties",
+   "kind": "doc",
+   "line": 525
+  },
+  {
+   "id": "r60",
+   "anchor": "FontProperties.__init__#param:fname",
+   "kind": "trail",
+   "line": 590
+  },
+  {
+   "id": "r61",
+   "anchor": "FontProperties.__init__#if:isinstance(family, str) and style is None and variant is None and weight is None and stretch is None and size is None and fname is None",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r62",
+   "anchor": "FontProperties._from_any",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r63",
+   "anchor": "FontProperties.get_family",
+   "kind": "doc",
+   "line": 648
+  },
+  {
+   "id": "r64",
+   "anchor": "FontProperties.get_name",
+   "kind": "doc",
+   "line": 658
+  },
+  {
+   "id": "r65",
+   "anchor": "FontProperties.get_style",
+   "kind": "doc",
+   "line": 664
+  },
+  {
+   "id": "r66",
+   "anchor": "FontProperties.get_variant",
+   "kind": "doc",
+   "line": 670
+  },
+  {
+   "id": "r67",
+   "anchor": "FontProperties.get_weight",
+   "kind": "doc",
+   "line": 676
+  },
+  {
+   "id": "r68",
+   "anchor": "FontProperties.get_stretch",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r69",
+   "anchor": "FontProperties.get_size",
+   "kind": "doc",
+   "line": 693
+  },
+  {
+   "id": "r70",
+   "anchor": "FontProperties.get_file",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r71",
+   "anchor": "FontProperties.get_fontconfig_pattern",
+   "kind": "doc",
+   "line": 705
+  },
+  {
+   "id": "r72",
+   "anchor": "FontProperties.set_family",
+   "kind": "doc",
+   "line": 715
+  },
+  {
+   "id": "r73",
+   "anchor": "FontProperties.set_style",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r74",
+   "anchor": "FontProperties.set_variant",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r75",
+   "anchor": "FontProperties.set_weight",
+   "kind": "doc",
+   "line": 755
+  },
+  {
+   "id": "r76",
+   "anchor": "FontProperties.set_stretch",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r77",
+   "anchor": "FontProperties.set_size",
+   "kind": "doc",
+   "line": 807
+  },
+  {
+   "id": "r78",
+   "anchor": "FontProperties.set_file",
+   "kind": "doc",
+   "line": 837
+  },
+  {
+   "id": "r79",
+   "anchor": "FontProperties.set_fontconfig_pattern",
+   "kind": "doc",
+   "line": 844
+  },
+  {
+   "id": "r80",
+   "anchor": "FontProperties.get_math_fontfamily",
+   "kind": "doc",
+   "line": 857
+  },
+  {
+   "id": "r81",
+   "anchor": "FontProperties.set_math_fontfamily",
+   "kind": "doc",
+   "line": 865
+  },
+  {
+   "id": "r82",
+   "anchor": "FontProperties.set_math_fontfamily#if:fontfamily is None/else/call:_api.check_in_list",
+   "kind": "lead",
+   "line": 890
+  },
+  {
+   "id": "r83",
+   "anchor": "FontProperties.copy",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r84",
+   "anchor": "FontProperties.set_name",
+   "kind": "lead",
+   "line": 898
+  },
+  {
+   "id": "r85",
+   "anchor": "_JSONEncoder.default#if:isinstance(o, FontManager)/elif:isinstance(o, FontEntry)/try/assign:d[\"fname\"]",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r86",
+   "anchor": "json_dump",
+   "kind": "doc",
+   "line": 940
+  },
+  {
+   "id": "r87",
+   "anchor": "json_load",
+   "kind": "doc",
+   "line": 964
+  },
+  {
+   "id": "r88",
+   "anchor": "FontManager",
+   "kind": "doc",
+   "line": 976
+  },
+  {
+   "id": "r89",
+   "anchor": "FontManager.__version__",
+   "kind": "lead",
+   "line": 987
+  },
+  {
+   "id": "r90",
+   "anchor": "FontManager.__init__#assign:paths",
+   "kind": "lead",
+   "line": 996
+  },
+  {
+   "id": "r91",
+   "anchor": "FontManager.__init__#assign:timer",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r92",
+   "anchor": "FontManager.addfont",
+   "kind": "doc",
+   "line": 1025
+  },
+  {
+   "id": "r93",
+   "anchor": "FontManager.addfont#assign:path",
+   "kind": "lead",
+   "line": 1036
+  },
+  {
+   "id": "r94",
+   "anchor": "FontManager.defaultFont#return",
+   "kind": "lead",
+   "line": 1052
+  },
+  {
+   "id": "r95",
+   "anchor": "FontManager.get_default_weight",
+   "kind": "doc",
+   "line": 1055
+  },
+  {
+   "id": "r96",
+   "anchor": "FontManager.get_default_size",
+   "kind": "doc",
+   "line": 1062
+  },
+  {
+   "id": "r97",
+   "anchor": "FontManager.set_default_weight",
+   "kind": "doc",
+   "line": 1068
+  },
+  {
+   "id": "r98",
+   "anchor": "FontManager.score_family",
+   "kind": "lead",
+   "line": 1082
+  },
+  {
+   "id": "r99",
+   "anchor": "FontManager.score_family",
+   "kind": "doc",
+   "line": 1082
+  },
+  {
+   "id": "r100",
+   "anchor": "FontManager.score_family#for:i, family1 in enumerate(families)/if:family1 in font_family_aliases/elif:family1 == family2/return",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r101",
+   "anchor": "FontManager.score_style",
+   "kind": "doc",
+   "line": 1112
+  },
+  {
+   "id": "r102",
+   "anchor": "FontManager.score_variant",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r103",
+   "anchor": "FontManager.score_stretch",
+   "kind": "doc",
+   "line": 1140
+  },
+  {
+   "id": "r104",
+   "anchor": "FontManager.score_weight",
+   "kind": "doc",
+   "line": 1158
+  },
+  {
+   "id": "r105",
+   "anchor": "FontManager.score_weight#if:cbook._str_equal(weight1, weight2)",
+   "kind": "lead",
+   "line": 1170
+  },
+  {
+   "id": "r106",
+   "anchor": "FontManager.score_size",
+   "kind": "doc",
+   "line": 1176
+  },
+  {
+   "id": "r107",
+   "anchor": "FontManager.score_size#try",
+   "kind": "lead",
+   "line": 1190
+  },
+  {
+   "id": "r108",
+   "anchor": "FontManager.findfont",
+   "kind": "doc",
+   "line": 1200
+  },
+  {
+   "id": "r109",
+   "anchor": "FontManager.findfont#assign:rc_params",
+   "kind": "lead",
+   "line": 1256
+  },
+  {
+   "id": "r110",
+   "anchor": "FontManager.get_font_names",
+   "kind": "doc",
+   "line": 1266
+  },
+  {
+   "id": "r111",
+   "anchor": "FontManager._find_fonts_by_props",
+   "kind": "doc",
+   "line": 1270
+  },
+  {
+   "id": "r112",
+   "anchor": "FontManager._find_fonts_by_props#for:family in prop.get_family()/call:cprop.set_family",
+   "kind": "trail",
+   "line": 1320
+  },
+  {
+   "id": "r113",
+   "anchor": "FontManager._find_fonts_by_props#for:family in prop.get_family()/try/call:fpaths.append/arg:self.findfont(cprop, fontext, directory, fallback_to_default=False, rebuild_if_missing=rebuild_if_missing)/arg:fallback_to_default",
+   "kind": "trail",
+   "line": 1326
+  },
+  {
+   "id": "r114",
+   "anchor": "FontManager._find_fonts_by_props#if:not fpaths",
+   "kind": "lead",
+   "line": 1342
+  },
+  {
+   "id": "r115",
+   "anchor": "FontManager._findfont_cached#for:font in fontlist/assign:score",
+   "kind": "lead",
+   "line": 1384
+  },
+  {
+   "id": "r116",
+   "anchor": "FontManager._findfont_cached#if:best_font is None or best_score >= 10.0/if:fallback_to_default/else/return",
+   "kind": "lead",
+   "line": 1416
+  },
+  {
+   "id": "r117",
+   "anchor": "FontManager._findfont_cached#if:not os.path.isfile(result)/if:rebuild_if_missing/call:vars(self).update",
+   "kind": "lead",
+   "line": 1432
+  },
+  {
+   "id": "r118",
+   "anchor": "FontManager._findfont_cached#if:not os.path.isfile(result)/if:rebuild_if_missing/else/return",
+   "kind": "lead",
+   "line": 1439
+  },
+  {
+   "id": "r119",
+   "anchor": "is_opentype_cff_font",
+   "kind": "doc",
+   "line": 1445
+  },
+  {
+   "id": "r120",
+   "anchor": "<module>#if:hasattr(os, \"register_at_fork\")",
+   "kind": "lead",
+   "line": 1479
+  },
+  {
+   "id": "r121",
+   "anchor": "_cached_realpath#return",
+   "kind": "lead",
+   "line": 1487
+  },
+  {
+   "id": "r122",
+   "anchor": "get_font",
+   "kind": "doc",
+   "line": 1491
+  },
+  {
+   "id": "r123",
+   "anchor": "get_font#return/arg:paths",
+   "kind": "lead",
+   "line": 1522
+  },
+  {
+   "id": "r124",
+   "anchor": "get_font#return/arg:thread_id",
+   "kind": "lead",
+   "line": 1526
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 34286,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13204,
+  "thinking_tokens": 6846,
+  "opus_cost_usd": 0.6772514999999999,
+  "total_cost_usd": 0.7040844999999999,
+  "duration_ms": 122198,
+  "duration_api_ms": 123586,
+  "num_turns": 2
+ },
+ "wall_ms": 123101,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

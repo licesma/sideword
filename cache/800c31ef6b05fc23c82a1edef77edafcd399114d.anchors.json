@@ -1,0 +1,241 @@
+{
+ "blob_sha": "800c31ef6b05fc23c82a1edef77edafcd399114d",
+ "path": "ez_setup.py",
+ "repo": "astropy/astropy",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "DEFAULT_VERSION",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "_python_cmd",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r4",
+   "anchor": "_install",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r5",
+   "anchor": "_install#with:archive_context(archive_filename)/call:log.warn",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r6",
+   "anchor": "_install#with:archive_context(archive_filename)/if:not _python_cmd('setup.py', 'install', *install_args)/return",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r7",
+   "anchor": "_build_egg",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "_build_egg#with:archive_context(archive_filename)/call:log.warn",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r9",
+   "anchor": "_build_egg#call:log.warn",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r10",
+   "anchor": "ContextualZipFile",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r11",
+   "anchor": "ContextualZipFile.__new__",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r12",
+   "anchor": "archive_context",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r13",
+   "anchor": "archive_context#try/assign:subdir",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r14",
+   "anchor": "_do_download",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r15",
+   "anchor": "_do_download#if:'pkg_resources' in sys.modules",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r16",
+   "anchor": "use_setuptools",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r17",
+   "anchor": "use_setuptools#assign:rep_modules",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r18",
+   "anchor": "use_setuptools#try/return",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r19",
+   "anchor": "use_setuptools#try/except:ImportError/pass",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r20",
+   "anchor": "use_setuptools#try/except:pkg_resources.DistributionNotFound/pass",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r21",
+   "anchor": "use_setuptools#try/except:pkg_resources.VersionConflict/del:pkg_resources",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r22",
+   "anchor": "_conflict_bail",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r23",
+   "anchor": "_clean_check",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r24",
+   "anchor": "download_file_powershell",
+   "kind": "doc",
+   "line": 237
+  },
+  {
+   "id": "r25",
+   "anchor": "has_powershell",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r26",
+   "anchor": "download_file_insecure",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r27",
+   "anchor": "download_file_insecure#try/assign:data",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r28",
+   "anchor": "download_file_insecure#with:open(target, \"wb\")",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r29",
+   "anchor": "download_setuptools",
+   "kind": "doc",
+   "line": 331
+  },
+  {
+   "id": "r30",
+   "anchor": "download_setuptools#assign:to_dir",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r31",
+   "anchor": "download_setuptools#if:not os.path.exists(saveto)",
+   "kind": "trail",
+   "line": 352
+  },
+  {
+   "id": "r32",
+   "anchor": "_build_install_args",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r33",
+   "anchor": "_parse_args",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r34",
+   "anchor": "_parse_args#return",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r35",
+   "anchor": "_download_args",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r36",
+   "anchor": "main",
+   "kind": "doc",
+   "line": 407
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10609,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2759,
+  "thinking_tokens": 1310,
+  "opus_cost_usd": 0.1793565,
+  "total_cost_usd": 0.1864595,
+  "duration_ms": 25838,
+  "duration_api_ms": 26866,
+  "num_turns": 2
+ },
+ "wall_ms": 26802,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

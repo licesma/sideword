@@ -1,0 +1,67 @@
+{
+ "blob_sha": "6fdf070694277242f4fbcf066baf060c73021c37",
+ "path": "django/contrib/admin/actions.py",
+ "repo": "django/django",
+ "records": 7,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "delete_selected",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "delete_selected#if:not modeladmin.has_delete_permission(request)",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "delete_selected#assign:deletable_objects, model_count, perms_needed, protected",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r5",
+   "anchor": "delete_selected#if:request.POST.get('post') and not protected",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r6",
+   "anchor": "delete_selected#if:request.POST.get('post') and not protected/return",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r7",
+   "anchor": "delete_selected#return",
+   "kind": "lead",
+   "line": 83
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4916,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 716,
+  "thinking_tokens": 348,
+  "opus_cost_usd": 0.0713515,
+  "total_cost_usd": 0.0737695,
+  "duration_ms": 9432,
+  "duration_api_ms": 10348,
+  "num_turns": 2
+ },
+ "wall_ms": 10384,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

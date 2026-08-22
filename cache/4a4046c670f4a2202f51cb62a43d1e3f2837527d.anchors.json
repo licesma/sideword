@@ -1,0 +1,55 @@
+{
+ "blob_sha": "4a4046c670f4a2202f51cb62a43d1e3f2837527d",
+ "path": "django/db/backends/sqlite3/creation.py",
+ "repo": "django/django",
+ "records": 5,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseCreation._create_test_db#if:not self.is_in_memory_db(test_database_name)/if:verbosity >= 1",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseCreation._clone_test_db#if:not self.is_in_memory_db(source_database_name)",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseCreation._clone_test_db#if:not self.is_in_memory_db(source_database_name)/if:os.access(target_database_name, os.F_OK)",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseCreation._destroy_test_db#if:test_database_name and not self.is_in_memory_db(test_database_name)/call:os.remove",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseCreation.test_db_signature",
+   "kind": "doc",
+   "line": 89
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5121,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 826,
+  "thinking_tokens": 417,
+  "opus_cost_usd": 0.0761515,
+  "total_cost_usd": 0.0788405,
+  "duration_ms": 8571,
+  "duration_api_ms": 9709,
+  "num_turns": 2
+ },
+ "wall_ms": 9519,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

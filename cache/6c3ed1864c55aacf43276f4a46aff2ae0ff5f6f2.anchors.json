@@ -1,0 +1,55 @@
+{
+ "blob_sha": "6c3ed1864c55aacf43276f4a46aff2ae0ff5f6f2",
+ "path": "django/contrib/gis/db/backends/spatialite/introspection.py",
+ "repo": "django/django",
+ "records": 5,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GeoFlexibleFieldLookupDict",
+   "kind": "doc",
+   "line": 8
+  },
+  {
+   "id": "r2",
+   "anchor": "SpatiaLiteIntrospection.get_geometry_type#try/call:cursor.execute",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "SpatiaLiteIntrospection.get_geometry_type#try/assign:ogr_type",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r4",
+   "anchor": "SpatiaLiteIntrospection.get_geometry_type#try/if:isinstance(ogr_type, six.integer_types) and ogr_type > 1000/assign:ogr_type",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r5",
+   "anchor": "SpatiaLiteIntrospection.get_geometry_type#try/assign:dim",
+   "kind": "lead",
+   "line": 52
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4945,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 690,
+  "thinking_tokens": 288,
+  "opus_cost_usd": 0.07099149999999999,
+  "total_cost_usd": 0.07344849999999999,
+  "duration_ms": 7424,
+  "duration_api_ms": 8598,
+  "num_turns": 2
+ },
+ "wall_ms": 8428,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

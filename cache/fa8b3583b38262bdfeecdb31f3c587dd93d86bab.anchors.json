@@ -1,0 +1,409 @@
+{
+ "blob_sha": "fa8b3583b38262bdfeecdb31f3c587dd93d86bab",
+ "path": "seaborn/relational.py",
+ "repo": "mwaskom/seaborn",
+ "records": 64,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_relational_narrative#arg:main_api",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r2",
+   "anchor": "_relational_docs#arg:data_vars",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r3",
+   "anchor": "_RelationalPlotter.sort",
+   "kind": "todo",
+   "line": 191
+  },
+  {
+   "id": "r4",
+   "anchor": "_RelationalPlotter.add_legend_data",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r5",
+   "anchor": "_RelationalPlotter.add_legend_data#assign:titles",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r6",
+   "anchor": "_RelationalPlotter.add_legend_data#assign:brief_ticks",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r7",
+   "anchor": "_RelationalPlotter.add_legend_data#assign:brief_hue",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r8",
+   "anchor": "_RelationalPlotter.add_legend_data#if:not legend_title and self.variables.get(\"hue\", None) is not None",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r9",
+   "anchor": "_RelationalPlotter.add_legend_data#for:level, formatted_level in zip(hue_levels, hue_formatted_levels)",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r10",
+   "anchor": "_RelationalPlotter.add_legend_data#assign:brief_size",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r11",
+   "anchor": "_RelationalPlotter.add_legend_data#if:brief_size/if:isinstance(self._size_map.norm, mpl.colors.LogNorm)",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r12",
+   "anchor": "_RelationalPlotter.add_legend_data#if:brief_size/assign:limits",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r13",
+   "anchor": "_RelationalPlotter.add_legend_data#if:not legend_title and self.variables.get(\"size\", None) is not None",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r14",
+   "anchor": "_RelationalPlotter.add_legend_data#for:level, formatted_level in zip(size_levels, size_formatted_levels)",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r15",
+   "anchor": "_RelationalPlotter.add_legend_data#if:not legend_title and self.variables.get(\"style\", None) is not None",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r16",
+   "anchor": "_RelationalPlotter.add_legend_data#if:not legend_title and self.variables.get(\"style\", None) is not None",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r17",
+   "anchor": "_RelationalPlotter.add_legend_data#if:self._style_map.levels is not None",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r18",
+   "anchor": "_LinePlotter._default_size_range",
+   "kind": "todo",
+   "line": 361
+  },
+  {
+   "id": "r19",
+   "anchor": "_LinePlotter.plot",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r20",
+   "anchor": "_LinePlotter.plot#call:kws.setdefault",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r21",
+   "anchor": "_LinePlotter.plot#assign:err_kws",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r22",
+   "anchor": "_LinePlotter.plot#assign:agg",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r23",
+   "anchor": "_LinePlotter.plot#assign:orient",
+   "kind": "todo",
+   "line": 409
+  },
+  {
+   "id": "r24",
+   "anchor": "_LinePlotter.plot#assign:grouping_vars",
+   "kind": "todo",
+   "line": 422
+  },
+  {
+   "id": "r25",
+   "anchor": "_LinePlotter.plot#assign:grouping_vars",
+   "kind": "lead",
+   "line": 422
+  },
+  {
+   "id": "r26",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:self.estimator is not None/if:\"units\" in self.variables/assign:err",
+   "kind": "todo",
+   "line": 433
+  },
+  {
+   "id": "r27",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:self.estimator is not None/assign:sub_data",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r28",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/for:var in \"xy\"",
+   "kind": "todo",
+   "line": 441
+  },
+  {
+   "id": "r29",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:\"units\" in self.variables",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r30",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:\"units\" in self.variables",
+   "kind": "todo",
+   "line": 448
+  },
+  {
+   "id": "r31",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:self.estimator is not None and self.errorbar is not None",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r32",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:self.estimator is not None and self.errorbar is not None/if:self.err_style == \"band\"",
+   "kind": "todo",
+   "line": 480
+  },
+  {
+   "id": "r33",
+   "anchor": "_LinePlotter.plot#for:sub_vars, sub_data in self.iter_data(grouping_vars, from_comp_data=True)/if:self.estimator is not None and self.errorbar is not None/if:self.err_style == \"band\"/elif:self.err_style == \"bars\"/for:obj in ebars.get_children()",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r34",
+   "anchor": "_LinePlotter.plot#call:self._add_axis_labels",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r35",
+   "anchor": "_ScatterPlotter._default_size_range",
+   "kind": "todo",
+   "line": 528
+  },
+  {
+   "id": "r36",
+   "anchor": "_ScatterPlotter.plot#assign:data",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r37",
+   "anchor": "_ScatterPlotter.plot#assign:empty",
+   "kind": "lead",
+   "line": 545
+  },
+  {
+   "id": "r38",
+   "anchor": "_ScatterPlotter.plot#if:\"style\" in self.variables/assign:example_level",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r39",
+   "anchor": "_ScatterPlotter.plot#assign:m",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r40",
+   "anchor": "_ScatterPlotter.plot#if:not isinstance(m, mpl.markers.MarkerStyle)/assign:m",
+   "kind": "todo",
+   "line": 562
+  },
+  {
+   "id": "r41",
+   "anchor": "_ScatterPlotter.plot#assign:points",
+   "kind": "lead",
+   "line": 567
+  },
+  {
+   "id": "r42",
+   "anchor": "_ScatterPlotter.plot#if:\"hue\" in self.variables",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r43",
+   "anchor": "_ScatterPlotter.plot#if:\"linewidth\" not in kws",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r44",
+   "anchor": "_ScatterPlotter.plot#call:self._add_axis_labels",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r45",
+   "anchor": "lineplot#assign:errorbar",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r46",
+   "anchor": "lineplot#if:style is None and not {\"ls\", \"linestyle\"} & set(kwargs)",
+   "kind": "todo",
+   "line": 626
+  },
+  {
+   "id": "r47",
+   "anchor": "lineplot#assign:color",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r48",
+   "anchor": "scatterplot#assign:color",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r49",
+   "anchor": "relplot#if:\"ax\" in kwargs",
+   "kind": "lead",
+   "line": 847
+  },
+  {
+   "id": "r50",
+   "anchor": "relplot#assign:p",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r51",
+   "anchor": "relplot#if:\"hue\" in p.variables",
+   "kind": "lead",
+   "line": 866
+  },
+  {
+   "id": "r52",
+   "anchor": "relplot#assign:variables",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r53",
+   "anchor": "relplot#assign:plot_kws",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r54",
+   "anchor": "relplot#assign:grid_semantics",
+   "kind": "lead",
+   "line": 908
+  },
+  {
+   "id": "r55",
+   "anchor": "relplot#assign:plot_variables",
+   "kind": "lead",
+   "line": 922
+  },
+  {
+   "id": "r56",
+   "anchor": "relplot#for:var in [\"row\", \"col\"]",
+   "kind": "lead",
+   "line": 927
+  },
+  {
+   "id": "r57",
+   "anchor": "relplot#for:var in [\"row\", \"col\"]/if:var in p.variables and p.variables[var] is None",
+   "kind": "lead",
+   "line": 929
+  },
+  {
+   "id": "r58",
+   "anchor": "relplot#assign:new_cols",
+   "kind": "lead",
+   "line": 934
+  },
+  {
+   "id": "r59",
+   "anchor": "relplot#assign:facet_kws",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r60",
+   "anchor": "relplot#call:g.map_dataframe",
+   "kind": "lead",
+   "line": 949
+  },
+  {
+   "id": "r61",
+   "anchor": "relplot#call:g.set",
+   "kind": "lead",
+   "line": 952
+  },
+  {
+   "id": "r62",
+   "anchor": "relplot#if:legend",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r63",
+   "anchor": "relplot#if:legend/assign:p.plot_data",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r64",
+   "anchor": "relplot#assign:orig_cols",
+   "kind": "lead",
+   "line": 968
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22941,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7770,
+  "thinking_tokens": 4231,
+  "opus_cost_usd": 0.42795150000000004,
+  "total_cost_usd": 0.44534550000000006,
+  "duration_ms": 71551,
+  "duration_api_ms": 73250,
+  "num_turns": 2
+ },
+ "wall_ms": 72403,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

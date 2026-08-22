@@ -1,0 +1,241 @@
+{
+ "blob_sha": "c087372a70338e6eafc0dfcc59bcceec75ad75c5",
+ "path": "astropy/nddata/utils.py",
+ "repo": "astropy/astropy",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "NoOverlapError",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "PartialOverlapError",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "overlap_slices",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r6",
+   "anchor": "overlap_slices#assign:indices_min",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "overlap_slices#assign:slices_large",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r8",
+   "anchor": "extract_array",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r9",
+   "anchor": "extract_array#if:(extracted_array.shape != shape) and (mode == 'partial')",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r10",
+   "anchor": "add_array",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r11",
+   "anchor": "add_array#if:all(large_shape >= small_shape for (large_shape, small_shape) in zip(array_large.shape, array_small.shape))",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r12",
+   "anchor": "subpixel_indices",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r13",
+   "anchor": "subpixel_indices#assign:fractions",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r14",
+   "anchor": "Cutout2D",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r15",
+   "anchor": "Cutout2D.__init__#if:isinstance(position, SkyCoord)/assign:position",
+   "kind": "trail",
+   "line": 529
+  },
+  {
+   "id": "r16",
+   "anchor": "Cutout2D.__init__#if:isinstance(size, u.Quantity)",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r17",
+   "anchor": "Cutout2D.__init__#for:axis, side in enumerate(size)",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r18",
+   "anchor": "Cutout2D.__init__#for:axis, side in enumerate(size)/if:not isinstance(side, u.Quantity)/assign:shape[axis]",
+   "kind": "trail",
+   "line": 549
+  },
+  {
+   "id": "r19",
+   "anchor": "Cutout2D.__init__#assign:pos_yx",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r20",
+   "anchor": "Cutout2D.input_position_cutout",
+   "kind": "trail",
+   "line": 578
+  },
+  {
+   "id": "r21",
+   "anchor": "Cutout2D._origin_original_true",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r22",
+   "anchor": "Cutout2D.to_original_position",
+   "kind": "doc",
+   "line": 612
+  },
+  {
+   "id": "r23",
+   "anchor": "Cutout2D.to_cutout_position",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r24",
+   "anchor": "Cutout2D.plot_on_original",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r25",
+   "anchor": "Cutout2D._calc_center",
+   "kind": "doc",
+   "line": 691
+  },
+  {
+   "id": "r26",
+   "anchor": "Cutout2D._calc_bbox",
+   "kind": "doc",
+   "line": 702
+  },
+  {
+   "id": "r27",
+   "anchor": "Cutout2D._calc_bbox#return",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r28",
+   "anchor": "Cutout2D.origin_original",
+   "kind": "doc",
+   "line": 714
+  },
+  {
+   "id": "r29",
+   "anchor": "Cutout2D.origin_cutout",
+   "kind": "doc",
+   "line": 724
+  },
+  {
+   "id": "r30",
+   "anchor": "Cutout2D._round",
+   "kind": "doc",
+   "line": 733
+  },
+  {
+   "id": "r31",
+   "anchor": "Cutout2D.position_original",
+   "kind": "doc",
+   "line": 744
+  },
+  {
+   "id": "r32",
+   "anchor": "Cutout2D.position_cutout",
+   "kind": "doc",
+   "line": 753
+  },
+  {
+   "id": "r33",
+   "anchor": "Cutout2D.center_original",
+   "kind": "doc",
+   "line": 762
+  },
+  {
+   "id": "r34",
+   "anchor": "Cutout2D.center_cutout",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r35",
+   "anchor": "Cutout2D.bbox_original",
+   "kind": "doc",
+   "line": 780
+  },
+  {
+   "id": "r36",
+   "anchor": "Cutout2D.bbox_cutout",
+   "kind": "doc",
+   "line": 790
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18590,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2661,
+  "thinking_tokens": 1115,
+  "opus_cost_usd": 0.25671649999999996,
+  "total_cost_usd": 0.27056649999999993,
+  "duration_ms": 24611,
+  "duration_api_ms": 26213,
+  "num_turns": 2
+ },
+ "wall_ms": 26342,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

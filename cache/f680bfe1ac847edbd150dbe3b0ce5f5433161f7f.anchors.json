@@ -1,0 +1,721 @@
+{
+ "blob_sha": "f680bfe1ac847edbd150dbe3b0ce5f5433161f7f",
+ "path": "astropy/modeling/functional_models.py",
+ "repo": "astropy/astropy",
+ "records": 116,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "Gaussian1D",
+   "kind": "doc",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "Gaussian1D.stddev",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r5",
+   "anchor": "Gaussian1D.bounding_box",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r6",
+   "anchor": "Gaussian1D.fwhm",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r7",
+   "anchor": "Gaussian1D.evaluate",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r8",
+   "anchor": "Gaussian1D.fit_deriv",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r9",
+   "anchor": "Gaussian2D",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r10",
+   "anchor": "Gaussian2D.__init__#if:cov_matrix is None/else/if:x_stddev is not None or y_stddev is not None or theta is not None/else/assign:cov_matrix",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r11",
+   "anchor": "Gaussian2D.__init__#if:cov_matrix is None/else/if:x_stddev is not None or y_stddev is not None or theta is not None/else/if:cov_matrix.shape != (2, 2)/raise:ValueError",
+   "kind": "todo",
+   "line": 295
+  },
+  {
+   "id": "r12",
+   "anchor": "Gaussian2D.__init__#call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r13",
+   "anchor": "Gaussian2D.x_fwhm",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r14",
+   "anchor": "Gaussian2D.y_fwhm",
+   "kind": "doc",
+   "line": 320
+  },
+  {
+   "id": "r15",
+   "anchor": "Gaussian2D.bounding_box",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r16",
+   "anchor": "Gaussian2D.evaluate",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r17",
+   "anchor": "Gaussian2D.fit_deriv",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r18",
+   "anchor": "Gaussian2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r19",
+   "anchor": "Shift",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r20",
+   "anchor": "Shift.inverse",
+   "kind": "doc",
+   "line": 476
+  },
+  {
+   "id": "r21",
+   "anchor": "Shift.evaluate",
+   "kind": "doc",
+   "line": 483
+  },
+  {
+   "id": "r22",
+   "anchor": "Shift.sum_of_implicit_terms",
+   "kind": "doc",
+   "line": 488
+  },
+  {
+   "id": "r23",
+   "anchor": "Shift.fit_deriv",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r24",
+   "anchor": "Scale",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r25",
+   "anchor": "Scale.inverse",
+   "kind": "doc",
+   "line": 529
+  },
+  {
+   "id": "r26",
+   "anchor": "Scale.evaluate",
+   "kind": "doc",
+   "line": 536
+  },
+  {
+   "id": "r27",
+   "anchor": "Scale.fit_deriv",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r28",
+   "anchor": "RedshiftScaleFactor",
+   "kind": "doc",
+   "line": 548
+  },
+  {
+   "id": "r29",
+   "anchor": "RedshiftScaleFactor.evaluate",
+   "kind": "doc",
+   "line": 567
+  },
+  {
+   "id": "r30",
+   "anchor": "RedshiftScaleFactor.fit_deriv",
+   "kind": "doc",
+   "line": 573
+  },
+  {
+   "id": "r31",
+   "anchor": "RedshiftScaleFactor.inverse",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r32",
+   "anchor": "Sersic1D",
+   "kind": "doc",
+   "line": 588
+  },
+  {
+   "id": "r33",
+   "anchor": "Sersic1D.evaluate",
+   "kind": "doc",
+   "line": 658
+  },
+  {
+   "id": "r34",
+   "anchor": "Sine1D",
+   "kind": "doc",
+   "line": 683
+  },
+  {
+   "id": "r35",
+   "anchor": "Sine1D.evaluate",
+   "kind": "doc",
+   "line": 734
+  },
+  {
+   "id": "r36",
+   "anchor": "Sine1D.evaluate#assign:argument",
+   "kind": "lead",
+   "line": 741
+  },
+  {
+   "id": "r37",
+   "anchor": "Sine1D.fit_deriv",
+   "kind": "doc",
+   "line": 747
+  },
+  {
+   "id": "r38",
+   "anchor": "Linear1D",
+   "kind": "doc",
+   "line": 769
+  },
+  {
+   "id": "r39",
+   "anchor": "Linear1D.evaluate",
+   "kind": "doc",
+   "line": 797
+  },
+  {
+   "id": "r40",
+   "anchor": "Linear1D.fit_deriv",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r41",
+   "anchor": "Planar2D",
+   "kind": "doc",
+   "line": 828
+  },
+  {
+   "id": "r42",
+   "anchor": "Planar2D.evaluate",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r43",
+   "anchor": "Planar2D.fit_deriv",
+   "kind": "doc",
+   "line": 866
+  },
+  {
+   "id": "r44",
+   "anchor": "Lorentz1D",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r45",
+   "anchor": "Lorentz1D.evaluate",
+   "kind": "doc",
+   "line": 927
+  },
+  {
+   "id": "r46",
+   "anchor": "Lorentz1D.fit_deriv",
+   "kind": "doc",
+   "line": 934
+  },
+  {
+   "id": "r47",
+   "anchor": "Lorentz1D.bounding_box",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r48",
+   "anchor": "Voigt1D",
+   "kind": "doc",
+   "line": 974
+  },
+  {
+   "id": "r49",
+   "anchor": "Voigt1D._abcd#arg:[[-1.2150, -1.3509, -1.2150, -1.3509], [1.2359, 0.3786, -1.2359, -0.3786], [-0.3085, 0.5906, -0.3085, 0.5906], [0.0210, -1.1858, -0.0210, 1.1858]]/item:[-1.2150, -1.3509, -1.2150, -1.3509]",
+   "kind": "trail",
+   "line": 1023
+  },
+  {
+   "id": "r50",
+   "anchor": "Voigt1D._abcd#arg:[[-1.2150, -1.3509, -1.2150, -1.3509], [1.2359, 0.3786, -1.2359, -0.3786], [-0.3085, 0.5906, -0.3085, 0.5906], [0.0210, -1.1858, -0.0210, 1.1858]]/item:[1.2359, 0.3786, -1.2359, -0.3786]",
+   "kind": "trail",
+   "line": 1024
+  },
+  {
+   "id": "r51",
+   "anchor": "Voigt1D._abcd#arg:[[-1.2150, -1.3509, -1.2150, -1.3509], [1.2359, 0.3786, -1.2359, -0.3786], [-0.3085, 0.5906, -0.3085, 0.5906], [0.0210, -1.1858, -0.0210, 1.1858]]/item:[-0.3085, 0.5906, -0.3085, 0.5906]",
+   "kind": "trail",
+   "line": 1025
+  },
+  {
+   "id": "r52",
+   "anchor": "Voigt1D._abcd#arg:[[-1.2150, -1.3509, -1.2150, -1.3509], [1.2359, 0.3786, -1.2359, -0.3786], [-0.3085, 0.5906, -0.3085, 0.5906], [0.0210, -1.1858, -0.0210, 1.1858]]/item:[0.0210, -1.1858, -0.0210, 1.1858]",
+   "kind": "trail",
+   "line": 1026
+  },
+  {
+   "id": "r53",
+   "anchor": "Const1D",
+   "kind": "doc",
+   "line": 1079
+  },
+  {
+   "id": "r54",
+   "anchor": "Const1D.evaluate",
+   "kind": "doc",
+   "line": 1124
+  },
+  {
+   "id": "r55",
+   "anchor": "Const1D.evaluate#if:amplitude.size == 1/assign:x",
+   "kind": "lead",
+   "line": 1129
+  },
+  {
+   "id": "r56",
+   "anchor": "Const1D.evaluate#if:amplitude.size == 1/else/assign:x",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r57",
+   "anchor": "Const1D.fit_deriv",
+   "kind": "doc",
+   "line": 1142
+  },
+  {
+   "id": "r58",
+   "anchor": "Const2D",
+   "kind": "doc",
+   "line": 1156
+  },
+  {
+   "id": "r59",
+   "anchor": "Const2D.evaluate",
+   "kind": "doc",
+   "line": 1180
+  },
+  {
+   "id": "r60",
+   "anchor": "Const2D.evaluate#if:amplitude.size == 1/assign:x",
+   "kind": "lead",
+   "line": 1185
+  },
+  {
+   "id": "r61",
+   "anchor": "Const2D.evaluate#if:amplitude.size == 1/else/assign:x",
+   "kind": "lead",
+   "line": 1190
+  },
+  {
+   "id": "r62",
+   "anchor": "Ellipse2D",
+   "kind": "doc",
+   "line": 1205
+  },
+  {
+   "id": "r63",
+   "anchor": "Ellipse2D.evaluate",
+   "kind": "doc",
+   "line": 1283
+  },
+  {
+   "id": "r64",
+   "anchor": "Ellipse2D.bounding_box",
+   "kind": "doc",
+   "line": 1301
+  },
+  {
+   "id": "r65",
+   "anchor": "Ellipse2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 1328
+  },
+  {
+   "id": "r66",
+   "anchor": "Disk2D",
+   "kind": "doc",
+   "line": 1338
+  },
+  {
+   "id": "r67",
+   "anchor": "Disk2D.evaluate",
+   "kind": "doc",
+   "line": 1377
+  },
+  {
+   "id": "r68",
+   "anchor": "Disk2D.bounding_box",
+   "kind": "doc",
+   "line": 1389
+  },
+  {
+   "id": "r69",
+   "anchor": "Disk2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 1411
+  },
+  {
+   "id": "r70",
+   "anchor": "Ring2D",
+   "kind": "doc",
+   "line": 1419
+  },
+  {
+   "id": "r71",
+   "anchor": "Ring2D.__init__#if:r_out is not None",
+   "kind": "lead",
+   "line": 1468
+  },
+  {
+   "id": "r72",
+   "anchor": "Ring2D.evaluate",
+   "kind": "doc",
+   "line": 1481
+  },
+  {
+   "id": "r73",
+   "anchor": "Ring2D.bounding_box",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r74",
+   "anchor": "Ring2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 1518
+  },
+  {
+   "id": "r75",
+   "anchor": "Delta1D",
+   "kind": "doc",
+   "line": 1527
+  },
+  {
+   "id": "r76",
+   "anchor": "Delta2D",
+   "kind": "doc",
+   "line": 1534
+  },
+  {
+   "id": "r77",
+   "anchor": "Box1D",
+   "kind": "doc",
+   "line": 1541
+  },
+  {
+   "id": "r78",
+   "anchor": "Box1D.evaluate",
+   "kind": "doc",
+   "line": 1599
+  },
+  {
+   "id": "r79",
+   "anchor": "Box1D.fit_deriv",
+   "kind": "doc",
+   "line": 1611
+  },
+  {
+   "id": "r80",
+   "anchor": "Box1D.bounding_box",
+   "kind": "doc",
+   "line": 1620
+  },
+  {
+   "id": "r81",
+   "anchor": "Box2D",
+   "kind": "doc",
+   "line": 1644
+  },
+  {
+   "id": "r82",
+   "anchor": "Box2D.evaluate",
+   "kind": "doc",
+   "line": 1688
+  },
+  {
+   "id": "r83",
+   "anchor": "Box2D.bounding_box",
+   "kind": "doc",
+   "line": 1704
+  },
+  {
+   "id": "r84",
+   "anchor": "Trapezoid1D",
+   "kind": "doc",
+   "line": 1733
+  },
+  {
+   "id": "r85",
+   "anchor": "Trapezoid1D.evaluate",
+   "kind": "doc",
+   "line": 1781
+  },
+  {
+   "id": "r86",
+   "anchor": "Trapezoid1D.evaluate#assign:x2",
+   "kind": "lead",
+   "line": 1786
+  },
+  {
+   "id": "r87",
+   "anchor": "Trapezoid1D.evaluate#assign:range_a",
+   "kind": "lead",
+   "line": 1792
+  },
+  {
+   "id": "r88",
+   "anchor": "Trapezoid1D.bounding_box",
+   "kind": "doc",
+   "line": 1806
+  },
+  {
+   "id": "r89",
+   "anchor": "TrapezoidDisk2D",
+   "kind": "doc",
+   "line": 1831
+  },
+  {
+   "id": "r90",
+   "anchor": "TrapezoidDisk2D.evaluate",
+   "kind": "doc",
+   "line": 1860
+  },
+  {
+   "id": "r91",
+   "anchor": "TrapezoidDisk2D.bounding_box",
+   "kind": "doc",
+   "line": 1876
+  },
+  {
+   "id": "r92",
+   "anchor": "TrapezoidDisk2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 1900
+  },
+  {
+   "id": "r93",
+   "anchor": "MexicanHat1D",
+   "kind": "doc",
+   "line": 1909
+  },
+  {
+   "id": "r94",
+   "anchor": "MexicanHat1D.evaluate",
+   "kind": "doc",
+   "line": 1963
+  },
+  {
+   "id": "r95",
+   "anchor": "MexicanHat1D.bounding_box",
+   "kind": "doc",
+   "line": 1969
+  },
+  {
+   "id": "r96",
+   "anchor": "MexicanHat2D",
+   "kind": "doc",
+   "line": 1997
+  },
+  {
+   "id": "r97",
+   "anchor": "MexicanHat2D.evaluate",
+   "kind": "doc",
+   "line": 2034
+  },
+  {
+   "id": "r98",
+   "anchor": "MexicanHat2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 2052
+  },
+  {
+   "id": "r99",
+   "anchor": "AiryDisk2D",
+   "kind": "doc",
+   "line": 2060
+  },
+  {
+   "id": "r100",
+   "anchor": "AiryDisk2D.evaluate",
+   "kind": "doc",
+   "line": 2111
+  },
+  {
+   "id": "r101",
+   "anchor": "AiryDisk2D.evaluate#if:isinstance(r, Quantity)/assign:r",
+   "kind": "lead",
+   "line": 2126
+  },
+  {
+   "id": "r102",
+   "anchor": "AiryDisk2D.evaluate#assign:z",
+   "kind": "lead",
+   "line": 2130
+  },
+  {
+   "id": "r103",
+   "anchor": "AiryDisk2D.evaluate#if:isinstance(amplitude, Quantity)/assign:z",
+   "kind": "lead",
+   "line": 2136
+  },
+  {
+   "id": "r104",
+   "anchor": "AiryDisk2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 2153
+  },
+  {
+   "id": "r105",
+   "anchor": "Moffat1D",
+   "kind": "doc",
+   "line": 2161
+  },
+  {
+   "id": "r106",
+   "anchor": "Moffat1D.fwhm",
+   "kind": "doc",
+   "line": 2217
+  },
+  {
+   "id": "r107",
+   "anchor": "Moffat1D.evaluate",
+   "kind": "doc",
+   "line": 2226
+  },
+  {
+   "id": "r108",
+   "anchor": "Moffat1D.fit_deriv",
+   "kind": "doc",
+   "line": 2232
+  },
+  {
+   "id": "r109",
+   "anchor": "Moffat2D",
+   "kind": "doc",
+   "line": 2256
+  },
+  {
+   "id": "r110",
+   "anchor": "Moffat2D.fwhm",
+   "kind": "doc",
+   "line": 2294
+  },
+  {
+   "id": "r111",
+   "anchor": "Moffat2D.evaluate",
+   "kind": "doc",
+   "line": 2303
+  },
+  {
+   "id": "r112",
+   "anchor": "Moffat2D.fit_deriv",
+   "kind": "doc",
+   "line": 2310
+  },
+  {
+   "id": "r113",
+   "anchor": "Moffat2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 2335
+  },
+  {
+   "id": "r114",
+   "anchor": "Sersic2D",
+   "kind": "doc",
+   "line": 2343
+  },
+  {
+   "id": "r115",
+   "anchor": "Sersic2D.evaluate",
+   "kind": "doc",
+   "line": 2426
+  },
+  {
+   "id": "r116",
+   "anchor": "Sersic2D._parameter_units_for_data_units#if:inputs_unit['x'] != inputs_unit['y']",
+   "kind": "lead",
+   "line": 2457
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 48514,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10290,
+  "thinking_tokens": 4877,
+  "opus_cost_usd": 0.7466815,
+  "total_cost_usd": 0.7855055,
+  "duration_ms": 91260,
+  "duration_api_ms": 92568,
+  "num_turns": 2
+ },
+ "wall_ms": 92235,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

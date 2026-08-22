@@ -1,0 +1,589 @@
+{
+ "blob_sha": "92885f485e0cc400fa2cc2226e13e53080fc6bcc",
+ "path": "astropy/io/fits/diff.py",
+ "repo": "astropy/astropy",
+ "records": 94,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:.hdu.hdulist",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "_COL_ATTRS",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r5",
+   "anchor": "indent",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r6",
+   "anchor": "_BaseDiff",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r7",
+   "anchor": "_BaseDiff.__init__",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r8",
+   "anchor": "_BaseDiff._fileobj",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r9",
+   "anchor": "_BaseDiff.__bool__",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r10",
+   "anchor": "_BaseDiff.fromdiff",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "_BaseDiff.fromdiff#assign:kwargs",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r12",
+   "anchor": "_BaseDiff.identical",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r13",
+   "anchor": "_BaseDiff.report",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r14",
+   "anchor": "_BaseDiff.report#assign:self._indent",
+   "kind": "trail",
+   "line": 178
+  },
+  {
+   "id": "r15",
+   "anchor": "FITSDiff",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r16",
+   "anchor": "FITSDiff.__init__",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r17",
+   "anchor": "FITSDiff.ignore_keywords",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r18",
+   "anchor": "FITSDiff.__init__#if:tolerance is not None",
+   "kind": "trail",
+   "line": 305
+  },
+  {
+   "id": "r19",
+   "anchor": "FITSDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "trail",
+   "line": 310
+  },
+  {
+   "id": "r20",
+   "anchor": "FITSDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "post",
+   "line": 310
+  },
+  {
+   "id": "r21",
+   "anchor": "FITSDiff._diff#for:idx in range(min(len(self.a), len(self.b)))",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r22",
+   "anchor": "FITSDiff._report#assign:filenamea",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r23",
+   "anchor": "FITSDiff._report#for:idx, hdu_diff in self.diff_hdus/if:idx==0",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r24",
+   "anchor": "HDUDiff",
+   "kind": "doc",
+   "line": 402
+  },
+  {
+   "id": "r25",
+   "anchor": "HDUDiff.__init__",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r26",
+   "anchor": "HDUDiff.__init__#if:tolerance is not None",
+   "kind": "trail",
+   "line": 445
+  },
+  {
+   "id": "r27",
+   "anchor": "HDUDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "trail",
+   "line": 450
+  },
+  {
+   "id": "r28",
+   "anchor": "HDUDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "post",
+   "line": 450
+  },
+  {
+   "id": "r29",
+   "anchor": "HDUDiff._diff#if:self.a.data is None or self.b.data is None/pass",
+   "kind": "todo",
+   "line": 484
+  },
+  {
+   "id": "r30",
+   "anchor": "HDUDiff._diff#if:self.a.data is None or self.b.data is None/elif:self.a.is_image and self.b.is_image/elif:isinstance(self.a, _TableLikeHDU) and isinstance(self.b, _TableLikeHDU)/assign:self.diff_data",
+   "kind": "todo",
+   "line": 491
+  },
+  {
+   "id": "r31",
+   "anchor": "HDUDiff._diff#if:self.a.data is None or self.b.data is None/elif:self.a.is_image and self.b.is_image/elif:isinstance(self.a, _TableLikeHDU) and isinstance(self.b, _TableLikeHDU)/elif:not self.diff_extension_types/assign:self.diff_data",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r32",
+   "anchor": "HeaderDiff",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r33",
+   "anchor": "HeaderDiff.__init__",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r34",
+   "anchor": "HeaderDiff.__init__#if:tolerance is not None",
+   "kind": "trail",
+   "line": 583
+  },
+  {
+   "id": "r35",
+   "anchor": "HeaderDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "trail",
+   "line": 588
+  },
+  {
+   "id": "r36",
+   "anchor": "HeaderDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "post",
+   "line": 588
+  },
+  {
+   "id": "r37",
+   "anchor": "HeaderDiff.common_keywords",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r38",
+   "anchor": "HeaderDiff.diff_keyword_count",
+   "kind": "lead",
+   "line": 611
+  },
+  {
+   "id": "r39",
+   "anchor": "HeaderDiff.diff_keyword_positions",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r40",
+   "anchor": "HeaderDiff.diff_keywords",
+   "kind": "lead",
+   "line": 620
+  },
+  {
+   "id": "r41",
+   "anchor": "HeaderDiff.diff_duplicate_keywords",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r42",
+   "anchor": "HeaderDiff.diff_keyword_values",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r43",
+   "anchor": "HeaderDiff.diff_keyword_comments",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r44",
+   "anchor": "HeaderDiff._diff",
+   "kind": "todo",
+   "line": 648
+  },
+  {
+   "id": "r45",
+   "anchor": "HeaderDiff._diff.get_header_values_comments",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r46",
+   "anchor": "HeaderDiff._diff#assign:keywordsa",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r47",
+   "anchor": "HeaderDiff._diff#assign:keywordsa",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r48",
+   "anchor": "HeaderDiff._diff#if:'*' in self.ignore_keywords/return",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r49",
+   "anchor": "HeaderDiff._diff#for:keyword in self.common_keywords",
+   "kind": "lead",
+   "line": 701
+  },
+  {
+   "id": "r50",
+   "anchor": "HeaderDiff._diff#for:keyword in self.common_keywords/for:a, b in zip(valuesa[keyword], valuesb[keyword])",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r51",
+   "anchor": "HeaderDiff._diff#for:keyword in self.common_keywords/for:a, b in zip(valuesa[keyword], valuesb[keyword])/if:diff_values(a, b, rtol=self.rtol, atol=self.atol)/else/call:self.diff_keyword_values[keyword].append",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r52",
+   "anchor": "HeaderDiff._diff#for:keyword in self.common_keywords/if:not any(self.diff_keyword_values[keyword])/del:self.diff_keyword_values[keyword]",
+   "kind": "lead",
+   "line": 730
+  },
+  {
+   "id": "r53",
+   "anchor": "ImageDataDiff",
+   "kind": "todo",
+   "line": 795
+  },
+  {
+   "id": "r54",
+   "anchor": "ImageDataDiff",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r55",
+   "anchor": "ImageDataDiff.__init__",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r56",
+   "anchor": "ImageDataDiff.__init__#if:tolerance is not None",
+   "kind": "trail",
+   "line": 836
+  },
+  {
+   "id": "r57",
+   "anchor": "ImageDataDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "trail",
+   "line": 841
+  },
+  {
+   "id": "r58",
+   "anchor": "ImageDataDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "post",
+   "line": 841
+  },
+  {
+   "id": "r59",
+   "anchor": "ImageDataDiff.diff_total",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r60",
+   "anchor": "ImageDataDiff._diff#if:self.a.shape!=self.b.shape/return",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r61",
+   "anchor": "ImageDataDiff._diff#if:not (np.issubdtype(self.a.dtype, np.inexact) or np.issubdtype(self.b.dtype, np.inexact))",
+   "kind": "lead",
+   "line": 866
+  },
+  {
+   "id": "r62",
+   "anchor": "ImageDataDiff._diff#if:self.diff_total==0/return",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r63",
+   "anchor": "ImageDataDiff._report#if:self.diff_dimensions/call:self._writeln",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r64",
+   "anchor": "RawDataDiff",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r65",
+   "anchor": "RawDataDiff.__init__",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r66",
+   "anchor": "RawDataDiff._report#if:self.diff_dimensions/call:self._writeln",
+   "kind": "lead",
+   "line": 970
+  },
+  {
+   "id": "r67",
+   "anchor": "TableDataDiff",
+   "kind": "doc",
+   "line": 986
+  },
+  {
+   "id": "r68",
+   "anchor": "TableDataDiff.__init__",
+   "kind": "doc",
+   "line": 1034
+  },
+  {
+   "id": "r69",
+   "anchor": "TableDataDiff.__init__#if:tolerance is not None",
+   "kind": "trail",
+   "line": 1045
+  },
+  {
+   "id": "r70",
+   "anchor": "TableDataDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "trail",
+   "line": 1050
+  },
+  {
+   "id": "r71",
+   "anchor": "TableDataDiff.__init__#if:tolerance is not None/assign:self.rtol",
+   "kind": "post",
+   "line": 1050
+  },
+  {
+   "id": "r72",
+   "anchor": "TableDataDiff.diff_rows",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r73",
+   "anchor": "TableDataDiff.diff_column_attributes",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r74",
+   "anchor": "TableDataDiff.diff_column_names",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r75",
+   "anchor": "TableDataDiff._diff#assign:colsa",
+   "kind": "lead",
+   "line": 1080
+  },
+  {
+   "id": "r76",
+   "anchor": "TableDataDiff._diff#assign:colsa",
+   "kind": "lead",
+   "line": 1088
+  },
+  {
+   "id": "r77",
+   "anchor": "TableDataDiff._diff#if:'*' in self.ignore_fields/return",
+   "kind": "lead",
+   "line": 1094
+  },
+  {
+   "id": "r78",
+   "anchor": "TableDataDiff._diff#assign:ignore_fields",
+   "kind": "lead",
+   "line": 1098
+  },
+  {
+   "id": "r79",
+   "anchor": "TableDataDiff._diff#for:fieldname in ignore_fields",
+   "kind": "lead",
+   "line": 1102
+  },
+  {
+   "id": "r80",
+   "anchor": "TableDataDiff._diff#if:len(self.a)!=len(self.b)",
+   "kind": "lead",
+   "line": 1140
+  },
+  {
+   "id": "r81",
+   "anchor": "TableDataDiff._diff#if:len(self.a)==len(self.b)==0",
+   "kind": "lead",
+   "line": 1146
+  },
+  {
+   "id": "r82",
+   "anchor": "TableDataDiff._diff#for:col in self.common_columns",
+   "kind": "lead",
+   "line": 1160
+  },
+  {
+   "id": "r83",
+   "anchor": "TableDataDiff._diff#for:col in self.common_columns/if:self.numdiffs>=0/if:len(self.diff_values)>=self.numdiffs/continue",
+   "kind": "lead",
+   "line": 1196
+  },
+  {
+   "id": "r84",
+   "anchor": "TableDataDiff._diff#for:col in self.common_columns/if:self.numdiffs>=0/assign:max_diffs",
+   "kind": "lead",
+   "line": 1199
+  },
+  {
+   "id": "r85",
+   "anchor": "TableDataDiff._diff#for:col in self.common_columns/for:idx in islice(diffs[0], 0, max_diffs)/if:idx==last_seen_idx/continue",
+   "kind": "lead",
+   "line": 1209
+  },
+  {
+   "id": "r86",
+   "anchor": "TableDataDiff._report#if:self.diff_column_names/for:name in self.diff_column_names[0]",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r87",
+   "anchor": "TableDataDiff._report#for:col_attr, vals in self.diff_column_attributes",
+   "kind": "lead",
+   "line": 1237
+  },
+  {
+   "id": "r88",
+   "anchor": "TableDataDiff._report#for:indx, values in self.diff_values",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r89",
+   "anchor": "diff_values",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r90",
+   "anchor": "report_diff_values",
+   "kind": "doc",
+   "line": 1286
+  },
+  {
+   "id": "r91",
+   "anchor": "report_diff_keyword_attr",
+   "kind": "doc",
+   "line": 1336
+  },
+  {
+   "id": "r92",
+   "anchor": "where_not_allclose",
+   "kind": "doc",
+   "line": 1356
+  },
+  {
+   "id": "r93",
+   "anchor": "where_not_allclose#if:not np.all(np.isfinite(a))",
+   "kind": "lead",
+   "line": 1364
+  },
+  {
+   "id": "r94",
+   "anchor": "where_not_allclose#if:atol==0.0 and rtol==0.0/return",
+   "kind": "lead",
+   "line": 1371
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 32143,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10473,
+  "thinking_tokens": 5737,
+  "opus_cost_usd": 0.5875465,
+  "total_cost_usd": 0.6122675,
+  "duration_ms": 92140,
+  "duration_api_ms": 93259,
+  "num_turns": 2
+ },
+ "wall_ms": 93068,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

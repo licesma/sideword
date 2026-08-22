@@ -1,0 +1,199 @@
+{
+ "blob_sha": "9d4c2d5006c86d6777c5c69713aac06352515f86",
+ "path": "django/contrib/staticfiles/management/commands/collectstatic.py",
+ "repo": "django/django",
+ "records": 29,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.set_options",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.collect",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.collect#for:finder in get_finders()/for:path, storage in finder.list(self.ignore_patterns)/if:getattr(storage, 'prefix', None)",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.collect#if:self.post_process and hasattr(self.storage, 'post_process')",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.collect#if:self.post_process and hasattr(self.storage, 'post_process')/for:original_path, processed_path, processed in processor/if:isinstance(processed, Exception)/call:self.stderr.write",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.handle#if:self.is_local_storage() and self.storage.location/else/assign:should_warn_user",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.log",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.clear_dir",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.clear_dir#for:f in files/if:self.dry_run/else/try/else/if:not os.path.exists(full_path) and os.path.lexists(full_path)/call:os.unlink",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.delete_file",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/assign:target_last_modified",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/except:(OSError, NotImplementedError, AttributeError)/pass",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/else/try/assign:source_last_modified",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/else/try/else/if:self.local",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/else/try/else/if:self.local/assign:can_skip_unmodified_files",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/else/try/else/if:self.local/else/assign:can_skip_unmodified_files",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/try/else/try/else/assign:file_is_unmodified",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r19",
+   "anchor": "Command.delete_file#if:self.storage.exists(prefixed_path)/if:self.dry_run",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r20",
+   "anchor": "Command.link_file",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r21",
+   "anchor": "Command.link_file#if:prefixed_path in self.symlinked_files",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r22",
+   "anchor": "Command.link_file#if:not self.delete_file(path, prefixed_path, source_storage)",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r23",
+   "anchor": "Command.link_file#assign:source_path",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r24",
+   "anchor": "Command.link_file#if:self.dry_run",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r25",
+   "anchor": "Command.copy_file",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r26",
+   "anchor": "Command.copy_file#if:prefixed_path in self.copied_files",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r27",
+   "anchor": "Command.copy_file#if:not self.delete_file(path, prefixed_path, source_storage)",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r28",
+   "anchor": "Command.copy_file#assign:source_path",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r29",
+   "anchor": "Command.copy_file#if:self.dry_run",
+   "kind": "lead",
+   "line": 339
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9920,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3241,
+  "thinking_tokens": 1576,
+  "opus_cost_usd": 0.18451649999999997,
+  "total_cost_usd": 0.19125049999999996,
+  "duration_ms": 30360,
+  "duration_api_ms": 31398,
+  "num_turns": 2
+ },
+ "wall_ms": 31164,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

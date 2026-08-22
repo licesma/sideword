@@ -1,0 +1,169 @@
+{
+ "blob_sha": "9406e783681f4f11ed36441b3a891b1f504517f7",
+ "path": "setup.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 24,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:sys",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r3",
+   "anchor": "py_min_version",
+   "kind": "trail",
+   "line": 11
+  },
+  {
+   "id": "r4",
+   "anchor": "since_mpl_version",
+   "kind": "trail",
+   "line": 12
+  },
+  {
+   "id": "r5",
+   "anchor": "mpl_packages",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "has_flag",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r7",
+   "anchor": "has_flag",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "has_flag#with:tempfile.NamedTemporaryFile('w', suffix='.cpp')/try/except:Exception/if:type(exc).__name__ != \"CompileError\"",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r9",
+   "anchor": "BuildExtraLibraries.add_optimization_flags",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r10",
+   "anchor": "BuildExtraLibraries.add_optimization_flags.prepare_flags",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r11",
+   "anchor": "BuildExtraLibraries.add_optimization_flags#assign:_, enable_lto",
+   "kind": "trail",
+   "line": 110
+  },
+  {
+   "id": "r12",
+   "anchor": "BuildExtraLibraries.add_optimization_flags#if:ranlib and has_flag(self.compiler, '-flto')/if:isinstance(ranlib, str)",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r13",
+   "anchor": "BuildExtraLibraries.build_extensions#if:self.compiler.compiler_type == 'msvc' and os.environ.get('MPL_DISABLE_FH4')/for:ext in self.extensions",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r14",
+   "anchor": "BuildExtraLibraries.build_extension#assign:orig_build_temp",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r15",
+   "anchor": "update_matplotlibrc#assign:template_lines",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r16",
+   "anchor": "update_matplotlibrc#assign:backend_line_idx",
+   "kind": "trail",
+   "line": 198
+  },
+  {
+   "id": "r17",
+   "anchor": "package_data",
+   "kind": "trail",
+   "line": 222
+  },
+  {
+   "id": "r18",
+   "anchor": "<module>#if:not (any('--' + opt in sys.argv for opt in Distribution.display_option_names + ['help']) or 'clean' in sys.argv)",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r19",
+   "anchor": "<module>#if:not (any('--' + opt in sys.argv for opt in Distribution.display_option_names + ['help']) or 'clean' in sys.argv)/call:print_raw",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r20",
+   "anchor": "<module>#if:not (any('--' + opt in sys.argv for opt in Distribution.display_option_names + ['help']) or 'clean' in sys.argv)/for:package in good_packages",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r21",
+   "anchor": "<module>#if:not (any('--' + opt in sys.argv for opt in Distribution.display_option_names + ['help']) or 'clean' in sys.argv)/for:package in good_packages/assign:data",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r22",
+   "anchor": "<module>#call:setup",
+   "kind": "trail",
+   "line": 260
+  },
+  {
+   "id": "r23",
+   "anchor": "<module>#call:setup/arg:ext_modules",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r24",
+   "anchor": "<module>#call:setup/arg:install_requires",
+   "kind": "lead",
+   "line": 308
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10280,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3253,
+  "thinking_tokens": 1916,
+  "opus_cost_usd": 0.1884165,
+  "total_cost_usd": 0.1951955,
+  "duration_ms": 32268,
+  "duration_api_ms": 33148,
+  "num_turns": 2
+ },
+ "wall_ms": 33178,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

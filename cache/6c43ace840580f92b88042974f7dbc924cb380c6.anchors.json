@@ -1,0 +1,151 @@
+{
+ "blob_sha": "6c43ace840580f92b88042974f7dbc924cb380c6",
+ "path": "django/contrib/humanize/templatetags/humanize.py",
+ "repo": "django/django",
+ "records": 21,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "ordinal",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "ordinal#if:value % 100 in (11, 12, 13)",
+   "kind": "trail",
+   "line": 31
+  },
+  {
+   "id": "r3",
+   "anchor": "ordinal#return",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "intcomma",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "intword_converters",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "intword",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r7",
+   "anchor": "intword._check_for_i18n",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "apnumber",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r9",
+   "anchor": "naturalday",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r10",
+   "anchor": "naturalday",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r11",
+   "anchor": "naturalday#try/except:AttributeError/return",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r12",
+   "anchor": "naturalday#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r13",
+   "anchor": "naturaltime",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r14",
+   "anchor": "naturaltime",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r15",
+   "anchor": "naturaltime#if:not isinstance(value, date)",
+   "kind": "trail",
+   "line": 194
+  },
+  {
+   "id": "r16",
+   "anchor": "naturaltime#if:value < now/if:delta.days != 0/elif:delta.seconds < 60/return/arg:'a second ago'",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r17",
+   "anchor": "naturaltime#if:value < now/if:delta.days != 0/elif:delta.seconds // 60 < 60/return/arg:'a minute ago'",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r18",
+   "anchor": "naturaltime#if:value < now/if:delta.days != 0/else/return/arg:'an hour ago'",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r19",
+   "anchor": "naturaltime#if:value < now/else/if:delta.days != 0/elif:delta.seconds < 60/return/arg:'a second from now'",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r20",
+   "anchor": "naturaltime#if:value < now/else/if:delta.days != 0/elif:delta.seconds // 60 < 60/return/arg:'a minute from now'",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r21",
+   "anchor": "naturaltime#if:value < now/else/if:delta.days != 0/else/return/arg:'an hour from now'",
+   "kind": "lead",
+   "line": 252
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8205,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2890,
+  "thinking_tokens": 1868,
+  "opus_cost_usd": 0.1585915,
+  "total_cost_usd": 0.1638285,
+  "duration_ms": 32189,
+  "duration_api_ms": 33219,
+  "num_turns": 2
+ },
+ "wall_ms": 33030,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

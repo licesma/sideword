@@ -1,0 +1,265 @@
+{
+ "blob_sha": "e67141c21233bbd69f10e9043602f8b9ebcfcdea",
+ "path": "astropy/nddata/utils.py",
+ "repo": "astropy/astropy",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "NoOverlapError",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "PartialOverlapError",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "_round",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r6",
+   "anchor": "_offset",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r7",
+   "anchor": "overlap_slices",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "overlap_slices#assign:edges_min",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r9",
+   "anchor": "overlap_slices#assign:slices_large",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r10",
+   "anchor": "extract_array",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "extract_array#if:(extracted_array.shape != shape) and (mode == 'partial')",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r12",
+   "anchor": "add_array",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r13",
+   "anchor": "add_array#if:all(large_shape > small_shape for (large_shape, small_shape) in zip(array_large.shape, array_small.shape))",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r14",
+   "anchor": "subpixel_indices",
+   "kind": "doc",
+   "line": 300
+  },
+  {
+   "id": "r15",
+   "anchor": "subpixel_indices#assign:fractions",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r16",
+   "anchor": "block_reduce",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r17",
+   "anchor": "block_reduce#for:i in range(data.ndim)",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r18",
+   "anchor": "block_replicate",
+   "kind": "doc",
+   "line": 415
+  },
+  {
+   "id": "r19",
+   "anchor": "Cutout2D",
+   "kind": "doc",
+   "line": 475
+  },
+  {
+   "id": "r20",
+   "anchor": "Cutout2D.__init__#if:isinstance(position, SkyCoord)/assign:position",
+   "kind": "trail",
+   "line": 660
+  },
+  {
+   "id": "r21",
+   "anchor": "Cutout2D.__init__#if:isinstance(size, u.Quantity)",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r22",
+   "anchor": "Cutout2D.__init__#for:axis, side in enumerate(size)",
+   "kind": "lead",
+   "line": 678
+  },
+  {
+   "id": "r23",
+   "anchor": "Cutout2D.__init__#for:axis, side in enumerate(size)/if:not isinstance(side, u.Quantity)/assign:shape[axis]",
+   "kind": "trail",
+   "line": 680
+  },
+  {
+   "id": "r24",
+   "anchor": "Cutout2D.__init__#assign:pos_yx",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r25",
+   "anchor": "Cutout2D.input_position_cutout",
+   "kind": "trail",
+   "line": 709
+  },
+  {
+   "id": "r26",
+   "anchor": "Cutout2D._origin_original_true",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r27",
+   "anchor": "Cutout2D.to_original_position",
+   "kind": "doc",
+   "line": 738
+  },
+  {
+   "id": "r28",
+   "anchor": "Cutout2D.to_cutout_position",
+   "kind": "doc",
+   "line": 757
+  },
+  {
+   "id": "r29",
+   "anchor": "Cutout2D.plot_on_original",
+   "kind": "doc",
+   "line": 776
+  },
+  {
+   "id": "r30",
+   "anchor": "Cutout2D._calc_center",
+   "kind": "doc",
+   "line": 817
+  },
+  {
+   "id": "r31",
+   "anchor": "Cutout2D._calc_bbox",
+   "kind": "doc",
+   "line": 828
+  },
+  {
+   "id": "r32",
+   "anchor": "Cutout2D._calc_bbox#return",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r33",
+   "anchor": "Cutout2D.origin_original",
+   "kind": "doc",
+   "line": 840
+  },
+  {
+   "id": "r34",
+   "anchor": "Cutout2D.origin_cutout",
+   "kind": "doc",
+   "line": 850
+  },
+  {
+   "id": "r35",
+   "anchor": "Cutout2D.position_original",
+   "kind": "doc",
+   "line": 859
+  },
+  {
+   "id": "r36",
+   "anchor": "Cutout2D.position_cutout",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r37",
+   "anchor": "Cutout2D.center_original",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r38",
+   "anchor": "Cutout2D.center_cutout",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r39",
+   "anchor": "Cutout2D.bbox_original",
+   "kind": "doc",
+   "line": 895
+  },
+  {
+   "id": "r40",
+   "anchor": "Cutout2D.bbox_cutout",
+   "kind": "doc",
+   "line": 905
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20462,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2743,
+  "thinking_tokens": 1069,
+  "opus_cost_usd": 0.2774865,
+  "total_cost_usd": 0.2930005,
+  "duration_ms": 26926,
+  "duration_api_ms": 28169,
+  "num_turns": 2
+ },
+ "wall_ms": 27768,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

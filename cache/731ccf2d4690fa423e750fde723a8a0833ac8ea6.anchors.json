@@ -1,0 +1,241 @@
+{
+ "blob_sha": "731ccf2d4690fa423e750fde723a8a0833ac8ea6",
+ "path": "django/core/validators.py",
+ "repo": "django/django",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "EMPTY_VALUES",
+   "kind": "lead",
+   "line": 16
+  },
+  {
+   "id": "r2",
+   "anchor": "RegexValidator.__call__",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r3",
+   "anchor": "URLValidator.ul",
+   "kind": "trail",
+   "line": 66
+  },
+  {
+   "id": "r4",
+   "anchor": "URLValidator.ipv4_re",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r5",
+   "anchor": "URLValidator.ipv6_re",
+   "kind": "trail",
+   "line": 70
+  },
+  {
+   "id": "r6",
+   "anchor": "URLValidator.hostname_re",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "URLValidator.domain_re",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r8",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r9",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r10",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r11",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r12",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r13",
+   "anchor": "URLValidator.tld_re",
+   "kind": "trail",
+   "line": 76
+  },
+  {
+   "id": "r14",
+   "anchor": "URLValidator.regex",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r15",
+   "anchor": "URLValidator.regex",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r16",
+   "anchor": "URLValidator.regex",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r17",
+   "anchor": "URLValidator.regex",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r18",
+   "anchor": "URLValidator.__call__#assign:scheme",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r19",
+   "anchor": "URLValidator.__call__#try",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r20",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r21",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/except:ValueError",
+   "kind": "trail",
+   "line": 120
+  },
+  {
+   "id": "r22",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/assign:netloc",
+   "kind": "trail",
+   "line": 123
+  },
+  {
+   "id": "r23",
+   "anchor": "URLValidator.__call__#try/except:ValidationError/if:value/try/except:UnicodeError",
+   "kind": "trail",
+   "line": 124
+  },
+  {
+   "id": "r24",
+   "anchor": "URLValidator.__call__#try/else/assign:host_match",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r25",
+   "anchor": "URLValidator.__call__#if:len(urlsplit(value).hostname) > 253",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r26",
+   "anchor": "EmailValidator.user_regex",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r27",
+   "anchor": "EmailValidator.user_regex",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r28",
+   "anchor": "EmailValidator.domain_regex",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r29",
+   "anchor": "EmailValidator.literal_regex",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r30",
+   "anchor": "EmailValidator.__call__#if:domain_part not in self.domain_allowlist and not self.validate_domain_part(domain_part)/try",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r31",
+   "anchor": "validate_ipv4_address#try/else/if:any(octet != '0' and octet[0] == '0' for octet in value.split('.'))",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r32",
+   "anchor": "ip_address_validators",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r33",
+   "anchor": "DecimalValidator",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r34",
+   "anchor": "DecimalValidator.__call__#if:exponent >= 0/assign:digits",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r35",
+   "anchor": "DecimalValidator.__call__#if:exponent >= 0/else/if:abs(exponent) > len(digit_tuple)",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r36",
+   "anchor": "ProhibitNullCharactersValidator",
+   "kind": "doc",
+   "line": 557
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14014,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4047,
+  "thinking_tokens": 2433,
+  "opus_cost_usd": 0.2456065,
+  "total_cost_usd": 0.25559550000000003,
+  "duration_ms": 42937,
+  "duration_api_ms": 44232,
+  "num_turns": 2
+ },
+ "wall_ms": 43892,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

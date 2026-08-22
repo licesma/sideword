@@ -1,0 +1,493 @@
+{
+ "blob_sha": "dea57bc2a721f0e949f6d3b9a5e62eb2c2469d49",
+ "path": "astropy/table/operations.py",
+ "repo": "astropy/astropy",
+ "records": 78,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 11
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_list_of_tables",
+   "kind": "doc",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_list_of_tables#if:not isinstance(tables, collections.Sequence)",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_list_of_tables#if:any(not isinstance(x, (Table, Row)) for x in tables) or len(tables) == 0",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_list_of_tables#assign:tables",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_out_class",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r8",
+   "anchor": "join",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r9",
+   "anchor": "join#if:not isinstance(left, Table)",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r10",
+   "anchor": "join#call:_merge_table_meta",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r11",
+   "anchor": "setdiff",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r12",
+   "anchor": "setdiff#for:tbl, tbl_str in ((table1,'table1'), (table2,'table2'))",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r13",
+   "anchor": "setdiff#assign:t1",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r14",
+   "anchor": "setdiff#assign:t1['__index1__']",
+   "kind": "trail",
+   "line": 196
+  },
+  {
+   "id": "r15",
+   "anchor": "setdiff#assign:t2",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r16",
+   "anchor": "setdiff#assign:t2['__index2__']",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r17",
+   "anchor": "setdiff#assign:t2['__index2__']",
+   "kind": "trail",
+   "line": 203
+  },
+  {
+   "id": "r18",
+   "anchor": "setdiff#if:t12.masked",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "setdiff#if:t12.masked/assign:diff",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r20",
+   "anchor": "setdiff#if:t12.masked/assign:idx",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r21",
+   "anchor": "setdiff#if:t12.masked/assign:t12_diff",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r22",
+   "anchor": "vstack",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r23",
+   "anchor": "vstack#assign:tables",
+   "kind": "trail",
+   "line": 276
+  },
+  {
+   "id": "r24",
+   "anchor": "vstack#if:len(tables) == 1/return",
+   "kind": "trail",
+   "line": 278
+  },
+  {
+   "id": "r25",
+   "anchor": "vstack#call:_merge_table_meta",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r26",
+   "anchor": "hstack",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r27",
+   "anchor": "hstack#assign:tables",
+   "kind": "trail",
+   "line": 347
+  },
+  {
+   "id": "r28",
+   "anchor": "hstack#if:len(tables) == 1/return",
+   "kind": "trail",
+   "line": 349
+  },
+  {
+   "id": "r29",
+   "anchor": "unique",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r30",
+   "anchor": "get_col_name_map",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r31",
+   "anchor": "get_col_name_map#for:idx, array in enumerate(arrays)/for:name in array.colnames/if:name in common_names/if:name not in col_name_list",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r32",
+   "anchor": "get_col_name_map#for:idx, array in enumerate(arrays)/for:name in array.colnames/if:name in common_names/else/assign:others",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r33",
+   "anchor": "get_col_name_map#assign:col_name_count",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r34",
+   "anchor": "get_col_name_map#assign:col_name_map",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r35",
+   "anchor": "get_descrs",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r36",
+   "anchor": "get_descrs#for:out_name, in_names in col_name_map.items()/assign:in_cols",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r37",
+   "anchor": "get_descrs#for:out_name, in_names in col_name_map.items()/assign:names",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r38",
+   "anchor": "get_descrs#for:out_name, in_names in col_name_map.items()/try",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r39",
+   "anchor": "get_descrs#for:out_name, in_names in col_name_map.items()/try/except:TableMergeError/raise:TableMergeError",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r40",
+   "anchor": "get_descrs#for:out_name, in_names in col_name_map.items()/assign:uniq_shapes",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r41",
+   "anchor": "common_dtype",
+   "kind": "doc",
+   "line": 584
+  },
+  {
+   "id": "r42",
+   "anchor": "_join",
+   "kind": "doc",
+   "line": 600
+  },
+  {
+   "id": "r43",
+   "anchor": "_join#assign:_col_name_map",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r44",
+   "anchor": "_join#if:keys is None",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r45",
+   "anchor": "_join#for:arr, arr_label in ((left, 'Left'), (right, 'Right'))",
+   "kind": "lead",
+   "line": 650
+  },
+  {
+   "id": "r46",
+   "anchor": "_join#assign:col_name_map",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r47",
+   "anchor": "_join#assign:out_keys_dtype",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r48",
+   "anchor": "_join#assign:diffs",
+   "kind": "lead",
+   "line": 682
+  },
+  {
+   "id": "r49",
+   "anchor": "_join#assign:int_join_type",
+   "kind": "lead",
+   "line": 687
+  },
+  {
+   "id": "r50",
+   "anchor": "_join#if:left.masked or right.masked",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r51",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:left_name and right_name",
+   "kind": "trail",
+   "line": 701
+  },
+  {
+   "id": "r52",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:left_name and right_name/if:issubclass(col_cls, Column)/else/assign:left_mask",
+   "kind": "lead",
+   "line": 718
+  },
+  {
+   "id": "r53",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:left_name and right_name/elif:left_name",
+   "kind": "trail",
+   "line": 724
+  },
+  {
+   "id": "r54",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/assign:out[out_name]",
+   "kind": "lead",
+   "line": 732
+  },
+  {
+   "id": "r55",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:masked and np.any(array_mask)",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r56",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:masked and np.any(array_mask)/assign:array_mask.shape",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r57",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:masked and np.any(array_mask)/assign:array_mask",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r58",
+   "anchor": "_join#for:out_name, dtype, shape in out_descrs/if:masked and np.any(array_mask)/try/except:Exception",
+   "kind": "trail",
+   "line": 749
+  },
+  {
+   "id": "r59",
+   "anchor": "_join#if:isinstance(_col_name_map, collections.Mapping)",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r60",
+   "anchor": "_vstack",
+   "kind": "doc",
+   "line": 762
+  },
+  {
+   "id": "r61",
+   "anchor": "_vstack#assign:_col_name_map",
+   "kind": "lead",
+   "line": 789
+  },
+  {
+   "id": "r62",
+   "anchor": "_vstack#if:join_type not in ('inner', 'exact', 'outer')",
+   "kind": "lead",
+   "line": 792
+  },
+  {
+   "id": "r63",
+   "anchor": "_vstack#if:len(arrays) == 1",
+   "kind": "lead",
+   "line": 796
+  },
+  {
+   "id": "r64",
+   "anchor": "_vstack#assign:names",
+   "kind": "lead",
+   "line": 800
+  },
+  {
+   "id": "r65",
+   "anchor": "_vstack#if:join_type == 'exact'",
+   "kind": "lead",
+   "line": 805
+  },
+  {
+   "id": "r66",
+   "anchor": "_vstack#if:join_type == 'inner'",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r67",
+   "anchor": "_vstack#assign:masked",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r68",
+   "anchor": "_vstack#for:out_name, in_names in col_name_map.items()/assign:cols",
+   "kind": "lead",
+   "line": 835
+  },
+  {
+   "id": "r69",
+   "anchor": "_vstack#for:out_name, in_names in col_name_map.items()/try/except:metadata.MergeConflictError/raise:TableMergeError",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r70",
+   "anchor": "_vstack#if:isinstance(_col_name_map, collections.Mapping)",
+   "kind": "lead",
+   "line": 865
+  },
+  {
+   "id": "r71",
+   "anchor": "_hstack",
+   "kind": "doc",
+   "line": 871
+  },
+  {
+   "id": "r72",
+   "anchor": "_hstack#assign:_col_name_map",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r73",
+   "anchor": "_hstack#if:join_type not in ('inner', 'exact', 'outer')",
+   "kind": "lead",
+   "line": 905
+  },
+  {
+   "id": "r74",
+   "anchor": "_hstack#if:len(arrays) == 1",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r75",
+   "anchor": "_hstack#assign:arr_lens",
+   "kind": "lead",
+   "line": 920
+  },
+  {
+   "id": "r76",
+   "anchor": "_hstack#if:join_type == 'inner'",
+   "kind": "lead",
+   "line": 929
+  },
+  {
+   "id": "r77",
+   "anchor": "_hstack#assign:masked",
+   "kind": "lead",
+   "line": 938
+  },
+  {
+   "id": "r78",
+   "anchor": "_hstack#if:isinstance(_col_name_map, collections.Mapping)",
+   "kind": "lead",
+   "line": 963
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22071,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6124,
+  "thinking_tokens": 2495,
+  "opus_cost_usd": 0.37810150000000003,
+  "total_cost_usd": 0.39531950000000005,
+  "duration_ms": 50650,
+  "duration_api_ms": 51964,
+  "num_turns": 2
+ },
+ "wall_ms": 51465,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

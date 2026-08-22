@@ -1,0 +1,355 @@
+{
+ "blob_sha": "9d246324f08eaf7d52a36b54d1e81bfc2cf8c9b3",
+ "path": "django/utils/translation/trans_real.py",
+ "repo": "django/django",
+ "records": 55,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_translations",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "_default",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "CONTEXT_SEPARATOR",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r5",
+   "anchor": "accept_language_re",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r6",
+   "anchor": "reset_cache",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r7",
+   "anchor": "to_locale",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r8",
+   "anchor": "to_locale#if:p>=0/if:to_lower/else/if:len(language[p+1:])>2",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r9",
+   "anchor": "to_language",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r10",
+   "anchor": "DjangoTranslation",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r11",
+   "anchor": "DjangoTranslation.__init__",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r12",
+   "anchor": "DjangoTranslation.__init__#call:self.set_output_charset",
+   "kind": "trail",
+   "line": 107
+  },
+  {
+   "id": "r13",
+   "anchor": "DjangoTranslation.plural",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r14",
+   "anchor": "DjangoTranslation.__init__#if:self.domain=='django'/if:localedirs is not None/call:warnings.warn",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r15",
+   "anchor": "DjangoTranslation.__init__#if:self.__language==settings.LANGUAGE_CODE and self.domain=='django' and self._catalog is None/raise:IOError",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r16",
+   "anchor": "DjangoTranslation.__init__#if:self._catalog is None/assign:self._catalog",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r17",
+   "anchor": "DjangoTranslation._new_gnu_trans",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r18",
+   "anchor": "DjangoTranslation._init_translation_catalog",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r19",
+   "anchor": "DjangoTranslation._add_installed_apps_translations",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r20",
+   "anchor": "DjangoTranslation._add_local_translations",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r21",
+   "anchor": "DjangoTranslation._add_fallback",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r22",
+   "anchor": "DjangoTranslation._add_fallback#if:self.__language==settings.LANGUAGE_CODE or self.__language.startswith('en')",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r23",
+   "anchor": "DjangoTranslation._add_fallback#if:self.domain=='django'/assign:default_translation",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r24",
+   "anchor": "DjangoTranslation.merge",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r25",
+   "anchor": "DjangoTranslation.merge#if:not getattr(other,'_catalog',None)/return",
+   "kind": "trail",
+   "line": 204
+  },
+  {
+   "id": "r26",
+   "anchor": "DjangoTranslation.merge#if:self._catalog is None/assign:self.plural",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r27",
+   "anchor": "DjangoTranslation.language",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r28",
+   "anchor": "DjangoTranslation.to_language",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r29",
+   "anchor": "translation",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r30",
+   "anchor": "activate",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r31",
+   "anchor": "deactivate",
+   "kind": "doc",
+   "line": 242
+  },
+  {
+   "id": "r32",
+   "anchor": "deactivate_all",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r33",
+   "anchor": "get_language",
+   "kind": "doc",
+   "line": 261
+  },
+  {
+   "id": "r34",
+   "anchor": "get_language#return",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r35",
+   "anchor": "get_language_bidi",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r36",
+   "anchor": "catalog",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r37",
+   "anchor": "do_translate",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r38",
+   "anchor": "do_translate#assign:eol_message",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r39",
+   "anchor": "do_translate#if:len(eol_message)==0/assign:result",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r40",
+   "anchor": "gettext",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r41",
+   "anchor": "pgettext#if:CONTEXT_SEPARATOR in result/assign:result",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r42",
+   "anchor": "gettext_noop",
+   "kind": "doc",
+   "line": 357
+  },
+  {
+   "id": "r43",
+   "anchor": "ngettext",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r44",
+   "anchor": "ungettext",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r45",
+   "anchor": "npgettext#if:CONTEXT_SEPARATOR in result/assign:result",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r46",
+   "anchor": "all_locale_paths",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r47",
+   "anchor": "check_for_language",
+   "kind": "doc",
+   "line": 419
+  },
+  {
+   "id": "r48",
+   "anchor": "check_for_language#if:lang_code is None or not language_code_re.search(lang_code)",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r49",
+   "anchor": "get_languages",
+   "kind": "doc",
+   "line": 439
+  },
+  {
+   "id": "r50",
+   "anchor": "get_supported_language_variant",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r51",
+   "anchor": "get_supported_language_variant#if:lang_code/assign:possible_lang_codes",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r52",
+   "anchor": "get_supported_language_variant#if:lang_code/if:not strict/for:supported_code in supported_lang_codes",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r53",
+   "anchor": "get_language_from_path",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r54",
+   "anchor": "get_language_from_request",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r55",
+   "anchor": "parse_accept_lang_header",
+   "kind": "doc",
+   "line": 547
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14294,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4445,
+  "thinking_tokens": 2132,
+  "opus_cost_usd": 0.2583565,
+  "total_cost_usd": 0.2686245,
+  "duration_ms": 40918,
+  "duration_api_ms": 42538,
+  "num_turns": 2
+ },
+ "wall_ms": 41839,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

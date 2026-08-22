@@ -1,0 +1,145 @@
+{
+ "blob_sha": "eddd576181b6238ba52f2e970b8e379bacac8e0b",
+ "path": "django/core/handlers/base.py",
+ "repo": "django/django",
+ "records": 20,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BaseHandler.load_middleware",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseHandler.load_middleware#assign:self._middleware_chain",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseHandler.get_response",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseHandler.get_response#call:set_urlconf",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseHandler.get_response#try",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseHandler.get_response#try/for:middleware_method in self._response_middleware",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseHandler.get_response#try/for:middleware_method in self._response_middleware/if:response is None",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseHandler.get_response#try/except:Exception",
+   "kind": "trail",
+   "line": 138
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseHandler.get_response#if:not getattr(response, 'is_rendered', True) and callable(getattr(response, 'render', None))",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseHandler._get_response",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseHandler._get_response#for:middleware_method in self._view_middleware",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseHandler._get_response#if:response is None",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseHandler._get_response#if:response is None/if:isinstance(callback, types.FunctionType)",
+   "kind": "trail",
+   "line": 191
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseHandler._get_response#if:response is None/if:isinstance(callback, types.FunctionType)/else",
+   "kind": "trail",
+   "line": 193
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseHandler._get_response#if:response is None/elif:hasattr(response, 'render') and callable(response.render)",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseHandler._get_response#if:response is None/elif:hasattr(response, 'render') and callable(response.render)/for:middleware_method in self._template_response_middleware/if:response is None",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseHandler.process_exception_by_middleware",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseHandler.handle_uncaught_exception",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseHandler._legacy_get_response",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseHandler._legacy_get_response#for:middleware_method in self._request_middleware",
+   "kind": "lead",
+   "line": 243
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8148,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1876,
+  "thinking_tokens": 769,
+  "opus_cost_usd": 0.13267150000000003,
+  "total_cost_usd": 0.13770150000000003,
+  "duration_ms": 17759,
+  "duration_api_ms": 18917,
+  "num_turns": 2
+ },
+ "wall_ms": 18678,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

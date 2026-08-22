@@ -1,0 +1,163 @@
+{
+ "blob_sha": "ba216d4aa0af2321fe8369a0a5f81d8766e1ab78",
+ "path": "doc/sphinxext/missing_references.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 23,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "MissingReferenceFilter",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "record_missing_reference_handler",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r4",
+   "anchor": "record_missing_reference_handler#if:not app.config.missing_references_enabled/return",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r5",
+   "anchor": "get_location",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r6",
+   "anchor": "get_location#if:source/assign:path, *post",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "get_location#if:source/assign:basepath",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r8",
+   "anchor": "get_location#if:source/try/except:ValueError/assign:path",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r9",
+   "anchor": "get_location#if:source/assign:path",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r10",
+   "anchor": "_truncate_location",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r11",
+   "anchor": "_warn_unused_missing_references#assign:basepath",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r12",
+   "anchor": "_warn_unused_missing_references#assign:references_ignored",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r13",
+   "anchor": "_warn_unused_missing_references#for:(domain_type, target), locations in references_ignored.items()",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r14",
+   "anchor": "_warn_unused_missing_references#for:(domain_type, target), locations in references_ignored.items()/for:ignored_reference_location in locations",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r15",
+   "anchor": "save_missing_references_handler",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r16",
+   "anchor": "save_missing_references_handler#if:not app.config.missing_references_enabled/return",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r17",
+   "anchor": "_write_missing_references_json",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r18",
+   "anchor": "_write_missing_references_json#assign:transformed_records",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r19",
+   "anchor": "_read_missing_references_json",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r20",
+   "anchor": "prepare_missing_references_handler",
+   "kind": "doc",
+   "line": 242
+  },
+  {
+   "id": "r21",
+   "anchor": "prepare_missing_references_handler#if:not app.config.missing_references_enabled/return",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r22",
+   "anchor": "prepare_missing_references_handler#for:handler in sphinx_logger.handlers/if:isinstance(handler, sphinx_logging.WarningStreamHandler) and missing_reference_filter not in handler.filters/call:handler.filters.insert",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r23",
+   "anchor": "prepare_missing_references_handler#if:not app.config.missing_references_write_json",
+   "kind": "lead",
+   "line": 280
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8913,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2418,
+  "thinking_tokens": 1277,
+  "opus_cost_usd": 0.15387150000000002,
+  "total_cost_usd": 0.15961750000000002,
+  "duration_ms": 23344,
+  "duration_api_ms": 24819,
+  "num_turns": 2
+ },
+ "wall_ms": 24247,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

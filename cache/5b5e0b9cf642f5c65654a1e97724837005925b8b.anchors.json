@@ -1,0 +1,349 @@
+{
+ "blob_sha": "5b5e0b9cf642f5c65654a1e97724837005925b8b",
+ "path": "lib/matplotlib/_constrained_layout.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 54,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "do_constrained_layout",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r3",
+   "anchor": "do_constrained_layout",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r4",
+   "anchor": "do_constrained_layout#assign:layoutgrids",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r5",
+   "anchor": "do_constrained_layout#for:_ in range(2)/call:make_layout_margins",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r6",
+   "anchor": "do_constrained_layout#for:_ in range(2)/call:make_layout_margins",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r7",
+   "anchor": "do_constrained_layout#for:_ in range(2)/call:match_submerged_margins",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r8",
+   "anchor": "do_constrained_layout#for:_ in range(2)/call:layoutgrids[fig].update_variables",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r9",
+   "anchor": "make_layoutgrids",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r10",
+   "anchor": "make_layoutgrids#if:not hasattr(fig, '_parent')/assign:layoutgrids[fig]",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r11",
+   "anchor": "make_layoutgrids#if:not hasattr(fig, '_parent')/else/assign:gs",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r12",
+   "anchor": "make_layoutgrids#if:not hasattr(fig, '_parent')/else/assign:layoutgrids",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r13",
+   "anchor": "make_layoutgrids#if:not hasattr(fig, '_parent')/else/assign:parentlb",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r14",
+   "anchor": "make_layoutgrids#for:sfig in fig.subfigs",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r15",
+   "anchor": "make_layoutgrids#for:ax in fig._localaxes",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r16",
+   "anchor": "make_layoutgrids_gs",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r17",
+   "anchor": "make_layoutgrids_gs#assign:layoutgrids['hasgrids']",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r18",
+   "anchor": "make_layoutgrids_gs#if:not hasattr(gs, '_subplot_spec')/assign:parent",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "make_layoutgrids_gs#if:not hasattr(gs, '_subplot_spec')/else/assign:subplot_spec",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r20",
+   "anchor": "make_layoutgrids_gs#if:not hasattr(gs, '_subplot_spec')/else/if:parentgs not in layoutgrids",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r21",
+   "anchor": "make_layoutgrids_gs#if:not hasattr(gs, '_subplot_spec')/else/assign:rep",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r22",
+   "anchor": "check_no_collapsed_axes",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r23",
+   "anchor": "get_margin_from_padding#assign:margin",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r24",
+   "anchor": "make_layout_margins",
+   "kind": "doc",
+   "line": 340
+  },
+  {
+   "id": "r25",
+   "anchor": "make_layout_margins#for:sfig in fig.subfigs",
+   "kind": "trail",
+   "line": 349
+  },
+  {
+   "id": "r26",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/assign:margin['left']",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r27",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/assign:margin['bottom']",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r28",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r29",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/assign:pad",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r30",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/assign:cbp_rspan, cbp_cspan",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r31",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/if:loc=='right'/if:cbp_cspan.stop==ss.colspan.stop/assign:margin['rightcb']",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r32",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/if:loc=='right'/elif:loc=='left'/if:cbp_cspan.start==ss.colspan.start/assign:margin['leftcb']",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r33",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/if:loc in ['top', 'bottom']",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r34",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/for:cbax in ax._colorbars/if:loc in ['left', 'right']",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r35",
+   "anchor": "make_layout_margins#for:ax in fig._localaxes/call:layoutgrids[gs].edit_outer_margin_mins",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r36",
+   "anchor": "make_margin_suptitles#assign:inv_trans_fig",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r37",
+   "anchor": "make_margin_suptitles#assign:padbox",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r38",
+   "anchor": "match_submerged_margins",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r39",
+   "anchor": "match_submerged_margins#for:ax1 in axs/if:len(ss1.colspan)>1",
+   "kind": "lead",
+   "line": 502
+  },
+  {
+   "id": "r40",
+   "anchor": "match_submerged_margins#for:ax1 in axs/if:len(ss1.rowspan)>1",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r41",
+   "anchor": "get_cb_parent_spans",
+   "kind": "doc",
+   "line": 560
+  },
+  {
+   "id": "r42",
+   "anchor": "get_pos_and_bbox",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r43",
+   "anchor": "get_pos_and_bbox#assign:pos",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r44",
+   "anchor": "reposition_axes",
+   "kind": "doc",
+   "line": 608
+  },
+  {
+   "id": "r45",
+   "anchor": "reposition_axes#for:ax in fig._localaxes/assign:ss",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r46",
+   "anchor": "reposition_axes#for:ax in fig._localaxes/assign:newbbox",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r47",
+   "anchor": "reposition_axes#for:ax in fig._localaxes/assign:offset",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r48",
+   "anchor": "reposition_colorbar",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r49",
+   "anchor": "reposition_colorbar#assign:cbpad",
+   "kind": "lead",
+   "line": 691
+  },
+  {
+   "id": "r50",
+   "anchor": "reposition_colorbar#if:location in ('left', 'right')/assign:pbcb",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r51",
+   "anchor": "reposition_colorbar#if:location in ('left', 'right')/if:location=='right'",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r52",
+   "anchor": "reposition_colorbar#if:location in ('left', 'right')/if:location=='right'/else/assign:dx",
+   "kind": "trail",
+   "line": 705
+  },
+  {
+   "id": "r53",
+   "anchor": "reposition_colorbar#if:location in ('left', 'right')/else",
+   "kind": "trail",
+   "line": 709
+  },
+  {
+   "id": "r54",
+   "anchor": "reset_margins",
+   "kind": "doc",
+   "line": 735
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20169,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5928,
+  "thinking_tokens": 2957,
+  "opus_cost_usd": 0.3541815,
+  "total_cost_usd": 0.3687395,
+  "duration_ms": 50787,
+  "duration_api_ms": 51823,
+  "num_turns": 2
+ },
+ "wall_ms": 51693,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

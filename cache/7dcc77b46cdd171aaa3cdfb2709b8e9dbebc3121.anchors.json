@@ -1,0 +1,325 @@
+{
+ "blob_sha": "7dcc77b46cdd171aaa3cdfb2709b8e9dbebc3121",
+ "path": "django/utils/translation/trans_real.py",
+ "repo": "django/django",
+ "records": 50,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_translations",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "_default",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r4",
+   "anchor": "CONTEXT_SEPARATOR",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r5",
+   "anchor": "accept_language_re",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r6",
+   "anchor": "reset_cache",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r7",
+   "anchor": "TranslationCatalog",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r8",
+   "anchor": "TranslationCatalog.update#for:cat, plural in zip(self._catalogs, self._plurals)",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r9",
+   "anchor": "DjangoTranslation",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r10",
+   "anchor": "DjangoTranslation.__init__",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r11",
+   "anchor": "DjangoTranslation.plural",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r12",
+   "anchor": "DjangoTranslation.__init__#if:self.domain == 'django'/if:localedirs is not None/call:warnings.warn",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r13",
+   "anchor": "DjangoTranslation.__init__#if:self.__language == settings.LANGUAGE_CODE and self.domain == 'django' and self._catalog is None/raise:OSError",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r14",
+   "anchor": "DjangoTranslation.__init__#if:self._catalog is None/assign:self._catalog",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r15",
+   "anchor": "DjangoTranslation._new_gnu_trans",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r16",
+   "anchor": "DjangoTranslation._init_translation_catalog",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r17",
+   "anchor": "DjangoTranslation._add_installed_apps_translations",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r18",
+   "anchor": "DjangoTranslation._add_local_translations",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r19",
+   "anchor": "DjangoTranslation._add_fallback",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r20",
+   "anchor": "DjangoTranslation._add_fallback#if:self.__language == settings.LANGUAGE_CODE or self.__language.startswith('en')",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r21",
+   "anchor": "DjangoTranslation._add_fallback#if:self.domain == 'django'/assign:default_translation",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r22",
+   "anchor": "DjangoTranslation.merge",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r23",
+   "anchor": "DjangoTranslation.merge#if:not getattr(other, '_catalog', None)/return",
+   "kind": "trail",
+   "line": 230
+  },
+  {
+   "id": "r24",
+   "anchor": "DjangoTranslation.merge#assign:self.plural",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r25",
+   "anchor": "DjangoTranslation.language",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r26",
+   "anchor": "DjangoTranslation.to_language",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r27",
+   "anchor": "translation",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r28",
+   "anchor": "activate",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r29",
+   "anchor": "deactivate",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r30",
+   "anchor": "deactivate_all",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r31",
+   "anchor": "get_language",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r32",
+   "anchor": "get_language#return",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r33",
+   "anchor": "get_language_bidi",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r34",
+   "anchor": "catalog",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r35",
+   "anchor": "gettext",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r36",
+   "anchor": "gettext#if:eol_message/else/assign:result",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r37",
+   "anchor": "pgettext#if:CONTEXT_SEPARATOR in result/assign:result",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r38",
+   "anchor": "gettext_noop",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r39",
+   "anchor": "ngettext",
+   "kind": "doc",
+   "line": 402
+  },
+  {
+   "id": "r40",
+   "anchor": "npgettext#if:CONTEXT_SEPARATOR in result/assign:result",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r41",
+   "anchor": "all_locale_paths",
+   "kind": "doc",
+   "line": 421
+  },
+  {
+   "id": "r42",
+   "anchor": "check_for_language",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r43",
+   "anchor": "check_for_language#if:lang_code is None or not language_code_re.search(lang_code)",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r44",
+   "anchor": "get_languages",
+   "kind": "doc",
+   "line": 456
+  },
+  {
+   "id": "r45",
+   "anchor": "get_supported_language_variant",
+   "kind": "doc",
+   "line": 464
+  },
+  {
+   "id": "r46",
+   "anchor": "get_supported_language_variant#if:lang_code/assign:possible_lang_codes",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r47",
+   "anchor": "get_supported_language_variant#if:lang_code/if:not strict/for:supported_code in supported_lang_codes",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r48",
+   "anchor": "get_language_from_path",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r49",
+   "anchor": "get_language_from_request",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r50",
+   "anchor": "parse_accept_lang_header",
+   "kind": "doc",
+   "line": 562
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14215,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4236,
+  "thinking_tokens": 2107,
+  "opus_cost_usd": 0.2523415,
+  "total_cost_usd": 0.2625465,
+  "duration_ms": 40596,
+  "duration_api_ms": 41750,
+  "num_turns": 2
+ },
+ "wall_ms": 41456,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

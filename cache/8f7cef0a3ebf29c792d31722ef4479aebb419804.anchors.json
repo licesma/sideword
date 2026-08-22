@@ -1,0 +1,109 @@
+{
+ "blob_sha": "8f7cef0a3ebf29c792d31722ef4479aebb419804",
+ "path": "django/core/files/locks.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_fd",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "LOCK_SH",
+   "kind": "trail",
+   "line": 35
+  },
+  {
+   "id": "r4",
+   "anchor": "LOCK_NB",
+   "kind": "trail",
+   "line": 36
+  },
+  {
+   "id": "r5",
+   "anchor": "LOCK_EX",
+   "kind": "trail",
+   "line": 37
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#if:os.name=='nt'/if:sizeof(c_ulong)!=sizeof(c_void_p)",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r7",
+   "anchor": "_OFFSET",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r8",
+   "anchor": "LockFileEx",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#if:os.name=='nt'/else/try/assign:LOCK_SH",
+   "kind": "trail",
+   "line": 91
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#if:os.name=='nt'/else/try/assign:LOCK_NB",
+   "kind": "trail",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "<module>#if:os.name=='nt'/else/try/except:(ImportError,AttributeError)/assign:LOCK_EX",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r12",
+   "anchor": "lock",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r13",
+   "anchor": "lock#return",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r14",
+   "anchor": "unlock#return",
+   "kind": "lead",
+   "line": 105
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5698,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1903,
+  "thinking_tokens": 1266,
+  "opus_cost_usd": 0.10884650000000001,
+  "total_cost_usd": 0.11185050000000002,
+  "duration_ms": 21788,
+  "duration_api_ms": 23344,
+  "num_turns": 2
+ },
+ "wall_ms": 22586,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

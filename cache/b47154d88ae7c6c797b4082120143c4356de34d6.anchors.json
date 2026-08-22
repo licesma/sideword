@@ -1,0 +1,487 @@
+{
+ "blob_sha": "b47154d88ae7c6c797b4082120143c4356de34d6",
+ "path": "django/template/base.py",
+ "repo": "django/django",
+ "records": 77,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "FILTER_SEPARATOR",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r3",
+   "anchor": "UNKNOWN_SOURCE",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r4",
+   "anchor": "tag_re",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r5",
+   "anchor": "Template.__init__#if:engine is None",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r6",
+   "anchor": "Template.__init__#assign:self.source",
+   "kind": "trail",
+   "line": 157
+  },
+  {
+   "id": "r7",
+   "anchor": "Template.render",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r8",
+   "anchor": "Template.compile_nodelist",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r9",
+   "anchor": "Template.get_exception_info",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r10",
+   "anchor": "Template.get_exception_info#try",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r11",
+   "anchor": "Token.__init__",
+   "kind": "doc",
+   "line": 297
+  },
+  {
+   "id": "r12",
+   "anchor": "Token.split_contents#for:bit in bits/if:bit.startswith(('_(\"', \"_('\"))",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r13",
+   "anchor": "Lexer.tokenize",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r14",
+   "anchor": "Lexer.create_token",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r15",
+   "anchor": "Lexer.create_token#if:in_tag and token_string.startswith(BLOCK_TAG_START)/assign:block_content",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r16",
+   "anchor": "DebugLexer.tokenize",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r17",
+   "anchor": "Parser.__init__#assign:self.tokens",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r18",
+   "anchor": "Parser.parse",
+   "kind": "doc",
+   "line": 445
+  },
+  {
+   "id": "r19",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r20",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0",
+   "kind": "trail",
+   "line": 460
+  },
+  {
+   "id": "r21",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1",
+   "kind": "trail",
+   "line": 462
+  },
+  {
+   "id": "r22",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2",
+   "kind": "trail",
+   "line": 471
+  },
+  {
+   "id": "r23",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2/if:command in parse_until/call:self.prepend_token",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r24",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2/call:self.command_stack.append",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r25",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2/try",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r26",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2/try",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r27",
+   "anchor": "Parser.parse#while:self.tokens/if:token.token_type.value == 0/elif:token.token_type.value == 1/elif:token.token_type.value == 2/call:self.command_stack.pop",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r28",
+   "anchor": "Parser.extend_nodelist#if:node.must_be_first and nodelist.contains_nontext",
+   "kind": "lead",
+   "line": 514
+  },
+  {
+   "id": "r29",
+   "anchor": "Parser.extend_nodelist#assign:node.token",
+   "kind": "lead",
+   "line": 522
+  },
+  {
+   "id": "r30",
+   "anchor": "Parser.error",
+   "kind": "doc",
+   "line": 526
+  },
+  {
+   "id": "r31",
+   "anchor": "Parser.compile_filter",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r32",
+   "anchor": "constant_string",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r33",
+   "anchor": "constant_string#key:strdq",
+   "kind": "trail",
+   "line": 600
+  },
+  {
+   "id": "r34",
+   "anchor": "constant_string#key:strsq",
+   "kind": "trail",
+   "line": 601
+  },
+  {
+   "id": "r35",
+   "anchor": "FilterExpression",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r36",
+   "anchor": "FilterExpression.args_check#assign:plen",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r37",
+   "anchor": "FilterExpression.args_check#assign:func",
+   "kind": "lead",
+   "line": 729
+  },
+  {
+   "id": "r38",
+   "anchor": "FilterExpression.args_check#if:plen < (alen - dlen) or plen > alen",
+   "kind": "lead",
+   "line": 735
+  },
+  {
+   "id": "r39",
+   "anchor": "Variable",
+   "kind": "doc",
+   "line": 749
+  },
+  {
+   "id": "r40",
+   "anchor": "Variable.__init__#try/if:'.' in var or 'e' in var.lower()",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r41",
+   "anchor": "Variable.__init__#try/if:'.' in var or 'e' in var.lower()",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r42",
+   "anchor": "Variable.__init__#try/if:'.' in var or 'e' in var.lower()/if:var.endswith('.')",
+   "kind": "lead",
+   "line": 790
+  },
+  {
+   "id": "r43",
+   "anchor": "Variable.__init__#try/except:ValueError/if:var.startswith('_(') and var.endswith(')')",
+   "kind": "lead",
+   "line": 796
+  },
+  {
+   "id": "r44",
+   "anchor": "Variable.__init__#try/except:ValueError/if:var.startswith('_(') and var.endswith(')')/assign:self.translate",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r45",
+   "anchor": "Variable.__init__#try/except:ValueError/try",
+   "kind": "lead",
+   "line": 803
+  },
+  {
+   "id": "r46",
+   "anchor": "Variable.__init__#try/except:ValueError/try/except:ValueError/if:var.find(VARIABLE_ATTRIBUTE_SEPARATOR + '_') > -1 or var[0] == '_'",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r47",
+   "anchor": "Variable.resolve",
+   "kind": "doc",
+   "line": 814
+  },
+  {
+   "id": "r48",
+   "anchor": "Variable.resolve#if:self.lookups is not None/assign:value",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r49",
+   "anchor": "Variable.resolve#if:self.lookups is not None/else/assign:value",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r50",
+   "anchor": "Variable._resolve_lookup",
+   "kind": "doc",
+   "line": 838
+  },
+  {
+   "id": "r51",
+   "anchor": "Variable._resolve_lookup#try",
+   "kind": "trail",
+   "line": 848
+  },
+  {
+   "id": "r52",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try",
+   "kind": "trail",
+   "line": 850
+  },
+  {
+   "id": "r53",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/assign:current",
+   "kind": "post",
+   "line": 851
+  },
+  {
+   "id": "r54",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try",
+   "kind": "trail",
+   "line": 855
+  },
+  {
+   "id": "r55",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/if:isinstance(current, BaseContext) and getattr(type(current), bit)",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r56",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/if:not isinstance(current, BaseContext) and bit in dir(current)",
+   "kind": "lead",
+   "line": 862
+  },
+  {
+   "id": "r57",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try",
+   "kind": "trail",
+   "line": 864
+  },
+  {
+   "id": "r58",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try/except:(IndexError, ValueError, KeyError, TypeError)/item:IndexError",
+   "kind": "trail",
+   "line": 866
+  },
+  {
+   "id": "r59",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try/except:(IndexError, ValueError, KeyError, TypeError)/item:ValueError",
+   "kind": "trail",
+   "line": 867
+  },
+  {
+   "id": "r60",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try/except:(IndexError, ValueError, KeyError, TypeError)/item:KeyError",
+   "kind": "trail",
+   "line": 868
+  },
+  {
+   "id": "r61",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try/except:(IndexError, ValueError, KeyError, TypeError)/item:TypeError",
+   "kind": "trail",
+   "line": 869
+  },
+  {
+   "id": "r62",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/try/except:(TypeError, AttributeError, KeyError, ValueError, IndexError)/try/except:(TypeError, AttributeError)/try/except:(IndexError, ValueError, KeyError, TypeError)/raise:VariableDoesNotExist",
+   "kind": "trail",
+   "line": 870
+  },
+  {
+   "id": "r63",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/if:callable(current)/if:getattr(current, 'do_not_call_in_templates', False)/elif:getattr(current, 'alters_data', False)/else/try",
+   "kind": "trail",
+   "line": 879
+  },
+  {
+   "id": "r64",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/if:callable(current)/if:getattr(current, 'do_not_call_in_templates', False)/elif:getattr(current, 'alters_data', False)/else/try/except:TypeError/try/except:TypeError",
+   "kind": "trail",
+   "line": 885
+  },
+  {
+   "id": "r65",
+   "anchor": "Variable._resolve_lookup#try/for:bit in self.lookups/if:callable(current)/if:getattr(current, 'do_not_call_in_templates', False)/elif:getattr(current, 'alters_data', False)/else/try/except:TypeError/try/except:TypeError/assign:current",
+   "kind": "trail",
+   "line": 886
+  },
+  {
+   "id": "r66",
+   "anchor": "Node.must_be_first",
+   "kind": "lead",
+   "line": 909
+  },
+  {
+   "id": "r67",
+   "anchor": "Node.render",
+   "kind": "doc",
+   "line": 913
+  },
+  {
+   "id": "r68",
+   "anchor": "Node.render_annotated",
+   "kind": "doc",
+   "line": 919
+  },
+  {
+   "id": "r69",
+   "anchor": "Node.render_annotated#try/except:Exception/if:context.template.engine.debug/if:not hasattr(e, '_culprit_node')",
+   "kind": "lead",
+   "line": 931
+  },
+  {
+   "id": "r70",
+   "anchor": "Node.get_nodes_by_type",
+   "kind": "doc",
+   "line": 945
+  },
+  {
+   "id": "r71",
+   "anchor": "NodeList.contains_nontext",
+   "kind": "lead",
+   "line": 963
+  },
+  {
+   "id": "r72",
+   "anchor": "NodeList.get_nodes_by_type",
+   "kind": "doc",
+   "line": 970
+  },
+  {
+   "id": "r73",
+   "anchor": "TextNode.render_annotated",
+   "kind": "doc",
+   "line": 988
+  },
+  {
+   "id": "r74",
+   "anchor": "render_value_in_context",
+   "kind": "doc",
+   "line": 998
+  },
+  {
+   "id": "r75",
+   "anchor": "VariableNode.render#try/except:UnicodeDecodeError/return",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r76",
+   "anchor": "kwarg_re",
+   "kind": "lead",
+   "line": 1033
+  },
+  {
+   "id": "r77",
+   "anchor": "token_kwargs",
+   "kind": "doc",
+   "line": 1036
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 23100,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10055,
+  "thinking_tokens": 5422,
+  "opus_cost_usd": 0.4866665,
+  "total_cost_usd": 0.5043805,
+  "duration_ms": 91652,
+  "duration_api_ms": 92903,
+  "num_turns": 2
+ },
+ "wall_ms": 92609,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

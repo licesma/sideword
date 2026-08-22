@@ -1,0 +1,133 @@
+{
+ "blob_sha": "46972629d8f964a54da9424eeb49dac1c43a2ba6",
+ "path": "django/contrib/gis/geos/point.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Point.__init__",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "Point.__init__#if:x is None/elif:isinstance(x, (tuple, list))/assign:coords",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "Point.__init__#if:x is None/elif:isinstance(x, six.integer_types + (float,)) and isinstance(y, six.integer_types + (float,))/if:isinstance(z, six.integer_types + (float,))",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "Point.__init__#call:super(Point, self).__init__",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "Point._create_point",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r6",
+   "anchor": "Point._set_list#if:ptr/else/raise:GEOSException",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "Point.__iter__",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "Point.__len__",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r9",
+   "anchor": "Point.x",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r10",
+   "anchor": "Point.x",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r11",
+   "anchor": "Point.y",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r12",
+   "anchor": "Point.y",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r13",
+   "anchor": "Point.z",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r14",
+   "anchor": "Point.z",
+   "kind": "doc",
+   "line": 128
+  },
+  {
+   "id": "r15",
+   "anchor": "Point.tuple",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r16",
+   "anchor": "Point.tuple",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r17",
+   "anchor": "Point.tuple",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r18",
+   "anchor": "Point.coords",
+   "kind": "lead",
+   "line": 202
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6737,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1462,
+  "thinking_tokens": 689,
+  "opus_cost_usd": 0.1082115,
+  "total_cost_usd": 0.1122255,
+  "duration_ms": 15310,
+  "duration_api_ms": 16352,
+  "num_turns": 2
+ },
+ "wall_ms": 16157,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

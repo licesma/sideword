@@ -1,0 +1,745 @@
+{
+ "blob_sha": "f780b1cda0021a7ed7b905ea703e070586212c4c",
+ "path": "django/db/backends/base/schema.py",
+ "repo": "django/django",
+ "records": 120,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_related_non_m2m_objects#return",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseDatabaseSchemaEditor",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseDatabaseSchemaEditor.sql_create_table",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseDatabaseSchemaEditor.__enter__",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseDatabaseSchemaEditor.execute",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseDatabaseSchemaEditor.execute",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseDatabaseSchemaEditor.execute#call:logger.debug",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseDatabaseSchemaEditor._digest",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#assign:db_params",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#if:sql is None",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#assign:null",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#assign:include_default",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#if:include_default/if:default_value is not None/if:self.connection.features.requires_literal_defaults/assign:sql",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#if:field.empty_strings_allowed and not field.primary_key and self.connection.features.interprets_empty_strings_as_nulls",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#if:field.primary_key",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#assign:tablespace",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseDatabaseSchemaEditor.column_sql#return",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseDatabaseSchemaEditor.skip_default",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseDatabaseSchemaEditor.prepare_default",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseDatabaseSchemaEditor.effective_default",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseDatabaseSchemaEditor.effective_default#if:callable(default)",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseDatabaseSchemaEditor.effective_default#assign:default",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseDatabaseSchemaEditor.quote_value",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseDatabaseSchemaEditor.create_model",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseDatabaseSchemaEditor.create_model",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#assign:column_sqls",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/assign:definition, extra_params",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/assign:db_params",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/assign:col_type_suffix",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/if:field.remote_field and field.db_constraint",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/call:column_sqls.append",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_fields/if:field.get_internal_type() in (\"AutoField\", \"BigAutoField\")",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:fields in model._meta.unique_together",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#assign:sql",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#call:self.execute",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#call:self.deferred_sql.extend",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseDatabaseSchemaEditor.create_model#for:field in model._meta.local_many_to_many",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseDatabaseSchemaEditor.delete_model",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseDatabaseSchemaEditor.delete_model#for:field in model._meta.local_many_to_many",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseDatabaseSchemaEditor.delete_model#call:self.execute",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseDatabaseSchemaEditor.add_index",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseDatabaseSchemaEditor.remove_index",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseDatabaseSchemaEditor.alter_unique_together",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseDatabaseSchemaEditor.alter_unique_together#for:fields in olds.difference(news)",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseDatabaseSchemaEditor.alter_unique_together#for:fields in news.difference(olds)",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseDatabaseSchemaEditor.alter_index_together",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseDatabaseSchemaEditor.alter_index_together#for:fields in olds.difference(news)",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseDatabaseSchemaEditor.alter_index_together#for:field_names in news.difference(olds)",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseDatabaseSchemaEditor.alter_db_table",
+   "kind": "doc",
+   "line": 373
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseDatabaseSchemaEditor.alter_db_tablespace",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseDatabaseSchemaEditor.add_field",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#if:field.many_to_many and field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#assign:definition, params",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#if:definition is None",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#assign:db_params",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#assign:sql",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#if:not self.skip_default(field) and self.effective_default(field) is not None",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#call:self.deferred_sql.extend",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#if:field.remote_field and self.connection.features.supports_foreign_keys and field.db_constraint",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseDatabaseSchemaEditor.add_field#if:self.connection.features.connection_persists_old_columns",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field",
+   "kind": "doc",
+   "line": 440
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field#if:field.many_to_many and field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field#if:field.db_parameters(connection=self.connection)['type'] is None",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field#if:field.remote_field",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field#assign:sql",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseDatabaseSchemaEditor.remove_field#if:self.connection.features.connection_persists_old_columns",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseDatabaseSchemaEditor.alter_field",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseDatabaseSchemaEditor.alter_field#assign:old_db_params",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseDatabaseSchemaEditor.alter_field#if:(old_type is None and old_field.remote_field is None) or (new_type is None and new_field.remote_field is None)/elif:old_type is None and new_type is None and (old_field.remote_field.through and new_field.remote_field.through and old_field.remote_field.through._meta.auto_created and new_field.remote_field.through._meta.auto_created)/elif:old_type is None and new_type is None and (old_field.remote_field.through and new_field.remote_field.through and not old_field.remote_field.through._meta.auto_created and not new_field.remote_field.through._meta.auto_created)/return",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field",
+   "kind": "doc",
+   "line": 507
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#assign:fks_dropped",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.unique and (not new_field.unique or (not old_field.primary_key and new_field.primary_key))",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.unique and (not new_field.unique or (not old_field.primary_key and new_field.primary_key))/assign:constraint_names",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.primary_key and new_field.primary_key and old_type != new_type",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.primary_key and new_field.primary_key and old_type != new_type/for:_old_rel, new_rel in _related_non_m2m_objects(old_field, new_field)",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.db_index and not old_field.unique and (not new_field.db_index or new_field.unique)",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.db_index and not old_field.unique and (not new_field.db_index or new_field.unique)/assign:index_names",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_db_params['check'] != new_db_params['check'] and old_db_params['check']",
+   "kind": "lead",
+   "line": 563
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.column != new_field.column",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#assign:actions",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_type != new_type",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r84",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#assign:old_default",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r85",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:needs_database_default/if:self.connection.features.requires_literal_defaults/call:actions.append",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r86",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.null != new_field.null",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r87",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.null != new_field.null/if:self.connection.features.interprets_empty_strings_as_nulls and new_field.get_internal_type() in (\"CharField\", \"TextField\")/pass",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r88",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#assign:four_way_default_alteration",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r89",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:actions or null_actions/if:not four_way_default_alteration/assign:actions",
+   "kind": "lead",
+   "line": 654
+  },
+  {
+   "id": "r90",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:actions or null_actions/if:self.connection.features.supports_combined_alters and actions",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r91",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:actions or null_actions/for:sql, params in actions",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r92",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:actions or null_actions/if:four_way_default_alteration/call:self.execute",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r93",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:actions or null_actions/if:four_way_default_alteration/for:sql, params in null_actions",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r94",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:(not old_field.unique and new_field.unique) or (old_field.primary_key and not new_field.primary_key and new_field.unique)",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r95",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:(not old_field.db_index or old_field.unique) and new_field.db_index and not new_field.unique",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r96",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#assign:rels_to_update",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r97",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:not old_field.primary_key and new_field.primary_key",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r98",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:not old_field.primary_key and new_field.primary_key/assign:constraint_names",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r99",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:not old_field.primary_key and new_field.primary_key/call:self.execute",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r100",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:not old_field.primary_key and new_field.primary_key/call:rels_to_update.extend",
+   "kind": "lead",
+   "line": 734
+  },
+  {
+   "id": "r101",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#for:old_rel, new_rel in rels_to_update",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r102",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:new_field.remote_field and (fks_dropped or not old_field.remote_field or not old_field.db_constraint) and new_field.db_constraint",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r103",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_field.primary_key and new_field.primary_key and old_type != new_type",
+   "kind": "lead",
+   "line": 757
+  },
+  {
+   "id": "r104",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:old_db_params['check'] != new_db_params['check'] and new_db_params['check']",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r105",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:needs_database_default",
+   "kind": "lead",
+   "line": 773
+  },
+  {
+   "id": "r106",
+   "anchor": "BaseDatabaseSchemaEditor._alter_field#if:self.connection.features.connection_persists_old_columns",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r107",
+   "anchor": "BaseDatabaseSchemaEditor._alter_column_type_sql",
+   "kind": "doc",
+   "line": 786
+  },
+  {
+   "id": "r108",
+   "anchor": "BaseDatabaseSchemaEditor._alter_many_to_many",
+   "kind": "doc",
+   "line": 807
+  },
+  {
+   "id": "r109",
+   "anchor": "BaseDatabaseSchemaEditor._alter_many_to_many#if:old_field.remote_field.through._meta.db_table != new_field.remote_field.through._meta.db_table",
+   "kind": "lead",
+   "line": 812
+  },
+  {
+   "id": "r110",
+   "anchor": "BaseDatabaseSchemaEditor._alter_many_to_many#call:self.alter_field",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r111",
+   "anchor": "BaseDatabaseSchemaEditor._alter_many_to_many#call:self.alter_field/arg:old_field.remote_field.through._meta.get_field(old_field.m2m_reverse_field_name())",
+   "kind": "lead",
+   "line": 820
+  },
+  {
+   "id": "r112",
+   "anchor": "BaseDatabaseSchemaEditor._alter_many_to_many#call:self.alter_field/arg:old_field.remote_field.through._meta.get_field(old_field.m2m_field_name())",
+   "kind": "lead",
+   "line": 826
+  },
+  {
+   "id": "r113",
+   "anchor": "BaseDatabaseSchemaEditor._create_index_name",
+   "kind": "doc",
+   "line": 830
+  },
+  {
+   "id": "r114",
+   "anchor": "BaseDatabaseSchemaEditor._create_index_name#assign:index_name",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r115",
+   "anchor": "BaseDatabaseSchemaEditor._create_index_name#if:len(hash_suffix_part) > max_length / 3",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r116",
+   "anchor": "BaseDatabaseSchemaEditor._create_index_name#if:index_name[0] == \"_\" or index_name[0].isdigit()",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r117",
+   "anchor": "BaseDatabaseSchemaEditor._create_index_sql",
+   "kind": "doc",
+   "line": 871
+  },
+  {
+   "id": "r118",
+   "anchor": "BaseDatabaseSchemaEditor._model_indexes_sql",
+   "kind": "doc",
+   "line": 888
+  },
+  {
+   "id": "r119",
+   "anchor": "BaseDatabaseSchemaEditor._field_indexes_sql",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r120",
+   "anchor": "BaseDatabaseSchemaEditor._constraint_names",
+   "kind": "doc",
+   "line": 959
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 26511,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14014,
+  "thinking_tokens": 6315,
+  "opus_cost_usd": 0.6197515,
+  "total_cost_usd": 0.6403115,
+  "duration_ms": 117626,
+  "duration_api_ms": 119392,
+  "num_turns": 2
+ },
+ "wall_ms": 118595,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

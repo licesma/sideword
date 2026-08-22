@@ -1,0 +1,235 @@
+{
+ "blob_sha": "18900f7b8509dc8bfee3938b0b9389e1161d505d",
+ "path": "django/db/models/fields/files.py",
+ "repo": "django/django",
+ "records": 35,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "FieldFile.__eq__#if:hasattr(other, 'name')",
+   "kind": "lead",
+   "line": 27
+  },
+  {
+   "id": "r2",
+   "anchor": "FieldFile._require_file",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r3",
+   "anchor": "FieldFile#assign:open.alters_data",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r4",
+   "anchor": "FieldFile.save",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "FieldFile.save#if:save",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r6",
+   "anchor": "FieldFile.delete#if:hasattr(self, '_file')",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r7",
+   "anchor": "FieldFile.__getstate__#return",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r8",
+   "anchor": "FileDescriptor",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r9",
+   "anchor": "FileDescriptor.__get__#assign:file",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r10",
+   "anchor": "FileDescriptor.__get__#assign:file",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r11",
+   "anchor": "FileDescriptor.__get__#if:isinstance(file, str) or file is None",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r12",
+   "anchor": "FileDescriptor.__get__#if:isinstance(file, str) or file is None/elif:isinstance(file, File) and not isinstance(file, FieldFile)",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r13",
+   "anchor": "FileDescriptor.__get__#if:isinstance(file, str) or file is None/elif:isinstance(file, FieldFile) and not hasattr(file, 'field')",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r14",
+   "anchor": "FileDescriptor.__get__#if:isinstance(file, str) or file is None/elif:isinstance(file, FieldFile) and instance is not file.instance",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r15",
+   "anchor": "FileDescriptor.__get__#return",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r16",
+   "anchor": "FileField.attr_class",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r17",
+   "anchor": "FileField.descriptor_class",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r18",
+   "anchor": "FileField._storage_callable",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r19",
+   "anchor": "FileField.get_prep_value#if:value is None",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r20",
+   "anchor": "FileField.pre_save#if:file and not file._committed/call:file.save",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r21",
+   "anchor": "FileField.generate_filename",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r22",
+   "anchor": "FileField.save_form_data#if:data is not None",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r23",
+   "anchor": "FileField.save_form_data#if:data is not None/call:setattr",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r24",
+   "anchor": "ImageFileDescriptor",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r25",
+   "anchor": "ImageFileDescriptor.__set__#if:previous_file is not None",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r26",
+   "anchor": "ImageFieldFile.delete#if:hasattr(self, '_dimensions_cache')",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r27",
+   "anchor": "ImageField.contribute_to_class#if:not cls._meta.abstract",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r28",
+   "anchor": "ImageField.update_dimension_fields",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r29",
+   "anchor": "ImageField.update_dimension_fields#assign:has_dimension_fields",
+   "kind": "lead",
+   "line": 435
+  },
+  {
+   "id": "r30",
+   "anchor": "ImageField.update_dimension_fields#assign:file",
+   "kind": "lead",
+   "line": 442
+  },
+  {
+   "id": "r31",
+   "anchor": "ImageField.update_dimension_fields#if:not file and not force",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r32",
+   "anchor": "ImageField.update_dimension_fields#if:dimension_fields_filled and not force",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r33",
+   "anchor": "ImageField.update_dimension_fields#if:file",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r34",
+   "anchor": "ImageField.update_dimension_fields#if:file/else/assign:width",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r35",
+   "anchor": "ImageField.update_dimension_fields#if:self.width_field",
+   "kind": "lead",
+   "line": 472
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12997,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4176,
+  "thinking_tokens": 2470,
+  "opus_cost_usd": 0.2386615,
+  "total_cost_usd": 0.2479005,
+  "duration_ms": 41557,
+  "duration_api_ms": 42660,
+  "num_turns": 2
+ },
+ "wall_ms": 42383,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,49 @@
+{
+ "blob_sha": "6737b9be406efcacf26b0781f97205a7f0524acb",
+ "path": "django/core/management/commands/flush.py",
+ "repo": "django/django",
+ "records": 4,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#assign:reset_sequences",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle#for:app_config in apps.get_app_configs()",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle#if:confirm=='yes'/if:sql_list and not inhibit_post_migrate",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle#if:confirm=='yes'/if:sql_list and not inhibit_post_migrate/call:emit_post_migrate_signal",
+   "kind": "lead",
+   "line": 80
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4767,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 498,
+  "thinking_tokens": 196,
+  "opus_cost_usd": 0.06441150000000001,
+  "total_cost_usd": 0.0666805,
+  "duration_ms": 5580,
+  "duration_api_ms": 6550,
+  "num_turns": 2
+ },
+ "wall_ms": 6613,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

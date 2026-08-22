@@ -1,0 +1,133 @@
+{
+ "blob_sha": "8c83fd5a43f163923c18e87d9f5da2d10bbb6e35",
+ "path": "django/contrib/gis/utils/ogrinspect.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "mapping",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r3",
+   "anchor": "mapping#if:isinstance(data_source, str)/assign:data_source",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "mapping#assign:_mapping",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r5",
+   "anchor": "mapping#for:field in data_source[layer_key].fields",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "ogrinspect",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r7",
+   "anchor": "_ogrinspect",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "_ogrinspect#if:isinstance(data_source, str)",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r9",
+   "anchor": "_ogrinspect#assign:layer",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r10",
+   "anchor": "_ogrinspect.process_kwarg",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r11",
+   "anchor": "_ogrinspect.get_kwargs_str",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r12",
+   "anchor": "_ogrinspect#if:imports",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r13",
+   "anchor": "_ogrinspect#for:field_name, width, precision, field_type in zip(ogr_fields, layer.field_widths, layer.field_precisions, layer.field_types)/assign:mfield",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r14",
+   "anchor": "_ogrinspect#for:field_name, width, precision, field_type in zip(ogr_fields, layer.field_widths, layer.field_precisions, layer.field_types)/assign:kwargs_str",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r15",
+   "anchor": "_ogrinspect#for:field_name, width, precision, field_type in zip(ogr_fields, layer.field_widths, layer.field_precisions, layer.field_types)/if:field_type is OFTReal/if:field_name.lower() in decimal_fields",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r16",
+   "anchor": "_ogrinspect#assign:gtype",
+   "kind": "todo",
+   "line": 212
+  },
+  {
+   "id": "r17",
+   "anchor": "_ogrinspect#if:srid is None",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r18",
+   "anchor": "_ogrinspect#if:srid is None/if:layer.srs is None/else/if:srid is None/elif:srid==4326/assign:srid_str",
+   "kind": "lead",
+   "line": 227
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7973,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1854,
+  "thinking_tokens": 879,
+  "opus_cost_usd": 0.1303715,
+  "total_cost_usd": 0.1353755,
+  "duration_ms": 17584,
+  "duration_api_ms": 18583,
+  "num_turns": 2
+ },
+ "wall_ms": 18470,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

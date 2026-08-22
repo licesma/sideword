@@ -1,0 +1,91 @@
+{
+ "blob_sha": "6d803d950e8e102ee4c56d961db7742cef82c6a6",
+ "path": "astropy/timeseries/io/kepler.py",
+ "repo": "astropy/astropy",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:warnings",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "kepler_fits_reader",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "kepler_fits_reader#assign:telescope",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r4",
+   "anchor": "kepler_fits_reader#if:hdu.header['TIMESYS']!='TDB'",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "kepler_fits_reader#if:\"T\" in tab.colnames",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r6",
+   "anchor": "kepler_fits_reader#for:colname in tab.colnames/if:unit and isinstance(tab[colname], MaskedColumn)",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r7",
+   "anchor": "kepler_fits_reader#for:colname in tab.colnames/if:unit=='e-/s'",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "kepler_fits_reader#for:colname in tab.colnames/call:tab.rename_column",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r9",
+   "anchor": "kepler_fits_reader#assign:nans",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r10",
+   "anchor": "kepler_fits_reader#assign:reference_date",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r11",
+   "anchor": "kepler_fits_reader#call:tab.remove_column",
+   "kind": "lead",
+   "line": 92
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5269,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1047,
+  "thinking_tokens": 441,
+  "opus_cost_usd": 0.0831565,
+  "total_cost_usd": 0.0858395,
+  "duration_ms": 10658,
+  "duration_api_ms": 11697,
+  "num_turns": 2
+ },
+ "wall_ms": 12243,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

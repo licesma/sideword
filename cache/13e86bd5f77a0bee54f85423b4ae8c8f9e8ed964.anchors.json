@@ -1,0 +1,211 @@
+{
+ "blob_sha": "13e86bd5f77a0bee54f85423b4ae8c8f9e8ed964",
+ "path": "astropy/io/misc/hdf5.py",
+ "repo": "astropy/astropy",
+ "records": 31,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:astropy.utils.exceptions",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r4",
+   "anchor": "_find_all_structured_arrays",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "read_table_hdf5",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r6",
+   "anchor": "read_table_hdf5#assign:input_save",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r7",
+   "anchor": "read_table_hdf5#if:isinstance(input, (h5py.File, h5py.Group))/if:path is not None",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r8",
+   "anchor": "read_table_hdf5#if:isinstance(input, (h5py.File, h5py.Group))/if:isinstance(input, h5py.Group)",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r9",
+   "anchor": "read_table_hdf5#if:isinstance(input, (h5py.File, h5py.Group))/if:isinstance(input, h5py.Group)/assign:arrays",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r10",
+   "anchor": "read_table_hdf5#if:isinstance(input, (h5py.File, h5py.Group))/elif:not isinstance(input, h5py.Dataset)/if:hasattr(input, \"read\")",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r11",
+   "anchor": "read_table_hdf5#if:isinstance(input, (h5py.File, h5py.Group))/elif:not isinstance(input, h5py.Dataset)/assign:f",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r12",
+   "anchor": "read_table_hdf5#import:astropy.table",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r13",
+   "anchor": "read_table_hdf5#import:astropy.table",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r14",
+   "anchor": "read_table_hdf5#assign:old_version_meta",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r15",
+   "anchor": "read_table_hdf5#if:old_version_meta or new_version_meta/if:new_version_meta/else/assign:header",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r16",
+   "anchor": "read_table_hdf5#if:old_version_meta or new_version_meta/assign:table",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r17",
+   "anchor": "read_table_hdf5#if:old_version_meta or new_version_meta/else/call:table.meta.update",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r18",
+   "anchor": "_encode_mixins",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r19",
+   "anchor": "_encode_mixins#with:serialize_context_as(\"hdf5\")",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r20",
+   "anchor": "write_table_hdf5",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r21",
+   "anchor": "write_table_hdf5#if:path is None/assign:path",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r22",
+   "anchor": "write_table_hdf5#if:isinstance(output, (h5py.File, h5py.Group))/elif:isinstance(output, str)/assign:f",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r23",
+   "anchor": "write_table_hdf5#if:isinstance(output, (h5py.File, h5py.Group))/elif:isinstance(output, str)/try",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r24",
+   "anchor": "write_table_hdf5#if:name in output_group",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r25",
+   "anchor": "write_table_hdf5#if:name in output_group/if:append and overwrite/del:output_group[name]",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r26",
+   "anchor": "write_table_hdf5#assign:table",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r27",
+   "anchor": "write_table_hdf5#if:any(col.info.dtype.kind == \"U\" for col in table.itercols())",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r28",
+   "anchor": "write_table_hdf5#if:serialize_meta is False",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r29",
+   "anchor": "write_table_hdf5#if:compression",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r30",
+   "anchor": "write_table_hdf5#if:serialize_meta/else/for:key in table.meta",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r31",
+   "anchor": "register_hdf5",
+   "kind": "doc",
+   "line": 393
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11159,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3654,
+  "thinking_tokens": 1963,
+  "opus_cost_usd": 0.2072315,
+  "total_cost_usd": 0.2150015,
+  "duration_ms": 33282,
+  "duration_api_ms": 34356,
+  "num_turns": 2
+ },
+ "wall_ms": 34116,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

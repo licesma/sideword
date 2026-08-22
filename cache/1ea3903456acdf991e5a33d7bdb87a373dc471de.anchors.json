@@ -1,0 +1,655 @@
+{
+ "blob_sha": "1ea3903456acdf991e5a33d7bdb87a373dc471de",
+ "path": "astropy/utils/iers/iers.py",
+ "repo": "astropy/astropy",
+ "records": 105,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "IERS_A_FILE",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r4",
+   "anchor": "IERS_B_FILE",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r5",
+   "anchor": "IERS_LEAP_SECOND_FILE",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r6",
+   "anchor": "FROM_IERS_B",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r7",
+   "anchor": "IERSWarning",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r8",
+   "anchor": "IERSDegradedAccuracyWarning",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r9",
+   "anchor": "IERSStaleWarning",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r10",
+   "anchor": "download_file",
+   "kind": "doc",
+   "line": 138
+  },
+  {
+   "id": "r11",
+   "anchor": "_none_to_float",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r12",
+   "anchor": "Conf",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r13",
+   "anchor": "IERSRangeError",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r14",
+   "anchor": "IERS",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r15",
+   "anchor": "IERS.iers_table",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r16",
+   "anchor": "IERS.open",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r17",
+   "anchor": "IERS.open#if:file is not None or cls.iers_table is None/if:cls is IERS",
+   "kind": "todo",
+   "line": 275
+  },
+  {
+   "id": "r18",
+   "anchor": "IERS.close",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r19",
+   "anchor": "IERS.mjd_utc",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r20",
+   "anchor": "IERS.mjd_utc#try",
+   "kind": "trail",
+   "line": 308
+  },
+  {
+   "id": "r21",
+   "anchor": "IERS.ut1_utc",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r22",
+   "anchor": "IERS.dcip_xy",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r23",
+   "anchor": "IERS.pm_xy",
+   "kind": "doc",
+   "line": 383
+  },
+  {
+   "id": "r24",
+   "anchor": "IERS._check_interpolate_indices",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r25",
+   "anchor": "IERS._check_interpolate_indices#if:np.any(indices_orig != indices_clipped)/if:conf.iers_degraded_accuracy == \"error\"/elif:conf.iers_degraded_accuracy == \"warn\"/assign:msg",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r26",
+   "anchor": "IERS._check_interpolate_indices#if:np.any(indices_orig != indices_clipped)/if:conf.iers_degraded_accuracy == \"error\"",
+   "kind": "post",
+   "line": 423
+  },
+  {
+   "id": "r27",
+   "anchor": "IERS._interpolate#assign:is_scalar",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r28",
+   "anchor": "IERS._interpolate#if:is_scalar/elif:mjd.size == 0/return",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r29",
+   "anchor": "IERS._interpolate#assign:i",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r30",
+   "anchor": "IERS._interpolate#assign:i1",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r31",
+   "anchor": "IERS._interpolate#for:column in columns/if:column == \"UT1_UTC\"/assign:d_val",
+   "kind": "lead",
+   "line": 473
+  },
+  {
+   "id": "r32",
+   "anchor": "IERS._interpolate#for:column in columns/assign:val",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r33",
+   "anchor": "IERS._interpolate#for:column in columns/assign:val[i == 0]",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r34",
+   "anchor": "IERS._interpolate#if:source/assign:status",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r35",
+   "anchor": "IERS._interpolate#if:source/assign:status[i == 0]",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r36",
+   "anchor": "IERS._refresh_table_as_needed",
+   "kind": "doc",
+   "line": 503
+  },
+  {
+   "id": "r37",
+   "anchor": "IERS.ut1_utc_source",
+   "kind": "doc",
+   "line": 511
+  },
+  {
+   "id": "r38",
+   "anchor": "IERS.dcip_source",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r39",
+   "anchor": "IERS.pm_source",
+   "kind": "doc",
+   "line": 519
+  },
+  {
+   "id": "r40",
+   "anchor": "IERS.time_now",
+   "kind": "doc",
+   "line": 524
+  },
+  {
+   "id": "r41",
+   "anchor": "IERS._convert_col_for_table#if:getattr(col, \"unit\", None) is not None and isinstance(col, MaskedColumn)",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r42",
+   "anchor": "IERS_A",
+   "kind": "doc",
+   "line": 545
+  },
+  {
+   "id": "r43",
+   "anchor": "IERS_A._combine_a_b_columns",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r44",
+   "anchor": "IERS_A._combine_a_b_columns#assign:table",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r45",
+   "anchor": "IERS_A._combine_a_b_columns#assign:table",
+   "kind": "lead",
+   "line": 572
+  },
+  {
+   "id": "r46",
+   "anchor": "IERS_A._combine_a_b_columns#assign:b_bad",
+   "kind": "lead",
+   "line": 575
+  },
+  {
+   "id": "r47",
+   "anchor": "IERS_A._combine_a_b_columns#assign:b_bad",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r48",
+   "anchor": "IERS_A._combine_a_b_columns#assign:p_index",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r49",
+   "anchor": "IERS_A._substitute_iers_b#return",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r50",
+   "anchor": "IERS_A.read",
+   "kind": "doc",
+   "line": 612
+  },
+  {
+   "id": "r51",
+   "anchor": "IERS_A.read#assign:table",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r52",
+   "anchor": "IERS_A.ut1_utc_source",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r53",
+   "anchor": "IERS_A.dcip_source",
+   "kind": "doc",
+   "line": 650
+  },
+  {
+   "id": "r54",
+   "anchor": "IERS_A.pm_source",
+   "kind": "doc",
+   "line": 658
+  },
+  {
+   "id": "r55",
+   "anchor": "IERS_B",
+   "kind": "doc",
+   "line": 667
+  },
+  {
+   "id": "r56",
+   "anchor": "IERS_B.read",
+   "kind": "doc",
+   "line": 684
+  },
+  {
+   "id": "r57",
+   "anchor": "IERS_B.ut1_utc_source",
+   "kind": "doc",
+   "line": 731
+  },
+  {
+   "id": "r58",
+   "anchor": "IERS_B.dcip_source",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r59",
+   "anchor": "IERS_B.pm_source",
+   "kind": "doc",
+   "line": 739
+  },
+  {
+   "id": "r60",
+   "anchor": "IERS_Auto",
+   "kind": "doc",
+   "line": 744
+  },
+  {
+   "id": "r61",
+   "anchor": "IERS_Auto.open",
+   "kind": "doc",
+   "line": 753
+  },
+  {
+   "id": "r62",
+   "anchor": "IERS_Auto.open#if:cls.iers_table is not None/if:cls.iers_table.meta.get(\"data_url\") in all_urls",
+   "kind": "lead",
+   "line": 785
+  },
+  {
+   "id": "r63",
+   "anchor": "IERS_Auto.open#for:url in all_urls/else/call:warn",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r64",
+   "anchor": "IERS_Auto._check_interpolate_indices",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r65",
+   "anchor": "IERS_Auto._check_interpolate_indices#assign:auto_max_age",
+   "kind": "lead",
+   "line": 822
+  },
+  {
+   "id": "r66",
+   "anchor": "IERS_Auto._refresh_table_as_needed",
+   "kind": "doc",
+   "line": 829
+  },
+  {
+   "id": "r67",
+   "anchor": "IERS_Auto._refresh_table_as_needed#assign:fpi",
+   "kind": "lead",
+   "line": 848
+  },
+  {
+   "id": "r68",
+   "anchor": "IERS_Auto._refresh_table_as_needed#assign:auto_max_age",
+   "kind": "lead",
+   "line": 852
+  },
+  {
+   "id": "r69",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:auto_max_age < 10",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r70",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/try",
+   "kind": "lead",
+   "line": 865
+  },
+  {
+   "id": "r71",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/try/except:Exception/call:warn",
+   "kind": "lead",
+   "line": 871
+  },
+  {
+   "id": "r72",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/if:new_table[\"MJD\"][-1] > self[\"MJD\"][-1]",
+   "kind": "lead",
+   "line": 887
+  },
+  {
+   "id": "r73",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/if:new_table[\"MJD\"][-1] > self[\"MJD\"][-1]/assign:new_fpi",
+   "kind": "lead",
+   "line": 891
+  },
+  {
+   "id": "r74",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/if:new_table[\"MJD\"][-1] > self[\"MJD\"][-1]/if:new_table[\"MJD\"][new_fpi + n_replace] - self[\"MJD\"][-1] != 1.0 * u.d",
+   "kind": "lead",
+   "line": 898
+  },
+  {
+   "id": "r75",
+   "anchor": "IERS_Auto._refresh_table_as_needed#if:max_input_mjd > predictive_mjd and (now_mjd - predictive_mjd) > auto_max_age/if:new_table[\"MJD\"][-1] > self[\"MJD\"][-1]/for:row in new_table[new_fpi + n_replace :]",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r76",
+   "anchor": "IERS_Auto._substitute_iers_b",
+   "kind": "doc",
+   "line": 916
+  },
+  {
+   "id": "r77",
+   "anchor": "IERS_Auto._substitute_iers_b#assign:mjd_b",
+   "kind": "lead",
+   "line": 926
+  },
+  {
+   "id": "r78",
+   "anchor": "IERS_Auto._substitute_iers_b#if:n_iers_b > 0",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r79",
+   "anchor": "IERS_Auto._substitute_iers_b#if:n_iers_b > 0/if:not u.allclose(table[\"MJD\"][:n_iers_b], iers_b[\"MJD\"])",
+   "kind": "lead",
+   "line": 934
+  },
+  {
+   "id": "r80",
+   "anchor": "IERS_Auto._substitute_iers_b#if:n_iers_b > 0/assign:table[\"UT1_UTC_B\"][:n_iers_b]",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r81",
+   "anchor": "earth_orientation_table",
+   "kind": "doc",
+   "line": 948
+  },
+  {
+   "id": "r82",
+   "anchor": "LeapSeconds",
+   "kind": "doc",
+   "line": 993
+  },
+  {
+   "id": "r83",
+   "anchor": "LeapSeconds._re_expires",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r84",
+   "anchor": "LeapSeconds._auto_open_files",
+   "kind": "doc",
+   "line": 1021
+  },
+  {
+   "id": "r85",
+   "anchor": "LeapSeconds.open",
+   "kind": "doc",
+   "line": 1031
+  },
+  {
+   "id": "r86",
+   "anchor": "LeapSeconds.open#try",
+   "kind": "lead",
+   "line": 1071
+  },
+  {
+   "id": "r87",
+   "anchor": "LeapSeconds._today#assign:s",
+   "kind": "lead",
+   "line": 1080
+  },
+  {
+   "id": "r88",
+   "anchor": "LeapSeconds.auto_open",
+   "kind": "doc",
+   "line": 1084
+  },
+  {
+   "id": "r89",
+   "anchor": "LeapSeconds.auto_open#if:files is None/assign:files",
+   "kind": "lead",
+   "line": 1120
+  },
+  {
+   "id": "r90",
+   "anchor": "LeapSeconds.auto_open#assign:files",
+   "kind": "lead",
+   "line": 1123
+  },
+  {
+   "id": "r91",
+   "anchor": "LeapSeconds.auto_open#assign:trials",
+   "kind": "lead",
+   "line": 1128
+  },
+  {
+   "id": "r92",
+   "anchor": "LeapSeconds.auto_open#if:conf.auto_download",
+   "kind": "lead",
+   "line": 1133
+  },
+  {
+   "id": "r93",
+   "anchor": "LeapSeconds.auto_open#for:f, allow_cache in trials",
+   "kind": "lead",
+   "line": 1140
+  },
+  {
+   "id": "r94",
+   "anchor": "LeapSeconds.expires",
+   "kind": "doc",
+   "line": 1168
+  },
+  {
+   "id": "r95",
+   "anchor": "LeapSeconds._read_leap_seconds",
+   "kind": "doc",
+   "line": 1173
+  },
+  {
+   "id": "r96",
+   "anchor": "LeapSeconds._read_leap_seconds#with:get_readable_fileobj(file)",
+   "kind": "lead",
+   "line": 1177
+  },
+  {
+   "id": "r97",
+   "anchor": "LeapSeconds.from_iers_leap_seconds",
+   "kind": "doc",
+   "line": 1196
+  },
+  {
+   "id": "r98",
+   "anchor": "LeapSeconds.from_leap_seconds_list",
+   "kind": "doc",
+   "line": 1216
+  },
+  {
+   "id": "r99",
+   "anchor": "LeapSeconds.from_leap_seconds_list#import:astropy.io.ascii",
+   "kind": "trail",
+   "line": 1231
+  },
+  {
+   "id": "r100",
+   "anchor": "LeapSeconds.from_leap_seconds_list#assign:self",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r101",
+   "anchor": "LeapSeconds.from_leap_seconds_list#assign:isot",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r102",
+   "anchor": "LeapSeconds.from_erfa",
+   "kind": "doc",
+   "line": 1252
+  },
+  {
+   "id": "r103",
+   "anchor": "LeapSeconds.from_erfa#try/call:erfa.leap_seconds.set",
+   "kind": "trail",
+   "line": 1271
+  },
+  {
+   "id": "r104",
+   "anchor": "LeapSeconds.update_erfa_leap_seconds",
+   "kind": "doc",
+   "line": 1276
+  },
+  {
+   "id": "r105",
+   "anchor": "LeapSeconds.update_erfa_leap_seconds#if:initialize_erfa == \"empty\"/call:erfa.leap_seconds.set",
+   "kind": "lead",
+   "line": 1311
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 31565,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9461,
+  "thinking_tokens": 4245,
+  "opus_cost_usd": 0.5564665000000001,
+  "total_cost_usd": 0.5814925000000001,
+  "duration_ms": 84493,
+  "duration_api_ms": 85663,
+  "num_turns": 2
+ },
+ "wall_ms": 85513,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

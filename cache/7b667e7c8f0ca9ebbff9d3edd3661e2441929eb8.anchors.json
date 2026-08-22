@@ -1,0 +1,253 @@
+{
+ "blob_sha": "7b667e7c8f0ca9ebbff9d3edd3661e2441929eb8",
+ "path": "django/core/management/__init__.py",
+ "repo": "django/django",
+ "records": 38,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "find_commands",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r2",
+   "anchor": "load_command_class",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r3",
+   "anchor": "get_commands",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r4",
+   "anchor": "call_command",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r5",
+   "anchor": "call_command#if:isinstance(command_name, BaseCommand)/assign:command",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r6",
+   "anchor": "call_command#if:isinstance(command_name, BaseCommand)/else/try",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r7",
+   "anchor": "call_command#if:isinstance(command_name, BaseCommand)/else/if:isinstance(app_name, BaseCommand)/assign:command",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r8",
+   "anchor": "call_command#assign:parser",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r9",
+   "anchor": "call_command#assign:opt_mapping",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r10",
+   "anchor": "call_command#assign:args",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r11",
+   "anchor": "ManagementUtility",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r12",
+   "anchor": "ManagementUtility.main_help_text",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r13",
+   "anchor": "ManagementUtility.main_help_text#if:commands_only/else/if:self.settings_exception is not None",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r14",
+   "anchor": "ManagementUtility.fetch_command",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r15",
+   "anchor": "ManagementUtility.fetch_command#assign:commands",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r16",
+   "anchor": "ManagementUtility.fetch_command#try/except:KeyError/if:os.environ.get('DJANGO_SETTINGS_MODULE')/expr:settings.INSTALLED_APPS",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r17",
+   "anchor": "ManagementUtility.fetch_command#if:isinstance(app_name, BaseCommand)/assign:klass",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r18",
+   "anchor": "ManagementUtility.autocomplete",
+   "kind": "doc",
+   "line": 211
+  },
+  {
+   "id": "r19",
+   "anchor": "ManagementUtility.autocomplete#if:'DJANGO_AUTO_COMPLETE' not in os.environ",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r20",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r21",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r22",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/if:cwords[0] in ('dumpdata', 'sqlmigrate', 'sqlsequencereset', 'test')",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r23",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/if:cwords[0] in ('dumpdata', 'sqlmigrate', 'sqlsequencereset', 'test')/try/call:options.extend",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r24",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/if:cwords[0] in ('dumpdata', 'sqlmigrate', 'sqlsequencereset', 'test')/try/except:ImportError/pass",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r25",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/assign:prev_opts",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r26",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/assign:options",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r27",
+   "anchor": "ManagementUtility.autocomplete#if:cword == 1/elif:cwords[0] in subcommands and cwords[0] != 'help'/for:option in options/if:option[1]",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r28",
+   "anchor": "ManagementUtility.autocomplete#call:sys.exit",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r29",
+   "anchor": "ManagementUtility.execute",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r30",
+   "anchor": "ManagementUtility.execute#try/except:IndexError/assign:subcommand",
+   "kind": "trail",
+   "line": 294
+  },
+  {
+   "id": "r31",
+   "anchor": "ManagementUtility.execute#assign:parser",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r32",
+   "anchor": "ManagementUtility.execute#call:parser.add_argument",
+   "kind": "trail",
+   "line": 302
+  },
+  {
+   "id": "r33",
+   "anchor": "ManagementUtility.execute#try/except:CommandError/pass",
+   "kind": "trail",
+   "line": 307
+  },
+  {
+   "id": "r34",
+   "anchor": "ManagementUtility.execute#if:settings.configured/if:subcommand == 'runserver' and '--noreload' not in self.argv",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r35",
+   "anchor": "ManagementUtility.execute#if:settings.configured/if:subcommand == 'runserver' and '--noreload' not in self.argv/try/except:Exception/assign:apps.all_models",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r36",
+   "anchor": "ManagementUtility.execute#if:settings.configured/if:subcommand == 'runserver' and '--noreload' not in self.argv/else",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r37",
+   "anchor": "ManagementUtility.execute#if:subcommand == 'help'/elif:subcommand == 'version' or self.argv[1:] == ['--version']",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r38",
+   "anchor": "execute_from_command_line",
+   "kind": "doc",
+   "line": 352
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10693,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4469,
+  "thinking_tokens": 2143,
+  "opus_cost_usd": 0.2229465,
+  "total_cost_usd": 0.2302785,
+  "duration_ms": 40531,
+  "duration_api_ms": 41798,
+  "num_turns": 2
+ },
+ "wall_ms": 41408,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

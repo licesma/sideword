@@ -1,0 +1,1093 @@
+{
+ "blob_sha": "b0625c0f02fa692f6535737246bd017b5ee9353c",
+ "path": "astropy/io/votable/tree.py",
+ "repo": "astropy/astropy",
+ "records": 178,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:io",
+   "kind": "lead",
+   "line": 5
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:io",
+   "kind": "lead",
+   "line": 5
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 14
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:astropy.io",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r5",
+   "anchor": "DEFAULT_CHUNK_SIZE",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "_resize",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "_resize",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r8",
+   "anchor": "_lookup_by_attr_factory",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r9",
+   "anchor": "_lookup_by_attr_factory.lookup_by_attr",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r10",
+   "anchor": "_lookup_by_id_or_name_factory",
+   "kind": "doc",
+   "line": 136
+  },
+  {
+   "id": "r11",
+   "anchor": "_lookup_by_id_or_name_factory.lookup_by_id_or_name",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r12",
+   "anchor": "_get_default_unit_format",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r13",
+   "anchor": "_get_default_unit_format#if:config['version_1_4_or_later']",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_unit_format",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r15",
+   "anchor": "check_astroyear",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r16",
+   "anchor": "check_astroyear",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r17",
+   "anchor": "check_string",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r18",
+   "anchor": "check_ucd",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r19",
+   "anchor": "check_ucd#if:config.get('version_1_1_or_later')/try/except:ValueError/if:config.get('verify', 'ignore') == 'exception'",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r20",
+   "anchor": "_IDProperty",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r21",
+   "anchor": "_IDProperty.ID",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r22",
+   "anchor": "_NameProperty.name",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r23",
+   "anchor": "_XtypeProperty.xtype",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r24",
+   "anchor": "_UtypeProperty.utype",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r25",
+   "anchor": "_UcdProperty.ucd",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r26",
+   "anchor": "_DescriptionProperty.description",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r27",
+   "anchor": "Element",
+   "kind": "lead",
+   "line": 410
+  },
+  {
+   "id": "r28",
+   "anchor": "Element",
+   "kind": "doc",
+   "line": 410
+  },
+  {
+   "id": "r29",
+   "anchor": "Element.parse",
+   "kind": "doc",
+   "line": 429
+  },
+  {
+   "id": "r30",
+   "anchor": "Element.to_xml",
+   "kind": "doc",
+   "line": 451
+  },
+  {
+   "id": "r31",
+   "anchor": "SimpleElement",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r32",
+   "anchor": "SimpleElementWithContent",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r33",
+   "anchor": "SimpleElementWithContent.content",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r34",
+   "anchor": "Link",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r35",
+   "anchor": "Link.content_role",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r36",
+   "anchor": "Link.content_type",
+   "kind": "doc",
+   "line": 596
+  },
+  {
+   "id": "r37",
+   "anchor": "Link.href",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r38",
+   "anchor": "Info",
+   "kind": "doc",
+   "line": 641
+  },
+  {
+   "id": "r39",
+   "anchor": "Info.name",
+   "kind": "doc",
+   "line": 692
+  },
+  {
+   "id": "r40",
+   "anchor": "Info.value",
+   "kind": "doc",
+   "line": 704
+  },
+  {
+   "id": "r41",
+   "anchor": "Info.content",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r42",
+   "anchor": "Info.ref",
+   "kind": "doc",
+   "line": 733
+  },
+  {
+   "id": "r43",
+   "anchor": "Info.ref#assign:self._ref",
+   "kind": "todo",
+   "line": 761
+  },
+  {
+   "id": "r44",
+   "anchor": "Info.unit",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r45",
+   "anchor": "Info.unit#assign:default_format",
+   "kind": "lead",
+   "line": 786
+  },
+  {
+   "id": "r46",
+   "anchor": "Values",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r47",
+   "anchor": "Values.null",
+   "kind": "doc",
+   "line": 850
+  },
+  {
+   "id": "r48",
+   "anchor": "Values.type",
+   "kind": "doc",
+   "line": 876
+  },
+  {
+   "id": "r49",
+   "anchor": "Values.ref",
+   "kind": "doc",
+   "line": 897
+  },
+  {
+   "id": "r50",
+   "anchor": "Values.min",
+   "kind": "doc",
+   "line": 929
+  },
+  {
+   "id": "r51",
+   "anchor": "Values.min_inclusive",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r52",
+   "anchor": "Values.max",
+   "kind": "doc",
+   "line": 965
+  },
+  {
+   "id": "r53",
+   "anchor": "Values.max_inclusive",
+   "kind": "doc",
+   "line": 983
+  },
+  {
+   "id": "r54",
+   "anchor": "Values.options",
+   "kind": "doc",
+   "line": 1001
+  },
+  {
+   "id": "r55",
+   "anchor": "Values.is_defaults",
+   "kind": "doc",
+   "line": 1052
+  },
+  {
+   "id": "r56",
+   "anchor": "Values.is_defaults#return",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r57",
+   "anchor": "Values.to_table_column#assign:meta",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r58",
+   "anchor": "Field",
+   "kind": "doc",
+   "line": 1132
+  },
+  {
+   "id": "r59",
+   "anchor": "Field.__init__#if:config.get('verify', 'ignore') != 'exception' and name == 'cprojection' and ID == 'cprojection' and ucd == 'VOX:WCS_CoordProjection' and datatype == 'double'",
+   "kind": "todo",
+   "line": 1179
+  },
+  {
+   "id": "r60",
+   "anchor": "Field.__init__#assign:self.description",
+   "kind": "lead",
+   "line": 1187
+  },
+  {
+   "id": "r61",
+   "anchor": "Field.__init__#assign:datatype_mapping/key:unsignedInt",
+   "kind": "lead",
+   "line": 1213
+  },
+  {
+   "id": "r62",
+   "anchor": "Field.uniqify_names",
+   "kind": "doc",
+   "line": 1243
+  },
+  {
+   "id": "r63",
+   "anchor": "Field.datatype",
+   "kind": "doc",
+   "line": 1285
+  },
+  {
+   "id": "r64",
+   "anchor": "Field.precision",
+   "kind": "doc",
+   "line": 1312
+  },
+  {
+   "id": "r65",
+   "anchor": "Field.width",
+   "kind": "doc",
+   "line": 1334
+  },
+  {
+   "id": "r66",
+   "anchor": "Field.ref",
+   "kind": "lead",
+   "line": 1361
+  },
+  {
+   "id": "r67",
+   "anchor": "Field.ref",
+   "kind": "doc",
+   "line": 1361
+  },
+  {
+   "id": "r68",
+   "anchor": "Field.unit",
+   "kind": "doc",
+   "line": 1378
+  },
+  {
+   "id": "r69",
+   "anchor": "Field.unit#assign:default_format",
+   "kind": "lead",
+   "line": 1392
+  },
+  {
+   "id": "r70",
+   "anchor": "Field.arraysize",
+   "kind": "doc",
+   "line": 1411
+  },
+  {
+   "id": "r71",
+   "anchor": "Field.type",
+   "kind": "doc",
+   "line": 1432
+  },
+  {
+   "id": "r72",
+   "anchor": "Field.values",
+   "kind": "doc",
+   "line": 1448
+  },
+  {
+   "id": "r73",
+   "anchor": "Field.links",
+   "kind": "doc",
+   "line": 1465
+  },
+  {
+   "id": "r74",
+   "anchor": "Field.to_table_column",
+   "kind": "doc",
+   "line": 1521
+  },
+  {
+   "id": "r75",
+   "anchor": "Field.to_table_column#if:self.unit is not None/assign:column.unit",
+   "kind": "todo",
+   "line": 1538
+  },
+  {
+   "id": "r76",
+   "anchor": "Field.from_table_column",
+   "kind": "doc",
+   "line": 1548
+  },
+  {
+   "id": "r77",
+   "anchor": "Field.from_table_column#if:column.info.unit is not None",
+   "kind": "todo",
+   "line": 1561
+  },
+  {
+   "id": "r78",
+   "anchor": "Field.from_table_column#return",
+   "kind": "todo",
+   "line": 1577
+  },
+  {
+   "id": "r79",
+   "anchor": "Param",
+   "kind": "doc",
+   "line": 1580
+  },
+  {
+   "id": "r80",
+   "anchor": "Param.value",
+   "kind": "doc",
+   "line": 1602
+  },
+  {
+   "id": "r81",
+   "anchor": "Param.to_xml#if:self._value is None",
+   "kind": "lead",
+   "line": 1627
+  },
+  {
+   "id": "r82",
+   "anchor": "CooSys",
+   "kind": "doc",
+   "line": 1633
+  },
+  {
+   "id": "r83",
+   "anchor": "CooSys.__init__#if:config.get('version_1_2_or_later') and not config.get('version_1_3_or_later')",
+   "kind": "lead",
+   "line": 1651
+  },
+  {
+   "id": "r84",
+   "anchor": "CooSys.ID",
+   "kind": "doc",
+   "line": 1665
+  },
+  {
+   "id": "r85",
+   "anchor": "CooSys.system",
+   "kind": "doc",
+   "line": 1682
+  },
+  {
+   "id": "r86",
+   "anchor": "CooSys.equinox",
+   "kind": "doc",
+   "line": 1704
+  },
+  {
+   "id": "r87",
+   "anchor": "CooSys.epoch",
+   "kind": "doc",
+   "line": 1722
+  },
+  {
+   "id": "r88",
+   "anchor": "TimeSys",
+   "kind": "doc",
+   "line": 1739
+  },
+  {
+   "id": "r89",
+   "anchor": "TimeSys.__init__#if:not config['version_1_4_or_later']",
+   "kind": "lead",
+   "line": 1757
+  },
+  {
+   "id": "r90",
+   "anchor": "TimeSys.ID",
+   "kind": "doc",
+   "line": 1772
+  },
+  {
+   "id": "r91",
+   "anchor": "TimeSys.timeorigin",
+   "kind": "doc",
+   "line": 1788
+  },
+  {
+   "id": "r92",
+   "anchor": "TimeSys.timescale",
+   "kind": "doc",
+   "line": 1822
+  },
+  {
+   "id": "r93",
+   "anchor": "TimeSys.refposition",
+   "kind": "doc",
+   "line": 1839
+  },
+  {
+   "id": "r94",
+   "anchor": "FieldRef",
+   "kind": "doc",
+   "line": 1856
+  },
+  {
+   "id": "r95",
+   "anchor": "FieldRef.__init__",
+   "kind": "doc",
+   "line": 1866
+  },
+  {
+   "id": "r96",
+   "anchor": "FieldRef.ref",
+   "kind": "doc",
+   "line": 1896
+  },
+  {
+   "id": "r97",
+   "anchor": "FieldRef.get_ref",
+   "kind": "doc",
+   "line": 1909
+  },
+  {
+   "id": "r98",
+   "anchor": "ParamRef",
+   "kind": "doc",
+   "line": 1922
+  },
+  {
+   "id": "r99",
+   "anchor": "ParamRef.ref",
+   "kind": "doc",
+   "line": 1962
+  },
+  {
+   "id": "r100",
+   "anchor": "ParamRef.get_ref",
+   "kind": "doc",
+   "line": 1975
+  },
+  {
+   "id": "r101",
+   "anchor": "Group",
+   "kind": "doc",
+   "line": 1988
+  },
+  {
+   "id": "r102",
+   "anchor": "Group.ref",
+   "kind": "doc",
+   "line": 2029
+  },
+  {
+   "id": "r103",
+   "anchor": "Group.entries",
+   "kind": "doc",
+   "line": 2046
+  },
+  {
+   "id": "r104",
+   "anchor": "Group.iter_fields_and_params",
+   "kind": "doc",
+   "line": 2107
+  },
+  {
+   "id": "r105",
+   "anchor": "Group.iter_groups",
+   "kind": "doc",
+   "line": 2118
+  },
+  {
+   "id": "r106",
+   "anchor": "Table",
+   "kind": "doc",
+   "line": 2129
+  },
+  {
+   "id": "r107",
+   "anchor": "Table.ref",
+   "kind": "doc",
+   "line": 2203
+  },
+  {
+   "id": "r108",
+   "anchor": "Table.ref#call:xmlutil.check_id",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r109",
+   "anchor": "Table.format",
+   "kind": "doc",
+   "line": 2237
+  },
+  {
+   "id": "r110",
+   "anchor": "Table.nrows",
+   "kind": "doc",
+   "line": 2270
+  },
+  {
+   "id": "r111",
+   "anchor": "Table.fields",
+   "kind": "doc",
+   "line": 2278
+  },
+  {
+   "id": "r112",
+   "anchor": "Table.params",
+   "kind": "doc",
+   "line": 2286
+  },
+  {
+   "id": "r113",
+   "anchor": "Table.groups",
+   "kind": "doc",
+   "line": 2294
+  },
+  {
+   "id": "r114",
+   "anchor": "Table.links",
+   "kind": "doc",
+   "line": 2304
+  },
+  {
+   "id": "r115",
+   "anchor": "Table.infos",
+   "kind": "doc",
+   "line": 2312
+  },
+  {
+   "id": "r116",
+   "anchor": "Table.is_empty",
+   "kind": "doc",
+   "line": 2319
+  },
+  {
+   "id": "r117",
+   "anchor": "Table.create_arrays",
+   "kind": "doc",
+   "line": 2327
+  },
+  {
+   "id": "r118",
+   "anchor": "Table.create_arrays#if:len(fields) == 0/else/call:Field.uniqify_names",
+   "kind": "lead",
+   "line": 2345
+  },
+  {
+   "id": "r119",
+   "anchor": "Table._resize_strategy",
+   "kind": "doc",
+   "line": 2367
+  },
+  {
+   "id": "r120",
+   "anchor": "Table._resize_strategy#if:size == 0",
+   "kind": "lead",
+   "line": 2375
+  },
+  {
+   "id": "r121",
+   "anchor": "Table.parse#assign:table_number",
+   "kind": "lead",
+   "line": 2411
+  },
+  {
+   "id": "r122",
+   "anchor": "Table.parse#if:self.ref is not None/assign:self.ref",
+   "kind": "lead",
+   "line": 2433
+  },
+  {
+   "id": "r123",
+   "anchor": "Table.parse#if:self.ref is not None/assign:self.ref",
+   "kind": "lead",
+   "line": 2433
+  },
+  {
+   "id": "r124",
+   "anchor": "Table.parse#if:self.ref is not None/else/for:start, tag, data, pos in iterator/if:start/else/if:tag == 'DESCRIPTION'/elif:tag == 'TABLE'/call:Field.uniqify_names",
+   "kind": "lead",
+   "line": 2475
+  },
+  {
+   "id": "r125",
+   "anchor": "Table.parse#if:self.ref is not None/else/for:start, tag, data, pos in iterator/if:start/else/if:tag == 'DESCRIPTION'/elif:tag == 'TABLE'/call:self.create_arrays",
+   "kind": "lead",
+   "line": 2478
+  },
+  {
+   "id": "r126",
+   "anchor": "Table.parse#if:not columns",
+   "kind": "lead",
+   "line": 2485
+  },
+  {
+   "id": "r127",
+   "anchor": "Table._parse_tabledata#assign:invalid",
+   "kind": "lead",
+   "line": 2565
+  },
+  {
+   "id": "r128",
+   "anchor": "Table._parse_tabledata#assign:array",
+   "kind": "lead",
+   "line": 2569
+  },
+  {
+   "id": "r129",
+   "anchor": "Table._parse_tabledata#for:start, tag, data, pos in iterator/if:tag == 'TR'/assign:row",
+   "kind": "lead",
+   "line": 2586
+  },
+  {
+   "id": "r130",
+   "anchor": "Table._parse_tabledata#assign:alloc_rows",
+   "kind": "lead",
+   "line": 2660
+  },
+  {
+   "id": "r131",
+   "anchor": "Table._parse_binary#assign:array",
+   "kind": "lead",
+   "line": 2737
+  },
+  {
+   "id": "r132",
+   "anchor": "Table._parse_binary#while:True/if:numrows >= alloc_rows",
+   "kind": "lead",
+   "line": 2746
+  },
+  {
+   "id": "r133",
+   "anchor": "Table._parse_binary#while:True/try/if:mode == 2/for:i, f in enumerate(fields)",
+   "kind": "lead",
+   "line": 2760
+  },
+  {
+   "id": "r134",
+   "anchor": "Table.to_table",
+   "kind": "doc",
+   "line": 2961
+  },
+  {
+   "id": "r135",
+   "anchor": "Table.from_table",
+   "kind": "doc",
+   "line": 3011
+  },
+  {
+   "id": "r136",
+   "anchor": "Table.iter_fields_and_params",
+   "kind": "doc",
+   "line": 3037
+  },
+  {
+   "id": "r137",
+   "anchor": "Table.iter_groups",
+   "kind": "doc",
+   "line": 3066
+  },
+  {
+   "id": "r138",
+   "anchor": "Resource",
+   "kind": "doc",
+   "line": 3092
+  },
+  {
+   "id": "r139",
+   "anchor": "Resource.type",
+   "kind": "doc",
+   "line": 3136
+  },
+  {
+   "id": "r140",
+   "anchor": "Resource.extra_attributes",
+   "kind": "doc",
+   "line": 3155
+  },
+  {
+   "id": "r141",
+   "anchor": "Resource.coordinate_systems",
+   "kind": "doc",
+   "line": 3165
+  },
+  {
+   "id": "r142",
+   "anchor": "Resource.time_systems",
+   "kind": "doc",
+   "line": 3173
+  },
+  {
+   "id": "r143",
+   "anchor": "Resource.infos",
+   "kind": "doc",
+   "line": 3181
+  },
+  {
+   "id": "r144",
+   "anchor": "Resource.groups",
+   "kind": "doc",
+   "line": 3189
+  },
+  {
+   "id": "r145",
+   "anchor": "Resource.params",
+   "kind": "doc",
+   "line": 3196
+  },
+  {
+   "id": "r146",
+   "anchor": "Resource.links",
+   "kind": "doc",
+   "line": 3204
+  },
+  {
+   "id": "r147",
+   "anchor": "Resource.tables",
+   "kind": "doc",
+   "line": 3213
+  },
+  {
+   "id": "r148",
+   "anchor": "Resource.resources",
+   "kind": "doc",
+   "line": 3221
+  },
+  {
+   "id": "r149",
+   "anchor": "Resource.iter_tables",
+   "kind": "doc",
+   "line": 3310
+  },
+  {
+   "id": "r150",
+   "anchor": "Resource.iter_fields_and_params",
+   "kind": "doc",
+   "line": 3319
+  },
+  {
+   "id": "r151",
+   "anchor": "Resource.iter_coosys",
+   "kind": "doc",
+   "line": 3330
+  },
+  {
+   "id": "r152",
+   "anchor": "Resource.iter_timesys",
+   "kind": "doc",
+   "line": 3339
+  },
+  {
+   "id": "r153",
+   "anchor": "Resource.iter_info",
+   "kind": "doc",
+   "line": 3348
+  },
+  {
+   "id": "r154",
+   "anchor": "VOTableFile",
+   "kind": "doc",
+   "line": 3360
+  },
+  {
+   "id": "r155",
+   "anchor": "VOTableFile.version",
+   "kind": "doc",
+   "line": 3403
+  },
+  {
+   "id": "r156",
+   "anchor": "VOTableFile.coordinate_systems",
+   "kind": "doc",
+   "line": 3419
+  },
+  {
+   "id": "r157",
+   "anchor": "VOTableFile.time_systems",
+   "kind": "doc",
+   "line": 3427
+  },
+  {
+   "id": "r158",
+   "anchor": "VOTableFile.params",
+   "kind": "doc",
+   "line": 3435
+  },
+  {
+   "id": "r159",
+   "anchor": "VOTableFile.infos",
+   "kind": "doc",
+   "line": 3443
+  },
+  {
+   "id": "r160",
+   "anchor": "VOTableFile.resources",
+   "kind": "doc",
+   "line": 3451
+  },
+  {
+   "id": "r161",
+   "anchor": "VOTableFile.groups",
+   "kind": "doc",
+   "line": 3459
+  },
+  {
+   "id": "r162",
+   "anchor": "VOTableFile._version_namespace_map",
+   "kind": "lead",
+   "line": 3512
+  },
+  {
+   "id": "r163",
+   "anchor": "VOTableFile._version_namespace_map#key:1.1",
+   "kind": "lead",
+   "line": 3517
+  },
+  {
+   "id": "r164",
+   "anchor": "VOTableFile._version_namespace_map#key:1.3",
+   "kind": "lead",
+   "line": 3533
+  },
+  {
+   "id": "r165",
+   "anchor": "VOTableFile._version_namespace_map#key:1.4",
+   "kind": "lead",
+   "line": 3542
+  },
+  {
+   "id": "r166",
+   "anchor": "VOTableFile.to_xml",
+   "kind": "doc",
+   "line": 3608
+  },
+  {
+   "id": "r167",
+   "anchor": "VOTableFile.to_xml#with:util.convert_to_writable_filelike(fd, compressed=compressed)/assign:votable_attr",
+   "kind": "lead",
+   "line": 3658
+  },
+  {
+   "id": "r168",
+   "anchor": "VOTableFile.iter_tables",
+   "kind": "doc",
+   "line": 3682
+  },
+  {
+   "id": "r169",
+   "anchor": "VOTableFile.get_first_table",
+   "kind": "doc",
+   "line": 3690
+  },
+  {
+   "id": "r170",
+   "anchor": "VOTableFile.get_table_by_index",
+   "kind": "doc",
+   "line": 3714
+  },
+  {
+   "id": "r171",
+   "anchor": "VOTableFile.iter_fields_and_params",
+   "kind": "doc",
+   "line": 3724
+  },
+  {
+   "id": "r172",
+   "anchor": "VOTableFile.iter_values",
+   "kind": "doc",
+   "line": 3752
+  },
+  {
+   "id": "r173",
+   "anchor": "VOTableFile.iter_groups",
+   "kind": "doc",
+   "line": 3767
+  },
+  {
+   "id": "r174",
+   "anchor": "VOTableFile.iter_coosys",
+   "kind": "doc",
+   "line": 3789
+  },
+  {
+   "id": "r175",
+   "anchor": "VOTableFile.iter_timesys",
+   "kind": "doc",
+   "line": 3802
+  },
+  {
+   "id": "r176",
+   "anchor": "VOTableFile.iter_info",
+   "kind": "doc",
+   "line": 3815
+  },
+  {
+   "id": "r177",
+   "anchor": "VOTableFile.set_all_tables_format",
+   "kind": "doc",
+   "line": 3828
+  },
+  {
+   "id": "r178",
+   "anchor": "VOTableFile.from_table",
+   "kind": "doc",
+   "line": 3836
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 72041,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12608,
+  "thinking_tokens": 5732,
+  "opus_cost_usd": 1.0399015,
+  "total_cost_usd": 1.0998725,
+  "duration_ms": 112273,
+  "duration_api_ms": 114976,
+  "num_turns": 2
+ },
+ "wall_ms": 113363,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

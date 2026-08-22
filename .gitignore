@@ -1,0 +1,26 @@
+# Build and environment
+.venv/
+target/
+
+# Content-addressed caches. `cache/` is 295 MB of stripped sources and sidecars,
+# regenerable from the mirror with pass 1 — except the converter's anchor files,
+# which cost $815 of Opus time and cannot be regenerated for free.
+cache/*
+!cache/*.anchors.json
+
+# Model-run artifacts: raw CLI results, generated prompts, and the per-record
+# report (6-16 MB each). Derived from the anchor files above.
+corpus/convert-pilot/runs*/
+corpus/convert-pilot/prompts*/
+corpus/convert-pilot/baseline-v0/
+corpus/convert-pilot/rescore-v1-resolver/
+corpus/**/report.json
+corpus/**/mechanical.json
+corpus/**/*.log
+
+# Derived, large, and rebuilt by the harness that produced it.
+corpus/directives-histogram.tsv
+
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,331 @@
+{
+ "blob_sha": "6194196f7c6e3cbfd948ee89d9af43e5252932f9",
+ "path": "astropy/io/fits/hdu/groups.py",
+ "repo": "astropy/astropy",
+ "records": 51,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:sys",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "Group",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r3",
+   "anchor": "Group.data#return",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "Group.par",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "Group.par#if:_is_int(parname)/else/if:len(indx)==1/else",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r6",
+   "anchor": "Group.setpar",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "Group.setpar#if:_is_int(parname)",
+   "kind": "todo",
+   "line": 66
+  },
+  {
+   "id": "r8",
+   "anchor": "Group.setpar#if:_is_int(parname)/else/if:len(indx)==1/else",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r9",
+   "anchor": "GroupData",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r10",
+   "anchor": "GroupData.__new__",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r11",
+   "anchor": "GroupData.__new__#if:not isinstance(input, FITS_rec)/assign:fits_fmt",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r12",
+   "anchor": "GroupData.__new__#if:not isinstance(input, FITS_rec)/assign:format",
+   "kind": "trail",
+   "line": 164
+  },
+  {
+   "id": "r13",
+   "anchor": "GroupData._data_field",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r14",
+   "anchor": "GroupData.__new__#if:not isinstance(input, FITS_rec)/for:idx, name in enumerate(unique_parnames[:-1])/assign:scale, zero",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r15",
+   "anchor": "GroupData.data",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r16",
+   "anchor": "GroupData.data#return",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r17",
+   "anchor": "GroupData.par",
+   "kind": "doc",
+   "line": 250
+  },
+  {
+   "id": "r18",
+   "anchor": "GroupData.par#if:_is_int(parname)/else/if:len(indx)==1/else",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r19",
+   "anchor": "GroupsHDU",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r20",
+   "anchor": "GroupsHDU._data_field",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r21",
+   "anchor": "GroupsHDU.__init__#if:len(self._axes)<=0",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r22",
+   "anchor": "GroupsHDU.data",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r23",
+   "anchor": "GroupsHDU.parnames",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r24",
+   "anchor": "GroupsHDU.parnames#return",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r25",
+   "anchor": "GroupsHDU.columns#call:parnames.append",
+   "kind": "lead",
+   "line": 347
+  },
+  {
+   "id": "r26",
+   "anchor": "GroupsHDU._nrows#if:not self._data_loaded/return",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r27",
+   "anchor": "GroupsHDU._theap#return",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r28",
+   "anchor": "GroupsHDU.size",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r29",
+   "anchor": "GroupsHDU.size#if:naxis>1",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r30",
+   "anchor": "GroupsHDU.update_header#if:self._data_loaded/if:isinstance(self.data, GroupData)/elif:self.data is None/assign:field0_code",
+   "kind": "trail",
+   "line": 416
+  },
+  {
+   "id": "r31",
+   "anchor": "GroupsHDU.update_header#for:idx, axis in enumerate(self._axes)",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r32",
+   "anchor": "GroupsHDU.update_header#for:idx in range(len(self._axes) + 1, old_naxis + 1)",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r33",
+   "anchor": "GroupsHDU.update_header#if:\"EXTEND\" in self._header",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r34",
+   "anchor": "GroupsHDU._writedata_internal",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r35",
+   "anchor": "GroupsHDU._writedata_internal#if:self.data is not None/if:sys.byteorder==\"little\"",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r36",
+   "anchor": "GroupsHDU._writedata_internal#if:self.data is not None/if:_is_pseudo_integer(self.data.dtype)",
+   "kind": "lead",
+   "line": 489
+  },
+  {
+   "id": "r37",
+   "anchor": "GroupsHDU._writedata_internal#if:self.data is not None/if:_is_pseudo_integer(self.data.dtype)/assign:output",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r38",
+   "anchor": "GroupsHDU._writedata_internal#if:self.data is not None/if:should_swap/if:output.flags.writeable/else/call:fileobj.writearray",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r39",
+   "anchor": "GroupsHDU._verify#call:self.req_cards",
+   "kind": "lead",
+   "line": 523
+  },
+  {
+   "id": "r40",
+   "anchor": "GroupsHDU._calculate_datasum",
+   "kind": "doc",
+   "line": 536
+  },
+  {
+   "id": "r41",
+   "anchor": "GroupsHDU._calculate_datasum#if:self._has_data/assign:byteorder",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r42",
+   "anchor": "GroupsHDU._calculate_datasum#if:self._has_data/assign:byteorder",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r43",
+   "anchor": "GroupsHDU._calculate_datasum#if:self._has_data/if:byteorder!=\">\"/if:self.data.flags.writeable/else/assign:d",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r44",
+   "anchor": "GroupsHDU._calculate_datasum#if:self._has_data/if:byteswapped",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r45",
+   "anchor": "GroupsHDU._calculate_datasum#if:self._has_data/else/return",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r46",
+   "anchor": "GroupsHDU._summary#if:shape",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r47",
+   "anchor": "GroupsHDU._summary#if:shape/if:shape and all(shape)/assign:format",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r48",
+   "anchor": "GroupsHDU._summary#assign:gcount",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r49",
+   "anchor": "_par_indices",
+   "kind": "doc",
+   "line": 599
+  },
+  {
+   "id": "r50",
+   "anchor": "_par_indices#for:idx, name in enumerate(names)/assign:name",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r51",
+   "anchor": "_unique_parnames",
+   "kind": "doc",
+   "line": 615
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14941,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5953,
+  "thinking_tokens": 3429,
+  "opus_cost_usd": 0.3025265,
+  "total_cost_usd": 0.31372849999999997,
+  "duration_ms": 56284,
+  "duration_api_ms": 58482,
+  "num_turns": 2
+ },
+ "wall_ms": 59641,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

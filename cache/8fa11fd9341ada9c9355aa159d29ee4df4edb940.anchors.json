@@ -1,0 +1,445 @@
+{
+ "blob_sha": "8fa11fd9341ada9c9355aa159d29ee4df4edb940",
+ "path": "xarray/plot/utils.py",
+ "repo": "pydata/xarray",
+ "records": 70,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "register_pandas_datetime_converter_if_needed#global:_registered",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "import_matplotlib_pyplot",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "_build_discrete_cmap",
+   "kind": "doc",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "_build_discrete_cmap#if:not filled/assign:extend",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "_build_discrete_cmap#assign:new_cmap.name",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r6",
+   "anchor": "_build_discrete_cmap#try",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "_build_discrete_cmap#try/assign:bad",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r8",
+   "anchor": "_build_discrete_cmap#try/except:TypeError/pass",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r9",
+   "anchor": "_build_discrete_cmap#try/else/if:under != cmap(0)",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r10",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/assign:cmap",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/elif:isinstance(cmap, str)/try",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r12",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/elif:isinstance(cmap, str)/try/assign:cmap",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r13",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/elif:isinstance(cmap, str)/try/except:ValueError/try",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r14",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/elif:isinstance(cmap, str)/try/except:ValueError/try/except:(ValueError, ImportError)/assign:cmap",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r15",
+   "anchor": "_color_palette#if:isinstance(cmap, (list, tuple))/else/assign:pal",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r16",
+   "anchor": "_determine_cmap_params",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r17",
+   "anchor": "_determine_cmap_params",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r18",
+   "anchor": "_determine_cmap_params#if:calc_data.size == 0",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r19",
+   "anchor": "_determine_cmap_params#if:calc_data.size == 0/assign:calc_data",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r20",
+   "anchor": "_determine_cmap_params#assign:possibly_divergent",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r21",
+   "anchor": "_determine_cmap_params#assign:center_is_none",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r22",
+   "anchor": "_determine_cmap_params#if:(vmin is not None) and (vmax is not None)",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r23",
+   "anchor": "_determine_cmap_params#assign:user_minmax",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r24",
+   "anchor": "_determine_cmap_params#assign:vlim",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r25",
+   "anchor": "_determine_cmap_params#assign:vmin_was_none",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r26",
+   "anchor": "_determine_cmap_params#if:possibly_divergent/assign:divergent",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r27",
+   "anchor": "_determine_cmap_params#if:divergent",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r28",
+   "anchor": "_determine_cmap_params#assign:vmin",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r29",
+   "anchor": "_determine_cmap_params#if:norm is not None",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r30",
+   "anchor": "_determine_cmap_params#if:isinstance(norm, mpl.colors.BoundaryNorm)",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r31",
+   "anchor": "_determine_cmap_params#if:cmap is None",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r32",
+   "anchor": "_determine_cmap_params#if:levels is not None",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r33",
+   "anchor": "_determine_cmap_params#if:levels is not None/if:is_scalar(levels)/if:user_minmax/elif:levels == 1/else/assign:ticker",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r34",
+   "anchor": "_determine_cmap_params#if:vmin == vmax",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r35",
+   "anchor": "_infer_xy_labels_3d",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r36",
+   "anchor": "_infer_xy_labels_3d#assert:darray.ndim == 3",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r37",
+   "anchor": "_infer_xy_labels_3d#assign:could_be_color",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r38",
+   "anchor": "_infer_xy_labels_3d#if:rgb is None",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r39",
+   "anchor": "_infer_xy_labels_3d#return",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r40",
+   "anchor": "_infer_xy_labels",
+   "kind": "doc",
+   "line": 357
+  },
+  {
+   "id": "r41",
+   "anchor": "_assert_valid_xy",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r42",
+   "anchor": "_assert_valid_xy#assign:multiindex",
+   "kind": "lead",
+   "line": 398
+  },
+  {
+   "id": "r43",
+   "anchor": "label_from_attrs",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r44",
+   "anchor": "_interval_to_mid_points",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r45",
+   "anchor": "_interval_to_bound_points",
+   "kind": "doc",
+   "line": 472
+  },
+  {
+   "id": "r46",
+   "anchor": "_interval_to_double_bound_points",
+   "kind": "doc",
+   "line": 484
+  },
+  {
+   "id": "r47",
+   "anchor": "_resolve_intervals_1dplot",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r48",
+   "anchor": "_resolve_intervals_1dplot#if:kwargs.get(\"drawstyle\", \"\").startswith(\"steps-\")",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r49",
+   "anchor": "_resolve_intervals_1dplot#if:kwargs.get(\"drawstyle\", \"\").startswith(\"steps-\")/if:_valid_other_type(np.array([xval, yval]), [pd.Interval])",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r50",
+   "anchor": "_resolve_intervals_1dplot#if:kwargs.get(\"drawstyle\", \"\").startswith(\"steps-\")/del:kwargs[\"drawstyle\"]",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r51",
+   "anchor": "_resolve_intervals_1dplot#if:kwargs.get(\"drawstyle\", \"\").startswith(\"steps-\")/else",
+   "kind": "lead",
+   "line": 522
+  },
+  {
+   "id": "r52",
+   "anchor": "_resolve_intervals_1dplot#if:kwargs.get(\"drawstyle\", \"\").startswith(\"steps-\")/else/if:_valid_other_type(xval, [pd.Interval])",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r53",
+   "anchor": "_resolve_intervals_1dplot#return",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r54",
+   "anchor": "_resolve_intervals_2dplot",
+   "kind": "doc",
+   "line": 536
+  },
+  {
+   "id": "r55",
+   "anchor": "_valid_other_type",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r56",
+   "anchor": "_valid_numpy_subdtype",
+   "kind": "doc",
+   "line": 560
+  },
+  {
+   "id": "r57",
+   "anchor": "_valid_numpy_subdtype#for:t in numpy_types",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r58",
+   "anchor": "_ensure_plottable",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r59",
+   "anchor": "_rescale_imshow_rgb#if:robust",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r60",
+   "anchor": "_rescale_imshow_rgb#if:robust/elif:vmax is None",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r61",
+   "anchor": "_rescale_imshow_rgb#assign:darray",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r62",
+   "anchor": "_update_axes",
+   "kind": "doc",
+   "line": 662
+  },
+  {
+   "id": "r63",
+   "anchor": "_update_axes#if:xscale is not None",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r64",
+   "anchor": "_is_monotonic",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r65",
+   "anchor": "_infer_interval_breaks",
+   "kind": "doc",
+   "line": 733
+  },
+  {
+   "id": "r66",
+   "anchor": "_process_cmap_cbar_kwargs",
+   "kind": "doc",
+   "line": 764
+  },
+  {
+   "id": "r67",
+   "anchor": "_process_cmap_cbar_kwargs#if:\"contour\" in func.__name__ and levels is None/assign:levels",
+   "kind": "trail",
+   "line": 790
+  },
+  {
+   "id": "r68",
+   "anchor": "_process_cmap_cbar_kwargs#if:cmap and colors",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r69",
+   "anchor": "_process_cmap_cbar_kwargs#if:colors and ((\"contour\" not in func.__name__) and (levels is None))",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r70",
+   "anchor": "_process_cmap_cbar_kwargs#if:isinstance(cmap, (list, tuple))",
+   "kind": "lead",
+   "line": 803
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19420,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6626,
+  "thinking_tokens": 3060,
+  "opus_cost_usd": 0.3641415,
+  "total_cost_usd": 0.3784825,
+  "duration_ms": 55754,
+  "duration_api_ms": 57056,
+  "num_turns": 2
+ },
+ "wall_ms": 57522,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

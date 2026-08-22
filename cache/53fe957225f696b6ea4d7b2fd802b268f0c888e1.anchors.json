@@ -1,0 +1,133 @@
+{
+ "blob_sha": "53fe957225f696b6ea4d7b2fd802b268f0c888e1",
+ "path": "examples/event_handling/pong_sgskip.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Puck.update#if:self.x<fudge",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r3",
+   "anchor": "Puck.update#if:self.y<-1+fudge or self.y>1-fudge/assign:self.vy",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r4",
+   "anchor": "Game.ax",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r5",
+   "anchor": "Game.__init__#assign:pA",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r6",
+   "anchor": "Game.x",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r7",
+   "anchor": "Game.centerline",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r8",
+   "anchor": "Game.puckdisp",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r9",
+   "anchor": "Game.inst",
+   "kind": "trail",
+   "line": 180
+  },
+  {
+   "id": "r10",
+   "anchor": "Game.draw#call:self.canvas.restore_region",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r11",
+   "anchor": "Game.draw#if:self.distract",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r12",
+   "anchor": "Game.draw#if:self.on",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r13",
+   "anchor": "Game.draw#if:self.on/for:puck in self.pucks/if:puck.update(self.pads)/call:self.pads[0].disp.set_label",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r14",
+   "anchor": "Game.draw#call:self.canvas.blit",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r15",
+   "anchor": "Game.draw#if:self.cnt==50000/call:print",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r16",
+   "anchor": "<module>#if:fig.canvas.manager.key_press_handler_id is not None",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r17",
+   "anchor": "on_redraw",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r18",
+   "anchor": "start_anim",
+   "kind": "lead",
+   "line": 317
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8706,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1933,
+  "thinking_tokens": 1127,
+  "opus_cost_usd": 0.1396765,
+  "total_cost_usd": 0.14565150000000002,
+  "duration_ms": 18556,
+  "duration_api_ms": 19662,
+  "num_turns": 2
+ },
+ "wall_ms": 19421,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

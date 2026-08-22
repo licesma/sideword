@@ -1,0 +1,721 @@
+{
+ "blob_sha": "73ded9e091b6f7fd68462091c0ce57661fff22d7",
+ "path": "astropy/io/fits/hdu/image.py",
+ "repo": "astropy/astropy",
+ "records": 116,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:mmap",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_ImageBaseHDU",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:header is None",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r4",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:header is None/raise:ValueError",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(self, ExtensionHDU)",
+   "kind": "todo",
+   "line": 70
+  },
+  {
+   "id": "r6",
+   "anchor": "_ImageBaseHDU.__init__#assign:bzero_in_header",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r7",
+   "anchor": "_ImageBaseHDU._axes",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r8",
+   "anchor": "_ImageBaseHDU._bitpix",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r9",
+   "anchor": "_ImageBaseHDU._orig_bzero",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r10",
+   "anchor": "_ImageBaseHDU.__init__#if:\"name\" in kwargs and kwargs[\"name\"]",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r11",
+   "anchor": "_ImageBaseHDU._modified",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r12",
+   "anchor": "_ImageBaseHDU._data_needs_rescale",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r13",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self.data",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r14",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self._bitpix",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r15",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self._bzero",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r16",
+   "anchor": "_ImageBaseHDU.__init__#if:not bzero_in_header",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r17",
+   "anchor": "_ImageBaseHDU.match_header",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r18",
+   "anchor": "_ImageBaseHDU.section",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r19",
+   "anchor": "_ImageBaseHDU.shape",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r20",
+   "anchor": "_ImageBaseHDU.shape#return",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r21",
+   "anchor": "_ImageBaseHDU.data",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r22",
+   "anchor": "_ImageBaseHDU.data#if:data is not None/if:not isinstance(data, np.ndarray) and not _is_dask_array(data)/try",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r23",
+   "anchor": "_ImageBaseHDU.data#if:self.data is None/else/assign:self._bitpix",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r24",
+   "anchor": "_ImageBaseHDU.data#call:self.update_header",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r25",
+   "anchor": "_ImageBaseHDU.data#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r26",
+   "anchor": "_ImageBaseHDU.data#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r27",
+   "anchor": "_ImageBaseHDU.data#return",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r28",
+   "anchor": "_ImageBaseHDU.update_header",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r29",
+   "anchor": "_ImageBaseHDU.update_header#if:not (self._modified or self._header._modified or (self._has_data and self.shape != self.data.shape))/return",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r30",
+   "anchor": "_ImageBaseHDU.update_header#call:self._header.set",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r31",
+   "anchor": "_ImageBaseHDU.update_header#if:self._has_data and self.shape != self.data.shape",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r32",
+   "anchor": "_ImageBaseHDU.update_header#if:\"NAXIS\" in self._header",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r33",
+   "anchor": "_ImageBaseHDU.update_header#for:idx, axis in enumerate(self._axes)",
+   "kind": "todo",
+   "line": 364
+  },
+  {
+   "id": "r34",
+   "anchor": "_ImageBaseHDU.update_header#for:idx in range(len(self._axes) + 1, old_naxis + 1)",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r35",
+   "anchor": "_ImageBaseHDU.update_header#call:self._update_pseudo_int_scale_keywords",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r36",
+   "anchor": "_ImageBaseHDU._update_header_scale_info",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r37",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:self._do_not_scale_image_data or (self._orig_bzero == 0 and self._orig_bscale == 1)",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r38",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:self._do_not_scale_image_data or (self._orig_bzero == 0 and self._orig_bscale == 1)",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r39",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:dtype is not None and dtype.kind == \"u\" and (self._scale_back or self._scale_back is None)/return",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r40",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#for:keyword in [\"BSCALE\", \"BZERO\"]/try/call:self._header.append",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r41",
+   "anchor": "_ImageBaseHDU.scale",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r42",
+   "anchor": "_ImageBaseHDU.scale#call:self._scale_internal",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r43",
+   "anchor": "_ImageBaseHDU._scale_internal",
+   "kind": "doc",
+   "line": 478
+  },
+  {
+   "id": "r44",
+   "anchor": "_ImageBaseHDU._scale_internal#if:type is None",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r45",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r46",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None/elif:option == \"minmax\" and not issubclass(_type, np.floating)/if:_type == np.uint8",
+   "kind": "trail",
+   "line": 529
+  },
+  {
+   "id": "r47",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None/elif:option == \"minmax\" and not issubclass(_type, np.floating)/if:_type == np.uint8/else/assign:nbytes",
+   "kind": "lead",
+   "line": 536
+  },
+  {
+   "id": "r48",
+   "anchor": "_ImageBaseHDU._scale_internal#if:_zero != 0",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r49",
+   "anchor": "_ImageBaseHDU._scale_internal#if:_zero != 0/if:_is_dask_array(self.data)/else/call:np.add",
+   "kind": "lead",
+   "line": 551
+  },
+  {
+   "id": "r50",
+   "anchor": "_ImageBaseHDU._scale_internal#if:blank is not None and issubclass(_type, np.integer)",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r51",
+   "anchor": "_ImageBaseHDU._scale_internal#if:blank is not None and issubclass(_type, np.integer)/assign:self.data[np.isnan(self.data)]",
+   "kind": "todo",
+   "line": 572
+  },
+  {
+   "id": "r52",
+   "anchor": "_ImageBaseHDU._scale_internal#assign:self._bitpix",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r53",
+   "anchor": "_ImageBaseHDU._scale_internal#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r54",
+   "anchor": "_ImageBaseHDU._verify#call:self.update_header",
+   "kind": "lead",
+   "line": 596
+  },
+  {
+   "id": "r55",
+   "anchor": "_ImageBaseHDU._verify_blank#if:self._blank is None",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r56",
+   "anchor": "_ImageBaseHDU._verify_blank#if:not _is_int(self._blank)",
+   "kind": "todo",
+   "line": 611
+  },
+  {
+   "id": "r57",
+   "anchor": "_ImageBaseHDU._prewriteto#if:not inplace and self._data_needs_rescale/assign:_",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r58",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is None/elif:_is_dask_array(self.data)/else/if:sys.byteorder == \"little\"",
+   "kind": "lead",
+   "line": 653
+  },
+  {
+   "id": "r59",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is None/elif:_is_dask_array(self.data)/else/if:_is_pseudo_integer(self.data.dtype)",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r60",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is None/elif:_is_dask_array(self.data)/else/if:_is_pseudo_integer(self.data.dtype)/assign:output",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r61",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is None/elif:_is_dask_array(self.data)/else/if:should_swap/if:output.flags.writeable/else/call:fileobj.writearray",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r62",
+   "anchor": "_ImageBaseHDU._writeinternal_dask#if:_is_pseudo_integer(self.data.dtype)",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r63",
+   "anchor": "_ImageBaseHDU._writeinternal_dask#if:should_swap/assign:output",
+   "kind": "lead",
+   "line": 707
+  },
+  {
+   "id": "r64",
+   "anchor": "_ImageBaseHDU._writeinternal_dask#call:fileobj.seek",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r65",
+   "anchor": "_ImageBaseHDU._writeinternal_dask#if:fileobj.fileobj_mode not in (\"rb+\", \"wb+\", \"ab+\")/assign:fp",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r66",
+   "anchor": "_ImageBaseHDU._writeinternal_dask#call:fileobj.seek",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r67",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix",
+   "kind": "doc",
+   "line": 753
+  },
+  {
+   "id": "r68",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:self._uint and self._orig_bscale == 1",
+   "kind": "lead",
+   "line": 761
+  },
+  {
+   "id": "r69",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:bitpix > 16",
+   "kind": "trail",
+   "line": 773
+  },
+  {
+   "id": "r70",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:bitpix > 16/elif:bitpix > 0",
+   "kind": "trail",
+   "line": 775
+  },
+  {
+   "id": "r71",
+   "anchor": "_ImageBaseHDU._convert_pseudo_integer",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r72",
+   "anchor": "_ImageBaseHDU._convert_pseudo_integer#if:dtype is not None and dtype.kind == \"u\"",
+   "kind": "lead",
+   "line": 790
+  },
+  {
+   "id": "r73",
+   "anchor": "_ImageBaseHDU._convert_pseudo_integer#if:dtype is not None and dtype.kind == \"u\"/assign:bits",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r74",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data",
+   "kind": "doc",
+   "line": 801
+  },
+  {
+   "id": "r75",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:self._do_not_scale_image_data or (self._orig_bzero == 0 and self._orig_bscale == 1 and self._blank is None)/return",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r76",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#try/except:AttributeError",
+   "kind": "trail",
+   "line": 825
+  },
+  {
+   "id": "r77",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/assign:blanks",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r78",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:self._blank is not None and self._bitpix > 0/if:blanks.sum() < len(blanks) / 8",
+   "kind": "lead",
+   "line": 847
+  },
+  {
+   "id": "r79",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else",
+   "kind": "trail",
+   "line": 853
+  },
+  {
+   "id": "r80",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else/if:self._file is not None and self._file.memmap/elif:not raw_data.flags.writeable/assign:data",
+   "kind": "lead",
+   "line": 858
+  },
+  {
+   "id": "r81",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else/if:self._file is not None and self._file.memmap/elif:not raw_data.flags.writeable/else",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r82",
+   "anchor": "_ImageBaseHDU._summary",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r83",
+   "anchor": "_ImageBaseHDU._summary#if:self._data_loaded",
+   "kind": "lead",
+   "line": 882
+  },
+  {
+   "id": "r84",
+   "anchor": "_ImageBaseHDU._summary#if:self._data_loaded/else/if:self.shape and all(self.shape)/assign:format",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r85",
+   "anchor": "_ImageBaseHDU._summary#assign:shape",
+   "kind": "lead",
+   "line": 906
+  },
+  {
+   "id": "r86",
+   "anchor": "_ImageBaseHDU._calculate_datasum",
+   "kind": "doc",
+   "line": 910
+  },
+  {
+   "id": "r87",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/assign:d",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r88",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:_is_pseudo_integer(self.data.dtype)",
+   "kind": "lead",
+   "line": 920
+  },
+  {
+   "id": "r89",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:d.dtype.str[0] != \">\"",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r90",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:d.dtype.str[0] != \">\"/if:d.flags.writeable/else/assign:d",
+   "kind": "lead",
+   "line": 936
+  },
+  {
+   "id": "r91",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:byteswapped and not _is_pseudo_integer(self.data.dtype)",
+   "kind": "lead",
+   "line": 946
+  },
+  {
+   "id": "r92",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/else/return",
+   "kind": "lead",
+   "line": 956
+  },
+  {
+   "id": "r93",
+   "anchor": "Section",
+   "kind": "doc",
+   "line": 959
+  },
+  {
+   "id": "r94",
+   "anchor": "Section.shape#return",
+   "kind": "lead",
+   "line": 980
+  },
+  {
+   "id": "r95",
+   "anchor": "Section.__getitem__",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r96",
+   "anchor": "Section.__getitem__#if:not any(k is Ellipsis for k in key)/assign:key",
+   "kind": "lead",
+   "line": 999
+  },
+  {
+   "id": "r97",
+   "anchor": "Section.__getitem__#assign:idx",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r98",
+   "anchor": "Section.__getitem__#for:idx in range(naxis)",
+   "kind": "lead",
+   "line": 1013
+  },
+  {
+   "id": "r99",
+   "anchor": "Section.__getitem__#for:jdx in range(idx + 1, naxis)/if:indx.npts == axis and indx.contiguous/assign:offset",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r100",
+   "anchor": "Section.__getitem__#if:is_contiguous/assign:data",
+   "kind": "lead",
+   "line": 1038
+  },
+  {
+   "id": "r101",
+   "anchor": "Section._getdata#for:idx, (key, axis) in enumerate(zip(keys, self.hdu.shape))/if:isinstance(key, slice)/elif:isiterable(key)/assign:ks",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r102",
+   "anchor": "Section._getdata#for:idx, (key, axis) in enumerate(zip(keys, self.hdu.shape))/if:isinstance(key, slice)/elif:isiterable(key)/break",
+   "kind": "post",
+   "line": 1056
+  },
+  {
+   "id": "r103",
+   "anchor": "Section._getdata#if:any(isinstance(key, slice) or isiterable(key) for key in keys[idx + 1 :])/return",
+   "kind": "lead",
+   "line": 1063
+  },
+  {
+   "id": "r104",
+   "anchor": "Section._getdata#if:any(isinstance(key, slice) or isiterable(key) for key in keys[idx + 1 :])/else/return",
+   "kind": "lead",
+   "line": 1066
+  },
+  {
+   "id": "r105",
+   "anchor": "PrimaryHDU",
+   "kind": "doc",
+   "line": 1069
+  },
+  {
+   "id": "r106",
+   "anchor": "PrimaryHDU.__init__",
+   "kind": "doc",
+   "line": 1076
+  },
+  {
+   "id": "r107",
+   "anchor": "PrimaryHDU.__init__#if:header is None",
+   "kind": "lead",
+   "line": 1132
+  },
+  {
+   "id": "r108",
+   "anchor": "PrimaryHDU.match_header#return",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r109",
+   "anchor": "PrimaryHDU.update_header#if:\"EXTEND\" in self._header",
+   "kind": "lead",
+   "line": 1153
+  },
+  {
+   "id": "r110",
+   "anchor": "PrimaryHDU._verify#if:\"EXTEND\" in self._header",
+   "kind": "lead",
+   "line": 1167
+  },
+  {
+   "id": "r111",
+   "anchor": "ImageHDU",
+   "kind": "doc",
+   "line": 1175
+  },
+  {
+   "id": "r112",
+   "anchor": "ImageHDU.__init__",
+   "kind": "doc",
+   "line": 1182
+  },
+  {
+   "id": "r113",
+   "anchor": "ImageHDU.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 1237
+  },
+  {
+   "id": "r114",
+   "anchor": "ImageHDU._verify",
+   "kind": "doc",
+   "line": 1255
+  },
+  {
+   "id": "r115",
+   "anchor": "ImageHDU._verify#call:self.req_cards",
+   "kind": "lead",
+   "line": 1264
+  },
+  {
+   "id": "r116",
+   "anchor": "_IndexInfo.__init__#if:_is_int(indx)/if:indx < 0",
+   "kind": "trail",
+   "line": 1273
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30520,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15292,
+  "thinking_tokens": 8339,
+  "opus_cost_usd": 0.6917914999999999,
+  "total_cost_usd": 0.7158794999999999,
+  "duration_ms": 133443,
+  "duration_api_ms": 134538,
+  "num_turns": 2
+ },
+ "wall_ms": 134281,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,847 @@
+{
+ "blob_sha": "e7544de5dc7b52a1c75ef93caad488fa0413ebba",
+ "path": "astropy/io/fits/hdu/table.py",
+ "repo": "astropy/astropy",
+ "records": 137,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:contextlib",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:astropy.io.fits.column",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r3",
+   "anchor": "FITSTableDumpDialect",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "_TableLikeHDU",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "_TableLikeHDU._uint",
+   "kind": "todo",
+   "line": 58
+  },
+  {
+   "id": "r6",
+   "anchor": "_TableLikeHDU.match_header",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r7",
+   "anchor": "_TableLikeHDU.from_columns",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "_TableLikeHDU.columns",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r9",
+   "anchor": "_TableLikeHDU.columns#return",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r10",
+   "anchor": "_TableLikeHDU._nrows",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r11",
+   "anchor": "_TableLikeHDU._get_tbdata",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r12",
+   "anchor": "_TableLikeHDU._get_tbdata#if:any(type(r) in (_FormatP, _FormatQ) for r in columns._recformats) and self._data_size is not None and self._data_size > self._theap",
+   "kind": "todo",
+   "line": 159
+  },
+  {
+   "id": "r13",
+   "anchor": "_TableLikeHDU._get_tbdata#if:any(type(r) in (_FormatP, _FormatQ) for r in columns._recformats) and self._data_size is not None and self._data_size > self._theap/assign:raw_data",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r14",
+   "anchor": "_TableLikeHDU._get_tbdata#if:any(type(r) in (_FormatP, _FormatQ) for r in columns._recformats) and self._data_size is not None and self._data_size > self._theap/else/if:raw_data is None/assign:raw_data",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r15",
+   "anchor": "_TableLikeHDU._init_tbdata#assign:data._uint",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r16",
+   "anchor": "_TableLikeHDU._init_tbdata#assign:data._heapoffset",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r17",
+   "anchor": "_TableLikeHDU._init_tbdata#for:idx, col in enumerate(columns)",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r18",
+   "anchor": "_TableLikeHDU._init_tbdata#for:idx, col in enumerate(columns)/assign:col.array",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r19",
+   "anchor": "_TableLikeHDU._init_tbdata#del:columns._arrays",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r20",
+   "anchor": "_TableLikeHDU._update_load_data",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r21",
+   "anchor": "_TableLikeHDU._update_column_added",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r22",
+   "anchor": "_TableLikeHDU._update_column_added#assign:self.data",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r23",
+   "anchor": "_TableLikeHDU._update_column_removed",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r24",
+   "anchor": "_TableLikeHDU._update_column_removed#assign:self.data",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r25",
+   "anchor": "_TableBaseHDU",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r26",
+   "anchor": "_TableBaseHDU._manages_own_heap",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r27",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/if:header is None",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r28",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/if:header is None/else",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r29",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/assign:cards",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r30",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:header is not None/assign:hcopy",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r31",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/if:isinstance(data, self._data_type)",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r32",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/if:header is not None",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r33",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/if:header is not None/for:keyword in header.keys()/try/except:Exception/continue",
+   "kind": "trail",
+   "line": 332
+  },
+  {
+   "id": "r34",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/assign:self._header['NAXIS1']",
+   "kind": "todo",
+   "line": 348
+  },
+  {
+   "id": "r35",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/with:suppress(TypeError, AttributeError)/for:idx, col in enumerate(self.columns)",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r36",
+   "anchor": "_TableBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(data, np.ndarray) and data.dtype.fields is not None/with:suppress(TypeError, AttributeError)/del:self.columns._arrays",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r37",
+   "anchor": "_TableBaseHDU.__init__#if:name",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r38",
+   "anchor": "_TableBaseHDU.match_header",
+   "kind": "doc",
+   "line": 379
+  },
+  {
+   "id": "r39",
+   "anchor": "_TableBaseHDU.columns",
+   "kind": "doc",
+   "line": 389
+  },
+  {
+   "id": "r40",
+   "anchor": "_TableBaseHDU.data#del:self.columns",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r41",
+   "anchor": "_TableBaseHDU.data#if:data is None and self.columns/assign:formats",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r42",
+   "anchor": "_TableBaseHDU.data#if:isinstance(data, np.ndarray) and data.dtype.fields is not None/assign:data",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r43",
+   "anchor": "_TableBaseHDU.data#if:isinstance(data, np.ndarray) and data.dtype.fields is not None/if:not isinstance(data.columns, self._columns_type)/assign:new_columns",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r44",
+   "anchor": "_TableBaseHDU.data#if:isinstance(data, np.ndarray) and data.dtype.fields is not None/with:suppress(TypeError, AttributeError)/for:idx, col in enumerate(self.columns)",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r45",
+   "anchor": "_TableBaseHDU.data#if:isinstance(data, np.ndarray) and data.dtype.fields is not None/with:suppress(TypeError, AttributeError)/del:self.columns._arrays",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r46",
+   "anchor": "_TableBaseHDU.data#return",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r47",
+   "anchor": "_TableBaseHDU.update",
+   "kind": "todo",
+   "line": 481
+  },
+  {
+   "id": "r48",
+   "anchor": "_TableBaseHDU.update",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r49",
+   "anchor": "_TableBaseHDU.copy",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r50",
+   "anchor": "_TableBaseHDU.copy#return",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r51",
+   "anchor": "_TableBaseHDU._prewriteto#if:self._has_data/assign:self._header['TFIELDS']",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r52",
+   "anchor": "_TableBaseHDU._prewriteto#if:self._has_data/assign:tbsize",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r53",
+   "anchor": "_TableBaseHDU._prewriteto#if:self._has_data/call:self._populate_table_keywords",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r54",
+   "anchor": "_TableBaseHDU._prewriteto#if:self._has_data/for:idx in range(self.data._nfields)",
+   "kind": "lead",
+   "line": 523
+  },
+  {
+   "id": "r55",
+   "anchor": "_TableBaseHDU._prewriteto#if:self._has_data/for:idx in range(self.data._nfields)/if:isinstance(format, _FormatP)/assign:format_cls",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r56",
+   "anchor": "_TableBaseHDU._verify",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r57",
+   "anchor": "_TableBaseHDU._summary",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r58",
+   "anchor": "_TableBaseHDU._summary#if:self._data_loaded",
+   "kind": "lead",
+   "line": 572
+  },
+  {
+   "id": "r59",
+   "anchor": "_TableBaseHDU._summary#if:self._data_loaded/else",
+   "kind": "lead",
+   "line": 582
+  },
+  {
+   "id": "r60",
+   "anchor": "_TableBaseHDU._update_column_removed#call:self._clear_table_keywords",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r61",
+   "anchor": "_TableBaseHDU._update_column_attribute_changed",
+   "kind": "doc",
+   "line": 599
+  },
+  {
+   "id": "r62",
+   "anchor": "_TableBaseHDU._update_column_attribute_changed#assign:base_keyword",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r63",
+   "anchor": "_TableBaseHDU._update_column_attribute_changed#if:keyword in self._header/if:new_value is None/del:self._header[keyword]",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r64",
+   "anchor": "_TableBaseHDU._update_column_attribute_changed#if:keyword in self._header/else/for:before_keyword in reversed(KEYWORD_NAMES[:keyword_idx])",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r65",
+   "anchor": "_TableBaseHDU._update_column_attribute_changed#if:keyword in self._header/else/for:before_keyword in reversed(KEYWORD_NAMES[:keyword_idx])/else/for:after_keyword in KEYWORD_NAMES[keyword_idx + 1:]/else/assign:self._header[keyword]",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r66",
+   "anchor": "_TableBaseHDU._clear_table_keywords",
+   "kind": "doc",
+   "line": 639
+  },
+  {
+   "id": "r67",
+   "anchor": "_TableBaseHDU._clear_table_keywords#assign:table_keywords",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r68",
+   "anchor": "_TableBaseHDU._clear_table_keywords#for:idx, keyword in enumerate(self._header.keys())/try/except:Exception/continue",
+   "kind": "trail",
+   "line": 659
+  },
+  {
+   "id": "r69",
+   "anchor": "_TableBaseHDU._clear_table_keywords#for:idx, keyword in enumerate(self._header.keys())/if:base_keyword in KEYWORD_TO_ATTRIBUTE/if:base_keyword in {'TCTYP', 'TCUNI', 'TCRPX', 'TCRVL', 'TCDLT', 'TRPOS'}",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r70",
+   "anchor": "_TableBaseHDU._clear_table_keywords#for:idx, keyword in enumerate(self._header.keys())/if:base_keyword in KEYWORD_TO_ATTRIBUTE/assign:num",
+   "kind": "trail",
+   "line": 670
+  },
+  {
+   "id": "r71",
+   "anchor": "_TableBaseHDU._clear_table_keywords#assign:rev_sorted_idx_0",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r72",
+   "anchor": "_TableBaseHDU._clear_table_keywords#if:index is not None",
+   "kind": "lead",
+   "line": 682
+  },
+  {
+   "id": "r73",
+   "anchor": "_TableBaseHDU._clear_table_keywords#if:index is not None/if:'TFIELDS' in self._header",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r74",
+   "anchor": "_TableBaseHDU._populate_table_keywords",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r75",
+   "anchor": "TableHDU",
+   "kind": "doc",
+   "line": 709
+  },
+  {
+   "id": "r76",
+   "anchor": "TableHDU._get_tbdata#assign:dup",
+   "kind": "lead",
+   "line": 759
+  },
+  {
+   "id": "r77",
+   "anchor": "TableHDU._get_tbdata#assign:itemsize",
+   "kind": "todo",
+   "line": 767
+  },
+  {
+   "id": "r78",
+   "anchor": "TableHDU._get_tbdata#for:idx in range(len(columns))/if:idx == len(columns) - 1/if:self._header['NAXIS1'] > itemsize",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r79",
+   "anchor": "TableHDU._calculate_datasum",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r80",
+   "anchor": "TableHDU._calculate_datasum#if:self._has_data/assign:bytes_array",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r81",
+   "anchor": "TableHDU._calculate_datasum#if:self._has_data/else/return",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r82",
+   "anchor": "TableHDU._verify",
+   "kind": "doc",
+   "line": 809
+  },
+  {
+   "id": "r83",
+   "anchor": "BinTableHDU",
+   "kind": "doc",
+   "line": 823
+  },
+  {
+   "id": "r84",
+   "anchor": "BinTableHDU._calculate_datasum_with_heap",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r85",
+   "anchor": "BinTableHDU._calculate_datasum_with_heap#with:_binary_table_byte_swap(self.data)/if:data._get_raw_data() is None",
+   "kind": "lead",
+   "line": 887
+  },
+  {
+   "id": "r86",
+   "anchor": "BinTableHDU._calculate_datasum_with_heap#with:_binary_table_byte_swap(self.data)/if:data._get_raw_data() is None/for:idx in range(data._nfields)",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r87",
+   "anchor": "BinTableHDU._calculate_datasum_with_heap#with:_binary_table_byte_swap(self.data)/if:data._get_raw_data() is None/for:idx in range(data._nfields)/if:isinstance(data.columns._recformats[idx], _FormatP)/for:coldata in data.field(idx)/if:not len(coldata)",
+   "kind": "lead",
+   "line": 898
+  },
+  {
+   "id": "r88",
+   "anchor": "BinTableHDU._calculate_datasum",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r89",
+   "anchor": "BinTableHDU._calculate_datasum#if:self._has_data/return",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r90",
+   "anchor": "BinTableHDU._calculate_datasum#if:self._has_data/else/return",
+   "kind": "lead",
+   "line": 922
+  },
+  {
+   "id": "r91",
+   "anchor": "BinTableHDU._writedata_internal#with:_binary_table_byte_swap(self.data)/if:_has_unicode_fields(data)/call:self._writedata_by_row",
+   "kind": "lead",
+   "line": 935
+  },
+  {
+   "id": "r92",
+   "anchor": "BinTableHDU._writedata_internal#with:_binary_table_byte_swap(self.data)/if:_has_unicode_fields(data)/else/if:data._gap > 0",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r93",
+   "anchor": "BinTableHDU._writedata_internal#with:_binary_table_byte_swap(self.data)/if:not self._manages_own_heap/for:idx in range(data._nfields)",
+   "kind": "lead",
+   "line": 952
+  },
+  {
+   "id": "r94",
+   "anchor": "BinTableHDU._writedata_by_row#for:idx in range(len(self.data))",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r95",
+   "anchor": "BinTableHDU._writedata_by_row#for:idx in range(len(self.data))/for:field in fields/if:field.dtype.kind == 'U'/assign:i",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r96",
+   "anchor": "BinTableHDU._writedata_by_row#for:idx in range(len(self.data))/for:field in fields/if:field_width is not None/assign:padding",
+   "kind": "lead",
+   "line": 998
+  },
+  {
+   "id": "r97",
+   "anchor": "BinTableHDU.dump",
+   "kind": "doc",
+   "line": 1054
+  },
+  {
+   "id": "r98",
+   "anchor": "BinTableHDU.dump#assign:exist",
+   "kind": "lead",
+   "line": 1089
+  },
+  {
+   "id": "r99",
+   "anchor": "BinTableHDU.dump#call:self._dump_data",
+   "kind": "lead",
+   "line": 1108
+  },
+  {
+   "id": "r100",
+   "anchor": "BinTableHDU.dump#if:cdfile",
+   "kind": "lead",
+   "line": 1111
+  },
+  {
+   "id": "r101",
+   "anchor": "BinTableHDU.dump#if:hfile",
+   "kind": "lead",
+   "line": 1115
+  },
+  {
+   "id": "r102",
+   "anchor": "BinTableHDU.load",
+   "kind": "doc",
+   "line": 1121
+  },
+  {
+   "id": "r103",
+   "anchor": "BinTableHDU.load#if:header is None",
+   "kind": "lead",
+   "line": 1174
+  },
+  {
+   "id": "r104",
+   "anchor": "BinTableHDU.load#if:cdfile",
+   "kind": "lead",
+   "line": 1186
+  },
+  {
+   "id": "r105",
+   "anchor": "BinTableHDU.load#assign:data",
+   "kind": "lead",
+   "line": 1190
+  },
+  {
+   "id": "r106",
+   "anchor": "BinTableHDU.load#assign:hdu",
+   "kind": "lead",
+   "line": 1195
+  },
+  {
+   "id": "r107",
+   "anchor": "BinTableHDU#assign:load",
+   "kind": "post",
+   "line": 1202
+  },
+  {
+   "id": "r108",
+   "anchor": "BinTableHDU._dump_data",
+   "kind": "doc",
+   "line": 1206
+  },
+  {
+   "id": "r109",
+   "anchor": "BinTableHDU._dump_data.format_value",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r110",
+   "anchor": "BinTableHDU._dump_data.format_value#if:format[0] == 'S'/elif:format in np.typecodes['AllInteger']/return",
+   "kind": "lead",
+   "line": 1231
+  },
+  {
+   "id": "r111",
+   "anchor": "BinTableHDU._dump_data.format_value#if:format[0] == 'S'/elif:format in np.typecodes['AllInteger']/elif:format in np.typecodes['Complex']/elif:format in np.typecodes['Float']/return",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r112",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/assign:line",
+   "kind": "trail",
+   "line": 1239
+  },
+  {
+   "id": "r113",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/for:column in self.columns",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r114",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/for:column in self.columns/assign:vla_format",
+   "kind": "lead",
+   "line": 1245
+  },
+  {
+   "id": "r115",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/for:column in self.columns/if:isinstance(format, _FormatP)/call:line.append",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r116",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/for:column in self.columns/if:vla_format/for:val in row[column.name].flat",
+   "kind": "lead",
+   "line": 1259
+  },
+  {
+   "id": "r117",
+   "anchor": "BinTableHDU._dump_data#for:row in self.data/for:column in self.columns/if:vla_format/else/assign:dtype",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r118",
+   "anchor": "BinTableHDU._dump_coldefs",
+   "kind": "doc",
+   "line": 1280
+  },
+  {
+   "id": "r119",
+   "anchor": "BinTableHDU._dump_coldefs#for:column in self.columns",
+   "kind": "lead",
+   "line": 1294
+  },
+  {
+   "id": "r120",
+   "anchor": "BinTableHDU._load_data",
+   "kind": "doc",
+   "line": 1306
+  },
+  {
+   "id": "r121",
+   "anchor": "BinTableHDU._load_data#assign:initialpos",
+   "kind": "trail",
+   "line": 1317
+  },
+  {
+   "id": "r122",
+   "anchor": "BinTableHDU._load_data#assign:vla_lengths",
+   "kind": "lead",
+   "line": 1324
+  },
+  {
+   "id": "r123",
+   "anchor": "BinTableHDU._load_data#for:row in linereader",
+   "kind": "todo",
+   "line": 1342
+  },
+  {
+   "id": "r124",
+   "anchor": "BinTableHDU._load_data#for:idx, length in enumerate(vla_lengths)",
+   "kind": "lead",
+   "line": 1369
+  },
+  {
+   "id": "r125",
+   "anchor": "BinTableHDU._load_data#assign:hdu",
+   "kind": "todo",
+   "line": 1378
+  },
+  {
+   "id": "r126",
+   "anchor": "BinTableHDU._load_data#assign:data",
+   "kind": "todo",
+   "line": 1383
+  },
+  {
+   "id": "r127",
+   "anchor": "BinTableHDU._load_data#for:idx, length in enumerate(vla_lengths)/if:length is not None/assign:recformats[idx]",
+   "kind": "lead",
+   "line": 1393
+  },
+  {
+   "id": "r128",
+   "anchor": "BinTableHDU._load_data.format_value#if:recformats[col] == FITS2NUMPY['L']",
+   "kind": "lead",
+   "line": 1400
+  },
+  {
+   "id": "r129",
+   "anchor": "BinTableHDU._load_data.format_value#if:recformats[col] == FITS2NUMPY['L']/elif:recformats[col] == FITS2NUMPY['M']/return",
+   "kind": "lead",
+   "line": 1407
+  },
+  {
+   "id": "r130",
+   "anchor": "BinTableHDU._load_data#call:fileobj.seek",
+   "kind": "lead",
+   "line": 1412
+  },
+  {
+   "id": "r131",
+   "anchor": "BinTableHDU._load_data#for:row, line in enumerate(linereader)/while:idx < len(line)/if:line[idx] == 'VLA_Length='/elif:dtype[col].shape/assign:array_size",
+   "kind": "lead",
+   "line": 1426
+  },
+  {
+   "id": "r132",
+   "anchor": "BinTableHDU._load_data#for:row, line in enumerate(linereader)/while:idx < len(line)/if:slice_ is None/assign:data[row][col]",
+   "kind": "lead",
+   "line": 1434
+  },
+  {
+   "id": "r133",
+   "anchor": "BinTableHDU._load_coldefs",
+   "kind": "doc",
+   "line": 1448
+  },
+  {
+   "id": "r134",
+   "anchor": "_binary_table_byte_swap",
+   "kind": "doc",
+   "line": 1482
+  },
+  {
+   "id": "r135",
+   "anchor": "_binary_table_byte_swap#for:idx, name in enumerate(orig_dtype.names)/if:field.itemsize > 1 and field_dtype.base.str[0] in swap_types",
+   "kind": "lead",
+   "line": 1520
+  },
+  {
+   "id": "r136",
+   "anchor": "_binary_table_byte_swap#for:idx, name in enumerate(orig_dtype.names)/if:field.itemsize > 1 and field_dtype.base.str[0] in swap_types/assign:formats[-1]",
+   "kind": "lead",
+   "line": 1524
+  },
+  {
+   "id": "r137",
+   "anchor": "_binary_table_byte_swap#for:idx, name in enumerate(orig_dtype.names)/assign:recformat",
+   "kind": "lead",
+   "line": 1527
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 35641,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 16972,
+  "thinking_tokens": 8603,
+  "opus_cost_usd": 0.7850015,
+  "total_cost_usd": 0.8134755,
+  "duration_ms": 144355,
+  "duration_api_ms": 146525,
+  "num_turns": 2
+ },
+ "wall_ms": 145392,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

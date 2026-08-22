@@ -1,0 +1,1105 @@
+{
+ "blob_sha": "8b53eba50bf77b8427d2c51c63196406be3e6437",
+ "path": "lib/matplotlib/animation.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 180,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:abc",
+   "kind": "todo",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#if:sys.platform=='win32'",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#if:sys.platform=='win32'/else/assign:subprocess_creation_flags",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "adjusted_figsize",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r5",
+   "anchor": "adjusted_figsize",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r6",
+   "anchor": "adjusted_figsize",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r7",
+   "anchor": "adjusted_figsize.correct_roundoff",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "MovieWriterRegistry",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r9",
+   "anchor": "MovieWriterRegistry.register",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r10",
+   "anchor": "MovieWriterRegistry.is_available",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r11",
+   "anchor": "MovieWriterRegistry.__iter__",
+   "kind": "doc",
+   "line": 138
+  },
+  {
+   "id": "r12",
+   "anchor": "MovieWriterRegistry.list",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r13",
+   "anchor": "MovieWriterRegistry.__getitem__",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r14",
+   "anchor": "AbstractMovieWriter",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r15",
+   "anchor": "AbstractMovieWriter.setup",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r16",
+   "anchor": "AbstractMovieWriter.frame_size",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r17",
+   "anchor": "AbstractMovieWriter.grab_frame",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r18",
+   "anchor": "AbstractMovieWriter.finish",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "AbstractMovieWriter.saving",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r20",
+   "anchor": "AbstractMovieWriter.saving#call:self.setup",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r21",
+   "anchor": "MovieWriter",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r22",
+   "anchor": "MovieWriter.supported_formats",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r23",
+   "anchor": "MovieWriter.supported_formats",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r24",
+   "anchor": "MovieWriter.__init__",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r25",
+   "anchor": "MovieWriter.__init__#if:type(self) is MovieWriter/raise:TypeError",
+   "kind": "todo",
+   "line": 294
+  },
+  {
+   "id": "r26",
+   "anchor": "MovieWriter.setup#call:super().setup",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r27",
+   "anchor": "MovieWriter.setup#call:self._run",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r28",
+   "anchor": "MovieWriter._run#assign:command",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r29",
+   "anchor": "MovieWriter.finish",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r30",
+   "anchor": "MovieWriter.finish#assign:out",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r31",
+   "anchor": "MovieWriter.grab_frame#call:_log.debug",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r32",
+   "anchor": "MovieWriter.grab_frame#call:self.fig.set_size_inches",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r33",
+   "anchor": "MovieWriter.grab_frame#call:self.fig.savefig",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r34",
+   "anchor": "MovieWriter._args",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r35",
+   "anchor": "MovieWriter.bin_path",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r36",
+   "anchor": "MovieWriter.isAvailable",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r37",
+   "anchor": "FileMovieWriter",
+   "kind": "doc",
+   "line": 383
+  },
+  {
+   "id": "r38",
+   "anchor": "FileMovieWriter.setup",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r39",
+   "anchor": "FileMovieWriter.setup#assign:self._frame_counter",
+   "kind": "trail",
+   "line": 425
+  },
+  {
+   "id": "r40",
+   "anchor": "FileMovieWriter.frame_format",
+   "kind": "doc",
+   "line": 434
+  },
+  {
+   "id": "r41",
+   "anchor": "FileMovieWriter._base_temp_name#return",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r42",
+   "anchor": "FileMovieWriter.grab_frame#assign:path",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r43",
+   "anchor": "FileMovieWriter.grab_frame#call:self._temp_paths.append",
+   "kind": "trail",
+   "line": 461
+  },
+  {
+   "id": "r44",
+   "anchor": "FileMovieWriter.grab_frame#assign:self._frame_counter",
+   "kind": "trail",
+   "line": 462
+  },
+  {
+   "id": "r45",
+   "anchor": "FileMovieWriter.grab_frame#with:open(path, 'wb')",
+   "kind": "trail",
+   "line": 465
+  },
+  {
+   "id": "r46",
+   "anchor": "FileMovieWriter.finish#try",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r47",
+   "anchor": "FFMpegBase",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r48",
+   "anchor": "FFMpegBase",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r49",
+   "anchor": "FFMpegBase.output_args#if:self.codec=='h264' and '-pix_fmt' not in extra_args",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r50",
+   "anchor": "FFMpegBase.output_args#if:self.codec=='h264' and '-pix_fmt' not in extra_args/elif:self.codec=='gif' and '-filter_complex' not in extra_args",
+   "kind": "lead",
+   "line": 536
+  },
+  {
+   "id": "r51",
+   "anchor": "FFMpegBase.output_args#if:self.bitrate>0/call:args.extend",
+   "kind": "trail",
+   "line": 540
+  },
+  {
+   "id": "r52",
+   "anchor": "FFMpegWriter",
+   "kind": "lead",
+   "line": 550
+  },
+  {
+   "id": "r53",
+   "anchor": "FFMpegWriter",
+   "kind": "doc",
+   "line": 550
+  },
+  {
+   "id": "r54",
+   "anchor": "FFMpegWriter._args#assign:args",
+   "kind": "lead",
+   "line": 560
+  },
+  {
+   "id": "r55",
+   "anchor": "FFMpegWriter._args#if:_log.getEffectiveLevel()>logging.DEBUG",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r56",
+   "anchor": "FFMpegFileWriter",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r57",
+   "anchor": "FFMpegFileWriter",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r58",
+   "anchor": "FFMpegFileWriter._args#assign:args",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r59",
+   "anchor": "FFMpegFileWriter._args#if:self.frame_format in {'raw', 'rgba'}",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r60",
+   "anchor": "FFMpegFileWriter._args#if:_log.getEffectiveLevel()>logging.DEBUG",
+   "kind": "lead",
+   "line": 600
+  },
+  {
+   "id": "r61",
+   "anchor": "ImageMagickBase",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r62",
+   "anchor": "ImageMagickBase",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r63",
+   "anchor": "ImageMagickBase._args#assign:fmt",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r64",
+   "anchor": "ImageMagickBase.isAvailable#try/except:mpl.ExecutableNotFoundError/call:_log.debug",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r65",
+   "anchor": "ImageMagickWriter",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r66",
+   "anchor": "ImageMagickWriter",
+   "kind": "doc",
+   "line": 665
+  },
+  {
+   "id": "r67",
+   "anchor": "ImageMagickWriter.input_names",
+   "kind": "trail",
+   "line": 673
+  },
+  {
+   "id": "r68",
+   "anchor": "ImageMagickFileWriter",
+   "kind": "lead",
+   "line": 678
+  },
+  {
+   "id": "r69",
+   "anchor": "ImageMagickFileWriter",
+   "kind": "doc",
+   "line": 678
+  },
+  {
+   "id": "r70",
+   "anchor": "_included_frames",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r71",
+   "anchor": "_included_frames",
+   "kind": "doc",
+   "line": 693
+  },
+  {
+   "id": "r72",
+   "anchor": "_embedded_frames",
+   "kind": "doc",
+   "line": 700
+  },
+  {
+   "id": "r73",
+   "anchor": "_embedded_frames#if:frame_format=='svg'/assign:frame_format",
+   "kind": "lead",
+   "line": 704
+  },
+  {
+   "id": "r74",
+   "anchor": "HTMLWriter",
+   "kind": "doc",
+   "line": 712
+  },
+  {
+   "id": "r75",
+   "anchor": "HTMLWriter.__init__#assign:extra_args",
+   "kind": "trail",
+   "line": 727
+  },
+  {
+   "id": "r76",
+   "anchor": "HTMLWriter.__init__#if:embed_limit is None",
+   "kind": "lead",
+   "line": 734
+  },
+  {
+   "id": "r77",
+   "anchor": "HTMLWriter.__init__#assign:self._bytes_limit",
+   "kind": "lead",
+   "line": 739
+  },
+  {
+   "id": "r78",
+   "anchor": "HTMLWriter.grab_frame#if:self.embed_frames/if:self._hit_limit",
+   "kind": "lead",
+   "line": 765
+  },
+  {
+   "id": "r79",
+   "anchor": "HTMLWriter.finish#if:self.embed_frames",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r80",
+   "anchor": "HTMLWriter.finish#if:self.embed_frames/else/assign:fill_frames",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r81",
+   "anchor": "HTMLWriter.finish#if:self._tmpdir",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r82",
+   "anchor": "Animation",
+   "kind": "doc",
+   "line": 821
+  },
+  {
+   "id": "r83",
+   "anchor": "Animation.__init__#assign:self._blit",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r84",
+   "anchor": "Animation.__init__#assign:self.frame_seq",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r85",
+   "anchor": "Animation.__init__#assign:self._first_draw_id",
+   "kind": "lead",
+   "line": 872
+  },
+  {
+   "id": "r86",
+   "anchor": "Animation.__init__#assign:self._close_id",
+   "kind": "lead",
+   "line": 876
+  },
+  {
+   "id": "r87",
+   "anchor": "Animation._start",
+   "kind": "doc",
+   "line": 891
+  },
+  {
+   "id": "r88",
+   "anchor": "Animation._start#if:self._fig.canvas.is_saving()",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r89",
+   "anchor": "Animation._start#call:self._fig.canvas.mpl_disconnect",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r90",
+   "anchor": "Animation._start#call:self._init_draw",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r91",
+   "anchor": "Animation._start#call:self.event_source.add_callback",
+   "kind": "lead",
+   "line": 907
+  },
+  {
+   "id": "r92",
+   "anchor": "Animation._stop#if:self._blit",
+   "kind": "lead",
+   "line": 912
+  },
+  {
+   "id": "r93",
+   "anchor": "Animation.save",
+   "kind": "doc",
+   "line": 918
+  },
+  {
+   "id": "r94",
+   "anchor": "Animation.save#if:fps is None and hasattr(self, '_interval')/assign:fps",
+   "kind": "lead",
+   "line": 1012
+  },
+  {
+   "id": "r95",
+   "anchor": "Animation.save#if:dpi is None",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r96",
+   "anchor": "Animation.save#if:isinstance(writer, str)",
+   "kind": "lead",
+   "line": 1038
+  },
+  {
+   "id": "r97",
+   "anchor": "Animation.save#if:isinstance(writer, str)/try/except:RuntimeError",
+   "kind": "trail",
+   "line": 1041
+  },
+  {
+   "id": "r98",
+   "anchor": "Animation.save#if:isinstance(writer, str)/try/except:RuntimeError/assign:writer_cls",
+   "kind": "trail",
+   "line": 1042
+  },
+  {
+   "id": "r99",
+   "anchor": "Animation.save#if:mpl.rcParams['savefig.bbox']=='tight'",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r100",
+   "anchor": "Animation.save#with:mpl.rc_context({'savefig.bbox': None})",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r101",
+   "anchor": "Animation.save#with:mpl.rc_context({'savefig.bbox': None})/for:anim in all_anim/call:anim._init_draw",
+   "kind": "trail",
+   "line": 1072
+  },
+  {
+   "id": "r102",
+   "anchor": "Animation.save#with:mpl.rc_context({'savefig.bbox': None})/assign:save_count_list",
+   "kind": "todo",
+   "line": 1076
+  },
+  {
+   "id": "r103",
+   "anchor": "Animation.save#with:mpl.rc_context({'savefig.bbox': None})/for:data in zip(*[a.new_saved_frame_seq() for a in all_anim])/for:anim, d in zip(all_anim, data)/call:anim._draw_next_frame",
+   "kind": "todo",
+   "line": 1085
+  },
+  {
+   "id": "r104",
+   "anchor": "Animation._step",
+   "kind": "doc",
+   "line": 1091
+  },
+  {
+   "id": "r105",
+   "anchor": "Animation._step#try",
+   "kind": "lead",
+   "line": 1099
+  },
+  {
+   "id": "r106",
+   "anchor": "Animation.new_frame_seq",
+   "kind": "doc",
+   "line": 1106
+  },
+  {
+   "id": "r107",
+   "anchor": "Animation.new_frame_seq#return",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r108",
+   "anchor": "Animation.new_saved_frame_seq",
+   "kind": "doc",
+   "line": 1111
+  },
+  {
+   "id": "r109",
+   "anchor": "Animation.new_saved_frame_seq#return",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r110",
+   "anchor": "Animation._draw_next_frame#call:self._pre_draw",
+   "kind": "lead",
+   "line": 1119
+  },
+  {
+   "id": "r111",
+   "anchor": "Animation._init_draw#assign:self._draw_was_started",
+   "kind": "lead",
+   "line": 1126
+  },
+  {
+   "id": "r112",
+   "anchor": "Animation._pre_draw#if:blit",
+   "kind": "lead",
+   "line": 1131
+  },
+  {
+   "id": "r113",
+   "anchor": "Animation._draw_frame#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1136
+  },
+  {
+   "id": "r114",
+   "anchor": "Animation._post_draw#if:blit and self._drawn_artists",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r115",
+   "anchor": "Animation._blit_draw",
+   "kind": "lead",
+   "line": 1149
+  },
+  {
+   "id": "r116",
+   "anchor": "Animation._blit_draw#assign:updated_ax",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r117",
+   "anchor": "Animation._blit_draw#for:ax in updated_ax",
+   "kind": "lead",
+   "line": 1155
+  },
+  {
+   "id": "r118",
+   "anchor": "Animation._blit_draw#for:ax in updated_ax/assign:cur_view",
+   "kind": "lead",
+   "line": 1159
+  },
+  {
+   "id": "r119",
+   "anchor": "Animation._blit_draw#for:a in artists",
+   "kind": "lead",
+   "line": 1165
+  },
+  {
+   "id": "r120",
+   "anchor": "Animation._blit_draw#for:ax in updated_ax",
+   "kind": "lead",
+   "line": 1168
+  },
+  {
+   "id": "r121",
+   "anchor": "Animation._blit_clear#assign:axes",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r122",
+   "anchor": "Animation._setup_blit#assign:self._blit_cache",
+   "kind": "lead",
+   "line": 1188
+  },
+  {
+   "id": "r123",
+   "anchor": "Animation._setup_blit#call:self._post_draw",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r124",
+   "anchor": "Animation._setup_blit#call:self._init_draw",
+   "kind": "lead",
+   "line": 1196
+  },
+  {
+   "id": "r125",
+   "anchor": "Animation._setup_blit#assign:self._resize_id",
+   "kind": "lead",
+   "line": 1198
+  },
+  {
+   "id": "r126",
+   "anchor": "Animation._on_resize#call:self._fig.canvas.mpl_disconnect",
+   "kind": "lead",
+   "line": 1206
+  },
+  {
+   "id": "r127",
+   "anchor": "Animation._end_redraw#call:self._post_draw",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r128",
+   "anchor": "Animation.to_html5_video",
+   "kind": "doc",
+   "line": 1222
+  },
+  {
+   "id": "r129",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r130",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')/if:embed_limit is None",
+   "kind": "lead",
+   "line": 1254
+  },
+  {
+   "id": "r131",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')/assign:embed_limit",
+   "kind": "lead",
+   "line": 1258
+  },
+  {
+   "id": "r132",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')/with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 1262
+  },
+  {
+   "id": "r133",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')/with:TemporaryDirectory()/assign:Writer",
+   "kind": "lead",
+   "line": 1266
+  },
+  {
+   "id": "r134",
+   "anchor": "Animation.to_html5_video#if:not hasattr(self, '_base64_video')/with:TemporaryDirectory()/assign:vid64",
+   "kind": "lead",
+   "line": 1272
+  },
+  {
+   "id": "r135",
+   "anchor": "Animation.to_html5_video#if:hasattr(self, '_base64_video')",
+   "kind": "lead",
+   "line": 1287
+  },
+  {
+   "id": "r136",
+   "anchor": "Animation.to_html5_video#if:hasattr(self, '_base64_video')/assign:options",
+   "kind": "lead",
+   "line": 1289
+  },
+  {
+   "id": "r137",
+   "anchor": "Animation.to_html5_video#if:hasattr(self, '_base64_video')/if:hasattr(self, 'repeat') and self.repeat",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r138",
+   "anchor": "Animation.to_jshtml",
+   "kind": "doc",
+   "line": 1301
+  },
+  {
+   "id": "r139",
+   "anchor": "Animation.to_jshtml#if:fps is None and hasattr(self, '_interval')/assign:fps",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r140",
+   "anchor": "Animation.to_jshtml#if:default_mode is None",
+   "kind": "lead",
+   "line": 1322
+  },
+  {
+   "id": "r141",
+   "anchor": "Animation.to_jshtml#if:not hasattr(self, \"_html_representation\")/with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 1328
+  },
+  {
+   "id": "r142",
+   "anchor": "Animation._repr_html_",
+   "kind": "doc",
+   "line": 1338
+  },
+  {
+   "id": "r143",
+   "anchor": "Animation.pause",
+   "kind": "doc",
+   "line": 1346
+  },
+  {
+   "id": "r144",
+   "anchor": "Animation.resume",
+   "kind": "doc",
+   "line": 1353
+  },
+  {
+   "id": "r145",
+   "anchor": "TimedAnimation",
+   "kind": "doc",
+   "line": 1361
+  },
+  {
+   "id": "r146",
+   "anchor": "TimedAnimation.__init__#assign:self._repeat_delay",
+   "kind": "lead",
+   "line": 1392
+  },
+  {
+   "id": "r147",
+   "anchor": "TimedAnimation.__init__#if:event_source is None",
+   "kind": "lead",
+   "line": 1396
+  },
+  {
+   "id": "r148",
+   "anchor": "TimedAnimation._step",
+   "kind": "doc",
+   "line": 1400
+  },
+  {
+   "id": "r149",
+   "anchor": "TimedAnimation._step#assign:still_going",
+   "kind": "lead",
+   "line": 1408
+  },
+  {
+   "id": "r150",
+   "anchor": "TimedAnimation._step#if:not still_going/if:self.repeat/call:self._init_draw",
+   "kind": "lead",
+   "line": 1412
+  },
+  {
+   "id": "r151",
+   "anchor": "TimedAnimation._step#if:not still_going/if:self.repeat/else/call:self.pause",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r152",
+   "anchor": "TimedAnimation._step#if:not still_going/if:self.repeat/else/if:self._blit/call:self._fig.canvas.mpl_disconnect",
+   "kind": "lead",
+   "line": 1422
+  },
+  {
+   "id": "r153",
+   "anchor": "ArtistAnimation",
+   "kind": "doc",
+   "line": 1431
+  },
+  {
+   "id": "r154",
+   "anchor": "ArtistAnimation.__init__#assign:self._drawn_artists",
+   "kind": "lead",
+   "line": 1464
+  },
+  {
+   "id": "r155",
+   "anchor": "ArtistAnimation.__init__#assign:self._framedata",
+   "kind": "lead",
+   "line": 1468
+  },
+  {
+   "id": "r156",
+   "anchor": "ArtistAnimation._init_draw#assign:figs",
+   "kind": "lead",
+   "line": 1474
+  },
+  {
+   "id": "r157",
+   "anchor": "ArtistAnimation._init_draw#for:f in self.new_frame_seq()/for:artist in f/if:artist.get_figure() not in figs",
+   "kind": "lead",
+   "line": 1480
+  },
+  {
+   "id": "r158",
+   "anchor": "ArtistAnimation._init_draw#for:fig in figs",
+   "kind": "lead",
+   "line": 1484
+  },
+  {
+   "id": "r159",
+   "anchor": "ArtistAnimation._pre_draw",
+   "kind": "doc",
+   "line": 1487
+  },
+  {
+   "id": "r160",
+   "anchor": "ArtistAnimation._pre_draw#if:blit/call:self._blit_clear",
+   "kind": "lead",
+   "line": 1491
+  },
+  {
+   "id": "r161",
+   "anchor": "ArtistAnimation._pre_draw#if:blit/else/for:artist in self._drawn_artists",
+   "kind": "lead",
+   "line": 1494
+  },
+  {
+   "id": "r162",
+   "anchor": "ArtistAnimation._draw_frame#assign:self._drawn_artists",
+   "kind": "lead",
+   "line": 1500
+  },
+  {
+   "id": "r163",
+   "anchor": "ArtistAnimation._draw_frame#for:artist in artists",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r164",
+   "anchor": "FuncAnimation",
+   "kind": "doc",
+   "line": 1507
+  },
+  {
+   "id": "r165",
+   "anchor": "FuncAnimation.__init__#assign:self.save_count",
+   "kind": "lead",
+   "line": 1609
+  },
+  {
+   "id": "r166",
+   "anchor": "FuncAnimation.__init__#if:frames is None",
+   "kind": "lead",
+   "line": 1615
+  },
+  {
+   "id": "r167",
+   "anchor": "FuncAnimation.__init__#if:self.save_count is None/assign:self.save_count",
+   "kind": "lead",
+   "line": 1636
+  },
+  {
+   "id": "r168",
+   "anchor": "FuncAnimation.__init__#if:self.save_count is None/else/assign:self.save_count",
+   "kind": "lead",
+   "line": 1641
+  },
+  {
+   "id": "r169",
+   "anchor": "FuncAnimation.__init__#assign:self._save_seq",
+   "kind": "lead",
+   "line": 1646
+  },
+  {
+   "id": "r170",
+   "anchor": "FuncAnimation.__init__#assign:self._save_seq",
+   "kind": "lead",
+   "line": 1652
+  },
+  {
+   "id": "r171",
+   "anchor": "FuncAnimation.new_frame_seq#return",
+   "kind": "lead",
+   "line": 1656
+  },
+  {
+   "id": "r172",
+   "anchor": "FuncAnimation.new_saved_frame_seq#if:self._save_seq",
+   "kind": "lead",
+   "line": 1662
+  },
+  {
+   "id": "r173",
+   "anchor": "FuncAnimation.new_saved_frame_seq#if:self._save_seq/assign:self._old_saved_seq",
+   "kind": "lead",
+   "line": 1665
+  },
+  {
+   "id": "r174",
+   "anchor": "FuncAnimation._init_draw#if:self._init_func is None",
+   "kind": "lead",
+   "line": 1695
+  },
+  {
+   "id": "r175",
+   "anchor": "FuncAnimation._init_draw#if:self._init_func is None/try/except:StopIteration/call:warnings.warn",
+   "kind": "lead",
+   "line": 1702
+  },
+  {
+   "id": "r176",
+   "anchor": "FuncAnimation._draw_frame#if:self._cache_frame_data/call:self._save_seq.append",
+   "kind": "lead",
+   "line": 1724
+  },
+  {
+   "id": "r177",
+   "anchor": "FuncAnimation._draw_frame#assign:self._save_seq",
+   "kind": "lead",
+   "line": 1728
+  },
+  {
+   "id": "r178",
+   "anchor": "FuncAnimation._draw_frame#assign:self._drawn_artists",
+   "kind": "lead",
+   "line": 1732
+  },
+  {
+   "id": "r179",
+   "anchor": "FuncAnimation._draw_frame#if:self._blit/try/call:iter",
+   "kind": "lead",
+   "line": 1740
+  },
+  {
+   "id": "r180",
+   "anchor": "FuncAnimation._draw_frame#if:self._blit/for:i in self._drawn_artists",
+   "kind": "lead",
+   "line": 1745
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 42251,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 17809,
+  "thinking_tokens": 9265,
+  "opus_cost_usd": 0.8720264999999999,
+  "total_cost_usd": 0.9048714999999999,
+  "duration_ms": 146375,
+  "duration_api_ms": 147549,
+  "num_turns": 2
+ },
+ "wall_ms": 147333,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

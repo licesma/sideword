@@ -1,0 +1,421 @@
+{
+ "blob_sha": "d150bc5bc1fd3cdf2f71d72b1235ad07cd1a3f95",
+ "path": "astropy/units/function/core.py",
+ "repo": "astropy/astropy",
+ "records": 66,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "SUPPORTED_FUNCTIONS",
+   "kind": "todo",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "FunctionUnitBase",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r5",
+   "anchor": "FunctionUnitBase",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r6",
+   "anchor": "FunctionUnitBase._default_function_unit",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r7",
+   "anchor": "FunctionUnitBase._default_function_unit",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r8",
+   "anchor": "FunctionUnitBase._quantity_class",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r9",
+   "anchor": "FunctionUnitBase._quantity_class",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r10",
+   "anchor": "FunctionUnitBase.from_physical",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r11",
+   "anchor": "FunctionUnitBase.to_physical",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r12",
+   "anchor": "FunctionUnitBase.to_physical",
+   "kind": "post",
+   "line": 82
+  },
+  {
+   "id": "r13",
+   "anchor": "FunctionUnitBase.__array_priority__",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r14",
+   "anchor": "FunctionUnitBase.__init__#if:function_unit is None/else/assign:function_unit",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r15",
+   "anchor": "FunctionUnitBase._copy",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r16",
+   "anchor": "FunctionUnitBase.equivalencies",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r17",
+   "anchor": "FunctionUnitBase.decompose",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r18",
+   "anchor": "FunctionUnitBase.decompose",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r19",
+   "anchor": "FunctionUnitBase.si",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r20",
+   "anchor": "FunctionUnitBase.cgs",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r21",
+   "anchor": "FunctionUnitBase._get_physical_type_id",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r22",
+   "anchor": "FunctionUnitBase.physical_type",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r23",
+   "anchor": "FunctionUnitBase.is_equivalent",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r24",
+   "anchor": "FunctionUnitBase.to",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r25",
+   "anchor": "FunctionUnitBase.to#if:other is self.physical_unit",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r26",
+   "anchor": "FunctionUnitBase.to#if:self.function_unit.is_equivalent(other_function_unit)/assign:other_physical_unit",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r27",
+   "anchor": "FunctionUnitBase.to#if:self.function_unit.is_equivalent(other_function_unit)/if:self.physical_unit != other_physical_unit/assign:value",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r28",
+   "anchor": "FunctionUnitBase.to#if:self.function_unit.is_equivalent(other_function_unit)/return",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r29",
+   "anchor": "FunctionUnitBase.to#if:self.function_unit.is_equivalent(other_function_unit)/else/return",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r30",
+   "anchor": "FunctionUnitBase.__mul__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/if:self.physical_unit == dimensionless_unscaled/return",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r31",
+   "anchor": "FunctionUnitBase.__mul__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/else/try",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r32",
+   "anchor": "FunctionUnitBase.__div__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/if:self.physical_unit == dimensionless_unscaled/return",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r33",
+   "anchor": "FunctionUnitBase.__div__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/else/try",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r34",
+   "anchor": "FunctionUnitBase.__rdiv__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/if:self.physical_unit == dimensionless_unscaled/return",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r35",
+   "anchor": "FunctionUnitBase.__rdiv__#if:isinstance(other, (str, UnitBase, FunctionUnitBase))/else/return",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r36",
+   "anchor": "FunctionUnitBase.to_string",
+   "kind": "doc",
+   "line": 334
+  },
+  {
+   "id": "r37",
+   "anchor": "FunctionUnitBase.to_string#if:format == 'latex'/assign:self_str",
+   "kind": "trail",
+   "line": 357
+  },
+  {
+   "id": "r38",
+   "anchor": "FunctionUnitBase.__str__",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r39",
+   "anchor": "FunctionUnitBase.__repr__#if:callable(self.function_unit)",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r40",
+   "anchor": "FunctionUnitBase._repr_latex_",
+   "kind": "doc",
+   "line": 382
+  },
+  {
+   "id": "r41",
+   "anchor": "FunctionQuantity",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r42",
+   "anchor": "FunctionQuantity._unit_class",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r43",
+   "anchor": "FunctionQuantity.__array_priority__",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r44",
+   "anchor": "FunctionQuantity._supported_ufuncs",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r45",
+   "anchor": "FunctionQuantity.__new__#if:unit is not None/assign:unit",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r46",
+   "anchor": "FunctionQuantity.__new__#if:not isinstance(unit, FunctionUnitBase)/assign:value_unit",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r47",
+   "anchor": "FunctionQuantity.__new__#if:not isinstance(unit, FunctionUnitBase)/if:value_unit is None/try",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r48",
+   "anchor": "FunctionQuantity.__new__#return",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r49",
+   "anchor": "FunctionQuantity.physical",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r50",
+   "anchor": "FunctionQuantity.physical",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r51",
+   "anchor": "FunctionQuantity._function_view",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r52",
+   "anchor": "FunctionQuantity.si",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r53",
+   "anchor": "FunctionQuantity.si",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r54",
+   "anchor": "FunctionQuantity.cgs",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r55",
+   "anchor": "FunctionQuantity.decompose",
+   "kind": "doc",
+   "line": 522
+  },
+  {
+   "id": "r56",
+   "anchor": "FunctionQuantity.__array_prepare__",
+   "kind": "lead",
+   "line": 530
+  },
+  {
+   "id": "r57",
+   "anchor": "FunctionQuantity.__array_prepare__",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r58",
+   "anchor": "FunctionQuantity.__array_prepare__#if:context is None",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r59",
+   "anchor": "FunctionQuantity.__array_prepare__#assign:function",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r60",
+   "anchor": "FunctionQuantity._set_unit#if:not isinstance(unit, self._unit_class)/try",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r61",
+   "anchor": "FunctionQuantity._set_unit#if:not isinstance(unit, self._unit_class)/try/assign:unit",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r62",
+   "anchor": "FunctionQuantity.__mul__",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r63",
+   "anchor": "FunctionQuantity._comparison",
+   "kind": "doc",
+   "line": 592
+  },
+  {
+   "id": "r64",
+   "anchor": "FunctionQuantity._comparison#try/assign:other_in_own_unit",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r65",
+   "anchor": "FunctionQuantity._wrap_function",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r66",
+   "anchor": "FunctionQuantity._wrap_function#if:all(arg.unit.physical_unit == dimensionless_unscaled for arg in (self,) + args if (hasattr(arg, 'unit') and hasattr(arg.unit, 'physical_unit')))",
+   "kind": "lead",
+   "line": 644
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16898,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6898,
+  "thinking_tokens": 3573,
+  "opus_cost_usd": 0.3457215,
+  "total_cost_usd": 0.3579375,
+  "duration_ms": 60311,
+  "duration_api_ms": 61621,
+  "num_turns": 2
+ },
+ "wall_ms": 61335,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

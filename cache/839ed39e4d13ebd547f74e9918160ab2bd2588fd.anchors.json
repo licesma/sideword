@@ -1,0 +1,1009 @@
+{
+ "blob_sha": "839ed39e4d13ebd547f74e9918160ab2bd2588fd",
+ "path": "astropy/io/ascii/core.py",
+ "repo": "astropy/astropy",
+ "records": 164,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "FORMAT_CLASSES",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "FAST_CLASSES",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r5",
+   "anchor": "_check_multidim_table",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "_check_multidim_table#if:max_ndim is None",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r7",
+   "anchor": "_check_multidim_table#assign:nd_names",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r8",
+   "anchor": "CsvWriter",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r9",
+   "anchor": "CsvWriter.replace_sentinel",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r10",
+   "anchor": "CsvWriter.temp_out",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r11",
+   "anchor": "CsvWriter.writerow",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r12",
+   "anchor": "CsvWriter.writerow#if:self.quote_empty",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r13",
+   "anchor": "CsvWriter.writerows",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r14",
+   "anchor": "CsvWriter.writerows#if:self.quote_empty",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r15",
+   "anchor": "CsvWriter._writerow",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r16",
+   "anchor": "CsvWriter._writerow#call:self.temp_out.seek",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r17",
+   "anchor": "CsvWriter._writerow#if:self.csvfile",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r18",
+   "anchor": "MaskedConstant",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r19",
+   "anchor": "MaskedConstant.__hash__",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r20",
+   "anchor": "MaskedConstant.__hash__#return",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r21",
+   "anchor": "MaskedConstant.__copy__",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r22",
+   "anchor": "InconsistentTableError",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r23",
+   "anchor": "OptionalTableImportError",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r24",
+   "anchor": "ParameterError",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r25",
+   "anchor": "FastOptionsError",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r26",
+   "anchor": "NoType",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r27",
+   "anchor": "StrType",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r28",
+   "anchor": "NumType",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r29",
+   "anchor": "FloatType",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r30",
+   "anchor": "BoolType",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r31",
+   "anchor": "IntType",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r32",
+   "anchor": "AllType",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r33",
+   "anchor": "Column",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r34",
+   "anchor": "Column.type",
+   "kind": "trail",
+   "line": 290
+  },
+  {
+   "id": "r35",
+   "anchor": "Column.dtype",
+   "kind": "trail",
+   "line": 291
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseInputter",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseInputter.encoding",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseInputter.get_lines",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseInputter.get_lines#try/except:TypeError/try/expr:table[0]",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseInputter.get_lines#try/except:TypeError/try/if:len(table) > 1/else/if:newline is None",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseInputter.process_lines",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseSplitter",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseSplitter.delimiter",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseSplitter.process_line",
+   "kind": "doc",
+   "line": 400
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseSplitter.process_val",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r46",
+   "anchor": "DefaultSplitter",
+   "kind": "doc",
+   "line": 428
+  },
+  {
+   "id": "r47",
+   "anchor": "DefaultSplitter.delimiter",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r48",
+   "anchor": "DefaultSplitter.quotechar",
+   "kind": "doc",
+   "line": 444
+  },
+  {
+   "id": "r49",
+   "anchor": "DefaultSplitter.doublequote",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r50",
+   "anchor": "DefaultSplitter.escapechar",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r51",
+   "anchor": "DefaultSplitter.quoting",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r52",
+   "anchor": "DefaultSplitter.skipinitialspace",
+   "kind": "doc",
+   "line": 452
+  },
+  {
+   "id": "r53",
+   "anchor": "DefaultSplitter.process_line",
+   "kind": "doc",
+   "line": 457
+  },
+  {
+   "id": "r54",
+   "anchor": "DefaultSplitter.process_val",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r55",
+   "anchor": "DefaultSplitter.__call__",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r56",
+   "anchor": "_replace_tab_with_space",
+   "kind": "doc",
+   "line": 523
+  },
+  {
+   "id": "r57",
+   "anchor": "_get_line_index",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseHeader",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseHeader.auto_format",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseHeader.start_line",
+   "kind": "doc",
+   "line": 576
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseHeader.comment",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseHeader.splitter_class",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseHeader.names",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseHeader.update_meta",
+   "kind": "doc",
+   "line": 593
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseHeader.get_cols",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseHeader.get_cols#if:start_line is None/try",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseHeader.get_cols#if:start_line is None/else/for:i, line in enumerate(self.process_lines(lines))/else",
+   "kind": "trail",
+   "line": 639
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseHeader.process_lines",
+   "kind": "doc",
+   "line": 646
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseHeader.process_lines#for:line in lines",
+   "kind": "lead",
+   "line": 650
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseHeader.colnames",
+   "kind": "doc",
+   "line": 668
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseHeader.remove_columns",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseHeader.rename_column",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseHeader.rename_column#if:isinstance(col, Column)",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseHeader.check_column_names",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseHeader.check_column_names#if:strict_names/assign:bads",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseHeader.check_column_names#if:guessing and len(self.colnames) <= 1 and self.__class__.__name__ != \"EcsvHeader\"",
+   "kind": "lead",
+   "line": 760
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseData",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseData.start_line",
+   "kind": "doc",
+   "line": 783
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseData.end_line",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseData.comment",
+   "kind": "doc",
+   "line": 787
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseData.splitter_class",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseData.__init__#assign:self.fill_values",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseData.process_lines",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r84",
+   "anchor": "BaseData.get_data_lines",
+   "kind": "doc",
+   "line": 828
+  },
+  {
+   "id": "r85",
+   "anchor": "BaseData.get_data_lines#if:start_line is not None or end_line is not None/else",
+   "kind": "trail",
+   "line": 838
+  },
+  {
+   "id": "r86",
+   "anchor": "BaseData.get_str_vals",
+   "kind": "doc",
+   "line": 841
+  },
+  {
+   "id": "r87",
+   "anchor": "BaseData.masks",
+   "kind": "doc",
+   "line": 847
+  },
+  {
+   "id": "r88",
+   "anchor": "BaseData._set_fill_values",
+   "kind": "doc",
+   "line": 858
+  },
+  {
+   "id": "r89",
+   "anchor": "BaseData._set_fill_values#if:self.fill_values/for:col in cols",
+   "kind": "lead",
+   "line": 869
+  },
+  {
+   "id": "r90",
+   "anchor": "BaseData._set_fill_values#if:self.fill_values/with:suppress(TypeError)",
+   "kind": "lead",
+   "line": 874
+  },
+  {
+   "id": "r91",
+   "anchor": "BaseData._set_fill_values#if:self.fill_values/assign:colnames",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r92",
+   "anchor": "BaseData._set_fill_values#if:self.fill_values/for:replacement in reversed(self.fill_values)",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r93",
+   "anchor": "BaseData._set_masks",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r94",
+   "anchor": "BaseData._replace_vals",
+   "kind": "doc",
+   "line": 918
+  },
+  {
+   "id": "r95",
+   "anchor": "BaseData.str_vals",
+   "kind": "doc",
+   "line": 931
+  },
+  {
+   "id": "r96",
+   "anchor": "BaseData.write",
+   "kind": "doc",
+   "line": 950
+  },
+  {
+   "id": "r97",
+   "anchor": "BaseData._set_col_formats",
+   "kind": "doc",
+   "line": 970
+  },
+  {
+   "id": "r98",
+   "anchor": "convert_numpy",
+   "kind": "doc",
+   "line": 977
+  },
+  {
+   "id": "r99",
+   "anchor": "convert_numpy#assign:type_name",
+   "kind": "lead",
+   "line": 1005
+  },
+  {
+   "id": "r100",
+   "anchor": "convert_numpy.bool_converter",
+   "kind": "doc",
+   "line": 1017
+  },
+  {
+   "id": "r101",
+   "anchor": "convert_numpy.bool_converter#if:len(vals) > 10000",
+   "kind": "lead",
+   "line": 1026
+  },
+  {
+   "id": "r102",
+   "anchor": "BaseOutputter",
+   "kind": "doc",
+   "line": 1049
+  },
+  {
+   "id": "r103",
+   "anchor": "BaseOutputter.converters",
+   "kind": "lead",
+   "line": 1056
+  },
+  {
+   "id": "r104",
+   "anchor": "BaseOutputter._validate_and_copy",
+   "kind": "lead",
+   "line": 1061
+  },
+  {
+   "id": "r105",
+   "anchor": "BaseOutputter._validate_and_copy",
+   "kind": "doc",
+   "line": 1061
+  },
+  {
+   "id": "r106",
+   "anchor": "BaseOutputter._validate_and_copy#try",
+   "kind": "lead",
+   "line": 1068
+  },
+  {
+   "id": "r107",
+   "anchor": "BaseOutputter._validate_and_copy#try/assert:type(converters) is type",
+   "kind": "lead",
+   "line": 1070
+  },
+  {
+   "id": "r108",
+   "anchor": "BaseOutputter._convert_vals#for:col in cols/assign:last_err",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r109",
+   "anchor": "BaseOutputter._convert_vals#for:col in cols/while:not hasattr(col, \"data\")/if:not col.converters",
+   "kind": "lead",
+   "line": 1119
+  },
+  {
+   "id": "r110",
+   "anchor": "BaseOutputter._convert_vals#for:col in cols/while:not hasattr(col, \"data\")/try/except:(OverflowError, TypeError, ValueError)/if:isinstance(err, OverflowError) or (isinstance(err, ValueError) and str(err).startswith(\"Exceeds the limit\"))",
+   "kind": "lead",
+   "line": 1136
+  },
+  {
+   "id": "r111",
+   "anchor": "_deduplicate_names",
+   "kind": "doc",
+   "line": 1151
+  },
+  {
+   "id": "r112",
+   "anchor": "_deduplicate_names#for:name in names/while:name in existing_names/assign:name",
+   "kind": "lead",
+   "line": 1165
+  },
+  {
+   "id": "r113",
+   "anchor": "TableOutputter",
+   "kind": "doc",
+   "line": 1173
+  },
+  {
+   "id": "r114",
+   "anchor": "TableOutputter.__call__#call:self._convert_vals",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r115",
+   "anchor": "_apply_include_exclude_names",
+   "kind": "doc",
+   "line": 1257
+  },
+  {
+   "id": "r116",
+   "anchor": "_apply_include_exclude_names.rename_columns#assign:xxxs",
+   "kind": "lead",
+   "line": 1281
+  },
+  {
+   "id": "r117",
+   "anchor": "BaseReader",
+   "kind": "doc",
+   "line": 1306
+  },
+  {
+   "id": "r118",
+   "anchor": "BaseReader.max_ndim",
+   "kind": "lead",
+   "line": 1334
+  },
+  {
+   "id": "r119",
+   "anchor": "BaseReader.__init__#assign:self.data.header",
+   "kind": "lead",
+   "line": 1344
+  },
+  {
+   "id": "r120",
+   "anchor": "BaseReader.meta",
+   "kind": "lead",
+   "line": 1350
+  },
+  {
+   "id": "r121",
+   "anchor": "BaseReader._check_multidim_table",
+   "kind": "doc",
+   "line": 1352
+  },
+  {
+   "id": "r122",
+   "anchor": "BaseReader.read",
+   "kind": "doc",
+   "line": 1371
+  },
+  {
+   "id": "r123",
+   "anchor": "BaseReader.read#with:suppress(TypeError)",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r124",
+   "anchor": "BaseReader.read#with:suppress(TypeError)/if:os.linesep not in table + \"\"",
+   "kind": "lead",
+   "line": 1400
+  },
+  {
+   "id": "r125",
+   "anchor": "BaseReader.read#if:self.header.splitter.delimiter == \"\\n\"",
+   "kind": "lead",
+   "line": 1405
+  },
+  {
+   "id": "r126",
+   "anchor": "BaseReader.read#assign:self.lines",
+   "kind": "lead",
+   "line": 1413
+  },
+  {
+   "id": "r127",
+   "anchor": "BaseReader.read#call:self.data.get_data_lines",
+   "kind": "lead",
+   "line": 1416
+  },
+  {
+   "id": "r128",
+   "anchor": "BaseReader.read#call:self.header.update_meta",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r129",
+   "anchor": "BaseReader.read#call:self.header.get_cols",
+   "kind": "lead",
+   "line": 1422
+  },
+  {
+   "id": "r130",
+   "anchor": "BaseReader.read#call:self.header.check_column_names",
+   "kind": "lead",
+   "line": 1425
+  },
+  {
+   "id": "r131",
+   "anchor": "BaseReader.read#for:i, str_vals in enumerate(self.data.get_str_vals())/if:len(str_vals) != n_cols/if:str_vals is None",
+   "kind": "lead",
+   "line": 1436
+  },
+  {
+   "id": "r132",
+   "anchor": "BaseReader.read#for:i, str_vals in enumerate(self.data.get_str_vals())/if:len(str_vals) != n_cols/if:len(str_vals) != n_cols",
+   "kind": "lead",
+   "line": 1440
+  },
+  {
+   "id": "r133",
+   "anchor": "BaseReader.inconsistent_handler",
+   "kind": "doc",
+   "line": 1468
+  },
+  {
+   "id": "r134",
+   "anchor": "BaseReader.inconsistent_handler#return",
+   "kind": "lead",
+   "line": 1494
+  },
+  {
+   "id": "r135",
+   "anchor": "BaseReader.comment_lines",
+   "kind": "doc",
+   "line": 1497
+  },
+  {
+   "id": "r136",
+   "anchor": "BaseReader.update_table_data",
+   "kind": "doc",
+   "line": 1510
+  },
+  {
+   "id": "r137",
+   "anchor": "BaseReader.write",
+   "kind": "doc",
+   "line": 1534
+  },
+  {
+   "id": "r138",
+   "anchor": "BaseReader.write#assign:self.header.cols",
+   "kind": "lead",
+   "line": 1550
+  },
+  {
+   "id": "r139",
+   "anchor": "BaseReader.write#call:_apply_include_exclude_names",
+   "kind": "lead",
+   "line": 1556
+  },
+  {
+   "id": "r140",
+   "anchor": "BaseReader.write#assign:table",
+   "kind": "lead",
+   "line": 1563
+  },
+  {
+   "id": "r141",
+   "anchor": "BaseReader.write#call:self._check_multidim_table",
+   "kind": "lead",
+   "line": 1567
+  },
+  {
+   "id": "r142",
+   "anchor": "BaseReader.write#assign:new_cols",
+   "kind": "lead",
+   "line": 1570
+  },
+  {
+   "id": "r143",
+   "anchor": "BaseReader.write#assign:self.header.cols",
+   "kind": "lead",
+   "line": 1572
+  },
+  {
+   "id": "r144",
+   "anchor": "BaseReader.write#assign:lines",
+   "kind": "lead",
+   "line": 1577
+  },
+  {
+   "id": "r145",
+   "anchor": "ContinuationLinesInputter",
+   "kind": "doc",
+   "line": 1584
+  },
+  {
+   "id": "r146",
+   "anchor": "ContinuationLinesInputter.no_continue",
+   "kind": "lead",
+   "line": 1601
+  },
+  {
+   "id": "r147",
+   "anchor": "WhitespaceSplitter.process_line",
+   "kind": "doc",
+   "line": 1622
+  },
+  {
+   "id": "r148",
+   "anchor": "_get_reader",
+   "kind": "doc",
+   "line": 1664
+  },
+  {
+   "id": "r149",
+   "anchor": "_get_reader#if:issubclass(Reader, FastBasic)",
+   "kind": "trail",
+   "line": 1671
+  },
+  {
+   "id": "r150",
+   "anchor": "_get_reader#if:\"fast_reader\" in kwargs",
+   "kind": "lead",
+   "line": 1678
+  },
+  {
+   "id": "r151",
+   "anchor": "_get_reader#if:\"fast_reader\" in kwargs/if:kwargs[\"fast_reader\"][\"enable\"] == \"force\"/else/del:kwargs[\"fast_reader\"]",
+   "kind": "trail",
+   "line": 1687
+  },
+  {
+   "id": "r152",
+   "anchor": "_get_reader#try",
+   "kind": "lead",
+   "line": 1700
+  },
+  {
+   "id": "r153",
+   "anchor": "_get_reader#try/except:TypeError",
+   "kind": "trail",
+   "line": 1702
+  },
+  {
+   "id": "r154",
+   "anchor": "_get_reader#if:\"delimiter\" in kwargs",
+   "kind": "lead",
+   "line": 1707
+  },
+  {
+   "id": "r155",
+   "anchor": "_get_reader#if:\"header_start\" in kwargs/if:reader.header.start_line is not None/if:(\"data_start\" not in kwargs) and (default_header_length is not None) and reader._format_name not in [\"fixed_width_two_line\", \"commented_header\"]",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r156",
+   "anchor": "_get_reader#if:\"header_start\" in kwargs/if:reader.header.start_line is not None/elif:kwargs[\"header_start\"] is not None/raise:ValueError",
+   "kind": "lead",
+   "line": 1740
+  },
+  {
+   "id": "r157",
+   "anchor": "_get_reader#if:\"strict_names\" in kwargs",
+   "kind": "lead",
+   "line": 1761
+  },
+  {
+   "id": "r158",
+   "anchor": "_get_writer",
+   "kind": "doc",
+   "line": 1791
+  },
+  {
+   "id": "r159",
+   "anchor": "_get_writer#if:\"fill_values\" in kwargs and kwargs[\"fill_values\"] is None",
+   "kind": "lead",
+   "line": 1802
+  },
+  {
+   "id": "r160",
+   "anchor": "_get_writer#if:issubclass(Writer, FastBasic)",
+   "kind": "trail",
+   "line": 1805
+  },
+  {
+   "id": "r161",
+   "anchor": "_get_writer#if:issubclass(Writer, FastBasic)/elif:fast_writer and f\"fast_{Writer._format_name}\" in FAST_CLASSES/assign:kwargs[\"fast_writer\"]",
+   "kind": "lead",
+   "line": 1809
+  },
+  {
+   "id": "r162",
+   "anchor": "_get_writer#if:\"strip_whitespace\" in kwargs/if:kwargs[\"strip_whitespace\"]/assign:writer.data.splitter.process_val",
+   "kind": "lead",
+   "line": 1831
+  },
+  {
+   "id": "r163",
+   "anchor": "_get_writer#if:\"fill_values\" in kwargs/with:suppress(TypeError, IndexError)",
+   "kind": "lead",
+   "line": 1842
+  },
+  {
+   "id": "r164",
+   "anchor": "_get_writer#if:\"fill_values\" in kwargs/with:suppress(TypeError, IndexError)/expr:kwargs[\"fill_values\"][1] + \"\"",
+   "kind": "lead",
+   "line": 1845
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 40068,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14171,
+  "thinking_tokens": 6883,
+  "opus_cost_usd": 0.7592464999999999,
+  "total_cost_usd": 0.7910394999999999,
+  "duration_ms": 118504,
+  "duration_api_ms": 120366,
+  "num_turns": 2
+ },
+ "wall_ms": 119648,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

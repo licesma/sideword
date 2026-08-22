@@ -1,0 +1,271 @@
+{
+ "blob_sha": "8c06168b41ece1eef26b68df3bd1d80c0088b96d",
+ "path": "astropy/coordinates/spectral_coordinate.py",
+ "repo": "astropy/astropy",
+ "records": 41,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DEFAULT_DISTANCE",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r2",
+   "anchor": "__doctest_skip__",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r3",
+   "anchor": "_apply_relativistic_doppler_shift",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r4",
+   "anchor": "_apply_relativistic_doppler_shift#assign:squantity",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r5",
+   "anchor": "_apply_relativistic_doppler_shift#if:squantity.unit.is_equivalent(u.m)",
+   "kind": "trail",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "_apply_relativistic_doppler_shift#if:squantity.unit.is_equivalent(u.m)/elif:squantity.unit.is_equivalent(KMS)",
+   "kind": "trail",
+   "line": 67
+  },
+  {
+   "id": "r7",
+   "anchor": "update_differentials_to_match",
+   "kind": "doc",
+   "line": 76
+  },
+  {
+   "id": "r8",
+   "anchor": "update_differentials_to_match#if:\"obstime\" in velocity_reference.frame_attributes and hasattr(original, \"obstime\")",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r9",
+   "anchor": "update_differentials_to_match#assign:original_icrs",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r10",
+   "anchor": "attach_zero_velocities",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r11",
+   "anchor": "SpectralCoord",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r12",
+   "anchor": "SpectralCoord.__new__#if:target is not None and observer is not None",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r13",
+   "anchor": "SpectralCoord.__new__#if:redshift is not None",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r14",
+   "anchor": "SpectralCoord.__new__#if:redshift is not None/if:not redshift.unit.is_equivalent(u.one)",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r15",
+   "anchor": "SpectralCoord.__new__#if:observer is None",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r16",
+   "anchor": "SpectralCoord.__new__#if:observer is None or target is None",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r17",
+   "anchor": "SpectralCoord._validate_coordinate",
+   "kind": "doc",
+   "line": 250
+  },
+  {
+   "id": "r18",
+   "anchor": "SpectralCoord._validate_coordinate#with:np.errstate(all=\"ignore\")",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r19",
+   "anchor": "SpectralCoord._validate_coordinate#if:\"s\" not in coord.data.differentials",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r20",
+   "anchor": "SpectralCoord.replicate",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r21",
+   "anchor": "SpectralCoord.replicate#if:copy",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r22",
+   "anchor": "SpectralCoord.replicate#if:(self.observer is None or self.target is None) and radial_velocity is None and redshift is None",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r23",
+   "anchor": "SpectralCoord.quantity",
+   "kind": "doc",
+   "line": 400
+  },
+  {
+   "id": "r24",
+   "anchor": "SpectralCoord.observer",
+   "kind": "doc",
+   "line": 414
+  },
+  {
+   "id": "r25",
+   "anchor": "SpectralCoord.observer#if:self._target is not None",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r26",
+   "anchor": "SpectralCoord.target",
+   "kind": "doc",
+   "line": 440
+  },
+  {
+   "id": "r27",
+   "anchor": "SpectralCoord.target#if:self._observer is not None",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r28",
+   "anchor": "SpectralCoord.radial_velocity",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r29",
+   "anchor": "SpectralCoord.redshift",
+   "kind": "doc",
+   "line": 492
+  },
+  {
+   "id": "r30",
+   "anchor": "SpectralCoord._calculate_radial_velocity",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r31",
+   "anchor": "SpectralCoord._calculate_radial_velocity#assign:observer_icrs",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r32",
+   "anchor": "SpectralCoord._normalized_position_vector",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r33",
+   "anchor": "SpectralCoord._normalized_position_vector#assign:dp_norm[dp_norm == 0]",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r34",
+   "anchor": "SpectralCoord.with_observer_stationary_relative_to",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r35",
+   "anchor": "SpectralCoord.with_observer_stationary_relative_to#if:isinstance(frame, SkyCoord)",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r36",
+   "anchor": "SpectralCoord.with_observer_stationary_relative_to#if:isinstance(frame, BaseCoordinateFrame)/if:frame.data.differentials/if:velocity is not None",
+   "kind": "post",
+   "line": 624
+  },
+  {
+   "id": "r37",
+   "anchor": "SpectralCoord.with_observer_stationary_relative_to#assign:init_obs_vel",
+   "kind": "lead",
+   "line": 661
+  },
+  {
+   "id": "r38",
+   "anchor": "SpectralCoord.with_observer_stationary_relative_to#assign:new_data",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r39",
+   "anchor": "SpectralCoord.with_radial_velocity_shift",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r40",
+   "anchor": "SpectralCoord.with_radial_velocity_shift#if:target_shift is None",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r41",
+   "anchor": "SpectralCoord.to_rest",
+   "kind": "doc",
+   "line": 765
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18871,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3976,
+  "thinking_tokens": 1878,
+  "opus_cost_usd": 0.2924015,
+  "total_cost_usd": 0.3061025,
+  "duration_ms": 36965,
+  "duration_api_ms": 38153,
+  "num_turns": 2
+ },
+ "wall_ms": 37852,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

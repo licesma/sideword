@@ -1,0 +1,1375 @@
+{
+ "blob_sha": "1dad3278622102895d37848212d07a6ba6e771b6",
+ "path": "astropy/io/fits/column.py",
+ "repo": "astropy/astropy",
+ "records": 225,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "FITS2NUMPY",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r3",
+   "anchor": "NUMPY2FITS",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#assign:NUMPY2FITS['b1']",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#assign:NUMPY2FITS['u2']",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#assign:NUMPY2FITS['f2']",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r7",
+   "anchor": "FORMATORDER",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r8",
+   "anchor": "FITSUPCONVERTERS",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r9",
+   "anchor": "ASCII2NUMPY",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r10",
+   "anchor": "ASCII2STR",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r11",
+   "anchor": "ASCII_DEFAULT_WIDTHS",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r12",
+   "anchor": "TDISP_RE_DICT",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r13",
+   "anchor": "TDISP_FMT_DICT",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r14",
+   "anchor": "KEYWORD_NAMES",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r15",
+   "anchor": "KEYWORD_ATTRIBUTES",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r16",
+   "anchor": "ATTRIBUTE_TO_KEYWORD",
+   "kind": "todo",
+   "line": 148
+  },
+  {
+   "id": "r17",
+   "anchor": "TFORMAT_RE",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r18",
+   "anchor": "TFORMAT_ASCII_RE",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r19",
+   "anchor": "TTYPE_RE",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r20",
+   "anchor": "TDEF_RE",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r21",
+   "anchor": "TDIM_RE",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r22",
+   "anchor": "ASCIITNULL",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r23",
+   "anchor": "DEFAULT_ASCII_TNULL",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r24",
+   "anchor": "Delayed",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r25",
+   "anchor": "Delayed.__getitem__#return",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r26",
+   "anchor": "_BaseColumnFormat",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r27",
+   "anchor": "_BaseColumnFormat.dtype",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r28",
+   "anchor": "_BaseColumnFormat.from_column_format",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r29",
+   "anchor": "_ColumnFormat",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r30",
+   "anchor": "_ColumnFormat.__new__#if:self.format in ('P', 'Q')/if:self.format == 'P'",
+   "kind": "todo",
+   "line": 261
+  },
+  {
+   "id": "r31",
+   "anchor": "_ColumnFormat.__new__#if:self.format in ('P', 'Q')/assign:self.p_format",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r32",
+   "anchor": "_ColumnFormat.from_recformat",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r33",
+   "anchor": "_ColumnFormat.recformat",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r34",
+   "anchor": "_ColumnFormat.canonical",
+   "kind": "doc",
+   "line": 284
+  },
+  {
+   "id": "r35",
+   "anchor": "_AsciiColumnFormat",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r36",
+   "anchor": "_AsciiColumnFormat.__new__#if:format == self.format",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r37",
+   "anchor": "_AsciiColumnFormat._pseudo_logical",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r38",
+   "anchor": "_AsciiColumnFormat.from_column_format#if:format.format == 'L'",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r39",
+   "anchor": "_AsciiColumnFormat.from_recformat",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r40",
+   "anchor": "_AsciiColumnFormat.recformat",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r41",
+   "anchor": "_AsciiColumnFormat.canonical",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r42",
+   "anchor": "_FormatX",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r43",
+   "anchor": "_FormatX.__new__#assign:obj",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r44",
+   "anchor": "_FormatP",
+   "kind": "todo",
+   "line": 390
+  },
+  {
+   "id": "r45",
+   "anchor": "_FormatP",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r46",
+   "anchor": "_FormatP._format_re_template",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r47",
+   "anchor": "_FormatQ",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r48",
+   "anchor": "ColumnAttribute",
+   "kind": "doc",
+   "line": 443
+  },
+  {
+   "id": "r49",
+   "anchor": "ColumnAttribute._attr",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r50",
+   "anchor": "ColumnAttribute.__call__",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r51",
+   "anchor": "Column",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r52",
+   "anchor": "Column.__init__",
+   "kind": "doc",
+   "line": 521
+  },
+  {
+   "id": "r53",
+   "anchor": "Column.__init__#assign:kwargs",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r54",
+   "anchor": "Column.__init__#for:attr in KEYWORD_ATTRIBUTES/assign:value",
+   "kind": "trail",
+   "line": 606
+  },
+  {
+   "id": "r55",
+   "anchor": "Column.__init__#assign:recformat",
+   "kind": "todo",
+   "line": 630
+  },
+  {
+   "id": "r56",
+   "anchor": "Column._dims",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r57",
+   "anchor": "Column._pseudo_unsigned_ints",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r58",
+   "anchor": "Column.__init__#if:not isinstance(array, (np.ndarray, chararray.chararray, Delayed))",
+   "kind": "lead",
+   "line": 645
+  },
+  {
+   "id": "r59",
+   "anchor": "Column.__init__#if:not isinstance(array, (np.ndarray, chararray.chararray, Delayed))/try",
+   "kind": "trail",
+   "line": 647
+  },
+  {
+   "id": "r60",
+   "anchor": "Column.__init__#if:not isinstance(array, (np.ndarray, chararray.chararray, Delayed))/try/except:Exception/try",
+   "kind": "trail",
+   "line": 651
+  },
+  {
+   "id": "r61",
+   "anchor": "Column.__init__#if:not isinstance(array, (np.ndarray, chararray.chararray, Delayed))/try/except:Exception/try/except:ValueError/if:isinstance(recformat, _FormatP)",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r62",
+   "anchor": "Column.__init__#if:isinstance(array, np.ndarray)",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r63",
+   "anchor": "Column.__eq__",
+   "kind": "doc",
+   "line": 684
+  },
+  {
+   "id": "r64",
+   "anchor": "Column.__eq__#assign:a",
+   "kind": "lead",
+   "line": 691
+  },
+  {
+   "id": "r65",
+   "anchor": "Column.__hash__",
+   "kind": "doc",
+   "line": 695
+  },
+  {
+   "id": "r66",
+   "anchor": "Column.array",
+   "kind": "doc",
+   "line": 705
+  },
+  {
+   "id": "r67",
+   "anchor": "Column.array#if:'array' in self.__dict__",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r68",
+   "anchor": "Column.array#if:'array' in self.__dict__",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r69",
+   "anchor": "Column.array#if:'array' in self.__dict__",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r70",
+   "anchor": "Column.array#assign:base",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r71",
+   "anchor": "Column.array#while:True/if:hasattr(base, '_coldefs') and isinstance(base._coldefs, ColDefs)/for:col in base._coldefs/if:col is self and self._parent_fits_rec is None/if:'array' in self.__dict__",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r72",
+   "anchor": "Column.name#if:name is None/return",
+   "kind": "lead",
+   "line": 826
+  },
+  {
+   "id": "r73",
+   "anchor": "Column.name#if:isinstance(name, str) and not TTYPE_RE.match(name)",
+   "kind": "lead",
+   "line": 830
+  },
+  {
+   "id": "r74",
+   "anchor": "Column.name#if:not isinstance(name, str) or len(str(Card('TTYPE', name))) != CARD_LENGTH",
+   "kind": "lead",
+   "line": 839
+  },
+  {
+   "id": "r75",
+   "anchor": "Column.ascii",
+   "kind": "doc",
+   "line": 905
+  },
+  {
+   "id": "r76",
+   "anchor": "Column.copy",
+   "kind": "doc",
+   "line": 914
+  },
+  {
+   "id": "r77",
+   "anchor": "Column.copy#assign:tmp",
+   "kind": "trail",
+   "line": 918
+  },
+  {
+   "id": "r78",
+   "anchor": "Column._convert_format",
+   "kind": "doc",
+   "line": 923
+  },
+  {
+   "id": "r79",
+   "anchor": "Column._convert_format#if:isinstance(format, _BaseColumnFormat)",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r80",
+   "anchor": "Column._convert_format#if:format in NUMPY2FITS/with:suppress(VerifyError)/assign:recformat",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r81",
+   "anchor": "Column._convert_format#try/assign:format",
+   "kind": "lead",
+   "line": 944
+  },
+  {
+   "id": "r82",
+   "anchor": "Column._verify_keywords",
+   "kind": "doc",
+   "line": 952
+  },
+  {
+   "id": "r83",
+   "anchor": "Column._verify_keywords#for:k, v in [('name', name), ('unit', unit), ('bscale', bscale), ('bzero', bzero)]",
+   "kind": "lead",
+   "line": 990
+  },
+  {
+   "id": "r84",
+   "anchor": "Column._verify_keywords#if:null is not None and null != ''",
+   "kind": "lead",
+   "line": 998
+  },
+  {
+   "id": "r85",
+   "anchor": "Column._verify_keywords#if:null is not None and null != ''/if:isinstance(format, _AsciiColumnFormat)/else/if:not _is_int(null)/assign:msg",
+   "kind": "lead",
+   "line": 1013
+  },
+  {
+   "id": "r86",
+   "anchor": "Column._verify_keywords#if:null is not None and null != ''/if:isinstance(format, _AsciiColumnFormat)/else/if:not _is_int(null)/elif:not (format.format in tnull_formats or (format.format in ('P', 'Q') and format.p_format in tnull_formats))/assign:msg",
+   "kind": "todo",
+   "line": 1024
+  },
+  {
+   "id": "r87",
+   "anchor": "Column._verify_keywords#if:disp is not None and disp != ''",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r88",
+   "anchor": "Column._verify_keywords#if:disp is not None and disp != ''/if:not isinstance(disp, str)/elif:isinstance(format, _AsciiColumnFormat) and disp[0].upper() == 'L'/assign:msg",
+   "kind": "lead",
+   "line": 1049
+  },
+  {
+   "id": "r89",
+   "anchor": "Column._verify_keywords#if:start is not None and start != ''",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r90",
+   "anchor": "Column._verify_keywords#if:start is not None and start != ''/if:not isinstance(format, _AsciiColumnFormat)/assign:msg",
+   "kind": "lead",
+   "line": 1073
+  },
+  {
+   "id": "r91",
+   "anchor": "Column._verify_keywords#if:dim is not None and dim != ''",
+   "kind": "lead",
+   "line": 1099
+  },
+  {
+   "id": "r92",
+   "anchor": "Column._verify_keywords#if:dim is not None and dim != ''/if:isinstance(format, _AsciiColumnFormat)",
+   "kind": "lead",
+   "line": 1105
+  },
+  {
+   "id": "r93",
+   "anchor": "Column._determine_formats",
+   "kind": "doc",
+   "line": 1201
+  },
+  {
+   "id": "r94",
+   "anchor": "Column._determine_formats#if:isinstance(format, np.dtype)",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r95",
+   "anchor": "Column._determine_formats#if:ascii is None and not isinstance(format, _BaseColumnFormat)",
+   "kind": "lead",
+   "line": 1220
+  },
+  {
+   "id": "r96",
+   "anchor": "Column._determine_formats#if:ascii is None and not isinstance(format, _BaseColumnFormat)/assign:format, recformat",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r97",
+   "anchor": "Column._determine_formats#if:ascii is None and not isinstance(format, _BaseColumnFormat)/else/assign:recformat",
+   "kind": "lead",
+   "line": 1233
+  },
+  {
+   "id": "r98",
+   "anchor": "Column._guess_format#if:start and dim/raise:ValueError",
+   "kind": "lead",
+   "line": 1241
+  },
+  {
+   "id": "r99",
+   "anchor": "Column._guess_format#if:start and dim/elif:start/assign:guess_format",
+   "kind": "lead",
+   "line": 1248
+  },
+  {
+   "id": "r100",
+   "anchor": "Column._guess_format#if:start and dim/elif:dim/assign:guess_format",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r101",
+   "anchor": "Column._guess_format#if:start and dim/else/with:suppress(VerifyError)",
+   "kind": "lead",
+   "line": 1258
+  },
+  {
+   "id": "r102",
+   "anchor": "Column._guess_format#if:start and dim/else/assign:guess_format",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r103",
+   "anchor": "Column._guess_format#try/except:VerifyError/assign:guess_format",
+   "kind": "lead",
+   "line": 1271
+  },
+  {
+   "id": "r104",
+   "anchor": "Column._guess_format#try/except:VerifyError/assign:format, recformat",
+   "kind": "lead",
+   "line": 1276
+  },
+  {
+   "id": "r105",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r106",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/elif:'A' in format/if:array.dtype.char in 'SU'/if:dims/assign:fsize",
+   "kind": "lead",
+   "line": 1303
+  },
+  {
+   "id": "r107",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/elif:'L' in format/if:array.dtype == np.dtype('bool')",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r108",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/else/assign:numpy_format",
+   "kind": "lead",
+   "line": 1319
+  },
+  {
+   "id": "r109",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/else/assign:bzeros",
+   "kind": "lead",
+   "line": 1325
+  },
+  {
+   "id": "r110",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/else/if:array.dtype.kind == 'u' and array.dtype.itemsize in bzeros and self.bscale in (1, None, '') and self.bzero == bzeros[array.dtype.itemsize]/assign:numpy_format",
+   "kind": "lead",
+   "line": 1335
+  },
+  {
+   "id": "r111",
+   "anchor": "Column._convert_to_valid_data_type#if:isinstance(array, Delayed)/elif:array is None/else/if:'P' in format or 'Q' in format/else/assign:dtype",
+   "kind": "lead",
+   "line": 1341
+  },
+  {
+   "id": "r112",
+   "anchor": "ColDefs",
+   "kind": "doc",
+   "line": 1346
+  },
+  {
+   "id": "r113",
+   "anchor": "ColDefs.__new__#if:ascii",
+   "kind": "trail",
+   "line": 1369
+  },
+  {
+   "id": "r114",
+   "anchor": "ColDefs.__init__",
+   "kind": "doc",
+   "line": 1377
+  },
+  {
+   "id": "r115",
+   "anchor": "ColDefs.__init__#if:isinstance(input, ColDefs)/elif:isinstance(input, FITS_rec) and hasattr(input, '_coldefs') and input._coldefs/call:self._init_from_coldefs",
+   "kind": "lead",
+   "line": 1400
+  },
+  {
+   "id": "r116",
+   "anchor": "ColDefs.__init__#if:isinstance(input, ColDefs)/elif:isinstance(input, np.ndarray) and input.dtype.fields is not None/call:self._init_from_array",
+   "kind": "lead",
+   "line": 1403
+  },
+  {
+   "id": "r117",
+   "anchor": "ColDefs.__init__#if:isinstance(input, ColDefs)/elif:isiterable(input)/call:self._init_from_sequence",
+   "kind": "lead",
+   "line": 1406
+  },
+  {
+   "id": "r118",
+   "anchor": "ColDefs.__init__#if:isinstance(input, ColDefs)/elif:isinstance(input, _TableBaseHDU)/call:self._init_from_table",
+   "kind": "lead",
+   "line": 1409
+  },
+  {
+   "id": "r119",
+   "anchor": "ColDefs.__init__#for:col in self.columns",
+   "kind": "lead",
+   "line": 1415
+  },
+  {
+   "id": "r120",
+   "anchor": "ColDefs._init_from_coldefs",
+   "kind": "doc",
+   "line": 1418
+  },
+  {
+   "id": "r121",
+   "anchor": "ColDefs._init_from_array#for:idx in range(len(array.dtype))/assign:dim",
+   "kind": "lead",
+   "line": 1440
+  },
+  {
+   "id": "r122",
+   "anchor": "ColDefs._init_from_array#for:idx in range(len(array.dtype))/if:dim and (len(dim) > 0 or 'A' in format)/if:'A' in format/assign:dimel",
+   "kind": "lead",
+   "line": 1444
+  },
+  {
+   "id": "r123",
+   "anchor": "ColDefs._init_from_array#for:idx in range(len(array.dtype))/if:dim and (len(dim) > 0 or 'A' in format)/if:'A' in format/assign:dim",
+   "kind": "lead",
+   "line": 1447
+  },
+  {
+   "id": "r124",
+   "anchor": "ColDefs._init_from_array#for:idx in range(len(array.dtype))/assign:bzero",
+   "kind": "lead",
+   "line": 1453
+  },
+  {
+   "id": "r125",
+   "anchor": "ColDefs._init_from_table#assign:col_keywords",
+   "kind": "lead",
+   "line": 1473
+  },
+  {
+   "id": "r126",
+   "anchor": "ColDefs._init_from_table#for:keyword in hdr/try/except:Exception/continue",
+   "kind": "trail",
+   "line": 1479
+  },
+  {
+   "id": "r127",
+   "anchor": "ColDefs._init_from_table#for:keyword in hdr/if:label in KEYWORD_NAMES/if:0 < col <= nfields/if:attr == 'format'/assign:value",
+   "kind": "lead",
+   "line": 1488
+  },
+  {
+   "id": "r128",
+   "anchor": "ColDefs._init_from_table#for:idx, kwargs in enumerate(col_keywords)",
+   "kind": "lead",
+   "line": 1493
+  },
+  {
+   "id": "r129",
+   "anchor": "ColDefs._init_from_table#for:idx, kwargs in enumerate(col_keywords)/del:valid_kwargs['recformat']",
+   "kind": "lead",
+   "line": 1501
+  },
+  {
+   "id": "r130",
+   "anchor": "ColDefs._init_from_table#for:col in range(nfields)",
+   "kind": "lead",
+   "line": 1507
+  },
+  {
+   "id": "r131",
+   "anchor": "ColDefs._init_from_table#assign:self.columns",
+   "kind": "lead",
+   "line": 1511
+  },
+  {
+   "id": "r132",
+   "anchor": "ColDefs._init_from_table#call:self._add_listener",
+   "kind": "lead",
+   "line": 1516
+  },
+  {
+   "id": "r133",
+   "anchor": "ColDefs._copy_column",
+   "kind": "doc",
+   "line": 1524
+  },
+  {
+   "id": "r134",
+   "anchor": "ColDefs._copy_column#if:isinstance(column.format, self._col_format_cls)/return",
+   "kind": "lead",
+   "line": 1533
+  },
+  {
+   "id": "r135",
+   "anchor": "ColDefs._copy_column#assign:new_column.format",
+   "kind": "lead",
+   "line": 1542
+  },
+  {
+   "id": "r136",
+   "anchor": "ColDefs._copy_column#if:not isinstance(new_column.format, _AsciiColumnFormat)",
+   "kind": "lead",
+   "line": 1549
+  },
+  {
+   "id": "r137",
+   "anchor": "ColDefs._copy_column#if:not isinstance(new_column.format, _AsciiColumnFormat)/assign:new_column.start",
+   "kind": "lead",
+   "line": 1551
+  },
+  {
+   "id": "r138",
+   "anchor": "ColDefs._copy_column#if:not isinstance(new_column.format, _AsciiColumnFormat)/if:new_column.null is not None/assign:new_column.null",
+   "kind": "lead",
+   "line": 1556
+  },
+  {
+   "id": "r139",
+   "anchor": "ColDefs._copy_column#if:not isinstance(new_column.format, _AsciiColumnFormat)/else/if:new_column.null is not None",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r140",
+   "anchor": "ColDefs._copy_column#if:not isinstance(new_column.format, _AsciiColumnFormat)/else/if:new_column.disp is not None and new_column.disp.upper().startswith('L')/assign:new_column.disp",
+   "kind": "lead",
+   "line": 1567
+  },
+  {
+   "id": "r141",
+   "anchor": "ColDefs.__getattr__",
+   "kind": "doc",
+   "line": 1571
+  },
+  {
+   "id": "r142",
+   "anchor": "ColDefs.dtype#assign:formats",
+   "kind": "lead",
+   "line": 1595
+  },
+  {
+   "id": "r143",
+   "anchor": "ColDefs.dtype#for:format_, dim in zip(self.formats, self._dims)/if:len(offsets) < len(self.formats)/call:offsets.append",
+   "kind": "lead",
+   "line": 1606
+  },
+  {
+   "id": "r144",
+   "anchor": "ColDefs._dims",
+   "kind": "doc",
+   "line": 1637
+  },
+  {
+   "id": "r145",
+   "anchor": "ColDefs.__repr__#if:hasattr(self, 'columns') and self.columns/assign:rep",
+   "kind": "lead",
+   "line": 1660
+  },
+  {
+   "id": "r146",
+   "anchor": "ColDefs._update_column_attribute_changed",
+   "kind": "doc",
+   "line": 1692
+  },
+  {
+   "id": "r147",
+   "anchor": "ColDefs.add_col",
+   "kind": "doc",
+   "line": 1717
+  },
+  {
+   "id": "r148",
+   "anchor": "ColDefs.add_col#call:self._notify",
+   "kind": "lead",
+   "line": 1726
+  },
+  {
+   "id": "r149",
+   "anchor": "ColDefs.add_col#del:self.dtype",
+   "kind": "lead",
+   "line": 1730
+  },
+  {
+   "id": "r150",
+   "anchor": "ColDefs.add_col#call:column._add_listener",
+   "kind": "lead",
+   "line": 1739
+  },
+  {
+   "id": "r151",
+   "anchor": "ColDefs.add_col#call:self._notify",
+   "kind": "lead",
+   "line": 1743
+  },
+  {
+   "id": "r152",
+   "anchor": "ColDefs.del_col",
+   "kind": "doc",
+   "line": 1746
+  },
+  {
+   "id": "r153",
+   "anchor": "ColDefs.del_col#call:self._notify",
+   "kind": "lead",
+   "line": 1755
+  },
+  {
+   "id": "r154",
+   "anchor": "ColDefs.del_col#del:self.dtype",
+   "kind": "lead",
+   "line": 1762
+  },
+  {
+   "id": "r155",
+   "anchor": "ColDefs.del_col#call:self._notify",
+   "kind": "lead",
+   "line": 1776
+  },
+  {
+   "id": "r156",
+   "anchor": "ColDefs.change_attrib",
+   "kind": "doc",
+   "line": 1779
+  },
+  {
+   "id": "r157",
+   "anchor": "ColDefs.change_name",
+   "kind": "doc",
+   "line": 1797
+  },
+  {
+   "id": "r158",
+   "anchor": "ColDefs.change_unit",
+   "kind": "doc",
+   "line": 1815
+  },
+  {
+   "id": "r159",
+   "anchor": "ColDefs.info",
+   "kind": "doc",
+   "line": 1830
+  },
+  {
+   "id": "r160",
+   "anchor": "_AsciiColDefs",
+   "kind": "doc",
+   "line": 1882
+  },
+  {
+   "id": "r161",
+   "anchor": "_AsciiColDefs.__init__#if:not isinstance(input, _AsciiColDefs)",
+   "kind": "lead",
+   "line": 1892
+  },
+  {
+   "id": "r162",
+   "anchor": "_AsciiColDefs.spans",
+   "kind": "doc",
+   "line": 1912
+  },
+  {
+   "id": "r163",
+   "anchor": "_AsciiColDefs._recformats#call:widths.append",
+   "kind": "lead",
+   "line": 1927
+  },
+  {
+   "id": "r164",
+   "anchor": "_AsciiColDefs._update_field_metrics",
+   "kind": "doc",
+   "line": 1938
+  },
+  {
+   "id": "r165",
+   "anchor": "_AsciiColDefs._update_field_metrics#assign:end_col",
+   "kind": "trail",
+   "line": 1945
+  },
+  {
+   "id": "r166",
+   "anchor": "_AsciiColDefs._update_field_metrics#for:idx, col in enumerate(self.columns)/if:not col.start",
+   "kind": "lead",
+   "line": 1952
+  },
+  {
+   "id": "r167",
+   "anchor": "_VLF",
+   "kind": "lead",
+   "line": 1964
+  },
+  {
+   "id": "r168",
+   "anchor": "_VLF",
+   "kind": "doc",
+   "line": 1964
+  },
+  {
+   "id": "r169",
+   "anchor": "_VLF.__new__",
+   "kind": "doc",
+   "line": 1967
+  },
+  {
+   "id": "r170",
+   "anchor": "_VLF.__new__#if:dtype == 'a'/try/assign:input",
+   "kind": "lead",
+   "line": 1979
+  },
+  {
+   "id": "r171",
+   "anchor": "_VLF.__setitem__",
+   "kind": "doc",
+   "line": 1997
+  },
+  {
+   "id": "r172",
+   "anchor": "_get_index",
+   "kind": "doc",
+   "line": 2018
+  },
+  {
+   "id": "r173",
+   "anchor": "_get_index#if:_is_int(key)/elif:isinstance(key, str)/try",
+   "kind": "lead",
+   "line": 2045
+  },
+  {
+   "id": "r174",
+   "anchor": "_get_index#if:_is_int(key)/elif:isinstance(key, str)/try/except:ValueError/assign:_key",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r175",
+   "anchor": "_get_index#if:_is_int(key)/elif:isinstance(key, str)/try/except:ValueError/assign:count",
+   "kind": "trail",
+   "line": 2051
+  },
+  {
+   "id": "r176",
+   "anchor": "_get_index#if:_is_int(key)/elif:isinstance(key, str)/try/except:ValueError/if:count == 1/else",
+   "kind": "trail",
+   "line": 2056
+  },
+  {
+   "id": "r177",
+   "anchor": "_unwrapx",
+   "kind": "doc",
+   "line": 2064
+  },
+  {
+   "id": "r178",
+   "anchor": "_wrapx",
+   "kind": "doc",
+   "line": 2089
+  },
+  {
+   "id": "r179",
+   "anchor": "_wrapx#assign:output[...]",
+   "kind": "trail",
+   "line": 2105
+  },
+  {
+   "id": "r180",
+   "anchor": "_wrapx#call:np.left_shift",
+   "kind": "lead",
+   "line": 2117
+  },
+  {
+   "id": "r181",
+   "anchor": "_makep",
+   "kind": "doc",
+   "line": 2120
+  },
+  {
+   "id": "r182",
+   "anchor": "_makep#assign:_offset",
+   "kind": "todo",
+   "line": 2149
+  },
+  {
+   "id": "r183",
+   "anchor": "_parse_tformat",
+   "kind": "doc",
+   "line": 2182
+  },
+  {
+   "id": "r184",
+   "anchor": "_parse_tformat#try/except:Exception/raise:VerifyError",
+   "kind": "todo",
+   "line": 2193
+  },
+  {
+   "id": "r185",
+   "anchor": "_parse_ascii_tformat",
+   "kind": "doc",
+   "line": 2203
+  },
+  {
+   "id": "r186",
+   "anchor": "_parse_ascii_tformat#assign:format",
+   "kind": "lead",
+   "line": 2215
+  },
+  {
+   "id": "r187",
+   "anchor": "_parse_ascii_tformat#if:format is None/assign:format",
+   "kind": "lead",
+   "line": 2218
+  },
+  {
+   "id": "r188",
+   "anchor": "_parse_ascii_tformat#if:format is None/else/if:width is None/if:strict/else/assign:width",
+   "kind": "lead",
+   "line": 2237
+  },
+  {
+   "id": "r189",
+   "anchor": "_parse_ascii_tformat#if:width and precision/assign:width, precision",
+   "kind": "lead",
+   "line": 2252
+  },
+  {
+   "id": "r190",
+   "anchor": "_parse_ascii_tformat#if:width and precision/elif:width/assign:width",
+   "kind": "lead",
+   "line": 2255
+  },
+  {
+   "id": "r191",
+   "anchor": "_parse_ascii_tformat#if:width and precision/else/assign:width, precision",
+   "kind": "lead",
+   "line": 2258
+  },
+  {
+   "id": "r192",
+   "anchor": "_parse_tdim",
+   "kind": "doc",
+   "line": 2272
+  },
+  {
+   "id": "r193",
+   "anchor": "_parse_tdim#return",
+   "kind": "lead",
+   "line": 2282
+  },
+  {
+   "id": "r194",
+   "anchor": "_scalar_to_format",
+   "kind": "doc",
+   "line": 2285
+  },
+  {
+   "id": "r195",
+   "anchor": "_scalar_to_format#for:type_ in (int, float, complex)",
+   "kind": "lead",
+   "line": 2294
+  },
+  {
+   "id": "r196",
+   "anchor": "_scalar_to_format#assign:numpy_dtype_str",
+   "kind": "trail",
+   "line": 2302
+  },
+  {
+   "id": "r197",
+   "anchor": "_cmp_recformats",
+   "kind": "doc",
+   "line": 2311
+  },
+  {
+   "id": "r198",
+   "anchor": "_convert_fits2record",
+   "kind": "doc",
+   "line": 2323
+  },
+  {
+   "id": "r199",
+   "anchor": "_convert_fits2record#if:dtype in FITS2NUMPY/if:dtype == 'A'/if:format.lstrip()[0] == 'A' and option != ''",
+   "kind": "lead",
+   "line": 2338
+  },
+  {
+   "id": "r200",
+   "anchor": "_convert_fits2record#if:dtype in FITS2NUMPY/if:dtype == 'A'/if:format.lstrip()[0] == 'A' and option != ''/assign:output_format",
+   "kind": "lead",
+   "line": 2340
+  },
+  {
+   "id": "r201",
+   "anchor": "_convert_record2fits",
+   "kind": "doc",
+   "line": 2361
+  },
+  {
+   "id": "r202",
+   "anchor": "_convert_record2fits#if:dtype.char == 'U' or (dtype.subdtype is not None and dtype.subdtype[0].char == 'U')/assign:itemsize",
+   "kind": "lead",
+   "line": 2374
+  },
+  {
+   "id": "r203",
+   "anchor": "_convert_record2fits#if:kind == 'a'/assign:ntot",
+   "kind": "lead",
+   "line": 2391
+  },
+  {
+   "id": "r204",
+   "anchor": "_convert_record2fits#if:kind == 'a'/elif:recformat in NUMPY2FITS",
+   "kind": "trail",
+   "line": 2394
+  },
+  {
+   "id": "r205",
+   "anchor": "_dtype_to_recformat",
+   "kind": "doc",
+   "line": 2406
+  },
+  {
+   "id": "r206",
+   "anchor": "_convert_format",
+   "kind": "doc",
+   "line": 2431
+  },
+  {
+   "id": "r207",
+   "anchor": "_convert_ascii_format",
+   "kind": "doc",
+   "line": 2443
+  },
+  {
+   "id": "r208",
+   "anchor": "_convert_ascii_format#if:reverse/if:kind == 'a'/elif:NUMPY2FITS.get(recformat) == 'L'/return",
+   "kind": "lead",
+   "line": 2456
+  },
+  {
+   "id": "r209",
+   "anchor": "_convert_ascii_format#if:reverse/if:kind == 'a'/elif:kind == 'i'/assign:width",
+   "kind": "lead",
+   "line": 2461
+  },
+  {
+   "id": "r210",
+   "anchor": "_convert_ascii_format#if:reverse/if:kind == 'a'/elif:kind == 'f'/if:itemsize >= 8",
+   "kind": "lead",
+   "line": 2467
+  },
+  {
+   "id": "r211",
+   "anchor": "_convert_ascii_format#if:reverse/if:kind == 'a'",
+   "kind": "todo",
+   "line": 2450
+  },
+  {
+   "id": "r212",
+   "anchor": "_convert_ascii_format#if:reverse/else/assign:recformat",
+   "kind": "lead",
+   "line": 2482
+  },
+  {
+   "id": "r213",
+   "anchor": "_convert_ascii_format#if:reverse/else/if:format == 'I'",
+   "kind": "lead",
+   "line": 2488
+  },
+  {
+   "id": "r214",
+   "anchor": "_parse_tdisp_format",
+   "kind": "doc",
+   "line": 2499
+  },
+  {
+   "id": "r215",
+   "anchor": "_parse_tdisp_format#assign:tdisp",
+   "kind": "lead",
+   "line": 2525
+  },
+  {
+   "id": "r216",
+   "anchor": "_parse_tdisp_format#if:tdisp[0] in ('I', 'B', 'O', 'Z', 'F', 'E', 'G', 'D')",
+   "kind": "lead",
+   "line": 2543
+  },
+  {
+   "id": "r217",
+   "anchor": "_parse_tdisp_format#return",
+   "kind": "lead",
+   "line": 2553
+  },
+  {
+   "id": "r218",
+   "anchor": "_fortran_to_python_format",
+   "kind": "doc",
+   "line": 2556
+  },
+  {
+   "id": "r219",
+   "anchor": "python_to_tdisp",
+   "kind": "doc",
+   "line": 2583
+  },
+  {
+   "id": "r220",
+   "anchor": "python_to_tdisp#if:format_string[0] == '{' and format_string != \"{}\"",
+   "kind": "lead",
+   "line": 2610
+  },
+  {
+   "id": "r221",
+   "anchor": "python_to_tdisp#if:fmt_str[-1].isdigit() and fmt_str[0] == '>' and fmt_str[1] != '0'",
+   "kind": "lead",
+   "line": 2620
+  },
+  {
+   "id": "r222",
+   "anchor": "python_to_tdisp#if:fmt_str[-1].isdigit() and fmt_str[0] == '>' and fmt_str[1] != '0'/elif:fmt_str[-1].isalpha() and len(fmt_str) > 1 and fmt_str[0] != '0'",
+   "kind": "lead",
+   "line": 2629
+  },
+  {
+   "id": "r223",
+   "anchor": "python_to_tdisp#if:fmt_str[-1].isdigit() and fmt_str[0] == '>' and fmt_str[1] != '0'/elif:fmt_str[-1].isalpha() and len(fmt_str) > 1 and fmt_str[0] != '0'/if:'.' in fmt_str",
+   "kind": "lead",
+   "line": 2634
+  },
+  {
+   "id": "r224",
+   "anchor": "python_to_tdisp#if:fmt_str[-1].isdigit() and fmt_str[0] == '>' and fmt_str[1] != '0'/elif:fmt_str[-1].isalpha() and len(fmt_str) > 1 and fmt_str[0] != '0'/if:'.' in fmt_str/else",
+   "kind": "lead",
+   "line": 2642
+  },
+  {
+   "id": "r225",
+   "anchor": "python_to_tdisp#if:logical_dtype",
+   "kind": "lead",
+   "line": 2653
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 61070,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 25318,
+  "thinking_tokens": 13415,
+  "opus_cost_usd": 1.2479415,
+  "total_cost_usd": 1.2969695,
+  "duration_ms": 216376,
+  "duration_api_ms": 217969,
+  "num_turns": 2
+ },
+ "wall_ms": 219747,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

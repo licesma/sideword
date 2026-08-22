@@ -1,0 +1,271 @@
+{
+ "blob_sha": "332e73e486c8695aa0c19face25f75efff808a22",
+ "path": "xarray/coding/times.py",
+ "repo": "pydata/xarray",
+ "records": 41,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_STANDARD_CALENDARS",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r2",
+   "anchor": "_is_numpy_compatible_time_range#assign:times",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r3",
+   "anchor": "_ensure_padded_year#assign:matches_year",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r4",
+   "anchor": "_ensure_padded_year#assign:matches_year",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r5",
+   "anchor": "_ensure_padded_year#if:matches_year/return",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r6",
+   "anchor": "_ensure_padded_year#assign:matches_start_digits",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r7",
+   "anchor": "_unpack_netcdf_time_units#assign:matches",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r8",
+   "anchor": "_decode_cf_datetime_dtype#assign:values",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r9",
+   "anchor": "_decode_datetime_with_pandas#try/except:ValueError/raise:OutOfBoundsDatetime",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r10",
+   "anchor": "_decode_datetime_with_pandas#with:warnings.catch_warnings()/if:flat_num_dates.size > 0/expr:pd.to_timedelta(flat_num_dates.min(), delta) + ref_date",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r11",
+   "anchor": "_decode_datetime_with_pandas#if:flat_num_dates.dtype.kind in \"iu\"",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r12",
+   "anchor": "_decode_datetime_with_pandas#assign:flat_num_dates_ns_int",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r13",
+   "anchor": "_decode_datetime_with_pandas#return",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r14",
+   "anchor": "decode_cf_datetime",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r15",
+   "anchor": "decode_cf_timedelta",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r16",
+   "anchor": "_infer_time_units_from_diff#if:unique_timedeltas.dtype == np.dtype(\"O\")/else/assign:timedeltas",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r17",
+   "anchor": "infer_calendar_name",
+   "kind": "doc",
+   "line": 358
+  },
+  {
+   "id": "r18",
+   "anchor": "infer_calendar_name#if:is_np_datetime_like(dates.dtype)/elif:dates.dtype == np.dtype(\"O\") and dates.size > 0/if:cftime is not None",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r19",
+   "anchor": "infer_calendar_name#raise:ValueError",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r20",
+   "anchor": "infer_datetime_units",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r21",
+   "anchor": "format_cftime_datetime",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r22",
+   "anchor": "infer_timedelta_units",
+   "kind": "doc",
+   "line": 412
+  },
+  {
+   "id": "r23",
+   "anchor": "cftime_to_nptime",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r24",
+   "anchor": "cftime_to_nptime#for:i, t in np.ndenumerate(times)/try/assign:dt",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r25",
+   "anchor": "convert_times",
+   "kind": "doc",
+   "line": 451
+  },
+  {
+   "id": "r26",
+   "anchor": "convert_times#if:is_np_datetime_like(times.dtype)/assign:times",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r27",
+   "anchor": "convert_time_or_go_back",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r28",
+   "anchor": "convert_time_or_go_back#try/except:ValueError/try",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r29",
+   "anchor": "convert_time_or_go_back#try/except:ValueError/try/except:ValueError/return",
+   "kind": "lead",
+   "line": 521
+  },
+  {
+   "id": "r30",
+   "anchor": "_should_cftime_be_used",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r31",
+   "anchor": "_should_cftime_be_used#if:use_cftime is not True",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r32",
+   "anchor": "_should_cftime_be_used#if:use_cftime is not True/if:_is_standard_calendar(target_calendar)/if:_is_numpy_compatible_time_range(source)/assign:use_cftime",
+   "kind": "lead",
+   "line": 545
+  },
+  {
+   "id": "r33",
+   "anchor": "_cleanup_netcdf_time_units#try/except:(OutOfBoundsDatetime, ValueError)/pass",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r34",
+   "anchor": "_encode_datetime_with_cftime",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r35",
+   "anchor": "_encode_datetime_with_cftime#if:np.issubdtype(dates.dtype, np.datetime64)/assign:dates",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r36",
+   "anchor": "_encode_datetime_with_cftime.encode_datetime#try",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r37",
+   "anchor": "encode_cf_datetime",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r38",
+   "anchor": "encode_cf_datetime#try/if:not _is_standard_calendar(calendar) or dates.dtype.kind == \"O\"/raise:OutOfBoundsDatetime",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r39",
+   "anchor": "encode_cf_datetime#try/if:ref_date.tz is not None",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r40",
+   "anchor": "encode_cf_datetime#try/assign:dates_as_index",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r41",
+   "anchor": "encode_cf_datetime#try/if:np.all(time_deltas % time_delta == np.timedelta64(0, \"ns\"))",
+   "kind": "lead",
+   "line": 651
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18516,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4516,
+  "thinking_tokens": 2330,
+  "opus_cost_usd": 0.3023515,
+  "total_cost_usd": 0.3158545,
+  "duration_ms": 39051,
+  "duration_api_ms": 40289,
+  "num_turns": 2
+ },
+ "wall_ms": 39936,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

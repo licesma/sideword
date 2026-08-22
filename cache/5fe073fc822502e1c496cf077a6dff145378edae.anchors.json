@@ -1,0 +1,415 @@
+{
+ "blob_sha": "5fe073fc822502e1c496cf077a6dff145378edae",
+ "path": "astropy/coordinates/angle_formats.py",
+ "repo": "astropy/astropy",
+ "records": 65,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r4",
+   "anchor": "_AngleParser",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r5",
+   "anchor": "_AngleParser._thread_local",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r6",
+   "anchor": "_AngleParser.__init__#if:'_parser' not in _AngleParser._thread_local.__dict__",
+   "kind": "todo",
+   "line": 60
+  },
+  {
+   "id": "r7",
+   "anchor": "_AngleParser._get_simple_unit_names#for:unit in simple_units",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "_AngleParser._make_parser#assign:tokens",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r9",
+   "anchor": "_AngleParser._make_parser.t_UFLOAT",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r10",
+   "anchor": "_AngleParser._make_parser.t_UFLOAT",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r11",
+   "anchor": "_AngleParser._make_parser.t_UFLOAT#assign:t.value",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r12",
+   "anchor": "_AngleParser._make_parser.t_UINT",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r13",
+   "anchor": "_AngleParser._make_parser.t_SIGN",
+   "kind": "doc",
+   "line": 110
+  },
+  {
+   "id": "r14",
+   "anchor": "_AngleParser._make_parser.t_SIGN#if:t.value == '+'",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r15",
+   "anchor": "_AngleParser._make_parser.t_EASTWEST",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r16",
+   "anchor": "_AngleParser._make_parser.t_NORTHSOUTH",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r17",
+   "anchor": "_AngleParser._make_parser.t_NORTHSOUTH#assign:t.value",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r18",
+   "anchor": "_AngleParser._make_parser#assign:t_ignore",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r19",
+   "anchor": "_AngleParser._make_parser.t_error",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r20",
+   "anchor": "_AngleParser._make_parser.p_angle",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r21",
+   "anchor": "_AngleParser._make_parser.p_sign",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r22",
+   "anchor": "_AngleParser._make_parser.p_eastwest",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r23",
+   "anchor": "_AngleParser._make_parser.p_dir",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r24",
+   "anchor": "_AngleParser._make_parser.p_ufloat",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r25",
+   "anchor": "_AngleParser._make_parser.p_colon",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r26",
+   "anchor": "_AngleParser._make_parser.p_spaced",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r27",
+   "anchor": "_AngleParser._make_parser.p_generic",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r28",
+   "anchor": "_AngleParser._make_parser.p_hms",
+   "kind": "doc",
+   "line": 237
+  },
+  {
+   "id": "r29",
+   "anchor": "_AngleParser._make_parser.p_dms",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r30",
+   "anchor": "_AngleParser._make_parser.p_simple",
+   "kind": "doc",
+   "line": 271
+  },
+  {
+   "id": "r31",
+   "anchor": "_AngleParser._make_parser.p_arcsecond",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r32",
+   "anchor": "_AngleParser._make_parser.p_arcminute",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r33",
+   "anchor": "_check_hour_range",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r34",
+   "anchor": "_check_minute_range",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r35",
+   "anchor": "_check_minute_range#if:np.any(m == 60.)/elif:np.any(m < -60.) or np.any(m > 60.)/raise:IllegalMinuteError",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r36",
+   "anchor": "_check_second_range",
+   "kind": "doc",
+   "line": 339
+  },
+  {
+   "id": "r37",
+   "anchor": "_check_second_range#if:np.any(sec == 60.)/elif:sec is None/elif:np.any(sec < -60.) or np.any(sec > 60.)/raise:IllegalSecondError",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r38",
+   "anchor": "check_hms_ranges",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r39",
+   "anchor": "parse_angle",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r40",
+   "anchor": "degrees_to_dms",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r41",
+   "anchor": "degrees_to_dms#assign:(df, d)",
+   "kind": "trail",
+   "line": 405
+  },
+  {
+   "id": "r42",
+   "anchor": "degrees_to_dms#assign:(mf, m)",
+   "kind": "trail",
+   "line": 406
+  },
+  {
+   "id": "r43",
+   "anchor": "dms_to_degrees",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r44",
+   "anchor": "dms_to_degrees#assign:sign",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r45",
+   "anchor": "hms_to_hours",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r46",
+   "anchor": "hms_to_hours#assign:sign",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r47",
+   "anchor": "hms_to_degrees",
+   "kind": "doc",
+   "line": 472
+  },
+  {
+   "id": "r48",
+   "anchor": "hms_to_radians",
+   "kind": "doc",
+   "line": 480
+  },
+  {
+   "id": "r49",
+   "anchor": "hms_to_dms",
+   "kind": "doc",
+   "line": 488
+  },
+  {
+   "id": "r50",
+   "anchor": "hours_to_decimal",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r51",
+   "anchor": "hours_to_radians",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r52",
+   "anchor": "hours_to_hms",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r53",
+   "anchor": "hours_to_hms#assign:(hf, h)",
+   "kind": "trail",
+   "line": 521
+  },
+  {
+   "id": "r54",
+   "anchor": "hours_to_hms#assign:(mf, m)",
+   "kind": "trail",
+   "line": 522
+  },
+  {
+   "id": "r55",
+   "anchor": "radians_to_degrees",
+   "kind": "doc",
+   "line": 528
+  },
+  {
+   "id": "r56",
+   "anchor": "radians_to_hours",
+   "kind": "doc",
+   "line": 535
+  },
+  {
+   "id": "r57",
+   "anchor": "radians_to_hms",
+   "kind": "doc",
+   "line": 542
+  },
+  {
+   "id": "r58",
+   "anchor": "radians_to_dms",
+   "kind": "doc",
+   "line": 551
+  },
+  {
+   "id": "r59",
+   "anchor": "sexagesimal_to_string",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r60",
+   "anchor": "sexagesimal_to_string#assign:sign",
+   "kind": "lead",
+   "line": 572
+  },
+  {
+   "id": "r61",
+   "anchor": "sexagesimal_to_string#assign:values",
+   "kind": "lead",
+   "line": 576
+  },
+  {
+   "id": "r62",
+   "anchor": "sexagesimal_to_string#if:not sep",
+   "kind": "trail",
+   "line": 593
+  },
+  {
+   "id": "r63",
+   "anchor": "sexagesimal_to_string#if:precision is None",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r64",
+   "anchor": "hours_to_string",
+   "kind": "doc",
+   "line": 651
+  },
+  {
+   "id": "r65",
+   "anchor": "degrees_to_string",
+   "kind": "doc",
+   "line": 664
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16497,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5056,
+  "thinking_tokens": 2287,
+  "opus_cost_usd": 0.2956615,
+  "total_cost_usd": 0.30791650000000004,
+  "duration_ms": 47177,
+  "duration_api_ms": 48304,
+  "num_turns": 2
+ },
+ "wall_ms": 50251,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

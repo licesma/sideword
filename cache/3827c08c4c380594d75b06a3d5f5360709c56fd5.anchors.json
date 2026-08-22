@@ -1,0 +1,241 @@
+{
+ "blob_sha": "3827c08c4c380594d75b06a3d5f5360709c56fd5",
+ "path": "astropy/coordinates/angles.py",
+ "repo": "astropy/astropy",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "hms_tuple",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "Angle",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "Angle.__new__#if:not isinstance(angle, u.Quantity)/elif:isinstance(angle, str)/if:angle_unit is not unit/assign:angle",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r6",
+   "anchor": "Angle._tuple_to_float",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r7",
+   "anchor": "Angle._tuple_to_float#if:unit == u.hourangle",
+   "kind": "todo",
+   "line": 151
+  },
+  {
+   "id": "r8",
+   "anchor": "Angle.hour",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r9",
+   "anchor": "Angle.hms",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r10",
+   "anchor": "Angle.dms",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r11",
+   "anchor": "Angle.signed_dms",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r12",
+   "anchor": "Angle.to_string",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r13",
+   "anchor": "Angle.to_string#assign:separators['latex_inline']",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r14",
+   "anchor": "Angle.to_string#if:unit is u.degree",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r15",
+   "anchor": "Angle.to_string.do_format#if:not np.isnan(val)",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r16",
+   "anchor": "Angle._wrap_at",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r17",
+   "anchor": "Angle._wrap_at#assign:a360",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r18",
+   "anchor": "Angle._wrap_at#with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r19",
+   "anchor": "Angle._wrap_at#with:np.errstate(invalid='ignore')/if:np.any(wraps != 0)/assign:self_angle[self_angle >= wrap_angle]",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r20",
+   "anchor": "Angle.wrap_at",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r21",
+   "anchor": "Angle.wrap_at#assign:wrap_angle",
+   "kind": "trail",
+   "line": 447
+  },
+  {
+   "id": "r22",
+   "anchor": "Angle.is_within_bounds",
+   "kind": "doc",
+   "line": 453
+  },
+  {
+   "id": "r23",
+   "anchor": "_no_angle_subclass",
+   "kind": "doc",
+   "line": 509
+  },
+  {
+   "id": "r24",
+   "anchor": "Latitude",
+   "kind": "doc",
+   "line": 521
+  },
+  {
+   "id": "r25",
+   "anchor": "Latitude.__new__#if:isinstance(angle, Longitude)",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r26",
+   "anchor": "Latitude._validate_angles",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r27",
+   "anchor": "Latitude._validate_angles#if:angles is None",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r28",
+   "anchor": "Latitude._validate_angles#with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 589
+  },
+  {
+   "id": "r29",
+   "anchor": "Latitude.__setitem__#if:isinstance(value, Longitude)",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r30",
+   "anchor": "Latitude.__setitem__#if:value is not np.ma.masked",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r31",
+   "anchor": "Latitude.__array_ufunc__",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r32",
+   "anchor": "Longitude",
+   "kind": "doc",
+   "line": 615
+  },
+  {
+   "id": "r33",
+   "anchor": "Longitude.__new__#if:isinstance(angle, Latitude)",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r34",
+   "anchor": "Longitude.__new__#assign:self.wrap_angle",
+   "kind": "trail",
+   "line": 681
+  },
+  {
+   "id": "r35",
+   "anchor": "Longitude.__setitem__#if:isinstance(value, Latitude)",
+   "kind": "lead",
+   "line": 686
+  },
+  {
+   "id": "r36",
+   "anchor": "Longitude.__array_ufunc__",
+   "kind": "lead",
+   "line": 706
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17309,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3173,
+  "thinking_tokens": 1567,
+  "opus_cost_usd": 0.2567065,
+  "total_cost_usd": 0.2692075,
+  "duration_ms": 29939,
+  "duration_api_ms": 31044,
+  "num_turns": 2
+ },
+ "wall_ms": 33218,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

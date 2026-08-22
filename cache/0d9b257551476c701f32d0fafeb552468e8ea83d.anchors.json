@@ -1,0 +1,493 @@
+{
+ "blob_sha": "0d9b257551476c701f32d0fafeb552468e8ea83d",
+ "path": "astropy/convolution/convolve.py",
+ "repo": "astropy/astropy",
+ "records": 78,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:ctypes",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#try/with:warnings.catch_warnings()/call:warnings.simplefilter",
+   "kind": "lead",
+   "line": 27
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#assign:_convolveNd_c",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#assign:_convolveNd_c",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ndpointer(ctypes.c_double, flags={\"C_CONTIGUOUS\", \"WRITEABLE\"})",
+   "kind": "trail",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ndpointer(ctypes.c_double, flags=\"C_CONTIGUOUS\")",
+   "kind": "trail",
+   "line": 40
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ctypes.c_uint",
+   "kind": "trail",
+   "line": 41
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ndpointer(ctypes.c_size_t, flags=\"C_CONTIGUOUS\")",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ndpointer(ctypes.c_double, flags=\"C_CONTIGUOUS\")",
+   "kind": "trail",
+   "line": 47
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ndpointer(ctypes.c_size_t, flags=\"C_CONTIGUOUS\")",
+   "kind": "trail",
+   "line": 48
+  },
+  {
+   "id": "r11",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ctypes.c_bool",
+   "kind": "trail",
+   "line": 49
+  },
+  {
+   "id": "r12",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ctypes.c_bool",
+   "kind": "trail",
+   "line": 50
+  },
+  {
+   "id": "r13",
+   "anchor": "<module>#assign:_convolveNd_c.argtypes/item:ctypes.c_uint",
+   "kind": "trail",
+   "line": 51
+  },
+  {
+   "id": "r14",
+   "anchor": "_good_sizes",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r15",
+   "anchor": "__doctest_requires__",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r16",
+   "anchor": "_next_fast_lengths",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r17",
+   "anchor": "_copy_input_if_needed#assign:input",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r18",
+   "anchor": "_copy_input_if_needed#if:hasattr(input, 'unit')",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r19",
+   "anchor": "_copy_input_if_needed#try",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r20",
+   "anchor": "_copy_input_if_needed#try/if:nan_treatment == 'fill' or np.ma.is_masked(input) or mask is not None",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r21",
+   "anchor": "_copy_input_if_needed#try/if:nan_treatment == 'fill' or np.ma.is_masked(input) or mask is not None/if:np.ma.is_masked(input)/assign:output",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r22",
+   "anchor": "_copy_input_if_needed#try/if:nan_treatment == 'fill' or np.ma.is_masked(input) or mask is not None/if:np.ma.is_masked(input)/else/assign:output",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r23",
+   "anchor": "_copy_input_if_needed#try/if:nan_treatment == 'fill' or np.ma.is_masked(input) or mask is not None/if:mask is not None/assign:output[mask != 0]",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r24",
+   "anchor": "_copy_input_if_needed#try/if:nan_treatment == 'fill' or np.ma.is_masked(input) or mask is not None/else/assign:output",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r25",
+   "anchor": "convolve",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r26",
+   "anchor": "convolve#assign:n_threads",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r27",
+   "anchor": "convolve#assign:passed_kernel",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r28",
+   "anchor": "convolve#assign:array_internal",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r29",
+   "anchor": "convolve#assign:array_internal",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r30",
+   "anchor": "convolve#assign:kernel_internal",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r31",
+   "anchor": "convolve#if:has_even_axis(kernel_internal)",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r32",
+   "anchor": "convolve#if:isinstance(passed_array, Kernel) and isinstance(passed_kernel, Kernel)",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r33",
+   "anchor": "convolve#if:array_internal.ndim == 0",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r34",
+   "anchor": "convolve#if:array_internal.ndim == 0",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r35",
+   "anchor": "convolve#if:boundary is None and not np.all(array_shape > 2*pad_width)",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r36",
+   "anchor": "convolve#assign:nan_interpolate",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r37",
+   "anchor": "convolve#if:normalize_kernel or nan_interpolate",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r38",
+   "anchor": "convolve#if:preserve_nan or nan_treatment == 'fill'",
+   "kind": "lead",
+   "line": 345
+  },
+  {
+   "id": "r39",
+   "anchor": "convolve#assign:result",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r40",
+   "anchor": "convolve#if:boundary in ('fill', 'extend', 'wrap')/if:boundary == 'fill'/assign:array_to_convolve",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r41",
+   "anchor": "convolve#if:boundary in ('fill', 'extend', 'wrap')/if:boundary == 'fill'/if:array_internal.ndim == 1",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r42",
+   "anchor": "convolve#if:normalize_kernel",
+   "kind": "lead",
+   "line": 398
+  },
+  {
+   "id": "r43",
+   "anchor": "convolve#assign:array_unit",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r44",
+   "anchor": "convolve#if:isinstance(passed_array, Kernel)/elif:array_dtype.kind == 'f'/try",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r45",
+   "anchor": "convolve_fft",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r46",
+   "anchor": "convolve_fft#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r47",
+   "anchor": "convolve_fft#if:isinstance(kernel, Kernel)",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r48",
+   "anchor": "convolve_fft#assign:array_unit",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r49",
+   "anchor": "convolve_fft#assign:array",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r50",
+   "anchor": "convolve_fft#if:array.ndim != kernel.ndim",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r51",
+   "anchor": "convolve_fft#assign:nanmaskarray",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r52",
+   "anchor": "convolve_fft#if:normalize_kernel is True/assign:kernel_scale",
+   "kind": "trail",
+   "line": 709
+  },
+  {
+   "id": "r53",
+   "anchor": "convolve_fft#if:normalize_kernel is True/elif:normalize_kernel/assign:kernel_scale",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r54",
+   "anchor": "convolve_fft#if:normalize_kernel is True/else/if:np.abs(kernel_scale) < normalization_zero_tol/if:nan_treatment == 'interpolate'/else/assign:kernel_scale",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r55",
+   "anchor": "convolve_fft#if:normalize_kernel is True/else/if:np.abs(kernel_scale) < normalization_zero_tol/else/assign:normalized_kernel",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r56",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'fill'/if:psf_pad is False",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r57",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'fill'/if:fft_pad is None/assign:fft_pad",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r58",
+   "anchor": "convolve_fft#if:boundary is None/elif:boundary == 'wrap'/assign:fill_value",
+   "kind": "trail",
+   "line": 757
+  },
+  {
+   "id": "r59",
+   "anchor": "convolve_fft#if:psf_pad",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r60",
+   "anchor": "convolve_fft#if:psf_pad",
+   "kind": "trail",
+   "line": 763
+  },
+  {
+   "id": "r61",
+   "anchor": "convolve_fft#if:psf_pad/assign:newshape",
+   "kind": "lead",
+   "line": 765
+  },
+  {
+   "id": "r62",
+   "anchor": "convolve_fft#if:psf_pad/else/assign:newshape",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r63",
+   "anchor": "convolve_fft#if:dealias/assign:newshape",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r64",
+   "anchor": "convolve_fft#if:fft_pad",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r65",
+   "anchor": "convolve_fft#if:fft_pad",
+   "kind": "trail",
+   "line": 775
+  },
+  {
+   "id": "r66",
+   "anchor": "convolve_fft#if:fft_pad/assign:newshape",
+   "kind": "lead",
+   "line": 777
+  },
+  {
+   "id": "r67",
+   "anchor": "convolve_fft#assign:array_size_C",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r68",
+   "anchor": "convolve_fft#assign:arrayslices",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r69",
+   "anchor": "convolve_fft#assign:arrayslices",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r70",
+   "anchor": "convolve_fft#assign:kernfft",
+   "kind": "lead",
+   "line": 830
+  },
+  {
+   "id": "r71",
+   "anchor": "convolve_fft#if:interpolate_nan/assign:wtfftmult",
+   "kind": "lead",
+   "line": 844
+  },
+  {
+   "id": "r72",
+   "anchor": "convolve_fft#if:interpolate_nan/assign:bigimwt[arrayslices]",
+   "kind": "lead",
+   "line": 848
+  },
+  {
+   "id": "r73",
+   "anchor": "convolve_fft#if:np.isnan(fftmult).any()/raise:ValueError",
+   "kind": "lead",
+   "line": 854
+  },
+  {
+   "id": "r74",
+   "anchor": "convolve_fft#if:interpolate_nan/with:np.errstate(divide='ignore', invalid='ignore')/assign:rifft",
+   "kind": "lead",
+   "line": 868
+  },
+  {
+   "id": "r75",
+   "anchor": "convolve_fft#if:interpolate_nan/if:not np.isscalar(bigimwt)/if:min_wt > 0./else/assign:rifft[bigimwt < 10 * np.finfo(bigimwt.dtype).eps]",
+   "kind": "lead",
+   "line": 875
+  },
+  {
+   "id": "r76",
+   "anchor": "interpolate_replace_nans",
+   "kind": "doc",
+   "line": 889
+  },
+  {
+   "id": "r77",
+   "anchor": "convolve_models",
+   "kind": "doc",
+   "line": 930
+  },
+  {
+   "id": "r78",
+   "anchor": "convolve_models_fft",
+   "kind": "doc",
+   "line": 964
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28489,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8752,
+  "thinking_tokens": 4484,
+  "opus_cost_usd": 0.5079815,
+  "total_cost_usd": 0.5294435,
+  "duration_ms": 79222,
+  "duration_api_ms": 80006,
+  "num_turns": 2
+ },
+ "wall_ms": 83599,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

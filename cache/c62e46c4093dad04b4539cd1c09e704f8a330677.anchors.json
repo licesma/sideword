@@ -1,0 +1,535 @@
+{
+ "blob_sha": "c62e46c4093dad04b4539cd1c09e704f8a330677",
+ "path": "astropy/nddata/nduncertainty.py",
+ "repo": "astropy/astropy",
+ "records": 85,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:weakref",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:astropy",
+   "kind": "lead",
+   "line": 10
+  },
+  {
+   "id": "r3",
+   "anchor": "collapse_to_variance_mapping",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "_move_preserved_axes_first#assign:zeroth_axis_after_reshape",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "_unravel_preserved_axes#if:collapsed_arr.ndim != len(preserve_axes)",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "from_variance_for_mean#if:axis is None/assign:denom",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r7",
+   "anchor": "collapse_from_variance_mapping",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r8",
+   "anchor": "IncompatibleUncertaintiesException",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r9",
+   "anchor": "MissingDataAssociationException",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r10",
+   "anchor": "NDUncertainty",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r11",
+   "anchor": "NDUncertainty.__init__#if:isinstance(array, NDUncertainty)/if:array.uncertainty_type != self.uncertainty_type",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r12",
+   "anchor": "NDUncertainty.__init__#if:isinstance(array, NDUncertainty)/if:unit is not None and unit != array._unit",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r13",
+   "anchor": "NDUncertainty.__init__#if:isinstance(array, NDUncertainty)/if:unit is not None and unit != array._unit/call:log.info",
+   "kind": "todo",
+   "line": 128
+  },
+  {
+   "id": "r14",
+   "anchor": "NDUncertainty.__init__#if:isinstance(array, NDUncertainty)/elif:isinstance(array, Quantity)/if:unit is not None and array.unit is not None and unit != array.unit",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r15",
+   "anchor": "NDUncertainty.__init__#assign:self.parent_nddata",
+   "kind": "trail",
+   "line": 151
+  },
+  {
+   "id": "r16",
+   "anchor": "NDUncertainty.uncertainty_type",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r17",
+   "anchor": "NDUncertainty.supports_correlated",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "NDUncertainty.array",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r19",
+   "anchor": "NDUncertainty.unit",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r20",
+   "anchor": "NDUncertainty.unit",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r21",
+   "anchor": "NDUncertainty.unit#if:value is not None/if:self._parent_nddata is not None",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r22",
+   "anchor": "NDUncertainty.unit#if:value is not None/if:self._parent_nddata is not None/try/call:self._data_unit_to_uncertainty_unit(parent_unit).to",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r23",
+   "anchor": "NDUncertainty.quantity",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r24",
+   "anchor": "NDUncertainty.parent_nddata",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r25",
+   "anchor": "NDUncertainty.parent_nddata#try/else/if:parent is None/else/if:isinstance(self._parent_nddata, weakref.ref)",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r26",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None and not isinstance(value, weakref.ref)/assign:value",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r27",
+   "anchor": "NDUncertainty.parent_nddata#assign:self._parent_nddata",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r28",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r29",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None/assign:parent_data_unit",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r30",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None/if:parent_unit is None and parent_data_unit is None/elif:self.unit is None and parent_unit is not None/assign:self.unit",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r31",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None/if:parent_unit is None and parent_data_unit is None/elif:parent_data_unit is not None/assign:self.unit",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r32",
+   "anchor": "NDUncertainty.parent_nddata#if:value is not None/if:parent_unit is None and parent_data_unit is None/else/assign:unit_from_data",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r33",
+   "anchor": "NDUncertainty._data_unit_to_uncertainty_unit",
+   "kind": "doc",
+   "line": 293
+  },
+  {
+   "id": "r34",
+   "anchor": "NDUncertainty.__repr__#try/except:AttributeError/assign:body",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r35",
+   "anchor": "NDUncertainty.__getstate__#try",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r36",
+   "anchor": "NDUncertainty.__getstate__#try/except:MissingDataAssociationException/return",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r37",
+   "anchor": "NDUncertainty.__getitem__",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r38",
+   "anchor": "NDUncertainty.propagate",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r39",
+   "anchor": "NDUncertainty.propagate#if:not self.supports_correlated",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r40",
+   "anchor": "NDUncertainty.propagate#if:other_nddata is not None/assign:other_uncert",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r41",
+   "anchor": "NDUncertainty.propagate#if:other_nddata is not None/else/assign:result",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r42",
+   "anchor": "NDUncertainty._convert_uncertainty",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r43",
+   "anchor": "NDUncertainty.represent_as",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r44",
+   "anchor": "UnknownUncertainty",
+   "kind": "doc",
+   "line": 495
+  },
+  {
+   "id": "r45",
+   "anchor": "UnknownUncertainty.supports_correlated",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r46",
+   "anchor": "UnknownUncertainty.uncertainty_type",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r47",
+   "anchor": "UnknownUncertainty._data_unit_to_uncertainty_unit",
+   "kind": "doc",
+   "line": 519
+  },
+  {
+   "id": "r48",
+   "anchor": "UnknownUncertainty._convert_uncertainty",
+   "kind": "doc",
+   "line": 525
+  },
+  {
+   "id": "r49",
+   "anchor": "UnknownUncertainty._propagate_add",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r50",
+   "anchor": "_VariancePropagationMixin",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r51",
+   "anchor": "_VariancePropagationMixin._propagate_collapse",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r52",
+   "anchor": "_VariancePropagationMixin._propagate_collapse#if:self.array is not None/if:numpy_op in [np.min, np.max]",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r53",
+   "anchor": "_VariancePropagationMixin._propagate_collapse#if:self.array is not None/if:numpy_op in [np.min, np.max]/return",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r54",
+   "anchor": "_VariancePropagationMixin._propagate_collapse#if:self.array is not None/if:numpy_op in [np.min, np.max]/else",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r55",
+   "anchor": "_VariancePropagationMixin._propagate_collapse#if:self.array is not None/if:numpy_op in [np.min, np.max]/else/assign:to_variance",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r56",
+   "anchor": "_VariancePropagationMixin._propagate_collapse#if:self.array is not None/if:numpy_op in [np.min, np.max]/else/if:self.unit is not None and to_variance(self.unit) != self.parent_nddata.unit**2/assign:this",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r57",
+   "anchor": "_VariancePropagationMixin._get_err_at_extremum",
+   "kind": "doc",
+   "line": 611
+  },
+  {
+   "id": "r58",
+   "anchor": "_VariancePropagationMixin._get_err_at_extremum#if:axis is not None and not hasattr(axis, \"__len__\")/assign:axis",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r59",
+   "anchor": "_VariancePropagationMixin._get_err_at_extremum#if:axis is None/assign:ind",
+   "kind": "lead",
+   "line": 641
+  },
+  {
+   "id": "r60",
+   "anchor": "_VariancePropagationMixin._get_err_at_extremum#assign:preserve_axes",
+   "kind": "lead",
+   "line": 645
+  },
+  {
+   "id": "r61",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub",
+   "kind": "doc",
+   "line": 662
+  },
+  {
+   "id": "r62",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:other_uncert.array is not None/if:other_uncert.unit is not None and result_unit_sq != to_variance(other_uncert.unit)",
+   "kind": "lead",
+   "line": 712
+  },
+  {
+   "id": "r63",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:other_uncert.array is not None/if:other_uncert.unit is not None and result_unit_sq != to_variance(other_uncert.unit)/assign:other",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r64",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:self.array is not None/if:self.unit is not None and to_variance(self.unit) != self.parent_nddata.unit**2",
+   "kind": "lead",
+   "line": 730
+  },
+  {
+   "id": "r65",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:self.array is not None/if:self.unit is not None and to_variance(self.unit) != self.parent_nddata.unit**2/assign:this",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r66",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:isinstance(correlation, np.ndarray) or correlation != 0",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r67",
+   "anchor": "_VariancePropagationMixin._propagate_add_sub#if:isinstance(correlation, np.ndarray) or correlation != 0",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r68",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide",
+   "kind": "doc",
+   "line": 755
+  },
+  {
+   "id": "r69",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:isinstance(result_data, Quantity)",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r70",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:other_uncert.array is not None/if:other_uncert.unit and to_variance(1 * other_uncert.unit) != ((1 * other_uncert.parent_nddata.unit) ** 2).unit",
+   "kind": "lead",
+   "line": 806
+  },
+  {
+   "id": "r71",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:other_uncert.array is not None/assign:right",
+   "kind": "lead",
+   "line": 819
+  },
+  {
+   "id": "r72",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:self.array is not None/if:self.unit and to_variance(1 * self.unit) != ((1 * self.parent_nddata.unit) ** 2).unit",
+   "kind": "lead",
+   "line": 825
+  },
+  {
+   "id": "r73",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:self.array is not None/assign:left",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r74",
+   "anchor": "_VariancePropagationMixin._propagate_multiply_divide#if:isinstance(correlation, np.ndarray) or correlation != 0",
+   "kind": "lead",
+   "line": 870
+  },
+  {
+   "id": "r75",
+   "anchor": "StdDevUncertainty",
+   "kind": "doc",
+   "line": 890
+  },
+  {
+   "id": "r76",
+   "anchor": "StdDevUncertainty.supports_correlated",
+   "kind": "doc",
+   "line": 935
+  },
+  {
+   "id": "r77",
+   "anchor": "StdDevUncertainty.uncertainty_type",
+   "kind": "doc",
+   "line": 945
+  },
+  {
+   "id": "r78",
+   "anchor": "StdDevUncertainty._propagate_collapse#return",
+   "kind": "lead",
+   "line": 997
+  },
+  {
+   "id": "r79",
+   "anchor": "VarianceUncertainty",
+   "kind": "doc",
+   "line": 1014
+  },
+  {
+   "id": "r80",
+   "anchor": "VarianceUncertainty.uncertainty_type",
+   "kind": "doc",
+   "line": 1064
+  },
+  {
+   "id": "r81",
+   "anchor": "VarianceUncertainty.supports_correlated",
+   "kind": "doc",
+   "line": 1069
+  },
+  {
+   "id": "r82",
+   "anchor": "_inverse",
+   "kind": "doc",
+   "line": 1109
+  },
+  {
+   "id": "r83",
+   "anchor": "InverseVariance",
+   "kind": "doc",
+   "line": 1114
+  },
+  {
+   "id": "r84",
+   "anchor": "InverseVariance.uncertainty_type",
+   "kind": "doc",
+   "line": 1165
+  },
+  {
+   "id": "r85",
+   "anchor": "InverseVariance.supports_correlated",
+   "kind": "doc",
+   "line": 1170
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27933,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10265,
+  "thinking_tokens": 5371,
+  "opus_cost_usd": 0.5402465,
+  "total_cost_usd": 0.5614334999999999,
+  "duration_ms": 89382,
+  "duration_api_ms": 90461,
+  "num_turns": 2
+ },
+ "wall_ms": 90526,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

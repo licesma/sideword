@@ -1,0 +1,295 @@
+{
+ "blob_sha": "a4c05fc48cb83211ebe860d9a04a8c3f27af4ad9",
+ "path": "astropy/cosmology/parameter.py",
+ "repo": "astropy/astropy",
+ "records": 45,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "Parameter",
+   "kind": "doc",
+   "line": 11
+  },
+  {
+   "id": "r3",
+   "anchor": "Parameter._attr_name",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r4",
+   "anchor": "Parameter._format_spec",
+   "kind": "trail",
+   "line": 63
+  },
+  {
+   "id": "r5",
+   "anchor": "Parameter._unit",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r6",
+   "anchor": "Parameter._fvalidate_in",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r7",
+   "anchor": "Parameter._fvalidate_in",
+   "kind": "trail",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "Parameter.__set_name__#assign:self._attr_name",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r9",
+   "anchor": "Parameter.name",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r10",
+   "anchor": "Parameter.unit",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r11",
+   "anchor": "Parameter.equivalencies",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r12",
+   "anchor": "Parameter.derived",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r13",
+   "anchor": "Parameter.__get__",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r14",
+   "anchor": "Parameter.__get__#if:cosmology is None",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r15",
+   "anchor": "Parameter.__get__#return",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r16",
+   "anchor": "Parameter.__set__",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r17",
+   "anchor": "Parameter.__set__#if:hasattr(cosmology, self._attr_name_private)",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r18",
+   "anchor": "Parameter.__set__#assign:value",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r19",
+   "anchor": "Parameter.__set__#if:hasattr(value, \"setflags\")",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r20",
+   "anchor": "Parameter.__set__#call:setattr",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r21",
+   "anchor": "Parameter.fvalidate",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r22",
+   "anchor": "Parameter.fvalidate",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r23",
+   "anchor": "Parameter.validator",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r24",
+   "anchor": "Parameter.validate",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r25",
+   "anchor": "Parameter.register_validator",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r26",
+   "anchor": "Parameter.register_validator#if:fvalidate is not None",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r27",
+   "anchor": "Parameter.register_validator.register",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r28",
+   "anchor": "Parameter.register_validator.register",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r29",
+   "anchor": "Parameter._get_init_arguments",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r30",
+   "anchor": "Parameter._get_init_arguments",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r31",
+   "anchor": "Parameter._get_init_arguments#assign:kw",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r32",
+   "anchor": "Parameter._get_init_arguments#assign:kw/key:fvalidate",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r33",
+   "anchor": "Parameter._get_init_arguments#if:self._format_spec",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r34",
+   "anchor": "Parameter.clone",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r35",
+   "anchor": "Parameter.clone#assign:kwargs",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r36",
+   "anchor": "Parameter.clone#assign:cloned",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r37",
+   "anchor": "Parameter.clone#assign:cloned._attr_name",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r38",
+   "anchor": "Parameter.__eq__",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r39",
+   "anchor": "Parameter.__eq__#return",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r40",
+   "anchor": "Parameter.__repr__",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r41",
+   "anchor": "_validate_with_unit",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r42",
+   "anchor": "_validate_with_unit",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r43",
+   "anchor": "_validate_to_float",
+   "kind": "doc",
+   "line": 339
+  },
+  {
+   "id": "r44",
+   "anchor": "_validate_to_scalar",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r45",
+   "anchor": "_validate_non_negative",
+   "kind": "doc",
+   "line": 355
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10397,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3941,
+  "thinking_tokens": 2155,
+  "opus_cost_usd": 0.20678649999999998,
+  "total_cost_usd": 0.21350149999999998,
+  "duration_ms": 37609,
+  "duration_api_ms": 38644,
+  "num_turns": 2
+ },
+ "wall_ms": 39507,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

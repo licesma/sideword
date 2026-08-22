@@ -1,0 +1,109 @@
+{
+ "blob_sha": "fa7a34ed0aae43c2b5c98d88306da83ba6d20220",
+ "path": "django/db/backends/oracle/introspection.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseIntrospection.data_types_reverse",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseIntrospection.get_table_list",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseIntrospection.get_table_description",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseIntrospection.get_table_description#call:cursor.execute",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseIntrospection.get_table_description#for:desc in cursor.description/assign:name",
+   "kind": "trail",
+   "line": 142
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseIntrospection.identifier_converter",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseIntrospection.get_sequences#assign:row",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseIntrospection.get_sequences#for:f in table_fields",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseIntrospection.get_relations",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseIntrospection.get_constraints",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseIntrospection.get_constraints#call:cursor.execute",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseIntrospection.get_constraints#for:constraint, columns, pk, unique, check in cursor.fetchall()/assign:constraints[constraint]/key:index",
+   "kind": "trail",
+   "line": 275
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseIntrospection.get_constraints#call:cursor.execute",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseIntrospection.get_constraints#call:cursor.execute",
+   "kind": "lead",
+   "line": 306
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 4,
+  "cache_creation_input_tokens": 11437,
+  "cache_read_input_tokens": 27117,
+  "output_tokens": 2225,
+  "thinking_tokens": 528,
+  "opus_cost_usd": 0.1835735,
+  "total_cost_usd": 0.1898795,
+  "duration_ms": 21847,
+  "duration_api_ms": 23243,
+  "num_turns": 3
+ },
+ "wall_ms": 22687,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

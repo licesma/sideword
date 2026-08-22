@@ -1,0 +1,283 @@
+{
+ "blob_sha": "daae8fc5b35cca2358420e8620bb18597817ec76",
+ "path": "lib/matplotlib/streamplot.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "streamplot",
+   "kind": "doc",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "streamplot#if:transform is None",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r4",
+   "anchor": "streamplot#if:use_multicolor_lines/assign:line_colors",
+   "kind": "trail",
+   "line": 122
+  },
+  {
+   "id": "r5",
+   "anchor": "streamplot#if:u.shape != grid.shape or v.shape != grid.shape",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r6",
+   "anchor": "streamplot#if:start_points is None/else/for:xs, ys in sp2",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r7",
+   "anchor": "streamplot#if:start_points is None/else/assign:sp2[:, 0]",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r8",
+   "anchor": "streamplot#if:start_points is None/else/for:xs, ys in sp2/assign:xg",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r9",
+   "anchor": "streamplot#for:t in trajectories/assign:tx, ty",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r10",
+   "anchor": "streamplot#for:t in trajectories/if:isinstance(linewidth, np.ndarray) or use_multicolor_lines",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r11",
+   "anchor": "streamplot#for:t in trajectories/assign:s",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r12",
+   "anchor": "streamplot#for:p in arrows",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r13",
+   "anchor": "DomainMap",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r14",
+   "anchor": "DomainMap",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r15",
+   "anchor": "DomainMap.x_grid2mask",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r16",
+   "anchor": "DomainMap.grid2mask",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r17",
+   "anchor": "Grid",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r18",
+   "anchor": "Grid.__init__#if:np.ndim(y) == 1/elif:np.ndim(y) == 2/assign:yt",
+   "kind": "trail",
+   "line": 339
+  },
+  {
+   "id": "r19",
+   "anchor": "Grid.within_grid",
+   "kind": "doc",
+   "line": 373
+  },
+  {
+   "id": "r20",
+   "anchor": "Grid.within_grid#return",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r21",
+   "anchor": "StreamMask",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r22",
+   "anchor": "StreamMask._start_trajectory",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r23",
+   "anchor": "StreamMask._undo_trajectory",
+   "kind": "doc",
+   "line": 411
+  },
+  {
+   "id": "r24",
+   "anchor": "StreamMask._update_trajectory",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r25",
+   "anchor": "_get_integrator",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r26",
+   "anchor": "_get_integrator#assign:u, v",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r27",
+   "anchor": "_get_integrator#assign:u_ax",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r28",
+   "anchor": "_get_integrator.integrate",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r29",
+   "anchor": "_get_integrator.integrate#if:stotal > minlength/else",
+   "kind": "trail",
+   "line": 503
+  },
+  {
+   "id": "r30",
+   "anchor": "_integrate_rk12",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r31",
+   "anchor": "_integrate_rk12#assign:maxerror",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r32",
+   "anchor": "_integrate_rk12#assign:maxds",
+   "kind": "lead",
+   "line": 548
+  },
+  {
+   "id": "r33",
+   "anchor": "_integrate_rk12#while:True/try/assign:k1x, k1y",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r34",
+   "anchor": "_integrate_rk12#while:True/try/except:OutOfBounds/if:xyf_traj",
+   "kind": "lead",
+   "line": 573
+  },
+  {
+   "id": "r35",
+   "anchor": "_integrate_rk12#while:True/assign:error",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r36",
+   "anchor": "_integrate_rk12#while:True/if:error < maxerror",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r37",
+   "anchor": "_integrate_rk12#while:True/if:error == 0",
+   "kind": "lead",
+   "line": 602
+  },
+  {
+   "id": "r38",
+   "anchor": "_euler_step",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r39",
+   "anchor": "interpgrid",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r40",
+   "anchor": "interpgrid",
+   "kind": "doc",
+   "line": 635
+  },
+  {
+   "id": "r41",
+   "anchor": "interpgrid#if:isinstance(xi, np.ndarray)/assign:xn",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r42",
+   "anchor": "interpgrid#if:isinstance(xi, np.ndarray)/else/if:x == (Nx - 1)",
+   "kind": "lead",
+   "line": 649
+  },
+  {
+   "id": "r43",
+   "anchor": "_gen_starting_points",
+   "kind": "doc",
+   "line": 675
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16926,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4111,
+  "thinking_tokens": 2213,
+  "opus_cost_usd": 0.2763265,
+  "total_cost_usd": 0.28863849999999996,
+  "duration_ms": 36837,
+  "duration_api_ms": 37988,
+  "num_turns": 2
+ },
+ "wall_ms": 37874,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

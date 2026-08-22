@@ -1,0 +1,181 @@
+{
+ "blob_sha": "0f104416deed0f4bcf87b5e312417e127af33c9a",
+ "path": "django/db/models/lookups.py",
+ "repo": "django/django",
+ "records": 26,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Lookup.__init__#if:bilateral_transforms/import:django.db.models.sql.query",
+   "kind": "lead",
+   "line": 31
+  },
+  {
+   "id": "r2",
+   "anchor": "Lookup.__init__#if:bilateral_transforms/import:django.db.models.sql.query",
+   "kind": "trail",
+   "line": 31
+  },
+  {
+   "id": "r3",
+   "anchor": "Lookup.process_lhs#if:isinstance(lhs, Lookup)/assign:sql",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r4",
+   "anchor": "Lookup.process_rhs#if:self.bilateral_transforms/if:self.rhs_is_direct_value()/assign:value",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r5",
+   "anchor": "Lookup.process_rhs#if:hasattr(value, 'as_sql')/if:sql and sql[0] != '('",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r6",
+   "anchor": "Lookup.as_oracle#assign:wrapped",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r7",
+   "anchor": "Lookup.select_format#if:not compiler.connection.features.supports_boolean_expr_in_select_clause",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r8",
+   "anchor": "Transform",
+   "kind": "doc",
+   "line": 176
+  },
+  {
+   "id": "r9",
+   "anchor": "FieldGetDbPrepValueMixin",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r10",
+   "anchor": "FieldGetDbPrepValueMixin.get_db_prep_lookup#assign:field",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r11",
+   "anchor": "FieldGetDbPrepValueIterableMixin",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r12",
+   "anchor": "FieldGetDbPrepValueIterableMixin.get_prep_lookup#for:rhs_value in self.rhs/if:hasattr(rhs_value, 'resolve_expression')/pass",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r13",
+   "anchor": "FieldGetDbPrepValueIterableMixin.process_rhs#if:self.rhs_is_direct_value()/return",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r14",
+   "anchor": "FieldGetDbPrepValueIterableMixin.batch_process_rhs#assign:sql, params",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r15",
+   "anchor": "PostgresOperatorLookup",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r16",
+   "anchor": "Exact.as_sql#if:isinstance(self.rhs, bool) and getattr(self.lhs, 'conditional', False) and connection.ops.conditional_expression_supported_in_where_clause(self.lhs)",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r17",
+   "anchor": "IntegerFieldFloatRounding",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r18",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/try",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r19",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/try/except:TypeError",
+   "kind": "trail",
+   "line": 404
+  },
+  {
+   "id": "r20",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/assign:sqls, sqls_params",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r21",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/else/import:django.db.models.sql.query",
+   "kind": "trail",
+   "line": 416
+  },
+  {
+   "id": "r22",
+   "anchor": "In.split_parameter_list_as_sql#assign:max_in_list_size",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r23",
+   "anchor": "PatternLookup.get_rhs_op#if:hasattr(self.rhs, 'as_sql') or self.bilateral_transforms",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r24",
+   "anchor": "YearLookup.as_sql#if:self.rhs_is_direct_value()",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r25",
+   "anchor": "YearLookup.as_sql#if:self.rhs_is_direct_value()/assign:lhs_sql, params",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r26",
+   "anchor": "UUIDTextMixin",
+   "kind": "doc",
+   "line": 640
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16524,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3822,
+  "thinking_tokens": 2270,
+  "opus_cost_usd": 0.26508149999999997,
+  "total_cost_usd": 0.27705149999999995,
+  "duration_ms": 35347,
+  "duration_api_ms": 37722,
+  "num_turns": 2
+ },
+ "wall_ms": 36384,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

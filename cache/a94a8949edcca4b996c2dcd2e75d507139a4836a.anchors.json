@@ -1,0 +1,445 @@
+{
+ "blob_sha": "a94a8949edcca4b996c2dcd2e75d507139a4836a",
+ "path": "django/db/models/fields/related_descriptors.py",
+ "repo": "django/django",
+ "records": 70,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ForwardManyToOneDescriptor",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r3",
+   "anchor": "ForwardManyToOneDescriptor.RelatedObjectDoesNotExist#return",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r4",
+   "anchor": "ForwardManyToOneDescriptor.get_prefetch_queryset#if:self.field.remote_field.is_hidden() or len(self.field.foreign_related_fields) == 1",
+   "kind": "todo",
+   "line": 141
+  },
+  {
+   "id": "r5",
+   "anchor": "ForwardManyToOneDescriptor.get_prefetch_queryset#if:not self.field.remote_field.multiple",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r6",
+   "anchor": "ForwardManyToOneDescriptor.get_object#return",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r7",
+   "anchor": "ForwardManyToOneDescriptor.__get__",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r8",
+   "anchor": "ForwardManyToOneDescriptor.__get__#try",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r9",
+   "anchor": "ForwardManyToOneDescriptor.__get__#try/except:AttributeError/if:None in val/else/if:not self.field.remote_field.multiple",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r10",
+   "anchor": "ForwardManyToOneDescriptor.__set__",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r11",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is not None and not isinstance(value, self.field.remote_field.model._meta.concrete_model)",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r12",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is None",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r13",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is None/assign:related",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r14",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is None/if:related is not None",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r15",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is None/else",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r16",
+   "anchor": "ForwardManyToOneDescriptor.__set__#call:setattr",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r17",
+   "anchor": "ForwardManyToOneDescriptor.__set__#if:value is not None and not self.field.remote_field.multiple",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r18",
+   "anchor": "ForwardOneToOneDescriptor",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r19",
+   "anchor": "ForwardOneToOneDescriptor.get_object#if:self.field.remote_field.parent_link/assign:rel_model",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r20",
+   "anchor": "ForwardOneToOneDescriptor.get_object#if:self.field.remote_field.parent_link/if:not any(field in fields for field in deferred)",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r21",
+   "anchor": "ReverseOneToOneDescriptor",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r22",
+   "anchor": "ReverseOneToOneDescriptor.RelatedObjectDoesNotExist#return",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r23",
+   "anchor": "ReverseOneToOneDescriptor.get_prefetch_queryset#assign:rel_obj_cache_name",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r24",
+   "anchor": "ReverseOneToOneDescriptor.__get__",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r25",
+   "anchor": "ReverseOneToOneDescriptor.__get__#try",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r26",
+   "anchor": "ReverseOneToOneDescriptor.__get__#try/except:AttributeError/if:related_pk is None/else/try/else/call:setattr",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r27",
+   "anchor": "ReverseOneToOneDescriptor.__set__",
+   "kind": "doc",
+   "line": 410
+  },
+  {
+   "id": "r28",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r29",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None/try",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r30",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None/elif:not isinstance(value, self.related.related_model)/raise:ValueError",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r31",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None/else/for:index, field in enumerate(self.related.field.local_related_fields)",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r32",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None/else/call:setattr",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r33",
+   "anchor": "ReverseOneToOneDescriptor.__set__#if:value is None/else/call:setattr",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r34",
+   "anchor": "ReverseManyToOneDescriptor",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r35",
+   "anchor": "ReverseManyToOneDescriptor.__get__",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r36",
+   "anchor": "ReverseManyToOneDescriptor._get_set_deprecation_msg_params#return",
+   "kind": "trail",
+   "line": 513
+  },
+  {
+   "id": "r37",
+   "anchor": "ReverseManyToOneDescriptor.__set__",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r38",
+   "anchor": "create_reverse_many_to_one_manager",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r39",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager.__call__#assign:manager",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r40",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager._apply_rel_filters",
+   "kind": "doc",
+   "line": 563
+  },
+  {
+   "id": "r41",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager._remove_prefetched_objects#try/except:(AttributeError, KeyError)/pass",
+   "kind": "trail",
+   "line": 584
+  },
+  {
+   "id": "r42",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager.get_prefetch_queryset#for:rel_obj in queryset",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r43",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager#if:rel.field.null",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r44",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager.remove#for:obj in objs/if:self.field.get_local_related_value(obj) == val",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r45",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager._clear#if:bulk/call:queryset.update",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r46",
+   "anchor": "create_reverse_many_to_one_manager.RelatedManager.set#assign:objs",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r47",
+   "anchor": "ManyToManyDescriptor",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r48",
+   "anchor": "ManyToManyDescriptor.through#return",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r49",
+   "anchor": "ManyToManyDescriptor._get_set_deprecation_msg_params#return",
+   "kind": "trail",
+   "line": 775
+  },
+  {
+   "id": "r50",
+   "anchor": "create_forward_many_to_many_manager",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r51",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.__init__#if:instance.pk is None",
+   "kind": "lead",
+   "line": 829
+  },
+  {
+   "id": "r52",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.__call__#assign:manager",
+   "kind": "lead",
+   "line": 837
+  },
+  {
+   "id": "r53",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._build_remove_filters#assign:removed_vals_filters",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r54",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._apply_rel_filters",
+   "kind": "doc",
+   "line": 858
+  },
+  {
+   "id": "r55",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._remove_prefetched_objects#try/except:(AttributeError, KeyError)/pass",
+   "kind": "trail",
+   "line": 871
+  },
+  {
+   "id": "r56",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.get_prefetch_queryset#assign:fk",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r57",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.get_prefetch_queryset#assign:fk",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r58",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.add#with:transaction.atomic(using=db, savepoint=False)/if:self.symmetrical",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r59",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.set#assign:objs",
+   "kind": "lead",
+   "line": 978
+  },
+  {
+   "id": "r60",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.create#if:not self.through._meta.auto_created",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r61",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.get_or_create#if:created",
+   "kind": "lead",
+   "line": 1026
+  },
+  {
+   "id": "r62",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager.update_or_create#if:created",
+   "kind": "lead",
+   "line": 1036
+  },
+  {
+   "id": "r63",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._add_items#import:django.db.models",
+   "kind": "lead",
+   "line": 1047
+  },
+  {
+   "id": "r64",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._add_items#import:django.db.models",
+   "kind": "lead",
+   "line": 1047
+  },
+  {
+   "id": "r65",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._add_items#if:objs/with:transaction.atomic(using=db, savepoint=False)/if:self.reverse or source_field_name == self.source_field_name/call:signals.m2m_changed.send",
+   "kind": "lead",
+   "line": 1086
+  },
+  {
+   "id": "r66",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._add_items#if:objs/with:transaction.atomic(using=db, savepoint=False)/call:self.through._default_manager.using(db).bulk_create",
+   "kind": "lead",
+   "line": 1093
+  },
+  {
+   "id": "r67",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._add_items#if:objs/with:transaction.atomic(using=db, savepoint=False)/if:self.reverse or source_field_name == self.source_field_name/call:signals.m2m_changed.send",
+   "kind": "lead",
+   "line": 1104
+  },
+  {
+   "id": "r68",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._remove_items#if:not objs",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r69",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._remove_items#assign:old_ids",
+   "kind": "lead",
+   "line": 1118
+  },
+  {
+   "id": "r70",
+   "anchor": "create_forward_many_to_many_manager.ManyRelatedManager._remove_items#with:transaction.atomic(using=db, savepoint=False)/call:signals.m2m_changed.send",
+   "kind": "lead",
+   "line": 1129
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27584,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9178,
+  "thinking_tokens": 4850,
+  "opus_cost_usd": 0.5095815,
+  "total_cost_usd": 0.5310485,
+  "duration_ms": 79323,
+  "duration_api_ms": 80551,
+  "num_turns": 2
+ },
+ "wall_ms": 80178,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

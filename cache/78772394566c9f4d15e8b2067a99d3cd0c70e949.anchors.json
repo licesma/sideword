@@ -1,0 +1,391 @@
+{
+ "blob_sha": "78772394566c9f4d15e8b2067a99d3cd0c70e949",
+ "path": "astropy/io/misc/parquet.py",
+ "repo": "astropy/astropy",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:astropy.utils.exceptions",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r4",
+   "anchor": "__all__",
+   "kind": "trail",
+   "line": 23
+  },
+  {
+   "id": "r5",
+   "anchor": "parquet_identify",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r6",
+   "anchor": "parquet_identify#if:fileobj is not None/try",
+   "kind": "trail",
+   "line": 44
+  },
+  {
+   "id": "r7",
+   "anchor": "parquet_identify#if:fileobj is not None/try/assign:pos",
+   "kind": "trail",
+   "line": 45
+  },
+  {
+   "id": "r8",
+   "anchor": "parquet_identify#if:fileobj is not None/assign:signature",
+   "kind": "trail",
+   "line": 49
+  },
+  {
+   "id": "r9",
+   "anchor": "parquet_identify#if:fileobj is not None/call:fileobj.seek",
+   "kind": "trail",
+   "line": 50
+  },
+  {
+   "id": "r10",
+   "anchor": "read_table_parquet",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r11",
+   "anchor": "read_table_parquet#if:not isinstance(input, (str, os.PathLike))/if:not hasattr(input, \"read\")",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r12",
+   "anchor": "read_table_parquet#if:schema.metadata is not None",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r13",
+   "anchor": "read_table_parquet#assign:meta_dict",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r14",
+   "anchor": "read_table_parquet#assign:full_table_columns",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r15",
+   "anchor": "read_table_parquet#if:include_names is not None",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r16",
+   "anchor": "read_table_parquet#assign:use_names",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r17",
+   "anchor": "read_table_parquet#assign:names_to_read",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r18",
+   "anchor": "read_table_parquet#if:has_serialized_columns",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r19",
+   "anchor": "read_table_parquet#if:not schema_only",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r20",
+   "anchor": "read_table_parquet#if:not schema_only/assign:pa_table",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r21",
+   "anchor": "read_table_parquet#assign:dtype",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r22",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:isinstance(t, pa.FixedSizeListType)/assign:value_type",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r23",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:isinstance(t, pa.FixedSizeListType)/elif:isinstance(t, pa.ListType)/assign:value_type",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r24",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:isinstance(t, pa.FixedSizeListType)/else/assign:value_type",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r25",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:value_type not in (pa.string(), pa.binary())/if:shape is None",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r26",
+   "anchor": "read_table_parquet#for:name in names_to_read/assign:md_name",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r27",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/assign:strlen",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r28",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/elif:schema_only",
+   "kind": "trail",
+   "line": 226
+  },
+  {
+   "id": "r29",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:md_name in md/elif:schema_only/assign:strlen",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r30",
+   "anchor": "read_table_parquet#for:name in names_to_read/if:shape is None",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r31",
+   "anchor": "read_table_parquet#if:schema_only/assign:data",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r32",
+   "anchor": "read_table_parquet#if:schema_only/else/assign:table",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r33",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/assign:col",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r34",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/if:t in (pa.string(), pa.binary())/assign:col",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r35",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/if:t in (pa.string(), pa.binary())/elif:isinstance(t, pa.FixedSizeListType)/if:len(col) > 0",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r36",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/if:t in (pa.string(), pa.binary())/elif:isinstance(t, pa.FixedSizeListType)/if:len(col) > 0/if:t.value_type in (pa.string(), pa.binary())/assign:col",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r37",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/if:t in (pa.string(), pa.binary())/elif:isinstance(t, pa.FixedSizeListType)/if:len(col) > 0/else/assign:col",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r38",
+   "anchor": "read_table_parquet#if:schema_only/else/for:name, dt in zip(names_to_read, dtype)/if:t in (pa.string(), pa.binary())/elif:isinstance(t, pa.FixedSizeListType)/elif:isinstance(t, pa.ListType)/if:t.value_type in (pa.string(), pa.binary())",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r39",
+   "anchor": "read_table_parquet#if:meta_hdr is not None/assign:header_cols",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r40",
+   "anchor": "read_table_parquet#assign:table",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r41",
+   "anchor": "write_table_parquet",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r42",
+   "anchor": "write_table_parquet#with:serialize_context_as(\"parquet\")",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r43",
+   "anchor": "write_table_parquet#assign:meta_yaml",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r44",
+   "anchor": "write_table_parquet#assign:type_list",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r45",
+   "anchor": "write_table_parquet#for:name in encode_table.dtype.names/if:dt.type == np.object_/if:len(encode_table) > 0",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r46",
+   "anchor": "write_table_parquet#for:name in encode_table.dtype.names/if:dt.type == np.object_/if:len(encode_table) > 0/for:row in encode_table[name]",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r47",
+   "anchor": "write_table_parquet#for:name in encode_table.dtype.names/if:dt.type == np.object_/if:len(encode_table) > 0/assign:arrow_type",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r48",
+   "anchor": "write_table_parquet#for:name in encode_table.dtype.names/if:dt.type == np.object_/elif:len(dt.shape) > 0/assign:arrow_type",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r49",
+   "anchor": "write_table_parquet#for:name in encode_table.dtype.names/if:dt.type == np.object_/else/assign:arrow_type",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r50",
+   "anchor": "write_table_parquet#for:name, col in encode_table.columns.items()/assign:t",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r51",
+   "anchor": "write_table_parquet#for:name, col in encode_table.columns.items()/if:t is np.object_/if:t == np.str_ or t == np.bytes_/assign:itemsize",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r52",
+   "anchor": "write_table_parquet#assign:metadata_encode",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r53",
+   "anchor": "write_table_parquet#if:os.path.exists(output)/if:overwrite/call:os.remove",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r54",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r55",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/assign:arrays",
+   "kind": "lead",
+   "line": 440
+  },
+  {
+   "id": "r56",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/for:name in encode_table.dtype.names/assign:dt_new",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r57",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/for:name in encode_table.dtype.names/if:dt.type == np.object_/assign:val",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r58",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/assign:pa_table",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r59",
+   "anchor": "write_table_parquet#with:parquet.ParquetWriter(output, schema, version=writer_version)/call:writer.write_table",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r60",
+   "anchor": "_get_names",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r61",
+   "anchor": "register_parquet",
+   "kind": "doc",
+   "line": 491
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14580,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7930,
+  "thinking_tokens": 4211,
+  "opus_cost_usd": 0.34834149999999997,
+  "total_cost_usd": 0.35886549999999995,
+  "duration_ms": 66715,
+  "duration_api_ms": 67973,
+  "num_turns": 2
+ },
+ "wall_ms": 67535,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

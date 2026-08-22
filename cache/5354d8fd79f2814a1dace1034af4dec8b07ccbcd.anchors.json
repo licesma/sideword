@@ -1,0 +1,2233 @@
+{
+ "blob_sha": "5354d8fd79f2814a1dace1034af4dec8b07ccbcd",
+ "path": "lib/matplotlib/axes/_axes.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 368,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:matplotlib.category",
+   "kind": "trail",
+   "line": 11
+  },
+  {
+   "id": "r2",
+   "anchor": "Axes",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r3",
+   "anchor": "Axes",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r4",
+   "anchor": "Axes.get_title",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r5",
+   "anchor": "Axes.get_title",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r6",
+   "anchor": "Axes.set_title",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r7",
+   "anchor": "Axes.get_legend_handles_labels",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r8",
+   "anchor": "Axes.get_legend_handles_labels#assign:handles, labels",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r9",
+   "anchor": "Axes.legend",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r10",
+   "anchor": "Axes.inset_axes",
+   "kind": "doc",
+   "line": 325
+  },
+  {
+   "id": "r11",
+   "anchor": "Axes.inset_axes#assign:inset_locator",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r12",
+   "anchor": "Axes.inset_axes#call:inset_ax.set_axes_locator",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r13",
+   "anchor": "Axes.indicate_inset",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r14",
+   "anchor": "Axes.indicate_inset#call:self.apply_aspect",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r15",
+   "anchor": "Axes.indicate_inset#if:inset_ax is not None/for:xy_inset_ax in [(0, 0), (0, 1), (1, 0), (1, 1)]",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r16",
+   "anchor": "Axes.indicate_inset#if:inset_ax is not None/for:xy_inset_ax in [(0, 0), (0, 1), (1, 0), (1, 1)]/assign:ex, ey",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r17",
+   "anchor": "Axes.indicate_inset#if:inset_ax is not None/assign:pos",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r18",
+   "anchor": "Axes.indicate_inset_zoom",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r19",
+   "anchor": "Axes.secondary_xaxis",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r20",
+   "anchor": "Axes.secondary_yaxis",
+   "kind": "doc",
+   "line": 595
+  },
+  {
+   "id": "r21",
+   "anchor": "Axes.text",
+   "kind": "doc",
+   "line": 627
+  },
+  {
+   "id": "r22",
+   "anchor": "Axes.annotate#assign:a",
+   "kind": "lead",
+   "line": 699
+  },
+  {
+   "id": "r23",
+   "anchor": "Axes.axhline",
+   "kind": "lead",
+   "line": 711
+  },
+  {
+   "id": "r24",
+   "anchor": "Axes.axhline",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r25",
+   "anchor": "Axes.axhline#assign:yy",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r26",
+   "anchor": "Axes.axvline",
+   "kind": "doc",
+   "line": 779
+  },
+  {
+   "id": "r27",
+   "anchor": "Axes.axvline#assign:xx",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r28",
+   "anchor": "Axes._check_no_units#for:val, name in zip(vals, names)",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r29",
+   "anchor": "Axes.axline",
+   "kind": "doc",
+   "line": 855
+  },
+  {
+   "id": "r30",
+   "anchor": "Axes.axline#if:\"transform\" in kwargs/assign:datalim",
+   "kind": "lead",
+   "line": 912
+  },
+  {
+   "id": "r31",
+   "anchor": "Axes.axline#call:self._set_artist_props",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r32",
+   "anchor": "Axes.axhspan",
+   "kind": "doc",
+   "line": 929
+  },
+  {
+   "id": "r33",
+   "anchor": "Axes.axhspan#call:self._check_no_units",
+   "kind": "lead",
+   "line": 966
+  },
+  {
+   "id": "r34",
+   "anchor": "Axes.axvspan",
+   "kind": "doc",
+   "line": 977
+  },
+  {
+   "id": "r35",
+   "anchor": "Axes.axvspan#call:self._check_no_units",
+   "kind": "lead",
+   "line": 1022
+  },
+  {
+   "id": "r36",
+   "anchor": "Axes.hlines",
+   "kind": "doc",
+   "line": 1035
+  },
+  {
+   "id": "r37",
+   "anchor": "Axes.hlines#assign:xmin, xmax, y",
+   "kind": "lead",
+   "line": 1072
+  },
+  {
+   "id": "r38",
+   "anchor": "Axes.hlines#assign:y, xmin, xmax",
+   "kind": "lead",
+   "line": 1083
+  },
+  {
+   "id": "r39",
+   "anchor": "Axes.hlines#if:len(y) > 0/assign:minx",
+   "kind": "lead",
+   "line": 1103
+  },
+  {
+   "id": "r40",
+   "anchor": "Axes.vlines",
+   "kind": "doc",
+   "line": 1115
+  },
+  {
+   "id": "r41",
+   "anchor": "Axes.vlines#assign:x, ymin, ymax",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r42",
+   "anchor": "Axes.vlines#assign:x, ymin, ymax",
+   "kind": "lead",
+   "line": 1163
+  },
+  {
+   "id": "r43",
+   "anchor": "Axes.vlines#if:len(x) > 0/assign:minx",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r44",
+   "anchor": "Axes.eventplot",
+   "kind": "doc",
+   "line": 1197
+  },
+  {
+   "id": "r45",
+   "anchor": "Axes.eventplot#if:not np.iterable(positions)",
+   "kind": "lead",
+   "line": 1308
+  },
+  {
+   "id": "r46",
+   "anchor": "Axes.eventplot#assign:colors",
+   "kind": "lead",
+   "line": 1325
+  },
+  {
+   "id": "r47",
+   "anchor": "Axes.eventplot#try/assign:colors",
+   "kind": "lead",
+   "line": 1359
+  },
+  {
+   "id": "r48",
+   "anchor": "Axes.eventplot#try/except:ValueError/pass",
+   "kind": "lead",
+   "line": 1364
+  },
+  {
+   "id": "r49",
+   "anchor": "Axes.eventplot#if:len(positions) > 0/assign:min_max",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r50",
+   "anchor": "Axes.eventplot#if:len(positions) > 0/if:len(min_max) > 0",
+   "kind": "lead",
+   "line": 1422
+  },
+  {
+   "id": "r51",
+   "anchor": "Axes.eventplot#if:len(positions) > 0/if:len(min_max) > 0/if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 1432
+  },
+  {
+   "id": "r52",
+   "anchor": "Axes.plot",
+   "kind": "lead",
+   "line": 1444
+  },
+  {
+   "id": "r53",
+   "anchor": "Axes.plot",
+   "kind": "lead",
+   "line": 1444
+  },
+  {
+   "id": "r54",
+   "anchor": "Axes.plot",
+   "kind": "doc",
+   "line": 1444
+  },
+  {
+   "id": "r55",
+   "anchor": "Axes.plot_date",
+   "kind": "doc",
+   "line": 1699
+  },
+  {
+   "id": "r56",
+   "anchor": "Axes.loglog",
+   "kind": "lead",
+   "line": 1780
+  },
+  {
+   "id": "r57",
+   "anchor": "Axes.loglog",
+   "kind": "doc",
+   "line": 1780
+  },
+  {
+   "id": "r58",
+   "anchor": "Axes.semilogx",
+   "kind": "lead",
+   "line": 1834
+  },
+  {
+   "id": "r59",
+   "anchor": "Axes.semilogx",
+   "kind": "doc",
+   "line": 1834
+  },
+  {
+   "id": "r60",
+   "anchor": "Axes.semilogy",
+   "kind": "lead",
+   "line": 1881
+  },
+  {
+   "id": "r61",
+   "anchor": "Axes.semilogy",
+   "kind": "doc",
+   "line": 1881
+  },
+  {
+   "id": "r62",
+   "anchor": "Axes.acorr",
+   "kind": "doc",
+   "line": 1927
+  },
+  {
+   "id": "r63",
+   "anchor": "Axes.xcorr",
+   "kind": "doc",
+   "line": 1999
+  },
+  {
+   "id": "r64",
+   "anchor": "Axes.xcorr#if:usevlines/call:kwargs.pop",
+   "kind": "lead",
+   "line": 2098
+  },
+  {
+   "id": "r65",
+   "anchor": "Axes.step",
+   "kind": "lead",
+   "line": 2110
+  },
+  {
+   "id": "r66",
+   "anchor": "Axes.step",
+   "kind": "lead",
+   "line": 2110
+  },
+  {
+   "id": "r67",
+   "anchor": "Axes.step",
+   "kind": "doc",
+   "line": 2110
+  },
+  {
+   "id": "r68",
+   "anchor": "Axes._convert_dx",
+   "kind": "doc",
+   "line": 2179
+  },
+  {
+   "id": "r69",
+   "anchor": "Axes._convert_dx#assert:type(xconv) is np.ndarray",
+   "kind": "lead",
+   "line": 2190
+  },
+  {
+   "id": "r70",
+   "anchor": "Axes._convert_dx#if:xconv.size == 0/return",
+   "kind": "lead",
+   "line": 2194
+  },
+  {
+   "id": "r71",
+   "anchor": "Axes._convert_dx#try/try",
+   "kind": "lead",
+   "line": 2207
+  },
+  {
+   "id": "r72",
+   "anchor": "Axes._convert_dx#try/try",
+   "kind": "lead",
+   "line": 2207
+  },
+  {
+   "id": "r73",
+   "anchor": "Axes._convert_dx#try/try/except:StopIteration/assign:x0",
+   "kind": "lead",
+   "line": 2214
+  },
+  {
+   "id": "r74",
+   "anchor": "Axes._convert_dx#try/try/except:StopIteration/assign:x",
+   "kind": "lead",
+   "line": 2223
+  },
+  {
+   "id": "r75",
+   "anchor": "Axes._convert_dx#try/except:(ValueError, TypeError, AttributeError)/assign:dx",
+   "kind": "lead",
+   "line": 2235
+  },
+  {
+   "id": "r76",
+   "anchor": "Axes.bar",
+   "kind": "doc",
+   "line": 2240
+  },
+  {
+   "id": "r77",
+   "anchor": "Axes.bar#assign:xerr",
+   "kind": "lead",
+   "line": 2358
+  },
+  {
+   "id": "r78",
+   "anchor": "Axes.bar#if:ezorder is None/if:ezorder is not None/assign:ezorder",
+   "kind": "lead",
+   "line": 2367
+  },
+  {
+   "id": "r79",
+   "anchor": "Axes.bar#assign:orientation",
+   "kind": "lead",
+   "line": 2377
+  },
+  {
+   "id": "r80",
+   "anchor": "Axes.bar#assign:y",
+   "kind": "trail",
+   "line": 2383
+  },
+  {
+   "id": "r81",
+   "anchor": "Axes.bar#if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2387
+  },
+  {
+   "id": "r82",
+   "anchor": "Axes.bar#if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2396
+  },
+  {
+   "id": "r83",
+   "anchor": "Axes.bar#if:self.xaxis is not None",
+   "kind": "lead",
+   "line": 2404
+  },
+  {
+   "id": "r84",
+   "anchor": "Axes.bar#assign:x, height, width, y, linewidth, hatch/arg:np.atleast_1d(x)",
+   "kind": "lead",
+   "line": 2419
+  },
+  {
+   "id": "r85",
+   "anchor": "Axes.bar#if:orientation == 'vertical'",
+   "kind": "lead",
+   "line": 2422
+  },
+  {
+   "id": "r86",
+   "anchor": "Axes.bar#if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2425
+  },
+  {
+   "id": "r87",
+   "anchor": "Axes.bar#assign:color/arg:itertools.repeat('none')",
+   "kind": "lead",
+   "line": 2443
+  },
+  {
+   "id": "r88",
+   "anchor": "Axes.bar#if:edgecolor is None/else/assign:edgecolor/arg:itertools.repeat('none')",
+   "kind": "lead",
+   "line": 2450
+  },
+  {
+   "id": "r89",
+   "anchor": "Axes.bar#call:_api.check_in_list",
+   "kind": "lead",
+   "line": 2454
+  },
+  {
+   "id": "r90",
+   "anchor": "Axes.bar#if:align == 'center'/if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2464
+  },
+  {
+   "id": "r91",
+   "anchor": "Axes.bar#if:align == 'center'/else",
+   "kind": "trail",
+   "line": 2472
+  },
+  {
+   "id": "r92",
+   "anchor": "Axes.bar#for:l, b, w, h, c, e, lw, htch, lbl in args/if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2492
+  },
+  {
+   "id": "r93",
+   "anchor": "Axes.bar#if:xerr is not None or yerr is not None/if:orientation == 'vertical'/assign:ex",
+   "kind": "lead",
+   "line": 2500
+  },
+  {
+   "id": "r94",
+   "anchor": "Axes.bar#if:xerr is not None or yerr is not None/if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2503
+  },
+  {
+   "id": "r95",
+   "anchor": "Axes.bar#if:xerr is not None or yerr is not None/if:orientation == 'vertical'/else/assign:ex",
+   "kind": "lead",
+   "line": 2505
+  },
+  {
+   "id": "r96",
+   "anchor": "Axes.bar#if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2520
+  },
+  {
+   "id": "r97",
+   "anchor": "Axes.barh",
+   "kind": "lead",
+   "line": 2537
+  },
+  {
+   "id": "r98",
+   "anchor": "Axes.barh",
+   "kind": "doc",
+   "line": 2537
+  },
+  {
+   "id": "r99",
+   "anchor": "Axes.bar_label",
+   "kind": "doc",
+   "line": 2653
+  },
+  {
+   "id": "r100",
+   "anchor": "Axes.bar_label.sign",
+   "kind": "lead",
+   "line": 2717
+  },
+  {
+   "id": "r101",
+   "anchor": "Axes.bar_label#if:errorbar/assign:lines",
+   "kind": "lead",
+   "line": 2729
+  },
+  {
+   "id": "r102",
+   "anchor": "Axes.bar_label#if:errorbar/assign:lines",
+   "kind": "trail",
+   "line": 2729
+  },
+  {
+   "id": "r103",
+   "anchor": "Axes.bar_label#if:errorbar/assign:barlinecols",
+   "kind": "trail",
+   "line": 2730
+  },
+  {
+   "id": "r104",
+   "anchor": "Axes.bar_label#if:errorbar/assign:barlinecol",
+   "kind": "trail",
+   "line": 2731
+  },
+  {
+   "id": "r105",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 2750
+  },
+  {
+   "id": "r106",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:err is None or np.size(err) == 0/elif:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 2758
+  },
+  {
+   "id": "r107",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else",
+   "kind": "trail",
+   "line": 2763
+  },
+  {
+   "id": "r108",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else",
+   "kind": "trail",
+   "line": 2774
+  },
+  {
+   "id": "r109",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 2777
+  },
+  {
+   "id": "r110",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 2783
+  },
+  {
+   "id": "r111",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else",
+   "kind": "trail",
+   "line": 2789
+  },
+  {
+   "id": "r112",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/if:y_inverted/assign:va",
+   "kind": "trail",
+   "line": 2793
+  },
+  {
+   "id": "r113",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/if:y_inverted/else/assign:va",
+   "kind": "trail",
+   "line": 2795
+  },
+  {
+   "id": "r114",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 2796
+  },
+  {
+   "id": "r115",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/else/if:x_inverted/assign:ha",
+   "kind": "trail",
+   "line": 2798
+  },
+  {
+   "id": "r116",
+   "anchor": "Axes.bar_label#for:bar, err, dat, lbl in itertools.zip_longest(bars, errs, datavalues, labels)/if:label_type == \"center\"/else/if:orientation == \"vertical\"/else/if:x_inverted/else/assign:ha",
+   "kind": "trail",
+   "line": 2800
+  },
+  {
+   "id": "r117",
+   "anchor": "Axes.broken_barh",
+   "kind": "doc",
+   "line": 2822
+  },
+  {
+   "id": "r118",
+   "anchor": "Axes.broken_barh#assign:xdata",
+   "kind": "lead",
+   "line": 2864
+  },
+  {
+   "id": "r119",
+   "anchor": "Axes.broken_barh#for:xr in xranges",
+   "kind": "trail",
+   "line": 2872
+  },
+  {
+   "id": "r120",
+   "anchor": "Axes.stem",
+   "kind": "doc",
+   "line": 2890
+  },
+  {
+   "id": "r121",
+   "anchor": "Axes.stem#if:orientation == 'vertical'/else",
+   "kind": "trail",
+   "line": 2997
+  },
+  {
+   "id": "r122",
+   "anchor": "Axes.stem#if:linefmt is None",
+   "kind": "lead",
+   "line": 3001
+  },
+  {
+   "id": "r123",
+   "anchor": "Axes.stem#if:markerfmt is None",
+   "kind": "lead",
+   "line": 3006
+  },
+  {
+   "id": "r124",
+   "anchor": "Axes.stem#if:markerfmt is None/assign:markerfmt",
+   "kind": "lead",
+   "line": 3008
+  },
+  {
+   "id": "r125",
+   "anchor": "Axes.stem#if:markerfmt == ''/assign:markerfmt",
+   "kind": "trail",
+   "line": 3010
+  },
+  {
+   "id": "r126",
+   "anchor": "Axes.stem#if:basefmt is None",
+   "kind": "lead",
+   "line": 3021
+  },
+  {
+   "id": "r127",
+   "anchor": "Axes.stem#if:use_line_collection",
+   "kind": "lead",
+   "line": 3027
+  },
+  {
+   "id": "r128",
+   "anchor": "Axes.stem#if:use_line_collection/else",
+   "kind": "lead",
+   "line": 3035
+  },
+  {
+   "id": "r129",
+   "anchor": "Axes.pie",
+   "kind": "doc",
+   "line": 3074
+  },
+  {
+   "id": "r130",
+   "anchor": "Axes.pie#assign:x",
+   "kind": "lead",
+   "line": 3191
+  },
+  {
+   "id": "r131",
+   "anchor": "Axes.pie#assign:theta1",
+   "kind": "lead",
+   "line": 3227
+  },
+  {
+   "id": "r132",
+   "anchor": "Axes.pie#for:frac, label, expl in zip(x, labels, explode)/if:shadow/assign:shad",
+   "kind": "lead",
+   "line": 3258
+  },
+  {
+   "id": "r133",
+   "anchor": "Axes._errorevery_to_mask",
+   "kind": "doc",
+   "line": 3312
+  },
+  {
+   "id": "r134",
+   "anchor": "Axes._errorevery_to_mask#elif:not isinstance(errorevery, str) and np.iterable(errorevery)/try/expr:x[errorevery]",
+   "kind": "trail",
+   "line": 3332
+  },
+  {
+   "id": "r135",
+   "anchor": "Axes.errorbar",
+   "kind": "doc",
+   "line": 3346
+  },
+  {
+   "id": "r136",
+   "anchor": "Axes.errorbar#assign:kwargs",
+   "kind": "lead",
+   "line": 3483
+  },
+  {
+   "id": "r137",
+   "anchor": "Axes.errorbar#if:not isinstance(x, np.ndarray)",
+   "kind": "lead",
+   "line": 3487
+  },
+  {
+   "id": "r138",
+   "anchor": "Axes.errorbar._upcast_err",
+   "kind": "doc",
+   "line": 3492
+  },
+  {
+   "id": "r139",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)",
+   "kind": "lead",
+   "line": 3507
+  },
+  {
+   "id": "r140",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)",
+   "kind": "lead",
+   "line": 3507
+  },
+  {
+   "id": "r141",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)",
+   "kind": "lead",
+   "line": 3507
+  },
+  {
+   "id": "r142",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)/assign:atype",
+   "kind": "lead",
+   "line": 3519
+  },
+  {
+   "id": "r143",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)/if:atype is np.ndarray",
+   "kind": "lead",
+   "line": 3521
+  },
+  {
+   "id": "r144",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)/if:atype is np.ndarray/return",
+   "kind": "lead",
+   "line": 3524
+  },
+  {
+   "id": "r145",
+   "anchor": "Axes.errorbar._upcast_err#if:np.iterable(err) and len(err) > 0 and isinstance(cbook._safe_first_finite(err), np.ndarray)/return",
+   "kind": "lead",
+   "line": 3527
+  },
+  {
+   "id": "r146",
+   "anchor": "Axes.errorbar._upcast_err#return",
+   "kind": "lead",
+   "line": 3529
+  },
+  {
+   "id": "r147",
+   "anchor": "Axes.errorbar#assign:x, y",
+   "kind": "trail",
+   "line": 3535
+  },
+  {
+   "id": "r148",
+   "anchor": "Axes.errorbar#assign:(data_line, base_style)",
+   "kind": "lead",
+   "line": 3548
+  },
+  {
+   "id": "r149",
+   "anchor": "Axes.errorbar#if:barsabove",
+   "kind": "lead",
+   "line": 3552
+  },
+  {
+   "id": "r150",
+   "anchor": "Axes.errorbar#if:fmt.lower() != 'none'",
+   "kind": "lead",
+   "line": 3558
+  },
+  {
+   "id": "r151",
+   "anchor": "Axes.errorbar#if:fmt.lower() != 'none'/else/call:base_style.pop",
+   "kind": "lead",
+   "line": 3565
+  },
+  {
+   "id": "r152",
+   "anchor": "Axes.errorbar#for:key in ['marker', 'markersize', 'markerfacecolor', 'markerfacecoloralt', 'markeredgewidth', 'markeredgecolor', 'markevery', 'linestyle', 'fillstyle', 'drawstyle', 'dash_capstyle', 'dash_joinstyle', 'solid_capstyle', 'solid_joinstyle', 'dashes']",
+   "kind": "lead",
+   "line": 3576
+  },
+  {
+   "id": "r153",
+   "anchor": "Axes.errorbar#assign:eb_lines_style",
+   "kind": "lead",
+   "line": 3585
+  },
+  {
+   "id": "r154",
+   "anchor": "Axes.errorbar#assign:eb_cap_style",
+   "kind": "lead",
+   "line": 3597
+  },
+  {
+   "id": "r155",
+   "anchor": "Axes.errorbar#for:key in ('markeredgewidth', 'transform', 'alpha', 'zorder', 'rasterized')",
+   "kind": "lead",
+   "line": 3607
+  },
+  {
+   "id": "r156",
+   "anchor": "Axes.errorbar.apply_mask",
+   "kind": "lead",
+   "line": 3617
+  },
+  {
+   "id": "r157",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]",
+   "kind": "lead",
+   "line": 3621
+  },
+  {
+   "id": "r158",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/assign:res",
+   "kind": "trail",
+   "line": 3639
+  },
+  {
+   "id": "r159",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/if:np.any(np.less(err, -err, out=res, where=(err == err)))/raise:ValueError",
+   "kind": "lead",
+   "line": 3642
+  },
+  {
+   "id": "r160",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/assign:low, high",
+   "kind": "lead",
+   "line": 3648
+  },
+  {
+   "id": "r161",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/assign:nolims",
+   "kind": "lead",
+   "line": 3656
+  },
+  {
+   "id": "r162",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/if:nolims.any() and capsize > 0/for:lh_masked in [lo_masked, hi_masked]/assign:line",
+   "kind": "lead",
+   "line": 3664
+  },
+  {
+   "id": "r163",
+   "anchor": "Axes.errorbar#for:(dep_axis, dep, err, lolims, uplims, indep, lines_func, marker, lomarker, himarker) in [(\"x\", x, xerr, xlolims, xuplims, y, self.hlines, \"|\", mlines.CARETRIGHTBASE, mlines.CARETLEFTBASE), (\"y\", y, yerr, lolims, uplims, x, self.vlines, \"_\", mlines.CARETUPBASE, mlines.CARETDOWNBASE)]/for:idx, (lims, hl) in enumerate([(lolims, high), (uplims, low)])/assign:line",
+   "kind": "lead",
+   "line": 3678
+  },
+  {
+   "id": "r164",
+   "anchor": "Axes.errorbar#if:self.name == 'polar'/for:axis in caplines/for:l in caplines[axis]/for:theta, r in zip(l.get_xdata(), l.get_ydata())",
+   "kind": "lead",
+   "line": 3689
+  },
+  {
+   "id": "r165",
+   "anchor": "Axes.errorbar#return",
+   "kind": "trail",
+   "line": 3710
+  },
+  {
+   "id": "r166",
+   "anchor": "Axes.boxplot",
+   "kind": "doc",
+   "line": 3713
+  },
+  {
+   "id": "r167",
+   "anchor": "Axes.boxplot#if:whis is None",
+   "kind": "lead",
+   "line": 3910
+  },
+  {
+   "id": "r168",
+   "anchor": "Axes.boxplot#if:patch_artist/assign:boxprops['linestyle']",
+   "kind": "trail",
+   "line": 3948
+  },
+  {
+   "id": "r169",
+   "anchor": "Axes.boxplot#if:sym is not None",
+   "kind": "lead",
+   "line": 3957
+  },
+  {
+   "id": "r170",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''",
+   "kind": "lead",
+   "line": 3961
+  },
+  {
+   "id": "r171",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/assign:flierprops",
+   "kind": "lead",
+   "line": 3963
+  },
+  {
+   "id": "r172",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/assign:showfliers",
+   "kind": "lead",
+   "line": 3965
+  },
+  {
+   "id": "r173",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/else",
+   "kind": "lead",
+   "line": 3967
+  },
+  {
+   "id": "r174",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/else/assign:_, marker, color",
+   "kind": "lead",
+   "line": 3970
+  },
+  {
+   "id": "r175",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/else/if:marker is not None",
+   "kind": "lead",
+   "line": 3972
+  },
+  {
+   "id": "r176",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/else/if:color is not None",
+   "kind": "lead",
+   "line": 3975
+  },
+  {
+   "id": "r177",
+   "anchor": "Axes.boxplot#if:sym is not None/if:sym == ''/else/if:color is not None/assign:flierprops['color']",
+   "kind": "lead",
+   "line": 3979
+  },
+  {
+   "id": "r178",
+   "anchor": "Axes.boxplot#if:usermedians is not None",
+   "kind": "lead",
+   "line": 3984
+  },
+  {
+   "id": "r179",
+   "anchor": "Axes.boxplot#if:usermedians is not None/if:len(np.ravel(usermedians)) != len(bxpstats) or np.shape(usermedians)[0] != len(bxpstats)/else/for:stats, med in zip(bxpstats, usermedians)",
+   "kind": "lead",
+   "line": 3991
+  },
+  {
+   "id": "r180",
+   "anchor": "Axes.bxp",
+   "kind": "doc",
+   "line": 4023
+  },
+  {
+   "id": "r181",
+   "anchor": "Axes.bxp#assign:whiskers",
+   "kind": "lead",
+   "line": 4123
+  },
+  {
+   "id": "r182",
+   "anchor": "Axes.bxp#assign:datalabels",
+   "kind": "lead",
+   "line": 4131
+  },
+  {
+   "id": "r183",
+   "anchor": "Axes.bxp#if:zorder is None",
+   "kind": "lead",
+   "line": 4134
+  },
+  {
+   "id": "r184",
+   "anchor": "Axes.bxp#if:meanprops is None or removed_prop not in meanprops",
+   "kind": "lead",
+   "line": 4164
+  },
+  {
+   "id": "r185",
+   "anchor": "Axes.bxp#assign:maybe_swap",
+   "kind": "lead",
+   "line": 4168
+  },
+  {
+   "id": "r186",
+   "anchor": "Axes.bxp#assign:N",
+   "kind": "lead",
+   "line": 4181
+  },
+  {
+   "id": "r187",
+   "anchor": "Axes.bxp#if:positions is None",
+   "kind": "lead",
+   "line": 4185
+  },
+  {
+   "id": "r188",
+   "anchor": "Axes.bxp#if:widths is None",
+   "kind": "lead",
+   "line": 4195
+  },
+  {
+   "id": "r189",
+   "anchor": "Axes.bxp#if:capwidths is None",
+   "kind": "lead",
+   "line": 4203
+  },
+  {
+   "id": "r190",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/call:datalabels.append",
+   "kind": "lead",
+   "line": 4213
+  },
+  {
+   "id": "r191",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/assign:whis_x",
+   "kind": "lead",
+   "line": 4216
+  },
+  {
+   "id": "r192",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/assign:cap_left",
+   "kind": "lead",
+   "line": 4220
+  },
+  {
+   "id": "r193",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/assign:box_left",
+   "kind": "lead",
+   "line": 4226
+  },
+  {
+   "id": "r194",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:shownotches",
+   "kind": "lead",
+   "line": 4230
+  },
+  {
+   "id": "r195",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:shownotches/else",
+   "kind": "lead",
+   "line": 4242
+  },
+  {
+   "id": "r196",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:showbox",
+   "kind": "lead",
+   "line": 4249
+  },
+  {
+   "id": "r197",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/call:whiskers.append",
+   "kind": "lead",
+   "line": 4253
+  },
+  {
+   "id": "r198",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:showcaps",
+   "kind": "lead",
+   "line": 4256
+  },
+  {
+   "id": "r199",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/call:medians.append",
+   "kind": "lead",
+   "line": 4260
+  },
+  {
+   "id": "r200",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:showmeans",
+   "kind": "lead",
+   "line": 4262
+  },
+  {
+   "id": "r201",
+   "anchor": "Axes.bxp#for:pos, width, stats, capwidth in zip(positions, widths, bxpstats, capwidths)/if:showfliers",
+   "kind": "lead",
+   "line": 4271
+  },
+  {
+   "id": "r202",
+   "anchor": "Axes.bxp#if:manage_ticks/assign:interval[:]",
+   "kind": "lead",
+   "line": 4287
+  },
+  {
+   "id": "r203",
+   "anchor": "Axes.bxp#if:manage_ticks/assign:locator",
+   "kind": "lead",
+   "line": 4293
+  },
+  {
+   "id": "r204",
+   "anchor": "Axes._parse_scatter_color_args",
+   "kind": "doc",
+   "line": 4312
+  },
+  {
+   "id": "r205",
+   "anchor": "Axes._parse_scatter_color_args#assign:c_is_mapped",
+   "kind": "trail",
+   "line": 4408
+  },
+  {
+   "id": "r206",
+   "anchor": "Axes._parse_scatter_color_args#assign:valid_shape",
+   "kind": "trail",
+   "line": 4409
+  },
+  {
+   "id": "r207",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_was_none and kwcolor is None and not c_is_string_or_strings/try",
+   "kind": "trail",
+   "line": 4411
+  },
+  {
+   "id": "r208",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_was_none and kwcolor is None and not c_is_string_or_strings/try/except:ValueError/pass",
+   "kind": "trail",
+   "line": 4414
+  },
+  {
+   "id": "r209",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_was_none and kwcolor is None and not c_is_string_or_strings/try/else/if:c.shape == (1, 4) or c.shape == (1, 3)",
+   "kind": "lead",
+   "line": 4418
+  },
+  {
+   "id": "r210",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_was_none and kwcolor is None and not c_is_string_or_strings/try/else/if:c.shape == (1, 4) or c.shape == (1, 3)/elif:c.size == xsize",
+   "kind": "lead",
+   "line": 4424
+  },
+  {
+   "id": "r211",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_was_none and kwcolor is None and not c_is_string_or_strings/try/else/if:c.shape == (1, 4) or c.shape == (1, 3)/elif:c.size == xsize/else",
+   "kind": "trail",
+   "line": 4427
+  },
+  {
+   "id": "r212",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_is_mapped/try",
+   "kind": "trail",
+   "line": 4439
+  },
+  {
+   "id": "r213",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_is_mapped/try/except:(TypeError, ValueError)/if:\"RGBA values should be within 0-1 range\" in str(err)/else/raise:ValueError",
+   "kind": "lead",
+   "line": 4449
+  },
+  {
+   "id": "r214",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_is_mapped/try/else/if:len(colors) not in (0, 1, xsize)/raise:invalid_shape_exception",
+   "kind": "lead",
+   "line": 4456
+  },
+  {
+   "id": "r215",
+   "anchor": "Axes._parse_scatter_color_args#if:not c_is_mapped/else/assign:colors",
+   "kind": "trail",
+   "line": 4458
+  },
+  {
+   "id": "r216",
+   "anchor": "Axes.scatter",
+   "kind": "doc",
+   "line": 4466
+  },
+  {
+   "id": "r217",
+   "anchor": "Axes.scatter#assign:x, y",
+   "kind": "lead",
+   "line": 4579
+  },
+  {
+   "id": "r218",
+   "anchor": "Axes.scatter#assign:x",
+   "kind": "lead",
+   "line": 4582
+  },
+  {
+   "id": "r219",
+   "anchor": "Axes.scatter#assign:orig_edgecolor",
+   "kind": "lead",
+   "line": 4599
+  },
+  {
+   "id": "r220",
+   "anchor": "Axes.scatter#if:x.size in (3, 4) and np.ma.is_masked(edgecolors) and not np.ma.is_masked(orig_edgecolor)",
+   "kind": "lead",
+   "line": 4616
+  },
+  {
+   "id": "r221",
+   "anchor": "Axes.scatter#assign:scales",
+   "kind": "trail",
+   "line": 4621
+  },
+  {
+   "id": "r222",
+   "anchor": "Axes.scatter#if:marker is None",
+   "kind": "lead",
+   "line": 4624
+  },
+  {
+   "id": "r223",
+   "anchor": "Axes.scatter#if:not marker_obj.is_filled()/if:marker_obj.get_fillstyle() == 'none'",
+   "kind": "lead",
+   "line": 4653
+  },
+  {
+   "id": "r224",
+   "anchor": "Axes.scatter#if:not marker_obj.is_filled()/if:marker_obj.get_fillstyle() == 'none'/assign:edgecolors",
+   "kind": "lead",
+   "line": 4655
+  },
+  {
+   "id": "r225",
+   "anchor": "Axes.scatter#if:not marker_obj.is_filled()/if:marker_obj.get_fillstyle() == 'none'/assign:colors",
+   "kind": "lead",
+   "line": 4659
+  },
+  {
+   "id": "r226",
+   "anchor": "Axes.scatter#if:not marker_obj.is_filled()/if:marker_obj.get_fillstyle() == 'none'/else/assign:edgecolors",
+   "kind": "lead",
+   "line": 4663
+  },
+  {
+   "id": "r227",
+   "anchor": "Axes.scatter#if:mpl.rcParams['_internal.classic_mode']",
+   "kind": "lead",
+   "line": 4706
+  },
+  {
+   "id": "r228",
+   "anchor": "Axes.hexbin",
+   "kind": "doc",
+   "line": 4719
+  },
+  {
+   "id": "r229",
+   "anchor": "Axes.hexbin#if:np.iterable(gridsize)",
+   "kind": "lead",
+   "line": 4879
+  },
+  {
+   "id": "r230",
+   "anchor": "Axes.hexbin#assign:x",
+   "kind": "lead",
+   "line": 4885
+  },
+  {
+   "id": "r231",
+   "anchor": "Axes.hexbin#assign:tx",
+   "kind": "lead",
+   "line": 4889
+  },
+  {
+   "id": "r232",
+   "anchor": "Axes.hexbin#if:extent is not None/else/assign:xmin, xmax",
+   "kind": "lead",
+   "line": 4909
+  },
+  {
+   "id": "r233",
+   "anchor": "Axes.hexbin#assign:padding",
+   "kind": "lead",
+   "line": 4920
+  },
+  {
+   "id": "r234",
+   "anchor": "Axes.hexbin#assign:ix",
+   "kind": "lead",
+   "line": 4926
+  },
+  {
+   "id": "r235",
+   "anchor": "Axes.hexbin#assign:i1",
+   "kind": "lead",
+   "line": 4933
+  },
+  {
+   "id": "r236",
+   "anchor": "Axes.hexbin#if:C is None",
+   "kind": "trail",
+   "line": 4942
+  },
+  {
+   "id": "r237",
+   "anchor": "Axes.hexbin#if:C is None/else/assign:Cs_at_i1",
+   "kind": "lead",
+   "line": 4951
+  },
+  {
+   "id": "r238",
+   "anchor": "Axes.hexbin#if:C is None/else/assign:accum",
+   "kind": "trail",
+   "line": 4960
+  },
+  {
+   "id": "r239",
+   "anchor": "Axes.hexbin#assign:offsets",
+   "kind": "lead",
+   "line": 4978
+  },
+  {
+   "id": "r240",
+   "anchor": "Axes.hexbin#if:bins == 'log'",
+   "kind": "lead",
+   "line": 5015
+  },
+  {
+   "id": "r241",
+   "anchor": "Axes.hexbin#if:norm is not None",
+   "kind": "lead",
+   "line": 5025
+  },
+  {
+   "id": "r242",
+   "anchor": "Axes.hexbin#if:bins is not None/if:not np.iterable(bins)/assign:bins",
+   "kind": "trail",
+   "line": 5032
+  },
+  {
+   "id": "r243",
+   "anchor": "Axes.hexbin#call:self.add_collection",
+   "kind": "lead",
+   "line": 5049
+  },
+  {
+   "id": "r244",
+   "anchor": "Axes.hexbin#assign:bars",
+   "kind": "lead",
+   "line": 5054
+  },
+  {
+   "id": "r245",
+   "anchor": "Axes.hexbin#for:zname, z, zmin, zmax, zscale, nbins in [(\"x\", x, xmin, xmax, xscale, nx), (\"y\", y, ymin, ymax, yscale, 2 * ny)]/if:zname == \"y\"/assign:verts",
+   "kind": "trail",
+   "line": 5071
+  },
+  {
+   "id": "r246",
+   "anchor": "Axes.hexbin#for:zname, z, zmin, zmax, zscale, nbins in [(\"x\", x, xmin, xmax, xscale, nx), (\"y\", y, ymin, ymax, yscale, 2 * ny)]/assign:bin_idxs",
+   "kind": "lead",
+   "line": 5074
+  },
+  {
+   "id": "r247",
+   "anchor": "Axes.hexbin#for:zname, z, zmin, zmax, zscale, nbins in [(\"x\", x, xmin, xmax, xscale, nx), (\"y\", y, ymin, ymax, yscale, 2 * ny)]/for:i in range(nbins)/assign:ci",
+   "kind": "lead",
+   "line": 5079
+  },
+  {
+   "id": "r248",
+   "anchor": "Axes.arrow",
+   "kind": "doc",
+   "line": 5109
+  },
+  {
+   "id": "r249",
+   "anchor": "Axes.arrow#assign:x",
+   "kind": "lead",
+   "line": 5137
+  },
+  {
+   "id": "r250",
+   "anchor": "Axes._quiver_units",
+   "kind": "lead",
+   "line": 5154
+  },
+  {
+   "id": "r251",
+   "anchor": "Axes.quiver",
+   "kind": "lead",
+   "line": 5164
+  },
+  {
+   "id": "r252",
+   "anchor": "Axes.quiver",
+   "kind": "doc",
+   "line": 5164
+  },
+  {
+   "id": "r253",
+   "anchor": "Axes.quiver#assign:args",
+   "kind": "lead",
+   "line": 5167
+  },
+  {
+   "id": "r254",
+   "anchor": "Axes.barbs",
+   "kind": "lead",
+   "line": 5176
+  },
+  {
+   "id": "r255",
+   "anchor": "Axes.barbs",
+   "kind": "doc",
+   "line": 5176
+  },
+  {
+   "id": "r256",
+   "anchor": "Axes.barbs#assign:args",
+   "kind": "lead",
+   "line": 5179
+  },
+  {
+   "id": "r257",
+   "anchor": "Axes.fill",
+   "kind": "lead",
+   "line": 5187
+  },
+  {
+   "id": "r258",
+   "anchor": "Axes.fill",
+   "kind": "doc",
+   "line": 5187
+  },
+  {
+   "id": "r259",
+   "anchor": "Axes.fill#assign:kwargs",
+   "kind": "lead",
+   "line": 5231
+  },
+  {
+   "id": "r260",
+   "anchor": "Axes.fill#assign:patches",
+   "kind": "lead",
+   "line": 5233
+  },
+  {
+   "id": "r261",
+   "anchor": "Axes._fill_between_x_or_y",
+   "kind": "lead",
+   "line": 5239
+  },
+  {
+   "id": "r262",
+   "anchor": "Axes._fill_between_x_or_y",
+   "kind": "doc",
+   "line": 5239
+  },
+  {
+   "id": "r263",
+   "anchor": "Axes._fill_between_x_or_y#assign:ind, dep1, dep2",
+   "kind": "lead",
+   "line": 5337
+  },
+  {
+   "id": "r264",
+   "anchor": "Axes._fill_between_x_or_y#for:idx0, idx1 in cbook.contiguous_regions(where)/if:interpolate/else/assign:start",
+   "kind": "lead",
+   "line": 5402
+  },
+  {
+   "id": "r265",
+   "anchor": "Axes._fill_between_x_or_y#assign:pts",
+   "kind": "lead",
+   "line": 5421
+  },
+  {
+   "id": "r266",
+   "anchor": "Axes.imshow",
+   "kind": "lead",
+   "line": 5462
+  },
+  {
+   "id": "r267",
+   "anchor": "Axes.imshow",
+   "kind": "doc",
+   "line": 5462
+  },
+  {
+   "id": "r268",
+   "anchor": "Axes.imshow#if:im.get_clip_path() is None/call:im.set_clip_path",
+   "kind": "lead",
+   "line": 5670
+  },
+  {
+   "id": "r269",
+   "anchor": "Axes.imshow#call:im.set_extent",
+   "kind": "lead",
+   "line": 5676
+  },
+  {
+   "id": "r270",
+   "anchor": "Axes._pcolorargs#assign:_valid_shading",
+   "kind": "lead",
+   "line": 5688
+  },
+  {
+   "id": "r271",
+   "anchor": "Axes._pcolorargs#if:len(args) == 3/assign:C",
+   "kind": "lead",
+   "line": 5710
+  },
+  {
+   "id": "r272",
+   "anchor": "Axes._pcolorargs#if:len(args) == 3/assign:X, Y",
+   "kind": "lead",
+   "line": 5712
+  },
+  {
+   "id": "r273",
+   "anchor": "Axes._pcolorargs#if:len(args) == 3/if:funcname == 'pcolormesh'/if:isinstance(X, np.ma.core.MaskedArray)",
+   "kind": "lead",
+   "line": 5724
+  },
+  {
+   "id": "r274",
+   "anchor": "Axes._pcolorargs#if:len(args) == 3/if:funcname == 'pcolormesh'/if:isinstance(X, np.ma.core.MaskedArray)/assign:X",
+   "kind": "trail",
+   "line": 5725
+  },
+  {
+   "id": "r275",
+   "anchor": "Axes._pcolorargs#if:shading == 'flat'/else",
+   "kind": "trail",
+   "line": 5756
+  },
+  {
+   "id": "r276",
+   "anchor": "Axes._pcolorargs._interp_grid",
+   "kind": "lead",
+   "line": 5765
+  },
+  {
+   "id": "r277",
+   "anchor": "Axes._pcolorargs._interp_grid#if:np.shape(X)[1] > 1",
+   "kind": "lead",
+   "line": 5767
+  },
+  {
+   "id": "r278",
+   "anchor": "Axes._pcolorargs._interp_grid#if:np.shape(X)[1] > 1/else/assign:X",
+   "kind": "lead",
+   "line": 5783
+  },
+  {
+   "id": "r279",
+   "anchor": "Axes.pcolor",
+   "kind": "doc",
+   "line": 5799
+  },
+  {
+   "id": "r280",
+   "anchor": "Axes.pcolor#assign:C",
+   "kind": "lead",
+   "line": 5952
+  },
+  {
+   "id": "r281",
+   "anchor": "Axes.pcolor#assign:mask",
+   "kind": "lead",
+   "line": 5960
+  },
+  {
+   "id": "r282",
+   "anchor": "Axes.pcolor#if:'antialiased' in kwargs",
+   "kind": "lead",
+   "line": 5991
+  },
+  {
+   "id": "r283",
+   "anchor": "Axes.pcolor#assign:t",
+   "kind": "lead",
+   "line": 6006
+  },
+  {
+   "id": "r284",
+   "anchor": "Axes.pcolormesh",
+   "kind": "doc",
+   "line": 6033
+  },
+  {
+   "id": "r285",
+   "anchor": "Axes.pcolormesh#assign:coords",
+   "kind": "trail",
+   "line": 6232
+  },
+  {
+   "id": "r286",
+   "anchor": "Axes.pcolormesh#assign:t",
+   "kind": "lead",
+   "line": 6235
+  },
+  {
+   "id": "r287",
+   "anchor": "Axes.pcolorfast",
+   "kind": "doc",
+   "line": 6257
+  },
+  {
+   "id": "r288",
+   "anchor": "Axes.pcolorfast#if:style == \"quadmesh\"/assign:coords",
+   "kind": "lead",
+   "line": 6397
+  },
+  {
+   "id": "r289",
+   "anchor": "Axes.pcolorfast#if:style == \"quadmesh\"/else",
+   "kind": "trail",
+   "line": 6408
+  },
+  {
+   "id": "r290",
+   "anchor": "Axes.pcolorfast#if:np.ndim(C) == 2",
+   "kind": "trail",
+   "line": 6424
+  },
+  {
+   "id": "r291",
+   "anchor": "Axes.pcolorfast#if:ret.get_clip_path() is None/call:ret.set_clip_path",
+   "kind": "lead",
+   "line": 6429
+  },
+  {
+   "id": "r292",
+   "anchor": "Axes.contour",
+   "kind": "doc",
+   "line": 6439
+  },
+  {
+   "id": "r293",
+   "anchor": "Axes.contourf",
+   "kind": "doc",
+   "line": 6455
+  },
+  {
+   "id": "r294",
+   "anchor": "Axes.clabel",
+   "kind": "doc",
+   "line": 6469
+  },
+  {
+   "id": "r295",
+   "anchor": "Axes.hist",
+   "kind": "lead",
+   "line": 6492
+  },
+  {
+   "id": "r296",
+   "anchor": "Axes.hist",
+   "kind": "doc",
+   "line": 6492
+  },
+  {
+   "id": "r297",
+   "anchor": "Axes.hist#assign:bin_range",
+   "kind": "lead",
+   "line": 6682
+  },
+  {
+   "id": "r298",
+   "anchor": "Axes.hist#call:_api.check_in_list",
+   "kind": "lead",
+   "line": 6692
+  },
+  {
+   "id": "r299",
+   "anchor": "Axes.hist#assign:x",
+   "kind": "lead",
+   "line": 6701
+  },
+  {
+   "id": "r300",
+   "anchor": "Axes.hist#assign:nx",
+   "kind": "trail",
+   "line": 6702
+  },
+  {
+   "id": "r301",
+   "anchor": "Axes.hist#if:orientation == \"vertical\"",
+   "kind": "lead",
+   "line": 6707
+  },
+  {
+   "id": "r302",
+   "anchor": "Axes.hist#if:orientation == \"vertical\"/else",
+   "kind": "trail",
+   "line": 6711
+  },
+  {
+   "id": "r303",
+   "anchor": "Axes.hist#if:weights is not None",
+   "kind": "lead",
+   "line": 6723
+  },
+  {
+   "id": "r304",
+   "anchor": "Axes.hist#if:bin_range is None",
+   "kind": "lead",
+   "line": 6753
+  },
+  {
+   "id": "r305",
+   "anchor": "Axes.hist#if:bin_range is None/for:xi in x/if:len(xi)/assign:xmin",
+   "kind": "lead",
+   "line": 6760
+  },
+  {
+   "id": "r306",
+   "anchor": "Axes.hist#if:bin_range is None/if:xmin <= xmax",
+   "kind": "trail",
+   "line": 6762
+  },
+  {
+   "id": "r307",
+   "anchor": "Axes.hist#if:not input_empty and len(x) > 1",
+   "kind": "lead",
+   "line": 6768
+  },
+  {
+   "id": "r308",
+   "anchor": "Axes.hist#assign:tops",
+   "kind": "lead",
+   "line": 6783
+  },
+  {
+   "id": "r309",
+   "anchor": "Axes.hist#assign:tops",
+   "kind": "trail",
+   "line": 6783
+  },
+  {
+   "id": "r310",
+   "anchor": "Axes.hist#for:i in range(nx)",
+   "kind": "lead",
+   "line": 6785
+  },
+  {
+   "id": "r311",
+   "anchor": "Axes.hist#for:i in range(nx)/assign:m, bins",
+   "kind": "lead",
+   "line": 6788
+  },
+  {
+   "id": "r312",
+   "anchor": "Axes.hist#assign:tops",
+   "kind": "trail",
+   "line": 6790
+  },
+  {
+   "id": "r313",
+   "anchor": "Axes.hist#assign:bins",
+   "kind": "trail",
+   "line": 6791
+  },
+  {
+   "id": "r314",
+   "anchor": "Axes.hist#if:stacked/if:density",
+   "kind": "lead",
+   "line": 6796
+  },
+  {
+   "id": "r315",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/if:orientation == 'horizontal'/else",
+   "kind": "trail",
+   "line": 6837
+  },
+  {
+   "id": "r316",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/for:bars in patches[1:]",
+   "kind": "lead",
+   "line": 6858
+  },
+  {
+   "id": "r317",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/assign:x",
+   "kind": "lead",
+   "line": 6864
+  },
+  {
+   "id": "r318",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/if:log/if:orientation == 'horizontal'/else",
+   "kind": "trail",
+   "line": 6879
+  },
+  {
+   "id": "r319",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/assign:fill",
+   "kind": "lead",
+   "line": 6889
+  },
+  {
+   "id": "r320",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/for:top in tops/if:stacked/assign:y[2*len(bins)-1:]",
+   "kind": "lead",
+   "line": 6895
+  },
+  {
+   "id": "r321",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/for:top in tops/assign:y[1:2*len(bins)-1:2]",
+   "kind": "lead",
+   "line": 6897
+  },
+  {
+   "id": "r322",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/for:top in tops/assign:y[0]",
+   "kind": "lead",
+   "line": 6903
+  },
+  {
+   "id": "r323",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/assign:split",
+   "kind": "lead",
+   "line": 6913
+  },
+  {
+   "id": "r324",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/for:x, y, color in reversed(list(zip(xvals, yvals, colors)))",
+   "kind": "lead",
+   "line": 6917
+  },
+  {
+   "id": "r325",
+   "anchor": "Axes.hist#if:histtype.startswith('bar')/elif:histtype.startswith('step')/call:patches.reverse",
+   "kind": "lead",
+   "line": 6933
+  },
+  {
+   "id": "r326",
+   "anchor": "Axes.hist#assign:labels",
+   "kind": "lead",
+   "line": 6937
+  },
+  {
+   "id": "r327",
+   "anchor": "Axes.stairs",
+   "kind": "doc",
+   "line": 6956
+  },
+  {
+   "id": "r328",
+   "anchor": "Axes.hist2d",
+   "kind": "doc",
+   "line": 7034
+  },
+  {
+   "id": "r329",
+   "anchor": "Axes.psd",
+   "kind": "doc",
+   "line": 7141
+  },
+  {
+   "id": "r330",
+   "anchor": "Axes.csd",
+   "kind": "doc",
+   "line": 7252
+  },
+  {
+   "id": "r331",
+   "anchor": "Axes.csd#assign:freqs",
+   "kind": "lead",
+   "line": 7335
+  },
+  {
+   "id": "r332",
+   "anchor": "Axes.magnitude_spectrum",
+   "kind": "doc",
+   "line": 7354
+  },
+  {
+   "id": "r333",
+   "anchor": "Axes.magnitude_spectrum#if:yunits == 'energy'/else",
+   "kind": "trail",
+   "line": 7429
+  },
+  {
+   "id": "r334",
+   "anchor": "Axes.angle_spectrum",
+   "kind": "doc",
+   "line": 7440
+  },
+  {
+   "id": "r335",
+   "anchor": "Axes.phase_spectrum",
+   "kind": "doc",
+   "line": 7509
+  },
+  {
+   "id": "r336",
+   "anchor": "Axes.cohere",
+   "kind": "doc",
+   "line": 7578
+  },
+  {
+   "id": "r337",
+   "anchor": "Axes.specgram",
+   "kind": "doc",
+   "line": 7642
+  },
+  {
+   "id": "r338",
+   "anchor": "Axes.specgram#if:NFFT is None/assign:NFFT",
+   "kind": "trail",
+   "line": 7741
+  },
+  {
+   "id": "r339",
+   "anchor": "Axes.specgram#if:Fc is None/assign:Fc",
+   "kind": "trail",
+   "line": 7743
+  },
+  {
+   "id": "r340",
+   "anchor": "Axes.specgram#if:noverlap is None/assign:noverlap",
+   "kind": "trail",
+   "line": 7745
+  },
+  {
+   "id": "r341",
+   "anchor": "Axes.specgram#if:Fs is None/assign:Fs",
+   "kind": "trail",
+   "line": 7747
+  },
+  {
+   "id": "r342",
+   "anchor": "Axes.specgram#if:xextent is None/assign:pad_xextent",
+   "kind": "lead",
+   "line": 7781
+  },
+  {
+   "id": "r343",
+   "anchor": "Axes.spy",
+   "kind": "doc",
+   "line": 7797
+  },
+  {
+   "id": "r344",
+   "anchor": "Axes.spy#if:origin == \"upper\"/else",
+   "kind": "trail",
+   "line": 7926
+  },
+  {
+   "id": "r345",
+   "anchor": "Axes.matshow",
+   "kind": "doc",
+   "line": 7935
+  },
+  {
+   "id": "r346",
+   "anchor": "Axes.matshow#assign:kw/key:aspect",
+   "kind": "trail",
+   "line": 7974
+  },
+  {
+   "id": "r347",
+   "anchor": "Axes.violinplot",
+   "kind": "doc",
+   "line": 7987
+  },
+  {
+   "id": "r348",
+   "anchor": "Axes.violinplot._kde_method#assign:X",
+   "kind": "lead",
+   "line": 8078
+  },
+  {
+   "id": "r349",
+   "anchor": "Axes.violinplot._kde_method#if:np.all(X[0] == X)",
+   "kind": "lead",
+   "line": 8080
+  },
+  {
+   "id": "r350",
+   "anchor": "Axes.violin",
+   "kind": "doc",
+   "line": 8091
+  },
+  {
+   "id": "r351",
+   "anchor": "Axes.violin#assign:means",
+   "kind": "lead",
+   "line": 8179
+  },
+  {
+   "id": "r352",
+   "anchor": "Axes.violin#assign:qlens",
+   "kind": "trail",
+   "line": 8185
+  },
+  {
+   "id": "r353",
+   "anchor": "Axes.violin#assign:artists",
+   "kind": "trail",
+   "line": 8187
+  },
+  {
+   "id": "r354",
+   "anchor": "Axes.violin#if:positions is None",
+   "kind": "lead",
+   "line": 8194
+  },
+  {
+   "id": "r355",
+   "anchor": "Axes.violin#if:np.isscalar(widths)",
+   "kind": "lead",
+   "line": 8200
+  },
+  {
+   "id": "r356",
+   "anchor": "Axes.violin#assign:line_ends",
+   "kind": "lead",
+   "line": 8206
+  },
+  {
+   "id": "r357",
+   "anchor": "Axes.violin#if:mpl.rcParams['_internal.classic_mode']",
+   "kind": "lead",
+   "line": 8209
+  },
+  {
+   "id": "r358",
+   "anchor": "Axes.violin#if:vert",
+   "kind": "lead",
+   "line": 8216
+  },
+  {
+   "id": "r359",
+   "anchor": "Axes.violin#assign:bodies",
+   "kind": "lead",
+   "line": 8226
+  },
+  {
+   "id": "r360",
+   "anchor": "Axes.violin#for:stats, pos, width in zip(vpstats, positions, widths)/assign:vals",
+   "kind": "lead",
+   "line": 8229
+  },
+  {
+   "id": "r361",
+   "anchor": "Axes.violin#for:stats, pos, width in zip(vpstats, positions, widths)/assign:q",
+   "kind": "trail",
+   "line": 8237
+  },
+  {
+   "id": "r362",
+   "anchor": "Axes.violin#if:showmeans",
+   "kind": "trail",
+   "line": 8244
+  },
+  {
+   "id": "r363",
+   "anchor": "Axes.violin#if:showextrema",
+   "kind": "trail",
+   "line": 8246
+  },
+  {
+   "id": "r364",
+   "anchor": "Axes.violin#if:showmedians",
+   "kind": "trail",
+   "line": 8250
+  },
+  {
+   "id": "r365",
+   "anchor": "Axes.violin#if:quantiles",
+   "kind": "trail",
+   "line": 8252
+  },
+  {
+   "id": "r366",
+   "anchor": "Axes.table",
+   "kind": "lead",
+   "line": 8260
+  },
+  {
+   "id": "r367",
+   "anchor": "Axes.stackplot",
+   "kind": "lead",
+   "line": 8263
+  },
+  {
+   "id": "r368",
+   "anchor": "Axes._get_aspect_ratio",
+   "kind": "doc",
+   "line": 8273
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 167982,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 39062,
+  "thinking_tokens": 18800,
+  "opus_cost_usd": 2.6606615,
+  "total_cost_usd": 2.7993024999999996,
+  "duration_ms": 335317,
+  "duration_api_ms": 337976,
+  "num_turns": 2
+ },
+ "wall_ms": 336387,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

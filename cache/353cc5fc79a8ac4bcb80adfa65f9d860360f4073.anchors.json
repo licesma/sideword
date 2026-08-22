@@ -1,0 +1,541 @@
+{
+ "blob_sha": "353cc5fc79a8ac4bcb80adfa65f9d860360f4073",
+ "path": "astropy/modeling/projections.py",
+ "repo": "astropy/astropy",
+ "records": 86,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "_PROJ_NAME_CODE",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "_ParameterDS",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r5",
+   "anchor": "Projection",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r6",
+   "anchor": "Projection.r0",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r7",
+   "anchor": "Projection.inverse",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r8",
+   "anchor": "Projection.prjprm",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "Projection._update_prj",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r10",
+   "anchor": "Pix2SkyProjection",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r11",
+   "anchor": "Pix2SkyProjection.__init__#if:not self.param_names/call:self._prj.set",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r12",
+   "anchor": "Sky2PixProjection",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r13",
+   "anchor": "Sky2PixProjection.__init__#if:not self.param_names/call:self._prj.set",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r14",
+   "anchor": "Zenithal",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r15",
+   "anchor": "Pix2Sky_ZenithalPerspective",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r16",
+   "anchor": "Sky2Pix_ZenithalPerspective",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r17",
+   "anchor": "Pix2Sky_SlantZenithalPerspective",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r18",
+   "anchor": "Sky2Pix_SlantZenithalPerspective",
+   "kind": "doc",
+   "line": 389
+  },
+  {
+   "id": "r19",
+   "anchor": "Pix2Sky_Gnomonic",
+   "kind": "doc",
+   "line": 429
+  },
+  {
+   "id": "r20",
+   "anchor": "Sky2Pix_Gnomonic",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r21",
+   "anchor": "Pix2Sky_Stereographic",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r22",
+   "anchor": "Sky2Pix_Stereographic",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r23",
+   "anchor": "Pix2Sky_SlantOrthographic",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r24",
+   "anchor": "Sky2Pix_SlantOrthographic",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r25",
+   "anchor": "Pix2Sky_ZenithalEquidistant",
+   "kind": "doc",
+   "line": 540
+  },
+  {
+   "id": "r26",
+   "anchor": "Sky2Pix_ZenithalEquidistant",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r27",
+   "anchor": "Pix2Sky_ZenithalEqualArea",
+   "kind": "doc",
+   "line": 566
+  },
+  {
+   "id": "r28",
+   "anchor": "Sky2Pix_ZenithalEqualArea",
+   "kind": "doc",
+   "line": 579
+  },
+  {
+   "id": "r29",
+   "anchor": "Pix2Sky_Airy",
+   "kind": "doc",
+   "line": 593
+  },
+  {
+   "id": "r30",
+   "anchor": "Sky2Pix_Airy",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r31",
+   "anchor": "Cylindrical",
+   "kind": "doc",
+   "line": 639
+  },
+  {
+   "id": "r32",
+   "anchor": "Pix2Sky_CylindricalPerspective",
+   "kind": "doc",
+   "line": 648
+  },
+  {
+   "id": "r33",
+   "anchor": "Sky2Pix_CylindricalPerspective",
+   "kind": "doc",
+   "line": 689
+  },
+  {
+   "id": "r34",
+   "anchor": "Pix2Sky_CylindricalEqualArea",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r35",
+   "anchor": "Sky2Pix_CylindricalEqualArea",
+   "kind": "doc",
+   "line": 743
+  },
+  {
+   "id": "r36",
+   "anchor": "Pix2Sky_PlateCarree",
+   "kind": "doc",
+   "line": 761
+  },
+  {
+   "id": "r37",
+   "anchor": "Pix2Sky_PlateCarree.evaluate#assign:phi",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r38",
+   "anchor": "Sky2Pix_PlateCarree",
+   "kind": "doc",
+   "line": 780
+  },
+  {
+   "id": "r39",
+   "anchor": "Sky2Pix_PlateCarree.evaluate#assign:x",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r40",
+   "anchor": "Pix2Sky_Mercator",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r41",
+   "anchor": "Sky2Pix_Mercator",
+   "kind": "doc",
+   "line": 811
+  },
+  {
+   "id": "r42",
+   "anchor": "PseudoCylindrical",
+   "kind": "doc",
+   "line": 823
+  },
+  {
+   "id": "r43",
+   "anchor": "Pix2Sky_SansonFlamsteed",
+   "kind": "doc",
+   "line": 834
+  },
+  {
+   "id": "r44",
+   "anchor": "Sky2Pix_SansonFlamsteed",
+   "kind": "doc",
+   "line": 846
+  },
+  {
+   "id": "r45",
+   "anchor": "Pix2Sky_Parabolic",
+   "kind": "doc",
+   "line": 858
+  },
+  {
+   "id": "r46",
+   "anchor": "Sky2Pix_Parabolic",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r47",
+   "anchor": "Pix2Sky_Molleweide",
+   "kind": "doc",
+   "line": 882
+  },
+  {
+   "id": "r48",
+   "anchor": "Sky2Pix_Molleweide",
+   "kind": "doc",
+   "line": 897
+  },
+  {
+   "id": "r49",
+   "anchor": "Pix2Sky_HammerAitoff",
+   "kind": "doc",
+   "line": 916
+  },
+  {
+   "id": "r50",
+   "anchor": "Sky2Pix_HammerAitoff",
+   "kind": "doc",
+   "line": 928
+  },
+  {
+   "id": "r51",
+   "anchor": "Conic",
+   "kind": "doc",
+   "line": 945
+  },
+  {
+   "id": "r52",
+   "anchor": "Pix2Sky_ConicPerspective",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r53",
+   "anchor": "Sky2Pix_ConicPerspective",
+   "kind": "doc",
+   "line": 1002
+  },
+  {
+   "id": "r54",
+   "anchor": "Pix2Sky_ConicEqualArea",
+   "kind": "doc",
+   "line": 1031
+  },
+  {
+   "id": "r55",
+   "anchor": "Sky2Pix_ConicEqualArea",
+   "kind": "doc",
+   "line": 1067
+  },
+  {
+   "id": "r56",
+   "anchor": "Pix2Sky_ConicEquidistant",
+   "kind": "doc",
+   "line": 1103
+  },
+  {
+   "id": "r57",
+   "anchor": "Sky2Pix_ConicEquidistant",
+   "kind": "doc",
+   "line": 1133
+  },
+  {
+   "id": "r58",
+   "anchor": "Pix2Sky_ConicOrthomorphic",
+   "kind": "doc",
+   "line": 1163
+  },
+  {
+   "id": "r59",
+   "anchor": "Sky2Pix_ConicOrthomorphic",
+   "kind": "doc",
+   "line": 1202
+  },
+  {
+   "id": "r60",
+   "anchor": "PseudoConic",
+   "kind": "doc",
+   "line": 1241
+  },
+  {
+   "id": "r61",
+   "anchor": "Pix2Sky_BonneEqualArea",
+   "kind": "doc",
+   "line": 1248
+  },
+  {
+   "id": "r62",
+   "anchor": "Sky2Pix_BonneEqualArea",
+   "kind": "doc",
+   "line": 1276
+  },
+  {
+   "id": "r63",
+   "anchor": "Pix2Sky_Polyconic",
+   "kind": "doc",
+   "line": 1304
+  },
+  {
+   "id": "r64",
+   "anchor": "Sky2Pix_Polyconic",
+   "kind": "doc",
+   "line": 1312
+  },
+  {
+   "id": "r65",
+   "anchor": "QuadCube",
+   "kind": "doc",
+   "line": 1320
+  },
+  {
+   "id": "r66",
+   "anchor": "Pix2Sky_TangentialSphericalCube",
+   "kind": "doc",
+   "line": 1337
+  },
+  {
+   "id": "r67",
+   "anchor": "Sky2Pix_TangentialSphericalCube",
+   "kind": "doc",
+   "line": 1345
+  },
+  {
+   "id": "r68",
+   "anchor": "Pix2Sky_COBEQuadSphericalCube",
+   "kind": "doc",
+   "line": 1353
+  },
+  {
+   "id": "r69",
+   "anchor": "Sky2Pix_COBEQuadSphericalCube",
+   "kind": "doc",
+   "line": 1361
+  },
+  {
+   "id": "r70",
+   "anchor": "Pix2Sky_QuadSphericalCube",
+   "kind": "doc",
+   "line": 1369
+  },
+  {
+   "id": "r71",
+   "anchor": "Sky2Pix_QuadSphericalCube",
+   "kind": "doc",
+   "line": 1377
+  },
+  {
+   "id": "r72",
+   "anchor": "HEALPix",
+   "kind": "doc",
+   "line": 1385
+  },
+  {
+   "id": "r73",
+   "anchor": "Pix2Sky_HEALPix",
+   "kind": "doc",
+   "line": 1390
+  },
+  {
+   "id": "r74",
+   "anchor": "Sky2Pix_HEALPix",
+   "kind": "doc",
+   "line": 1411
+  },
+  {
+   "id": "r75",
+   "anchor": "Pix2Sky_HEALPixPolar",
+   "kind": "doc",
+   "line": 1432
+  },
+  {
+   "id": "r76",
+   "anchor": "Sky2Pix_HEALPixPolar",
+   "kind": "doc",
+   "line": 1440
+  },
+  {
+   "id": "r77",
+   "anchor": "AffineTransformation2D",
+   "kind": "doc",
+   "line": 1448
+  },
+  {
+   "id": "r78",
+   "anchor": "AffineTransformation2D.matrix",
+   "kind": "doc",
+   "line": 1474
+  },
+  {
+   "id": "r79",
+   "anchor": "AffineTransformation2D.translation",
+   "kind": "doc",
+   "line": 1482
+  },
+  {
+   "id": "r80",
+   "anchor": "AffineTransformation2D.inverse",
+   "kind": "doc",
+   "line": 1501
+  },
+  {
+   "id": "r81",
+   "anchor": "AffineTransformation2D.inverse#assign:translation",
+   "kind": "lead",
+   "line": 1519
+  },
+  {
+   "id": "r82",
+   "anchor": "AffineTransformation2D.evaluate",
+   "kind": "doc",
+   "line": 1523
+  },
+  {
+   "id": "r83",
+   "anchor": "AffineTransformation2D.evaluate#assign:inarr",
+   "kind": "lead",
+   "line": 1539
+  },
+  {
+   "id": "r84",
+   "anchor": "AffineTransformation2D._create_augmented_matrix#if:any([hasattr(translation, 'unit'), hasattr(matrix, 'unit')])/if:not (matrix.unit / translation.unit) == u.dimensionless_unscaled",
+   "kind": "lead",
+   "line": 1562
+  },
+  {
+   "id": "r85",
+   "anchor": "<module>#for:long_name, short_name in _PROJ_NAME_CODE/assign:globals()['Pix2Sky_' + short_name]",
+   "kind": "lead",
+   "line": 1585
+  },
+  {
+   "id": "r86",
+   "anchor": "<module>#for:long_name, short_name in _PROJ_NAME_CODE/assign:globals()['Pix2Sky_' + long_name]._inv_cls",
+   "kind": "lead",
+   "line": 1588
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 33788,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5314,
+  "thinking_tokens": 1601,
+  "opus_cost_usd": 0.4750215,
+  "total_cost_usd": 0.5013105,
+  "duration_ms": 46134,
+  "duration_api_ms": 47347,
+  "num_turns": 2
+ },
+ "wall_ms": 47006,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

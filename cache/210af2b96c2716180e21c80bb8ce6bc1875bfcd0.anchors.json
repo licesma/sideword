@@ -1,0 +1,253 @@
+{
+ "blob_sha": "210af2b96c2716180e21c80bb8ce6bc1875bfcd0",
+ "path": "astropy/io/fits/connect.py",
+ "repo": "astropy/astropy",
+ "records": 38,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:os",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "REMOVE_KEYWORDS",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "COLUMN_KEYWORD_REGEXP",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r4",
+   "anchor": "is_fits",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r5",
+   "anchor": "_decode_mixins",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r6",
+   "anchor": "_decode_mixins#try",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r7",
+   "anchor": "_decode_mixins#assign:continuation_line",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r8",
+   "anchor": "_decode_mixins#assign:tbl.meta[\"__serialized_columns__\"]",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r9",
+   "anchor": "_decode_mixins#for:col in info[\"datatype\"]",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r10",
+   "anchor": "_decode_mixins#assign:tbl",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r11",
+   "anchor": "read_table_fits",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r12",
+   "anchor": "read_table_fits#if:isinstance(input, HDUList)/assign:tables",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r13",
+   "anchor": "read_table_fits#if:isinstance(input, HDUList)/if:len(tables) > 1/assign:hdu",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r14",
+   "anchor": "read_table_fits#if:isinstance(input, HDUList)/else/if:memmap/assign:mask_invalid",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r15",
+   "anchor": "read_table_fits#assign:data",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r16",
+   "anchor": "read_table_fits#for:col in data.columns/assign:masked",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r17",
+   "anchor": "read_table_fits#for:col in data.columns/if:col.null is not None/assign:masked",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r18",
+   "anchor": "read_table_fits#for:col in data.columns/if:col.unit is not None",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r19",
+   "anchor": "read_table_fits#for:col in data.columns/if:col.disp is not None",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r20",
+   "anchor": "read_table_fits#assign:t",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r21",
+   "anchor": "read_table_fits#assign:hdr",
+   "kind": "todo",
+   "line": 304
+  },
+  {
+   "id": "r22",
+   "anchor": "read_table_fits#if:astropy_native/import:.fitstime",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r23",
+   "anchor": "read_table_fits#for:key, value, comment in hdr.cards/if:key in [\"COMMENT\", \"HISTORY\"]/if:key == \"COMMENT\"",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r24",
+   "anchor": "read_table_fits#for:key, value, comment in hdr.cards/if:key in [\"COMMENT\", \"HISTORY\"]/elif:key in t.meta",
+   "kind": "trail",
+   "line": 322
+  },
+  {
+   "id": "r25",
+   "anchor": "read_table_fits#assign:t",
+   "kind": "todo",
+   "line": 337
+  },
+  {
+   "id": "r26",
+   "anchor": "read_table_fits#assign:t",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r27",
+   "anchor": "_encode_mixins",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r28",
+   "anchor": "_encode_mixins#assign:info_lost",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r29",
+   "anchor": "_encode_mixins#with:serialize_context_as(\"fits\")",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r30",
+   "anchor": "_encode_mixins#if:encode_tbl is tbl and not info_lost",
+   "kind": "lead",
+   "line": 369
+  },
+  {
+   "id": "r31",
+   "anchor": "_encode_mixins#if:encode_tbl is tbl",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r32",
+   "anchor": "_encode_mixins#assign:ser_col",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r33",
+   "anchor": "_encode_mixins#call:encode_tbl.meta.setdefault",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r34",
+   "anchor": "_encode_mixins#for:line in meta_yaml_lines/if:len(line) == 0/else/assign:idxs",
+   "kind": "lead",
+   "line": 407
+  },
+  {
+   "id": "r35",
+   "anchor": "write_table_fits",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r36",
+   "anchor": "write_table_fits#assign:input",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r37",
+   "anchor": "write_table_fits#if:isinstance(output, str) and os.path.exists(output)",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r38",
+   "anchor": "write_table_fits#if:append/call:fits_append",
+   "kind": "lead",
+   "line": 446
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12863,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4244,
+  "thinking_tokens": 2430,
+  "opus_cost_usd": 0.2390215,
+  "total_cost_usd": 0.2479555,
+  "duration_ms": 39020,
+  "duration_api_ms": 40559,
+  "num_turns": 2
+ },
+ "wall_ms": 40258,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

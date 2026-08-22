@@ -1,0 +1,373 @@
+{
+ "blob_sha": "d170b7d6b37fac0598e381ee6e6b58d756afc732",
+ "path": "lib/matplotlib/cm.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 58,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_gen_cmap_registry",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "_gen_cmap_registry#for:name, spec in datad.items()/assign:cmap_d[name]",
+   "kind": "trail",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "_gen_cmap_registry#for:cmap in list(cmap_d.values())",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "ColormapRegistry",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "ColormapRegistry._allow_override_builtin",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r7",
+   "anchor": "ColormapRegistry.__call__",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r8",
+   "anchor": "ColormapRegistry.register",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r9",
+   "anchor": "ColormapRegistry.register#if:name in self/if:not force/raise:ValueError",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r10",
+   "anchor": "ColormapRegistry.register#if:name in self/if:not force/elif:name in self._builtin_cmaps and not self._allow_override_builtin/raise:ValueError",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r11",
+   "anchor": "ColormapRegistry.register#if:name in self/call:_api.warn_external",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r12",
+   "anchor": "ColormapRegistry.unregister",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r13",
+   "anchor": "ColormapRegistry.get_cmap",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r14",
+   "anchor": "ColormapRegistry.get_cmap#if:cmap is None",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r15",
+   "anchor": "ColormapRegistry.get_cmap#if:isinstance(cmap, colors.Colormap)",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r16",
+   "anchor": "ColormapRegistry.get_cmap#if:isinstance(cmap, str)/return",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r17",
+   "anchor": "_colormaps",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r18",
+   "anchor": "register_cmap",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r19",
+   "anchor": "register_cmap#assign:_colormaps._allow_override_builtin",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r20",
+   "anchor": "_get_cmap",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r21",
+   "anchor": "get_cmap",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r22",
+   "anchor": "unregister_cmap",
+   "kind": "doc",
+   "line": 309
+  },
+  {
+   "id": "r23",
+   "anchor": "_auto_norm_from_scale",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r24",
+   "anchor": "_auto_norm_from_scale#try",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r25",
+   "anchor": "ScalarMappable",
+   "kind": "doc",
+   "line": 374
+  },
+  {
+   "id": "r26",
+   "anchor": "ScalarMappable.__init__",
+   "kind": "doc",
+   "line": 382
+  },
+  {
+   "id": "r27",
+   "anchor": "ScalarMappable._norm",
+   "kind": "trail",
+   "line": 397
+  },
+  {
+   "id": "r28",
+   "anchor": "ScalarMappable.__init__#call:self.set_norm",
+   "kind": "trail",
+   "line": 398
+  },
+  {
+   "id": "r29",
+   "anchor": "ScalarMappable.cmap",
+   "kind": "trail",
+   "line": 399
+  },
+  {
+   "id": "r30",
+   "anchor": "ScalarMappable.__init__#call:self.set_cmap",
+   "kind": "trail",
+   "line": 400
+  },
+  {
+   "id": "r31",
+   "anchor": "ScalarMappable.colorbar",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r32",
+   "anchor": "ScalarMappable._scale_norm",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r33",
+   "anchor": "ScalarMappable._scale_norm#call:self.autoscale_None",
+   "kind": "lead",
+   "line": 425
+  },
+  {
+   "id": "r34",
+   "anchor": "ScalarMappable.to_rgba",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r35",
+   "anchor": "ScalarMappable.to_rgba#try",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r36",
+   "anchor": "ScalarMappable.to_rgba#try/except:AttributeError/pass",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r37",
+   "anchor": "ScalarMappable.to_rgba#assign:x",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r38",
+   "anchor": "ScalarMappable.set_array",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r39",
+   "anchor": "ScalarMappable.get_array",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r40",
+   "anchor": "ScalarMappable.get_cmap",
+   "kind": "doc",
+   "line": 529
+  },
+  {
+   "id": "r41",
+   "anchor": "ScalarMappable.get_clim",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r42",
+   "anchor": "ScalarMappable.set_clim",
+   "kind": "doc",
+   "line": 539
+  },
+  {
+   "id": "r43",
+   "anchor": "ScalarMappable.set_clim#if:vmax is None",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r44",
+   "anchor": "ScalarMappable.get_alpha",
+   "kind": "doc",
+   "line": 565
+  },
+  {
+   "id": "r45",
+   "anchor": "ScalarMappable.get_alpha#return",
+   "kind": "lead",
+   "line": 573
+  },
+  {
+   "id": "r46",
+   "anchor": "ScalarMappable.set_cmap",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r47",
+   "anchor": "ScalarMappable.set_cmap#if:not in_init/call:self.changed",
+   "kind": "trail",
+   "line": 587
+  },
+  {
+   "id": "r48",
+   "anchor": "ScalarMappable.norm#if:norm is self.norm/return",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r49",
+   "anchor": "ScalarMappable.norm#if:not in_init",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r50",
+   "anchor": "ScalarMappable.set_norm",
+   "kind": "doc",
+   "line": 622
+  },
+  {
+   "id": "r51",
+   "anchor": "ScalarMappable.autoscale",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r52",
+   "anchor": "ScalarMappable.autoscale#call:self.norm.autoscale",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r53",
+   "anchor": "ScalarMappable.autoscale_None",
+   "kind": "doc",
+   "line": 649
+  },
+  {
+   "id": "r54",
+   "anchor": "ScalarMappable.autoscale_None#call:self.norm.autoscale_None",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r55",
+   "anchor": "ScalarMappable.changed",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r56",
+   "anchor": "<module>#call:mpl._docstring.interpd.update",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r57",
+   "anchor": "_ensure_cmap",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r58",
+   "anchor": "_ensure_cmap#call:_api.check_in_list",
+   "kind": "lead",
+   "line": 723
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16968,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5271,
+  "thinking_tokens": 2729,
+  "opus_cost_usd": 0.30574650000000003,
+  "total_cost_usd": 0.31807450000000004,
+  "duration_ms": 47778,
+  "duration_api_ms": 48891,
+  "num_turns": 2
+ },
+ "wall_ms": 48639,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

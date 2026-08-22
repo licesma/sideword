@@ -1,0 +1,415 @@
+{
+ "blob_sha": "eaa66bdfa7085bb7a5605781e58964fe5e19f00a",
+ "path": "setupext.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 65,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_get_xdg_cache_dir",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_xdg_cache_dir#if:not cache_dir/if:cache_dir.startswith('~/')",
+   "kind": "trail",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_hash",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "get_from_cache_or_download",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r5",
+   "anchor": "get_from_cache_or_download#if:cache_dir is not None",
+   "kind": "trail",
+   "line": 69
+  },
+  {
+   "id": "r6",
+   "anchor": "get_from_cache_or_download#with:urllib.request.urlopen(urllib.request.Request(url, headers={\"User-Agent\": \"\"}), context=_get_ssl_context())",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r7",
+   "anchor": "get_from_cache_or_download#if:cache_dir is not None",
+   "kind": "trail",
+   "line": 92
+  },
+  {
+   "id": "r8",
+   "anchor": "get_and_extract_tarball",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r9",
+   "anchor": "get_and_extract_tarball#if:not toplevel.exists()",
+   "kind": "trail",
+   "line": 119
+  },
+  {
+   "id": "r10",
+   "anchor": "_freetype_hashes",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r11",
+   "anchor": "TESTING_VERSION_OF_FREETYPE",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r12",
+   "anchor": "LOCAL_FREETYPE_VERSION",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r13",
+   "anchor": "LOCAL_QHULL_VERSION",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r14",
+   "anchor": "mplsetup_cfg",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r15",
+   "anchor": "print_raw",
+   "kind": "trail",
+   "line": 207
+  },
+  {
+   "id": "r16",
+   "anchor": "get_pkg_config#decorator:functools.lru_cache",
+   "kind": "trail",
+   "line": 220
+  },
+  {
+   "id": "r17",
+   "anchor": "get_pkg_config",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r18",
+   "anchor": "pkg_config_setup_extension",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r19",
+   "anchor": "pkg_config_setup_extension#assign:pkg_config",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r20",
+   "anchor": "pkg_config_setup_extension#if:cmd is not None/try/assign:cflags",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r21",
+   "anchor": "pkg_config_setup_extension#if:sys.platform=='win32'",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r22",
+   "anchor": "pkg_config_setup_extension#if:sys.platform=='win32'",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r23",
+   "anchor": "pkg_config_setup_extension#if:sys.platform=='win32'/assign:conda_env_path",
+   "kind": "trail",
+   "line": 278
+  },
+  {
+   "id": "r24",
+   "anchor": "pkg_config_setup_extension#if:sys.platform=='win32'/assign:conda_env_path",
+   "kind": "trail",
+   "line": 278
+  },
+  {
+   "id": "r25",
+   "anchor": "pkg_config_setup_extension#call:ext.libraries.extend",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r26",
+   "anchor": "Skipped",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r27",
+   "anchor": "SetupPackage.check",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r28",
+   "anchor": "SetupPackage.get_package_data",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r29",
+   "anchor": "SetupPackage.get_extensions",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r30",
+   "anchor": "SetupPackage.do_custom_build",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r31",
+   "anchor": "OptionalPackage.check",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r32",
+   "anchor": "OptionalPackage.check#if:config.getboolean(\"packages\", self.name, fallback=self.default_config)/else",
+   "kind": "trail",
+   "line": 344
+  },
+  {
+   "id": "r33",
+   "anchor": "_pkg_data_helper",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r34",
+   "anchor": "Matplotlib.get_package_data#return/key:matplotlib/item:'*.dll'",
+   "kind": "trail",
+   "line": 377
+  },
+  {
+   "id": "r35",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r36",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r37",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r38",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r39",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 422
+  },
+  {
+   "id": "r40",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r41",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r42",
+   "anchor": "Matplotlib.get_extensions#assign:ext/arg:libraries",
+   "kind": "lead",
+   "line": 444
+  },
+  {
+   "id": "r43",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r44",
+   "anchor": "Matplotlib.get_extensions#assign:ext",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r45",
+   "anchor": "add_numpy_flags#call:ext.define_macros.extend/item:('PY_ARRAY_UNIQUE_SYMBOL', 'MPL_' + ext.name.replace('.', '_') + '_ARRAY_API')",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r46",
+   "anchor": "add_numpy_flags#call:ext.define_macros.extend/item:('__STDC_FORMAT_MACROS', 1)",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r47",
+   "anchor": "add_libagg_flags#call:ext.include_dirs.insert",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r48",
+   "anchor": "add_libagg_flags_and_sources#call:ext.include_dirs.insert",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r49",
+   "anchor": "get_ccompiler",
+   "kind": "doc",
+   "line": 528
+  },
+  {
+   "id": "r50",
+   "anchor": "FreeType.add_flags#call:ext.sources.insert",
+   "kind": "lead",
+   "line": 559
+  },
+  {
+   "id": "r51",
+   "anchor": "FreeType.add_flags#if:options.get('system_freetype')/call:pkg_config_setup_extension/arg:ext",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r52",
+   "anchor": "FreeType.add_flags#if:options.get('system_freetype')/else/call:ext.include_dirs.insert",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r53",
+   "anchor": "FreeType.do_custom_build#if:options.get('system_freetype')",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r54",
+   "anchor": "FreeType.do_custom_build#if:(src_path / 'objs' / '.libs' / libfreetype).is_file()/return",
+   "kind": "trail",
+   "line": 607
+  },
+  {
+   "id": "r55",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'",
+   "kind": "trail",
+   "line": 610
+  },
+  {
+   "id": "r56",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/if:host is not None",
+   "kind": "trail",
+   "line": 634
+  },
+  {
+   "id": "r57",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else",
+   "kind": "trail",
+   "line": 652
+  },
+  {
+   "id": "r58",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/call:(sln_path.parent / \"Directory.Build.props\").write_text",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r59",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/call:(sln_path.parent / \"Directory.Build.props\").write_text",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r60",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/with:open(base_path / vc / \"freetype.vcxproj\", 'r+b')",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r61",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/call:cc.initialize",
+   "kind": "trail",
+   "line": 694
+  },
+  {
+   "id": "r62",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/assign:msbuild_config",
+   "kind": "lead",
+   "line": 696
+  },
+  {
+   "id": "r63",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/call:(src_path / \"objs\" / \".libs\").mkdir",
+   "kind": "lead",
+   "line": 707
+  },
+  {
+   "id": "r64",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/assign:lib_paths",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r65",
+   "anchor": "FreeType.do_custom_build#if:sys.platform!='win32'/else/assign:lib_path",
+   "kind": "lead",
+   "line": 711
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19242,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8150,
+  "thinking_tokens": 4772,
+  "opus_cost_usd": 0.40046149999999997,
+  "total_cost_usd": 0.41464449999999997,
+  "duration_ms": 79485,
+  "duration_api_ms": 80602,
+  "num_turns": 2
+ },
+ "wall_ms": 80318,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

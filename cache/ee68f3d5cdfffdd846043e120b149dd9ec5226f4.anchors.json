@@ -1,0 +1,211 @@
+{
+ "blob_sha": "ee68f3d5cdfffdd846043e120b149dd9ec5226f4",
+ "path": "django/contrib/gis/db/models/lookups.py",
+ "repo": "django/django",
+ "records": 31,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GISLookup._check_geo_field",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r2",
+   "anchor": "GISLookup._check_geo_field#assign:field_list",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "GISLookup._check_geo_field#call:field_list.reverse",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "GISLookup._check_geo_field#try/while:len(field_list)",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r5",
+   "anchor": "GISLookup._check_geo_field#if:isinstance(geo_fld, BaseSpatialField)",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r6",
+   "anchor": "GISLookup.process_band_indices",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r7",
+   "anchor": "GISLookup.process_band_indices#if:only_lhs",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "GISLookup.get_db_prep_lookup#if:isinstance(value, (tuple, list))",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r9",
+   "anchor": "GISLookup.get_db_prep_lookup#if:isinstance(value, (tuple, list))/assign:params",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r10",
+   "anchor": "GISLookup.process_rhs#if:isinstance(self.rhs, Query)/return",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r11",
+   "anchor": "GISLookup.process_rhs#if:isinstance(self.rhs, Col)/assign:geo_fld",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r12",
+   "anchor": "GISLookup.process_rhs#if:isinstance(self.rhs, Col)/elif:isinstance(self.rhs, (list, tuple))/if:(len(self.rhs) == 2 and not self.lookup_name == 'relate') or (len(self.rhs) == 3 and self.lookup_name == 'relate')",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r13",
+   "anchor": "GISLookup.get_rhs_op#return",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r14",
+   "anchor": "OverlapsLeftLookup",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r15",
+   "anchor": "OverlapsLeftLookup",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r16",
+   "anchor": "OverlapsRightLookup",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r17",
+   "anchor": "OverlapsBelowLookup",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r18",
+   "anchor": "OverlapsAboveLookup",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r19",
+   "anchor": "LeftLookup",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r20",
+   "anchor": "RightLookup",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r21",
+   "anchor": "StrictlyBelowLookup",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r22",
+   "anchor": "StrictlyAboveLookup",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r23",
+   "anchor": "SameAsLookup",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r24",
+   "anchor": "ExactLookup.lookup_name",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r25",
+   "anchor": "BBContainsLookup",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r26",
+   "anchor": "BBOverlapsLookup",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r27",
+   "anchor": "ContainedLookup",
+   "kind": "doc",
+   "line": 260
+  },
+  {
+   "id": "r28",
+   "anchor": "ContainsLookup",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r29",
+   "anchor": "RelateLookup.get_db_prep_lookup#assign:backend_op",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r30",
+   "anchor": "DistanceLookupBase.process_rhs#if:len(self.rhs) > 2 and not self.rhs[2] == 'spheroid'",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r31",
+   "anchor": "DistanceLookupBase.process_rhs#assign:dist_param",
+   "kind": "lead",
+   "line": 380
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11795,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3336,
+  "thinking_tokens": 1809,
+  "opus_cost_usd": 0.20564149999999998,
+  "total_cost_usd": 0.21394249999999998,
+  "duration_ms": 32051,
+  "duration_api_ms": 33395,
+  "num_turns": 2
+ },
+ "wall_ms": 32911,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

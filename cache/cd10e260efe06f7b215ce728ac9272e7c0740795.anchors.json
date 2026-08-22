@@ -1,0 +1,607 @@
+{
+ "blob_sha": "cd10e260efe06f7b215ce728ac9272e7c0740795",
+ "path": "seaborn/_core/properties.py",
+ "repo": "mwaskom/seaborn",
+ "records": 97,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#try/except:ImportError/assign:ArrayLike",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "Property",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r3",
+   "anchor": "Property",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r4",
+   "anchor": "Property.legend",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r5",
+   "anchor": "Property.normed",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r6",
+   "anchor": "Property.__init__",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r7",
+   "anchor": "Property.default_scale",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r8",
+   "anchor": "Property.default_scale#assign:var_type",
+   "kind": "todo",
+   "line": 67
+  },
+  {
+   "id": "r9",
+   "anchor": "Property.default_scale#if:var_type == \"numeric\"/elif:var_type == \"datetime\"/else",
+   "kind": "todo",
+   "line": 75
+  },
+  {
+   "id": "r10",
+   "anchor": "Property.infer_scale",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r11",
+   "anchor": "Property.infer_scale#assign:trans_args",
+   "kind": "todo",
+   "line": 85
+  },
+  {
+   "id": "r12",
+   "anchor": "Property.infer_scale#if:isinstance(arg, str)/if:any(arg.startswith(k) for k in trans_args)/return",
+   "kind": "todo",
+   "line": 89
+  },
+  {
+   "id": "r13",
+   "anchor": "Property.get_mapping",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r14",
+   "anchor": "Property.standardize",
+   "kind": "doc",
+   "line": 106
+  },
+  {
+   "id": "r15",
+   "anchor": "Property._check_dict_entries",
+   "kind": "doc",
+   "line": 110
+  },
+  {
+   "id": "r16",
+   "anchor": "Property._check_list_length",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r17",
+   "anchor": "Property._check_list_length#if:message",
+   "kind": "todo",
+   "line": 137
+  },
+  {
+   "id": "r18",
+   "anchor": "Coordinate",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r19",
+   "anchor": "Coordinate",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r20",
+   "anchor": "IntervalProperty",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r21",
+   "anchor": "IntervalProperty",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r22",
+   "anchor": "IntervalProperty.default_range",
+   "kind": "doc",
+   "line": 167
+  },
+  {
+   "id": "r23",
+   "anchor": "IntervalProperty._forward",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r24",
+   "anchor": "IntervalProperty._inverse",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r25",
+   "anchor": "IntervalProperty.infer_scale",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r26",
+   "anchor": "IntervalProperty.infer_scale#if:isinstance(arg, (list, dict))",
+   "kind": "todo",
+   "line": 184
+  },
+  {
+   "id": "r27",
+   "anchor": "IntervalProperty.infer_scale#if:isinstance(arg, (list, dict))/elif:variable_type(data) == \"categorical\"/elif:variable_type(data) == \"datetime\"/else",
+   "kind": "todo",
+   "line": 191
+  },
+  {
+   "id": "r28",
+   "anchor": "IntervalProperty.get_mapping",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r29",
+   "anchor": "IntervalProperty._get_categorical_mapping",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r30",
+   "anchor": "PointSize",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r31",
+   "anchor": "PointSize._default_range",
+   "kind": "todo",
+   "line": 261
+  },
+  {
+   "id": "r32",
+   "anchor": "PointSize._forward",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r33",
+   "anchor": "PointSize._inverse",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r34",
+   "anchor": "LineWidth",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r35",
+   "anchor": "LineWidth.default_range",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r36",
+   "anchor": "EdgeWidth",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r37",
+   "anchor": "EdgeWidth.default_range",
+   "kind": "doc",
+   "line": 284
+  },
+  {
+   "id": "r38",
+   "anchor": "Stroke",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r39",
+   "anchor": "Alpha",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r40",
+   "anchor": "Alpha._default_range",
+   "kind": "todo",
+   "line": 297
+  },
+  {
+   "id": "r41",
+   "anchor": "Offset",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r42",
+   "anchor": "FontSize",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r43",
+   "anchor": "FontSize.default_range",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r44",
+   "anchor": "ObjectProperty",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r45",
+   "anchor": "ObjectProperty",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r46",
+   "anchor": "ObjectProperty.null_value",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r47",
+   "anchor": "ObjectProperty.get_mapping",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r48",
+   "anchor": "Marker",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r49",
+   "anchor": "Marker.standardize",
+   "kind": "todo",
+   "line": 384
+  },
+  {
+   "id": "r50",
+   "anchor": "Marker.standardize",
+   "kind": "todo",
+   "line": 384
+  },
+  {
+   "id": "r51",
+   "anchor": "Marker._default_values",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r52",
+   "anchor": "Marker._default_values#assign:markers",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r53",
+   "anchor": "Marker._default_values#assign:s",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r54",
+   "anchor": "LineStyle",
+   "kind": "doc",
+   "line": 419
+  },
+  {
+   "id": "r55",
+   "anchor": "LineStyle._default_values",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r56",
+   "anchor": "LineStyle._default_values#assign:dashes",
+   "kind": "lead",
+   "line": 444
+  },
+  {
+   "id": "r57",
+   "anchor": "LineStyle._default_values#assign:p",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r58",
+   "anchor": "LineStyle._default_values#while:len(dashes) < n/assign:a",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r59",
+   "anchor": "LineStyle._default_values#while:len(dashes) < n/assign:segment_list",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r60",
+   "anchor": "LineStyle._default_values#while:len(dashes) < n/for:segments in segment_list",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r61",
+   "anchor": "LineStyle._get_dash_pattern",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r62",
+   "anchor": "LineStyle._get_dash_pattern#assign:ls_mapper",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r63",
+   "anchor": "LineStyle._get_dash_pattern#if:isinstance(style, str)/if:style in [\"solid\", \"none\", \"None\"]",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r64",
+   "anchor": "LineStyle._get_dash_pattern#if:isinstance(style, str)/if:style in [\"solid\", \"none\", \"None\"]/elif:style in [\"dashed\", \"dashdot\", \"dotted\"]",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r65",
+   "anchor": "LineStyle._get_dash_pattern#if:dashes is not None",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r66",
+   "anchor": "Color",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r67",
+   "anchor": "Color",
+   "kind": "doc",
+   "line": 539
+  },
+  {
+   "id": "r68",
+   "anchor": "Color.standardize#if:to_rgba(val) != to_rgba(val, 1)",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r69",
+   "anchor": "Color._standardize_color_sequence",
+   "kind": "doc",
+   "line": 552
+  },
+  {
+   "id": "r70",
+   "anchor": "Color.infer_scale#assign:var_type",
+   "kind": "todo",
+   "line": 572
+  },
+  {
+   "id": "r71",
+   "anchor": "Color.infer_scale#assign:var_type",
+   "kind": "todo",
+   "line": 572
+  },
+  {
+   "id": "r72",
+   "anchor": "Color.infer_scale#if:isinstance(arg, tuple)/if:var_type == \"categorical\"/return",
+   "kind": "todo",
+   "line": 582
+  },
+  {
+   "id": "r73",
+   "anchor": "Color.infer_scale#if:not isinstance(arg, str)",
+   "kind": "todo",
+   "line": 594
+  },
+  {
+   "id": "r74",
+   "anchor": "Color.infer_scale#if:not isinstance(arg, str)",
+   "kind": "todo",
+   "line": 594
+  },
+  {
+   "id": "r75",
+   "anchor": "Color.infer_scale#if:arg in QUAL_PALETTES/elif:var_type == \"numeric\"/else",
+   "kind": "todo",
+   "line": 606
+  },
+  {
+   "id": "r76",
+   "anchor": "Color._get_categorical_mapping",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r77",
+   "anchor": "Color._get_categorical_mapping#if:isinstance(values, dict)/assign:colors",
+   "kind": "todo",
+   "line": 618
+  },
+  {
+   "id": "r78",
+   "anchor": "Color._get_categorical_mapping#if:isinstance(values, dict)/elif:isinstance(values, list)/elif:isinstance(values, tuple)/elif:isinstance(values, str)/elif:values is None/if:n <= len(get_color_cycle())/assign:colors",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r79",
+   "anchor": "Color._get_categorical_mapping#assign:colors",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r80",
+   "anchor": "Color.get_mapping",
+   "kind": "doc",
+   "line": 651
+  },
+  {
+   "id": "r81",
+   "anchor": "Color.get_mapping#if:isinstance(scale, Nominal)",
+   "kind": "todo",
+   "line": 657
+  },
+  {
+   "id": "r82",
+   "anchor": "Color.get_mapping#if:scale.values is None/assign:mapping",
+   "kind": "todo",
+   "line": 662
+  },
+  {
+   "id": "r83",
+   "anchor": "Color.get_mapping#if:scale.values is None/elif:isinstance(scale.values, tuple)/assign:mapping",
+   "kind": "todo",
+   "line": 666
+  },
+  {
+   "id": "r84",
+   "anchor": "Color.get_mapping#if:scale.values is None/elif:isinstance(scale.values, tuple)/elif:isinstance(scale.values, str)/assign:mapping",
+   "kind": "todo",
+   "line": 671
+  },
+  {
+   "id": "r85",
+   "anchor": "Color.get_mapping._mapping#assign:invalid",
+   "kind": "lead",
+   "line": 685
+  },
+  {
+   "id": "r86",
+   "anchor": "Fill",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r87",
+   "anchor": "Fill",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r88",
+   "anchor": "Fill.standardize",
+   "kind": "todo",
+   "line": 707
+  },
+  {
+   "id": "r89",
+   "anchor": "Fill._default_values",
+   "kind": "doc",
+   "line": 710
+  },
+  {
+   "id": "r90",
+   "anchor": "Fill._default_values#if:n > 2/call:warnings.warn",
+   "kind": "todo",
+   "line": 718
+  },
+  {
+   "id": "r91",
+   "anchor": "Fill.default_scale",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r92",
+   "anchor": "Fill.infer_scale",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r93",
+   "anchor": "Fill.infer_scale#return",
+   "kind": "todo",
+   "line": 728
+  },
+  {
+   "id": "r94",
+   "anchor": "Fill.get_mapping",
+   "kind": "doc",
+   "line": 730
+  },
+  {
+   "id": "r95",
+   "anchor": "Fill.get_mapping#assign:order",
+   "kind": "todo",
+   "line": 739
+  },
+  {
+   "id": "r96",
+   "anchor": "PROPERTY_CLASSES",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r97",
+   "anchor": "PROPERTY_CLASSES#key:group",
+   "kind": "todo",
+   "line": 798
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20612,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9646,
+  "thinking_tokens": 5484,
+  "opus_cost_usd": 0.45156149999999995,
+  "total_cost_usd": 0.46646649999999995,
+  "duration_ms": 89516,
+  "duration_api_ms": 90817,
+  "num_turns": 2
+ },
+ "wall_ms": 90483,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

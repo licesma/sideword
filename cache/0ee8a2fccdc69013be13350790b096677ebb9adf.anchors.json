@@ -1,0 +1,721 @@
+{
+ "blob_sha": "0ee8a2fccdc69013be13350790b096677ebb9adf",
+ "path": "astropy/io/fits/card.py",
+ "repo": "astropy/astropy",
+ "records": 116,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:re",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "KEYWORD_LENGTH",
+   "kind": "trail",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "VALUE_INDICATOR",
+   "kind": "trail",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "HIERARCH_VALUE_INDICATOR",
+   "kind": "trail",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "Undefined",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r6",
+   "anchor": "Undefined.__init__#pass",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r7",
+   "anchor": "Card.length",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r8",
+   "anchor": "Card._keywd_FSC_RE",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r9",
+   "anchor": "Card._keywd_hierarch_RE",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r10",
+   "anchor": "Card._digits_FSC",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r11",
+   "anchor": "Card._number_FSC_RE",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r12",
+   "anchor": "Card._strg",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r13",
+   "anchor": "Card._ascii_text_re",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r14",
+   "anchor": "Card._value_FSC_RE",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r15",
+   "anchor": "Card._value_FSC_RE",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r16",
+   "anchor": "Card._rvkc_keyword_name_RE",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r17",
+   "anchor": "Card._rvkc_keyword_val_comm_RE",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r18",
+   "anchor": "Card._value_indicator",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r19",
+   "anchor": "Card.__init__#if:keyword is None and 'key' in kwargs",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r20",
+   "anchor": "Card._verified",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r21",
+   "anchor": "Card._hierarch",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r22",
+   "anchor": "Card._invalid",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r23",
+   "anchor": "Card._rawkeyword",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r24",
+   "anchor": "Card.__init__#if:not (keyword is not None and value is not None and self._check_if_rvkc(keyword, value))/if:keyword is not None",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r25",
+   "anchor": "Card.keyword",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r26",
+   "anchor": "Card.keyword",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r27",
+   "anchor": "Card.keyword#if:self._keyword is not None/elif:isinstance(keyword, str)/assign:keyword",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r28",
+   "anchor": "Card.keyword#if:self._keyword is not None/elif:isinstance(keyword, str)/if:len(keyword) <= KEYWORD_LENGTH and self._keywd_FSC_RE.match(keyword_upper)/if:keyword_upper == 'END'",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r29",
+   "anchor": "Card.keyword#if:self._keyword is not None/elif:isinstance(keyword, str)/if:len(keyword) <= KEYWORD_LENGTH and self._keywd_FSC_RE.match(keyword_upper)/elif:self._keywd_hierarch_RE.match(keyword)/assign:self._hierarch",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r30",
+   "anchor": "Card.keyword#if:self._keyword is not None/elif:isinstance(keyword, str)/if:len(keyword) <= KEYWORD_LENGTH and self._keywd_FSC_RE.match(keyword_upper)/elif:self._keywd_hierarch_RE.match(keyword)/if:keyword_upper[:9] == 'HIERARCH '/assign:keyword",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r31",
+   "anchor": "Card.keyword#if:self._keyword is not None/elif:isinstance(keyword, str)/if:len(keyword) <= KEYWORD_LENGTH and self._keywd_FSC_RE.match(keyword_upper)/elif:self._keywd_hierarch_RE.match(keyword)/if:keyword_upper[:9] == 'HIERARCH '/else/call:warnings.warn",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r32",
+   "anchor": "Card.value",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r33",
+   "anchor": "Card.value#try/except:VerifyError/assign:oldvalue",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r34",
+   "anchor": "Card.value#if:isinstance(value, (float, np.float32)) and (np.isnan(value) or np.isinf(value))/raise:ValueError",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r35",
+   "anchor": "Card.value#if:conf.strip_header_whitespace and (isinstance(oldvalue, str) and isinstance(value, str))/assign:different",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r36",
+   "anchor": "Card.rawkeyword",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r37",
+   "anchor": "Card.rawvalue",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r38",
+   "anchor": "Card.comment",
+   "kind": "doc",
+   "line": 407
+  },
+  {
+   "id": "r39",
+   "anchor": "Card.comment#try/except:VerifyError/assign:oldcomment",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r40",
+   "anchor": "Card.field_specifier",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r41",
+   "anchor": "Card.field_specifier#if:self.keyword",
+   "kind": "lead",
+   "line": 469
+  },
+  {
+   "id": "r42",
+   "anchor": "Card.field_specifier#if:not field_specifier/elif:not self.field_specifier/elif:field_specifier != self.field_specifier/assign:keyword",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r43",
+   "anchor": "Card.image",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r44",
+   "anchor": "Card.is_blank",
+   "kind": "doc",
+   "line": 509
+  },
+  {
+   "id": "r45",
+   "anchor": "Card.is_blank#if:not self._verified/return",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r46",
+   "anchor": "Card.is_blank#return",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r47",
+   "anchor": "Card.fromstring",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r48",
+   "anchor": "Card.fromstring#if:isinstance(image, bytes)/assign:image",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r49",
+   "anchor": "Card.normalize_keyword",
+   "kind": "doc",
+   "line": 551
+  },
+  {
+   "id": "r50",
+   "anchor": "Card.normalize_keyword#if:len(keyword) <= KEYWORD_LENGTH and cls._keywd_FSC_RE.match(keyword)",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r51",
+   "anchor": "Card.normalize_keyword#assign:match",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r52",
+   "anchor": "Card.normalize_keyword#if:match/elif:len(keyword) > 9 and keyword[:9].upper() == 'HIERARCH '/return",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r53",
+   "anchor": "Card.normalize_keyword#if:match/else/return",
+   "kind": "lead",
+   "line": 582
+  },
+  {
+   "id": "r54",
+   "anchor": "Card._check_if_rvkc",
+   "kind": "doc",
+   "line": 584
+  },
+  {
+   "id": "r55",
+   "anchor": "Card._check_if_rvkc#if:len(args) == 1/elif:len(args) == 2/if:isinstance(value, str) and value.find(': ') > 0",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r56",
+   "anchor": "Card._check_if_rvkc_image",
+   "kind": "doc",
+   "line": 633
+  },
+  {
+   "id": "r57",
+   "anchor": "Card._check_if_rvkc_image#if:not rest or rest[0] != \"'\" or rest.find(': ') < 2",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r58",
+   "anchor": "Card._init_rvkc",
+   "kind": "doc",
+   "line": 666
+  },
+  {
+   "id": "r59",
+   "anchor": "Card._parse_keyword#if:keyword_upper in self._special_keywords/elif:keyword_upper == 'HIERARCH' and self._image[8] == ' ' and HIERARCH_VALUE_INDICATOR in self._image/assign:self._hierarch",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r60",
+   "anchor": "Card._parse_keyword#if:keyword_upper in self._special_keywords/else/if:0 <= val_ind_idx <= KEYWORD_LENGTH/if:val_ind_idx < KEYWORD_LENGTH",
+   "kind": "lead",
+   "line": 699
+  },
+  {
+   "id": "r61",
+   "anchor": "Card._parse_keyword#if:keyword_upper in self._special_keywords/else/if:0 <= val_ind_idx <= KEYWORD_LENGTH/if:self._check_if_rvkc_image(keyword, rest)",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r62",
+   "anchor": "Card._parse_value",
+   "kind": "doc",
+   "line": 720
+  },
+  {
+   "id": "r63",
+   "anchor": "Card._parse_value#if:self.keyword.upper() in self._commentary_keywords or self._invalid",
+   "kind": "lead",
+   "line": 725
+  },
+  {
+   "id": "r64",
+   "anchor": "Card._parse_value#if:m.group('bool') is not None/elif:m.group('strg') is not None/elif:m.group('numr') is not None/assign:numr",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r65",
+   "anchor": "Card._parse_value#if:m.group('bool') is not None/elif:m.group('strg') is not None/elif:m.group('numr') is not None/elif:m.group('cplx') is not None/assign:real",
+   "kind": "lead",
+   "line": 753
+  },
+  {
+   "id": "r66",
+   "anchor": "Card._parse_comment",
+   "kind": "doc",
+   "line": 774
+  },
+  {
+   "id": "r67",
+   "anchor": "Card._parse_comment#if:self.keyword in Card._commentary_keywords or self._invalid",
+   "kind": "lead",
+   "line": 779
+  },
+  {
+   "id": "r68",
+   "anchor": "Card._parse_comment#if:m is not None/if:m.group('comm')",
+   "kind": "lead",
+   "line": 789
+  },
+  {
+   "id": "r69",
+   "anchor": "Card._parse_comment#if:m is not None/elif:'/' in valuecomment/assign:comment",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r70",
+   "anchor": "Card._split",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r71",
+   "anchor": "Card._split#if:self._image is not None/assign:image",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r72",
+   "anchor": "Card._split#if:len(self._image) > self.length",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r73",
+   "anchor": "Card._split#if:len(self._image) > self.length/for:card in self._itersubcards()/assign:m",
+   "kind": "lead",
+   "line": 828
+  },
+  {
+   "id": "r74",
+   "anchor": "Card._split#if:len(self._image) > self.length/if:keyword in self._commentary_keywords/else/assign:valuecomment",
+   "kind": "lead",
+   "line": 845
+  },
+  {
+   "id": "r75",
+   "anchor": "Card._split#if:self.keyword in self._special_keywords/else/if:delim_index is None",
+   "kind": "lead",
+   "line": 858
+  },
+  {
+   "id": "r76",
+   "anchor": "Card._fix_value",
+   "kind": "doc",
+   "line": 876
+  },
+  {
+   "id": "r77",
+   "anchor": "Card._fix_value#if:m is None",
+   "kind": "lead",
+   "line": 884
+  },
+  {
+   "id": "r78",
+   "anchor": "Card._fix_value#assign:self._modified",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r79",
+   "anchor": "Card._format_value#assign:float_types",
+   "kind": "lead",
+   "line": 930
+  },
+  {
+   "id": "r80",
+   "anchor": "Card._format_value#assign:value",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r81",
+   "anchor": "Card._format_value#assign:value",
+   "kind": "lead",
+   "line": 936
+  },
+  {
+   "id": "r82",
+   "anchor": "Card._format_value#if:self.keyword in self._commentary_keywords/assign:value",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r83",
+   "anchor": "Card._format_value#if:self.keyword in self._commentary_keywords/elif:self._valuestring and not self._valuemodified and isinstance(self.value, float_types)/assign:value",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r84",
+   "anchor": "Card._format_value#if:not self.field_specifier and len(self.keyword) > KEYWORD_LENGTH",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r85",
+   "anchor": "Card._format_image#assign:delimiter",
+   "kind": "lead",
+   "line": 977
+  },
+  {
+   "id": "r86",
+   "anchor": "Card._format_image#assign:output",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r87",
+   "anchor": "Card._format_image#assign:keywordvalue_length",
+   "kind": "lead",
+   "line": 987
+  },
+  {
+   "id": "r88",
+   "anchor": "Card._format_image#if:keywordvalue_length > self.length and keyword.startswith('HIERARCH')/if:keywordvalue_length == self.length + 1 and keyword[-1] == ' '/else/raise:ValueError",
+   "kind": "lead",
+   "line": 995
+  },
+  {
+   "id": "r89",
+   "anchor": "Card._format_image#if:len(output) <= self.length/else/if:isinstance(self.value, str) and len(value) > (self.length - 10)",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r90",
+   "anchor": "Card._format_long_image",
+   "kind": "doc",
+   "line": 1013
+  },
+  {
+   "id": "r91",
+   "anchor": "Card._format_long_image#assign:value",
+   "kind": "lead",
+   "line": 1030
+  },
+  {
+   "id": "r92",
+   "anchor": "Card._format_long_image#for:idx, word in enumerate(words)/if:not self.comment and idx == len(words) - 1",
+   "kind": "lead",
+   "line": 1039
+  },
+  {
+   "id": "r93",
+   "anchor": "Card._format_long_image#assign:comment_format",
+   "kind": "lead",
+   "line": 1049
+  },
+  {
+   "id": "r94",
+   "anchor": "Card._format_long_image#if:self.comment/for:idx, word in enumerate(words)/if:idx == len(words) - 1",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r95",
+   "anchor": "Card._format_long_commentary_image",
+   "kind": "doc",
+   "line": 1065
+  },
+  {
+   "id": "r96",
+   "anchor": "Card._verify#if:self._invalid",
+   "kind": "lead",
+   "line": 1087
+  },
+  {
+   "id": "r97",
+   "anchor": "Card._verify#if:self.keyword not in self._commentary_keywords and (self._image and self._image[:9].upper() != 'HIERARCH ' and self._image.find('=') != 8)",
+   "kind": "lead",
+   "line": 1091
+  },
+  {
+   "id": "r98",
+   "anchor": "Card._verify#if:(self._image and self._image[:8].upper() == 'HIERARCH') or self._hierarch",
+   "kind": "lead",
+   "line": 1103
+  },
+  {
+   "id": "r99",
+   "anchor": "Card._verify#if:(self._image and self._image[:8].upper() == 'HIERARCH') or self._hierarch/else/if:self._image/assign:keyword",
+   "kind": "lead",
+   "line": 1110
+  },
+  {
+   "id": "r100",
+   "anchor": "Card._verify#if:(self._image and self._image[:8].upper() == 'HIERARCH') or self._hierarch/else/if:self._image/if:keyword != keyword.upper()/call:errs.append",
+   "kind": "lead",
+   "line": 1113
+  },
+  {
+   "id": "r101",
+   "anchor": "Card._verify#assign:keyword, valuecomment",
+   "kind": "lead",
+   "line": 1128
+  },
+  {
+   "id": "r102",
+   "anchor": "Card._verify#if:self.keyword in self._commentary_keywords/if:not self._ascii_text_re.match(valuecomment)",
+   "kind": "lead",
+   "line": 1132
+  },
+  {
+   "id": "r103",
+   "anchor": "Card._verify#if:self.keyword in self._commentary_keywords/else/if:not self._valuemodified/if:m is None",
+   "kind": "lead",
+   "line": 1145
+  },
+  {
+   "id": "r104",
+   "anchor": "Card._verify#assign:m",
+   "kind": "lead",
+   "line": 1153
+  },
+  {
+   "id": "r105",
+   "anchor": "Card._itersubcards",
+   "kind": "doc",
+   "line": 1168
+  },
+  {
+   "id": "r106",
+   "anchor": "_int_or_float",
+   "kind": "doc",
+   "line": 1195
+  },
+  {
+   "id": "r107",
+   "anchor": "_int_or_float#if:isinstance(s, float)/return",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r108",
+   "anchor": "_format_value",
+   "kind": "doc",
+   "line": 1215
+  },
+  {
+   "id": "r109",
+   "anchor": "_format_value#if:isinstance(value, str)",
+   "kind": "lead",
+   "line": 1223
+  },
+  {
+   "id": "r110",
+   "anchor": "_format_value#if:isinstance(value, str)/elif:isinstance(value, (bool, np.bool_))",
+   "kind": "lead",
+   "line": 1232
+  },
+  {
+   "id": "r111",
+   "anchor": "_format_value#if:isinstance(value, str)/elif:isinstance(value, (bool, np.bool_))/return",
+   "kind": "trail",
+   "line": 1233
+  },
+  {
+   "id": "r112",
+   "anchor": "_format_float",
+   "kind": "doc",
+   "line": 1251
+  },
+  {
+   "id": "r113",
+   "anchor": "_format_float#if:'.' not in value_str and 'E' not in value_str/elif:'E' in value_str/assign:significand, exponent",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r114",
+   "anchor": "_format_float#assign:str_len",
+   "kind": "lead",
+   "line": 1270
+  },
+  {
+   "id": "r115",
+   "anchor": "_pad",
+   "kind": "doc",
+   "line": 1283
+  },
+  {
+   "id": "r116",
+   "anchor": "_pad#if:_len == Card.length/elif:_len > Card.length/else",
+   "kind": "lead",
+   "line": 1297
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30994,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14260,
+  "thinking_tokens": 7980,
+  "opus_cost_usd": 0.6707315,
+  "total_cost_usd": 0.6948475000000001,
+  "duration_ms": 122168,
+  "duration_api_ms": 123193,
+  "num_turns": 2
+ },
+ "wall_ms": 123238,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

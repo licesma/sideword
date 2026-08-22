@@ -1,0 +1,283 @@
+{
+ "blob_sha": "966eb4b6f4add0e6cfd57ae1f28a1ddba0d4f4e7",
+ "path": "django/db/backends/oracle/base.py",
+ "repo": "django/django",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_setup_environment#if:platform.system().upper().startswith('CYGWIN')",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#call:_setup_environment/item:('NLS_LANG', '.AL32UTF8')",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#call:_setup_environment/item:('ORA_NCHAR_LITERAL_REPLACE', 'TRUE')",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:.client",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "wrap_oracle_errors#try/except:Database.DatabaseError/assign:x",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r7",
+   "anchor": "_UninitializedOperatorsDescriptor.__get__#if:instance is None",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r8",
+   "anchor": "_UninitializedOperatorsDescriptor.__get__#call:instance.cursor().close",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseWrapper.data_types",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseWrapper._limited_data_types",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseWrapper.pattern_esc",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseWrapper.client_class",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseWrapper.init_connection_state#call:cursor.execute",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseWrapper.init_connection_state#call:cursor.execute",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseWrapper.init_connection_state#if:'operators' not in self.__dict__/assign:cursor",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseWrapper.init_connection_state#if:not self.get_autocommit()",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r17",
+   "anchor": "DatabaseWrapper._savepoint_commit",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r18",
+   "anchor": "DatabaseWrapper.check_constraints",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r19",
+   "anchor": "OracleParam",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r20",
+   "anchor": "OracleParam.__init__#if:settings.USE_TZ and (isinstance(param, datetime.datetime) and not isinstance(param, Oracle_datetime))",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r21",
+   "anchor": "OracleParam.__init__#if:param is True",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r22",
+   "anchor": "OracleParam.__init__#if:hasattr(param, 'bind_parameter')/else/assign:self.force_bytes",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r23",
+   "anchor": "OracleParam.__init__#if:hasattr(param, 'bind_parameter')/else/if:isinstance(self.force_bytes, str)/assign:string_size",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r24",
+   "anchor": "OracleParam.__init__#if:hasattr(param, 'input_size')/assign:self.input_size",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r25",
+   "anchor": "OracleParam.__init__#if:hasattr(param, 'input_size')/elif:string_size>4000/assign:self.input_size",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r26",
+   "anchor": "VariableWrapper",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r27",
+   "anchor": "FormatStylePlaceholderCursor",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r28",
+   "anchor": "FormatStylePlaceholderCursor._output_type_handler",
+   "kind": "doc",
+   "line": 418
+  },
+  {
+   "id": "r29",
+   "anchor": "FormatStylePlaceholderCursor._output_type_handler#if:defaultType==Database.NUMBER/if:scale==-127/if:precision==0/assign:outconverter",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r30",
+   "anchor": "FormatStylePlaceholderCursor._output_type_handler#if:defaultType==Database.NUMBER/if:scale==-127/if:precision==0/else/assign:outconverter",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r31",
+   "anchor": "FormatStylePlaceholderCursor._output_type_handler#if:defaultType==Database.NUMBER/if:scale==-127/elif:precision>0/assign:outconverter",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r32",
+   "anchor": "FormatStylePlaceholderCursor._output_type_handler#if:defaultType==Database.NUMBER/if:scale==-127/else/assign:outconverter",
+   "kind": "lead",
+   "line": 442
+  },
+  {
+   "id": "r33",
+   "anchor": "FormatStylePlaceholderCursor._guess_input_sizes#if:hasattr(params_list[0], 'keys')",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r34",
+   "anchor": "FormatStylePlaceholderCursor._guess_input_sizes#if:hasattr(params_list[0], 'keys')/else/assign:sizes",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r35",
+   "anchor": "FormatStylePlaceholderCursor._param_generator#if:hasattr(params, 'items')",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r36",
+   "anchor": "FormatStylePlaceholderCursor._fix_for_params#if:query.endswith(';') or query.endswith('/')",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r37",
+   "anchor": "FormatStylePlaceholderCursor._fix_for_params#if:params is None/elif:hasattr(params, 'keys')/assign:args",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r38",
+   "anchor": "FormatStylePlaceholderCursor._fix_for_params#if:params is None/elif:unify_by_values and params/assign:params_dict",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r39",
+   "anchor": "FormatStylePlaceholderCursor._fix_for_params#if:params is None/else/assign:args",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r40",
+   "anchor": "FormatStylePlaceholderCursor.executemany#if:not params/return",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r41",
+   "anchor": "FormatStylePlaceholderCursor.executemany#assign:params_iter",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r42",
+   "anchor": "FormatStylePlaceholderCursor.executemany#assign:formatted",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r43",
+   "anchor": "FormatStylePlaceholderCursor.close#try/except:Database.InterfaceError/pass",
+   "kind": "lead",
+   "line": 542
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16405,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5490,
+  "thinking_tokens": 2945,
+  "opus_cost_usd": 0.3055915,
+  "total_cost_usd": 0.3169265,
+  "duration_ms": 48895,
+  "duration_api_ms": 49815,
+  "num_turns": 2
+ },
+ "wall_ms": 49769,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

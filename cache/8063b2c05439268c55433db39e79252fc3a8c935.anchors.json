@@ -1,0 +1,175 @@
+{
+ "blob_sha": "8063b2c05439268c55433db39e79252fc3a8c935",
+ "path": "astropy/samp/lockfile_helpers.py",
+ "repo": "astropy/astropy",
+ "records": 25,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:datetime",
+   "kind": "lead",
+   "line": 7
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:datetime",
+   "kind": "todo",
+   "line": 7
+  },
+  {
+   "id": "r3",
+   "anchor": "read_lockfile",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "read_lockfile#assign:lockfiledict",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "create_lock_file#call:remove_garbage_lock_files",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r6",
+   "anchor": "create_lock_file#if:\"SAMP_HUB\" in os.environ",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r7",
+   "anchor": "create_lock_file#if:\"SAMP_HUB\" in os.environ/if:os.environ[\"SAMP_HUB\"].startswith(\"std-lockurl:\")",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r8",
+   "anchor": "create_lock_file#if:\"SAMP_HUB\" in os.environ/else/if:lockfilename is None",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r9",
+   "anchor": "create_lock_file#if:\"SAMP_HUB\" in os.environ/else/if:lockfilename is None/if:mode=='single'/else/try",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "create_lock_file#if:\"SAMP_HUB\" in os.environ/else/if:lockfilename is None/if:mode=='single'/else/try/except:OSError/pass",
+   "kind": "trail",
+   "line": 96
+  },
+  {
+   "id": "r11",
+   "anchor": "get_main_running_hub",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r12",
+   "anchor": "get_main_running_hub#if:\"SAMP_HUB\" in os.environ",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r13",
+   "anchor": "get_main_running_hub#if:\"SAMP_HUB\" in os.environ/if:os.environ[\"SAMP_HUB\"].startswith(\"std-lockurl:\")",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r14",
+   "anchor": "get_running_hubs",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r15",
+   "anchor": "get_running_hubs#if:\"SAMP_HUB\" in os.environ",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r16",
+   "anchor": "get_running_hubs#if:\"SAMP_HUB\" in os.environ",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r17",
+   "anchor": "get_running_hubs#if:\"SAMP_HUB\" in os.environ/if:os.environ[\"SAMP_HUB\"].startswith(\"std-lockurl:\")",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r18",
+   "anchor": "get_running_hubs#assign:lockfiledir",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r19",
+   "anchor": "check_running_hub",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r20",
+   "anchor": "check_running_hub#try",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r21",
+   "anchor": "check_running_hub#if:\"samp.hub.xmlrpc.url\" in lockfiledict/try/except:xmlrpc.ProtocolError/assign:is_running",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r22",
+   "anchor": "remove_garbage_lock_files#assign:lockfilename",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r23",
+   "anchor": "remove_garbage_lock_files#if:not hub_is_running/if:os.path.isfile(lockfilename)",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r24",
+   "anchor": "remove_garbage_lock_files#assign:lockfiledir",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r25",
+   "anchor": "remove_garbage_lock_files#if:os.path.isdir(lockfiledir)/for:filename in os.listdir(lockfiledir)/if:filename.startswith('samp-hub')/if:not hub_is_running/if:os.path.isfile(lockfilename)",
+   "kind": "lead",
+   "line": 266
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8337,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2955,
+  "thinking_tokens": 1468,
+  "opus_cost_usd": 0.1615365,
+  "total_cost_usd": 0.1666585,
+  "duration_ms": 28286,
+  "duration_api_ms": 29902,
+  "num_turns": 2
+ },
+ "wall_ms": 29646,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,241 @@
+{
+ "blob_sha": "ccc8a769ea35e6d9b1a8fadc6978c4dfcd2015cf",
+ "path": "django/core/mail/message.py",
+ "repo": "django/django",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "utf8_charset",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#assign:utf8_charset.body_encoding",
+   "kind": "trail",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "DEFAULT_ATTACHMENT_MIME_TYPE",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "ADDRESS_HEADERS",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r5",
+   "anchor": "forbid_multi_line_headers",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r6",
+   "anchor": "forbid_multi_line_headers#assign:val",
+   "kind": "trail",
+   "line": 58
+  },
+  {
+   "id": "r7",
+   "anchor": "sanitize_address",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r8",
+   "anchor": "sanitize_address#if:not isinstance(addr, tuple)/try/else/if:rest/raise:ValueError",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "sanitize_address#try",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r10",
+   "anchor": "MIMEMixin.as_string",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r11",
+   "anchor": "MIMEMixin.as_bytes",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r12",
+   "anchor": "SafeMIMEMessage.__setitem__#assign:name, val",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r13",
+   "anchor": "SafeMIMEText.set_payload#if:charset == 'utf-8' and not isinstance(charset, Charset.Charset)/assign:charset",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r14",
+   "anchor": "EmailMessage",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r15",
+   "anchor": "EmailMessage.encoding",
+   "kind": "trail",
+   "line": 192
+  },
+  {
+   "id": "r16",
+   "anchor": "EmailMessage.__init__",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r17",
+   "anchor": "EmailMessage.message#assign:header_names",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r18",
+   "anchor": "EmailMessage.message#if:'date' not in header_names/assign:msg['Date']",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r19",
+   "anchor": "EmailMessage.message#if:'message-id' not in header_names/assign:msg['Message-ID']",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r20",
+   "anchor": "EmailMessage.message#for:name, value in self.extra_headers.items()/if:name.lower() != 'from'",
+   "kind": "trail",
+   "line": 267
+  },
+  {
+   "id": "r21",
+   "anchor": "EmailMessage.recipients",
+   "kind": "doc",
+   "line": 271
+  },
+  {
+   "id": "r22",
+   "anchor": "EmailMessage.send",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r23",
+   "anchor": "EmailMessage.send#if:not self.recipients()/return",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r24",
+   "anchor": "EmailMessage.attach",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r25",
+   "anchor": "EmailMessage.attach#if:isinstance(filename, MIMEBase)/else/if:basetype == 'text'/if:isinstance(content, bytes)/try/except:UnicodeDecodeError/assign:mimetype",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r26",
+   "anchor": "EmailMessage.attach_file",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r27",
+   "anchor": "EmailMessage._create_mime_attachment",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r28",
+   "anchor": "EmailMessage._create_mime_attachment#if:basetype == 'text'/elif:basetype == 'message' and subtype == 'rfc822'/if:isinstance(content, EmailMessage)",
+   "kind": "lead",
+   "line": 369
+  },
+  {
+   "id": "r29",
+   "anchor": "EmailMessage._create_mime_attachment#if:basetype == 'text'/elif:basetype == 'message' and subtype == 'rfc822'/if:isinstance(content, EmailMessage)/assign:content",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r30",
+   "anchor": "EmailMessage._create_mime_attachment#if:basetype == 'text'/elif:basetype == 'message' and subtype == 'rfc822'/if:isinstance(content, EmailMessage)/elif:not isinstance(content, Message)/assign:content",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r31",
+   "anchor": "EmailMessage._create_mime_attachment#if:basetype == 'text'/else/assign:attachment",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r32",
+   "anchor": "EmailMessage._create_attachment",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r33",
+   "anchor": "EmailMessage._set_list_header_if_not_empty",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r34",
+   "anchor": "EmailMultiAlternatives",
+   "kind": "doc",
+   "line": 412
+  },
+  {
+   "id": "r35",
+   "anchor": "EmailMultiAlternatives.__init__",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r36",
+   "anchor": "EmailMultiAlternatives.attach_alternative",
+   "kind": "doc",
+   "line": 433
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12469,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3819,
+  "thinking_tokens": 1937,
+  "opus_cost_usd": 0.2244565,
+  "total_cost_usd": 0.2329185,
+  "duration_ms": 35492,
+  "duration_api_ms": 36739,
+  "num_turns": 2
+ },
+ "wall_ms": 36357,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

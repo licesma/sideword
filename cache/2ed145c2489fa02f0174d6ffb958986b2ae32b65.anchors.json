@@ -1,0 +1,157 @@
+{
+ "blob_sha": "2ed145c2489fa02f0174d6ffb958986b2ae32b65",
+ "path": "django/template/loader_tags.py",
+ "repo": "django/django",
+ "records": 22,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BlockContext.__init__#assign:self.blocks",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "BlockNode.render#with:context.push()/if:block_context is None/else/assign:block",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r3",
+   "anchor": "ExtendsNode.find_template",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r4",
+   "anchor": "ExtendsNode.find_template#for:loader in context.template.engine.template_loaders",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r5",
+   "anchor": "ExtendsNode.get_parent#if:isinstance(parent, Template)/return",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r6",
+   "anchor": "ExtendsNode.get_parent#if:isinstance(getattr(parent, 'template', None), Template)/return",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r7",
+   "anchor": "ExtendsNode.render#call:block_context.add_blocks",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r8",
+   "anchor": "ExtendsNode.render#for:node in compiled_parent.nodelist",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r9",
+   "anchor": "ExtendsNode.render#for:node in compiled_parent.nodelist/if:not isinstance(node, TextNode)",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r10",
+   "anchor": "ExtendsNode.render#return",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r11",
+   "anchor": "IncludeNode.render",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r12",
+   "anchor": "IncludeNode.render#try/if:not callable(getattr(template, 'render', None))",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r13",
+   "anchor": "IncludeNode.render#try/if:not callable(getattr(template, 'render', None))/assign:template_name",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r14",
+   "anchor": "do_block",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r15",
+   "anchor": "do_block#assign:bits",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r16",
+   "anchor": "do_block#try",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r17",
+   "anchor": "do_block#try/except:AttributeError",
+   "kind": "trail",
+   "line": 249
+  },
+  {
+   "id": "r18",
+   "anchor": "do_block#assign:endblock",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r19",
+   "anchor": "construct_relative_path",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r20",
+   "anchor": "construct_relative_path#if:not any(relative_name.startswith(x) for x in [\"'./\", \"'../\", '\"./', '\"../'])/return",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r21",
+   "anchor": "do_extends",
+   "kind": "doc",
+   "line": 293
+  },
+  {
+   "id": "r22",
+   "anchor": "do_include",
+   "kind": "doc",
+   "line": 315
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9914,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2126,
+  "thinking_tokens": 1043,
+  "opus_cost_usd": 0.15658149999999998,
+  "total_cost_usd": 0.1632765,
+  "duration_ms": 20318,
+  "duration_api_ms": 21252,
+  "num_turns": 2
+ },
+ "wall_ms": 21725,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

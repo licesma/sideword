@@ -1,0 +1,109 @@
+{
+ "blob_sha": "2dac47a0d25e318d01a2a80d1b03627ed4f9edca",
+ "path": "django/db/models/functions/comparison.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Cast",
+   "kind": "doc",
+   "line": 8
+  },
+  {
+   "id": "r3",
+   "anchor": "Cast.as_sqlite#if:db_type in {'datetime', 'time'}/assign:template",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "Cast.as_mysql#if:output_type == 'FloatField'",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "Cast.as_mysql#if:output_type == 'FloatField'/elif:output_type == 'JSONField' and connection.mysql_is_mariadb",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r6",
+   "anchor": "Cast.as_postgresql#return",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r7",
+   "anchor": "Cast.as_oracle#if:self.output_field.get_internal_type() == 'JSONField'/assign:template",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "Coalesce",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r9",
+   "anchor": "Coalesce.as_oracle#if:self.output_field.get_internal_type() == 'TextField'",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r10",
+   "anchor": "Collate.collation_re",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "Greatest",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r12",
+   "anchor": "Greatest.as_sqlite",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r13",
+   "anchor": "Least",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r14",
+   "anchor": "Least.as_sqlite",
+   "kind": "doc",
+   "line": 180
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7277,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1200,
+  "thinking_tokens": 519,
+  "opus_cost_usd": 0.1070615,
+  "total_cost_usd": 0.1113755,
+  "duration_ms": 11866,
+  "duration_api_ms": 12794,
+  "num_turns": 2
+ },
+ "wall_ms": 12941,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,373 @@
+{
+ "blob_sha": "1d802d2fbe79592a1ed16fbe4ad432df26d1c266",
+ "path": "django/contrib/admin/checks.py",
+ "repo": "django/django",
+ "records": 58,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "check_dependencies",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r2",
+   "anchor": "check_dependencies#if:not apps.is_installed('django.contrib.contenttypes')",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "check_dependencies#try",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "check_dependencies#try/except:Exception/pass",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseModelAdminChecks._check_raw_id_fields",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseModelAdminChecks._check_raw_id_fields_item",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseModelAdminChecks._check_fields",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseModelAdminChecks._check_fieldsets",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseModelAdminChecks._check_fieldsets_item",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseModelAdminChecks._check_field_spec",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseModelAdminChecks._check_field_spec_item#if:field_name in obj.readonly_fields/return",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseModelAdminChecks._check_field_spec_item#if:field_name in obj.readonly_fields/else/try/except:FieldDoesNotExist/return",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseModelAdminChecks._check_exclude",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseModelAdminChecks._check_exclude#if:obj.exclude is None",
+   "kind": "trail",
+   "line": 238
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseModelAdminChecks._check_form",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseModelAdminChecks._check_filter_vertical",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseModelAdminChecks._check_filter_horizontal",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseModelAdminChecks._check_filter_item",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseModelAdminChecks._check_radio_fields",
+   "kind": "doc",
+   "line": 303
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseModelAdminChecks._check_radio_fields_key",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseModelAdminChecks._check_radio_fields_value",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseModelAdminChecks._check_prepopulated_fields",
+   "kind": "doc",
+   "line": 372
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseModelAdminChecks._check_prepopulated_fields_key",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseModelAdminChecks._check_prepopulated_fields_value",
+   "kind": "doc",
+   "line": 410
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseModelAdminChecks._check_prepopulated_fields_value_item",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseModelAdminChecks._check_ordering",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseModelAdminChecks._check_ordering#if:obj.ordering is None",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseModelAdminChecks._check_ordering#if:obj.ordering is None",
+   "kind": "trail",
+   "line": 437
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseModelAdminChecks._check_ordering_item",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseModelAdminChecks._check_ordering_item#if:field_name == '?' and len(obj.ordering) != 1/elif:field_name == '?'/elif:LOOKUP_SEP in field_name/return",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseModelAdminChecks._check_readonly_fields",
+   "kind": "doc",
+   "line": 477
+  },
+  {
+   "id": "r32",
+   "anchor": "ModelAdminChecks._check_save_as",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r33",
+   "anchor": "ModelAdminChecks._check_save_on_top",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r34",
+   "anchor": "ModelAdminChecks._check_inlines",
+   "kind": "doc",
+   "line": 550
+  },
+  {
+   "id": "r35",
+   "anchor": "ModelAdminChecks._check_inlines_item",
+   "kind": "doc",
+   "line": 561
+  },
+  {
+   "id": "r36",
+   "anchor": "ModelAdminChecks._check_list_display",
+   "kind": "doc",
+   "line": 588
+  },
+  {
+   "id": "r37",
+   "anchor": "ModelAdminChecks._check_list_display_item#if:callable(item)/elif:hasattr(obj, item)/elif:hasattr(model, item)/try",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r38",
+   "anchor": "ModelAdminChecks._check_list_display_item#if:callable(item)/elif:hasattr(obj, item)/elif:hasattr(model, item)/else/try/except:FieldDoesNotExist/return",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r39",
+   "anchor": "ModelAdminChecks._check_list_display_links",
+   "kind": "doc",
+   "line": 655
+  },
+  {
+   "id": "r40",
+   "anchor": "ModelAdminChecks._check_list_filter_item",
+   "kind": "doc",
+   "line": 692
+  },
+  {
+   "id": "r41",
+   "anchor": "ModelAdminChecks._check_list_filter_item#if:callable(item) and not isinstance(item, models.Field)/if:not issubclass(item, ListFilter)",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r42",
+   "anchor": "ModelAdminChecks._check_list_filter_item#if:callable(item) and not isinstance(item, models.Field)/if:not issubclass(item, ListFilter)/elif:issubclass(item, FieldListFilter)",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r43",
+   "anchor": "ModelAdminChecks._check_list_filter_item#if:callable(item) and not isinstance(item, models.Field)/elif:isinstance(item, (tuple, list))/assign:field, list_filter_class",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r44",
+   "anchor": "ModelAdminChecks._check_list_filter_item#if:callable(item) and not isinstance(item, models.Field)/elif:isinstance(item, (tuple, list))/else/assign:field",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r45",
+   "anchor": "ModelAdminChecks._check_list_filter_item#if:callable(item) and not isinstance(item, models.Field)/elif:isinstance(item, (tuple, list))/else/try",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r46",
+   "anchor": "ModelAdminChecks._check_list_select_related",
+   "kind": "doc",
+   "line": 744
+  },
+  {
+   "id": "r47",
+   "anchor": "ModelAdminChecks._check_list_per_page",
+   "kind": "doc",
+   "line": 752
+  },
+  {
+   "id": "r48",
+   "anchor": "ModelAdminChecks._check_list_max_show_all",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r49",
+   "anchor": "ModelAdminChecks._check_list_editable",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r50",
+   "anchor": "ModelAdminChecks._check_list_editable_item#try/else/if:field_name not in obj.list_display/elif:obj.list_display_links and field_name in obj.list_display_links/elif:obj.list_display[0] == field_name and not obj.list_display_links and obj.list_display_links is not None",
+   "kind": "lead",
+   "line": 805
+  },
+  {
+   "id": "r51",
+   "anchor": "ModelAdminChecks._check_search_fields",
+   "kind": "doc",
+   "line": 830
+  },
+  {
+   "id": "r52",
+   "anchor": "ModelAdminChecks._check_date_hierarchy",
+   "kind": "doc",
+   "line": 838
+  },
+  {
+   "id": "r53",
+   "anchor": "InlineModelAdminChecks._check_exclude_of_parent_model#assign:errors",
+   "kind": "lead",
+   "line": 878
+  },
+  {
+   "id": "r54",
+   "anchor": "InlineModelAdminChecks._check_exclude_of_parent_model#if:self._check_relation(obj, parent_model)",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r55",
+   "anchor": "InlineModelAdminChecks._check_extra",
+   "kind": "doc",
+   "line": 912
+  },
+  {
+   "id": "r56",
+   "anchor": "InlineModelAdminChecks._check_max_num",
+   "kind": "doc",
+   "line": 920
+  },
+  {
+   "id": "r57",
+   "anchor": "InlineModelAdminChecks._check_min_num",
+   "kind": "doc",
+   "line": 930
+  },
+  {
+   "id": "r58",
+   "anchor": "InlineModelAdminChecks._check_formset",
+   "kind": "doc",
+   "line": 940
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22562,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6138,
+  "thinking_tokens": 2904,
+  "opus_cost_usd": 0.3833615,
+  "total_cost_usd": 0.40059350000000005,
+  "duration_ms": 59465,
+  "duration_api_ms": 60648,
+  "num_turns": 2
+ },
+ "wall_ms": 60296,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

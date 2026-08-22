@@ -1,0 +1,685 @@
+{
+ "blob_sha": "e96079349c1a88ffcea3867e6add68a753ed1154",
+ "path": "astropy/io/fits/hdu/hdulist.py",
+ "repo": "astropy/astropy",
+ "records": 110,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:gzip",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:astropy.utils.compat.optional_deps",
+   "kind": "lead",
+   "line": 27
+  },
+  {
+   "id": "r3",
+   "anchor": "FITS_SIGNATURE",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "fitsopen",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "fitsopen#if:memmap is None/assign:memmap",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r6",
+   "anchor": "HDUList",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r7",
+   "anchor": "HDUList.__init__",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r8",
+   "anchor": "HDUList._open_kwargs",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r9",
+   "anchor": "HDUList.__init__#if:file is None",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r10",
+   "anchor": "HDUList.__init__#if:file is None/elif:self._file is not None/assign:self._read_all",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r11",
+   "anchor": "HDUList.__init__#if:isinstance(hdus, _ValidHDU)",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r12",
+   "anchor": "HDUList.__init__#if:file is None/call:self.update_extend",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r13",
+   "anchor": "HDUList.__repr__#call:self.readall",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r14",
+   "anchor": "HDUList.__iter__#for:idx in itertools.count()",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r15",
+   "anchor": "HDUList.__getitem__",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r16",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r17",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/if:max_idx is None",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r18",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/if:max_idx is None/assign:max_idx",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r19",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/assign:max_idx",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r20",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/if:max_idx>=number_loaded/for:i in range(number_loaded, max_idx)",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r21",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/if:max_idx>=number_loaded/for:i in range(number_loaded, max_idx)/if:not self._read_next_hdu()",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r22",
+   "anchor": "HDUList.__getitem__#if:isinstance(key, slice)/try/except:IndexError/if:self._read_all",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r23",
+   "anchor": "HDUList.__getitem__#try",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r24",
+   "anchor": "HDUList.__getitem__#try/except:IndexError/if:self._read_all",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r25",
+   "anchor": "HDUList.__contains__",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r26",
+   "anchor": "HDUList.__setitem__",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r27",
+   "anchor": "HDUList.__delitem__",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r28",
+   "anchor": "HDUList.__enter__",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r29",
+   "anchor": "HDUList.fromfile",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r30",
+   "anchor": "HDUList.fromstring",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r31",
+   "anchor": "HDUList.fromstring#try/call:np.ndarray",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r32",
+   "anchor": "HDUList.fileinfo",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r33",
+   "anchor": "HDUList.fileinfo#if:self._file is not None/if:not output/assign:f",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r34",
+   "anchor": "HDUList.__copy__",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r35",
+   "anchor": "HDUList.copy",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r36",
+   "anchor": "HDUList.pop",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r37",
+   "anchor": "HDUList.pop#call:self.readall",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r38",
+   "anchor": "HDUList.insert",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r39",
+   "anchor": "HDUList.insert#if:index==0 or num_hdus==0/if:num_hdus!=0/if:isinstance(self[0], GroupsHDU)",
+   "kind": "lead",
+   "line": 600
+  },
+  {
+   "id": "r40",
+   "anchor": "HDUList.insert#if:index==0 or num_hdus==0/if:num_hdus!=0/call:super().insert",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r41",
+   "anchor": "HDUList.insert#if:index==0 or num_hdus==0/if:not isinstance(hdu, (PrimaryHDU, _NonstandardHDU))/if:isinstance(hdu, ImageHDU)",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r42",
+   "anchor": "HDUList.insert#if:index==0 or num_hdus==0/if:not isinstance(hdu, (PrimaryHDU, _NonstandardHDU))/if:isinstance(hdu, ImageHDU)/else/assign:phdu",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r43",
+   "anchor": "HDUList.insert#if:index==0 or num_hdus==0/else/if:isinstance(hdu, PrimaryHDU)/assign:hdu",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r44",
+   "anchor": "HDUList.insert#call:self.update_extend",
+   "kind": "lead",
+   "line": 641
+  },
+  {
+   "id": "r45",
+   "anchor": "HDUList.append",
+   "kind": "doc",
+   "line": 643
+  },
+  {
+   "id": "r46",
+   "anchor": "HDUList.append#if:len(self)>0/if:isinstance(hdu, PrimaryHDU)/assign:hdu",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r47",
+   "anchor": "HDUList.append#if:len(self)>0/else/if:not isinstance(hdu, (PrimaryHDU, _NonstandardHDU))/if:isinstance(hdu, ImageHDU)",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r48",
+   "anchor": "HDUList.append#if:len(self)>0/else/if:not isinstance(hdu, (PrimaryHDU, _NonstandardHDU))/if:isinstance(hdu, ImageHDU)/else/assign:phdu",
+   "kind": "lead",
+   "line": 679
+  },
+  {
+   "id": "r49",
+   "anchor": "HDUList.append#call:self.update_extend",
+   "kind": "lead",
+   "line": 688
+  },
+  {
+   "id": "r50",
+   "anchor": "HDUList.index_of",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r51",
+   "anchor": "HDUList.index_of#for:idx, hdu in enumerate(self)/if:(name==_key or (_key=='PRIMARY' and idx==0)) and (_ver is None or _ver==hdu.ver)",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r52",
+   "anchor": "HDUList._positive_index_of",
+   "kind": "doc",
+   "line": 762
+  },
+  {
+   "id": "r53",
+   "anchor": "HDUList.readall",
+   "kind": "doc",
+   "line": 788
+  },
+  {
+   "id": "r54",
+   "anchor": "HDUList.flush",
+   "kind": "doc",
+   "line": 796
+  },
+  {
+   "id": "r55",
+   "anchor": "HDUList.flush#if:save_backup and self._file.mode in ('append', 'update')/if:os.path.exists(filename)/assign:backup",
+   "kind": "lead",
+   "line": 825
+  },
+  {
+   "id": "r56",
+   "anchor": "HDUList.flush#if:self._file.mode in ('append', 'ostream')/for:hdu in self/if:hdu._new",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r57",
+   "anchor": "HDUList.update_extend",
+   "kind": "doc",
+   "line": 861
+  },
+  {
+   "id": "r58",
+   "anchor": "HDUList.update_extend#if:not isinstance(self[0], PrimaryHDU)/return",
+   "kind": "lead",
+   "line": 873
+  },
+  {
+   "id": "r59",
+   "anchor": "HDUList.writeto",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r60",
+   "anchor": "HDUList.writeto#call:self.update_extend",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r61",
+   "anchor": "HDUList.writeto#assign:closed",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r62",
+   "anchor": "HDUList.writeto#assign:fileobj",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r63",
+   "anchor": "HDUList.close",
+   "kind": "doc",
+   "line": 953
+  },
+  {
+   "id": "r64",
+   "anchor": "HDUList.close#try/finally/for:hdu in self",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r65",
+   "anchor": "HDUList.info",
+   "kind": "doc",
+   "line": 985
+  },
+  {
+   "id": "r66",
+   "anchor": "HDUList.filename",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r67",
+   "anchor": "HDUList._readfrom",
+   "kind": "doc",
+   "line": 1048
+  },
+  {
+   "id": "r68",
+   "anchor": "HDUList._readfrom#if:fileobj is not None/if:not isinstance(fileobj, _File)/assign:fileobj",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r69",
+   "anchor": "HDUList._readfrom#if:fileobj is not None/assign:mode",
+   "kind": "lead",
+   "line": 1063
+  },
+  {
+   "id": "r70",
+   "anchor": "HDUList._readfrom#if:fileobj is not None/else/if:mode is None/assign:mode",
+   "kind": "lead",
+   "line": 1068
+  },
+  {
+   "id": "r71",
+   "anchor": "HDUList._readfrom#if:fileobj is not None/else/assign:hdulist",
+   "kind": "post",
+   "line": 1070
+  },
+  {
+   "id": "r72",
+   "anchor": "HDUList._readfrom#if:not ignore_missing_simple and hdulist._file and hdulist._file.mode!='ostream' and hdulist._file.size>0/assign:simple",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r73",
+   "anchor": "HDUList._readfrom#if:not ignore_missing_simple and hdulist._file and hdulist._file.mode!='ostream' and hdulist._file.size>0/if:not match_sig/assign:match_sig_relaxed",
+   "kind": "lead",
+   "line": 1090
+  },
+  {
+   "id": "r74",
+   "anchor": "HDUList._readfrom#assign:hdulist._open_kwargs",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r75",
+   "anchor": "HDUList._readfrom#if:fileobj is not None and fileobj.writeonly/return",
+   "kind": "lead",
+   "line": 1111
+  },
+  {
+   "id": "r76",
+   "anchor": "HDUList._readfrom#assign:read_one",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r77",
+   "anchor": "HDUList._readfrom#if:not read_one and mode in ('readonly', 'denywrite')",
+   "kind": "lead",
+   "line": 1118
+  },
+  {
+   "id": "r78",
+   "anchor": "HDUList._readfrom#if:not read_one and mode in ('readonly', 'denywrite')/if:hdulist._file.close_on_error",
+   "kind": "lead",
+   "line": 1120
+  },
+  {
+   "id": "r79",
+   "anchor": "HDUList._readfrom#if:not lazy_load_hdus or kwargs.get('checksum') is True/while:hdulist._read_next_hdu()",
+   "kind": "lead",
+   "line": 1127
+  },
+  {
+   "id": "r80",
+   "anchor": "HDUList._readfrom#assign:hdulist._resize",
+   "kind": "lead",
+   "line": 1131
+  },
+  {
+   "id": "r81",
+   "anchor": "HDUList._try_while_unread_hdus",
+   "kind": "doc",
+   "line": 1136
+  },
+  {
+   "id": "r82",
+   "anchor": "HDUList._read_next_hdu",
+   "kind": "doc",
+   "line": 1153
+  },
+  {
+   "id": "r83",
+   "anchor": "HDUList._read_next_hdu#try/try",
+   "kind": "lead",
+   "line": 1178
+  },
+  {
+   "id": "r84",
+   "anchor": "HDUList._read_next_hdu#try/try/if:fileobj is not None/try/if:len(self)>0",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r85",
+   "anchor": "HDUList._read_next_hdu#try/try/if:fileobj is not None/try/except:OSError/if:self._file.close_on_error",
+   "kind": "lead",
+   "line": 1197
+  },
+  {
+   "id": "r86",
+   "anchor": "HDUList._read_next_hdu#try/try/if:len(self)==1/call:self.update_extend",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r87",
+   "anchor": "HDUList._read_next_hdu#try/try/except:(VerifyError, ValueError)",
+   "kind": "lead",
+   "line": 1223
+  },
+  {
+   "id": "r88",
+   "anchor": "HDUList._verify#if:len(self)>0 and (not isinstance(self[0], PrimaryHDU)) and (not isinstance(self[0], _NonstandardHDU))",
+   "kind": "lead",
+   "line": 1243
+  },
+  {
+   "id": "r89",
+   "anchor": "HDUList._verify#for:idx, hdu in enumerate(self)",
+   "kind": "lead",
+   "line": 1273
+  },
+  {
+   "id": "r90",
+   "anchor": "HDUList._flush_update",
+   "kind": "doc",
+   "line": 1286
+  },
+  {
+   "id": "r91",
+   "anchor": "HDUList._flush_update#for:hdu in self/call:hdu._prewriteto",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r92",
+   "anchor": "HDUList._flush_update#try/if:self._resize or self._file.compression",
+   "kind": "lead",
+   "line": 1299
+  },
+  {
+   "id": "r93",
+   "anchor": "HDUList._flush_update#try/if:self._resize or self._file.compression/else/for:hdu in self",
+   "kind": "lead",
+   "line": 1303
+  },
+  {
+   "id": "r94",
+   "anchor": "HDUList._flush_update#try/for:hdu in self",
+   "kind": "lead",
+   "line": 1307
+  },
+  {
+   "id": "r95",
+   "anchor": "HDUList._flush_resize",
+   "kind": "doc",
+   "line": 1313
+  },
+  {
+   "id": "r96",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/if:self._file.compression=='gzip'",
+   "kind": "lead",
+   "line": 1328
+  },
+  {
+   "id": "r97",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/with:self.fromfile(new_file, mode='append')/if:sys.platform.startswith('win')/assign:mmaps",
+   "kind": "lead",
+   "line": 1345
+  },
+  {
+   "id": "r98",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/if:sys.platform.startswith('win')/for:idx, mmap, arr in mmaps",
+   "kind": "lead",
+   "line": 1354
+  },
+  {
+   "id": "r99",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/call:os.rename",
+   "kind": "lead",
+   "line": 1361
+  },
+  {
+   "id": "r100",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/for:hdu in self/if:hdu._has_data and _get_array_mmap(hdu.data) is not None",
+   "kind": "lead",
+   "line": 1376
+  },
+  {
+   "id": "r101",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/if:sys.platform.startswith('win')/for:idx, mmap, arr in mmaps",
+   "kind": "lead",
+   "line": 1391
+  },
+  {
+   "id": "r102",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/if:sys.platform.startswith('win')/for:idx, mmap, arr in mmaps/if:mmap is not None/with:warnings.catch_warnings()",
+   "kind": "lead",
+   "line": 1394
+  },
+  {
+   "id": "r103",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/if:sys.platform.startswith('win')/del:mmaps",
+   "kind": "trail",
+   "line": 1397
+  },
+  {
+   "id": "r104",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/else/call:self.writeto",
+   "kind": "lead",
+   "line": 1406
+  },
+  {
+   "id": "r105",
+   "anchor": "HDUList._flush_resize#if:not self._file.file_like/else/call:hdulist.close",
+   "kind": "lead",
+   "line": 1417
+  },
+  {
+   "id": "r106",
+   "anchor": "HDUList._flush_resize#assign:self._resize",
+   "kind": "lead",
+   "line": 1421
+  },
+  {
+   "id": "r107",
+   "anchor": "HDUList._wasresized",
+   "kind": "doc",
+   "line": 1428
+  },
+  {
+   "id": "r108",
+   "anchor": "HDUList._wasresized#if:not self._resize/for:hdu in self",
+   "kind": "lead",
+   "line": 1439
+  },
+  {
+   "id": "r109",
+   "anchor": "HDUList._wasresized#if:not self._resize/for:hdu in self/assign:nbytes",
+   "kind": "lead",
+   "line": 1441
+  },
+  {
+   "id": "r110",
+   "anchor": "HDUList._wasresized#if:not self._resize/for:hdu in self/if:not hdu._has_data",
+   "kind": "lead",
+   "line": 1450
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 32590,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13371,
+  "thinking_tokens": 7303,
+  "opus_cost_usd": 0.6644665000000001,
+  "total_cost_usd": 0.6901015,
+  "duration_ms": 113947,
+  "duration_api_ms": 115872,
+  "num_turns": 2
+ },
+ "wall_ms": 115009,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

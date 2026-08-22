@@ -1,0 +1,163 @@
+{
+ "blob_sha": "8bece5a85072aa84cb640d263048a1a966a60489",
+ "path": "astropy/units/decorators.py",
+ "repo": "astropy/astropy",
+ "records": 23,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "__all__",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_allowed_units",
+   "kind": "doc",
+   "line": 14
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_allowed_units#for:target in targets/try",
+   "kind": "trail",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_allowed_units#for:target in targets/try/except:ValueError/try",
+   "kind": "trail",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_allowed_units#for:target in targets/try/except:ValueError/try/except:KeyError",
+   "kind": "trail",
+   "line": 31
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_allowed_units#for:target in targets/try/except:ValueError/assign:target_unit",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r7",
+   "anchor": "_validate_arg_value",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r8",
+   "anchor": "_validate_arg_value#for:allowed_unit in allowed_units/try/except:AttributeError",
+   "kind": "trail",
+   "line": 59
+  },
+  {
+   "id": "r9",
+   "anchor": "QuantityInput.as_decorator",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r10",
+   "anchor": "QuantityInput.__call__#assign:wrapped_signature",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r11",
+   "anchor": "QuantityInput.__call__.wrapper",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r12",
+   "anchor": "QuantityInput.__call__.wrapper#assign:bound_args",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r13",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r14",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:param.kind in (inspect.Parameter.VAR_KEYWORD, inspect.Parameter.VAR_POSITIONAL)",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r15",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:param.name not in bound_args.arguments and param.default is not param.empty",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r16",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/assign:arg",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r17",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:param.name in self.decorator_kwargs",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r18",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:targets is inspect.Parameter.empty",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r19",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:arg is None and param.default is None",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r20",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:isinstance(targets, str) or not isiterable(targets)",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r21",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/if:isinstance(targets, str) or not isiterable(targets)/elif:None in targets",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r22",
+   "anchor": "QuantityInput.__call__.wrapper#for:param in wrapped_signature.parameters.values()/call:_validate_arg_value",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r23",
+   "anchor": "QuantityInput.__call__.wrapper#with:add_enabled_equivalencies(self.equivalencies)",
+   "kind": "lead",
+   "line": 221
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7651,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2712,
+  "thinking_tokens": 1139,
+  "opus_cost_usd": 0.1486015,
+  "total_cost_usd": 0.1532635,
+  "duration_ms": 25187,
+  "duration_api_ms": 26321,
+  "num_turns": 2
+ },
+ "wall_ms": 26043,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

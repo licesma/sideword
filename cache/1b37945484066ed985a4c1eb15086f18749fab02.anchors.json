@@ -1,0 +1,295 @@
+{
+ "blob_sha": "1b37945484066ed985a4c1eb15086f18749fab02",
+ "path": "astropy/stats/funcs.py",
+ "repo": "astropy/astropy",
+ "records": 45,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "gaussian_sigma_to_fwhm",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r4",
+   "anchor": "gaussian_fwhm_to_sigma",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "binom_conf_interval",
+   "kind": "todo",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "binom_conf_interval",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r7",
+   "anchor": "binom_conf_interval#if:interval == 'wilson' or interval == 'wald'/assign:kappa",
+   "kind": "trail",
+   "line": 227
+  },
+  {
+   "id": "r8",
+   "anchor": "binom_conf_interval#if:interval == 'wilson' or interval == 'wald'/if:interval == 'wilson'/assign:conf_interval[conf_interval < 0.]",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r9",
+   "anchor": "binom_conf_interval#if:interval == 'wilson' or interval == 'wald'/elif:interval == 'jeffreys' or interval == 'flat'/if:lowerbound.ndim == 0",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r10",
+   "anchor": "binned_binom_proportion",
+   "kind": "todo",
+   "line": 278
+  },
+  {
+   "id": "r11",
+   "anchor": "binned_binom_proportion",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r12",
+   "anchor": "binned_binom_proportion#assign:n, bin_edges",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r13",
+   "anchor": "binned_binom_proportion#assign:valid",
+   "kind": "lead",
+   "line": 442
+  },
+  {
+   "id": "r14",
+   "anchor": "poisson_conf_interval",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r15",
+   "anchor": "median_absolute_deviation",
+   "kind": "doc",
+   "line": 726
+  },
+  {
+   "id": "r16",
+   "anchor": "median_absolute_deviation#if:func is None/if:isinstance(data, np.ma.MaskedArray)",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r17",
+   "anchor": "median_absolute_deviation#assign:data_median",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r18",
+   "anchor": "median_absolute_deviation#if:axis is not None",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r19",
+   "anchor": "median_absolute_deviation#if:axis is None and np.ma.isMaskedArray(result)/assign:result",
+   "kind": "lead",
+   "line": 809
+  },
+  {
+   "id": "r20",
+   "anchor": "median_absolute_deviation#if:axis is None and np.ma.isMaskedArray(result)/elif:np.ma.isMaskedArray(result) and not is_masked/assign:result",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r21",
+   "anchor": "mad_std",
+   "kind": "doc",
+   "line": 818
+  },
+  {
+   "id": "r22",
+   "anchor": "mad_std#assign:MAD",
+   "kind": "lead",
+   "line": 873
+  },
+  {
+   "id": "r23",
+   "anchor": "signal_to_noise_oir_ccd",
+   "kind": "doc",
+   "line": 878
+  },
+  {
+   "id": "r24",
+   "anchor": "bootstrap",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r25",
+   "anchor": "bootstrap#if:samples < 1 or bootnum < 1",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r26",
+   "anchor": "bootstrap#if:bootfunc is None/else/try",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r27",
+   "anchor": "bootstrap#assign:boot",
+   "kind": "lead",
+   "line": 1022
+  },
+  {
+   "id": "r28",
+   "anchor": "_scipy_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1034
+  },
+  {
+   "id": "r29",
+   "anchor": "_scipy_kraft_burrows_nousek.eqn8#assign:factorial_n",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r30",
+   "anchor": "_scipy_kraft_burrows_nousek#assign:eqn8_res",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r31",
+   "anchor": "_scipy_kraft_burrows_nousek.find_s_min",
+   "kind": "doc",
+   "line": 1094
+  },
+  {
+   "id": "r32",
+   "anchor": "_mpmath_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1119
+  },
+  {
+   "id": "r33",
+   "anchor": "_mpmath_kraft_burrows_nousek.find_s_min",
+   "kind": "doc",
+   "line": 1169
+  },
+  {
+   "id": "r34",
+   "anchor": "_kraft_burrows_nousek",
+   "kind": "doc",
+   "line": 1196
+  },
+  {
+   "id": "r35",
+   "anchor": "kuiper_false_positive_probability",
+   "kind": "doc",
+   "line": 1248
+  },
+  {
+   "id": "r36",
+   "anchor": "kuiper_false_positive_probability#try/except:ImportError/import:scipy.misc",
+   "kind": "lead",
+   "line": 1281
+  },
+  {
+   "id": "r37",
+   "anchor": "kuiper_false_positive_probability#if:D < 2. / N/elif:D < 3. / N/elif:(D > 0.5 and N % 2 == 0) or (D > (N - 1.) / (2. * N) and N % 2 == 1)/for:t in range(int(np.floor(N * (1 - D))) + 1)",
+   "kind": "lead",
+   "line": 1301
+  },
+  {
+   "id": "r38",
+   "anchor": "kuiper",
+   "kind": "doc",
+   "line": 1328
+  },
+  {
+   "id": "r39",
+   "anchor": "kuiper_two",
+   "kind": "doc",
+   "line": 1402
+  },
+  {
+   "id": "r40",
+   "anchor": "kuiper_two#assign:cdfv1",
+   "kind": "lead",
+   "line": 1430
+  },
+  {
+   "id": "r41",
+   "anchor": "kuiper_two#assign:cdfv2",
+   "kind": "lead",
+   "line": 1432
+  },
+  {
+   "id": "r42",
+   "anchor": "fold_intervals",
+   "kind": "doc",
+   "line": 1440
+  },
+  {
+   "id": "r43",
+   "anchor": "cdf_from_intervals",
+   "kind": "doc",
+   "line": 1492
+  },
+  {
+   "id": "r44",
+   "anchor": "interval_overlap_length",
+   "kind": "doc",
+   "line": 1528
+  },
+  {
+   "id": "r45",
+   "anchor": "histogram_intervals",
+   "kind": "doc",
+   "line": 1560
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 34633,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4439,
+  "thinking_tokens": 2301,
+  "opus_cost_usd": 0.46159649999999997,
+  "total_cost_usd": 0.4886925,
+  "duration_ms": 40247,
+  "duration_api_ms": 41282,
+  "num_turns": 2
+ },
+ "wall_ms": 41102,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

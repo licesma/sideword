@@ -1,0 +1,391 @@
+{
+ "blob_sha": "df39e620f888f423cb287b8aa6ec40269fd293a7",
+ "path": "lib/matplotlib/backends/backend_svg.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "escape_cdata",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r2",
+   "anchor": "escape_cdata",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r3",
+   "anchor": "_short_float_fmt",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r4",
+   "anchor": "XMLWriter",
+   "kind": "doc",
+   "line": 127
+  },
+  {
+   "id": "r5",
+   "anchor": "XMLWriter.__open",
+   "kind": "trail",
+   "line": 138
+  },
+  {
+   "id": "r6",
+   "anchor": "XMLWriter.__flush#if:self.__open",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r7",
+   "anchor": "XMLWriter.start",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r8",
+   "anchor": "XMLWriter.comment",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r9",
+   "anchor": "XMLWriter.data",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r10",
+   "anchor": "XMLWriter.end",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r11",
+   "anchor": "XMLWriter.close",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r12",
+   "anchor": "XMLWriter.element",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r13",
+   "anchor": "XMLWriter.flush",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r14",
+   "anchor": "XMLWriter.flush#pass",
+   "kind": "trail",
+   "line": 267
+  },
+  {
+   "id": "r15",
+   "anchor": "RendererSVG.image_dpi",
+   "kind": "trail",
+   "line": 324
+  },
+  {
+   "id": "r16",
+   "anchor": "RendererSVG._write_metadata#if:metadata is None",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r17",
+   "anchor": "RendererSVG._write_metadata#assign:date",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r18",
+   "anchor": "RendererSVG._write_metadata#if:date is not None/elif:'Date' not in metadata/assign:date",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r19",
+   "anchor": "RendererSVG._write_metadata#for:key in ['Title', 'Coverage', 'Date', 'Description', 'Format', 'Identifier', 'Lan",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r20",
+   "anchor": "RendererSVG._write_metadata#for:key in ['Creator', 'Contributor', 'Publisher', 'Rights']",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r21",
+   "anchor": "RendererSVG._write_metadata#for:key in ['Creator', 'Contributor', 'Publisher', 'Rights']/assign:mid",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r22",
+   "anchor": "RendererSVG._write_metadata#assign:keywords",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r23",
+   "anchor": "RendererSVG._write_metadata#if:keywords is not None/assign:mid",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r24",
+   "anchor": "RendererSVG._get_hatch",
+   "kind": "doc",
+   "line": 507
+  },
+  {
+   "id": "r25",
+   "anchor": "RendererSVG._get_style_dict",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r26",
+   "anchor": "RendererSVG.open_group#if:gid",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r27",
+   "anchor": "RendererSVG.close_group#call:self.writer.end",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r28",
+   "anchor": "RendererSVG.option_image_nocomposite#return",
+   "kind": "lead",
+   "line": 677
+  },
+  {
+   "id": "r29",
+   "anchor": "RendererSVG.draw_path#assign:trans_and_flip",
+   "kind": "lead",
+   "line": 691
+  },
+  {
+   "id": "r30",
+   "anchor": "RendererSVG.draw_markers#if:not len(path.vertices)",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r31",
+   "anchor": "RendererSVG.draw_path_collection#assign:len_path",
+   "kind": "lead",
+   "line": 753
+  },
+  {
+   "id": "r32",
+   "anchor": "RendererSVG.draw_gouraud_triangle#call:self._draw_gouraud_triangle",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r33",
+   "anchor": "RendererSVG._draw_gouraud_triangle#assign:writer",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r34",
+   "anchor": "RendererSVG._draw_gouraud_triangle#if:not self._has_gouraud/call:writer.start",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r35",
+   "anchor": "RendererSVG._draw_gouraud_triangle#if:avg_color[-1]==0/return",
+   "kind": "lead",
+   "line": 845
+  },
+  {
+   "id": "r36",
+   "anchor": "RendererSVG._draw_gouraud_triangle#assign:dpath",
+   "kind": "lead",
+   "line": 894
+  },
+  {
+   "id": "r37",
+   "anchor": "RendererSVG.option_scale_image#return",
+   "kind": "lead",
+   "line": 946
+  },
+  {
+   "id": "r38",
+   "anchor": "RendererSVG.draw_image#assign:h, w",
+   "kind": "lead",
+   "line": 954
+  },
+  {
+   "id": "r39",
+   "anchor": "RendererSVG.draw_image#if:clip_attrs/call:self.writer.start",
+   "kind": "lead",
+   "line": 963
+  },
+  {
+   "id": "r40",
+   "anchor": "RendererSVG._update_glyph_map_defs",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r41",
+   "anchor": "RendererSVG._update_glyph_map_defs#if:glyph_map_new/for:char_id, (vertices, codes) in glyph_map_new.items()/assign:path_data",
+   "kind": "lead",
+   "line": 1041
+  },
+  {
+   "id": "r42",
+   "anchor": "RendererSVG._draw_text_as_path#assign:writer",
+   "kind": "lead",
+   "line": 1054
+  },
+  {
+   "id": "r43",
+   "anchor": "RendererSVG._draw_text_as_text._expand_family_entry#if:fn in fm.font_family_aliases",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r44",
+   "anchor": "RendererSVG._draw_text_as_text._expand_family_entry#if:fn in fm.font_family_aliases/for:name in fm.FontManager._expand_aliases(fn)",
+   "kind": "lead",
+   "line": 1155
+  },
+  {
+   "id": "r45",
+   "anchor": "RendererSVG._draw_text_as_text._expand_family_entry#yield",
+   "kind": "lead",
+   "line": 1159
+  },
+  {
+   "id": "r46",
+   "anchor": "RendererSVG._draw_text_as_text._get_all_quoted_names#return",
+   "kind": "lead",
+   "line": 1163
+  },
+  {
+   "id": "r47",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/call:font_parts.extend",
+   "kind": "lead",
+   "line": 1167
+  },
+  {
+   "id": "r48",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/if:mtext and (angle==0 or mtext.get_rotation_mode()==\"anchor\")/assign:transform",
+   "kind": "lead",
+   "line": 1182
+  },
+  {
+   "id": "r49",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/if:mtext and (angle==0 or mtext.get_rotation_mode()==\"anchor\")/assign:transform",
+   "kind": "lead",
+   "line": 1182
+  },
+  {
+   "id": "r50",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/if:mtext and (angle==0 or mtext.get_rotation_mode()==\"anchor\")/assign:angle_rad",
+   "kind": "lead",
+   "line": 1189
+  },
+  {
+   "id": "r51",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/else/call:writer.start",
+   "kind": "lead",
+   "line": 1220
+  },
+  {
+   "id": "r52",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/else/assign:spans",
+   "kind": "lead",
+   "line": 1230
+  },
+  {
+   "id": "r53",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/else/for:font, fontsize, thetext, new_x, new_y in glyphs/call:font_parts.extend",
+   "kind": "trail",
+   "line": 1240
+  },
+  {
+   "id": "r54",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/else/for:font, fontsize, thetext, new_x, new_y in glyphs/if:thetext==32/assign:thetext",
+   "kind": "trail",
+   "line": 1249
+  },
+  {
+   "id": "r55",
+   "anchor": "RendererSVG._draw_text_as_text#if:not ismath/else/for:style, chars in spans.items()/if:len({y for x, y, t in chars})==1",
+   "kind": "trail",
+   "line": 1255
+  },
+  {
+   "id": "r56",
+   "anchor": "RendererSVG.draw_text#assign:clip_attrs",
+   "kind": "lead",
+   "line": 1287
+  },
+  {
+   "id": "r57",
+   "anchor": "RendererSVG.draw_text#if:clip_attrs/call:self.writer.start",
+   "kind": "lead",
+   "line": 1291
+  },
+  {
+   "id": "r58",
+   "anchor": "RendererSVG.flipy#return",
+   "kind": "lead",
+   "line": 1309
+  },
+  {
+   "id": "r59",
+   "anchor": "RendererSVG.get_canvas_width_height#return",
+   "kind": "lead",
+   "line": 1313
+  },
+  {
+   "id": "r60",
+   "anchor": "RendererSVG.get_text_width_height_descent#return",
+   "kind": "lead",
+   "line": 1317
+  },
+  {
+   "id": "r61",
+   "anchor": "FigureCanvasSVG.print_svg",
+   "kind": "doc",
+   "line": 1326
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30344,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9021,
+  "thinking_tokens": 5741,
+  "opus_cost_usd": 0.5332565,
+  "total_cost_usd": 0.5567765,
+  "duration_ms": 88179,
+  "duration_api_ms": 89233,
+  "num_turns": 2
+ },
+ "wall_ms": 89221,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

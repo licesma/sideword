@@ -1,0 +1,139 @@
+{
+ "blob_sha": "b84fae8859937ad2e4db2d5fba962c53ec39384a",
+ "path": "django/contrib/auth/views.py",
+ "repo": "django/django",
+ "records": 19,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:django.contrib.auth",
+   "kind": "lead",
+   "line": 6
+  },
+  {
+   "id": "r2",
+   "anchor": "deprecate_current_app",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "LoginView",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r4",
+   "anchor": "LoginView.get_success_url",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r5",
+   "anchor": "LoginView.form_valid",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r6",
+   "anchor": "LogoutView",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r7",
+   "anchor": "LogoutView.dispatch#if:next_page/return",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r8",
+   "anchor": "LogoutView.get_next_page#if:self.redirect_field_name in self.request.POST or self.redirect_field_name in self.request.GET/if:not url_is_safe",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r9",
+   "anchor": "logout_then_login",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r10",
+   "anchor": "redirect_to_login",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r11",
+   "anchor": "password_reset",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r12",
+   "anchor": "password_reset_confirm",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r13",
+   "anchor": "password_reset_confirm",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r14",
+   "anchor": "password_reset_confirm#assert:uidb64 is not None and token is not None",
+   "kind": "trail",
+   "line": 324
+  },
+  {
+   "id": "r15",
+   "anchor": "password_reset_confirm#try/assign:uid",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r16",
+   "anchor": "PasswordContextMixin",
+   "kind": "lead",
+   "line": 385
+  },
+  {
+   "id": "r17",
+   "anchor": "PasswordResetConfirmView.get_user#try/assign:uid",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r18",
+   "anchor": "password_change#if:request.method == \"POST\"/if:form.is_valid()/call:update_session_auth_hash",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r19",
+   "anchor": "PasswordChangeView.form_valid#call:update_session_auth_hash",
+   "kind": "lead",
+   "line": 565
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13526,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1550,
+  "thinking_tokens": 700,
+  "opus_cost_usd": 0.1783015,
+  "total_cost_usd": 0.1879945,
+  "duration_ms": 16027,
+  "duration_api_ms": 17206,
+  "num_turns": 2
+ },
+ "wall_ms": 16895,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,385 @@
+{
+ "blob_sha": "59baeb14ffc82d95e0f7fd05f0c596b1c81408d2",
+ "path": "astropy/io/fits/convenience.py",
+ "repo": "astropy/astropy",
+ "records": 60,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "getheader",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r4",
+   "anchor": "getdata",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r5",
+   "anchor": "getdata#try/if:data is None/if:len(hdulist)==1",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r6",
+   "anchor": "getdata#assign:trans",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r7",
+   "anchor": "getdata#if:trans/if:data.dtype.names is None/return",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r8",
+   "anchor": "getdata#if:trans/if:data.dtype.descr[0][0]==''/return",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r9",
+   "anchor": "getdata#if:isinstance(view, type) and issubclass(view, np.ndarray)",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r10",
+   "anchor": "getval",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r11",
+   "anchor": "setval",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r12",
+   "anchor": "delval",
+   "kind": "doc",
+   "line": 358
+  },
+  {
+   "id": "r13",
+   "anchor": "writeto",
+   "kind": "doc",
+   "line": 395
+  },
+  {
+   "id": "r14",
+   "anchor": "table_to_hdu",
+   "kind": "doc",
+   "line": 438
+  },
+  {
+   "id": "r15",
+   "anchor": "table_to_hdu#import:.connect",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r16",
+   "anchor": "table_to_hdu#assign:hdr",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r17",
+   "anchor": "table_to_hdu#if:table.has_mixin_columns",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r18",
+   "anchor": "table_to_hdu#if:table.has_mixin_columns/import:astropy.table.column",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r19",
+   "anchor": "table_to_hdu#if:table.has_mixin_columns/assign:unsupported_cols",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r20",
+   "anchor": "table_to_hdu#assign:tarray",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r21",
+   "anchor": "table_to_hdu#if:isinstance(tarray, np.ma.MaskedArray)/assign:default_fill_value",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r22",
+   "anchor": "table_to_hdu#if:isinstance(tarray, np.ma.MaskedArray)/for:colname, (coldtype, _) in tarray.dtype.fields.items()/if:np.all(tarray.fill_value[colname]==default_fill_value[colname])/assign:coltype",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r23",
+   "anchor": "table_to_hdu#if:isinstance(tarray, np.ma.MaskedArray)/assign:table_hdu",
+   "kind": "todo",
+   "line": 510
+  },
+  {
+   "id": "r24",
+   "anchor": "table_to_hdu#if:isinstance(tarray, np.ma.MaskedArray)/for:col in table_hdu.columns/assign:int_formats",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r25",
+   "anchor": "table_to_hdu#for:col in table_hdu.columns",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r26",
+   "anchor": "table_to_hdu#for:col in table_hdu.columns/if:table[col.name].info.format is not None/assign:logical",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r27",
+   "anchor": "table_to_hdu#for:col in table_hdu.columns/if:unit is not None/import:astropy.units",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r28",
+   "anchor": "table_to_hdu#for:col in table_hdu.columns/if:unit is not None/try/except:ValueError/assign:warning",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r29",
+   "anchor": "table_to_hdu#for:col in table_hdu.columns/if:unit is not None/try/else/call:Unit",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r30",
+   "anchor": "table_to_hdu#assign:coord_meta",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r31",
+   "anchor": "table_to_hdu#for:col_name, col_info in coord_meta.items()/for:attr in 'coord_type', 'coord_unit'",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r32",
+   "anchor": "table_to_hdu#for:key, value in table.meta.items()/if:key=='comments'",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r33",
+   "anchor": "append",
+   "kind": "doc",
+   "line": 620
+  },
+  {
+   "id": "r34",
+   "anchor": "append#if:noexist_or_empty/call:writeto",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r35",
+   "anchor": "append#if:noexist_or_empty/else/if:verify or not closed/try/assign:hdu._output_checksum",
+   "kind": "lead",
+   "line": 682
+  },
+  {
+   "id": "r36",
+   "anchor": "update",
+   "kind": "doc",
+   "line": 694
+  },
+  {
+   "id": "r37",
+   "anchor": "update#if:args and isinstance(args[0], Header)",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r38",
+   "anchor": "update#assign:header",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r39",
+   "anchor": "info",
+   "kind": "doc",
+   "line": 753
+  },
+  {
+   "id": "r40",
+   "anchor": "info#if:'ignore_missing_end' not in kwargs",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r41",
+   "anchor": "printdiff",
+   "kind": "doc",
+   "line": 791
+  },
+  {
+   "id": "r42",
+   "anchor": "printdiff#assign:extension",
+   "kind": "lead",
+   "line": 853
+  },
+  {
+   "id": "r43",
+   "anchor": "printdiff#if:isinstance(inputa, str) and has_extensions/assign:modea",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r44",
+   "anchor": "printdiff#if:isinstance(inputa, str) and has_extensions/try",
+   "kind": "lead",
+   "line": 865
+  },
+  {
+   "id": "r45",
+   "anchor": "printdiff#if:isinstance(inputa, str) and has_extensions/try/call:print",
+   "kind": "lead",
+   "line": 875
+  },
+  {
+   "id": "r46",
+   "anchor": "printdiff#if:isinstance(inputa, str) and has_extensions/elif:isinstance(inputa, _ValidHDU) and has_extensions",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r47",
+   "anchor": "printdiff#if:isinstance(inputa, str) and has_extensions/else",
+   "kind": "lead",
+   "line": 896
+  },
+  {
+   "id": "r48",
+   "anchor": "tabledump",
+   "kind": "doc",
+   "line": 900
+  },
+  {
+   "id": "r49",
+   "anchor": "tabledump#assign:mode, closed",
+   "kind": "lead",
+   "line": 946
+  },
+  {
+   "id": "r50",
+   "anchor": "tabledump#try",
+   "kind": "lead",
+   "line": 950
+  },
+  {
+   "id": "r51",
+   "anchor": "tabledump#try/call:f[ext].dump",
+   "kind": "lead",
+   "line": 956
+  },
+  {
+   "id": "r52",
+   "anchor": "tableload",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r53",
+   "anchor": "_getext",
+   "kind": "doc",
+   "line": 1005
+  },
+  {
+   "id": "r54",
+   "anchor": "_getext#if:len(args)==1",
+   "kind": "lead",
+   "line": 1021
+  },
+  {
+   "id": "r55",
+   "anchor": "_getext#if:len(args)==1/if:_is_int(args[0]) or (isinstance(ext, tuple) and len(ext)==2)",
+   "kind": "lead",
+   "line": 1024
+  },
+  {
+   "id": "r56",
+   "anchor": "_getext#if:len(args)==1/if:_is_int(args[0]) or (isinstance(ext, tuple) and len(ext)==2)/elif:isinstance(args[0], str)/if:ext is not None or extname is not None",
+   "kind": "lead",
+   "line": 1031
+  },
+  {
+   "id": "r57",
+   "anchor": "_getext#if:len(args)==1/if:_is_int(args[0]) or (isinstance(ext, tuple) and len(ext)==2)/else/assign:ext",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r58",
+   "anchor": "_getext#if:len(args)==1/elif:len(args)==2/if:ext is not None or extname is not None or extver is not None",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r59",
+   "anchor": "_makehdu#if:hdu.__class__ in (_BaseHDU, _ValidHDU)/if:(isinstance(data, np.ndarray) and data.dtype.fields is not None) or isinstance(data, np.recarray)",
+   "kind": "lead",
+   "line": 1083
+  },
+  {
+   "id": "r60",
+   "anchor": "_get_file_mode",
+   "kind": "doc",
+   "line": 1112
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 24528,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6699,
+  "thinking_tokens": 3641,
+  "opus_cost_usd": 0.4170465,
+  "total_cost_usd": 0.4358585,
+  "duration_ms": 62895,
+  "duration_api_ms": 64387,
+  "num_turns": 2
+ },
+ "wall_ms": 63861,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

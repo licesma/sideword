@@ -1,0 +1,133 @@
+{
+ "blob_sha": "f70c0e3404bc51df606439e4d7d3727526d29eb8",
+ "path": "astropy/table/serialize.py",
+ "repo": "astropy/astropy",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SerializedColumn",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "_represent_mixin_as_column",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "_represent_mixin_as_column#if:not has_info_class(col, MixinInfo) or col.__class__ in exclude_classes",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r4",
+   "anchor": "_represent_mixin_as_column#assign:info",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r5",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/call:new_cols.append",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r6",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/for:attr in info",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r7",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/else/assign:new_name",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r8",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/else/if:not has_info_class(data, MixinInfo)",
+   "kind": "todo",
+   "line": 85
+  },
+  {
+   "id": "r9",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/else/if:not has_info_class(data, MixinInfo)/else/call:_represent_mixin_as_column",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r10",
+   "anchor": "_represent_mixin_as_column#for:data_attr in data_attrs/if:len(data_attrs) == 1 and not has_info_class(data, MixinInfo)/else/for:attr in col.info.attrs_from_parent",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r11",
+   "anchor": "_represent_mixin_as_column#assign:obj_attrs['__class__']",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r12",
+   "anchor": "_represent_mixins_as_columns",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r13",
+   "anchor": "_construct_mixin_from_obj_attrs_and_info#if:cls_full_name not in __construct_mixin_classes",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r14",
+   "anchor": "_construct_mixin_from_columns#assign:idx",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r15",
+   "anchor": "_construct_mixin_from_columns#for:name, data_attr in data_attrs_map.items()",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r16",
+   "anchor": "_construct_mixin_from_columns#if:len(data_attrs_map) == 1/for:attr, nontrivial in (('unit', lambda x: x not in (None, '')), ('format', lambda x: x is not None), ('description', lambda x: x is not None), ('meta', lambda x: x))",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r17",
+   "anchor": "_construct_mixins_from_columns#assign:out",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r18",
+   "anchor": "_construct_mixins_from_columns#assign:has_quantities",
+   "kind": "lead",
+   "line": 212
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8176,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2402,
+  "thinking_tokens": 1069,
+  "opus_cost_usd": 0.1461015,
+  "total_cost_usd": 0.1512595,
+  "duration_ms": 21830,
+  "duration_api_ms": 22980,
+  "num_turns": 2
+ },
+ "wall_ms": 23464,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,871 @@
+{
+ "blob_sha": "d63e97b151b9295559ac44fa9790e27c3b47cf36",
+ "path": "astropy/coordinates/baseframe.py",
+ "repo": "astropy/astropy",
+ "records": 141,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:astropy.utils.compat.misc",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r6",
+   "anchor": "frame_transform_graph",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_repr_cls",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r8",
+   "anchor": "_get_diff_cls",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r9",
+   "anchor": "_get_repr_classes",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r10",
+   "anchor": "_get_repr_classes#for:name, differential_type in differentials.items()/if:differential_type=='base'/assign:differential_type",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r11",
+   "anchor": "RepresentationMapping",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r12",
+   "anchor": "RepresentationMapping.__new__#return",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseCoordinateFrame",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseCoordinateFrame.frame_specific_representation_info",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseCoordinateFrame.frame_attributes",
+   "kind": "post",
+   "line": 219
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#assign:default_repr",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#if:default_repr is None or isinstance(default_repr, property)",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#call:cls._create_readonly_property",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#assign:frame_attrs",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#if:not hasattr(cls, 'name')",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#if:not hasattr(cls, 'name')/elif:BaseCoordinateFrame not in cls.__bases__ and cls.name in [getattr(base, 'name', None) for base in cls.__bases__]/assign:cls.name",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseCoordinateFrame.__init_subclass__#assign:cls._frame_class_cache",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseCoordinateFrame._data",
+   "kind": "trail",
+   "line": 298
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseCoordinateFrame.__init__#assign:values",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseCoordinateFrame.__init__#for:fnm, fdefault in self.get_frame_attr_names().items()/if:fnm in kwargs",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseCoordinateFrame.__init__#for:fnm, fdefault in self.get_frame_attr_names().items()/if:fnm in kwargs/assign:values[fnm]",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is None",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is None/assign:shapes",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is None/if:shapes/if:len(shapes)>1/for:fnm in shapes",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is not None",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is not None/if:'s' in self._data.differentials",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is not None/if:'s' in self._data.differentials/assign:key",
+   "kind": "todo",
+   "line": 357
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseCoordinateFrame.__init__#if:self._data is not None/assign:self.cache['representation'][key]",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseCoordinateFrame._infer_representation#if:inspect.isclass(differential_type) and issubclass(differential_type, r.BaseDifferential)/assign:differential_type",
+   "kind": "todo",
+   "line": 377
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseCoordinateFrame._infer_representation#if:inspect.isclass(differential_type) and issubclass(differential_type, r.BaseDifferential)/elif:isinstance(differential_type, str)/assign:diff_cls",
+   "kind": "todo",
+   "line": 382
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseCoordinateFrame._infer_representation#if:inspect.isclass(differential_type) and issubclass(differential_type, r.BaseDifferential)/elif:differential_type is None/if:representation_type==self.default_representation/else/assign:differential_type",
+   "kind": "trail",
+   "line": 389
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseCoordinateFrame._infer_data#assign:representation_data",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseCoordinateFrame._infer_data#assign:args",
+   "kind": "trail",
+   "line": 398
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/assign:representation_data",
+   "kind": "trail",
+   "line": 401
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/assign:repr_kwargs",
+   "kind": "lead",
+   "line": 422
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/for:nmkw, nmrep in self.representation_component_names.items()/if:len(args)>0/assign:repr_kwargs[nmrep]",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/if:repr_kwargs",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/if:repr_kwargs/if:repr_kwargs.get('distance', True) is None",
+   "kind": "todo",
+   "line": 437
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/if:repr_kwargs/try/except:TypeError/try",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/assign:differential_cls",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/for:nmkw, nmrep in diff_component_names.items()/if:len(args)>0/assign:diff_kwargs[nmrep]",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseCoordinateFrame._infer_data#if:(len(args)>0) and (isinstance(args[0], r.BaseRepresentation) or args[0] is None)/else/if:diff_kwargs/try/except:TypeError/assign:msg",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseCoordinateFrame._infer_data#if:differential_data/for:comp in representation_data.components",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseCoordinateFrame._infer_repr_info#if:repr_info is None",
+   "kind": "lead",
+   "line": 556
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseCoordinateFrame._infer_repr_info#for:cls_or_name in tuple(repr_info.keys())",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseCoordinateFrame._infer_repr_info#for:cls_or_name in tuple(repr_info.keys())/if:isinstance(cls_or_name, str)/assign:_cls",
+   "kind": "todo",
+   "line": 569
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseCoordinateFrame._infer_repr_info#call:repr_info.setdefault",
+   "kind": "lead",
+   "line": 573
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseCoordinateFrame._infer_repr_info#call:repr_info.setdefault",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseCoordinateFrame.cache",
+   "kind": "doc",
+   "line": 634
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseCoordinateFrame.data",
+   "kind": "doc",
+   "line": 656
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseCoordinateFrame.has_data",
+   "kind": "doc",
+   "line": 668
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseCoordinateFrame.__len__",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseCoordinateFrame.get_representation_cls",
+   "kind": "doc",
+   "line": 699
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseCoordinateFrame.set_representation_cls",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseCoordinateFrame.differential_type",
+   "kind": "doc",
+   "line": 747
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseCoordinateFrame._get_representation_info#if:cls._frame_class_cache.get('last_reprdiff_hash', None) != r.get_reprdiff_cls_hash()",
+   "kind": "lead",
+   "line": 769
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseCoordinateFrame._get_representation_info#if:cls._frame_class_cache.get('last_reprdiff_hash', None) != r.get_reprdiff_cls_hash()/for:repr_diff_cls, mappings in cls._frame_specific_representation_info.items()/assign:nms",
+   "kind": "lead",
+   "line": 784
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseCoordinateFrame._get_representation_info#if:cls._frame_class_cache.get('last_reprdiff_hash', None) != r.get_reprdiff_cls_hash()/for:repr_diff_cls, mappings in cls._frame_specific_representation_info.items()/for:i, c in enumerate(repr_diff_cls.attr_classes.keys())/if:c in comptomap/if:not (isinstance(mapp.defaultunit, str) and mapp.defaultunit=='recommended')",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseCoordinateFrame._get_representation_info#if:cls._frame_class_cache.get('last_reprdiff_hash', None) != r.get_reprdiff_cls_hash()/for:repr_diff_cls, mappings in cls._frame_specific_representation_info.items()/for:i, c in enumerate(repr_diff_cls.attr_classes.keys())/if:c in comptomap/if:not (isinstance(mapp.defaultunit, str) and mapp.defaultunit=='recommended')/assign:uns[i]",
+   "kind": "post",
+   "line": 796
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseCoordinateFrame._get_representation_info#if:cls._frame_class_cache.get('last_reprdiff_hash', None) != r.get_reprdiff_cls_hash()/for:repr_diff_cls, mappings in cls._frame_specific_representation_info.items()/assign:repr_attrs[repr_diff_cls]['names']",
+   "kind": "lead",
+   "line": 800
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseCoordinateFrame.representation_info",
+   "kind": "doc",
+   "line": 808
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseCoordinateFrame._replicate",
+   "kind": "doc",
+   "line": 843
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseCoordinateFrame._replicate#if:inspect.isclass(data)",
+   "kind": "lead",
+   "line": 863
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseCoordinateFrame.replicate",
+   "kind": "doc",
+   "line": 883
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseCoordinateFrame.replicate_without_data",
+   "kind": "doc",
+   "line": 912
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseCoordinateFrame.realize_frame",
+   "kind": "doc",
+   "line": 941
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseCoordinateFrame.represent_as",
+   "kind": "doc",
+   "line": 964
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseCoordinateFrame.represent_as#if:isinstance(s, bool)",
+   "kind": "lead",
+   "line": 1018
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseCoordinateFrame.represent_as#assign:repr_classes",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseCoordinateFrame.represent_as#if:'s' in self.data.differentials",
+   "kind": "lead",
+   "line": 1031
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseCoordinateFrame.represent_as#if:'s' in self.data.differentials/if:s=='base' and (self.data.differentials['s'].__class__ in representation_cls._compatible_differentials)",
+   "kind": "lead",
+   "line": 1035
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/if:isinstance(self.data, r.UnitSphericalRepresentation) and issubclass(representation_cls, r.CartesianRepresentation) and not isinstance(self.data.differentials['s'], (r.UnitSphericalDifferential, r.UnitSphericalCosLatDifferential, r.RadialDifferential))",
+   "kind": "lead",
+   "line": 1061
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/assign:data",
+   "kind": "todo",
+   "line": 1073
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/assign:diff",
+   "kind": "todo",
+   "line": 1075
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/assign:new_attrs",
+   "kind": "lead",
+   "line": 1081
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/assign:data_diff",
+   "kind": "lead",
+   "line": 1091
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/assign:new_attrs",
+   "kind": "lead",
+   "line": 1095
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/if:new_attrs and in_frame_units/for:comp, new_attr_unit in zip(diff.components, new_attrs['units'])/if:isinstance(data_diff, (r.UnitSphericalDifferential, r.UnitSphericalCosLatDifferential)) and comp not in data_diff.__class__.attr_classes",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r84",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/if:new_attrs and in_frame_units/for:comp, new_attr_unit in zip(diff.components, new_attrs['units'])/if:new_attr_unit and hasattr(diff, comp)",
+   "kind": "lead",
+   "line": 1121
+  },
+  {
+   "id": "r85",
+   "anchor": "BaseCoordinateFrame.represent_as#if:not cached_repr/if:differential_cls/if:new_attrs and in_frame_units/call:data._differentials.update",
+   "kind": "lead",
+   "line": 1138
+  },
+  {
+   "id": "r86",
+   "anchor": "BaseCoordinateFrame.transform_to",
+   "kind": "doc",
+   "line": 1144
+  },
+  {
+   "id": "r87",
+   "anchor": "BaseCoordinateFrame.transform_to#if:inspect.isclass(new_frame)/assign:new_frame",
+   "kind": "lead",
+   "line": 1187
+  },
+  {
+   "id": "r88",
+   "anchor": "BaseCoordinateFrame.transform_to#if:hasattr(new_frame, '_sky_coord_frame')/assign:new_frame",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r89",
+   "anchor": "BaseCoordinateFrame.transform_to#if:trans is None/if:new_frame is self.__class__/return",
+   "kind": "lead",
+   "line": 1199
+  },
+  {
+   "id": "r90",
+   "anchor": "BaseCoordinateFrame.is_transformable_to",
+   "kind": "doc",
+   "line": 1204
+  },
+  {
+   "id": "r91",
+   "anchor": "BaseCoordinateFrame.is_frame_attr_default",
+   "kind": "doc",
+   "line": 1247
+  },
+  {
+   "id": "r92",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv",
+   "kind": "doc",
+   "line": 1267
+  },
+  {
+   "id": "r93",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_fattr is right_fattr/return",
+   "kind": "lead",
+   "line": 1284
+  },
+  {
+   "id": "r94",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_fattr is right_fattr/elif:left_fattr is None or right_fattr is None/return",
+   "kind": "lead",
+   "line": 1287
+  },
+  {
+   "id": "r95",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_is_repr and right_is_repr/if:getattr(left_fattr, 'differentials', False) or getattr(right_fattr, 'differentials', False)",
+   "kind": "lead",
+   "line": 1293
+  },
+  {
+   "id": "r96",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_is_repr and right_is_repr/if:isinstance(right_fattr, left_fattr.__class__)/return",
+   "kind": "lead",
+   "line": 1304
+  },
+  {
+   "id": "r97",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_is_repr and right_is_repr/if:isinstance(right_fattr, left_fattr.__class__)/else/return",
+   "kind": "lead",
+   "line": 1309
+  },
+  {
+   "id": "r98",
+   "anchor": "BaseCoordinateFrame._frameattr_equiv#if:left_is_coord and right_is_coord/if:left_fattr.is_equivalent_frame(right_fattr)",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r99",
+   "anchor": "BaseCoordinateFrame.is_equivalent_frame",
+   "kind": "doc",
+   "line": 1327
+  },
+  {
+   "id": "r100",
+   "anchor": "BaseCoordinateFrame._data_repr",
+   "kind": "doc",
+   "line": 1374
+  },
+  {
+   "id": "r101",
+   "anchor": "BaseCoordinateFrame._data_repr#if:self.representation_type/assign:part1, _, remainder",
+   "kind": "lead",
+   "line": 1403
+  },
+  {
+   "id": "r102",
+   "anchor": "BaseCoordinateFrame._data_repr#if:self.representation_type/if:remainder != ''/assign:invnames",
+   "kind": "lead",
+   "line": 1408
+  },
+  {
+   "id": "r103",
+   "anchor": "BaseCoordinateFrame._data_repr#if:self.representation_type/if:remainder != ''/assign:data_repr",
+   "kind": "lead",
+   "line": 1413
+  },
+  {
+   "id": "r104",
+   "anchor": "BaseCoordinateFrame._data_repr#if:data_repr.startswith('<' + data.__class__.__name__)/assign:data_repr",
+   "kind": "lead",
+   "line": 1422
+  },
+  {
+   "id": "r105",
+   "anchor": "BaseCoordinateFrame._frame_attrs_repr",
+   "kind": "doc",
+   "line": 1442
+  },
+  {
+   "id": "r106",
+   "anchor": "BaseCoordinateFrame._frame_attrs_repr#for:attribute_name in self.get_frame_attr_names()/if:hasattr(attr, \"_astropy_repr_in_frame\")",
+   "kind": "lead",
+   "line": 1452
+  },
+  {
+   "id": "r107",
+   "anchor": "BaseCoordinateFrame._apply",
+   "kind": "doc",
+   "line": 1460
+  },
+  {
+   "id": "r108",
+   "anchor": "BaseCoordinateFrame._apply#for:attr in self.frame_attributes/if:attr in self._attr_names_with_defaults/else/if:getattr(value, 'shape', ())/elif:method=='copy' or method=='flatten'/assign:value",
+   "kind": "lead",
+   "line": 1511
+  },
+  {
+   "id": "r109",
+   "anchor": "BaseCoordinateFrame.__setitem__#if:self._data._differentials/if:self._data._differentials.keys() != value._data._differentials.keys()",
+   "kind": "lead",
+   "line": 1561
+  },
+  {
+   "id": "r110",
+   "anchor": "BaseCoordinateFrame.__setitem__#assign:self._data[item]",
+   "kind": "lead",
+   "line": 1571
+  },
+  {
+   "id": "r111",
+   "anchor": "BaseCoordinateFrame.__setitem__#call:self.cache.clear",
+   "kind": "lead",
+   "line": 1576
+  },
+  {
+   "id": "r112",
+   "anchor": "BaseCoordinateFrame.__dir__",
+   "kind": "doc",
+   "line": 1579
+  },
+  {
+   "id": "r113",
+   "anchor": "BaseCoordinateFrame.__getattr__",
+   "kind": "doc",
+   "line": 1591
+  },
+  {
+   "id": "r114",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr.startswith('_')",
+   "kind": "lead",
+   "line": 1605
+  },
+  {
+   "id": "r115",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr.startswith('_')/return",
+   "kind": "trail",
+   "line": 1606
+  },
+  {
+   "id": "r116",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr in repr_names/if:self._data is None/expr:self.data",
+   "kind": "trail",
+   "line": 1611
+  },
+  {
+   "id": "r117",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr in repr_names/if:self._data is None/expr:self.data",
+   "kind": "post",
+   "line": 1611
+  },
+  {
+   "id": "r118",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr in diff_names/if:self._data is None/expr:self.data",
+   "kind": "trail",
+   "line": 1622
+  },
+  {
+   "id": "r119",
+   "anchor": "BaseCoordinateFrame.__getattr__#if:attr in diff_names/assign:rep",
+   "kind": "todo",
+   "line": 1627
+  },
+  {
+   "id": "r120",
+   "anchor": "BaseCoordinateFrame.__getattr__#return",
+   "kind": "trail",
+   "line": 1632
+  },
+  {
+   "id": "r121",
+   "anchor": "BaseCoordinateFrame.__setattr__#if:not attr.startswith('_')",
+   "kind": "lead",
+   "line": 1636
+  },
+  {
+   "id": "r122",
+   "anchor": "BaseCoordinateFrame.__eq__",
+   "kind": "doc",
+   "line": 1648
+  },
+  {
+   "id": "r123",
+   "anchor": "BaseCoordinateFrame.__eq__#if:self._data is None and value._data is None/return",
+   "kind": "lead",
+   "line": 1658
+  },
+  {
+   "id": "r124",
+   "anchor": "BaseCoordinateFrame.separation",
+   "kind": "doc",
+   "line": 1675
+  },
+  {
+   "id": "r125",
+   "anchor": "BaseCoordinateFrame.separation#assign:sep",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r126",
+   "anchor": "BaseCoordinateFrame.separation_3d",
+   "kind": "doc",
+   "line": 1717
+  },
+  {
+   "id": "r127",
+   "anchor": "BaseCoordinateFrame.separation_3d#assign:other_in_self_system",
+   "kind": "lead",
+   "line": 1745
+  },
+  {
+   "id": "r128",
+   "anchor": "BaseCoordinateFrame.separation_3d#assign:self_car",
+   "kind": "lead",
+   "line": 1753
+  },
+  {
+   "id": "r129",
+   "anchor": "BaseCoordinateFrame.cartesian",
+   "kind": "doc",
+   "line": 1762
+  },
+  {
+   "id": "r130",
+   "anchor": "BaseCoordinateFrame.cartesian#return",
+   "kind": "todo",
+   "line": 1770
+  },
+  {
+   "id": "r131",
+   "anchor": "BaseCoordinateFrame.cylindrical",
+   "kind": "doc",
+   "line": 1773
+  },
+  {
+   "id": "r132",
+   "anchor": "BaseCoordinateFrame.cylindrical#return",
+   "kind": "todo",
+   "line": 1781
+  },
+  {
+   "id": "r133",
+   "anchor": "BaseCoordinateFrame.spherical",
+   "kind": "doc",
+   "line": 1784
+  },
+  {
+   "id": "r134",
+   "anchor": "BaseCoordinateFrame.spherical#return",
+   "kind": "todo",
+   "line": 1792
+  },
+  {
+   "id": "r135",
+   "anchor": "BaseCoordinateFrame.sphericalcoslat",
+   "kind": "doc",
+   "line": 1795
+  },
+  {
+   "id": "r136",
+   "anchor": "BaseCoordinateFrame.sphericalcoslat#return",
+   "kind": "todo",
+   "line": 1803
+  },
+  {
+   "id": "r137",
+   "anchor": "BaseCoordinateFrame.velocity",
+   "kind": "doc",
+   "line": 1807
+  },
+  {
+   "id": "r138",
+   "anchor": "BaseCoordinateFrame.proper_motion",
+   "kind": "doc",
+   "line": 1820
+  },
+  {
+   "id": "r139",
+   "anchor": "BaseCoordinateFrame.radial_velocity",
+   "kind": "doc",
+   "line": 1841
+  },
+  {
+   "id": "r140",
+   "anchor": "GenericFrame",
+   "kind": "doc",
+   "line": 1854
+  },
+  {
+   "id": "r141",
+   "anchor": "GenericFrame.name",
+   "kind": "trail",
+   "line": 1867
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 44302,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 17819,
+  "thinking_tokens": 8489,
+  "opus_cost_usd": 0.8927865000000001,
+  "total_cost_usd": 0.9274365000000001,
+  "duration_ms": 151481,
+  "duration_api_ms": 152271,
+  "num_turns": 2
+ },
+ "wall_ms": 156598,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

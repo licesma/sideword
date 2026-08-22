@@ -1,0 +1,199 @@
+{
+ "blob_sha": "14925cd1ce1f8758b52420f6306281fbcf1560ac",
+ "path": "django/apps/config.py",
+ "repo": "django/django",
+ "records": 29,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "AppConfig",
+   "kind": "doc",
+   "line": 11
+  },
+  {
+   "id": "r2",
+   "anchor": "AppConfig.name",
+   "kind": "lead",
+   "line": 18
+  },
+  {
+   "id": "r3",
+   "anchor": "AppConfig.module",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "AppConfig.apps",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'label')",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r6",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'label')",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r7",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'verbose_name')",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r8",
+   "anchor": "AppConfig.__init__#if:not hasattr(self, 'path')",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r9",
+   "anchor": "AppConfig.models_module",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r10",
+   "anchor": "AppConfig.models",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r11",
+   "anchor": "AppConfig._path_from_module",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r12",
+   "anchor": "AppConfig._path_from_module#assign:paths",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r13",
+   "anchor": "AppConfig._path_from_module#if:len(paths) != 1/if:filename is not None/else/assign:paths",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r14",
+   "anchor": "AppConfig.create",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r15",
+   "anchor": "AppConfig.create#try/assign:module",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r16",
+   "anchor": "AppConfig.create#try/except:ImportError/assign:module",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r17",
+   "anchor": "AppConfig.create#try/except:ImportError/if:not mod_path",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r18",
+   "anchor": "AppConfig.create#try/else/try/assign:entry",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r19",
+   "anchor": "AppConfig.create#try/else/try/except:AttributeError/return",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r20",
+   "anchor": "AppConfig.create#assign:mod",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r21",
+   "anchor": "AppConfig.create#try/except:AttributeError/if:module is None/call:import_module",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r22",
+   "anchor": "AppConfig.create#if:not issubclass(cls, AppConfig)",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r23",
+   "anchor": "AppConfig.create#try",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r24",
+   "anchor": "AppConfig.create#try",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r25",
+   "anchor": "AppConfig.create#return",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r26",
+   "anchor": "AppConfig.get_model",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r27",
+   "anchor": "AppConfig.get_models",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r28",
+   "anchor": "AppConfig.import_models#assign:self.models",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r29",
+   "anchor": "AppConfig.ready",
+   "kind": "doc",
+   "line": 205
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8067,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2612,
+  "thinking_tokens": 1325,
+  "opus_cost_usd": 0.1502615,
+  "total_cost_usd": 0.15532649999999998,
+  "duration_ms": 24468,
+  "duration_api_ms": 25563,
+  "num_turns": 2
+ },
+ "wall_ms": 25618,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

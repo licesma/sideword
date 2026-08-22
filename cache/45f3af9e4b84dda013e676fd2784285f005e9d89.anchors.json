@@ -1,0 +1,979 @@
+{
+ "blob_sha": "45f3af9e4b84dda013e676fd2784285f005e9d89",
+ "path": "lib/matplotlib/figure.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 159,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "AxesStack",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r3",
+   "anchor": "AxesStack.as_list",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r4",
+   "anchor": "AxesStack.get",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r5",
+   "anchor": "AxesStack.remove",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r6",
+   "anchor": "AxesStack.bubble",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r7",
+   "anchor": "AxesStack.add",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r8",
+   "anchor": "AxesStack.add#if:not isinstance(a, Axes)",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r9",
+   "anchor": "AxesStack.add#if:a_existing is not None/call:cbook._warn_external",
+   "kind": "post",
+   "line": 136
+  },
+  {
+   "id": "r10",
+   "anchor": "AxesStack.current_key_axes",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r11",
+   "anchor": "SubplotParams",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "SubplotParams.__init__",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r13",
+   "anchor": "SubplotParams.update",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r14",
+   "anchor": "Figure",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r15",
+   "anchor": "Figure.__init__#param:subplotpars",
+   "kind": "trail",
+   "line": 282
+  },
+  {
+   "id": "r16",
+   "anchor": "Figure.__init__#param:tight_layout",
+   "kind": "trail",
+   "line": 283
+  },
+  {
+   "id": "r17",
+   "anchor": "Figure.__init__#param:constrained_layout",
+   "kind": "trail",
+   "line": 284
+  },
+  {
+   "id": "r18",
+   "anchor": "Figure.__init__#param:constrained_layout",
+   "kind": "post",
+   "line": 284
+  },
+  {
+   "id": "r19",
+   "anchor": "Figure.__init__",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r20",
+   "anchor": "Figure.__init__#del:self._axes",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r21",
+   "anchor": "Figure._dpi",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r22",
+   "anchor": "Figure.__init__#call:FigureCanvasBase",
+   "kind": "trail",
+   "line": 367
+  },
+  {
+   "id": "r23",
+   "anchor": "Figure._layoutbox",
+   "kind": "lead",
+   "line": 375
+  },
+  {
+   "id": "r24",
+   "anchor": "Figure.__init__#call:self.set_constrained_layout",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r25",
+   "anchor": "Figure._axstack",
+   "kind": "trail",
+   "line": 381
+  },
+  {
+   "id": "r26",
+   "anchor": "Figure._align_xlabel_grp",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r27",
+   "anchor": "Figure._gridspecs",
+   "kind": "lead",
+   "line": 392
+  },
+  {
+   "id": "r28",
+   "anchor": "Figure._repr_html_",
+   "kind": "todo",
+   "line": 398
+  },
+  {
+   "id": "r29",
+   "anchor": "Figure._repr_html_#if:'WebAgg' in type(self.canvas).__name__",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r30",
+   "anchor": "Figure.show",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r31",
+   "anchor": "Figure._set_dpi",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r32",
+   "anchor": "Figure.get_tight_layout",
+   "kind": "doc",
+   "line": 482
+  },
+  {
+   "id": "r33",
+   "anchor": "Figure.set_tight_layout",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r34",
+   "anchor": "Figure.get_constrained_layout",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r35",
+   "anchor": "Figure.set_constrained_layout",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r36",
+   "anchor": "Figure.set_constrained_layout_pads",
+   "kind": "doc",
+   "line": 543
+  },
+  {
+   "id": "r37",
+   "anchor": "Figure.get_constrained_layout_pads",
+   "kind": "doc",
+   "line": 579
+  },
+  {
+   "id": "r38",
+   "anchor": "Figure.autofmt_xdate",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r39",
+   "anchor": "Figure.get_children",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r40",
+   "anchor": "Figure.contains",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r41",
+   "anchor": "Figure.get_window_extent",
+   "kind": "doc",
+   "line": 676
+  },
+  {
+   "id": "r42",
+   "anchor": "Figure.suptitle",
+   "kind": "doc",
+   "line": 682
+  },
+  {
+   "id": "r43",
+   "anchor": "Figure.suptitle#if:self._suptitle is not None/else/if:self._layoutbox is not None and not manual_position/for:child in figlb.children",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r44",
+   "anchor": "Figure.set_canvas",
+   "kind": "doc",
+   "line": 779
+  },
+  {
+   "id": "r45",
+   "anchor": "Figure.figimage",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r46",
+   "anchor": "Figure.set_size_inches",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r47",
+   "anchor": "Figure.set_size_inches#if:h is None",
+   "kind": "lead",
+   "line": 896
+  },
+  {
+   "id": "r48",
+   "anchor": "Figure.get_size_inches",
+   "kind": "doc",
+   "line": 915
+  },
+  {
+   "id": "r49",
+   "anchor": "Figure.get_edgecolor",
+   "kind": "doc",
+   "line": 930
+  },
+  {
+   "id": "r50",
+   "anchor": "Figure.get_facecolor",
+   "kind": "doc",
+   "line": 934
+  },
+  {
+   "id": "r51",
+   "anchor": "Figure.get_figwidth",
+   "kind": "doc",
+   "line": 938
+  },
+  {
+   "id": "r52",
+   "anchor": "Figure.get_figheight",
+   "kind": "doc",
+   "line": 942
+  },
+  {
+   "id": "r53",
+   "anchor": "Figure.get_dpi",
+   "kind": "doc",
+   "line": 946
+  },
+  {
+   "id": "r54",
+   "anchor": "Figure.get_frameon",
+   "kind": "doc",
+   "line": 950
+  },
+  {
+   "id": "r55",
+   "anchor": "Figure.set_edgecolor",
+   "kind": "doc",
+   "line": 958
+  },
+  {
+   "id": "r56",
+   "anchor": "Figure.set_facecolor",
+   "kind": "doc",
+   "line": 968
+  },
+  {
+   "id": "r57",
+   "anchor": "Figure.set_dpi",
+   "kind": "doc",
+   "line": 978
+  },
+  {
+   "id": "r58",
+   "anchor": "Figure.set_figwidth",
+   "kind": "doc",
+   "line": 989
+  },
+  {
+   "id": "r59",
+   "anchor": "Figure.set_figheight",
+   "kind": "doc",
+   "line": 1000
+  },
+  {
+   "id": "r60",
+   "anchor": "Figure.set_frameon",
+   "kind": "doc",
+   "line": 1011
+  },
+  {
+   "id": "r61",
+   "anchor": "Figure.delaxes",
+   "kind": "doc",
+   "line": 1026
+  },
+  {
+   "id": "r62",
+   "anchor": "Figure.add_artist",
+   "kind": "doc",
+   "line": 1036
+  },
+  {
+   "id": "r63",
+   "anchor": "Figure._make_key",
+   "kind": "doc",
+   "line": 1072
+  },
+  {
+   "id": "r64",
+   "anchor": "Figure._make_key.fixitems#assign:ret",
+   "kind": "lead",
+   "line": 1078
+  },
+  {
+   "id": "r65",
+   "anchor": "Figure._make_key.fixitems#for:k, v in items/try",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r66",
+   "anchor": "Figure._process_projection_requirements",
+   "kind": "doc",
+   "line": 1102
+  },
+  {
+   "id": "r67",
+   "anchor": "Figure._process_projection_requirements#assign:key",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r68",
+   "anchor": "Figure.add_axes",
+   "kind": "doc",
+   "line": 1135
+  },
+  {
+   "id": "r69",
+   "anchor": "Figure.add_axes#assign:key",
+   "kind": "lead",
+   "line": 1230
+  },
+  {
+   "id": "r70",
+   "anchor": "Figure.add_axes#if:isinstance(args[0], Axes)/else/assign:ax",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r71",
+   "anchor": "Figure.add_axes#if:isinstance(args[0], Axes)/else/assign:a",
+   "kind": "lead",
+   "line": 1257
+  },
+  {
+   "id": "r72",
+   "anchor": "Figure.add_subplot",
+   "kind": "doc",
+   "line": 1262
+  },
+  {
+   "id": "r73",
+   "anchor": "Figure.add_subplot#if:isinstance(args[0], SubplotBase)/assign:key",
+   "kind": "lead",
+   "line": 1393
+  },
+  {
+   "id": "r74",
+   "anchor": "Figure.add_subplot#if:isinstance(args[0], SubplotBase)/else/assign:ax",
+   "kind": "lead",
+   "line": 1399
+  },
+  {
+   "id": "r75",
+   "anchor": "Figure.add_subplot#if:isinstance(args[0], SubplotBase)/else/if:ax is not None/if:isinstance(ax, projection_class)/call:self.sca",
+   "kind": "lead",
+   "line": 1404
+  },
+  {
+   "id": "r76",
+   "anchor": "Figure.add_subplot#if:isinstance(args[0], SubplotBase)/else/if:ax is not None/if:isinstance(ax, projection_class)/else/call:self._axstack.remove",
+   "kind": "lead",
+   "line": 1412
+  },
+  {
+   "id": "r77",
+   "anchor": "Figure._add_axes_internal",
+   "kind": "doc",
+   "line": 1418
+  },
+  {
+   "id": "r78",
+   "anchor": "Figure.subplots",
+   "kind": "doc",
+   "line": 1427
+  },
+  {
+   "id": "r79",
+   "anchor": "Figure.subplots#if:isinstance(sharex, Integral)",
+   "kind": "lead",
+   "line": 1546
+  },
+  {
+   "id": "r80",
+   "anchor": "Figure.subplots#assign:subplot_kw",
+   "kind": "lead",
+   "line": 1557
+  },
+  {
+   "id": "r81",
+   "anchor": "Figure.subplots#if:self.get_constrained_layout()/else/assign:gs",
+   "kind": "lead",
+   "line": 1564
+  },
+  {
+   "id": "r82",
+   "anchor": "Figure.subplots#assign:axarr",
+   "kind": "lead",
+   "line": 1568
+  },
+  {
+   "id": "r83",
+   "anchor": "Figure.subplots#if:sharex in [\"col\", \"all\"]",
+   "kind": "lead",
+   "line": 1578
+  },
+  {
+   "id": "r84",
+   "anchor": "Figure.subplots#if:sharex in [\"col\", \"all\"]/for:ax in axarr[:-1, :].flat",
+   "kind": "lead",
+   "line": 1580
+  },
+  {
+   "id": "r85",
+   "anchor": "Figure.subplots#if:sharey in [\"row\", \"all\"]/for:ax in axarr[:, 1:].flat",
+   "kind": "lead",
+   "line": 1586
+  },
+  {
+   "id": "r86",
+   "anchor": "Figure.subplots#if:squeeze/return",
+   "kind": "lead",
+   "line": 1594
+  },
+  {
+   "id": "r87",
+   "anchor": "Figure.subplots#if:squeeze/else/return",
+   "kind": "lead",
+   "line": 1597
+  },
+  {
+   "id": "r88",
+   "anchor": "Figure.clf",
+   "kind": "doc",
+   "line": 1624
+  },
+  {
+   "id": "r89",
+   "anchor": "Figure.clf#for:ax in tuple(self.axes)",
+   "kind": "trail",
+   "line": 1634
+  },
+  {
+   "id": "r90",
+   "anchor": "Figure.clf#for:ax in tuple(self.axes)/call:self.delaxes",
+   "kind": "trail",
+   "line": 1636
+  },
+  {
+   "id": "r91",
+   "anchor": "Figure.clear",
+   "kind": "doc",
+   "line": 1655
+  },
+  {
+   "id": "r92",
+   "anchor": "Figure.draw",
+   "kind": "doc",
+   "line": 1662
+  },
+  {
+   "id": "r93",
+   "anchor": "Figure.draw#if:not self.get_visible()",
+   "kind": "lead",
+   "line": 1669
+  },
+  {
+   "id": "r94",
+   "anchor": "Figure.draw#try/if:self.get_tight_layout() and self.axes/try/except:ValueError/pass",
+   "kind": "post",
+   "line": 1704
+  },
+  {
+   "id": "r95",
+   "anchor": "Figure.draw_artist",
+   "kind": "doc",
+   "line": 1718
+  },
+  {
+   "id": "r96",
+   "anchor": "Figure.get_axes",
+   "kind": "doc",
+   "line": 1728
+  },
+  {
+   "id": "r97",
+   "anchor": "Figure.legend",
+   "kind": "lead",
+   "line": 1745
+  },
+  {
+   "id": "r98",
+   "anchor": "Figure.legend",
+   "kind": "doc",
+   "line": 1745
+  },
+  {
+   "id": "r99",
+   "anchor": "Figure.legend#if:len(extra_args)",
+   "kind": "lead",
+   "line": 1805
+  },
+  {
+   "id": "r100",
+   "anchor": "Figure.legend#if:len(extra_args)/pass",
+   "kind": "lead",
+   "line": 1814
+  },
+  {
+   "id": "r101",
+   "anchor": "Figure.text",
+   "kind": "doc",
+   "line": 1823
+  },
+  {
+   "id": "r102",
+   "anchor": "Figure.gca",
+   "kind": "doc",
+   "line": 1889
+  },
+  {
+   "id": "r103",
+   "anchor": "Figure.gca#if:cax is not None",
+   "kind": "lead",
+   "line": 1903
+  },
+  {
+   "id": "r104",
+   "anchor": "Figure.gca#if:cax is not None/if:not kwargs",
+   "kind": "lead",
+   "line": 1907
+  },
+  {
+   "id": "r105",
+   "anchor": "Figure.gca#if:cax is not None/if:not kwargs/else",
+   "kind": "lead",
+   "line": 1912
+  },
+  {
+   "id": "r106",
+   "anchor": "Figure.gca#if:cax is not None/if:not kwargs/else/assign:ckey",
+   "kind": "lead",
+   "line": 1918
+  },
+  {
+   "id": "r107",
+   "anchor": "Figure.gca#if:cax is not None/if:not kwargs/else/if:key==ckey and isinstance(cax, projection_class)",
+   "kind": "lead",
+   "line": 1923
+  },
+  {
+   "id": "r108",
+   "anchor": "Figure.gca#return",
+   "kind": "lead",
+   "line": 1932
+  },
+  {
+   "id": "r109",
+   "anchor": "Figure.sca",
+   "kind": "doc",
+   "line": 1934
+  },
+  {
+   "id": "r110",
+   "anchor": "Figure._gci",
+   "kind": "doc",
+   "line": 1941
+  },
+  {
+   "id": "r111",
+   "anchor": "Figure._gci#assign:cax",
+   "kind": "lead",
+   "line": 1946
+  },
+  {
+   "id": "r112",
+   "anchor": "Figure._gci#for:ax in reversed(self.axes)",
+   "kind": "lead",
+   "line": 1956
+  },
+  {
+   "id": "r113",
+   "anchor": "Figure.__getstate__#for:attr_to_pop in ('_axobservers', 'show', 'canvas', '_cachedRenderer')",
+   "kind": "lead",
+   "line": 1969
+  },
+  {
+   "id": "r114",
+   "anchor": "Figure.__getstate__#assign:state['__mpl_version__']",
+   "kind": "lead",
+   "line": 1974
+  },
+  {
+   "id": "r115",
+   "anchor": "Figure.__getstate__#if:getattr(self.canvas, 'manager', None) in _pylab_helpers.Gcf.figs.values()",
+   "kind": "lead",
+   "line": 1978
+  },
+  {
+   "id": "r116",
+   "anchor": "Figure.__getstate__#call:state.pop",
+   "kind": "lead",
+   "line": 1984
+  },
+  {
+   "id": "r117",
+   "anchor": "Figure.__getstate__#if:self._suptitle is not None",
+   "kind": "lead",
+   "line": 1986
+  },
+  {
+   "id": "r118",
+   "anchor": "Figure.__setstate__#assign:self._axobservers",
+   "kind": "lead",
+   "line": 2003
+  },
+  {
+   "id": "r119",
+   "anchor": "Figure.__setstate__#if:restore_to_pylab/import:matplotlib.pyplot",
+   "kind": "lead",
+   "line": 2009
+  },
+  {
+   "id": "r120",
+   "anchor": "Figure.__setstate__#if:restore_to_pylab/if:self.get_label()",
+   "kind": "todo",
+   "line": 2018
+  },
+  {
+   "id": "r121",
+   "anchor": "Figure.__setstate__.make_active",
+   "kind": "lead",
+   "line": 2022
+  },
+  {
+   "id": "r122",
+   "anchor": "Figure.add_axobserver",
+   "kind": "doc",
+   "line": 2034
+  },
+  {
+   "id": "r123",
+   "anchor": "Figure.savefig",
+   "kind": "doc",
+   "line": 2038
+  },
+  {
+   "id": "r124",
+   "anchor": "Figure.savefig#if:\"frameon\" in kwargs/else/assign:frameon",
+   "kind": "trail",
+   "line": 2158
+  },
+  {
+   "id": "r125",
+   "anchor": "Figure.colorbar",
+   "kind": "doc",
+   "line": 2191
+  },
+  {
+   "id": "r126",
+   "anchor": "Figure.colorbar#assign:current_ax",
+   "kind": "lead",
+   "line": 2202
+  },
+  {
+   "id": "r127",
+   "anchor": "Figure.colorbar#assign:NON_COLORBAR_KEYS",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r128",
+   "anchor": "Figure.subplots_adjust",
+   "kind": "doc",
+   "line": 2221
+  },
+  {
+   "id": "r129",
+   "anchor": "Figure.subplots_adjust#for:ax in self.axes/if:not isinstance(ax, SubplotBase)/if:isinstance(ax._sharex, SubplotBase)",
+   "kind": "lead",
+   "line": 2239
+  },
+  {
+   "id": "r130",
+   "anchor": "Figure.ginput",
+   "kind": "doc",
+   "line": 2250
+  },
+  {
+   "id": "r131",
+   "anchor": "Figure.waitforbuttonpress",
+   "kind": "doc",
+   "line": 2311
+  },
+  {
+   "id": "r132",
+   "anchor": "Figure.get_default_bbox_extra_artists#if:self.patch in bbox_artists",
+   "kind": "lead",
+   "line": 2332
+  },
+  {
+   "id": "r133",
+   "anchor": "Figure.get_tightbbox",
+   "kind": "doc",
+   "line": 2336
+  },
+  {
+   "id": "r134",
+   "anchor": "Figure.get_tightbbox#for:ax in self.axes/if:ax.get_visible()/try",
+   "kind": "lead",
+   "line": 2375
+  },
+  {
+   "id": "r135",
+   "anchor": "Figure.init_layoutbox",
+   "kind": "doc",
+   "line": 2395
+  },
+  {
+   "id": "r136",
+   "anchor": "Figure.execute_constrained_layout",
+   "kind": "doc",
+   "line": 2403
+  },
+  {
+   "id": "r137",
+   "anchor": "Figure.execute_constrained_layout#assign:fig",
+   "kind": "lead",
+   "line": 2423
+  },
+  {
+   "id": "r138",
+   "anchor": "Figure.tight_layout",
+   "kind": "doc",
+   "line": 2431
+  },
+  {
+   "id": "r139",
+   "anchor": "Figure.align_xlabels",
+   "kind": "doc",
+   "line": 2480
+  },
+  {
+   "id": "r140",
+   "anchor": "Figure.align_xlabels#for:ax in axs/assign:labpo",
+   "kind": "trail",
+   "line": 2531
+  },
+  {
+   "id": "r141",
+   "anchor": "Figure.align_xlabels#for:ax in axs/for:axc in axs",
+   "kind": "lead",
+   "line": 2539
+  },
+  {
+   "id": "r142",
+   "anchor": "Figure.align_xlabels#for:ax in axs/for:axc in axs/if:axc.xaxis.get_label_position()==labpo/if:labpo=='bottom' and rowc1==row1 or labpo=='top' and rowc0==row0/call:self._align_xlabel_grp.join",
+   "kind": "lead",
+   "line": 2547
+  },
+  {
+   "id": "r143",
+   "anchor": "Figure.align_ylabels",
+   "kind": "doc",
+   "line": 2549
+  },
+  {
+   "id": "r144",
+   "anchor": "Figure.align_ylabels#for:ax in axs/assign:labpo",
+   "kind": "trail",
+   "line": 2599
+  },
+  {
+   "id": "r145",
+   "anchor": "Figure.align_ylabels#for:ax in axs/for:axc in axs",
+   "kind": "lead",
+   "line": 2606
+  },
+  {
+   "id": "r146",
+   "anchor": "Figure.align_ylabels#for:ax in axs/for:axc in axs/if:axc != ax/if:axc.yaxis.get_label_position()==labpo/if:labpo=='left' and colc0==col0 or labpo=='right' and colc1==col1/call:self._align_ylabel_grp.join",
+   "kind": "lead",
+   "line": 2615
+  },
+  {
+   "id": "r147",
+   "anchor": "Figure.align_labels",
+   "kind": "doc",
+   "line": 2617
+  },
+  {
+   "id": "r148",
+   "anchor": "Figure.add_gridspec",
+   "kind": "doc",
+   "line": 2641
+  },
+  {
+   "id": "r149",
+   "anchor": "Figure.add_gridspec#assign:_",
+   "kind": "trail",
+   "line": 2680
+  },
+  {
+   "id": "r150",
+   "anchor": "figaspect",
+   "kind": "doc",
+   "line": 2686
+  },
+  {
+   "id": "r151",
+   "anchor": "figaspect#assign:figsize_min",
+   "kind": "lead",
+   "line": 2738
+  },
+  {
+   "id": "r152",
+   "anchor": "figaspect#assign:figsize_min",
+   "kind": "trail",
+   "line": 2738
+  },
+  {
+   "id": "r153",
+   "anchor": "figaspect#assign:figsize_max",
+   "kind": "trail",
+   "line": 2739
+  },
+  {
+   "id": "r154",
+   "anchor": "figaspect#if:isarray",
+   "kind": "lead",
+   "line": 2742
+  },
+  {
+   "id": "r155",
+   "anchor": "figaspect#assign:fig_height",
+   "kind": "lead",
+   "line": 2749
+  },
+  {
+   "id": "r156",
+   "anchor": "figaspect#assign:newsize",
+   "kind": "lead",
+   "line": 2752
+  },
+  {
+   "id": "r157",
+   "anchor": "figaspect#assign:newsize",
+   "kind": "lead",
+   "line": 2755
+  },
+  {
+   "id": "r158",
+   "anchor": "figaspect#assign:newsize",
+   "kind": "lead",
+   "line": 2758
+  },
+  {
+   "id": "r159",
+   "anchor": "figaspect#assign:newsize",
+   "kind": "lead",
+   "line": 2762
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 55908,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 13867,
+  "thinking_tokens": 6801,
+  "opus_cost_usd": 0.9100465,
+  "total_cost_usd": 0.9547154999999999,
+  "duration_ms": 118462,
+  "duration_api_ms": 120035,
+  "num_turns": 2
+ },
+ "wall_ms": 119406,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

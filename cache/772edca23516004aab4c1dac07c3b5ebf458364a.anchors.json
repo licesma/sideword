@@ -1,0 +1,505 @@
+{
+ "blob_sha": "772edca23516004aab4c1dac07c3b5ebf458364a",
+ "path": "astropy/modeling/physical_models.py",
+ "repo": "astropy/astropy",
+ "records": 80,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "BlackBody",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "BlackBody.temperature",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r5",
+   "anchor": "BlackBody._input_units_allow_dimensionless",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r6",
+   "anchor": "BlackBody.input_units_equivalencies",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r7",
+   "anchor": "BlackBody._native_units",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r8",
+   "anchor": "BlackBody._native_output_units",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r9",
+   "anchor": "BlackBody.__init__#if:hasattr(scale, \"unit\") and not scale.unit.is_equivalent(u.dimensionless_unscaled)",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r10",
+   "anchor": "BlackBody.evaluate",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r11",
+   "anchor": "BlackBody.evaluate#if:not isinstance(x, u.Quantity)/assign:in_x",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r12",
+   "anchor": "BlackBody.evaluate#with:u.add_enabled_equivalencies(u.spectral() + u.temperature())",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r13",
+   "anchor": "BlackBody.evaluate#if:np.any(temp < 0)",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r14",
+   "anchor": "BlackBody.evaluate#assign:bb_nu",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r15",
+   "anchor": "BlackBody.evaluate#if:self.scale.unit is not None/if:not hasattr(scale, \"unit\")",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r16",
+   "anchor": "BlackBody.evaluate#if:self.scale.unit is not None/if:not hasattr(scale, \"unit\")/assign:scale",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r17",
+   "anchor": "BlackBody.evaluate#assign:y",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r18",
+   "anchor": "BlackBody.evaluate#if:hasattr(temperature, \"unit\")",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "BlackBody.input_units#if:self._output_units.is_equivalent(self._native_output_units[\"SNU\"])",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r20",
+   "anchor": "BlackBody.input_units#if:self._output_units.is_equivalent(self._native_output_units[\"SNU\"])/else/return",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r21",
+   "anchor": "BlackBody.bolometric_flux",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r22",
+   "anchor": "BlackBody.bolometric_flux#if:self.scale.unit is not None/assign:scale",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r23",
+   "anchor": "BlackBody.bolometric_flux#assign:native_bolflux",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r24",
+   "anchor": "BlackBody.bolometric_flux#return",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r25",
+   "anchor": "BlackBody.lambda_max",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r26",
+   "anchor": "BlackBody.nu_max",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r27",
+   "anchor": "Drude1D",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r28",
+   "anchor": "Drude1D.evaluate",
+   "kind": "doc",
+   "line": 297
+  },
+  {
+   "id": "r29",
+   "anchor": "Drude1D.fit_deriv",
+   "kind": "doc",
+   "line": 308
+  },
+  {
+   "id": "r30",
+   "anchor": "Drude1D.x_0",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r31",
+   "anchor": "Drude1D.bounding_box",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r32",
+   "anchor": "Plummer1D",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r33",
+   "anchor": "Plummer1D.evaluate",
+   "kind": "doc",
+   "line": 400
+  },
+  {
+   "id": "r34",
+   "anchor": "Plummer1D.fit_deriv",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r35",
+   "anchor": "NFW",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r36",
+   "anchor": "NFW.mass",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r37",
+   "anchor": "NFW.mass",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r38",
+   "anchor": "NFW.concentration",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r39",
+   "anchor": "NFW.redshift",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r40",
+   "anchor": "NFW._input_units_allow_dimensionless",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r41",
+   "anchor": "NFW.__init__#if:cosmo is None",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r42",
+   "anchor": "NFW.__init__#if:cosmo is None/import:astropy.cosmology",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r43",
+   "anchor": "NFW.__init__#call:self._density_delta",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r44",
+   "anchor": "NFW.__init__#if:not isinstance(mass, u.Quantity)",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r45",
+   "anchor": "NFW.__init__#call:self._radius_s",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r46",
+   "anchor": "NFW.__init__#call:self._density_s",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r47",
+   "anchor": "NFW.evaluate",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r48",
+   "anchor": "NFW.evaluate#if:hasattr(r, \"unit\")",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r49",
+   "anchor": "NFW.evaluate#assign:radius_reduced",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r50",
+   "anchor": "NFW.evaluate#assign:density",
+   "kind": "lead",
+   "line": 574
+  },
+  {
+   "id": "r51",
+   "anchor": "NFW._density_delta",
+   "kind": "doc",
+   "line": 583
+  },
+  {
+   "id": "r52",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r53",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/if:massfactor[0].lower() == \"virial\"",
+   "kind": "lead",
+   "line": 593
+  },
+  {
+   "id": "r54",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/if:massfactor[0].lower() == \"virial\"/assign:delta",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r55",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/if:massfactor[0].lower() == \"virial\"/elif:massfactor[0].lower() == \"critical\"/assign:delta",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r56",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/if:massfactor[0].lower() == \"virial\"/elif:massfactor[0].lower() == \"mean\"/assign:delta",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r57",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/else/try/if:massfactor.lower() == \"virial\"",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r58",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/else/try/if:massfactor.lower() == \"virial\"/assign:delta",
+   "kind": "lead",
+   "line": 618
+  },
+  {
+   "id": "r59",
+   "anchor": "NFW._density_delta#if:isinstance(massfactor, tuple)/else/try/if:massfactor.lower() == \"virial\"/elif:massfactor[-1].lower() == \"c\" or massfactor[-1].lower() == \"m\"/assign:delta",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r60",
+   "anchor": "NFW._density_delta#if:masstype == \"virial\"",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r61",
+   "anchor": "NFW.A_NFW",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r62",
+   "anchor": "NFW._density_s",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r63",
+   "anchor": "NFW._density_s#if:not isinstance(mass, u.Quantity)",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r64",
+   "anchor": "NFW._density_s#assign:self.density_s",
+   "kind": "lead",
+   "line": 672
+  },
+  {
+   "id": "r65",
+   "anchor": "NFW.rho_scale",
+   "kind": "doc",
+   "line": 682
+  },
+  {
+   "id": "r66",
+   "anchor": "NFW._radius_s",
+   "kind": "doc",
+   "line": 688
+  },
+  {
+   "id": "r67",
+   "anchor": "NFW._radius_s#if:not isinstance(mass, u.Quantity)",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r68",
+   "anchor": "NFW._radius_s#assign:self.radius_s",
+   "kind": "lead",
+   "line": 702
+  },
+  {
+   "id": "r69",
+   "anchor": "NFW._radius_s#return",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r70",
+   "anchor": "NFW.r_s",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r71",
+   "anchor": "NFW.r_virial",
+   "kind": "doc",
+   "line": 718
+  },
+  {
+   "id": "r72",
+   "anchor": "NFW.r_max",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r73",
+   "anchor": "NFW.v_max",
+   "kind": "doc",
+   "line": 732
+  },
+  {
+   "id": "r74",
+   "anchor": "NFW.circular_velocity",
+   "kind": "doc",
+   "line": 738
+  },
+  {
+   "id": "r75",
+   "anchor": "NFW.circular_velocity#if:hasattr(r, \"unit\")",
+   "kind": "lead",
+   "line": 766
+  },
+  {
+   "id": "r76",
+   "anchor": "NFW.circular_velocity#assign:v_profile",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r77",
+   "anchor": "NFW.circular_velocity#assign:reduced_radius",
+   "kind": "lead",
+   "line": 779
+  },
+  {
+   "id": "r78",
+   "anchor": "NFW.circular_velocity#assign:velocity",
+   "kind": "lead",
+   "line": 784
+  },
+  {
+   "id": "r79",
+   "anchor": "NFW.input_units#return",
+   "kind": "lead",
+   "line": 794
+  },
+  {
+   "id": "r80",
+   "anchor": "NFW.return_units#if:self.mass.unit is None",
+   "kind": "lead",
+   "line": 800
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19559,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7465,
+  "thinking_tokens": 3663,
+  "opus_cost_usd": 0.3865065,
+  "total_cost_usd": 0.40110749999999995,
+  "duration_ms": 65936,
+  "duration_api_ms": 67982,
+  "num_turns": 2
+ },
+ "wall_ms": 66857,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

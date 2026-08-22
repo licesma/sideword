@@ -1,0 +1,583 @@
+{
+ "blob_sha": "76f22b89afc38a52782eca9560394c60335de508",
+ "path": "seaborn/matrix.py",
+ "repo": "mwaskom/seaborn",
+ "records": 93,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_index_to_label",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r3",
+   "anchor": "_index_to_ticklabels",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r4",
+   "anchor": "_convert_colors",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "_convert_colors#try/return",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r6",
+   "anchor": "_convert_colors#try/except:ValueError/return",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "_matrix_mask",
+   "kind": "doc",
+   "line": 60
+  },
+  {
+   "id": "r8",
+   "anchor": "_matrix_mask#if:isinstance(mask, np.ndarray)/if:mask.shape != data.shape",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r9",
+   "anchor": "_matrix_mask#if:isinstance(mask, np.ndarray)/elif:isinstance(mask, pd.DataFrame)/if:not mask.index.equals(data.index) and mask.columns.equals(data.columns)",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r10",
+   "anchor": "_matrix_mask#assign:mask",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "_HeatMapper",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r12",
+   "anchor": "_HeatMapper.__init__",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r13",
+   "anchor": "_HeatMapper.__init__#if:isinstance(data, pd.DataFrame)",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r14",
+   "anchor": "_HeatMapper.__init__#assign:mask",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r15",
+   "anchor": "_HeatMapper.__init__#assign:xtickevery",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r16",
+   "anchor": "_HeatMapper.__init__#assign:xlabel",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r17",
+   "anchor": "_HeatMapper.__init__#call:self._determine_cmap_params",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "_HeatMapper.__init__#if:annot is None or annot is False",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r19",
+   "anchor": "_HeatMapper.__init__#assign:self.data",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r20",
+   "anchor": "_HeatMapper._determine_cmap_params",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r21",
+   "anchor": "_HeatMapper._determine_cmap_params#assign:calc_data",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r22",
+   "anchor": "_HeatMapper._determine_cmap_params#if:cmap is None",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r23",
+   "anchor": "_HeatMapper._determine_cmap_params#if:center is not None",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r24",
+   "anchor": "_HeatMapper._determine_cmap_params#if:center is not None/assign:bad",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r25",
+   "anchor": "_HeatMapper._determine_cmap_params#if:center is not None/assign:under",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r26",
+   "anchor": "_HeatMapper._annotate_heatmap",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r27",
+   "anchor": "_HeatMapper._skip_ticks",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r28",
+   "anchor": "_HeatMapper._auto_ticks",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r29",
+   "anchor": "_HeatMapper.plot",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r30",
+   "anchor": "_HeatMapper.plot#call:despine",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r31",
+   "anchor": "_HeatMapper.plot#if:\"norm\" not in kws",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r32",
+   "anchor": "_HeatMapper.plot#assign:mesh",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r33",
+   "anchor": "_HeatMapper.plot#call:ax.set",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r34",
+   "anchor": "_HeatMapper.plot#call:ax.invert_yaxis",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r35",
+   "anchor": "_HeatMapper.plot#if:self.cbar",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r36",
+   "anchor": "_HeatMapper.plot#if:self.cbar/if:kws.get('rasterized', False)",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r37",
+   "anchor": "_HeatMapper.plot#if:isinstance(self.xticks, str) and self.xticks == \"auto\"",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r38",
+   "anchor": "_HeatMapper.plot#call:plt.setp",
+   "kind": "trail",
+   "line": 337
+  },
+  {
+   "id": "r39",
+   "anchor": "_HeatMapper.plot#call:_draw_figure",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r40",
+   "anchor": "_HeatMapper.plot#call:ax.set",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r41",
+   "anchor": "_HeatMapper.plot#if:self.annot",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r42",
+   "anchor": "heatmap",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r43",
+   "anchor": "heatmap#assign:plotter",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r44",
+   "anchor": "heatmap#assign:kwargs[\"linewidths\"]",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r45",
+   "anchor": "heatmap#if:ax is None",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r46",
+   "anchor": "_DendrogramPlotter",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r47",
+   "anchor": "_DendrogramPlotter.__init__",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r48",
+   "anchor": "_DendrogramPlotter.__init__#assign:ticks",
+   "kind": "lead",
+   "line": 501
+  },
+  {
+   "id": "r49",
+   "anchor": "_DendrogramPlotter._calculate_linkage_fastcluster#assign:euclidean_methods",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r50",
+   "anchor": "_DendrogramPlotter.calculate_dendrogram",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r51",
+   "anchor": "_DendrogramPlotter.reordered_ind",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r52",
+   "anchor": "_DendrogramPlotter.plot",
+   "kind": "doc",
+   "line": 585
+  },
+  {
+   "id": "r53",
+   "anchor": "_DendrogramPlotter.plot#if:self.rotate/call:ax.set_ylim",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r54",
+   "anchor": "_DendrogramPlotter.plot#if:self.rotate/else/call:ax.set_xlim",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r55",
+   "anchor": "_DendrogramPlotter.plot#call:_draw_figure",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r56",
+   "anchor": "dendrogram",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r57",
+   "anchor": "ClusterGrid.__init__",
+   "kind": "doc",
+   "line": 698
+  },
+  {
+   "id": "r58",
+   "anchor": "ClusterGrid.__init__#if:cbar_pos is None/else/assign:self.ax_cbar",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r59",
+   "anchor": "ClusterGrid.__init__#if:cbar_pos is None/else/assign:self.cax",
+   "kind": "trail",
+   "line": 768
+  },
+  {
+   "id": "r60",
+   "anchor": "ClusterGrid._preprocess_colors",
+   "kind": "doc",
+   "line": 774
+  },
+  {
+   "id": "r61",
+   "anchor": "ClusterGrid._preprocess_colors#if:colors is not None/if:isinstance(colors, (pd.DataFrame, pd.Series))/if:(not hasattr(data, \"index\") and axis == 0) or (not hasattr(data, \"columns\") and axis == 1)",
+   "kind": "lead",
+   "line": 782
+  },
+  {
+   "id": "r62",
+   "anchor": "ClusterGrid._preprocess_colors#if:colors is not None/if:isinstance(colors, (pd.DataFrame, pd.Series))/if:axis == 0",
+   "kind": "lead",
+   "line": 792
+  },
+  {
+   "id": "r63",
+   "anchor": "ClusterGrid._preprocess_colors#if:colors is not None/if:isinstance(colors, (pd.DataFrame, pd.Series))/assign:colors",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r64",
+   "anchor": "ClusterGrid._preprocess_colors#if:colors is not None/if:isinstance(colors, (pd.DataFrame, pd.Series))/if:isinstance(colors, pd.DataFrame)",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r65",
+   "anchor": "ClusterGrid.format_data",
+   "kind": "doc",
+   "line": 816
+  },
+  {
+   "id": "r66",
+   "anchor": "ClusterGrid.format_data#if:pivot_kws is not None",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r67",
+   "anchor": "ClusterGrid.z_score",
+   "kind": "doc",
+   "line": 837
+  },
+  {
+   "id": "r68",
+   "anchor": "ClusterGrid.standard_scale",
+   "kind": "doc",
+   "line": 867
+  },
+  {
+   "id": "r69",
+   "anchor": "ClusterGrid.standard_scale#if:axis == 1",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r70",
+   "anchor": "ClusterGrid.dim_ratios",
+   "kind": "doc",
+   "line": 900
+  },
+  {
+   "id": "r71",
+   "anchor": "ClusterGrid.dim_ratios#if:colors is not None/if:np.ndim(colors) > 2",
+   "kind": "lead",
+   "line": 906
+  },
+  {
+   "id": "r72",
+   "anchor": "ClusterGrid.dim_ratios#call:ratios.append",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r73",
+   "anchor": "ClusterGrid.color_list_to_matrix_and_cmap",
+   "kind": "doc",
+   "line": 919
+  },
+  {
+   "id": "r74",
+   "anchor": "ClusterGrid.color_list_to_matrix_and_cmap#try/except:ValueError/assign:m, n",
+   "kind": "lead",
+   "line": 946
+  },
+  {
+   "id": "r75",
+   "anchor": "ClusterGrid.color_list_to_matrix_and_cmap#try/else/assign:m, n",
+   "kind": "lead",
+   "line": 951
+  },
+  {
+   "id": "r76",
+   "anchor": "ClusterGrid.color_list_to_matrix_and_cmap#assign:unique_colors",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r77",
+   "anchor": "ClusterGrid.color_list_to_matrix_and_cmap#assign:matrix",
+   "kind": "lead",
+   "line": 963
+  },
+  {
+   "id": "r78",
+   "anchor": "ClusterGrid.plot_dendrograms#if:row_cluster",
+   "kind": "lead",
+   "line": 973
+  },
+  {
+   "id": "r79",
+   "anchor": "ClusterGrid.plot_dendrograms#if:col_cluster",
+   "kind": "lead",
+   "line": 983
+  },
+  {
+   "id": "r80",
+   "anchor": "ClusterGrid.plot_colors",
+   "kind": "doc",
+   "line": 995
+  },
+  {
+   "id": "r81",
+   "anchor": "ClusterGrid.plot_colors#assign:kws",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r82",
+   "anchor": "ClusterGrid.plot_colors#if:self.row_colors is not None",
+   "kind": "lead",
+   "line": 1020
+  },
+  {
+   "id": "r83",
+   "anchor": "ClusterGrid.plot_colors#if:self.row_colors is not None/if:self.row_color_labels is not None",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r84",
+   "anchor": "ClusterGrid.plot_colors#if:self.row_colors is not None/if:row_color_labels is not False",
+   "kind": "lead",
+   "line": 1034
+  },
+  {
+   "id": "r85",
+   "anchor": "ClusterGrid.plot_colors#if:self.col_colors is not None",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r86",
+   "anchor": "ClusterGrid.plot_colors#if:self.col_colors is not None/if:self.col_color_labels is not None",
+   "kind": "lead",
+   "line": 1045
+  },
+  {
+   "id": "r87",
+   "anchor": "ClusterGrid.plot_colors#if:self.col_colors is not None/if:col_color_labels is not False",
+   "kind": "lead",
+   "line": 1054
+  },
+  {
+   "id": "r88",
+   "anchor": "ClusterGrid.plot_matrix#assign:xtl",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r89",
+   "anchor": "ClusterGrid.plot_matrix#assign:annot",
+   "kind": "lead",
+   "line": 1077
+  },
+  {
+   "id": "r90",
+   "anchor": "ClusterGrid.plot_matrix#call:kws.setdefault",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r91",
+   "anchor": "ClusterGrid.plot_matrix#if:self.ax_cbar is None/else/call:self.ax_cbar.set_axis_off",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r92",
+   "anchor": "ClusterGrid.plot#if:kws.get(\"square\", False)",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r93",
+   "anchor": "clustermap",
+   "kind": "doc",
+   "line": 1146
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28902,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8614,
+  "thinking_tokens": 3914,
+  "opus_cost_usd": 0.5086615,
+  "total_cost_usd": 0.5307855,
+  "duration_ms": 74016,
+  "duration_api_ms": 75207,
+  "num_turns": 2
+ },
+ "wall_ms": 75239,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,319 @@
+{
+ "blob_sha": "1258920d602792ec096bf499a119a9efa7e44385",
+ "path": "lib/matplotlib/gridspec.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 49,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "GridSpecBase",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r3",
+   "anchor": "GridSpecBase.__init__",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "GridSpecBase.get_geometry",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "GridSpecBase.get_subplot_params#pass",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r6",
+   "anchor": "GridSpecBase.new_subplotspec",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r7",
+   "anchor": "GridSpecBase.set_width_ratios",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r8",
+   "anchor": "GridSpecBase.get_width_ratios",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "GridSpecBase.set_height_ratios",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r10",
+   "anchor": "GridSpecBase.get_height_ratios",
+   "kind": "doc",
+   "line": 137
+  },
+  {
+   "id": "r11",
+   "anchor": "GridSpecBase.get_grid_positions",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r12",
+   "anchor": "GridSpecBase.get_grid_positions#assign:cell_h",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r13",
+   "anchor": "GridSpecBase.get_grid_positions#assign:cell_w",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r14",
+   "anchor": "GridSpecBase._check_gridspec_exists",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r15",
+   "anchor": "GridSpecBase._check_gridspec_exists#for:ax in figure.get_axes()/if:hasattr(ax, 'get_subplotspec')/if:hasattr(gs, 'get_topmost_subplotspec')/assign:gs",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r16",
+   "anchor": "GridSpecBase._check_gridspec_exists#return",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r17",
+   "anchor": "GridSpecBase.__getitem__",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r18",
+   "anchor": "GridSpecBase.__getitem__._normalize",
+   "kind": "trail",
+   "line": 231
+  },
+  {
+   "id": "r19",
+   "anchor": "GridSpecBase.__getitem__._normalize#if:isinstance(key, slice)/else/if:0<=key<size/elif:axis is not None/else",
+   "kind": "trail",
+   "line": 247
+  },
+  {
+   "id": "r20",
+   "anchor": "GridSpecBase.__getitem__#if:isinstance(key, tuple)/else",
+   "kind": "trail",
+   "line": 259
+  },
+  {
+   "id": "r21",
+   "anchor": "GridSpecBase.subplots",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r22",
+   "anchor": "GridSpecBase.subplots#if:isinstance(sharex, Integral)",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r23",
+   "anchor": "GridSpecBase.subplots#assign:subplot_kw",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r24",
+   "anchor": "GridSpecBase.subplots#assign:axarr",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r25",
+   "anchor": "GridSpecBase.subplots#if:sharex in [\"col\", \"all\"]",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r26",
+   "anchor": "GridSpecBase.subplots#if:squeeze/return",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r27",
+   "anchor": "GridSpecBase.subplots#if:squeeze/else/return",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r28",
+   "anchor": "GridSpec",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r29",
+   "anchor": "GridSpec.__init__",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r30",
+   "anchor": "GridSpec.update",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r31",
+   "anchor": "GridSpec.get_subplot_params",
+   "kind": "doc",
+   "line": 421
+  },
+  {
+   "id": "r32",
+   "anchor": "GridSpec.locally_modified_subplot_params",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r33",
+   "anchor": "GridSpec.tight_layout",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r34",
+   "anchor": "GridSpecFromSubplotSpec",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r35",
+   "anchor": "GridSpecFromSubplotSpec.__init__",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r36",
+   "anchor": "GridSpecFromSubplotSpec.get_subplot_params",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r37",
+   "anchor": "GridSpecFromSubplotSpec.get_topmost_subplotspec",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r38",
+   "anchor": "SubplotSpec",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r39",
+   "anchor": "SubplotSpec._from_subplot_args",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r40",
+   "anchor": "SubplotSpec.num2",
+   "kind": "lead",
+   "line": 618
+  },
+  {
+   "id": "r41",
+   "anchor": "SubplotSpec.get_geometry",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r42",
+   "anchor": "SubplotSpec.rowspan",
+   "kind": "doc",
+   "line": 641
+  },
+  {
+   "id": "r43",
+   "anchor": "SubplotSpec.colspan",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r44",
+   "anchor": "SubplotSpec.colspan#assign:c1, c2",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r45",
+   "anchor": "SubplotSpec.get_position",
+   "kind": "doc",
+   "line": 667
+  },
+  {
+   "id": "r46",
+   "anchor": "SubplotSpec.get_topmost_subplotspec",
+   "kind": "doc",
+   "line": 683
+  },
+  {
+   "id": "r47",
+   "anchor": "SubplotSpec.__eq__",
+   "kind": "doc",
+   "line": 693
+  },
+  {
+   "id": "r48",
+   "anchor": "SubplotSpec.__eq__#return",
+   "kind": "lead",
+   "line": 699
+  },
+  {
+   "id": "r49",
+   "anchor": "SubplotSpec.subgridspec",
+   "kind": "doc",
+   "line": 707
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18187,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4028,
+  "thinking_tokens": 1808,
+  "opus_cost_usd": 0.2868615,
+  "total_cost_usd": 0.2999615,
+  "duration_ms": 47900,
+  "duration_api_ms": 49147,
+  "num_turns": 2
+ },
+ "wall_ms": 48785,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

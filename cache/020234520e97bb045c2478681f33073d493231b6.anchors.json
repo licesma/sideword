@@ -1,0 +1,97 @@
+{
+ "blob_sha": "020234520e97bb045c2478681f33073d493231b6",
+ "path": "django/contrib/gis/gdal/libgdal.py",
+ "repo": "django/django",
+ "records": 12,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#if:lib_path/elif:os.name=='nt'/assign:lib_names",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#if:lib_path/elif:os.name=='nt'/elif:os.name=='posix'/assign:lib_names",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#if:lib_names",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r5",
+   "anchor": "lgdal",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#if:os.name=='nt'",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r7",
+   "anchor": "std_call",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r8",
+   "anchor": "_version_info",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r9",
+   "anchor": "_version_info",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r10",
+   "anchor": "gdal_version",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r11",
+   "anchor": "gdal_full_version",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r12",
+   "anchor": "CPLErrorHandler",
+   "kind": "lead",
+   "line": 104
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5615,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1011,
+  "thinking_tokens": 493,
+  "opus_cost_usd": 0.0857165,
+  "total_cost_usd": 0.0888085,
+  "duration_ms": 10964,
+  "duration_api_ms": 12167,
+  "num_turns": 2
+ },
+ "wall_ms": 12917,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

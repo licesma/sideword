@@ -1,0 +1,5934 @@
+{
+ "instance_id": "sympy__sympy-20916",
+ "repo": "sympy/sympy",
+ "base_commit": "82298df6a51491bfaad0c6d1980e7e3ca808ae93",
+ "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
+ "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "cache_dir": "/Users/esteban/repos/sideword/cache",
+ "selected": 845,
+ "skipped": {
+  "not_py": 376,
+  "test_path": 637
+ },
+ "test_patch_paths": [
+  "sympy/printing/tests/test_conventions.py",
+  "sympy/testing/quality_unicode.py"
+ ],
+ "files": [
+  {
+   "path": ".ci/parse_durations_log.py",
+   "blob_sha": "9c24694f82294fdc35a8210d69e900c2bca0da86",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/ask_update.py",
+   "blob_sha": "97d0485b36822aca72be5b48b77dc486df66bfa4",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/authors_update.py",
+   "blob_sha": "e304ea0cc24099d41fb01f0b0eb747e78b01b624",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/coverage_doctest.py",
+   "blob_sha": "87e4eb74cefb618527ecd618764348777fb384f6",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/coverage_report.py",
+   "blob_sha": "544d5d26f1322ed3782ceec5e79c9033c9793ef8",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/generate_module_list.py",
+   "blob_sha": "0811c1df232e3b78f75a46ca3d83c7a383c5c01c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/generate_test_list.py",
+   "blob_sha": "b364b2a3271bc61ffc2a0d571715a002f04298bf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/get_sympy.py",
+   "blob_sha": "3b948bbd29b211c718ae6c1bfd8354d61d7a4bcc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/mailmap_update.py",
+   "blob_sha": "d5f85859ac9af89a11e6741c7722498e8f75b613",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/sympy_time.py",
+   "blob_sha": "f61ee1ef07430c27efd6cc808eb4402143458bc0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "bin/sympy_time_cache.py",
+   "blob_sha": "58d5680c0e0194c18bdcaa93e22d09491a487742",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/api/conf.py",
+   "blob_sha": "825d967d3e05b05cfe0c49bc56b883414852f27f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/ext/docscrape.py",
+   "blob_sha": "6e94b4964c2d97d5310914feb2cf712f97ed79d5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/ext/docscrape_sphinx.py",
+   "blob_sha": "d08e966980d2f4de1fef1be0b87db09b48a8a5a3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/ext/numpydoc.py",
+   "blob_sha": "ff9910bf346fb21a16579d5004bcf4893add54ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/ext/sympylive.py",
+   "blob_sha": "3c37290f20351cb863ba62d7582fdf82130f3ce8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/generate_logos.py",
+   "blob_sha": "bdcada2da384ff2e5eeaedafae0d963bee3d4ba8",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "doc/src/conf.py",
+   "blob_sha": "bd40367baeb04eb1782036959ae736cc644b9c6f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/autowrap_integrators.py",
+   "blob_sha": "3fbfdf7aae12f050c0a1f9142fce945f28dfa86d",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/autowrap_ufuncify.py",
+   "blob_sha": "4c62e4d003bd52663f285f67f320b31687a5f82a",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/curvilinear_coordinates.py",
+   "blob_sha": "0d4f9c8374bd73fd083998fa3ef6dbd538e8263c",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/dense_coding_example.py",
+   "blob_sha": "9d3d42ea9cc9df77758b929d8536279a8ae9d52d",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/fem.py",
+   "blob_sha": "732a2c4a801364957133457d9787882b4e3d5baf",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/gibbs_phenomenon.py",
+   "blob_sha": "2eb7767cc8ff69e84dd7c9f463bab55f1b24ab3e",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/grover_example.py",
+   "blob_sha": "5d52c28408e334270390f006054ee713ebaac2ea",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/hydrogen.py",
+   "blob_sha": "c3bd9b0971c80f3119bbc6db50a24ea9fcea068e",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/pidigits.py",
+   "blob_sha": "b9450a382ea6eb14c9e7596dac9863cf28872521",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/pyglet_plotting.py",
+   "blob_sha": "8bacb20d8724a6a165ae23021186213c889bbde6",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/qft.py",
+   "blob_sha": "135e19a95eff23755f077e977c4b3bc3431a68c9",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/advanced/relativity.py",
+   "blob_sha": "56a9eafd449d5c9c37e01e92e6ea26332b60f173",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/all.py",
+   "blob_sha": "8a9135007139d1f0f6c44cc2cf985b869d68f09e",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/basic.py",
+   "blob_sha": "9d5f7d056528674c60888b4d0fce8a3dc891d68d",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/differentiation.py",
+   "blob_sha": "342a1cf38fdc757cb4b76ca7f4a8b087f6ce3f62",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/expansion.py",
+   "blob_sha": "8578be891bae9b4db7ba0c3905b4eaf6b3c735c5",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/functions.py",
+   "blob_sha": "66b1cb5d0f698e0e11e8aeb5afb2d2e3601d5cf4",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/limits_examples.py",
+   "blob_sha": "ec9cc1c80aeda6c560b6e839cbbf8c9384ee6963",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/plot_examples.py",
+   "blob_sha": "b1feab0dfb9eb9e18497d077e3b0f87aee8f4a7a",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/plotting_nice_plot.py",
+   "blob_sha": "a58d81ad6366b3fd55c28d775a9adb118b277748",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/precision.py",
+   "blob_sha": "8f27731388be1576e2873f9f075b4241081a4718",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/print_pretty.py",
+   "blob_sha": "08070e21b6b47b2b56bd8ad55e33a8a348bfe6ed",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/series.py",
+   "blob_sha": "6ea50692feb92a1de53932f3bc441602b6d71ffa",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/beginner/substitution.py",
+   "blob_sha": "e99c3186f4db881b06f50d8c6a42553299402e47",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/coupled_cluster.py",
+   "blob_sha": "dcf388070c864a23e5da224a3aafce207877d63c",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/differential_equations.py",
+   "blob_sha": "2b04ec4d584afea168705921543cb528dc1c9d49",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/infinite_1d_box.py",
+   "blob_sha": "646b26ce38313d1966fd26085a1f1333c2b05ec6",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/mplot2d.py",
+   "blob_sha": "d13974b0e0c01277388449138ad44c730f34fe86",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/mplot3d.py",
+   "blob_sha": "ee1ea8d503d52e91cb63f6903f8681ecd9147b4e",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/partial_differential_eqs.py",
+   "blob_sha": "fa70f4b2dc1d5324fff73854949560d9b2528099",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/print_gtk.py",
+   "blob_sha": "0da1ec2d38856bdc5571d2798c7ba30d5ab8db5c",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/sample.py",
+   "blob_sha": "52e752e4fc829e3ab48e629f1b52f6d9f79f1310",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/trees.py",
+   "blob_sha": "73035db125505a15954b2b2f23df24f721faa8c5",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "examples/intermediate/vandermonde.py",
+   "blob_sha": "408dd72e25a6e102471948b82b31581a840e56cc",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "isympy.py",
+   "blob_sha": "7d9e4e6bb873d5e1fe20c6ed0da640c4413bb227",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/authors.py",
+   "blob_sha": "e1e7e24a31b84605f3cfb755df0c96b6fa1ff4f2",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/build_docs.py",
+   "blob_sha": "5579558e29246bfab24da59109b65da895cb0b01",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/compare_tar_against_git.py",
+   "blob_sha": "c29fb4560e191126ab328ba54182f84df888c000",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/fabfile.py",
+   "blob_sha": "808ccefa5cefdc5cfd5e2e9624ee640e9f730486",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/github_release.py",
+   "blob_sha": "3e7516e4f9456cb50d4d9a8a35f1cbae09b5b968",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/helpers.py",
+   "blob_sha": "a42ed71e0077fbd67d29f7348545d320d9eff6f2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/releasecheck.py",
+   "blob_sha": "6e39769159e363ce28b3f805794e0ae75857d0ed",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/sha256.py",
+   "blob_sha": "12a77d9237a5e4dc6a4173f505ed200a6b5e3fe5",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "release/update_docs.py",
+   "blob_sha": "96d1f68ebbea1a54a6a9ca8fb4ad39c57e71d084",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "setup.py",
+   "blob_sha": "5bcc463b4c064d2c36a37be2f6ac3ed7e3d63763",
+   "mode": "100755",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "setupegg.py",
+   "blob_sha": "3f519325642fa0dbd4c039729b2e44b0a196c8a6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/__init__.py",
+   "blob_sha": "d57e418e0c85fb74bf83a41fd6dda2be902b5cf9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/abc.py",
+   "blob_sha": "f75169b47cd07a13c6858dbae36bd448d43d61e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/algebras/__init__.py",
+   "blob_sha": "58013d2e0377a016d1a21fbf21c344ee76765189",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/algebras/quaternion.py",
+   "blob_sha": "0d3a3534497c74c4b37441e5bf7677d9ff6a7b26",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/__init__.py",
+   "blob_sha": "6289cee5d91a781e173ce74d323ef5c85a4ecb56",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/ask.py",
+   "blob_sha": "fb00dac5b3253a642899467e200e59e5545f1117",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/ask_generated.py",
+   "blob_sha": "9a97a0d5c51fdaa470d0683fb5d659b8d79754fe",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/assume.py",
+   "blob_sha": "a4e7526c951baec60f67b7f5a9adb5c20435c858",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/cnf.py",
+   "blob_sha": "7877d4f52fc33ed42e23d0379a19d6dc66facf85",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/__init__.py",
+   "blob_sha": "0fbe618eb8b43e252ac8fb0baf1eeee22bf347cc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/calculus.py",
+   "blob_sha": "45e23ea9ae7bb259cdd30cb4be3f7ff121ad5feb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/common.py",
+   "blob_sha": "329377b8bbe36691354e0df841cc2c6affc23f52",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/matrices.py",
+   "blob_sha": "c7cceda7d30441b4ae815f97d514d99b83b77bc7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/ntheory.py",
+   "blob_sha": "eb2a7a1dd0d89d4531945c9ba51f0b4d7477b2d1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/order.py",
+   "blob_sha": "ffd4f0519c171eda107090f6a1f55a29e9e6c19f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/handlers/sets.py",
+   "blob_sha": "68539d7be9a61fb20bba9fc360d2012e0e004198",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/__init__.py",
+   "blob_sha": "8e294544bfdce13633ecff762ff42861aa12719f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/calculus.py",
+   "blob_sha": "ef0cb3c60b027bc7f7464a7d27058393c3c3ae65",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/common.py",
+   "blob_sha": "771993d574f262ca36a99550845e43213643a58b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/matrices.py",
+   "blob_sha": "39c4ddacae7d822501e965f17f1274bf0e976f0d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/ntheory.py",
+   "blob_sha": "6c598e0ed1bd4a1170aa28044f9ae6de2fa1a1e0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/order.py",
+   "blob_sha": "ada0ae0d52f0ba38d9d1f331fc3a79e012cadee0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/predicates/sets.py",
+   "blob_sha": "88990246c9877a5c9fa7395c40d01df002b4ef5b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/refine.py",
+   "blob_sha": "e67887ac4775d0ce4ba9cbc36b6b060cb2235598",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/satask.py",
+   "blob_sha": "d672f75cfc7f4fdac27e9778c8826506cf021e6a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/assumptions/sathandlers.py",
+   "blob_sha": "8551340ac8089e9165cbd22e8ac5d097d4be4b4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/benchmarks/bench_discrete_log.py",
+   "blob_sha": "76b273909e415318a7d3bace00ffff2a0bc53762",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/benchmarks/bench_meijerint.py",
+   "blob_sha": "c6ad39596fa5967162ba030d99878bd3778dcb98",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/benchmarks/bench_symbench.py",
+   "blob_sha": "75f0c289078974d236d6e1c1e74cb84edf9bbf88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/calculus/__init__.py",
+   "blob_sha": "ff54b743760593713b13526c4b0b53caa2fe20cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/calculus/euler.py",
+   "blob_sha": "644267dc8fa4cfddf67d546d7750d6722d7572cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/calculus/finite_diff.py",
+   "blob_sha": "1d62d4b0e1bcfda7856530f12f825e42403f2287",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/calculus/singularities.py",
+   "blob_sha": "d83fbf99926a14195912bde9bedc9e5024d6363c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/calculus/util.py",
+   "blob_sha": "112dae11e068dbe2701484b6c4337e5b83b108f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/categories/__init__.py",
+   "blob_sha": "4c5007308a1b232e57f9ed164276862df0c5f265",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/categories/baseclasses.py",
+   "blob_sha": "87496600a4c6edccbffdd7b73cdf2f72227ac141",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/categories/diagram_drawing.py",
+   "blob_sha": "3e31370c3e96878d3de0f08fb2aea2991912b42f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/__init__.py",
+   "blob_sha": "62b195633bae28371bdf9e79317050d7fa7125ae",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/algorithms.py",
+   "blob_sha": "3bc0b012ac40b237f580c62b5036e5cc7e95aab8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/approximations.py",
+   "blob_sha": "9369be09faadbf79d8666d59e48ceaa456dfa02b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/array_utils.py",
+   "blob_sha": "092863588d82f964d2c518e4934876517ee162b7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/ast.py",
+   "blob_sha": "1f3f313db948f9babf2e738ec6e16c30895be11f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/cfunctions.py",
+   "blob_sha": "a9b9359337ec6588f6b92ce7b565d103dc3685da",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/cnodes.py",
+   "blob_sha": "3a8a346cfa32b5555487bf0b7d26ace5292dc2d9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/cutils.py",
+   "blob_sha": "2182ac1f3455da490a0bb57f8d6731fe8a29a232",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/cxxnodes.py",
+   "blob_sha": "2b6a27a65413b21d4bc235a7a685808dd4bad53f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/fnodes.py",
+   "blob_sha": "88fe2d0c3056ab02444af0910b3acc40fa033b3c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/futils.py",
+   "blob_sha": "4a1f5751fbd4d6b44d99c69a74ad89a8496f8648",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/matrix_nodes.py",
+   "blob_sha": "4bbdc1ead9afcb0b40e2a84ebf5534ee37f4b18d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/numpy_nodes.py",
+   "blob_sha": "cfc60a52500e361e1f556eef10f8353a73169751",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/pyutils.py",
+   "blob_sha": "a72682bdac7d5c42a0c7362cd744e856a64889fa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/rewriting.py",
+   "blob_sha": "0899fb925e94e3f9ac8b34b9449e837bcfee7ba5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/codegen/scipy_nodes.py",
+   "blob_sha": "88b8671159a3db9b7adc88c6acde53a8e1b47356",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/__init__.py",
+   "blob_sha": "c04fb9915992714cc178244806310ddbce809a78",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/coset_table.py",
+   "blob_sha": "e99d3b6af546d7854e89ae58a8b0d93a545cbf75",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/fp_groups.py",
+   "blob_sha": "fecaba2f0466d72d34b08c920e39a12d4af0088b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/free_groups.py",
+   "blob_sha": "1a2ab25b4d1150abe83c602b77df462c65de37ee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/generators.py",
+   "blob_sha": "3104c2fc3afc13debaa708cb94a71abc1be5090e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/graycode.py",
+   "blob_sha": "4e42e50a87c503ce148316a8812f5e44eeed6965",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/group_constructs.py",
+   "blob_sha": "a5c16ec254191646b26eee869763e2926e187da5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/homomorphisms.py",
+   "blob_sha": "9fab3e25cbaa409494de5ddf6e47f1892e25c8cf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/named_groups.py",
+   "blob_sha": "61644f049fce35e821cad1c116e1b9ac8b77eee7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/partitions.py",
+   "blob_sha": "c036965f006d2131b5ade91cbab3f3157e4fc728",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/pc_groups.py",
+   "blob_sha": "e081c9597d818ab3fad46a5e70fcc4cd12a5a16b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/perm_groups.py",
+   "blob_sha": "be3e66c72a7a107f61d968c04f07b0a7317a9b36",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/permutations.py",
+   "blob_sha": "24a89834a431e225005cc2a3951c998ea280f027",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/polyhedron.py",
+   "blob_sha": "c31ad68d3931b827399faed0b20632280a7125bf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/prufer.py",
+   "blob_sha": "b632296146fa612c6af63bda5c45314d1b1e192e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/rewritingsystem.py",
+   "blob_sha": "a694ab14b7e17c075c05b20919b0131f82ff1ef5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/rewritingsystem_fsm.py",
+   "blob_sha": "21916530040ac321180692d1a0811da4ae36a056",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/schur_number.py",
+   "blob_sha": "1d8947e2809f72196dff153824f6f83c20443bb9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/subsets.py",
+   "blob_sha": "c0c6dd55280e9a90a951fd6879efa5dcd284bed8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/tensor_can.py",
+   "blob_sha": "0775cb5d9200d19df5066322897440f5d266694d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/testutil.py",
+   "blob_sha": "83459ad792b6ea62ff5ff77d3a6a0f1ece8a2b00",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/combinatorics/util.py",
+   "blob_sha": "79c3c7099485441ec766776e7335137943c71dbd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/__init__.py",
+   "blob_sha": "7048bd548cca04780479539339dd8cc49a21990f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/delta.py",
+   "blob_sha": "42d0cce9a6a89865d62ff990ed770f84357c2785",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/expr_with_intlimits.py",
+   "blob_sha": "f47a9c2e67be0e4108cfbe53e0d5d3bf0f15e351",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/expr_with_limits.py",
+   "blob_sha": "d3fa2a931ac5b4aeea02c32e60e5d379c284631c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/gosper.py",
+   "blob_sha": "87974893f15dc2bd0b3798649cad750bd4614d7f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/guess.py",
+   "blob_sha": "12e349e032f2d575f7dd39877f24fd75c8e995f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/products.py",
+   "blob_sha": "6ff6a06f66b9bea17e7e78aa7127d2e664281d28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/concrete/summations.py",
+   "blob_sha": "3627b2722f3e49ba5541a04b89bfd648466252fb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/__init__.py",
+   "blob_sha": "dfca31f902c4298b8c6b46c341e3f918cbcbbafc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/_print_helpers.py",
+   "blob_sha": "d704ed220d444e2d8510b280dca85c8ae6149d4c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/add.py",
+   "blob_sha": "ca9bcfc4a30dd1095680db5c837fa483b8fe4d74",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/alphabets.py",
+   "blob_sha": "1ea2ae1c410ccd30e7ec9551f4cd8b19a36cdba1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/assumptions.py",
+   "blob_sha": "c9579316e4eda953d687be7f579d5887f72c8975",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/backend.py",
+   "blob_sha": "b7062ac35795287927d50c39024d51894c5e69b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/basic.py",
+   "blob_sha": "dce161a2b2e0cdee40a1981a4c0a2936c427225f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_arit.py",
+   "blob_sha": "39860943b763a30cf4f91578dbac37dc7e6e444e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_assumptions.py",
+   "blob_sha": "1a8e47928b76034dd1d7ba8b8f87bd527bb1cdeb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_basic.py",
+   "blob_sha": "df2a382ecbd3cf6eb1f8555577dabb5e07c6643b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_expand.py",
+   "blob_sha": "4f5ac513e368cb7e9b542926bc25a5695de6d914",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_numbers.py",
+   "blob_sha": "61497d9d36f6b1227ed96a0ccf0e023f74e4f256",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/benchmarks/bench_sympify.py",
+   "blob_sha": "d8cc0abc1e35439a1a495454abf87769d5b40d04",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/cache.py",
+   "blob_sha": "3d8cd3929acdd47ccec3813e23b7fe3265fd00fd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/compatibility.py",
+   "blob_sha": "4f3a07dd847e87d3957076ab78214c6979a42a2a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/containers.py",
+   "blob_sha": "770905e6a71c3ce24faa90adfa7d17def8fff827",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/core.py",
+   "blob_sha": "336022c4128f8c9def3ced0670bad019981b0c0b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/coreerrors.py",
+   "blob_sha": "e1af0729533a7ce2ae2a4564d225a03eaed6e333",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/decorators.py",
+   "blob_sha": "3dfac4aa9ccd262f649728a0d04b47f1dbba8afd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/evalf.py",
+   "blob_sha": "a737ceb38574d86ea68253852ec02c5e62aee5cb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/expr.py",
+   "blob_sha": "b95703cea2fd99882d9c3fe6bab073b6afa9c493",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/exprtools.py",
+   "blob_sha": "58914ba83b1ab15ce801441638306dc8f69ecff8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/facts.py",
+   "blob_sha": "a3e1bb538b20e213f0647005303c8f6f3933da56",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/function.py",
+   "blob_sha": "8c7209763acedd0bfa5b78a022bf06394135507c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/kind.py",
+   "blob_sha": "f1935b541a816eb0963d69351b30f2bf3af112a0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/logic.py",
+   "blob_sha": "e46e5c4999fb3f5ae0f76e99434f5a4c9c40fa1f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/mod.py",
+   "blob_sha": "b4f3de25234b254760cce551b5a39afc09e71711",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/mul.py",
+   "blob_sha": "5fb540a6274980c1a51ec1b3e45432e9d81d5764",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/multidimensional.py",
+   "blob_sha": "12be17b050054bde78f63728b3f38c593adda66d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/numbers.py",
+   "blob_sha": "3138c95c4b870440ff03d8edb8d910c5216f68e4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/operations.py",
+   "blob_sha": "a6c0b92f2b1c5b6d53c381ea30945502c86258dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/parameters.py",
+   "blob_sha": "fd35cd1dc5bbfb1434a163bf0fd3b826afd23a05",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/power.py",
+   "blob_sha": "fae5590898b37eeafd38a800bbec329ef3beefee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/relational.py",
+   "blob_sha": "0c944bc8e53b36ee648335242817feade1bafab7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/rules.py",
+   "blob_sha": "5ae331f71b21c8a6ef35f499c5c5c89239349e9c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/singleton.py",
+   "blob_sha": "afede5fc33ad469e0a9cbda4a436cf8ea1e15663",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/symbol.py",
+   "blob_sha": "41b3c106725efd9f21a207145d7cc549ac42939c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/sympify.py",
+   "blob_sha": "c73b2a263e386e946a736aef55def7fcc79f1e0e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/core/trace.py",
+   "blob_sha": "4a2cb9c2b5b7d8fc599225ed1c06868eabdcb9b8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/crypto/__init__.py",
+   "blob_sha": "2b27b4b036e5f2ed93a1ea88cd7d7144eb5615d4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/crypto/crypto.py",
+   "blob_sha": "13bc212d6134b73fad94d8ccdacc37bbca031b9b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/deprecated/__init__.py",
+   "blob_sha": "cc19ed04ce9096992c646fc98d6c2ddcf63acc5f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/deprecated/class_registry.py",
+   "blob_sha": "8545f1ee368cc762dc5b66aba12b2ca9ae270858",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/diffgeom/__init__.py",
+   "blob_sha": "8846a99510601c9675103e21ef5a0a1e839fdd11",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/diffgeom/diffgeom.py",
+   "blob_sha": "dde17919d3d8309e696befada0b21158cb9a2f15",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/diffgeom/rn.py",
+   "blob_sha": "55c964ccbd2b44cd4328cc75c8dd4f3fac218096",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/discrete/__init__.py",
+   "blob_sha": "968c4caa0d4562b71285f414bfb70f43d0b35111",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/discrete/convolutions.py",
+   "blob_sha": "faf1c18b029aa42d2b70d9fa401482b8bb7b3948",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/discrete/recurrences.py",
+   "blob_sha": "2caf9be395aa6d68c5b3c54434aacb6c4dac421e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/discrete/transforms.py",
+   "blob_sha": "43cf875ce1ac1635b3ad65f46711ec9cec5c8d5a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/external/__init__.py",
+   "blob_sha": "549b4b96cdce0ee4d31960e89cb9dc26af0e105d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/external/importtools.py",
+   "blob_sha": "d1f57acd0e3933e8abb47669916439e7cfd49c7d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/__init__.py",
+   "blob_sha": "9c05bc3f9680d8c2b8bb672a410e943d56e106b8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/combinatorial/__init__.py",
+   "blob_sha": "584b3c8d46b5c7600d85efc7db46d7aa190397f8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/combinatorial/factorials.py",
+   "blob_sha": "464151cb25be704ad9f873f7fa821760569d3644",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/combinatorial/numbers.py",
+   "blob_sha": "a6a4b4bdba829286a5aa17b1456c9446003c4f13",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/__init__.py",
+   "blob_sha": "78034e72ef2ed722c3ae685a87cf4df618a982b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/benchmarks/bench_exp.py",
+   "blob_sha": "a0aef8b2270d33f713a83df3b624f6f3d6297d77",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/complexes.py",
+   "blob_sha": "2f316a332fd57de0e955bc202006316313f51e10",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/exponential.py",
+   "blob_sha": "77f6336847bfd0da44f1b7e85a0249ce594b153c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/hyperbolic.py",
+   "blob_sha": "860989f7c1ff9af431fb52770a603806c47caf20",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/integers.py",
+   "blob_sha": "845e70a742ad1f1746f9dbad703f4899d0e63d68",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/miscellaneous.py",
+   "blob_sha": "3e958c55f8b139a2fa6e8a2d000daacac6967509",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/piecewise.py",
+   "blob_sha": "b986d9840ff41e1466d4e451e4cef8a89602071c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/elementary/trigonometric.py",
+   "blob_sha": "f65810101a8c083feb8cdef4e282e494c8b0f37a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/__init__.py",
+   "blob_sha": "ab52ace36a8dfbe73179dbf4419a54f7fa1af5fa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/benchmarks/bench_special.py",
+   "blob_sha": "26cb4a10df4c654917882dac68ac4a989647b333",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/bessel.py",
+   "blob_sha": "37d99648d2c1db225a0216fc1015a41d3c10c18d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/beta_functions.py",
+   "blob_sha": "0faa212db279d677f491540c8b1cf07a7754587e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/bsplines.py",
+   "blob_sha": "a0599bc3e58382e122c0e4d693a0b5794ceaef41",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/delta_functions.py",
+   "blob_sha": "e5315e181d51a300d0bc1ece443467e227e16b81",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/elliptic_integrals.py",
+   "blob_sha": "af7beb3136c5145b52b47e61899f76270b135cfc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/error_functions.py",
+   "blob_sha": "2b218779e595c2ef4c0f16fff619280a3a0e3fcf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/gamma_functions.py",
+   "blob_sha": "baa6a5a5ac283d16005481d7f31dbfacbc7e51a9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/hyper.py",
+   "blob_sha": "e45e9644535ce1f51f710947e6fb9b65cc7c6bc6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/mathieu_functions.py",
+   "blob_sha": "13bb8d32994f533657f2ebeb9d7235d743a8036a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/polynomials.py",
+   "blob_sha": "fba9e9ec61809ca432171f3c70463b7dff6810d6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/singularity_functions.py",
+   "blob_sha": "69695de6011117715a04d70662b9955d4e55ee03",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/spherical_harmonics.py",
+   "blob_sha": "8370c81ec33697343c9b9aa00791e68bad962392",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/tensor_functions.py",
+   "blob_sha": "3b3f86065e65163332d30d023c894002a5abeeb8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/functions/special/zeta_functions.py",
+   "blob_sha": "74442351fa2a6e331bd7eb75906bc331cda66524",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/galgebra.py",
+   "blob_sha": "be812bfcbcece834c86d7b55eb846286acd0ac08",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/__init__.py",
+   "blob_sha": "bb85d4ff5d53eb44a039a95cfc2fff687322cc76",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/curve.py",
+   "blob_sha": "c9b22f84ed4000095ea1f92042950476ff285ad8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/ellipse.py",
+   "blob_sha": "aedefd518bfbd3e67b6793f32f62c52643a89e82",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/entity.py",
+   "blob_sha": "bbe3299533e56b0a3213a852fddba79782bb5191",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/exceptions.py",
+   "blob_sha": "41d97af718de2cebad3accefcd60e43ccf74a3f6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/line.py",
+   "blob_sha": "33805b37e7573a50246b0295dd3fc35cd692ad21",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/parabola.py",
+   "blob_sha": "cebd7054e7a391178f66e03dd932a92e017dc396",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/plane.py",
+   "blob_sha": "cd4ee63aa3eb253807d51910880bb02c94b8fcd3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/point.py",
+   "blob_sha": "d6345100f9f0b109707d14cc6ac6244bd671fa8e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/polygon.py",
+   "blob_sha": "502c0fdbdadbd5f057d90731ac81d005d23af6d5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/geometry/util.py",
+   "blob_sha": "418bf2a0f84ab36deee432de2f2d95a675eda39d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/__init__.py",
+   "blob_sha": "45412acad0ab9e5c7424b1888648a638ef208142",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/holonomic.py",
+   "blob_sha": "a33478fe731187ac527e85740c6753c3b39d5e7b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/holonomicerrors.py",
+   "blob_sha": "459a94eb25b186e30b9577d972ebc62a36801f6f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/linearsolver.py",
+   "blob_sha": "ef04067ab8152e013ac7b6ebf0ae1e46d7e5e04d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/numerical.py",
+   "blob_sha": "ed78f6ee78676cd429cb9ad11a28e9046745e5d3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/holonomic/recurrence.py",
+   "blob_sha": "d8eb0490cffc0219fae012c0903562e30c3817a6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/__init__.py",
+   "blob_sha": "a24fa5e46380bd98ef3ee14a1ecd3968225e4422",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/benchmarks/bench_integrate.py",
+   "blob_sha": "627b81920dea52309abe1eec8b671ce35f2fc85c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/benchmarks/bench_trigintegrate.py",
+   "blob_sha": "4aa9d511c707dc89bffa9e708a65e116212a691c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/deltafunctions.py",
+   "blob_sha": "e0acdab905ada1c2c5a099335690d15648f72658",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/heurisch.py",
+   "blob_sha": "aef5a3536914134252a4877b50f9b5467488a9e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/integrals.py",
+   "blob_sha": "8ec4076673d9d463a838fdf6982395cbc5c22922",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/intpoly.py",
+   "blob_sha": "57f18bb901e355571f25116d39ecab49df7dd306",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/manualintegrate.py",
+   "blob_sha": "01fcfcf866d84da39e71e5d0c7f6fe053b6ee71a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/meijerint.py",
+   "blob_sha": "86cecddb33ce5b6e086e3882038f4cab3b8f1b02",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/meijerint_doc.py",
+   "blob_sha": "e0503a338af0d99dc3f0dc2c4c1ce7ead5518b12",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/prde.py",
+   "blob_sha": "67cd62d033b9eeaa652e5ad30a6ae8c53d28f402",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/quadrature.py",
+   "blob_sha": "796657cd4b0b7c1407dfed12d8a097777c89526d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rationaltools.py",
+   "blob_sha": "c55967bd05ea14b7226acaef4dd59e6185e6532f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rde.py",
+   "blob_sha": "35e0b4370603596dd3f955e24a377e02970d0c61",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/risch.py",
+   "blob_sha": "c5da3568fa672b1cb27188415536db59243a4528",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/__init__.py",
+   "blob_sha": "f623e9940aa8ca0030704b71bfa16212a6022671",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/constraints.py",
+   "blob_sha": "3b6a4c89bf25b63079926b63304097645152ec32",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/parsetools/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/parsetools/generate_rules.py",
+   "blob_sha": "9d70e05d015496ea1c2fe1c091f5760d5c22c4b1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/parsetools/generate_tests.py",
+   "blob_sha": "abe9f1200f523600d03781fc38e0660fb3baf224",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/parsetools/parse.py",
+   "blob_sha": "c4b4fa832e7fd7909f14a417652ee56622799a58",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rubi_tests/__init__.py",
+   "blob_sha": "2d796ffaa1fd573f8018ad92ed807007fb77f513",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rubimain.py",
+   "blob_sha": "5dae06fd54a222def8463f160abcc1d7d0e48098",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/binomial_products.py",
+   "blob_sha": "ab0a1aef5894be1b0b4a733a19cb5289743d2bcf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/exponential.py",
+   "blob_sha": "24f194bd6a18be2bb06afca06f7f9385d53995ed",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/hyperbolic.py",
+   "blob_sha": "269ac4daf1d3f57abe0a1c71e7ccc545f5f88afd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/integrand_simplification.py",
+   "blob_sha": "172c8cb6a07b1e53a77dccd7ef5427c6a9c13e28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/inverse_hyperbolic.py",
+   "blob_sha": "9fbbd70dfe0abe3ccfd41c3f20be74a1524bdbb4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/inverse_trig.py",
+   "blob_sha": "6e4204b2a24515b88840a4e04ac2bd1678227574",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/linear_products.py",
+   "blob_sha": "e326c64a007274808e893f01dd18f59e3d25b16b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/logarithms.py",
+   "blob_sha": "fb41183f7cc6a0dc7647f62b01580a8176debbfe",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/miscellaneous_algebraic.py",
+   "blob_sha": "1632575a74951b36f84d724cff78df62fbb202d2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/miscellaneous_integration.py",
+   "blob_sha": "8be94e018d331af21b62a982216a062bf522926b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/miscellaneous_trig.py",
+   "blob_sha": "71ba4d05cdb0bdf8e19080ae87afe7b72885a50d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/piecewise_linear.py",
+   "blob_sha": "d3ac12cc92b07c734659a5615ccc18307e654cf1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/quadratic_products.py",
+   "blob_sha": "e0c1d3539d8b00c2cc06408ad76911d8dbb606d4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/secant.py",
+   "blob_sha": "c888acd32b9b25bebfae0478e83a5852542e87cc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/sine.py",
+   "blob_sha": "d86ef0b1d9b8bba3608b17953eda87102d0c8e96",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/special_functions.py",
+   "blob_sha": "02013023b396332adffd9b72a575834b4efd4dd5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/tangent.py",
+   "blob_sha": "1124240df605c6cb8fe4184b7f465bc97047a310",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/rules/trinomial_products.py",
+   "blob_sha": "1d3f515baed39430c21f904ae5929111d16b5dd7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/symbol.py",
+   "blob_sha": "de86246d3b350a9783cb191a03f21474b92e0dca",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/rubi/utility_function.py",
+   "blob_sha": "cd55025d07e539a37d382f9d1e68e5331d8f381d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/singularityfunctions.py",
+   "blob_sha": "c941f8b34af24684d1261dcda90eb0de5ecf455c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/transforms.py",
+   "blob_sha": "a49dcdac9e5a3a402f1e8813f793b5f6acdc355a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/integrals/trigonometry.py",
+   "blob_sha": "15723871a35a89c8cf4c483314c14fc6efb3e6f6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/interactive/__init__.py",
+   "blob_sha": "cfb50121e87195f93fa29394258d43b504d5b606",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/interactive/ipythonprinting.py",
+   "blob_sha": "b3c09dd7b18fd1db9c9165c1c08f8902b1c50df1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/interactive/printing.py",
+   "blob_sha": "1cfd05d2ec4068c3433ef64afa947702a5db6604",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/interactive/session.py",
+   "blob_sha": "a786d2bc3a95db9a6bd7b1c8de097a308ee9e5df",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/__init__.py",
+   "blob_sha": "d023d86f2c6f0c64d7ac460c50eedc355e78b21f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/cartan_matrix.py",
+   "blob_sha": "2d29b37bc9a1a26790ee88b5902951afe4fc4560",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/cartan_type.py",
+   "blob_sha": "f2f84fa18cc76118081ae279ba572b8270abe364",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/dynkin_diagram.py",
+   "blob_sha": "cc9e2dac4d54490b803eeaf9637cb9b66b01f058",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/root_system.py",
+   "blob_sha": "9b4bd341d75802b0e5b82a760a477cb4b62757b0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_a.py",
+   "blob_sha": "93bf81a36e2155895393e4bb40a06d2f0ab07b72",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_b.py",
+   "blob_sha": "15f9563d561ec3c848a67597efac26da95222162",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_c.py",
+   "blob_sha": "1f40f9401748147092a15b26f61861134434035e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_d.py",
+   "blob_sha": "3c46bd79837fce236ffd6922add0eb4743230aa4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_e.py",
+   "blob_sha": "c958ad2348eb49708c359b2781216f1288cb1f0d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_f.py",
+   "blob_sha": "778fcd6d14950c36b63e187b18aeb17c5beb99dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/type_g.py",
+   "blob_sha": "014409cf5ed966b53c596b14e0073e89ceee05b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/liealgebras/weyl_group.py",
+   "blob_sha": "b97edaa3ccb62b7d1d628ad8fd18f54c8a5e3d02",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/__init__.py",
+   "blob_sha": "719e34c86265620423b5aa7f4eab544c834f71e4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/algorithms/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/algorithms/dpll.py",
+   "blob_sha": "61f846186ce2a28b023150fd0367a810bfbe572b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/algorithms/dpll2.py",
+   "blob_sha": "df07f73afb6f8270c71e1c1b9f23204abfea14cb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/algorithms/pycosat_wrapper.py",
+   "blob_sha": "94895ce98d14d40875f3dfdc0f1b3c0e2b90b9d7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/boolalg.py",
+   "blob_sha": "a88fa707f176f4d9840611b7b4175c65445f4af2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/inference.py",
+   "blob_sha": "e0628f3ec3ab013cf1ec58b8f8cd23364435e70a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/utilities/__init__.py",
+   "blob_sha": "3526c3e53d624bc70afe2df05f123c835781364c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/logic/utilities/dimacs.py",
+   "blob_sha": "56fd9a20eeaae28b678b498ec4a7401481010bc2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/__init__.py",
+   "blob_sha": "c7cf351eba590319d2b924ea6686899368290813",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/benchmarks/bench_matrix.py",
+   "blob_sha": "440d514aa0e53eec65d47289bf5906b35325800e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/common.py",
+   "blob_sha": "739e08075b03d43545611497fd6611c1c39f7443",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/decompositions.py",
+   "blob_sha": "c34cb3e42ee958ce03ac2fdbe907f1714f827659",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/dense.py",
+   "blob_sha": "5c405bc49570191f0da3cab56dde6c21e88a6615",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/densearith.py",
+   "blob_sha": "f4145a0114d302eb17fff7ff591ecd3093a97660",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/densesolve.py",
+   "blob_sha": "3653aed6aa764c8e5981d482848baff24441b80e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/densetools.py",
+   "blob_sha": "57e6b7b7b2ea8ee4281162a8bb79dbb34bbcfcbd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/determinant.py",
+   "blob_sha": "08c0160151f6fca03d602d79687c3fe8c056f0aa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/eigen.py",
+   "blob_sha": "829d1f7542bc388f5f868c7bbec92f7d13217608",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/__init__.py",
+   "blob_sha": "5f4ab203ab74165d1003cdedd83945ea3fcf8f47",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/adjoint.py",
+   "blob_sha": "c59e8608a2496da93eedabcd6092e78d565b4ca1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/applyfunc.py",
+   "blob_sha": "36870d441083f5d9b206e92952a3f5f7f654da94",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/blockmatrix.py",
+   "blob_sha": "34b8469b57f96366c625ada8f9541bcbe87f4f88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/companion.py",
+   "blob_sha": "6969c917f63806cb1f5417804e01ecc1350d1406",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/determinant.py",
+   "blob_sha": "061b45c1329d62052a94f789507f9d299e4c219d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/diagonal.py",
+   "blob_sha": "a6c31968cbc1488ef5e53fb658616b06f3c75993",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/dotproduct.py",
+   "blob_sha": "ba88d4f024fe96debf27ad5221ca2e886213c6c5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/factorizations.py",
+   "blob_sha": "02421e4eeab1a170faa10b5f0e59e37d8c6c9969",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/fourier.py",
+   "blob_sha": "f9c463ccf550817a76cf5897f43db50f7afc98df",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/funcmatrix.py",
+   "blob_sha": "5d08fd66cbc61b7679a109ab50832992621ea33d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/hadamard.py",
+   "blob_sha": "3b98e6912cfee5b7fa1e9a9c8ac0d767ca7a3b16",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/inverse.py",
+   "blob_sha": "bc2a063941c0e3b9d30a9dc3015e6aa6785cbb4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/kronecker.py",
+   "blob_sha": "aec6fa23db296b6847c47c8c551e60dbe6b969c7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/matadd.py",
+   "blob_sha": "bdc70fb07bead2c12ca41383fd3c6f568c7e8c76",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/matexpr.py",
+   "blob_sha": "e78d0607d31e8c511462d5de4814ffcaa71188e0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/matmul.py",
+   "blob_sha": "58e074f6b185ee47436f676a161d10f13c8a0eca",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/matpow.py",
+   "blob_sha": "4485bfac5566cff09a9855bb8ed23176b94206b1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/permutation.py",
+   "blob_sha": "cfa6a5a6e7456b476462d96fe2fdcd0fb635bb7e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/sets.py",
+   "blob_sha": "9edefd2b60dc609f5e6be59ed540bff769744d0a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/slice.py",
+   "blob_sha": "9f36c8026a3c5d3d9b832f3c6175e030e1a66c8d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/special.py",
+   "blob_sha": "27d988b3c2ff41c08839ee37ff0b1048659a2949",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/trace.py",
+   "blob_sha": "1bfeb44660fabc75ed2c4b05adc64fabaa3cb61b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/expressions/transpose.py",
+   "blob_sha": "0ba538a4c8b0c8a0be43e5f2ab82d9286f13a15e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/graph.py",
+   "blob_sha": "3e78b3d066f110d545eeb191e1e871b3afe35947",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/immutable.py",
+   "blob_sha": "fadee95efd52f8bd2d4a6d98f3d44754521a9f6f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/inverse.py",
+   "blob_sha": "9766c002167baeba8b61603b0b16c78dd875ed5a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/matrices.py",
+   "blob_sha": "f7b4aeebf3f7c182c3fb9e8186ab82a38c4333e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/normalforms.py",
+   "blob_sha": "778e7884b4b6d2fa55764a3cccf75ae0b4ef646a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/reductions.py",
+   "blob_sha": "352141156d645d5366318f2aa79fdf31fc6d7af1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/solvers.py",
+   "blob_sha": "8c0124b4b7b42c69571d174fc4af25689d6bf91b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/sparse.py",
+   "blob_sha": "4f50bedaa12c95f2ee1f8fb264a9e5517d4dbd67",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/sparsetools.py",
+   "blob_sha": "dff8e176dbedf2d1555cc61d256b6365bc524fd0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/subspaces.py",
+   "blob_sha": "846c510bc03b02691346d963175e939df732de26",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/matrices/utilities.py",
+   "blob_sha": "c890a33bb5a3efa697baa9c873bc4e631a1af180",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/multipledispatch/__init__.py",
+   "blob_sha": "5447651645e3e2e92df3002822e87a773ade0df8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/multipledispatch/conflict.py",
+   "blob_sha": "98c6742c9c03860233ef0004b241ea3944ac6d4d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/multipledispatch/core.py",
+   "blob_sha": "86d9b66079bf6ac7602723453ba1daa24dd9cba7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/multipledispatch/dispatcher.py",
+   "blob_sha": "dd3a88f1fac07997d81bb84894d972fae7afffb7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/multipledispatch/utils.py",
+   "blob_sha": "11cea683ed08448b11c2efecaea1b7e234934cc4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/__init__.py",
+   "blob_sha": "4e050a5196fc4d524a6fa2288eea7f02f0b9a922",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/bbp_pi.py",
+   "blob_sha": "608079a2641df27b65c605b3836b7da325ea7221",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/continued_fraction.py",
+   "blob_sha": "8ea00d5eaf0ec5b2ec7ef8db57c831b504cdf7c6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/digits.py",
+   "blob_sha": "1453dcee53eab8f50f640bd52dc009814baab032",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/ecm.py",
+   "blob_sha": "63c1100deb26da900d4b45c82f05f8af92f82800",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/egyptian_fraction.py",
+   "blob_sha": "ef258d91aabca1fd121e0af62dfbf9e41516a6e8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/elliptic_curve.py",
+   "blob_sha": "3b51952ae0bbfa7efc2a42ae383a6a898e5e97ea",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/factor_.py",
+   "blob_sha": "8ce694900b94ef31bc032166dc955ec2eb2cd4c4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/generate.py",
+   "blob_sha": "8dc93fad662865ac818cc4e9f0d632c20e4cf52d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/modular.py",
+   "blob_sha": "d4ec9c0a31b46f22a9d73a90e12d93000a07fd9d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/multinomial.py",
+   "blob_sha": "190a0ecdf03f8074bec3b182ea9a065891661f5d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/partitions_.py",
+   "blob_sha": "eaebb95db9a88610df821f498760f7a5374fd7b8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/primetest.py",
+   "blob_sha": "797fbd32f9505fa76f26d2f3057ac79a0a2608f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/qs.py",
+   "blob_sha": "0245ca20d4ad98f00ef96b3ed919910ed02af80d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/ntheory/residue_ntheory.py",
+   "blob_sha": "ecc3a5f754731ef3d25af8f1f9e69d8499c06241",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/__init__.py",
+   "blob_sha": "b39d031bca26bc599eb9eb0e12dfe48f7e6db174",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/ast_parser.py",
+   "blob_sha": "63bef1511fd65d49e7d8cc267dd7f6d2f736f625",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/__init__.py",
+   "blob_sha": "6f8dda975c7515216d243e0e3f9a0e279dba3d1d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_antlr/__init__.py",
+   "blob_sha": "e63f0daec763707aef26220e9ea440e04899c835",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_antlr/autolevlexer.py",
+   "blob_sha": "ebd4269d31005a6d971e292920837936052c18bb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_antlr/autolevlistener.py",
+   "blob_sha": "8034dec534521edf033b749defae956d3c973cb7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_antlr/autolevparser.py",
+   "blob_sha": "29222b78c5454242c32689cd5749f4c22e2a066c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_listener_autolev_antlr.py",
+   "blob_sha": "2ec0682318d7fb68ea6010e5ad7dadec56a2b653",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/_parse_autolev_antlr.py",
+   "blob_sha": "eddd017296d5578af86318db7c6545de0c20e721",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/pydy-example-repo/chaos_pendulum.py",
+   "blob_sha": "07186b8b115432b2c234c2428822f3b0dc23fbfc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/pydy-example-repo/double_pendulum.py",
+   "blob_sha": "7d04be5a9448b9651b04ab3a3ad676b6b1d4916b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/pydy-example-repo/mass_spring_damper.py",
+   "blob_sha": "af32e2e48dc94afd1c459257015f3c71ae55d5c0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/pydy-example-repo/non_min_pendulum.py",
+   "blob_sha": "4dcc166d51c1260b24cd17eb5713b07131b91d2c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest1.py",
+   "blob_sha": "d2e88496113d126f0d5992d9ed1abd9d95d053dc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest10.py",
+   "blob_sha": "d0cc525feffe7fb3892224deda4f6b6d9bd94279",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest11.py",
+   "blob_sha": "62a534fa4c04bc4a984a991aa2e067dd8b14d012",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest12.py",
+   "blob_sha": "f75a218989039642d069610b4f37742b6d728b6d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest2.py",
+   "blob_sha": "a3de0e4fbe04e5534f8e6b2e292fa24b8ada8681",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest3.py",
+   "blob_sha": "c04b1a6ccb02f8a51412967fc0fbb4aee0e66070",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest4.py",
+   "blob_sha": "eb6381dbdafb173c62d9f2643e5a4e0eb9d68c01",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest5.py",
+   "blob_sha": "f3eb04626a731a6092bd270c49d3c9138356ba22",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest6.py",
+   "blob_sha": "252f0c78109934b245bade9e578bffc6da141aa8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest7.py",
+   "blob_sha": "8f773170397f8479c52d53d02f493eaa1d872e2f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest8.py",
+   "blob_sha": "c78c7ab1b714a3d81395f3f616566ed22a1ff5d7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/autolev/test-examples/ruletest9.py",
+   "blob_sha": "5285a6e53a600146102f2e167de6f3ac03a8ca18",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/c/__init__.py",
+   "blob_sha": "18d3d5301cb001c78fc4a9bc04b25aa36f282a93",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/c/c_parser.py",
+   "blob_sha": "7d59aa027ab052c7a560bcb1311a486cd2c97bdf",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/fortran/__init__.py",
+   "blob_sha": "c65e37cf3de2dddbcee0fa5c7eeac2fdc9f685db",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/fortran/fortran_parser.py",
+   "blob_sha": "48f482b2d6713410aa0926435d5e80f495d2732e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/__init__.py",
+   "blob_sha": "f98e53e70f038f4efde5e7217a1dceac40daca62",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/_antlr/__init__.py",
+   "blob_sha": "87097edcd1184b61d1defbc4171e6497023c27f4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/_antlr/latexlexer.py",
+   "blob_sha": "29eb4b462a10ef4009b9142f10519e5fd3871f66",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/_antlr/latexparser.py",
+   "blob_sha": "0fc7e5a7a61f476e0273426c4b63aea9646dfb41",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/_build_latex_antlr.py",
+   "blob_sha": "bd780e2661d3f2b472fd53e2c245a949e7f4af7d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/_parse_latex_antlr.py",
+   "blob_sha": "ab65325fc490a042176f10f2835be4a07f88cef6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/latex/errors.py",
+   "blob_sha": "d8c3ef9f06279df42d4b2054acc4cfe39b6682a5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/mathematica.py",
+   "blob_sha": "aab6914fc9745d12928c41831616473071b1a1e6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/maxima.py",
+   "blob_sha": "501d3dfb6f42fe0b838c1acfb310cb871b7836f2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/sym_expr.py",
+   "blob_sha": "16f986bce329227c90e385c7ccd07d28f4fd9efc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/parsing/sympy_parser.py",
+   "blob_sha": "2ed52175c9748e6149110e524a98159b1c456bf5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/__init__.py",
+   "blob_sha": "58134cc0bd994e507cfc140be6c8a6f0fee9425f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/continuum_mechanics/__init__.py",
+   "blob_sha": "a061d9203a4bbc39153d6f36f8cf0616fda78e69",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/continuum_mechanics/beam.py",
+   "blob_sha": "bdcf7d28a72839c94454e8fa92925d79fff7497d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/control/__init__.py",
+   "blob_sha": "7b4c7825c7cc058e90d906d752c82b040f210f97",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/control/lti.py",
+   "blob_sha": "ce5be82061fac61b5cb0b1ad8296cf825e592b63",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/gaussopt.py",
+   "blob_sha": "f368120497edfdaf4f81a6d0a8fbc3a8bef07855",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/hep/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/hep/gamma_matrices.py",
+   "blob_sha": "ba9272d7b6fb097999ed21ad72ee39ff64587af9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/hydrogen.py",
+   "blob_sha": "8d9ce959f669864e383b7e65b11636db9239f266",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/matrices.py",
+   "blob_sha": "bbe75c1196f6636e2c15e44ab04be66cd32877cc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/__init__.py",
+   "blob_sha": "be8ad80ab588b5eaccf0177003aad6b281596af8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/body.py",
+   "blob_sha": "3ba02d59e57abd7dee5101b243d9cb2818203800",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/functions.py",
+   "blob_sha": "bc3740a1111f25f223ec6a2fc9cb35ff0783abe6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/kane.py",
+   "blob_sha": "b19c25f4070d4eae93f3bcd44c452d525d68e987",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/lagrange.py",
+   "blob_sha": "fa0431be7a784ebc30d9403d3c5764dc62bd599b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/linearize.py",
+   "blob_sha": "848a608c2d7921baeacad184bf4f1031909da1f4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/models.py",
+   "blob_sha": "a89b929ffd540a07787f6f94714850b348c90781",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/particle.py",
+   "blob_sha": "a670585a8003d266e54e5b6e17c7f6a6976ff92e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/rigidbody.py",
+   "blob_sha": "ebe43f20d931f0fbb03aca089fe70bbcf4886187",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/mechanics/system.py",
+   "blob_sha": "4e11f54ee66ed810cd0334bd6eea04691ad97628",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/__init__.py",
+   "blob_sha": "1a0a31632ff330f417151c9b434062cbf81047a4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/gaussopt.py",
+   "blob_sha": "15d9b9f2ea1f129154c0a834b19146fa026a8a71",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/medium.py",
+   "blob_sha": "541a39b039f0151b5af774f7cd65cde7fd76745b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/polarization.py",
+   "blob_sha": "efedfc2a6ca465bde41db92b2015852c1da0e6d2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/utils.py",
+   "blob_sha": "81fe9c1205fecc61df7d12f420211c17fae3f2af",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/optics/waves.py",
+   "blob_sha": "9fba2e2cfcc1aead6bd58214659c6ecb683cc519",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/paulialgebra.py",
+   "blob_sha": "e3a6e36ff29736e71fc0dfb603601bba5de16cd7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/pring.py",
+   "blob_sha": "493153144d244b300fbdf41fc2de4fef04f93df3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/qho_1d.py",
+   "blob_sha": "e64c8f054671c07b3910f234a13aee1160ea1143",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/__init__.py",
+   "blob_sha": "bf08e1f7a383eb09cac9400f772c487cf6176375",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/anticommutator.py",
+   "blob_sha": "eecb2bca39150e96c939e8da5450d1a219ea88e3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/boson.py",
+   "blob_sha": "3b4dfa3856833eda2c4d01927e715221064828b7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/cartesian.py",
+   "blob_sha": "3b09364723b98922c171c4776aa2c77913b8f996",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/cg.py",
+   "blob_sha": "6d726e9a4940e8144f4f993da0eddad57979d757",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/circuitplot.py",
+   "blob_sha": "32a037242672fd660892f6962835e2097c5713ea",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/circuitutils.py",
+   "blob_sha": "b87726cf177d3917ef49f17f7844790d058ef6dd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/commutator.py",
+   "blob_sha": "bdbcc4bb422e53ac648ccfd98adb496431ee8732",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/constants.py",
+   "blob_sha": "3e848bf24e95e3bd612169128a1845202066c6e9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/dagger.py",
+   "blob_sha": "829dad1bd578c7ebf85df2e161f9b5830ece6500",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/density.py",
+   "blob_sha": "b1f47d1a1f0348e5522ec4f175dba49fd4446542",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/fermion.py",
+   "blob_sha": "19e5f750b5978e260556e3b621d166f2dab5833b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/gate.py",
+   "blob_sha": "186e19e41218356fea1f058f69a585e210be9680",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/grover.py",
+   "blob_sha": "94409425714ebe8da24fe796f4f050b84ac76836",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/hilbert.py",
+   "blob_sha": "bb06c167d14b10221605ba9eabaefbd40a4dde74",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/identitysearch.py",
+   "blob_sha": "4bb99e02c1a0d57ae936276c5242851af6e08091",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/innerproduct.py",
+   "blob_sha": "632e58a8398dfbdd3047a6f01c3ec610d8e43bc2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/matrixcache.py",
+   "blob_sha": "2a66a800cc6cc41220e2d49f90744c630ddbc1b6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/matrixutils.py",
+   "blob_sha": "8c0389480dfb222ffeb89e104a725c3fcf0b3e46",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/operator.py",
+   "blob_sha": "8468373bc86b645ea39200b2c2d7b549f8e395bb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/operatorordering.py",
+   "blob_sha": "f0a55deb6cf6471849a4cb5e25e24abe3de489fc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/operatorset.py",
+   "blob_sha": "c459de95a91d55ea88167297b44c1e31d27872a5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/pauli.py",
+   "blob_sha": "0a63c587c3c4c9c817f534830224c0b646283a32",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/piab.py",
+   "blob_sha": "3fab8797658a9cf2b9346ce77b2f789dd1d62b23",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/qapply.py",
+   "blob_sha": "298afd2c81b91957d2619cf54904b6568c7f0c9b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/qasm.py",
+   "blob_sha": "234ddaea5012c5cb3df8dcfbb8ef27672c059c78",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/qexpr.py",
+   "blob_sha": "8f895c48d78d169f5cfc05b729a5c9f07ed7bdf2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/qft.py",
+   "blob_sha": "5d35d22e1f0985800bcb28b49c256ecca1930a4d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/qubit.py",
+   "blob_sha": "0cb7864447984b0d4dea2c8ebb5901c2956a57d6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/represent.py",
+   "blob_sha": "6a883864887c08434693fa9042116688ce16fc2c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/sho1d.py",
+   "blob_sha": "c8761a7dd034de1ceea1e58b7b53d23accc53649",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/shor.py",
+   "blob_sha": "99efebd56c785ebd1c2929a85048754141f8638c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/spin.py",
+   "blob_sha": "5e4129bb365a9ed3752e21b568f61dbdbad59e3b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/state.py",
+   "blob_sha": "8104be68117c55f0ed657036bb53329ef449c45e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/quantum/tensorproduct.py",
+   "blob_sha": "9d51aee3e56b5b5724eb91fa787aa8665557cf35",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/secondquant.py",
+   "blob_sha": "d19ee2fc63e43da95446042cc52507248af9803e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/sho.py",
+   "blob_sha": "c3b2bcd96132ba53a7be62183f72966308c51309",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/__init__.py",
+   "blob_sha": "2485b0b8eaab2a11db4a59e24fae715a4e7f440d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/definitions/__init__.py",
+   "blob_sha": "e682811ecd12aeaabaf66edbe18d1770d09ef1a6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/definitions/dimension_definitions.py",
+   "blob_sha": "44bf49728aa9e3027196ecac211b7d82cb469233",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/definitions/unit_definitions.py",
+   "blob_sha": "5a86bfb9ac19b354461d93d21a3e46c4400d1634",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/dimensions.py",
+   "blob_sha": "ee67785d60e06fb4ca9afed4b537002c08afc97d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/prefixes.py",
+   "blob_sha": "39bdb18f6a9cebba2d2b4c56421aef3c71b77f23",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/quantities.py",
+   "blob_sha": "a088a99577b96d8bd6cc36d853c55fc0ecc9f5c6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/__init__.py",
+   "blob_sha": "7c4f28d42eec86be8d679227f7b11ed7d48e61f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/cgs.py",
+   "blob_sha": "496cc3936ca491a07d75af681dc7607b4f79552a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/length_weight_time.py",
+   "blob_sha": "ef077b3237a1195a84e7218ac9f102ae266b1117",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/mks.py",
+   "blob_sha": "116ab36f855583a1c93a60a227ec3d3bc8f05d28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/mksa.py",
+   "blob_sha": "75c5277f2cec9f61ee9706c4e04cae2abc174f7a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/natural.py",
+   "blob_sha": "13eb2c19e982438fab4b1422ddc5a25b16204be8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/systems/si.py",
+   "blob_sha": "2d823f2b28141f74aff096d90f7e8402c2733293",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/unitsystem.py",
+   "blob_sha": "b196a017198db70c3222bb5f4ebd5b1d3745f0fb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/units/util.py",
+   "blob_sha": "752a8061b5324c005f5302d455d4a6264fb264d7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/__init__.py",
+   "blob_sha": "e714852064c0b940ebda2e5fe7a08faf13f07ed0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/dyadic.py",
+   "blob_sha": "4904e305ee7eefef3df55306102a8138b0fed382",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/fieldfunctions.py",
+   "blob_sha": "b826ca06a1f7e9b9908b6b1d4a4957feba6ae9d4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/frame.py",
+   "blob_sha": "dadc0813ac794f5794ff2490ece1209234593e41",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/functions.py",
+   "blob_sha": "80c0787a6eaa0422463949309e02512647217733",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/point.py",
+   "blob_sha": "aebcd12d8659ce8455dc15cee4ca71e541e47012",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/printing.py",
+   "blob_sha": "a04f3d5b35d24c8477282c218651fb6dd3e754fb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/vector/vector.py",
+   "blob_sha": "0a1f66aaa21de3275da5b05540c0bc155ff4293a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/physics/wigner.py",
+   "blob_sha": "d3a93e98c51a5b5cd675cdcd679991a1fc9302e5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/__init__.py",
+   "blob_sha": "16f84d4e844fc3cf4bb32672183e24e61b00aacd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/experimental_lambdify.py",
+   "blob_sha": "55fa6e12a3be2e392f5e7b34d665a2672e170e21",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/intervalmath/__init__.py",
+   "blob_sha": "fb9a6a57f94e931f0c5f5b3dda7b0b6fd31841f4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/intervalmath/interval_arithmetic.py",
+   "blob_sha": "bf77df61d91ebefcf4c526d6ccc69a97df6aa117",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/intervalmath/interval_membership.py",
+   "blob_sha": "c4887c2d96f0d006b95a8e207a4f4a75940aec23",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/intervalmath/lib_interval.py",
+   "blob_sha": "7549a05820d747ce057892f8df1fbcbc61cc3f43",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/plot.py",
+   "blob_sha": "f9d7904b0f86f36ca4135c6b4fa9e256e5ca8332",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/plot_implicit.py",
+   "blob_sha": "d4da9c3fd3187ac609b8db0d532303ef551f5c35",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/__init__.py",
+   "blob_sha": "cd86a505d8c4b8026bd91cde27d441e00223a8bc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/color_scheme.py",
+   "blob_sha": "b32f06d624afd945ec56bd5b81a745bf847ceab4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/managed_window.py",
+   "blob_sha": "a933e88e1adfbdce51f578d5c3cb70921d7a0210",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot.py",
+   "blob_sha": "390ce1868667640f17cb4bde91f5356c2cfb9e3a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_axes.py",
+   "blob_sha": "0266a74fa25a1597d3aecb98db476519e2e786ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_camera.py",
+   "blob_sha": "7f4adb9bbe5376dcb8c04e5f7dd006a8e19ab91e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_controller.py",
+   "blob_sha": "aa7e01e6fd17fddf07b733442208a0a4c9d87d5b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_curve.py",
+   "blob_sha": "6fde2d9f0c0bcb06a9f4fee5091890bc375954d2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_interval.py",
+   "blob_sha": "4fa2db0ea668038cc88deed4665cbcb4e625d806",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_mode.py",
+   "blob_sha": "a1b0e904d1dd6cb2e586ebcbce84440de15d38d2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_mode_base.py",
+   "blob_sha": "3ec682cfd307fa734d09320a20bd3dc5d680e112",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_modes.py",
+   "blob_sha": "c639a5d40aab6501f98ab0ab80faf2c585c06e4e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_object.py",
+   "blob_sha": "e51040fb8b1a52c49d849b96692f6c0dba329d75",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_rotation.py",
+   "blob_sha": "7f568964997634121946a761b55ef0f916ac633f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_surface.py",
+   "blob_sha": "eb1a2456f7854a8731bbd022f5340476998e5de7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/plot_window.py",
+   "blob_sha": "b463fb84e9f5caf6c9fe1ebbc43597a39457a93b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/pygletplot/util.py",
+   "blob_sha": "244ab5be25cf69ed90f9863e759c2cc92c78c06c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/plotting/textplot.py",
+   "blob_sha": "43021c8b864753677eb6e3b152697903f5cc88de",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/__init__.py",
+   "blob_sha": "0ad0d90142906295518dc46aba830551e0356590",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/agca/__init__.py",
+   "blob_sha": "43486eec86f7453ec470a22b8f8decaa316cbe70",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/agca/extensions.py",
+   "blob_sha": "e25fb4c1521ceb41e29c036e09f412d4321e4270",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/agca/homomorphisms.py",
+   "blob_sha": "22461faf0443e2becaf0ce1ec8c518ac05904ec4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/agca/ideals.py",
+   "blob_sha": "ff06ce65ac8961e8f895822aa355680260402e00",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/agca/modules.py",
+   "blob_sha": "2b23acdeb45d78bc53bb95719e749c60c1809c3d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/benchmarks/bench_galoispolys.py",
+   "blob_sha": "38e244dd6e281ea6f1c9d06e776777c6379174f7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/benchmarks/bench_groebnertools.py",
+   "blob_sha": "e709f4f6d2cb42c0980d2e49725e01a7a2aa2b87",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/benchmarks/bench_solvers.py",
+   "blob_sha": "e74f12d6d17f7d9bb8b66d12e5dbd91552cd6862",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/compatibility.py",
+   "blob_sha": "9a5b3b39a1334e9c053a4c62631ae9b650d39587",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/constructor.py",
+   "blob_sha": "22a4b3bf707bca1946237bd39cd3b34abfe17fb1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/densearith.py",
+   "blob_sha": "bce08bb3561524cbebe00a37924813021302fcce",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/densebasic.py",
+   "blob_sha": "1caeb8f62901b1b761e9de213678f956810dfb3e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/densetools.py",
+   "blob_sha": "f0578246424a789b539cf65b95847583c2d62f86",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/dispersion.py",
+   "blob_sha": "699277d221f24b9bff42c55c3bb34fe5783ae7a1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/distributedmodules.py",
+   "blob_sha": "f242be1c416055a41d996a0530acf1ce91919fe6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domainmatrix.py",
+   "blob_sha": "c0ccaaa4cb96e0c49da58d8e9128c1b6fa551ade",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/__init__.py",
+   "blob_sha": "3165e0e08500d6d193d5219eddc6d03c19db2a5f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/algebraicfield.py",
+   "blob_sha": "356e574a1f60879c82b93279c1aa8b5913f0388f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/characteristiczero.py",
+   "blob_sha": "755a354bea9594b9e8f73256c448b3debae037b2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/complexfield.py",
+   "blob_sha": "a10e0b1efff7d40123cec7f8b307f68edab55ae1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/compositedomain.py",
+   "blob_sha": "560720a02469510c14d896ad9153d08391972964",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/domain.py",
+   "blob_sha": "40acad0a5023af1910d0f5c047f1bbc80beb93f6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/domainelement.py",
+   "blob_sha": "6c8f90d61e0524f52d661a9d28260ec2da581929",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/expressiondomain.py",
+   "blob_sha": "3813fa394d4c92bf591659aa9f093e37a287a8c3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/field.py",
+   "blob_sha": "33c1314dee45d0155e116118c912c961cb61281f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/finitefield.py",
+   "blob_sha": "83fd0a09479ca2abd26e91a8a0aaa6b5197f49cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/fractionfield.py",
+   "blob_sha": "7fbf4711d22ab094cfcb0d2804d166461613167c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/gaussiandomains.py",
+   "blob_sha": "8c01f21805dbe5619d22f39757c0152c2daa9318",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/gmpyfinitefield.py",
+   "blob_sha": "a417e8170f93147a29c235fca660e4daf407b776",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/gmpyintegerring.py",
+   "blob_sha": "8b519ede269ad58c5daa57c9a28fa0b583f52d66",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/gmpyrationalfield.py",
+   "blob_sha": "eb144f6039c958c1cbc2852b380685c9ebdf1f65",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/groundtypes.py",
+   "blob_sha": "b3c7d130d3a994627c77fb89008160b489ac25d6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/integerring.py",
+   "blob_sha": "33dee589a92f3789dad4114de6de5d98b20efb85",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/modularinteger.py",
+   "blob_sha": "e0db0511241332abfeabf3ea0245920834f16224",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/mpelements.py",
+   "blob_sha": "51208a709effc135c0d05baa56d1313bb76e2892",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/old_fractionfield.py",
+   "blob_sha": "b0373cf949f9e980f5735d773b91169646a5103a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/old_polynomialring.py",
+   "blob_sha": "cf5094e8a43966a8d24c12de7ae3a37a44fa3f88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/polynomialring.py",
+   "blob_sha": "b595abad2e706a3bc3c0b0e1dd5a442975add970",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/pythonfinitefield.py",
+   "blob_sha": "526669717feabc1d0a60d95c2e1b695c1fa36298",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/pythonintegerring.py",
+   "blob_sha": "6a9bf8199cb406bcd4c6d9da61f82dea0f9c77f7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/pythonrational.py",
+   "blob_sha": "52aca8d76195fab62bbf80b4a4246bd72802ba6b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/pythonrationalfield.py",
+   "blob_sha": "0ff559c053e9d42f381eb3743aaf157e8561a52c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/quotientring.py",
+   "blob_sha": "5a257f89661ef5112903d5f20228bd8b5f29dd4b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/rationalfield.py",
+   "blob_sha": "95abcbbf59a0f180da9897590b5b7d2655fba235",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/realfield.py",
+   "blob_sha": "7de16f9d4069743bf65bd34c71b3323e9ac33098",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/ring.py",
+   "blob_sha": "c69e6944d8f51e4b319609368a476e6e847ae126",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/domains/simpledomain.py",
+   "blob_sha": "88cf634555d8bd9229d7fc511af3cf96fececbb8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/euclidtools.py",
+   "blob_sha": "c0b6d13e79e6ebec6be059bf7aa3231011ebc5a7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/factortools.py",
+   "blob_sha": "1fd107df10f9107553ae1998bc4166fa26f29db8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/fglmtools.py",
+   "blob_sha": "556004fb7deaf48bcffe0c43a6b9cd7d32f0a08f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/fields.py",
+   "blob_sha": "13991ff6adf6b2439a0a3e35e8ddb8d480c1417a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/galoistools.py",
+   "blob_sha": "9bfbba6853311de37e40380e1bc4fd6df982bcf2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/groebnertools.py",
+   "blob_sha": "db0dfc5a75045641e24cc3dbd0a16d9dfa568ec9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/heuristicgcd.py",
+   "blob_sha": "ea9eeac952e88552d729f0bd3073dee21b6ab68b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/__init__.py",
+   "blob_sha": "704fa982946902822471734c5b2be916b65675be",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/ddm.py",
+   "blob_sha": "bca4e0bdc150a3ca45f25033d8289cc0652e5b5c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/dense.py",
+   "blob_sha": "f04b5c81fdd16ded9ddec36cc9c9faa6843b68ee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/domainmatrix.py",
+   "blob_sha": "f473807512beb8840bb7e3f10e3541274cf4af30",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/eigen.py",
+   "blob_sha": "b8f13c0e0e128c7fbbc2d69d7c9d4e2c0f7dfa4f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/matrices/exceptions.py",
+   "blob_sha": "ce22a3b50bd8ff53eaefe136c2704b02510ba620",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/modulargcd.py",
+   "blob_sha": "9294bdba9a03f52148e5786d22fffdef8938a933",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/monomials.py",
+   "blob_sha": "b1eaf01789ddb929d11e0c432bdf132b30c7b652",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/multivariate_resultants.py",
+   "blob_sha": "24755aec455e4006ab89c8077cc0b87d83879d2b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/numberfields.py",
+   "blob_sha": "79f60d3e895a4f3f41f81d01e1be8ee44f24efd7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/orderings.py",
+   "blob_sha": "6fe962b683e1c4a855ee3616e1621449f0768aa7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/orthopolys.py",
+   "blob_sha": "d2c56739f1e26f3e317543e1241988c4fb8db557",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/partfrac.py",
+   "blob_sha": "fb6d32365366446b9e0c5b58715d5605a6590f71",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyclasses.py",
+   "blob_sha": "238a0f0b25ee276aa878e4de5971b0b55c4c0236",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyconfig.py",
+   "blob_sha": "75731f7ac4e4f8784ff8f999cc3537bfa3c6659a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyerrors.py",
+   "blob_sha": "2cd758253f39f003b556303daecd4abeddde422e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyfuncs.py",
+   "blob_sha": "31f0479d3d00f47dd951be68ba677bd2d48b2715",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polymatrix.py",
+   "blob_sha": "3e48d5202473bce34c513f7dde102477f922e97b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyoptions.py",
+   "blob_sha": "dc394e42474c34d7413a33a82fe56924da7137ef",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyquinticconst.py",
+   "blob_sha": "de933d6a892632c2bd61afa2e55e0db5ee986006",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyroots.py",
+   "blob_sha": "a4caa21b18b93534cc94d3929769003b028a21ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polytools.py",
+   "blob_sha": "39670bf874a601e036cdeebe57b7f8e82ddc3e4e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/polyutils.py",
+   "blob_sha": "20e25bff758761b56058139d8a061ecc4e950f3f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/rationaltools.py",
+   "blob_sha": "42b6d377a18f2afdf1a40714bc51984d00d0df54",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/ring_series.py",
+   "blob_sha": "47e517f981958da8b02ce99d483a447b5dbf93bd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/rings.py",
+   "blob_sha": "fa5970caa86eebf7f3030299ddf872505cf90bdb",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/rootisolation.py",
+   "blob_sha": "c2b44ef0a87ca30a3e4eaf5d5b348030e2b68d7c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/rootoftools.py",
+   "blob_sha": "44a23bdc6e0b2a280f86ce602bf2b1326c2183be",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/solvers.py",
+   "blob_sha": "6c0cc3ce095e8ff88b46b448b16564c7e3540028",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/specialpolys.py",
+   "blob_sha": "05145168284cc575462fca39e885f625377c923f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/sqfreetools.py",
+   "blob_sha": "a7e1a130671069f5f1c0d73495aba2d1b9f0991c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/polys/subresultants_qq_zz.py",
+   "blob_sha": "a911a9febe7b833b0faa8e3fc79d332fc594d90b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/__init__.py",
+   "blob_sha": "97ed5213930489de00fe2cc736a078a3c14d3ed7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/c.py",
+   "blob_sha": "67b9dc8feed4ddf7c9deedade7058ddec83c78ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/ccode.py",
+   "blob_sha": "2eeefbc7e48b2e6282913198627b3b78054c042d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/codeprinter.py",
+   "blob_sha": "ba0e746f5dac78377ba1b39ff796995334dff030",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/conventions.py",
+   "blob_sha": "9a3be6bbe936af8f3e3e05cc64e618aedb716604",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/cxx.py",
+   "blob_sha": "59af3469811ce0119a2d39bbd23bc6c14027f7c3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/cxxcode.py",
+   "blob_sha": "1778cc00a70390a42c1d6eff89db07ed74987506",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/defaults.py",
+   "blob_sha": "77a88d353fed4bd70496456ddd03cc429a4ba5e7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/dot.py",
+   "blob_sha": "349ea1a252b376fee22333d4748bf96c234be039",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/fcode.py",
+   "blob_sha": "1fe9f4738213ee3ff6277a3ce966ce29b24a276f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/fortran.py",
+   "blob_sha": "9e438201cf5aed225fafd0bacbf3cec0e0357c6d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/glsl.py",
+   "blob_sha": "5c8a876c8ca6f72f4ed5ebb6ba765a7e247e3b0e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/gtk.py",
+   "blob_sha": "4123d7231c730bbde28e33f441470c28b21c78d0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/jscode.py",
+   "blob_sha": "5ab928131ae5e60178bb182b3ecb29e2c6e30bbd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/julia.py",
+   "blob_sha": "67ef049a083ca1e6894b150338cdcd1e63826eb1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/lambdarepr.py",
+   "blob_sha": "19b68fc3eb348ad4f1a88256c69aae5844a5aa33",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/latex.py",
+   "blob_sha": "bd722de1dd5a64d3466fd64dabdc20d78cd5d53a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/llvmjitcode.py",
+   "blob_sha": "58473ac00a8d93db1c0e81ad3827050334905de0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/maple.py",
+   "blob_sha": "5fb11b637315b22cced0315e9a50dac4c7c2810c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/mathematica.py",
+   "blob_sha": "18548f1eb929effa139c867fc7cc215becbee43c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/mathml.py",
+   "blob_sha": "04c8bc723049fb0feaf9ef351caa04a381477e88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/octave.py",
+   "blob_sha": "b2b36e04107101080d7cf9ddbcda86b2693b435b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/precedence.py",
+   "blob_sha": "a54f2ffce279c7f160245088e80f7f2ec4d259a6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/pretty/__init__.py",
+   "blob_sha": "cbabc649152a3c353a37225d342064634fbb5805",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/pretty/pretty.py",
+   "blob_sha": "d41513e5641453c9c290e3b4d27fcd490b9777ee",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/pretty/pretty_symbology.py",
+   "blob_sha": "3f7c4a2dc71d22a7c20335afa3bfe9072277698b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/pretty/stringpict.py",
+   "blob_sha": "b9df3e2e92ff61d8f68b4a82b3f3207b1a2f42e5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/preview.py",
+   "blob_sha": "52085e5e19d78310dc37641bd1ad09d41abe710d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/printer.py",
+   "blob_sha": "74d0b919a21bbeafa4f38ef8eefeada1cc51233c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/pycode.py",
+   "blob_sha": "b7315a4c559cdc2985b4817064d0cdeefd42d110",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/python.py",
+   "blob_sha": "ac6d95a06ca58025d8e0b4c59463f6fa7b7ac887",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/rcode.py",
+   "blob_sha": "f543e2dc590676ac5be1ecb9008d481e468695ff",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/repr.py",
+   "blob_sha": "135d49b8b2112e04bf506eefe89aad7d348dd979",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/rust.py",
+   "blob_sha": "8db995fc30671eac5384cd596567f9884aa2df74",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/str.py",
+   "blob_sha": "6ec482e6c7ec0f03404fbb199f0d53039970bba6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/tableform.py",
+   "blob_sha": "5c6baacf956a0270e1e5d54366d2a9199df1a16b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/tensorflow.py",
+   "blob_sha": "40f70875147a186514e4d15da55a700c605b8525",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/theanocode.py",
+   "blob_sha": "3cd7efae47b78ed8a20d4ede1c8b9cbd8b63350b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/printing/tree.py",
+   "blob_sha": "ea81e3882d891d0bc10fd053b48191d9f4baab60",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/release.py",
+   "blob_sha": "ccc426d361bd32f53ffad4ccaa2f03471944de6f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sandbox/__init__.py",
+   "blob_sha": "3a84b7517819bb2fc9886274e09d955a74cabca1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sandbox/indexed_integrals.py",
+   "blob_sha": "620e7e527771bfa8604dca96756265e2a668b286",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/__init__.py",
+   "blob_sha": "953653e21856b82bc0b708ccd922efb728a084ed",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/acceleration.py",
+   "blob_sha": "99a246afa59e7a14737e564cfff3d83d87864b90",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/approximants.py",
+   "blob_sha": "c7992baf555559e8ebd2dd42ba10f47c11c74e4e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/aseries.py",
+   "blob_sha": "dbbe0664e6d43a9329f37789c16c48143eda5413",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/benchmarks/bench_limit.py",
+   "blob_sha": "5802a91f213691cf51cb6b7d0d605b63149f3d84",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/benchmarks/bench_order.py",
+   "blob_sha": "4c2ef0ae2144d09b60ff514bb5796e65b3f85ef9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/formal.py",
+   "blob_sha": "d9e1ea8df2d2664689c641ee2751371d61e31242",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/fourier.py",
+   "blob_sha": "197aa259df3605bf53ed70e49e6ba1d50a60c6d8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/gruntz.py",
+   "blob_sha": "a3e27db2b5eebaca76646bc4c7cf5a334fbcccc2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/kauers.py",
+   "blob_sha": "9e9645ff15ee5ae3c1d1c8709f76aed1b366f50a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/limits.py",
+   "blob_sha": "4f927ab1b8f65372077a97e27be64493b836b79a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/limitseq.py",
+   "blob_sha": "238f4ab39eef36a9481f8b4c019df86d9a461c4e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/order.py",
+   "blob_sha": "dcb37248771eab417f3a547da511c0985d5f0df7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/residues.py",
+   "blob_sha": "69d900503b97d77e189c7ff1d390a97f1a2fa535",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/sequences.py",
+   "blob_sha": "0c69cc6cc1ce43b9ab3f85d54e68a478b7696ee5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/series.py",
+   "blob_sha": "b355bf430b4bc074748021fa9dca4fc70e2da075",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/series/series_class.py",
+   "blob_sha": "ff04993b266a3cbd3f767042d4325fb11edb2168",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/__init__.py",
+   "blob_sha": "c4773a76f482465318b0846e2cd54676afdfe884",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/conditionset.py",
+   "blob_sha": "987fff47668330b1ee8b53a2d05fe0c7745b81c9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/contains.py",
+   "blob_sha": "a4a657f6bc1cd0217956c94666515be6d957dd2e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/fancysets.py",
+   "blob_sha": "295e2e7e7c8556c4ac529101f6368325e5ecae95",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/add.py",
+   "blob_sha": "00a32f96fca1d21704ccdeb2754fa49b908be56f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/comparison.py",
+   "blob_sha": "b64d1a2a22e15d09f6f10fb4fef730163d468d45",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/functions.py",
+   "blob_sha": "9b4f030b207044c560a7eb26f522accf486100ad",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/intersection.py",
+   "blob_sha": "650efe05316b721b2c51382e9621bf1bdf16cca6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/issubset.py",
+   "blob_sha": "1900f9b0c0096fe4ea304f14cad865fa59ec757c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/mul.py",
+   "blob_sha": "4888fa2723a7a25d6530e46bfbb7bb6104c40358",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/power.py",
+   "blob_sha": "69b9f2e91a10b2f2c9ae27e09ed22f3c2f7a76a9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/handlers/union.py",
+   "blob_sha": "176d59ba1f3fda075eba010b646d7c636ee1b761",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/ordinals.py",
+   "blob_sha": "49d1fdbffb2478ba9a833a5fd13e2515c8ff5d7d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/powerset.py",
+   "blob_sha": "db424b117ab589036cade35b17ef50670c83bf06",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/setexpr.py",
+   "blob_sha": "7ac3cf6c91be617a39e498fd646bdacfcd81c25f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/sets/sets.py",
+   "blob_sha": "5275591e789b9fde674b1718c36e0f04643c81b7",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/__init__.py",
+   "blob_sha": "f2260035295be36fadc716b2f6a35dce02fb1432",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/combsimp.py",
+   "blob_sha": "82df81c7f6c43b9b89c078fd8428c985c3c06c90",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/cse_main.py",
+   "blob_sha": "d4708e8089004bc593ac51e57ecb4671a32af7fa",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/cse_opts.py",
+   "blob_sha": "dfb13215fa096f74dd19a47b4227aec362895579",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/epathtools.py",
+   "blob_sha": "a62f693e04bd53d813d992994c1d4005c3e3dd42",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/fu.py",
+   "blob_sha": "b13360705ab30ed92a85c5aa5262f88abe6780f4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/gammasimp.py",
+   "blob_sha": "7ea8513d89a354e5ebd61c0cb0bb0113091caf18",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/hyperexpand.py",
+   "blob_sha": "2887a59e5a31a642a3acea9e4dfd109473c870e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/hyperexpand_doc.py",
+   "blob_sha": "f2488499f6f8b631e0a1334080491f31c4df01d1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/powsimp.py",
+   "blob_sha": "b682413b6042ac87e7a9206e29365c014ed117f9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/radsimp.py",
+   "blob_sha": "db27d2aff1fb9a2f82d21562b8cee9f0e8581016",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/ratsimp.py",
+   "blob_sha": "2b6ea0445d9c1cdfb0aa561d971314477862f8c1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/simplify.py",
+   "blob_sha": "35877b77bfa81c3ec6944203739563a031af7b9f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/sqrtdenest.py",
+   "blob_sha": "d028179f2b8a7a1a9a077bbf7d2df6b31350c868",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/traversaltools.py",
+   "blob_sha": "4f81e43fa9496b6e48d1b500150a4cd1c097330d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/simplify/trigsimp.py",
+   "blob_sha": "c8f461e59aabc11f9e44bff25214f571fd4812e2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/__init__.py",
+   "blob_sha": "c8e59192bf60ca545ddd1333ab813ce20ef43074",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/benchmarks/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/benchmarks/bench_solvers.py",
+   "blob_sha": "6ed074c936158ea0985ca9794a6dd0b369272c77",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/bivariate.py",
+   "blob_sha": "5dceb6ccb05550563eed8532f1d2efc90ca90595",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/decompogen.py",
+   "blob_sha": "214efb21e35de12e4197d614d191aa7f3898422c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/deutils.py",
+   "blob_sha": "f4ddc00cfaa6808a7f7fa68dd618cc78c6c85acc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/diophantine/__init__.py",
+   "blob_sha": "23c21242208d6f520c130250ecdce43382b9d868",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/diophantine/diophantine.py",
+   "blob_sha": "b9a47ede312878a9f5e2bca5fd8969576d186fe5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/inequalities.py",
+   "blob_sha": "4b8045ac185ee4acd0cc7e37083df67a84a3da67",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/ode/__init__.py",
+   "blob_sha": "127ac789146d1cf90d96120f30b2244a3c811154",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/ode/ode.py",
+   "blob_sha": "d5f275bcccc74b9d4a943f08728cb88b198a9e43",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/ode/single.py",
+   "blob_sha": "130190645161f7a0c25766bdaa618f2ab472c490",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/ode/subscheck.py",
+   "blob_sha": "d9753d451c0194ead245ce01b6b67f7c8811599c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/ode/systems.py",
+   "blob_sha": "9a5edf53e30919bf02abbeab90294a797159fc3f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/pde.py",
+   "blob_sha": "b975fbe10b34358d134654a4ef19ab1b70503b88",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/polysys.py",
+   "blob_sha": "b9809fd4e96350763b56042b30640f44a791b551",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/recurr.py",
+   "blob_sha": "93cdb047413a90c3de0544201d7e9b504826b585",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/solvers.py",
+   "blob_sha": "d4752e93859119d187c69ac3aa981031d5fa86f3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/solvers/solveset.py",
+   "blob_sha": "e92ab9083e3fad1b0bc38da2b925400ea107c86b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/__init__.py",
+   "blob_sha": "9a9491d6e0878015575600802e02f7abcb01c10e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/compound_rv.py",
+   "blob_sha": "b2fad26abf667527c28bc961a3213b66da840077",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/crv.py",
+   "blob_sha": "6550821cce0d39c998d665e403f0ae60fdf7e2cd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/crv_types.py",
+   "blob_sha": "3608e1970c614de47c31ad92c3857f6e78402e28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/drv.py",
+   "blob_sha": "1774e17585a091454bf4b25ea93ceb2897fe6f75",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/drv_types.py",
+   "blob_sha": "92f677a1aec02181641b295a672e74678a7864c2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/error_prop.py",
+   "blob_sha": "3b60538a4b2b32e430a528eadf23ed8edee4764b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/frv.py",
+   "blob_sha": "c7ecc5eb84cb602d094f0581a81a6ab8d85844f1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/frv_types.py",
+   "blob_sha": "2baaa93e936929c304e4f1d3e880cd670228af8c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/joint_rv.py",
+   "blob_sha": "a501c2459bb4509db6bd3c397b622a709ee4f4e0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/joint_rv_types.py",
+   "blob_sha": "c89ebe51850c02d7849aeb1728191a51f6e53f4b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/matrix_distributions.py",
+   "blob_sha": "ae679a93c60c30a22a2019152648065ea753e17d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/random_matrix.py",
+   "blob_sha": "4b74d86612bdb98a2a3415116495d47e24314e4a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/random_matrix_models.py",
+   "blob_sha": "bc0ac6271deb4120149b66dae0150544e849d625",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/rv.py",
+   "blob_sha": "7cd64d864989ad2ba6861601889c003450af2702",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/rv_interface.py",
+   "blob_sha": "85dd36925c7e9a25b909890a79c8afd3edd7d70d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/sampling/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/sampling/sample_numpy.py",
+   "blob_sha": "a50b17d256f1207dae267062611406061164bd99",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/sampling/sample_pymc3.py",
+   "blob_sha": "a20e3858e16d72ab07d56b72f647e02d8d55395e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/sampling/sample_scipy.py",
+   "blob_sha": "e5a9406cf013b5fbe3d9723b7a610f4e506af23d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/stochastic_process.py",
+   "blob_sha": "b61f9e186b906dc6d1622cafdb4762b7b442bf01",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/stochastic_process_types.py",
+   "blob_sha": "c79cddc4fc5dcd87195ebdaa4278ba623afb9ab8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/symbolic_multivariate_probability.py",
+   "blob_sha": "9ad8cc47d260665e53928939ad7b6645be97674a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/stats/symbolic_probability.py",
+   "blob_sha": "c74207f2a9cfd5ee22326532bd3a76dbe1f9c823",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/__init__.py",
+   "blob_sha": "b23806f3733390363b244f7835c4300755486f8b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/branch/__init__.py",
+   "blob_sha": "c7c3008fecf93a121feccb4c52331ecb69195018",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/branch/core.py",
+   "blob_sha": "99a3ab35fa02f044ce0813f3888c796a193bc9d8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/branch/tools.py",
+   "blob_sha": "dd0e7e9fe0d4b03a36f46d4726eea4ed6ef55d2a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/branch/traverse.py",
+   "blob_sha": "54966d80b2faba9343bc4e4b0dc218959810a811",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/core.py",
+   "blob_sha": "dd776073677cf4767283b18ebe05c85ecdcc3271",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/rl.py",
+   "blob_sha": "14679d745d6ce0f2fc1dc8ef1430ba861dcc3559",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/tools.py",
+   "blob_sha": "cf35290b57869eaa5fe62514be760fa8aa11d24f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/traverse.py",
+   "blob_sha": "869361f443742b5b7346c9c970f103b955e8473e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/tree.py",
+   "blob_sha": "6b84ef53fcf2af6b870abd365b8476cf94f7bf2f",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/strategies/util.py",
+   "blob_sha": "6faff0437cc1e3e2e4444f492df145fd7ba657e1",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/__init__.py",
+   "blob_sha": "a832614b1d48e26bf01e16f040f34dd412e8e32b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/__init__.py",
+   "blob_sha": "2518ceb2160bbc118f72c657a504094f54004b82",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/array_comprehension.py",
+   "blob_sha": "d3ad56fefbadc47b3de16ed221229aa8d53e69a5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/array_derivatives.py",
+   "blob_sha": "2f6f12604627ad2e7cb6c82116945ab1929cd507",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/arrayop.py",
+   "blob_sha": "8a0ecfa2d473d4a9814554c7a2fcc21ecac5b79c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/dense_ndim_array.py",
+   "blob_sha": "b8a381349b48fd1a054cc169d9c55ebb7a051751",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/expressions/__init__.py",
+   "blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/expressions/array_expressions.py",
+   "blob_sha": "850ccc6246b62490837e7c7f42e540a5eef8714b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/expressions/arrayexpr_derivatives.py",
+   "blob_sha": "d4de851b664d3b2a42671714aa8c95debf8f6ef9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/mutable_ndim_array.py",
+   "blob_sha": "e1eaaf7241bc3b4a48234178d18da3aa5736e189",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/ndim_array.py",
+   "blob_sha": "69052cc161fb707114a3ca9406ec05f6b6d797b5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/array/sparse_ndim_array.py",
+   "blob_sha": "c13384e14c9dac2309106b6be57f73d289520764",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/functions.py",
+   "blob_sha": "27cb4e8decd55cc3315c4decf276f2bd2f34e4a8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/index_methods.py",
+   "blob_sha": "f2302b95e4576bd06a1fa5bd3b0d8f0f69d5c0c6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/indexed.py",
+   "blob_sha": "2ef363af183e9a70aa329dc8edf0b872898b4387",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/tensor.py",
+   "blob_sha": "494fe260783cd60abdf0a28bf7b1914e0c0e64d4",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/tensor/toperators.py",
+   "blob_sha": "2bc5a17becc341f2c2343a90316a2366c9bf3868",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/this.py",
+   "blob_sha": "c2a5504ac42c7d57790d65524b066a6df86ab539",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/unify/__init__.py",
+   "blob_sha": "5c166f9163785f4aa5744324eb817bef79b33525",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/unify/core.py",
+   "blob_sha": "390cb053773367eba5c06663514e0924f1d43615",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/unify/rewrite.py",
+   "blob_sha": "88faef4eb1a861a61201ad172fc964a21a04671d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/unify/usympy.py",
+   "blob_sha": "5f815d0ac260df19f7315faf63a01a26d4905a62",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/__init__.py",
+   "blob_sha": "d3fffdfa768322adc8caa7d0470aa6fd3ee35e15",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/_compilation/__init__.py",
+   "blob_sha": "d2c05ad48a93493bb5434256c88dfd614ac47b2d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/_compilation/availability.py",
+   "blob_sha": "dc97b3e7b8c7e7307c6c21352ed4035d977aabb3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/_compilation/compilation.py",
+   "blob_sha": "b1d900ae8fcb3d97a930c8f92a15f16376951de9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/_compilation/runners.py",
+   "blob_sha": "da8fee587ae9fba8124721da924e0442856c0bc3",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/_compilation/util.py",
+   "blob_sha": "0b481f6a50079a892d10190956d6df13fe2ce8e8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/autowrap.py",
+   "blob_sha": "10464880dd9c2f5b028323f480c79ee35fc7c959",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/benchmarking.py",
+   "blob_sha": "940b261e2de628a522a214ad81eed3d422647568",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/codegen.py",
+   "blob_sha": "ce6008ba06c3ec2e30e6b9f489d8232f27200888",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/decorator.py",
+   "blob_sha": "49db7b9ecc660dde56c2934765b358c9afa2629c",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/enumerative.py",
+   "blob_sha": "67454cba35af98fd334f830ff0d0832294ab199a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/exceptions.py",
+   "blob_sha": "e36ec87c44e836002b2728e2dd2dcd84c08a4988",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/iterables.py",
+   "blob_sha": "d0a5aa4d97276c38779807c82429c20f96da678b",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/lambdify.py",
+   "blob_sha": "0a07c20083fa4e631bd0da42a246890863ed239a",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/magic.py",
+   "blob_sha": "e853a0ad9a85bc252dcb24e8a1ecbfca422ac3fd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/matchpy_connector.py",
+   "blob_sha": "66f5f3f768603033d733bac2abef330c54124690",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/mathml/__init__.py",
+   "blob_sha": "83a73fff96ae0b181686f64cf8512bb2018eb477",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/memoization.py",
+   "blob_sha": "a3e18f2f3dec9027dd40b580db5f0e930514493d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/misc.py",
+   "blob_sha": "27857d740cb5c618319ec1c26bd8a925204d648d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/pkgdata.py",
+   "blob_sha": "3bef5d740232e5cf555161a724c4014a43676fdd",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/pytest.py",
+   "blob_sha": "acd4d82c7bc739e6299461c52c6160e0df9e07c9",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/quality_unicode.py",
+   "blob_sha": "ff273abb2e6f647f8edfdf0e0ee619e12d43d129",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/randtest.py",
+   "blob_sha": "d9fb1ec4237f424966121f7b31cc5b8fb351d6a0",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/runtests.py",
+   "blob_sha": "f61d1fc58603e3996938782678a662e2545c41c5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/source.py",
+   "blob_sha": "f4ccd93d08229f2bef677ae53c60499f6e18141e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/timeutils.py",
+   "blob_sha": "cef6de95bae27ca6a9f5a01ed2c4c3751ee9ce86",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/utilities/tmpfiles.py",
+   "blob_sha": "09a406deaaa8b9e2ac5c93836e6223a4ba516bf8",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/__init__.py",
+   "blob_sha": "bdf9e615c75dca635110b7c788edcf0fed6822f5",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/basisdependent.py",
+   "blob_sha": "4b18188a79f1528442c2da157ba7673d68538479",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/coordsysrect.py",
+   "blob_sha": "47077ac9d2835f08dad2e0e599f7959efc7b3ec6",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/deloperator.py",
+   "blob_sha": "cb8b92b91ee5486d33e3fa54f8cd39f8123d760d",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/dyadic.py",
+   "blob_sha": "b0bdd5f2dc0cca5b3d95a6537ff307b4aa035276",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/functions.py",
+   "blob_sha": "d823450cab5f3cedcc76c9231e6d2c4bc1d4651e",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/implicitregion.py",
+   "blob_sha": "e6527a5b05536fa981f9e7fab14b53a97572ea44",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/integrals.py",
+   "blob_sha": "6984883f52ea435e58ea46ac4bb30a6ac1f54221",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/operators.py",
+   "blob_sha": "2f303ee69041f31f406cbe5d1a036c7306afd3c2",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/orienters.py",
+   "blob_sha": "bcaab04a8eca3e70da7ba07665227455320388ec",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/parametricregion.py",
+   "blob_sha": "c3cd6f0e0a05604dad46dbe1a82bf0027d6d4842",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/point.py",
+   "blob_sha": "e46bb22d91034751d7cbf16d9de0470dc6e58cbc",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/scalar.py",
+   "blob_sha": "2441b6aeedc0a44f1b721a9280f8bf269c038009",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  },
+  {
+   "path": "sympy/vector/vector.py",
+   "blob_sha": "0a35b69b78a7769b391199e0c079379de5933b28",
+   "mode": "100644",
+   "cached": true,
+   "astcheck": "ok"
+  }
+ ]
+}

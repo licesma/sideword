@@ -1,0 +1,199 @@
+{
+ "blob_sha": "0bad255e85ee0f6b8682d4fb1242a583a407a0a9",
+ "path": "astropy/nddata/ccddata.py",
+ "repo": "astropy/astropy",
+ "records": 29,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "_config_ccd_requires_unit",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "_arithmetic",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r5",
+   "anchor": "_arithmetic.decorator.inner#assign:_config_ccd_requires_unit",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r6",
+   "anchor": "CCDData",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "CCDData.__init__#if:_config_ccd_requires_unit and self.unit is None",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r8",
+   "anchor": "CCDData.to_hdu",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r9",
+   "anchor": "CCDData.to_hdu#if:isinstance(self.header, fits.Header)/assign:header",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r10",
+   "anchor": "CCDData.to_hdu#if:isinstance(self.header, fits.Header)/else/assign:dummy_ccd",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r11",
+   "anchor": "CCDData.to_hdu#if:self.wcs/assign:wcs_header",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r12",
+   "anchor": "CCDData.to_hdu#if:hdu_mask and self.mask is not None/if:not hasattr(self.mask, 'shape')",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r13",
+   "anchor": "CCDData.to_hdu#if:hdu_mask and self.mask is not None/assign:hduMask",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r14",
+   "anchor": "CCDData.to_hdu#if:hdu_uncertainty and self.uncertainty is not None/if:self.uncertainty.__class__.__name__ != 'StdDevUncertainty'",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r15",
+   "anchor": "CCDData.to_hdu#if:hdu_uncertainty and self.uncertainty is not None/if:hasattr(self.uncertainty, 'unit') and self.uncertainty.unit is not None and self.uncertainty.unit != self.unit",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r16",
+   "anchor": "CCDData.copy",
+   "kind": "doc",
+   "line": 334
+  },
+  {
+   "id": "r17",
+   "anchor": "CCDData._insert_in_metadata_fits_safe",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r18",
+   "anchor": "_KEEP_THESE_KEYWORDS_IN_HEADER",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r19",
+   "anchor": "_generate_wcs_and_update_header",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r20",
+   "anchor": "_generate_wcs_and_update_header#try",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r21",
+   "anchor": "_generate_wcs_and_update_header#try/except:Exception/call:log.info",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r22",
+   "anchor": "_generate_wcs_and_update_header#if:not wcs.wcs.ctype[0]",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r23",
+   "anchor": "_generate_wcs_and_update_header#assign:wcs_header",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r24",
+   "anchor": "fits_ccddata_reader",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r25",
+   "anchor": "fits_ccddata_reader#with:fits.open(filename, **kwd)/if:hdu_mask is not None and hdu_mask in hdus/assign:mask",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r26",
+   "anchor": "fits_ccddata_reader#with:fits.open(filename, **kwd)/if:hdu == 0 and hdus[hdu].data is None",
+   "kind": "lead",
+   "line": 501
+  },
+  {
+   "id": "r27",
+   "anchor": "fits_ccddata_reader#with:fits.open(filename, **kwd)/if:hdu == 0 and hdus[hdu].data is None/for:i in range(len(hdus))/if:hdus.fileinfo(i)['datSpan'] > 0/call:comb_hdr.extend",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r28",
+   "anchor": "fits_ccddata_reader#with:fits.open(filename, **kwd)/if:'bunit' in hdr/if:fits_unit_string.strip().lower() == 'adu'",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r29",
+   "anchor": "fits_ccddata_writer",
+   "kind": "doc",
+   "line": 536
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14773,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3488,
+  "thinking_tokens": 1813,
+  "opus_cost_usd": 0.23922149999999998,
+  "total_cost_usd": 0.24957449999999998,
+  "duration_ms": 31799,
+  "duration_api_ms": 32904,
+  "num_turns": 2
+ },
+ "wall_ms": 32812,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

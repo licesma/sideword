@@ -1,0 +1,1021 @@
+{
+ "blob_sha": "41e0dad1bc7d4166137eedb4f2f1f5a9ec9df5f0",
+ "path": "astropy/io/fits/hdu/compressed.py",
+ "repo": "astropy/astropy",
+ "records": 166,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:ctypes",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "NO_DITHER",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "DEFAULT_COMPRESSION_TYPE",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#if:COMPRESSION_SUPPORTED",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#if:COMPRESSION_SUPPORTED/try/except:AttributeError/assign:CFITSIO_SUPPORTS_GZIPDATA",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r6",
+   "anchor": "CompImageHeader",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r7",
+   "anchor": "CompImageHeader._keyword_remaps",
+   "kind": "todo",
+   "line": 93
+  },
+  {
+   "id": "r8",
+   "anchor": "CompImageHeader.__init__",
+   "kind": "todo",
+   "line": 108
+  },
+  {
+   "id": "r9",
+   "anchor": "CompImageHeader.__setitem__",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r10",
+   "anchor": "CompImageHeader.__setitem__#if:self._set_slice(key, value, self)",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r11",
+   "anchor": "CompImageHeader.__setitem__#if:isinstance(key, int)/elif:isinstance(key, tuple)/else/assign:keyword, index",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r12",
+   "anchor": "CompImageHeader.__setitem__#if:index is not None",
+   "kind": "post",
+   "line": 143
+  },
+  {
+   "id": "r13",
+   "anchor": "CompImageHeader.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/return",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r14",
+   "anchor": "CompImageHeader.append#if:isinstance(card, str)",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r15",
+   "anchor": "CompImageHeader.append#call:self._table_header.append",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r16",
+   "anchor": "CompImageHeader.insert#if:isinstance(key, int)/if:after",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r17",
+   "anchor": "CompImageHeader.insert#assign:remapped_index",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r18",
+   "anchor": "CompImageHeader.insert#call:self._table_header.insert",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r19",
+   "anchor": "CompImageHeader._update#if:keyword in Card._commentary_keywords/return",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r20",
+   "anchor": "CompImageHeader._relativeinsert",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r21",
+   "anchor": "CompImageHeader._relativeinsert#if:before is None",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r22",
+   "anchor": "CompImageHeader._remap_keyword#assign:is_naxisn",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r23",
+   "anchor": "CompImageHeader._remap_keyword#return",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r24",
+   "anchor": "CompImageHeader._remap_index#if:not isinstance(idx, int)",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r25",
+   "anchor": "CompImageHDU",
+   "kind": "todo",
+   "line": 375
+  },
+  {
+   "id": "r26",
+   "anchor": "CompImageHDU",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r27",
+   "anchor": "CompImageHDU.DEPRECATED_KWARGS",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r28",
+   "anchor": "CompImageHDU._manages_own_heap",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r29",
+   "anchor": "CompImageHDU.__init__",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r30",
+   "anchor": "CompImageHDU.__init__#if:not COMPRESSION_SUPPORTED/raise:Exception",
+   "kind": "todo",
+   "line": 610
+  },
+  {
+   "id": "r31",
+   "anchor": "CompImageHDU.__init__#assign:compression_opts",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r32",
+   "anchor": "CompImageHDU.__init__#assign:compression_opts['quantize_method']",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r33",
+   "anchor": "CompImageHDU.__init__#if:data is DELAYED/call:super().__init__",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r34",
+   "anchor": "CompImageHDU.__init__#if:data is DELAYED/else/call:super().__init__",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r35",
+   "anchor": "CompImageHDU.__init__#if:data is DELAYED/else/assign:self.data",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r36",
+   "anchor": "CompImageHDU.__init__#if:data is DELAYED/else/call:self._update_header_data",
+   "kind": "lead",
+   "line": 650
+  },
+  {
+   "id": "r37",
+   "anchor": "CompImageHDU.__init__#assign:self._do_not_scale_image_data",
+   "kind": "todo",
+   "line": 654
+  },
+  {
+   "id": "r38",
+   "anchor": "CompImageHDU.__init__#if:do_not_scale_image_data",
+   "kind": "lead",
+   "line": 662
+  },
+  {
+   "id": "r39",
+   "anchor": "CompImageHDU.match_header#if:COMPRESSION_SUPPORTED and COMPRESSION_ENABLED/elif:not COMPRESSION_SUPPORTED/else/return",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r40",
+   "anchor": "CompImageHDU._update_header_data",
+   "kind": "doc",
+   "line": 702
+  },
+  {
+   "id": "r41",
+   "anchor": "CompImageHDU._update_header_data#if:self._has_data",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r42",
+   "anchor": "CompImageHDU._update_header_data#if:not name and 'EXTNAME' not in self._header",
+   "kind": "lead",
+   "line": 792
+  },
+  {
+   "id": "r43",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r44",
+   "anchor": "CompImageHDU._update_header_data#if:image_header",
+   "kind": "lead",
+   "line": 825
+  },
+  {
+   "id": "r45",
+   "anchor": "CompImageHDU._update_header_data#call:self._header.set",
+   "kind": "lead",
+   "line": 845
+  },
+  {
+   "id": "r46",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'PLIO_1'",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r47",
+   "anchor": "CompImageHDU._update_header_data#assign:col1",
+   "kind": "lead",
+   "line": 862
+  },
+  {
+   "id": "r48",
+   "anchor": "CompImageHDU._update_header_data#assign:zbitpix",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r49",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/assign:ncols",
+   "kind": "lead",
+   "line": 873
+  },
+  {
+   "id": "r50",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/if:CFITSIO_SUPPORTS_GZIPDATA",
+   "kind": "lead",
+   "line": 881
+  },
+  {
+   "id": "r51",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/if:CFITSIO_SUPPORTS_GZIPDATA/assign:tform2",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r52",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/if:CFITSIO_SUPPORTS_GZIPDATA/else/assign:ttype2",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r53",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/call:self._header.set",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r54",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/call:self._header.set",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r55",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/call:self._header.set",
+   "kind": "lead",
+   "line": 924
+  },
+  {
+   "id": "r56",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/assign:cols",
+   "kind": "lead",
+   "line": 934
+  },
+  {
+   "id": "r57",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/else/assign:ncols",
+   "kind": "lead",
+   "line": 937
+  },
+  {
+   "id": "r58",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/else/assign:to_remove",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r59",
+   "anchor": "CompImageHDU._update_header_data#if:zbitpix < 0 and quantize_level != 0.0/else/assign:cols",
+   "kind": "lead",
+   "line": 952
+  },
+  {
+   "id": "r60",
+   "anchor": "CompImageHDU._update_header_data#call:self._header.set",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r61",
+   "anchor": "CompImageHDU._update_header_data#for:idx in itertools.count(1)",
+   "kind": "lead",
+   "line": 972
+  },
+  {
+   "id": "r62",
+   "anchor": "CompImageHDU._update_header_data#assign:naxis",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r63",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'",
+   "kind": "lead",
+   "line": 993
+  },
+  {
+   "id": "r64",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:self._image_header['NAXIS1'] < 4 or self._image_header['NAXIS2'] < 4/elif:tile_size/if:tile_size[0] < 4 or tile_size[1] < 4/raise:ValueError",
+   "kind": "lead",
+   "line": 1001
+  },
+  {
+   "id": "r65",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/assign:tile_size[0]",
+   "kind": "lead",
+   "line": 1012
+  },
+  {
+   "id": "r66",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/for:i in range(2, naxis)/assign:tile_size[i]",
+   "kind": "lead",
+   "line": 1017
+  },
+  {
+   "id": "r67",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/elif:not tile_size/call:tile_size.append",
+   "kind": "lead",
+   "line": 1032
+  },
+  {
+   "id": "r68",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/elif:not tile_size/call:tile_size.append",
+   "kind": "lead",
+   "line": 1032
+  },
+  {
+   "id": "r69",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/elif:not tile_size/if:self._image_header['NAXIS2'] <= 30/else/assign:naxis2",
+   "kind": "lead",
+   "line": 1038
+  },
+  {
+   "id": "r70",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:tile_size and (tile_size[0] == 0 and tile_size[1] == 0)/elif:not tile_size/for:i in range(2, naxis)/call:tile_size.append",
+   "kind": "lead",
+   "line": 1048
+  },
+  {
+   "id": "r71",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/assign:remain",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r72",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/assign:remain",
+   "kind": "trail",
+   "line": 1053
+  },
+  {
+   "id": "r73",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:remain > 0 and remain < 4/assign:tile_size[0]",
+   "kind": "trail",
+   "line": 1056
+  },
+  {
+   "id": "r74",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/assign:remain",
+   "kind": "trail",
+   "line": 1064
+  },
+  {
+   "id": "r75",
+   "anchor": "CompImageHDU._update_header_data#if:compression_type == 'HCOMPRESS_1'/if:remain > 0 and remain < 4/assign:tile_size[1]",
+   "kind": "trail",
+   "line": 1067
+  },
+  {
+   "id": "r76",
+   "anchor": "CompImageHDU._update_header_data#assign:last_znaxis",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r77",
+   "anchor": "CompImageHDU._update_header_data#assign:nrows",
+   "kind": "lead",
+   "line": 1085
+  },
+  {
+   "id": "r78",
+   "anchor": "CompImageHDU._update_header_data#for:idx, axis in enumerate(self._axes)/if:tile_size and len(tile_size) >= idx + 1/else/if:ztile not in self._header/if:not idx",
+   "kind": "lead",
+   "line": 1097
+  },
+  {
+   "id": "r79",
+   "anchor": "CompImageHDU._update_header_data#call:self._header.set",
+   "kind": "lead",
+   "line": 1125
+  },
+  {
+   "id": "r80",
+   "anchor": "CompImageHDU._update_header_data#for:idx in itertools.count(1)",
+   "kind": "lead",
+   "line": 1135
+  },
+  {
+   "id": "r81",
+   "anchor": "CompImageHDU._update_header_data#for:idx in itertools.count(1)",
+   "kind": "lead",
+   "line": 1135
+  },
+  {
+   "id": "r82",
+   "anchor": "CompImageHDU._update_header_data#for:idx in itertools.count(1)",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r83",
+   "anchor": "CompImageHDU._update_header_data#assign:after_keyword",
+   "kind": "lead",
+   "line": 1172
+  },
+  {
+   "id": "r84",
+   "anchor": "CompImageHDU._update_header_data#if:self._image_header['BITPIX'] < 0",
+   "kind": "trail",
+   "line": 1208
+  },
+  {
+   "id": "r85",
+   "anchor": "CompImageHDU._update_header_data#if:self._image_header['BITPIX'] < 0/if:quantize_method",
+   "kind": "lead",
+   "line": 1217
+  },
+  {
+   "id": "r86",
+   "anchor": "CompImageHDU._update_header_data#if:self._image_header['BITPIX'] < 0/if:quantize_method/else/assign:quantize_method",
+   "kind": "lead",
+   "line": 1238
+  },
+  {
+   "id": "r87",
+   "anchor": "CompImageHDU._update_header_data#if:self._image_header['BITPIX'] < 0/if:quantize_method == NO_DITHER/if:'ZDITHER0' in self._header/del:self._header['ZDITHER0']",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r88",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'SIMPLE' in image_header",
+   "kind": "lead",
+   "line": 1270
+  },
+  {
+   "id": "r89",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'EXTEND' in image_header",
+   "kind": "lead",
+   "line": 1278
+  },
+  {
+   "id": "r90",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'BLOCKED' in image_header",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r91",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'XTENSION' in image_header",
+   "kind": "lead",
+   "line": 1295
+  },
+  {
+   "id": "r92",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'XTENSION' in image_header",
+   "kind": "lead",
+   "line": 1295
+  },
+  {
+   "id": "r93",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'PCOUNT' in image_header",
+   "kind": "lead",
+   "line": 1303
+  },
+  {
+   "id": "r94",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/if:'CHECKSUM' in image_header",
+   "kind": "lead",
+   "line": 1316
+  },
+  {
+   "id": "r95",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/else/if:'XTENSION' in self._image_header",
+   "kind": "lead",
+   "line": 1330
+  },
+  {
+   "id": "r96",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/else/if:'XTENSION' in self._image_header",
+   "kind": "lead",
+   "line": 1330
+  },
+  {
+   "id": "r97",
+   "anchor": "CompImageHDU._update_header_data#if:image_header/else/if:'PCOUNT' in self._image_header",
+   "kind": "lead",
+   "line": 1338
+  },
+  {
+   "id": "r98",
+   "anchor": "CompImageHDU._update_header_data#if:'ZHECKSUM' in self._header",
+   "kind": "lead",
+   "line": 1353
+  },
+  {
+   "id": "r99",
+   "anchor": "CompImageHDU.data#assign:data",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r100",
+   "anchor": "CompImageHDU.data#if:self._orig_bzero != 0 or self._orig_bscale != 1",
+   "kind": "lead",
+   "line": 1374
+  },
+  {
+   "id": "r101",
+   "anchor": "CompImageHDU.data#if:self._orig_bzero != 0 or self._orig_bscale != 1/if:self._bzero != 0/call:np.add",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r102",
+   "anchor": "CompImageHDU.data#call:self._update_header_scale_info",
+   "kind": "lead",
+   "line": 1404
+  },
+  {
+   "id": "r103",
+   "anchor": "CompImageHDU.compressed_data#assign:compressed_data",
+   "kind": "lead",
+   "line": 1420
+  },
+  {
+   "id": "r104",
+   "anchor": "CompImageHDU.compressed_data#if:isinstance(compressed_data, np.rec.recarray)/del:self.__dict__['data']",
+   "kind": "lead",
+   "line": 1425
+  },
+  {
+   "id": "r105",
+   "anchor": "CompImageHDU.compressed_data#if:isinstance(compressed_data, np.rec.recarray)/else/call:self._update_compressed_data",
+   "kind": "lead",
+   "line": 1431
+  },
+  {
+   "id": "r106",
+   "anchor": "CompImageHDU.compressed_data#if:'compressed_data' in self.__dict__",
+   "kind": "lead",
+   "line": 1441
+  },
+  {
+   "id": "r107",
+   "anchor": "CompImageHDU.compressed_data#if:'compressed_data' in self.__dict__/del:self.__dict__['compressed_data']",
+   "kind": "lead",
+   "line": 1447
+  },
+  {
+   "id": "r108",
+   "anchor": "CompImageHDU.compressed_data#if:'compressed_data' in self.__dict__/call:gc.collect",
+   "kind": "lead",
+   "line": 1453
+  },
+  {
+   "id": "r109",
+   "anchor": "CompImageHDU.shape",
+   "kind": "doc",
+   "line": 1456
+  },
+  {
+   "id": "r110",
+   "anchor": "CompImageHDU.shape#return",
+   "kind": "lead",
+   "line": 1462
+  },
+  {
+   "id": "r111",
+   "anchor": "CompImageHDU.header#if:hasattr(self, '_image_header')",
+   "kind": "lead",
+   "line": 1471
+  },
+  {
+   "id": "r112",
+   "anchor": "CompImageHDU.header#assign:image_header",
+   "kind": "lead",
+   "line": 1475
+  },
+  {
+   "id": "r113",
+   "anchor": "CompImageHDU.header#for:keyword in set(image_header)",
+   "kind": "lead",
+   "line": 1484
+  },
+  {
+   "id": "r114",
+   "anchor": "CompImageHDU.header#assign:naxis",
+   "kind": "lead",
+   "line": 1516
+  },
+  {
+   "id": "r115",
+   "anchor": "CompImageHDU.header#if:'ZPCOUNT' in self._header",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r116",
+   "anchor": "CompImageHDU.header#if:'ZHECKSUM' in self._header",
+   "kind": "lead",
+   "line": 1553
+  },
+  {
+   "id": "r117",
+   "anchor": "CompImageHDU.header#if:'EXTNAME' in self._header and self._header['EXTNAME'] == 'COMPRESSED_IMAGE'",
+   "kind": "lead",
+   "line": 1563
+  },
+  {
+   "id": "r118",
+   "anchor": "CompImageHDU.header#assign:table_blanks",
+   "kind": "lead",
+   "line": 1571
+  },
+  {
+   "id": "r119",
+   "anchor": "CompImageHDU.header#assign:self._image_header",
+   "kind": "lead",
+   "line": 1580
+  },
+  {
+   "id": "r120",
+   "anchor": "CompImageHDU._summary",
+   "kind": "doc",
+   "line": 1584
+  },
+  {
+   "id": "r121",
+   "anchor": "CompImageHDU._summary#if:self._data_loaded",
+   "kind": "lead",
+   "line": 1591
+  },
+  {
+   "id": "r122",
+   "anchor": "CompImageHDU._summary#if:self._data_loaded/if:self.data is None/else/assign:_shape",
+   "kind": "lead",
+   "line": 1598
+  },
+  {
+   "id": "r123",
+   "anchor": "CompImageHDU._summary#if:self._data_loaded/else",
+   "kind": "lead",
+   "line": 1605
+  },
+  {
+   "id": "r124",
+   "anchor": "CompImageHDU._update_compressed_data",
+   "kind": "doc",
+   "line": 1616
+  },
+  {
+   "id": "r125",
+   "anchor": "CompImageHDU._update_compressed_data#assign:image_bitpix",
+   "kind": "lead",
+   "line": 1622
+  },
+  {
+   "id": "r126",
+   "anchor": "CompImageHDU._update_compressed_data#assign:old_data",
+   "kind": "todo",
+   "line": 1631
+  },
+  {
+   "id": "r127",
+   "anchor": "CompImageHDU._update_compressed_data#if:_is_pseudo_unsigned(self.data.dtype)/assign:self.data",
+   "kind": "lead",
+   "line": 1634
+  },
+  {
+   "id": "r128",
+   "anchor": "CompImageHDU._update_compressed_data#if:should_swap/if:self.data.flags.writeable/else/assign:self.data",
+   "kind": "lead",
+   "line": 1648
+  },
+  {
+   "id": "r129",
+   "anchor": "CompImageHDU._update_compressed_data#try/del:self.compressed_data",
+   "kind": "lead",
+   "line": 1660
+  },
+  {
+   "id": "r130",
+   "anchor": "CompImageHDU._update_compressed_data#try/assign:heapsize, self.compressed_data",
+   "kind": "lead",
+   "line": 1668
+  },
+  {
+   "id": "r131",
+   "anchor": "CompImageHDU._update_compressed_data#try/finally/if:should_swap",
+   "kind": "lead",
+   "line": 1671
+  },
+  {
+   "id": "r132",
+   "anchor": "CompImageHDU._update_compressed_data#assign:dtype",
+   "kind": "lead",
+   "line": 1676
+  },
+  {
+   "id": "r133",
+   "anchor": "CompImageHDU.scale",
+   "kind": "doc",
+   "line": 1685
+  },
+  {
+   "id": "r134",
+   "anchor": "CompImageHDU.scale#if:type is None",
+   "kind": "lead",
+   "line": 1718
+  },
+  {
+   "id": "r135",
+   "anchor": "CompImageHDU.scale#if:bscale != 1 or bzero != 0",
+   "kind": "lead",
+   "line": 1724
+  },
+  {
+   "id": "r136",
+   "anchor": "CompImageHDU.scale#if:bscale != 1 or bzero != 0/else/if:option == 'old'/elif:option == 'minmax'/if:isinstance(_type, np.floating)/else/if:_type == np.uint8",
+   "kind": "trail",
+   "line": 1739
+  },
+  {
+   "id": "r137",
+   "anchor": "CompImageHDU.scale#if:bscale != 1 or bzero != 0/else/if:option == 'old'/elif:option == 'minmax'/if:isinstance(_type, np.floating)/else/if:_type == np.uint8/else/assign:_scale",
+   "kind": "lead",
+   "line": 1746
+  },
+  {
+   "id": "r138",
+   "anchor": "CompImageHDU.scale#if:_zero != 0",
+   "kind": "lead",
+   "line": 1749
+  },
+  {
+   "id": "r139",
+   "anchor": "CompImageHDU.scale#if:_zero != 0/call:np.subtract",
+   "kind": "lead",
+   "line": 1754
+  },
+  {
+   "id": "r140",
+   "anchor": "CompImageHDU.scale#if:_zero != 0/else/for:header in (self.header, self._header)",
+   "kind": "lead",
+   "line": 1758
+  },
+  {
+   "id": "r141",
+   "anchor": "CompImageHDU.scale#if:self.data.dtype.type != _type/assign:self.data",
+   "kind": "trail",
+   "line": 1771
+  },
+  {
+   "id": "r142",
+   "anchor": "CompImageHDU.scale#assign:self._bitpix",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r143",
+   "anchor": "CompImageHDU.scale#assign:self.header['BITPIX']",
+   "kind": "lead",
+   "line": 1781
+  },
+  {
+   "id": "r144",
+   "anchor": "CompImageHDU.scale#call:self._update_header_data",
+   "kind": "lead",
+   "line": 1784
+  },
+  {
+   "id": "r145",
+   "anchor": "CompImageHDU.scale#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 1789
+  },
+  {
+   "id": "r146",
+   "anchor": "CompImageHDU._prewriteto#if:self._has_data/call:self._update_uint_scale_keywords",
+   "kind": "lead",
+   "line": 1802
+  },
+  {
+   "id": "r147",
+   "anchor": "CompImageHDU._prewriteto#if:self._has_data/assign:image_hdu",
+   "kind": "lead",
+   "line": 1806
+  },
+  {
+   "id": "r148",
+   "anchor": "CompImageHDU._prewriteto#if:self._has_data/if:'CHECKSUM' in image_hdu.header/call:self._image_header.set",
+   "kind": "lead",
+   "line": 1811
+  },
+  {
+   "id": "r149",
+   "anchor": "CompImageHDU._prewriteto#if:self._has_data/assign:self._imagedata",
+   "kind": "lead",
+   "line": 1819
+  },
+  {
+   "id": "r150",
+   "anchor": "CompImageHDU._prewriteto#if:self._has_data/assign:self.__dict__['data']",
+   "kind": "lead",
+   "line": 1824
+  },
+  {
+   "id": "r151",
+   "anchor": "CompImageHDU._writeheader",
+   "kind": "doc",
+   "line": 1828
+  },
+  {
+   "id": "r152",
+   "anchor": "CompImageHDU._writedata",
+   "kind": "doc",
+   "line": 1837
+  },
+  {
+   "id": "r153",
+   "anchor": "CompImageHDU._writedata#try/finally/if:hasattr(self, '_imagedata')",
+   "kind": "lead",
+   "line": 1847
+  },
+  {
+   "id": "r154",
+   "anchor": "CompImageHDU._close#if:closed and self._data_loaded and _get_array_mmap(self.compressed_data) is not None",
+   "kind": "lead",
+   "line": 1857
+  },
+  {
+   "id": "r155",
+   "anchor": "CompImageHDU._dtype_for_bitpix",
+   "kind": "todo",
+   "line": 1864
+  },
+  {
+   "id": "r156",
+   "anchor": "CompImageHDU._dtype_for_bitpix",
+   "kind": "doc",
+   "line": 1864
+  },
+  {
+   "id": "r157",
+   "anchor": "CompImageHDU._dtype_for_bitpix#if:self._uint and self._orig_bscale == 1",
+   "kind": "lead",
+   "line": 1873
+  },
+  {
+   "id": "r158",
+   "anchor": "CompImageHDU._dtype_for_bitpix#if:bitpix > 16",
+   "kind": "trail",
+   "line": 1880
+  },
+  {
+   "id": "r159",
+   "anchor": "CompImageHDU._dtype_for_bitpix#if:bitpix > 16/elif:bitpix > 0",
+   "kind": "trail",
+   "line": 1882
+  },
+  {
+   "id": "r160",
+   "anchor": "CompImageHDU._update_header_scale_info#if:not self._do_not_scale_image_data and not (self._orig_bzero == 0 and self._orig_bscale == 1)/for:keyword in ['BSCALE', 'BZERO']/for:header in (self.header, self._header)",
+   "kind": "lead",
+   "line": 1891
+  },
+  {
+   "id": "r161",
+   "anchor": "CompImageHDU._update_header_scale_info#if:not self._do_not_scale_image_data and not (self._orig_bzero == 0 and self._orig_bscale == 1)/for:keyword in ['BSCALE', 'BZERO']/for:header in (self.header, self._header)/with:suppress(KeyError)/call:header.append",
+   "kind": "lead",
+   "line": 1897
+  },
+  {
+   "id": "r162",
+   "anchor": "CompImageHDU._generate_dither_seed#if:seed == DITHER_SEED_CHECKSUM/assign:naxis",
+   "kind": "lead",
+   "line": 1921
+  },
+  {
+   "id": "r163",
+   "anchor": "CompImageHDU._generate_dither_seed#if:seed == DITHER_SEED_CHECKSUM/assign:first_tile",
+   "kind": "lead",
+   "line": 1928
+  },
+  {
+   "id": "r164",
+   "anchor": "CompImageHDU._generate_dither_seed#if:seed == DITHER_SEED_CHECKSUM/assign:csum",
+   "kind": "lead",
+   "line": 1933
+  },
+  {
+   "id": "r165",
+   "anchor": "CompImageHDU._generate_dither_seed#if:seed == DITHER_SEED_CHECKSUM/return",
+   "kind": "lead",
+   "line": 1938
+  },
+  {
+   "id": "r166",
+   "anchor": "CompImageHDU._generate_dither_seed#if:seed == DITHER_SEED_CHECKSUM/elif:seed == DITHER_SEED_CLOCK/return",
+   "kind": "lead",
+   "line": 1946
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 49447,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 22806,
+  "thinking_tokens": 12585,
+  "opus_cost_usd": 1.0689115,
+  "total_cost_usd": 1.1079905,
+  "duration_ms": 190783,
+  "duration_api_ms": 192277,
+  "num_turns": 2
+ },
+ "wall_ms": 191690,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

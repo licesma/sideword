@@ -1,0 +1,139 @@
+{
+ "blob_sha": "cb2bae5914b334a45aa00d3010d9092e0ecff1b9",
+ "path": "astropy/coordinates/name_resolve.py",
+ "repo": "astropy/astropy",
+ "records": 19,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:os",
+   "kind": "lead",
+   "line": 12
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:astropy",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r5",
+   "anchor": "sesame_url",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r6",
+   "anchor": "sesame_url.validate#return",
+   "kind": "todo",
+   "line": 43
+  },
+  {
+   "id": "r7",
+   "anchor": "sesame_database",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r8",
+   "anchor": "_parse_response",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r9",
+   "anchor": "get_icrs_coordinates",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "get_icrs_coordinates#if:parse",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r11",
+   "anchor": "get_icrs_coordinates#if:parse/if:jparser.search(name)/else/pass",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r12",
+   "anchor": "get_icrs_coordinates#if:parse/if:jparser.search(name)/else/pass",
+   "kind": "post",
+   "line": 142
+  },
+  {
+   "id": "r13",
+   "anchor": "get_icrs_coordinates#assign:db",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r14",
+   "anchor": "get_icrs_coordinates#assign:urls",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r15",
+   "anchor": "get_icrs_coordinates#for:url in sesame_url.get()/if:domain not in domains",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r16",
+   "anchor": "get_icrs_coordinates#for:url in sesame_url.get()/if:domain not in domains/assign:fmt_url",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r17",
+   "anchor": "get_icrs_coordinates#for:url in urls/try/except:socket.timeout/assign:e.reason",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r18",
+   "anchor": "get_icrs_coordinates#for:url in urls/else",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r19",
+   "anchor": "get_icrs_coordinates#assign:sc",
+   "kind": "lead",
+   "line": 207
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6959,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1740,
+  "thinking_tokens": 858,
+  "opus_cost_usd": 0.1173815,
+  "total_cost_usd": 0.1215165,
+  "duration_ms": 18166,
+  "duration_api_ms": 19240,
+  "num_turns": 2
+ },
+ "wall_ms": 19076,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

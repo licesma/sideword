@@ -1,0 +1,49 @@
+{
+ "blob_sha": "d90fc84152fef963221e0b5508b5042592c683fd",
+ "path": "django/middleware/locale.py",
+ "repo": "django/django",
+ "records": 4,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "LocaleMiddleware",
+   "kind": "doc",
+   "line": 10
+  },
+  {
+   "id": "r2",
+   "anchor": "LocaleMiddleware.process_response#if:response.status_code == 404 and not language_from_path and i18n_patterns_used and prefixed_default_language/assign:language_path",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r3",
+   "anchor": "LocaleMiddleware.process_response#if:response.status_code == 404 and not language_from_path and i18n_patterns_used and prefixed_default_language/if:path_valid or path_needs_slash/assign:language_url",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "LocaleMiddleware.process_response#if:response.status_code == 404 and not language_from_path and i18n_patterns_used and prefixed_default_language/if:path_valid or path_needs_slash/assign:redirect",
+   "kind": "lead",
+   "line": 59
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4694,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 574,
+  "thinking_tokens": 161,
+  "opus_cost_usd": 0.0655815,
+  "total_cost_usd": 0.0678415,
+  "duration_ms": 6348,
+  "duration_api_ms": 7617,
+  "num_turns": 2
+ },
+ "wall_ms": 7364,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

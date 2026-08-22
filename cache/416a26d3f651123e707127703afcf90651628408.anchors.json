@@ -1,0 +1,367 @@
+{
+ "blob_sha": "416a26d3f651123e707127703afcf90651628408",
+ "path": "lib/matplotlib/patheffects.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 57,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "AbstractPathEffect",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r3",
+   "anchor": "AbstractPathEffect.__init__",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r4",
+   "anchor": "AbstractPathEffect._offset_transform",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "AbstractPathEffect._update_gc",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "AbstractPathEffect.draw_path",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "AbstractPathEffect.draw_path#if:isinstance(renderer, PathEffectRenderer)",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r8",
+   "anchor": "PathEffectRenderer",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r9",
+   "anchor": "PathEffectRenderer.__init__",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r10",
+   "anchor": "PathEffectRenderer.draw_markers#if:len(self._path_effects)==1",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r11",
+   "anchor": "PathEffectRenderer.draw_markers#if:len(self._path_effects)==1/return",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r12",
+   "anchor": "PathEffectRenderer.draw_markers#for:path_effect in self._path_effects/call:renderer.draw_markers",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r13",
+   "anchor": "PathEffectRenderer.draw_path_collection#if:len(self._path_effects)==1",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r14",
+   "anchor": "PathEffectRenderer.draw_path_collection#if:len(self._path_effects)==1/return",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r15",
+   "anchor": "PathEffectRenderer.draw_path_collection#for:path_effect in self._path_effects/call:renderer.draw_path_collection",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r16",
+   "anchor": "PathEffectRenderer._draw_text_as_path#assign:path, transform",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r17",
+   "anchor": "Normal",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r18",
+   "anchor": "_subclass_with_normal",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r19",
+   "anchor": "_subclass_with_normal#assign:withEffect.draw_path.__doc__",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r20",
+   "anchor": "Stroke",
+   "kind": "doc",
+   "line": 195
+  },
+  {
+   "id": "r21",
+   "anchor": "Stroke.__init__",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r22",
+   "anchor": "Stroke.draw_path",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r23",
+   "anchor": "Stroke.draw_path#assign:gc0",
+   "kind": "trail",
+   "line": 209
+  },
+  {
+   "id": "r24",
+   "anchor": "SimplePatchShadow",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r25",
+   "anchor": "SimplePatchShadow.__init__",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r26",
+   "anchor": "SimplePatchShadow.__init__#assign:self._gc",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r27",
+   "anchor": "SimplePatchShadow.draw_path",
+   "kind": "doc",
+   "line": 260
+  },
+  {
+   "id": "r28",
+   "anchor": "SimplePatchShadow.draw_path#assign:gc0",
+   "kind": "trail",
+   "line": 265
+  },
+  {
+   "id": "r29",
+   "anchor": "SimplePatchShadow.draw_path#if:self._shadow_rgbFace is None/assign:shadow_rgbFace",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r30",
+   "anchor": "SimpleLineShadow",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r31",
+   "anchor": "SimpleLineShadow.__init__",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r32",
+   "anchor": "SimpleLineShadow.__init__#assign:self._gc",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r33",
+   "anchor": "SimpleLineShadow.draw_path",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r34",
+   "anchor": "SimpleLineShadow.draw_path#assign:gc0",
+   "kind": "trail",
+   "line": 327
+  },
+  {
+   "id": "r35",
+   "anchor": "SimpleLineShadow.draw_path#if:self._shadow_color is None/assign:shadow_rgbFace",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r36",
+   "anchor": "PathPatchEffect",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r37",
+   "anchor": "PathPatchEffect.__init__",
+   "kind": "doc",
+   "line": 352
+  },
+  {
+   "id": "r38",
+   "anchor": "TickedStroke",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r39",
+   "anchor": "TickedStroke.__init__",
+   "kind": "doc",
+   "line": 397
+  },
+  {
+   "id": "r40",
+   "anchor": "TickedStroke.draw_path",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r41",
+   "anchor": "TickedStroke.draw_path#assign:gc0",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r42",
+   "anchor": "TickedStroke.draw_path#assign:spacing_px",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r43",
+   "anchor": "TickedStroke.draw_path#assign:transpath",
+   "kind": "lead",
+   "line": 449
+  },
+  {
+   "id": "r44",
+   "anchor": "TickedStroke.draw_path#assign:polys",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r45",
+   "anchor": "TickedStroke.draw_path#for:p in polys/if:x.size<2",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r46",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:ds",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r47",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:s",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r48",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:s_tick",
+   "kind": "lead",
+   "line": 473
+  },
+  {
+   "id": "r49",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:x_tick",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r50",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:delta_s",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r51",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:n",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r52",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:dxy",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r53",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:x_end",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r54",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:xyt",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r55",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:codes",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r56",
+   "anchor": "TickedStroke.draw_path#for:p in polys/assign:h",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r57",
+   "anchor": "TickedStroke.draw_path#for:p in polys/call:renderer.draw_path",
+   "kind": "lead",
+   "line": 512
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14195,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4398,
+  "thinking_tokens": 1715,
+  "opus_cost_usd": 0.2561915,
+  "total_cost_usd": 0.2660865,
+  "duration_ms": 38210,
+  "duration_api_ms": 39389,
+  "num_turns": 2
+ },
+ "wall_ms": 39157,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

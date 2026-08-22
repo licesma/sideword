@@ -1,0 +1,667 @@
+{
+ "blob_sha": "3ec3ef3f16564ce6389c33fdc3b597ea33b86e5d",
+ "path": "astropy/utils/masked/core.py",
+ "repo": "astropy/astropy",
+ "records": 107,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "Masked",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r4",
+   "anchor": "Masked._base_classes",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r5",
+   "anchor": "Masked._masked_classes",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r6",
+   "anchor": "Masked.__new__#if:cls is Masked/if:not kwargs and len(args) == 1 and isinstance(args[0], type)",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "Masked.__new__#if:cls is Masked/if:not kwargs and len(args) == 1 and isinstance(args[0], type)/return",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r8",
+   "anchor": "Masked.__new__#if:cls is Masked/else/return",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r9",
+   "anchor": "Masked.__init_subclass__",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r10",
+   "anchor": "Masked.from_unmasked",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r11",
+   "anchor": "Masked.from_unmasked",
+   "kind": "doc",
+   "line": 114
+  },
+  {
+   "id": "r12",
+   "anchor": "Masked._get_masked_cls",
+   "kind": "doc",
+   "line": 128
+  },
+  {
+   "id": "r13",
+   "anchor": "Masked._get_masked_cls#if:masked_cls is None/for:mro_item in data_cls.__mro__",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r14",
+   "anchor": "Masked._get_masked_cls#if:masked_cls is None/for:mro_item in data_cls.__mro__/else/return",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r15",
+   "anchor": "Masked._get_masked_cls#if:masked_cls is None/assign:masked_cls",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r16",
+   "anchor": "Masked._get_data_and_mask",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r17",
+   "anchor": "Masked._get_mask",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r18",
+   "anchor": "Masked._set_mask#if:ma.shape != self.shape/assign:self._mask",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r19",
+   "anchor": "Masked._set_mask#if:ma.shape != self.shape/elif:ma is mask/assign:self._mask",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r20",
+   "anchor": "Masked.unmasked",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r21",
+   "anchor": "Masked.unmasked",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r22",
+   "anchor": "Masked.filled",
+   "kind": "doc",
+   "line": 260
+  },
+  {
+   "id": "r23",
+   "anchor": "Masked._apply#if:callable(method)",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r24",
+   "anchor": "MaskedInfoBase.__init__#if:bound",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r25",
+   "anchor": "MaskedInfoBase.__init__#if:bound/assign:self.serialize_method",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r26",
+   "anchor": "MaskedNDArrayInfo",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r27",
+   "anchor": "MaskedNDArrayInfo.attr_names",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r28",
+   "anchor": "MaskedNDArrayInfo._represent_as_dict_primary_data",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r29",
+   "anchor": "MaskedNDArrayInfo._represent_as_dict#assign:method",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r30",
+   "anchor": "MaskedNDArrayInfo._represent_as_dict#if:method == \"data_mask\"/if:np.any(masked_array.mask)/assign:out[\"mask\"]",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r31",
+   "anchor": "MaskedNDArrayInfo._construct_from_dict#call:map.setdefault",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r32",
+   "anchor": "MaskedArraySubclassInfo",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r33",
+   "anchor": "MaskedArraySubclassInfo._represent_as_dict",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r34",
+   "anchor": "MaskedArraySubclassInfo._represent_as_dict#assign:out",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r35",
+   "anchor": "_comparison_method",
+   "kind": "doc",
+   "line": 394
+  },
+  {
+   "id": "r36",
+   "anchor": "MaskedIterator",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r37",
+   "anchor": "MaskedIterator.__getitem__#if:not isinstance(out, np.ndarray)",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r38",
+   "anchor": "MaskedIterator.__next__",
+   "kind": "doc",
+   "line": 458
+  },
+  {
+   "id": "r39",
+   "anchor": "MaskedNDArray.__new__",
+   "kind": "doc",
+   "line": 474
+  },
+  {
+   "id": "r40",
+   "anchor": "MaskedNDArray.__init_subclass__#if:\"__new__\" not in cls.__dict__",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r41",
+   "anchor": "MaskedNDArray.__init_subclass__.__new__",
+   "kind": "doc",
+   "line": 489
+  },
+  {
+   "id": "r42",
+   "anchor": "MaskedNDArray.__init_subclass__.__new__#assign:self",
+   "kind": "lead",
+   "line": 492
+  },
+  {
+   "id": "r43",
+   "anchor": "MaskedNDArray.from_unmasked",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r44",
+   "anchor": "MaskedNDArray.from_unmasked#assign:data",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r45",
+   "anchor": "MaskedNDArray._get_masked_cls#if:data_cls is np.ndarray",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r46",
+   "anchor": "MaskedNDArray._get_masked_cls#if:data_cls is np.ndarray/elif:data_cls is None",
+   "kind": "trail",
+   "line": 530
+  },
+  {
+   "id": "r47",
+   "anchor": "MaskedNDArray.flat",
+   "kind": "doc",
+   "line": 536
+  },
+  {
+   "id": "r48",
+   "anchor": "MaskedNDArray._baseclass",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r49",
+   "anchor": "MaskedNDArray.view",
+   "kind": "doc",
+   "line": 556
+  },
+  {
+   "id": "r50",
+   "anchor": "MaskedNDArray.__array_finalize__#if:obj is None or obj.__class__ is np.ndarray",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r51",
+   "anchor": "MaskedNDArray.__array_finalize__#assign:super_array_finalize",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r52",
+   "anchor": "MaskedNDArray.__array_finalize__#if:self._mask is None/call:self._set_mask",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r53",
+   "anchor": "MaskedNDArray.shape",
+   "kind": "doc",
+   "line": 601
+  },
+  {
+   "id": "r54",
+   "anchor": "MaskedNDArray.shape#return",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r55",
+   "anchor": "MaskedNDArray.shape#try",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r56",
+   "anchor": "MaskedNDArray.shape#try/except:Exception/if:\"could not broadcast\" in exc.args[0]",
+   "kind": "lead",
+   "line": 634
+  },
+  {
+   "id": "r57",
+   "anchor": "MaskedNDArray.__eq__#assign:other",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r58",
+   "anchor": "MaskedNDArray.__ne__#assign:other",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r59",
+   "anchor": "MaskedNDArray._combine_masks",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r60",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:out is not None/for:d, m in zip(out_unmasked, out_masks)/if:m is None/if:d is not None",
+   "kind": "todo",
+   "line": 714
+  },
+  {
+   "id": "r61",
+   "anchor": "MaskedNDArray.__array_ufunc__#assign:where",
+   "kind": "todo",
+   "line": 721
+  },
+  {
+   "id": "r62",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/if:\"axes\" in kwargs",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r63",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/if:ufunc is np.matmul/assign:unmasked",
+   "kind": "lead",
+   "line": 744
+  },
+  {
+   "id": "r64",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/if:ufunc is np.matmul/else/assign:in_sig, out_sig",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r65",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/if:ufunc is np.matmul/else/for:sig, mask in zip(in_sig, masks)/if:mask is not None/if:sig/assign:mask",
+   "kind": "lead",
+   "line": 776
+  },
+  {
+   "id": "r66",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/if:ufunc is np.matmul/else/for:os in out_sig/if:os/assign:result_mask",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r67",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method == \"__call__\"/assign:mask",
+   "kind": "lead",
+   "line": 797
+  },
+  {
+   "id": "r68",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method == \"__call__\"/if:where_mask is not None",
+   "kind": "lead",
+   "line": 799
+  },
+  {
+   "id": "r69",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method == \"outer\"/assign:m0, m1",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r70",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method in {\"reduce\", \"accumulate\"}/assign:mask",
+   "kind": "lead",
+   "line": 812
+  },
+  {
+   "id": "r71",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method in {\"reduce\", \"accumulate\"}/if:mask is not False/if:method == \"reduce\"",
+   "kind": "lead",
+   "line": 817
+  },
+  {
+   "id": "r72",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method in {\"reduce\", \"accumulate\"}/if:mask is not False/if:method == \"reduce\"/if:where_unmasked is not True/assign:mask",
+   "kind": "lead",
+   "line": 830
+  },
+  {
+   "id": "r73",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method in {\"reduce\", \"accumulate\"}/if:mask is not False/if:method == \"reduce\"/else/assign:axis",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r74",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:ufunc.signature/elif:method in {\"reduce\", \"accumulate\"}/elif:out is None/return",
+   "kind": "lead",
+   "line": 844
+  },
+  {
+   "id": "r75",
+   "anchor": "MaskedNDArray.__array_ufunc__#if:result is None/return",
+   "kind": "lead",
+   "line": 859
+  },
+  {
+   "id": "r76",
+   "anchor": "MaskedNDArray.__array_function__#if:function in MASKED_SAFE_FUNCTIONS",
+   "kind": "todo",
+   "line": 868
+  },
+  {
+   "id": "r77",
+   "anchor": "MaskedNDArray.__array_function__#if:function in MASKED_SAFE_FUNCTIONS/else/return",
+   "kind": "lead",
+   "line": 906
+  },
+  {
+   "id": "r78",
+   "anchor": "MaskedNDArray._not_implemented_or_raise#if:any(issubclass(t, np.ndarray) and not issubclass(t, Masked) for t in types)",
+   "kind": "lead",
+   "line": 919
+  },
+  {
+   "id": "r79",
+   "anchor": "MaskedNDArray._masked_result#if:out is None/return",
+   "kind": "lead",
+   "line": 943
+  },
+  {
+   "id": "r80",
+   "anchor": "MaskedNDArray._masked_result#assert:isinstance(out, Masked)",
+   "kind": "todo",
+   "line": 946
+  },
+  {
+   "id": "r81",
+   "anchor": "MaskedNDArray._masked_result#if:out._mask is not mask",
+   "kind": "lead",
+   "line": 949
+  },
+  {
+   "id": "r82",
+   "anchor": "MaskedNDArray._reduce_defaults",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r83",
+   "anchor": "MaskedNDArray._reduce_defaults",
+   "kind": "doc",
+   "line": 955
+  },
+  {
+   "id": "r84",
+   "anchor": "MaskedNDArray.trace#assign:diagonal",
+   "kind": "lead",
+   "line": 972
+  },
+  {
+   "id": "r85",
+   "anchor": "MaskedNDArray.choose#return",
+   "kind": "lead",
+   "line": 1003
+  },
+  {
+   "id": "r86",
+   "anchor": "MaskedNDArray.argmin#assign:at_min",
+   "kind": "todo",
+   "line": 1010
+  },
+  {
+   "id": "r87",
+   "anchor": "MaskedNDArray.argmin#assign:at_min",
+   "kind": "todo",
+   "line": 1022
+  },
+  {
+   "id": "r88",
+   "anchor": "MaskedNDArray.argsort",
+   "kind": "doc",
+   "line": 1029
+  },
+  {
+   "id": "r89",
+   "anchor": "MaskedNDArray.argsort#if:self.dtype.names/if:order is None",
+   "kind": "lead",
+   "line": 1064
+  },
+  {
+   "id": "r90",
+   "anchor": "MaskedNDArray.sort",
+   "kind": "doc",
+   "line": 1079
+  },
+  {
+   "id": "r91",
+   "anchor": "MaskedNDArray.sort#assign:indices",
+   "kind": "todo",
+   "line": 1082
+  },
+  {
+   "id": "r92",
+   "anchor": "MaskedNDArray.argpartition#return",
+   "kind": "todo",
+   "line": 1087
+  },
+  {
+   "id": "r93",
+   "anchor": "MaskedNDArray.partition#return",
+   "kind": "todo",
+   "line": 1091
+  },
+  {
+   "id": "r94",
+   "anchor": "MaskedNDArray.clip",
+   "kind": "doc",
+   "line": 1105
+  },
+  {
+   "id": "r95",
+   "anchor": "MaskedNDArray.clip#assign:dmin, mmin",
+   "kind": "todo",
+   "line": 1112
+  },
+  {
+   "id": "r96",
+   "anchor": "MaskedNDArray.clip#if:mmin is None and mmax is None/return",
+   "kind": "lead",
+   "line": 1116
+  },
+  {
+   "id": "r97",
+   "anchor": "MaskedNDArray.mean#assign:is_float16_result",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r98",
+   "anchor": "MaskedNDArray.mean#assign:n",
+   "kind": "lead",
+   "line": 1146
+  },
+  {
+   "id": "r99",
+   "anchor": "MaskedNDArray.mean#assign:result.unmasked[neq0]",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r100",
+   "anchor": "MaskedNDArray.var#assign:n",
+   "kind": "lead",
+   "line": 1164
+  },
+  {
+   "id": "r101",
+   "anchor": "MaskedNDArray.var#if:dtype is None and issubclass(self.dtype.type, (np.integer, np.bool_))",
+   "kind": "lead",
+   "line": 1167
+  },
+  {
+   "id": "r102",
+   "anchor": "MaskedNDArray.var#assign:x",
+   "kind": "trail",
+   "line": 1172
+  },
+  {
+   "id": "r103",
+   "anchor": "MaskedNDArray.__bool__#assign:result",
+   "kind": "lead",
+   "line": 1193
+  },
+  {
+   "id": "r104",
+   "anchor": "MaskedNDArray.__str__",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r105",
+   "anchor": "MaskedRecarray.__array_finalize__",
+   "kind": "lead",
+   "line": 1226
+  },
+  {
+   "id": "r106",
+   "anchor": "MaskedRecarray.__array_finalize__#call:super().__array_finalize__",
+   "kind": "lead",
+   "line": 1229
+  },
+  {
+   "id": "r107",
+   "anchor": "MaskedRecarray.getfield",
+   "kind": "lead",
+   "line": 1234
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30072,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12466,
+  "thinking_tokens": 6803,
+  "opus_cost_usd": 0.6166615,
+  "total_cost_usd": 0.6400555,
+  "duration_ms": 106324,
+  "duration_api_ms": 107742,
+  "num_turns": 2
+ },
+ "wall_ms": 107215,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

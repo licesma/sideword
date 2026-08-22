@@ -1,0 +1,2719 @@
+{
+ "blob_sha": "03bd86ee07811f7d840a929d14ce2e8d640545cf",
+ "path": "astropy/extern/ply/yacc.py",
+ "repo": "astropy/astropy",
+ "records": 449,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "yaccdebug",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r3",
+   "anchor": "yaccdebug",
+   "kind": "trail",
+   "line": 79
+  },
+  {
+   "id": "r4",
+   "anchor": "debug_file",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r5",
+   "anchor": "debug_file",
+   "kind": "trail",
+   "line": 82
+  },
+  {
+   "id": "r6",
+   "anchor": "tab_module",
+   "kind": "trail",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "default_lr",
+   "kind": "trail",
+   "line": 84
+  },
+  {
+   "id": "r8",
+   "anchor": "error_count",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r9",
+   "anchor": "yaccdevel",
+   "kind": "trail",
+   "line": 88
+  },
+  {
+   "id": "r10",
+   "anchor": "resultlimit",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r11",
+   "anchor": "resultlimit",
+   "kind": "trail",
+   "line": 91
+  },
+  {
+   "id": "r12",
+   "anchor": "pickle_protocol",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r13",
+   "anchor": "<module>#if:sys.version_info[0]<3",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r14",
+   "anchor": "PlyLogger",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r15",
+   "anchor": "NullLogger",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r16",
+   "anchor": "YaccError",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r17",
+   "anchor": "format_result",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r18",
+   "anchor": "format_stack_entry",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r19",
+   "anchor": "_errok",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r20",
+   "anchor": "call_errorfunc",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r21",
+   "anchor": "YaccSymbol",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r22",
+   "anchor": "YaccSymbol",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r23",
+   "anchor": "YaccProduction",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r24",
+   "anchor": "LRParser",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r25",
+   "anchor": "LRParser.set_defaulted_states",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r26",
+   "anchor": "LRParser.parsedebug",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r27",
+   "anchor": "LRParser.parsedebug#assign:lookahead",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r28",
+   "anchor": "LRParser.parsedebug#assign:lookahead",
+   "kind": "trail",
+   "line": 350
+  },
+  {
+   "id": "r29",
+   "anchor": "LRParser.parsedebug#assign:lookaheadstack",
+   "kind": "trail",
+   "line": 351
+  },
+  {
+   "id": "r30",
+   "anchor": "LRParser.parsedebug#assign:actions",
+   "kind": "trail",
+   "line": 352
+  },
+  {
+   "id": "r31",
+   "anchor": "LRParser.parsedebug#assign:goto",
+   "kind": "trail",
+   "line": 353
+  },
+  {
+   "id": "r32",
+   "anchor": "LRParser.parsedebug#assign:prod",
+   "kind": "trail",
+   "line": 354
+  },
+  {
+   "id": "r33",
+   "anchor": "LRParser.parsedebug#assign:defaulted_states",
+   "kind": "trail",
+   "line": 355
+  },
+  {
+   "id": "r34",
+   "anchor": "LRParser.parsedebug#assign:pslice",
+   "kind": "trail",
+   "line": 356
+  },
+  {
+   "id": "r35",
+   "anchor": "LRParser.parsedebug#assign:errorcount",
+   "kind": "trail",
+   "line": 357
+  },
+  {
+   "id": "r36",
+   "anchor": "LRParser.parsedebug#call:debug.info",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r37",
+   "anchor": "LRParser.parsedebug#if:not lexer",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r38",
+   "anchor": "LRParser.parsedebug#if:not lexer",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r39",
+   "anchor": "LRParser.parsedebug#assign:pslice.lexer",
+   "kind": "lead",
+   "line": 369
+  },
+  {
+   "id": "r40",
+   "anchor": "LRParser.parsedebug#if:input is not None",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r41",
+   "anchor": "LRParser.parsedebug#if:tokenfunc is None/assign:get_token",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r42",
+   "anchor": "LRParser.parsedebug#assign:self.token",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r43",
+   "anchor": "LRParser.parsedebug#assign:statestack",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r44",
+   "anchor": "LRParser.parsedebug#assign:statestack",
+   "kind": "trail",
+   "line": 387
+  },
+  {
+   "id": "r45",
+   "anchor": "LRParser.parsedebug#assign:symstack",
+   "kind": "trail",
+   "line": 389
+  },
+  {
+   "id": "r46",
+   "anchor": "LRParser.parsedebug#assign:pslice.stack",
+   "kind": "trail",
+   "line": 392
+  },
+  {
+   "id": "r47",
+   "anchor": "LRParser.parsedebug#assign:errtoken",
+   "kind": "trail",
+   "line": 393
+  },
+  {
+   "id": "r48",
+   "anchor": "LRParser.parsedebug#call:statestack.append",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r49",
+   "anchor": "LRParser.parsedebug#while:True/call:debug.debug",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r50",
+   "anchor": "LRParser.parsedebug#while:True/call:debug.debug",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r51",
+   "anchor": "LRParser.parsedebug#while:True/if:state not in defaulted_states",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r52",
+   "anchor": "LRParser.parsedebug#while:True/if:state not in defaulted_states/if:not lookahead/if:not lookaheadstack/assign:lookahead",
+   "kind": "trail",
+   "line": 415
+  },
+  {
+   "id": "r53",
+   "anchor": "LRParser.parsedebug#while:True/if:state not in defaulted_states/assign:ltype",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r54",
+   "anchor": "LRParser.parsedebug#while:True/if:state not in defaulted_states/else/call:debug.debug",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r55",
+   "anchor": "LRParser.parsedebug#while:True/if:state not in defaulted_states/else/call:debug.debug",
+   "kind": "post",
+   "line": 428
+  },
+  {
+   "id": "r56",
+   "anchor": "LRParser.parsedebug#while:True/call:debug.debug",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r57",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None",
+   "kind": "lead",
+   "line": 436
+  },
+  {
+   "id": "r58",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t>0/call:statestack.append",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r59",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t>0/call:debug.debug",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r60",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t>0/call:symstack.append",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r61",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t>0/if:errorcount",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r62",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/assign:p",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r63",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/assign:sym",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r64",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/assign:sym.type",
+   "kind": "trail",
+   "line": 462
+  },
+  {
+   "id": "r65",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r66",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r67",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/if:tracking",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r68",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/assign:pslice.slice",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r69",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/assign:pslice.slice",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r70",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/del:symstack[-plen:]",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r71",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/call:debug.info",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r72",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/call:symstack.append",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r73",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r74",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 511
+  },
+  {
+   "id": "r75",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:symstack.extend",
+   "kind": "trail",
+   "line": 512
+  },
+  {
+   "id": "r76",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 513
+  },
+  {
+   "id": "r77",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/continue",
+   "kind": "post",
+   "line": 521
+  },
+  {
+   "id": "r78",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/if:tracking",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r79",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/assign:targ",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r80",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/assign:pslice.slice",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r81",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/assign:self.state",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r82",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/call:debug.info",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r83",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/call:symstack.append",
+   "kind": "lead",
+   "line": 548
+  },
+  {
+   "id": "r84",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 553
+  },
+  {
+   "id": "r85",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 553
+  },
+  {
+   "id": "r86",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 554
+  },
+  {
+   "id": "r87",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t<0/if:plen/else/continue",
+   "kind": "post",
+   "line": 562
+  },
+  {
+   "id": "r88",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t==0/call:debug.info",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r89",
+   "anchor": "LRParser.parsedebug#while:True/if:t is not None/if:t==0/return",
+   "kind": "lead",
+   "line": 572
+  },
+  {
+   "id": "r90",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/call:debug.error",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r91",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:errorcount==0 or self.errorok",
+   "kind": "lead",
+   "line": 591
+  },
+  {
+   "id": "r92",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:errorcount==0 or self.errorok",
+   "kind": "lead",
+   "line": 591
+  },
+  {
+   "id": "r93",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:errorcount==0 or self.errorok/if:errtoken.type=='$end'/assign:errtoken",
+   "kind": "trail",
+   "line": 596
+  },
+  {
+   "id": "r94",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:errorcount==0 or self.errorok/if:self.errorfunc/if:self.errorok/assign:lookahead",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r95",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'",
+   "kind": "lead",
+   "line": 630
+  },
+  {
+   "id": "r96",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'/del:lookaheadstack[:]",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r97",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r98",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r99",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type=='$end'/return",
+   "kind": "lead",
+   "line": 644
+  },
+  {
+   "id": "r100",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type!='error'/if:sym.type=='error'/if:tracking",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r101",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type!='error'/if:sym.type=='error'/assign:lookahead",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r102",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type!='error'/assign:t",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r103",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type!='error'/else/if:tracking",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r104",
+   "anchor": "LRParser.parsedebug#while:True/if:t is None/if:lookahead.type!='error'/else/call:statestack.pop",
+   "kind": "lead",
+   "line": 677
+  },
+  {
+   "id": "r105",
+   "anchor": "LRParser.parsedebug#while:True/raise:RuntimeError",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r106",
+   "anchor": "LRParser.parsedebug#while:True",
+   "kind": "post",
+   "line": 402
+  },
+  {
+   "id": "r107",
+   "anchor": "LRParser.parseopt",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r108",
+   "anchor": "LRParser.parseopt#assign:lookahead",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r109",
+   "anchor": "LRParser.parseopt#assign:lookahead",
+   "kind": "trail",
+   "line": 697
+  },
+  {
+   "id": "r110",
+   "anchor": "LRParser.parseopt#assign:lookaheadstack",
+   "kind": "trail",
+   "line": 698
+  },
+  {
+   "id": "r111",
+   "anchor": "LRParser.parseopt#assign:actions",
+   "kind": "trail",
+   "line": 699
+  },
+  {
+   "id": "r112",
+   "anchor": "LRParser.parseopt#assign:goto",
+   "kind": "trail",
+   "line": 700
+  },
+  {
+   "id": "r113",
+   "anchor": "LRParser.parseopt#assign:prod",
+   "kind": "trail",
+   "line": 701
+  },
+  {
+   "id": "r114",
+   "anchor": "LRParser.parseopt#assign:defaulted_states",
+   "kind": "trail",
+   "line": 702
+  },
+  {
+   "id": "r115",
+   "anchor": "LRParser.parseopt#assign:pslice",
+   "kind": "trail",
+   "line": 703
+  },
+  {
+   "id": "r116",
+   "anchor": "LRParser.parseopt#assign:errorcount",
+   "kind": "trail",
+   "line": 704
+  },
+  {
+   "id": "r117",
+   "anchor": "LRParser.parseopt#if:not lexer",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r118",
+   "anchor": "LRParser.parseopt#assign:pslice.lexer",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r119",
+   "anchor": "LRParser.parseopt#if:input is not None",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r120",
+   "anchor": "LRParser.parseopt#if:tokenfunc is None/assign:get_token",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r121",
+   "anchor": "LRParser.parseopt#assign:self.token",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r122",
+   "anchor": "LRParser.parseopt#assign:statestack",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r123",
+   "anchor": "LRParser.parseopt#assign:statestack",
+   "kind": "trail",
+   "line": 731
+  },
+  {
+   "id": "r124",
+   "anchor": "LRParser.parseopt#assign:symstack",
+   "kind": "trail",
+   "line": 733
+  },
+  {
+   "id": "r125",
+   "anchor": "LRParser.parseopt#assign:pslice.stack",
+   "kind": "trail",
+   "line": 736
+  },
+  {
+   "id": "r126",
+   "anchor": "LRParser.parseopt#assign:errtoken",
+   "kind": "trail",
+   "line": 737
+  },
+  {
+   "id": "r127",
+   "anchor": "LRParser.parseopt#call:statestack.append",
+   "kind": "lead",
+   "line": 741
+  },
+  {
+   "id": "r128",
+   "anchor": "LRParser.parseopt#while:True/if:state not in defaulted_states",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r129",
+   "anchor": "LRParser.parseopt#while:True/if:state not in defaulted_states/if:not lookahead/if:not lookaheadstack/assign:lookahead",
+   "kind": "trail",
+   "line": 755
+  },
+  {
+   "id": "r130",
+   "anchor": "LRParser.parseopt#while:True/if:state not in defaulted_states/assign:ltype",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r131",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t>0/call:statestack.append",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r132",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t>0/if:errorcount",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r133",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/assign:p",
+   "kind": "lead",
+   "line": 786
+  },
+  {
+   "id": "r134",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/assign:sym",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r135",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/assign:sym.type",
+   "kind": "trail",
+   "line": 792
+  },
+  {
+   "id": "r136",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/if:tracking",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r137",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/assign:pslice.slice",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r138",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/assign:pslice.slice",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r139",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/try/del:symstack[-plen:]",
+   "kind": "lead",
+   "line": 819
+  },
+  {
+   "id": "r140",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 828
+  },
+  {
+   "id": "r141",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 828
+  },
+  {
+   "id": "r142",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:symstack.extend",
+   "kind": "trail",
+   "line": 829
+  },
+  {
+   "id": "r143",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 830
+  },
+  {
+   "id": "r144",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/continue",
+   "kind": "post",
+   "line": 838
+  },
+  {
+   "id": "r145",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/if:tracking",
+   "kind": "lead",
+   "line": 844
+  },
+  {
+   "id": "r146",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/assign:targ",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r147",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/assign:pslice.slice",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r148",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/try/assign:self.state",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r149",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r150",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 867
+  },
+  {
+   "id": "r151",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 868
+  },
+  {
+   "id": "r152",
+   "anchor": "LRParser.parseopt#while:True/if:t is not None/if:t<0/if:plen/else/continue",
+   "kind": "post",
+   "line": 876
+  },
+  {
+   "id": "r153",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:errorcount==0 or self.errorok",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r154",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:errorcount==0 or self.errorok/if:errtoken.type=='$end'/assign:errtoken",
+   "kind": "trail",
+   "line": 902
+  },
+  {
+   "id": "r155",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:errorcount==0 or self.errorok/if:self.errorfunc/if:self.errorok/assign:lookahead",
+   "kind": "lead",
+   "line": 912
+  },
+  {
+   "id": "r156",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'",
+   "kind": "lead",
+   "line": 936
+  },
+  {
+   "id": "r157",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'/del:lookaheadstack[:]",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r158",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 948
+  },
+  {
+   "id": "r159",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 948
+  },
+  {
+   "id": "r160",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type=='$end'/return",
+   "kind": "lead",
+   "line": 950
+  },
+  {
+   "id": "r161",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type!='error'/if:sym.type=='error'/if:tracking",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r162",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type!='error'/if:sym.type=='error'/assign:lookahead",
+   "kind": "lead",
+   "line": 962
+  },
+  {
+   "id": "r163",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type!='error'/assign:t",
+   "kind": "lead",
+   "line": 966
+  },
+  {
+   "id": "r164",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type!='error'/else/if:tracking",
+   "kind": "lead",
+   "line": 979
+  },
+  {
+   "id": "r165",
+   "anchor": "LRParser.parseopt#while:True/if:t is None/if:lookahead.type!='error'/else/call:statestack.pop",
+   "kind": "lead",
+   "line": 983
+  },
+  {
+   "id": "r166",
+   "anchor": "LRParser.parseopt#while:True/raise:RuntimeError",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r167",
+   "anchor": "LRParser.parseopt#while:True",
+   "kind": "post",
+   "line": 746
+  },
+  {
+   "id": "r168",
+   "anchor": "LRParser.parseopt_notrack",
+   "kind": "lead",
+   "line": 1001
+  },
+  {
+   "id": "r169",
+   "anchor": "LRParser.parseopt_notrack#assign:lookahead",
+   "kind": "lead",
+   "line": 1003
+  },
+  {
+   "id": "r170",
+   "anchor": "LRParser.parseopt_notrack#assign:lookahead",
+   "kind": "trail",
+   "line": 1003
+  },
+  {
+   "id": "r171",
+   "anchor": "LRParser.parseopt_notrack#assign:lookaheadstack",
+   "kind": "trail",
+   "line": 1004
+  },
+  {
+   "id": "r172",
+   "anchor": "LRParser.parseopt_notrack#assign:actions",
+   "kind": "trail",
+   "line": 1005
+  },
+  {
+   "id": "r173",
+   "anchor": "LRParser.parseopt_notrack#assign:goto",
+   "kind": "trail",
+   "line": 1006
+  },
+  {
+   "id": "r174",
+   "anchor": "LRParser.parseopt_notrack#assign:prod",
+   "kind": "trail",
+   "line": 1007
+  },
+  {
+   "id": "r175",
+   "anchor": "LRParser.parseopt_notrack#assign:defaulted_states",
+   "kind": "trail",
+   "line": 1008
+  },
+  {
+   "id": "r176",
+   "anchor": "LRParser.parseopt_notrack#assign:pslice",
+   "kind": "trail",
+   "line": 1009
+  },
+  {
+   "id": "r177",
+   "anchor": "LRParser.parseopt_notrack#assign:errorcount",
+   "kind": "trail",
+   "line": 1010
+  },
+  {
+   "id": "r178",
+   "anchor": "LRParser.parseopt_notrack#if:not lexer",
+   "kind": "lead",
+   "line": 1014
+  },
+  {
+   "id": "r179",
+   "anchor": "LRParser.parseopt_notrack#assign:pslice.lexer",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r180",
+   "anchor": "LRParser.parseopt_notrack#if:input is not None",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r181",
+   "anchor": "LRParser.parseopt_notrack#if:tokenfunc is None/assign:get_token",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r182",
+   "anchor": "LRParser.parseopt_notrack#assign:self.token",
+   "kind": "lead",
+   "line": 1033
+  },
+  {
+   "id": "r183",
+   "anchor": "LRParser.parseopt_notrack#assign:statestack",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r184",
+   "anchor": "LRParser.parseopt_notrack#assign:statestack",
+   "kind": "trail",
+   "line": 1037
+  },
+  {
+   "id": "r185",
+   "anchor": "LRParser.parseopt_notrack#assign:symstack",
+   "kind": "trail",
+   "line": 1039
+  },
+  {
+   "id": "r186",
+   "anchor": "LRParser.parseopt_notrack#assign:pslice.stack",
+   "kind": "trail",
+   "line": 1042
+  },
+  {
+   "id": "r187",
+   "anchor": "LRParser.parseopt_notrack#assign:errtoken",
+   "kind": "trail",
+   "line": 1043
+  },
+  {
+   "id": "r188",
+   "anchor": "LRParser.parseopt_notrack#call:statestack.append",
+   "kind": "lead",
+   "line": 1047
+  },
+  {
+   "id": "r189",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:state not in defaulted_states",
+   "kind": "lead",
+   "line": 1058
+  },
+  {
+   "id": "r190",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:state not in defaulted_states/if:not lookahead/if:not lookaheadstack/assign:lookahead",
+   "kind": "trail",
+   "line": 1061
+  },
+  {
+   "id": "r191",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:state not in defaulted_states/assign:ltype",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r192",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t>0/call:statestack.append",
+   "kind": "lead",
+   "line": 1078
+  },
+  {
+   "id": "r193",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t>0/if:errorcount",
+   "kind": "lead",
+   "line": 1086
+  },
+  {
+   "id": "r194",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/assign:p",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r195",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/assign:sym",
+   "kind": "lead",
+   "line": 1097
+  },
+  {
+   "id": "r196",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/assign:sym.type",
+   "kind": "trail",
+   "line": 1098
+  },
+  {
+   "id": "r197",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/assign:pslice.slice",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r198",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/try/del:symstack[-plen:]",
+   "kind": "lead",
+   "line": 1116
+  },
+  {
+   "id": "r199",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 1125
+  },
+  {
+   "id": "r200",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 1125
+  },
+  {
+   "id": "r201",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:symstack.extend",
+   "kind": "trail",
+   "line": 1126
+  },
+  {
+   "id": "r202",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 1127
+  },
+  {
+   "id": "r203",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/continue",
+   "kind": "post",
+   "line": 1135
+  },
+  {
+   "id": "r204",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/assign:pslice.slice",
+   "kind": "lead",
+   "line": 1148
+  },
+  {
+   "id": "r205",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/try/assign:self.state",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r206",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "lead",
+   "line": 1159
+  },
+  {
+   "id": "r207",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:lookaheadstack.append",
+   "kind": "trail",
+   "line": 1159
+  },
+  {
+   "id": "r208",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/try/except:SyntaxError/call:statestack.pop",
+   "kind": "trail",
+   "line": 1160
+  },
+  {
+   "id": "r209",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is not None/if:t<0/if:plen/else/continue",
+   "kind": "post",
+   "line": 1168
+  },
+  {
+   "id": "r210",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:errorcount==0 or self.errorok",
+   "kind": "lead",
+   "line": 1189
+  },
+  {
+   "id": "r211",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:errorcount==0 or self.errorok/if:errtoken.type=='$end'/assign:errtoken",
+   "kind": "trail",
+   "line": 1194
+  },
+  {
+   "id": "r212",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:errorcount==0 or self.errorok/if:self.errorfunc/if:self.errorok/assign:lookahead",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r213",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'",
+   "kind": "lead",
+   "line": 1228
+  },
+  {
+   "id": "r214",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:len(statestack)<=1 and lookahead.type!='$end'/del:lookaheadstack[:]",
+   "kind": "lead",
+   "line": 1233
+  },
+  {
+   "id": "r215",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 1240
+  },
+  {
+   "id": "r216",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:lookahead.type=='$end'",
+   "kind": "lead",
+   "line": 1240
+  },
+  {
+   "id": "r217",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:lookahead.type=='$end'/return",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r218",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:lookahead.type!='error'/if:sym.type=='error'/assign:lookahead",
+   "kind": "lead",
+   "line": 1249
+  },
+  {
+   "id": "r219",
+   "anchor": "LRParser.parseopt_notrack#while:True/if:t is None/if:lookahead.type!='error'/assign:t",
+   "kind": "lead",
+   "line": 1253
+  },
+  {
+   "id": "r220",
+   "anchor": "LRParser.parseopt_notrack#while:True/raise:RuntimeError",
+   "kind": "lead",
+   "line": 1271
+  },
+  {
+   "id": "r221",
+   "anchor": "LRParser.parseopt_notrack#while:True",
+   "kind": "post",
+   "line": 1052
+  },
+  {
+   "id": "r222",
+   "anchor": "_is_identifier",
+   "kind": "lead",
+   "line": 1283
+  },
+  {
+   "id": "r223",
+   "anchor": "_is_identifier",
+   "kind": "lead",
+   "line": 1283
+  },
+  {
+   "id": "r224",
+   "anchor": "Production",
+   "kind": "lead",
+   "line": 1309
+  },
+  {
+   "id": "r225",
+   "anchor": "Production.__init__#assign:self.len",
+   "kind": "lead",
+   "line": 1323
+  },
+  {
+   "id": "r226",
+   "anchor": "Production.__init__#assign:self.len",
+   "kind": "trail",
+   "line": 1323
+  },
+  {
+   "id": "r227",
+   "anchor": "Production.__init__#assign:self.usyms",
+   "kind": "lead",
+   "line": 1326
+  },
+  {
+   "id": "r228",
+   "anchor": "Production.__init__#assign:self.lr_items",
+   "kind": "lead",
+   "line": 1332
+  },
+  {
+   "id": "r229",
+   "anchor": "Production.__init__#if:self.prod",
+   "kind": "lead",
+   "line": 1336
+  },
+  {
+   "id": "r230",
+   "anchor": "Production.lr_item",
+   "kind": "lead",
+   "line": 1357
+  },
+  {
+   "id": "r231",
+   "anchor": "Production.lr_item#try",
+   "kind": "lead",
+   "line": 1362
+  },
+  {
+   "id": "r232",
+   "anchor": "Production.bind",
+   "kind": "lead",
+   "line": 1373
+  },
+  {
+   "id": "r233",
+   "anchor": "MiniProduction",
+   "kind": "lead",
+   "line": 1381
+  },
+  {
+   "id": "r234",
+   "anchor": "MiniProduction.bind",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r235",
+   "anchor": "LRItem",
+   "kind": "lead",
+   "line": 1427
+  },
+  {
+   "id": "r236",
+   "anchor": "rightmost_terminal",
+   "kind": "lead",
+   "line": 1454
+  },
+  {
+   "id": "r237",
+   "anchor": "GrammarError",
+   "kind": "lead",
+   "line": 1470
+  },
+  {
+   "id": "r238",
+   "anchor": "Grammar.__init__#assign:self.Productions",
+   "kind": "trail",
+   "line": 1475
+  },
+  {
+   "id": "r239",
+   "anchor": "Grammar.__init__#assign:self.Prodnames",
+   "kind": "lead",
+   "line": 1479
+  },
+  {
+   "id": "r240",
+   "anchor": "Grammar.__init__#assign:self.Prodnames",
+   "kind": "trail",
+   "line": 1479
+  },
+  {
+   "id": "r241",
+   "anchor": "Grammar.__init__#assign:self.Prodmap",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r242",
+   "anchor": "Grammar.__init__#assign:self.Prodmap",
+   "kind": "trail",
+   "line": 1482
+  },
+  {
+   "id": "r243",
+   "anchor": "Grammar.__init__#assign:self.Terminals",
+   "kind": "lead",
+   "line": 1485
+  },
+  {
+   "id": "r244",
+   "anchor": "Grammar.__init__#assign:self.Terminals",
+   "kind": "trail",
+   "line": 1485
+  },
+  {
+   "id": "r245",
+   "anchor": "Grammar.__init__#for:term in terminals",
+   "kind": "lead",
+   "line": 1488
+  },
+  {
+   "id": "r246",
+   "anchor": "Grammar.__init__#assign:self.Nonterminals",
+   "kind": "trail",
+   "line": 1493
+  },
+  {
+   "id": "r247",
+   "anchor": "Grammar.__init__#assign:self.First",
+   "kind": "lead",
+   "line": 1496
+  },
+  {
+   "id": "r248",
+   "anchor": "Grammar.__init__#assign:self.First",
+   "kind": "trail",
+   "line": 1496
+  },
+  {
+   "id": "r249",
+   "anchor": "Grammar.__init__#assign:self.Follow",
+   "kind": "trail",
+   "line": 1498
+  },
+  {
+   "id": "r250",
+   "anchor": "Grammar.__init__#assign:self.Precedence",
+   "kind": "trail",
+   "line": 1500
+  },
+  {
+   "id": "r251",
+   "anchor": "Grammar.__init__#assign:self.UsedPrecedence",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r252",
+   "anchor": "Grammar.__init__#assign:self.UsedPrecedence",
+   "kind": "trail",
+   "line": 1503
+  },
+  {
+   "id": "r253",
+   "anchor": "Grammar.__init__#assign:self.Start",
+   "kind": "lead",
+   "line": 1507
+  },
+  {
+   "id": "r254",
+   "anchor": "Grammar.__init__#assign:self.Start",
+   "kind": "trail",
+   "line": 1507
+  },
+  {
+   "id": "r255",
+   "anchor": "Grammar.set_precedence",
+   "kind": "lead",
+   "line": 1524
+  },
+  {
+   "id": "r256",
+   "anchor": "Grammar.add_production",
+   "kind": "lead",
+   "line": 1549
+  },
+  {
+   "id": "r257",
+   "anchor": "Grammar.add_production#for:n, s in enumerate(syms)",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r258",
+   "anchor": "Grammar.add_production#if:'%prec' in syms",
+   "kind": "lead",
+   "line": 1576
+  },
+  {
+   "id": "r259",
+   "anchor": "Grammar.add_production#if:'%prec' in syms/del:syms[-2:]",
+   "kind": "trail",
+   "line": 1588
+  },
+  {
+   "id": "r260",
+   "anchor": "Grammar.add_production#if:'%prec' in syms/else/assign:precname",
+   "kind": "lead",
+   "line": 1591
+  },
+  {
+   "id": "r261",
+   "anchor": "Grammar.add_production#assign:map",
+   "kind": "lead",
+   "line": 1595
+  },
+  {
+   "id": "r262",
+   "anchor": "Grammar.add_production#assign:pnumber",
+   "kind": "lead",
+   "line": 1602
+  },
+  {
+   "id": "r263",
+   "anchor": "Grammar.add_production#for:t in syms",
+   "kind": "lead",
+   "line": 1607
+  },
+  {
+   "id": "r264",
+   "anchor": "Grammar.add_production#assign:p",
+   "kind": "lead",
+   "line": 1616
+  },
+  {
+   "id": "r265",
+   "anchor": "Grammar.add_production#try",
+   "kind": "lead",
+   "line": 1621
+  },
+  {
+   "id": "r266",
+   "anchor": "Grammar.set_start",
+   "kind": "lead",
+   "line": 1633
+  },
+  {
+   "id": "r267",
+   "anchor": "Grammar.find_unreachable",
+   "kind": "lead",
+   "line": 1649
+  },
+  {
+   "id": "r268",
+   "anchor": "Grammar.find_unreachable.mark_reachable_from",
+   "kind": "lead",
+   "line": 1652
+  },
+  {
+   "id": "r269",
+   "anchor": "Grammar.infinite_cycles",
+   "kind": "lead",
+   "line": 1672
+  },
+  {
+   "id": "r270",
+   "anchor": "Grammar.infinite_cycles#for:t in self.Terminals",
+   "kind": "lead",
+   "line": 1676
+  },
+  {
+   "id": "r271",
+   "anchor": "Grammar.infinite_cycles#for:n in self.Nonterminals",
+   "kind": "lead",
+   "line": 1684
+  },
+  {
+   "id": "r272",
+   "anchor": "Grammar.infinite_cycles#for:n in self.Nonterminals",
+   "kind": "lead",
+   "line": 1684
+  },
+  {
+   "id": "r273",
+   "anchor": "Grammar.infinite_cycles#while:True",
+   "kind": "lead",
+   "line": 1688
+  },
+  {
+   "id": "r274",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl",
+   "kind": "lead",
+   "line": 1692
+  },
+  {
+   "id": "r275",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl/for:s in p.prod",
+   "kind": "lead",
+   "line": 1694
+  },
+  {
+   "id": "r276",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl/for:s in p.prod/if:not terminates[s]/assign:p_terminates",
+   "kind": "lead",
+   "line": 1698
+  },
+  {
+   "id": "r277",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl/for:s in p.prod/else/assign:p_terminates",
+   "kind": "lead",
+   "line": 1704
+  },
+  {
+   "id": "r278",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl/if:p_terminates/if:not terminates[n]",
+   "kind": "lead",
+   "line": 1708
+  },
+  {
+   "id": "r279",
+   "anchor": "Grammar.infinite_cycles#while:True/for:(n, pl) in self.Prodnames.items()/for:p in pl/if:p_terminates/break",
+   "kind": "lead",
+   "line": 1712
+  },
+  {
+   "id": "r280",
+   "anchor": "Grammar.infinite_cycles#for:(s, term) in terminates.items()/if:not term/if:s not in self.Prodnames and s not in self.Terminals and s!='error'/pass",
+   "kind": "lead",
+   "line": 1723
+  },
+  {
+   "id": "r281",
+   "anchor": "Grammar.undefined_symbols",
+   "kind": "lead",
+   "line": 1736
+  },
+  {
+   "id": "r282",
+   "anchor": "Grammar.unused_terminals",
+   "kind": "lead",
+   "line": 1753
+  },
+  {
+   "id": "r283",
+   "anchor": "Grammar.unused_rules",
+   "kind": "lead",
+   "line": 1768
+  },
+  {
+   "id": "r284",
+   "anchor": "Grammar.unused_precedence",
+   "kind": "lead",
+   "line": 1785
+  },
+  {
+   "id": "r285",
+   "anchor": "Grammar._first",
+   "kind": "lead",
+   "line": 1801
+  },
+  {
+   "id": "r286",
+   "anchor": "Grammar._first#assign:result",
+   "kind": "lead",
+   "line": 1804
+  },
+  {
+   "id": "r287",
+   "anchor": "Grammar._first#for:x in beta/for:f in self.First[x]",
+   "kind": "lead",
+   "line": 1809
+  },
+  {
+   "id": "r288",
+   "anchor": "Grammar._first#for:x in beta/if:x_produces_empty/pass",
+   "kind": "lead",
+   "line": 1819
+  },
+  {
+   "id": "r289",
+   "anchor": "Grammar._first#for:x in beta/if:x_produces_empty/else/break",
+   "kind": "lead",
+   "line": 1822
+  },
+  {
+   "id": "r290",
+   "anchor": "Grammar._first#for:x in beta/else/call:result.append",
+   "kind": "lead",
+   "line": 1827
+  },
+  {
+   "id": "r291",
+   "anchor": "Grammar.compute_first",
+   "kind": "lead",
+   "line": 1836
+  },
+  {
+   "id": "r292",
+   "anchor": "Grammar.compute_first#for:t in self.Terminals",
+   "kind": "lead",
+   "line": 1841
+  },
+  {
+   "id": "r293",
+   "anchor": "Grammar.compute_first#for:n in self.Nonterminals",
+   "kind": "lead",
+   "line": 1849
+  },
+  {
+   "id": "r294",
+   "anchor": "Grammar.compute_first#for:n in self.Nonterminals",
+   "kind": "lead",
+   "line": 1849
+  },
+  {
+   "id": "r295",
+   "anchor": "Grammar.compute_first#while:True",
+   "kind": "lead",
+   "line": 1853
+  },
+  {
+   "id": "r296",
+   "anchor": "Grammar.compute_follow",
+   "kind": "lead",
+   "line": 1873
+  },
+  {
+   "id": "r297",
+   "anchor": "Grammar.compute_follow#if:self.Follow",
+   "kind": "lead",
+   "line": 1875
+  },
+  {
+   "id": "r298",
+   "anchor": "Grammar.compute_follow#if:not self.First",
+   "kind": "lead",
+   "line": 1879
+  },
+  {
+   "id": "r299",
+   "anchor": "Grammar.compute_follow#for:k in self.Nonterminals",
+   "kind": "lead",
+   "line": 1883
+  },
+  {
+   "id": "r300",
+   "anchor": "Grammar.compute_follow#while:True/for:p in self.Productions[1:]/for:i, B in enumerate(p.prod)",
+   "kind": "lead",
+   "line": 1895
+  },
+  {
+   "id": "r301",
+   "anchor": "Grammar.compute_follow#while:True/for:p in self.Productions[1:]/for:i, B in enumerate(p.prod)/if:B in self.Nonterminals/assign:fst",
+   "kind": "lead",
+   "line": 1898
+  },
+  {
+   "id": "r302",
+   "anchor": "Grammar.compute_follow#while:True/for:p in self.Productions[1:]/for:i, B in enumerate(p.prod)/if:B in self.Nonterminals/if:hasempty or i==(len(p.prod)-1)/for:f in self.Follow[p.name]",
+   "kind": "lead",
+   "line": 1908
+  },
+  {
+   "id": "r303",
+   "anchor": "Grammar.build_lritems",
+   "kind": "lead",
+   "line": 1932
+  },
+  {
+   "id": "r304",
+   "anchor": "Grammar.build_lritems#for:p in self.Productions/while:True/if:i>len(p)/else/try",
+   "kind": "lead",
+   "line": 1943
+  },
+  {
+   "id": "r305",
+   "anchor": "VersionError",
+   "kind": "lead",
+   "line": 1968
+  },
+  {
+   "id": "r306",
+   "anchor": "LRTable.bind_callables",
+   "kind": "lead",
+   "line": 2026
+  },
+  {
+   "id": "r307",
+   "anchor": "digraph",
+   "kind": "lead",
+   "line": 2055
+  },
+  {
+   "id": "r308",
+   "anchor": "digraph",
+   "kind": "lead",
+   "line": 2055
+  },
+  {
+   "id": "r309",
+   "anchor": "traverse#assign:F[x]",
+   "kind": "trail",
+   "line": 2070
+  },
+  {
+   "id": "r310",
+   "anchor": "traverse#assign:rel",
+   "kind": "trail",
+   "line": 2072
+  },
+  {
+   "id": "r311",
+   "anchor": "LRGeneratedTable",
+   "kind": "lead",
+   "line": 2099
+  },
+  {
+   "id": "r312",
+   "anchor": "LRGeneratedTable.__init__#if:not log",
+   "kind": "lead",
+   "line": 2108
+  },
+  {
+   "id": "r313",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr_action",
+   "kind": "lead",
+   "line": 2113
+  },
+  {
+   "id": "r314",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr_action",
+   "kind": "trail",
+   "line": 2113
+  },
+  {
+   "id": "r315",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr_goto",
+   "kind": "trail",
+   "line": 2114
+  },
+  {
+   "id": "r316",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr_productions",
+   "kind": "trail",
+   "line": 2115
+  },
+  {
+   "id": "r317",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr_goto_cache",
+   "kind": "trail",
+   "line": 2116
+  },
+  {
+   "id": "r318",
+   "anchor": "LRGeneratedTable.__init__#assign:self.lr0_cidhash",
+   "kind": "trail",
+   "line": 2117
+  },
+  {
+   "id": "r319",
+   "anchor": "LRGeneratedTable.__init__#assign:self._add_count",
+   "kind": "trail",
+   "line": 2119
+  },
+  {
+   "id": "r320",
+   "anchor": "LRGeneratedTable.__init__#assign:self.sr_conflict",
+   "kind": "lead",
+   "line": 2122
+  },
+  {
+   "id": "r321",
+   "anchor": "LRGeneratedTable.__init__#assign:self.conflicts",
+   "kind": "trail",
+   "line": 2124
+  },
+  {
+   "id": "r322",
+   "anchor": "LRGeneratedTable.__init__#call:self.grammar.build_lritems",
+   "kind": "lead",
+   "line": 2130
+  },
+  {
+   "id": "r323",
+   "anchor": "LRGeneratedTable.lr0_closure",
+   "kind": "lead",
+   "line": 2137
+  },
+  {
+   "id": "r324",
+   "anchor": "LRGeneratedTable.lr0_closure#assign:J",
+   "kind": "lead",
+   "line": 2141
+  },
+  {
+   "id": "r325",
+   "anchor": "LRGeneratedTable.lr0_closure#while:didadd/for:j in J/for:x in j.lr_after/call:J.append",
+   "kind": "lead",
+   "line": 2150
+  },
+  {
+   "id": "r326",
+   "anchor": "LRGeneratedTable.lr0_goto",
+   "kind": "lead",
+   "line": 2163
+  },
+  {
+   "id": "r327",
+   "anchor": "LRGeneratedTable.lr0_goto#assign:g",
+   "kind": "lead",
+   "line": 2165
+  },
+  {
+   "id": "r328",
+   "anchor": "LRGeneratedTable.lr0_goto#assign:s",
+   "kind": "lead",
+   "line": 2172
+  },
+  {
+   "id": "r329",
+   "anchor": "LRGeneratedTable.lr0_items",
+   "kind": "lead",
+   "line": 2198
+  },
+  {
+   "id": "r330",
+   "anchor": "LRGeneratedTable.lr0_items#assign:i",
+   "kind": "lead",
+   "line": 2206
+  },
+  {
+   "id": "r331",
+   "anchor": "LRGeneratedTable.lr0_items#while:i<len(C)/assign:asyms",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r332",
+   "anchor": "LRGeneratedTable.compute_nullable_nonterminals",
+   "kind": "lead",
+   "line": 2254
+  },
+  {
+   "id": "r333",
+   "anchor": "LRGeneratedTable.compute_nullable_nonterminals",
+   "kind": "lead",
+   "line": 2254
+  },
+  {
+   "id": "r334",
+   "anchor": "LRGeneratedTable.find_nonterminal_transitions",
+   "kind": "lead",
+   "line": 2283
+  },
+  {
+   "id": "r335",
+   "anchor": "LRGeneratedTable.dr_relation",
+   "kind": "lead",
+   "line": 2303
+  },
+  {
+   "id": "r336",
+   "anchor": "LRGeneratedTable.dr_relation#if:state==0 and N==self.grammar.Productions[0].prod[0]",
+   "kind": "lead",
+   "line": 2317
+  },
+  {
+   "id": "r337",
+   "anchor": "LRGeneratedTable.reads_relation",
+   "kind": "lead",
+   "line": 2328
+  },
+  {
+   "id": "r338",
+   "anchor": "LRGeneratedTable.reads_relation#assign:rel",
+   "kind": "lead",
+   "line": 2330
+  },
+  {
+   "id": "r339",
+   "anchor": "LRGeneratedTable.compute_lookback_includes",
+   "kind": "lead",
+   "line": 2371
+  },
+  {
+   "id": "r340",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#assign:lookdict",
+   "kind": "trail",
+   "line": 2372
+  },
+  {
+   "id": "r341",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#assign:includedict",
+   "kind": "trail",
+   "line": 2373
+  },
+  {
+   "id": "r342",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#assign:dtrans",
+   "kind": "lead",
+   "line": 2376
+  },
+  {
+   "id": "r343",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans",
+   "kind": "lead",
+   "line": 2381
+  },
+  {
+   "id": "r344",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/assign:lr_index",
+   "kind": "lead",
+   "line": 2391
+  },
+  {
+   "id": "r345",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/if:(j, t) in dtrans",
+   "kind": "lead",
+   "line": 2398
+  },
+  {
+   "id": "r346",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/if:(j, t) in dtrans/assign:li",
+   "kind": "lead",
+   "line": 2403
+  },
+  {
+   "id": "r347",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/if:(j, t) in dtrans/while:li<p.len/if:p.prod[li] in self.grammar.Terminals/break",
+   "kind": "trail",
+   "line": 2406
+  },
+  {
+   "id": "r348",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/if:(j, t) in dtrans/while:li<p.len/else/call:includes.append",
+   "kind": "lead",
+   "line": 2412
+  },
+  {
+   "id": "r349",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/assign:g",
+   "kind": "trail",
+   "line": 2414
+  },
+  {
+   "id": "r350",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/while:lr_index<p.len-1/assign:j",
+   "kind": "trail",
+   "line": 2415
+  },
+  {
+   "id": "r351",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/for:r in C[j]",
+   "kind": "lead",
+   "line": 2418
+  },
+  {
+   "id": "r352",
+   "anchor": "LRGeneratedTable.compute_lookback_includes#for:state, N in trans/for:p in C[state]/for:r in C[j]/while:i<r.lr_index",
+   "kind": "lead",
+   "line": 2425
+  },
+  {
+   "id": "r353",
+   "anchor": "LRGeneratedTable.compute_read_sets",
+   "kind": "lead",
+   "line": 2451
+  },
+  {
+   "id": "r354",
+   "anchor": "LRGeneratedTable.compute_follow_sets",
+   "kind": "lead",
+   "line": 2473
+  },
+  {
+   "id": "r355",
+   "anchor": "LRGeneratedTable.add_lookaheads",
+   "kind": "lead",
+   "line": 2491
+  },
+  {
+   "id": "r356",
+   "anchor": "LRGeneratedTable.add_lookaheads#for:trans, lb in lookbacks.items()/for:state, p in lb",
+   "kind": "lead",
+   "line": 2494
+  },
+  {
+   "id": "r357",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads",
+   "kind": "lead",
+   "line": 2509
+  },
+  {
+   "id": "r358",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#assign:nullable",
+   "kind": "lead",
+   "line": 2511
+  },
+  {
+   "id": "r359",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#assign:trans",
+   "kind": "lead",
+   "line": 2514
+  },
+  {
+   "id": "r360",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#assign:readsets",
+   "kind": "lead",
+   "line": 2517
+  },
+  {
+   "id": "r361",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#assign:lookd, included",
+   "kind": "lead",
+   "line": 2520
+  },
+  {
+   "id": "r362",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#assign:followsets",
+   "kind": "lead",
+   "line": 2523
+  },
+  {
+   "id": "r363",
+   "anchor": "LRGeneratedTable.add_lalr_lookaheads#call:self.add_lookaheads",
+   "kind": "lead",
+   "line": 2526
+  },
+  {
+   "id": "r364",
+   "anchor": "LRGeneratedTable.lr_parse_table",
+   "kind": "lead",
+   "line": 2533
+  },
+  {
+   "id": "r365",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:goto",
+   "kind": "trail",
+   "line": 2536
+  },
+  {
+   "id": "r366",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:action",
+   "kind": "trail",
+   "line": 2537
+  },
+  {
+   "id": "r367",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:log",
+   "kind": "trail",
+   "line": 2538
+  },
+  {
+   "id": "r368",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:actionp",
+   "kind": "trail",
+   "line": 2540
+  },
+  {
+   "id": "r369",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:C",
+   "kind": "lead",
+   "line": 2547
+  },
+  {
+   "id": "r370",
+   "anchor": "LRGeneratedTable.lr_parse_table#assign:st",
+   "kind": "lead",
+   "line": 2553
+  },
+  {
+   "id": "r371",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/assign:actlist",
+   "kind": "lead",
+   "line": 2556
+  },
+  {
+   "id": "r372",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/assign:actlist",
+   "kind": "trail",
+   "line": 2556
+  },
+  {
+   "id": "r373",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/assign:st_action['$end']",
+   "kind": "lead",
+   "line": 2571
+  },
+  {
+   "id": "r374",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/if:self.lr_method=='LALR'",
+   "kind": "lead",
+   "line": 2575
+  },
+  {
+   "id": "r375",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0",
+   "kind": "lead",
+   "line": 2584
+  },
+  {
+   "id": "r376",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/assign:sprec, slevel",
+   "kind": "lead",
+   "line": 2590
+  },
+  {
+   "id": "r377",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/assign:sprec, slevel",
+   "kind": "lead",
+   "line": 2590
+  },
+  {
+   "id": "r378",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/assign:rprec, rlevel",
+   "kind": "lead",
+   "line": 2593
+  },
+  {
+   "id": "r379",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/if:(slevel<rlevel) or ((slevel==rlevel) and (rprec=='left'))/assign:st_action[a]",
+   "kind": "lead",
+   "line": 2597
+  },
+  {
+   "id": "r380",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/if:(slevel<rlevel) or ((slevel==rlevel) and (rprec=='left'))/else/if:not rlevel",
+   "kind": "lead",
+   "line": 2607
+  },
+  {
+   "id": "r381",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/if:p.name==\"S'\"/else/for:a in laheads/if:r is not None/if:r>0/elif:r<0/assign:oldp",
+   "kind": "lead",
+   "line": 2613
+  },
+  {
+   "id": "r382",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/assign:a",
+   "kind": "trail",
+   "line": 2634
+  },
+  {
+   "id": "r383",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/call:actlist.append",
+   "kind": "lead",
+   "line": 2640
+  },
+  {
+   "id": "r384",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0",
+   "kind": "lead",
+   "line": 2644
+  },
+  {
+   "id": "r385",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0/elif:r<0/assign:sprec, slevel",
+   "kind": "lead",
+   "line": 2654
+  },
+  {
+   "id": "r386",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0/elif:r<0/assign:sprec, slevel",
+   "kind": "lead",
+   "line": 2654
+  },
+  {
+   "id": "r387",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0/elif:r<0/assign:rprec, rlevel",
+   "kind": "lead",
+   "line": 2657
+  },
+  {
+   "id": "r388",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0/elif:r<0/if:(slevel>rlevel) or ((slevel==rlevel) and (rprec=='right'))/assign:Productions[st_actionp[a].number].reduced",
+   "kind": "lead",
+   "line": 2661
+  },
+  {
+   "id": "r389",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/for:p in I/if:p.len==p.lr_index+1/else/if:a in self.grammar.Terminals/if:j>=0/if:r is not None/if:r>0/elif:r<0/if:(slevel>rlevel) or ((slevel==rlevel) and (rprec=='right'))/else/if:not slevel and not rlevel",
+   "kind": "lead",
+   "line": 2671
+  },
+  {
+   "id": "r390",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/assign:_actprint",
+   "kind": "lead",
+   "line": 2682
+  },
+  {
+   "id": "r391",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/assign:not_used",
+   "kind": "lead",
+   "line": 2690
+  },
+  {
+   "id": "r392",
+   "anchor": "LRGeneratedTable.lr_parse_table#for:I in C/assign:nkeys",
+   "kind": "lead",
+   "line": 2703
+  },
+  {
+   "id": "r393",
+   "anchor": "LRGeneratedTable.write_table",
+   "kind": "lead",
+   "line": 2726
+  },
+  {
+   "id": "r394",
+   "anchor": "LRGeneratedTable.write_table#try/assign:smaller",
+   "kind": "lead",
+   "line": 2746
+  },
+  {
+   "id": "r395",
+   "anchor": "LRGeneratedTable.write_table#try/if:smaller",
+   "kind": "lead",
+   "line": 2749
+  },
+  {
+   "id": "r396",
+   "anchor": "LRGeneratedTable.write_table#try/if:smaller/assign:items",
+   "kind": "lead",
+   "line": 2790
+  },
+  {
+   "id": "r397",
+   "anchor": "LRGeneratedTable.write_table#try/call:f.write",
+   "kind": "lead",
+   "line": 2828
+  },
+  {
+   "id": "r398",
+   "anchor": "LRGeneratedTable.pickle_table",
+   "kind": "lead",
+   "line": 2848
+  },
+  {
+   "id": "r399",
+   "anchor": "get_caller_module_dict",
+   "kind": "lead",
+   "line": 2883
+  },
+  {
+   "id": "r400",
+   "anchor": "get_caller_module_dict",
+   "kind": "lead",
+   "line": 2883
+  },
+  {
+   "id": "r401",
+   "anchor": "parse_grammar",
+   "kind": "lead",
+   "line": 2895
+  },
+  {
+   "id": "r402",
+   "anchor": "parse_grammar#assign:pstrings",
+   "kind": "lead",
+   "line": 2898
+  },
+  {
+   "id": "r403",
+   "anchor": "parse_grammar#for:ps in pstrings/try/if:p[0]=='|'/if:not lastp",
+   "kind": "lead",
+   "line": 2909
+  },
+  {
+   "id": "r404",
+   "anchor": "ParserReflect",
+   "kind": "lead",
+   "line": 2936
+  },
+  {
+   "id": "r405",
+   "anchor": "ParserReflect.get_all",
+   "kind": "lead",
+   "line": 2952
+  },
+  {
+   "id": "r406",
+   "anchor": "ParserReflect.validate_all",
+   "kind": "lead",
+   "line": 2960
+  },
+  {
+   "id": "r407",
+   "anchor": "ParserReflect.signature",
+   "kind": "lead",
+   "line": 2970
+  },
+  {
+   "id": "r408",
+   "anchor": "ParserReflect.validate_modules",
+   "kind": "lead",
+   "line": 2997
+  },
+  {
+   "id": "r409",
+   "anchor": "ParserReflect.validate_modules#assign:fre",
+   "kind": "lead",
+   "line": 2999
+  },
+  {
+   "id": "r410",
+   "anchor": "ParserReflect.get_start",
+   "kind": "lead",
+   "line": 3022
+  },
+  {
+   "id": "r411",
+   "anchor": "ParserReflect.validate_start",
+   "kind": "lead",
+   "line": 3026
+  },
+  {
+   "id": "r412",
+   "anchor": "ParserReflect.get_error_func",
+   "kind": "lead",
+   "line": 3032
+  },
+  {
+   "id": "r413",
+   "anchor": "ParserReflect.validate_error_func",
+   "kind": "lead",
+   "line": 3036
+  },
+  {
+   "id": "r414",
+   "anchor": "ParserReflect.get_tokens",
+   "kind": "lead",
+   "line": 3058
+  },
+  {
+   "id": "r415",
+   "anchor": "ParserReflect.validate_tokens",
+   "kind": "lead",
+   "line": 3078
+  },
+  {
+   "id": "r416",
+   "anchor": "ParserReflect.validate_tokens#if:'error' in self.tokens",
+   "kind": "lead",
+   "line": 3080
+  },
+  {
+   "id": "r417",
+   "anchor": "ParserReflect.get_precedence",
+   "kind": "lead",
+   "line": 3092
+  },
+  {
+   "id": "r418",
+   "anchor": "ParserReflect.validate_precedence",
+   "kind": "lead",
+   "line": 3096
+  },
+  {
+   "id": "r419",
+   "anchor": "ParserReflect.get_pfunctions",
+   "kind": "lead",
+   "line": 3127
+  },
+  {
+   "id": "r420",
+   "anchor": "ParserReflect.get_pfunctions#call:p_functions.sort",
+   "kind": "lead",
+   "line": 3140
+  },
+  {
+   "id": "r421",
+   "anchor": "ParserReflect.validate_pfunctions",
+   "kind": "lead",
+   "line": 3148
+  },
+  {
+   "id": "r422",
+   "anchor": "ParserReflect.validate_pfunctions#if:len(self.pfuncs)==0",
+   "kind": "lead",
+   "line": 3151
+  },
+  {
+   "id": "r423",
+   "anchor": "ParserReflect.validate_pfunctions#for:line, module, name, doc in self.pfuncs/if:func.__code__.co_argcount>reqargs/else/call:self.modules.add",
+   "kind": "lead",
+   "line": 3183
+  },
+  {
+   "id": "r424",
+   "anchor": "ParserReflect.validate_pfunctions#for:n, v in self.pdict.items()",
+   "kind": "lead",
+   "line": 3188
+  },
+  {
+   "id": "r425",
+   "anchor": "yacc",
+   "kind": "lead",
+   "line": 3214
+  },
+  {
+   "id": "r426",
+   "anchor": "yacc#global:parse",
+   "kind": "lead",
+   "line": 3222
+  },
+  {
+   "id": "r427",
+   "anchor": "yacc#if:picklefile",
+   "kind": "lead",
+   "line": 3225
+  },
+  {
+   "id": "r428",
+   "anchor": "yacc#if:module",
+   "kind": "lead",
+   "line": 3232
+  },
+  {
+   "id": "r429",
+   "anchor": "yacc#if:module/if:'__file__' not in pdict",
+   "kind": "lead",
+   "line": 3236
+  },
+  {
+   "id": "r430",
+   "anchor": "yacc#if:outputdir is None/if:isinstance(tabmodule, types.ModuleType)",
+   "kind": "lead",
+   "line": 3246
+  },
+  {
+   "id": "r431",
+   "anchor": "yacc#assign:pkg",
+   "kind": "lead",
+   "line": 3260
+  },
+  {
+   "id": "r432",
+   "anchor": "yacc#if:start is not None",
+   "kind": "lead",
+   "line": 3268
+  },
+  {
+   "id": "r433",
+   "anchor": "yacc#assign:pinfo",
+   "kind": "lead",
+   "line": 3272
+  },
+  {
+   "id": "r434",
+   "anchor": "yacc#assign:signature",
+   "kind": "lead",
+   "line": 3279
+  },
+  {
+   "id": "r435",
+   "anchor": "yacc#try",
+   "kind": "lead",
+   "line": 3282
+  },
+  {
+   "id": "r436",
+   "anchor": "yacc#if:pinfo.validate_all()",
+   "kind": "lead",
+   "line": 3316
+  },
+  {
+   "id": "r437",
+   "anchor": "yacc#assign:grammar",
+   "kind": "lead",
+   "line": 3323
+  },
+  {
+   "id": "r438",
+   "anchor": "yacc#for:term, assoc, level in pinfo.preclist",
+   "kind": "lead",
+   "line": 3326
+  },
+  {
+   "id": "r439",
+   "anchor": "yacc#for:funcname, gram in pinfo.grammar",
+   "kind": "lead",
+   "line": 3333
+  },
+  {
+   "id": "r440",
+   "anchor": "yacc#try",
+   "kind": "lead",
+   "line": 3342
+  },
+  {
+   "id": "r441",
+   "anchor": "yacc#assign:undefined_symbols",
+   "kind": "lead",
+   "line": 3355
+  },
+  {
+   "id": "r442",
+   "anchor": "yacc#if:debug",
+   "kind": "lead",
+   "line": 3370
+  },
+  {
+   "id": "r443",
+   "anchor": "yacc#assign:unused_rules",
+   "kind": "lead",
+   "line": 3378
+  },
+  {
+   "id": "r444",
+   "anchor": "yacc#if:debug",
+   "kind": "lead",
+   "line": 3429
+  },
+  {
+   "id": "r445",
+   "anchor": "yacc#if:debug/if:num_sr==1",
+   "kind": "lead",
+   "line": 3438
+  },
+  {
+   "id": "r446",
+   "anchor": "yacc#if:debug and (lr.sr_conflicts or lr.rr_conflicts)",
+   "kind": "lead",
+   "line": 3450
+  },
+  {
+   "id": "r447",
+   "anchor": "yacc#if:write_tables",
+   "kind": "lead",
+   "line": 3476
+  },
+  {
+   "id": "r448",
+   "anchor": "yacc#if:picklefile",
+   "kind": "lead",
+   "line": 3483
+  },
+  {
+   "id": "r449",
+   "anchor": "yacc#call:lr.bind_callables",
+   "kind": "lead",
+   "line": 3490
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 85669,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 46126,
+  "thinking_tokens": 21083,
+  "opus_cost_usd": 2.0141315000000004,
+  "total_cost_usd": 2.0822415000000003,
+  "duration_ms": 380317,
+  "duration_api_ms": 382323,
+  "num_turns": 2
+ },
+ "wall_ms": 381247,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

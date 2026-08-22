@@ -1,0 +1,601 @@
+{
+ "blob_sha": "9b11cf9948e8f6a4f9a3c38b1d17f3f2333faa8a",
+ "path": "django/db/backends/base/features.py",
+ "repo": "django/django",
+ "records": 96,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BaseDatabaseFeatures.allows_group_by_lob",
+   "kind": "lead",
+   "line": 8
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseDatabaseFeatures.interprets_empty_strings_as_nulls",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseDatabaseFeatures.supports_nullable_unique_constraints",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseDatabaseFeatures.supports_partially_nullable_unique_constraints",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseDatabaseFeatures.supports_deferrable_unique_constraints",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseDatabaseFeatures.related_fields_match_type",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseDatabaseFeatures.select_for_update_of_column",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseDatabaseFeatures.test_db_allows_multiple_connections",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseDatabaseFeatures.supports_unspecified_pk",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseDatabaseFeatures.supports_forward_references",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseDatabaseFeatures.truncates_names",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseDatabaseFeatures.has_real_datatype",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseDatabaseFeatures.ignores_unnecessary_order_by_in_subqueries",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseDatabaseFeatures.has_native_uuid_field",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseDatabaseFeatures.has_native_duration_field",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseDatabaseFeatures.supports_temporal_subtraction",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseDatabaseFeatures.supports_regex_backreferencing",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseDatabaseFeatures.supports_date_lookup_using_string",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseDatabaseFeatures.supports_timezones",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseDatabaseFeatures.has_zoneinfo_database",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseDatabaseFeatures.requires_explicit_null_ordering_when_grouping",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseDatabaseFeatures.nulls_order_largest",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseDatabaseFeatures.supports_order_by_nulls_modifier",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseDatabaseFeatures.order_by_nulls_first",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseDatabaseFeatures.max_query_params",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseDatabaseFeatures.allows_auto_pk_0",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseDatabaseFeatures.can_defer_constraint_checks",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseDatabaseFeatures.supports_mixed_date_datetime_comparisons",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseDatabaseFeatures.supports_tablespaces",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseDatabaseFeatures.supports_sequence_reset",
+   "kind": "lead",
+   "line": 123
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseDatabaseFeatures.can_introspect_default",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseDatabaseFeatures.can_introspect_foreign_keys",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseDatabaseFeatures.introspected_field_types",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseDatabaseFeatures.supports_index_column_ordering",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseDatabaseFeatures.can_introspect_materialized_views",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseDatabaseFeatures.can_distinct_on_fields",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseDatabaseFeatures.atomic_transactions",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseDatabaseFeatures.can_rollback_ddl",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseDatabaseFeatures.supports_atomic_references_rename",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseDatabaseFeatures.supports_combined_alters",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseDatabaseFeatures.supports_foreign_keys",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseDatabaseFeatures.can_create_inline_fk",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseDatabaseFeatures.indexes_foreign_keys",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseDatabaseFeatures.supports_column_check_constraints",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseDatabaseFeatures.can_introspect_check_constraints",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseDatabaseFeatures.supports_paramstyle_pyformat",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseDatabaseFeatures.requires_literal_defaults",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseDatabaseFeatures.connection_persists_old_columns",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseDatabaseFeatures.closed_cursor_error_class",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseDatabaseFeatures.has_case_insensitive_like",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseDatabaseFeatures.bare_select_suffix",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseDatabaseFeatures.implied_column_null",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseDatabaseFeatures.supports_select_for_update_with_limit",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseDatabaseFeatures.greatest_least_ignores_nulls",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseDatabaseFeatures.can_clone_databases",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseDatabaseFeatures.ignores_table_name_case",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseDatabaseFeatures.for_update_after_from",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseDatabaseFeatures.supports_select_union",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseDatabaseFeatures.supports_aggregate_filter_clause",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseDatabaseFeatures.supports_index_on_text_field",
+   "kind": "lead",
+   "line": 242
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseDatabaseFeatures.supports_over_clause",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseDatabaseFeatures.supports_cast_with_precision",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseDatabaseFeatures.time_cast_precision",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseDatabaseFeatures.create_test_procedure_without_params_sql",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseDatabaseFeatures.supports_callproc_kwargs",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseDatabaseFeatures.supported_explain_formats",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseDatabaseFeatures.validates_explain_options",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseDatabaseFeatures.supports_default_in_lead_lag",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseDatabaseFeatures.supports_ignore_conflicts",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseDatabaseFeatures.requires_casted_case_in_updates",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseDatabaseFeatures.supports_partial_indexes",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseDatabaseFeatures.supports_covering_indexes",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseDatabaseFeatures.supports_expression_indexes",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseDatabaseFeatures.collate_as_index_expression",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseDatabaseFeatures.allows_multiple_constraints_on_same_fields",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseDatabaseFeatures.supports_boolean_expr_in_select_clause",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseDatabaseFeatures.supports_json_field",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseDatabaseFeatures.can_introspect_json_field",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseDatabaseFeatures.supports_primitives_in_json_field",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseDatabaseFeatures.has_native_json_field",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseDatabaseFeatures.has_json_operators",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseDatabaseFeatures.supports_json_field_contains",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseDatabaseFeatures.json_key_contains_list_matching_requires_list",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r84",
+   "anchor": "BaseDatabaseFeatures.has_json_object_function",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r85",
+   "anchor": "BaseDatabaseFeatures.supports_collation_on_charfield",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r86",
+   "anchor": "BaseDatabaseFeatures.supports_non_deterministic_collations",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r87",
+   "anchor": "BaseDatabaseFeatures.test_collations",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r88",
+   "anchor": "BaseDatabaseFeatures.test_collations#key:ci",
+   "kind": "trail",
+   "line": 327
+  },
+  {
+   "id": "r89",
+   "anchor": "BaseDatabaseFeatures.test_collations#key:cs",
+   "kind": "trail",
+   "line": 328
+  },
+  {
+   "id": "r90",
+   "anchor": "BaseDatabaseFeatures.test_collations#key:non_default",
+   "kind": "trail",
+   "line": 329
+  },
+  {
+   "id": "r91",
+   "anchor": "BaseDatabaseFeatures.test_collations#key:swedish_ci",
+   "kind": "trail",
+   "line": 330
+  },
+  {
+   "id": "r92",
+   "anchor": "BaseDatabaseFeatures.test_now_utc_template",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r93",
+   "anchor": "BaseDatabaseFeatures.django_test_expected_failures",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r94",
+   "anchor": "BaseDatabaseFeatures.django_test_skips",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r95",
+   "anchor": "BaseDatabaseFeatures.supports_explaining_query_execution",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r96",
+   "anchor": "BaseDatabaseFeatures.supports_transactions",
+   "kind": "doc",
+   "line": 351
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13395,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6617,
+  "thinking_tokens": 1838,
+  "opus_cost_usd": 0.3036665,
+  "total_cost_usd": 0.31274050000000003,
+  "duration_ms": 52862,
+  "duration_api_ms": 53675,
+  "num_turns": 2
+ },
+ "wall_ms": 53808,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

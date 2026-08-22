@@ -1,0 +1,973 @@
+{
+ "blob_sha": "8237cdf2f0171cb870b7b90f9ba5cbbbfabb5ff5",
+ "path": "astropy/table/table.py",
+ "repo": "astropy/astropy",
+ "records": 158,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:.index",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "TableReplaceWarning",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r3",
+   "anchor": "descr",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r4",
+   "anchor": "TableColumns",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r5",
+   "anchor": "TableColumns.__init__#if:isinstance(cols, (list, tuple))/assign:newcols",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r6",
+   "anchor": "TableColumns.__getitem__",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r7",
+   "anchor": "TableColumns.keys",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r8",
+   "anchor": "TableColumns.isinstance",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r9",
+   "anchor": "TableColumns.not_isinstance",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r10",
+   "anchor": "Table",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r11",
+   "anchor": "Table.Row",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r12",
+   "anchor": "Table.as_array",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r13",
+   "anchor": "Table.as_array#for:col in cols/assign:data[col.info.name]",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r14",
+   "anchor": "Table.__init__#call:self._set_masked",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r15",
+   "anchor": "Table._copy_indices",
+   "kind": "trail",
+   "line": 288
+  },
+  {
+   "id": "r16",
+   "anchor": "Table._init_indices",
+   "kind": "trail",
+   "line": 289
+  },
+  {
+   "id": "r17",
+   "anchor": "Table.__init__#if:not copy and dtype is not None",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r18",
+   "anchor": "Table.__init__#assign:is_list_of_dict",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r19",
+   "anchor": "Table.__init__#if:rows is not None/if:all(isinstance(row, dict) for row in rows)/assign:is_list_of_dict",
+   "kind": "trail",
+   "line": 304
+  },
+  {
+   "id": "r20",
+   "anchor": "Table.__init__#assign:default_names",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r21",
+   "anchor": "Table.__init__#if:hasattr(data, '__astropy_table__')/assign:data",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r22",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:isinstance(data, np.ndarray)/if:data.dtype.names/assign:init_func",
+   "kind": "trail",
+   "line": 346
+  },
+  {
+   "id": "r23",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:isinstance(data, np.ndarray)/if:data.dtype.names/else/assign:init_func",
+   "kind": "trail",
+   "line": 350
+  },
+  {
+   "id": "r24",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:isinstance(data, Table)/assign:self._init_indices",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r25",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:data is None/if:names is None/if:dtype is None/return",
+   "kind": "trail",
+   "line": 372
+  },
+  {
+   "id": "r26",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:data is None/if:names is None/try/assign:dtype",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r27",
+   "anchor": "Table.__init__#if:isinstance(data, (list, tuple))/elif:data is None/assign:init_func",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r28",
+   "anchor": "Table.__init__#if:names is None",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r29",
+   "anchor": "Table.__init__#assign:names",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r30",
+   "anchor": "Table.__init__#call:init_func",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r31",
+   "anchor": "Table.__init__#if:type(self.masked) is not bool",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r32",
+   "anchor": "Table.mask#if:self.masked",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r33",
+   "anchor": "Table.mask#if:self.masked/assign:mask_table._setitem_inplace",
+   "kind": "lead",
+   "line": 433
+  },
+  {
+   "id": "r34",
+   "anchor": "Table._mask",
+   "kind": "doc",
+   "line": 444
+  },
+  {
+   "id": "r35",
+   "anchor": "Table.filled",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r36",
+   "anchor": "Table.indices",
+   "kind": "doc",
+   "line": 475
+  },
+  {
+   "id": "r37",
+   "anchor": "Table.indices#for:column in self.columns.values()/for:index in column.info.indices/if:sum([index is x for x in lst])==0",
+   "kind": "trail",
+   "line": 483
+  },
+  {
+   "id": "r38",
+   "anchor": "Table.loc",
+   "kind": "doc",
+   "line": 488
+  },
+  {
+   "id": "r39",
+   "anchor": "Table.loc_indices",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r40",
+   "anchor": "Table.iloc",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r41",
+   "anchor": "Table.add_index",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r42",
+   "anchor": "Table.add_index#for:col in columns",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r43",
+   "anchor": "Table.remove_indices",
+   "kind": "doc",
+   "line": 545
+  },
+  {
+   "id": "r44",
+   "anchor": "Table.index_mode",
+   "kind": "doc",
+   "line": 567
+  },
+  {
+   "id": "r45",
+   "anchor": "Table.__array__",
+   "kind": "doc",
+   "line": 588
+  },
+  {
+   "id": "r46",
+   "anchor": "Table.__array__#return",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r47",
+   "anchor": "Table._check_names_dtype",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r48",
+   "anchor": "Table._init_from_list",
+   "kind": "doc",
+   "line": 648
+  },
+  {
+   "id": "r49",
+   "anchor": "Table._init_from_list#call:self._set_masked_from_cols",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r50",
+   "anchor": "Table._init_from_list#for:col, name, def_name, dtype in zip(data, names, def_names, dtype)/if:isinstance(col, np.ndarray) and len(col.dtype) > 1 and not self._add_as_mixin_column(col)",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r51",
+   "anchor": "Table._init_from_list#for:col, name, def_name, dtype in zip(data, names, def_names, dtype)/if:isinstance(col, (Column, MaskedColumn))/elif:self._add_as_mixin_column(col)/if:copy",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r52",
+   "anchor": "Table._init_from_ndarray",
+   "kind": "doc",
+   "line": 691
+  },
+  {
+   "id": "r53",
+   "anchor": "Table._init_from_ndarray#call:self._set_masked_from_cols",
+   "kind": "lead",
+   "line": 702
+  },
+  {
+   "id": "r54",
+   "anchor": "Table._init_from_dict",
+   "kind": "doc",
+   "line": 716
+  },
+  {
+   "id": "r55",
+   "anchor": "Table._init_from_dict#if:not copy",
+   "kind": "todo",
+   "line": 720
+  },
+  {
+   "id": "r56",
+   "anchor": "Table._init_from_table",
+   "kind": "doc",
+   "line": 726
+  },
+  {
+   "id": "r57",
+   "anchor": "Table._init_from_table#assign:table",
+   "kind": "trail",
+   "line": 729
+  },
+  {
+   "id": "r58",
+   "anchor": "Table._convert_col_for_table",
+   "kind": "doc",
+   "line": 737
+  },
+  {
+   "id": "r59",
+   "anchor": "Table._convert_col_for_table#if:col.__class__ is not self.ColumnClass and isinstance(col, Column)/assign:col",
+   "kind": "trail",
+   "line": 745
+  },
+  {
+   "id": "r60",
+   "anchor": "Table._init_from_cols",
+   "kind": "doc",
+   "line": 748
+  },
+  {
+   "id": "r61",
+   "anchor": "Table._init_from_cols#call:self._set_masked_from_cols",
+   "kind": "lead",
+   "line": 757
+  },
+  {
+   "id": "r62",
+   "anchor": "Table._init_from_cols#assign:newcols",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r63",
+   "anchor": "Table._init_from_cols#assign:index_dict",
+   "kind": "lead",
+   "line": 769
+  },
+  {
+   "id": "r64",
+   "anchor": "Table._new_from_slice",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r65",
+   "anchor": "Table._make_table_from_cols",
+   "kind": "doc",
+   "line": 800
+  },
+  {
+   "id": "r66",
+   "anchor": "Table.itercols",
+   "kind": "doc",
+   "line": 819
+  },
+  {
+   "id": "r67",
+   "anchor": "Table.has_mixin_columns",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r68",
+   "anchor": "Table._add_as_mixin_column",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r69",
+   "anchor": "Table._add_as_mixin_column#return",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r70",
+   "anchor": "Table.pprint",
+   "kind": "doc",
+   "line": 905
+  },
+  {
+   "id": "r71",
+   "anchor": "Table.show_in_notebook",
+   "kind": "doc",
+   "line": 967
+  },
+  {
+   "id": "r72",
+   "anchor": "Table.show_in_browser",
+   "kind": "doc",
+   "line": 1032
+  },
+  {
+   "id": "r73",
+   "anchor": "Table.show_in_browser#assign:tmpdir",
+   "kind": "lead",
+   "line": 1089
+  },
+  {
+   "id": "r74",
+   "anchor": "Table.pformat",
+   "kind": "doc",
+   "line": 1111
+  },
+  {
+   "id": "r75",
+   "anchor": "Table.more",
+   "kind": "doc",
+   "line": 1182
+  },
+  {
+   "id": "r76",
+   "anchor": "Table.__getitem__#if:isinstance(item, str)/elif:(isinstance(item, np.ndarray) and item.size == 0) or (isinstance(item, (tuple, list)) and not item)/return",
+   "kind": "lead",
+   "line": 1237
+  },
+  {
+   "id": "r77",
+   "anchor": "Table.__getitem__#if:isinstance(item, str)/elif:isinstance(item, slice) or isinstance(item, np.ndarray) or isinstance(item, list) or isinstance(item, tuple) and all(isinstance(x, np.ndarray) for x in item)/return",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r78",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames",
+   "kind": "lead",
+   "line": 1254
+  },
+  {
+   "id": "r79",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/if:not hasattr(value, 'dtype') and not self._add_as_mixin_column(value)",
+   "kind": "lead",
+   "line": 1258
+  },
+  {
+   "id": "r80",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/if:isinstance(value, np.ndarray) and len(value.dtype) > 1 and not self._add_as_mixin_column(value)",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r81",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/assign:name",
+   "kind": "lead",
+   "line": 1274
+  },
+  {
+   "id": "r82",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/if:isinstance(value, BaseColumn) or self._add_as_mixin_column(value)",
+   "kind": "lead",
+   "line": 1276
+  },
+  {
+   "id": "r83",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/if:isinstance(value, BaseColumn) or self._add_as_mixin_column(value)/if:len(self) > 0 and (getattr(value, 'isscalar', False) or getattr(value, 'shape', None) == () or len(value) == 1)",
+   "kind": "lead",
+   "line": 1279
+  },
+  {
+   "id": "r84",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/call:self.add_columns",
+   "kind": "lead",
+   "line": 1302
+  },
+  {
+   "id": "r85",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/else/if:isinstance(item, str)/if:not getattr(self, '_setitem_inplace', False) and not conf.replace_inplace",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r86",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/else/if:isinstance(item, str)/elif:isinstance(item, slice) or isinstance(item, np.ndarray) or isinstance(item, list) or (isinstance(item, tuple) and all(isinstance(x, np.ndarray) for x in item))",
+   "kind": "trail",
+   "line": 1326
+  },
+  {
+   "id": "r87",
+   "anchor": "Table.__setitem__#if:isinstance(item, str) and item not in self.colnames/else/if:isinstance(item, str)/elif:isinstance(item, slice) or isinstance(item, np.ndarray) or isinstance(item, list) or (isinstance(item, tuple) and all(isinstance(x, np.ndarray) for x in item))/if:isinstance(value, Table)/else",
+   "kind": "trail",
+   "line": 1339
+  },
+  {
+   "id": "r88",
+   "anchor": "Table.field",
+   "kind": "doc",
+   "line": 1371
+  },
+  {
+   "id": "r89",
+   "anchor": "Table._set_masked",
+   "kind": "doc",
+   "line": 1384
+  },
+  {
+   "id": "r90",
+   "anchor": "Table._set_masked#if:hasattr(self, '_masked')/if:self._masked is None and masked in [False, True]",
+   "kind": "lead",
+   "line": 1395
+  },
+  {
+   "id": "r91",
+   "anchor": "Table._is_list_or_tuple_of_str",
+   "kind": "doc",
+   "line": 1431
+  },
+  {
+   "id": "r92",
+   "anchor": "Table.index_column",
+   "kind": "doc",
+   "line": 1450
+  },
+  {
+   "id": "r93",
+   "anchor": "Table.add_column",
+   "kind": "doc",
+   "line": 1487
+  },
+  {
+   "id": "r94",
+   "anchor": "Table.add_columns",
+   "kind": "doc",
+   "line": 1578
+  },
+  {
+   "id": "r95",
+   "anchor": "Table.add_columns#if:len(self.columns) == 0/assign:newcols",
+   "kind": "lead",
+   "line": 1675
+  },
+  {
+   "id": "r96",
+   "anchor": "Table.add_columns#if:rename_duplicate/for:col in cols/while:col.info.name in existing_names/if:col.info.parent_table is not None",
+   "kind": "lead",
+   "line": 1706
+  },
+  {
+   "id": "r97",
+   "anchor": "Table._replace_column_warnings",
+   "kind": "doc",
+   "line": 1715
+  },
+  {
+   "id": "r98",
+   "anchor": "Table._replace_column_warnings#call:self.replace_column",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r99",
+   "anchor": "Table._replace_column_warnings#if:'slice' in warns/try/if:isinstance(old_col.base, old_col.__class__)",
+   "kind": "lead",
+   "line": 1740
+  },
+  {
+   "id": "r100",
+   "anchor": "Table._replace_column_warnings#if:'refcount' in warns/assign:new_refcount",
+   "kind": "lead",
+   "line": 1750
+  },
+  {
+   "id": "r101",
+   "anchor": "Table._replace_column_warnings#if:'attributes' in warns/assign:changed_attrs",
+   "kind": "lead",
+   "line": 1758
+  },
+  {
+   "id": "r102",
+   "anchor": "Table._replace_column_warnings#if:'attributes' in warns/for:attr in DataInfo.attr_names",
+   "kind": "lead",
+   "line": 1761
+  },
+  {
+   "id": "r103",
+   "anchor": "Table.replace_column",
+   "kind": "doc",
+   "line": 1770
+  },
+  {
+   "id": "r104",
+   "anchor": "Table.remove_row",
+   "kind": "doc",
+   "line": 1800
+  },
+  {
+   "id": "r105",
+   "anchor": "Table.remove_row#if:not isinstance(index, (int, np.integer))",
+   "kind": "lead",
+   "line": 1834
+  },
+  {
+   "id": "r106",
+   "anchor": "Table.remove_rows",
+   "kind": "doc",
+   "line": 1838
+  },
+  {
+   "id": "r107",
+   "anchor": "Table.remove_rows#for:index in self.indices",
+   "kind": "lead",
+   "line": 1883
+  },
+  {
+   "id": "r108",
+   "anchor": "Table.remove_rows#if:hasattr(self, '_groups')",
+   "kind": "lead",
+   "line": 1898
+  },
+  {
+   "id": "r109",
+   "anchor": "Table.remove_column",
+   "kind": "doc",
+   "line": 1901
+  },
+  {
+   "id": "r110",
+   "anchor": "Table.remove_columns",
+   "kind": "doc",
+   "line": 1942
+  },
+  {
+   "id": "r111",
+   "anchor": "Table._convert_string_dtype",
+   "kind": "doc",
+   "line": 1998
+  },
+  {
+   "id": "r112",
+   "anchor": "Table._convert_string_dtype#assign:cols",
+   "kind": "lead",
+   "line": 2011
+  },
+  {
+   "id": "r113",
+   "anchor": "Table.convert_bytestring_to_unicode",
+   "kind": "doc",
+   "line": 2026
+  },
+  {
+   "id": "r114",
+   "anchor": "Table.convert_unicode_to_bytestring",
+   "kind": "doc",
+   "line": 2042
+  },
+  {
+   "id": "r115",
+   "anchor": "Table.keep_columns",
+   "kind": "doc",
+   "line": 2057
+  },
+  {
+   "id": "r116",
+   "anchor": "Table.rename_column",
+   "kind": "doc",
+   "line": 2116
+  },
+  {
+   "id": "r117",
+   "anchor": "Table._set_row#assign:orig_vals",
+   "kind": "lead",
+   "line": 2169
+  },
+  {
+   "id": "r118",
+   "anchor": "Table._set_row#try/except:Exception/for:name, val in zip(colnames, orig_vals[:-1])",
+   "kind": "lead",
+   "line": 2177
+  },
+  {
+   "id": "r119",
+   "anchor": "Table.add_row",
+   "kind": "doc",
+   "line": 2181
+  },
+  {
+   "id": "r120",
+   "anchor": "Table.insert_row",
+   "kind": "doc",
+   "line": 2234
+  },
+  {
+   "id": "r121",
+   "anchor": "Table.insert_row._is_mapping",
+   "kind": "doc",
+   "line": 2269
+  },
+  {
+   "id": "r122",
+   "anchor": "Table.insert_row#if:mask is not None and not self.masked/call:self._set_masked",
+   "kind": "lead",
+   "line": 2277
+  },
+  {
+   "id": "r123",
+   "anchor": "Table.insert_row#if:_is_mapping(vals) or vals is None/if:mask is not None and not _is_mapping(mask)",
+   "kind": "lead",
+   "line": 2282
+  },
+  {
+   "id": "r124",
+   "anchor": "Table.insert_row#if:_is_mapping(vals) or vals is None/if:mask is not None and set(vals.keys()) != set(mask.keys())",
+   "kind": "lead",
+   "line": 2287
+  },
+  {
+   "id": "r125",
+   "anchor": "Table.insert_row#if:_is_mapping(vals) or vals is None/for:name in colnames/if:vals and name in vals/else/if:hasattr(col, 'dtype')/call:vals_list.append",
+   "kind": "lead",
+   "line": 2306
+  },
+  {
+   "id": "r126",
+   "anchor": "Table.insert_row#if:_is_mapping(vals) or vals is None/for:name in colnames/if:vals and name in vals/else/if:hasattr(col, 'dtype')/call:mask_list.append",
+   "kind": "lead",
+   "line": 2309
+  },
+  {
+   "id": "r127",
+   "anchor": "Table.insert_row#try/for:name, col, val, mask_ in zip(colnames, self.columns.values(), vals, mask)",
+   "kind": "lead",
+   "line": 2335
+  },
+  {
+   "id": "r128",
+   "anchor": "Table.insert_row#try/for:name, col, val, mask_ in zip(colnames, self.columns.values(), vals, mask)/if:isinstance(col, Column) and not isinstance(col, self.ColumnClass)",
+   "kind": "lead",
+   "line": 2339
+  },
+  {
+   "id": "r129",
+   "anchor": "Table.insert_row#try/for:name, col, val, mask_ in zip(colnames, self.columns.values(), vals, mask)/if:self.masked",
+   "kind": "lead",
+   "line": 2355
+  },
+  {
+   "id": "r130",
+   "anchor": "Table.insert_row#try/for:table_index in self.indices",
+   "kind": "lead",
+   "line": 2361
+  },
+  {
+   "id": "r131",
+   "anchor": "Table.insert_row#try/else/if:hasattr(self, '_groups')",
+   "kind": "lead",
+   "line": 2371
+  },
+  {
+   "id": "r132",
+   "anchor": "Table.argsort",
+   "kind": "doc",
+   "line": 2383
+  },
+  {
+   "id": "r133",
+   "anchor": "Table.argsort#if:keys is not None",
+   "kind": "lead",
+   "line": 2406
+  },
+  {
+   "id": "r134",
+   "anchor": "Table.sort",
+   "kind": "doc",
+   "line": 2424
+  },
+  {
+   "id": "r135",
+   "anchor": "Table.sort#if:sort_index is not None/assign:prev_frozen",
+   "kind": "lead",
+   "line": 2470
+  },
+  {
+   "id": "r136",
+   "anchor": "Table.sort#if:sort_index is not None/assign:sort_index._frozen",
+   "kind": "lead",
+   "line": 2478
+  },
+  {
+   "id": "r137",
+   "anchor": "Table.sort#if:sort_index is not None/call:sort_index.sort",
+   "kind": "lead",
+   "line": 2480
+  },
+  {
+   "id": "r138",
+   "anchor": "Table.reverse",
+   "kind": "doc",
+   "line": 2482
+  },
+  {
+   "id": "r139",
+   "anchor": "Table.read",
+   "kind": "doc",
+   "line": 2516
+  },
+  {
+   "id": "r140",
+   "anchor": "Table.read#if:cls is not out.__class__",
+   "kind": "lead",
+   "line": 2537
+  },
+  {
+   "id": "r141",
+   "anchor": "Table.write",
+   "kind": "doc",
+   "line": 2545
+  },
+  {
+   "id": "r142",
+   "anchor": "Table.copy",
+   "kind": "doc",
+   "line": 2562
+  },
+  {
+   "id": "r143",
+   "anchor": "Table.copy#if:hasattr(self, '_groups')",
+   "kind": "lead",
+   "line": 2576
+  },
+  {
+   "id": "r144",
+   "anchor": "Table.__eq__#if:self.masked/if:isinstance(other, np.ma.MaskedArray)/else/assign:false_mask",
+   "kind": "lead",
+   "line": 2610
+  },
+  {
+   "id": "r145",
+   "anchor": "Table.__eq__#if:self.masked/else/if:isinstance(other, np.ma.MaskedArray)/assign:false_mask",
+   "kind": "lead",
+   "line": 2616
+  },
+  {
+   "id": "r146",
+   "anchor": "Table.group_by",
+   "kind": "doc",
+   "line": 2632
+  },
+  {
+   "id": "r147",
+   "anchor": "Table.to_pandas",
+   "kind": "doc",
+   "line": 2662
+  },
+  {
+   "id": "r148",
+   "anchor": "Table.from_pandas",
+   "kind": "doc",
+   "line": 2705
+  },
+  {
+   "id": "r149",
+   "anchor": "Table.from_pandas#for:name in dataframe.columns/if:data.dtype.kind == 'O'/assign:string_types",
+   "kind": "lead",
+   "line": 2730
+  },
+  {
+   "id": "r150",
+   "anchor": "Table.from_pandas#for:name in dataframe.columns/if:data.dtype.kind == 'O'/if:all(isinstance(x, string_types) or x is nan for x in data)/assign:data[mask]",
+   "kind": "lead",
+   "line": 2735
+  },
+  {
+   "id": "r151",
+   "anchor": "Table.from_pandas#for:name in dataframe.columns/if:data.dtype.kind == 'O'/if:all(isinstance(x, string_types) or x is nan for x in data)/assign:data",
+   "kind": "lead",
+   "line": 2739
+  },
+  {
+   "id": "r152",
+   "anchor": "QTable",
+   "kind": "doc",
+   "line": 2751
+  },
+  {
+   "id": "r153",
+   "anchor": "QTable._add_as_mixin_column",
+   "kind": "doc",
+   "line": 2784
+  },
+  {
+   "id": "r154",
+   "anchor": "QTable._convert_col_for_table#if:isinstance(col, Column) and getattr(col, 'unit', None) is not None/assign:q_cls",
+   "kind": "lead",
+   "line": 2795
+  },
+  {
+   "id": "r155",
+   "anchor": "NdarrayMixin",
+   "kind": "doc",
+   "line": 2805
+  },
+  {
+   "id": "r156",
+   "anchor": "NdarrayMixin.__array_finalize__#if:'info' in getattr(obj, '__dict__', ())",
+   "kind": "lead",
+   "line": 2829
+  },
+  {
+   "id": "r157",
+   "anchor": "NdarrayMixin.__reduce__#assign:object_state",
+   "kind": "lead",
+   "line": 2836
+  },
+  {
+   "id": "r158",
+   "anchor": "NdarrayMixin.__setstate__#assign:nd_state, own_state",
+   "kind": "lead",
+   "line": 2844
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 56888,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 17813,
+  "thinking_tokens": 9608,
+  "opus_cost_usd": 1.0184965,
+  "total_cost_usd": 1.0649955,
+  "duration_ms": 155955,
+  "duration_api_ms": 153138,
+  "num_turns": 2
+ },
+ "wall_ms": 156964,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

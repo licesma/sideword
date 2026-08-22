@@ -1,0 +1,211 @@
+{
+ "blob_sha": "b06d5fdb2ca21b29b0ec96c26b8b7bf5213b4b72",
+ "path": "astropy/units/quantity_helper/converters.py",
+ "repo": "astropy/astropy",
+ "records": 31,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "UfuncHelpers",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r4",
+   "anchor": "UfuncHelpers.UNSUPPORTED",
+   "kind": "trail",
+   "line": 26
+  },
+  {
+   "id": "r5",
+   "anchor": "UfuncHelpers.register_module",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r6",
+   "anchor": "UfuncHelpers.import_module",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r7",
+   "anchor": "UfuncHelpers.__missing__",
+   "kind": "doc",
+   "line": 60
+  },
+  {
+   "id": "r8",
+   "anchor": "UfuncHelpers.__missing__#with:self._lock/if:ufunc in self",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r9",
+   "anchor": "UfuncHelpers.__missing__#with:self._lock/for:module, module_info in list(self.modules.items())/if:ufunc.__name__ in module_info['names']/try",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r10",
+   "anchor": "UfuncHelpers.__setitem__#with:self._lock",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r11",
+   "anchor": "can_have_arbitrary_unit",
+   "kind": "doc",
+   "line": 114
+  },
+  {
+   "id": "r12",
+   "anchor": "converters_and_unit",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r13",
+   "anchor": "converters_and_unit#assign:ufunc_helper",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r14",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/assign:units",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r15",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/assign:converters, result_unit",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r16",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:any(converter is False for converter in converters)/try",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r17",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:any(converter is False for converter in converters)/try/for:i, converter in enumerate(converters)",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r18",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:any(converter is False for converter in converters)/try/except:TypeError/raise:TypeError",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r19",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:result_unit is False",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r20",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:result_unit is False/else/try/except:ValueError/try",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r21",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else",
+   "kind": "trail",
+   "line": 231
+  },
+  {
+   "id": "r22",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:method == 'at' and nin <= 2/call:converters.insert",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r23",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:method == 'at' and nin <= 2/elif:method in {'reduce', 'accumulate', 'reduceat'} and nin == 2/if:method == 'reduceat'/assign:converters",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r24",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:unit is not None and result_unit is None",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r25",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:converters[0] is not None or (unit is not None and unit is not result_unit and (not result_unit.is_equivalent(unit) or result_unit.to(unit) != 1.))/raise:UnitsError",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r26",
+   "anchor": "check_output",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r27",
+   "anchor": "check_output#if:output is None",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r28",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/if:unit is None",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r29",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/if:inputs and not output.dtype.names",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r30",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/return",
+   "kind": "lead",
+   "line": 351
+  },
+  {
+   "id": "r31",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/else/if:not (unit is None or unit is dimensionless_unscaled)",
+   "kind": "lead",
+   "line": 355
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11377,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4441,
+  "thinking_tokens": 2474,
+  "opus_cost_usd": 0.22908649999999997,
+  "total_cost_usd": 0.23688449999999997,
+  "duration_ms": 42484,
+  "duration_api_ms": 43521,
+  "num_turns": 2
+ },
+ "wall_ms": 43898,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

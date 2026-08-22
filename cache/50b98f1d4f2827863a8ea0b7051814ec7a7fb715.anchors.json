@@ -1,0 +1,547 @@
+{
+ "blob_sha": "50b98f1d4f2827863a8ea0b7051814ec7a7fb715",
+ "path": "django/db/models/fields/related.py",
+ "repo": "django/django",
+ "records": 87,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "resolve_relation",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r2",
+   "anchor": "resolve_relation#if:relation==RECURSIVE_RELATIONSHIP_CONSTANT",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r3",
+   "anchor": "resolve_relation#if:isinstance(relation, six.string_types)",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r4",
+   "anchor": "lazy_related_operation",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r5",
+   "anchor": "add_lazy_relation.function",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r6",
+   "anchor": "RelatedField",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r7",
+   "anchor": "RelatedField.one_to_many",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r8",
+   "anchor": "RelatedField.related_model#call:apps.check_models_ready",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "RelatedField._check_clashes",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r10",
+   "anchor": "RelatedField._check_clashes#if:not isinstance(self.remote_field.model, ModelBase)",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r11",
+   "anchor": "RelatedField._check_clashes#assign:rel_opts",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r12",
+   "anchor": "RelatedField._check_clashes#assign:rel_opts",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r13",
+   "anchor": "RelatedField._check_clashes#assign:rel_is_hidden",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r14",
+   "anchor": "RelatedField._check_clashes#assign:rel_name",
+   "kind": "trail",
+   "line": 249
+  },
+  {
+   "id": "r15",
+   "anchor": "RelatedField._check_clashes#assign:rel_query_name",
+   "kind": "trail",
+   "line": 250
+  },
+  {
+   "id": "r16",
+   "anchor": "RelatedField._check_clashes#assign:field_name",
+   "kind": "trail",
+   "line": 251
+  },
+  {
+   "id": "r17",
+   "anchor": "RelatedField._check_clashes#assign:potential_clashes",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r18",
+   "anchor": "RelatedField._check_clashes#for:clash_field in potential_clashes/assign:clash_name",
+   "kind": "trail",
+   "line": 258
+  },
+  {
+   "id": "r19",
+   "anchor": "RelatedField._check_clashes#assign:potential_clashes",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r20",
+   "anchor": "RelatedField._check_clashes#for:clash_field in potential_clashes/assign:clash_name",
+   "kind": "trail",
+   "line": 286
+  },
+  {
+   "id": "r21",
+   "anchor": "RelatedField.db_type#return",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r22",
+   "anchor": "RelatedField.get_forward_related_filter",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r23",
+   "anchor": "RelatedField.get_reverse_related_filter",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r24",
+   "anchor": "RelatedField.swappable_setting",
+   "kind": "doc",
+   "line": 383
+  },
+  {
+   "id": "r25",
+   "anchor": "RelatedField.swappable_setting#if:self.swappable/if:isinstance(self.remote_field.model, six.string_types)",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r26",
+   "anchor": "RelatedField.get_limit_choices_to",
+   "kind": "doc",
+   "line": 410
+  },
+  {
+   "id": "r27",
+   "anchor": "RelatedField.formfield",
+   "kind": "doc",
+   "line": 421
+  },
+  {
+   "id": "r28",
+   "anchor": "RelatedField.formfield#if:hasattr(self.remote_field, 'get_related_field')/assign:limit_choices_to",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r29",
+   "anchor": "RelatedField.related_query_name",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r30",
+   "anchor": "RelatedField.target_field",
+   "kind": "doc",
+   "line": 449
+  },
+  {
+   "id": "r31",
+   "anchor": "ForeignObject",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r32",
+   "anchor": "ForeignObject.many_to_many",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r33",
+   "anchor": "ForeignObject._check_to_fields_exist#if:isinstance(self.remote_field.model, six.string_types)",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r34",
+   "anchor": "ForeignObject.deconstruct#if:isinstance(self.remote_field.model, six.string_types)",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r35",
+   "anchor": "ForeignObject.deconstruct#assign:swappable_setting",
+   "kind": "lead",
+   "line": 603
+  },
+  {
+   "id": "r36",
+   "anchor": "ForeignObject.deconstruct#if:swappable_setting is not None/if:hasattr(kwargs['to'], \"setting_name\")",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r37",
+   "anchor": "ForeignObject.deconstruct#if:swappable_setting is not None/import:django.db.migrations.writer",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r38",
+   "anchor": "ForeignObject.get_instance_value_for_fields#for:field in fields/if:field.primary_key",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r39",
+   "anchor": "ForeignObject.get_extra_descriptor_filter",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r40",
+   "anchor": "ForeignObject.get_extra_restriction",
+   "kind": "doc",
+   "line": 705
+  },
+  {
+   "id": "r41",
+   "anchor": "ForeignObject.get_path_info",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r42",
+   "anchor": "ForeignObject.get_reverse_path_info",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r43",
+   "anchor": "ForeignObject.contribute_to_related_class#if:not self.remote_field.is_hidden() and not related.related_model._meta.swapped",
+   "kind": "lead",
+   "line": 751
+  },
+  {
+   "id": "r44",
+   "anchor": "ForeignObject.contribute_to_related_class#if:not self.remote_field.is_hidden() and not related.related_model._meta.swapped/if:self.remote_field.limit_choices_to",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r45",
+   "anchor": "ForeignKey",
+   "kind": "doc",
+   "line": 768
+  },
+  {
+   "id": "r46",
+   "anchor": "ForeignKey.many_to_many",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r47",
+   "anchor": "ForeignKey.__init__#try/else/assign:to_field",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r48",
+   "anchor": "ForeignKey.deconstruct#if:self.db_index",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r49",
+   "anchor": "ForeignKey.deconstruct#assign:to_meta",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r50",
+   "anchor": "ForeignKey.get_reverse_path_info",
+   "kind": "doc",
+   "line": 910
+  },
+  {
+   "id": "r51",
+   "anchor": "ForeignKey.validate#if:not qs.exists()/raise:exceptions.ValidationError/arg:params",
+   "kind": "trail",
+   "line": 938
+  },
+  {
+   "id": "r52",
+   "anchor": "ForeignKey.get_default",
+   "kind": "doc",
+   "line": 949
+  },
+  {
+   "id": "r53",
+   "anchor": "OneToOneField",
+   "kind": "doc",
+   "line": 1010
+  },
+  {
+   "id": "r54",
+   "anchor": "OneToOneField.many_to_many",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r55",
+   "anchor": "OneToOneField.__init__#if:on_delete is None/elif:not callable(on_delete)/assign:on_delete",
+   "kind": "trail",
+   "line": 1055
+  },
+  {
+   "id": "r56",
+   "anchor": "OneToOneField._check_unique#return",
+   "kind": "lead",
+   "line": 1078
+  },
+  {
+   "id": "r57",
+   "anchor": "create_many_to_many_intermediary_model#return",
+   "kind": "lead",
+   "line": 1108
+  },
+  {
+   "id": "r58",
+   "anchor": "ManyToManyField",
+   "kind": "doc",
+   "line": 1128
+  },
+  {
+   "id": "r59",
+   "anchor": "ManyToManyField.many_to_many",
+   "kind": "lead",
+   "line": 1139
+  },
+  {
+   "id": "r60",
+   "anchor": "ManyToManyField.__init__#try/except:AttributeError/assign:to",
+   "kind": "lead",
+   "line": 1162
+  },
+  {
+   "id": "r61",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through not in self.opts.apps.get_models(include_auto_created=True)/call:errors.append",
+   "kind": "lead",
+   "line": 1252
+  },
+  {
+   "id": "r62",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through not in self.opts.apps.get_models(include_auto_created=True)/else/assign:to_model",
+   "kind": "lead",
+   "line": 1268
+  },
+  {
+   "id": "r63",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through not in self.opts.apps.get_models(include_auto_created=True)/else/if:self_referential and self.remote_field.symmetrical and not self.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 1278
+  },
+  {
+   "id": "r64",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through not in self.opts.apps.get_models(include_auto_created=True)/else/if:self_referential",
+   "kind": "lead",
+   "line": 1289
+  },
+  {
+   "id": "r65",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through not in self.opts.apps.get_models(include_auto_created=True)/else/if:self_referential/else/assign:seen_from",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r66",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through_fields is not None",
+   "kind": "lead",
+   "line": 1367
+  },
+  {
+   "id": "r67",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through_fields is not None/if:not (len(self.remote_field.through_fields) >= 2 and self.remote_field.through_fields[0] and self.remote_field.through_fields[1])",
+   "kind": "lead",
+   "line": 1370
+  },
+  {
+   "id": "r68",
+   "anchor": "ManyToManyField._check_relationship_model#if:self.remote_field.through_fields is not None/if:not (len(self.remote_field.through_fields) >= 2 and self.remote_field.through_fields[0] and self.remote_field.through_fields[1])/else",
+   "kind": "lead",
+   "line": 1386
+  },
+  {
+   "id": "r69",
+   "anchor": "ManyToManyField.deconstruct#if:self.db_table is not None",
+   "kind": "lead",
+   "line": 1473
+  },
+  {
+   "id": "r70",
+   "anchor": "ManyToManyField.deconstruct#if:isinstance(self.remote_field.model, six.string_types)",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r71",
+   "anchor": "ManyToManyField.deconstruct#assign:swappable_setting",
+   "kind": "lead",
+   "line": 1499
+  },
+  {
+   "id": "r72",
+   "anchor": "ManyToManyField.deconstruct#if:swappable_setting is not None/if:hasattr(kwargs['to'], \"setting_name\")",
+   "kind": "lead",
+   "line": 1502
+  },
+  {
+   "id": "r73",
+   "anchor": "ManyToManyField._get_path_info",
+   "kind": "doc",
+   "line": 1517
+  },
+  {
+   "id": "r74",
+   "anchor": "ManyToManyField._get_m2m_db_table",
+   "kind": "doc",
+   "line": 1541
+  },
+  {
+   "id": "r75",
+   "anchor": "ManyToManyField._get_m2m_attr",
+   "kind": "doc",
+   "line": 1553
+  },
+  {
+   "id": "r76",
+   "anchor": "ManyToManyField._get_m2m_reverse_attr",
+   "kind": "doc",
+   "line": 1571
+  },
+  {
+   "id": "r77",
+   "anchor": "ManyToManyField._get_m2m_reverse_attr#for:f in self.remote_field.through._meta.fields/if:f.is_relation and f.remote_field.model == related.model/if:link_field_name is None and related.related_model == related.model/if:found",
+   "kind": "lead",
+   "line": 1591
+  },
+  {
+   "id": "r78",
+   "anchor": "ManyToManyField.contribute_to_class#if:self.remote_field.symmetrical and (self.remote_field.model == \"self\" or self.remote_field.model == cls._meta.object_name)",
+   "kind": "lead",
+   "line": 1608
+  },
+  {
+   "id": "r79",
+   "anchor": "ManyToManyField.contribute_to_class#if:self.remote_field.symmetrical and (self.remote_field.model == \"self\" or self.remote_field.model == cls._meta.object_name)/elif:self.remote_field.is_hidden()/assign:self.remote_field.related_name",
+   "kind": "lead",
+   "line": 1616
+  },
+  {
+   "id": "r80",
+   "anchor": "ManyToManyField.contribute_to_class#if:not cls._meta.abstract",
+   "kind": "lead",
+   "line": 1624
+  },
+  {
+   "id": "r81",
+   "anchor": "ManyToManyField.contribute_to_class#call:setattr",
+   "kind": "lead",
+   "line": 1633
+  },
+  {
+   "id": "r82",
+   "anchor": "ManyToManyField.contribute_to_class#assign:self.m2m_db_table",
+   "kind": "lead",
+   "line": 1636
+  },
+  {
+   "id": "r83",
+   "anchor": "ManyToManyField.contribute_to_related_class#if:not self.remote_field.is_hidden() and not related.related_model._meta.swapped",
+   "kind": "lead",
+   "line": 1641
+  },
+  {
+   "id": "r84",
+   "anchor": "ManyToManyField.contribute_to_related_class#assign:self.m2m_column_name",
+   "kind": "lead",
+   "line": 1645
+  },
+  {
+   "id": "r85",
+   "anchor": "ManyToManyField.value_from_object",
+   "kind": "doc",
+   "line": 1659
+  },
+  {
+   "id": "r86",
+   "anchor": "ManyToManyField.formfield#if:defaults.get('initial') is not None",
+   "kind": "lead",
+   "line": 1679
+  },
+  {
+   "id": "r87",
+   "anchor": "ManyToManyField.db_type#return",
+   "kind": "lead",
+   "line": 1692
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 36666,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8853,
+  "thinking_tokens": 4027,
+  "opus_cost_usd": 0.5922765,
+  "total_cost_usd": 0.6219445,
+  "duration_ms": 75896,
+  "duration_api_ms": 77147,
+  "num_turns": 2
+ },
+ "wall_ms": 76744,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

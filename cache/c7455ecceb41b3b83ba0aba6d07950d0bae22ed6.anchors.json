@@ -1,0 +1,517 @@
+{
+ "blob_sha": "c7455ecceb41b3b83ba0aba6d07950d0bae22ed6",
+ "path": "django/db/models/sql/compiler.py",
+ "repo": "django/django",
+ "records": 82,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SQLCompiler.select",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "SQLCompiler.pre_sql_setup",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r3",
+   "anchor": "SQLCompiler.get_group_by",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "SQLCompiler.get_group_by#if:self.query.group_by is None",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r5",
+   "anchor": "SQLCompiler.get_group_by#if:self.query.group_by is None",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r6",
+   "anchor": "SQLCompiler.get_group_by#if:self.query.group_by is not True/for:expr in self.query.group_by",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r7",
+   "anchor": "SQLCompiler.get_group_by#for:expr, _, _ in select",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r8",
+   "anchor": "SQLCompiler.get_group_by#for:expr, (sql, params, is_ref) in order_by/if:is_ref",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r9",
+   "anchor": "SQLCompiler.collapse_group_by#if:self.connection.features.allows_group_by_pk",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r10",
+   "anchor": "SQLCompiler.collapse_group_by#if:self.connection.features.allows_group_by_pk/assign:pk",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r11",
+   "anchor": "SQLCompiler.collapse_group_by#if:self.connection.features.allows_group_by_pk/for:expr in expressions/if:getattr(expr, 'target', None) == self.query.model._meta.pk and getattr(expr, 'alias', None) == self.query.tables[0]",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r12",
+   "anchor": "SQLCompiler.collapse_group_by#if:self.connection.features.allows_group_by_pk/if:pk/assign:expressions",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r13",
+   "anchor": "SQLCompiler.collapse_group_by#if:self.connection.features.allows_group_by_pk/elif:self.connection.features.allows_group_by_selected_pks/assign:pks",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r14",
+   "anchor": "SQLCompiler.get_select",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r15",
+   "anchor": "SQLCompiler.get_select#for:col in self.query.select",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r16",
+   "anchor": "SQLCompiler.get_select#for:col, alias in select/try/except:EmptyResultSet/assign:sql, params",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r17",
+   "anchor": "SQLCompiler.get_order_by",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r18",
+   "anchor": "SQLCompiler.get_order_by#for:pos, field in enumerate(ordering)/if:field == '?'",
+   "kind": "trail",
+   "line": 263
+  },
+  {
+   "id": "r19",
+   "anchor": "SQLCompiler.get_order_by#for:pos, field in enumerate(ordering)/if:col in self.query.annotation_select/call:order_by.append",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r20",
+   "anchor": "SQLCompiler.get_order_by#for:pos, field in enumerate(ordering)/if:col in self.query.annotations/call:order_by.append",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r21",
+   "anchor": "SQLCompiler.get_order_by#for:pos, field in enumerate(ordering)/if:'.' in field/assign:table, col",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r22",
+   "anchor": "SQLCompiler.get_order_by#for:pos, field in enumerate(ordering)/if:not self.query._extra or col not in self.query._extra/call:order_by.extend",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r23",
+   "anchor": "SQLCompiler.get_order_by#for:expr, is_ref in order_by/assign:without_ordering",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r24",
+   "anchor": "SQLCompiler.quote_name_unless_alias",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r25",
+   "anchor": "SQLCompiler.as_sql",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r26",
+   "anchor": "SQLCompiler.as_sql#try/assign:from_, f_params",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r27",
+   "anchor": "SQLCompiler.as_sql#try/if:self.query.select_for_update and self.connection.features.has_select_for_update/if:nowait and not self.connection.features.has_select_for_update_nowait",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r28",
+   "anchor": "SQLCompiler.as_sql#try/finally/call:self.query.reset_refcounts",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r29",
+   "anchor": "SQLCompiler.get_default_columns",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r30",
+   "anchor": "SQLCompiler.get_default_columns#assign:seen_models",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r31",
+   "anchor": "SQLCompiler.get_default_columns#for:field in opts.concrete_fields/if:model == opts.model",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r32",
+   "anchor": "SQLCompiler.get_default_columns#for:field in opts.concrete_fields/if:from_parent and model is not None and issubclass(from_parent._meta.concrete_model, model._meta.concrete_model)/continue",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r33",
+   "anchor": "SQLCompiler.get_distinct",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r34",
+   "anchor": "SQLCompiler.find_ordering_name",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r35",
+   "anchor": "SQLCompiler.find_ordering_name#if:field.is_relation and opts.ordering and getattr(field, 'attname', None) != name",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r36",
+   "anchor": "SQLCompiler.find_ordering_name#if:field.is_relation and opts.ordering and getattr(field, 'attname', None) != name/if:not already_seen",
+   "kind": "lead",
+   "line": 554
+  },
+  {
+   "id": "r37",
+   "anchor": "SQLCompiler._setup_joins",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r38",
+   "anchor": "SQLCompiler.get_from_clause",
+   "kind": "doc",
+   "line": 584
+  },
+  {
+   "id": "r39",
+   "anchor": "SQLCompiler.get_from_clause#for:alias in self.query.tables/try/except:KeyError/continue",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r40",
+   "anchor": "SQLCompiler.get_from_clause#for:t in self.query.extra_tables/if:alias not in self.query.alias_map or self.query.alias_refcount[alias] == 1",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r41",
+   "anchor": "SQLCompiler.get_related_selections",
+   "kind": "doc",
+   "line": 618
+  },
+  {
+   "id": "r42",
+   "anchor": "SQLCompiler.get_related_selections#if:not restricted and self.query.max_depth and cur_depth > self.query.max_depth/return",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r43",
+   "anchor": "SQLCompiler.get_related_selections#assign:fields_found",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r44",
+   "anchor": "SQLCompiler.get_related_selections#for:f in opts.fields/if:restricted/if:not f.is_relation/if:next or f.name in requested",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r45",
+   "anchor": "SQLCompiler.deferred_to_columns",
+   "kind": "doc",
+   "line": 748
+  },
+  {
+   "id": "r46",
+   "anchor": "SQLCompiler.results_iter",
+   "kind": "doc",
+   "line": 777
+  },
+  {
+   "id": "r47",
+   "anchor": "SQLCompiler.has_results",
+   "kind": "doc",
+   "line": 792
+  },
+  {
+   "id": "r48",
+   "anchor": "SQLCompiler.has_results#call:self.query.add_extra",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r49",
+   "anchor": "SQLCompiler.execute_sql",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r50",
+   "anchor": "SQLCompiler.execute_sql#if:result_type == CURSOR/return",
+   "kind": "lead",
+   "line": 837
+  },
+  {
+   "id": "r51",
+   "anchor": "SQLCompiler.execute_sql#if:result_type == SINGLE/try/finally/call:cursor.close",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r52",
+   "anchor": "SQLCompiler.execute_sql#if:not self.connection.features.can_use_chunked_reads/try/return",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r53",
+   "anchor": "SQLCompiler.execute_sql#if:not self.connection.features.can_use_chunked_reads/try/finally/call:cursor.close",
+   "kind": "lead",
+   "line": 863
+  },
+  {
+   "id": "r54",
+   "anchor": "SQLInsertCompiler.field_as_sql",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r55",
+   "anchor": "SQLInsertCompiler.field_as_sql#if:field is None/assign:sql, params",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r56",
+   "anchor": "SQLInsertCompiler.field_as_sql#if:field is None/elif:hasattr(val, 'as_sql')/assign:sql, params",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r57",
+   "anchor": "SQLInsertCompiler.field_as_sql#if:field is None/elif:hasattr(val, 'as_sql')/elif:hasattr(field, 'get_placeholder')/assign:sql, params",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r58",
+   "anchor": "SQLInsertCompiler.field_as_sql#if:field is None/elif:hasattr(val, 'as_sql')/elif:hasattr(field, 'get_placeholder')/else/assign:sql, params",
+   "kind": "lead",
+   "line": 907
+  },
+  {
+   "id": "r59",
+   "anchor": "SQLInsertCompiler.field_as_sql#assign:params",
+   "kind": "lead",
+   "line": 914
+  },
+  {
+   "id": "r60",
+   "anchor": "SQLInsertCompiler.prepare_value",
+   "kind": "doc",
+   "line": 918
+  },
+  {
+   "id": "r61",
+   "anchor": "SQLInsertCompiler.prepare_value#if:hasattr(value, 'resolve_expression')/if:value.contains_column_references",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r62",
+   "anchor": "SQLInsertCompiler.pre_save_val",
+   "kind": "doc",
+   "line": 939
+  },
+  {
+   "id": "r63",
+   "anchor": "SQLInsertCompiler.assemble_as_sql",
+   "kind": "doc",
+   "line": 948
+  },
+  {
+   "id": "r64",
+   "anchor": "SQLInsertCompiler.assemble_as_sql#assign:rows_of_fields_as_sql",
+   "kind": "lead",
+   "line": 965
+  },
+  {
+   "id": "r65",
+   "anchor": "SQLInsertCompiler.assemble_as_sql#assign:sql_and_param_pair_rows",
+   "kind": "lead",
+   "line": 972
+  },
+  {
+   "id": "r66",
+   "anchor": "SQLInsertCompiler.assemble_as_sql#assign:placeholder_rows, param_rows",
+   "kind": "lead",
+   "line": 976
+  },
+  {
+   "id": "r67",
+   "anchor": "SQLInsertCompiler.assemble_as_sql#assign:param_rows",
+   "kind": "lead",
+   "line": 979
+  },
+  {
+   "id": "r68",
+   "anchor": "SQLInsertCompiler.as_sql#assign:qn",
+   "kind": "lead",
+   "line": 986
+  },
+  {
+   "id": "r69",
+   "anchor": "SQLInsertCompiler.as_sql#if:has_fields/else/assign:value_rows",
+   "kind": "lead",
+   "line": 1001
+  },
+  {
+   "id": "r70",
+   "anchor": "SQLInsertCompiler.as_sql#assign:can_bulk",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r71",
+   "anchor": "SQLInsertCompiler.as_sql#if:self.return_id and self.connection.features.can_return_id_from_insert/if:r_fmt",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r72",
+   "anchor": "SQLDeleteCompiler.as_sql",
+   "kind": "doc",
+   "line": 1059
+  },
+  {
+   "id": "r73",
+   "anchor": "SQLUpdateCompiler.as_sql",
+   "kind": "doc",
+   "line": 1075
+  },
+  {
+   "id": "r74",
+   "anchor": "SQLUpdateCompiler.as_sql#for:field, model, val in self.query.values/if:hasattr(field, 'get_placeholder')",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r75",
+   "anchor": "SQLUpdateCompiler.execute_sql",
+   "kind": "doc",
+   "line": 1130
+  },
+  {
+   "id": "r76",
+   "anchor": "SQLUpdateCompiler.pre_sql_setup",
+   "kind": "doc",
+   "line": 1151
+  },
+  {
+   "id": "r77",
+   "anchor": "SQLUpdateCompiler.pre_sql_setup#call:self.query.get_initial_alias",
+   "kind": "lead",
+   "line": 1163
+  },
+  {
+   "id": "r78",
+   "anchor": "SQLUpdateCompiler.pre_sql_setup#assign:self.query.where",
+   "kind": "lead",
+   "line": 1179
+  },
+  {
+   "id": "r79",
+   "anchor": "SQLUpdateCompiler.pre_sql_setup#if:self.query.related_updates or must_pre_select/assign:idents",
+   "kind": "lead",
+   "line": 1184
+  },
+  {
+   "id": "r80",
+   "anchor": "SQLUpdateCompiler.pre_sql_setup#if:self.query.related_updates or must_pre_select/else/call:self.query.add_filter",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r81",
+   "anchor": "SQLAggregateCompiler.as_sql",
+   "kind": "doc",
+   "line": 1196
+  },
+  {
+   "id": "r82",
+   "anchor": "cursor_iter",
+   "kind": "doc",
+   "line": 1215
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 29805,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9858,
+  "thinking_tokens": 4968,
+  "opus_cost_usd": 0.5487915000000001,
+  "total_cost_usd": 0.5722135000000002,
+  "duration_ms": 85657,
+  "duration_api_ms": 86782,
+  "num_turns": 2
+ },
+ "wall_ms": 86652,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

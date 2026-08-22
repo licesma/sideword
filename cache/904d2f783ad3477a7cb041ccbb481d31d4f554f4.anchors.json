@@ -1,0 +1,337 @@
+{
+ "blob_sha": "904d2f783ad3477a7cb041ccbb481d31d4f554f4",
+ "path": "django/contrib/gis/gdal/raster/source.py",
+ "repo": "django/django",
+ "records": 52,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GDALRaster",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r2",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types) and json_regex.match(ds_input)",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r3",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r4",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/try/assign:self._ptr",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/assign:self._write",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r6",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/assign:driver",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/if:driver.name != 'MEM' and 'name' not in ds_input",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/if:'width' not in ds_input or 'height' not in ds_input",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r9",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/if:'srid' not in ds_input",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/assign:self._ptr",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r11",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/for:i, band_input in enumerate(ds_input.get('bands', []))",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/assign:self.srs",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r13",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, dict)/if:'origin' in ds_input",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r14",
+   "anchor": "GDALRaster.__init__#if:isinstance(ds_input, six.string_types)/elif:isinstance(ds_input, c_void_p)/assign:self._ptr",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r15",
+   "anchor": "GDALRaster.__del__#try/except:(AttributeError, TypeError)/pass",
+   "kind": "trail",
+   "line": 137
+  },
+  {
+   "id": "r16",
+   "anchor": "GDALRaster.__repr__",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r17",
+   "anchor": "GDALRaster._flush",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r18",
+   "anchor": "GDALRaster._flush#if:not self._write",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r19",
+   "anchor": "GDALRaster.name",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r20",
+   "anchor": "GDALRaster.driver",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r21",
+   "anchor": "GDALRaster.width",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r22",
+   "anchor": "GDALRaster.height",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r23",
+   "anchor": "GDALRaster.srs",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r24",
+   "anchor": "GDALRaster.srs",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r25",
+   "anchor": "GDALRaster.srid",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r26",
+   "anchor": "GDALRaster.srid",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r27",
+   "anchor": "GDALRaster.geotransform",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r28",
+   "anchor": "GDALRaster.geotransform#assign:gtf",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r29",
+   "anchor": "GDALRaster.geotransform",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r30",
+   "anchor": "GDALRaster.geotransform#assign:values",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r31",
+   "anchor": "GDALRaster.origin",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r32",
+   "anchor": "GDALRaster.scale",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r33",
+   "anchor": "GDALRaster.skew",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r34",
+   "anchor": "GDALRaster.extent",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r35",
+   "anchor": "GDALRaster.extent#assign:xval",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r36",
+   "anchor": "GDALRaster.extent#assign:xmin",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r37",
+   "anchor": "GDALRaster.warp",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r38",
+   "anchor": "GDALRaster.warp#if:'width' not in ds_input",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r39",
+   "anchor": "GDALRaster.warp#if:'driver' not in ds_input",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r40",
+   "anchor": "GDALRaster.warp#assign:ds_input['nr_of_bands']",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r41",
+   "anchor": "GDALRaster.warp#assign:target",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r42",
+   "anchor": "GDALRaster.warp#for:index, band in enumerate(self.bands)",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r43",
+   "anchor": "GDALRaster.warp#assign:algorithm",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r44",
+   "anchor": "GDALRaster.warp#call:capi.reproject_image",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r45",
+   "anchor": "GDALRaster.warp#call:target._flush",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r46",
+   "anchor": "GDALRaster.transform",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r47",
+   "anchor": "GDALRaster.transform#assign:algorithm",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r48",
+   "anchor": "GDALRaster.transform#assign:target_srs",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r49",
+   "anchor": "GDALRaster.transform#assign:target",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r50",
+   "anchor": "GDALRaster.transform#assign:data",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r51",
+   "anchor": "GDALRaster.transform#if:driver",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r52",
+   "anchor": "GDALRaster.transform#return",
+   "kind": "lead",
+   "line": 404
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11248,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4388,
+  "thinking_tokens": 1711,
+  "opus_cost_usd": 0.2264715,
+  "total_cost_usd": 0.2344075,
+  "duration_ms": 38829,
+  "duration_api_ms": 40638,
+  "num_turns": 2
+ },
+ "wall_ms": 39721,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

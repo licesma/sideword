@@ -1,0 +1,907 @@
+{
+ "blob_sha": "988776fd12d3dec87a885a895dcb90aa7077b6f1",
+ "path": "astropy/coordinates/sky_coordinate.py",
+ "repo": "astropy/astropy",
+ "records": 147,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SkyCoordInfo",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r2",
+   "anchor": "SkyCoordInfo.attrs_from_parent",
+   "kind": "trail",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "SkyCoordInfo._represent_as_dict#if:'distance' in attrs and np.all(obj.distance == 1.0)",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r4",
+   "anchor": "SkyCoordInfo._represent_as_dict#assign:out['frame']",
+   "kind": "post",
+   "line": 90
+  },
+  {
+   "id": "r5",
+   "anchor": "SkyCoord",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r6",
+   "anchor": "SkyCoord.info",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r7",
+   "anchor": "SkyCoord.__init__#assign:args",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r8",
+   "anchor": "SkyCoord.__init__#assign:args",
+   "kind": "trail",
+   "line": 224
+  },
+  {
+   "id": "r9",
+   "anchor": "SkyCoord._extra_frameattr_names",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r10",
+   "anchor": "SkyCoord.__init__#for:attr in kwargs/if:attr not in frame_attr_names and attr in frame_transform_graph.frame_attributes/call:setattr",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r11",
+   "anchor": "SkyCoord.__init__#call:_normalize_representation_type",
+   "kind": "todo",
+   "line": 246
+  },
+  {
+   "id": "r12",
+   "anchor": "SkyCoord._sky_coord_frame",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r13",
+   "anchor": "SkyCoord.representation",
+   "kind": "todo",
+   "line": 279
+  },
+  {
+   "id": "r14",
+   "anchor": "SkyCoord._apply",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r15",
+   "anchor": "SkyCoord._apply#assign:new",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r16",
+   "anchor": "SkyCoord._apply#for:attr in self._extra_frameattr_names/if:getattr(value, 'size', 1) > 1/elif:method == 'copy' or method == 'flatten'/assign:value",
+   "kind": "lead",
+   "line": 337
+  },
+  {
+   "id": "r17",
+   "anchor": "SkyCoord._apply#if:'info' in self.__dict__",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r18",
+   "anchor": "SkyCoord._parse_inputs",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r19",
+   "anchor": "SkyCoord._parse_inputs#assign:frame",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r20",
+   "anchor": "SkyCoord._parse_inputs#call:_normalize_representation_type",
+   "kind": "todo",
+   "line": 366
+  },
+  {
+   "id": "r21",
+   "anchor": "SkyCoord._parse_inputs#assign:units",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r22",
+   "anchor": "SkyCoord._parse_inputs#call:valid_kwargs.update",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r23",
+   "anchor": "SkyCoord._parse_inputs#if:kwargs",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r24",
+   "anchor": "SkyCoord._parse_inputs#if:kwargs/assign:pm_message",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r25",
+   "anchor": "SkyCoord._parse_inputs#if:args",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r26",
+   "anchor": "SkyCoord._parse_inputs#if:args/if:len(args) == 1/assign:coord_kwargs",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r27",
+   "anchor": "SkyCoord._parse_inputs#if:args/if:len(args) == 1/if:'info' in getattr(args[0], '__dict__', ())",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r28",
+   "anchor": "SkyCoord._parse_inputs#if:args/for:attr, coord_value in coord_kwargs.items()",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r29",
+   "anchor": "SkyCoord.transform_to",
+   "kind": "doc",
+   "line": 456
+  },
+  {
+   "id": "r30",
+   "anchor": "SkyCoord.transform_to#try",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r31",
+   "anchor": "SkyCoord.transform_to#if:isinstance(frame, SkyCoord)/assign:frame",
+   "kind": "trail",
+   "line": 506
+  },
+  {
+   "id": "r32",
+   "anchor": "SkyCoord.transform_to#if:isinstance(frame, BaseCoordinateFrame)/for:attr in frame_transform_graph.frame_attributes",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r33",
+   "anchor": "SkyCoord.transform_to#assign:trans",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r34",
+   "anchor": "SkyCoord.transform_to#assign:generic_frame",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r35",
+   "anchor": "SkyCoord.transform_to#assign:new_coord",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r36",
+   "anchor": "SkyCoord.transform_to#for:attr in set(new_coord.get_frame_attr_names()) & set(frame_kwargs.keys())",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r37",
+   "anchor": "SkyCoord.apply_space_motion",
+   "kind": "doc",
+   "line": 548
+  },
+  {
+   "id": "r38",
+   "anchor": "SkyCoord.apply_space_motion#if:'s' not in self.frame.data.differentials",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r39",
+   "anchor": "SkyCoord.apply_space_motion#if:new_obstime is not None and self.obstime is None/raise:ValueError",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r40",
+   "anchor": "SkyCoord.apply_space_motion#assign:t1",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r41",
+   "anchor": "SkyCoord.apply_space_motion#if:dt is None/assign:t2",
+   "kind": "lead",
+   "line": 611
+  },
+  {
+   "id": "r42",
+   "anchor": "SkyCoord.apply_space_motion#if:dt is None/else/if:t1 is None",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r43",
+   "anchor": "SkyCoord.apply_space_motion#if:dt is None/else/if:t1 is None/assign:t1",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r44",
+   "anchor": "SkyCoord.apply_space_motion#if:dt is None/else/if:t1 is None/assign:new_obstime",
+   "kind": "trail",
+   "line": 620
+  },
+  {
+   "id": "r45",
+   "anchor": "SkyCoord.apply_space_motion#assign:t1",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r46",
+   "anchor": "SkyCoord.apply_space_motion#assign:icrsrep",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r47",
+   "anchor": "SkyCoord.apply_space_motion#try/except:u.UnitConversionError",
+   "kind": "trail",
+   "line": 637
+  },
+  {
+   "id": "r48",
+   "anchor": "SkyCoord.apply_space_motion#try/except:u.UnitConversionError",
+   "kind": "trail",
+   "line": 642
+  },
+  {
+   "id": "r49",
+   "anchor": "SkyCoord.apply_space_motion#assign:frattrs",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r50",
+   "anchor": "SkyCoord.__getattr__",
+   "kind": "doc",
+   "line": 665
+  },
+  {
+   "id": "r51",
+   "anchor": "SkyCoord.__getattr__#if:'_sky_coord_frame' in self.__dict__/if:self.frame.name == attr/return",
+   "kind": "trail",
+   "line": 672
+  },
+  {
+   "id": "r52",
+   "anchor": "SkyCoord.__getattr__#if:'_sky_coord_frame' in self.__dict__/if:attr in frame_transform_graph.frame_attributes",
+   "kind": "lead",
+   "line": 677
+  },
+  {
+   "id": "r53",
+   "anchor": "SkyCoord.__getattr__#if:'_sky_coord_frame' in self.__dict__/if:not attr.startswith('_') and hasattr(self._sky_coord_frame, attr)",
+   "kind": "lead",
+   "line": 685
+  },
+  {
+   "id": "r54",
+   "anchor": "SkyCoord.__getattr__#if:'_sky_coord_frame' in self.__dict__/assign:frame_cls",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r55",
+   "anchor": "SkyCoord.__getattr__#raise:AttributeError",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r56",
+   "anchor": "SkyCoord.__setattr__#if:'_sky_coord_frame' in self.__dict__",
+   "kind": "lead",
+   "line": 699
+  },
+  {
+   "id": "r57",
+   "anchor": "SkyCoord.__setattr__#if:attr in frame_transform_graph.frame_attributes/call:super().__setattr__",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r58",
+   "anchor": "SkyCoord.__setattr__#if:attr in frame_transform_graph.frame_attributes/call:frame_transform_graph.frame_attributes[attr].__get__",
+   "kind": "lead",
+   "line": 716
+  },
+  {
+   "id": "r59",
+   "anchor": "SkyCoord.__setattr__#if:attr in frame_transform_graph.frame_attributes/assign:self._extra_frameattr_names",
+   "kind": "lead",
+   "line": 718
+  },
+  {
+   "id": "r60",
+   "anchor": "SkyCoord.__setattr__#if:attr in frame_transform_graph.frame_attributes/else/call:super().__setattr__",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r61",
+   "anchor": "SkyCoord.__delattr__#if:'_sky_coord_frame' in self.__dict__",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r62",
+   "anchor": "SkyCoord.__delattr__#if:attr in frame_transform_graph.frame_attributes/call:super().__delattr__",
+   "kind": "lead",
+   "line": 742
+  },
+  {
+   "id": "r63",
+   "anchor": "SkyCoord.__delattr__#if:attr in frame_transform_graph.frame_attributes/assign:self._extra_frameattr_names",
+   "kind": "lead",
+   "line": 744
+  },
+  {
+   "id": "r64",
+   "anchor": "SkyCoord.__delattr__#if:attr in frame_transform_graph.frame_attributes/else/call:super().__delattr__",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r65",
+   "anchor": "SkyCoord.__dir__",
+   "kind": "doc",
+   "line": 751
+  },
+  {
+   "id": "r66",
+   "anchor": "SkyCoord.__dir__#assign:dir_values",
+   "kind": "lead",
+   "line": 759
+  },
+  {
+   "id": "r67",
+   "anchor": "SkyCoord.__dir__#call:dir_values.update",
+   "kind": "lead",
+   "line": 766
+  },
+  {
+   "id": "r68",
+   "anchor": "SkyCoord.__dir__#call:dir_values.update",
+   "kind": "lead",
+   "line": 769
+  },
+  {
+   "id": "r69",
+   "anchor": "SkyCoord.to_string",
+   "kind": "doc",
+   "line": 786
+  },
+  {
+   "id": "r70",
+   "anchor": "SkyCoord.is_equivalent_frame",
+   "kind": "doc",
+   "line": 851
+  },
+  {
+   "id": "r71",
+   "anchor": "SkyCoord.is_equivalent_frame#if:isinstance(other, BaseCoordinateFrame)/else/raise:TypeError",
+   "kind": "lead",
+   "line": 888
+  },
+  {
+   "id": "r72",
+   "anchor": "SkyCoord.separation",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r73",
+   "anchor": "SkyCoord.separation",
+   "kind": "doc",
+   "line": 892
+  },
+  {
+   "id": "r74",
+   "anchor": "SkyCoord.separation#assign:sep",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r75",
+   "anchor": "SkyCoord.separation_3d",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r76",
+   "anchor": "SkyCoord.spherical_offsets_to",
+   "kind": "doc",
+   "line": 983
+  },
+  {
+   "id": "r77",
+   "anchor": "SkyCoord.match_to_catalog_sky",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r78",
+   "anchor": "SkyCoord.match_to_catalog_3d",
+   "kind": "doc",
+   "line": 1093
+  },
+  {
+   "id": "r79",
+   "anchor": "SkyCoord.search_around_sky",
+   "kind": "doc",
+   "line": 1159
+  },
+  {
+   "id": "r80",
+   "anchor": "SkyCoord.search_around_3d",
+   "kind": "doc",
+   "line": 1217
+  },
+  {
+   "id": "r81",
+   "anchor": "SkyCoord.position_angle",
+   "kind": "doc",
+   "line": 1275
+  },
+  {
+   "id": "r82",
+   "anchor": "SkyCoord.skyoffset_frame",
+   "kind": "doc",
+   "line": 1321
+  },
+  {
+   "id": "r83",
+   "anchor": "SkyCoord.get_constellation",
+   "kind": "doc",
+   "line": 1339
+  },
+  {
+   "id": "r84",
+   "anchor": "SkyCoord.get_constellation#assign:extra_frameattrs",
+   "kind": "lead",
+   "line": 1376
+  },
+  {
+   "id": "r85",
+   "anchor": "SkyCoord.get_constellation#return",
+   "kind": "post",
+   "line": 1380
+  },
+  {
+   "id": "r86",
+   "anchor": "SkyCoord.to_pixel",
+   "kind": "lead",
+   "line": 1386
+  },
+  {
+   "id": "r87",
+   "anchor": "SkyCoord.to_pixel",
+   "kind": "doc",
+   "line": 1386
+  },
+  {
+   "id": "r88",
+   "anchor": "SkyCoord.from_pixel",
+   "kind": "doc",
+   "line": 1413
+  },
+  {
+   "id": "r89",
+   "anchor": "SkyCoord.radial_velocity_correction",
+   "kind": "doc",
+   "line": 1443
+  },
+  {
+   "id": "r90",
+   "anchor": "SkyCoord.radial_velocity_correction#import:.solar_system",
+   "kind": "lead",
+   "line": 1510
+  },
+  {
+   "id": "r91",
+   "anchor": "SkyCoord.radial_velocity_correction#assign:timeloc",
+   "kind": "lead",
+   "line": 1513
+  },
+  {
+   "id": "r92",
+   "anchor": "SkyCoord.radial_velocity_correction#if:obstime is None",
+   "kind": "lead",
+   "line": 1538
+  },
+  {
+   "id": "r93",
+   "anchor": "SkyCoord.radial_velocity_correction#if:self.data.__class__ is UnitSphericalRepresentation",
+   "kind": "lead",
+   "line": 1565
+  },
+  {
+   "id": "r94",
+   "anchor": "SkyCoord.radial_velocity_correction#if:self.data.__class__ is UnitSphericalRepresentation/else/assign:obs_icrs_cart",
+   "kind": "lead",
+   "line": 1569
+  },
+  {
+   "id": "r95",
+   "anchor": "SkyCoord.radial_velocity_correction#if:kind == 'barycentric'/assign:zb",
+   "kind": "lead",
+   "line": 1580
+  },
+  {
+   "id": "r96",
+   "anchor": "SkyCoord.radial_velocity_correction#if:kind == 'barycentric'/else/return",
+   "kind": "lead",
+   "line": 1586
+  },
+  {
+   "id": "r97",
+   "anchor": "SkyCoord.guess_from_table",
+   "kind": "lead",
+   "line": 1590
+  },
+  {
+   "id": "r98",
+   "anchor": "SkyCoord.guess_from_table",
+   "kind": "doc",
+   "line": 1590
+  },
+  {
+   "id": "r99",
+   "anchor": "SkyCoord.guess_from_table#for:comp_name in frame.representation_component_names/assign:starts_with_comp",
+   "kind": "lead",
+   "line": 1636
+  },
+  {
+   "id": "r100",
+   "anchor": "SkyCoord.guess_from_table#for:comp_name in frame.representation_component_names/assign:ends_with_comp",
+   "kind": "lead",
+   "line": 1639
+  },
+  {
+   "id": "r101",
+   "anchor": "SkyCoord.guess_from_table#for:comp_name in frame.representation_component_names/assign:rex",
+   "kind": "lead",
+   "line": 1641
+  },
+  {
+   "id": "r102",
+   "anchor": "SkyCoord.from_name",
+   "kind": "lead",
+   "line": 1666
+  },
+  {
+   "id": "r103",
+   "anchor": "SkyCoord.from_name",
+   "kind": "doc",
+   "line": 1666
+  },
+  {
+   "id": "r104",
+   "anchor": "_get_frame_class",
+   "kind": "lead",
+   "line": 1701
+  },
+  {
+   "id": "r105",
+   "anchor": "_get_frame_class",
+   "kind": "doc",
+   "line": 1701
+  },
+  {
+   "id": "r106",
+   "anchor": "_get_frame",
+   "kind": "doc",
+   "line": 1724
+  },
+  {
+   "id": "r107",
+   "anchor": "_get_frame#if:frame is None and len(args) > 1/for:arg in args",
+   "kind": "lead",
+   "line": 1742
+  },
+  {
+   "id": "r108",
+   "anchor": "_get_frame#if:isinstance(frame, SkyCoord)",
+   "kind": "lead",
+   "line": 1752
+  },
+  {
+   "id": "r109",
+   "anchor": "_get_frame#if:isinstance(frame, SkyCoord)/for:attr in frame._extra_frameattr_names",
+   "kind": "lead",
+   "line": 1754
+  },
+  {
+   "id": "r110",
+   "anchor": "_get_frame#if:frame is not None/assign:frame_cls",
+   "kind": "lead",
+   "line": 1770
+  },
+  {
+   "id": "r111",
+   "anchor": "_get_frame#if:frame is not None/else/for:arg in args",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r112",
+   "anchor": "_get_frame#if:frame is not None/else/for:arg in args/else/assign:frame_cls",
+   "kind": "lead",
+   "line": 1788
+  },
+  {
+   "id": "r113",
+   "anchor": "_get_frame#for:arg in args",
+   "kind": "lead",
+   "line": 1794
+  },
+  {
+   "id": "r114",
+   "anchor": "_get_frame#for:arg in args/if:isinstance(arg, (collections.Sequence, np.ndarray)) and len(args) == 1 and len(arg) > 0",
+   "kind": "lead",
+   "line": 1799
+  },
+  {
+   "id": "r115",
+   "anchor": "_get_frame#for:arg in args/if:coord_frame_obj is not None/if:frame_diff is not None/call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 1815
+  },
+  {
+   "id": "r116",
+   "anchor": "_get_frame#call:_normalize_representation_type",
+   "kind": "todo",
+   "line": 1828
+  },
+  {
+   "id": "r117",
+   "anchor": "_get_representation_component_units",
+   "kind": "doc",
+   "line": 1841
+  },
+  {
+   "id": "r118",
+   "anchor": "_get_representation_component_units#if:'unit' not in kwargs/else/if:isinstance(units, str)/if:len(units) == 1",
+   "kind": "lead",
+   "line": 1855
+  },
+  {
+   "id": "r119",
+   "anchor": "_parse_coordinate_arg",
+   "kind": "doc",
+   "line": 1872
+  },
+  {
+   "id": "r120",
+   "anchor": "_parse_coordinate_arg#assign:is_scalar",
+   "kind": "trail",
+   "line": 1886
+  },
+  {
+   "id": "r121",
+   "anchor": "_parse_coordinate_arg#assign:valid_kwargs",
+   "kind": "trail",
+   "line": 1887
+  },
+  {
+   "id": "r122",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, str)",
+   "kind": "lead",
+   "line": 1895
+  },
+  {
+   "id": "r123",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/if:not coords.has_data",
+   "kind": "lead",
+   "line": 1903
+  },
+  {
+   "id": "r124",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/assign:values",
+   "kind": "trail",
+   "line": 1908
+  },
+  {
+   "id": "r125",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/for:repr_attr_name in repr_attr_names/if:isinstance(coords.data, UnitSphericalRepresentation) and repr_attr_name == 'distance'",
+   "kind": "lead",
+   "line": 1912
+  },
+  {
+   "id": "r126",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/for:repr_attr_name in repr_attr_names/call:values.append",
+   "kind": "lead",
+   "line": 1918
+  },
+  {
+   "id": "r127",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/for:nametodrop in repr_attr_name_to_drop",
+   "kind": "lead",
+   "line": 1921
+  },
+  {
+   "id": "r128",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, np.ndarray) and coords.dtype.kind in 'if' and coords.ndim == 2 and coords.shape[1] <= 3/assign:values",
+   "kind": "lead",
+   "line": 1967
+  },
+  {
+   "id": "r129",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, np.ndarray) and coords.dtype.kind in 'if' and coords.ndim == 2 and coords.shape[1] <= 3/assign:values",
+   "kind": "trail",
+   "line": 1967
+  },
+  {
+   "id": "r130",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/assign:vals",
+   "kind": "lead",
+   "line": 1972
+  },
+  {
+   "id": "r131",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/assign:scs",
+   "kind": "lead",
+   "line": 1980
+  },
+  {
+   "id": "r132",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/for:sc in scs[1:]",
+   "kind": "lead",
+   "line": 1983
+  },
+  {
+   "id": "r133",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/assign:allunitsphrepr",
+   "kind": "lead",
+   "line": 1989
+  },
+  {
+   "id": "r134",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/for:fattrnm in scs[0].frame.frame_attributes",
+   "kind": "lead",
+   "line": 1995
+  },
+  {
+   "id": "r135",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/assign:values",
+   "kind": "lead",
+   "line": 2001
+  },
+  {
+   "id": "r136",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/for:data_attr_name, repr_attr_name in zip(frame_attr_names, repr_attr_names)/if:allunitsphrepr and repr_attr_name == 'distance'/continue",
+   "kind": "lead",
+   "line": 2005
+  },
+  {
+   "id": "r137",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/for:data_attr_name, repr_attr_name in zip(frame_attr_names, repr_attr_names)/if:isinstance(concat_vals, u.Quantity)",
+   "kind": "lead",
+   "line": 2012
+  },
+  {
+   "id": "r138",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/else/for:coord in coords",
+   "kind": "lead",
+   "line": 2018
+  },
+  {
+   "id": "r139",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/else/for:coord in coords/call:vals.append",
+   "kind": "trail",
+   "line": 2027
+  },
+  {
+   "id": "r140",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/else/try",
+   "kind": "lead",
+   "line": 2031
+  },
+  {
+   "id": "r141",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/else/if:n_coords > n_attr_names",
+   "kind": "lead",
+   "line": 2042
+  },
+  {
+   "id": "r142",
+   "anchor": "_parse_coordinate_arg#if:isinstance(coords, (SkyCoord, BaseCoordinateFrame))/elif:isinstance(coords, (collections.Sequence, np.ndarray))/if:any(isinstance(coord, coord_types) for coord in coords)/else/assign:values",
+   "kind": "lead",
+   "line": 2053
+  },
+  {
+   "id": "r143",
+   "anchor": "_parse_coordinate_arg#try",
+   "kind": "lead",
+   "line": 2063
+  },
+  {
+   "id": "r144",
+   "anchor": "_get_representation_attrs",
+   "kind": "doc",
+   "line": 2074
+  },
+  {
+   "id": "r145",
+   "anchor": "_get_representation_attrs#assign:differential_type",
+   "kind": "lead",
+   "line": 2099
+  },
+  {
+   "id": "r146",
+   "anchor": "_parse_ra_dec",
+   "kind": "doc",
+   "line": 2110
+  },
+  {
+   "id": "r147",
+   "anchor": "_parse_ra_dec#if:isinstance(coord_str, str)/else/raise:TypeError",
+   "kind": "lead",
+   "line": 2137
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 51797,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 16693,
+  "thinking_tokens": 7516,
+  "opus_cost_usd": 0.9395865000000001,
+  "total_cost_usd": 0.9798485000000001,
+  "duration_ms": 140481,
+  "duration_api_ms": 142131,
+  "num_turns": 2
+ },
+ "wall_ms": 141426,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

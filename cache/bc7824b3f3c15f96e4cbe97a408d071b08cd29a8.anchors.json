@@ -1,0 +1,355 @@
+{
+ "blob_sha": "bc7824b3f3c15f96e4cbe97a408d071b08cd29a8",
+ "path": "astropy/utils/console.py",
+ "repo": "astropy/astropy",
+ "records": 55,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "_IPython",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_stdout",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_stdout#assign:ipyio_stream",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_stdout#if:ipyio_stream is not None and isatty(ipyio_stream)/return",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_stdout#if:ipyio_stream is not None and isatty(ipyio_stream)/else/return",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r8",
+   "anchor": "isatty",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r9",
+   "anchor": "isatty#if:_IPython.OutStream is None or (not isinstance(file, _IPython.OutStream) and not isinstance(file, _IPython.IOStream))",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r10",
+   "anchor": "isatty#if:getattr(file, 'name', None) == 'stdout'",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "isatty#if:hasattr(file, 'stream')/try",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "terminal_size",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r13",
+   "anchor": "terminal_size#try/except:Exception/try/return",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r14",
+   "anchor": "terminal_size#try/except:Exception/try/except:TypeError/assign:lines",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r15",
+   "anchor": "_color_text",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r16",
+   "anchor": "_color_text#if:sys.platform == 'win32' and _IPython.OutStream is None/return",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r17",
+   "anchor": "_decode_preferred_encoding",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r18",
+   "anchor": "_write_with_fallback",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r19",
+   "anchor": "_write_with_fallback#if:_IPython.IOStream is not None and isinstance(fileobj, _IPython.IOStream)/assign:write",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r20",
+   "anchor": "_write_with_fallback#try/except:UnicodeEncodeError/pass",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r21",
+   "anchor": "_write_with_fallback#call:write",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r22",
+   "anchor": "color_print",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r23",
+   "anchor": "color_print#if:isatty(file) and conf.use_color/for:i in range(0, len(args), 2)/assign:write",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r24",
+   "anchor": "strip_ansi_codes",
+   "kind": "doc",
+   "line": 383
+  },
+  {
+   "id": "r25",
+   "anchor": "human_time",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r26",
+   "anchor": "human_file_size",
+   "kind": "doc",
+   "line": 439
+  },
+  {
+   "id": "r27",
+   "anchor": "human_file_size#if:hasattr(size, 'unit')/import:..",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r28",
+   "anchor": "_mapfunc",
+   "kind": "doc",
+   "line": 488
+  },
+  {
+   "id": "r29",
+   "anchor": "ProgressBar",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r30",
+   "anchor": "ProgressBar.__init__",
+   "kind": "doc",
+   "line": 517
+  },
+  {
+   "id": "r31",
+   "anchor": "ProgressBar.update",
+   "kind": "doc",
+   "line": 601
+  },
+  {
+   "id": "r32",
+   "anchor": "ProgressBar.update#if:value is None",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r33",
+   "anchor": "ProgressBar.update#if:self._ipython_widget",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r34",
+   "anchor": "ProgressBar._update_console",
+   "kind": "doc",
+   "line": 617
+  },
+  {
+   "id": "r35",
+   "anchor": "ProgressBar._update_ipython_widget",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r36",
+   "anchor": "ProgressBar._update_ipython_widget#if:not hasattr(self, '_widget')",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r37",
+   "anchor": "ProgressBar._update_ipython_widget#if:not hasattr(self, '_widget')/import:IPython",
+   "kind": "lead",
+   "line": 672
+  },
+  {
+   "id": "r38",
+   "anchor": "ProgressBar._update_ipython_widget#assign:frac",
+   "kind": "lead",
+   "line": 686
+  },
+  {
+   "id": "r39",
+   "anchor": "ProgressBar.map",
+   "kind": "doc",
+   "line": 694
+  },
+  {
+   "id": "r40",
+   "anchor": "ProgressBar.map_unordered",
+   "kind": "doc",
+   "line": 754
+  },
+  {
+   "id": "r41",
+   "anchor": "Spinner",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r42",
+   "anchor": "Spinner.__init__",
+   "kind": "doc",
+   "line": 840
+  },
+  {
+   "id": "r43",
+   "anchor": "Spinner._iterator#while:True/try/except:UnicodeError/assign:chars",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r44",
+   "anchor": "Spinner._iterator#while:True/try/except:UnicodeError/assign:try_fallback",
+   "kind": "trail",
+   "line": 906
+  },
+  {
+   "id": "r45",
+   "anchor": "ProgressBarOrSpinner",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r46",
+   "anchor": "ProgressBarOrSpinner.__init__",
+   "kind": "doc",
+   "line": 962
+  },
+  {
+   "id": "r47",
+   "anchor": "ProgressBarOrSpinner.update",
+   "kind": "doc",
+   "line": 1007
+  },
+  {
+   "id": "r48",
+   "anchor": "print_code_line",
+   "kind": "doc",
+   "line": 1018
+  },
+  {
+   "id": "r49",
+   "anchor": "Getch",
+   "kind": "lead",
+   "line": 1102
+  },
+  {
+   "id": "r50",
+   "anchor": "Getch",
+   "kind": "doc",
+   "line": 1102
+  },
+  {
+   "id": "r51",
+   "anchor": "_GetchUnix.__init__#import:termios",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r52",
+   "anchor": "_GetchMacCarbon",
+   "kind": "doc",
+   "line": 1155
+  },
+  {
+   "id": "r53",
+   "anchor": "_GetchMacCarbon.__init__#expr:Carbon.Evt",
+   "kind": "trail",
+   "line": 1165
+  },
+  {
+   "id": "r54",
+   "anchor": "_GetchMacCarbon.__call__#if:Carbon.Evt.EventAvail(0x0008)[0] == 0",
+   "kind": "trail",
+   "line": 1169
+  },
+  {
+   "id": "r55",
+   "anchor": "_GetchMacCarbon.__call__#if:Carbon.Evt.EventAvail(0x0008)[0] == 0/else/assign:(what, msg, when, where, mod)",
+   "kind": "lead",
+   "line": 1181
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22103,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5415,
+  "thinking_tokens": 2933,
+  "opus_cost_usd": 0.3606965,
+  "total_cost_usd": 0.3778255,
+  "duration_ms": 51069,
+  "duration_api_ms": 52278,
+  "num_turns": 2
+ },
+ "wall_ms": 51881,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

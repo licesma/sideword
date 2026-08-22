@@ -1,0 +1,211 @@
+{
+ "blob_sha": "2a83729547260e5bf2e9eabdc51a3e146ac5692b",
+ "path": "xarray/core/merge.py",
+ "repo": "pydata/xarray",
+ "records": 31,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "broadcast_dimension_size",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r2",
+   "anchor": "MergeError",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r3",
+   "anchor": "MergeError",
+   "kind": "post",
+   "line": 73
+  },
+  {
+   "id": "r4",
+   "anchor": "unique_variable",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r5",
+   "anchor": "unique_variable#if:equals is None/for:var in variables[1:]",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r6",
+   "anchor": "unique_variable#if:equals is None/if:equals is None/assign:out",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r7",
+   "anchor": "merge_collected",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r8",
+   "anchor": "merge_collected#for:name, elements_list in grouped.items()/if:name in prioritized/else/if:indexed_elements/assign:variable, index",
+   "kind": "todo",
+   "line": 209
+  },
+  {
+   "id": "r9",
+   "anchor": "merge_collected#for:name, elements_list in grouped.items()/if:name in prioritized/else/try/except:MergeError/if:compat != \"minimal\"/raise",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r10",
+   "anchor": "collect_variables_and_indexes",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r11",
+   "anchor": "collect_variables_and_indexes#for:mapping in list_of_mappings/for:name, variable in mapping.items()/if:isinstance(variable, DataArray)/assign:coords",
+   "kind": "trail",
+   "line": 272
+  },
+  {
+   "id": "r12",
+   "anchor": "collect_variables_and_indexes#for:mapping in list_of_mappings/for:name, variable in mapping.items()/if:isinstance(variable, DataArray)/call:coords.pop",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r13",
+   "anchor": "collect_from_coordinates",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r14",
+   "anchor": "merge_coordinates_without_align",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r15",
+   "anchor": "determine_coords",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r16",
+   "anchor": "determine_coords#for:mapping in list_of_mappings/if:isinstance(mapping, Dataset)/else/for:name, var in mapping.items()/if:isinstance(var, DataArray)/assign:coords",
+   "kind": "trail",
+   "line": 363
+  },
+  {
+   "id": "r17",
+   "anchor": "determine_coords#for:mapping in list_of_mappings/if:isinstance(mapping, Dataset)/else/for:name, var in mapping.items()/if:isinstance(var, DataArray)/call:coords.discard",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r18",
+   "anchor": "coerce_pandas_values",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r19",
+   "anchor": "_get_priority_vars_and_indexes",
+   "kind": "doc",
+   "line": 404
+  },
+  {
+   "id": "r20",
+   "anchor": "merge_coords",
+   "kind": "doc",
+   "line": 437
+  },
+  {
+   "id": "r21",
+   "anchor": "merge_data_and_coords",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r22",
+   "anchor": "_extract_indexes_from_coords",
+   "kind": "doc",
+   "line": 473
+  },
+  {
+   "id": "r23",
+   "anchor": "assert_valid_explicit_coords",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r24",
+   "anchor": "merge_attrs",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r25",
+   "anchor": "merge_attrs#if:not variable_attrs/return",
+   "kind": "lead",
+   "line": 501
+  },
+  {
+   "id": "r26",
+   "anchor": "merge_core",
+   "kind": "doc",
+   "line": 539
+  },
+  {
+   "id": "r27",
+   "anchor": "merge",
+   "kind": "doc",
+   "line": 630
+  },
+  {
+   "id": "r28",
+   "anchor": "dataset_merge_method",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r29",
+   "anchor": "dataset_merge_method#if:isinstance(overwrite_vars, Iterable) and not isinstance(overwrite_vars, str)",
+   "kind": "lead",
+   "line": 882
+  },
+  {
+   "id": "r30",
+   "anchor": "dataset_update_method",
+   "kind": "doc",
+   "line": 909
+  },
+  {
+   "id": "r31",
+   "anchor": "dataset_update_method#if:not isinstance(other, Dataset)/for:key, value in other.items()/if:isinstance(value, DataArray)/assign:coord_names",
+   "kind": "lead",
+   "line": 926
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20060,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3203,
+  "thinking_tokens": 1622,
+  "opus_cost_usd": 0.2849665,
+  "total_cost_usd": 0.2995765,
+  "duration_ms": 35200,
+  "duration_api_ms": 34419,
+  "num_turns": 2
+ },
+ "wall_ms": 38794,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

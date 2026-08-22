@@ -1,0 +1,247 @@
+{
+ "blob_sha": "c2a9470ab1a63bf30f3070aa291397d8763573e6",
+ "path": "django/middleware/csrf.py",
+ "repo": "django/django",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "invalid_token_chars_re",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r3",
+   "anchor": "REASON_INCORRECT_LENGTH",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_failure_view",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "_mask_cipher_secret",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r6",
+   "anchor": "_unmask_cipher_token",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r7",
+   "anchor": "_unmask_cipher_token#return",
+   "kind": "trail",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "get_token",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r9",
+   "anchor": "rotate_token",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r10",
+   "anchor": "_sanitize_token#if:invalid_token_chars_re.search(token)",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r11",
+   "anchor": "_sanitize_token#if:len(token)==CSRF_SECRET_LENGTH/return",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r12",
+   "anchor": "_compare_masked_tokens#return",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r13",
+   "anchor": "CsrfViewMiddleware",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r14",
+   "anchor": "CsrfViewMiddleware.allowed_origin_subdomains",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r15",
+   "anchor": "CsrfViewMiddleware._accept",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r16",
+   "anchor": "CsrfViewMiddleware._accept#assign:request.csrf_processing_done",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r17",
+   "anchor": "CsrfViewMiddleware._get_token#if:settings.CSRF_USE_SESSIONS/else/assign:csrf_token",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r18",
+   "anchor": "CsrfViewMiddleware._get_token#if:settings.CSRF_USE_SESSIONS/else/if:csrf_token!=cookie_token/assign:request.csrf_cookie_needs_reset",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r19",
+   "anchor": "CsrfViewMiddleware._set_token#if:settings.CSRF_USE_SESSIONS/else/call:patch_vary_headers",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r20",
+   "anchor": "CsrfViewMiddleware._check_referer#if:'' in (referer.scheme, referer.netloc)",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r21",
+   "anchor": "CsrfViewMiddleware._check_referer#if:referer.scheme!='https'",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r22",
+   "anchor": "CsrfViewMiddleware._check_referer#assign:good_referer",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r23",
+   "anchor": "CsrfViewMiddleware._check_referer#if:good_referer is None/try",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r24",
+   "anchor": "CsrfViewMiddleware._check_referer#if:good_referer is None/try/assign:good_referer",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r25",
+   "anchor": "CsrfViewMiddleware._bad_token_message#if:token_source!='POST'/assign:header_name",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r26",
+   "anchor": "CsrfViewMiddleware._check_token#try",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r27",
+   "anchor": "CsrfViewMiddleware._check_token#if:csrf_token is None/raise:RejectRequest",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r28",
+   "anchor": "CsrfViewMiddleware._check_token#assign:request_csrf_token",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r29",
+   "anchor": "CsrfViewMiddleware._check_token#if:request.method=='POST'/try/except:OSError/pass",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r30",
+   "anchor": "CsrfViewMiddleware._check_token#if:request_csrf_token==''/try",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r31",
+   "anchor": "CsrfViewMiddleware.process_request#if:csrf_token is not None/assign:request.META['CSRF_COOKIE']",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r32",
+   "anchor": "CsrfViewMiddleware.process_view#if:getattr(callback, 'csrf_exempt', False)",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r33",
+   "anchor": "CsrfViewMiddleware.process_view#if:request.method in ('GET', 'HEAD', 'OPTIONS', 'TRACE')",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r34",
+   "anchor": "CsrfViewMiddleware.process_view#if:getattr(request, '_dont_enforce_csrf_checks', False)/return",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r35",
+   "anchor": "CsrfViewMiddleware.process_view#if:'HTTP_ORIGIN' in request.META",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r36",
+   "anchor": "CsrfViewMiddleware.process_view#if:'HTTP_ORIGIN' in request.META/elif:request.is_secure()/try",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r37",
+   "anchor": "CsrfViewMiddleware.process_response#call:self._set_token",
+   "kind": "lead",
+   "line": 449
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13726,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4037,
+  "thinking_tokens": 1995,
+  "opus_cost_usd": 0.24247649999999998,
+  "total_cost_usd": 0.25169549999999996,
+  "duration_ms": 35416,
+  "duration_api_ms": 36410,
+  "num_turns": 2
+ },
+ "wall_ms": 36200,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

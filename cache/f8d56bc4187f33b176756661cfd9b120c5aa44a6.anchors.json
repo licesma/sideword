@@ -1,0 +1,127 @@
+{
+ "blob_sha": "f8d56bc4187f33b176756661cfd9b120c5aa44a6",
+ "path": "django/db/utils.py",
+ "repo": "django/django",
+ "records": 17,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:django.utils.connection",
+   "kind": "lead",
+   "line": 7
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseErrorWrapper",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseErrorWrapper.__init__",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseErrorWrapper.__exit__#for:dj_exc_type in (DataError, OperationalError, IntegrityError, InternalError, ProgrammingError, NotSupportedError, DatabaseError, InterfaceError, Error,)/if:issubclass(exc_type, db_exc_type)/if:dj_exc_type not in (DataError, IntegrityError)",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseErrorWrapper.__call__.inner",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r6",
+   "anchor": "load_backend",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r7",
+   "anchor": "load_backend#if:backend_name == 'django.db.backends.postgresql_psycopg2'",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r8",
+   "anchor": "load_backend#try/except:ImportError/import:django.db.backends",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "load_backend#try/except:ImportError/if:backend_name not in ['django.db.backends.%s' % b for b in builtin_backends]/else/raise",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r10",
+   "anchor": "ConnectionHandler.thread_critical",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r11",
+   "anchor": "ConnectionHandler.ensure_defaults",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r12",
+   "anchor": "ConnectionHandler.prepare_test_settings",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r13",
+   "anchor": "ConnectionRouter.__init__",
+   "kind": "doc",
+   "line": 217
+  },
+  {
+   "id": "r14",
+   "anchor": "ConnectionRouter._router_func._route_db#for:router in self.routers/try/except:AttributeError/pass",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r15",
+   "anchor": "ConnectionRouter.allow_relation#for:router in self.routers/try/except:AttributeError/pass",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r16",
+   "anchor": "ConnectionRouter.allow_migrate#for:router in self.routers/try/except:AttributeError/continue",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r17",
+   "anchor": "ConnectionRouter.get_migratable_models",
+   "kind": "doc",
+   "line": 293
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8431,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1863,
+  "thinking_tokens": 873,
+  "opus_cost_usd": 0.1351765,
+  "total_cost_usd": 0.1404255,
+  "duration_ms": 19195,
+  "duration_api_ms": 20358,
+  "num_turns": 2
+ },
+ "wall_ms": 20069,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,289 @@
+{
+ "blob_sha": "da9a17e60f43896ce19eb8360bb06e56b582a0cd",
+ "path": "django/views/debug.py",
+ "repo": "django/django",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DEBUG_ENGINE",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r2",
+   "anchor": "builtin_template_path",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "CallableSettingWrapper",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r4",
+   "anchor": "technical_500_response",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "get_default_exception_reporter_filter#return",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r6",
+   "anchor": "SafeExceptionReporterFilter",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r7",
+   "anchor": "SafeExceptionReporterFilter.cleanse_setting",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r8",
+   "anchor": "SafeExceptionReporterFilter.get_safe_settings",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r9",
+   "anchor": "SafeExceptionReporterFilter.get_safe_request_meta",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r10",
+   "anchor": "SafeExceptionReporterFilter.is_active",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r11",
+   "anchor": "SafeExceptionReporterFilter.get_cleansed_multivaluedict",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r12",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r13",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters#if:request is None/else/if:self.is_active(request) and sensitive_post_parameters/if:sensitive_post_parameters == '__ALL__'/for:k in cleansed",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r14",
+   "anchor": "SafeExceptionReporterFilter.get_post_parameters#if:request is None/else/if:self.is_active(request) and sensitive_post_parameters/if:sensitive_post_parameters == '__ALL__'/else/for:param in sensitive_post_parameters",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r15",
+   "anchor": "SafeExceptionReporterFilter.cleanse_special_types#try/assign:is_multivalue_dict",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r16",
+   "anchor": "SafeExceptionReporterFilter.cleanse_special_types#if:is_multivalue_dict/assign:value",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r17",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r18",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#assign:current_frame",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r19",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#while:current_frame is not None/if:current_frame.f_code.co_name == 'sensitive_variables_wrapper' and 'sensitive_variables_wrapper' in current_frame.f_locals/assign:wrapper",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r20",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/if:sensitive_variables == '__ALL__'/for:name in tb_frame.f_locals",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r21",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/if:sensitive_variables == '__ALL__'/else/for:name, value in tb_frame.f_locals.items()",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r22",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:self.is_active(request) and sensitive_variables/else/for:name, value in tb_frame.f_locals.items()",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r23",
+   "anchor": "SafeExceptionReporterFilter.get_traceback_frame_variables#if:tb_frame.f_code.co_name == 'sensitive_variables_wrapper' and 'sensitive_variables_wrapper' in tb_frame.f_locals/assign:cleansed['func_args']",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r24",
+   "anchor": "ExceptionReporter",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r25",
+   "anchor": "ExceptionReporter._get_raw_insecure_uri",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r26",
+   "anchor": "ExceptionReporter.get_traceback_data",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r27",
+   "anchor": "ExceptionReporter.get_traceback_data#for:i, frame in enumerate(frames)/if:'vars' in frame/for:k, v in frame['vars']/if:len(v) > 4096",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r28",
+   "anchor": "ExceptionReporter.get_traceback_data#if:self.request is None/else/try/except:Exception/assign:user_str",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r29",
+   "anchor": "ExceptionReporter.get_traceback_data#if:self.exc_type",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r30",
+   "anchor": "ExceptionReporter.get_traceback_html",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r31",
+   "anchor": "ExceptionReporter.get_traceback_text",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r32",
+   "anchor": "ExceptionReporter._get_lines_from_file",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r33",
+   "anchor": "ExceptionReporter._get_lines_from_file#if:isinstance(source[0], bytes)",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r34",
+   "anchor": "ExceptionReporter._get_lines_from_file#if:isinstance(source[0], bytes)/for:line in source[:2]/assign:match",
+   "kind": "lead",
+   "line": 410
+  },
+  {
+   "id": "r35",
+   "anchor": "ExceptionReporter.get_traceback_frames#assign:exceptions",
+   "kind": "lead",
+   "line": 435
+  },
+  {
+   "id": "r36",
+   "anchor": "ExceptionReporter.get_traceback_frames#while:exc_value/if:exc_value in exceptions/break",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r37",
+   "anchor": "ExceptionReporter.get_traceback_frames#if:not exceptions",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r38",
+   "anchor": "ExceptionReporter.get_traceback_frames#assign:exc_value",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r39",
+   "anchor": "ExceptionReporter.get_exception_traceback_frames#while:tb is not None/if:tb.tb_frame.f_locals.get('__traceback_hide__')",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r40",
+   "anchor": "technical_404_response",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r41",
+   "anchor": "technical_404_response#try/except:(IndexError, TypeError, KeyError)/assign:error_url",
+   "kind": "trail",
+   "line": 518
+  },
+  {
+   "id": "r42",
+   "anchor": "technical_404_response#try/else/if:not tried or (request.path == '/' and len(tried) == 1 and len(tried[0]) == 1 and",
+   "kind": "trail",
+   "line": 527
+  },
+  {
+   "id": "r43",
+   "anchor": "technical_404_response#try/else/if:not tried or (request.path == '/' and len(tried) == 1 and len(tried[0]) == 1 and",
+   "kind": "trail",
+   "line": 529
+  },
+  {
+   "id": "r44",
+   "anchor": "default_urlconf",
+   "kind": "doc",
+   "line": 575
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 15150,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5913,
+  "thinking_tokens": 3193,
+  "opus_cost_usd": 0.30361649999999996,
+  "total_cost_usd": 0.31439249999999996,
+  "duration_ms": 56013,
+  "duration_api_ms": 57167,
+  "num_turns": 2
+ },
+ "wall_ms": 57113,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

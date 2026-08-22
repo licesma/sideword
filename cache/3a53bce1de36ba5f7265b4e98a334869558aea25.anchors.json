@@ -1,0 +1,253 @@
+{
+ "blob_sha": "3a53bce1de36ba5f7265b4e98a334869558aea25",
+ "path": "django/urls/resolvers.py",
+ "repo": "django/django",
+ "records": 38,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ResolverMatch.app_names",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r3",
+   "anchor": "ResolverMatch._func_path",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r4",
+   "anchor": "ResolverMatch.__init__#if:not hasattr(func, '__name__')/else/assign:self._func_path",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r5",
+   "anchor": "get_ns_resolver#assign:pattern",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r6",
+   "anchor": "LocaleRegexDescriptor.__get__",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r7",
+   "anchor": "LocaleRegexDescriptor.__get__#assign:pattern",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r8",
+   "anchor": "CheckURLMixin.describe",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r9",
+   "anchor": "CheckURLMixin._check_pattern_startswith_slash",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r10",
+   "anchor": "CheckURLMixin._check_pattern_startswith_slash#if:not settings.APPEND_SLASH/return",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r11",
+   "anchor": "RegexPattern.match#if:match/assign:kwargs",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r12",
+   "anchor": "RegexPattern._compile",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r13",
+   "anchor": "_route_to_regex",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r14",
+   "anchor": "_route_to_regex#while:True/if:raw_converter is None/assign:raw_converter",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r15",
+   "anchor": "RoutePattern.match#if:match/assign:kwargs",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r16",
+   "anchor": "LocalePrefixPattern.regex#return",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r17",
+   "anchor": "URLPattern.callback",
+   "kind": "trail",
+   "line": 338
+  },
+  {
+   "id": "r18",
+   "anchor": "URLPattern._check_pattern_name",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r19",
+   "anchor": "URLPattern.resolve#if:match/call:kwargs.update",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r20",
+   "anchor": "URLPattern.lookup_str",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r21",
+   "anchor": "URLResolver.urlconf_name",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r22",
+   "anchor": "URLResolver._callback_strs",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r23",
+   "anchor": "URLResolver.__repr__#if:isinstance(self.urlconf_name, list) and self.urlconf_name/assign:urlconf_repr",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r24",
+   "anchor": "URLResolver._check_custom_error_handlers#for:status_code, num_parameters in [(400, 2), (403, 2), (404, 2), (500, 1)]",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r25",
+   "anchor": "URLResolver._populate#if:getattr(self._local, 'populating', False)",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r26",
+   "anchor": "URLResolver._populate#try/for:url_pattern in reversed(self.url_patterns)/if:isinstance(url_pattern, URLPattern)/else",
+   "kind": "trail",
+   "line": 502
+  },
+  {
+   "id": "r27",
+   "anchor": "URLResolver._join_route",
+   "kind": "doc",
+   "line": 563
+  },
+  {
+   "id": "r28",
+   "anchor": "URLResolver.resolve#assign:path",
+   "kind": "trail",
+   "line": 577
+  },
+  {
+   "id": "r29",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/assign:sub_match_dict",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r30",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/call:sub_match_dict.update",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r31",
+   "anchor": "URLResolver.resolve#if:match/for:pattern in self.url_patterns/try/else/if:sub_match/assign:sub_match_args",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r32",
+   "anchor": "URLResolver.url_patterns#assign:patterns",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r33",
+   "anchor": "URLResolver.resolve_error_handler#if:not callback/import:django.conf",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r34",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/assign:text_candidate_subs",
+   "kind": "lead",
+   "line": 671
+  },
+  {
+   "id": "r35",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/assign:candidate_pat",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r36",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/if:re.search('^%s%s' % (re.escape(_prefix), pattern), candidate_pat % text_candidate_subs)/assign:url",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r37",
+   "anchor": "URLResolver._reverse_with_prefix#for:possibility, pattern, defaults, converters in possibilities/for:result, params in possibility/if:re.search('^%s%s' % (re.escape(_prefix), pattern), candidate_pat % text_candidate_subs)/return",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r38",
+   "anchor": "URLResolver._reverse_with_prefix#assign:m",
+   "kind": "lead",
+   "line": 697
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 16988,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5018,
+  "thinking_tokens": 2859,
+  "opus_cost_usd": 0.2996215,
+  "total_cost_usd": 0.3119245,
+  "duration_ms": 45989,
+  "duration_api_ms": 46990,
+  "num_turns": 2
+ },
+ "wall_ms": 46908,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,79 @@
+{
+ "blob_sha": "94c50d90e84636f0491d488d4c9aa84942d6ae60",
+ "path": "xarray/core/dask_array_compat.py",
+ "repo": "pydata/xarray",
+ "records": 9,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#if:LooseVersion(dask_version)>=LooseVersion(\"2.0.0\")/else/import:numbers",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "meta_from_array",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r3",
+   "anchor": "meta_from_array#if:hasattr(x, \"_meta\") and isinstance(x, dask_array_type)",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "_validate_pad_output_shape",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r5",
+   "anchor": "_validate_pad_output_shape#if:isint(pad_width)/else/raise:ValueError",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r6",
+   "anchor": "pad#if:mode == \"mean\" and issubclass(array.dtype.type, np.integer)",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r7",
+   "anchor": "median",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r8",
+   "anchor": "median",
+   "kind": "doc",
+   "line": 154
+  },
+  {
+   "id": "r9",
+   "anchor": "nanmedian",
+   "kind": "doc",
+   "line": 190
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7185,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1172,
+  "thinking_tokens": 695,
+  "opus_cost_usd": 0.1054415,
+  "total_cost_usd": 0.1097725,
+  "duration_ms": 13035,
+  "duration_api_ms": 14315,
+  "num_turns": 2
+ },
+ "wall_ms": 14291,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,565 @@
+{
+ "blob_sha": "28ed2cfb16fa083dc69263f6cac881aa96a270f4",
+ "path": "xarray/core/indexing.py",
+ "repo": "pydata/xarray",
+ "records": 90,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "expanded_indexer",
+   "kind": "doc",
+   "line": 18
+  },
+  {
+   "id": "r2",
+   "anchor": "expanded_indexer#if:not isinstance(key, tuple)/assign:key",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "expanded_indexer#assign:found_ellipsis",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "_sanitize_slice_element#if:isinstance(x, np.timedelta64)/assign:x",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r5",
+   "anchor": "_asarray_tuplesafe",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r6",
+   "anchor": "get_indexer_nd",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r7",
+   "anchor": "convert_label_indexer",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r8",
+   "anchor": "convert_label_indexer#if:isinstance(label, slice)/if:not isinstance(indexer, slice)/raise:KeyError",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r9",
+   "anchor": "convert_label_indexer#if:isinstance(label, slice)/elif:is_dict_like(label)/if:not isinstance(index, pd.MultiIndex)/elif:len(label) == index.nlevels and not is_nested_vals/else/for:k, v in label.items()/if:isinstance(v, Sequence) and not isinstance(v, str)",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r10",
+   "anchor": "convert_label_indexer#if:isinstance(label, slice)/elif:is_dict_like(label)/if:not isinstance(index, pd.MultiIndex)/elif:len(label) == index.nlevels and not is_nested_vals/else/if:indexer.dtype.kind == \"b\" and indexer.sum() == 0",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "convert_label_indexer#if:isinstance(label, slice)/elif:is_dict_like(label)/elif:isinstance(label, tuple) and isinstance(index, pd.MultiIndex)/else/assign:label",
+   "kind": "trail",
+   "line": 170
+  },
+  {
+   "id": "r12",
+   "anchor": "get_dim_indexers",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r13",
+   "anchor": "get_dim_indexers#for:key, label in indexers.items()/if:key != dim/assign:level_indexers[dim][key]",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r14",
+   "anchor": "remap_label_indexers",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r15",
+   "anchor": "remap_label_indexers#for:dim, label in dim_indexers.items()/try/except:KeyError/if:method is not None or tolerance is not None",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r16",
+   "anchor": "slice_slice",
+   "kind": "doc",
+   "line": 278
+  },
+  {
+   "id": "r17",
+   "anchor": "slice_slice#assign:items",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r18",
+   "anchor": "_index_indexer_1d#if:isinstance(applied_indexer, slice) and applied_indexer == slice(None)/return",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r19",
+   "anchor": "ExplicitIndexer",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r20",
+   "anchor": "BasicIndexer",
+   "kind": "doc",
+   "line": 352
+  },
+  {
+   "id": "r21",
+   "anchor": "OuterIndexer",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r22",
+   "anchor": "VectorizedIndexer",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r23",
+   "anchor": "ExplicitlyIndexed",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r24",
+   "anchor": "ImplicitToExplicitIndexingAdapter",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r25",
+   "anchor": "ImplicitToExplicitIndexingAdapter.__getitem__#if:isinstance(result, ExplicitlyIndexed)/else/return",
+   "kind": "lead",
+   "line": 501
+  },
+  {
+   "id": "r26",
+   "anchor": "LazilyOuterIndexedArray",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r27",
+   "anchor": "LazilyOuterIndexedArray.__init__",
+   "kind": "doc",
+   "line": 510
+  },
+  {
+   "id": "r28",
+   "anchor": "LazilyOuterIndexedArray.__init__#if:isinstance(array, type(self)) and key is None/assign:key",
+   "kind": "lead",
+   "line": 522
+  },
+  {
+   "id": "r29",
+   "anchor": "LazilyVectorizedIndexedArray",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r30",
+   "anchor": "LazilyVectorizedIndexedArray.__init__",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r31",
+   "anchor": "LazilyVectorizedIndexedArray.__getitem__#if:all(isinstance(ind, integer_types) for ind in indexer.tuple)",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r32",
+   "anchor": "_wrap_numpy_scalars",
+   "kind": "doc",
+   "line": 632
+  },
+  {
+   "id": "r33",
+   "anchor": "as_indexable",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r34",
+   "anchor": "_outer_to_vectorized_indexer",
+   "kind": "doc",
+   "line": 710
+  },
+  {
+   "id": "r35",
+   "anchor": "_outer_to_vectorized_indexer#for:k, size in zip(key, shape)/if:isinstance(k, integer_types)/else",
+   "kind": "trail",
+   "line": 735
+  },
+  {
+   "id": "r36",
+   "anchor": "_outer_to_numpy_indexer",
+   "kind": "doc",
+   "line": 745
+  },
+  {
+   "id": "r37",
+   "anchor": "_outer_to_numpy_indexer#if:len([k for k in key.tuple if not isinstance(k, slice)]) <= 1/return",
+   "kind": "lead",
+   "line": 764
+  },
+  {
+   "id": "r38",
+   "anchor": "_combine_indexers",
+   "kind": "doc",
+   "line": 769
+  },
+  {
+   "id": "r39",
+   "anchor": "IndexingSupport.BASIC",
+   "kind": "lead",
+   "line": 800
+  },
+  {
+   "id": "r40",
+   "anchor": "IndexingSupport.OUTER",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r41",
+   "anchor": "IndexingSupport.OUTER_1VECTOR",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r42",
+   "anchor": "IndexingSupport.VECTORIZED",
+   "kind": "lead",
+   "line": 806
+  },
+  {
+   "id": "r43",
+   "anchor": "explicit_indexing_adapter",
+   "kind": "doc",
+   "line": 809
+  },
+  {
+   "id": "r44",
+   "anchor": "explicit_indexing_adapter#if:numpy_indices.tuple/assign:result",
+   "kind": "lead",
+   "line": 840
+  },
+  {
+   "id": "r45",
+   "anchor": "_decompose_slice",
+   "kind": "doc",
+   "line": 854
+  },
+  {
+   "id": "r46",
+   "anchor": "_decompose_slice#if:step > 0/return",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r47",
+   "anchor": "_decompose_slice#if:step > 0/else/assign:stop",
+   "kind": "lead",
+   "line": 865
+  },
+  {
+   "id": "r48",
+   "anchor": "_decompose_vectorized_indexer",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r49",
+   "anchor": "_decompose_vectorized_indexer#assign:indexer_elems",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r50",
+   "anchor": "_decompose_vectorized_indexer#for:k, s in zip(indexer_elems, shape)/if:isinstance(k, slice)/assign:bk_slice, np_slice",
+   "kind": "lead",
+   "line": 923
+  },
+  {
+   "id": "r51",
+   "anchor": "_decompose_vectorized_indexer#for:k, s in zip(indexer_elems, shape)/if:isinstance(k, slice)/else/assign:oind, vind",
+   "kind": "lead",
+   "line": 929
+  },
+  {
+   "id": "r52",
+   "anchor": "_decompose_vectorized_indexer#assign:backend_indexer1, np_indexer1",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r53",
+   "anchor": "_decompose_outer_indexer",
+   "kind": "doc",
+   "line": 948
+  },
+  {
+   "id": "r54",
+   "anchor": "_decompose_outer_indexer#assign:pos_indexer",
+   "kind": "lead",
+   "line": 990
+  },
+  {
+   "id": "r55",
+   "anchor": "_decompose_outer_indexer#if:indexing_support is IndexingSupport.OUTER_1VECTOR/assign:gains",
+   "kind": "lead",
+   "line": 1003
+  },
+  {
+   "id": "r56",
+   "anchor": "_decompose_outer_indexer#if:indexing_support is IndexingSupport.OUTER_1VECTOR/for:i, (k, s) in enumerate(zip(indexer_elems, shape))/if:isinstance(k, np.ndarray) and i != array_index/call:backend_indexer.append",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r57",
+   "anchor": "_decompose_outer_indexer#if:indexing_support is IndexingSupport.OUTER_1VECTOR/for:i, (k, s) in enumerate(zip(indexer_elems, shape))/if:isinstance(k, np.ndarray) and i != array_index/elif:isinstance(k, np.ndarray)/assign:pkey, ekey",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r58",
+   "anchor": "_decompose_outer_indexer#if:indexing_support is IndexingSupport.OUTER_1VECTOR/for:i, (k, s) in enumerate(zip(indexer_elems, shape))/if:isinstance(k, np.ndarray) and i != array_index/elif:isinstance(k, np.ndarray)/elif:isinstance(k, integer_types)/else",
+   "kind": "trail",
+   "line": 1024
+  },
+  {
+   "id": "r59",
+   "anchor": "_decompose_outer_indexer#if:indexing_support == IndexingSupport.OUTER/for:k, s in zip(indexer_elems, shape)/if:isinstance(k, slice)/assign:bk_slice, np_slice",
+   "kind": "lead",
+   "line": 1035
+  },
+  {
+   "id": "r60",
+   "anchor": "_decompose_outer_indexer#if:indexing_support == IndexingSupport.OUTER/for:k, s in zip(indexer_elems, shape)/if:isinstance(k, slice)/elif:isinstance(k, integer_types)/elif:isinstance(k, np.ndarray) and (np.diff(k) >= 0).all()/else/assign:oind, vind",
+   "kind": "lead",
+   "line": 1045
+  },
+  {
+   "id": "r61",
+   "anchor": "_decompose_outer_indexer#assert:indexing_support == IndexingSupport.BASIC",
+   "kind": "lead",
+   "line": 1052
+  },
+  {
+   "id": "r62",
+   "anchor": "_decompose_outer_indexer#for:k, s in zip(indexer_elems, shape)/if:isinstance(k, np.ndarray)/call:backend_indexer.append",
+   "kind": "lead",
+   "line": 1058
+  },
+  {
+   "id": "r63",
+   "anchor": "_decompose_outer_indexer#for:k, s in zip(indexer_elems, shape)/if:isinstance(k, np.ndarray)/elif:isinstance(k, integer_types)/else",
+   "kind": "trail",
+   "line": 1062
+  },
+  {
+   "id": "r64",
+   "anchor": "_arrayize_vectorized_indexer",
+   "kind": "doc",
+   "line": 1070
+  },
+  {
+   "id": "r65",
+   "anchor": "_arrayize_vectorized_indexer#for:v, size in zip(indexer.tuple, shape)/if:isinstance(v, np.ndarray)/else",
+   "kind": "trail",
+   "line": 1083
+  },
+  {
+   "id": "r66",
+   "anchor": "_dask_array_with_chunks_hint",
+   "kind": "doc",
+   "line": 1090
+  },
+  {
+   "id": "r67",
+   "anchor": "create_mask",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r68",
+   "anchor": "_posify_mask_subindexer",
+   "kind": "doc",
+   "line": 1174
+  },
+  {
+   "id": "r69",
+   "anchor": "_posify_mask_subindexer#if:not unmasked_locs.size/return",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r70",
+   "anchor": "posify_mask_indexer",
+   "kind": "doc",
+   "line": 1200
+  },
+  {
+   "id": "r71",
+   "anchor": "is_fancy_indexer",
+   "kind": "doc",
+   "line": 1226
+  },
+  {
+   "id": "r72",
+   "anchor": "NumpyIndexingAdapter",
+   "kind": "doc",
+   "line": 1239
+  },
+  {
+   "id": "r73",
+   "anchor": "NumpyIndexingAdapter.__init__#if:not isinstance(array, np.ndarray)",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r74",
+   "anchor": "NumpyIndexingAdapter._indexing_array_and_key#if:isinstance(key, OuterIndexer)/elif:isinstance(key, VectorizedIndexer)/elif:isinstance(key, BasicIndexer)/assign:key",
+   "kind": "lead",
+   "line": 1265
+  },
+  {
+   "id": "r75",
+   "anchor": "NumpyIndexingAdapter.__setitem__#try/except:ValueError/if:not array.flags.writeable and not array.flags.owndata",
+   "kind": "lead",
+   "line": 1284
+  },
+  {
+   "id": "r76",
+   "anchor": "DaskIndexingAdapter",
+   "kind": "doc",
+   "line": 1305
+  },
+  {
+   "id": "r77",
+   "anchor": "DaskIndexingAdapter.__init__",
+   "kind": "doc",
+   "line": 1310
+  },
+  {
+   "id": "r78",
+   "anchor": "DaskIndexingAdapter.__getitem__#if:not isinstance(key, VectorizedIndexer)/assign:rewritten_indexer",
+   "kind": "lead",
+   "line": 1322
+  },
+  {
+   "id": "r79",
+   "anchor": "DaskIndexingAdapter.__getitem__#if:isinstance(key, BasicIndexer)/elif:isinstance(key, VectorizedIndexer)/else/try/except:NotImplementedError/assign:value",
+   "kind": "lead",
+   "line": 1347
+  },
+  {
+   "id": "r80",
+   "anchor": "PandasIndexAdapter",
+   "kind": "doc",
+   "line": 1365
+  },
+  {
+   "id": "r81",
+   "anchor": "PandasIndexAdapter.__init__#if:dtype is None/if:isinstance(array, pd.PeriodIndex)/elif:hasattr(array, \"categories\")/assign:dtype",
+   "kind": "lead",
+   "line": 1378
+  },
+  {
+   "id": "r82",
+   "anchor": "PandasIndexAdapter.__array__#if:isinstance(array, pd.PeriodIndex)/with:suppress(AttributeError)/assign:array",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r83",
+   "anchor": "PandasIndexAdapter.__getitem__#if:isinstance(key, tuple) and len(key) == 1/assign:key",
+   "kind": "lead",
+   "line": 1412
+  },
+  {
+   "id": "r84",
+   "anchor": "PandasIndexAdapter.__getitem__#if:getattr(key, \"ndim\", 0) > 1",
+   "kind": "trail",
+   "line": 1414
+  },
+  {
+   "id": "r85",
+   "anchor": "PandasIndexAdapter.__getitem__#if:isinstance(result, pd.Index)/else/if:result is pd.NaT",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r86",
+   "anchor": "PandasIndexAdapter.__getitem__#if:isinstance(result, pd.Index)/else/if:result is pd.NaT/assign:result",
+   "kind": "lead",
+   "line": 1428
+  },
+  {
+   "id": "r87",
+   "anchor": "PandasIndexAdapter.__getitem__#if:isinstance(result, pd.Index)/else/if:result is pd.NaT/elif:isinstance(result, timedelta)/elif:isinstance(result, pd.Timestamp)/assign:result",
+   "kind": "lead",
+   "line": 1434
+  },
+  {
+   "id": "r88",
+   "anchor": "PandasIndexAdapter.__getitem__#if:isinstance(result, pd.Index)/else/assign:result",
+   "kind": "lead",
+   "line": 1440
+  },
+  {
+   "id": "r89",
+   "anchor": "PandasIndexAdapter.transpose#return",
+   "kind": "trail",
+   "line": 1445
+  },
+  {
+   "id": "r90",
+   "anchor": "PandasIndexAdapter.copy#assign:array",
+   "kind": "lead",
+   "line": 1460
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 32452,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10632,
+  "thinking_tokens": 5087,
+  "opus_cost_usd": 0.5946115000000001,
+  "total_cost_usd": 0.6194105000000001,
+  "duration_ms": 88439,
+  "duration_api_ms": 89515,
+  "num_turns": 2
+ },
+ "wall_ms": 89450,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

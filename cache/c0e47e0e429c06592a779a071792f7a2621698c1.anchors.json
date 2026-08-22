@@ -1,0 +1,283 @@
+{
+ "blob_sha": "c0e47e0e429c06592a779a071792f7a2621698c1",
+ "path": "django/utils/cache.py",
+ "repo": "django/django",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "patch_cache_control",
+   "kind": "doc",
+   "line": 37
+  },
+  {
+   "id": "r3",
+   "anchor": "patch_cache_control#for:field in cc_delim_re.split(response.headers['Cache-Control'])/if:directive == 'no-cache'/call:cc[directive].add",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "patch_cache_control#if:'max-age' in cc and 'max_age' in kwargs",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r5",
+   "anchor": "patch_cache_control#if:'private' in cc and 'public' in kwargs",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r6",
+   "anchor": "patch_cache_control#for:(k, v) in kwargs.items()/if:directive == 'no-cache'/call:cc[directive].add",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r7",
+   "anchor": "patch_cache_control#for:directive, values in cc.items()/if:isinstance(values, set)/if:True in values/assign:values",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "get_max_age",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r9",
+   "anchor": "_not_modified#if:response/for:header in ('Cache-Control', 'Content-Location', 'Date', 'ETag', 'Expires', 'Last-Modified', 'Vary')",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r10",
+   "anchor": "_not_modified#if:response/assign:new_response.cookies",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r11",
+   "anchor": "get_conditional_response#if:response and not (200 <= response.status_code < 300)",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r12",
+   "anchor": "get_conditional_response#assign:if_match_etags",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r13",
+   "anchor": "get_conditional_response#if:if_match_etags and not _if_match_passes(etag, if_match_etags)",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r14",
+   "anchor": "get_conditional_response#if:not if_match_etags and if_unmodified_since and not _if_unmodified_since_passes(last_modified, if_unmodified_since)",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r15",
+   "anchor": "get_conditional_response#if:if_none_match_etags and not _if_none_match_passes(etag, if_none_match_etags)",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r16",
+   "anchor": "get_conditional_response#if:not if_none_match_etags and if_modified_since and not _if_modified_since_passes(last_modified, if_modified_since) and request.method in ('GET', 'HEAD')",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r17",
+   "anchor": "get_conditional_response#return",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r18",
+   "anchor": "_if_match_passes",
+   "kind": "doc",
+   "line": 198
+  },
+  {
+   "id": "r19",
+   "anchor": "_if_match_passes#if:not target_etag/return",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r20",
+   "anchor": "_if_match_passes#if:not target_etag/elif:etags == ['*']/return",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r21",
+   "anchor": "_if_match_passes#if:not target_etag/elif:etags == ['*']/elif:target_etag.startswith('W/')/return",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r22",
+   "anchor": "_if_match_passes#if:not target_etag/elif:etags == ['*']/elif:target_etag.startswith('W/')/else/return",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r23",
+   "anchor": "_if_unmodified_since_passes",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r24",
+   "anchor": "_if_none_match_passes",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r25",
+   "anchor": "_if_none_match_passes#if:not target_etag/return",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r26",
+   "anchor": "_if_none_match_passes#if:not target_etag/elif:etags == ['*']/return",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r27",
+   "anchor": "_if_none_match_passes#if:not target_etag/elif:etags == ['*']/else/assign:target_etag",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r28",
+   "anchor": "_if_modified_since_passes",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r29",
+   "anchor": "patch_response_headers",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r30",
+   "anchor": "patch_response_headers#if:cache_timeout < 0/assign:cache_timeout",
+   "kind": "trail",
+   "line": 266
+  },
+  {
+   "id": "r31",
+   "anchor": "add_never_cache_headers",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r32",
+   "anchor": "patch_vary_headers",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r33",
+   "anchor": "patch_vary_headers#if:response.has_header('Vary')",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r34",
+   "anchor": "patch_vary_headers#assign:existing_headers",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r35",
+   "anchor": "has_vary_header",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r36",
+   "anchor": "_i18n_cache_key_suffix",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r37",
+   "anchor": "_i18n_cache_key_suffix#if:settings.USE_I18N/assign:cache_key",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r38",
+   "anchor": "_generate_cache_key",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r39",
+   "anchor": "_generate_cache_header_key",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r40",
+   "anchor": "get_cache_key",
+   "kind": "doc",
+   "line": 349
+  },
+  {
+   "id": "r41",
+   "anchor": "learn_cache_key",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r42",
+   "anchor": "learn_cache_key#if:response.has_header('Vary')/assign:headerlist",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r43",
+   "anchor": "learn_cache_key#if:response.has_header('Vary')/else/call:cache.set",
+   "kind": "lead",
+   "line": 408
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12604,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4619,
+  "thinking_tokens": 2375,
+  "opus_cost_usd": 0.24580649999999998,
+  "total_cost_usd": 0.2546585,
+  "duration_ms": 41070,
+  "duration_api_ms": 42126,
+  "num_turns": 2
+ },
+ "wall_ms": 41900,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

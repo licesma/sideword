@@ -1,0 +1,721 @@
+{
+ "blob_sha": "66f78e70de0538588a9f4e93998cd56d8f2e3f60",
+ "path": "django/contrib/gis/geos/geometry.py",
+ "repo": "django/django",
+ "records": 116,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "GEOSGeometry",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "GEOSGeometry.has_cs",
+   "kind": "trail",
+   "line": 36
+  },
+  {
+   "id": "r4",
+   "anchor": "GEOSGeometry.__init__",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/if:wkt_m/if:wkt_m.group('srid')",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/if:wkt_m/elif:hex_regex.match(geo_input)/assign:g",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r7",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/if:wkt_m/elif:json_regex.match(geo_input)/assign:g",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r8",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/elif:isinstance(geo_input, GEOM_PTR)/assign:g",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r9",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/elif:isinstance(geo_input, six.memoryview)/assign:g",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r10",
+   "anchor": "GEOSGeometry.__init__#if:isinstance(geo_input, six.string_types)/else/raise:TypeError",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r11",
+   "anchor": "GEOSGeometry.__init__#if:g/assign:self.ptr",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r12",
+   "anchor": "GEOSGeometry.__init__#call:self._post_init",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r13",
+   "anchor": "GEOSGeometry._post_init",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r14",
+   "anchor": "GEOSGeometry._post_init#if:srid and isinstance(srid, int)",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r15",
+   "anchor": "GEOSGeometry._post_init#if:GEOSGeometry._GEOS_CLASSES is None",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r16",
+   "anchor": "GEOSGeometry._post_init#if:GEOSGeometry._GEOS_CLASSES is None/import:.linestring",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r17",
+   "anchor": "GEOSGeometry._post_init#call:self._set_cs",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r18",
+   "anchor": "GEOSGeometry.__del__",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r19",
+   "anchor": "GEOSGeometry.__del__#try/except:(AttributeError, TypeError)/pass",
+   "kind": "trail",
+   "line": 129
+  },
+  {
+   "id": "r20",
+   "anchor": "GEOSGeometry.__copy__",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r21",
+   "anchor": "GEOSGeometry.__deepcopy__",
+   "kind": "doc",
+   "line": 138
+  },
+  {
+   "id": "r22",
+   "anchor": "GEOSGeometry.__str__",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r23",
+   "anchor": "GEOSGeometry.__repr__",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r24",
+   "anchor": "GEOSGeometry.__getstate__",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r25",
+   "anchor": "GEOSGeometry.__getstate__#return",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r26",
+   "anchor": "GEOSGeometry.__setstate__#assign:wkb, srid",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r27",
+   "anchor": "GEOSGeometry.__eq__",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r28",
+   "anchor": "GEOSGeometry.__eq__",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r29",
+   "anchor": "GEOSGeometry.__ne__",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r30",
+   "anchor": "GEOSGeometry.__or__",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r31",
+   "anchor": "GEOSGeometry.__or__",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r32",
+   "anchor": "GEOSGeometry.__and__",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r33",
+   "anchor": "GEOSGeometry.__and__",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r34",
+   "anchor": "GEOSGeometry.__sub__",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r35",
+   "anchor": "GEOSGeometry.__sub__",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r36",
+   "anchor": "GEOSGeometry.__xor__",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r37",
+   "anchor": "GEOSGeometry.__xor__",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r38",
+   "anchor": "GEOSGeometry._set_cs",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r39",
+   "anchor": "GEOSGeometry._set_cs",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r40",
+   "anchor": "GEOSGeometry.coord_seq",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r41",
+   "anchor": "GEOSGeometry.geom_type",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r42",
+   "anchor": "GEOSGeometry.geom_type",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r43",
+   "anchor": "GEOSGeometry.geom_typeid",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r44",
+   "anchor": "GEOSGeometry.num_geom",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r45",
+   "anchor": "GEOSGeometry.num_coords",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r46",
+   "anchor": "GEOSGeometry.num_points",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r47",
+   "anchor": "GEOSGeometry.dims",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r48",
+   "anchor": "GEOSGeometry.normalize",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r49",
+   "anchor": "GEOSGeometry.empty",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r50",
+   "anchor": "GEOSGeometry.empty",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r51",
+   "anchor": "GEOSGeometry.hasz",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r52",
+   "anchor": "GEOSGeometry.ring",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r53",
+   "anchor": "GEOSGeometry.simple",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r54",
+   "anchor": "GEOSGeometry.valid",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r55",
+   "anchor": "GEOSGeometry.valid_reason",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r56",
+   "anchor": "GEOSGeometry.contains",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r57",
+   "anchor": "GEOSGeometry.contains",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r58",
+   "anchor": "GEOSGeometry.covers",
+   "kind": "doc",
+   "line": 303
+  },
+  {
+   "id": "r59",
+   "anchor": "GEOSGeometry.crosses",
+   "kind": "doc",
+   "line": 311
+  },
+  {
+   "id": "r60",
+   "anchor": "GEOSGeometry.disjoint",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r61",
+   "anchor": "GEOSGeometry.equals",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r62",
+   "anchor": "GEOSGeometry.equals_exact",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r63",
+   "anchor": "GEOSGeometry.intersects",
+   "kind": "doc",
+   "line": 340
+  },
+  {
+   "id": "r64",
+   "anchor": "GEOSGeometry.overlaps",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r65",
+   "anchor": "GEOSGeometry.relate_pattern",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r66",
+   "anchor": "GEOSGeometry.touches",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r67",
+   "anchor": "GEOSGeometry.within",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r68",
+   "anchor": "GEOSGeometry.srid",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r69",
+   "anchor": "GEOSGeometry.srid",
+   "kind": "doc",
+   "line": 376
+  },
+  {
+   "id": "r70",
+   "anchor": "GEOSGeometry.srid",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r71",
+   "anchor": "GEOSGeometry.ewkt",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r72",
+   "anchor": "GEOSGeometry.ewkt",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r73",
+   "anchor": "GEOSGeometry.wkt",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r74",
+   "anchor": "GEOSGeometry.hex",
+   "kind": "doc",
+   "line": 418
+  },
+  {
+   "id": "r75",
+   "anchor": "GEOSGeometry.hex#return",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r76",
+   "anchor": "GEOSGeometry.hexewkb",
+   "kind": "doc",
+   "line": 429
+  },
+  {
+   "id": "r77",
+   "anchor": "GEOSGeometry.json",
+   "kind": "doc",
+   "line": 438
+  },
+  {
+   "id": "r78",
+   "anchor": "GEOSGeometry.wkb",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r79",
+   "anchor": "GEOSGeometry.ewkb",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r80",
+   "anchor": "GEOSGeometry.kml",
+   "kind": "doc",
+   "line": 464
+  },
+  {
+   "id": "r81",
+   "anchor": "GEOSGeometry.prepared",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r82",
+   "anchor": "GEOSGeometry.ogr",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r83",
+   "anchor": "GEOSGeometry.ogr",
+   "kind": "doc",
+   "line": 479
+  },
+  {
+   "id": "r84",
+   "anchor": "GEOSGeometry.srs",
+   "kind": "doc",
+   "line": 489
+  },
+  {
+   "id": "r85",
+   "anchor": "GEOSGeometry.crs",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r86",
+   "anchor": "GEOSGeometry.transform",
+   "kind": "doc",
+   "line": 503
+  },
+  {
+   "id": "r87",
+   "anchor": "GEOSGeometry.transform#if:ct == srid/if:clone",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r88",
+   "anchor": "GEOSGeometry.transform#if:isinstance(ct, gdal.CoordTransform)/assign:srid",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r89",
+   "anchor": "GEOSGeometry.transform#assign:g",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r90",
+   "anchor": "GEOSGeometry.transform#assign:ptr",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r91",
+   "anchor": "GEOSGeometry.transform#if:clone/return",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r92",
+   "anchor": "GEOSGeometry.transform#if:ptr/call:capi.destroy_geom",
+   "kind": "lead",
+   "line": 539
+  },
+  {
+   "id": "r93",
+   "anchor": "GEOSGeometry._topology",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r94",
+   "anchor": "GEOSGeometry._topology",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r95",
+   "anchor": "GEOSGeometry.boundary",
+   "kind": "doc",
+   "line": 551
+  },
+  {
+   "id": "r96",
+   "anchor": "GEOSGeometry.buffer",
+   "kind": "doc",
+   "line": 555
+  },
+  {
+   "id": "r97",
+   "anchor": "GEOSGeometry.centroid",
+   "kind": "doc",
+   "line": 566
+  },
+  {
+   "id": "r98",
+   "anchor": "GEOSGeometry.convex_hull",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r99",
+   "anchor": "GEOSGeometry.difference",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r100",
+   "anchor": "GEOSGeometry.envelope",
+   "kind": "doc",
+   "line": 590
+  },
+  {
+   "id": "r101",
+   "anchor": "GEOSGeometry.intersection",
+   "kind": "doc",
+   "line": 594
+  },
+  {
+   "id": "r102",
+   "anchor": "GEOSGeometry.point_on_surface",
+   "kind": "doc",
+   "line": 599
+  },
+  {
+   "id": "r103",
+   "anchor": "GEOSGeometry.relate",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r104",
+   "anchor": "GEOSGeometry.simplify",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r105",
+   "anchor": "GEOSGeometry.sym_difference",
+   "kind": "doc",
+   "line": 624
+  },
+  {
+   "id": "r106",
+   "anchor": "GEOSGeometry.unary_union",
+   "kind": "doc",
+   "line": 632
+  },
+  {
+   "id": "r107",
+   "anchor": "GEOSGeometry.union",
+   "kind": "doc",
+   "line": 636
+  },
+  {
+   "id": "r108",
+   "anchor": "GEOSGeometry.area",
+   "kind": "lead",
+   "line": 642
+  },
+  {
+   "id": "r109",
+   "anchor": "GEOSGeometry.area",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r110",
+   "anchor": "GEOSGeometry.distance",
+   "kind": "doc",
+   "line": 646
+  },
+  {
+   "id": "r111",
+   "anchor": "GEOSGeometry.extent",
+   "kind": "doc",
+   "line": 657
+  },
+  {
+   "id": "r112",
+   "anchor": "GEOSGeometry.length",
+   "kind": "doc",
+   "line": 673
+  },
+  {
+   "id": "r113",
+   "anchor": "GEOSGeometry.clone",
+   "kind": "doc",
+   "line": 680
+  },
+  {
+   "id": "r114",
+   "anchor": "LinearGeometryMixin",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r115",
+   "anchor": "LinearGeometryMixin.merged",
+   "kind": "doc",
+   "line": 708
+  },
+  {
+   "id": "r116",
+   "anchor": "LinearGeometryMixin.closed",
+   "kind": "doc",
+   "line": 715
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19747,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7617,
+  "thinking_tokens": 2662,
+  "opus_cost_usd": 0.3921865,
+  "total_cost_usd": 0.4068695,
+  "duration_ms": 64805,
+  "duration_api_ms": 66075,
+  "num_turns": 2
+ },
+ "wall_ms": 65617,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

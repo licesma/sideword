@@ -1,0 +1,829 @@
+{
+ "blob_sha": "097bc775227cb7c7021ec905a14c5425ee04e74b",
+ "path": "astropy/units/core.py",
+ "repo": "astropy/astropy",
+ "records": 134,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "_flatten_units_collection",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "_normalize_equivalencies",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r5",
+   "anchor": "_UnitRegistry",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r6",
+   "anchor": "_UnitRegistry.__init__#if:isinstance(init, _UnitRegistry)/assign:self._equivalencies",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r7",
+   "anchor": "_UnitRegistry.__init__#if:isinstance(init, _UnitRegistry)/assign:self._by_physical_type",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "_UnitRegistry.set_enabled_units",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r9",
+   "anchor": "_UnitRegistry.add_enabled_units",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r10",
+   "anchor": "_UnitRegistry.add_enabled_units#for:unit in units/for:st in unit._names",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r11",
+   "anchor": "_UnitRegistry.get_units_with_physical_type",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r12",
+   "anchor": "_UnitRegistry.set_enabled_equivalencies",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r13",
+   "anchor": "_UnitRegistry.add_enabled_equivalencies",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r14",
+   "anchor": "_UnitRegistry.add_enabled_equivalencies#assign:equivalencies",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r15",
+   "anchor": "set_enabled_units",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r16",
+   "anchor": "set_enabled_units#assign:context",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r17",
+   "anchor": "set_enabled_units#call:get_current_unit_registry().set_enabled_units",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r18",
+   "anchor": "add_enabled_units",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r19",
+   "anchor": "add_enabled_units#assign:context",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r20",
+   "anchor": "add_enabled_units#call:get_current_unit_registry().add_enabled_units",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r21",
+   "anchor": "set_enabled_equivalencies",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r22",
+   "anchor": "set_enabled_equivalencies#assign:context",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r23",
+   "anchor": "set_enabled_equivalencies#call:get_current_unit_registry().set_enabled_equivalencies",
+   "kind": "lead",
+   "line": 422
+  },
+  {
+   "id": "r24",
+   "anchor": "add_enabled_equivalencies",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r25",
+   "anchor": "add_enabled_equivalencies#assign:context",
+   "kind": "lead",
+   "line": 444
+  },
+  {
+   "id": "r26",
+   "anchor": "add_enabled_equivalencies#call:get_current_unit_registry().add_enabled_equivalencies",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r27",
+   "anchor": "UnitsError",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r28",
+   "anchor": "UnitScaleError",
+   "kind": "doc",
+   "line": 456
+  },
+  {
+   "id": "r29",
+   "anchor": "UnitConversionError",
+   "kind": "doc",
+   "line": 464
+  },
+  {
+   "id": "r30",
+   "anchor": "UnitTypeError",
+   "kind": "doc",
+   "line": 471
+  },
+  {
+   "id": "r31",
+   "anchor": "UnitsWarning",
+   "kind": "doc",
+   "line": 480
+  },
+  {
+   "id": "r32",
+   "anchor": "UnitBase",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r33",
+   "anchor": "UnitBase.__array_priority__",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r34",
+   "anchor": "UnitBase.__deepcopy__#return",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r35",
+   "anchor": "UnitBase._repr_latex_",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r36",
+   "anchor": "UnitBase.__bytes__",
+   "kind": "doc",
+   "line": 516
+  },
+  {
+   "id": "r37",
+   "anchor": "UnitBase.__str__",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r38",
+   "anchor": "UnitBase._get_physical_type_id",
+   "kind": "doc",
+   "line": 529
+  },
+  {
+   "id": "r39",
+   "anchor": "UnitBase._get_physical_type_id#assign:r",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r40",
+   "anchor": "UnitBase.names",
+   "kind": "doc",
+   "line": 544
+  },
+  {
+   "id": "r41",
+   "anchor": "UnitBase.name",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r42",
+   "anchor": "UnitBase.aliases",
+   "kind": "doc",
+   "line": 562
+  },
+  {
+   "id": "r43",
+   "anchor": "UnitBase.scale",
+   "kind": "doc",
+   "line": 571
+  },
+  {
+   "id": "r44",
+   "anchor": "UnitBase.bases",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r45",
+   "anchor": "UnitBase.powers",
+   "kind": "doc",
+   "line": 585
+  },
+  {
+   "id": "r46",
+   "anchor": "UnitBase.to_string",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r47",
+   "anchor": "UnitBase.__format__",
+   "kind": "doc",
+   "line": 605
+  },
+  {
+   "id": "r48",
+   "anchor": "UnitBase._normalize_equivalencies",
+   "kind": "doc",
+   "line": 613
+  },
+  {
+   "id": "r49",
+   "anchor": "UnitBase.__div__#try/import:.quantity",
+   "kind": "lead",
+   "line": 653
+  },
+  {
+   "id": "r50",
+   "anchor": "UnitBase.__rdiv__#try/import:.quantity",
+   "kind": "lead",
+   "line": 666
+  },
+  {
+   "id": "r51",
+   "anchor": "UnitBase.__mul__#try",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r52",
+   "anchor": "UnitBase.__rmul__#try",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r53",
+   "anchor": "UnitBase.__hash__#return",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r54",
+   "anchor": "UnitBase.__eq__#if:not isinstance(other, UnitBase)",
+   "kind": "lead",
+   "line": 732
+  },
+  {
+   "id": "r55",
+   "anchor": "UnitBase.is_equivalent",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r56",
+   "anchor": "UnitBase._is_equivalent",
+   "kind": "doc",
+   "line": 791
+  },
+  {
+   "id": "r57",
+   "anchor": "UnitBase._is_equivalent#if:self._get_physical_type_id() == other._get_physical_type_id()/elif:len(equivalencies)/for:a, b, forward, backward in equivalencies/if:b is None/try",
+   "kind": "lead",
+   "line": 810
+  },
+  {
+   "id": "r58",
+   "anchor": "UnitBase._apply_equivalencies",
+   "kind": "doc",
+   "line": 822
+  },
+  {
+   "id": "r59",
+   "anchor": "UnitBase._get_converter#try",
+   "kind": "lead",
+   "line": 875
+  },
+  {
+   "id": "r60",
+   "anchor": "UnitBase._get_converter#try",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r61",
+   "anchor": "UnitBase._get_converter#try/except:UnitsError/if:hasattr(other, 'equivalencies')",
+   "kind": "lead",
+   "line": 890
+  },
+  {
+   "id": "r62",
+   "anchor": "UnitBase._to",
+   "kind": "doc",
+   "line": 901
+  },
+  {
+   "id": "r63",
+   "anchor": "UnitBase._to#if:self is other",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r64",
+   "anchor": "UnitBase._to#if:isinstance(other, UnitBase)",
+   "kind": "lead",
+   "line": 918
+  },
+  {
+   "id": "r65",
+   "anchor": "UnitBase._to#if:isinstance(other, UnitBase)/if:self_decomposed.powers == other_decomposed.powers and all(self_base is other_base for (self_base, other_base) in zip(self_decomposed.bases, other_decomposed.bases))",
+   "kind": "lead",
+   "line": 926
+  },
+  {
+   "id": "r66",
+   "anchor": "UnitBase.to",
+   "kind": "doc",
+   "line": 934
+  },
+  {
+   "id": "r67",
+   "anchor": "UnitBase.in_units",
+   "kind": "doc",
+   "line": 967
+  },
+  {
+   "id": "r68",
+   "anchor": "UnitBase.decompose",
+   "kind": "doc",
+   "line": 974
+  },
+  {
+   "id": "r69",
+   "anchor": "UnitBase._compose.is_final_result#for:base in unit.bases",
+   "kind": "lead",
+   "line": 999
+  },
+  {
+   "id": "r70",
+   "anchor": "UnitBase._compose#if:depth >= max_depth",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r71",
+   "anchor": "UnitBase._compose#assign:units",
+   "kind": "lead",
+   "line": 1020
+  },
+  {
+   "id": "r72",
+   "anchor": "UnitBase._compose#assign:partial_results",
+   "kind": "lead",
+   "line": 1034
+  },
+  {
+   "id": "r73",
+   "anchor": "UnitBase._compose#if:len(unit.bases) == 0",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r74",
+   "anchor": "UnitBase._compose#for:tunit in namespace/for:u in units/if:len(tunit_decomposed.bases) == 1",
+   "kind": "lead",
+   "line": 1050
+  },
+  {
+   "id": "r75",
+   "anchor": "UnitBase._compose#for:final_result in final_results",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r76",
+   "anchor": "UnitBase._compose#assign:results",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r77",
+   "anchor": "UnitBase.compose",
+   "kind": "doc",
+   "line": 1117
+  },
+  {
+   "id": "r78",
+   "anchor": "UnitBase.compose#if:include_prefix_units is None",
+   "kind": "lead",
+   "line": 1157
+  },
+  {
+   "id": "r79",
+   "anchor": "UnitBase.compose#assign:equivalencies",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r80",
+   "anchor": "UnitBase.compose.has_bases_in_common",
+   "kind": "lead",
+   "line": 1168
+  },
+  {
+   "id": "r81",
+   "anchor": "UnitBase.compose.sort_results#assign:results",
+   "kind": "lead",
+   "line": 1228
+  },
+  {
+   "id": "r82",
+   "anchor": "UnitBase.to_system",
+   "kind": "doc",
+   "line": 1247
+  },
+  {
+   "id": "r83",
+   "anchor": "UnitBase.to_system.score#assign:compose_bases",
+   "kind": "lead",
+   "line": 1276
+  },
+  {
+   "id": "r84",
+   "anchor": "UnitBase.si",
+   "kind": "doc",
+   "line": 1293
+  },
+  {
+   "id": "r85",
+   "anchor": "UnitBase.cgs",
+   "kind": "doc",
+   "line": 1302
+  },
+  {
+   "id": "r86",
+   "anchor": "UnitBase.physical_type",
+   "kind": "doc",
+   "line": 1310
+  },
+  {
+   "id": "r87",
+   "anchor": "UnitBase._get_units_with_same_physical_type",
+   "kind": "doc",
+   "line": 1324
+  },
+  {
+   "id": "r88",
+   "anchor": "UnitBase.EquivalentUnitsList",
+   "kind": "doc",
+   "line": 1358
+  },
+  {
+   "id": "r89",
+   "anchor": "UnitBase.find_equivalent_units",
+   "kind": "doc",
+   "line": 1390
+  },
+  {
+   "id": "r90",
+   "anchor": "UnitBase.is_unity",
+   "kind": "doc",
+   "line": 1426
+  },
+  {
+   "id": "r91",
+   "anchor": "NamedUnit",
+   "kind": "doc",
+   "line": 1433
+  },
+  {
+   "id": "r92",
+   "anchor": "NamedUnit._generate_doc",
+   "kind": "doc",
+   "line": 1511
+  },
+  {
+   "id": "r93",
+   "anchor": "NamedUnit.get_format_name",
+   "kind": "doc",
+   "line": 1523
+  },
+  {
+   "id": "r94",
+   "anchor": "NamedUnit.names",
+   "kind": "doc",
+   "line": 1544
+  },
+  {
+   "id": "r95",
+   "anchor": "NamedUnit.name",
+   "kind": "doc",
+   "line": 1551
+  },
+  {
+   "id": "r96",
+   "anchor": "NamedUnit.aliases",
+   "kind": "doc",
+   "line": 1558
+  },
+  {
+   "id": "r97",
+   "anchor": "NamedUnit.short_names",
+   "kind": "doc",
+   "line": 1565
+  },
+  {
+   "id": "r98",
+   "anchor": "NamedUnit.long_names",
+   "kind": "doc",
+   "line": 1572
+  },
+  {
+   "id": "r99",
+   "anchor": "NamedUnit._inject",
+   "kind": "doc",
+   "line": 1578
+  },
+  {
+   "id": "r100",
+   "anchor": "NamedUnit._inject#for:name in self._names",
+   "kind": "lead",
+   "line": 1588
+  },
+  {
+   "id": "r101",
+   "anchor": "_recreate_irreducible_unit",
+   "kind": "doc",
+   "line": 1599
+  },
+  {
+   "id": "r102",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/return",
+   "kind": "lead",
+   "line": 1607
+  },
+  {
+   "id": "r103",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/else/assign:unit",
+   "kind": "lead",
+   "line": 1610
+  },
+  {
+   "id": "r104",
+   "anchor": "_recreate_irreducible_unit#if:names[0] in registry/else/if:registered/call:get_current_unit_registry().add_enabled_units",
+   "kind": "lead",
+   "line": 1614
+  },
+  {
+   "id": "r105",
+   "anchor": "IrreducibleUnit",
+   "kind": "doc",
+   "line": 1619
+  },
+  {
+   "id": "r106",
+   "anchor": "IrreducibleUnit.__reduce__#assign:registry",
+   "kind": "lead",
+   "line": 1635
+  },
+  {
+   "id": "r107",
+   "anchor": "IrreducibleUnit.represents",
+   "kind": "doc",
+   "line": 1641
+  },
+  {
+   "id": "r108",
+   "anchor": "UnrecognizedUnit",
+   "kind": "doc",
+   "line": 1669
+  },
+  {
+   "id": "r109",
+   "anchor": "UnrecognizedUnit.__reduce__",
+   "kind": "lead",
+   "line": 1683
+  },
+  {
+   "id": "r110",
+   "anchor": "_UnitMetaClass",
+   "kind": "doc",
+   "line": 1730
+  },
+  {
+   "id": "r111",
+   "anchor": "_UnitMetaClass.__call__#if:hasattr(s, '_get_physical_type_id')",
+   "kind": "lead",
+   "line": 1742
+  },
+  {
+   "id": "r112",
+   "anchor": "_UnitMetaClass.__call__#import:.quantity",
+   "kind": "lead",
+   "line": 1746
+  },
+  {
+   "id": "r113",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(represents, Quantity)/else/assign:represents",
+   "kind": "lead",
+   "line": 1753
+  },
+  {
+   "id": "r114",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(represents, UnitBase)",
+   "kind": "lead",
+   "line": 1767
+  },
+  {
+   "id": "r115",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(represents, UnitBase)/return",
+   "kind": "lead",
+   "line": 1770
+  },
+  {
+   "id": "r116",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r117",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)/elif:isinstance(s, (bytes, str))/if:len(s.strip()) == 0/return",
+   "kind": "lead",
+   "line": 1780
+  },
+  {
+   "id": "r118",
+   "anchor": "_UnitMetaClass.__call__#if:isinstance(s, UnitBase)/elif:isinstance(s, (bytes, str))/try/except:Exception/if:parse_strict == 'silent'/else/if:f is not unit_format.Generic",
+   "kind": "lead",
+   "line": 1797
+  },
+  {
+   "id": "r119",
+   "anchor": "Unit",
+   "kind": "doc",
+   "line": 1822
+  },
+  {
+   "id": "r120",
+   "anchor": "Unit.represents",
+   "kind": "doc",
+   "line": 1916
+  },
+  {
+   "id": "r121",
+   "anchor": "Unit._from_physical_type_id#assign:bases",
+   "kind": "lead",
+   "line": 1932
+  },
+  {
+   "id": "r122",
+   "anchor": "PrefixUnit",
+   "kind": "doc",
+   "line": 1943
+  },
+  {
+   "id": "r123",
+   "anchor": "CompositeUnit",
+   "kind": "doc",
+   "line": 1953
+  },
+  {
+   "id": "r124",
+   "anchor": "CompositeUnit.__init__#if:_error_check",
+   "kind": "lead",
+   "line": 1983
+  },
+  {
+   "id": "r125",
+   "anchor": "CompositeUnit.scale",
+   "kind": "doc",
+   "line": 2017
+  },
+  {
+   "id": "r126",
+   "anchor": "CompositeUnit.bases",
+   "kind": "doc",
+   "line": 2024
+  },
+  {
+   "id": "r127",
+   "anchor": "CompositeUnit.powers",
+   "kind": "doc",
+   "line": 2031
+  },
+  {
+   "id": "r128",
+   "anchor": "CompositeUnit.__copy__",
+   "kind": "doc",
+   "line": 2078
+  },
+  {
+   "id": "r129",
+   "anchor": "_add_prefixes",
+   "kind": "doc",
+   "line": 2142
+  },
+  {
+   "id": "r130",
+   "anchor": "_add_prefixes#for:short, full, factor in prefixes/for:prefix in short/for:alias in u.short_names/if:prefix == 'u'",
+   "kind": "lead",
+   "line": 2180
+  },
+  {
+   "id": "r131",
+   "anchor": "def_unit",
+   "kind": "doc",
+   "line": 2200
+  },
+  {
+   "id": "r132",
+   "anchor": "_condition_arg",
+   "kind": "doc",
+   "line": 2271
+  },
+  {
+   "id": "r133",
+   "anchor": "one",
+   "kind": "lead",
+   "line": 2306
+  },
+  {
+   "id": "r134",
+   "anchor": "<module>#assign:unit_format.fits.UnitScaleError",
+   "kind": "lead",
+   "line": 2310
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 44770,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12037,
+  "thinking_tokens": 6098,
+  "opus_cost_usd": 0.7529165,
+  "total_cost_usd": 0.7885655,
+  "duration_ms": 103048,
+  "duration_api_ms": 105259,
+  "num_turns": 2
+ },
+ "wall_ms": 104044,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

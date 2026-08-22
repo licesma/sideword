@@ -1,0 +1,79 @@
+{
+ "blob_sha": "473fde0de06e13c3862634a955c6feabee19c691",
+ "path": "django/core/management/commands/runserver.py",
+ "repo": "django/django",
+ "records": 9,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.requires_system_checks",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.execute#if:options['no_color']/assign:os.environ[\"DJANGO_COLORS\"]",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.get_handler",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.run",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.inner_run#call:autoreload.raise_last_exception",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.inner_run#assign:shutdown_message",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.inner_run#call:self.check_migrations",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.inner_run#try/except:OSError/assign:ERRORS",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.inner_run#try/except:OSError/call:os._exit",
+   "kind": "lead",
+   "line": 160
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6530,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 826,
+  "thinking_tokens": 359,
+  "opus_cost_usd": 0.0902415,
+  "total_cost_usd": 0.0940425,
+  "duration_ms": 8741,
+  "duration_api_ms": 10278,
+  "num_turns": 2
+ },
+ "wall_ms": 9762,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

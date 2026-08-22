@@ -1,0 +1,541 @@
+{
+ "blob_sha": "babedfec06d8ceef69635383faa206a63ff05c12",
+ "path": "astropy/utils/masked/function_helpers.py",
+ "repo": "astropy/astropy",
+ "records": 86,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "__all__",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r4",
+   "anchor": "MASKED_SAFE_FUNCTIONS",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "APPLY_TO_BOTH_FUNCTIONS",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r6",
+   "anchor": "DISPATCHED_FUNCTIONS",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "UNSUPPORTED_FUNCTIONS",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.may_share_memory",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.array_repr",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r11",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.linspace",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r12",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.isclose",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r13",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.atleast_1d",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r14",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.average",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r15",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.diag_indices_from",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r16",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.column_stack",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r17",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.iscomplexobj",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r18",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.fix",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r19",
+   "anchor": "<module>#assign:MASKED_SAFE_FUNCTIONS/item:np.angle",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r20",
+   "anchor": "IGNORED_FUNCTIONS#item:np.save",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r21",
+   "anchor": "IGNORED_FUNCTIONS#item:np.poly",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r22",
+   "anchor": "<module>#assign:IGNORED_FUNCTIONS/item:np.cov",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r23",
+   "anchor": "<module>#assign:IGNORED_FUNCTIONS/item:np.correlate",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r24",
+   "anchor": "<module>#assign:IGNORED_FUNCTIONS/item:np.histogram",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r25",
+   "anchor": "<module>#assign:IGNORED_FUNCTIONS/item:np.dot",
+   "kind": "todo",
+   "line": 131
+  },
+  {
+   "id": "r26",
+   "anchor": "<module>#assign:IGNORED_FUNCTIONS",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r27",
+   "anchor": "<module>#if:NUMPY_LT_1_23/assign:IGNORED_FUNCTIONS/item:np.asscalar",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r28",
+   "anchor": "<module>#assign:UNSUPPORTED_FUNCTIONS",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r29",
+   "anchor": "<module>#assign:UNSUPPORTED_FUNCTIONS",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r30",
+   "anchor": "_get_data_and_masks",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r31",
+   "anchor": "datetime_as_string#decorator:dispatched_function",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r32",
+   "anchor": "masked_a_helper#decorator:apply_to_both",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r33",
+   "anchor": "broadcast_to",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r34",
+   "anchor": "empty_like",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r35",
+   "anchor": "zeros_like",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r36",
+   "anchor": "ones_like",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r37",
+   "anchor": "full_like",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r38",
+   "anchor": "put",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r39",
+   "anchor": "put#call:np.put",
+   "kind": "lead",
+   "line": 327
+  },
+  {
+   "id": "r40",
+   "anchor": "putmask",
+   "kind": "doc",
+   "line": 331
+  },
+  {
+   "id": "r41",
+   "anchor": "place",
+   "kind": "doc",
+   "line": 349
+  },
+  {
+   "id": "r42",
+   "anchor": "copyto",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r43",
+   "anchor": "bincount",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r44",
+   "anchor": "bincount#if:isinstance(x, Masked) and x.ndim <= 1/if:weights is not None and weights.ndim == x.ndim",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r45",
+   "anchor": "sort_complex#assign:b",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r46",
+   "anchor": "block#import:astropy.utils.masked",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r47",
+   "anchor": "broadcast_arrays",
+   "kind": "doc",
+   "line": 502
+  },
+  {
+   "id": "r48",
+   "anchor": "insert",
+   "kind": "doc",
+   "line": 531
+  },
+  {
+   "id": "r49",
+   "anchor": "count_nonzero",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r50",
+   "anchor": "_masked_median_1d#assign:unmasked",
+   "kind": "todo",
+   "line": 558
+  },
+  {
+   "id": "r51",
+   "anchor": "_masked_median#if:axis is None or a.ndim == 1",
+   "kind": "lead",
+   "line": 567
+  },
+  {
+   "id": "r52",
+   "anchor": "_masked_quantile_1d",
+   "kind": "doc",
+   "line": 599
+  },
+  {
+   "id": "r53",
+   "anchor": "_masked_quantile#if:axis is None or a.ndim == 1",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r54",
+   "anchor": "_masked_quantile#if:axis is None or a.ndim == 1/else/if:q.ndim != 0",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r55",
+   "anchor": "choose",
+   "kind": "doc",
+   "line": 695
+  },
+  {
+   "id": "r56",
+   "anchor": "choose#if:a_mask is not None and mode == \"raise\"/assign:a_data",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r57",
+   "anchor": "select",
+   "kind": "doc",
+   "line": 730
+  },
+  {
+   "id": "r58",
+   "anchor": "piecewise",
+   "kind": "doc",
+   "line": 752
+  },
+  {
+   "id": "r59",
+   "anchor": "piecewise#assign:n2",
+   "kind": "lead",
+   "line": 761
+  },
+  {
+   "id": "r60",
+   "anchor": "piecewise#if:np.isscalar(condlist) or (not isinstance(condlist[0], (list, np.ndarray)) and x.ndim != 0)",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r61",
+   "anchor": "piecewise#if:n == n2 - 1",
+   "kind": "trail",
+   "line": 771
+  },
+  {
+   "id": "r62",
+   "anchor": "piecewise#assign:y",
+   "kind": "lead",
+   "line": 781
+  },
+  {
+   "id": "r63",
+   "anchor": "interp",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r64",
+   "anchor": "interp#if:isinstance(xp, Masked) or isinstance(fp, Masked)/if:xp.ndim == fp.ndim == 1/assign:m",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r65",
+   "anchor": "lexsort",
+   "kind": "doc",
+   "line": 825
+  },
+  {
+   "id": "r66",
+   "anchor": "lexsort#import:.core",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r67",
+   "anchor": "lexsort#for:key in keys/if:isinstance(key, Masked)/assign:new_key",
+   "kind": "lead",
+   "line": 839
+  },
+  {
+   "id": "r68",
+   "anchor": "apply_over_axes#assign:val",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r69",
+   "anchor": "MaskedFormat",
+   "kind": "doc",
+   "line": 879
+  },
+  {
+   "id": "r70",
+   "anchor": "MaskedFormat.__init__#assign:ffs",
+   "kind": "lead",
+   "line": 893
+  },
+  {
+   "id": "r71",
+   "anchor": "MaskedFormat.__init__#if:ffs/assign:self.format_function.format_functions",
+   "kind": "lead",
+   "line": 896
+  },
+  {
+   "id": "r72",
+   "anchor": "MaskedFormat.__init__#if:ff/assign:self.format_function.format_function",
+   "kind": "lead",
+   "line": 901
+  },
+  {
+   "id": "r73",
+   "anchor": "MaskedFormat.__call__#if:x.dtype.names/return",
+   "kind": "lead",
+   "line": 908
+  },
+  {
+   "id": "r74",
+   "anchor": "MaskedFormat.__call__#if:x.shape/return",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r75",
+   "anchor": "MaskedFormat.__call__#assign:string",
+   "kind": "lead",
+   "line": 917
+  },
+  {
+   "id": "r76",
+   "anchor": "MaskedFormat.__call__#if:x.mask/assign:n",
+   "kind": "lead",
+   "line": 923
+  },
+  {
+   "id": "r77",
+   "anchor": "_array2string#import:numpy.core.arrayprint",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r78",
+   "anchor": "_array2string#assign:format_function",
+   "kind": "lead",
+   "line": 950
+  },
+  {
+   "id": "r79",
+   "anchor": "_array2string#assign:next_line_prefix",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r80",
+   "anchor": "_array2string#assign:next_line_prefix",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r81",
+   "anchor": "array2string#import:numpy.core.arrayprint",
+   "kind": "lead",
+   "line": 987
+  },
+  {
+   "id": "r82",
+   "anchor": "array2string#if:a.size == 0",
+   "kind": "lead",
+   "line": 1007
+  },
+  {
+   "id": "r83",
+   "anchor": "array_str#return",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r84",
+   "anchor": "_nanfunc_fill_values",
+   "kind": "lead",
+   "line": 1020
+  },
+  {
+   "id": "r85",
+   "anchor": "masked_nanfunc#if:fill_value is not None/assign:doc",
+   "kind": "lead",
+   "line": 1045
+  },
+  {
+   "id": "r86",
+   "anchor": "<module>#assign:__all__",
+   "kind": "lead",
+   "line": 1075
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 24708,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8628,
+  "thinking_tokens": 4735,
+  "opus_cost_usd": 0.46707150000000003,
+  "total_cost_usd": 0.4860045,
+  "duration_ms": 77346,
+  "duration_api_ms": 78945,
+  "num_turns": 2
+ },
+ "wall_ms": 78197,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,145 @@
+{
+ "blob_sha": "e42d05e25569e5f4117530b214014fdf47a6ef02",
+ "path": "django/middleware/common.py",
+ "repo": "django/django",
+ "records": 20,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "CommonMiddleware",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r2",
+   "anchor": "CommonMiddleware.process_request",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r3",
+   "anchor": "CommonMiddleware.process_request#assign:user_agent",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r4",
+   "anchor": "CommonMiddleware.process_request#assign:host",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r5",
+   "anchor": "CommonMiddleware.process_request#if:self.should_redirect_with_slash(request)",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "CommonMiddleware.process_request#if:redirect_url or path != request.get_full_path()",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r7",
+   "anchor": "CommonMiddleware.should_redirect_with_slash",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r8",
+   "anchor": "CommonMiddleware.get_full_path_with_slash",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r9",
+   "anchor": "CommonMiddleware.get_full_path_with_slash#assign:new_path",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r10",
+   "anchor": "CommonMiddleware.process_response",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r11",
+   "anchor": "CommonMiddleware.process_response#if:response.status_code == 404 and self.should_redirect_with_slash(request)",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r12",
+   "anchor": "CommonMiddleware.process_response#if:not response.streaming and not response.has_header('Content-Length')",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r13",
+   "anchor": "BrokenLinkEmailsMiddleware.process_response",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r14",
+   "anchor": "BrokenLinkEmailsMiddleware.is_internal_request",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r15",
+   "anchor": "BrokenLinkEmailsMiddleware.is_internal_request#return",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r16",
+   "anchor": "BrokenLinkEmailsMiddleware.is_ignorable_request",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r17",
+   "anchor": "BrokenLinkEmailsMiddleware.is_ignorable_request#if:not referer",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r18",
+   "anchor": "BrokenLinkEmailsMiddleware.is_ignorable_request#if:settings.APPEND_SLASH and uri.endswith('/') and referer == uri[:-1]",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r19",
+   "anchor": "BrokenLinkEmailsMiddleware.is_ignorable_request#if:not self.is_internal_request(domain, referer) and '?' in referer",
+   "kind": "lead",
+   "line": 165
+  },
+  {
+   "id": "r20",
+   "anchor": "BrokenLinkEmailsMiddleware.is_ignorable_request#assign:parsed_referer",
+   "kind": "lead",
+   "line": 170
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7171,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1918,
+  "thinking_tokens": 778,
+  "opus_cost_usd": 0.12395149999999999,
+  "total_cost_usd": 0.1282045,
+  "duration_ms": 20115,
+  "duration_api_ms": 21175,
+  "num_turns": 2
+ },
+ "wall_ms": 20996,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,529 @@
+{
+ "blob_sha": "d9f614532693e3c5d3031ddd1b167170b4260184",
+ "path": "lib/matplotlib/table.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 84,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 9
+  },
+  {
+   "id": "r3",
+   "anchor": "Cell",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r4",
+   "anchor": "Cell.PAD",
+   "kind": "doc",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "Cell._edge_aliases#key:closed",
+   "kind": "trail",
+   "line": 49
+  },
+  {
+   "id": "r6",
+   "anchor": "Cell.__init__",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r7",
+   "anchor": "Cell.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r8",
+   "anchor": "Cell.__init__#if:loc is None",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r9",
+   "anchor": "Cell.set_transform#assign:self.stale",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r10",
+   "anchor": "Cell.get_text",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r11",
+   "anchor": "Cell.set_fontsize",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r12",
+   "anchor": "Cell.get_fontsize",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r13",
+   "anchor": "Cell.auto_set_font_size",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r14",
+   "anchor": "Cell.draw#call:super().draw",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r15",
+   "anchor": "Cell.draw#call:self._set_text_position",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r16",
+   "anchor": "Cell._set_text_position",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r17",
+   "anchor": "Cell._set_text_position#assign:y",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r18",
+   "anchor": "Cell._set_text_position#assign:loc",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r19",
+   "anchor": "Cell._set_text_position#if:loc == 'center'/elif:loc == 'left'/else",
+   "kind": "trail",
+   "line": 162
+  },
+  {
+   "id": "r20",
+   "anchor": "Cell.get_text_bounds",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r21",
+   "anchor": "Cell.get_required_width",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r22",
+   "anchor": "Cell.set_text_props",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r23",
+   "anchor": "Cell.visible_edges",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r24",
+   "anchor": "Cell.get_path",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r25",
+   "anchor": "Cell.get_path#if:Path.MOVETO not in codes[1:]",
+   "kind": "trail",
+   "line": 226
+  },
+  {
+   "id": "r26",
+   "anchor": "CustomCell",
+   "kind": "trail",
+   "line": 235
+  },
+  {
+   "id": "r27",
+   "anchor": "Table",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r28",
+   "anchor": "Table.codes#key:upper right",
+   "kind": "trail",
+   "line": 254
+  },
+  {
+   "id": "r29",
+   "anchor": "Table.codes",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r30",
+   "anchor": "Table.AXESPAD",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r31",
+   "anchor": "Table.__init__",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r32",
+   "anchor": "Table.__init__#call:ax._unstale_viewLim",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r33",
+   "anchor": "Table.add_cell",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r34",
+   "anchor": "Table.__setitem__",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r35",
+   "anchor": "Table.__getitem__",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r36",
+   "anchor": "Table.edges",
+   "kind": "doc",
+   "line": 368
+  },
+  {
+   "id": "r37",
+   "anchor": "Table.draw#if:renderer is None",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r38",
+   "anchor": "Table.draw#if:renderer is None",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r39",
+   "anchor": "Table._get_grid_bbox",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r40",
+   "anchor": "Table.contains#assign:inside, info",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r41",
+   "anchor": "Table.contains#assign:renderer",
+   "kind": "todo",
+   "line": 436
+  },
+  {
+   "id": "r42",
+   "anchor": "Table.get_children",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r43",
+   "anchor": "Table.get_window_extent#if:renderer is None",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r44",
+   "anchor": "Table._do_cell_alignment",
+   "kind": "doc",
+   "line": 459
+  },
+  {
+   "id": "r45",
+   "anchor": "Table._do_cell_alignment#assign:widths",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r46",
+   "anchor": "Table._do_cell_alignment#assign:xpos",
+   "kind": "lead",
+   "line": 473
+  },
+  {
+   "id": "r47",
+   "anchor": "Table._do_cell_alignment#for:(row, col), cell in self._cells.items()",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r48",
+   "anchor": "Table.auto_set_column_width",
+   "kind": "doc",
+   "line": 490
+  },
+  {
+   "id": "r49",
+   "anchor": "Table.auto_set_column_width#try",
+   "kind": "lead",
+   "line": 500
+  },
+  {
+   "id": "r50",
+   "anchor": "Table._auto_set_column_width",
+   "kind": "doc",
+   "line": 510
+  },
+  {
+   "id": "r51",
+   "anchor": "Table.auto_set_font_size",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r52",
+   "anchor": "Table._auto_set_font_size#for:key, cell in self._cells.items()/if:key[1] in self._autoColumns",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r53",
+   "anchor": "Table._auto_set_font_size#for:cell in self._cells.values()",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r54",
+   "anchor": "Table.scale",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r55",
+   "anchor": "Table.set_fontsize",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r56",
+   "anchor": "Table._offset",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r57",
+   "anchor": "Table._update_positions#for:col in self._autoColumns",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r58",
+   "anchor": "Table._update_positions#for:col in self._autoColumns",
+   "kind": "lead",
+   "line": 584
+  },
+  {
+   "id": "r59",
+   "anchor": "Table._update_positions#call:self._do_cell_alignment",
+   "kind": "lead",
+   "line": 591
+  },
+  {
+   "id": "r60",
+   "anchor": "Table._update_positions#if:self._bbox is not None/assign:rl, rb, rw, rh",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r61",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/assign:(BEST, UR, UL, LL, LR, CL, CR, LC, UC, C, TR, TL, BL, BR, R, L, T, B)",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r62",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/assign:ox",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r63",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (UL, LL, CL)",
+   "kind": "trail",
+   "line": 610
+  },
+  {
+   "id": "r64",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (BEST, UR, LR, R, CR)",
+   "kind": "trail",
+   "line": 612
+  },
+  {
+   "id": "r65",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (BEST, UR, UL, UC)",
+   "kind": "trail",
+   "line": 614
+  },
+  {
+   "id": "r66",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (LL, LR, LC)",
+   "kind": "trail",
+   "line": 616
+  },
+  {
+   "id": "r67",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (LC, UC, C)",
+   "kind": "trail",
+   "line": 618
+  },
+  {
+   "id": "r68",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (CL, CR, C)",
+   "kind": "trail",
+   "line": 620
+  },
+  {
+   "id": "r69",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (TL, BL, L)",
+   "kind": "trail",
+   "line": 623
+  },
+  {
+   "id": "r70",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (TR, BR, R)",
+   "kind": "trail",
+   "line": 625
+  },
+  {
+   "id": "r71",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (TR, TL, T)",
+   "kind": "trail",
+   "line": 627
+  },
+  {
+   "id": "r72",
+   "anchor": "Table._update_positions#if:self._bbox is not None/else/if:self._loc in (BL, BR, B)",
+   "kind": "trail",
+   "line": 629
+  },
+  {
+   "id": "r73",
+   "anchor": "Table.get_celld",
+   "kind": "doc",
+   "line": 634
+  },
+  {
+   "id": "r74",
+   "anchor": "table",
+   "kind": "doc",
+   "line": 651
+  },
+  {
+   "id": "r75",
+   "anchor": "table#if:cellText is None",
+   "kind": "lead",
+   "line": 739
+  },
+  {
+   "id": "r76",
+   "anchor": "table#if:cellText is None/assign:rows",
+   "kind": "lead",
+   "line": 741
+  },
+  {
+   "id": "r77",
+   "anchor": "table#if:colWidths is None",
+   "kind": "lead",
+   "line": 763
+  },
+  {
+   "id": "r78",
+   "anchor": "table#assign:rowLabelWidth",
+   "kind": "lead",
+   "line": 768
+  },
+  {
+   "id": "r79",
+   "anchor": "table#assign:offset",
+   "kind": "lead",
+   "line": 782
+  },
+  {
+   "id": "r80",
+   "anchor": "table#if:cellColours is None",
+   "kind": "lead",
+   "line": 792
+  },
+  {
+   "id": "r81",
+   "anchor": "table#assign:table",
+   "kind": "lead",
+   "line": 796
+  },
+  {
+   "id": "r82",
+   "anchor": "table#for:row in range(rows)",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r83",
+   "anchor": "table#if:colLabels is not None",
+   "kind": "lead",
+   "line": 809
+  },
+  {
+   "id": "r84",
+   "anchor": "table#if:rowLabels is not None",
+   "kind": "lead",
+   "line": 817
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 17977,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7444,
+  "thinking_tokens": 3824,
+  "opus_cost_usd": 0.37016150000000003,
+  "total_cost_usd": 0.3836875,
+  "duration_ms": 68637,
+  "duration_api_ms": 69702,
+  "num_turns": 2
+ },
+ "wall_ms": 69518,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,283 @@
+{
+ "blob_sha": "1a0b6f6322c144b90ab6ebc7f1d9d28914b8093d",
+ "path": "django/db/migrations/executor.py",
+ "repo": "django/django",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MigrationExecutor",
+   "kind": "doc",
+   "line": 12
+  },
+  {
+   "id": "r2",
+   "anchor": "MigrationExecutor.migration_plan",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "MigrationExecutor.migration_plan#for:target in targets/if:target[1] is None",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r4",
+   "anchor": "MigrationExecutor.migration_plan#for:target in targets/if:target[1] is None/elif:target in applied",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r5",
+   "anchor": "MigrationExecutor.migration_plan#for:target in targets/if:target[1] is None/elif:target in applied/assign:next_in_app",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r6",
+   "anchor": "MigrationExecutor._create_project_state",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r7",
+   "anchor": "MigrationExecutor._create_project_state#if:with_applied_migrations/assign:full_plan",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r8",
+   "anchor": "MigrationExecutor.migrate",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r9",
+   "anchor": "MigrationExecutor.migrate#assign:full_plan",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "MigrationExecutor.migrate#if:not plan/if:state is None/assign:state",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r11",
+   "anchor": "MigrationExecutor.migrate#if:not plan/elif:all_forwards == all_backwards/raise:InvalidMigrationPlan",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r12",
+   "anchor": "MigrationExecutor.migrate#if:not plan/elif:all_forwards == all_backwards/elif:all_forwards/if:state is None/assign:state",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r13",
+   "anchor": "MigrationExecutor.migrate#if:not plan/elif:all_forwards == all_backwards/elif:all_forwards/else/assign:state",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r14",
+   "anchor": "MigrationExecutor._migrate_all_forwards",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r15",
+   "anchor": "MigrationExecutor._migrate_all_forwards#for:migration, _ in full_plan/if:not migrations_to_run/break",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r16",
+   "anchor": "MigrationExecutor._migrate_all_forwards#for:migration, _ in full_plan/if:migration in migrations_to_run/if:'apps' not in state.__dict__/expr:state.apps",
+   "kind": "trail",
+   "line": 142
+  },
+  {
+   "id": "r17",
+   "anchor": "MigrationExecutor._migrate_all_backwards",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r18",
+   "anchor": "MigrationExecutor._migrate_all_backwards#assign:states",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r19",
+   "anchor": "MigrationExecutor._migrate_all_backwards#for:migration, _ in full_plan/if:not migrations_to_run/break",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r20",
+   "anchor": "MigrationExecutor._migrate_all_backwards#for:migration, _ in full_plan/if:migration in migrations_to_run/if:'apps' not in state.__dict__/expr:state.apps",
+   "kind": "trail",
+   "line": 179
+  },
+  {
+   "id": "r21",
+   "anchor": "MigrationExecutor._migrate_all_backwards#for:migration, _ in full_plan/if:migration in migrations_to_run/assign:states[migration]",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r22",
+   "anchor": "MigrationExecutor._migrate_all_backwards#for:migration, _ in full_plan/if:migration in migrations_to_run/assign:state",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r23",
+   "anchor": "MigrationExecutor._migrate_all_backwards#for:migration, _ in full_plan/if:migration in migrations_to_run/elif:migration in applied_migrations/call:migration.mutate_state",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r24",
+   "anchor": "MigrationExecutor._migrate_all_backwards#assign:last_unapplied_migration",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r25",
+   "anchor": "MigrationExecutor.collect_sql",
+   "kind": "doc",
+   "line": 211
+  },
+  {
+   "id": "r26",
+   "anchor": "MigrationExecutor.apply_migration",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r27",
+   "anchor": "MigrationExecutor.apply_migration#if:not fake/if:fake_initial/assign:applied, state",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r28",
+   "anchor": "MigrationExecutor.apply_migration#if:not fake/if:not fake/with:self.connection.schema_editor(atomic=migration.atomic)",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r29",
+   "anchor": "MigrationExecutor.apply_migration#if:migration.replaces",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r30",
+   "anchor": "MigrationExecutor.apply_migration#if:self.progress_callback",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r31",
+   "anchor": "MigrationExecutor.unapply_migration",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r32",
+   "anchor": "MigrationExecutor.unapply_migration#if:migration.replaces",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r33",
+   "anchor": "MigrationExecutor.unapply_migration#if:self.progress_callback",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r34",
+   "anchor": "MigrationExecutor.check_replacements",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r35",
+   "anchor": "MigrationExecutor.detect_soft_applied",
+   "kind": "doc",
+   "line": 293
+  },
+  {
+   "id": "r36",
+   "anchor": "MigrationExecutor.detect_soft_applied.should_skip_detecting_model",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r37",
+   "anchor": "MigrationExecutor.detect_soft_applied#if:migration.initial is None/if:any(app == migration.app_label for app, name in migration.dependencies)",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r38",
+   "anchor": "MigrationExecutor.detect_soft_applied#if:migration.initial is None/elif:migration.initial is False/return",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r39",
+   "anchor": "MigrationExecutor.detect_soft_applied#for:operation in migration.operations",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r40",
+   "anchor": "MigrationExecutor.detect_soft_applied#for:operation in migration.operations/if:isinstance(operation, migrations.CreateModel)/if:model._meta.swapped/assign:model",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r41",
+   "anchor": "MigrationExecutor.detect_soft_applied#for:operation in migration.operations/if:isinstance(operation, migrations.CreateModel)/elif:isinstance(operation, migrations.AddField)/if:model._meta.swapped/assign:model",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r42",
+   "anchor": "MigrationExecutor.detect_soft_applied#for:operation in migration.operations/if:isinstance(operation, migrations.CreateModel)/elif:isinstance(operation, migrations.AddField)/if:field.many_to_many",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r43",
+   "anchor": "MigrationExecutor.detect_soft_applied#return",
+   "kind": "lead",
+   "line": 370
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11423,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5392,
+  "thinking_tokens": 2663,
+  "opus_cost_usd": 0.25332150000000003,
+  "total_cost_usd": 0.2611545,
+  "duration_ms": 47868,
+  "duration_api_ms": 49515,
+  "num_turns": 2
+ },
+ "wall_ms": 48741,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

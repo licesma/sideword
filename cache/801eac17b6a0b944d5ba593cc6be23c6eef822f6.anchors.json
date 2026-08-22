@@ -1,0 +1,109 @@
+{
+ "blob_sha": "801eac17b6a0b944d5ba593cc6be23c6eef822f6",
+ "path": "astropy/timeseries/binned.py",
+ "repo": "astropy/astropy",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "BinnedTimeSeries",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r3",
+   "anchor": "BinnedTimeSeries.__init__#if:data is None and time_bin_start is None and time_bin_end is None and time_bin_size is None and n_bins is None",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r4",
+   "anchor": "BinnedTimeSeries.__init__#if:\"time_bin_start\" in self.colnames",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r5",
+   "anchor": "BinnedTimeSeries.__init__#if:time_bin_start.isscalar/if:time_bin_size is None",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r6",
+   "anchor": "BinnedTimeSeries.__init__#if:time_bin_start.isscalar/assign:time_delta",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r7",
+   "anchor": "BinnedTimeSeries.__init__#if:time_bin_start.isscalar/assign:time_bin_start",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r8",
+   "anchor": "BinnedTimeSeries.time_bin_start",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r9",
+   "anchor": "BinnedTimeSeries.time_bin_center",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r10",
+   "anchor": "BinnedTimeSeries.time_bin_end",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r11",
+   "anchor": "BinnedTimeSeries.time_bin_size",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r12",
+   "anchor": "BinnedTimeSeries.read",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r13",
+   "anchor": "BinnedTimeSeries.read#try/return",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r14",
+   "anchor": "BinnedTimeSeries.read#try/except:TypeError/if:time_bin_start_column is None",
+   "kind": "lead",
+   "line": 325
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10608,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1751,
+  "thinking_tokens": 972,
+  "opus_cost_usd": 0.1541465,
+  "total_cost_usd": 0.1615305,
+  "duration_ms": 18511,
+  "duration_api_ms": 19489,
+  "num_turns": 2
+ },
+ "wall_ms": 19323,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

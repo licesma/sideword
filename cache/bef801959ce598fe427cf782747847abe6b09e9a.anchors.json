@@ -1,0 +1,589 @@
+{
+ "blob_sha": "bef801959ce598fe427cf782747847abe6b09e9a",
+ "path": "astropy/io/ascii/ui.py",
+ "repo": "astropy/astropy",
+ "records": 94,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "_GUESS",
+   "kind": "lead",
+   "line": 48
+  },
+  {
+   "id": "r4",
+   "anchor": "_probably_html",
+   "kind": "doc",
+   "line": 51
+  },
+  {
+   "id": "r5",
+   "anchor": "_probably_html#if:not isinstance(table, str)/try/expr:table[0]",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r6",
+   "anchor": "_probably_html#if:isinstance(table, str)/assign:table",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r7",
+   "anchor": "_probably_html#if:isinstance(table, str)/if:re.match(r'( http[s]? | ftp | file ) :// .+ \\.htm[l]?$', table, re.IGNORECASE | re.VERBOSE)",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "_probably_html#if:isinstance(table, str)/if:re.search(r'\\.htm[l]?$', table[-5:], re.IGNORECASE) and os.path.exists(os.path.expanduser(table))",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r9",
+   "anchor": "_probably_html#if:isinstance(table, str)/if:re.match(r'\\s* <! \\s* DOCTYPE \\s* HTML', table, re.IGNORECASE | re.VERBOSE)",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r10",
+   "anchor": "_probably_html#if:isinstance(table, str)/if:all(re.search(fr'< \\s* {element} [^>]* >', table, re.IGNORECASE | re.VERBOSE) for element in ('table', 'tr', 'td'))",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "set_guess",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r12",
+   "anchor": "get_reader",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r13",
+   "anchor": "get_reader#if:Reader is None",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r14",
+   "anchor": "get_reader#if:Reader is None/assign:fast_reader",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r15",
+   "anchor": "_get_fast_reader_dict",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r16",
+   "anchor": "_validate_read_write_kwargs",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r17",
+   "anchor": "_validate_read_write_kwargs.is_ducktype",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r18",
+   "anchor": "_validate_read_write_kwargs.is_ducktype#if:cls == 'list-like'/else/if:not ok/try",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "_validate_read_write_kwargs#for:arg, val in kwargs.items()/if:arg not in kwarg_types or val is None",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r20",
+   "anchor": "_validate_read_write_kwargs#for:arg, val in kwargs.items()/assign:types",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r21",
+   "anchor": "_validate_read_write_kwargs#for:arg, val in kwargs.items()/if:not isinstance(types, tuple)",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r22",
+   "anchor": "_expand_user_if_path#if:isinstance(argument, (str, bytes, os.PathLike))/assign:is_str_data",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r23",
+   "anchor": "_expand_user_if_path#if:isinstance(argument, (str, bytes, os.PathLike))/if:not is_str_data/assign:ex_user",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r24",
+   "anchor": "read#assign:dat",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r25",
+   "anchor": "read#del:_read_trace[:]",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r26",
+   "anchor": "read#assign:kwargs",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r27",
+   "anchor": "read#assign:fast_reader",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r28",
+   "anchor": "read#if:'Outputter' in kwargs",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r29",
+   "anchor": "read#if:'Outputter' in kwargs",
+   "kind": "trail",
+   "line": 294
+  },
+  {
+   "id": "r30",
+   "anchor": "read#assign:new_kwargs",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r31",
+   "anchor": "read#assign:Reader",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r32",
+   "anchor": "read#if:'format' in new_kwargs",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r33",
+   "anchor": "read#if:guess/assign:new_kwargs['guess_html']",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r34",
+   "anchor": "read#if:guess/if:'readme' not in new_kwargs",
+   "kind": "lead",
+   "line": 330
+  },
+  {
+   "id": "r35",
+   "anchor": "read#if:guess/if:'readme' not in new_kwargs/try/except:ValueError",
+   "kind": "trail",
+   "line": 336
+  },
+  {
+   "id": "r36",
+   "anchor": "read#if:guess/if:'readme' not in new_kwargs/try/else/if:not re.search(r'[\\r\\n]', table)",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r37",
+   "anchor": "read#if:guess/if:'readme' not in new_kwargs/try/else/if:not new_kwargs['guess_html']",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r38",
+   "anchor": "read#if:guess/assign:dat",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r39",
+   "anchor": "read#if:not guess/if:fast_reader['enable'] and f'fast_{format}' in core.FAST_CLASSES",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r40",
+   "anchor": "read#if:not guess/if:fast_reader['enable'] and f'fast_{format}' in core.FAST_CLASSES/try/except:(core.ParameterError, cparser.CParserError, UnicodeEncodeError)/if:fast_reader['enable'] == 'force'",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r41",
+   "anchor": "read#if:not guess/if:fast_reader['enable'] and f'fast_{format}' in core.FAST_CLASSES/try/except:(core.ParameterError, cparser.CParserError, UnicodeEncodeError)/assign:reader",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r42",
+   "anchor": "read#if:dat is None",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r43",
+   "anchor": "_guess",
+   "kind": "doc",
+   "line": 414
+  },
+  {
+   "id": "r44",
+   "anchor": "_guess#assign:failed_kwargs",
+   "kind": "lead",
+   "line": 440
+  },
+  {
+   "id": "r45",
+   "anchor": "_guess#assign:full_list_guess",
+   "kind": "lead",
+   "line": 444
+  },
+  {
+   "id": "r46",
+   "anchor": "_guess#if:fast_reader['enable'] and format is not None and f'fast_{format}' in core.FAST_CLASSES",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r47",
+   "anchor": "_guess#assign:filtered_guess_kwargs",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r48",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/if:fast_reader['enable'] is False and guess_kwargs['Reader'] in core.FAST_CLASSES.values()",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r49",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/if:fast_reader['enable'] == 'force' and guess_kwargs['Reader'] not in core.FAST_CLASSES.values()",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r50",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/assign:guess_kwargs_ok",
+   "kind": "trail",
+   "line": 479
+  },
+  {
+   "id": "r51",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/for:key, val in read_kwargs.items()/if:key not in guess_kwargs",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r52",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/if:not guess_kwargs_ok/continue",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r53",
+   "anchor": "_guess#for:guess_kwargs in full_list_guess/if:guess_kwargs not in filtered_guess_kwargs",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r54",
+   "anchor": "_guess#if:len(filtered_guess_kwargs) <= 1",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r55",
+   "anchor": "_guess#assign:guess_exception_classes",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r56",
+   "anchor": "_guess#for:guess_kwargs in filtered_guess_kwargs",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r57",
+   "anchor": "_guess#for:guess_kwargs in filtered_guess_kwargs/try/if:'Reader' not in read_kwargs",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r58",
+   "anchor": "_guess#for:guess_kwargs in filtered_guess_kwargs/else/try",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r59",
+   "anchor": "_get_guess_kwargs_list",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r60",
+   "anchor": "_get_guess_kwargs_list#if:read_kwargs.pop('guess_html', None)",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r61",
+   "anchor": "_get_guess_kwargs_list#call:guess_kwargs_list.append",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r62",
+   "anchor": "_get_guess_kwargs_list#for:reader in (fixedwidth.FixedWidthTwoLine, rst.RST, fastbasic.FastBasic, basic.Basic, fastbasic.FastRdb, basic.Rdb, fastbasic.FastTab, basic.Tab, cds.Cds, mrt.Mrt, daophot.Daophot, sextractor.SExtractor, ipac.Ipac, latex.Latex, latex.AASTex)",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r63",
+   "anchor": "_get_guess_kwargs_list#for:Reader in (fastbasic.FastCommentedHeader, basic.CommentedHeader, fastbasic.FastBasic, basic.Basic, fastbasic.FastNoHeader, basic.NoHeader)",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r64",
+   "anchor": "_read_in_chunks",
+   "kind": "doc",
+   "line": 637
+  },
+  {
+   "id": "r65",
+   "anchor": "_read_in_chunks#assign:fast_reader['parallel']",
+   "kind": "trail",
+   "line": 645
+  },
+  {
+   "id": "r66",
+   "anchor": "_read_in_chunks#assign:out_cols",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r67",
+   "anchor": "_read_in_chunks#for:tbl in tbl_chunks/for:name, col in tbl.columns.items()/assign:col1, col2",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r68",
+   "anchor": "_read_in_chunks#for:tbl in tbl_chunks/for:name, col in tbl.columns.items()/assign:col1, col2",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r69",
+   "anchor": "_read_in_chunks#for:tbl in tbl_chunks/for:name, col in tbl.columns.items()/assign:concatenate",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r70",
+   "anchor": "_read_in_chunks#assign:out_cols",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r71",
+   "anchor": "_read_in_chunks_generator",
+   "kind": "doc",
+   "line": 687
+  },
+  {
+   "id": "r72",
+   "anchor": "_read_in_chunks_generator.passthrough_fileobj",
+   "kind": "doc",
+   "line": 694
+  },
+  {
+   "id": "r73",
+   "anchor": "_read_in_chunks_generator#if:isinstance(table, str) and ('\\n' in table or '\\r' in table)",
+   "kind": "lead",
+   "line": 704
+  },
+  {
+   "id": "r74",
+   "anchor": "_read_in_chunks_generator#if:isinstance(table, str) and ('\\n' in table or '\\r' in table)",
+   "kind": "lead",
+   "line": 704
+  },
+  {
+   "id": "r75",
+   "anchor": "_read_in_chunks_generator#if:isinstance(table, str) and ('\\n' in table or '\\r' in table)/else/assign:fileobj_context",
+   "kind": "lead",
+   "line": 711
+  },
+  {
+   "id": "r76",
+   "anchor": "_read_in_chunks_generator#assign:kwargs['fast_reader']['return_header_chars']",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r77",
+   "anchor": "_read_in_chunks_generator#assign:header",
+   "kind": "trail",
+   "line": 715
+  },
+  {
+   "id": "r78",
+   "anchor": "_read_in_chunks_generator#assign:prev_chunk_chars",
+   "kind": "trail",
+   "line": 716
+  },
+  {
+   "id": "r79",
+   "anchor": "_read_in_chunks_generator#assign:first_chunk",
+   "kind": "trail",
+   "line": 717
+  },
+  {
+   "id": "r80",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/assign:final_chunk",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r81",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/if:final_chunk and not re.search(r'\\S', chunk)",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r82",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/for:idx in range(len(chunk) - 1, -1, -1)",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r83",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/assign:complete_chunk",
+   "kind": "lead",
+   "line": 739
+  },
+  {
+   "id": "r84",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/assign:tbl",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r85",
+   "anchor": "_read_in_chunks_generator#with:fileobj_context(table, encoding=kwargs.get('encoding'))/while:True/if:first_chunk",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r86",
+   "anchor": "get_writer",
+   "kind": "doc",
+   "line": 762
+  },
+  {
+   "id": "r87",
+   "anchor": "get_writer#if:isinstance(writer, (basic.CommentedHeader, fastbasic.FastCommentedHeader)) and not isinstance(kwargs.get('comment', ''), str)",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r88",
+   "anchor": "write#call:_validate_read_write_kwargs",
+   "kind": "lead",
+   "line": 820
+  },
+  {
+   "id": "r89",
+   "anchor": "write#assign:names",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r90",
+   "anchor": "write#if:isinstance(table, Table)/assign:table",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r91",
+   "anchor": "write#if:isinstance(table, Table)/else/assign:table",
+   "kind": "lead",
+   "line": 839
+  },
+  {
+   "id": "r92",
+   "anchor": "write#assign:outstr",
+   "kind": "lead",
+   "line": 863
+  },
+  {
+   "id": "r93",
+   "anchor": "write#if:not hasattr(output, 'write')/assign:output",
+   "kind": "lead",
+   "line": 869
+  },
+  {
+   "id": "r94",
+   "anchor": "get_read_trace",
+   "kind": "doc",
+   "line": 881
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 24092,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 11845,
+  "thinking_tokens": 6305,
+  "opus_cost_usd": 0.5413365,
+  "total_cost_usd": 0.5590845,
+  "duration_ms": 104564,
+  "duration_api_ms": 105770,
+  "num_turns": 2
+ },
+ "wall_ms": 107987,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

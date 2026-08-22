@@ -1,0 +1,391 @@
+{
+ "blob_sha": "39f40f26073aca2915c5fc09cf2593cdab41967a",
+ "path": "astropy/visualization/wcsaxes/coordinate_helpers.py",
+ "repo": "astropy/astropy",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "wrap_angle_at#with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "CoordinateHelper",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "CoordinateHelper.parent_axes",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r6",
+   "anchor": "CoordinateHelper.dpi_transform",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "CoordinateHelper.ticklabels",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r8",
+   "anchor": "CoordinateHelper.ticklabels#arg:transform",
+   "kind": "trail",
+   "line": 88
+  },
+  {
+   "id": "r9",
+   "anchor": "CoordinateHelper.axislabels",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "CoordinateHelper.axislabels#arg:transform",
+   "kind": "trail",
+   "line": 95
+  },
+  {
+   "id": "r11",
+   "anchor": "CoordinateHelper.grid_lines",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r12",
+   "anchor": "CoordinateHelper.__init__#assign:lines_to_patches_linestyle",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r13",
+   "anchor": "CoordinateHelper.grid",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r14",
+   "anchor": "CoordinateHelper.set_coord_type",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r15",
+   "anchor": "CoordinateHelper.set_coord_type#if:coord_type == 'scalar'",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r16",
+   "anchor": "CoordinateHelper.set_major_formatter",
+   "kind": "doc",
+   "line": 195
+  },
+  {
+   "id": "r17",
+   "anchor": "CoordinateHelper.set_major_formatter#if:isinstance(formatter, Formatter)/raise:NotImplementedError",
+   "kind": "trail",
+   "line": 205
+  },
+  {
+   "id": "r18",
+   "anchor": "CoordinateHelper.format_coord",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r19",
+   "anchor": "CoordinateHelper.format_coord#if:not hasattr(self, \"_fl_spacing\")/return",
+   "kind": "trail",
+   "line": 228
+  },
+  {
+   "id": "r20",
+   "anchor": "CoordinateHelper.format_coord#if:isinstance(fl, AngleFormatterLocator)/if:self._coord_scale_to_deg is not None",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r21",
+   "anchor": "CoordinateHelper.set_separator",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r22",
+   "anchor": "CoordinateHelper.set_format_unit",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r23",
+   "anchor": "CoordinateHelper.set_ticks",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r24",
+   "anchor": "CoordinateHelper.set_ticks_position",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r25",
+   "anchor": "CoordinateHelper.set_ticks_visible",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r26",
+   "anchor": "CoordinateHelper.set_ticklabel",
+   "kind": "doc",
+   "line": 349
+  },
+  {
+   "id": "r27",
+   "anchor": "CoordinateHelper.set_ticklabel_position",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r28",
+   "anchor": "CoordinateHelper.set_ticklabel_visible",
+   "kind": "doc",
+   "line": 376
+  },
+  {
+   "id": "r29",
+   "anchor": "CoordinateHelper.set_axislabel",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r30",
+   "anchor": "CoordinateHelper.get_axislabel",
+   "kind": "doc",
+   "line": 407
+  },
+  {
+   "id": "r31",
+   "anchor": "CoordinateHelper.set_axislabel_position",
+   "kind": "doc",
+   "line": 418
+  },
+  {
+   "id": "r32",
+   "anchor": "CoordinateHelper.set_axislabel_visibility_rule",
+   "kind": "doc",
+   "line": 432
+  },
+  {
+   "id": "r33",
+   "anchor": "CoordinateHelper.get_axislabel_visibility_rule",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r34",
+   "anchor": "CoordinateHelper._update_ticks#assign:coord_range",
+   "kind": "todo",
+   "line": 521
+  },
+  {
+   "id": "r35",
+   "anchor": "CoordinateHelper._update_ticks#assign:coord_range",
+   "kind": "lead",
+   "line": 521
+  },
+  {
+   "id": "r36",
+   "anchor": "CoordinateHelper._update_ticks#assign:coord_range",
+   "kind": "lead",
+   "line": 521
+  },
+  {
+   "id": "r37",
+   "anchor": "CoordinateHelper._update_ticks#assign:tick_world_coordinates, self._fl_spacing",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r38",
+   "anchor": "CoordinateHelper._update_ticks#import:.",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r39",
+   "anchor": "CoordinateHelper._update_ticks#assign:transData",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r40",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/assign:pixel0",
+   "kind": "lead",
+   "line": 550
+  },
+  {
+   "id": "r41",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/assign:pixel1",
+   "kind": "lead",
+   "line": 556
+  },
+  {
+   "id": "r42",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/assign:pixel2",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r43",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/assign:dx, dy",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r44",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/if:self.coord_type == 'longitude'/assign:dx",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r45",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/assign:w1",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r46",
+   "anchor": "CoordinateHelper._update_ticks#for:axis, spine in frame.items()/call:self._compute_ticks",
+   "kind": "lead",
+   "line": 618
+  },
+  {
+   "id": "r47",
+   "anchor": "CoordinateHelper._update_ticks#assign:text",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r48",
+   "anchor": "CoordinateHelper._compute_ticks#for:t in tick_world_coordinates_values/with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 646
+  },
+  {
+   "id": "r49",
+   "anchor": "CoordinateHelper._compute_ticks#for:t in tick_world_coordinates_values/if:t - w2[-1] == 0",
+   "kind": "lead",
+   "line": 651
+  },
+  {
+   "id": "r50",
+   "anchor": "CoordinateHelper._compute_ticks#for:t in tick_world_coordinates_values/for:imin in intersections",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r51",
+   "anchor": "CoordinateHelper._compute_ticks#for:t in tick_world_coordinates_values/for:imin in intersections/if:np.allclose(w1[imin], w2[imin], rtol=1.e-13, atol=1.e-13)/continue",
+   "kind": "trail",
+   "line": 661
+  },
+  {
+   "id": "r52",
+   "anchor": "CoordinateHelper._compute_ticks#for:t in tick_world_coordinates_values/for:imin in intersections/if:ticks == 'major'/call:self.lblinfo.append",
+   "kind": "lead",
+   "line": 699
+  },
+  {
+   "id": "r53",
+   "anchor": "CoordinateHelper.display_minor_ticks",
+   "kind": "doc",
+   "line": 713
+  },
+  {
+   "id": "r54",
+   "anchor": "CoordinateHelper.set_minor_frequency",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r55",
+   "anchor": "CoordinateHelper._update_grid_lines#assign:coord_range",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r56",
+   "anchor": "CoordinateHelper._update_grid_lines#assign:pixel",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r57",
+   "anchor": "CoordinateHelper._update_grid_lines#assign:pixel",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r58",
+   "anchor": "CoordinateHelper._update_grid_lines#assign:xy_world_round",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r59",
+   "anchor": "CoordinateHelper._update_grid_contour#assign:tick_world_coordinates_values",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r60",
+   "anchor": "CoordinateHelper._update_grid_contour#if:self.coord_type == 'longitude'/assign:mid",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r61",
+   "anchor": "CoordinateHelper._update_grid_contour#if:self.coord_type == 'longitude'/assign:reset",
+   "kind": "lead",
+   "line": 819
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20491,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6547,
+  "thinking_tokens": 3325,
+  "opus_cost_usd": 0.37287649999999994,
+  "total_cost_usd": 0.3878154999999999,
+  "duration_ms": 59418,
+  "duration_api_ms": 60901,
+  "num_turns": 2
+ },
+ "wall_ms": 60276,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

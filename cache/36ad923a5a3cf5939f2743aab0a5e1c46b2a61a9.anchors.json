@@ -1,0 +1,427 @@
+{
+ "blob_sha": "36ad923a5a3cf5939f2743aab0a5e1c46b2a61a9",
+ "path": "django/template/defaulttags.py",
+ "repo": "django/django",
+ "records": 67,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "AutoEscapeControlNode",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r3",
+   "anchor": "CsrfTokenNode.render#if:csrf_token/else/if:settings.DEBUG",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r4",
+   "anchor": "CycleNode.render#if:self not in context.render_context/assign:context.render_context[self]",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r5",
+   "anchor": "CycleNode.reset",
+   "kind": "doc",
+   "line": 89
+  },
+  {
+   "id": "r6",
+   "anchor": "FilterNode.render#with:context.push(var=output)",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r7",
+   "anchor": "ForNode.render#with:context.push()/assign:loop_dict",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r8",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/assign:loop_dict['counter0']",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r9",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/assign:loop_dict['revcounter']",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r10",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/assign:loop_dict['first']",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r11",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/if:unpack/try",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r12",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/if:unpack/try/except:TypeError",
+   "kind": "trail",
+   "line": 195
+  },
+  {
+   "id": "r13",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/if:unpack/if:num_loopvars!=len_item",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r14",
+   "anchor": "ForNode.render#with:context.push()/for:i, item in enumerate(values)/if:pop_context/call:context.pop",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r15",
+   "anchor": "IfChangedNode.render#assign:state_frame",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r16",
+   "anchor": "IfChangedNode.render#if:self._varlist/assign:compare_to",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r17",
+   "anchor": "IfChangedNode.render#if:self._varlist/else/assign:compare_to",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r18",
+   "anchor": "IfChangedNode.render#if:compare_to!=state_frame[self]/return",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r19",
+   "anchor": "IfChangedNode._get_context_stack_frame#if:'forloop' in context",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r20",
+   "anchor": "IfChangedNode._get_context_stack_frame#if:'forloop' in context/return",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r21",
+   "anchor": "IfChangedNode._get_context_stack_frame#if:'forloop' in context/else/return",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r22",
+   "anchor": "IfNode.render#for:condition, nodelist in self.conditions_nodelists/if:condition is not None",
+   "kind": "trail",
+   "line": 282
+  },
+  {
+   "id": "r23",
+   "anchor": "IfNode.render#for:condition, nodelist in self.conditions_nodelists/if:condition is not None/else",
+   "kind": "trail",
+   "line": 287
+  },
+  {
+   "id": "r24",
+   "anchor": "RegroupNode.resolve_expression#assign:context[self.var_name]",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r25",
+   "anchor": "RegroupNode.render#if:obj_list is None/assign:context[self.var_name]",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r26",
+   "anchor": "RegroupNode.render#assign:context[self.var_name]",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r27",
+   "anchor": "URLNode.render#assign:url",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r28",
+   "anchor": "WithNode.extra_context",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r29",
+   "anchor": "autoescape",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r30",
+   "anchor": "autoescape#assign:args",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r31",
+   "anchor": "comment",
+   "kind": "doc",
+   "line": 525
+  },
+  {
+   "id": "r32",
+   "anchor": "cycle",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r33",
+   "anchor": "cycle#assign:args",
+   "kind": "lead",
+   "line": 579
+  },
+  {
+   "id": "r34",
+   "anchor": "cycle#if:len(args)==2/assign:name",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r35",
+   "anchor": "cycle#if:len(args)>4/if:args[-3]==\"as\"",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r36",
+   "anchor": "debug",
+   "kind": "doc",
+   "line": 627
+  },
+  {
+   "id": "r37",
+   "anchor": "do_filter",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r38",
+   "anchor": "do_filter#assign:_, rest",
+   "kind": "lead",
+   "line": 660
+  },
+  {
+   "id": "r39",
+   "anchor": "firstof",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r40",
+   "anchor": "do_for",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r41",
+   "anchor": "TemplateLiteral.text",
+   "kind": "trail",
+   "line": 815
+  },
+  {
+   "id": "r42",
+   "anchor": "do_if",
+   "kind": "doc",
+   "line": 836
+  },
+  {
+   "id": "r43",
+   "anchor": "do_if#assign:bits",
+   "kind": "lead",
+   "line": 895
+  },
+  {
+   "id": "r44",
+   "anchor": "do_if#while:token.contents.startswith('elif')",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r45",
+   "anchor": "do_if#if:token.contents=='else'",
+   "kind": "lead",
+   "line": 910
+  },
+  {
+   "id": "r46",
+   "anchor": "do_if#if:token.contents!='endif'",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r47",
+   "anchor": "ifchanged",
+   "kind": "doc",
+   "line": 923
+  },
+  {
+   "id": "r48",
+   "anchor": "load_from_library",
+   "kind": "doc",
+   "line": 975
+  },
+  {
+   "id": "r49",
+   "anchor": "load",
+   "kind": "doc",
+   "line": 998
+  },
+  {
+   "id": "r50",
+   "anchor": "load#assign:bits",
+   "kind": "lead",
+   "line": 1013
+  },
+  {
+   "id": "r51",
+   "anchor": "load#if:len(bits)>=4 and bits[-2]==\"from\"/assign:name",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r52",
+   "anchor": "load#if:len(bits)>=4 and bits[-2]==\"from\"/else/for:name in bits[1:]",
+   "kind": "lead",
+   "line": 1022
+  },
+  {
+   "id": "r53",
+   "anchor": "lorem",
+   "kind": "doc",
+   "line": 1029
+  },
+  {
+   "id": "r54",
+   "anchor": "lorem#assign:common",
+   "kind": "lead",
+   "line": 1056
+  },
+  {
+   "id": "r55",
+   "anchor": "lorem#if:bits[-1] in ('w', 'p', 'b')",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r56",
+   "anchor": "lorem#if:len(bits)>1",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r57",
+   "anchor": "now",
+   "kind": "doc",
+   "line": 1076
+  },
+  {
+   "id": "r58",
+   "anchor": "regroup",
+   "kind": "doc",
+   "line": 1099
+  },
+  {
+   "id": "r59",
+   "anchor": "regroup#assign:expression",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r60",
+   "anchor": "resetcycle",
+   "kind": "doc",
+   "line": 1168
+  },
+  {
+   "id": "r61",
+   "anchor": "spaceless",
+   "kind": "doc",
+   "line": 1194
+  },
+  {
+   "id": "r62",
+   "anchor": "templatetag",
+   "kind": "doc",
+   "line": 1225
+  },
+  {
+   "id": "r63",
+   "anchor": "templatetag#assign:bits",
+   "kind": "lead",
+   "line": 1248
+  },
+  {
+   "id": "r64",
+   "anchor": "url",
+   "kind": "doc",
+   "line": 1260
+  },
+  {
+   "id": "r65",
+   "anchor": "verbatim",
+   "kind": "doc",
+   "line": 1327
+  },
+  {
+   "id": "r66",
+   "anchor": "widthratio",
+   "kind": "doc",
+   "line": 1350
+  },
+  {
+   "id": "r67",
+   "anchor": "do_with",
+   "kind": "doc",
+   "line": 1388
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28400,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6002,
+  "thinking_tokens": 3055,
+  "opus_cost_usd": 0.43834150000000005,
+  "total_cost_usd": 0.46030150000000003,
+  "duration_ms": 52001,
+  "duration_api_ms": 53500,
+  "num_turns": 2
+ },
+ "wall_ms": 52804,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

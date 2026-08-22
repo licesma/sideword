@@ -1,0 +1,1183 @@
+{
+ "blob_sha": "49ccabe504ee6da26424a6922ff89f01cf57e66c",
+ "path": "lib/matplotlib/cbook.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 193,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_running_interactive_framework",
+   "kind": "doc",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_running_interactive_framework#assign:QtWidgets",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r4",
+   "anchor": "_StrongRef",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r5",
+   "anchor": "_weak_or_strong_ref",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r6",
+   "anchor": "CallbackRegistry",
+   "kind": "doc",
+   "line": 113
+  },
+  {
+   "id": "r7",
+   "anchor": "CallbackRegistry.__init__",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r8",
+   "anchor": "CallbackRegistry._signals",
+   "kind": "trail",
+   "line": 175
+  },
+  {
+   "id": "r9",
+   "anchor": "CallbackRegistry._pickled_cids",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r10",
+   "anchor": "CallbackRegistry.__getstate__#return/key:callbacks",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r11",
+   "anchor": "CallbackRegistry.__getstate__#return/key:_func_cid_map",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r12",
+   "anchor": "CallbackRegistry.connect",
+   "kind": "doc",
+   "line": 205
+  },
+  {
+   "id": "r13",
+   "anchor": "CallbackRegistry._connect_picklable",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r14",
+   "anchor": "CallbackRegistry._remove_proxy",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r15",
+   "anchor": "CallbackRegistry._remove_proxy#if:_is_finalizing()/return",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r16",
+   "anchor": "CallbackRegistry._remove_proxy#for:signal, proxy_to_cid in list(self._func_cid_map.items())/else/return",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r17",
+   "anchor": "CallbackRegistry._remove_proxy#if:len(self.callbacks[signal]) == 0",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r18",
+   "anchor": "CallbackRegistry.disconnect",
+   "kind": "doc",
+   "line": 249
+  },
+  {
+   "id": "r19",
+   "anchor": "CallbackRegistry.disconnect#for:signal, cid_to_proxy in list(self.callbacks.items())",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r20",
+   "anchor": "CallbackRegistry.disconnect#for:signal, cid_to_proxy in list(self.callbacks.items())/else/return",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r21",
+   "anchor": "CallbackRegistry.disconnect#if:len(self.callbacks[signal]) == 0",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r22",
+   "anchor": "CallbackRegistry.process",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r23",
+   "anchor": "CallbackRegistry.process#for:cid, ref in list(self.callbacks.get(s, {}).items())/if:func is not None/try/except:Exception",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r24",
+   "anchor": "CallbackRegistry.blocked",
+   "kind": "doc",
+   "line": 298
+  },
+  {
+   "id": "r25",
+   "anchor": "CallbackRegistry.blocked#try/if:signal is None/assign:self.callbacks",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r26",
+   "anchor": "CallbackRegistry.blocked#try/if:signal is None/else/assign:self.callbacks",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r27",
+   "anchor": "silent_list",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r28",
+   "anchor": "strip_math",
+   "kind": "doc",
+   "line": 372
+  },
+  {
+   "id": "r29",
+   "anchor": "strip_math#if:len(s) >= 2 and s[0] == s[-1] == \"$\"/for:tex, plain in [(r\"\\times\", \"x\"), (r\"\\mathdefault\", \"\"), (r\"\\rm\", \"\"), (r\"\\cal\", \"\"), (r\"\\tt\", \"\"), (r\"\\it\", \"\"), (\"\\\\\", \"\"), (\"{\", \"\"), (\"}\", \"\")]/item:(r\"\\times\", \"x\")",
+   "kind": "trail",
+   "line": 381
+  },
+  {
+   "id": "r30",
+   "anchor": "_strip_comment",
+   "kind": "doc",
+   "line": 395
+  },
+  {
+   "id": "r31",
+   "anchor": "_strip_comment#while:True/if:quote_pos < 0/elif:0 <= hash_pos < quote_pos/else/assign:pos",
+   "kind": "trail",
+   "line": 412
+  },
+  {
+   "id": "r32",
+   "anchor": "is_writable_file_like",
+   "kind": "doc",
+   "line": 415
+  },
+  {
+   "id": "r33",
+   "anchor": "file_requires_unicode",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r34",
+   "anchor": "to_filehandle",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r35",
+   "anchor": "to_filehandle#if:isinstance(fname, str)/if:fname.endswith('.gz')/elif:fname.endswith('.bz2')/import:bz2",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r36",
+   "anchor": "open_file_cm",
+   "kind": "doc",
+   "line": 485
+  },
+  {
+   "id": "r37",
+   "anchor": "is_scalar_or_string",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r38",
+   "anchor": "get_sample_data",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r39",
+   "anchor": "_get_data_path",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r40",
+   "anchor": "flatten",
+   "kind": "doc",
+   "line": 543
+  },
+  {
+   "id": "r41",
+   "anchor": "Stack",
+   "kind": "doc",
+   "line": 565
+  },
+  {
+   "id": "r42",
+   "anchor": "Stack.__call__",
+   "kind": "doc",
+   "line": 576
+  },
+  {
+   "id": "r43",
+   "anchor": "Stack.forward",
+   "kind": "doc",
+   "line": 589
+  },
+  {
+   "id": "r44",
+   "anchor": "Stack.back",
+   "kind": "doc",
+   "line": 594
+  },
+  {
+   "id": "r45",
+   "anchor": "Stack.push",
+   "kind": "doc",
+   "line": 600
+  },
+  {
+   "id": "r46",
+   "anchor": "Stack.home",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r47",
+   "anchor": "Stack.empty",
+   "kind": "doc",
+   "line": 621
+  },
+  {
+   "id": "r48",
+   "anchor": "Stack.clear",
+   "kind": "doc",
+   "line": 625
+  },
+  {
+   "id": "r49",
+   "anchor": "Stack.bubble",
+   "kind": "doc",
+   "line": 630
+  },
+  {
+   "id": "r50",
+   "anchor": "Stack.remove",
+   "kind": "doc",
+   "line": 653
+  },
+  {
+   "id": "r51",
+   "anchor": "safe_masked_invalid#if:not x.dtype.isnative/assign:x",
+   "kind": "lead",
+   "line": 676
+  },
+  {
+   "id": "r52",
+   "anchor": "safe_masked_invalid#if:not x.dtype.isnative/assign:x",
+   "kind": "trail",
+   "line": 676
+  },
+  {
+   "id": "r53",
+   "anchor": "print_cycles",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r54",
+   "anchor": "print_cycles.print_path#for:i, step in enumerate(path)/assign:next",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r55",
+   "anchor": "print_cycles.recurse#for:referent in referents/if:referent is start",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r56",
+   "anchor": "print_cycles.recurse#for:referent in referents/if:referent is start/elif:referent is objects or isinstance(referent, types.FrameType)",
+   "kind": "lead",
+   "line": 742
+  },
+  {
+   "id": "r57",
+   "anchor": "print_cycles.recurse#for:referent in referents/if:referent is start/elif:referent is objects or isinstance(referent, types.FrameType)/elif:id(referent) not in all",
+   "kind": "lead",
+   "line": 746
+  },
+  {
+   "id": "r58",
+   "anchor": "Grouper",
+   "kind": "doc",
+   "line": 754
+  },
+  {
+   "id": "r59",
+   "anchor": "Grouper.clean",
+   "kind": "doc",
+   "line": 794
+  },
+  {
+   "id": "r60",
+   "anchor": "Grouper.join",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r61",
+   "anchor": "Grouper.joined",
+   "kind": "doc",
+   "line": 820
+  },
+  {
+   "id": "r62",
+   "anchor": "Grouper.__iter__",
+   "kind": "doc",
+   "line": 832
+  },
+  {
+   "id": "r63",
+   "anchor": "Grouper.get_siblings",
+   "kind": "doc",
+   "line": 843
+  },
+  {
+   "id": "r64",
+   "anchor": "GrouperView",
+   "kind": "doc",
+   "line": 850
+  },
+  {
+   "id": "r65",
+   "anchor": "simple_linear_interpolation",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r66",
+   "anchor": "delete_masked_points",
+   "kind": "doc",
+   "line": 884
+  },
+  {
+   "id": "r67",
+   "anchor": "delete_masked_points#assign:masks",
+   "kind": "trail",
+   "line": 932
+  },
+  {
+   "id": "r68",
+   "anchor": "delete_masked_points#for:i, x in enumerate(margs)/if:seqlist[i]/if:x.ndim > 1/continue",
+   "kind": "trail",
+   "line": 936
+  },
+  {
+   "id": "r69",
+   "anchor": "delete_masked_points#for:i, x in enumerate(margs)/if:seqlist[i]/if:isinstance(x, np.ma.MaskedArray)/call:masks.append",
+   "kind": "trail",
+   "line": 938
+  },
+  {
+   "id": "r70",
+   "anchor": "delete_masked_points#for:i, x in enumerate(margs)/if:seqlist[i]/try/except:Exception",
+   "kind": "todo",
+   "line": 946
+  },
+  {
+   "id": "r71",
+   "anchor": "_combine_masks",
+   "kind": "doc",
+   "line": 961
+  },
+  {
+   "id": "r72",
+   "anchor": "_combine_masks#assign:margs",
+   "kind": "trail",
+   "line": 997
+  },
+  {
+   "id": "r73",
+   "anchor": "_combine_masks#assign:seqlist",
+   "kind": "trail",
+   "line": 998
+  },
+  {
+   "id": "r74",
+   "anchor": "_combine_masks#assign:masks",
+   "kind": "trail",
+   "line": 999
+  },
+  {
+   "id": "r75",
+   "anchor": "_combine_masks#for:i, x in enumerate(args)/if:is_scalar_or_string(x) or len(x) != nrecs/call:margs.append",
+   "kind": "trail",
+   "line": 1002
+  },
+  {
+   "id": "r76",
+   "anchor": "_combine_masks#for:i, x in enumerate(args)/if:is_scalar_or_string(x) or len(x) != nrecs/else/try/except:(np.VisibleDeprecationWarning, ValueError)/assign:x",
+   "kind": "lead",
+   "line": 1011
+  },
+  {
+   "id": "r77",
+   "anchor": "_combine_masks#for:i, x in enumerate(args)/if:is_scalar_or_string(x) or len(x) != nrecs/else/call:margs.append",
+   "kind": "trail",
+   "line": 1017
+  },
+  {
+   "id": "r78",
+   "anchor": "boxplot_stats",
+   "kind": "doc",
+   "line": 1026
+  },
+  {
+   "id": "r79",
+   "anchor": "boxplot_stats._bootstrap_median#assign:M",
+   "kind": "lead",
+   "line": 1108
+  },
+  {
+   "id": "r80",
+   "anchor": "boxplot_stats._compute_conf_interval#if:bootstrap is not None/assign:CI",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r81",
+   "anchor": "boxplot_stats#assign:bxpstats",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r82",
+   "anchor": "boxplot_stats#assign:X",
+   "kind": "lead",
+   "line": 1137
+  },
+  {
+   "id": "r83",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats",
+   "kind": "lead",
+   "line": 1149
+  },
+  {
+   "id": "r84",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:whis",
+   "kind": "lead",
+   "line": 1154
+  },
+  {
+   "id": "r85",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/call:bxpstats.append",
+   "kind": "lead",
+   "line": 1157
+  },
+  {
+   "id": "r86",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/if:len(x) == 0",
+   "kind": "lead",
+   "line": 1160
+  },
+  {
+   "id": "r87",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:x",
+   "kind": "lead",
+   "line": 1174
+  },
+  {
+   "id": "r88",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats['mean']",
+   "kind": "lead",
+   "line": 1177
+  },
+  {
+   "id": "r89",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:q1, med, q3",
+   "kind": "lead",
+   "line": 1180
+  },
+  {
+   "id": "r90",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats['iqr']",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r91",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats['cilo'], stats['cihi']",
+   "kind": "lead",
+   "line": 1188
+  },
+  {
+   "id": "r92",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/if:np.iterable(whis) and not isinstance(whis, str)",
+   "kind": "lead",
+   "line": 1193
+  },
+  {
+   "id": "r93",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:wiskhi",
+   "kind": "lead",
+   "line": 1202
+  },
+  {
+   "id": "r94",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:wisklo",
+   "kind": "lead",
+   "line": 1209
+  },
+  {
+   "id": "r95",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats['fliers']",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r96",
+   "anchor": "boxplot_stats#for:ii, (x, label) in enumerate(zip(X, labels))/assign:stats['q1'], stats['med'], stats['q3']",
+   "kind": "lead",
+   "line": 1222
+  },
+  {
+   "id": "r97",
+   "anchor": "ls_mapper",
+   "kind": "lead",
+   "line": 1228
+  },
+  {
+   "id": "r98",
+   "anchor": "ls_mapper_r",
+   "kind": "lead",
+   "line": 1230
+  },
+  {
+   "id": "r99",
+   "anchor": "contiguous_regions",
+   "kind": "doc",
+   "line": 1233
+  },
+  {
+   "id": "r100",
+   "anchor": "contiguous_regions#assign:idx",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r101",
+   "anchor": "contiguous_regions#assign:idx",
+   "kind": "lead",
+   "line": 1248
+  },
+  {
+   "id": "r102",
+   "anchor": "contiguous_regions#if:mask[0]",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r103",
+   "anchor": "is_math_text",
+   "kind": "doc",
+   "line": 1259
+  },
+  {
+   "id": "r104",
+   "anchor": "_to_unmasked_float_array",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r105",
+   "anchor": "_check_1d",
+   "kind": "doc",
+   "line": 1283
+  },
+  {
+   "id": "r106",
+   "anchor": "_check_1d#assign:x",
+   "kind": "lead",
+   "line": 1286
+  },
+  {
+   "id": "r107",
+   "anchor": "_check_1d#if:not hasattr(x, 'shape') or not hasattr(x, 'ndim') or len(x.shape) < 1",
+   "kind": "lead",
+   "line": 1290
+  },
+  {
+   "id": "r108",
+   "anchor": "_reshape_2D",
+   "kind": "doc",
+   "line": 1298
+  },
+  {
+   "id": "r109",
+   "anchor": "_reshape_2D#assign:X",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r110",
+   "anchor": "_reshape_2D#if:isinstance(X, np.ndarray)",
+   "kind": "lead",
+   "line": 1314
+  },
+  {
+   "id": "r111",
+   "anchor": "_reshape_2D#if:isinstance(X, np.ndarray)/if:len(X) == 0/elif:X.ndim == 1 and np.ndim(X[0]) == 0/return",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r112",
+   "anchor": "_reshape_2D#if:isinstance(X, np.ndarray)/if:len(X) == 0/elif:X.ndim == 1 and np.ndim(X[0]) == 0/elif:X.ndim in [1, 2]/return",
+   "kind": "lead",
+   "line": 1324
+  },
+  {
+   "id": "r113",
+   "anchor": "_reshape_2D#if:len(X) == 0",
+   "kind": "lead",
+   "line": 1329
+  },
+  {
+   "id": "r114",
+   "anchor": "_reshape_2D#for:xi in X/if:not isinstance(xi, str)",
+   "kind": "lead",
+   "line": 1337
+  },
+  {
+   "id": "r115",
+   "anchor": "_reshape_2D#if:is_1d/return",
+   "kind": "lead",
+   "line": 1352
+  },
+  {
+   "id": "r116",
+   "anchor": "_reshape_2D#if:is_1d/else/return",
+   "kind": "lead",
+   "line": 1355
+  },
+  {
+   "id": "r117",
+   "anchor": "violin_stats",
+   "kind": "doc",
+   "line": 1358
+  },
+  {
+   "id": "r118",
+   "anchor": "violin_stats#assign:vpstats",
+   "kind": "lead",
+   "line": 1411
+  },
+  {
+   "id": "r119",
+   "anchor": "violin_stats#assign:X",
+   "kind": "lead",
+   "line": 1414
+  },
+  {
+   "id": "r120",
+   "anchor": "violin_stats#if:quantiles is not None and len(quantiles) != 0",
+   "kind": "lead",
+   "line": 1417
+  },
+  {
+   "id": "r121",
+   "anchor": "violin_stats#if:quantiles is not None and len(quantiles) != 0/else",
+   "kind": "lead",
+   "line": 1420
+  },
+  {
+   "id": "r122",
+   "anchor": "violin_stats#if:len(X) != len(quantiles)",
+   "kind": "lead",
+   "line": 1424
+  },
+  {
+   "id": "r123",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)",
+   "kind": "lead",
+   "line": 1429
+  },
+  {
+   "id": "r124",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)/assign:stats",
+   "kind": "lead",
+   "line": 1431
+  },
+  {
+   "id": "r125",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)/assign:min_val",
+   "kind": "lead",
+   "line": 1434
+  },
+  {
+   "id": "r126",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)/assign:coords",
+   "kind": "lead",
+   "line": 1439
+  },
+  {
+   "id": "r127",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)/assign:stats['mean']",
+   "kind": "lead",
+   "line": 1444
+  },
+  {
+   "id": "r128",
+   "anchor": "violin_stats#for:(x, q) in zip(X, quantiles)/call:vpstats.append",
+   "kind": "lead",
+   "line": 1451
+  },
+  {
+   "id": "r129",
+   "anchor": "pts_to_prestep",
+   "kind": "doc",
+   "line": 1456
+  },
+  {
+   "id": "r130",
+   "anchor": "pts_to_prestep#assign:steps[0, 0::2]",
+   "kind": "lead",
+   "line": 1487
+  },
+  {
+   "id": "r131",
+   "anchor": "pts_to_poststep",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r132",
+   "anchor": "pts_to_midstep",
+   "kind": "doc",
+   "line": 1530
+  },
+  {
+   "id": "r133",
+   "anchor": "pts_to_midstep#assign:steps[0, :1]",
+   "kind": "trail",
+   "line": 1561
+  },
+  {
+   "id": "r134",
+   "anchor": "index_of",
+   "kind": "doc",
+   "line": 1575
+  },
+  {
+   "id": "r135",
+   "anchor": "index_of#try/except:(np.VisibleDeprecationWarning, ValueError)/pass",
+   "kind": "lead",
+   "line": 1604
+  },
+  {
+   "id": "r136",
+   "anchor": "safe_first_element",
+   "kind": "doc",
+   "line": 1610
+  },
+  {
+   "id": "r137",
+   "anchor": "_safe_first_finite",
+   "kind": "doc",
+   "line": 1620
+  },
+  {
+   "id": "r138",
+   "anchor": "_safe_first_finite.safe_isfinite#try/except:TypeError/return",
+   "kind": "lead",
+   "line": 1638
+  },
+  {
+   "id": "r139",
+   "anchor": "_safe_first_finite#if:skip_nonfinite is False/if:isinstance(obj, collections.abc.Iterator)/try",
+   "kind": "lead",
+   "line": 1646
+  },
+  {
+   "id": "r140",
+   "anchor": "_safe_first_finite#if:skip_nonfinite is False/elif:isinstance(obj, np.flatiter)/return",
+   "kind": "todo",
+   "line": 1655
+  },
+  {
+   "id": "r141",
+   "anchor": "sanitize_sequence",
+   "kind": "doc",
+   "line": 1663
+  },
+  {
+   "id": "r142",
+   "anchor": "normalize_kwargs",
+   "kind": "doc",
+   "line": 1671
+  },
+  {
+   "id": "r143",
+   "anchor": "normalize_kwargs#if:alias_mapping is None",
+   "kind": "lead",
+   "line": 1704
+  },
+  {
+   "id": "r144",
+   "anchor": "normalize_kwargs#assign:ret",
+   "kind": "trail",
+   "line": 1714
+  },
+  {
+   "id": "r145",
+   "anchor": "_lock_path",
+   "kind": "doc",
+   "line": 1728
+  },
+  {
+   "id": "r146",
+   "anchor": "_topmost_artist",
+   "kind": "doc",
+   "line": 1766
+  },
+  {
+   "id": "r147",
+   "anchor": "_str_equal",
+   "kind": "doc",
+   "line": 1779
+  },
+  {
+   "id": "r148",
+   "anchor": "_str_lower_equal",
+   "kind": "doc",
+   "line": 1790
+  },
+  {
+   "id": "r149",
+   "anchor": "_array_perimeter",
+   "kind": "doc",
+   "line": 1801
+  },
+  {
+   "id": "r150",
+   "anchor": "_array_perimeter#assign:forward",
+   "kind": "lead",
+   "line": 1830
+  },
+  {
+   "id": "r151",
+   "anchor": "_array_perimeter#assign:forward",
+   "kind": "trail",
+   "line": 1830
+  },
+  {
+   "id": "r152",
+   "anchor": "_array_perimeter#assign:backward",
+   "kind": "trail",
+   "line": 1831
+  },
+  {
+   "id": "r153",
+   "anchor": "_unfold",
+   "kind": "doc",
+   "line": 1840
+  },
+  {
+   "id": "r154",
+   "anchor": "_array_patch_perimeters",
+   "kind": "doc",
+   "line": 1890
+  },
+  {
+   "id": "r155",
+   "anchor": "_array_patch_perimeters#assign:top",
+   "kind": "lead",
+   "line": 1931
+  },
+  {
+   "id": "r156",
+   "anchor": "_setattr_cm",
+   "kind": "doc",
+   "line": 1940
+  },
+  {
+   "id": "r157",
+   "anchor": "_setattr_cm#for:attr in kwargs/if:attr in obj.__dict__ or orig is sentinel/assign:origs[attr]",
+   "kind": "lead",
+   "line": 1951
+  },
+  {
+   "id": "r158",
+   "anchor": "_setattr_cm#for:attr in kwargs/if:attr in obj.__dict__ or orig is sentinel/else/assign:cls_orig",
+   "kind": "lead",
+   "line": 1955
+  },
+  {
+   "id": "r159",
+   "anchor": "_setattr_cm#for:attr in kwargs/if:attr in obj.__dict__ or orig is sentinel/else/if:isinstance(cls_orig, property)",
+   "kind": "lead",
+   "line": 1958
+  },
+  {
+   "id": "r160",
+   "anchor": "_setattr_cm#for:attr in kwargs/if:attr in obj.__dict__ or orig is sentinel/else/if:isinstance(cls_orig, property)/else",
+   "kind": "lead",
+   "line": 1968
+  },
+  {
+   "id": "r161",
+   "anchor": "_premultiplied_argb32_to_unmultiplied_rgba8888",
+   "kind": "lead",
+   "line": 2008
+  },
+  {
+   "id": "r162",
+   "anchor": "_premultiplied_argb32_to_unmultiplied_rgba8888",
+   "kind": "doc",
+   "line": 2008
+  },
+  {
+   "id": "r163",
+   "anchor": "_premultiplied_argb32_to_unmultiplied_rgba8888#assign:rgba",
+   "kind": "trail",
+   "line": 2012
+  },
+  {
+   "id": "r164",
+   "anchor": "_premultiplied_argb32_to_unmultiplied_rgba8888#assign:mask",
+   "kind": "lead",
+   "line": 2018
+  },
+  {
+   "id": "r165",
+   "anchor": "_unmultiplied_rgba8888_to_premultiplied_argb32",
+   "kind": "doc",
+   "line": 2026
+  },
+  {
+   "id": "r166",
+   "anchor": "_unmultiplied_rgba8888_to_premultiplied_argb32#if:alpha8.min() != 0xff",
+   "kind": "lead",
+   "line": 2041
+  },
+  {
+   "id": "r167",
+   "anchor": "_get_nonzero_slices",
+   "kind": "doc",
+   "line": 2046
+  },
+  {
+   "id": "r168",
+   "anchor": "_pformat_subprocess",
+   "kind": "doc",
+   "line": 2064
+  },
+  {
+   "id": "r169",
+   "anchor": "_check_and_log_subprocess",
+   "kind": "doc",
+   "line": 2070
+  },
+  {
+   "id": "r170",
+   "anchor": "_backend_module_name",
+   "kind": "doc",
+   "line": 2104
+  },
+  {
+   "id": "r171",
+   "anchor": "_setup_new_guiapp",
+   "kind": "doc",
+   "line": 2113
+  },
+  {
+   "id": "r172",
+   "anchor": "_setup_new_guiapp#try",
+   "kind": "lead",
+   "line": 2120
+  },
+  {
+   "id": "r173",
+   "anchor": "_format_approx",
+   "kind": "doc",
+   "line": 2127
+  },
+  {
+   "id": "r174",
+   "anchor": "_g_sig_digits",
+   "kind": "doc",
+   "line": 2135
+  },
+  {
+   "id": "r175",
+   "anchor": "_g_sig_digits#if:delta == 0/assign:delta",
+   "kind": "lead",
+   "line": 2143
+  },
+  {
+   "id": "r176",
+   "anchor": "_g_sig_digits#return",
+   "kind": "lead",
+   "line": 2150
+  },
+  {
+   "id": "r177",
+   "anchor": "_unikey_or_keysym_to_mplkey",
+   "kind": "doc",
+   "line": 2156
+  },
+  {
+   "id": "r178",
+   "anchor": "_unikey_or_keysym_to_mplkey#if:unikey and unikey.isprintable()",
+   "kind": "lead",
+   "line": 2164
+  },
+  {
+   "id": "r179",
+   "anchor": "_unikey_or_keysym_to_mplkey#if:key.startswith(\"kp_\")",
+   "kind": "trail",
+   "line": 2167
+  },
+  {
+   "id": "r180",
+   "anchor": "_unikey_or_keysym_to_mplkey#if:key.startswith(\"page_\")",
+   "kind": "trail",
+   "line": 2169
+  },
+  {
+   "id": "r181",
+   "anchor": "_unikey_or_keysym_to_mplkey#if:key.endswith((\"_l\", \"_r\"))",
+   "kind": "trail",
+   "line": 2171
+  },
+  {
+   "id": "r182",
+   "anchor": "_unikey_or_keysym_to_mplkey#assign:key/key:prior",
+   "kind": "trail",
+   "line": 2175
+  },
+  {
+   "id": "r183",
+   "anchor": "_unikey_or_keysym_to_mplkey#assign:key/key:next",
+   "kind": "trail",
+   "line": 2176
+  },
+  {
+   "id": "r184",
+   "anchor": "_make_class_factory",
+   "kind": "doc",
+   "line": 2182
+  },
+  {
+   "id": "r185",
+   "anchor": "_make_class_factory.class_factory#if:issubclass(axes_class, mixin_class)",
+   "kind": "lead",
+   "line": 2203
+  },
+  {
+   "id": "r186",
+   "anchor": "_make_class_factory.class_factory#assign:base_class",
+   "kind": "lead",
+   "line": 2208
+  },
+  {
+   "id": "r187",
+   "anchor": "_make_class_factory.class_factory.subcls.__module__",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r188",
+   "anchor": "_picklable_class_constructor",
+   "kind": "doc",
+   "line": 2228
+  },
+  {
+   "id": "r189",
+   "anchor": "_unpack_to_numpy",
+   "kind": "doc",
+   "line": 2235
+  },
+  {
+   "id": "r190",
+   "anchor": "_unpack_to_numpy#if:isinstance(x, np.ndarray)/return",
+   "kind": "lead",
+   "line": 2239
+  },
+  {
+   "id": "r191",
+   "anchor": "_unpack_to_numpy#if:hasattr(x, 'to_numpy')/return",
+   "kind": "lead",
+   "line": 2242
+  },
+  {
+   "id": "r192",
+   "anchor": "_unpack_to_numpy#if:hasattr(x, 'values')/if:isinstance(xtmp, np.ndarray)",
+   "kind": "lead",
+   "line": 2247
+  },
+  {
+   "id": "r193",
+   "anchor": "_auto_format_str",
+   "kind": "doc",
+   "line": 2252
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 48497,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 19663,
+  "thinking_tokens": 10112,
+  "opus_cost_usd": 0.9808365,
+  "total_cost_usd": 1.0199545,
+  "duration_ms": 170025,
+  "duration_api_ms": 171505,
+  "num_turns": 2
+ },
+ "wall_ms": 171162,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

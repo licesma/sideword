@@ -1,0 +1,847 @@
+{
+ "blob_sha": "001cc8e6e3b962231314ea0869ded1e2ce8bdbce",
+ "path": "lib/matplotlib/colorbar.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 137,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_set_ticks_on_axis_warn#call:_api.warn_external",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r3",
+   "anchor": "_ColorbarSpine.get_window_extent#return",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r4",
+   "anchor": "_ColorbarAxesLocator",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r5",
+   "anchor": "_ColorbarAxesLocator.__call__#if:hasattr(ax, '_colorbar_info')",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r6",
+   "anchor": "_ColorbarAxesLocator.__call__#if:self._cbar.orientation == 'vertical'",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r7",
+   "anchor": "_ColorbarAxesLocator.get_subplotspec#assign:ss",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r8",
+   "anchor": "Colorbar",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r9",
+   "anchor": "Colorbar.n_rasterize",
+   "kind": "trail",
+   "line": 334
+  },
+  {
+   "id": "r10",
+   "anchor": "Colorbar.__init__#param:spacing",
+   "kind": "trail",
+   "line": 345
+  },
+  {
+   "id": "r11",
+   "anchor": "Colorbar.__init__#if:mappable.get_array() is not None",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r12",
+   "anchor": "Colorbar.__init__#call:self.set_alpha",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r13",
+   "anchor": "Colorbar._patch",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r14",
+   "anchor": "Colorbar.__scale",
+   "kind": "trail",
+   "line": 445
+  },
+  {
+   "id": "r15",
+   "anchor": "Colorbar.__init__#if:isinstance(format, str)/try",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r16",
+   "anchor": "Colorbar.__init__#if:isinstance(format, str)/else/assign:self._formatter",
+   "kind": "trail",
+   "line": 467
+  },
+  {
+   "id": "r17",
+   "anchor": "Colorbar.__init__#assign:self.ax._colorbar",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r18",
+   "anchor": "Colorbar.__init__#if:isinstance(self.norm, (colors.BoundaryNorm, colors.NoNorm)) or isinstance(self.mappable, contour.ContourSet)",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r19",
+   "anchor": "Colorbar._interactive_funcs",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r20",
+   "anchor": "Colorbar.__init__#assign:self.ax.cla",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r21",
+   "anchor": "Colorbar._extend_cid1",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r22",
+   "anchor": "Colorbar.locator",
+   "kind": "doc",
+   "line": 494
+  },
+  {
+   "id": "r23",
+   "anchor": "Colorbar.minorlocator",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r24",
+   "anchor": "Colorbar.formatter",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r25",
+   "anchor": "Colorbar.minorformatter",
+   "kind": "doc",
+   "line": 524
+  },
+  {
+   "id": "r26",
+   "anchor": "Colorbar._cbar_cla",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r27",
+   "anchor": "Colorbar._cbar_cla#del:self.ax.cla",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r28",
+   "anchor": "Colorbar.patch",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r29",
+   "anchor": "Colorbar.update_normal",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r30",
+   "anchor": "Colorbar.draw_all",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r31",
+   "anchor": "Colorbar._draw_all",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r32",
+   "anchor": "Colorbar._draw_all#call:self._process_values",
+   "kind": "lead",
+   "line": 602
+  },
+  {
+   "id": "r33",
+   "anchor": "Colorbar._draw_all#assign:self.vmin, self.vmax",
+   "kind": "lead",
+   "line": 605
+  },
+  {
+   "id": "r34",
+   "anchor": "Colorbar._draw_all#assign:X, Y",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r35",
+   "anchor": "Colorbar._draw_all#call:self._do_extends",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r36",
+   "anchor": "Colorbar._draw_all#if:self._long_axis().get_inverted()/assign:lower, upper",
+   "kind": "lead",
+   "line": 614
+  },
+  {
+   "id": "r37",
+   "anchor": "Colorbar._draw_all#call:self.update_ticks",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r38",
+   "anchor": "Colorbar._add_solids",
+   "kind": "doc",
+   "line": 634
+  },
+  {
+   "id": "r39",
+   "anchor": "Colorbar._add_solids#if:self.solids is not None",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r40",
+   "anchor": "Colorbar._add_solids#assign:mappable",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r41",
+   "anchor": "Colorbar._add_solids_patches#assign:hatches",
+   "kind": "trail",
+   "line": 662
+  },
+  {
+   "id": "r42",
+   "anchor": "Colorbar._do_extends",
+   "kind": "doc",
+   "line": 677
+  },
+  {
+   "id": "r43",
+   "anchor": "Colorbar._do_extends#for:patch in self._extend_patches",
+   "kind": "lead",
+   "line": 684
+  },
+  {
+   "id": "r44",
+   "anchor": "Colorbar._do_extends#assign:_, extendlen",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r45",
+   "anchor": "Colorbar._do_extends#if:not self.extendrect",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r46",
+   "anchor": "Colorbar._do_extends#if:not self.extendrect/assign:xyout",
+   "kind": "lead",
+   "line": 696
+  },
+  {
+   "id": "r47",
+   "anchor": "Colorbar._do_extends#if:not self.extendrect/else/assign:xyout",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r48",
+   "anchor": "Colorbar._do_extends#call:self.outline.set_xy",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r49",
+   "anchor": "Colorbar._do_extends#assign:mappable",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r50",
+   "anchor": "Colorbar._do_extends#if:self._extend_lower()/if:not self.extendrect/assign:xy",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r51",
+   "anchor": "Colorbar._do_extends#if:self._extend_lower()/if:not self.extendrect/else/assign:xy",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r52",
+   "anchor": "Colorbar._do_extends#if:self._extend_lower()/assign:val",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r53",
+   "anchor": "Colorbar._do_extends#if:self._extend_lower()/assign:patch/arg:zorder",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r54",
+   "anchor": "Colorbar._do_extends#if:self._extend_upper()/if:not self.extendrect/assign:xy",
+   "kind": "lead",
+   "line": 746
+  },
+  {
+   "id": "r55",
+   "anchor": "Colorbar._do_extends#if:self._extend_upper()/if:not self.extendrect/else/assign:xy",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r56",
+   "anchor": "Colorbar._do_extends#if:self._extend_upper()/assign:val",
+   "kind": "lead",
+   "line": 753
+  },
+  {
+   "id": "r57",
+   "anchor": "Colorbar._do_extends#if:self._extend_upper()/assign:patch/arg:zorder",
+   "kind": "lead",
+   "line": 761
+  },
+  {
+   "id": "r58",
+   "anchor": "Colorbar.add_lines",
+   "kind": "doc",
+   "line": 766
+  },
+  {
+   "id": "r59",
+   "anchor": "Colorbar.add_lines#if:\"CS\" in params/return",
+   "kind": "todo",
+   "line": 801
+  },
+  {
+   "id": "r60",
+   "anchor": "Colorbar.add_lines#assign:fac",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r61",
+   "anchor": "Colorbar.add_lines#assign:xy",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r62",
+   "anchor": "Colorbar.add_lines#assign:xy",
+   "kind": "lead",
+   "line": 840
+  },
+  {
+   "id": "r63",
+   "anchor": "Colorbar.update_ticks",
+   "kind": "doc",
+   "line": 846
+  },
+  {
+   "id": "r64",
+   "anchor": "Colorbar.update_ticks#call:self._get_ticker_locator_formatter",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r65",
+   "anchor": "Colorbar._get_ticker_locator_formatter",
+   "kind": "doc",
+   "line": 856
+  },
+  {
+   "id": "r66",
+   "anchor": "Colorbar._get_ticker_locator_formatter#if:isinstance(self.norm, colors.BoundaryNorm)/elif:isinstance(self.norm, colors.NoNorm)/if:locator is None/assign:nv",
+   "kind": "lead",
+   "line": 878
+  },
+  {
+   "id": "r67",
+   "anchor": "Colorbar._get_ticker_locator_formatter#if:isinstance(self.norm, colors.BoundaryNorm)/else",
+   "kind": "trail",
+   "line": 885
+  },
+  {
+   "id": "r68",
+   "anchor": "Colorbar._get_ticker_locator_formatter#if:isinstance(self.norm, colors.BoundaryNorm)/else/if:locator is None/assign:locator",
+   "kind": "lead",
+   "line": 889
+  },
+  {
+   "id": "r69",
+   "anchor": "Colorbar.set_ticks",
+   "kind": "doc",
+   "line": 905
+  },
+  {
+   "id": "r70",
+   "anchor": "Colorbar.get_ticks",
+   "kind": "doc",
+   "line": 931
+  },
+  {
+   "id": "r71",
+   "anchor": "Colorbar.set_ticklabels",
+   "kind": "doc",
+   "line": 946
+  },
+  {
+   "id": "r72",
+   "anchor": "Colorbar.minorticks_on",
+   "kind": "doc",
+   "line": 982
+  },
+  {
+   "id": "r73",
+   "anchor": "Colorbar.minorticks_off",
+   "kind": "doc",
+   "line": 989
+  },
+  {
+   "id": "r74",
+   "anchor": "Colorbar.set_label",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r75",
+   "anchor": "Colorbar.set_alpha",
+   "kind": "doc",
+   "line": 1021
+  },
+  {
+   "id": "r76",
+   "anchor": "Colorbar._set_scale",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r77",
+   "anchor": "Colorbar.remove",
+   "kind": "doc",
+   "line": 1065
+  },
+  {
+   "id": "r78",
+   "anchor": "Colorbar.remove#call:self.ax.callbacks.disconnect",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r79",
+   "anchor": "Colorbar.remove#try/except:AttributeError/assign:pos",
+   "kind": "lead",
+   "line": 1096
+  },
+  {
+   "id": "r80",
+   "anchor": "Colorbar.remove#try/else/call:ax.set_subplotspec",
+   "kind": "lead",
+   "line": 1100
+  },
+  {
+   "id": "r81",
+   "anchor": "Colorbar._process_values",
+   "kind": "doc",
+   "line": 1102
+  },
+  {
+   "id": "r82",
+   "anchor": "Colorbar._process_values#if:self.values is not None/assign:self._values",
+   "kind": "lead",
+   "line": 1110
+  },
+  {
+   "id": "r83",
+   "anchor": "Colorbar._process_values#if:self.values is not None/if:self.boundaries is None/assign:b",
+   "kind": "lead",
+   "line": 1113
+  },
+  {
+   "id": "r84",
+   "anchor": "Colorbar._process_values#if:isinstance(self.norm, colors.BoundaryNorm)",
+   "kind": "lead",
+   "line": 1123
+  },
+  {
+   "id": "r85",
+   "anchor": "Colorbar._process_values#if:isinstance(self.norm, colors.BoundaryNorm)/elif:isinstance(self.norm, colors.NoNorm)/assign:b",
+   "kind": "lead",
+   "line": 1127
+  },
+  {
+   "id": "r86",
+   "anchor": "Colorbar._process_values#if:isinstance(self.norm, colors.BoundaryNorm)/else/assign:N",
+   "kind": "lead",
+   "line": 1132
+  },
+  {
+   "id": "r87",
+   "anchor": "Colorbar._process_values#if:self._extend_lower()",
+   "kind": "lead",
+   "line": 1135
+  },
+  {
+   "id": "r88",
+   "anchor": "Colorbar._process_values#if:not self.norm.scaled()",
+   "kind": "lead",
+   "line": 1141
+  },
+  {
+   "id": "r89",
+   "anchor": "Colorbar._mesh",
+   "kind": "doc",
+   "line": 1155
+  },
+  {
+   "id": "r90",
+   "anchor": "Colorbar._mesh#if:isinstance(self.norm, (colors.BoundaryNorm, colors.NoNorm)) or self.boundaries is not None",
+   "kind": "lead",
+   "line": 1167
+  },
+  {
+   "id": "r91",
+   "anchor": "Colorbar._mesh#if:isinstance(self.norm, (colors.BoundaryNorm, colors.NoNorm)) or self.boundaries is not None/assign:y",
+   "kind": "lead",
+   "line": 1170
+  },
+  {
+   "id": "r92",
+   "anchor": "Colorbar._mesh#if:isinstance(self.norm, (colors.BoundaryNorm, colors.NoNorm)) or self.boundaries is not None/else/with:self.norm.callbacks.blocked(), cbook._setattr_cm(self.norm, vmin=self.vmin, vmax=self.vmax)",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r93",
+   "anchor": "Colorbar._forward_boundaries#assign:b",
+   "kind": "lead",
+   "line": 1189
+  },
+  {
+   "id": "r94",
+   "anchor": "Colorbar._forward_boundaries#assign:eps",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r95",
+   "anchor": "Colorbar._forward_boundaries#assign:y[x < b[0]-eps]",
+   "kind": "lead",
+   "line": 1195
+  },
+  {
+   "id": "r96",
+   "anchor": "Colorbar._inverse_boundaries#assign:b",
+   "kind": "lead",
+   "line": 1201
+  },
+  {
+   "id": "r97",
+   "anchor": "Colorbar._reset_locator_formatter_scale",
+   "kind": "doc",
+   "line": 1204
+  },
+  {
+   "id": "r98",
+   "anchor": "Colorbar._reset_locator_formatter_scale#if:self.boundaries is not None or isinstance(self.norm, colors.BoundaryNorm)/elif:getattr(self.norm, '_scale', None)/call:self._set_scale",
+   "kind": "lead",
+   "line": 1224
+  },
+  {
+   "id": "r99",
+   "anchor": "Colorbar._reset_locator_formatter_scale#if:self.boundaries is not None or isinstance(self.norm, colors.BoundaryNorm)/elif:type(self.norm) is colors.Normalize/call:self._set_scale",
+   "kind": "lead",
+   "line": 1227
+  },
+  {
+   "id": "r100",
+   "anchor": "Colorbar._reset_locator_formatter_scale#if:self.boundaries is not None or isinstance(self.norm, colors.BoundaryNorm)/else/assign:funcs",
+   "kind": "lead",
+   "line": 1231
+  },
+  {
+   "id": "r101",
+   "anchor": "Colorbar._locate",
+   "kind": "doc",
+   "line": 1234
+  },
+  {
+   "id": "r102",
+   "anchor": "Colorbar._locate#if:isinstance(self.norm, (colors.NoNorm, colors.BoundaryNorm))/else/assign:b",
+   "kind": "lead",
+   "line": 1245
+  },
+  {
+   "id": "r103",
+   "anchor": "Colorbar._uniform_y",
+   "kind": "lead",
+   "line": 1256
+  },
+  {
+   "id": "r104",
+   "anchor": "Colorbar._uniform_y",
+   "kind": "doc",
+   "line": 1256
+  },
+  {
+   "id": "r105",
+   "anchor": "Colorbar._proportional_y",
+   "kind": "doc",
+   "line": 1268
+  },
+  {
+   "id": "r106",
+   "anchor": "Colorbar._proportional_y#if:isinstance(self.norm, colors.BoundaryNorm) or self.boundaries is not None/if:self.spacing == 'uniform'",
+   "kind": "lead",
+   "line": 1280
+  },
+  {
+   "id": "r107",
+   "anchor": "Colorbar._proportional_y#if:isinstance(self.norm, colors.BoundaryNorm) or self.boundaries is not None/else/assign:yscaled",
+   "kind": "lead",
+   "line": 1288
+  },
+  {
+   "id": "r108",
+   "anchor": "Colorbar._proportional_y#assign:norm",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r109",
+   "anchor": "Colorbar._proportional_y#assign:automin",
+   "kind": "lead",
+   "line": 1298
+  },
+  {
+   "id": "r110",
+   "anchor": "Colorbar._get_extension_lengths",
+   "kind": "doc",
+   "line": 1306
+  },
+  {
+   "id": "r111",
+   "anchor": "Colorbar._get_extension_lengths#assign:extendlength",
+   "kind": "lead",
+   "line": 1313
+  },
+  {
+   "id": "r112",
+   "anchor": "Colorbar._get_extension_lengths#if:isinstance(frac, str)/assign:extendlength[:]",
+   "kind": "lead",
+   "line": 1317
+  },
+  {
+   "id": "r113",
+   "anchor": "Colorbar._get_extension_lengths#if:isinstance(frac, str)/elif:frac is not None/try/assign:extendlength[:]",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r114",
+   "anchor": "Colorbar._get_extension_lengths#if:isinstance(frac, str)/elif:frac is not None/try/if:np.isnan(extendlength).any()",
+   "kind": "lead",
+   "line": 1324
+  },
+  {
+   "id": "r115",
+   "anchor": "Colorbar._get_extension_lengths#if:isinstance(frac, str)/elif:frac is not None/try/except:(TypeError, ValueError)/raise:ValueError",
+   "kind": "lead",
+   "line": 1328
+  },
+  {
+   "id": "r116",
+   "anchor": "Colorbar._extend_lower",
+   "kind": "doc",
+   "line": 1331
+  },
+  {
+   "id": "r117",
+   "anchor": "Colorbar._extend_upper",
+   "kind": "doc",
+   "line": 1336
+  },
+  {
+   "id": "r118",
+   "anchor": "Colorbar._long_axis",
+   "kind": "doc",
+   "line": 1341
+  },
+  {
+   "id": "r119",
+   "anchor": "Colorbar._short_axis",
+   "kind": "doc",
+   "line": 1347
+  },
+  {
+   "id": "r120",
+   "anchor": "Colorbar._get_view#return",
+   "kind": "lead",
+   "line": 1356
+  },
+  {
+   "id": "r121",
+   "anchor": "Colorbar._set_view#assign:self.norm.vmin, self.norm.vmax",
+   "kind": "lead",
+   "line": 1361
+  },
+  {
+   "id": "r122",
+   "anchor": "Colorbar._set_view_from_bbox#assign:new_xbound, new_ybound",
+   "kind": "lead",
+   "line": 1367
+  },
+  {
+   "id": "r123",
+   "anchor": "Colorbar.drag_pan#assign:points",
+   "kind": "lead",
+   "line": 1376
+  },
+  {
+   "id": "r124",
+   "anchor": "ColorbarBase",
+   "kind": "trail",
+   "line": 1384
+  },
+  {
+   "id": "r125",
+   "anchor": "_normalize_location_orientation#if:orientation is not None and orientation != loc_settings[\"orientation\"]/raise:TypeError",
+   "kind": "lead",
+   "line": 1404
+  },
+  {
+   "id": "r126",
+   "anchor": "make_axes",
+   "kind": "doc",
+   "line": 1409
+  },
+  {
+   "id": "r127",
+   "anchor": "make_axes#assign:kwargs['orientation']",
+   "kind": "lead",
+   "line": 1434
+  },
+  {
+   "id": "r128",
+   "anchor": "make_axes#if:isinstance(parents, np.ndarray)",
+   "kind": "lead",
+   "line": 1443
+  },
+  {
+   "id": "r129",
+   "anchor": "make_axes#assign:parents_bbox",
+   "kind": "lead",
+   "line": 1457
+  },
+  {
+   "id": "r130",
+   "anchor": "make_axes#if:location in ('left', 'right')/else/assign:aspect",
+   "kind": "lead",
+   "line": 1475
+  },
+  {
+   "id": "r131",
+   "anchor": "make_axes#assign:shrinking_trans",
+   "kind": "lead",
+   "line": 1479
+  },
+  {
+   "id": "r132",
+   "anchor": "make_axes#for:ax in parents",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r133",
+   "anchor": "make_axes#for:a in parents/assign:a._colorbars",
+   "kind": "lead",
+   "line": 1492
+  },
+  {
+   "id": "r134",
+   "anchor": "make_axes#call:cax.set_anchor",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r135",
+   "anchor": "make_axes_gridspec",
+   "kind": "doc",
+   "line": 1511
+  },
+  {
+   "id": "r136",
+   "anchor": "make_axes_gridspec#if:location in ('left', 'right')/assign:height_ratios",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r137",
+   "anchor": "make_axes_gridspec#if:location in ('left', 'right')/else/assign:width_ratios",
+   "kind": "lead",
+   "line": 1578
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 37689,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15692,
+  "thinking_tokens": 8620,
+  "opus_cost_usd": 0.7734815,
+  "total_cost_usd": 0.8027775,
+  "duration_ms": 132104,
+  "duration_api_ms": 133346,
+  "num_turns": 2
+ },
+ "wall_ms": 133103,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

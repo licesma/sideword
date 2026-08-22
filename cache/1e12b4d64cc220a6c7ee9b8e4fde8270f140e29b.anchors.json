@@ -1,0 +1,121 @@
+{
+ "blob_sha": "1e12b4d64cc220a6c7ee9b8e4fde8270f140e29b",
+ "path": "django/contrib/gis/feeds.py",
+ "repo": "django/django",
+ "records": 16,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GeoFeedMixin",
+   "kind": "doc",
+   "line": 7
+  },
+  {
+   "id": "r2",
+   "anchor": "GeoFeedMixin.georss_coords",
+   "kind": "doc",
+   "line": 13
+  },
+  {
+   "id": "r3",
+   "anchor": "GeoFeedMixin.add_georss_point",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r4",
+   "anchor": "GeoFeedMixin.add_georss_element",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "GeoFeedMixin.add_georss_element#assign:geom",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/assign:box_coords",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r7",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/if:isinstance(geom[0], (list, tuple))/if:len(geom)==2",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/if:isinstance(geom[0], (list, tuple))/else/if:len(geom)==2/call:self.add_georss_point",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r9",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/if:isinstance(geom[0], (list, tuple))/else/if:len(geom)==2/elif:len(geom)==4/assign:box_coords",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r10",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/if:box_coords is not None",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r11",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/else/assign:gtype",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r12",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/else/if:gtype=='point'/else/if:gtype in ('linestring', 'linearring')",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r13",
+   "anchor": "GeoFeedMixin.add_georss_element#if:geom is not None/if:isinstance(geom, (list, tuple))/else/if:gtype=='point'/else/if:gtype in ('linestring', 'linearring')/elif:gtype in ('polygon',)/call:handler.addQuickElement",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r14",
+   "anchor": "GeoRSSFeed",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r15",
+   "anchor": "Feed",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r16",
+   "anchor": "Feed",
+   "kind": "doc",
+   "line": 131
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6591,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2324,
+  "thinking_tokens": 1155,
+  "opus_cost_usd": 0.1283015,
+  "total_cost_usd": 0.13213450000000002,
+  "duration_ms": 22058,
+  "duration_api_ms": 23168,
+  "num_turns": 2
+ },
+ "wall_ms": 23087,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

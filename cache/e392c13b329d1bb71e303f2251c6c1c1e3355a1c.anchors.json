@@ -1,0 +1,241 @@
+{
+ "blob_sha": "e392c13b329d1bb71e303f2251c6c1c1e3355a1c",
+ "path": "django/db/transaction.py",
+ "repo": "django/django",
+ "records": 36,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "TransactionManagementError",
+   "kind": "doc",
+   "line": 7
+  },
+  {
+   "id": "r2",
+   "anchor": "get_connection",
+   "kind": "doc",
+   "line": 14
+  },
+  {
+   "id": "r3",
+   "anchor": "get_autocommit",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "set_autocommit",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r5",
+   "anchor": "commit",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r6",
+   "anchor": "rollback",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "savepoint",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r8",
+   "anchor": "savepoint_rollback",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r9",
+   "anchor": "savepoint_commit",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r10",
+   "anchor": "clean_savepoints",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r11",
+   "anchor": "get_rollback",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r12",
+   "anchor": "set_rollback",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r13",
+   "anchor": "on_commit",
+   "kind": "doc",
+   "line": 106
+  },
+  {
+   "id": "r14",
+   "anchor": "Atomic",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r15",
+   "anchor": "Atomic",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r16",
+   "anchor": "Atomic.__enter__#if:not connection.in_atomic_block/assign:connection.commit_on_exit",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r17",
+   "anchor": "Atomic.__enter__#if:not connection.in_atomic_block/if:not connection.get_autocommit()/if:connection.features.autocommits_when_autocommit_is_off",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "Atomic.__enter__#if:not connection.in_atomic_block/if:not connection.get_autocommit()/assign:connection.in_atomic_block",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r19",
+   "anchor": "Atomic.__enter__#if:connection.in_atomic_block/if:self.savepoint and not connection.needs_rollback",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r20",
+   "anchor": "Atomic.__exit__#if:connection.savepoint_ids/else/assign:connection.in_atomic_block",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r21",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/pass",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r22",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/if:connection.in_atomic_block/if:sid is not None",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r23",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/if:connection.in_atomic_block/if:sid is not None/try/except:DatabaseError/try/call:connection.savepoint_commit",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r24",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/if:connection.in_atomic_block/if:sid is not None/try/except:DatabaseError/try/except:Error/assign:connection.needs_rollback",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r25",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/if:connection.in_atomic_block/else/try",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r26",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/if:connection.in_atomic_block/else/try/except:DatabaseError/try/except:Error/call:connection.close",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r27",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/assign:connection.needs_rollback",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r28",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/if:connection.in_atomic_block/if:sid is None",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r29",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/if:connection.in_atomic_block/if:sid is None/else/try/call:connection.savepoint_commit",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r30",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/if:connection.in_atomic_block/if:sid is None/else/try/except:Error/assign:connection.needs_rollback",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r31",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/if:connection.in_atomic_block/else/try",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r32",
+   "anchor": "Atomic.__exit__#try/if:connection.closed_in_transaction/elif:exc_type is None and not connection.needs_rollback/else/if:connection.in_atomic_block/else/try/except:Error/call:connection.close",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r33",
+   "anchor": "Atomic.__exit__#try/finally/if:not connection.in_atomic_block",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r34",
+   "anchor": "Atomic.__exit__#try/finally/if:not connection.in_atomic_block/elif:not connection.savepoint_ids and not connection.commit_on_exit",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r35",
+   "anchor": "atomic#if:callable(using)",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r36",
+   "anchor": "atomic#if:callable(using)/else",
+   "kind": "lead",
+   "line": 282
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9377,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4870,
+  "thinking_tokens": 2596,
+  "opus_cost_usd": 0.2198115,
+  "total_cost_usd": 0.2258845,
+  "duration_ms": 43758,
+  "duration_api_ms": 44954,
+  "num_turns": 2
+ },
+ "wall_ms": 44655,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

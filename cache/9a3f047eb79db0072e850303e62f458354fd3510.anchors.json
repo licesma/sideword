@@ -1,0 +1,1327 @@
+{
+ "blob_sha": "9a3f047eb79db0072e850303e62f458354fd3510",
+ "path": "lib/matplotlib/ticker.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 217,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_DummyAxis.dataLim",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r3",
+   "anchor": "_DummyAxis.get_tick_space#return",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r4",
+   "anchor": "Formatter",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r5",
+   "anchor": "Formatter.locs",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r6",
+   "anchor": "Formatter.__call__",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r7",
+   "anchor": "Formatter.format_ticks",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r8",
+   "anchor": "Formatter.format_data",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r9",
+   "anchor": "Formatter.format_data_short",
+   "kind": "doc",
+   "line": 227
+  },
+  {
+   "id": "r10",
+   "anchor": "Formatter.set_locs",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r11",
+   "anchor": "Formatter.fix_minus",
+   "kind": "doc",
+   "line": 248
+  },
+  {
+   "id": "r12",
+   "anchor": "Formatter._set_locator",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r13",
+   "anchor": "NullFormatter",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r14",
+   "anchor": "NullFormatter.__call__#return",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r15",
+   "anchor": "FixedFormatter",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r16",
+   "anchor": "FixedFormatter.__init__",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r17",
+   "anchor": "FixedFormatter.__call__",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r18",
+   "anchor": "FuncFormatter",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r19",
+   "anchor": "FuncFormatter.__call__",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r20",
+   "anchor": "FormatStrFormatter",
+   "kind": "doc",
+   "line": 334
+  },
+  {
+   "id": "r21",
+   "anchor": "FormatStrFormatter.__call__",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r22",
+   "anchor": "StrMethodFormatter",
+   "kind": "doc",
+   "line": 357
+  },
+  {
+   "id": "r23",
+   "anchor": "StrMethodFormatter.__call__",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r24",
+   "anchor": "ScalarFormatter",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r25",
+   "anchor": "ScalarFormatter.get_useOffset",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r26",
+   "anchor": "ScalarFormatter.set_useOffset",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r27",
+   "anchor": "ScalarFormatter.get_useLocale",
+   "kind": "doc",
+   "line": 490
+  },
+  {
+   "id": "r28",
+   "anchor": "ScalarFormatter.set_useLocale",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r29",
+   "anchor": "ScalarFormatter._format_maybe_minus_and_locale",
+   "kind": "doc",
+   "line": 516
+  },
+  {
+   "id": "r30",
+   "anchor": "ScalarFormatter.get_useMathText",
+   "kind": "doc",
+   "line": 523
+  },
+  {
+   "id": "r31",
+   "anchor": "ScalarFormatter.set_useMathText",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r32",
+   "anchor": "ScalarFormatter.__call__",
+   "kind": "doc",
+   "line": 568
+  },
+  {
+   "id": "r33",
+   "anchor": "ScalarFormatter.set_scientific",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r34",
+   "anchor": "ScalarFormatter.set_powerlimits",
+   "kind": "doc",
+   "line": 590
+  },
+  {
+   "id": "r35",
+   "anchor": "ScalarFormatter.format_data_short#if:value is np.ma.masked",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r36",
+   "anchor": "ScalarFormatter.format_data_short#if:isinstance(value, Integral)/else/if:getattr(self.axis, \"__name__\", \"\") in [\"xaxis\", \"yaxis\"]/if:self.axis.__name__ == \"xaxis\"/else",
+   "kind": "trail",
+   "line": 638
+  },
+  {
+   "id": "r37",
+   "anchor": "ScalarFormatter.format_data_short#if:isinstance(value, Integral)/else/if:getattr(self.axis, \"__name__\", \"\") in [\"xaxis\", \"yaxis\"]/else/assign:a, b",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r38",
+   "anchor": "ScalarFormatter.format_data#assign:e",
+   "kind": "lead",
+   "line": 654
+  },
+  {
+   "id": "r39",
+   "anchor": "ScalarFormatter.format_data#if:e == 0/elif:self._useMathText or self._usetex/return",
+   "kind": "trail",
+   "line": 663
+  },
+  {
+   "id": "r40",
+   "anchor": "ScalarFormatter.get_offset",
+   "kind": "doc",
+   "line": 668
+  },
+  {
+   "id": "r41",
+   "anchor": "ScalarFormatter.set_locs#assign:self.locs",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r42",
+   "anchor": "ScalarFormatter._compute_offset#assign:vmin, vmax",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r43",
+   "anchor": "ScalarFormatter._compute_offset#if:lmin == lmax or lmin <= 0 <= lmax",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r44",
+   "anchor": "ScalarFormatter._compute_offset#assign:abs_min, abs_max",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r45",
+   "anchor": "ScalarFormatter._compute_offset#assign:oom_max",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r46",
+   "anchor": "ScalarFormatter._compute_offset#if:(abs_max - abs_min) / 10 ** oom <= 1e-2/assign:oom",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r47",
+   "anchor": "ScalarFormatter._compute_offset#assign:n",
+   "kind": "lead",
+   "line": 739
+  },
+  {
+   "id": "r48",
+   "anchor": "ScalarFormatter._set_order_of_magnitude#if:not self._scientific",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r49",
+   "anchor": "ScalarFormatter._set_order_of_magnitude#if:self._powerlimits[0] == self._powerlimits[1] != 0/assign:self.orderOfMagnitude",
+   "kind": "lead",
+   "line": 753
+  },
+  {
+   "id": "r50",
+   "anchor": "ScalarFormatter._set_order_of_magnitude#assign:vmin, vmax",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r51",
+   "anchor": "ScalarFormatter._set_format#if:len(self.locs) < 2",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r52",
+   "anchor": "ScalarFormatter._set_format#if:len(self.locs) < 2/assign:_locs",
+   "kind": "lead",
+   "line": 782
+  },
+  {
+   "id": "r53",
+   "anchor": "ScalarFormatter._set_format#if:loc_range == 0",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r54",
+   "anchor": "ScalarFormatter._set_format#if:loc_range == 0",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r55",
+   "anchor": "ScalarFormatter._set_format#if:len(self.locs) < 2/assign:locs",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r56",
+   "anchor": "ScalarFormatter._set_format#assign:sigfigs",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r57",
+   "anchor": "ScalarFormatter._set_format#assign:thresh",
+   "kind": "lead",
+   "line": 800
+  },
+  {
+   "id": "r58",
+   "anchor": "LogFormatter",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r59",
+   "anchor": "LogFormatter.base",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r60",
+   "anchor": "LogFormatter.set_base",
+   "kind": "doc",
+   "line": 895
+  },
+  {
+   "id": "r61",
+   "anchor": "LogFormatter.label_minor",
+   "kind": "doc",
+   "line": 905
+  },
+  {
+   "id": "r62",
+   "anchor": "LogFormatter.set_label_minor",
+   "kind": "doc",
+   "line": 916
+  },
+  {
+   "id": "r63",
+   "anchor": "LogFormatter.set_locs",
+   "kind": "doc",
+   "line": 927
+  },
+  {
+   "id": "r64",
+   "anchor": "LogFormatter.set_locs#assign:linthresh",
+   "kind": "lead",
+   "line": 938
+  },
+  {
+   "id": "r65",
+   "anchor": "LogFormatter.set_locs#if:linthresh is None and vmin <= 0/assign:self._sublabels",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r66",
+   "anchor": "LogFormatter.set_locs#if:linthresh is None and vmin <= 0/assign:self._sublabels",
+   "kind": "trail",
+   "line": 953
+  },
+  {
+   "id": "r67",
+   "anchor": "LogFormatter.set_locs#if:linthresh is not None",
+   "kind": "trail",
+   "line": 957
+  },
+  {
+   "id": "r68",
+   "anchor": "LogFormatter.set_locs#if:linthresh is not None/assign:numdec",
+   "kind": "lead",
+   "line": 960
+  },
+  {
+   "id": "r69",
+   "anchor": "LogFormatter.set_locs#if:numdec > self.minor_thresholds[0]/assign:self._sublabels",
+   "kind": "lead",
+   "line": 974
+  },
+  {
+   "id": "r70",
+   "anchor": "LogFormatter.set_locs#if:numdec > self.minor_thresholds[0]/elif:numdec > self.minor_thresholds[1]/assign:c",
+   "kind": "lead",
+   "line": 979
+  },
+  {
+   "id": "r71",
+   "anchor": "LogFormatter.set_locs#if:numdec > self.minor_thresholds[0]/elif:numdec > self.minor_thresholds[1]/assign:self._sublabels",
+   "kind": "post",
+   "line": 980
+  },
+  {
+   "id": "r72",
+   "anchor": "LogFormatter.set_locs#if:numdec > self.minor_thresholds[0]/else/assign:self._sublabels",
+   "kind": "lead",
+   "line": 984
+  },
+  {
+   "id": "r73",
+   "anchor": "LogFormatter.__call__#if:x == 0.0",
+   "kind": "lead",
+   "line": 997
+  },
+  {
+   "id": "r74",
+   "anchor": "LogFormatter.__call__#if:x == 0.0",
+   "kind": "trail",
+   "line": 997
+  },
+  {
+   "id": "r75",
+   "anchor": "LogFormatter.__call__#assign:fx",
+   "kind": "lead",
+   "line": 1003
+  },
+  {
+   "id": "r76",
+   "anchor": "LogFormatter.format_data_short#return",
+   "kind": "lead",
+   "line": 1024
+  },
+  {
+   "id": "r77",
+   "anchor": "LogFormatter._pprint_val#if:abs(x) < 1e4 and x == int(x)",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r78",
+   "anchor": "LogFormatterExponent",
+   "kind": "doc",
+   "line": 1049
+  },
+  {
+   "id": "r79",
+   "anchor": "LogFormatterMathtext",
+   "kind": "doc",
+   "line": 1065
+  },
+  {
+   "id": "r80",
+   "anchor": "LogFormatterMathtext._non_decade_format",
+   "kind": "doc",
+   "line": 1070
+  },
+  {
+   "id": "r81",
+   "anchor": "LogFormatterMathtext.__call__#assign:usetex",
+   "kind": "lead",
+   "line": 1076
+  },
+  {
+   "id": "r82",
+   "anchor": "LogFormatterMathtext.__call__#if:x == 0",
+   "kind": "trail",
+   "line": 1079
+  },
+  {
+   "id": "r83",
+   "anchor": "LogFormatterMathtext.__call__#assign:fx",
+   "kind": "lead",
+   "line": 1087
+  },
+  {
+   "id": "r84",
+   "anchor": "LogFormatterMathtext.__call__#if:b % 1 == 0.0",
+   "kind": "lead",
+   "line": 1100
+  },
+  {
+   "id": "r85",
+   "anchor": "LogFormatterSciNotation",
+   "kind": "doc",
+   "line": 1113
+  },
+  {
+   "id": "r86",
+   "anchor": "LogFormatterSciNotation._non_decade_format",
+   "kind": "doc",
+   "line": 1118
+  },
+  {
+   "id": "r87",
+   "anchor": "LogitFormatter",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r88",
+   "anchor": "LogitFormatter.__init__",
+   "kind": "doc",
+   "line": 1134
+  },
+  {
+   "id": "r89",
+   "anchor": "LogitFormatter.use_overline",
+   "kind": "doc",
+   "line": 1174
+  },
+  {
+   "id": "r90",
+   "anchor": "LogitFormatter.set_one_half",
+   "kind": "doc",
+   "line": 1186
+  },
+  {
+   "id": "r91",
+   "anchor": "LogitFormatter.set_minor_threshold",
+   "kind": "doc",
+   "line": 1195
+  },
+  {
+   "id": "r92",
+   "anchor": "LogitFormatter.set_minor_number",
+   "kind": "doc",
+   "line": 1207
+  },
+  {
+   "id": "r93",
+   "anchor": "LogitFormatter.set_locs#if:all(_is_decade(x, rtol=1e-7) or _is_decade(1 - x, rtol=1e-7) or (_is_close_to_int(2 * x) and int(np.round(2 * x)) == 1) for x in locs)/return",
+   "kind": "lead",
+   "line": 1234
+  },
+  {
+   "id": "r94",
+   "anchor": "LogitFormatter.set_locs#if:len(locs) < self._minor_threshold/if:len(locs) < self._minor_number/else/assign:diff",
+   "kind": "lead",
+   "line": 1247
+  },
+  {
+   "id": "r95",
+   "anchor": "LogitFormatter.format_data_short#if:value < 0.1",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r96",
+   "anchor": "EngFormatter",
+   "kind": "doc",
+   "line": 1325
+  },
+  {
+   "id": "r97",
+   "anchor": "EngFormatter.ENG_PREFIXES",
+   "kind": "lead",
+   "line": 1332
+  },
+  {
+   "id": "r98",
+   "anchor": "EngFormatter.__init__",
+   "kind": "doc",
+   "line": 1356
+  },
+  {
+   "id": "r99",
+   "anchor": "EngFormatter.__call__#if:self.sep and s.endswith(self.sep)",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r100",
+   "anchor": "EngFormatter.format_eng",
+   "kind": "doc",
+   "line": 1427
+  },
+  {
+   "id": "r101",
+   "anchor": "EngFormatter.format_eng#if:num != 0/else/assign:num",
+   "kind": "lead",
+   "line": 1456
+  },
+  {
+   "id": "r102",
+   "anchor": "EngFormatter.format_eng#if:abs(float(format(mant, fmt))) >= 1000 and pow10 < max(self.ENG_PREFIXES)",
+   "kind": "lead",
+   "line": 1464
+  },
+  {
+   "id": "r103",
+   "anchor": "PercentFormatter",
+   "kind": "doc",
+   "line": 1478
+  },
+  {
+   "id": "r104",
+   "anchor": "PercentFormatter.__call__",
+   "kind": "doc",
+   "line": 1510
+  },
+  {
+   "id": "r105",
+   "anchor": "PercentFormatter.format_pct",
+   "kind": "doc",
+   "line": 1516
+  },
+  {
+   "id": "r106",
+   "anchor": "PercentFormatter.format_pct#if:self.decimals is None/assign:scaled_range",
+   "kind": "lead",
+   "line": 1541
+  },
+  {
+   "id": "r107",
+   "anchor": "PercentFormatter.format_pct#if:self.decimals is None/if:scaled_range <= 0/else/assign:decimals",
+   "kind": "lead",
+   "line": 1549
+  },
+  {
+   "id": "r108",
+   "anchor": "PercentFormatter.symbol",
+   "kind": "doc",
+   "line": 1564
+  },
+  {
+   "id": "r109",
+   "anchor": "PercentFormatter.symbol#if:not symbol/elif:mpl.rcParams['text.usetex'] and not self._is_latex/for:spec in r'\\#$%&~_^{}'",
+   "kind": "lead",
+   "line": 1579
+  },
+  {
+   "id": "r110",
+   "anchor": "Locator",
+   "kind": "doc",
+   "line": 1588
+  },
+  {
+   "id": "r111",
+   "anchor": "Locator.MAXTICKS",
+   "kind": "lead",
+   "line": 1601
+  },
+  {
+   "id": "r112",
+   "anchor": "Locator.tick_values",
+   "kind": "doc",
+   "line": 1603
+  },
+  {
+   "id": "r113",
+   "anchor": "Locator.set_params",
+   "kind": "doc",
+   "line": 1620
+  },
+  {
+   "id": "r114",
+   "anchor": "Locator.__call__",
+   "kind": "doc",
+   "line": 1629
+  },
+  {
+   "id": "r115",
+   "anchor": "Locator.__call__#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 1633
+  },
+  {
+   "id": "r116",
+   "anchor": "Locator.raise_if_exceeds",
+   "kind": "doc",
+   "line": 1635
+  },
+  {
+   "id": "r117",
+   "anchor": "Locator.nonsingular",
+   "kind": "doc",
+   "line": 1653
+  },
+  {
+   "id": "r118",
+   "anchor": "Locator.view_limits",
+   "kind": "doc",
+   "line": 1669
+  },
+  {
+   "id": "r119",
+   "anchor": "IndexLocator",
+   "kind": "doc",
+   "line": 1678
+  },
+  {
+   "id": "r120",
+   "anchor": "IndexLocator.__init__",
+   "kind": "doc",
+   "line": 1685
+  },
+  {
+   "id": "r121",
+   "anchor": "IndexLocator.set_params",
+   "kind": "doc",
+   "line": 1690
+  },
+  {
+   "id": "r122",
+   "anchor": "IndexLocator.__call__",
+   "kind": "doc",
+   "line": 1697
+  },
+  {
+   "id": "r123",
+   "anchor": "FixedLocator",
+   "kind": "doc",
+   "line": 1707
+  },
+  {
+   "id": "r124",
+   "anchor": "FixedLocator.set_params",
+   "kind": "doc",
+   "line": 1723
+  },
+  {
+   "id": "r125",
+   "anchor": "FixedLocator.tick_values",
+   "kind": "doc",
+   "line": 1731
+  },
+  {
+   "id": "r126",
+   "anchor": "NullLocator",
+   "kind": "doc",
+   "line": 1752
+  },
+  {
+   "id": "r127",
+   "anchor": "NullLocator.tick_values",
+   "kind": "doc",
+   "line": 1760
+  },
+  {
+   "id": "r128",
+   "anchor": "LinearLocator",
+   "kind": "doc",
+   "line": 1772
+  },
+  {
+   "id": "r129",
+   "anchor": "LinearLocator.__init__",
+   "kind": "doc",
+   "line": 1782
+  },
+  {
+   "id": "r130",
+   "anchor": "LinearLocator.numticks#return",
+   "kind": "lead",
+   "line": 1802
+  },
+  {
+   "id": "r131",
+   "anchor": "LinearLocator.set_params",
+   "kind": "doc",
+   "line": 1808
+  },
+  {
+   "id": "r132",
+   "anchor": "LinearLocator.__call__",
+   "kind": "doc",
+   "line": 1815
+  },
+  {
+   "id": "r133",
+   "anchor": "LinearLocator.view_limits",
+   "kind": "doc",
+   "line": 1834
+  },
+  {
+   "id": "r134",
+   "anchor": "MultipleLocator",
+   "kind": "doc",
+   "line": 1855
+  },
+  {
+   "id": "r135",
+   "anchor": "MultipleLocator.set_params",
+   "kind": "doc",
+   "line": 1864
+  },
+  {
+   "id": "r136",
+   "anchor": "MultipleLocator.__call__",
+   "kind": "doc",
+   "line": 1869
+  },
+  {
+   "id": "r137",
+   "anchor": "MultipleLocator.view_limits",
+   "kind": "doc",
+   "line": 1883
+  },
+  {
+   "id": "r138",
+   "anchor": "scale_range#assign:dv",
+   "kind": "trail",
+   "line": 1902
+  },
+  {
+   "id": "r139",
+   "anchor": "_Edge_integer",
+   "kind": "doc",
+   "line": 1912
+  },
+  {
+   "id": "r140",
+   "anchor": "_Edge_integer.__init__",
+   "kind": "doc",
+   "line": 1919
+  },
+  {
+   "id": "r141",
+   "anchor": "_Edge_integer.closeto#if:self._offset > 0",
+   "kind": "lead",
+   "line": 1936
+  },
+  {
+   "id": "r142",
+   "anchor": "_Edge_integer.le",
+   "kind": "doc",
+   "line": 1944
+  },
+  {
+   "id": "r143",
+   "anchor": "_Edge_integer.ge",
+   "kind": "doc",
+   "line": 1951
+  },
+  {
+   "id": "r144",
+   "anchor": "MaxNLocator",
+   "kind": "doc",
+   "line": 1959
+  },
+  {
+   "id": "r145",
+   "anchor": "MaxNLocator.__init__",
+   "kind": "doc",
+   "line": 1971
+  },
+  {
+   "id": "r146",
+   "anchor": "MaxNLocator._staircase#return",
+   "kind": "lead",
+   "line": 2031
+  },
+  {
+   "id": "r147",
+   "anchor": "MaxNLocator.set_params",
+   "kind": "doc",
+   "line": 2033
+  },
+  {
+   "id": "r148",
+   "anchor": "MaxNLocator._raw_ticks",
+   "kind": "doc",
+   "line": 2076
+  },
+  {
+   "id": "r149",
+   "anchor": "MaxNLocator._raw_ticks#if:self._integer/assign:igood",
+   "kind": "lead",
+   "line": 2098
+  },
+  {
+   "id": "r150",
+   "anchor": "MaxNLocator._raw_ticks#if:mpl.rcParams['axes.autolimit_mode'] == 'round_numbers'/assign:floored_vmins",
+   "kind": "lead",
+   "line": 2106
+  },
+  {
+   "id": "r151",
+   "anchor": "MaxNLocator._raw_ticks#assign:istep",
+   "kind": "lead",
+   "line": 2111
+  },
+  {
+   "id": "r152",
+   "anchor": "MaxNLocator._raw_ticks#for:step in steps[:istep+1][::-1]",
+   "kind": "lead",
+   "line": 2116
+  },
+  {
+   "id": "r153",
+   "anchor": "MaxNLocator._raw_ticks#for:step in steps[:istep+1][::-1]/assign:edge",
+   "kind": "lead",
+   "line": 2127
+  },
+  {
+   "id": "r154",
+   "anchor": "MaxNLocator._raw_ticks#for:step in steps[:istep+1][::-1]/assign:nticks",
+   "kind": "lead",
+   "line": 2132
+  },
+  {
+   "id": "r155",
+   "anchor": "_is_decade",
+   "kind": "doc",
+   "line": 2182
+  },
+  {
+   "id": "r156",
+   "anchor": "_decade_less_equal",
+   "kind": "doc",
+   "line": 2195
+  },
+  {
+   "id": "r157",
+   "anchor": "_decade_greater_equal",
+   "kind": "doc",
+   "line": 2206
+  },
+  {
+   "id": "r158",
+   "anchor": "_decade_less",
+   "kind": "doc",
+   "line": 2217
+  },
+  {
+   "id": "r159",
+   "anchor": "_decade_greater",
+   "kind": "doc",
+   "line": 2231
+  },
+  {
+   "id": "r160",
+   "anchor": "LogLocator",
+   "kind": "doc",
+   "line": 2254
+  },
+  {
+   "id": "r161",
+   "anchor": "LogLocator.__init__",
+   "kind": "doc",
+   "line": 2285
+  },
+  {
+   "id": "r162",
+   "anchor": "LogLocator.set_params",
+   "kind": "doc",
+   "line": 2297
+  },
+  {
+   "id": "r163",
+   "anchor": "LogLocator.base",
+   "kind": "doc",
+   "line": 2309
+  },
+  {
+   "id": "r164",
+   "anchor": "LogLocator.subs",
+   "kind": "doc",
+   "line": 2314
+  },
+  {
+   "id": "r165",
+   "anchor": "LogLocator._set_subs",
+   "kind": "doc",
+   "line": 2320
+  },
+  {
+   "id": "r166",
+   "anchor": "LogLocator._set_subs#if:subs is None",
+   "kind": "trail",
+   "line": 2324
+  },
+  {
+   "id": "r167",
+   "anchor": "LogLocator.__call__",
+   "kind": "doc",
+   "line": 2341
+  },
+  {
+   "id": "r168",
+   "anchor": "LogLocator.tick_values#if:isinstance(self._subs, str)/if:numdec > 10 or b < 3/if:self._subs == 'auto'/return",
+   "kind": "trail",
+   "line": 2378
+  },
+  {
+   "id": "r169",
+   "anchor": "LogLocator.tick_values#if:isinstance(self._subs, str)/if:numdec > 10 or b < 3/if:self._subs == 'auto'/else/assign:subs",
+   "kind": "trail",
+   "line": 2380
+  },
+  {
+   "id": "r170",
+   "anchor": "LogLocator.tick_values#assign:stride",
+   "kind": "lead",
+   "line": 2387
+  },
+  {
+   "id": "r171",
+   "anchor": "LogLocator.tick_values#if:stride >= numdec",
+   "kind": "lead",
+   "line": 2395
+  },
+  {
+   "id": "r172",
+   "anchor": "LogLocator.tick_values#assign:have_subs",
+   "kind": "lead",
+   "line": 2400
+  },
+  {
+   "id": "r173",
+   "anchor": "LogLocator.tick_values#if:hasattr(self, '_transform')/if:have_subs/if:stride == 1/else/assign:ticklocs",
+   "kind": "lead",
+   "line": 2412
+  },
+  {
+   "id": "r174",
+   "anchor": "LogLocator.tick_values#if:len(subs) > 1 and stride == 1 and ((vmin <= ticklocs) & (ticklocs <= vmax)).sum() <= 1/return",
+   "kind": "lead",
+   "line": 2430
+  },
+  {
+   "id": "r175",
+   "anchor": "LogLocator.view_limits",
+   "kind": "doc",
+   "line": 2434
+  },
+  {
+   "id": "r176",
+   "anchor": "LogLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/assign:vmin, vmax",
+   "kind": "trail",
+   "line": 2450
+  },
+  {
+   "id": "r177",
+   "anchor": "LogLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/elif:vmax <= 0/else/if:not np.isfinite(minpos)/assign:minpos",
+   "kind": "trail",
+   "line": 2459
+  },
+  {
+   "id": "r178",
+   "anchor": "SymmetricalLogLocator",
+   "kind": "doc",
+   "line": 2468
+  },
+  {
+   "id": "r179",
+   "anchor": "SymmetricalLogLocator.__init__",
+   "kind": "doc",
+   "line": 2473
+  },
+  {
+   "id": "r180",
+   "anchor": "SymmetricalLogLocator.set_params",
+   "kind": "doc",
+   "line": 2507
+  },
+  {
+   "id": "r181",
+   "anchor": "SymmetricalLogLocator.__call__",
+   "kind": "doc",
+   "line": 2514
+  },
+  {
+   "id": "r182",
+   "anchor": "SymmetricalLogLocator.__call__#assign:vmin, vmax",
+   "kind": "lead",
+   "line": 2517
+  },
+  {
+   "id": "r183",
+   "anchor": "SymmetricalLogLocator.tick_values#if:-linthresh < vmin < vmax < linthresh",
+   "kind": "lead",
+   "line": 2546
+  },
+  {
+   "id": "r184",
+   "anchor": "SymmetricalLogLocator.tick_values#if:-linthresh < vmin < vmax < linthresh/return",
+   "kind": "lead",
+   "line": 2548
+  },
+  {
+   "id": "r185",
+   "anchor": "SymmetricalLogLocator.tick_values#assign:has_a",
+   "kind": "lead",
+   "line": 2551
+  },
+  {
+   "id": "r186",
+   "anchor": "SymmetricalLogLocator.tick_values#assign:has_c",
+   "kind": "lead",
+   "line": 2553
+  },
+  {
+   "id": "r187",
+   "anchor": "SymmetricalLogLocator.tick_values#assign:has_b",
+   "kind": "lead",
+   "line": 2556
+  },
+  {
+   "id": "r188",
+   "anchor": "SymmetricalLogLocator.tick_values#assign:a_lo, a_hi",
+   "kind": "lead",
+   "line": 2564
+  },
+  {
+   "id": "r189",
+   "anchor": "SymmetricalLogLocator.tick_values#assign:total_ticks",
+   "kind": "lead",
+   "line": 2575
+  },
+  {
+   "id": "r190",
+   "anchor": "SymmetricalLogLocator.tick_values#if:self._subs is None",
+   "kind": "lead",
+   "line": 2592
+  },
+  {
+   "id": "r191",
+   "anchor": "SymmetricalLogLocator.view_limits",
+   "kind": "doc",
+   "line": 2609
+  },
+  {
+   "id": "r192",
+   "anchor": "AsinhLocator",
+   "kind": "doc",
+   "line": 2626
+  },
+  {
+   "id": "r193",
+   "anchor": "AsinhLocator.__init__",
+   "kind": "doc",
+   "line": 2638
+  },
+  {
+   "id": "r194",
+   "anchor": "AsinhLocator.set_params",
+   "kind": "doc",
+   "line": 2669
+  },
+  {
+   "id": "r195",
+   "anchor": "AsinhLocator.__call__#if:(vmin * vmax) < 0 and abs(1 + vmax / vmin) < self.symthresh/assign:bound",
+   "kind": "lead",
+   "line": 2685
+  },
+  {
+   "id": "r196",
+   "anchor": "AsinhLocator.tick_values#assign:ymin, ymax",
+   "kind": "lead",
+   "line": 2693
+  },
+  {
+   "id": "r197",
+   "anchor": "AsinhLocator.tick_values#if:(ymin * ymax) < 0/assign:ys",
+   "kind": "lead",
+   "line": 2700
+  },
+  {
+   "id": "r198",
+   "anchor": "AsinhLocator.tick_values#assign:xs",
+   "kind": "lead",
+   "line": 2703
+  },
+  {
+   "id": "r199",
+   "anchor": "AsinhLocator.tick_values#if:self.base > 1",
+   "kind": "lead",
+   "line": 2709
+  },
+  {
+   "id": "r200",
+   "anchor": "LogitLocator",
+   "kind": "doc",
+   "line": 2738
+  },
+  {
+   "id": "r201",
+   "anchor": "LogitLocator.__init__",
+   "kind": "doc",
+   "line": 2743
+  },
+  {
+   "id": "r202",
+   "anchor": "LogitLocator.set_params",
+   "kind": "doc",
+   "line": 2758
+  },
+  {
+   "id": "r203",
+   "anchor": "LogitLocator.tick_values#if:hasattr(self.axis, \"axes\") and self.axis.axes.name == \"polar\"",
+   "kind": "lead",
+   "line": 2774
+  },
+  {
+   "id": "r204",
+   "anchor": "LogitLocator.tick_values.ideal_ticks",
+   "kind": "lead",
+   "line": 2790
+  },
+  {
+   "id": "r205",
+   "anchor": "LogitLocator.tick_values#if:numideal >= 2/if:numideal > nbins",
+   "kind": "lead",
+   "line": 2811
+  },
+  {
+   "id": "r206",
+   "anchor": "LogitLocator.tick_values#if:numideal >= 2/if:numideal > nbins/assign:subsampling_factor",
+   "kind": "lead",
+   "line": 2814
+  },
+  {
+   "id": "r207",
+   "anchor": "LogitLocator.tick_values#if:self._minor",
+   "kind": "lead",
+   "line": 2845
+  },
+  {
+   "id": "r208",
+   "anchor": "LogitLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/assign:vmin, vmax",
+   "kind": "trail",
+   "line": 2855
+  },
+  {
+   "id": "r209",
+   "anchor": "LogitLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/elif:vmax <= 0 or vmin >= 1/call:_api.warn_external",
+   "kind": "lead",
+   "line": 2859
+  },
+  {
+   "id": "r210",
+   "anchor": "LogitLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/elif:vmax <= 0 or vmin >= 1/else/if:not np.isfinite(minpos)/assign:minpos",
+   "kind": "trail",
+   "line": 2871
+  },
+  {
+   "id": "r211",
+   "anchor": "LogitLocator.nonsingular#if:not np.isfinite(vmin) or not np.isfinite(vmax)/elif:vmax <= 0 or vmin >= 1/else/if:vmax >= 1",
+   "kind": "lead",
+   "line": 2878
+  },
+  {
+   "id": "r212",
+   "anchor": "AutoLocator",
+   "kind": "doc",
+   "line": 2886
+  },
+  {
+   "id": "r213",
+   "anchor": "AutoLocator.__init__",
+   "kind": "doc",
+   "line": 2892
+  },
+  {
+   "id": "r214",
+   "anchor": "AutoMinorLocator",
+   "kind": "doc",
+   "line": 2906
+  },
+  {
+   "id": "r215",
+   "anchor": "AutoMinorLocator.__init__",
+   "kind": "doc",
+   "line": 2911
+  },
+  {
+   "id": "r216",
+   "anchor": "AutoMinorLocator.__call__",
+   "kind": "doc",
+   "line": 2921
+  },
+  {
+   "id": "r217",
+   "anchor": "AutoMinorLocator.__call__#try/except:IndexError/return",
+   "kind": "lead",
+   "line": 2936
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 63367,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 21025,
+  "thinking_tokens": 10627,
+  "opus_cost_usd": 1.1635865,
+  "total_cost_usd": 1.2157615000000002,
+  "duration_ms": 177233,
+  "duration_api_ms": 179446,
+  "num_turns": 2
+ },
+ "wall_ms": 178273,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

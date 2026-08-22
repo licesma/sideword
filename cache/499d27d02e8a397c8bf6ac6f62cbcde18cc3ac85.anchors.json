@@ -1,0 +1,901 @@
+{
+ "blob_sha": "499d27d02e8a397c8bf6ac6f62cbcde18cc3ac85",
+ "path": "django/contrib/admin/options.py",
+ "repo": "django/django",
+ "records": 146,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "get_content_type_for_model#import:django.contrib.contenttypes.models",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r2",
+   "anchor": "FORMFIELD_FOR_DBFIELD_DEFAULTS",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseModelAdmin",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseModelAdmin.__init__#assign:overrides",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#if:db_field.choices",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#if:isinstance(db_field, models.ManyToManyField) or isinstance(db_field, models.ForeignKey)",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#if:isinstance(db_field, models.ManyToManyField) or isinstance(db_field, models.ForeignKey)/if:db_field.__class__ in self.formfield_overrides",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#if:isinstance(db_field, models.ManyToManyField) or isinstance(db_field, models.ForeignKey)/if:isinstance(db_field, models.ForeignKey)",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#if:isinstance(db_field, models.ManyToManyField) or isinstance(db_field, models.ForeignKey)/if:formfield and db_field.name not in self.raw_id_fields",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#for:klass in db_field.__class__.mro()",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseModelAdmin.formfield_for_dbfield#return",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseModelAdmin.formfield_for_choice_field",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseModelAdmin.formfield_for_choice_field#if:db_field.name in self.radio_fields",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseModelAdmin.formfield_for_choice_field#if:db_field.name in self.radio_fields/if:'widget' not in kwargs",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseModelAdmin.get_field_queryset",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseModelAdmin.formfield_for_foreignkey",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseModelAdmin.formfield_for_manytomany",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseModelAdmin.formfield_for_manytomany#if:not db_field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseModelAdmin.get_view_on_site_url#if:callable(self.view_on_site)/elif:self.view_on_site and hasattr(obj, 'get_absolute_url')/return",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseModelAdmin.get_empty_value_display",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseModelAdmin.get_exclude",
+   "kind": "doc",
+   "line": 285
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseModelAdmin.get_fields",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseModelAdmin.get_fieldsets",
+   "kind": "doc",
+   "line": 297
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseModelAdmin.get_ordering",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseModelAdmin.get_ordering#return",
+   "kind": "trail",
+   "line": 309
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseModelAdmin.get_readonly_fields",
+   "kind": "doc",
+   "line": 311
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseModelAdmin.get_prepopulated_fields",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseModelAdmin.get_queryset",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseModelAdmin.get_queryset#assign:ordering",
+   "kind": "todo",
+   "line": 330
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseModelAdmin.lookup_allowed#for:l in model._meta.related_fkey_lookups",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseModelAdmin.lookup_allowed#for:l in model._meta.related_fkey_lookups/if:callable(l)",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseModelAdmin.lookup_allowed#for:part in lookup.split(LOOKUP_SEP)/try/except:FieldDoesNotExist/break",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseModelAdmin.lookup_allowed#for:part in lookup.split(LOOKUP_SEP)/if:not prev_field or (prev_field.concrete and field not in prev_field.get_path_info()[-1].target_fields)",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseModelAdmin.lookup_allowed#for:part in lookup.split(LOOKUP_SEP)/if:not getattr(field, 'get_path_info', None)/break",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseModelAdmin.lookup_allowed#if:len(relation_parts) <= 1/return",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseModelAdmin.to_field_allowed",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseModelAdmin.to_field_allowed#if:field.primary_key",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseModelAdmin.to_field_allowed#for:many_to_many in opts.many_to_many",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseModelAdmin.to_field_allowed#assign:registered_models",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseModelAdmin.has_add_permission",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseModelAdmin.has_change_permission",
+   "kind": "doc",
+   "line": 440
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseModelAdmin.has_delete_permission",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseModelAdmin.has_module_permission",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r45",
+   "anchor": "ModelAdmin",
+   "kind": "doc",
+   "line": 485
+  },
+  {
+   "id": "r46",
+   "anchor": "ModelAdmin.add_form_template",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r47",
+   "anchor": "ModelAdmin.actions",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r48",
+   "anchor": "ModelAdmin.get_urls#assign:urlpatterns/item:url(r'^(.+)/$', wrap(RedirectView.as_view(pattern_name='%s:%s_%s_change' % ((self.admin_site.name,) + info))))",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r49",
+   "anchor": "ModelAdmin.get_model_perms",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r50",
+   "anchor": "ModelAdmin.get_form",
+   "kind": "doc",
+   "line": 605
+  },
+  {
+   "id": "r51",
+   "anchor": "ModelAdmin.get_form#if:excluded is None and hasattr(self.form, '_meta') and self.form._meta.exclude/call:exclude.extend",
+   "kind": "lead",
+   "line": 621
+  },
+  {
+   "id": "r52",
+   "anchor": "ModelAdmin.get_form#assign:exclude",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r53",
+   "anchor": "ModelAdmin.get_form#assign:new_attrs",
+   "kind": "lead",
+   "line": 627
+  },
+  {
+   "id": "r54",
+   "anchor": "ModelAdmin.get_changelist",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r55",
+   "anchor": "ModelAdmin.get_object",
+   "kind": "doc",
+   "line": 659
+  },
+  {
+   "id": "r56",
+   "anchor": "ModelAdmin.get_changelist_form",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r57",
+   "anchor": "ModelAdmin.get_changelist_formset",
+   "kind": "doc",
+   "line": 687
+  },
+  {
+   "id": "r58",
+   "anchor": "ModelAdmin.get_formsets_with_inlines",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r59",
+   "anchor": "ModelAdmin.log_addition",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r60",
+   "anchor": "ModelAdmin.log_change",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r61",
+   "anchor": "ModelAdmin.log_deletion",
+   "kind": "doc",
+   "line": 743
+  },
+  {
+   "id": "r62",
+   "anchor": "ModelAdmin.action_checkbox",
+   "kind": "doc",
+   "line": 759
+  },
+  {
+   "id": "r63",
+   "anchor": "ModelAdmin.get_actions",
+   "kind": "doc",
+   "line": 766
+  },
+  {
+   "id": "r64",
+   "anchor": "ModelAdmin.get_actions#if:self.actions is None or IS_POPUP_VAR in request.GET",
+   "kind": "lead",
+   "line": 773
+  },
+  {
+   "id": "r65",
+   "anchor": "ModelAdmin.get_actions#for:(name, func) in self.admin_site.actions",
+   "kind": "lead",
+   "line": 779
+  },
+  {
+   "id": "r66",
+   "anchor": "ModelAdmin.get_actions#for:klass in self.__class__.mro()[::-1]",
+   "kind": "lead",
+   "line": 785
+  },
+  {
+   "id": "r67",
+   "anchor": "ModelAdmin.get_actions#for:klass in self.__class__.mro()[::-1]/if:not class_actions",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r68",
+   "anchor": "ModelAdmin.get_actions#assign:actions",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r69",
+   "anchor": "ModelAdmin.get_actions#assign:actions",
+   "kind": "lead",
+   "line": 796
+  },
+  {
+   "id": "r70",
+   "anchor": "ModelAdmin.get_action_choices",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r71",
+   "anchor": "ModelAdmin.get_action",
+   "kind": "doc",
+   "line": 814
+  },
+  {
+   "id": "r72",
+   "anchor": "ModelAdmin.get_action#if:callable(action)",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r73",
+   "anchor": "ModelAdmin.get_action#if:callable(action)/elif:hasattr(self.__class__, action)",
+   "kind": "lead",
+   "line": 828
+  },
+  {
+   "id": "r74",
+   "anchor": "ModelAdmin.get_action#if:callable(action)/else",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r75",
+   "anchor": "ModelAdmin.get_list_display",
+   "kind": "doc",
+   "line": 844
+  },
+  {
+   "id": "r76",
+   "anchor": "ModelAdmin.get_list_display_links",
+   "kind": "doc",
+   "line": 851
+  },
+  {
+   "id": "r77",
+   "anchor": "ModelAdmin.get_list_display_links#if:self.list_display_links or self.list_display_links is None or not list_display/else/return",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r78",
+   "anchor": "ModelAdmin.get_list_filter",
+   "kind": "doc",
+   "line": 863
+  },
+  {
+   "id": "r79",
+   "anchor": "ModelAdmin.get_list_select_related",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r80",
+   "anchor": "ModelAdmin.get_search_fields",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r81",
+   "anchor": "ModelAdmin.get_search_results",
+   "kind": "doc",
+   "line": 884
+  },
+  {
+   "id": "r82",
+   "anchor": "ModelAdmin.get_search_results.construct_search",
+   "kind": "lead",
+   "line": 890
+  },
+  {
+   "id": "r83",
+   "anchor": "ModelAdmin.get_preserved_filters",
+   "kind": "doc",
+   "line": 917
+  },
+  {
+   "id": "r84",
+   "anchor": "ModelAdmin.construct_change_message",
+   "kind": "doc",
+   "line": 935
+  },
+  {
+   "id": "r85",
+   "anchor": "ModelAdmin.message_user",
+   "kind": "doc",
+   "line": 941
+  },
+  {
+   "id": "r86",
+   "anchor": "ModelAdmin.message_user#if:not isinstance(level, int)/try",
+   "kind": "lead",
+   "line": 954
+  },
+  {
+   "id": "r87",
+   "anchor": "ModelAdmin.save_form",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r88",
+   "anchor": "ModelAdmin.save_model",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r89",
+   "anchor": "ModelAdmin.delete_model",
+   "kind": "doc",
+   "line": 979
+  },
+  {
+   "id": "r90",
+   "anchor": "ModelAdmin.save_formset",
+   "kind": "doc",
+   "line": 985
+  },
+  {
+   "id": "r91",
+   "anchor": "ModelAdmin.save_related",
+   "kind": "doc",
+   "line": 991
+  },
+  {
+   "id": "r92",
+   "anchor": "ModelAdmin.render_change_form#call:context.update/key:has_file_field",
+   "kind": "todo",
+   "line": 1015
+  },
+  {
+   "id": "r93",
+   "anchor": "ModelAdmin.response_add",
+   "kind": "doc",
+   "line": 1040
+  },
+  {
+   "id": "r94",
+   "anchor": "ModelAdmin.response_add#if:self.has_change_permission(request, obj)",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r95",
+   "anchor": "ModelAdmin.response_add#if:IS_POPUP_VAR in request.POST",
+   "kind": "lead",
+   "line": 1064
+  },
+  {
+   "id": "r96",
+   "anchor": "ModelAdmin.response_add#if:IS_POPUP_VAR in request.POST/elif:\"_continue\" in request.POST or (\"_saveasnew\" in request.POST and self.save_as_continue and self.has_change_permission(request, obj))",
+   "kind": "lead",
+   "line": 1079
+  },
+  {
+   "id": "r97",
+   "anchor": "ModelAdmin.response_change",
+   "kind": "doc",
+   "line": 1115
+  },
+  {
+   "id": "r98",
+   "anchor": "ModelAdmin.response_change#if:IS_POPUP_VAR in request.POST/assign:value",
+   "kind": "lead",
+   "line": 1124
+  },
+  {
+   "id": "r99",
+   "anchor": "ModelAdmin.response_post_save_add",
+   "kind": "doc",
+   "line": 1187
+  },
+  {
+   "id": "r100",
+   "anchor": "ModelAdmin.response_post_save_change",
+   "kind": "doc",
+   "line": 1204
+  },
+  {
+   "id": "r101",
+   "anchor": "ModelAdmin.response_action",
+   "kind": "doc",
+   "line": 1222
+  },
+  {
+   "id": "r102",
+   "anchor": "ModelAdmin.response_action#try",
+   "kind": "lead",
+   "line": 1232
+  },
+  {
+   "id": "r103",
+   "anchor": "ModelAdmin.response_action#assign:data",
+   "kind": "lead",
+   "line": 1238
+  },
+  {
+   "id": "r104",
+   "anchor": "ModelAdmin.response_action#try",
+   "kind": "lead",
+   "line": 1243
+  },
+  {
+   "id": "r105",
+   "anchor": "ModelAdmin.response_action#try/except:IndexError/pass",
+   "kind": "lead",
+   "line": 1249
+  },
+  {
+   "id": "r106",
+   "anchor": "ModelAdmin.response_action#if:action_form.is_valid()",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r107",
+   "anchor": "ModelAdmin.response_action#if:action_form.is_valid()/assign:selected",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r108",
+   "anchor": "ModelAdmin.response_action#if:action_form.is_valid()/if:not selected and not select_across/assign:msg",
+   "kind": "lead",
+   "line": 1266
+  },
+  {
+   "id": "r109",
+   "anchor": "ModelAdmin.response_action#if:action_form.is_valid()/if:not select_across/assign:queryset",
+   "kind": "lead",
+   "line": 1273
+  },
+  {
+   "id": "r110",
+   "anchor": "ModelAdmin.response_action#if:action_form.is_valid()/if:isinstance(response, HttpResponseBase)",
+   "kind": "lead",
+   "line": 1280
+  },
+  {
+   "id": "r111",
+   "anchor": "ModelAdmin.response_delete",
+   "kind": "doc",
+   "line": 1289
+  },
+  {
+   "id": "r112",
+   "anchor": "ModelAdmin.get_changeform_initial_data",
+   "kind": "doc",
+   "line": 1361
+  },
+  {
+   "id": "r113",
+   "anchor": "ModelAdmin.get_changeform_initial_data#for:k in initial/if:isinstance(f, models.ManyToManyField)",
+   "kind": "lead",
+   "line": 1373
+  },
+  {
+   "id": "r114",
+   "anchor": "ModelAdmin._changeform_view#if:request.method == 'POST' and not form_validated and \"_saveasnew\" in request.POST",
+   "kind": "lead",
+   "line": 1470
+  },
+  {
+   "id": "r115",
+   "anchor": "ModelAdmin._changeform_view#if:request.method == 'POST' and not form_validated and \"_saveasnew\" in request.POST/assign:add",
+   "kind": "lead",
+   "line": 1474
+  },
+  {
+   "id": "r116",
+   "anchor": "ModelAdmin.changelist_view",
+   "kind": "doc",
+   "line": 1487
+  },
+  {
+   "id": "r117",
+   "anchor": "ModelAdmin.changelist_view#assign:actions",
+   "kind": "lead",
+   "line": 1504
+  },
+  {
+   "id": "r118",
+   "anchor": "ModelAdmin.changelist_view#if:actions/assign:list_display",
+   "kind": "lead",
+   "line": 1507
+  },
+  {
+   "id": "r119",
+   "anchor": "ModelAdmin.changelist_view#try/except:IncorrectLookupParameters/if:ERROR_FLAG in request.GET.keys()",
+   "kind": "lead",
+   "line": 1524
+  },
+  {
+   "id": "r120",
+   "anchor": "ModelAdmin.changelist_view#assign:action_failed",
+   "kind": "lead",
+   "line": 1534
+  },
+  {
+   "id": "r121",
+   "anchor": "ModelAdmin.changelist_view#if:actions and request.method == 'POST' and 'index' in request.POST and '_save' not in request.POST",
+   "kind": "lead",
+   "line": 1538
+  },
+  {
+   "id": "r122",
+   "anchor": "ModelAdmin.changelist_view#if:actions and request.method == 'POST' and helpers.ACTION_CHECKBOX_NAME in request.POST and 'index' not in request.POST and '_save' not in request.POST",
+   "kind": "lead",
+   "line": 1553
+  },
+  {
+   "id": "r123",
+   "anchor": "ModelAdmin.changelist_view#assign:formset",
+   "kind": "lead",
+   "line": 1566
+  },
+  {
+   "id": "r124",
+   "anchor": "ModelAdmin.changelist_view#if:request.method == \"POST\" and cl.list_editable and '_save' in request.POST and not action_failed",
+   "kind": "lead",
+   "line": 1569
+  },
+  {
+   "id": "r125",
+   "anchor": "ModelAdmin.changelist_view#if:request.method == \"POST\" and cl.list_editable and '_save' in request.POST and not action_failed/elif:cl.list_editable",
+   "kind": "lead",
+   "line": 1603
+  },
+  {
+   "id": "r126",
+   "anchor": "ModelAdmin.changelist_view#if:formset",
+   "kind": "lead",
+   "line": 1608
+  },
+  {
+   "id": "r127",
+   "anchor": "ModelAdmin.changelist_view#if:actions",
+   "kind": "lead",
+   "line": 1614
+  },
+  {
+   "id": "r128",
+   "anchor": "ModelAdmin._delete_view",
+   "kind": "doc",
+   "line": 1660
+  },
+  {
+   "id": "r129",
+   "anchor": "ModelAdmin._delete_view#assign:(deleted_objects, model_count, perms_needed, protected)",
+   "kind": "lead",
+   "line": 1684
+  },
+  {
+   "id": "r130",
+   "anchor": "ModelAdmin._delete_view#if:request.POST and not protected",
+   "kind": "trail",
+   "line": 1687
+  },
+  {
+   "id": "r131",
+   "anchor": "ModelAdmin.history_view",
+   "kind": "doc",
+   "line": 1725
+  },
+  {
+   "id": "r132",
+   "anchor": "ModelAdmin.history_view#assign:model",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r133",
+   "anchor": "ModelAdmin.history_view#assign:opts",
+   "kind": "lead",
+   "line": 1741
+  },
+  {
+   "id": "r134",
+   "anchor": "ModelAdmin._create_formsets",
+   "kind": "doc",
+   "line": 1767
+  },
+  {
+   "id": "r135",
+   "anchor": "InlineModelAdmin",
+   "kind": "doc",
+   "line": 1796
+  },
+  {
+   "id": "r136",
+   "anchor": "InlineModelAdmin.get_extra",
+   "kind": "doc",
+   "line": 1840
+  },
+  {
+   "id": "r137",
+   "anchor": "InlineModelAdmin.get_min_num",
+   "kind": "doc",
+   "line": 1844
+  },
+  {
+   "id": "r138",
+   "anchor": "InlineModelAdmin.get_max_num",
+   "kind": "doc",
+   "line": 1848
+  },
+  {
+   "id": "r139",
+   "anchor": "InlineModelAdmin.get_formset",
+   "kind": "doc",
+   "line": 1852
+  },
+  {
+   "id": "r140",
+   "anchor": "InlineModelAdmin.get_formset#if:excluded is None and hasattr(self.form, '_meta') and self.form._meta.exclude/call:exclude.extend",
+   "kind": "lead",
+   "line": 1864
+  },
+  {
+   "id": "r141",
+   "anchor": "InlineModelAdmin.get_formset#assign:exclude",
+   "kind": "lead",
+   "line": 1867
+  },
+  {
+   "id": "r142",
+   "anchor": "InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE",
+   "kind": "doc",
+   "line": 1886
+  },
+  {
+   "id": "r143",
+   "anchor": "InlineModelAdmin.get_formset.DeleteProtectedModelForm.hand_clean_DELETE#if:self.cleaned_data.get(DELETION_FIELD_NAME, False)/if:collector.protected/for:p in collector.protected/call:objs.append/arg:_('%(class_name)s %(instance)s') % {'class_name': p._meta.verbose_name, 'instance': p}",
+   "kind": "lead",
+   "line": 1904
+  },
+  {
+   "id": "r144",
+   "anchor": "InlineModelAdmin.has_add_permission#if:self.opts.auto_created/return",
+   "kind": "lead",
+   "line": 1946
+  },
+  {
+   "id": "r145",
+   "anchor": "InlineModelAdmin.has_change_permission#if:opts.auto_created/for:field in opts.fields",
+   "kind": "lead",
+   "line": 1954
+  },
+  {
+   "id": "r146",
+   "anchor": "InlineModelAdmin.has_delete_permission#if:self.opts.auto_created/return",
+   "kind": "lead",
+   "line": 1967
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 45148,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15894,
+  "thinking_tokens": 7985,
+  "opus_cost_usd": 0.8531215,
+  "total_cost_usd": 0.8891315,
+  "duration_ms": 136053,
+  "duration_api_ms": 137285,
+  "num_turns": 2
+ },
+ "wall_ms": 136940,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

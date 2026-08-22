@@ -1,0 +1,871 @@
+{
+ "blob_sha": "becdef6c6e1004376ad1b8eda052e8ff9e5d61fb",
+ "path": "django/db/models/query.py",
+ "repo": "django/django",
+ "records": 141,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "REPR_OUTPUT_SIZE",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r3",
+   "anchor": "EmptyResultSet",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "ModelIterable",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r5",
+   "anchor": "ModelIterable.__iter__#assign:results",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r6",
+   "anchor": "ModelIterable.__iter__#for:row in compiler.results_iter(results)/if:queryset._known_related_objects",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r7",
+   "anchor": "ModelIterable.__iter__#for:row in compiler.results_iter(results)/if:queryset._known_related_objects/for:field, rel_objs in queryset._known_related_objects.items()/if:hasattr(obj, field.get_cache_name())",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r8",
+   "anchor": "ModelIterable.__iter__#for:row in compiler.results_iter(results)/if:queryset._known_related_objects/for:field, rel_objs in queryset._known_related_objects.items()/try/except:KeyError/pass",
+   "kind": "trail",
+   "line": 80
+  },
+  {
+   "id": "r9",
+   "anchor": "ValuesIterable",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r10",
+   "anchor": "ValuesIterable.__iter__#assign:names",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r11",
+   "anchor": "ValuesListIterable",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "ValuesListIterable.__iter__#if:not query.extra_select and not query.annotation_select/else/assign:names",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r13",
+   "anchor": "ValuesListIterable.__iter__#if:not query.extra_select and not query.annotation_select/else/if:queryset._fields/assign:fields",
+   "kind": "lead",
+   "line": 133
+  },
+  {
+   "id": "r14",
+   "anchor": "FlatValuesListIterable",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r15",
+   "anchor": "QuerySet",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r16",
+   "anchor": "QuerySet._known_related_objects",
+   "kind": "trail",
+   "line": 170
+  },
+  {
+   "id": "r17",
+   "anchor": "QuerySet.as_manager#import:django.db.models.manager",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r18",
+   "anchor": "QuerySet.__deepcopy__",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r19",
+   "anchor": "QuerySet.__deepcopy__",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r20",
+   "anchor": "QuerySet.__getstate__",
+   "kind": "doc",
+   "line": 199
+  },
+  {
+   "id": "r21",
+   "anchor": "QuerySet.__getstate__#call:self._fetch_all",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r22",
+   "anchor": "QuerySet.__iter__",
+   "kind": "doc",
+   "line": 237
+  },
+  {
+   "id": "r23",
+   "anchor": "QuerySet.__nonzero__",
+   "kind": "trail",
+   "line": 259
+  },
+  {
+   "id": "r24",
+   "anchor": "QuerySet.__getitem__",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r25",
+   "anchor": "QuerySet.iterator",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r26",
+   "anchor": "QuerySet.iterator",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r27",
+   "anchor": "QuerySet.aggregate",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r28",
+   "anchor": "QuerySet.aggregate#for:arg in args/try",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r29",
+   "anchor": "QuerySet.count",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r30",
+   "anchor": "QuerySet.get",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r31",
+   "anchor": "QuerySet.create",
+   "kind": "doc",
+   "line": 388
+  },
+  {
+   "id": "r32",
+   "anchor": "QuerySet.bulk_create",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r33",
+   "anchor": "QuerySet.bulk_create#assert:batch_size is None or batch_size > 0",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r34",
+   "anchor": "QuerySet.bulk_create#for:parent in self.model._meta.get_parent_list()",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r35",
+   "anchor": "QuerySet.get_or_create",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r36",
+   "anchor": "QuerySet.get_or_create#assign:self._for_write",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r37",
+   "anchor": "QuerySet.update_or_create",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r38",
+   "anchor": "QuerySet._create_object_from_params",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r39",
+   "anchor": "QuerySet._extract_model_params",
+   "kind": "doc",
+   "line": 509
+  },
+  {
+   "id": "r40",
+   "anchor": "QuerySet._extract_model_params#for:param in params/try/except:exceptions.FieldDoesNotExist/if:param != 'pk'",
+   "kind": "trail",
+   "line": 527
+  },
+  {
+   "id": "r41",
+   "anchor": "QuerySet._earliest_or_latest",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r42",
+   "anchor": "QuerySet.first",
+   "kind": "doc",
+   "line": 559
+  },
+  {
+   "id": "r43",
+   "anchor": "QuerySet.last",
+   "kind": "doc",
+   "line": 568
+  },
+  {
+   "id": "r44",
+   "anchor": "QuerySet.in_bulk",
+   "kind": "doc",
+   "line": 577
+  },
+  {
+   "id": "r45",
+   "anchor": "QuerySet.delete",
+   "kind": "doc",
+   "line": 592
+  },
+  {
+   "id": "r46",
+   "anchor": "QuerySet.delete#assign:del_query._for_write",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r47",
+   "anchor": "QuerySet.delete#assign:del_query.query.select_for_update",
+   "kind": "lead",
+   "line": 610
+  },
+  {
+   "id": "r48",
+   "anchor": "QuerySet.delete#assign:self._result_cache",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r49",
+   "anchor": "QuerySet._raw_delete",
+   "kind": "doc",
+   "line": 625
+  },
+  {
+   "id": "r50",
+   "anchor": "QuerySet.update",
+   "kind": "doc",
+   "line": 633
+  },
+  {
+   "id": "r51",
+   "anchor": "QuerySet.update#assign:query._annotations",
+   "kind": "lead",
+   "line": 644
+  },
+  {
+   "id": "r52",
+   "anchor": "QuerySet._update",
+   "kind": "doc",
+   "line": 651
+  },
+  {
+   "id": "r53",
+   "anchor": "QuerySet._prefetch_related_objects#call:prefetch_related_objects",
+   "kind": "lead",
+   "line": 674
+  },
+  {
+   "id": "r54",
+   "anchor": "QuerySet.raw",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r55",
+   "anchor": "QuerySet.dates",
+   "kind": "doc",
+   "line": 722
+  },
+  {
+   "id": "r56",
+   "anchor": "QuerySet.datetimes",
+   "kind": "doc",
+   "line": 738
+  },
+  {
+   "id": "r57",
+   "anchor": "QuerySet.none",
+   "kind": "doc",
+   "line": 759
+  },
+  {
+   "id": "r58",
+   "anchor": "QuerySet.all",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r59",
+   "anchor": "QuerySet.all",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r60",
+   "anchor": "QuerySet.filter",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r61",
+   "anchor": "QuerySet.exclude",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r62",
+   "anchor": "QuerySet.complex_filter",
+   "kind": "doc",
+   "line": 804
+  },
+  {
+   "id": "r63",
+   "anchor": "QuerySet.select_for_update",
+   "kind": "doc",
+   "line": 821
+  },
+  {
+   "id": "r64",
+   "anchor": "QuerySet.select_related",
+   "kind": "doc",
+   "line": 835
+  },
+  {
+   "id": "r65",
+   "anchor": "QuerySet.prefetch_related",
+   "kind": "doc",
+   "line": 857
+  },
+  {
+   "id": "r66",
+   "anchor": "QuerySet.annotate",
+   "kind": "doc",
+   "line": 874
+  },
+  {
+   "id": "r67",
+   "anchor": "QuerySet.annotate#assign:annotations",
+   "kind": "trail",
+   "line": 879
+  },
+  {
+   "id": "r68",
+   "anchor": "QuerySet.annotate#for:arg in args/try",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r69",
+   "anchor": "QuerySet.order_by",
+   "kind": "doc",
+   "line": 916
+  },
+  {
+   "id": "r70",
+   "anchor": "QuerySet.distinct",
+   "kind": "doc",
+   "line": 927
+  },
+  {
+   "id": "r71",
+   "anchor": "QuerySet.extra",
+   "kind": "doc",
+   "line": 937
+  },
+  {
+   "id": "r72",
+   "anchor": "QuerySet.reverse",
+   "kind": "doc",
+   "line": 948
+  },
+  {
+   "id": "r73",
+   "anchor": "QuerySet.defer",
+   "kind": "doc",
+   "line": 956
+  },
+  {
+   "id": "r74",
+   "anchor": "QuerySet.only",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r75",
+   "anchor": "QuerySet.only#if:fields == (None,)/raise:TypeError",
+   "kind": "lead",
+   "line": 984
+  },
+  {
+   "id": "r76",
+   "anchor": "QuerySet.using",
+   "kind": "doc",
+   "line": 989
+  },
+  {
+   "id": "r77",
+   "anchor": "QuerySet.ordered",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r78",
+   "anchor": "QuerySet.ordered",
+   "kind": "doc",
+   "line": 1002
+  },
+  {
+   "id": "r79",
+   "anchor": "QuerySet.db",
+   "kind": "doc",
+   "line": 1015
+  },
+  {
+   "id": "r80",
+   "anchor": "QuerySet._insert",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r81",
+   "anchor": "QuerySet._insert",
+   "kind": "doc",
+   "line": 1025
+  },
+  {
+   "id": "r82",
+   "anchor": "QuerySet._batched_insert",
+   "kind": "doc",
+   "line": 1039
+  },
+  {
+   "id": "r83",
+   "anchor": "QuerySet._next_is_sticky",
+   "kind": "doc",
+   "line": 1081
+  },
+  {
+   "id": "r84",
+   "anchor": "QuerySet._merge_sanity_check",
+   "kind": "doc",
+   "line": 1095
+  },
+  {
+   "id": "r85",
+   "anchor": "QuerySet._merge_known_related_objects",
+   "kind": "doc",
+   "line": 1108
+  },
+  {
+   "id": "r86",
+   "anchor": "QuerySet._prepare_as_filter_value#if:self._fields is None/else/if:len(self._fields) > 1",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r87",
+   "anchor": "QuerySet._add_hints",
+   "kind": "doc",
+   "line": 1127
+  },
+  {
+   "id": "r88",
+   "anchor": "QuerySet._add_hints#call:self._hints.update",
+   "kind": "lead",
+   "line": 1133
+  },
+  {
+   "id": "r89",
+   "anchor": "QuerySet._has_filters",
+   "kind": "doc",
+   "line": 1135
+  },
+  {
+   "id": "r90",
+   "anchor": "EmptyQuerySet",
+   "kind": "doc",
+   "line": 1149
+  },
+  {
+   "id": "r91",
+   "anchor": "RawQuerySet",
+   "kind": "doc",
+   "line": 1159
+  },
+  {
+   "id": "r92",
+   "anchor": "RawQuerySet.resolve_model_init_order",
+   "kind": "doc",
+   "line": 1174
+  },
+  {
+   "id": "r93",
+   "anchor": "RawQuerySet.__iter__#assign:db",
+   "kind": "lead",
+   "line": 1187
+  },
+  {
+   "id": "r94",
+   "anchor": "RawQuerySet.__iter__#try/assign:skip",
+   "kind": "lead",
+   "line": 1198
+  },
+  {
+   "id": "r95",
+   "anchor": "RawQuerySet.__iter__#try/for:values in query/assign:model_init_values",
+   "kind": "lead",
+   "line": 1214
+  },
+  {
+   "id": "r96",
+   "anchor": "RawQuerySet.__iter__#try/finally/if:hasattr(self.query, 'cursor') and self.query.cursor",
+   "kind": "lead",
+   "line": 1222
+  },
+  {
+   "id": "r97",
+   "anchor": "RawQuerySet.db",
+   "kind": "doc",
+   "line": 1232
+  },
+  {
+   "id": "r98",
+   "anchor": "RawQuerySet.using",
+   "kind": "doc",
+   "line": 1236
+  },
+  {
+   "id": "r99",
+   "anchor": "RawQuerySet.columns",
+   "kind": "doc",
+   "line": 1248
+  },
+  {
+   "id": "r100",
+   "anchor": "RawQuerySet.columns#if:not hasattr(self, '_columns')/for:(query_name, model_name) in self.translations.items()",
+   "kind": "lead",
+   "line": 1257
+  },
+  {
+   "id": "r101",
+   "anchor": "RawQuerySet.columns#if:not hasattr(self, '_columns')/for:(query_name, model_name) in self.translations.items()/try/except:ValueError/pass",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r102",
+   "anchor": "RawQuerySet.model_fields",
+   "kind": "doc",
+   "line": 1268
+  },
+  {
+   "id": "r103",
+   "anchor": "Prefetch.prefetch_through",
+   "kind": "lead",
+   "line": 1284
+  },
+  {
+   "id": "r104",
+   "anchor": "Prefetch.prefetch_to",
+   "kind": "lead",
+   "line": 1286
+  },
+  {
+   "id": "r105",
+   "anchor": "normalize_prefetch_lookups",
+   "kind": "doc",
+   "line": 1322
+  },
+  {
+   "id": "r106",
+   "anchor": "prefetch_related_objects",
+   "kind": "doc",
+   "line": 1336
+  },
+  {
+   "id": "r107",
+   "anchor": "prefetch_related_objects#if:len(model_instances) == 0/return",
+   "kind": "trail",
+   "line": 1342
+  },
+  {
+   "id": "r108",
+   "anchor": "prefetch_related_objects#assign:done_queries",
+   "kind": "lead",
+   "line": 1349
+  },
+  {
+   "id": "r109",
+   "anchor": "prefetch_related_objects#assign:done_queries",
+   "kind": "trail",
+   "line": 1349
+  },
+  {
+   "id": "r110",
+   "anchor": "prefetch_related_objects#assign:auto_lookups",
+   "kind": "trail",
+   "line": 1351
+  },
+  {
+   "id": "r111",
+   "anchor": "prefetch_related_objects#assign:followed_descriptors",
+   "kind": "trail",
+   "line": 1352
+  },
+  {
+   "id": "r112",
+   "anchor": "prefetch_related_objects#while:all_lookups/assign:obj_list",
+   "kind": "lead",
+   "line": 1366
+  },
+  {
+   "id": "r113",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:len(obj_list) == 0",
+   "kind": "lead",
+   "line": 1371
+  },
+  {
+   "id": "r114",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:prefetch_to in done_queries/assign:obj_list",
+   "kind": "lead",
+   "line": 1377
+  },
+  {
+   "id": "r115",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/assign:good_objects",
+   "kind": "lead",
+   "line": 1381
+  },
+  {
+   "id": "r116",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/for:obj in obj_list/if:not hasattr(obj, '_prefetched_objects_cache')",
+   "kind": "lead",
+   "line": 1386
+  },
+  {
+   "id": "r117",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/for:obj in obj_list/if:not hasattr(obj, '_prefetched_objects_cache')/try/except:(AttributeError, TypeError)/assign:good_objects",
+   "kind": "lead",
+   "line": 1395
+  },
+  {
+   "id": "r118",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/assign:first_obj",
+   "kind": "lead",
+   "line": 1404
+  },
+  {
+   "id": "r119",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/assign:first_obj",
+   "kind": "lead",
+   "line": 1404
+  },
+  {
+   "id": "r120",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:level == len(through_attrs) - 1 and prefetcher is None/raise:ValueError",
+   "kind": "lead",
+   "line": 1417
+  },
+  {
+   "id": "r121",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:prefetcher is not None and not is_fetched/if:not (lookup in auto_lookups and descriptor in followed_descriptors)",
+   "kind": "lead",
+   "line": 1427
+  },
+  {
+   "id": "r122",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:prefetcher is not None and not is_fetched/else/assign:new_obj_list",
+   "kind": "lead",
+   "line": 1441
+  },
+  {
+   "id": "r123",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:prefetcher is not None and not is_fetched/else/assign:new_obj_list",
+   "kind": "lead",
+   "line": 1441
+  },
+  {
+   "id": "r124",
+   "anchor": "prefetch_related_objects#while:all_lookups/for:level, through_attr in enumerate(through_attrs)/if:prefetcher is not None and not is_fetched/else/for:obj in obj_list/if:isinstance(new_obj, list)",
+   "kind": "lead",
+   "line": 1452
+  },
+  {
+   "id": "r125",
+   "anchor": "get_prefetcher",
+   "kind": "doc",
+   "line": 1459
+  },
+  {
+   "id": "r126",
+   "anchor": "get_prefetcher#assign:rel_obj_descriptor",
+   "kind": "lead",
+   "line": 1475
+  },
+  {
+   "id": "r127",
+   "anchor": "get_prefetcher#if:rel_obj_descriptor is None/else/if:rel_obj_descriptor/if:hasattr(rel_obj_descriptor, 'get_prefetch_queryset')",
+   "kind": "lead",
+   "line": 1483
+  },
+  {
+   "id": "r128",
+   "anchor": "get_prefetcher#if:rel_obj_descriptor is None/else/if:rel_obj_descriptor/if:hasattr(rel_obj_descriptor, 'get_prefetch_queryset')/else/assign:rel_obj",
+   "kind": "lead",
+   "line": 1491
+  },
+  {
+   "id": "r129",
+   "anchor": "get_prefetcher#if:rel_obj_descriptor is None/else/if:rel_obj_descriptor/if:hasattr(rel_obj_descriptor, 'get_prefetch_queryset')/else/if:through_attr != to_attr/if:isinstance(getattr(instance.__class__, to_attr, None), cached_property)",
+   "kind": "lead",
+   "line": 1497
+  },
+  {
+   "id": "r130",
+   "anchor": "prefetch_one_level",
+   "kind": "doc",
+   "line": 1506
+  },
+  {
+   "id": "r131",
+   "anchor": "prefetch_one_level#assign:rel_qs, rel_obj_attr, instance_attr, single, cache_name",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r132",
+   "anchor": "prefetch_one_level#assign:rel_qs, rel_obj_attr, instance_attr, single, cache_name",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r133",
+   "anchor": "prefetch_one_level#assign:rel_qs, rel_obj_attr, instance_attr, single, cache_name",
+   "kind": "lead",
+   "line": 1529
+  },
+  {
+   "id": "r134",
+   "anchor": "prefetch_one_level#assign:additional_lookups",
+   "kind": "lead",
+   "line": 1537
+  },
+  {
+   "id": "r135",
+   "anchor": "prefetch_one_level#if:additional_lookups/assign:rel_qs._prefetch_related_lookups",
+   "kind": "lead",
+   "line": 1545
+  },
+  {
+   "id": "r136",
+   "anchor": "prefetch_one_level#if:as_attr and instances",
+   "kind": "lead",
+   "line": 1556
+  },
+  {
+   "id": "r137",
+   "anchor": "prefetch_one_level#if:as_attr and instances/assign:model",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r138",
+   "anchor": "prefetch_one_level#assign:leaf",
+   "kind": "lead",
+   "line": 1569
+  },
+  {
+   "id": "r139",
+   "anchor": "prefetch_one_level#for:obj in instances/if:single/else/if:as_attr/else/assign:qs._prefetch_done",
+   "kind": "lead",
+   "line": 1603
+  },
+  {
+   "id": "r140",
+   "anchor": "RelatedPopulator",
+   "kind": "doc",
+   "line": 1608
+  },
+  {
+   "id": "r141",
+   "anchor": "RelatedPopulator.__init__#assign:select_fields",
+   "kind": "lead",
+   "line": 1648
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 40271,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12621,
+  "thinking_tokens": 5622,
+  "opus_cost_usd": 0.7225265000000001,
+  "total_cost_usd": 0.7542495,
+  "duration_ms": 107357,
+  "duration_api_ms": 108507,
+  "num_turns": 2
+ },
+ "wall_ms": 108361,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

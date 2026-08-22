@@ -1,0 +1,349 @@
+{
+ "blob_sha": "4153dfccb20f0c070ca10398b4ec6d68fcc3c57c",
+ "path": "astropy/nddata/mixins/ndarithmetic.py",
+ "repo": "astropy/astropy",
+ "records": 54,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:warnings",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "_arit_doc",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r3",
+   "anchor": "_arit_doc",
+   "kind": "lead",
+   "line": 20
+  },
+  {
+   "id": "r4",
+   "anchor": "NDArithmeticMixin",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r5",
+   "anchor": "NDArithmeticMixin._arithmetic",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r6",
+   "anchor": "NDArithmeticMixin._arithmetic#assign:kwds2",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r7",
+   "anchor": "NDArithmeticMixin._arithmetic#if:compare_wcs is None",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r8",
+   "anchor": "NDArithmeticMixin._arithmetic#assign:use_masked_arith",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r9",
+   "anchor": "NDArithmeticMixin._arithmetic#if:use_masked_arith/if:not operation_ignores_mask",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r10",
+   "anchor": "NDArithmeticMixin._arithmetic#if:use_masked_arith/if:not operation_ignores_mask/if:self.unit is not None and not hasattr(self.data, \"unit\")",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r11",
+   "anchor": "NDArithmeticMixin._arithmetic#if:use_masked_arith/if:not operation_ignores_mask/else",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r12",
+   "anchor": "NDArithmeticMixin._arithmetic#if:use_masked_arith/if:not hasattr(result, \"mask\")",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r13",
+   "anchor": "NDArithmeticMixin._arithmetic#if:use_masked_arith/else/assign:result",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r14",
+   "anchor": "NDArithmeticMixin._arithmetic#if:not hasattr(result, \"unit\") and hasattr(self, \"unit\")",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r15",
+   "anchor": "NDArithmeticMixin._arithmetic#if:propagate_uncertainties is None",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r16",
+   "anchor": "NDArithmeticMixin._arithmetic#if:self.psf is not None or (operand is not None and operand.psf is not None)",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r17",
+   "anchor": "NDArithmeticMixin._arithmetic#if:handle_mask is None/elif:hasattr(result, \"mask\")/assign:kwargs[\"mask\"]",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r18",
+   "anchor": "NDArithmeticMixin._arithmetic#return",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r19",
+   "anchor": "NDArithmeticMixin._arithmetic_data",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r20",
+   "anchor": "NDArithmeticMixin._arithmetic_data#if:self.unit is None",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r21",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r22",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is not None and not isinstance(self.uncertainty, NDUncertainty)",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r23",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r24",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/return",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r25",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/elif:self.uncertainty is None/assign:self.uncertainty",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r26",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/elif:self.uncertainty is None/assign:self.uncertainty",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r27",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/elif:operand is not None and operand.uncertainty is None/assign:operand.uncertainty",
+   "kind": "lead",
+   "line": 469
+  },
+  {
+   "id": "r28",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/else/assign:axis_kwarg",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r29",
+   "anchor": "NDArithmeticMixin._arithmetic_uncertainty#if:self.uncertainty is None and (not hasattr(operand, \"uncertainty\") or operand.uncertainty is None)/else/assign:axis_kwarg",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r30",
+   "anchor": "NDArithmeticMixin._arithmetic_mask",
+   "kind": "doc",
+   "line": 485
+  },
+  {
+   "id": "r31",
+   "anchor": "NDArithmeticMixin._arithmetic_mask#if:(self.mask is None and operand is not None and operand.mask is None) or handle_mask is None",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r32",
+   "anchor": "NDArithmeticMixin._arithmetic_mask#if:(self.mask is None and operand is not None and operand.mask is None) or handle_mask is None/elif:self.mask is None and operand is not None/return",
+   "kind": "lead",
+   "line": 522
+  },
+  {
+   "id": "r33",
+   "anchor": "NDArithmeticMixin._arithmetic_mask#if:(self.mask is None and operand is not None and operand.mask is None) or handle_mask is None/else/return",
+   "kind": "lead",
+   "line": 527
+  },
+  {
+   "id": "r34",
+   "anchor": "NDArithmeticMixin._arithmetic_wcs",
+   "kind": "doc",
+   "line": 529
+  },
+  {
+   "id": "r35",
+   "anchor": "NDArithmeticMixin._arithmetic_wcs#if:not compare_wcs(self.wcs, operand.wcs, **kwds)",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r36",
+   "anchor": "NDArithmeticMixin._arithmetic_wcs#if:not compare_wcs(self.wcs, operand.wcs, **kwds)",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r37",
+   "anchor": "NDArithmeticMixin._arithmetic_meta",
+   "kind": "doc",
+   "line": 575
+  },
+  {
+   "id": "r38",
+   "anchor": "NDArithmeticMixin._arithmetic_meta#return",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r39",
+   "anchor": "NDArithmeticMixin.min#assign:propagate_uncertainties",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r40",
+   "anchor": "NDArithmeticMixin.max#assign:propagate_uncertainties",
+   "kind": "lead",
+   "line": 648
+  },
+  {
+   "id": "r41",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic",
+   "kind": "doc",
+   "line": 654
+  },
+  {
+   "id": "r42",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r43",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/assign:cls",
+   "kind": "lead",
+   "line": 693
+  },
+  {
+   "id": "r44",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/if:operand2 is None/assign:operand2",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r45",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/if:operand2 is None/else/assign:operand",
+   "kind": "lead",
+   "line": 704
+  },
+  {
+   "id": "r46",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/else/assign:cls",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r47",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/else/if:operand2 is None",
+   "kind": "lead",
+   "line": 711
+  },
+  {
+   "id": "r48",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:isinstance(self_or_cls, NDArithmeticMixin)/else/assign:operand",
+   "kind": "lead",
+   "line": 718
+  },
+  {
+   "id": "r49",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:operand2 is not None and not issubclass(operand2.__class__, NDArithmeticMixin)",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r50",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:operand2 is not None and not issubclass(operand2.__class__, NDArithmeticMixin)/assign:operand2",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r51",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:operand2 is not None and not issubclass(operand2.__class__, NDArithmeticMixin)/assign:result, init_kwds",
+   "kind": "lead",
+   "line": 731
+  },
+  {
+   "id": "r52",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:operand2 is not None and not issubclass(operand2.__class__, NDArithmeticMixin)/elif:issubclass(operand2.__class__, NDArithmeticMixin)/assign:result, init_kwds",
+   "kind": "lead",
+   "line": 734
+  },
+  {
+   "id": "r53",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#if:operand2 is not None and not issubclass(operand2.__class__, NDArithmeticMixin)/else/assign:result, init_kwds",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r54",
+   "anchor": "NDArithmeticMixin._prepare_then_do_arithmetic#return",
+   "kind": "lead",
+   "line": 750
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18206,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7532,
+  "thinking_tokens": 3621,
+  "opus_cost_usd": 0.3746515,
+  "total_cost_usd": 0.38757650000000005,
+  "duration_ms": 67489,
+  "duration_api_ms": 68959,
+  "num_turns": 2
+ },
+ "wall_ms": 68340,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

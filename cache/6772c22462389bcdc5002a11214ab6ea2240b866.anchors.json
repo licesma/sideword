@@ -1,0 +1,1045 @@
+{
+ "blob_sha": "6772c22462389bcdc5002a11214ab6ea2240b866",
+ "path": "astropy/time/formats.py",
+ "repo": "astropy/astropy",
+ "records": 170,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:datetime",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "TIME_FORMATS",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r3",
+   "anchor": "FITS_DEPRECATED_SCALES",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r4",
+   "anchor": "AstropyDatetimeLeapSecondWarning",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r5",
+   "anchor": "_regexify_subfmts",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r6",
+   "anchor": "TimeFormat",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r7",
+   "anchor": "TimeFormat._default_scale",
+   "kind": "trail",
+   "line": 141
+  },
+  {
+   "id": "r8",
+   "anchor": "TimeFormat.__init__#assign:self.scale",
+   "kind": "trail",
+   "line": 148
+  },
+  {
+   "id": "r9",
+   "anchor": "TimeFormat.__init_subclass__#if:\"name\" in cls.__dict__ and cls.name != \"astropy_time\"",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r10",
+   "anchor": "TimeFormat.__init_subclass__#if:\"name\" in cls.__dict__ and cls.name != \"astropy_time\"/if:\"value\" in cls.__dict__ and not hasattr(cls.value, \"fget\")",
+   "kind": "todo",
+   "line": 172
+  },
+  {
+   "id": "r11",
+   "anchor": "TimeFormat.__init_subclass__#if:\"subfmts\" in cls.__dict__",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r12",
+   "anchor": "TimeFormat._get_allowed_subfmt",
+   "kind": "doc",
+   "line": 184
+  },
+  {
+   "id": "r13",
+   "anchor": "TimeFormat.in_subfmt#call:self._select_subfmts",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r14",
+   "anchor": "TimeFormat.out_subfmt#call:self._select_subfmts",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r15",
+   "anchor": "TimeFormat.scale",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r16",
+   "anchor": "TimeFormat.precision#if:not isinstance(val, int) or val < 0 or val > 9",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r17",
+   "anchor": "TimeFormat.cache",
+   "kind": "doc",
+   "line": 285
+  },
+  {
+   "id": "r18",
+   "anchor": "TimeFormat._check_val_type",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r19",
+   "anchor": "TimeFormat._check_val_type#assign:isfinite1",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r20",
+   "anchor": "TimeFormat._check_val_type#if:val1.size > 1",
+   "kind": "trail",
+   "line": 295
+  },
+  {
+   "id": "r21",
+   "anchor": "TimeFormat._check_val_type#if:val1.size > 1/assign:isfinite1",
+   "kind": "trail",
+   "line": 296
+  },
+  {
+   "id": "r22",
+   "anchor": "TimeFormat._check_val_type#if:getattr(val1, \"unit\", None) is not None/assign:val1",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r23",
+   "anchor": "TimeFormat._check_val_type#if:getattr(val1, \"unit\", None) is not None/assign:factor",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r24",
+   "anchor": "TimeFormat._check_val_type.asarray_or_scalar",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r25",
+   "anchor": "TimeFormat._check_scale",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r26",
+   "anchor": "TimeFormat.set_jds",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r27",
+   "anchor": "TimeFormat.to_value",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r28",
+   "anchor": "TimeFormat.to_value#if:out_subfmt is not None",
+   "kind": "lead",
+   "line": 419
+  },
+  {
+   "id": "r29",
+   "anchor": "TimeFormat._select_subfmts",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r30",
+   "anchor": "TimeNumeric._check_val_type",
+   "kind": "doc",
+   "line": 474
+  },
+  {
+   "id": "r31",
+   "anchor": "TimeNumeric._check_val_type#assign:orig_val2_is_none",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r32",
+   "anchor": "TimeNumeric.to_value",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r33",
+   "anchor": "TimeNumeric.to_value#if:self.__class__.value.fget is not self.__class__.to_value",
+   "kind": "todo",
+   "line": 525
+  },
+  {
+   "id": "r34",
+   "anchor": "TimeNumeric.to_value#if:subfmt[0] in (\"str\", \"bytes\")/assign:kwargs[\"fmt\"]",
+   "kind": "todo",
+   "line": 540
+  },
+  {
+   "id": "r35",
+   "anchor": "TimeJD",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r36",
+   "anchor": "TimeJD.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 559
+  },
+  {
+   "id": "r37",
+   "anchor": "TimeMJD",
+   "kind": "doc",
+   "line": 563
+  },
+  {
+   "id": "r38",
+   "anchor": "TimeMJD.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 574
+  },
+  {
+   "id": "r39",
+   "anchor": "TimeMJD.set_jds#assign:jd1",
+   "kind": "trail",
+   "line": 576
+  },
+  {
+   "id": "r40",
+   "anchor": "TimeMJD.to_value#assign:jd1",
+   "kind": "trail",
+   "line": 580
+  },
+  {
+   "id": "r41",
+   "anchor": "_check_val_type_not_quantity#if:hasattr(val1, \"to\") and getattr(val1, \"unit\", None) is not None",
+   "kind": "lead",
+   "line": 590
+  },
+  {
+   "id": "r42",
+   "anchor": "TimeDecimalYear",
+   "kind": "doc",
+   "line": 598
+  },
+  {
+   "id": "r43",
+   "anchor": "TimeDecimalYear._check_val_type#return",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r44",
+   "anchor": "TimeDecimalYear.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 618
+  },
+  {
+   "id": "r45",
+   "anchor": "TimeDecimalYear.set_jds#assign:scale",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r46",
+   "anchor": "TimeDecimalYear.to_value#assign:iy_start, ims, ids, ihmsfs",
+   "kind": "trail",
+   "line": 648
+  },
+  {
+   "id": "r47",
+   "anchor": "TimeDecimalYear.to_value#assign:scale",
+   "kind": "lead",
+   "line": 659
+  },
+  {
+   "id": "r48",
+   "anchor": "TimeDecimalYear.to_value#assign:dt",
+   "kind": "lead",
+   "line": 663
+  },
+  {
+   "id": "r49",
+   "anchor": "TimeFromEpoch",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r50",
+   "anchor": "TimeFromEpoch._epoch#return",
+   "kind": "lead",
+   "line": 684
+  },
+  {
+   "id": "r51",
+   "anchor": "TimeFromEpoch.epoch",
+   "kind": "doc",
+   "line": 692
+  },
+  {
+   "id": "r52",
+   "anchor": "TimeFromEpoch.set_jds",
+   "kind": "doc",
+   "line": 696
+  },
+  {
+   "id": "r53",
+   "anchor": "TimeFromEpoch.set_jds#assign:day, frac",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r54",
+   "anchor": "TimeFromEpoch.set_jds#assign:day, frac",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r55",
+   "anchor": "TimeFromEpoch.set_jds#if:self.epoch.scale == self.scale",
+   "kind": "lead",
+   "line": 723
+  },
+  {
+   "id": "r56",
+   "anchor": "TimeFromEpoch.set_jds#try",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r57",
+   "anchor": "TimeFromEpoch.to_value#if:self.scale != self.epoch_scale",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r58",
+   "anchor": "TimeFromEpoch.to_value#assign:factor",
+   "kind": "lead",
+   "line": 770
+  },
+  {
+   "id": "r59",
+   "anchor": "TimeUnix",
+   "kind": "doc",
+   "line": 783
+  },
+  {
+   "id": "r60",
+   "anchor": "TimeUnix.unit",
+   "kind": "trail",
+   "line": 797
+  },
+  {
+   "id": "r61",
+   "anchor": "TimeUnixTai",
+   "kind": "doc",
+   "line": 804
+  },
+  {
+   "id": "r62",
+   "anchor": "TimeCxcSec",
+   "kind": "doc",
+   "line": 856
+  },
+  {
+   "id": "r63",
+   "anchor": "TimeCxcSec.unit",
+   "kind": "trail",
+   "line": 863
+  },
+  {
+   "id": "r64",
+   "anchor": "TimeGPS",
+   "kind": "doc",
+   "line": 870
+  },
+  {
+   "id": "r65",
+   "anchor": "TimeGPS.unit",
+   "kind": "trail",
+   "line": 885
+  },
+  {
+   "id": "r66",
+   "anchor": "TimeGPS.epoch_val2",
+   "kind": "lead",
+   "line": 888
+  },
+  {
+   "id": "r67",
+   "anchor": "TimePlotDate",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r68",
+   "anchor": "TimePlotDate.name",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r69",
+   "anchor": "TimePlotDate.epoch_val",
+   "kind": "trail",
+   "line": 915
+  },
+  {
+   "id": "r70",
+   "anchor": "TimePlotDate.epoch",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r71",
+   "anchor": "TimePlotDate.epoch#try/import:matplotlib.dates",
+   "kind": "lead",
+   "line": 925
+  },
+  {
+   "id": "r72",
+   "anchor": "TimePlotDate.epoch#try/except:ImportError/assign:_epoch",
+   "kind": "lead",
+   "line": 928
+  },
+  {
+   "id": "r73",
+   "anchor": "TimePlotDate.epoch#try/else/assign:epoch_utc",
+   "kind": "lead",
+   "line": 931
+  },
+  {
+   "id": "r74",
+   "anchor": "TimePlotDate.epoch#try/else/with:warnings.catch_warnings()/call:warnings.filterwarnings",
+   "kind": "lead",
+   "line": 936
+  },
+  {
+   "id": "r75",
+   "anchor": "TimeStardate",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r76",
+   "anchor": "TimeStardate.unit",
+   "kind": "trail",
+   "line": 951
+  },
+  {
+   "id": "r77",
+   "anchor": "TimeStardate.epoch_val",
+   "kind": "trail",
+   "line": 952
+  },
+  {
+   "id": "r78",
+   "anchor": "TimeUnique",
+   "kind": "doc",
+   "line": 958
+  },
+  {
+   "id": "r79",
+   "anchor": "TimeAstropyTime",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r80",
+   "anchor": "TimeAstropyTime.__new__",
+   "kind": "doc",
+   "line": 976
+  },
+  {
+   "id": "r81",
+   "anchor": "TimeAstropyTime.__new__#if:val1.shape/if:any(tm.location is not None for tm in val1)",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r82",
+   "anchor": "TimeAstropyTime.__new__#assign:self._location",
+   "kind": "lead",
+   "line": 1031
+  },
+  {
+   "id": "r83",
+   "anchor": "TimeDatetime",
+   "kind": "doc",
+   "line": 1036
+  },
+  {
+   "id": "r84",
+   "anchor": "TimeDatetime.set_jds",
+   "kind": "doc",
+   "line": 1064
+  },
+  {
+   "id": "r85",
+   "anchor": "TimeDatetime.set_jds#assign:iterator",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r86",
+   "anchor": "TimeDatetime.to_value",
+   "kind": "doc",
+   "line": 1090
+  },
+  {
+   "id": "r87",
+   "anchor": "TimeDatetime.to_value#if:out_subfmt is not None/call:self._select_subfmts",
+   "kind": "lead",
+   "line": 1124
+  },
+  {
+   "id": "r88",
+   "anchor": "TimeDatetime.to_value#assign:scale",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r89",
+   "anchor": "TimeDatetime.to_value#assign:iys, ims, ids, ihmsfs",
+   "kind": "trail",
+   "line": 1135
+  },
+  {
+   "id": "r90",
+   "anchor": "TimeYMDHMS",
+   "kind": "doc",
+   "line": 1187
+  },
+  {
+   "id": "r91",
+   "anchor": "TimeYMDHMS._check_val_type",
+   "kind": "doc",
+   "line": 1221
+  },
+  {
+   "id": "r92",
+   "anchor": "TimeYMDHMS._check_val_type#if:val1.dtype.names/assign:val1_as_dict",
+   "kind": "lead",
+   "line": 1247
+  },
+  {
+   "id": "r93",
+   "anchor": "TimeYMDHMS._check_val_type#if:val1.dtype.names/elif:val1.shape == (0,)/return",
+   "kind": "lead",
+   "line": 1251
+  },
+  {
+   "id": "r94",
+   "anchor": "TimeYMDHMS._check_val_type#if:val1.dtype.names/elif:val1.dtype.kind == \"O\" and val1.shape == () and isinstance(val1.item(), dict)/assign:names",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r95",
+   "anchor": "TimeYMDHMS._check_val_type#if:val1.dtype.names/elif:val1.dtype.kind == \"O\" and val1.shape == () and isinstance(val1.item(), dict)/assign:names",
+   "kind": "lead",
+   "line": 1263
+  },
+  {
+   "id": "r96",
+   "anchor": "TimeYMDHMS._check_val_type#assign:names",
+   "kind": "lead",
+   "line": 1273
+  },
+  {
+   "id": "r97",
+   "anchor": "TimeYMDHMS.set_jds#if:val1 is None/assign:jd1",
+   "kind": "lead",
+   "line": 1296
+  },
+  {
+   "id": "r98",
+   "anchor": "TimezoneInfo",
+   "kind": "doc",
+   "line": 1339
+  },
+  {
+   "id": "r99",
+   "anchor": "TimezoneInfo.__init__",
+   "kind": "doc",
+   "line": 1350
+  },
+  {
+   "id": "r100",
+   "anchor": "TimeString",
+   "kind": "doc",
+   "line": 1391
+  },
+  {
+   "id": "r101",
+   "anchor": "TimeString.parse_string",
+   "kind": "doc",
+   "line": 1461
+  },
+  {
+   "id": "r102",
+   "anchor": "TimeString.parse_string#assign:components",
+   "kind": "lead",
+   "line": 1465
+  },
+  {
+   "id": "r103",
+   "anchor": "TimeString.parse_string#try",
+   "kind": "lead",
+   "line": 1469
+  },
+  {
+   "id": "r104",
+   "anchor": "TimeString.parse_string#for:_, strptime_fmt_or_regex, _ in subfmts/if:timestr_has_fractional_digits",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r105",
+   "anchor": "TimeString.set_jds",
+   "kind": "doc",
+   "line": 1513
+  },
+  {
+   "id": "r106",
+   "anchor": "TimeString.set_jds#if:self.in_subfmt != \"*\" or \"_fast_parser\" not in self.__class__.__dict__ or conf.use_fast_parser == \"False\"",
+   "kind": "lead",
+   "line": 1519
+  },
+  {
+   "id": "r107",
+   "anchor": "TimeString.set_jds#if:self.in_subfmt != \"*\" or \"_fast_parser\" not in self.__class__.__dict__ or conf.use_fast_parser == \"False\"/else/try/except:Exception/if:conf.use_fast_parser == \"force\"",
+   "kind": "lead",
+   "line": 1530
+  },
+  {
+   "id": "r108",
+   "anchor": "TimeString.get_jds_python",
+   "kind": "doc",
+   "line": 1538
+  },
+  {
+   "id": "r109",
+   "anchor": "TimeString.get_jds_python#assign:subfmts",
+   "kind": "lead",
+   "line": 1541
+  },
+  {
+   "id": "r110",
+   "anchor": "TimeString.get_jds_python#assign:to_string",
+   "kind": "lead",
+   "line": 1545
+  },
+  {
+   "id": "r111",
+   "anchor": "TimeString.get_jds_fast",
+   "kind": "doc",
+   "line": 1571
+  },
+  {
+   "id": "r112",
+   "anchor": "TimeString.get_jds_fast#if:val1.dtype.kind == \"U\"",
+   "kind": "lead",
+   "line": 1577
+  },
+  {
+   "id": "r113",
+   "anchor": "TimeString.get_jds_fast#if:val1.dtype.kind == \"U\"/assign:val1_uint32",
+   "kind": "lead",
+   "line": 1580
+  },
+  {
+   "id": "r114",
+   "anchor": "TimeString.get_jds_fast#if:val1.dtype.kind == \"U\"/assign:chars",
+   "kind": "lead",
+   "line": 1586
+  },
+  {
+   "id": "r115",
+   "anchor": "TimeString.get_jds_fast#assign:time_struct",
+   "kind": "lead",
+   "line": 1592
+  },
+  {
+   "id": "r116",
+   "anchor": "TimeString.str_kwargs",
+   "kind": "doc",
+   "line": 1604
+  },
+  {
+   "id": "r117",
+   "anchor": "TimeString.str_kwargs#assign:_, _, str_fmt",
+   "kind": "lead",
+   "line": 1615
+  },
+  {
+   "id": "r118",
+   "anchor": "TimeString.format_string",
+   "kind": "doc",
+   "line": 1641
+  },
+  {
+   "id": "r119",
+   "anchor": "TimeString.value#assign:subfmts",
+   "kind": "lead",
+   "line": 1653
+  },
+  {
+   "id": "r120",
+   "anchor": "TimeString.value#if:self.precision > 0 and str_fmt.endswith(\"{sec:02d}\")",
+   "kind": "todo",
+   "line": 1657
+  },
+  {
+   "id": "r121",
+   "anchor": "TimeString.value#assign:outs",
+   "kind": "lead",
+   "line": 1662
+  },
+  {
+   "id": "r122",
+   "anchor": "TimeISO",
+   "kind": "doc",
+   "line": 1669
+  },
+  {
+   "id": "r123",
+   "anchor": "TimeISO.subfmts#item:(\"date_hms\", \"%Y-%m-%d %H:%M:%S\", \"{year:d}-{mon:02d}-{day:02d} {hour:02d}:{min:02d}:{sec:02d}\")/item:\"{year:d}-{mon:02d}-{day:02d} {hour:02d}:{min:02d}:{sec:02d}\"",
+   "kind": "todo",
+   "line": 1687
+  },
+  {
+   "id": "r124",
+   "anchor": "TimeISO.fast_parser_pars",
+   "kind": "lead",
+   "line": 1705
+  },
+  {
+   "id": "r125",
+   "anchor": "TimeISO.fast_parser_pars#arg:break_allowed",
+   "kind": "lead",
+   "line": 1711
+  },
+  {
+   "id": "r126",
+   "anchor": "TimeISO.parse_string#if:timestr.endswith(\"Z\")",
+   "kind": "lead",
+   "line": 1717
+  },
+  {
+   "id": "r127",
+   "anchor": "TimeISOT",
+   "kind": "doc",
+   "line": 1724
+  },
+  {
+   "id": "r128",
+   "anchor": "TimeISOT.fast_parser_pars",
+   "kind": "lead",
+   "line": 1754
+  },
+  {
+   "id": "r129",
+   "anchor": "TimeISOT.fast_parser_pars#arg:break_allowed",
+   "kind": "lead",
+   "line": 1760
+  },
+  {
+   "id": "r130",
+   "anchor": "TimeYearDayTime",
+   "kind": "doc",
+   "line": 1765
+  },
+  {
+   "id": "r131",
+   "anchor": "TimeYearDayTime.fast_parser_pars",
+   "kind": "lead",
+   "line": 1802
+  },
+  {
+   "id": "r132",
+   "anchor": "TimeYearDayTime.fast_parser_pars#arg:break_allowed",
+   "kind": "lead",
+   "line": 1808
+  },
+  {
+   "id": "r133",
+   "anchor": "TimeDatetime64.set_jds#assign:mask",
+   "kind": "lead",
+   "line": 1836
+  },
+  {
+   "id": "r134",
+   "anchor": "TimeDatetime64.set_jds#if:val1.dtype.name in [\"datetime64[M]\", \"datetime64[Y]\"]",
+   "kind": "lead",
+   "line": 1843
+  },
+  {
+   "id": "r135",
+   "anchor": "TimeDatetime64.set_jds#call:super().set_jds",
+   "kind": "lead",
+   "line": 1848
+  },
+  {
+   "id": "r136",
+   "anchor": "TimeDatetime64.set_jds#if:masked",
+   "kind": "lead",
+   "line": 1851
+  },
+  {
+   "id": "r137",
+   "anchor": "TimeFITS",
+   "kind": "doc",
+   "line": 1863
+  },
+  {
+   "id": "r138",
+   "anchor": "TimeFITS#assign:subfmts",
+   "kind": "lead",
+   "line": 1911
+  },
+  {
+   "id": "r139",
+   "anchor": "TimeFITS.parse_string",
+   "kind": "doc",
+   "line": 1920
+  },
+  {
+   "id": "r140",
+   "anchor": "TimeFITS.parse_string#for:_, regex, _ in subfmts",
+   "kind": "lead",
+   "line": 1923
+  },
+  {
+   "id": "r141",
+   "anchor": "TimeFITS.parse_string#if:tm[\"scale\"] is not None",
+   "kind": "lead",
+   "line": 1932
+  },
+  {
+   "id": "r142",
+   "anchor": "TimeFITS.parse_string#if:tm[\"scale\"] is not None/assign:fits_scale",
+   "kind": "lead",
+   "line": 1939
+  },
+  {
+   "id": "r143",
+   "anchor": "TimeFITS.parse_string#if:tm[\"scale\"] is not None/if:self._scale is None",
+   "kind": "lead",
+   "line": 1950
+  },
+  {
+   "id": "r144",
+   "anchor": "TimeFITS.value",
+   "kind": "doc",
+   "line": 1967
+  },
+  {
+   "id": "r145",
+   "anchor": "TimeFITS.value#if:\"long\" not in self.out_subfmt/assign:jd",
+   "kind": "lead",
+   "line": 1972
+  },
+  {
+   "id": "r146",
+   "anchor": "TimeEpochDate",
+   "kind": "doc",
+   "line": 1978
+  },
+  {
+   "id": "r147",
+   "anchor": "TimeEpochDate._default_scale",
+   "kind": "trail",
+   "line": 1983
+  },
+  {
+   "id": "r148",
+   "anchor": "TimeEpochDate.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 1986
+  },
+  {
+   "id": "r149",
+   "anchor": "TimeBesselianEpoch",
+   "kind": "doc",
+   "line": 1999
+  },
+  {
+   "id": "r150",
+   "anchor": "TimeBesselianEpoch._check_val_type#return",
+   "kind": "todo",
+   "line": 2014
+  },
+  {
+   "id": "r151",
+   "anchor": "TimeJulianEpoch",
+   "kind": "doc",
+   "line": 2017
+  },
+  {
+   "id": "r152",
+   "anchor": "TimeJulianEpoch.unit",
+   "kind": "trail",
+   "line": 2021
+  },
+  {
+   "id": "r153",
+   "anchor": "TimeEpochDateString",
+   "kind": "doc",
+   "line": 2026
+  },
+  {
+   "id": "r154",
+   "anchor": "TimeEpochDateString._default_scale",
+   "kind": "trail",
+   "line": 2032
+  },
+  {
+   "id": "r155",
+   "anchor": "TimeEpochDateString.set_jds#assign:to_string",
+   "kind": "lead",
+   "line": 2037
+  },
+  {
+   "id": "r156",
+   "anchor": "TimeEpochDateString.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 2055
+  },
+  {
+   "id": "r157",
+   "anchor": "TimeEpochDateString.value#assign:str_fmt",
+   "kind": "lead",
+   "line": 2065
+  },
+  {
+   "id": "r158",
+   "anchor": "TimeBesselianEpochString",
+   "kind": "doc",
+   "line": 2070
+  },
+  {
+   "id": "r159",
+   "anchor": "TimeJulianEpochString",
+   "kind": "doc",
+   "line": 2079
+  },
+  {
+   "id": "r160",
+   "anchor": "TimeDeltaFormat",
+   "kind": "doc",
+   "line": 2088
+  },
+  {
+   "id": "r161",
+   "anchor": "TimeDeltaFormat._check_scale",
+   "kind": "doc",
+   "line": 2093
+  },
+  {
+   "id": "r162",
+   "anchor": "TimeDeltaNumeric.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 2107
+  },
+  {
+   "id": "r163",
+   "anchor": "TimeDeltaNumeric.to_value#assign:factor",
+   "kind": "lead",
+   "line": 2113
+  },
+  {
+   "id": "r164",
+   "anchor": "TimeDeltaSec",
+   "kind": "doc",
+   "line": 2121
+  },
+  {
+   "id": "r165",
+   "anchor": "TimeDeltaSec.unit",
+   "kind": "trail",
+   "line": 2125
+  },
+  {
+   "id": "r166",
+   "anchor": "TimeDeltaJD",
+   "kind": "doc",
+   "line": 2128
+  },
+  {
+   "id": "r167",
+   "anchor": "TimeDeltaDatetime",
+   "kind": "doc",
+   "line": 2135
+  },
+  {
+   "id": "r168",
+   "anchor": "TimeDeltaDatetime.set_jds#call:self._check_scale",
+   "kind": "trail",
+   "line": 2152
+  },
+  {
+   "id": "r169",
+   "anchor": "_broadcast_writeable#assign:shape",
+   "kind": "lead",
+   "line": 2204
+  },
+  {
+   "id": "r170",
+   "anchor": "<module>#import:.core",
+   "kind": "lead",
+   "line": 2218
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 51801,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 17754,
+  "thinking_tokens": 9620,
+  "opus_cost_usd": 0.9661514999999999,
+  "total_cost_usd": 1.0081605,
+  "duration_ms": 150934,
+  "duration_api_ms": 152457,
+  "num_turns": 2
+ },
+ "wall_ms": 151960,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,505 @@
+{
+ "blob_sha": "d0a80f9e56445e48568e179536d88f470baf93f1",
+ "path": "django/contrib/gis/db/models/query.py",
+ "repo": "django/django",
+ "records": 80,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "GeoQuerySet",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "GeoQuerySet.area",
+   "kind": "lead",
+   "line": 25
+  },
+  {
+   "id": "r3",
+   "anchor": "GeoQuerySet.area",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r4",
+   "anchor": "GeoQuerySet.area#assign:procedure_args, geo_field",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "GeoQuerySet.area#if:backend.oracle/assign:s['select_field']",
+   "kind": "trail",
+   "line": 43
+  },
+  {
+   "id": "r6",
+   "anchor": "GeoQuerySet.area#if:backend.oracle/elif:backend.postgis or backend.spatialite/if:backend.geography/assign:s['select_field']",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r7",
+   "anchor": "GeoQuerySet.area#if:backend.oracle/elif:backend.postgis or backend.spatialite/if:backend.geography/elif:not geo_field.geodetic(connection)/assign:s['select_field']",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r8",
+   "anchor": "GeoQuerySet.area#if:backend.oracle/elif:backend.postgis or backend.spatialite/if:backend.geography/else/raise:Exception",
+   "kind": "todo",
+   "line": 53
+  },
+  {
+   "id": "r9",
+   "anchor": "GeoQuerySet.centroid",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r10",
+   "anchor": "GeoQuerySet.difference",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r11",
+   "anchor": "GeoQuerySet.distance",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r12",
+   "anchor": "GeoQuerySet.envelope",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r13",
+   "anchor": "GeoQuerySet.force_rhr",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r14",
+   "anchor": "GeoQuerySet.geojson",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r15",
+   "anchor": "GeoQuerySet.geohash",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r16",
+   "anchor": "GeoQuerySet.gml",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r17",
+   "anchor": "GeoQuerySet.intersection",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "GeoQuerySet.kml",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r19",
+   "anchor": "GeoQuerySet.length",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r20",
+   "anchor": "GeoQuerySet.mem_size",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r21",
+   "anchor": "GeoQuerySet.num_geom",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r22",
+   "anchor": "GeoQuerySet.num_points",
+   "kind": "doc",
+   "line": 205
+  },
+  {
+   "id": "r23",
+   "anchor": "GeoQuerySet.perimeter",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r24",
+   "anchor": "GeoQuerySet.point_on_surface",
+   "kind": "doc",
+   "line": 220
+  },
+  {
+   "id": "r25",
+   "anchor": "GeoQuerySet.reverse_geom",
+   "kind": "doc",
+   "line": 228
+  },
+  {
+   "id": "r26",
+   "anchor": "GeoQuerySet.scale",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r27",
+   "anchor": "GeoQuerySet.snap_to_grid",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r28",
+   "anchor": "GeoQuerySet.svg",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r29",
+   "anchor": "GeoQuerySet.sym_difference",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r30",
+   "anchor": "GeoQuerySet.translate",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r31",
+   "anchor": "GeoQuerySet.transform",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r32",
+   "anchor": "GeoQuerySet.union",
+   "kind": "doc",
+   "line": 357
+  },
+  {
+   "id": "r33",
+   "anchor": "GeoQuerySet._spatial_setup",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r34",
+   "anchor": "GeoQuerySet._spatial_setup",
+   "kind": "doc",
+   "line": 365
+  },
+  {
+   "id": "r35",
+   "anchor": "GeoQuerySet._spatial_setup#assign:connection",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r36",
+   "anchor": "GeoQuerySet._spatial_setup#assign:procedure_args",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r37",
+   "anchor": "GeoQuerySet._spatial_setup#assign:geo_field",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r38",
+   "anchor": "GeoQuerySet._spatial_setup#if:geo_field_type is not None and not isinstance(geo_field, geo_field_type)",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r39",
+   "anchor": "GeoQuerySet._spatial_setup#assign:procedure_args['geo_col']",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r40",
+   "anchor": "GeoQuerySet._spatial_attribute",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r41",
+   "anchor": "GeoQuerySet._spatial_attribute#call:settings.setdefault",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r42",
+   "anchor": "GeoQuerySet._spatial_attribute#if:settings.get('setup', True)",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r43",
+   "anchor": "GeoQuerySet._spatial_attribute#if:not isinstance(model_att, six.string_types)",
+   "kind": "lead",
+   "line": 448
+  },
+  {
+   "id": "r44",
+   "anchor": "GeoQuerySet._spatial_attribute#for:name in settings['geom_args']",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r45",
+   "anchor": "GeoQuerySet._spatial_attribute#for:name in settings['geom_args']/assign:geom",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r46",
+   "anchor": "GeoQuerySet._spatial_attribute#for:name in settings['geom_args']/assign:old_fmt",
+   "kind": "lead",
+   "line": 461
+  },
+  {
+   "id": "r47",
+   "anchor": "GeoQuerySet._spatial_attribute#assign:fmt",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r48",
+   "anchor": "GeoQuerySet._spatial_attribute#if:settings.get('select_field')",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r49",
+   "anchor": "GeoQuerySet._spatial_attribute#call:self.query.add_annotation",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r50",
+   "anchor": "GeoQuerySet._distance_attribute",
+   "kind": "doc",
+   "line": 485
+  },
+  {
+   "id": "r51",
+   "anchor": "GeoQuerySet._distance_attribute#assign:procedure_args, geo_field",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r52",
+   "anchor": "GeoQuerySet._distance_attribute#assign:connection",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r53",
+   "anchor": "GeoQuerySet._distance_attribute#assign:distance",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r54",
+   "anchor": "GeoQuerySet._distance_attribute#assign:lookup_params",
+   "kind": "lead",
+   "line": 516
+  },
+  {
+   "id": "r55",
+   "anchor": "GeoQuerySet._distance_attribute#assign:backend",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r56",
+   "anchor": "GeoQuerySet._distance_attribute#if:spheroid or (backend.postgis and geodetic and (not geography) and length)",
+   "kind": "lead",
+   "line": 525
+  },
+  {
+   "id": "r57",
+   "anchor": "GeoQuerySet._distance_attribute#assign:geom_args",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r58",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/assign:srid",
+   "kind": "lead",
+   "line": 544
+  },
+  {
+   "id": "r59",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:srid/assign:geom_args",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r60",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:srid/if:geom.srid is None or geom.srid == srid/if:backend.spatialite",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r61",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:srid/if:geom.srid is None or geom.srid == srid/else/if:backend.spatialite",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r62",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:srid/else/assign:procedure_fmt",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r63",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:not geography and geodetic/if:not backend.geography",
+   "kind": "lead",
+   "line": 592
+  },
+  {
+   "id": "r64",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:not geography and geodetic/if:spheroid",
+   "kind": "lead",
+   "line": 602
+  },
+  {
+   "id": "r65",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/if:not geography and geodetic/if:spheroid/assign:procedure_fmt",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r66",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/elif:length or perimeter/if:not geography and geodetic and length/assign:procedure_fmt",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r67",
+   "anchor": "GeoQuerySet._distance_attribute#if:backend.oracle/else/if:distance/elif:length or perimeter/if:not geography and geodetic and length/elif:geom_3d and connection.features.supports_3d_functions/if:perimeter",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r68",
+   "anchor": "GeoQuerySet._distance_attribute#assign:s",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r69",
+   "anchor": "GeoQuerySet._distance_attribute#if:geom_args/elif:geom/assign:s['select_params']",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r70",
+   "anchor": "GeoQuerySet._geom_attribute",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r71",
+   "anchor": "GeoQuerySet._geomset_attribute",
+   "kind": "doc",
+   "line": 649
+  },
+  {
+   "id": "r72",
+   "anchor": "GeoQuerySet._geocol_select",
+   "kind": "doc",
+   "line": 667
+  },
+  {
+   "id": "r73",
+   "anchor": "GeoQuerySet._geocol_select#if:geo_field not in opts.fields/call:self.query.add_select_related",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r74",
+   "anchor": "GeoQuerySet._geocol_select#if:geo_field not in opts.fields/call:compiler.pre_sql_setup",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r75",
+   "anchor": "GeoQuerySet._geocol_select#if:geo_field not in opts.fields/elif:geo_field not in opts.local_fields/assign:parent_model",
+   "kind": "lead",
+   "line": 691
+  },
+  {
+   "id": "r76",
+   "anchor": "GeoQuerySet._geo_field",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r77",
+   "anchor": "GeoQuerySet._geo_field",
+   "kind": "doc",
+   "line": 697
+  },
+  {
+   "id": "r78",
+   "anchor": "GeoQuerySet._geo_field#if:field_name is None/for:field in self.model._meta.fields",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r79",
+   "anchor": "GeoQuerySet._geo_field#if:field_name is None/else/return",
+   "kind": "lead",
+   "line": 713
+  },
+  {
+   "id": "r80",
+   "anchor": "GeoQuerySet._field_column",
+   "kind": "doc",
+   "line": 715
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20682,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7096,
+  "thinking_tokens": 2816,
+  "opus_cost_usd": 0.3885115,
+  "total_cost_usd": 0.4034035,
+  "duration_ms": 60836,
+  "duration_api_ms": 61960,
+  "num_turns": 2
+ },
+ "wall_ms": 62104,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

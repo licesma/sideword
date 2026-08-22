@@ -1,0 +1,385 @@
+{
+ "blob_sha": "353aefb0e737664f0b02758c63a617efe1fb9635",
+ "path": "xarray/core/computation.py",
+ "repo": "pydata/xarray",
+ "records": 60,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_UFuncSignature",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "_UFuncSignature.to_gufunc_string",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r4",
+   "anchor": "result_name#assign:names",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_coords_list#for:arg in args/try/except:AttributeError/pass",
+   "kind": "trail",
+   "line": 167
+  },
+  {
+   "id": "r6",
+   "anchor": "build_output_coords",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r7",
+   "anchor": "build_output_coords#if:len(coords_list)==1 and not exclude_dims/assign:unpacked_coords",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r8",
+   "anchor": "build_output_coords#if:len(coords_list)==1 and not exclude_dims/else/assign:merged_vars, unused_indexes",
+   "kind": "todo",
+   "line": 201
+  },
+  {
+   "id": "r9",
+   "anchor": "apply_dataarray_vfunc",
+   "kind": "doc",
+   "line": 219
+  },
+  {
+   "id": "r10",
+   "anchor": "apply_dict_of_variables_vfunc",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r11",
+   "anchor": "_fast_dataset",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r12",
+   "anchor": "apply_dataset_vfunc",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r13",
+   "anchor": "apply_dataset_vfunc#assign:first_obj",
+   "kind": "trail",
+   "line": 370
+  },
+  {
+   "id": "r14",
+   "anchor": "_iter_over_selections",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r15",
+   "anchor": "apply_groupby_func",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r16",
+   "anchor": "broadcast_compat_data#if:new_dims==old_dims/return",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r17",
+   "anchor": "broadcast_compat_data#assign:old_broadcast_dims",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r18",
+   "anchor": "broadcast_compat_data#if:new_dims!=reordered_dims/for:dim in new_dims/if:dim in set_old_dims/elif:key_parts/call:key_parts.append",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r19",
+   "anchor": "apply_variable_ufunc",
+   "kind": "doc",
+   "line": 559
+  },
+  {
+   "id": "r20",
+   "anchor": "apply_variable_ufunc.func#import:dask",
+   "kind": "todo",
+   "line": 635
+  },
+  {
+   "id": "r21",
+   "anchor": "apply_array_ufunc",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r22",
+   "anchor": "apply_ufunc",
+   "kind": "doc",
+   "line": 724
+  },
+  {
+   "id": "r23",
+   "anchor": "apply_ufunc#if:dask==\"parallelized\"",
+   "kind": "lead",
+   "line": 987
+  },
+  {
+   "id": "r24",
+   "anchor": "apply_ufunc#if:dask==\"parallelized\"/if:meta is not None",
+   "kind": "todo",
+   "line": 991
+  },
+  {
+   "id": "r25",
+   "anchor": "apply_ufunc#if:any(isinstance(a, GroupBy) for a in args)",
+   "kind": "lead",
+   "line": 1025
+  },
+  {
+   "id": "r26",
+   "anchor": "apply_ufunc#if:any(isinstance(a, GroupBy) for a in args)/elif:any(is_dict_like(a) for a in args)",
+   "kind": "lead",
+   "line": 1043
+  },
+  {
+   "id": "r27",
+   "anchor": "apply_ufunc#if:any(isinstance(a, GroupBy) for a in args)/elif:any(is_dict_like(a) for a in args)/elif:any(isinstance(a, DataArray) for a in args)",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r28",
+   "anchor": "apply_ufunc#if:any(isinstance(a, GroupBy) for a in args)/elif:any(is_dict_like(a) for a in args)/elif:any(isinstance(a, DataArray) for a in args)/elif:any(isinstance(a, Variable) for a in args)",
+   "kind": "lead",
+   "line": 1065
+  },
+  {
+   "id": "r29",
+   "anchor": "apply_ufunc#if:any(isinstance(a, GroupBy) for a in args)/elif:any(is_dict_like(a) for a in args)/elif:any(isinstance(a, DataArray) for a in args)/elif:any(isinstance(a, Variable) for a in args)/else/return",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r30",
+   "anchor": "cov",
+   "kind": "doc",
+   "line": 1072
+  },
+  {
+   "id": "r31",
+   "anchor": "corr",
+   "kind": "doc",
+   "line": 1151
+  },
+  {
+   "id": "r32",
+   "anchor": "_cov_corr",
+   "kind": "doc",
+   "line": 1228
+  },
+  {
+   "id": "r33",
+   "anchor": "_cov_corr#assign:da_a, da_b",
+   "kind": "lead",
+   "line": 1234
+  },
+  {
+   "id": "r34",
+   "anchor": "_cov_corr#assign:valid_values",
+   "kind": "lead",
+   "line": 1237
+  },
+  {
+   "id": "r35",
+   "anchor": "_cov_corr#assign:demeaned_da_a",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r36",
+   "anchor": "_cov_corr#assign:cov",
+   "kind": "lead",
+   "line": 1253
+  },
+  {
+   "id": "r37",
+   "anchor": "_cov_corr#if:method==\"cov\"/else/assign:da_a_std",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r38",
+   "anchor": "dot",
+   "kind": "doc",
+   "line": 1266
+  },
+  {
+   "id": "r39",
+   "anchor": "dot#if:dims is .../elif:dims is None/assign:dim_counts",
+   "kind": "lead",
+   "line": 1371
+  },
+  {
+   "id": "r40",
+   "anchor": "dot#assign:dims",
+   "kind": "trail",
+   "line": 1376
+  },
+  {
+   "id": "r41",
+   "anchor": "dot#assign:broadcast_dims",
+   "kind": "lead",
+   "line": 1379
+  },
+  {
+   "id": "r42",
+   "anchor": "dot#assign:subscripts_list",
+   "kind": "lead",
+   "line": 1387
+  },
+  {
+   "id": "r43",
+   "anchor": "dot#if:join!=\"exact\"",
+   "kind": "lead",
+   "line": 1395
+  },
+  {
+   "id": "r44",
+   "anchor": "dot#assign:func",
+   "kind": "lead",
+   "line": 1400
+  },
+  {
+   "id": "r45",
+   "anchor": "where",
+   "kind": "doc",
+   "line": 1412
+  },
+  {
+   "id": "r46",
+   "anchor": "where#return",
+   "kind": "lead",
+   "line": 1496
+  },
+  {
+   "id": "r47",
+   "anchor": "polyval",
+   "kind": "doc",
+   "line": 1507
+  },
+  {
+   "id": "r48",
+   "anchor": "_calc_idxminmax",
+   "kind": "doc",
+   "line": 1539
+  },
+  {
+   "id": "r49",
+   "anchor": "_calc_idxminmax#if:not array.ndim",
+   "kind": "lead",
+   "line": 1550
+  },
+  {
+   "id": "r50",
+   "anchor": "_calc_idxminmax#if:dim is not None/pass",
+   "kind": "trail",
+   "line": 1554
+  },
+  {
+   "id": "r51",
+   "anchor": "_calc_idxminmax#if:dim is not None/elif:array.ndim==1/assign:dim",
+   "kind": "lead",
+   "line": 1557
+  },
+  {
+   "id": "r52",
+   "anchor": "_calc_idxminmax#if:dim is not None/elif:array.ndim==1/else/raise:ValueError",
+   "kind": "lead",
+   "line": 1560
+  },
+  {
+   "id": "r53",
+   "anchor": "_calc_idxminmax#assign:na_dtypes",
+   "kind": "lead",
+   "line": 1568
+  },
+  {
+   "id": "r54",
+   "anchor": "_calc_idxminmax#if:skipna or (skipna is None and array.dtype.kind in na_dtypes)/assign:allna",
+   "kind": "lead",
+   "line": 1572
+  },
+  {
+   "id": "r55",
+   "anchor": "_calc_idxminmax#assign:indx",
+   "kind": "lead",
+   "line": 1576
+  },
+  {
+   "id": "r56",
+   "anchor": "_calc_idxminmax#if:isinstance(array.data, dask_array_type)",
+   "kind": "lead",
+   "line": 1579
+  },
+  {
+   "id": "r57",
+   "anchor": "_calc_idxminmax#if:isinstance(array.data, dask_array_type)/assign:res.name",
+   "kind": "lead",
+   "line": 1586
+  },
+  {
+   "id": "r58",
+   "anchor": "_calc_idxminmax#if:isinstance(array.data, dask_array_type)/else/del:res.coords[dim]",
+   "kind": "lead",
+   "line": 1590
+  },
+  {
+   "id": "r59",
+   "anchor": "_calc_idxminmax#if:skipna or (skipna is None and array.dtype.kind in na_dtypes)/assign:res",
+   "kind": "lead",
+   "line": 1594
+  },
+  {
+   "id": "r60",
+   "anchor": "_calc_idxminmax#assign:res.attrs",
+   "kind": "lead",
+   "line": 1597
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 41832,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 5665,
+  "thinking_tokens": 2657,
+  "opus_cost_usd": 0.559955,
+  "total_cost_usd": 0.585634,
+  "duration_ms": 51761,
+  "duration_api_ms": 53297,
+  "num_turns": 2
+ },
+ "wall_ms": 56126,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

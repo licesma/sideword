@@ -1,0 +1,163 @@
+{
+ "blob_sha": "83a4f004aa37209db13023464c4f239482da2f2f",
+ "path": "astropy/io/ascii/qdp.py",
+ "repo": "astropy/astropy",
+ "records": 23,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "_line_type",
+   "kind": "doc",
+   "line": 20
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_type_from_list_of_lines",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r5",
+   "anchor": "_interpret_err_lines",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r6",
+   "anchor": "_interpret_err_lines#if:err_specs is None/else/assign:err_specs",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_tables_from_qdp_file",
+   "kind": "doc",
+   "line": 237
+  },
+  {
+   "id": "r8",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype == \"comment\"",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r9",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype == \"command\"/if:command_lines == \"\"",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r10",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype.startswith(\"data\")/if:err_specs == {} and command_lines != \"\"",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r11",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype.startswith(\"data\")/if:err_specs == {} and command_lines != \"\"/for:cline in command_lines.strip().split(\"\\n\")/if:len(command) < 3",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r12",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype.startswith(\"data\")/for:v in line.split(delimiter)/if:v == \"NO\"/else/try",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r13",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype == \"new\"/if:current_rows is not None",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_tables_from_qdp_file#for:line, datatype in zip(lines, contents)/if:datatype == \"new\"/if:current_rows is not None/assign:comment_text",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r15",
+   "anchor": "_get_tables_from_qdp_file#if:current_rows is not None",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r16",
+   "anchor": "_understand_err_col",
+   "kind": "doc",
+   "line": 345
+  },
+  {
+   "id": "r17",
+   "anchor": "_understand_err_col#for:i, col in enumerate(colnames)/if:col.endswith(\"_err\")/call:serr.append",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r18",
+   "anchor": "_read_table_qdp",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r19",
+   "anchor": "_write_table_qdp",
+   "kind": "doc",
+   "line": 425
+  },
+  {
+   "id": "r20",
+   "anchor": "QDPSplitter",
+   "kind": "doc",
+   "line": 494
+  },
+  {
+   "id": "r21",
+   "anchor": "QDPHeader",
+   "kind": "doc",
+   "line": 502
+  },
+  {
+   "id": "r22",
+   "anchor": "QDPData",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r23",
+   "anchor": "QDP",
+   "kind": "doc",
+   "line": 523
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13809,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2401,
+  "thinking_tokens": 1083,
+  "opus_cost_usd": 0.2024065,
+  "total_cost_usd": 0.2124935,
+  "duration_ms": 22587,
+  "duration_api_ms": 23637,
+  "num_turns": 2
+ },
+ "wall_ms": 23428,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

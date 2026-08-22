@@ -1,0 +1,217 @@
+{
+ "blob_sha": "c67827ffabce134038731d57338c7767d45799a3",
+ "path": "astropy/io/fits/_tiled_compression/tiled_compression.py",
+ "repo": "astropy/astropy",
+ "records": 32,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_decompress_tile",
+   "kind": "doc",
+   "line": 36
+  },
+  {
+   "id": "r3",
+   "anchor": "_compress_tile",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r4",
+   "anchor": "_header_to_settings",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r5",
+   "anchor": "_update_tile_settings",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r6",
+   "anchor": "_update_tile_settings#if:compression_type in (\"PLIO_1\", \"RICE_1\", \"RICE_ONE\")/assign:settings[\"tilesize\"]",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r7",
+   "anchor": "_update_tile_settings#if:compression_type in (\"PLIO_1\", \"RICE_1\", \"RICE_ONE\")/elif:compression_type == \"HCOMPRESS_1\"/assign:shape_2d",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r8",
+   "anchor": "_finalize_array",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r9",
+   "anchor": "_finalize_array#if:algorithm.startswith(\"GZIP\") or algorithm == \"NOCOMPRESS\"/assign:tile_bytesize",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r10",
+   "anchor": "_finalize_array#if:algorithm.startswith(\"GZIP\") or algorithm == \"NOCOMPRESS\"/if:tile_bytesize == tile_size * 2/else/assign:dtype",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r11",
+   "anchor": "_finalize_array#if:algorithm.startswith(\"GZIP\") or algorithm == \"NOCOMPRESS\"/else/if:algorithm in (\"RICE_1\", \"RICE_ONE\", \"PLIO_1\") and tile_size < len(tile_buffer)",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r12",
+   "anchor": "_finalize_array#if:algorithm.startswith(\"GZIP\") or algorithm == \"NOCOMPRESS\"/else/if:tile_buffer.data.format == \"b\"/assign:tile_data",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r13",
+   "anchor": "_check_compressed_header#for:kw in [\"ZNAXIS\", \"ZVAL1\", \"ZVAL2\", \"ZBLANK\", \"BLANK\"]",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r14",
+   "anchor": "_check_compressed_header#for:kw in [\"ZNAXIS\", \"ZVAL1\", \"ZVAL2\", \"ZBLANK\", \"BLANK\"]",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r15",
+   "anchor": "_check_compressed_header#for:kw in [\"ZSCALE\", \"ZZERO\", \"TZERO1\", \"TSCAL1\"]",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r16",
+   "anchor": "_check_compressed_header#for:kw in [\"TFIELDS\", \"PCOUNT\"] + [f\"NAXIS{idx + 1}\" for idx in range(header[\"NAXIS\"])]",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r17",
+   "anchor": "_check_compressed_header#expr:header[\"ZNAXIS\"]",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r18",
+   "anchor": "_get_compression_setting#for:i in range(1, 1000)",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r19",
+   "anchor": "decompress_hdu_section",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r20",
+   "anchor": "decompress_hdu_section#assign:compressed_data_column",
+   "kind": "lead",
+   "line": 319
+  },
+  {
+   "id": "r21",
+   "anchor": "decompress_hdu_section#if:tuple(buffer_shape) == tuple(data_shape)",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r22",
+   "anchor": "decompress_hdu_section#for:row_index, tile_slices in _iter_array_tiles(data_shape, tile_shape, first_tile_index, last_tile_index)/assign:actual_tile_shape",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r23",
+   "anchor": "decompress_hdu_section#for:row_index, tile_slices in _iter_array_tiles(data_shape, tile_shape, first_tile_index, last_tile_index)/if:compressed_data_column[row_index][0] == 0/assign:cdata",
+   "kind": "lead",
+   "line": 371
+  },
+  {
+   "id": "r24",
+   "anchor": "decompress_hdu_section#for:row_index, tile_slices in _iter_array_tiles(data_shape, tile_shape, first_tile_index, last_tile_index)/if:compressed_data_column[row_index][0] == 0/else/if:compression_type == \"GZIP_2\"/assign:tile_data",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r25",
+   "anchor": "compress_hdu",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r26",
+   "anchor": "compress_hdu#assign:tile_shape",
+   "kind": "todo",
+   "line": 475
+  },
+  {
+   "id": "r27",
+   "anchor": "compress_hdu#for:irow, tile_slices in _iter_array_tiles(data_shape, tile_shape)/if:data.dtype.kind == \"f\" and quantize/assign:nan_mask",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r28",
+   "anchor": "compress_hdu#for:irow, tile_slices in _iter_array_tiles(data_shape, tile_shape)/if:data.dtype.kind == \"f\" and quantize/if:any_nan/assign:data",
+   "kind": "lead",
+   "line": 515
+  },
+  {
+   "id": "r29",
+   "anchor": "compress_hdu#for:irow, tile_slices in _iter_array_tiles(data_shape, tile_shape)/if:data.dtype.kind == \"f\" and quantize/try/except:QuantizationFailedException/if:any_nan/assign:data[nan_mask]",
+   "kind": "lead",
+   "line": 526
+  },
+  {
+   "id": "r30",
+   "anchor": "compress_hdu#for:irow, tile_slices in _iter_array_tiles(data_shape, tile_shape)/if:data.dtype.kind == \"f\" and quantize/try/else/if:any_nan/assign:data[nan_mask]",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r31",
+   "anchor": "compress_hdu#if:compression_type == \"PLIO_1\"",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r32",
+   "anchor": "compress_hdu#if:compression_type == \"PLIO_1\"",
+   "kind": "lead",
+   "line": 587
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 15633,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5224,
+  "thinking_tokens": 2817,
+  "opus_cost_usd": 0.2912215,
+  "total_cost_usd": 0.30241450000000003,
+  "duration_ms": 47104,
+  "duration_api_ms": 48110,
+  "num_turns": 2
+ },
+ "wall_ms": 48247,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

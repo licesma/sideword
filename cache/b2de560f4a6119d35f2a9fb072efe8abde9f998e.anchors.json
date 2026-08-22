@@ -1,0 +1,199 @@
+{
+ "blob_sha": "b2de560f4a6119d35f2a9fb072efe8abde9f998e",
+ "path": "astropy/coordinates/builtin_frames/icrs_cirs_transforms.py",
+ "repo": "astropy/astropy",
+ "records": 29,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "icrs_to_cirs",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "icrs_to_cirs#assign:astrom",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r5",
+   "anchor": "icrs_to_cirs#if:icrs_coo.data.get_name() == 'unitspherical' or icrs_coo.data.to_cartesian().x.unit == u.one/assign:srepr",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "icrs_to_cirs#if:icrs_coo.data.get_name() == 'unitspherical' or icrs_coo.data.to_cartesian().x.unit == u.one/else/assign:astrom_eb",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r7",
+   "anchor": "cirs_to_icrs#assign:astrom",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r8",
+   "anchor": "cirs_to_icrs#if:cirs_coo.data.get_name() == 'unitspherical' or cirs_coo.data.to_cartesian().x.unit == u.one/assign:newrep",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r9",
+   "anchor": "cirs_to_icrs#if:cirs_coo.data.get_name() == 'unitspherical' or cirs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r10",
+   "anchor": "cirs_to_icrs#if:cirs_coo.data.get_name() == 'unitspherical' or cirs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r11",
+   "anchor": "icrs_to_gcrs",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r12",
+   "anchor": "icrs_to_gcrs#assign:astrom",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r13",
+   "anchor": "icrs_to_gcrs#if:icrs_coo.data.get_name() == 'unitspherical' or icrs_coo.data.to_cartesian().x.unit == u.one/assign:srepr",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r14",
+   "anchor": "icrs_to_gcrs#if:icrs_coo.data.get_name() == 'unitspherical' or icrs_coo.data.to_cartesian().x.unit == u.one/else/assign:astrom_eb",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r15",
+   "anchor": "gcrs_to_icrs#assign:astrom",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r16",
+   "anchor": "gcrs_to_icrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/assign:newrep",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r17",
+   "anchor": "gcrs_to_icrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r18",
+   "anchor": "gcrs_to_icrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r19",
+   "anchor": "gcrs_to_hcrs#if:np.any(gcrs_coo.obstime != hcrs_frame.obstime)/assign:frameattrs",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r20",
+   "anchor": "gcrs_to_hcrs#assign:astrom",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r21",
+   "anchor": "gcrs_to_hcrs#assign:i_ra",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r22",
+   "anchor": "gcrs_to_hcrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/assign:newrep",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r23",
+   "anchor": "gcrs_to_hcrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r24",
+   "anchor": "gcrs_to_hcrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/else/assign:intermedrep",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r25",
+   "anchor": "gcrs_to_hcrs#if:gcrs_coo.data.get_name() == 'unitspherical' or gcrs_coo.data.to_cartesian().x.unit == u.one/else/assign:eh",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r26",
+   "anchor": "hcrs_to_icrs#if:isinstance(hcrs_coo.data, UnitSphericalRepresentation)",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r27",
+   "anchor": "icrs_to_hcrs#if:isinstance(icrs_coo.data, UnitSphericalRepresentation)",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r28",
+   "anchor": "<module>#call:frame_transform_graph._add_merged_transform",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r29",
+   "anchor": "<module>#call:frame_transform_graph._add_merged_transform",
+   "kind": "lead",
+   "line": 244
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10487,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4054,
+  "thinking_tokens": 1958,
+  "opus_cost_usd": 0.2105115,
+  "total_cost_usd": 0.21744449999999999,
+  "duration_ms": 37896,
+  "duration_api_ms": 39390,
+  "num_turns": 2
+ },
+ "wall_ms": 38913,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

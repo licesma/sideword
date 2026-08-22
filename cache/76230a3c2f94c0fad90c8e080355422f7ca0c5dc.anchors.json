@@ -1,0 +1,1243 @@
+{
+ "blob_sha": "76230a3c2f94c0fad90c8e080355422f7ca0c5dc",
+ "path": "lib/matplotlib/rcsetup.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 203,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:cycler",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "interactive_bk",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "ValidateInStrings.__init__",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r5",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/try/except:Exception/if:allow_stringlist/assign:val",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r6",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/elif:np.iterable(s) and not isinstance(s, (set, frozenset))",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "_listify_validator.f#if:isinstance(s, str)/elif:np.iterable(s) and not isinstance(s, (set, frozenset))/assign:val",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r8",
+   "anchor": "_listify_validator#try/except:AttributeError",
+   "kind": "trail",
+   "line": 119
+  },
+  {
+   "id": "r9",
+   "anchor": "validate_bool",
+   "kind": "doc",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "validate_dpi",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r11",
+   "anchor": "_make_type_validator",
+   "kind": "doc",
+   "line": 174
+  },
+  {
+   "id": "r12",
+   "anchor": "_validate_pathlike#if:isinstance(s, (str, os.PathLike))/return",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r13",
+   "anchor": "validate_fonttype",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r14",
+   "anchor": "validate_color_or_inherit",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r15",
+   "anchor": "validate_color_for_prop_cycle#if:isinstance(s, str) and re.match(\"^C[0-9]$\", s)",
+   "kind": "lead",
+   "line": 281
+  },
+  {
+   "id": "r16",
+   "anchor": "validate_color",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r17",
+   "anchor": "validate_color#try",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r18",
+   "anchor": "validate_fontweight#if:s in weights",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r19",
+   "anchor": "validate_fontstretch#if:s in stretchvalues",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r20",
+   "anchor": "_validate_named_linestyle",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r21",
+   "anchor": "_validate_linestyle",
+   "kind": "doc",
+   "line": 449
+  },
+  {
+   "id": "r22",
+   "anchor": "_validate_linestyle#if:isinstance(ls, str)/try",
+   "kind": "trail",
+   "line": 455
+  },
+  {
+   "id": "r23",
+   "anchor": "_validate_linestyle#if:isinstance(ls, str)/try/assign:ls",
+   "kind": "trail",
+   "line": 460
+  },
+  {
+   "id": "r24",
+   "anchor": "_validate_linestyle#if:isinstance(ls, str)/try/except:(SyntaxError, ValueError)/pass",
+   "kind": "trail",
+   "line": 462
+  },
+  {
+   "id": "r25",
+   "anchor": "_validate_linestyle._is_iterable_not_string_like#return",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r26",
+   "anchor": "_validate_linestyle#if:_is_iterable_not_string_like(ls)/if:len(ls) == 2 and _is_iterable_not_string_like(ls[1])/assign:offset, onoff",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r27",
+   "anchor": "_validate_linestyle#if:_is_iterable_not_string_like(ls)/if:len(ls) == 2 and _is_iterable_not_string_like(ls[1])/else/assign:offset",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r28",
+   "anchor": "validate_markevery",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r29",
+   "anchor": "validate_markevery#if:isinstance(s, (slice, float, int, type(None)))",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r30",
+   "anchor": "validate_markevery#if:isinstance(s, tuple)",
+   "kind": "lead",
+   "line": 509
+  },
+  {
+   "id": "r31",
+   "anchor": "validate_markevery#if:isinstance(s, list)",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r32",
+   "anchor": "validate_bbox#if:isinstance(s, str)/elif:s is not None/raise:ValueError",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r33",
+   "anchor": "_range_validators",
+   "kind": "trail",
+   "line": 571
+  },
+  {
+   "id": "r34",
+   "anchor": "validate_hatch",
+   "kind": "doc",
+   "line": 577
+  },
+  {
+   "id": "r35",
+   "anchor": "cycler",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r36",
+   "anchor": "cycler#for:prop, vals in pairs/call:validated.append",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r37",
+   "anchor": "validate_cycler",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r38",
+   "anchor": "validate_cycler#if:isinstance(s, str)/try",
+   "kind": "todo",
+   "line": 735
+  },
+  {
+   "id": "r39",
+   "anchor": "validate_cycler#if:isinstance(s, Cycler)",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r40",
+   "anchor": "validate_cycler#assign:checker",
+   "kind": "lead",
+   "line": 754
+  },
+  {
+   "id": "r41",
+   "anchor": "validate_cycler#assert:len(checker) == len(cycler_inst.keys)",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r42",
+   "anchor": "validate_cycler#for:prop in cycler_inst.keys",
+   "kind": "lead",
+   "line": 770
+  },
+  {
+   "id": "r43",
+   "anchor": "_ignorecase",
+   "kind": "doc",
+   "line": 796
+  },
+  {
+   "id": "r44",
+   "anchor": "_validators",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r45",
+   "anchor": "_validators#key:lines.linewidth",
+   "kind": "lead",
+   "line": 827
+  },
+  {
+   "id": "r46",
+   "anchor": "_validators#key:lines.linewidth",
+   "kind": "trail",
+   "line": 827
+  },
+  {
+   "id": "r47",
+   "anchor": "_validators#key:lines.linestyle",
+   "kind": "trail",
+   "line": 828
+  },
+  {
+   "id": "r48",
+   "anchor": "_validators#key:lines.color",
+   "kind": "trail",
+   "line": 829
+  },
+  {
+   "id": "r49",
+   "anchor": "_validators#key:lines.marker",
+   "kind": "trail",
+   "line": 830
+  },
+  {
+   "id": "r50",
+   "anchor": "_validators#key:lines.markerfacecolor",
+   "kind": "trail",
+   "line": 831
+  },
+  {
+   "id": "r51",
+   "anchor": "_validators#key:lines.markeredgecolor",
+   "kind": "trail",
+   "line": 832
+  },
+  {
+   "id": "r52",
+   "anchor": "_validators#key:lines.markersize",
+   "kind": "trail",
+   "line": 834
+  },
+  {
+   "id": "r53",
+   "anchor": "_validators#key:lines.antialiased",
+   "kind": "trail",
+   "line": 835
+  },
+  {
+   "id": "r54",
+   "anchor": "_validators#key:markers.fillstyle",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r55",
+   "anchor": "_validators#key:pcolor.shading",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r56",
+   "anchor": "_validators#key:patch.linewidth",
+   "kind": "lead",
+   "line": 853
+  },
+  {
+   "id": "r57",
+   "anchor": "_validators#key:patch.linewidth",
+   "kind": "trail",
+   "line": 853
+  },
+  {
+   "id": "r58",
+   "anchor": "_validators#key:patch.facecolor",
+   "kind": "trail",
+   "line": 856
+  },
+  {
+   "id": "r59",
+   "anchor": "_validators#key:patch.antialiased",
+   "kind": "trail",
+   "line": 857
+  },
+  {
+   "id": "r60",
+   "anchor": "_validators#key:hatch.color",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r61",
+   "anchor": "_validators#key:hist.bins",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r62",
+   "anchor": "_validators#key:boxplot.notch",
+   "kind": "lead",
+   "line": 867
+  },
+  {
+   "id": "r63",
+   "anchor": "_validators#key:font.family",
+   "kind": "lead",
+   "line": 912
+  },
+  {
+   "id": "r64",
+   "anchor": "_validators#key:font.family",
+   "kind": "trail",
+   "line": 912
+  },
+  {
+   "id": "r65",
+   "anchor": "_validators#key:font.size",
+   "kind": "trail",
+   "line": 917
+  },
+  {
+   "id": "r66",
+   "anchor": "_validators#key:text.color",
+   "kind": "lead",
+   "line": 925
+  },
+  {
+   "id": "r67",
+   "anchor": "_validators#key:image.aspect",
+   "kind": "trail",
+   "line": 947
+  },
+  {
+   "id": "r68",
+   "anchor": "_validators#key:image.cmap",
+   "kind": "trail",
+   "line": 949
+  },
+  {
+   "id": "r69",
+   "anchor": "_validators#key:image.lut",
+   "kind": "trail",
+   "line": 950
+  },
+  {
+   "id": "r70",
+   "anchor": "_validators#key:image.composite_image",
+   "kind": "lead",
+   "line": 955
+  },
+  {
+   "id": "r71",
+   "anchor": "_validators#key:contour.negative_linestyle",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r72",
+   "anchor": "_validators#key:errorbar.capsize",
+   "kind": "lead",
+   "line": 964
+  },
+  {
+   "id": "r73",
+   "anchor": "_validators#key:xaxis.labellocation",
+   "kind": "lead",
+   "line": 968
+  },
+  {
+   "id": "r74",
+   "anchor": "_validators#key:axes.axisbelow",
+   "kind": "lead",
+   "line": 972
+  },
+  {
+   "id": "r75",
+   "anchor": "_validators#key:axes.facecolor",
+   "kind": "trail",
+   "line": 973
+  },
+  {
+   "id": "r76",
+   "anchor": "_validators#key:axes.edgecolor",
+   "kind": "trail",
+   "line": 974
+  },
+  {
+   "id": "r77",
+   "anchor": "_validators#key:axes.linewidth",
+   "kind": "trail",
+   "line": 975
+  },
+  {
+   "id": "r78",
+   "anchor": "_validators#key:axes.spines.left",
+   "kind": "trail",
+   "line": 977
+  },
+  {
+   "id": "r79",
+   "anchor": "_validators#key:axes.spines.right",
+   "kind": "trail",
+   "line": 978
+  },
+  {
+   "id": "r80",
+   "anchor": "_validators#key:axes.spines.bottom",
+   "kind": "trail",
+   "line": 979
+  },
+  {
+   "id": "r81",
+   "anchor": "_validators#key:axes.titlesize",
+   "kind": "trail",
+   "line": 982
+  },
+  {
+   "id": "r82",
+   "anchor": "_validators#key:axes.titlelocation",
+   "kind": "trail",
+   "line": 983
+  },
+  {
+   "id": "r83",
+   "anchor": "_validators#key:axes.titleweight",
+   "kind": "trail",
+   "line": 984
+  },
+  {
+   "id": "r84",
+   "anchor": "_validators#key:axes.titlecolor",
+   "kind": "trail",
+   "line": 985
+  },
+  {
+   "id": "r85",
+   "anchor": "_validators#key:axes.titley",
+   "kind": "lead",
+   "line": 987
+  },
+  {
+   "id": "r86",
+   "anchor": "_validators#key:axes.titlepad",
+   "kind": "lead",
+   "line": 989
+  },
+  {
+   "id": "r87",
+   "anchor": "_validators#key:axes.grid",
+   "kind": "trail",
+   "line": 990
+  },
+  {
+   "id": "r88",
+   "anchor": "_validators#key:axes.grid.which",
+   "kind": "trail",
+   "line": 991
+  },
+  {
+   "id": "r89",
+   "anchor": "_validators#key:axes.grid.axis",
+   "kind": "trail",
+   "line": 992
+  },
+  {
+   "id": "r90",
+   "anchor": "_validators#key:axes.labelsize",
+   "kind": "trail",
+   "line": 993
+  },
+  {
+   "id": "r91",
+   "anchor": "_validators#key:axes.labelpad",
+   "kind": "trail",
+   "line": 994
+  },
+  {
+   "id": "r92",
+   "anchor": "_validators#key:axes.labelweight",
+   "kind": "trail",
+   "line": 995
+  },
+  {
+   "id": "r93",
+   "anchor": "_validators#key:axes.labelcolor",
+   "kind": "trail",
+   "line": 996
+  },
+  {
+   "id": "r94",
+   "anchor": "_validators#key:axes.formatter.limits",
+   "kind": "lead",
+   "line": 999
+  },
+  {
+   "id": "r95",
+   "anchor": "_validators#key:axes.formatter.use_locale",
+   "kind": "lead",
+   "line": 1001
+  },
+  {
+   "id": "r96",
+   "anchor": "_validators#key:axes.formatter.min_exponent",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r97",
+   "anchor": "_validators#key:axes.prop_cycle",
+   "kind": "lead",
+   "line": 1010
+  },
+  {
+   "id": "r98",
+   "anchor": "_validators#key:axes.autolimit_mode",
+   "kind": "lead",
+   "line": 1013
+  },
+  {
+   "id": "r99",
+   "anchor": "_validators#key:axes.xmargin",
+   "kind": "trail",
+   "line": 1014
+  },
+  {
+   "id": "r100",
+   "anchor": "_validators#key:axes.ymargin",
+   "kind": "trail",
+   "line": 1015
+  },
+  {
+   "id": "r101",
+   "anchor": "_validators#key:axes.zmargin",
+   "kind": "trail",
+   "line": 1016
+  },
+  {
+   "id": "r102",
+   "anchor": "_validators#key:polaraxes.grid",
+   "kind": "trail",
+   "line": 1018
+  },
+  {
+   "id": "r103",
+   "anchor": "_validators#key:axes3d.grid",
+   "kind": "trail",
+   "line": 1019
+  },
+  {
+   "id": "r104",
+   "anchor": "_validators#key:axes3d.xaxis.panecolor",
+   "kind": "trail",
+   "line": 1021
+  },
+  {
+   "id": "r105",
+   "anchor": "_validators#key:axes3d.yaxis.panecolor",
+   "kind": "trail",
+   "line": 1022
+  },
+  {
+   "id": "r106",
+   "anchor": "_validators#key:axes3d.zaxis.panecolor",
+   "kind": "trail",
+   "line": 1023
+  },
+  {
+   "id": "r107",
+   "anchor": "_validators#key:scatter.marker",
+   "kind": "lead",
+   "line": 1026
+  },
+  {
+   "id": "r108",
+   "anchor": "_validators#key:date.interval_multiples",
+   "kind": "lead",
+   "line": 1040
+  },
+  {
+   "id": "r109",
+   "anchor": "_validators#key:legend.fancybox",
+   "kind": "lead",
+   "line": 1043
+  },
+  {
+   "id": "r110",
+   "anchor": "_validators#key:legend.numpoints",
+   "kind": "lead",
+   "line": 1051
+  },
+  {
+   "id": "r111",
+   "anchor": "_validators#key:legend.scatterpoints",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r112",
+   "anchor": "_validators#key:legend.labelcolor",
+   "kind": "lead",
+   "line": 1057
+  },
+  {
+   "id": "r113",
+   "anchor": "_validators#key:legend.markerscale",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r114",
+   "anchor": "_validators#key:legend.frameon",
+   "kind": "lead",
+   "line": 1062
+  },
+  {
+   "id": "r115",
+   "anchor": "_validators#key:legend.framealpha",
+   "kind": "lead",
+   "line": 1064
+  },
+  {
+   "id": "r116",
+   "anchor": "_validators#key:legend.borderpad",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r117",
+   "anchor": "_validators#key:legend.borderpad",
+   "kind": "trail",
+   "line": 1067
+  },
+  {
+   "id": "r118",
+   "anchor": "_validators#key:legend.labelspacing",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r119",
+   "anchor": "_validators#key:legend.handlelength",
+   "kind": "lead",
+   "line": 1071
+  },
+  {
+   "id": "r120",
+   "anchor": "_validators#key:legend.handleheight",
+   "kind": "lead",
+   "line": 1073
+  },
+  {
+   "id": "r121",
+   "anchor": "_validators#key:legend.handletextpad",
+   "kind": "lead",
+   "line": 1075
+  },
+  {
+   "id": "r122",
+   "anchor": "_validators#key:legend.borderaxespad",
+   "kind": "lead",
+   "line": 1077
+  },
+  {
+   "id": "r123",
+   "anchor": "_validators#key:legend.columnspacing",
+   "kind": "lead",
+   "line": 1079
+  },
+  {
+   "id": "r124",
+   "anchor": "_validators#key:xtick.top",
+   "kind": "lead",
+   "line": 1084
+  },
+  {
+   "id": "r125",
+   "anchor": "_validators#key:xtick.top",
+   "kind": "trail",
+   "line": 1084
+  },
+  {
+   "id": "r126",
+   "anchor": "_validators#key:xtick.bottom",
+   "kind": "trail",
+   "line": 1085
+  },
+  {
+   "id": "r127",
+   "anchor": "_validators#key:xtick.labeltop",
+   "kind": "trail",
+   "line": 1086
+  },
+  {
+   "id": "r128",
+   "anchor": "_validators#key:xtick.labelbottom",
+   "kind": "trail",
+   "line": 1087
+  },
+  {
+   "id": "r129",
+   "anchor": "_validators#key:xtick.major.size",
+   "kind": "trail",
+   "line": 1088
+  },
+  {
+   "id": "r130",
+   "anchor": "_validators#key:xtick.minor.size",
+   "kind": "trail",
+   "line": 1089
+  },
+  {
+   "id": "r131",
+   "anchor": "_validators#key:xtick.major.width",
+   "kind": "trail",
+   "line": 1090
+  },
+  {
+   "id": "r132",
+   "anchor": "_validators#key:xtick.minor.width",
+   "kind": "trail",
+   "line": 1091
+  },
+  {
+   "id": "r133",
+   "anchor": "_validators#key:xtick.major.pad",
+   "kind": "trail",
+   "line": 1092
+  },
+  {
+   "id": "r134",
+   "anchor": "_validators#key:xtick.minor.pad",
+   "kind": "trail",
+   "line": 1093
+  },
+  {
+   "id": "r135",
+   "anchor": "_validators#key:xtick.color",
+   "kind": "trail",
+   "line": 1094
+  },
+  {
+   "id": "r136",
+   "anchor": "_validators#key:xtick.labelcolor",
+   "kind": "trail",
+   "line": 1095
+  },
+  {
+   "id": "r137",
+   "anchor": "_validators#key:xtick.minor.visible",
+   "kind": "trail",
+   "line": 1096
+  },
+  {
+   "id": "r138",
+   "anchor": "_validators#key:xtick.minor.top",
+   "kind": "trail",
+   "line": 1097
+  },
+  {
+   "id": "r139",
+   "anchor": "_validators#key:xtick.minor.bottom",
+   "kind": "trail",
+   "line": 1098
+  },
+  {
+   "id": "r140",
+   "anchor": "_validators#key:xtick.major.top",
+   "kind": "trail",
+   "line": 1099
+  },
+  {
+   "id": "r141",
+   "anchor": "_validators#key:xtick.major.bottom",
+   "kind": "trail",
+   "line": 1100
+  },
+  {
+   "id": "r142",
+   "anchor": "_validators#key:xtick.labelsize",
+   "kind": "trail",
+   "line": 1101
+  },
+  {
+   "id": "r143",
+   "anchor": "_validators#key:xtick.direction",
+   "kind": "trail",
+   "line": 1102
+  },
+  {
+   "id": "r144",
+   "anchor": "_validators#key:ytick.left",
+   "kind": "trail",
+   "line": 1105
+  },
+  {
+   "id": "r145",
+   "anchor": "_validators#key:ytick.right",
+   "kind": "trail",
+   "line": 1106
+  },
+  {
+   "id": "r146",
+   "anchor": "_validators#key:ytick.labelleft",
+   "kind": "trail",
+   "line": 1107
+  },
+  {
+   "id": "r147",
+   "anchor": "_validators#key:ytick.labelright",
+   "kind": "trail",
+   "line": 1108
+  },
+  {
+   "id": "r148",
+   "anchor": "_validators#key:ytick.major.size",
+   "kind": "trail",
+   "line": 1109
+  },
+  {
+   "id": "r149",
+   "anchor": "_validators#key:ytick.minor.size",
+   "kind": "trail",
+   "line": 1110
+  },
+  {
+   "id": "r150",
+   "anchor": "_validators#key:ytick.major.width",
+   "kind": "trail",
+   "line": 1111
+  },
+  {
+   "id": "r151",
+   "anchor": "_validators#key:ytick.minor.width",
+   "kind": "trail",
+   "line": 1112
+  },
+  {
+   "id": "r152",
+   "anchor": "_validators#key:ytick.major.pad",
+   "kind": "trail",
+   "line": 1113
+  },
+  {
+   "id": "r153",
+   "anchor": "_validators#key:ytick.minor.pad",
+   "kind": "trail",
+   "line": 1114
+  },
+  {
+   "id": "r154",
+   "anchor": "_validators#key:ytick.color",
+   "kind": "trail",
+   "line": 1115
+  },
+  {
+   "id": "r155",
+   "anchor": "_validators#key:ytick.labelcolor",
+   "kind": "trail",
+   "line": 1116
+  },
+  {
+   "id": "r156",
+   "anchor": "_validators#key:ytick.minor.visible",
+   "kind": "trail",
+   "line": 1117
+  },
+  {
+   "id": "r157",
+   "anchor": "_validators#key:ytick.minor.left",
+   "kind": "trail",
+   "line": 1118
+  },
+  {
+   "id": "r158",
+   "anchor": "_validators#key:ytick.minor.right",
+   "kind": "trail",
+   "line": 1119
+  },
+  {
+   "id": "r159",
+   "anchor": "_validators#key:ytick.major.left",
+   "kind": "trail",
+   "line": 1120
+  },
+  {
+   "id": "r160",
+   "anchor": "_validators#key:ytick.major.right",
+   "kind": "trail",
+   "line": 1121
+  },
+  {
+   "id": "r161",
+   "anchor": "_validators#key:ytick.labelsize",
+   "kind": "trail",
+   "line": 1122
+  },
+  {
+   "id": "r162",
+   "anchor": "_validators#key:ytick.direction",
+   "kind": "trail",
+   "line": 1123
+  },
+  {
+   "id": "r163",
+   "anchor": "_validators#key:grid.color",
+   "kind": "trail",
+   "line": 1127
+  },
+  {
+   "id": "r164",
+   "anchor": "_validators#key:grid.linestyle",
+   "kind": "trail",
+   "line": 1128
+  },
+  {
+   "id": "r165",
+   "anchor": "_validators#key:grid.linewidth",
+   "kind": "trail",
+   "line": 1129
+  },
+  {
+   "id": "r166",
+   "anchor": "_validators#key:figure.titlesize",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r167",
+   "anchor": "_validators#key:figure.labelsize",
+   "kind": "lead",
+   "line": 1138
+  },
+  {
+   "id": "r168",
+   "anchor": "_validators#key:figure.figsize",
+   "kind": "lead",
+   "line": 1142
+  },
+  {
+   "id": "r169",
+   "anchor": "_validators#key:figure.constrained_layout.use",
+   "kind": "trail",
+   "line": 1158
+  },
+  {
+   "id": "r170",
+   "anchor": "_validators#key:figure.constrained_layout.hspace",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r171",
+   "anchor": "_validators#key:figure.constrained_layout.h_pad",
+   "kind": "lead",
+   "line": 1164
+  },
+  {
+   "id": "r172",
+   "anchor": "_validators#key:savefig.dpi",
+   "kind": "lead",
+   "line": 1168
+  },
+  {
+   "id": "r173",
+   "anchor": "_validators#key:savefig.bbox",
+   "kind": "trail",
+   "line": 1173
+  },
+  {
+   "id": "r174",
+   "anchor": "_validators#key:savefig.directory",
+   "kind": "lead",
+   "line": 1176
+  },
+  {
+   "id": "r175",
+   "anchor": "_validators#key:tk.window_focus",
+   "kind": "trail",
+   "line": 1179
+  },
+  {
+   "id": "r176",
+   "anchor": "_validators#key:ps.papersize",
+   "kind": "lead",
+   "line": 1182
+  },
+  {
+   "id": "r177",
+   "anchor": "_validators#key:ps.usedistiller",
+   "kind": "lead",
+   "line": 1187
+  },
+  {
+   "id": "r178",
+   "anchor": "_validators#key:ps.distiller.res",
+   "kind": "trail",
+   "line": 1188
+  },
+  {
+   "id": "r179",
+   "anchor": "_validators#key:ps.fonttype",
+   "kind": "trail",
+   "line": 1189
+  },
+  {
+   "id": "r180",
+   "anchor": "_validators#key:pdf.compression",
+   "kind": "trail",
+   "line": 1190
+  },
+  {
+   "id": "r181",
+   "anchor": "_validators#key:pdf.inheritcolor",
+   "kind": "trail",
+   "line": 1191
+  },
+  {
+   "id": "r182",
+   "anchor": "_validators#key:pdf.use14corefonts",
+   "kind": "lead",
+   "line": 1193
+  },
+  {
+   "id": "r183",
+   "anchor": "_validators#key:pdf.fonttype",
+   "kind": "trail",
+   "line": 1194
+  },
+  {
+   "id": "r184",
+   "anchor": "_validators#key:pgf.texsystem",
+   "kind": "trail",
+   "line": 1196
+  },
+  {
+   "id": "r185",
+   "anchor": "_validators#key:pgf.rcfonts",
+   "kind": "trail",
+   "line": 1197
+  },
+  {
+   "id": "r186",
+   "anchor": "_validators#key:pgf.preamble",
+   "kind": "trail",
+   "line": 1198
+  },
+  {
+   "id": "r187",
+   "anchor": "_validators#key:svg.image_inline",
+   "kind": "lead",
+   "line": 1201
+  },
+  {
+   "id": "r188",
+   "anchor": "_validators#key:svg.fonttype",
+   "kind": "trail",
+   "line": 1202
+  },
+  {
+   "id": "r189",
+   "anchor": "_validators#key:docstring.hardcopy",
+   "kind": "lead",
+   "line": 1206
+  },
+  {
+   "id": "r190",
+   "anchor": "_validators#key:agg.path.chunksize",
+   "kind": "trail",
+   "line": 1213
+  },
+  {
+   "id": "r191",
+   "anchor": "_validators#key:keymap.fullscreen",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r192",
+   "anchor": "_validators#key:keymap.quit_all",
+   "kind": "trail",
+   "line": 1224
+  },
+  {
+   "id": "r193",
+   "anchor": "_validators#key:animation.html",
+   "kind": "lead",
+   "line": 1233
+  },
+  {
+   "id": "r194",
+   "anchor": "_validators#key:animation.embed_limit",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r195",
+   "anchor": "_validators#key:animation.frame_format",
+   "kind": "lead",
+   "line": 1241
+  },
+  {
+   "id": "r196",
+   "anchor": "_validators#key:animation.ffmpeg_path",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r197",
+   "anchor": "_validators#key:animation.ffmpeg_args",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r198",
+   "anchor": "_validators#key:animation.convert_path",
+   "kind": "lead",
+   "line": 1248
+  },
+  {
+   "id": "r199",
+   "anchor": "_validators#key:animation.convert_args",
+   "kind": "lead",
+   "line": 1250
+  },
+  {
+   "id": "r200",
+   "anchor": "_validators#key:_internal.classic_mode",
+   "kind": "lead",
+   "line": 1256
+  },
+  {
+   "id": "r201",
+   "anchor": "_hardcoded_defaults",
+   "kind": "trail",
+   "line": 1258
+  },
+  {
+   "id": "r202",
+   "anchor": "_hardcoded_defaults#key:_internal.classic_mode",
+   "kind": "lead",
+   "line": 1260
+  },
+  {
+   "id": "r203",
+   "anchor": "_hardcoded_defaults#key:_internal.classic_mode",
+   "kind": "post",
+   "line": 1260
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 33301,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14116,
+  "thinking_tokens": 5613,
+  "opus_cost_usd": 0.6902014999999999,
+  "total_cost_usd": 0.7160764999999999,
+  "duration_ms": 115443,
+  "duration_api_ms": 116899,
+  "num_turns": 2
+ },
+ "wall_ms": 116702,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,307 @@
+{
+ "blob_sha": "8fb343a97bfd7d4b778a5fa6fc66e19ca5cc7213",
+ "path": "xarray/core/groupby.py",
+ "repo": "pydata/xarray",
+ "records": 47,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "unique_value_groups",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r2",
+   "anchor": "unique_value_groups#for:n, g in enumerate(inverse)/if:g >= 0/call:groups[g].append",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r3",
+   "anchor": "_consolidate_slices",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r4",
+   "anchor": "_inverse_permutation_indices",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r5",
+   "anchor": "_DummyGroup",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r6",
+   "anchor": "_ensure_1d#if:group.ndim != 1/assign:orig_dims",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r7",
+   "anchor": "_ensure_1d#if:group.ndim != 1/assign:inserted_dims",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r8",
+   "anchor": "_ensure_1d#if:group.ndim != 1/assign:group",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r9",
+   "anchor": "_apply_loffset",
+   "kind": "doc",
+   "line": 211
+  },
+  {
+   "id": "r10",
+   "anchor": "GroupBy",
+   "kind": "doc",
+   "line": 237
+  },
+  {
+   "id": "r11",
+   "anchor": "GroupBy.__init__",
+   "kind": "doc",
+   "line": 268
+  },
+  {
+   "id": "r12",
+   "anchor": "GroupBy.__init__#if:not isinstance(group, (DataArray, IndexVariable))/if:group.name not in obj.coords and group.name in obj.dims/assign:group",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r13",
+   "anchor": "GroupBy.__init__#if:grouper is not None/if:not index.is_monotonic/raise:ValueError",
+   "kind": "todo",
+   "line": 352
+  },
+  {
+   "id": "r14",
+   "anchor": "GroupBy.__init__#if:grouper is not None/elif:group.dims == (group.name,) and _unique_and_monotonic(group)/assign:group_indices",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r15",
+   "anchor": "GroupBy.__init__#if:grouper is not None/elif:group.dims == (group.name,) and _unique_and_monotonic(group)/if:not squeeze/assign:group_indices",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r16",
+   "anchor": "GroupBy.__init__#if:grouper is not None/else/if:group.isnull().any()/assign:obj",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r17",
+   "anchor": "GroupBy.__init__#if:grouper is not None/else/assign:group_as_index",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r18",
+   "anchor": "GroupBy._obj",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r19",
+   "anchor": "GroupBy._groups",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r20",
+   "anchor": "GroupBy.groups#if:self._groups is None",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r21",
+   "anchor": "GroupBy._iter_grouped",
+   "kind": "doc",
+   "line": 452
+  },
+  {
+   "id": "r22",
+   "anchor": "GroupBy._maybe_restore_empty_groups",
+   "kind": "doc",
+   "line": 506
+  },
+  {
+   "id": "r23",
+   "anchor": "GroupBy._maybe_unstack",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r24",
+   "anchor": "GroupBy.fillna",
+   "kind": "doc",
+   "line": 526
+  },
+  {
+   "id": "r25",
+   "anchor": "GroupBy.quantile",
+   "kind": "doc",
+   "line": 553
+  },
+  {
+   "id": "r26",
+   "anchor": "GroupBy.where",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r27",
+   "anchor": "GroupBy._first_or_last#if:isinstance(self._group_indices[0], integer_types)/return",
+   "kind": "lead",
+   "line": 685
+  },
+  {
+   "id": "r28",
+   "anchor": "GroupBy.first",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r29",
+   "anchor": "GroupBy.last",
+   "kind": "doc",
+   "line": 695
+  },
+  {
+   "id": "r30",
+   "anchor": "GroupBy.assign_coords",
+   "kind": "doc",
+   "line": 700
+  },
+  {
+   "id": "r31",
+   "anchor": "DataArrayGroupBy",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r32",
+   "anchor": "DataArrayGroupBy._iter_grouped_shortcut",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r33",
+   "anchor": "DataArrayGroupBy._concat_shortcut#assign:stacked",
+   "kind": "lead",
+   "line": 738
+  },
+  {
+   "id": "r34",
+   "anchor": "DataArrayGroupBy._restore_dim_order.lookup_order#if:dimension in self._obj.dims/else/assign:axis",
+   "kind": "trail",
+   "line": 750
+  },
+  {
+   "id": "r35",
+   "anchor": "DataArrayGroupBy.map",
+   "kind": "doc",
+   "line": 756
+  },
+  {
+   "id": "r36",
+   "anchor": "DataArrayGroupBy.apply",
+   "kind": "doc",
+   "line": 805
+  },
+  {
+   "id": "r37",
+   "anchor": "DataArrayGroupBy._combine",
+   "kind": "doc",
+   "line": 820
+  },
+  {
+   "id": "r38",
+   "anchor": "DataArrayGroupBy._combine#if:isinstance(combined, type(self._obj))/assign:combined",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r39",
+   "anchor": "DataArrayGroupBy._combine#if:coord is not None and dim not in applied_example.dims",
+   "kind": "lead",
+   "line": 834
+  },
+  {
+   "id": "r40",
+   "anchor": "DataArrayGroupBy.reduce",
+   "kind": "doc",
+   "line": 844
+  },
+  {
+   "id": "r41",
+   "anchor": "DatasetGroupBy.map",
+   "kind": "doc",
+   "line": 894
+  },
+  {
+   "id": "r42",
+   "anchor": "DatasetGroupBy.map#assign:applied",
+   "kind": "lead",
+   "line": 925
+  },
+  {
+   "id": "r43",
+   "anchor": "DatasetGroupBy.apply",
+   "kind": "doc",
+   "line": 928
+  },
+  {
+   "id": "r44",
+   "anchor": "DatasetGroupBy._combine",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r45",
+   "anchor": "DatasetGroupBy._combine#if:coord is not None and dim not in applied_example.dims",
+   "kind": "lead",
+   "line": 951
+  },
+  {
+   "id": "r46",
+   "anchor": "DatasetGroupBy.reduce",
+   "kind": "doc",
+   "line": 957
+  },
+  {
+   "id": "r47",
+   "anchor": "DatasetGroupBy.assign",
+   "kind": "doc",
+   "line": 999
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20956,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4846,
+  "thinking_tokens": 2594,
+  "opus_cost_usd": 0.33500149999999995,
+  "total_cost_usd": 0.35048149999999995,
+  "duration_ms": 43212,
+  "duration_api_ms": 44604,
+  "num_turns": 2
+ },
+ "wall_ms": 44101,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

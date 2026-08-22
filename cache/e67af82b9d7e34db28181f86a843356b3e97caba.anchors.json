@@ -1,0 +1,745 @@
+{
+ "blob_sha": "e67af82b9d7e34db28181f86a843356b3e97caba",
+ "path": "lib/matplotlib/tri/_triinterpolate.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 120,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "TriInterpolator",
+   "kind": "doc",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "TriInterpolator._unit_x",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "TriInterpolator._tri_renum",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "TriInterpolator._docstring__call__",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r6",
+   "anchor": "TriInterpolator._interpolate_multikeys",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "TriInterpolator._interpolate_multikeys#assign:x",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r8",
+   "anchor": "TriInterpolator._interpolate_multikeys#if:tri_index is None",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r9",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/try",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r10",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/assign:scale",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r11",
+   "anchor": "TriInterpolator._interpolate_multikeys#for:return_key in return_keys/assign:ret_loc",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r12",
+   "anchor": "TriInterpolator._interpolate_single_key",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r13",
+   "anchor": "LinearTriInterpolator",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r14",
+   "anchor": "LinearTriInterpolator._plane_coefficients",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r15",
+   "anchor": "LinearTriInterpolator._interpolate_single_key#if:return_key=='z'/elif:return_key=='dzdx'/else",
+   "kind": "trail",
+   "line": 282
+  },
+  {
+   "id": "r16",
+   "anchor": "CubicTriInterpolator",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r17",
+   "anchor": "CubicTriInterpolator.__init__#call:self._triangulation.get_cpp_triangulation",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r18",
+   "anchor": "CubicTriInterpolator.__init__#assign:tri_analyzer",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r19",
+   "anchor": "CubicTriInterpolator.__init__#assign:valid_node",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r20",
+   "anchor": "CubicTriInterpolator._unit_x",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r21",
+   "anchor": "CubicTriInterpolator._tris_pts",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r22",
+   "anchor": "CubicTriInterpolator._eccs",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r23",
+   "anchor": "CubicTriInterpolator.__init__#call:_api.check_in_list",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r24",
+   "anchor": "CubicTriInterpolator._ReferenceElement",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r25",
+   "anchor": "CubicTriInterpolator._interpolate_single_key#if:return_key=='z'/else",
+   "kind": "trail",
+   "line": 439
+  },
+  {
+   "id": "r26",
+   "anchor": "CubicTriInterpolator._compute_dof",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r27",
+   "anchor": "CubicTriInterpolator._compute_dof#if:kind=='user'/elif:kind=='geom'/else",
+   "kind": "trail",
+   "line": 474
+  },
+  {
+   "id": "r28",
+   "anchor": "CubicTriInterpolator._get_alpha_vec",
+   "kind": "doc",
+   "line": 479
+  },
+  {
+   "id": "r29",
+   "anchor": "CubicTriInterpolator._get_alpha_vec#assign:metric_inv",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r30",
+   "anchor": "CubicTriInterpolator._get_jacobian",
+   "kind": "doc",
+   "line": 518
+  },
+  {
+   "id": "r31",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities",
+   "kind": "doc",
+   "line": 546
+  },
+  {
+   "id": "r32",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities#assign:dot_a",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r33",
+   "anchor": "CubicTriInterpolator._compute_tri_eccentricities#return",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r34",
+   "anchor": "_ReducedHCT_Element",
+   "kind": "lead",
+   "line": 578
+  },
+  {
+   "id": "r35",
+   "anchor": "_ReducedHCT_Element",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r36",
+   "anchor": "_ReducedHCT_Element.M",
+   "kind": "lead",
+   "line": 600
+  },
+  {
+   "id": "r37",
+   "anchor": "_ReducedHCT_Element.rotate_dV",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r38",
+   "anchor": "_ReducedHCT_Element.n_gauss",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r39",
+   "anchor": "_ReducedHCT_Element.E",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r40",
+   "anchor": "_ReducedHCT_Element.J0_to_J1",
+   "kind": "lead",
+   "line": 671
+  },
+  {
+   "id": "r41",
+   "anchor": "_ReducedHCT_Element.get_function_values",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r42",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives",
+   "kind": "doc",
+   "line": 708
+  },
+  {
+   "id": "r43",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives#assign:dV",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r44",
+   "anchor": "_ReducedHCT_Element.get_function_derivatives#assign:J_inv",
+   "kind": "lead",
+   "line": 760
+  },
+  {
+   "id": "r45",
+   "anchor": "_ReducedHCT_Element.get_function_hessians",
+   "kind": "doc",
+   "line": 764
+  },
+  {
+   "id": "r46",
+   "anchor": "_ReducedHCT_Element.get_d2Sidksij2",
+   "kind": "doc",
+   "line": 789
+  },
+  {
+   "id": "r47",
+   "anchor": "_ReducedHCT_Element.get_d2Sidksij2#assign:d2V",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r48",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices",
+   "kind": "doc",
+   "line": 830
+  },
+  {
+   "id": "r49",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:J1",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r50",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:H_rot, area",
+   "kind": "lead",
+   "line": 860
+  },
+  {
+   "id": "r51",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:K",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r52",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#assign:K",
+   "kind": "lead",
+   "line": 876
+  },
+  {
+   "id": "r53",
+   "anchor": "_ReducedHCT_Element.get_bending_matrices#return",
+   "kind": "lead",
+   "line": 879
+  },
+  {
+   "id": "r54",
+   "anchor": "_ReducedHCT_Element.get_Hrot_from_J",
+   "kind": "doc",
+   "line": 881
+  },
+  {
+   "id": "r55",
+   "anchor": "_ReducedHCT_Element.get_Hrot_from_J#assign:J_inv",
+   "kind": "lead",
+   "line": 896
+  },
+  {
+   "id": "r56",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff",
+   "kind": "doc",
+   "line": 911
+  },
+  {
+   "id": "r57",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:c_indices",
+   "kind": "trail",
+   "line": 937
+  },
+  {
+   "id": "r58",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:f_dof_indices",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r59",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kff_vals",
+   "kind": "lead",
+   "line": 965
+  },
+  {
+   "id": "r60",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kff_vals",
+   "kind": "lead",
+   "line": 965
+  },
+  {
+   "id": "r61",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Kfc_elem",
+   "kind": "lead",
+   "line": 970
+  },
+  {
+   "id": "r62",
+   "anchor": "_ReducedHCT_Element.get_Kff_and_Ff#assign:Ff",
+   "kind": "lead",
+   "line": 977
+  },
+  {
+   "id": "r63",
+   "anchor": "_DOF_estimator",
+   "kind": "lead",
+   "line": 985
+  },
+  {
+   "id": "r64",
+   "anchor": "_DOF_estimator",
+   "kind": "doc",
+   "line": 985
+  },
+  {
+   "id": "r65",
+   "anchor": "_DOF_estimator.compute_dof_from_df",
+   "kind": "doc",
+   "line": 1009
+  },
+  {
+   "id": "r66",
+   "anchor": "_DOF_estimator.get_dof_vec",
+   "kind": "doc",
+   "line": 1020
+  },
+  {
+   "id": "r67",
+   "anchor": "_DOF_estimator_user",
+   "kind": "doc",
+   "line": 1061
+  },
+  {
+   "id": "r68",
+   "anchor": "_DOF_estimator_geom",
+   "kind": "doc",
+   "line": 1071
+  },
+  {
+   "id": "r69",
+   "anchor": "_DOF_estimator_geom.compute_dz",
+   "kind": "doc",
+   "line": 1074
+  },
+  {
+   "id": "r70",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:w_node_sum",
+   "kind": "lead",
+   "line": 1088
+  },
+  {
+   "id": "r71",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:dfx_el_w",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r72",
+   "anchor": "_DOF_estimator_geom.compute_dz#assign:dfx_estim",
+   "kind": "lead",
+   "line": 1103
+  },
+  {
+   "id": "r73",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights",
+   "kind": "doc",
+   "line": 1107
+  },
+  {
+   "id": "r74",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights#for:ipt in range(3)/assign:angle",
+   "kind": "lead",
+   "line": 1122
+  },
+  {
+   "id": "r75",
+   "anchor": "_DOF_estimator_geom.compute_geom_weights#for:ipt in range(3)/assign:weights[:, ipt]",
+   "kind": "lead",
+   "line": 1126
+  },
+  {
+   "id": "r76",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r77",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads#assign:dM_inv",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r78",
+   "anchor": "_DOF_estimator_geom.compute_geom_grads#assign:df[:, 0]",
+   "kind": "lead",
+   "line": 1151
+  },
+  {
+   "id": "r79",
+   "anchor": "_DOF_estimator_min_E",
+   "kind": "doc",
+   "line": 1156
+  },
+  {
+   "id": "r80",
+   "anchor": "_DOF_estimator_min_E.compute_dz",
+   "kind": "doc",
+   "line": 1166
+  },
+  {
+   "id": "r81",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:dz_init",
+   "kind": "lead",
+   "line": 1172
+  },
+  {
+   "id": "r82",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:Kff_rows, Kff_cols, Kff_vals, Ff",
+   "kind": "lead",
+   "line": 1182
+  },
+  {
+   "id": "r83",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:tol",
+   "kind": "lead",
+   "line": 1189
+  },
+  {
+   "id": "r84",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:err0",
+   "kind": "lead",
+   "line": 1197
+  },
+  {
+   "id": "r85",
+   "anchor": "_DOF_estimator_min_E.compute_dz#if:err0 < err/call:_api.warn_external",
+   "kind": "lead",
+   "line": 1200
+  },
+  {
+   "id": "r86",
+   "anchor": "_DOF_estimator_min_E.compute_dz#assign:dz",
+   "kind": "lead",
+   "line": 1207
+  },
+  {
+   "id": "r87",
+   "anchor": "_Sparse_Matrix_coo",
+   "kind": "lead",
+   "line": 1215
+  },
+  {
+   "id": "r88",
+   "anchor": "_Sparse_Matrix_coo.__init__",
+   "kind": "doc",
+   "line": 1216
+  },
+  {
+   "id": "r89",
+   "anchor": "_Sparse_Matrix_coo.dot",
+   "kind": "doc",
+   "line": 1229
+  },
+  {
+   "id": "r90",
+   "anchor": "_Sparse_Matrix_coo.compress_csc",
+   "kind": "doc",
+   "line": 1239
+  },
+  {
+   "id": "r91",
+   "anchor": "_Sparse_Matrix_coo.compress_csr",
+   "kind": "doc",
+   "line": 1250
+  },
+  {
+   "id": "r92",
+   "anchor": "_Sparse_Matrix_coo.to_dense",
+   "kind": "doc",
+   "line": 1261
+  },
+  {
+   "id": "r93",
+   "anchor": "_Sparse_Matrix_coo.diag",
+   "kind": "doc",
+   "line": 1275
+  },
+  {
+   "id": "r94",
+   "anchor": "_Sparse_Matrix_coo.diag#assign:diag",
+   "kind": "trail",
+   "line": 1278
+  },
+  {
+   "id": "r95",
+   "anchor": "_cg",
+   "kind": "doc",
+   "line": 1283
+  },
+  {
+   "id": "r96",
+   "anchor": "_cg#assign:kvec",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r97",
+   "anchor": "_cg#assign:kvec",
+   "kind": "lead",
+   "line": 1320
+  },
+  {
+   "id": "r98",
+   "anchor": "_cg#if:x0 is None",
+   "kind": "lead",
+   "line": 1323
+  },
+  {
+   "id": "r99",
+   "anchor": "_cg#while:(np.sqrt(abs(rho)) > tol*b_norm) and (k < maxiter)",
+   "kind": "lead",
+   "line": 1337
+  },
+  {
+   "id": "r100",
+   "anchor": "_cg#while:(np.sqrt(abs(rho)) > tol*b_norm) and (k < maxiter)/assign:k",
+   "kind": "lead",
+   "line": 1348
+  },
+  {
+   "id": "r101",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "lead",
+   "line": 1399
+  },
+  {
+   "id": "r102",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "lead",
+   "line": 1399
+  },
+  {
+   "id": "r103",
+   "anchor": "_safe_inv22_vectorized",
+   "kind": "doc",
+   "line": 1399
+  },
+  {
+   "id": "r104",
+   "anchor": "_safe_inv22_vectorized#assign:rank2",
+   "kind": "lead",
+   "line": 1413
+  },
+  {
+   "id": "r105",
+   "anchor": "_safe_inv22_vectorized#if:np.all(rank2)/assign:delta_inv",
+   "kind": "lead",
+   "line": 1416
+  },
+  {
+   "id": "r106",
+   "anchor": "_safe_inv22_vectorized#if:np.all(rank2)/else/assign:delta_inv",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r107",
+   "anchor": "_pseudo_inv22sym_vectorized",
+   "kind": "doc",
+   "line": 1429
+  },
+  {
+   "id": "r108",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/assign:M_inv[:, 0, 0]",
+   "kind": "lead",
+   "line": 1448
+  },
+  {
+   "id": "r109",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:delta",
+   "kind": "lead",
+   "line": 1456
+  },
+  {
+   "id": "r110",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:rank01",
+   "kind": "lead",
+   "line": 1462
+  },
+  {
+   "id": "r111",
+   "anchor": "_pseudo_inv22sym_vectorized#if:np.all(rank2)/else/assign:M_inv[rank01, 0, 0]",
+   "kind": "lead",
+   "line": 1467
+  },
+  {
+   "id": "r112",
+   "anchor": "_scalar_vectorized",
+   "kind": "doc",
+   "line": 1475
+  },
+  {
+   "id": "r113",
+   "anchor": "_transpose_vectorized",
+   "kind": "doc",
+   "line": 1482
+  },
+  {
+   "id": "r114",
+   "anchor": "_roll_vectorized",
+   "kind": "doc",
+   "line": 1489
+  },
+  {
+   "id": "r115",
+   "anchor": "_roll_vectorized#assign:M_roll",
+   "kind": "lead",
+   "line": 1505
+  },
+  {
+   "id": "r116",
+   "anchor": "_roll_vectorized#if:axis == 0/else",
+   "kind": "trail",
+   "line": 1510
+  },
+  {
+   "id": "r117",
+   "anchor": "_to_matrix_vectorized",
+   "kind": "doc",
+   "line": 1517
+  },
+  {
+   "id": "r118",
+   "anchor": "_extract_submatrices",
+   "kind": "doc",
+   "line": 1547
+  },
+  {
+   "id": "r119",
+   "anchor": "_extract_submatrices#if:axis == 0/else",
+   "kind": "trail",
+   "line": 1562
+  },
+  {
+   "id": "r120",
+   "anchor": "_extract_submatrices#if:axis == 0/else",
+   "kind": "trail",
+   "line": 1570
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 43209,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10830,
+  "thinking_tokens": 4952,
+  "opus_cost_usd": 0.7071315,
+  "total_cost_usd": 0.7415665,
+  "duration_ms": 93452,
+  "duration_api_ms": 95020,
+  "num_turns": 2
+ },
+ "wall_ms": 94463,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

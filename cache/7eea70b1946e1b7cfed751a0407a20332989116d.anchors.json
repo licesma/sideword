@@ -1,0 +1,247 @@
+{
+ "blob_sha": "7eea70b1946e1b7cfed751a0407a20332989116d",
+ "path": "django/contrib/admin/utils.py",
+ "repo": "django/django",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "FieldIsAForeignKeyColumnName",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r2",
+   "anchor": "lookup_spawns_duplicates",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "lookup_spawns_duplicates#for:field_name in lookup_fields",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "lookup_spawns_duplicates#for:field_name in lookup_fields/try/except:FieldDoesNotExist/continue",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r5",
+   "anchor": "lookup_spawns_duplicates#for:field_name in lookup_fields/try/else/if:hasattr(field, 'get_path_info')/assign:path_info",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r6",
+   "anchor": "lookup_spawns_duplicates#for:field_name in lookup_fields/try/else/if:hasattr(field, 'get_path_info')/if:any(path.m2m for path in path_info)/return",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r7",
+   "anchor": "prepare_lookup_value",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "prepare_lookup_value#if:key.endswith('__in')",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r9",
+   "anchor": "prepare_lookup_value#if:key.endswith('__in')/elif:key.endswith('__isnull')",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r10",
+   "anchor": "quote",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r11",
+   "anchor": "unquote",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r12",
+   "anchor": "flatten",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r13",
+   "anchor": "flatten_fieldsets",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r14",
+   "anchor": "get_deleted_objects",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r15",
+   "anchor": "get_deleted_objects.format_callback#if:has_admin/try/except:NoReverseMatch/return",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r16",
+   "anchor": "get_deleted_objects.format_callback#if:has_admin/return",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r17",
+   "anchor": "get_deleted_objects.format_callback#if:has_admin/else/return",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r18",
+   "anchor": "NestedObjects.edges",
+   "kind": "trail",
+   "line": 164
+  },
+  {
+   "id": "r19",
+   "anchor": "NestedObjects.nested",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r20",
+   "anchor": "NestedObjects.can_fast_delete",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r21",
+   "anchor": "model_format_dict",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r22",
+   "anchor": "model_ngettext",
+   "kind": "doc",
+   "line": 245
+  },
+  {
+   "id": "r23",
+   "anchor": "lookup_field#try/except:(FieldDoesNotExist, FieldIsAForeignKeyColumnName)/if:callable(name)",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r24",
+   "anchor": "_get_non_gfk_field",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r25",
+   "anchor": "_get_non_gfk_field#if:field.is_relation and ((field.many_to_one and not field.related_model) or field.one_to_many)",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r26",
+   "anchor": "_get_non_gfk_field#if:field.is_relation and not field.many_to_many and hasattr(field, 'attname') and field.attname == name",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r27",
+   "anchor": "label_for_field",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r28",
+   "anchor": "label_for_field#try/try/except:AttributeError/assign:label",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r29",
+   "anchor": "display_for_field#if:getattr(field, 'flatchoices', None)/elif:isinstance(field, models.BooleanField)",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r30",
+   "anchor": "reverse_field_path",
+   "kind": "doc",
+   "line": 444
+  },
+  {
+   "id": "r31",
+   "anchor": "reverse_field_path#for:piece in pieces/if:len(reversed_path) == len(pieces) - 1",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r32",
+   "anchor": "reverse_field_path#for:piece in pieces/if:len(reversed_path) == len(pieces) - 1",
+   "kind": "trail",
+   "line": 458
+  },
+  {
+   "id": "r33",
+   "anchor": "reverse_field_path#for:piece in pieces/if:field.is_relation and not (field.auto_created and not field.concrete)",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r34",
+   "anchor": "get_fields_from_path",
+   "kind": "doc",
+   "line": 475
+  },
+  {
+   "id": "r35",
+   "anchor": "construct_change_message",
+   "kind": "doc",
+   "line": 495
+  },
+  {
+   "id": "r36",
+   "anchor": "construct_change_message#assign:changed_data",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r37",
+   "anchor": "construct_change_message#with:translation_override(None)/assign:changed_field_labels",
+   "kind": "lead",
+   "line": 509
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13403,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3635,
+  "thinking_tokens": 1762,
+  "opus_cost_usd": 0.22919650000000003,
+  "total_cost_usd": 0.2388405,
+  "duration_ms": 34565,
+  "duration_api_ms": 35061,
+  "num_turns": 2
+ },
+ "wall_ms": 35407,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

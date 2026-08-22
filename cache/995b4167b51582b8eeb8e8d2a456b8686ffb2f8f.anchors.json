@@ -1,0 +1,499 @@
+{
+ "blob_sha": "995b4167b51582b8eeb8e8d2a456b8686ffb2f8f",
+ "path": "requests/packages/urllib3/connectionpool.py",
+ "repo": "psf/requests",
+ "records": 79,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#try",
+   "kind": "trail",
+   "line": 10
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#try/except:ImportError/import:Queue",
+   "kind": "lead",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "ConnectionPool",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r4",
+   "anchor": "ConnectionPool",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r5",
+   "anchor": "ConnectionPool.__exit__#return",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r6",
+   "anchor": "ConnectionPool.close",
+   "kind": "doc",
+   "line": 87
+  },
+  {
+   "id": "r7",
+   "anchor": "_blocking_errnos",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r8",
+   "anchor": "HTTPConnectionPool",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r9",
+   "anchor": "HTTPConnectionPool.__init__#for:_ in xrange(maxsize)",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r10",
+   "anchor": "HTTPConnectionPool.num_connections",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r11",
+   "anchor": "HTTPConnectionPool.__init__#if:self.proxy/call:self.conn_kw.setdefault",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r12",
+   "anchor": "HTTPConnectionPool._new_conn",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r13",
+   "anchor": "HTTPConnectionPool._get_conn",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r14",
+   "anchor": "HTTPConnectionPool._get_conn#try/except:AttributeError",
+   "kind": "trail",
+   "line": 230
+  },
+  {
+   "id": "r15",
+   "anchor": "HTTPConnectionPool._get_conn#try/except:Empty/pass",
+   "kind": "trail",
+   "line": 238
+  },
+  {
+   "id": "r16",
+   "anchor": "HTTPConnectionPool._get_conn#if:conn and is_connection_dropped(conn)",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r17",
+   "anchor": "HTTPConnectionPool._get_conn#if:conn and is_connection_dropped(conn)/if:getattr(conn, 'auto_open', 1) == 0/assign:conn",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r18",
+   "anchor": "HTTPConnectionPool._put_conn",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r19",
+   "anchor": "HTTPConnectionPool._put_conn#try/return",
+   "kind": "trail",
+   "line": 268
+  },
+  {
+   "id": "r20",
+   "anchor": "HTTPConnectionPool._put_conn#try/except:AttributeError/pass",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r21",
+   "anchor": "HTTPConnectionPool._put_conn#try/except:Full/call:log.warning",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r22",
+   "anchor": "HTTPConnectionPool._put_conn#if:conn",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r23",
+   "anchor": "HTTPConnectionPool._validate_conn",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r24",
+   "anchor": "HTTPConnectionPool._prepare_proxy#pass",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r25",
+   "anchor": "HTTPConnectionPool._get_timeout",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r26",
+   "anchor": "HTTPConnectionPool._get_timeout#if:isinstance(timeout, Timeout)/else/return",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r27",
+   "anchor": "HTTPConnectionPool._raise_timeout",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r28",
+   "anchor": "HTTPConnectionPool._raise_timeout#if:hasattr(err, 'errno') and err.errno in _blocking_errnos",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r29",
+   "anchor": "HTTPConnectionPool._raise_timeout#if:'timed out' in str(err) or 'did not complete (read)' in str(err)",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r30",
+   "anchor": "HTTPConnectionPool._raise_timeout#if:'timed out' in str(err) or 'did not complete (read)' in str(err)",
+   "kind": "trail",
+   "line": 318
+  },
+  {
+   "id": "r31",
+   "anchor": "HTTPConnectionPool._make_request",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r32",
+   "anchor": "HTTPConnectionPool._make_request#try",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r33",
+   "anchor": "HTTPConnectionPool._make_request#try/except:(SocketTimeout, BaseSSLError)/call:self._raise_timeout",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r34",
+   "anchor": "HTTPConnectionPool._make_request#call:conn.request",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r35",
+   "anchor": "HTTPConnectionPool._make_request#assign:read_timeout",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r36",
+   "anchor": "HTTPConnectionPool._make_request#if:getattr(conn, 'sock', None)",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r37",
+   "anchor": "HTTPConnectionPool._make_request#if:getattr(conn, 'sock', None)/if:read_timeout == 0",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r38",
+   "anchor": "HTTPConnectionPool._make_request#if:getattr(conn, 'sock', None)/if:read_timeout is Timeout.DEFAULT_TIMEOUT/else",
+   "kind": "trail",
+   "line": 370
+  },
+  {
+   "id": "r39",
+   "anchor": "HTTPConnectionPool._make_request#try",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r40",
+   "anchor": "HTTPConnectionPool._make_request#try/try",
+   "kind": "trail",
+   "line": 375
+  },
+  {
+   "id": "r41",
+   "anchor": "HTTPConnectionPool._make_request#try/try/except:TypeError",
+   "kind": "trail",
+   "line": 377
+  },
+  {
+   "id": "r42",
+   "anchor": "HTTPConnectionPool._make_request#assign:http_version",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r43",
+   "anchor": "HTTPConnectionPool._make_request#try/except:HeaderParsingError",
+   "kind": "trail",
+   "line": 391
+  },
+  {
+   "id": "r44",
+   "anchor": "HTTPConnectionPool.close",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r45",
+   "anchor": "HTTPConnectionPool.close#assign:old_pool, self.pool",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r46",
+   "anchor": "HTTPConnectionPool.close#try/except:Empty/pass",
+   "kind": "trail",
+   "line": 415
+  },
+  {
+   "id": "r47",
+   "anchor": "HTTPConnectionPool.is_same_host",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r48",
+   "anchor": "HTTPConnectionPool.is_same_host#assign:scheme, host, port",
+   "kind": "todo",
+   "line": 426
+  },
+  {
+   "id": "r49",
+   "anchor": "HTTPConnectionPool.is_same_host#if:self.port and not port",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r50",
+   "anchor": "HTTPConnectionPool.urlopen",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r51",
+   "anchor": "HTTPConnectionPool.urlopen#if:assert_same_host and not self.is_same_host(url)",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r52",
+   "anchor": "HTTPConnectionPool.urlopen#if:self.scheme == 'http'",
+   "kind": "lead",
+   "line": 537
+  },
+  {
+   "id": "r53",
+   "anchor": "HTTPConnectionPool.urlopen#assign:err",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r54",
+   "anchor": "HTTPConnectionPool.urlopen#try/assign:timeout_obj",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r55",
+   "anchor": "HTTPConnectionPool.urlopen#try/assign:httplib_response",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r56",
+   "anchor": "HTTPConnectionPool.urlopen#try/assign:response_conn",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r57",
+   "anchor": "HTTPConnectionPool.urlopen#try/assign:response",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r58",
+   "anchor": "HTTPConnectionPool.urlopen#try/assign:response",
+   "kind": "post",
+   "line": 568
+  },
+  {
+   "id": "r59",
+   "anchor": "HTTPConnectionPool.urlopen#try/except:Empty/raise:EmptyPoolError",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r60",
+   "anchor": "HTTPConnectionPool.urlopen#try/except:(BaseSSLError, CertificateError)/assign:conn",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r61",
+   "anchor": "HTTPConnectionPool.urlopen#try/except:SSLError/assign:conn",
+   "kind": "lead",
+   "line": 593
+  },
+  {
+   "id": "r62",
+   "anchor": "HTTPConnectionPool.urlopen#try/except:(TimeoutError, HTTPException, SocketError, ProtocolError)/assign:conn",
+   "kind": "lead",
+   "line": 600
+  },
+  {
+   "id": "r63",
+   "anchor": "HTTPConnectionPool.urlopen#try/except:(TimeoutError, HTTPException, SocketError, ProtocolError)/assign:err",
+   "kind": "lead",
+   "line": 613
+  },
+  {
+   "id": "r64",
+   "anchor": "HTTPConnectionPool.urlopen#try/finally/if:release_conn/call:self._put_conn",
+   "kind": "lead",
+   "line": 620
+  },
+  {
+   "id": "r65",
+   "anchor": "HTTPConnectionPool.urlopen#if:not conn/call:log.warning",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r66",
+   "anchor": "HTTPConnectionPool.urlopen#assign:redirect_location",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r67",
+   "anchor": "HTTPConnectionPool.urlopen#if:redirect_location/try/except:MaxRetryError/if:retries.raise_on_redirect/call:response.release_conn",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r68",
+   "anchor": "HTTPConnectionPool.urlopen#if:retries.is_forced_retry(method, status_code=response.status)",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r69",
+   "anchor": "HTTPSConnectionPool",
+   "kind": "doc",
+   "line": 670
+  },
+  {
+   "id": "r70",
+   "anchor": "HTTPSConnectionPool._prepare_conn",
+   "kind": "doc",
+   "line": 716
+  },
+  {
+   "id": "r71",
+   "anchor": "HTTPSConnectionPool._prepare_proxy",
+   "kind": "doc",
+   "line": 734
+  },
+  {
+   "id": "r72",
+   "anchor": "HTTPSConnectionPool._prepare_proxy#try",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r73",
+   "anchor": "HTTPSConnectionPool._prepare_proxy#try/except:AttributeError",
+   "kind": "trail",
+   "line": 742
+  },
+  {
+   "id": "r74",
+   "anchor": "HTTPSConnectionPool._prepare_proxy#if:sys.version_info <= (2, 6, 4) and not self.proxy_headers",
+   "kind": "trail",
+   "line": 745
+  },
+  {
+   "id": "r75",
+   "anchor": "HTTPSConnectionPool._new_conn",
+   "kind": "doc",
+   "line": 752
+  },
+  {
+   "id": "r76",
+   "anchor": "HTTPSConnectionPool._validate_conn",
+   "kind": "doc",
+   "line": 776
+  },
+  {
+   "id": "r77",
+   "anchor": "HTTPSConnectionPool._validate_conn#if:not getattr(conn, 'sock', None)",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r78",
+   "anchor": "HTTPSConnectionPool._validate_conn#if:not getattr(conn, 'sock', None)",
+   "kind": "trail",
+   "line": 783
+  },
+  {
+   "id": "r79",
+   "anchor": "connection_from_url",
+   "kind": "doc",
+   "line": 794
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 20000,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8492,
+  "thinking_tokens": 4307,
+  "opus_cost_usd": 0.4165915,
+  "total_cost_usd": 0.4311235,
+  "duration_ms": 72891,
+  "duration_api_ms": 74095,
+  "num_turns": 2
+ },
+ "wall_ms": 73753,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

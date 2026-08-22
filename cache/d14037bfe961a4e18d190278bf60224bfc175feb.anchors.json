@@ -1,0 +1,307 @@
+{
+ "blob_sha": "d14037bfe961a4e18d190278bf60224bfc175feb",
+ "path": "django/forms/forms.py",
+ "repo": "django/django",
+ "records": 47,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "DeclarativeFieldsMetaclass",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#assign:attrs['declared_fields']",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#assign:declared_fields",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#for:base in reversed(new_class.__mro__)/if:hasattr(base, 'declared_fields')",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r6",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#for:base in reversed(new_class.__mro__)/for:attr, value in base.__dict__.items()",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseForm",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseForm._errors",
+   "kind": "trail",
+   "line": 78
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseForm.fields",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseForm.__init__#if:renderer is None",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseForm.order_fields",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseForm.order_fields#for:key in field_order/try/except:KeyError",
+   "kind": "trail",
+   "line": 126
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseForm.order_fields#call:fields.update",
+   "kind": "trail",
+   "line": 128
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseForm.__getitem__",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseForm.errors",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseForm.is_valid",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseForm.add_prefix",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseForm.add_initial_prefix",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseForm._widget_data_value#return",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseForm._html_output",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseForm._html_output#assign:top_errors",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseForm._html_output#for:name, field in self.fields.items()/if:bf.is_hidden/else/assign:css_classes",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseForm._html_output#if:hidden_fields",
+   "kind": "trail",
+   "line": 253
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/if:not last_row.endswith(row_ender)",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/if:not last_row.endswith(row_ender)/assign:last_row",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/else/call:output.append",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseForm.as_table",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseForm.as_ul",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseForm.as_p",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseForm.non_field_errors",
+   "kind": "doc",
+   "line": 311
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseForm.add_error",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseForm.add_error#if:not isinstance(error, ValidationError)/assign:error",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseForm.full_clean",
+   "kind": "doc",
+   "line": 372
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseForm.full_clean#if:not self.is_bound",
+   "kind": "trail",
+   "line": 377
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseForm.full_clean#if:self.empty_permitted and not self.has_changed()",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseForm._post_clean",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseForm.clean",
+   "kind": "doc",
+   "line": 424
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseForm.has_changed",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseForm.changed_data#for:name, field in self.fields.items()/if:not field.show_hidden_initial/assign:initial_value",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseForm.changed_data#for:name, field in self.fields.items()/if:not field.show_hidden_initial/else/try/except:ValidationError/call:data.append",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseForm.media",
+   "kind": "doc",
+   "line": 462
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseForm.is_multipart",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseForm.hidden_fields",
+   "kind": "doc",
+   "line": 476
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseForm.visible_fields",
+   "kind": "doc",
+   "line": 483
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseForm.get_initial_for_field",
+   "kind": "doc",
+   "line": 490
+  },
+  {
+   "id": "r46",
+   "anchor": "Form",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r47",
+   "anchor": "Form",
+   "kind": "post",
+   "line": 501
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13509,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4092,
+  "thinking_tokens": 1911,
+  "opus_cost_usd": 0.2416815,
+  "total_cost_usd": 0.2513365,
+  "duration_ms": 38592,
+  "duration_api_ms": 39859,
+  "num_turns": 2
+ },
+ "wall_ms": 39515,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

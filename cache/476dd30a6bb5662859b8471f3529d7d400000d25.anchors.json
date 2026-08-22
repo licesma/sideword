@@ -1,0 +1,391 @@
+{
+ "blob_sha": "476dd30a6bb5662859b8471f3529d7d400000d25",
+ "path": "lib/matplotlib/path.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Path",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "Path.STOP",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r4",
+   "anchor": "Path.STOP",
+   "kind": "trail",
+   "line": 83
+  },
+  {
+   "id": "r5",
+   "anchor": "Path.MOVETO",
+   "kind": "trail",
+   "line": 84
+  },
+  {
+   "id": "r6",
+   "anchor": "Path.LINETO",
+   "kind": "trail",
+   "line": 85
+  },
+  {
+   "id": "r7",
+   "anchor": "Path.CURVE3",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "Path.CURVE4",
+   "kind": "trail",
+   "line": 87
+  },
+  {
+   "id": "r9",
+   "anchor": "Path.CLOSEPOLY",
+   "kind": "trail",
+   "line": 88
+  },
+  {
+   "id": "r10",
+   "anchor": "Path.NUM_VERTICES_FOR_CODE",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "Path.__init__",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r12",
+   "anchor": "Path._fast_from_codes_and_verts",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r13",
+   "anchor": "Path._create_closed",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r14",
+   "anchor": "Path.vertices",
+   "kind": "doc",
+   "line": 212
+  },
+  {
+   "id": "r15",
+   "anchor": "Path.codes",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r16",
+   "anchor": "Path.simplify_threshold",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r17",
+   "anchor": "Path.should_simplify",
+   "kind": "doc",
+   "line": 255
+  },
+  {
+   "id": "r18",
+   "anchor": "Path.readonly",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r19",
+   "anchor": "Path.copy",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r20",
+   "anchor": "Path.__deepcopy__",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r21",
+   "anchor": "Path.__deepcopy__#assign:p",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r22",
+   "anchor": "Path.make_compound_path_from_polys",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r23",
+   "anchor": "Path.make_compound_path_from_polys#assign:numpolys, numsides, two",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r24",
+   "anchor": "Path.make_compound_path",
+   "kind": "doc",
+   "line": 320
+  },
+  {
+   "id": "r25",
+   "anchor": "Path.make_compound_path#assign:not_stop_mask",
+   "kind": "trail",
+   "line": 338
+  },
+  {
+   "id": "r26",
+   "anchor": "Path.iter_segments",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r27",
+   "anchor": "Path.iter_segments#assign:NUM_VERTICES_FOR_CODE",
+   "kind": "lead",
+   "line": 398
+  },
+  {
+   "id": "r28",
+   "anchor": "Path.iter_bezier",
+   "kind": "doc",
+   "line": 413
+  },
+  {
+   "id": "r29",
+   "anchor": "Path.iter_bezier#for:verts, code in self.iter_segments(**kwargs)/if:code==Path.MOVETO",
+   "kind": "trail",
+   "line": 441
+  },
+  {
+   "id": "r30",
+   "anchor": "Path.iter_bezier#for:verts, code in self.iter_segments(**kwargs)/if:code==Path.MOVETO/elif:code==Path.LINETO",
+   "kind": "trail",
+   "line": 444
+  },
+  {
+   "id": "r31",
+   "anchor": "Path.cleaned",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r32",
+   "anchor": "Path.transformed",
+   "kind": "doc",
+   "line": 479
+  },
+  {
+   "id": "r33",
+   "anchor": "Path.contains_point",
+   "kind": "doc",
+   "line": 492
+  },
+  {
+   "id": "r34",
+   "anchor": "Path.contains_point#if:transform and not transform.is_affine",
+   "kind": "lead",
+   "line": 537
+  },
+  {
+   "id": "r35",
+   "anchor": "Path.contains_points",
+   "kind": "doc",
+   "line": 542
+  },
+  {
+   "id": "r36",
+   "anchor": "Path.contains_path",
+   "kind": "doc",
+   "line": 586
+  },
+  {
+   "id": "r37",
+   "anchor": "Path.get_extents",
+   "kind": "doc",
+   "line": 597
+  },
+  {
+   "id": "r38",
+   "anchor": "Path.get_extents#if:self.codes is None/elif:len(np.intersect1d(self.codes, [Path.CURVE3, Path.CURVE4]))==0/assign:xys",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r39",
+   "anchor": "Path.get_extents#if:self.codes is None/else/for:curve, code in self.iter_bezier(**kwargs)/assign:_, dzeros",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r40",
+   "anchor": "Path.get_extents#if:self.codes is None/else/for:curve, code in self.iter_bezier(**kwargs)/call:xys.append",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r41",
+   "anchor": "Path.intersects_path",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r42",
+   "anchor": "Path.intersects_bbox",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r43",
+   "anchor": "Path.interpolated",
+   "kind": "doc",
+   "line": 659
+  },
+  {
+   "id": "r44",
+   "anchor": "Path.to_polygons",
+   "kind": "doc",
+   "line": 678
+  },
+  {
+   "id": "r45",
+   "anchor": "Path.to_polygons#return",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r46",
+   "anchor": "Path.unit_rectangle",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r47",
+   "anchor": "Path.unit_regular_polygon",
+   "kind": "doc",
+   "line": 737
+  },
+  {
+   "id": "r48",
+   "anchor": "Path.unit_regular_polygon#if:path is None/assign:theta",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r49",
+   "anchor": "Path.unit_regular_star",
+   "kind": "doc",
+   "line": 761
+  },
+  {
+   "id": "r50",
+   "anchor": "Path.unit_regular_star#if:path is None/assign:theta",
+   "kind": "lead",
+   "line": 775
+  },
+  {
+   "id": "r51",
+   "anchor": "Path.unit_regular_asterisk",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r52",
+   "anchor": "Path.unit_circle",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r53",
+   "anchor": "Path.circle",
+   "kind": "doc",
+   "line": 807
+  },
+  {
+   "id": "r54",
+   "anchor": "Path.unit_circle_righthalf",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r55",
+   "anchor": "Path.arc",
+   "kind": "doc",
+   "line": 919
+  },
+  {
+   "id": "r56",
+   "anchor": "Path.arc#if:theta2!=theta1 and eta2<=eta1",
+   "kind": "lead",
+   "line": 942
+  },
+  {
+   "id": "r57",
+   "anchor": "Path.arc#if:n is None",
+   "kind": "lead",
+   "line": 947
+  },
+  {
+   "id": "r58",
+   "anchor": "Path.wedge",
+   "kind": "doc",
+   "line": 998
+  },
+  {
+   "id": "r59",
+   "anchor": "Path.hatch",
+   "kind": "doc",
+   "line": 1017
+  },
+  {
+   "id": "r60",
+   "anchor": "Path.clip_to_bbox",
+   "kind": "doc",
+   "line": 1027
+  },
+  {
+   "id": "r61",
+   "anchor": "get_path_collection_extents",
+   "kind": "doc",
+   "line": 1042
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 24281,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3863,
+  "thinking_tokens": 1345,
+  "opus_cost_usd": 0.3436765,
+  "total_cost_usd": 0.3619255,
+  "duration_ms": 36582,
+  "duration_api_ms": 37814,
+  "num_turns": 2
+ },
+ "wall_ms": 37499,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,1615 @@
+{
+ "blob_sha": "f9a48136285a383318f6eb72da79ad45194c13dd",
+ "path": "lib/mpl_toolkits/mplot3d/axes3d.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 265,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Axes3D",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r3",
+   "anchor": "Axes3D.__init__",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r4",
+   "anchor": "Axes3D.__init__#assign:self.zz_dataLim",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r5",
+   "anchor": "Axes3D.__init__#call:self.view_init",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r6",
+   "anchor": "Axes3D.__init__#call:super().set_axis_off",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r7",
+   "anchor": "Axes3D.__init__#call:self.set_axis_on",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r8",
+   "anchor": "Axes3D.__init__#assign:self.fmt_zdata",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r9",
+   "anchor": "Axes3D.__init__#assign:pseudo_bbox",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r10",
+   "anchor": "Axes3D.__init__#call:self.spines[:].set_visible",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r11",
+   "anchor": "Axes3D.convert_zunits",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r12",
+   "anchor": "Axes3D.set_top_view#assign:xdwl",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r13",
+   "anchor": "Axes3D.set_top_view#assign:self.viewLim.intervalx",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r14",
+   "anchor": "Axes3D._init_axis",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r15",
+   "anchor": "Axes3D.get_zaxis",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r16",
+   "anchor": "Axes3D.set_aspect",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r17",
+   "anchor": "Axes3D.set_aspect#if:aspect in ('equal', 'equalxy', 'equalxz', 'equalyz')/if:self._adjustable == 'datalim'/else",
+   "kind": "trail",
+   "line": 349
+  },
+  {
+   "id": "r18",
+   "anchor": "Axes3D.set_aspect#if:aspect in ('equal', 'equalxy', 'equalxz', 'equalyz')/if:self._adjustable == 'datalim'/else/assign:box_aspect",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r19",
+   "anchor": "Axes3D._equal_aspect_axis_indices",
+   "kind": "doc",
+   "line": 363
+  },
+  {
+   "id": "r20",
+   "anchor": "Axes3D._equal_aspect_axis_indices#assign:ax_indices",
+   "kind": "trail",
+   "line": 373
+  },
+  {
+   "id": "r21",
+   "anchor": "Axes3D.set_box_aspect",
+   "kind": "doc",
+   "line": 384
+  },
+  {
+   "id": "r22",
+   "anchor": "Axes3D.set_box_aspect#assign:aspect",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r23",
+   "anchor": "Axes3D.apply_aspect#assign:trans",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r24",
+   "anchor": "Axes3D.apply_aspect#assign:fig_aspect",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r25",
+   "anchor": "Axes3D.draw#call:self.patch.draw",
+   "kind": "lead",
+   "line": 446
+  },
+  {
+   "id": "r26",
+   "anchor": "Axes3D.draw#assign:locator",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r27",
+   "anchor": "Axes3D.draw#assign:self.M",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r28",
+   "anchor": "Axes3D.draw#if:self.computed_zorder/assign:zorder_offset",
+   "kind": "lead",
+   "line": 467
+  },
+  {
+   "id": "r29",
+   "anchor": "Axes3D.draw#if:self._axis3don/for:axis in self._axis_map.values()",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r30",
+   "anchor": "Axes3D.draw#if:self._axis3don/for:axis in self._axis_map.values()",
+   "kind": "lead",
+   "line": 489
+  },
+  {
+   "id": "r31",
+   "anchor": "Axes3D.draw#call:super().draw",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r32",
+   "anchor": "Axes3D.update_datalim",
+   "kind": "doc",
+   "line": 503
+  },
+  {
+   "id": "r33",
+   "anchor": "Axes3D.set_zmargin",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r34",
+   "anchor": "Axes3D.margins",
+   "kind": "doc",
+   "line": 534
+  },
+  {
+   "id": "r35",
+   "anchor": "Axes3D.autoscale",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r36",
+   "anchor": "Axes3D.auto_scale_xyz#if:np.shape(X) == np.shape(Y)",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r37",
+   "anchor": "Axes3D.auto_scale_xyz#call:self.autoscale_view",
+   "kind": "lead",
+   "line": 617
+  },
+  {
+   "id": "r38",
+   "anchor": "Axes3D.autoscale_view",
+   "kind": "doc",
+   "line": 619
+  },
+  {
+   "id": "r39",
+   "anchor": "Axes3D.autoscale_view#if:tight is None",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r40",
+   "anchor": "Axes3D.autoscale_view#if:tight is None/if:not _tight/for:artist in self._children",
+   "kind": "lead",
+   "line": 633
+  },
+  {
+   "id": "r41",
+   "anchor": "Axes3D.get_w_lims",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r42",
+   "anchor": "Axes3D.set_zlim",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r43",
+   "anchor": "Axes3D.set_zlim",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r44",
+   "anchor": "Axes3D.get_xlim#return",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r45",
+   "anchor": "Axes3D.get_ylim#return",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r46",
+   "anchor": "Axes3D.get_zlim",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r47",
+   "anchor": "Axes3D.set_xscale",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r48",
+   "anchor": "Axes3D.clabel",
+   "kind": "doc",
+   "line": 766
+  },
+  {
+   "id": "r49",
+   "anchor": "Axes3D.view_init",
+   "kind": "doc",
+   "line": 770
+  },
+  {
+   "id": "r50",
+   "anchor": "Axes3D.view_init#assign:self._dist",
+   "kind": "trail",
+   "line": 819
+  },
+  {
+   "id": "r51",
+   "anchor": "Axes3D.set_proj_type",
+   "kind": "doc",
+   "line": 840
+  },
+  {
+   "id": "r52",
+   "anchor": "Axes3D.set_proj_type#if:proj_type == 'persp'/else",
+   "kind": "trail",
+   "line": 862
+  },
+  {
+   "id": "r53",
+   "anchor": "Axes3D._roll_to_vertical",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r54",
+   "anchor": "Axes3D.get_proj",
+   "kind": "doc",
+   "line": 872
+  },
+  {
+   "id": "r55",
+   "anchor": "Axes3D.get_proj#assign:box_aspect",
+   "kind": "lead",
+   "line": 876
+  },
+  {
+   "id": "r56",
+   "anchor": "Axes3D.get_proj#assign:R",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r57",
+   "anchor": "Axes3D.get_proj#assign:elev_rad",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r58",
+   "anchor": "Axes3D.get_proj#assign:ps",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r59",
+   "anchor": "Axes3D.get_proj#assign:eye",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r60",
+   "anchor": "Axes3D.get_proj#assign:vvec",
+   "kind": "lead",
+   "line": 907
+  },
+  {
+   "id": "r61",
+   "anchor": "Axes3D.get_proj#assign:u, v, w",
+   "kind": "lead",
+   "line": 912
+  },
+  {
+   "id": "r62",
+   "anchor": "Axes3D.get_proj#assign:self._view_u",
+   "kind": "trail",
+   "line": 913
+  },
+  {
+   "id": "r63",
+   "anchor": "Axes3D.get_proj#assign:self._view_v",
+   "kind": "trail",
+   "line": 914
+  },
+  {
+   "id": "r64",
+   "anchor": "Axes3D.get_proj#assign:self._view_w",
+   "kind": "trail",
+   "line": 915
+  },
+  {
+   "id": "r65",
+   "anchor": "Axes3D.get_proj#if:self._focal_length == np.inf",
+   "kind": "lead",
+   "line": 918
+  },
+  {
+   "id": "r66",
+   "anchor": "Axes3D.get_proj#if:self._focal_length == np.inf/assign:viewM",
+   "kind": "lead",
+   "line": 920
+  },
+  {
+   "id": "r67",
+   "anchor": "Axes3D.get_proj#if:self._focal_length == np.inf/else/assign:eye_focal",
+   "kind": "lead",
+   "line": 925
+  },
+  {
+   "id": "r68",
+   "anchor": "Axes3D.get_proj#assign:M0",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r69",
+   "anchor": "Axes3D.mouse_init",
+   "kind": "doc",
+   "line": 936
+  },
+  {
+   "id": "r70",
+   "anchor": "Axes3D.mouse_init#assign:self._rotate_btn",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r71",
+   "anchor": "Axes3D.disable_mouse_rotation",
+   "kind": "doc",
+   "line": 957
+  },
+  {
+   "id": "r72",
+   "anchor": "Axes3D.can_zoom",
+   "kind": "doc",
+   "line": 961
+  },
+  {
+   "id": "r73",
+   "anchor": "Axes3D.can_pan",
+   "kind": "doc",
+   "line": 967
+  },
+  {
+   "id": "r74",
+   "anchor": "Axes3D.sharez",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r75",
+   "anchor": "Axes3D.sharez#assign:self.zaxis.major",
+   "kind": "trail",
+   "line": 986
+  },
+  {
+   "id": "r76",
+   "anchor": "Axes3D.sharez#assign:self.zaxis.minor",
+   "kind": "trail",
+   "line": 987
+  },
+  {
+   "id": "r77",
+   "anchor": "Axes3D.clear#call:super().clear",
+   "kind": "lead",
+   "line": 994
+  },
+  {
+   "id": "r78",
+   "anchor": "Axes3D._button_release#if:toolbar and self.get_navigate_mode() is None",
+   "kind": "lead",
+   "line": 1014
+  },
+  {
+   "id": "r79",
+   "anchor": "Axes3D._get_view#return",
+   "kind": "lead",
+   "line": 1019
+  },
+  {
+   "id": "r80",
+   "anchor": "Axes3D._set_view#assign:xlim, ylim, zlim, elev, azim, roll",
+   "kind": "lead",
+   "line": 1024
+  },
+  {
+   "id": "r81",
+   "anchor": "Axes3D.format_zdata",
+   "kind": "doc",
+   "line": 1030
+  },
+  {
+   "id": "r82",
+   "anchor": "Axes3D.format_coord",
+   "kind": "doc",
+   "line": 1043
+  },
+  {
+   "id": "r83",
+   "anchor": "Axes3D.format_coord#if:self.button_pressed in self._rotate_btn/assign:norm_elev",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r84",
+   "anchor": "Axes3D.format_coord#assign:p0, p1",
+   "kind": "lead",
+   "line": 1064
+  },
+  {
+   "id": "r85",
+   "anchor": "Axes3D.format_coord#assign:x0, y0, z0",
+   "kind": "lead",
+   "line": 1069
+  },
+  {
+   "id": "r86",
+   "anchor": "Axes3D._on_move",
+   "kind": "doc",
+   "line": 1083
+  },
+  {
+   "id": "r87",
+   "anchor": "Axes3D._on_move#if:self.get_navigate_mode() is not None/return",
+   "kind": "lead",
+   "line": 1097
+  },
+  {
+   "id": "r88",
+   "anchor": "Axes3D._on_move#if:x is None or event.inaxes != self",
+   "kind": "lead",
+   "line": 1104
+  },
+  {
+   "id": "r89",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn",
+   "kind": "lead",
+   "line": 1112
+  },
+  {
+   "id": "r90",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn/if:dx == 0 and dy == 0",
+   "kind": "lead",
+   "line": 1115
+  },
+  {
+   "id": "r91",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn/elif:self.button_pressed in self._pan_btn/assign:px, py",
+   "kind": "lead",
+   "line": 1127
+  },
+  {
+   "id": "r92",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn/elif:self.button_pressed in self._pan_btn/call:self.drag_pan",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r93",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn/elif:self.button_pressed in self._zoom_btn",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r94",
+   "anchor": "Axes3D._on_move#if:self.button_pressed in self._rotate_btn/elif:self.button_pressed in self._zoom_btn/assign:scale",
+   "kind": "lead",
+   "line": 1136
+  },
+  {
+   "id": "r95",
+   "anchor": "Axes3D._on_move#assign:self._sx, self._sy",
+   "kind": "lead",
+   "line": 1140
+  },
+  {
+   "id": "r96",
+   "anchor": "Axes3D._on_move#call:self.figure.canvas.draw_idle",
+   "kind": "lead",
+   "line": 1142
+  },
+  {
+   "id": "r97",
+   "anchor": "Axes3D.drag_pan#assign:p",
+   "kind": "lead",
+   "line": 1148
+  },
+  {
+   "id": "r98",
+   "anchor": "Axes3D.drag_pan#assign:p",
+   "kind": "lead",
+   "line": 1148
+  },
+  {
+   "id": "r99",
+   "anchor": "Axes3D.drag_pan#call:self.start_pan",
+   "kind": "lead",
+   "line": 1154
+  },
+  {
+   "id": "r100",
+   "anchor": "Axes3D.drag_pan#assign:R",
+   "kind": "lead",
+   "line": 1165
+  },
+  {
+   "id": "r101",
+   "anchor": "Axes3D.drag_pan#assign:minx, maxx, miny, maxy, minz, maxz",
+   "kind": "lead",
+   "line": 1170
+  },
+  {
+   "id": "r102",
+   "anchor": "Axes3D.drag_pan#call:self.set_xlim3d",
+   "kind": "lead",
+   "line": 1176
+  },
+  {
+   "id": "r103",
+   "anchor": "Axes3D._calc_view_axes",
+   "kind": "doc",
+   "line": 1180
+  },
+  {
+   "id": "r104",
+   "anchor": "Axes3D._calc_view_axes#assign:R",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r105",
+   "anchor": "Axes3D._calc_view_axes#assign:V",
+   "kind": "lead",
+   "line": 1196
+  },
+  {
+   "id": "r106",
+   "anchor": "Axes3D._set_view_from_bbox",
+   "kind": "doc",
+   "line": 1202
+  },
+  {
+   "id": "r107",
+   "anchor": "Axes3D._set_view_from_bbox#assign:start_x, stop_x",
+   "kind": "lead",
+   "line": 1219
+  },
+  {
+   "id": "r108",
+   "anchor": "Axes3D._set_view_from_bbox#assign:zoom_center_x",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r109",
+   "anchor": "Axes3D._set_view_from_bbox#assign:dx",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r110",
+   "anchor": "Axes3D._set_view_from_bbox#assign:scale",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r111",
+   "anchor": "Axes3D._set_view_from_bbox#if:direction == 'out'",
+   "kind": "lead",
+   "line": 1245
+  },
+  {
+   "id": "r112",
+   "anchor": "Axes3D._zoom_data_limits",
+   "kind": "doc",
+   "line": 1250
+  },
+  {
+   "id": "r113",
+   "anchor": "Axes3D._zoom_data_limits#if:not np.allclose(scale, scale_u)",
+   "kind": "lead",
+   "line": 1274
+  },
+  {
+   "id": "r114",
+   "anchor": "Axes3D._zoom_data_limits#if:not np.allclose(scale, scale_u)/assign:R",
+   "kind": "lead",
+   "line": 1276
+  },
+  {
+   "id": "r115",
+   "anchor": "Axes3D._zoom_data_limits#if:not np.allclose(scale, scale_u)/if:self._aspect in ('equal', 'equalxy', 'equalxz', 'equalyz')",
+   "kind": "lead",
+   "line": 1281
+  },
+  {
+   "id": "r116",
+   "anchor": "Axes3D._scale_axis_limits",
+   "kind": "doc",
+   "line": 1288
+  },
+  {
+   "id": "r117",
+   "anchor": "Axes3D._scale_axis_limits#assign:minx, maxx, miny, maxy, minz, maxz",
+   "kind": "lead",
+   "line": 1304
+  },
+  {
+   "id": "r118",
+   "anchor": "Axes3D._scale_axis_limits#assign:dx",
+   "kind": "lead",
+   "line": 1310
+  },
+  {
+   "id": "r119",
+   "anchor": "Axes3D._scale_axis_limits#call:self.set_xlim3d",
+   "kind": "lead",
+   "line": 1315
+  },
+  {
+   "id": "r120",
+   "anchor": "Axes3D.set_zlabel",
+   "kind": "doc",
+   "line": 1319
+  },
+  {
+   "id": "r121",
+   "anchor": "Axes3D.get_zlabel",
+   "kind": "doc",
+   "line": 1327
+  },
+  {
+   "id": "r122",
+   "anchor": "Axes3D.get_frame_on",
+   "kind": "lead",
+   "line": 1336
+  },
+  {
+   "id": "r123",
+   "anchor": "Axes3D.get_frame_on",
+   "kind": "doc",
+   "line": 1336
+  },
+  {
+   "id": "r124",
+   "anchor": "Axes3D.set_frame_on",
+   "kind": "doc",
+   "line": 1340
+  },
+  {
+   "id": "r125",
+   "anchor": "Axes3D.grid",
+   "kind": "doc",
+   "line": 1351
+  },
+  {
+   "id": "r126",
+   "anchor": "Axes3D.grid#if:len(kwargs)",
+   "kind": "todo",
+   "line": 1362
+  },
+  {
+   "id": "r127",
+   "anchor": "Axes3D.tick_params",
+   "kind": "doc",
+   "line": 1367
+  },
+  {
+   "id": "r128",
+   "anchor": "Axes3D.invert_zaxis",
+   "kind": "lead",
+   "line": 1397
+  },
+  {
+   "id": "r129",
+   "anchor": "Axes3D.invert_zaxis",
+   "kind": "doc",
+   "line": 1397
+  },
+  {
+   "id": "r130",
+   "anchor": "Axes3D.get_zbound",
+   "kind": "doc",
+   "line": 1406
+  },
+  {
+   "id": "r131",
+   "anchor": "Axes3D.set_zbound",
+   "kind": "doc",
+   "line": 1416
+  },
+  {
+   "id": "r132",
+   "anchor": "Axes3D.text",
+   "kind": "doc",
+   "line": 1436
+  },
+  {
+   "id": "r133",
+   "anchor": "Axes3D.plot",
+   "kind": "doc",
+   "line": 1451
+  },
+  {
+   "id": "r134",
+   "anchor": "Axes3D.plot#if:args and not isinstance(args[0], str)",
+   "kind": "lead",
+   "line": 1474
+  },
+  {
+   "id": "r135",
+   "anchor": "Axes3D.plot#assign:zs",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r136",
+   "anchor": "Axes3D.plot_surface",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r137",
+   "anchor": "Axes3D.plot_surface#if:mpl.rcParams['_internal.classic_mode']/assign:compute_strides",
+   "kind": "lead",
+   "line": 1588
+  },
+  {
+   "id": "r138",
+   "anchor": "Axes3D.plot_surface#if:mpl.rcParams['_internal.classic_mode']/else/assign:compute_strides",
+   "kind": "lead",
+   "line": 1592
+  },
+  {
+   "id": "r139",
+   "anchor": "Axes3D.plot_surface#assign:colset",
+   "kind": "trail",
+   "line": 1611
+  },
+  {
+   "id": "r140",
+   "anchor": "Axes3D.plot_surface#if:(rows - 1) % rstride == 0 and (cols - 1) % cstride == 0 and fcolors is None/else/assign:row_inds",
+   "kind": "lead",
+   "line": 1621
+  },
+  {
+   "id": "r141",
+   "anchor": "Axes3D.plot_surface#if:(rows - 1) % rstride == 0 and (cols - 1) % cstride == 0 and fcolors is None/else/for:rs, rs_next in zip(row_inds[:-1], row_inds[1:])/for:cs, cs_next in zip(col_inds[:-1], col_inds[1:])/assign:ps",
+   "kind": "lead",
+   "line": 1627
+  },
+  {
+   "id": "r142",
+   "anchor": "Axes3D.plot_surface#if:(rows - 1) % rstride == 0 and (cols - 1) % cstride == 0 and fcolors is None/else/for:rs, rs_next in zip(row_inds[:-1], row_inds[1:])/for:cs, cs_next in zip(col_inds[:-1], col_inds[1:])/assign:ps",
+   "kind": "lead",
+   "line": 1633
+  },
+  {
+   "id": "r143",
+   "anchor": "Axes3D.plot_surface#if:not isinstance(polys, np.ndarray) or np.isnan(polys).any()",
+   "kind": "lead",
+   "line": 1642
+  },
+  {
+   "id": "r144",
+   "anchor": "Axes3D.plot_surface#if:not isinstance(polys, np.ndarray) or np.isnan(polys).any()/for:p, col in itertools.zip_longest(polys, colset)",
+   "kind": "lead",
+   "line": 1649
+  },
+  {
+   "id": "r145",
+   "anchor": "Axes3D.plot_surface#if:not isinstance(polys, np.ndarray) or np.isnan(polys).any()/assign:polys",
+   "kind": "lead",
+   "line": 1656
+  },
+  {
+   "id": "r146",
+   "anchor": "Axes3D.plot_surface#if:fcolors is not None",
+   "kind": "lead",
+   "line": 1663
+  },
+  {
+   "id": "r147",
+   "anchor": "Axes3D.plot_surface#if:fcolors is not None/elif:cmap/if:isinstance(polys, np.ndarray)",
+   "kind": "lead",
+   "line": 1670
+  },
+  {
+   "id": "r148",
+   "anchor": "Axes3D.plot_wireframe",
+   "kind": "doc",
+   "line": 1689
+  },
+  {
+   "id": "r149",
+   "anchor": "Axes3D.plot_wireframe#assign:X, Y, Z",
+   "kind": "todo",
+   "line": 1731
+  },
+  {
+   "id": "r150",
+   "anchor": "Axes3D.plot_wireframe#if:mpl.rcParams['_internal.classic_mode']/if:has_count",
+   "kind": "lead",
+   "line": 1749
+  },
+  {
+   "id": "r151",
+   "anchor": "Axes3D.plot_wireframe#if:mpl.rcParams['_internal.classic_mode']/else/if:not has_stride",
+   "kind": "lead",
+   "line": 1755
+  },
+  {
+   "id": "r152",
+   "anchor": "Axes3D.plot_wireframe#assign:tX, tY, tZ",
+   "kind": "lead",
+   "line": 1762
+  },
+  {
+   "id": "r153",
+   "anchor": "Axes3D.plot_wireframe#if:rstride/if:rows > 0 and rii[-1] != (rows - 1)",
+   "kind": "lead",
+   "line": 1767
+  },
+  {
+   "id": "r154",
+   "anchor": "Axes3D.plot_wireframe#if:cstride/if:cols > 0 and cii[-1] != (cols - 1)",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r155",
+   "anchor": "Axes3D.plot_wireframe#if:Z.size == 0",
+   "kind": "lead",
+   "line": 1784
+  },
+  {
+   "id": "r156",
+   "anchor": "Axes3D.plot_trisurf",
+   "kind": "doc",
+   "line": 1807
+  },
+  {
+   "id": "r157",
+   "anchor": "Axes3D.plot_trisurf#if:color is None",
+   "kind": "todo",
+   "line": 1863
+  },
+  {
+   "id": "r158",
+   "anchor": "Axes3D.plot_trisurf#try/except:KeyError/assign:z, *args",
+   "kind": "lead",
+   "line": 1876
+  },
+  {
+   "id": "r159",
+   "anchor": "Axes3D.plot_trisurf#if:cmap/assign:avg_z",
+   "kind": "lead",
+   "line": 1888
+  },
+  {
+   "id": "r160",
+   "anchor": "Axes3D._3d_extend_contour",
+   "kind": "doc",
+   "line": 1904
+  },
+  {
+   "id": "r161",
+   "anchor": "Axes3D._3d_extend_contour#for:z, linec in zip(levels, colls)/assign:polyverts",
+   "kind": "lead",
+   "line": 1940
+  },
+  {
+   "id": "r162",
+   "anchor": "Axes3D._add_contourf_set",
+   "kind": "doc",
+   "line": 1965
+  },
+  {
+   "id": "r163",
+   "anchor": "Axes3D._add_contourf_set#if:cset._extend_min",
+   "kind": "lead",
+   "line": 1976
+  },
+  {
+   "id": "r164",
+   "anchor": "Axes3D.contour",
+   "kind": "doc",
+   "line": 1991
+  },
+  {
+   "id": "r165",
+   "anchor": "Axes3D.tricontour",
+   "kind": "doc",
+   "line": 2031
+  },
+  {
+   "id": "r166",
+   "anchor": "Axes3D.tricontour#if:'Z' in kwargs/else/assign:Z, *args",
+   "kind": "lead",
+   "line": 2072
+  },
+  {
+   "id": "r167",
+   "anchor": "Axes3D._auto_scale_contourf#assign:dim_vals",
+   "kind": "lead",
+   "line": 2086
+  },
+  {
+   "id": "r168",
+   "anchor": "Axes3D._auto_scale_contourf#assign:limits",
+   "kind": "lead",
+   "line": 2089
+  },
+  {
+   "id": "r169",
+   "anchor": "Axes3D.contourf",
+   "kind": "doc",
+   "line": 2094
+  },
+  {
+   "id": "r170",
+   "anchor": "Axes3D.tricontourf",
+   "kind": "doc",
+   "line": 2128
+  },
+  {
+   "id": "r171",
+   "anchor": "Axes3D.tricontourf#if:'Z' in kwargs/else/assign:Z, *args",
+   "kind": "lead",
+   "line": 2165
+  },
+  {
+   "id": "r172",
+   "anchor": "Axes3D.add_collection3d",
+   "kind": "doc",
+   "line": 2176
+  },
+  {
+   "id": "r173",
+   "anchor": "Axes3D.add_collection3d#assign:zsortval",
+   "kind": "trail",
+   "line": 2191
+  },
+  {
+   "id": "r174",
+   "anchor": "Axes3D.add_collection3d#if:type(col) is mcoll.PolyCollection",
+   "kind": "lead",
+   "line": 2196
+  },
+  {
+   "id": "r175",
+   "anchor": "Axes3D.scatter",
+   "kind": "doc",
+   "line": 2212
+  },
+  {
+   "id": "r176",
+   "anchor": "Axes3D.scatter#assign:s",
+   "kind": "trail",
+   "line": 2264
+  },
+  {
+   "id": "r177",
+   "anchor": "Axes3D.scatter#if:np.may_share_memory(zs_orig, zs)",
+   "kind": "lead",
+   "line": 2269
+  },
+  {
+   "id": "r178",
+   "anchor": "Axes3D.scatter#if:np.may_share_memory(zs_orig, zs)",
+   "kind": "trail",
+   "line": 2269
+  },
+  {
+   "id": "r179",
+   "anchor": "Axes3D.bar",
+   "kind": "doc",
+   "line": 2286
+  },
+  {
+   "id": "r180",
+   "anchor": "Axes3D.bar#if:len(verts) > 0/assign:xs, ys",
+   "kind": "lead",
+   "line": 2331
+  },
+  {
+   "id": "r181",
+   "anchor": "Axes3D.bar3d",
+   "kind": "doc",
+   "line": 2341
+  },
+  {
+   "id": "r182",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r183",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r184",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r185",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r186",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r187",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r188",
+   "anchor": "Axes3D.bar3d#assign:cuboid",
+   "kind": "lead",
+   "line": 2416
+  },
+  {
+   "id": "r189",
+   "anchor": "Axes3D.bar3d#assign:polys",
+   "kind": "lead",
+   "line": 2462
+  },
+  {
+   "id": "r190",
+   "anchor": "Axes3D.bar3d#for:i, p, dp in [(0, x, dx), (1, y, dy), (2, z, dz)]",
+   "kind": "lead",
+   "line": 2465
+  },
+  {
+   "id": "r191",
+   "anchor": "Axes3D.bar3d#assign:polys",
+   "kind": "lead",
+   "line": 2471
+  },
+  {
+   "id": "r192",
+   "anchor": "Axes3D.bar3d#if:len(color) == len(x)/for:c in color",
+   "kind": "lead",
+   "line": 2481
+  },
+  {
+   "id": "r193",
+   "anchor": "Axes3D.bar3d#if:len(color) == len(x)/else/assign:facecolors",
+   "kind": "lead",
+   "line": 2485
+  },
+  {
+   "id": "r194",
+   "anchor": "Axes3D.set_title#assign:ret",
+   "kind": "lead",
+   "line": 2503
+  },
+  {
+   "id": "r195",
+   "anchor": "Axes3D.quiver",
+   "kind": "doc",
+   "line": 2509
+  },
+  {
+   "id": "r196",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:x",
+   "kind": "lead",
+   "line": 2553
+  },
+  {
+   "id": "r197",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:ra",
+   "kind": "lead",
+   "line": 2559
+  },
+  {
+   "id": "r198",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:Rpos",
+   "kind": "lead",
+   "line": 2563
+  },
+  {
+   "id": "r199",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:Rneg",
+   "kind": "lead",
+   "line": 2568
+  },
+  {
+   "id": "r200",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:Rpos_vecs",
+   "kind": "lead",
+   "line": 2571
+  },
+  {
+   "id": "r201",
+   "anchor": "Axes3D.quiver.calc_arrows#assign:head_dirs",
+   "kind": "lead",
+   "line": 2574
+  },
+  {
+   "id": "r202",
+   "anchor": "Axes3D.quiver#assign:masks",
+   "kind": "lead",
+   "line": 2582
+  },
+  {
+   "id": "r203",
+   "anchor": "Axes3D.quiver#assign:bcast",
+   "kind": "lead",
+   "line": 2585
+  },
+  {
+   "id": "r204",
+   "anchor": "Axes3D.quiver#if:masks/assign:mask",
+   "kind": "lead",
+   "line": 2590
+  },
+  {
+   "id": "r205",
+   "anchor": "Axes3D.quiver#if:masks/assign:input_args",
+   "kind": "lead",
+   "line": 2592
+  },
+  {
+   "id": "r206",
+   "anchor": "Axes3D.quiver#if:any(len(v) == 0 for v in input_args)/assign:linec",
+   "kind": "lead",
+   "line": 2599
+  },
+  {
+   "id": "r207",
+   "anchor": "Axes3D.quiver#assign:norm",
+   "kind": "lead",
+   "line": 2616
+  },
+  {
+   "id": "r208",
+   "anchor": "Axes3D.quiver#assign:mask",
+   "kind": "lead",
+   "line": 2619
+  },
+  {
+   "id": "r209",
+   "anchor": "Axes3D.quiver#if:len(XYZ) > 0/assign:shafts",
+   "kind": "lead",
+   "line": 2628
+  },
+  {
+   "id": "r210",
+   "anchor": "Axes3D.quiver#if:len(XYZ) > 0/assign:head_dirs",
+   "kind": "lead",
+   "line": 2630
+  },
+  {
+   "id": "r211",
+   "anchor": "Axes3D.quiver#if:len(XYZ) > 0/assign:heads",
+   "kind": "lead",
+   "line": 2632
+  },
+  {
+   "id": "r212",
+   "anchor": "Axes3D.quiver#if:len(XYZ) > 0/assign:heads",
+   "kind": "lead",
+   "line": 2634
+  },
+  {
+   "id": "r213",
+   "anchor": "Axes3D.quiver#if:len(XYZ) > 0/assign:heads",
+   "kind": "lead",
+   "line": 2636
+  },
+  {
+   "id": "r214",
+   "anchor": "Axes3D.voxels",
+   "kind": "doc",
+   "line": 2651
+  },
+  {
+   "id": "r215",
+   "anchor": "Axes3D.voxels#if:len(args) >= 3",
+   "kind": "lead",
+   "line": 2722
+  },
+  {
+   "id": "r216",
+   "anchor": "Axes3D.voxels.voxels",
+   "kind": "lead",
+   "line": 2724
+  },
+  {
+   "id": "r217",
+   "anchor": "Axes3D.voxels#if:filled.ndim != 3",
+   "kind": "lead",
+   "line": 2733
+  },
+  {
+   "id": "r218",
+   "anchor": "Axes3D.voxels#assign:coord_shape",
+   "kind": "lead",
+   "line": 2738
+  },
+  {
+   "id": "r219",
+   "anchor": "Axes3D.voxels._broadcast_color_arg#if:np.ndim(color) in (0, 1)/return",
+   "kind": "lead",
+   "line": 2747
+  },
+  {
+   "id": "r220",
+   "anchor": "Axes3D.voxels._broadcast_color_arg#if:np.ndim(color) in (0, 1)/elif:np.ndim(color) in (3, 4)/if:np.shape(color)[:3] != filled.shape",
+   "kind": "lead",
+   "line": 2750
+  },
+  {
+   "id": "r221",
+   "anchor": "Axes3D.voxels#if:facecolors is None",
+   "kind": "lead",
+   "line": 2759
+  },
+  {
+   "id": "r222",
+   "anchor": "Axes3D.voxels#assign:edgecolors",
+   "kind": "lead",
+   "line": 2764
+  },
+  {
+   "id": "r223",
+   "anchor": "Axes3D.voxels#call:self.auto_scale_xyz",
+   "kind": "lead",
+   "line": 2767
+  },
+  {
+   "id": "r224",
+   "anchor": "Axes3D.voxels#assign:square",
+   "kind": "lead",
+   "line": 2770
+  },
+  {
+   "id": "r225",
+   "anchor": "Axes3D.voxels.permutation_matrices",
+   "kind": "doc",
+   "line": 2779
+  },
+  {
+   "id": "r226",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)",
+   "kind": "lead",
+   "line": 2788
+  },
+  {
+   "id": "r227",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/assign:pc, qc, rc",
+   "kind": "lead",
+   "line": 2790
+  },
+  {
+   "id": "r228",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/for:p in pinds",
+   "kind": "lead",
+   "line": 2799
+  },
+  {
+   "id": "r229",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/for:p in pinds/for:q in qinds/assign:p0",
+   "kind": "lead",
+   "line": 2806
+  },
+  {
+   "id": "r230",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/for:p in pinds/for:q in qinds/assign:p0",
+   "kind": "lead",
+   "line": 2806
+  },
+  {
+   "id": "r231",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/for:p in pinds/for:q in qinds/for:r1, r2 in zip(rinds[:-1], rinds[1:])",
+   "kind": "lead",
+   "line": 2812
+  },
+  {
+   "id": "r232",
+   "anchor": "Axes3D.voxels#for:permute in permutation_matrices(3)/for:p in pinds/for:q in qinds/assign:pk",
+   "kind": "lead",
+   "line": 2825
+  },
+  {
+   "id": "r233",
+   "anchor": "Axes3D.voxels#assign:polygons",
+   "kind": "lead",
+   "line": 2833
+  },
+  {
+   "id": "r234",
+   "anchor": "Axes3D.voxels#for:coord, faces_inds in voxel_faces.items()/if:xyz is None",
+   "kind": "lead",
+   "line": 2836
+  },
+  {
+   "id": "r235",
+   "anchor": "Axes3D.voxels#for:coord, faces_inds in voxel_faces.items()/assign:facecolor",
+   "kind": "lead",
+   "line": 2849
+  },
+  {
+   "id": "r236",
+   "anchor": "Axes3D.errorbar",
+   "kind": "doc",
+   "line": 2861
+  },
+  {
+   "id": "r237",
+   "anchor": "Axes3D.errorbar#assign:kwargs",
+   "kind": "lead",
+   "line": 2971
+  },
+  {
+   "id": "r238",
+   "anchor": "Axes3D.errorbar#assign:x",
+   "kind": "lead",
+   "line": 2979
+  },
+  {
+   "id": "r239",
+   "anchor": "Axes3D.errorbar#assign:(data_line, base_style)",
+   "kind": "lead",
+   "line": 2995
+  },
+  {
+   "id": "r240",
+   "anchor": "Axes3D.errorbar#if:barsabove",
+   "kind": "lead",
+   "line": 3000
+  },
+  {
+   "id": "r241",
+   "anchor": "Axes3D.errorbar#if:fmt.lower() != 'none'",
+   "kind": "lead",
+   "line": 3006
+  },
+  {
+   "id": "r242",
+   "anchor": "Axes3D.errorbar#if:fmt.lower() != 'none'/else/call:base_style.pop",
+   "kind": "lead",
+   "line": 3011
+  },
+  {
+   "id": "r243",
+   "anchor": "Axes3D.errorbar#for:key in ['marker', 'markersize', 'markerfacecolor', 'markeredgewidth', 'markeredgecolor', 'markevery', 'linestyle', 'fillstyle', 'drawstyle', 'dash_capstyle', 'dash_joinstyle', 'solid_capstyle', 'solid_joinstyle']",
+   "kind": "lead",
+   "line": 3020
+  },
+  {
+   "id": "r244",
+   "anchor": "Axes3D.errorbar#assign:eb_lines_style",
+   "kind": "lead",
+   "line": 3027
+  },
+  {
+   "id": "r245",
+   "anchor": "Axes3D.errorbar#assign:eb_cap_style",
+   "kind": "lead",
+   "line": 3039
+  },
+  {
+   "id": "r246",
+   "anchor": "Axes3D.errorbar._apply_mask#return",
+   "kind": "lead",
+   "line": 3051
+  },
+  {
+   "id": "r247",
+   "anchor": "Axes3D.errorbar._extract_errs#if:len(err.shape) == 2",
+   "kind": "lead",
+   "line": 3055
+  },
+  {
+   "id": "r248",
+   "anchor": "Axes3D.errorbar#assign:errlines, caplines, limmarks",
+   "kind": "lead",
+   "line": 3066
+  },
+  {
+   "id": "r249",
+   "anchor": "Axes3D.errorbar#assign:coorderrs",
+   "kind": "lead",
+   "line": 3069
+  },
+  {
+   "id": "r250",
+   "anchor": "Axes3D.errorbar#assign:capmarker",
+   "kind": "lead",
+   "line": 3073
+  },
+  {
+   "id": "r251",
+   "anchor": "Axes3D.errorbar#assign:quiversize",
+   "kind": "lead",
+   "line": 3081
+  },
+  {
+   "id": "r252",
+   "anchor": "Axes3D.errorbar#with:cbook._setattr_cm(self, elev=0, azim=0, roll=0)",
+   "kind": "lead",
+   "line": 3090
+  },
+  {
+   "id": "r253",
+   "anchor": "Axes3D.errorbar#assign:quiversize",
+   "kind": "lead",
+   "line": 3094
+  },
+  {
+   "id": "r254",
+   "anchor": "Axes3D.errorbar#assign:quiversize",
+   "kind": "lead",
+   "line": 3098
+  },
+  {
+   "id": "r255",
+   "anchor": "Axes3D.errorbar#for:zdir, data, err, lolims, uplims in zip(['x', 'y', 'z'], [x, y, z], [xerr, yerr, zerr], [xlolims, ylolims, zlolims], [xuplims, yuplims, zuplims])",
+   "kind": "lead",
+   "line": 3104
+  },
+  {
+   "id": "r256",
+   "anchor": "Axes3D.errorbar#for:zdir, data, err, lolims, uplims in zip(['x', 'y', 'z'], [x, y, z], [xerr, yerr, zerr], [xlolims, ylolims, zlolims], [xuplims, yuplims, zuplims])/assign:lolims",
+   "kind": "lead",
+   "line": 3120
+  },
+  {
+   "id": "r257",
+   "anchor": "Axes3D.errorbar#for:zdir, data, err, lolims, uplims in zip(['x', 'y', 'z'], [x, y, z], [xerr, yerr, zerr], [xlolims, ylolims, zlolims], [xuplims, yuplims, zuplims])/assign:coorderr",
+   "kind": "lead",
+   "line": 3126
+  },
+  {
+   "id": "r258",
+   "anchor": "Axes3D.errorbar#for:zdir, data, err, lolims, uplims in zip(['x', 'y', 'z'], [x, y, z], [xerr, yerr, zerr], [xlolims, ylolims, zlolims], [xuplims, yuplims, zuplims])/assign:nolims",
+   "kind": "lead",
+   "line": 3132
+  },
+  {
+   "id": "r259",
+   "anchor": "Axes3D.errorbar#for:zdir, data, err, lolims, uplims in zip(['x', 'y', 'z'], [x, y, z], [xerr, yerr, zerr], [xlolims, ylolims, zlolims], [xuplims, yuplims, zuplims])/if:nolims.any() and capsize > 0/assign:cap_lo",
+   "kind": "lead",
+   "line": 3139
+  },
+  {
+   "id": "r260",
+   "anchor": "Axes3D.errorbar#assign:errorbar_container",
+   "kind": "lead",
+   "line": 3175
+  },
+  {
+   "id": "r261",
+   "anchor": "Axes3D.stem",
+   "kind": "doc",
+   "line": 3201
+  },
+  {
+   "id": "r262",
+   "anchor": "Axes3D.stem#if:orientation == 'x'",
+   "kind": "lead",
+   "line": 3278
+  },
+  {
+   "id": "r263",
+   "anchor": "Axes3D.stem#assign:linestyle, linemarker, linecolor",
+   "kind": "lead",
+   "line": 3295
+  },
+  {
+   "id": "r264",
+   "anchor": "Axes3D.stem#assign:baseline",
+   "kind": "lead",
+   "line": 3300
+  },
+  {
+   "id": "r265",
+   "anchor": "get_test_data",
+   "kind": "doc",
+   "line": 3320
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 83387,
+  "cache_read_input_tokens": 0,
+  "output_tokens": 28930,
+  "thinking_tokens": 15068,
+  "opus_cost_usd": 1.55713,
+  "total_cost_usd": 1.6184839999999998,
+  "duration_ms": 249342,
+  "duration_api_ms": 251231,
+  "num_turns": 2
+ },
+ "wall_ms": 250969,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

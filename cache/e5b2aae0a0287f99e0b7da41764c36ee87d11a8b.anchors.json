@@ -1,0 +1,907 @@
+{
+ "blob_sha": "e5b2aae0a0287f99e0b7da41764c36ee87d11a8b",
+ "path": "astropy/io/fits/header.py",
+ "repo": "astropy/astropy",
+ "records": 147,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:collections",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "BLOCK_SIZE",
+   "kind": "trail",
+   "line": 20
+  },
+  {
+   "id": "r3",
+   "anchor": "HEADER_END_RE",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r4",
+   "anchor": "VALID_HEADER_CHARS",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "Header",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "Header.__init__",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r7",
+   "anchor": "Header.__contains__#if:keyword in self._keyword_indices or keyword in self._rvkc_indices/return",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r8",
+   "anchor": "Header.__getitem__#if:isinstance(key, slice)/elif:isinstance(key, str)/if:key.upper() in Card._commentary_keywords/return",
+   "kind": "lead",
+   "line": 149
+  },
+  {
+   "id": "r9",
+   "anchor": "Header.__getitem__#if:card.field_specifier is not None and keyword == card.rawkeyword/return",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r10",
+   "anchor": "Header.__setitem__#if:card/else/call:self._update",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r11",
+   "anchor": "Header.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/if:isinstance(key, slice)",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r12",
+   "anchor": "Header.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/if:isinstance(key, slice)/if:key.step and key.step < 0",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r13",
+   "anchor": "Header.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/elif:isinstance(key, str)/assign:key",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r14",
+   "anchor": "Header.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/elif:isinstance(key, str)/if:key not in indices/raise:KeyError",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r15",
+   "anchor": "Header.__delitem__#if:isinstance(key, slice) or self._haswildcard(key)/elif:isinstance(key, str)/for:idx in reversed(indices[key])/del:self[idx]",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r16",
+   "anchor": "Header.__delitem__#if:card.field_specifier is not None",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r17",
+   "anchor": "Header.__delitem__#call:self._updateindices",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r18",
+   "anchor": "Header.__eq__",
+   "kind": "doc",
+   "line": 273
+  },
+  {
+   "id": "r19",
+   "anchor": "Header.cards",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r20",
+   "anchor": "Header.comments",
+   "kind": "doc",
+   "line": 303
+  },
+  {
+   "id": "r21",
+   "anchor": "Header._modified",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r22",
+   "anchor": "Header._modified#if:modified_cards/assign:self.__dict__['_modified']",
+   "kind": "lead",
+   "line": 332
+  },
+  {
+   "id": "r23",
+   "anchor": "Header.fromstring",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r24",
+   "anchor": "Header.fromstring#assign:require_full_cardlength",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r25",
+   "anchor": "Header.fromstring#if:isinstance(data, bytes)/assign:CONTINUE",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r26",
+   "anchor": "Header.fromstring#assign:idx",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r27",
+   "anchor": "Header.fromstring#if:image",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r28",
+   "anchor": "Header.fromfile",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r29",
+   "anchor": "Header.fromfile#if:isinstance(fileobj, path_like)/if:sep",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r30",
+   "anchor": "Header._from_blocks",
+   "kind": "doc",
+   "line": 542
+  },
+  {
+   "id": "r31",
+   "anchor": "Header._from_blocks#try",
+   "kind": "lead",
+   "line": 564
+  },
+  {
+   "id": "r32",
+   "anchor": "Header._from_blocks#if:not is_binary/assign:block",
+   "kind": "todo",
+   "line": 573
+  },
+  {
+   "id": "r33",
+   "anchor": "Header._from_blocks#while:True",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r34",
+   "anchor": "Header._from_blocks#while:True/assign:end_found, block",
+   "kind": "lead",
+   "line": 582
+  },
+  {
+   "id": "r35",
+   "anchor": "Header._from_blocks#if:not end_found and is_eof and endcard/raise:OSError",
+   "kind": "todo",
+   "line": 609
+  },
+  {
+   "id": "r36",
+   "anchor": "Header._find_end_card",
+   "kind": "doc",
+   "line": 614
+  },
+  {
+   "id": "r37",
+   "anchor": "Header._find_end_card#for:mo in HEADER_END_RE.finditer(block)/if:mo.start() % card_len != 0",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r38",
+   "anchor": "Header._find_end_card#for:mo in HEADER_END_RE.finditer(block)/if:mo.group('invalid')",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r39",
+   "anchor": "Header._find_end_card#for:mo in HEADER_END_RE.finditer(block)/if:mo.group('invalid')/if:trailing/call:warnings.warn",
+   "kind": "todo",
+   "line": 637
+  },
+  {
+   "id": "r40",
+   "anchor": "Header._find_end_card#for:mo in HEADER_END_RE.finditer(block)/if:mo.group('invalid')/if:trailing/else/call:warnings.warn",
+   "kind": "todo",
+   "line": 643
+  },
+  {
+   "id": "r41",
+   "anchor": "Header._find_end_card#for:mo in HEADER_END_RE.finditer(block)/if:mo.group('invalid')/assign:block",
+   "kind": "lead",
+   "line": 651
+  },
+  {
+   "id": "r42",
+   "anchor": "Header.tostring",
+   "kind": "doc",
+   "line": 658
+  },
+  {
+   "id": "r43",
+   "anchor": "Header.tostring#for:card in self._cards/while:s",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r44",
+   "anchor": "Header.tofile",
+   "kind": "doc",
+   "line": 703
+  },
+  {
+   "id": "r45",
+   "anchor": "Header.fromtextfile",
+   "kind": "doc",
+   "line": 760
+  },
+  {
+   "id": "r46",
+   "anchor": "Header.totextfile",
+   "kind": "doc",
+   "line": 776
+  },
+  {
+   "id": "r47",
+   "anchor": "Header.clear",
+   "kind": "doc",
+   "line": 793
+  },
+  {
+   "id": "r48",
+   "anchor": "Header.copy",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r49",
+   "anchor": "Header.fromkeys",
+   "kind": "doc",
+   "line": 835
+  },
+  {
+   "id": "r50",
+   "anchor": "Header.get",
+   "kind": "doc",
+   "line": 865
+  },
+  {
+   "id": "r51",
+   "anchor": "Header.set",
+   "kind": "doc",
+   "line": 891
+  },
+  {
+   "id": "r52",
+   "anchor": "Header.set#if:len(keyword) <= KEYWORD_LENGTH and Card._keywd_FSC_RE.match(keyword) and keyword not in self._keyword_indices",
+   "kind": "lead",
+   "line": 952
+  },
+  {
+   "id": "r53",
+   "anchor": "Header.items",
+   "kind": "doc",
+   "line": 979
+  },
+  {
+   "id": "r54",
+   "anchor": "Header.keys",
+   "kind": "doc",
+   "line": 985
+  },
+  {
+   "id": "r55",
+   "anchor": "Header.values",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r56",
+   "anchor": "Header.pop",
+   "kind": "doc",
+   "line": 1000
+  },
+  {
+   "id": "r57",
+   "anchor": "Header.popitem",
+   "kind": "doc",
+   "line": 1024
+  },
+  {
+   "id": "r58",
+   "anchor": "Header.setdefault",
+   "kind": "doc",
+   "line": 1034
+  },
+  {
+   "id": "r59",
+   "anchor": "Header.update",
+   "kind": "doc",
+   "line": 1043
+  },
+  {
+   "id": "r60",
+   "anchor": "Header.append",
+   "kind": "doc",
+   "line": 1156
+  },
+  {
+   "id": "r61",
+   "anchor": "Header.append#if:not end and card.is_blank/assign:end",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r62",
+   "anchor": "Header.append#if:not end/if:not bottom and card.keyword in Card._commentary_keywords",
+   "kind": "lead",
+   "line": 1232
+  },
+  {
+   "id": "r63",
+   "anchor": "Header.append#if:not end/if:useblanks and self._countblanks()",
+   "kind": "lead",
+   "line": 1236
+  },
+  {
+   "id": "r64",
+   "anchor": "Header.append#if:not end/if:useblanks and self._countblanks()/call:self._useblanks",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r65",
+   "anchor": "Header.extend",
+   "kind": "doc",
+   "line": 1246
+  },
+  {
+   "id": "r66",
+   "anchor": "Header.extend#assign:extend_cards",
+   "kind": "lead",
+   "line": 1305
+  },
+  {
+   "id": "r67",
+   "anchor": "Header.extend#for:idx, card in enumerate(temp.cards)/if:keyword not in Card._commentary_keywords/if:unique and not update and keyword in self/elif:update/if:idx == 0 and update_first/if:(keyword == 'SIMPLE' and first == 'XTENSION') or (keyword == 'XTENSION' and first == 'SIMPLE')",
+   "kind": "lead",
+   "line": 1317
+  },
+  {
+   "id": "r68",
+   "anchor": "Header.count",
+   "kind": "doc",
+   "line": 1346
+  },
+  {
+   "id": "r69",
+   "anchor": "Header.count#if:keyword not in self._keyword_indices",
+   "kind": "lead",
+   "line": 1362
+  },
+  {
+   "id": "r70",
+   "anchor": "Header.index",
+   "kind": "doc",
+   "line": 1367
+  },
+  {
+   "id": "r71",
+   "anchor": "Header.insert",
+   "kind": "doc",
+   "line": 1405
+  },
+  {
+   "id": "r72",
+   "anchor": "Header.insert#if:not isinstance(key, numbers.Integral)/assign:idx",
+   "kind": "lead",
+   "line": 1437
+  },
+  {
+   "id": "r73",
+   "anchor": "Header.insert#if:idx >= len(self._cards)/call:self.append",
+   "kind": "lead",
+   "line": 1451
+  },
+  {
+   "id": "r74",
+   "anchor": "Header.insert#if:idx < 0",
+   "kind": "lead",
+   "line": 1469
+  },
+  {
+   "id": "r75",
+   "anchor": "Header.insert#call:self._updateindices",
+   "kind": "lead",
+   "line": 1475
+  },
+  {
+   "id": "r76",
+   "anchor": "Header.insert#if:count > 1/if:keyword not in Card._commentary_keywords",
+   "kind": "lead",
+   "line": 1482
+  },
+  {
+   "id": "r77",
+   "anchor": "Header.insert#if:card.field_specifier is not None/assign:rvkc_indices",
+   "kind": "lead",
+   "line": 1490
+  },
+  {
+   "id": "r78",
+   "anchor": "Header.remove",
+   "kind": "doc",
+   "line": 1499
+  },
+  {
+   "id": "r79",
+   "anchor": "Header.rename_keyword",
+   "kind": "doc",
+   "line": 1527
+  },
+  {
+   "id": "r80",
+   "anchor": "Header.add_history",
+   "kind": "doc",
+   "line": 1565
+  },
+  {
+   "id": "r81",
+   "anchor": "Header.add_comment",
+   "kind": "doc",
+   "line": 1583
+  },
+  {
+   "id": "r82",
+   "anchor": "Header.add_blank",
+   "kind": "doc",
+   "line": 1601
+  },
+  {
+   "id": "r83",
+   "anchor": "Header.strip",
+   "kind": "doc",
+   "line": 1619
+  },
+  {
+   "id": "r84",
+   "anchor": "Header.strip#assign:naxis",
+   "kind": "todo",
+   "line": 1635
+  },
+  {
+   "id": "r85",
+   "anchor": "Header.data_size",
+   "kind": "doc",
+   "line": 1652
+  },
+  {
+   "id": "r86",
+   "anchor": "Header.data_size_padded",
+   "kind": "doc",
+   "line": 1659
+  },
+  {
+   "id": "r87",
+   "anchor": "Header._update",
+   "kind": "doc",
+   "line": 1667
+  },
+  {
+   "id": "r88",
+   "anchor": "Header._update#assign:keyword",
+   "kind": "lead",
+   "line": 1680
+  },
+  {
+   "id": "r89",
+   "anchor": "Header._update#if:keyword not in Card._commentary_keywords and keyword in self._keyword_indices/assign:idx",
+   "kind": "lead",
+   "line": 1687
+  },
+  {
+   "id": "r90",
+   "anchor": "Header._update#if:keyword not in Card._commentary_keywords and keyword in self._keyword_indices/if:comment is not None/assign:existing_card.comment",
+   "kind": "lead",
+   "line": 1692
+  },
+  {
+   "id": "r91",
+   "anchor": "Header._update#if:keyword not in Card._commentary_keywords and keyword in self._keyword_indices/elif:keyword in Card._commentary_keywords/if:keyword in self._keyword_indices/assign:idx",
+   "kind": "lead",
+   "line": 1699
+  },
+  {
+   "id": "r92",
+   "anchor": "Header._update#if:keyword not in Card._commentary_keywords and keyword in self._keyword_indices/else/call:self.append",
+   "kind": "lead",
+   "line": 1708
+  },
+  {
+   "id": "r93",
+   "anchor": "Header._cardindex",
+   "kind": "doc",
+   "line": 1710
+  },
+  {
+   "id": "r94",
+   "anchor": "Header._cardindex#if:isinstance(key, str)",
+   "kind": "lead",
+   "line": 1716
+  },
+  {
+   "id": "r95",
+   "anchor": "Header._cardindex#if:isinstance(key, str)/elif:isinstance(key, numbers.Integral)/if:key < 0",
+   "kind": "lead",
+   "line": 1721
+  },
+  {
+   "id": "r96",
+   "anchor": "Header._cardindex#assign:indices",
+   "kind": "lead",
+   "line": 1743
+  },
+  {
+   "id": "r97",
+   "anchor": "Header._cardindex#if:keyword and not indices/if:len(keyword) > KEYWORD_LENGTH or '.' in keyword/else/assign:indices",
+   "kind": "lead",
+   "line": 1750
+  },
+  {
+   "id": "r98",
+   "anchor": "Header._keyword_from_index",
+   "kind": "doc",
+   "line": 1761
+  },
+  {
+   "id": "r99",
+   "anchor": "Header._relativeinsert",
+   "kind": "doc",
+   "line": 1780
+  },
+  {
+   "id": "r100",
+   "anchor": "Header._relativeinsert#if:replace/assign:old_idx",
+   "kind": "lead",
+   "line": 1811
+  },
+  {
+   "id": "r101",
+   "anchor": "Header._relativeinsert#if:replace/if:insertion_idx >= len(self._cards) and old_idx == len(self._cards) - 1/return",
+   "kind": "lead",
+   "line": 1818
+  },
+  {
+   "id": "r102",
+   "anchor": "Header._relativeinsert#assign:idx",
+   "kind": "lead",
+   "line": 1830
+  },
+  {
+   "id": "r103",
+   "anchor": "Header._updateindices",
+   "kind": "doc",
+   "line": 1839
+  },
+  {
+   "id": "r104",
+   "anchor": "Header._updateindices#if:idx > len(self._cards)/return",
+   "kind": "lead",
+   "line": 1846
+  },
+  {
+   "id": "r105",
+   "anchor": "Header._countblanks",
+   "kind": "doc",
+   "line": 1856
+  },
+  {
+   "id": "r106",
+   "anchor": "Header._haswildcard",
+   "kind": "doc",
+   "line": 1871
+  },
+  {
+   "id": "r107",
+   "anchor": "Header._wildcardmatch",
+   "kind": "doc",
+   "line": 1877
+  },
+  {
+   "id": "r108",
+   "anchor": "Header._set_slice",
+   "kind": "doc",
+   "line": 1894
+  },
+  {
+   "id": "r109",
+   "anchor": "Header._splitcommentary",
+   "kind": "doc",
+   "line": 1915
+  },
+  {
+   "id": "r110",
+   "anchor": "Header._splitcommentary#assign:maxlen",
+   "kind": "lead",
+   "line": 1926
+  },
+  {
+   "id": "r111",
+   "anchor": "Header._splitcommentary#if:len(valuestr) <= maxlen/assign:cards",
+   "kind": "lead",
+   "line": 1931
+  },
+  {
+   "id": "r112",
+   "anchor": "Header._splitcommentary#if:len(valuestr) <= maxlen/else/assign:idx",
+   "kind": "lead",
+   "line": 1935
+  },
+  {
+   "id": "r113",
+   "anchor": "Header._add_commentary",
+   "kind": "doc",
+   "line": 1942
+  },
+  {
+   "id": "r114",
+   "anchor": "_DelayedHeader",
+   "kind": "doc",
+   "line": 1962
+  },
+  {
+   "id": "r115",
+   "anchor": "_BasicHeaderCards",
+   "kind": "doc",
+   "line": 1989
+  },
+  {
+   "id": "r116",
+   "anchor": "_BasicHeaderCards.__getitem__#assign:key",
+   "kind": "lead",
+   "line": 2005
+  },
+  {
+   "id": "r117",
+   "anchor": "_BasicHeaderCards.__getitem__#try",
+   "kind": "lead",
+   "line": 2008
+  },
+  {
+   "id": "r118",
+   "anchor": "_BasicHeader",
+   "kind": "doc",
+   "line": 2017
+  },
+  {
+   "id": "r119",
+   "anchor": "_BasicHeader._raw_cards",
+   "kind": "lead",
+   "line": 2032
+  },
+  {
+   "id": "r120",
+   "anchor": "_BasicHeader._cards",
+   "kind": "lead",
+   "line": 2035
+  },
+  {
+   "id": "r121",
+   "anchor": "_BasicHeader.cards",
+   "kind": "lead",
+   "line": 2038
+  },
+  {
+   "id": "r122",
+   "anchor": "_BasicHeader.__getitem__#try/except:KeyError/assign:cardstr",
+   "kind": "lead",
+   "line": 2050
+  },
+  {
+   "id": "r123",
+   "anchor": "_BasicHeader.data_size",
+   "kind": "doc",
+   "line": 2064
+  },
+  {
+   "id": "r124",
+   "anchor": "_BasicHeader.data_size_padded",
+   "kind": "doc",
+   "line": 2071
+  },
+  {
+   "id": "r125",
+   "anchor": "_BasicHeader.fromfile",
+   "kind": "doc",
+   "line": 2080
+  },
+  {
+   "id": "r126",
+   "anchor": "_CardAccessor",
+   "kind": "doc",
+   "line": 2098
+  },
+  {
+   "id": "r127",
+   "anchor": "_CardAccessor.__init__",
+   "kind": "todo",
+   "line": 2110
+  },
+  {
+   "id": "r128",
+   "anchor": "_CardAccessor.__eq__#if:not isiterable(other) or isinstance(other, str)",
+   "kind": "lead",
+   "line": 2125
+  },
+  {
+   "id": "r129",
+   "anchor": "_CardAccessor._setslice",
+   "kind": "doc",
+   "line": 2147
+  },
+  {
+   "id": "r130",
+   "anchor": "_HeaderComments",
+   "kind": "doc",
+   "line": 2166
+  },
+  {
+   "id": "r131",
+   "anchor": "_HeaderComments.__repr__",
+   "kind": "doc",
+   "line": 2181
+  },
+  {
+   "id": "r132",
+   "anchor": "_HeaderComments.__getitem__",
+   "kind": "doc",
+   "line": 2191
+  },
+  {
+   "id": "r133",
+   "anchor": "_HeaderComments.__getitem__#if:isinstance(item, _HeaderComments)/return",
+   "kind": "lead",
+   "line": 2200
+  },
+  {
+   "id": "r134",
+   "anchor": "_HeaderComments.__setitem__",
+   "kind": "doc",
+   "line": 2203
+  },
+  {
+   "id": "r135",
+   "anchor": "_HeaderComments.__setitem__#assign:idx",
+   "kind": "lead",
+   "line": 2215
+  },
+  {
+   "id": "r136",
+   "anchor": "_HeaderCommentaryCards",
+   "kind": "doc",
+   "line": 2220
+  },
+  {
+   "id": "r137",
+   "anchor": "_HeaderCommentaryCards.__len__",
+   "kind": "lead",
+   "line": 2234
+  },
+  {
+   "id": "r138",
+   "anchor": "_HeaderCommentaryCards.__setitem__",
+   "kind": "doc",
+   "line": 2255
+  },
+  {
+   "id": "r139",
+   "anchor": "_HeaderCommentaryCards.__setitem__#assign:self._header[(self._keyword, item)]",
+   "kind": "lead",
+   "line": 2267
+  },
+  {
+   "id": "r140",
+   "anchor": "_block_size",
+   "kind": "doc",
+   "line": 2270
+  },
+  {
+   "id": "r141",
+   "anchor": "_pad_length",
+   "kind": "doc",
+   "line": 2279
+  },
+  {
+   "id": "r142",
+   "anchor": "_check_padding#if:header_str and header_str[-1] == '\\0'",
+   "kind": "lead",
+   "line": 2287
+  },
+  {
+   "id": "r143",
+   "anchor": "_check_padding#if:header_str and header_str[-1] == '\\0'/if:is_eof and header_str.strip('\\0') == ''/call:warnings.warn",
+   "kind": "todo",
+   "line": 2290
+  },
+  {
+   "id": "r144",
+   "anchor": "_check_padding#if:header_str and header_str[-1] == '\\0'/if:is_eof and header_str.strip('\\0') == ''/else/call:warnings.warn",
+   "kind": "lead",
+   "line": 2299
+  },
+  {
+   "id": "r145",
+   "anchor": "_check_padding#if:check_block_size and (len(header_str) % block_size) != 0/assign:actual_len",
+   "kind": "lead",
+   "line": 2308
+  },
+  {
+   "id": "r146",
+   "anchor": "_check_padding#if:check_block_size and (len(header_str) % block_size) != 0/raise:ValueError",
+   "kind": "todo",
+   "line": 2310
+  },
+  {
+   "id": "r147",
+   "anchor": "_hdr_data_size",
+   "kind": "doc",
+   "line": 2313
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 46362,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 14887,
+  "thinking_tokens": 7910,
+  "opus_cost_usd": 0.8400865,
+  "total_cost_usd": 0.8771665,
+  "duration_ms": 124731,
+  "duration_api_ms": 127493,
+  "num_turns": 2
+ },
+ "wall_ms": 125612,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

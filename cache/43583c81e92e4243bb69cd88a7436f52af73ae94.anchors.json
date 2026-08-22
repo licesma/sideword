@@ -1,0 +1,319 @@
+{
+ "blob_sha": "43583c81e92e4243bb69cd88a7436f52af73ae94",
+ "path": "django/contrib/admin/views/main.py",
+ "repo": "django/django",
+ "records": 49,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "ALL_VAR",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "ChangeListSearchForm.fields",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r3",
+   "anchor": "ChangeList.__init__#assign:_search_form",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r4",
+   "anchor": "ChangeList.get_filters_params",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r5",
+   "anchor": "ChangeList.get_filters_params#assign:lookup_params",
+   "kind": "trail",
+   "line": 123
+  },
+  {
+   "id": "r6",
+   "anchor": "ChangeList.get_filters_params#for:ignored in IGNORED_PARAMS",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r7",
+   "anchor": "ChangeList.get_filters#for:list_filter in self.list_filter/if:callable(list_filter)/assign:spec",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r8",
+   "anchor": "ChangeList.get_filters#for:list_filter in self.list_filter/if:callable(list_filter)/else/if:isinstance(list_filter, (tuple, list))/assign:field, field_list_filter_class",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r9",
+   "anchor": "ChangeList.get_filters#for:list_filter in self.list_filter/if:callable(list_filter)/else/if:isinstance(list_filter, (tuple, list))/else/assign:field, field_list_filter_class",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r10",
+   "anchor": "ChangeList.get_filters#for:list_filter in self.list_filter/if:callable(list_filter)/else/if:lookup_params_count > len(lookup_params)",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r11",
+   "anchor": "ChangeList.get_filters#if:self.date_hierarchy/assign:year",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r12",
+   "anchor": "ChangeList.get_filters#if:self.date_hierarchy/if:year is not None/if:day/elif:month/assign:to_date",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r13",
+   "anchor": "ChangeList.get_filters#try",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r14",
+   "anchor": "ChangeList.get_results#assign:result_count",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r15",
+   "anchor": "ChangeList.get_results#if:self.model_admin.show_full_result_count",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r16",
+   "anchor": "ChangeList.get_results#if:(self.show_all and can_show_all) or not multi_page",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r17",
+   "anchor": "ChangeList.show_admin_actions",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r18",
+   "anchor": "ChangeList.get_ordering_field",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r19",
+   "anchor": "ChangeList.get_ordering_field#try/except:FieldDoesNotExist/if:callable(field_name)",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r20",
+   "anchor": "ChangeList.get_ordering",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r21",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/assign:ordering",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r22",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/if:not order_field/continue",
+   "kind": "trail",
+   "line": 328
+  },
+  {
+   "id": "r23",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/if:isinstance(order_field, OrderBy)/elif:hasattr(order_field, 'resolve_expression')/call:ordering.append",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r24",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/if:isinstance(order_field, OrderBy)/elif:order_field.startswith('-') and pfx == '-'",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r25",
+   "anchor": "ChangeList.get_ordering#if:ORDER_VAR in params/for:p in order_params/try/except:(IndexError, ValueError)/continue",
+   "kind": "trail",
+   "line": 343
+  },
+  {
+   "id": "r26",
+   "anchor": "ChangeList.get_ordering#call:ordering.extend",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r27",
+   "anchor": "ChangeList._get_deterministic_ordering",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r28",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/assign:field_name",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r29",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/if:field_name/try",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r30",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/if:field_name/try/except:FieldDoesNotExist/continue",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r31",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/if:field_name/if:field.remote_field and field_name == field.name",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r32",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/else/assign:constraint_field_names",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r33",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/else/for:field_names in constraint_field_names/assign:fields",
+   "kind": "lead",
+   "line": 399
+  },
+  {
+   "id": "r34",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/else/for:field_names in constraint_field_names/if:any(field.null for field in fields)",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r35",
+   "anchor": "ChangeList._get_deterministic_ordering#for:part in ordering/else/for:field_names in constraint_field_names/else/call:ordering.append",
+   "kind": "lead",
+   "line": 409
+  },
+  {
+   "id": "r36",
+   "anchor": "ChangeList.get_ordering_field_columns",
+   "kind": "doc",
+   "line": 412
+  },
+  {
+   "id": "r37",
+   "anchor": "ChangeList.get_ordering_field_columns#assign:ordering",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r38",
+   "anchor": "ChangeList.get_ordering_field_columns#if:ORDER_VAR not in self.params/for:field in ordering",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r39",
+   "anchor": "ChangeList.get_ordering_field_columns#if:ORDER_VAR not in self.params/else/for:p in self.params[ORDER_VAR].split('.')/try/except:ValueError/continue",
+   "kind": "trail",
+   "line": 448
+  },
+  {
+   "id": "r40",
+   "anchor": "ChangeList.get_queryset#assign:self.filter_specs, self.has_filters, remaining_lookup_params, filters_may_have_duplicates, self.has_active_filters",
+   "kind": "lead",
+   "line": 454
+  },
+  {
+   "id": "r41",
+   "anchor": "ChangeList.get_queryset#assign:qs",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r42",
+   "anchor": "ChangeList.get_queryset#try/assign:qs",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r43",
+   "anchor": "ChangeList.get_queryset#try/except:(SuspiciousOperation, ImproperlyConfigured)/raise",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r44",
+   "anchor": "ChangeList.get_queryset#try/except:Exception/raise:IncorrectLookupParameters",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r45",
+   "anchor": "ChangeList.get_queryset#assign:qs, search_may_have_duplicates",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r46",
+   "anchor": "ChangeList.get_queryset#assign:self.clear_all_filters_qs",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r47",
+   "anchor": "ChangeList.get_queryset#if:filters_may_have_duplicates | search_may_have_duplicates",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r48",
+   "anchor": "ChangeList.get_queryset#assign:ordering",
+   "kind": "lead",
+   "line": 501
+  },
+  {
+   "id": "r49",
+   "anchor": "ChangeList.has_related_field_in_list_display#for:field_name in self.list_display/try/else/if:isinstance(field.remote_field, ManyToOneRel)/if:field_name != field.get_attname()",
+   "kind": "lead",
+   "line": 530
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14575,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7422,
+  "thinking_tokens": 4334,
+  "opus_cost_usd": 0.3355915,
+  "total_cost_usd": 0.3462225,
+  "duration_ms": 67931,
+  "duration_api_ms": 68910,
+  "num_turns": 2
+ },
+ "wall_ms": 68765,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

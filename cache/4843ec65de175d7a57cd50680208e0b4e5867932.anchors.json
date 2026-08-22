@@ -1,0 +1,145 @@
+{
+ "blob_sha": "4843ec65de175d7a57cd50680208e0b4e5867932",
+ "path": "astropy/io/ascii/sextractor.py",
+ "repo": "astropy/astropy",
+ "records": 20,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "SExtractorHeader",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r4",
+   "anchor": "SExtractorHeader.comment",
+   "kind": "trail",
+   "line": 19
+  },
+  {
+   "id": "r5",
+   "anchor": "SExtractorHeader.get_cols",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r6",
+   "anchor": "SExtractorHeader.get_cols#assign:columns",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r7",
+   "anchor": "SExtractorHeader.get_cols#assign:re_name_def",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r8",
+   "anchor": "SExtractorHeader.get_cols#for:line in lines/if:not line.startswith(\"#\")/assign:dataline",
+   "kind": "trail",
+   "line": 54
+  },
+  {
+   "id": "r9",
+   "anchor": "SExtractorHeader.get_cols#for:line in lines/if:not line.startswith(\"#\")/break",
+   "kind": "trail",
+   "line": 55
+  },
+  {
+   "id": "r10",
+   "anchor": "SExtractorHeader.get_cols#for:line in lines/if:not line.startswith(\"#\")/else/if:match/assign:colunit",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r11",
+   "anchor": "SExtractorHeader.get_cols#assign:colnumbers",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r12",
+   "anchor": "SExtractorHeader.get_cols#if:dataline is not None",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r13",
+   "anchor": "SExtractorHeader.get_cols#if:dataline is not None/else/assign:n_data_cols",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r14",
+   "anchor": "SExtractorHeader.get_cols#assign:columns[n_data_cols + 1]",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r15",
+   "anchor": "SExtractorHeader.get_cols#if:len(columns)>1/assign:previous_column",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r16",
+   "anchor": "SExtractorHeader.get_cols#assign:colnumbers",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r17",
+   "anchor": "SExtractorHeader.get_cols#assign:colnumbers",
+   "kind": "trail",
+   "line": 93
+  },
+  {
+   "id": "r18",
+   "anchor": "SExtractor",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r19",
+   "anchor": "SExtractor.read",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r20",
+   "anchor": "SExtractor.read#if:\"comments\" in out.meta",
+   "kind": "lead",
+   "line": 160
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6833,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1794,
+  "thinking_tokens": 772,
+  "opus_cost_usd": 0.1174715,
+  "total_cost_usd": 0.1215655,
+  "duration_ms": 17999,
+  "duration_api_ms": 19019,
+  "num_turns": 2
+ },
+ "wall_ms": 19008,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

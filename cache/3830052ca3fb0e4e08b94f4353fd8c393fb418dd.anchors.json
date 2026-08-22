@@ -1,0 +1,187 @@
+{
+ "blob_sha": "3830052ca3fb0e4e08b94f4353fd8c393fb418dd",
+ "path": "django/db/models/deletion.py",
+ "repo": "django/django",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "get_candidate_relations_to_delete#return",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r2",
+   "anchor": "Collector.data",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r3",
+   "anchor": "Collector.field_updates",
+   "kind": "trail",
+   "line": 69
+  },
+  {
+   "id": "r4",
+   "anchor": "Collector.fast_deletes",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r5",
+   "anchor": "Collector.dependencies",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r6",
+   "anchor": "Collector.dependencies",
+   "kind": "trail",
+   "line": 79
+  },
+  {
+   "id": "r7",
+   "anchor": "Collector.add",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r8",
+   "anchor": "Collector.add#if:source is not None and not nullable",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r9",
+   "anchor": "Collector.add_field_update",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "Collector.can_fast_delete",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r11",
+   "anchor": "Collector.can_fast_delete#assign:opts",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r12",
+   "anchor": "Collector.can_fast_delete#for:related in get_candidate_relations_to_delete(opts)",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r13",
+   "anchor": "Collector.can_fast_delete#for:field in model._meta.private_fields/if:hasattr(field, 'bulk_related_objects')/return",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r14",
+   "anchor": "Collector.get_del_batches",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r15",
+   "anchor": "Collector.collect",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r16",
+   "anchor": "Collector.collect#if:not keep_parents/assign:concrete_model",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r17",
+   "anchor": "Collector.collect#if:collect_related/for:field in model._meta.private_fields/if:hasattr(field, 'bulk_related_objects')/assign:sub_objs",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r18",
+   "anchor": "Collector.related_objects",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r19",
+   "anchor": "Collector.delete#for:model, instances in self.data.items()",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r20",
+   "anchor": "Collector.delete#call:self.sort",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r21",
+   "anchor": "Collector.delete#assign:deleted_counter",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r22",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, obj in self.instances_with_model()",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r23",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:qs in self.fast_deletes",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r24",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, instances_for_fieldvalues in six.iteritems(self.field_updates)",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r25",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:instances in six.itervalues(self.data)",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r26",
+   "anchor": "Collector.delete#with:transaction.atomic(using=self.using, savepoint=False)/for:model, instances in six.iteritems(self.data)",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r27",
+   "anchor": "Collector.delete#for:model, instances_for_fieldvalues in six.iteritems(self.field_updates)",
+   "kind": "lead",
+   "line": 308
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9751,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2543,
+  "thinking_tokens": 1154,
+  "opus_cost_usd": 0.16537649999999998,
+  "total_cost_usd": 0.1719355,
+  "duration_ms": 28304,
+  "duration_api_ms": 29330,
+  "num_turns": 2
+ },
+ "wall_ms": 29163,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

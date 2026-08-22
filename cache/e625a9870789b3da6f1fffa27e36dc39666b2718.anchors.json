@@ -1,0 +1,505 @@
+{
+ "blob_sha": "e625a9870789b3da6f1fffa27e36dc39666b2718",
+ "path": "lib/matplotlib/backends/backend_ps.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 80,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "quote_ps_string",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r3",
+   "anchor": "_move_path_to_path_or_stream",
+   "kind": "doc",
+   "line": 106
+  },
+  {
+   "id": "r4",
+   "anchor": "_font_to_ps_type3",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r5",
+   "anchor": "_font_to_ps_type3#for:glyph_id in glyph_ids/call:entries.append",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r6",
+   "anchor": "_font_to_ps_type3#for:glyph_id in glyph_ids/call:entries.append",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r7",
+   "anchor": "_font_to_ps_type42",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r8",
+   "anchor": "_font_to_ps_type42#try/assign:font",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r9",
+   "anchor": "_font_to_ps_type42#try/with:TemporaryDirectory()/call:convert_ttf_to_ps",
+   "kind": "todo",
+   "line": 233
+  },
+  {
+   "id": "r10",
+   "anchor": "_log_if_debug_on",
+   "kind": "doc",
+   "line": 241
+  },
+  {
+   "id": "r11",
+   "anchor": "RendererPS",
+   "kind": "doc",
+   "line": 255
+  },
+  {
+   "id": "r12",
+   "anchor": "RendererPS.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 268
+  },
+  {
+   "id": "r13",
+   "anchor": "RendererPS.color",
+   "kind": "lead",
+   "line": 276
+  },
+  {
+   "id": "r14",
+   "anchor": "RendererPS._is_transparent#if:rgb_or_rgba is None/return",
+   "kind": "trail",
+   "line": 293
+  },
+  {
+   "id": "r15",
+   "anchor": "RendererPS._is_transparent#if:rgb_or_rgba is None/elif:len(rgb_or_rgba)==4/else",
+   "kind": "trail",
+   "line": 302
+  },
+  {
+   "id": "r16",
+   "anchor": "RendererPS._linejoin_cmd#assign:linejoin",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r17",
+   "anchor": "RendererPS._linecap_cmd#assign:linecap",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r18",
+   "anchor": "RendererPS.get_image_magnification",
+   "kind": "doc",
+   "line": 400
+  },
+  {
+   "id": "r19",
+   "anchor": "RendererPS.draw_image#assign:h, w",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r20",
+   "anchor": "RendererPS.draw_image#assign:data",
+   "kind": "trail",
+   "line": 445
+  },
+  {
+   "id": "r21",
+   "anchor": "RendererPS.draw_image#assign:hexdata",
+   "kind": "trail",
+   "line": 446
+  },
+  {
+   "id": "r22",
+   "anchor": "RendererPS.draw_path#assign:clip",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r23",
+   "anchor": "RendererPS.draw_markers#assign:ps_color",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r24",
+   "anchor": "RendererPS.draw_markers#assign:ps_cmd",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r25",
+   "anchor": "RendererPS.draw_markers#assign:ps_cmd",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r26",
+   "anchor": "RendererPS.draw_path_collection#assign:len_path",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r27",
+   "anchor": "RendererPS.draw_tex#if:self._is_transparent(gc.get_rgb())",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r28",
+   "anchor": "RendererPS.draw_tex#if:self._is_transparent(gc.get_rgb())/return",
+   "kind": "trail",
+   "line": 582
+  },
+  {
+   "id": "r29",
+   "anchor": "RendererPS.draw_tex#assign:pos",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r30",
+   "anchor": "RendererPS.draw_text#if:self._is_transparent(gc.get_rgb())",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r31",
+   "anchor": "RendererPS.draw_text#if:self._is_transparent(gc.get_rgb())/return",
+   "kind": "trail",
+   "line": 623
+  },
+  {
+   "id": "r32",
+   "anchor": "RendererPS.draw_text#if:mpl.rcParams['ps.useafm']/assign:last_name",
+   "kind": "trail",
+   "line": 636
+  },
+  {
+   "id": "r33",
+   "anchor": "RendererPS.draw_mathtext",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r34",
+   "anchor": "RendererPS.draw_gouraud_triangles#assign:hexdata",
+   "kind": "trail",
+   "line": 732
+  },
+  {
+   "id": "r35",
+   "anchor": "RendererPS._draw_ps",
+   "kind": "doc",
+   "line": 751
+  },
+  {
+   "id": "r36",
+   "anchor": "FigureCanvasPS._print_ps#assign:self.figure.dpi",
+   "kind": "trail",
+   "line": 825
+  },
+  {
+   "id": "r37",
+   "anchor": "FigureCanvasPS._print_ps#assign:source_date_epoch",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r38",
+   "anchor": "FigureCanvasPS._print_figure",
+   "kind": "doc",
+   "line": 859
+  },
+  {
+   "id": "r39",
+   "anchor": "FigureCanvasPS._print_figure#assign:width, height",
+   "kind": "lead",
+   "line": 876
+  },
+  {
+   "id": "r40",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/if:width>paper_width or height>paper_height",
+   "kind": "lead",
+   "line": 885
+  },
+  {
+   "id": "r41",
+   "anchor": "FigureCanvasPS._print_figure#assign:xo",
+   "kind": "lead",
+   "line": 892
+  },
+  {
+   "id": "r42",
+   "anchor": "FigureCanvasPS._print_figure#assign:ps_renderer",
+   "kind": "lead",
+   "line": 909
+  },
+  {
+   "id": "r43",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:is_eps",
+   "kind": "lead",
+   "line": 918
+  },
+  {
+   "id": "r44",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:not mpl.rcParams['ps.useafm']/for:font_path, chars in ps_renderer._character_tracker.used.items()/if:len(chars)>255",
+   "kind": "lead",
+   "line": 945
+  },
+  {
+   "id": "r45",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#if:not mpl.rcParams['ps.useafm']/for:font_path, chars in ps_renderer._character_tracker.used.items()/if:fonttype==3/else",
+   "kind": "trail",
+   "line": 950
+  },
+  {
+   "id": "r46",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#call:print",
+   "kind": "lead",
+   "line": 966
+  },
+  {
+   "id": "r47",
+   "anchor": "FigureCanvasPS._print_figure.print_figure_impl#call:print",
+   "kind": "lead",
+   "line": 969
+  },
+  {
+   "id": "r48",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 978
+  },
+  {
+   "id": "r49",
+   "anchor": "FigureCanvasPS._print_figure#if:mpl.rcParams['ps.usedistiller']/else",
+   "kind": "trail",
+   "line": 990
+  },
+  {
+   "id": "r50",
+   "anchor": "FigureCanvasPS._print_figure_tex",
+   "kind": "doc",
+   "line": 996
+  },
+  {
+   "id": "r51",
+   "anchor": "FigureCanvasPS._print_figure_tex#assign:ps_renderer",
+   "kind": "lead",
+   "line": 1022
+  },
+  {
+   "id": "r52",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()",
+   "kind": "lead",
+   "line": 1030
+  },
+  {
+   "id": "r53",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()/if:orientation is _Orientation.landscape",
+   "kind": "trail",
+   "line": 1053
+  },
+  {
+   "id": "r54",
+   "anchor": "FigureCanvasPS._print_figure_tex#with:TemporaryDirectory()/if:is_eps",
+   "kind": "lead",
+   "line": 1060
+  },
+  {
+   "id": "r55",
+   "anchor": "_convert_psfrags",
+   "kind": "doc",
+   "line": 1099
+  },
+  {
+   "id": "r56",
+   "anchor": "_convert_psfrags#with:mpl.rc_context({\"text.latex.preamble\": mpl.rcParams[\"text.latex.preamble\"] + mpl/assign:dvifile/arg:fontsize",
+   "kind": "trail",
+   "line": 1128
+  },
+  {
+   "id": "r57",
+   "anchor": "_convert_psfrags#with:open(tmppath)",
+   "kind": "lead",
+   "line": 1143
+  },
+  {
+   "id": "r58",
+   "anchor": "gs_distill",
+   "kind": "doc",
+   "line": 1155
+  },
+  {
+   "id": "r59",
+   "anchor": "gs_distill#if:eps",
+   "kind": "lead",
+   "line": 1183
+  },
+  {
+   "id": "r60",
+   "anchor": "gs_distill#if:eps/call:pstoeps",
+   "kind": "lead",
+   "line": 1186
+  },
+  {
+   "id": "r61",
+   "anchor": "xpdf_distill",
+   "kind": "doc",
+   "line": 1189
+  },
+  {
+   "id": "r62",
+   "anchor": "xpdf_distill#call:mpl._get_executable_info",
+   "kind": "trail",
+   "line": 1196
+  },
+  {
+   "id": "r63",
+   "anchor": "xpdf_distill#with:TemporaryDirectory()/call:cbook._check_and_log_subprocess",
+   "kind": "lead",
+   "line": 1204
+  },
+  {
+   "id": "r64",
+   "anchor": "get_bbox_header",
+   "kind": "doc",
+   "line": 1220
+  },
+  {
+   "id": "r65",
+   "anchor": "pstoeps",
+   "kind": "doc",
+   "line": 1238
+  },
+  {
+   "id": "r66",
+   "anchor": "pstoeps#if:bbox",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r67",
+   "anchor": "pstoeps#with:open(epsfile, 'wb')/for:line in tmph",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r68",
+   "anchor": "pstoeps#with:open(epsfile, 'wb')/for:line in tmph",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r69",
+   "anchor": "psDefs",
+   "kind": "lead",
+   "line": 1314
+  },
+  {
+   "id": "r70",
+   "anchor": "psDefs",
+   "kind": "lead",
+   "line": 1314
+  },
+  {
+   "id": "r71",
+   "anchor": "psDefs#item:\"/_d { bind def } bind def\"",
+   "kind": "lead",
+   "line": 1319
+  },
+  {
+   "id": "r72",
+   "anchor": "psDefs#item:\"/m { moveto } _d\"",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r73",
+   "anchor": "psDefs#item:\"/l { lineto } _d\"",
+   "kind": "lead",
+   "line": 1323
+  },
+  {
+   "id": "r74",
+   "anchor": "psDefs#item:\"/r { rlineto } _d\"",
+   "kind": "lead",
+   "line": 1325
+  },
+  {
+   "id": "r75",
+   "anchor": "psDefs#item:\"/c { curveto } _d\"",
+   "kind": "lead",
+   "line": 1327
+  },
+  {
+   "id": "r76",
+   "anchor": "psDefs#item:\"/cl { closepath } _d\"",
+   "kind": "lead",
+   "line": 1329
+  },
+  {
+   "id": "r77",
+   "anchor": "psDefs#item:\"/ce { closepath eofill } _d\"",
+   "kind": "lead",
+   "line": 1331
+  },
+  {
+   "id": "r78",
+   "anchor": "psDefs#item:\"\"\"/box { m 1 index 0 r 0 exch r neg 0 r cl } _d\"\"\"",
+   "kind": "lead",
+   "line": 1333
+  },
+  {
+   "id": "r79",
+   "anchor": "psDefs#item:\"\"\"/clipbox { box clip newpath } _d\"\"\"",
+   "kind": "lead",
+   "line": 1341
+  },
+  {
+   "id": "r80",
+   "anchor": "psDefs#item:\"/sc { setcachedevice } _d\"",
+   "kind": "lead",
+   "line": 1347
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 30987,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9650,
+  "thinking_tokens": 5556,
+  "opus_cost_usd": 0.5554115,
+  "total_cost_usd": 0.5798355,
+  "duration_ms": 91761,
+  "duration_api_ms": 93565,
+  "num_turns": 2
+ },
+ "wall_ms": 92925,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

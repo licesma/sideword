@@ -1,0 +1,91 @@
+{
+ "blob_sha": "4dae530c684f3b5633b5d0d7ff9927b88115bd63",
+ "path": "astropy/modeling/tabular.py",
+ "repo": "astropy/astropy",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "_Tabular",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r4",
+   "anchor": "_Tabular.bounding_box",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r5",
+   "anchor": "_Tabular.evaluate",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r6",
+   "anchor": "_Tabular.evaluate#if:isinstance(self.lookup_table, u.Quantity) and not isinstance(self.points[0], u.Quantity)",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r7",
+   "anchor": "_Tabular.inverse#if:self.n_inputs == 1/if:np.all(np.diff(self.lookup_table) > 0)",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r8",
+   "anchor": "_Tabular.inverse#if:self.n_inputs == 1/if:np.all(np.diff(self.lookup_table) > 0)/assign:points",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r9",
+   "anchor": "_Tabular.inverse#if:self.n_inputs == 1/if:np.all(np.diff(self.lookup_table) > 0)/elif:np.all(np.diff(self.lookup_table) < 0)/assign:points",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r10",
+   "anchor": "_Tabular.inverse#if:self.n_inputs == 1/if:np.all(np.diff(self.lookup_table) > 0)/else/raise:NotImplementedError",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r11",
+   "anchor": "tabular_model",
+   "kind": "doc",
+   "line": 263
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9504,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1555,
+  "thinking_tokens": 823,
+  "opus_cost_usd": 0.1382065,
+  "total_cost_usd": 0.14443350000000002,
+  "duration_ms": 15996,
+  "duration_api_ms": 17178,
+  "num_turns": 2
+ },
+ "wall_ms": 16861,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

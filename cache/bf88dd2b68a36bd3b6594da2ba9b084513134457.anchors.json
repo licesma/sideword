@@ -1,0 +1,877 @@
+{
+ "blob_sha": "bf88dd2b68a36bd3b6594da2ba9b084513134457",
+ "path": "lib/matplotlib/collections.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 142,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Collection",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r3",
+   "anchor": "Collection",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "Collection._transforms",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r5",
+   "anchor": "Collection._edge_default",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r6",
+   "anchor": "Collection.__init__#param:norm",
+   "kind": "trail",
+   "line": 88
+  },
+  {
+   "id": "r7",
+   "anchor": "Collection.__init__#param:cmap",
+   "kind": "trail",
+   "line": 89
+  },
+  {
+   "id": "r8",
+   "anchor": "Collection.__init__",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r9",
+   "anchor": "Collection._us_linestyles",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r10",
+   "anchor": "Collection._linestyles",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r11",
+   "anchor": "Collection._us_lw",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "Collection._face_is_mapped",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r13",
+   "anchor": "Collection._mapped_colors",
+   "kind": "trail",
+   "line": 169
+  },
+  {
+   "id": "r14",
+   "anchor": "Collection.__init__#if:offsets is not None/if:offsets.shape==(2,)",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r15",
+   "anchor": "Collection.get_offset_transform",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r16",
+   "anchor": "Collection.set_offset_transform",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r17",
+   "anchor": "Collection.get_datalim#assign:transform",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r18",
+   "anchor": "Collection.get_datalim#if:not (isinstance(offset_trf, transforms.IdentityTransform) or offset_trf.contains_branch(transData))/return",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r19",
+   "anchor": "Collection.get_datalim#if:not len(paths)/return",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r20",
+   "anchor": "Collection.get_datalim#if:not transform.is_affine/assign:paths",
+   "kind": "post",
+   "line": 266
+  },
+  {
+   "id": "r21",
+   "anchor": "Collection.get_datalim#if:any(transform.contains_branch_seperately(transData))/if:isinstance(offsets, np.ma.MaskedArray)",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r22",
+   "anchor": "Collection.get_datalim#if:any(transform.contains_branch_seperately(transData))/if:isinstance(offsets, np.ma.MaskedArray)/assign:offsets",
+   "kind": "post",
+   "line": 278
+  },
+  {
+   "id": "r23",
+   "anchor": "Collection.get_datalim#if:self._offsets is not None",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r24",
+   "anchor": "Collection.get_datalim#if:self._offsets is not None/assign:offsets",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r25",
+   "anchor": "Collection.get_datalim#if:self._offsets is not None/assign:offsets",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r26",
+   "anchor": "Collection.get_window_extent#return",
+   "kind": "todo",
+   "line": 305
+  },
+  {
+   "id": "r27",
+   "anchor": "Collection._prepare_points#assign:transform",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r28",
+   "anchor": "Collection._prepare_points#if:not offset_trf.is_affine/assign:offset_trf",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r29",
+   "anchor": "Collection._prepare_points#if:isinstance(offsets, np.ma.MaskedArray)/assign:offsets",
+   "kind": "post",
+   "line": 337
+  },
+  {
+   "id": "r30",
+   "anchor": "Collection.draw#assign:trans",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r31",
+   "anchor": "Collection.draw#if:do_single_path_optimization/else/call:renderer.draw_path_collection/arg:\"screen\"",
+   "kind": "trail",
+   "line": 415
+  },
+  {
+   "id": "r32",
+   "anchor": "Collection.set_pickradius",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r33",
+   "anchor": "Collection.contains",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r34",
+   "anchor": "Collection.contains#assign:pickradius",
+   "kind": "trail",
+   "line": 450
+  },
+  {
+   "id": "r35",
+   "anchor": "Collection.contains#assign:ind",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r36",
+   "anchor": "Collection.set_urls",
+   "kind": "doc",
+   "line": 473
+  },
+  {
+   "id": "r37",
+   "anchor": "Collection.get_urls",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r38",
+   "anchor": "Collection.set_hatch",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r39",
+   "anchor": "Collection.set_hatch#call:mhatch._validate_hatch_pattern",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r40",
+   "anchor": "Collection.get_hatch",
+   "kind": "doc",
+   "line": 533
+  },
+  {
+   "id": "r41",
+   "anchor": "Collection.set_offsets",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r42",
+   "anchor": "Collection.set_offsets#if:offsets.shape==(2,)",
+   "kind": "trail",
+   "line": 546
+  },
+  {
+   "id": "r43",
+   "anchor": "Collection.get_offsets",
+   "kind": "doc",
+   "line": 555
+  },
+  {
+   "id": "r44",
+   "anchor": "Collection.get_offsets#return",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r45",
+   "anchor": "Collection._get_default_linewidth#return",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r46",
+   "anchor": "Collection._get_default_linewidth#return",
+   "kind": "trail",
+   "line": 562
+  },
+  {
+   "id": "r47",
+   "anchor": "Collection.set_linewidth",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r48",
+   "anchor": "Collection.set_linewidth#assign:self._us_lw",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r49",
+   "anchor": "Collection.set_linewidth#assign:self._linewidths, self._linestyles",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r50",
+   "anchor": "Collection.set_linestyle",
+   "kind": "doc",
+   "line": 584
+  },
+  {
+   "id": "r51",
+   "anchor": "Collection.set_linestyle#assign:self._us_linestyles",
+   "kind": "lead",
+   "line": 620
+  },
+  {
+   "id": "r52",
+   "anchor": "Collection.set_linestyle#assign:self._linewidths, self._linestyles",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r53",
+   "anchor": "Collection.set_capstyle",
+   "kind": "doc",
+   "line": 627
+  },
+  {
+   "id": "r54",
+   "anchor": "Collection.set_joinstyle",
+   "kind": "doc",
+   "line": 641
+  },
+  {
+   "id": "r55",
+   "anchor": "Collection._bcast_lwls",
+   "kind": "doc",
+   "line": 655
+  },
+  {
+   "id": "r56",
+   "anchor": "Collection._bcast_lwls#if:len(dashes)!=len(linewidths)",
+   "kind": "lead",
+   "line": 679
+  },
+  {
+   "id": "r57",
+   "anchor": "Collection._bcast_lwls#assign:dashes",
+   "kind": "lead",
+   "line": 687
+  },
+  {
+   "id": "r58",
+   "anchor": "Collection.set_antialiased",
+   "kind": "doc",
+   "line": 692
+  },
+  {
+   "id": "r59",
+   "anchor": "Collection._get_default_antialiased#return",
+   "kind": "lead",
+   "line": 707
+  },
+  {
+   "id": "r60",
+   "anchor": "Collection.set_color",
+   "kind": "doc",
+   "line": 709
+  },
+  {
+   "id": "r61",
+   "anchor": "Collection._get_default_facecolor#return",
+   "kind": "lead",
+   "line": 727
+  },
+  {
+   "id": "r62",
+   "anchor": "Collection.set_facecolor",
+   "kind": "doc",
+   "line": 736
+  },
+  {
+   "id": "r63",
+   "anchor": "Collection._get_default_edgecolor#return",
+   "kind": "lead",
+   "line": 764
+  },
+  {
+   "id": "r64",
+   "anchor": "Collection.set_edgecolor",
+   "kind": "doc",
+   "line": 785
+  },
+  {
+   "id": "r65",
+   "anchor": "Collection.set_edgecolor#if:isinstance(c, str) and c.lower() in (\"none\", \"face\")",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r66",
+   "anchor": "Collection.set_alpha",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r67",
+   "anchor": "Collection._set_mappable_flags",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r68",
+   "anchor": "Collection._set_mappable_flags#assign:edge0",
+   "kind": "lead",
+   "line": 841
+  },
+  {
+   "id": "r69",
+   "anchor": "Collection._set_mappable_flags#assign:self._edge_is_mapped",
+   "kind": "lead",
+   "line": 844
+  },
+  {
+   "id": "r70",
+   "anchor": "Collection.update_scalarmappable",
+   "kind": "doc",
+   "line": 861
+  },
+  {
+   "id": "r71",
+   "anchor": "Collection.update_scalarmappable#if:self._A is not None",
+   "kind": "lead",
+   "line": 871
+  },
+  {
+   "id": "r72",
+   "anchor": "Collection.update_scalarmappable#if:self._A is not None/if:self._A.ndim>1 and not isinstance(self, QuadMesh)",
+   "kind": "lead",
+   "line": 873
+  },
+  {
+   "id": "r73",
+   "anchor": "Collection.update_scalarmappable#if:self._A is not None/if:np.iterable(self._alpha)/assign:self._alpha",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r74",
+   "anchor": "Collection.get_fill",
+   "kind": "doc",
+   "line": 899
+  },
+  {
+   "id": "r75",
+   "anchor": "Collection.update_from",
+   "kind": "doc",
+   "line": 903
+  },
+  {
+   "id": "r76",
+   "anchor": "Collection.update_from#assign:self._A",
+   "kind": "lead",
+   "line": 922
+  },
+  {
+   "id": "r77",
+   "anchor": "_CollectionWithSizes",
+   "kind": "doc",
+   "line": 928
+  },
+  {
+   "id": "r78",
+   "anchor": "_CollectionWithSizes.get_sizes",
+   "kind": "doc",
+   "line": 934
+  },
+  {
+   "id": "r79",
+   "anchor": "_CollectionWithSizes.set_sizes",
+   "kind": "doc",
+   "line": 945
+  },
+  {
+   "id": "r80",
+   "anchor": "PathCollection",
+   "kind": "doc",
+   "line": 975
+  },
+  {
+   "id": "r81",
+   "anchor": "PathCollection.__init__",
+   "kind": "doc",
+   "line": 980
+  },
+  {
+   "id": "r82",
+   "anchor": "PathCollection.legend_elements",
+   "kind": "doc",
+   "line": 1006
+  },
+  {
+   "id": "r83",
+   "anchor": "PolyCollection.__init__",
+   "kind": "doc",
+   "line": 1150
+  },
+  {
+   "id": "r84",
+   "anchor": "PolyCollection.set_verts",
+   "kind": "doc",
+   "line": 1175
+  },
+  {
+   "id": "r85",
+   "anchor": "PolyCollection.set_verts#if:not closed",
+   "kind": "lead",
+   "line": 1194
+  },
+  {
+   "id": "r86",
+   "anchor": "PolyCollection.set_verts#if:isinstance(verts, np.ndarray) and len(verts.shape)==3",
+   "kind": "lead",
+   "line": 1199
+  },
+  {
+   "id": "r87",
+   "anchor": "PolyCollection.set_verts#if:isinstance(verts, np.ndarray) and len(verts.shape)==3/assign:codes",
+   "kind": "lead",
+   "line": 1203
+  },
+  {
+   "id": "r88",
+   "anchor": "PolyCollection.set_verts_and_codes",
+   "kind": "doc",
+   "line": 1219
+  },
+  {
+   "id": "r89",
+   "anchor": "PolyCollection.span_where",
+   "kind": "doc",
+   "line": 1230
+  },
+  {
+   "id": "r90",
+   "anchor": "BrokenBarHCollection",
+   "kind": "doc",
+   "line": 1248
+  },
+  {
+   "id": "r91",
+   "anchor": "BrokenBarHCollection.__init__",
+   "kind": "doc",
+   "line": 1253
+  },
+  {
+   "id": "r92",
+   "anchor": "RegularPolyCollection",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r93",
+   "anchor": "RegularPolyCollection.__init__",
+   "kind": "doc",
+   "line": 1281
+  },
+  {
+   "id": "r94",
+   "anchor": "RegularPolyCollection.draw#call:Collection.draw",
+   "kind": "lead",
+   "line": 1337
+  },
+  {
+   "id": "r95",
+   "anchor": "StarPolygonCollection",
+   "kind": "doc",
+   "line": 1340
+  },
+  {
+   "id": "r96",
+   "anchor": "AsteriskPolygonCollection",
+   "kind": "doc",
+   "line": 1345
+  },
+  {
+   "id": "r97",
+   "anchor": "LineCollection",
+   "kind": "doc",
+   "line": 1350
+  },
+  {
+   "id": "r98",
+   "anchor": "LineCollection.__init__#param:segments",
+   "kind": "trail",
+   "line": 1370
+  },
+  {
+   "id": "r99",
+   "anchor": "LineCollection.__init__#param:zorder",
+   "kind": "trail",
+   "line": 1372
+  },
+  {
+   "id": "r100",
+   "anchor": "LineCollection.__init__",
+   "kind": "doc",
+   "line": 1370
+  },
+  {
+   "id": "r101",
+   "anchor": "LineCollection.__init__#call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 1408
+  },
+  {
+   "id": "r102",
+   "anchor": "LineCollection.set_verts",
+   "kind": "trail",
+   "line": 1423
+  },
+  {
+   "id": "r103",
+   "anchor": "LineCollection.get_segments",
+   "kind": "doc",
+   "line": 1426
+  },
+  {
+   "id": "r104",
+   "anchor": "LineCollection.get_segments#for:path in self._paths/assign:vertices",
+   "kind": "lead",
+   "line": 1437
+  },
+  {
+   "id": "r105",
+   "anchor": "LineCollection.set_color",
+   "kind": "doc",
+   "line": 1462
+  },
+  {
+   "id": "r106",
+   "anchor": "LineCollection.get_colors",
+   "kind": "trail",
+   "line": 1480
+  },
+  {
+   "id": "r107",
+   "anchor": "EventCollection",
+   "kind": "doc",
+   "line": 1483
+  },
+  {
+   "id": "r108",
+   "anchor": "EventCollection.__init__#param:positions",
+   "kind": "trail",
+   "line": 1495
+  },
+  {
+   "id": "r109",
+   "anchor": "EventCollection.__init__",
+   "kind": "doc",
+   "line": 1494
+  },
+  {
+   "id": "r110",
+   "anchor": "EventCollection._is_horizontal",
+   "kind": "trail",
+   "line": 1545
+  },
+  {
+   "id": "r111",
+   "anchor": "EventCollection.get_positions",
+   "kind": "doc",
+   "line": 1551
+  },
+  {
+   "id": "r112",
+   "anchor": "EventCollection.set_positions",
+   "kind": "doc",
+   "line": 1558
+  },
+  {
+   "id": "r113",
+   "anchor": "EventCollection.add_positions",
+   "kind": "doc",
+   "line": 1573
+  },
+  {
+   "id": "r114",
+   "anchor": "EventCollection.is_horizontal",
+   "kind": "doc",
+   "line": 1583
+  },
+  {
+   "id": "r115",
+   "anchor": "EventCollection.get_orientation",
+   "kind": "doc",
+   "line": 1587
+  },
+  {
+   "id": "r116",
+   "anchor": "EventCollection.switch_orientation",
+   "kind": "doc",
+   "line": 1593
+  },
+  {
+   "id": "r117",
+   "anchor": "EventCollection.set_orientation",
+   "kind": "doc",
+   "line": 1605
+  },
+  {
+   "id": "r118",
+   "anchor": "EventCollection.get_linelength",
+   "kind": "doc",
+   "line": 1620
+  },
+  {
+   "id": "r119",
+   "anchor": "EventCollection.set_linelength",
+   "kind": "doc",
+   "line": 1624
+  },
+  {
+   "id": "r120",
+   "anchor": "EventCollection.get_lineoffset",
+   "kind": "doc",
+   "line": 1637
+  },
+  {
+   "id": "r121",
+   "anchor": "EventCollection.set_lineoffset",
+   "kind": "doc",
+   "line": 1641
+  },
+  {
+   "id": "r122",
+   "anchor": "EventCollection.get_linewidth",
+   "kind": "doc",
+   "line": 1654
+  },
+  {
+   "id": "r123",
+   "anchor": "EventCollection.get_color",
+   "kind": "doc",
+   "line": 1661
+  },
+  {
+   "id": "r124",
+   "anchor": "CircleCollection",
+   "kind": "doc",
+   "line": 1666
+  },
+  {
+   "id": "r125",
+   "anchor": "CircleCollection.__init__",
+   "kind": "doc",
+   "line": 1671
+  },
+  {
+   "id": "r126",
+   "anchor": "EllipseCollection",
+   "kind": "doc",
+   "line": 1686
+  },
+  {
+   "id": "r127",
+   "anchor": "EllipseCollection.__init__",
+   "kind": "doc",
+   "line": 1690
+  },
+  {
+   "id": "r128",
+   "anchor": "EllipseCollection._set_transforms",
+   "kind": "doc",
+   "line": 1720
+  },
+  {
+   "id": "r129",
+   "anchor": "PatchCollection",
+   "kind": "doc",
+   "line": 1768
+  },
+  {
+   "id": "r130",
+   "anchor": "PatchCollection.__init__",
+   "kind": "doc",
+   "line": 1778
+  },
+  {
+   "id": "r131",
+   "anchor": "TriMesh",
+   "kind": "doc",
+   "line": 1829
+  },
+  {
+   "id": "r132",
+   "anchor": "TriMesh.__init__#assign:xy",
+   "kind": "lead",
+   "line": 1844
+  },
+  {
+   "id": "r133",
+   "anchor": "TriMesh.convert_mesh_to_paths",
+   "kind": "doc",
+   "line": 1857
+  },
+  {
+   "id": "r134",
+   "anchor": "TriMesh.draw#assign:tri",
+   "kind": "lead",
+   "line": 1876
+  },
+  {
+   "id": "r135",
+   "anchor": "QuadMesh",
+   "kind": "doc",
+   "line": 1892
+  },
+  {
+   "id": "r136",
+   "anchor": "QuadMesh.__init__#call:kwargs.setdefault",
+   "kind": "post",
+   "line": 1928
+  },
+  {
+   "id": "r137",
+   "anchor": "QuadMesh.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 1939
+  },
+  {
+   "id": "r138",
+   "anchor": "QuadMesh.set_array",
+   "kind": "doc",
+   "line": 1951
+  },
+  {
+   "id": "r139",
+   "anchor": "QuadMesh.get_coordinates",
+   "kind": "doc",
+   "line": 1991
+  },
+  {
+   "id": "r140",
+   "anchor": "QuadMesh._convert_mesh_to_paths",
+   "kind": "doc",
+   "line": 2002
+  },
+  {
+   "id": "r141",
+   "anchor": "QuadMesh._convert_mesh_to_triangles",
+   "kind": "doc",
+   "line": 2022
+  },
+  {
+   "id": "r142",
+   "anchor": "QuadMesh.draw#if:self._shading=='gouraud'/else/call:renderer.draw_quad_mesh/arg:self.get_facecolor().reshape((-1, 4))",
+   "kind": "lead",
+   "line": 2103
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 45772,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 12809,
+  "thinking_tokens": 6739,
+  "opus_cost_usd": 0.7822365,
+  "total_cost_usd": 0.8185865,
+  "duration_ms": 111417,
+  "duration_api_ms": 112312,
+  "num_turns": 2
+ },
+ "wall_ms": 112513,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

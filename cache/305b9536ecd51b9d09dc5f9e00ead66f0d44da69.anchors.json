@@ -1,0 +1,775 @@
+{
+ "blob_sha": "305b9536ecd51b9d09dc5f9e00ead66f0d44da69",
+ "path": "astropy/cosmology/flrw/base.py",
+ "repo": "astropy/astropy",
+ "records": 125,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:__future__",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_H0units_to_invs",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r3",
+   "anchor": "_H0units_to_invs",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "_critdens_const",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r5",
+   "anchor": "_radian_in_arcsec",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r6",
+   "anchor": "_a_B_c2",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "_kB_evK",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r8",
+   "anchor": "_FLRWT",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r9",
+   "anchor": "FLRW",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r10",
+   "anchor": "FLRW",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r11",
+   "anchor": "FLRW.__init__#assign:self.H0",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r12",
+   "anchor": "FLRW.__init__#assign:self.m_nu",
+   "kind": "trail",
+   "line": 178
+  },
+  {
+   "id": "r13",
+   "anchor": "FLRW.__init__#assign:self.Ob0",
+   "kind": "trail",
+   "line": 179
+  },
+  {
+   "id": "r14",
+   "anchor": "FLRW._Odm0",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r15",
+   "anchor": "FLRW._h",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r16",
+   "anchor": "FLRW._hubble_distance",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r17",
+   "anchor": "FLRW.__init__#assign:H0_s",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r18",
+   "anchor": "FLRW._hubble_time",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r19",
+   "anchor": "FLRW.__init__#assign:cd0value",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r20",
+   "anchor": "FLRW._Ogamma0",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r21",
+   "anchor": "FLRW._Tnu0",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r22",
+   "anchor": "FLRW.__init__#if:self._m_nu is None",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r23",
+   "anchor": "FLRW.__init__#if:self._m_nu is None/else/assign:self._neff_per_nu",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r24",
+   "anchor": "FLRW.__init__#if:self._m_nu is None/else/assign:massive",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r25",
+   "anchor": "FLRW.__init__#if:self._massivenu",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r26",
+   "anchor": "FLRW.__init__#if:self._massivenu",
+   "kind": "trail",
+   "line": 240
+  },
+  {
+   "id": "r27",
+   "anchor": "FLRW.__init__#if:self._massivenu/else/assign:self._Onu0",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r28",
+   "anchor": "FLRW._Ok0",
+   "kind": "lead",
+   "line": 253
+  },
+  {
+   "id": "r29",
+   "anchor": "FLRW._inv_efunc_scalar",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r30",
+   "anchor": "FLRW.Ob0",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r31",
+   "anchor": "FLRW.Ob0",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r32",
+   "anchor": "FLRW.m_nu",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r33",
+   "anchor": "FLRW.m_nu#if:(nneutrinos := floor(self._Neff)) == 0 or self._Tcmb0.value == 0",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r34",
+   "anchor": "FLRW.m_nu#if:(nneutrinos := floor(self._Neff)) == 0 or self._Tcmb0.value == 0/return",
+   "kind": "trail",
+   "line": 286
+  },
+  {
+   "id": "r35",
+   "anchor": "FLRW.m_nu#assign:value",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r36",
+   "anchor": "FLRW.m_nu#if:value.shape not in ((), (nneutrinos,))",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r37",
+   "anchor": "FLRW.m_nu#if:value.isscalar",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r38",
+   "anchor": "FLRW.is_flat",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r39",
+   "anchor": "FLRW.is_flat",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r40",
+   "anchor": "FLRW.Otot0",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r41",
+   "anchor": "FLRW.Odm0",
+   "kind": "doc",
+   "line": 320
+  },
+  {
+   "id": "r42",
+   "anchor": "FLRW.Ok0",
+   "kind": "doc",
+   "line": 325
+  },
+  {
+   "id": "r43",
+   "anchor": "FLRW.Tnu0",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r44",
+   "anchor": "FLRW.has_massive_nu",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r45",
+   "anchor": "FLRW.h",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r46",
+   "anchor": "FLRW.hubble_time",
+   "kind": "doc",
+   "line": 349
+  },
+  {
+   "id": "r47",
+   "anchor": "FLRW.hubble_distance",
+   "kind": "doc",
+   "line": 354
+  },
+  {
+   "id": "r48",
+   "anchor": "FLRW.critical_density0",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r49",
+   "anchor": "FLRW.Ogamma0",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r50",
+   "anchor": "FLRW.Onu0",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r51",
+   "anchor": "FLRW.w",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r52",
+   "anchor": "FLRW.w",
+   "kind": "doc",
+   "line": 376
+  },
+  {
+   "id": "r53",
+   "anchor": "FLRW.Otot",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r54",
+   "anchor": "FLRW.Om",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r55",
+   "anchor": "FLRW.Ob",
+   "kind": "doc",
+   "line": 442
+  },
+  {
+   "id": "r56",
+   "anchor": "FLRW.Odm",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r57",
+   "anchor": "FLRW.Ok",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r58",
+   "anchor": "FLRW.Ok#if:self._Ok0 == 0",
+   "kind": "trail",
+   "line": 516
+  },
+  {
+   "id": "r59",
+   "anchor": "FLRW.Ode",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r60",
+   "anchor": "FLRW.Ode#if:self._Ode0 == 0",
+   "kind": "trail",
+   "line": 536
+  },
+  {
+   "id": "r61",
+   "anchor": "FLRW.Ogamma",
+   "kind": "doc",
+   "line": 540
+  },
+  {
+   "id": "r62",
+   "anchor": "FLRW.Onu",
+   "kind": "doc",
+   "line": 558
+  },
+  {
+   "id": "r63",
+   "anchor": "FLRW.Onu#if:self._Onu0 == 0",
+   "kind": "trail",
+   "line": 577
+  },
+  {
+   "id": "r64",
+   "anchor": "FLRW.Tcmb",
+   "kind": "doc",
+   "line": 581
+  },
+  {
+   "id": "r65",
+   "anchor": "FLRW.Tnu",
+   "kind": "doc",
+   "line": 596
+  },
+  {
+   "id": "r66",
+   "anchor": "FLRW.nu_relative_density",
+   "kind": "doc",
+   "line": 611
+  },
+  {
+   "id": "r67",
+   "anchor": "FLRW.nu_relative_density#assign:prefac",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r68",
+   "anchor": "FLRW.nu_relative_density#assign:prefac",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r69",
+   "anchor": "FLRW.nu_relative_density#assign:prefac",
+   "kind": "trail",
+   "line": 658
+  },
+  {
+   "id": "r70",
+   "anchor": "FLRW.nu_relative_density#assign:z",
+   "kind": "lead",
+   "line": 662
+  },
+  {
+   "id": "r71",
+   "anchor": "FLRW.nu_relative_density#assign:p",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r72",
+   "anchor": "FLRW.nu_relative_density#assign:invp",
+   "kind": "trail",
+   "line": 670
+  },
+  {
+   "id": "r73",
+   "anchor": "FLRW._w_integrand",
+   "kind": "doc",
+   "line": 679
+  },
+  {
+   "id": "r74",
+   "anchor": "FLRW.de_density_scale",
+   "kind": "doc",
+   "line": 695
+  },
+  {
+   "id": "r75",
+   "anchor": "FLRW.de_density_scale#assign:z",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r76",
+   "anchor": "FLRW.de_density_scale#if:not isinstance(z, (Number, np.generic))",
+   "kind": "trail",
+   "line": 737
+  },
+  {
+   "id": "r77",
+   "anchor": "FLRW.de_density_scale#if:not isinstance(z, (Number, np.generic))/else",
+   "kind": "trail",
+   "line": 742
+  },
+  {
+   "id": "r78",
+   "anchor": "FLRW.efunc",
+   "kind": "doc",
+   "line": 746
+  },
+  {
+   "id": "r79",
+   "anchor": "FLRW.efunc#assign:zp1",
+   "kind": "trail",
+   "line": 771
+  },
+  {
+   "id": "r80",
+   "anchor": "FLRW.inv_efunc",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r81",
+   "anchor": "FLRW.inv_efunc#assign:Or",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r82",
+   "anchor": "FLRW.inv_efunc#assign:zp1",
+   "kind": "trail",
+   "line": 798
+  },
+  {
+   "id": "r83",
+   "anchor": "FLRW._lookback_time_integrand_scalar",
+   "kind": "doc",
+   "line": 805
+  },
+  {
+   "id": "r84",
+   "anchor": "FLRW.lookback_time_integrand",
+   "kind": "doc",
+   "line": 825
+  },
+  {
+   "id": "r85",
+   "anchor": "FLRW._abs_distance_integrand_scalar",
+   "kind": "doc",
+   "line": 846
+  },
+  {
+   "id": "r86",
+   "anchor": "FLRW.abs_distance_integrand",
+   "kind": "doc",
+   "line": 867
+  },
+  {
+   "id": "r87",
+   "anchor": "FLRW.H",
+   "kind": "doc",
+   "line": 888
+  },
+  {
+   "id": "r88",
+   "anchor": "FLRW.scale_factor",
+   "kind": "doc",
+   "line": 903
+  },
+  {
+   "id": "r89",
+   "anchor": "FLRW.lookback_time",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r90",
+   "anchor": "FLRW._lookback_time",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r91",
+   "anchor": "FLRW._integral_lookback_time",
+   "kind": "doc",
+   "line": 962
+  },
+  {
+   "id": "r92",
+   "anchor": "FLRW.lookback_distance",
+   "kind": "doc",
+   "line": 981
+  },
+  {
+   "id": "r93",
+   "anchor": "FLRW.age",
+   "kind": "doc",
+   "line": 1000
+  },
+  {
+   "id": "r94",
+   "anchor": "FLRW._age",
+   "kind": "doc",
+   "line": 1019
+  },
+  {
+   "id": "r95",
+   "anchor": "FLRW._integral_age",
+   "kind": "doc",
+   "line": 1037
+  },
+  {
+   "id": "r96",
+   "anchor": "FLRW.critical_density",
+   "kind": "doc",
+   "line": 1059
+  },
+  {
+   "id": "r97",
+   "anchor": "FLRW.comoving_distance",
+   "kind": "doc",
+   "line": 1074
+  },
+  {
+   "id": "r98",
+   "anchor": "FLRW._comoving_distance_z1z2",
+   "kind": "doc",
+   "line": 1092
+  },
+  {
+   "id": "r99",
+   "anchor": "FLRW._integral_comoving_distance_z1z2_scalar",
+   "kind": "doc",
+   "line": 1113
+  },
+  {
+   "id": "r100",
+   "anchor": "FLRW._integral_comoving_distance_z1z2",
+   "kind": "doc",
+   "line": 1134
+  },
+  {
+   "id": "r101",
+   "anchor": "FLRW.comoving_transverse_distance",
+   "kind": "doc",
+   "line": 1153
+  },
+  {
+   "id": "r102",
+   "anchor": "FLRW._comoving_transverse_distance_z1z2",
+   "kind": "doc",
+   "line": 1177
+  },
+  {
+   "id": "r103",
+   "anchor": "FLRW.angular_diameter_distance",
+   "kind": "doc",
+   "line": 1210
+  },
+  {
+   "id": "r104",
+   "anchor": "FLRW.luminosity_distance",
+   "kind": "doc",
+   "line": 1236
+  },
+  {
+   "id": "r105",
+   "anchor": "FLRW.angular_diameter_distance_z1z2",
+   "kind": "doc",
+   "line": 1263
+  },
+  {
+   "id": "r106",
+   "anchor": "FLRW.absorption_distance",
+   "kind": "doc",
+   "line": 1293
+  },
+  {
+   "id": "r107",
+   "anchor": "FLRW.distmod",
+   "kind": "doc",
+   "line": 1319
+  },
+  {
+   "id": "r108",
+   "anchor": "FLRW.distmod#assign:val",
+   "kind": "lead",
+   "line": 1343
+  },
+  {
+   "id": "r109",
+   "anchor": "FLRW.comoving_volume",
+   "kind": "doc",
+   "line": 1346
+  },
+  {
+   "id": "r110",
+   "anchor": "FLRW.comoving_volume#assign:dh",
+   "kind": "trail",
+   "line": 1367
+  },
+  {
+   "id": "r111",
+   "anchor": "FLRW.differential_comoving_volume",
+   "kind": "doc",
+   "line": 1378
+  },
+  {
+   "id": "r112",
+   "anchor": "FLRW.kpc_comoving_per_arcmin",
+   "kind": "doc",
+   "line": 1401
+  },
+  {
+   "id": "r113",
+   "anchor": "FLRW.kpc_proper_per_arcmin",
+   "kind": "doc",
+   "line": 1419
+  },
+  {
+   "id": "r114",
+   "anchor": "FLRW.arcsec_per_kpc_comoving",
+   "kind": "doc",
+   "line": 1437
+  },
+  {
+   "id": "r115",
+   "anchor": "FLRW.arcsec_per_kpc_proper",
+   "kind": "doc",
+   "line": 1455
+  },
+  {
+   "id": "r116",
+   "anchor": "FlatFLRWMixin",
+   "kind": "doc",
+   "line": 1474
+  },
+  {
+   "id": "r117",
+   "anchor": "FlatFLRWMixin.Ode0",
+   "kind": "trail",
+   "line": 1485
+  },
+  {
+   "id": "r118",
+   "anchor": "FlatFLRWMixin.__init__#call:super().__init__",
+   "kind": "trail",
+   "line": 1495
+  },
+  {
+   "id": "r119",
+   "anchor": "FlatFLRWMixin._Ok0",
+   "kind": "lead",
+   "line": 1497
+  },
+  {
+   "id": "r120",
+   "anchor": "FlatFLRWMixin.nonflat#assign:ba",
+   "kind": "lead",
+   "line": 1504
+  },
+  {
+   "id": "r121",
+   "anchor": "FlatFLRWMixin.nonflat#assign:inst",
+   "kind": "lead",
+   "line": 1508
+  },
+  {
+   "id": "r122",
+   "anchor": "FlatFLRWMixin.nonflat#for:n in inst.__all_parameters__ + (\"Ok0\",)",
+   "kind": "lead",
+   "line": 1510
+  },
+  {
+   "id": "r123",
+   "anchor": "FlatFLRWMixin.clone",
+   "kind": "doc",
+   "line": 1515
+  },
+  {
+   "id": "r124",
+   "anchor": "FlatFLRWMixin.Otot0",
+   "kind": "doc",
+   "line": 1574
+  },
+  {
+   "id": "r125",
+   "anchor": "FlatFLRWMixin.Otot",
+   "kind": "doc",
+   "line": 1578
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 35609,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9538,
+  "thinking_tokens": 4397,
+  "opus_cost_usd": 0.5988315,
+  "total_cost_usd": 0.6270705,
+  "duration_ms": 82815,
+  "duration_api_ms": 84324,
+  "num_turns": 2
+ },
+ "wall_ms": 83854,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

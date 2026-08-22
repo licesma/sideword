@@ -1,0 +1,2101 @@
+{
+ "blob_sha": "dcbb847508622e24702f72148c749f64b5ff4793",
+ "path": "lib/matplotlib/patches.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 346,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Patch",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r2",
+   "anchor": "Patch._edge_default",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r3",
+   "anchor": "Patch.__init__",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "Patch._fill",
+   "kind": "trail",
+   "line": 73
+  },
+  {
+   "id": "r5",
+   "anchor": "Patch._us_dashes",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r6",
+   "anchor": "Patch.get_verts",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r7",
+   "anchor": "Patch.contains",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r8",
+   "anchor": "Patch.contains#if:codes is not None/assign:idxs",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r9",
+   "anchor": "Patch.contains#if:codes is not None/assign:idxs",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r10",
+   "anchor": "Patch.contains_point",
+   "kind": "doc",
+   "line": 154
+  },
+  {
+   "id": "r11",
+   "anchor": "Patch.contains_points",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r12",
+   "anchor": "Patch.update_from",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r13",
+   "anchor": "Patch.update_from#assign:self._edgecolor",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r14",
+   "anchor": "Patch.update_from#assign:self._us_dashes",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r15",
+   "anchor": "Patch.update_from#call:self.set_linewidth",
+   "kind": "trail",
+   "line": 196
+  },
+  {
+   "id": "r16",
+   "anchor": "Patch.update_from#assign:self._transformSet",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r17",
+   "anchor": "Patch.get_extents",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r18",
+   "anchor": "Patch.get_transform",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "Patch.get_data_transform",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r20",
+   "anchor": "Patch.get_patch_transform",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r21",
+   "anchor": "Patch.get_antialiased",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r22",
+   "anchor": "Patch.get_edgecolor",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r23",
+   "anchor": "Patch.get_facecolor",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r24",
+   "anchor": "Patch.get_linewidth",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r25",
+   "anchor": "Patch.get_linestyle",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r26",
+   "anchor": "Patch.set_antialiased",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r27",
+   "anchor": "Patch.set_edgecolor",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r28",
+   "anchor": "Patch.set_facecolor",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r29",
+   "anchor": "Patch.set_color",
+   "kind": "doc",
+   "line": 321
+  },
+  {
+   "id": "r30",
+   "anchor": "Patch.set_alpha",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r31",
+   "anchor": "Patch.set_alpha#call:self._set_edgecolor",
+   "kind": "post",
+   "line": 352
+  },
+  {
+   "id": "r32",
+   "anchor": "Patch.set_linewidth",
+   "kind": "doc",
+   "line": 355
+  },
+  {
+   "id": "r33",
+   "anchor": "Patch.set_linewidth#assign:offset, ls",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r34",
+   "anchor": "Patch.set_linestyle",
+   "kind": "doc",
+   "line": 375
+  },
+  {
+   "id": "r35",
+   "anchor": "Patch.set_linestyle#assign:offset, ls",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r36",
+   "anchor": "Patch.set_linestyle#assign:self._dashoffset, self._dashes",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r37",
+   "anchor": "Patch.set_fill",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r38",
+   "anchor": "Patch.get_fill",
+   "kind": "doc",
+   "line": 422
+  },
+  {
+   "id": "r39",
+   "anchor": "Patch.fill",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r40",
+   "anchor": "Patch.set_capstyle",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r41",
+   "anchor": "Patch.get_capstyle",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r42",
+   "anchor": "Patch.set_joinstyle",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r43",
+   "anchor": "Patch.get_joinstyle",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r44",
+   "anchor": "Patch.set_hatch",
+   "kind": "doc",
+   "line": 469
+  },
+  {
+   "id": "r45",
+   "anchor": "Patch.get_hatch",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r46",
+   "anchor": "Patch._bind_draw_path_function",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r47",
+   "anchor": "Patch._bind_draw_path_function#if:self._hatch/try/except:AttributeError/call:cbook.warn_deprecated",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r48",
+   "anchor": "Patch._bind_draw_path_function#yield",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r49",
+   "anchor": "Patch.draw",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r50",
+   "anchor": "Patch.draw#with:cbook._setattr_cm(self, _dashoffset=0)",
+   "kind": "lead",
+   "line": 570
+  },
+  {
+   "id": "r51",
+   "anchor": "Patch.draw#with:cbook._setattr_cm(self, _dashoffset=0)/call:draw_path/arg:self._facecolor if self._facecolor[3] else None",
+   "kind": "lead",
+   "line": 580
+  },
+  {
+   "id": "r52",
+   "anchor": "Patch.get_path",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r53",
+   "anchor": "Patch._convert_xy_units",
+   "kind": "doc",
+   "line": 591
+  },
+  {
+   "id": "r54",
+   "anchor": "<module>#call:docstring.dedent_interpd",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r55",
+   "anchor": "Shadow.__init__",
+   "kind": "doc",
+   "line": 615
+  },
+  {
+   "id": "r56",
+   "anchor": "Shadow._update#call:self.set_zorder",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r57",
+   "anchor": "Rectangle",
+   "kind": "doc",
+   "line": 674
+  },
+  {
+   "id": "r58",
+   "anchor": "Rectangle.__init__",
+   "kind": "doc",
+   "line": 686
+  },
+  {
+   "id": "r59",
+   "anchor": "Rectangle._rect_transform",
+   "kind": "lead",
+   "line": 720
+  },
+  {
+   "id": "r60",
+   "anchor": "Rectangle.get_path",
+   "kind": "doc",
+   "line": 722
+  },
+  {
+   "id": "r61",
+   "anchor": "Rectangle._update_patch_transform",
+   "kind": "doc",
+   "line": 728
+  },
+  {
+   "id": "r62",
+   "anchor": "Rectangle._convert_units",
+   "kind": "doc",
+   "line": 747
+  },
+  {
+   "id": "r63",
+   "anchor": "Rectangle.get_x",
+   "kind": "doc",
+   "line": 761
+  },
+  {
+   "id": "r64",
+   "anchor": "Rectangle.get_y",
+   "kind": "doc",
+   "line": 765
+  },
+  {
+   "id": "r65",
+   "anchor": "Rectangle.get_xy",
+   "kind": "doc",
+   "line": 769
+  },
+  {
+   "id": "r66",
+   "anchor": "Rectangle.get_width",
+   "kind": "doc",
+   "line": 773
+  },
+  {
+   "id": "r67",
+   "anchor": "Rectangle.get_height",
+   "kind": "doc",
+   "line": 777
+  },
+  {
+   "id": "r68",
+   "anchor": "Rectangle.set_x",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r69",
+   "anchor": "Rectangle.set_y",
+   "kind": "doc",
+   "line": 787
+  },
+  {
+   "id": "r70",
+   "anchor": "Rectangle.set_xy",
+   "kind": "doc",
+   "line": 793
+  },
+  {
+   "id": "r71",
+   "anchor": "Rectangle.set_width",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r72",
+   "anchor": "Rectangle.set_height",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r73",
+   "anchor": "Rectangle.set_bounds",
+   "kind": "doc",
+   "line": 818
+  },
+  {
+   "id": "r74",
+   "anchor": "RegularPolygon",
+   "kind": "doc",
+   "line": 843
+  },
+  {
+   "id": "r75",
+   "anchor": "RegularPolygon.__init__",
+   "kind": "doc",
+   "line": 853
+  },
+  {
+   "id": "r76",
+   "anchor": "PathPatch",
+   "kind": "doc",
+   "line": 932
+  },
+  {
+   "id": "r77",
+   "anchor": "PathPatch.__init__",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r78",
+   "anchor": "Polygon",
+   "kind": "doc",
+   "line": 957
+  },
+  {
+   "id": "r79",
+   "anchor": "Polygon.__init__",
+   "kind": "doc",
+   "line": 966
+  },
+  {
+   "id": "r80",
+   "anchor": "Polygon.get_path",
+   "kind": "doc",
+   "line": 980
+  },
+  {
+   "id": "r81",
+   "anchor": "Polygon.get_closed",
+   "kind": "doc",
+   "line": 992
+  },
+  {
+   "id": "r82",
+   "anchor": "Polygon.set_closed",
+   "kind": "doc",
+   "line": 1003
+  },
+  {
+   "id": "r83",
+   "anchor": "Polygon.get_xy",
+   "kind": "doc",
+   "line": 1018
+  },
+  {
+   "id": "r84",
+   "anchor": "Polygon.set_xy",
+   "kind": "doc",
+   "line": 1029
+  },
+  {
+   "id": "r85",
+   "anchor": "Wedge",
+   "kind": "doc",
+   "line": 1054
+  },
+  {
+   "id": "r86",
+   "anchor": "Wedge.__init__",
+   "kind": "doc",
+   "line": 1065
+  },
+  {
+   "id": "r87",
+   "anchor": "Wedge._recompute_path#if:abs((self.theta2 - self.theta1) - 360) <= 1e-12",
+   "kind": "lead",
+   "line": 1085
+  },
+  {
+   "id": "r88",
+   "anchor": "Wedge._recompute_path#assign:arc",
+   "kind": "lead",
+   "line": 1093
+  },
+  {
+   "id": "r89",
+   "anchor": "Wedge._recompute_path#if:self.width is not None/assign:v1",
+   "kind": "lead",
+   "line": 1098
+  },
+  {
+   "id": "r90",
+   "anchor": "Wedge._recompute_path#if:self.width is not None/else/assign:v",
+   "kind": "lead",
+   "line": 1105
+  },
+  {
+   "id": "r91",
+   "anchor": "Wedge._recompute_path#assign:v",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r92",
+   "anchor": "Arrow",
+   "kind": "lead",
+   "line": 1145
+  },
+  {
+   "id": "r93",
+   "anchor": "Arrow",
+   "kind": "doc",
+   "line": 1145
+  },
+  {
+   "id": "r94",
+   "anchor": "Arrow.__init__",
+   "kind": "doc",
+   "line": 1159
+  },
+  {
+   "id": "r95",
+   "anchor": "Arrow.__init__#if:L != 0/else/assign:cx, sx",
+   "kind": "lead",
+   "line": 1197
+  },
+  {
+   "id": "r96",
+   "anchor": "FancyArrow",
+   "kind": "doc",
+   "line": 1212
+  },
+  {
+   "id": "r97",
+   "anchor": "FancyArrow.__init__",
+   "kind": "doc",
+   "line": 1223
+  },
+  {
+   "id": "r98",
+   "anchor": "FancyArrow.__init__#if:not length/assign:verts",
+   "kind": "trail",
+   "line": 1267
+  },
+  {
+   "id": "r99",
+   "anchor": "FancyArrow.__init__#if:not length/else/assign:hw, hl, hs, lw",
+   "kind": "lead",
+   "line": 1270
+  },
+  {
+   "id": "r100",
+   "anchor": "FancyArrow.__init__#if:not length/else/assign:left_half_arrow/arg:[[0.0, 0.0], [-hl, -hw / 2], [-hl * (1 - hs), -lw / 2], [-length, -lw / 2], [-length, 0]]/item:[0.0, 0.0]",
+   "kind": "trail",
+   "line": 1272
+  },
+  {
+   "id": "r101",
+   "anchor": "FancyArrow.__init__#if:not length/else/assign:left_half_arrow/arg:[[0.0, 0.0], [-hl, -hw / 2], [-hl * (1 - hs), -lw / 2], [-length, -lw / 2], [-length, 0]]/item:[-hl, -hw / 2]",
+   "kind": "trail",
+   "line": 1273
+  },
+  {
+   "id": "r102",
+   "anchor": "FancyArrow.__init__#if:not length/else/assign:left_half_arrow/arg:[[0.0, 0.0], [-hl, -hw / 2], [-hl * (1 - hs), -lw / 2], [-length, -lw / 2], [-length, 0]]/item:[-hl * (1 - hs), -lw / 2]",
+   "kind": "trail",
+   "line": 1274
+  },
+  {
+   "id": "r103",
+   "anchor": "FancyArrow.__init__#if:not length/else/assign:left_half_arrow/arg:[[0.0, 0.0], [-hl, -hw / 2], [-hl * (1 - hs), -lw / 2], [-length, -lw / 2], [-length, 0]]/item:[-length, -lw / 2]",
+   "kind": "trail",
+   "line": 1275
+  },
+  {
+   "id": "r104",
+   "anchor": "FancyArrow.__init__#if:not length/else/if:not length_includes_head",
+   "kind": "lead",
+   "line": 1279
+  },
+  {
+   "id": "r105",
+   "anchor": "FancyArrow.__init__#if:not length/else/if:head_starts_at_zero",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r106",
+   "anchor": "FancyArrow.__init__#if:not length/else/if:shape == 'left'",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r107",
+   "anchor": "FancyArrow.__init__#if:not length/else/if:shape == 'left'/else/if:shape == 'right'/elif:shape == 'full'/assign:coords",
+   "kind": "lead",
+   "line": 1295
+  },
+  {
+   "id": "r108",
+   "anchor": "FancyArrow.__init__#if:not length/else/if:distance != 0/else/assign:cx, sx",
+   "kind": "lead",
+   "line": 1304
+  },
+  {
+   "id": "r109",
+   "anchor": "YAArrow",
+   "kind": "doc",
+   "line": 1315
+  },
+  {
+   "id": "r110",
+   "anchor": "YAArrow.__init__",
+   "kind": "doc",
+   "line": 1326
+  },
+  {
+   "id": "r111",
+   "anchor": "YAArrow.figure",
+   "kind": "lead",
+   "line": 1361
+  },
+  {
+   "id": "r112",
+   "anchor": "YAArrow.get_path#assign:x1, y1",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r113",
+   "anchor": "YAArrow.get_path#assign:x1, y1",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r114",
+   "anchor": "YAArrow.get_path#assign:xm",
+   "kind": "lead",
+   "line": 1375
+  },
+  {
+   "id": "r115",
+   "anchor": "YAArrow.getpoints",
+   "kind": "doc",
+   "line": 1388
+  },
+  {
+   "id": "r116",
+   "anchor": "CirclePolygon",
+   "kind": "doc",
+   "line": 1416
+  },
+  {
+   "id": "r117",
+   "anchor": "CirclePolygon.__init__#param:resolution",
+   "kind": "trail",
+   "line": 1426
+  },
+  {
+   "id": "r118",
+   "anchor": "CirclePolygon.__init__",
+   "kind": "doc",
+   "line": 1425
+  },
+  {
+   "id": "r119",
+   "anchor": "Ellipse",
+   "kind": "doc",
+   "line": 1445
+  },
+  {
+   "id": "r120",
+   "anchor": "Ellipse.__init__",
+   "kind": "doc",
+   "line": 1456
+  },
+  {
+   "id": "r121",
+   "anchor": "Ellipse._patch_transform",
+   "kind": "lead",
+   "line": 1481
+  },
+  {
+   "id": "r122",
+   "anchor": "Ellipse._recompute_transform",
+   "kind": "doc",
+   "line": 1483
+  },
+  {
+   "id": "r123",
+   "anchor": "Ellipse.get_path",
+   "kind": "doc",
+   "line": 1498
+  },
+  {
+   "id": "r124",
+   "anchor": "Ellipse.set_center",
+   "kind": "doc",
+   "line": 1508
+  },
+  {
+   "id": "r125",
+   "anchor": "Ellipse.get_center",
+   "kind": "doc",
+   "line": 1519
+  },
+  {
+   "id": "r126",
+   "anchor": "Circle",
+   "kind": "doc",
+   "line": 1528
+  },
+  {
+   "id": "r127",
+   "anchor": "Circle.__init__",
+   "kind": "doc",
+   "line": 1538
+  },
+  {
+   "id": "r128",
+   "anchor": "Circle.set_radius",
+   "kind": "doc",
+   "line": 1552
+  },
+  {
+   "id": "r129",
+   "anchor": "Circle.get_radius",
+   "kind": "doc",
+   "line": 1563
+  },
+  {
+   "id": "r130",
+   "anchor": "Arc",
+   "kind": "doc",
+   "line": 1572
+  },
+  {
+   "id": "r131",
+   "anchor": "Arc.__init__",
+   "kind": "doc",
+   "line": 1592
+  },
+  {
+   "id": "r132",
+   "anchor": "Arc.draw",
+   "kind": "doc",
+   "line": 1639
+  },
+  {
+   "id": "r133",
+   "anchor": "Arc.draw.theta_stretch",
+   "kind": "lead",
+   "line": 1698
+  },
+  {
+   "id": "r134",
+   "anchor": "Arc.draw#assign:width, height",
+   "kind": "lead",
+   "line": 1707
+  },
+  {
+   "id": "r135",
+   "anchor": "Arc.draw.iter_circle_intersect_on_line#if:discrim == 0.0",
+   "kind": "lead",
+   "line": 1722
+  },
+  {
+   "id": "r136",
+   "anchor": "Arc.draw.iter_circle_intersect_on_line#if:discrim == 0.0/elif:discrim > 0.0/if:dy < 0.0",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r137",
+   "anchor": "Arc.draw#assign:box_path",
+   "kind": "lead",
+   "line": 1760
+  },
+  {
+   "id": "r138",
+   "anchor": "Arc.draw#for:p0, p1 in zip(box_path.vertices[:-1], box_path.vertices[1:])",
+   "kind": "lead",
+   "line": 1767
+  },
+  {
+   "id": "r139",
+   "anchor": "Arc.draw#for:p0, p1 in zip(box_path.vertices[:-1], box_path.vertices[1:])/for:x, y in iter_circle_intersect_on_line_seg(x0, y0, x1, y1)/assign:theta",
+   "kind": "lead",
+   "line": 1775
+  },
+  {
+   "id": "r140",
+   "anchor": "Arc.draw#assign:path_original",
+   "kind": "lead",
+   "line": 1786
+  },
+  {
+   "id": "r141",
+   "anchor": "Arc.draw#assign:self._path",
+   "kind": "lead",
+   "line": 1797
+  },
+  {
+   "id": "r142",
+   "anchor": "bbox_artist",
+   "kind": "doc",
+   "line": 1800
+  },
+  {
+   "id": "r143",
+   "anchor": "bbox_artist#assign:props",
+   "kind": "trail",
+   "line": 1812
+  },
+  {
+   "id": "r144",
+   "anchor": "draw_bbox",
+   "kind": "doc",
+   "line": 1832
+  },
+  {
+   "id": "r145",
+   "anchor": "_pprint_table",
+   "kind": "doc",
+   "line": 1853
+  },
+  {
+   "id": "r146",
+   "anchor": "_pprint_styles",
+   "kind": "doc",
+   "line": 1872
+  },
+  {
+   "id": "r147",
+   "anchor": "_pprint_styles#for:name, cls in sorted(_styles.items())/call:_table.append",
+   "kind": "lead",
+   "line": 1891
+  },
+  {
+   "id": "r148",
+   "anchor": "_simpleprint_styles",
+   "kind": "doc",
+   "line": 1896
+  },
+  {
+   "id": "r149",
+   "anchor": "_Style",
+   "kind": "doc",
+   "line": 1905
+  },
+  {
+   "id": "r150",
+   "anchor": "_Style.__new__",
+   "kind": "doc",
+   "line": 1911
+  },
+  {
+   "id": "r151",
+   "anchor": "_Style.__new__#assign:_list",
+   "kind": "lead",
+   "line": 1919
+  },
+  {
+   "id": "r152",
+   "anchor": "_Style.get_styles",
+   "kind": "doc",
+   "line": 1936
+  },
+  {
+   "id": "r153",
+   "anchor": "_Style.pprint_styles",
+   "kind": "doc",
+   "line": 1943
+  },
+  {
+   "id": "r154",
+   "anchor": "_Style.register",
+   "kind": "doc",
+   "line": 1950
+  },
+  {
+   "id": "r155",
+   "anchor": "_register_style",
+   "kind": "doc",
+   "line": 1961
+  },
+  {
+   "id": "r156",
+   "anchor": "BoxStyle",
+   "kind": "doc",
+   "line": 1969
+  },
+  {
+   "id": "r157",
+   "anchor": "BoxStyle._Base",
+   "kind": "doc",
+   "line": 2005
+  },
+  {
+   "id": "r158",
+   "anchor": "BoxStyle._Base.transmute",
+   "kind": "lead",
+   "line": 2018
+  },
+  {
+   "id": "r159",
+   "anchor": "BoxStyle._Base.transmute",
+   "kind": "doc",
+   "line": 2018
+  },
+  {
+   "id": "r160",
+   "anchor": "BoxStyle._Base.__call__",
+   "kind": "doc",
+   "line": 2029
+  },
+  {
+   "id": "r161",
+   "anchor": "BoxStyle._Base.__call__#if:aspect_ratio is not None",
+   "kind": "lead",
+   "line": 2042
+  },
+  {
+   "id": "r162",
+   "anchor": "BoxStyle._Base.__call__#if:aspect_ratio is not None/assign:y0, height",
+   "kind": "lead",
+   "line": 2044
+  },
+  {
+   "id": "r163",
+   "anchor": "BoxStyle._Base.__call__#if:aspect_ratio is not None/assign:path",
+   "kind": "lead",
+   "line": 2046
+  },
+  {
+   "id": "r164",
+   "anchor": "BoxStyle._Base.__call__#if:aspect_ratio is not None/assign:vertices[:, 1]",
+   "kind": "lead",
+   "line": 2049
+  },
+  {
+   "id": "r165",
+   "anchor": "BoxStyle.Square",
+   "kind": "doc",
+   "line": 2055
+  },
+  {
+   "id": "r166",
+   "anchor": "BoxStyle.Square.__init__",
+   "kind": "doc",
+   "line": 2060
+  },
+  {
+   "id": "r167",
+   "anchor": "BoxStyle.Square.transmute#assign:width, height",
+   "kind": "lead",
+   "line": 2073
+  },
+  {
+   "id": "r168",
+   "anchor": "BoxStyle.Square.transmute#assign:x0, y0",
+   "kind": "lead",
+   "line": 2076
+  },
+  {
+   "id": "r169",
+   "anchor": "BoxStyle.Circle",
+   "kind": "doc",
+   "line": 2084
+  },
+  {
+   "id": "r170",
+   "anchor": "BoxStyle.Circle.__init__",
+   "kind": "doc",
+   "line": 2086
+  },
+  {
+   "id": "r171",
+   "anchor": "BoxStyle.Circle.transmute#assign:x0, y0",
+   "kind": "lead",
+   "line": 2101
+  },
+  {
+   "id": "r172",
+   "anchor": "BoxStyle.LArrow",
+   "kind": "doc",
+   "line": 2106
+  },
+  {
+   "id": "r173",
+   "anchor": "BoxStyle.LArrow.transmute#assign:pad",
+   "kind": "lead",
+   "line": 2116
+  },
+  {
+   "id": "r174",
+   "anchor": "BoxStyle.LArrow.transmute#assign:width, height",
+   "kind": "lead",
+   "line": 2119
+  },
+  {
+   "id": "r175",
+   "anchor": "BoxStyle.LArrow.transmute#assign:x0, y0",
+   "kind": "lead",
+   "line": 2122
+  },
+  {
+   "id": "r176",
+   "anchor": "BoxStyle.LArrow.transmute#assign:x0",
+   "kind": "lead",
+   "line": 2128
+  },
+  {
+   "id": "r177",
+   "anchor": "BoxStyle.LArrow.transmute#assign:cp/item:(x0 + dxx, y0 - dxx)",
+   "kind": "trail",
+   "line": 2132
+  },
+  {
+   "id": "r178",
+   "anchor": "BoxStyle.RArrow",
+   "kind": "doc",
+   "line": 2144
+  },
+  {
+   "id": "r179",
+   "anchor": "BoxStyle.DArrow",
+   "kind": "doc",
+   "line": 2159
+  },
+  {
+   "id": "r180",
+   "anchor": "BoxStyle.DArrow.__init__",
+   "kind": "lead",
+   "line": 2166
+  },
+  {
+   "id": "r181",
+   "anchor": "BoxStyle.DArrow.transmute#assign:pad",
+   "kind": "lead",
+   "line": 2173
+  },
+  {
+   "id": "r182",
+   "anchor": "BoxStyle.DArrow.transmute#assign:height",
+   "kind": "lead",
+   "line": 2177
+  },
+  {
+   "id": "r183",
+   "anchor": "BoxStyle.DArrow.transmute#assign:x0, y0",
+   "kind": "lead",
+   "line": 2180
+  },
+  {
+   "id": "r184",
+   "anchor": "BoxStyle.DArrow.transmute#assign:x0",
+   "kind": "lead",
+   "line": 2186
+  },
+  {
+   "id": "r185",
+   "anchor": "BoxStyle.DArrow.transmute#assign:cp/item:(x1, y0)",
+   "kind": "trail",
+   "line": 2188
+  },
+  {
+   "id": "r186",
+   "anchor": "BoxStyle.DArrow.transmute#assign:cp/item:(x1, y1 + dxx)",
+   "kind": "trail",
+   "line": 2190
+  },
+  {
+   "id": "r187",
+   "anchor": "BoxStyle.DArrow.transmute#assign:cp/item:(x0 + dxx, y1)",
+   "kind": "trail",
+   "line": 2191
+  },
+  {
+   "id": "r188",
+   "anchor": "BoxStyle.DArrow.transmute#assign:cp/item:(x0 + dxx, y0 - dxx)",
+   "kind": "trail",
+   "line": 2193
+  },
+  {
+   "id": "r189",
+   "anchor": "BoxStyle.DArrow.transmute#assign:cp/item:(x0 + dxx, y0)",
+   "kind": "trail",
+   "line": 2194
+  },
+  {
+   "id": "r190",
+   "anchor": "BoxStyle.Round",
+   "kind": "doc",
+   "line": 2209
+  },
+  {
+   "id": "r191",
+   "anchor": "BoxStyle.Round.__init__",
+   "kind": "doc",
+   "line": 2214
+  },
+  {
+   "id": "r192",
+   "anchor": "BoxStyle.Round.transmute#assign:pad",
+   "kind": "lead",
+   "line": 2229
+  },
+  {
+   "id": "r193",
+   "anchor": "BoxStyle.Round.transmute#if:self.rounding_size",
+   "kind": "lead",
+   "line": 2232
+  },
+  {
+   "id": "r194",
+   "anchor": "BoxStyle.Round.transmute#assign:cp",
+   "kind": "lead",
+   "line": 2244
+  },
+  {
+   "id": "r195",
+   "anchor": "BoxStyle.Round4",
+   "kind": "doc",
+   "line": 2271
+  },
+  {
+   "id": "r196",
+   "anchor": "BoxStyle.Round4.__init__",
+   "kind": "doc",
+   "line": 2276
+  },
+  {
+   "id": "r197",
+   "anchor": "BoxStyle.Round4.transmute#assign:pad",
+   "kind": "lead",
+   "line": 2291
+  },
+  {
+   "id": "r198",
+   "anchor": "BoxStyle.Round4.transmute#if:self.rounding_size",
+   "kind": "lead",
+   "line": 2294
+  },
+  {
+   "id": "r199",
+   "anchor": "BoxStyle.Sawtooth",
+   "kind": "doc",
+   "line": 2324
+  },
+  {
+   "id": "r200",
+   "anchor": "BoxStyle.Sawtooth.__init__",
+   "kind": "doc",
+   "line": 2329
+  },
+  {
+   "id": "r201",
+   "anchor": "BoxStyle.Sawtooth._get_sawtooth_vertices#assign:pad",
+   "kind": "lead",
+   "line": 2344
+  },
+  {
+   "id": "r202",
+   "anchor": "BoxStyle.Sawtooth._get_sawtooth_vertices#if:self.tooth_size is None",
+   "kind": "lead",
+   "line": 2347
+  },
+  {
+   "id": "r203",
+   "anchor": "BoxStyle.Sawtooth._get_sawtooth_vertices#assign:dsx_n",
+   "kind": "lead",
+   "line": 2358
+  },
+  {
+   "id": "r204",
+   "anchor": "BoxStyle.Roundtooth",
+   "kind": "doc",
+   "line": 2422
+  },
+  {
+   "id": "r205",
+   "anchor": "BoxStyle.Roundtooth.__init__",
+   "kind": "doc",
+   "line": 2424
+  },
+  {
+   "id": "r206",
+   "anchor": "BoxStyle.Roundtooth.transmute#assign:saw_vertices",
+   "kind": "lead",
+   "line": 2439
+  },
+  {
+   "id": "r207",
+   "anchor": "BoxStyle#if:__doc__",
+   "kind": "trail",
+   "line": 2446
+  },
+  {
+   "id": "r208",
+   "anchor": "FancyBboxPatch",
+   "kind": "doc",
+   "line": 2455
+  },
+  {
+   "id": "r209",
+   "anchor": "FancyBboxPatch.__init__",
+   "kind": "doc",
+   "line": 2472
+  },
+  {
+   "id": "r210",
+   "anchor": "FancyBboxPatch.set_boxstyle",
+   "kind": "doc",
+   "line": 2539
+  },
+  {
+   "id": "r211",
+   "anchor": "FancyBboxPatch.set_mutation_scale",
+   "kind": "doc",
+   "line": 2569
+  },
+  {
+   "id": "r212",
+   "anchor": "FancyBboxPatch.get_mutation_scale",
+   "kind": "doc",
+   "line": 2580
+  },
+  {
+   "id": "r213",
+   "anchor": "FancyBboxPatch.set_mutation_aspect",
+   "kind": "doc",
+   "line": 2584
+  },
+  {
+   "id": "r214",
+   "anchor": "FancyBboxPatch.get_mutation_aspect",
+   "kind": "doc",
+   "line": 2595
+  },
+  {
+   "id": "r215",
+   "anchor": "FancyBboxPatch.get_boxstyle",
+   "kind": "doc",
+   "line": 2599
+  },
+  {
+   "id": "r216",
+   "anchor": "FancyBboxPatch.get_path",
+   "kind": "doc",
+   "line": 2603
+  },
+  {
+   "id": "r217",
+   "anchor": "FancyBboxPatch.get_x",
+   "kind": "lead",
+   "line": 2613
+  },
+  {
+   "id": "r218",
+   "anchor": "FancyBboxPatch.get_x",
+   "kind": "doc",
+   "line": 2613
+  },
+  {
+   "id": "r219",
+   "anchor": "FancyBboxPatch.get_y",
+   "kind": "doc",
+   "line": 2617
+  },
+  {
+   "id": "r220",
+   "anchor": "FancyBboxPatch.get_width",
+   "kind": "doc",
+   "line": 2621
+  },
+  {
+   "id": "r221",
+   "anchor": "FancyBboxPatch.get_height",
+   "kind": "doc",
+   "line": 2625
+  },
+  {
+   "id": "r222",
+   "anchor": "FancyBboxPatch.set_x",
+   "kind": "doc",
+   "line": 2629
+  },
+  {
+   "id": "r223",
+   "anchor": "FancyBboxPatch.set_y",
+   "kind": "doc",
+   "line": 2640
+  },
+  {
+   "id": "r224",
+   "anchor": "FancyBboxPatch.set_width",
+   "kind": "doc",
+   "line": 2651
+  },
+  {
+   "id": "r225",
+   "anchor": "FancyBboxPatch.set_height",
+   "kind": "doc",
+   "line": 2662
+  },
+  {
+   "id": "r226",
+   "anchor": "FancyBboxPatch.set_bounds",
+   "kind": "doc",
+   "line": 2673
+  },
+  {
+   "id": "r227",
+   "anchor": "FancyBboxPatch.get_bbox",
+   "kind": "doc",
+   "line": 2699
+  },
+  {
+   "id": "r228",
+   "anchor": "ConnectionStyle",
+   "kind": "doc",
+   "line": 2705
+  },
+  {
+   "id": "r229",
+   "anchor": "ConnectionStyle._Base",
+   "kind": "doc",
+   "line": 2747
+  },
+  {
+   "id": "r230",
+   "anchor": "ConnectionStyle._Base._clip",
+   "kind": "doc",
+   "line": 2764
+  },
+  {
+   "id": "r231",
+   "anchor": "ConnectionStyle._Base._shrink",
+   "kind": "doc",
+   "line": 2799
+  },
+  {
+   "id": "r232",
+   "anchor": "ConnectionStyle._Base.__call__",
+   "kind": "doc",
+   "line": 2817
+  },
+  {
+   "id": "r233",
+   "anchor": "ConnectionStyle.Arc3",
+   "kind": "doc",
+   "line": 2832
+  },
+  {
+   "id": "r234",
+   "anchor": "ConnectionStyle.Arc3.__init__",
+   "kind": "doc",
+   "line": 2841
+  },
+  {
+   "id": "r235",
+   "anchor": "ConnectionStyle.Angle3",
+   "kind": "doc",
+   "line": 2868
+  },
+  {
+   "id": "r236",
+   "anchor": "ConnectionStyle.Angle3.__init__",
+   "kind": "doc",
+   "line": 2876
+  },
+  {
+   "id": "r237",
+   "anchor": "ConnectionStyle.Angle",
+   "kind": "doc",
+   "line": 2906
+  },
+  {
+   "id": "r238",
+   "anchor": "ConnectionStyle.Angle.__init__",
+   "kind": "doc",
+   "line": 2915
+  },
+  {
+   "id": "r239",
+   "anchor": "ConnectionStyle.Arc",
+   "kind": "doc",
+   "line": 2968
+  },
+  {
+   "id": "r240",
+   "anchor": "ConnectionStyle.Arc.__init__",
+   "kind": "doc",
+   "line": 2977
+  },
+  {
+   "id": "r241",
+   "anchor": "ConnectionStyle.Arc.connect#if:self.armA/assign:d",
+   "kind": "lead",
+   "line": 3014
+  },
+  {
+   "id": "r242",
+   "anchor": "ConnectionStyle.Bar",
+   "kind": "doc",
+   "line": 3062
+  },
+  {
+   "id": "r243",
+   "anchor": "ConnectionStyle.Bar.__init__",
+   "kind": "doc",
+   "line": 3070
+  },
+  {
+   "id": "r244",
+   "anchor": "ConnectionStyle.Bar.connect#if:self.angle is not None/assign:dx, dy",
+   "kind": "lead",
+   "line": 3113
+  },
+  {
+   "id": "r245",
+   "anchor": "_point_along_a_line",
+   "kind": "doc",
+   "line": 3139
+  },
+  {
+   "id": "r246",
+   "anchor": "ArrowStyle",
+   "kind": "doc",
+   "line": 3151
+  },
+  {
+   "id": "r247",
+   "anchor": "ArrowStyle._Base",
+   "kind": "doc",
+   "line": 3190
+  },
+  {
+   "id": "r248",
+   "anchor": "ArrowStyle._Base.ensure_quadratic_bezier",
+   "kind": "lead",
+   "line": 3208
+  },
+  {
+   "id": "r249",
+   "anchor": "ArrowStyle._Base.ensure_quadratic_bezier",
+   "kind": "doc",
+   "line": 3208
+  },
+  {
+   "id": "r250",
+   "anchor": "ArrowStyle._Base.transmute",
+   "kind": "doc",
+   "line": 3222
+  },
+  {
+   "id": "r251",
+   "anchor": "ArrowStyle._Base.__call__",
+   "kind": "doc",
+   "line": 3236
+  },
+  {
+   "id": "r252",
+   "anchor": "ArrowStyle._Base.__call__#if:aspect_ratio is not None/assign:vertices, codes",
+   "kind": "lead",
+   "line": 3248
+  },
+  {
+   "id": "r253",
+   "anchor": "ArrowStyle._Base.__call__#if:aspect_ratio is not None/assign:vertices[:, 1]",
+   "kind": "lead",
+   "line": 3250
+  },
+  {
+   "id": "r254",
+   "anchor": "ArrowStyle._Base.__call__#if:aspect_ratio is not None/assign:path_mutated, fillable",
+   "kind": "lead",
+   "line": 3253
+  },
+  {
+   "id": "r255",
+   "anchor": "ArrowStyle._Base.__call__#if:aspect_ratio is not None/if:np.iterable(fillable)/for:p in zip(path_mutated)/assign:v[:, 1]",
+   "kind": "lead",
+   "line": 3261
+  },
+  {
+   "id": "r256",
+   "anchor": "ArrowStyle._Curve",
+   "kind": "doc",
+   "line": 3269
+  },
+  {
+   "id": "r257",
+   "anchor": "ArrowStyle._Curve.__init__",
+   "kind": "doc",
+   "line": 3277
+  },
+  {
+   "id": "r258",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge",
+   "kind": "doc",
+   "line": 3292
+  },
+  {
+   "id": "r259",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge#assign:dx, dy",
+   "kind": "lead",
+   "line": 3303
+  },
+  {
+   "id": "r260",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge#assign:pad_projected",
+   "kind": "lead",
+   "line": 3309
+  },
+  {
+   "id": "r261",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge#if:cp_distance == 0",
+   "kind": "lead",
+   "line": 3312
+  },
+  {
+   "id": "r262",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge#assign:ddx",
+   "kind": "lead",
+   "line": 3316
+  },
+  {
+   "id": "r263",
+   "anchor": "ArrowStyle._Curve._get_arrow_wedge#assign:dx",
+   "kind": "lead",
+   "line": 3320
+  },
+  {
+   "id": "r264",
+   "anchor": "ArrowStyle._Curve.transmute#assign:x0, y0",
+   "kind": "lead",
+   "line": 3343
+  },
+  {
+   "id": "r265",
+   "anchor": "ArrowStyle._Curve.transmute#assign:has_begin_arrow",
+   "kind": "lead",
+   "line": 3347
+  },
+  {
+   "id": "r266",
+   "anchor": "ArrowStyle._Curve.transmute#assign:x2, y2",
+   "kind": "lead",
+   "line": 3356
+  },
+  {
+   "id": "r267",
+   "anchor": "ArrowStyle._Curve.transmute#assign:has_end_arrow",
+   "kind": "lead",
+   "line": 3360
+  },
+  {
+   "id": "r268",
+   "anchor": "ArrowStyle._Curve.transmute#assign:_path",
+   "kind": "lead",
+   "line": 3370
+  },
+  {
+   "id": "r269",
+   "anchor": "ArrowStyle.Curve",
+   "kind": "doc",
+   "line": 3401
+  },
+  {
+   "id": "r270",
+   "anchor": "ArrowStyle.CurveA",
+   "kind": "doc",
+   "line": 3410
+  },
+  {
+   "id": "r271",
+   "anchor": "ArrowStyle.CurveA.__init__",
+   "kind": "doc",
+   "line": 3415
+  },
+  {
+   "id": "r272",
+   "anchor": "ArrowStyle.CurveB",
+   "kind": "doc",
+   "line": 3429
+  },
+  {
+   "id": "r273",
+   "anchor": "ArrowStyle.CurveB.__init__",
+   "kind": "doc",
+   "line": 3434
+  },
+  {
+   "id": "r274",
+   "anchor": "ArrowStyle.CurveAB",
+   "kind": "doc",
+   "line": 3448
+  },
+  {
+   "id": "r275",
+   "anchor": "ArrowStyle.CurveAB.__init__",
+   "kind": "doc",
+   "line": 3453
+  },
+  {
+   "id": "r276",
+   "anchor": "ArrowStyle.CurveFilledA",
+   "kind": "doc",
+   "line": 3467
+  },
+  {
+   "id": "r277",
+   "anchor": "ArrowStyle.CurveFilledA.__init__",
+   "kind": "doc",
+   "line": 3472
+  },
+  {
+   "id": "r278",
+   "anchor": "ArrowStyle.CurveFilledB",
+   "kind": "doc",
+   "line": 3487
+  },
+  {
+   "id": "r279",
+   "anchor": "ArrowStyle.CurveFilledB.__init__",
+   "kind": "doc",
+   "line": 3492
+  },
+  {
+   "id": "r280",
+   "anchor": "ArrowStyle.CurveFilledAB",
+   "kind": "doc",
+   "line": 3507
+  },
+  {
+   "id": "r281",
+   "anchor": "ArrowStyle.CurveFilledAB.__init__",
+   "kind": "doc",
+   "line": 3512
+  },
+  {
+   "id": "r282",
+   "anchor": "ArrowStyle._Bracket._get_bracket#import:matplotlib.bezier",
+   "kind": "lead",
+   "line": 3543
+  },
+  {
+   "id": "r283",
+   "anchor": "ArrowStyle.BracketAB",
+   "kind": "doc",
+   "line": 3604
+  },
+  {
+   "id": "r284",
+   "anchor": "ArrowStyle.BracketAB.__init__",
+   "kind": "doc",
+   "line": 3609
+  },
+  {
+   "id": "r285",
+   "anchor": "ArrowStyle.BracketA",
+   "kind": "doc",
+   "line": 3638
+  },
+  {
+   "id": "r286",
+   "anchor": "ArrowStyle.BracketA.__init__",
+   "kind": "doc",
+   "line": 3643
+  },
+  {
+   "id": "r287",
+   "anchor": "ArrowStyle.BracketB",
+   "kind": "doc",
+   "line": 3660
+  },
+  {
+   "id": "r288",
+   "anchor": "ArrowStyle.BracketB.__init__",
+   "kind": "doc",
+   "line": 3665
+  },
+  {
+   "id": "r289",
+   "anchor": "ArrowStyle.BarAB",
+   "kind": "doc",
+   "line": 3682
+  },
+  {
+   "id": "r290",
+   "anchor": "ArrowStyle.BarAB.__init__",
+   "kind": "doc",
+   "line": 3687
+  },
+  {
+   "id": "r291",
+   "anchor": "ArrowStyle.Simple",
+   "kind": "doc",
+   "line": 3710
+  },
+  {
+   "id": "r292",
+   "anchor": "ArrowStyle.Simple.__init__",
+   "kind": "doc",
+   "line": 3715
+  },
+  {
+   "id": "r293",
+   "anchor": "ArrowStyle.Simple.transmute#assign:head_length",
+   "kind": "lead",
+   "line": 3737
+  },
+  {
+   "id": "r294",
+   "anchor": "ArrowStyle.Simple.transmute#try/except:NonIntersectingPathException/assign:x0, y0",
+   "kind": "lead",
+   "line": 3748
+  },
+  {
+   "id": "r295",
+   "anchor": "ArrowStyle.Simple.transmute#assign:head_width",
+   "kind": "lead",
+   "line": 3754
+  },
+  {
+   "id": "r296",
+   "anchor": "ArrowStyle.Simple.transmute#if:arrow_out is not None",
+   "kind": "lead",
+   "line": 3759
+  },
+  {
+   "id": "r297",
+   "anchor": "ArrowStyle.Fancy",
+   "kind": "doc",
+   "line": 3792
+  },
+  {
+   "id": "r298",
+   "anchor": "ArrowStyle.Fancy.__init__",
+   "kind": "doc",
+   "line": 3797
+  },
+  {
+   "id": "r299",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:head_length",
+   "kind": "lead",
+   "line": 3819
+  },
+  {
+   "id": "r300",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:in_f",
+   "kind": "lead",
+   "line": 3823
+  },
+  {
+   "id": "r301",
+   "anchor": "ArrowStyle.Fancy.transmute#try/except:NonIntersectingPathException/assign:x0, y0",
+   "kind": "lead",
+   "line": 3830
+  },
+  {
+   "id": "r302",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:in_f",
+   "kind": "lead",
+   "line": 3838
+  },
+  {
+   "id": "r303",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:head_width",
+   "kind": "lead",
+   "line": 3844
+  },
+  {
+   "id": "r304",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:tail_width",
+   "kind": "lead",
+   "line": 3850
+  },
+  {
+   "id": "r305",
+   "anchor": "ArrowStyle.Fancy.transmute#assign:in_f",
+   "kind": "lead",
+   "line": 3856
+  },
+  {
+   "id": "r306",
+   "anchor": "ArrowStyle.Wedge",
+   "kind": "doc",
+   "line": 3882
+  },
+  {
+   "id": "r307",
+   "anchor": "ArrowStyle.Wedge.__init__",
+   "kind": "doc",
+   "line": 3889
+  },
+  {
+   "id": "r308",
+   "anchor": "FancyArrowPatch",
+   "kind": "doc",
+   "line": 3936
+  },
+  {
+   "id": "r309",
+   "anchor": "FancyArrowPatch.__init__",
+   "kind": "doc",
+   "line": 3957
+  },
+  {
+   "id": "r310",
+   "anchor": "FancyArrowPatch.set_dpi_cor",
+   "kind": "doc",
+   "line": 4084
+  },
+  {
+   "id": "r311",
+   "anchor": "FancyArrowPatch.get_dpi_cor",
+   "kind": "doc",
+   "line": 4096
+  },
+  {
+   "id": "r312",
+   "anchor": "FancyArrowPatch.set_positions",
+   "kind": "doc",
+   "line": 4107
+  },
+  {
+   "id": "r313",
+   "anchor": "FancyArrowPatch.set_patchA",
+   "kind": "doc",
+   "line": 4123
+  },
+  {
+   "id": "r314",
+   "anchor": "FancyArrowPatch.set_patchB",
+   "kind": "doc",
+   "line": 4135
+  },
+  {
+   "id": "r315",
+   "anchor": "FancyArrowPatch.set_connectionstyle",
+   "kind": "doc",
+   "line": 4147
+  },
+  {
+   "id": "r316",
+   "anchor": "FancyArrowPatch.get_connectionstyle",
+   "kind": "doc",
+   "line": 4177
+  },
+  {
+   "id": "r317",
+   "anchor": "FancyArrowPatch.set_arrowstyle",
+   "kind": "doc",
+   "line": 4183
+  },
+  {
+   "id": "r318",
+   "anchor": "FancyArrowPatch.get_arrowstyle",
+   "kind": "doc",
+   "line": 4212
+  },
+  {
+   "id": "r319",
+   "anchor": "FancyArrowPatch.set_mutation_scale",
+   "kind": "doc",
+   "line": 4218
+  },
+  {
+   "id": "r320",
+   "anchor": "FancyArrowPatch.get_mutation_scale",
+   "kind": "doc",
+   "line": 4229
+  },
+  {
+   "id": "r321",
+   "anchor": "FancyArrowPatch.set_mutation_aspect",
+   "kind": "doc",
+   "line": 4239
+  },
+  {
+   "id": "r322",
+   "anchor": "FancyArrowPatch.get_mutation_aspect",
+   "kind": "doc",
+   "line": 4250
+  },
+  {
+   "id": "r323",
+   "anchor": "FancyArrowPatch.get_path",
+   "kind": "doc",
+   "line": 4256
+  },
+  {
+   "id": "r324",
+   "anchor": "FancyArrowPatch.get_path_in_displaycoord",
+   "kind": "doc",
+   "line": 4269
+  },
+  {
+   "id": "r325",
+   "anchor": "FancyArrowPatch.get_path_in_displaycoord#return",
+   "kind": "lead",
+   "line": 4299
+  },
+  {
+   "id": "r326",
+   "anchor": "FancyArrowPatch.draw#with:cbook._setattr_cm(self, _capstyle='round', _joinstyle='round')",
+   "kind": "lead",
+   "line": 4306
+  },
+  {
+   "id": "r327",
+   "anchor": "FancyArrowPatch.draw#with:cbook._setattr_cm(self, _capstyle='round', _joinstyle='round')/call:self.set_dpi_cor",
+   "kind": "todo",
+   "line": 4311
+  },
+  {
+   "id": "r328",
+   "anchor": "ConnectionPatch",
+   "kind": "doc",
+   "line": 4326
+  },
+  {
+   "id": "r329",
+   "anchor": "ConnectionPatch.__init__",
+   "kind": "doc",
+   "line": 4336
+  },
+  {
+   "id": "r330",
+   "anchor": "ConnectionPatch.xy1",
+   "kind": "lead",
+   "line": 4404
+  },
+  {
+   "id": "r331",
+   "anchor": "ConnectionPatch._annotation_clip",
+   "kind": "lead",
+   "line": 4429
+  },
+  {
+   "id": "r332",
+   "anchor": "ConnectionPatch._get_xy",
+   "kind": "doc",
+   "line": 4431
+  },
+  {
+   "id": "r333",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'offset points'/assign:dx, dy",
+   "kind": "lead",
+   "line": 4446
+  },
+  {
+   "id": "r334",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'offset points'/if:self.xycoords == 'offset points'",
+   "kind": "lead",
+   "line": 4449
+  },
+  {
+   "id": "r335",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'offset points'/assign:dpi",
+   "kind": "lead",
+   "line": 4455
+  },
+  {
+   "id": "r336",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'offset points'/assign:x",
+   "kind": "lead",
+   "line": 4460
+  },
+  {
+   "id": "r337",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'figure points'/assign:dpi",
+   "kind": "lead",
+   "line": 4472
+  },
+  {
+   "id": "r338",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'figure pixels'/assign:l, b, w, h",
+   "kind": "lead",
+   "line": 4486
+  },
+  {
+   "id": "r339",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'figure fraction'/assign:trans",
+   "kind": "lead",
+   "line": 4496
+  },
+  {
+   "id": "r340",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'axes points'/assign:dpi",
+   "kind": "lead",
+   "line": 4500
+  },
+  {
+   "id": "r341",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'axes pixels'/assign:l, b, w, h",
+   "kind": "lead",
+   "line": 4516
+  },
+  {
+   "id": "r342",
+   "anchor": "ConnectionPatch._get_xy#if:s == 'data'/elif:s == 'axes fraction'/assign:trans",
+   "kind": "lead",
+   "line": 4530
+  },
+  {
+   "id": "r343",
+   "anchor": "ConnectionPatch.set_annotation_clip",
+   "kind": "doc",
+   "line": 4538
+  },
+  {
+   "id": "r344",
+   "anchor": "ConnectionPatch.get_annotation_clip",
+   "kind": "doc",
+   "line": 4551
+  },
+  {
+   "id": "r345",
+   "anchor": "ConnectionPatch.get_path_in_displaycoord",
+   "kind": "doc",
+   "line": 4558
+  },
+  {
+   "id": "r346",
+   "anchor": "ConnectionPatch._check_xy",
+   "kind": "doc",
+   "line": 4587
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 90999,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 30090,
+  "thinking_tokens": 14355,
+  "opus_cost_usd": 1.6665315,
+  "total_cost_usd": 1.7419595,
+  "duration_ms": 254154,
+  "duration_api_ms": 257041,
+  "num_turns": 2
+ },
+ "wall_ms": 255590,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

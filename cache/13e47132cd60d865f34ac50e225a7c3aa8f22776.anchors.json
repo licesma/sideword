@@ -1,0 +1,355 @@
+{
+ "blob_sha": "13e47132cd60d865f34ac50e225a7c3aa8f22776",
+ "path": "django/contrib/gis/gdal/srs.py",
+ "repo": "django/django",
+ "records": 55,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "SpatialReference",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r3",
+   "anchor": "SpatialReference.__init__",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r4",
+   "anchor": "SpatialReference.__init__#if:srs_type=='wkt'/elif:isinstance(srs_input, six.string_types)/try/assign:srid",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r5",
+   "anchor": "SpatialReference.__init__#if:srs_type=='wkt'/elif:isinstance(srs_input, six.integer_types)/assign:srs_type",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r6",
+   "anchor": "SpatialReference.__init__#if:srs_type=='ogr'/assign:srs",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r7",
+   "anchor": "SpatialReference.__init__#if:srs_type=='ogr'/else/assign:buf",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "SpatialReference.__init__#if:not srs",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r9",
+   "anchor": "SpatialReference.__init__#if:srs_type=='user'",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r10",
+   "anchor": "SpatialReference.__del__",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r11",
+   "anchor": "SpatialReference.__del__#try/except:(AttributeError, TypeError)/pass",
+   "kind": "trail",
+   "line": 99
+  },
+  {
+   "id": "r12",
+   "anchor": "SpatialReference.__getitem__",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r13",
+   "anchor": "SpatialReference.__str__",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r14",
+   "anchor": "SpatialReference.attr_value",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r15",
+   "anchor": "SpatialReference.attr_value",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r16",
+   "anchor": "SpatialReference.auth_name",
+   "kind": "doc",
+   "line": 143
+  },
+  {
+   "id": "r17",
+   "anchor": "SpatialReference.auth_code",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r18",
+   "anchor": "SpatialReference.clone",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r19",
+   "anchor": "SpatialReference.from_esri",
+   "kind": "doc",
+   "line": 155
+  },
+  {
+   "id": "r20",
+   "anchor": "SpatialReference.identify_epsg",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r21",
+   "anchor": "SpatialReference.to_esri",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r22",
+   "anchor": "SpatialReference.validate",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r23",
+   "anchor": "SpatialReference.name",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r24",
+   "anchor": "SpatialReference.name",
+   "kind": "doc",
+   "line": 176
+  },
+  {
+   "id": "r25",
+   "anchor": "SpatialReference.srid",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r26",
+   "anchor": "SpatialReference.linear_name",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r27",
+   "anchor": "SpatialReference.linear_name",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r28",
+   "anchor": "SpatialReference.linear_units",
+   "kind": "doc",
+   "line": 203
+  },
+  {
+   "id": "r29",
+   "anchor": "SpatialReference.angular_name",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r30",
+   "anchor": "SpatialReference.angular_units",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r31",
+   "anchor": "SpatialReference.units",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r32",
+   "anchor": "SpatialReference.ellipsoid",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r33",
+   "anchor": "SpatialReference.ellipsoid",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r34",
+   "anchor": "SpatialReference.semi_major",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r35",
+   "anchor": "SpatialReference.semi_minor",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r36",
+   "anchor": "SpatialReference.inverse_flattening",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r37",
+   "anchor": "SpatialReference.geographic",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r38",
+   "anchor": "SpatialReference.geographic",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r39",
+   "anchor": "SpatialReference.local",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r40",
+   "anchor": "SpatialReference.projected",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r41",
+   "anchor": "SpatialReference.import_epsg",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r42",
+   "anchor": "SpatialReference.import_epsg",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r43",
+   "anchor": "SpatialReference.import_proj",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r44",
+   "anchor": "SpatialReference.import_user_input",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r45",
+   "anchor": "SpatialReference.import_wkt",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r46",
+   "anchor": "SpatialReference.import_xml",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r47",
+   "anchor": "SpatialReference.wkt",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r48",
+   "anchor": "SpatialReference.wkt",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r49",
+   "anchor": "SpatialReference.pretty_wkt",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r50",
+   "anchor": "SpatialReference.proj",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r51",
+   "anchor": "SpatialReference.proj4",
+   "kind": "doc",
+   "line": 320
+  },
+  {
+   "id": "r52",
+   "anchor": "SpatialReference.xml",
+   "kind": "doc",
+   "line": 325
+  },
+  {
+   "id": "r53",
+   "anchor": "CoordTransform",
+   "kind": "doc",
+   "line": 330
+  },
+  {
+   "id": "r54",
+   "anchor": "CoordTransform.__init__",
+   "kind": "doc",
+   "line": 333
+  },
+  {
+   "id": "r55",
+   "anchor": "CoordTransform.__del__",
+   "kind": "doc",
+   "line": 341
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11265,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3592,
+  "thinking_tokens": 1358,
+  "opus_cost_usd": 0.2067415,
+  "total_cost_usd": 0.21447449999999998,
+  "duration_ms": 31925,
+  "duration_api_ms": 33972,
+  "num_turns": 2
+ },
+ "wall_ms": 32780,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

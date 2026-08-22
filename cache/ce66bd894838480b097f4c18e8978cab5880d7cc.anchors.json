@@ -1,0 +1,721 @@
+{
+ "blob_sha": "ce66bd894838480b097f4c18e8978cab5880d7cc",
+ "path": "lib/matplotlib/pyplot.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 116,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:matplotlib",
+   "kind": "trail",
+   "line": 49
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:matplotlib.colors",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "_IP_REGISTERED",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r6",
+   "anchor": "install_repl_displayhook",
+   "kind": "doc",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "install_repl_displayhook#try",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "install_repl_displayhook#try/if:'IPython' in sys.modules/try",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r9",
+   "anchor": "install_repl_displayhook#try/if:'IPython' in sys.modules/try/except:AttributeError/call:ip.register_post_execute",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r10",
+   "anchor": "install_repl_displayhook#try/if:'IPython' in sys.modules/import:IPython.core.pylabtools",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r11",
+   "anchor": "install_repl_displayhook#try/except:(ImportError, _NotIPython)",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r12",
+   "anchor": "uninstall_repl_displayhook",
+   "kind": "doc",
+   "line": 135
+  },
+  {
+   "id": "r13",
+   "anchor": "set_loglevel",
+   "kind": "trail",
+   "line": 171
+  },
+  {
+   "id": "r14",
+   "anchor": "switch_backend",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r15",
+   "anchor": "switch_backend#if:newbackend is rcsetup._auto_backend_sentinel/for:candidate in [\"macosx\", \"qt5agg\", \"qt4agg\", \"gtk3agg\", \"tkagg\", \"wxagg\"]",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r16",
+   "anchor": "switch_backend#if:newbackend is rcsetup._auto_backend_sentinel/for:candidate in [\"macosx\", \"qt5agg\", \"qt4agg\", \"gtk3agg\", \"tkagg\", \"wxagg\"]/else/call:switch_backend",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r17",
+   "anchor": "switch_backend#assign:matplotlib.backends.backend",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r18",
+   "anchor": "show",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r19",
+   "anchor": "isinteractive",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r20",
+   "anchor": "ioff",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r21",
+   "anchor": "ion",
+   "kind": "doc",
+   "line": 283
+  },
+  {
+   "id": "r22",
+   "anchor": "pause",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r23",
+   "anchor": "gci",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r24",
+   "anchor": "gci",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r25",
+   "anchor": "setp#decorator:docstring.copy",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r26",
+   "anchor": "setp#decorator:docstring.copy",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r27",
+   "anchor": "xkcd",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r28",
+   "anchor": "figure",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r29",
+   "anchor": "figure#param:num",
+   "kind": "trail",
+   "line": 426
+  },
+  {
+   "id": "r30",
+   "anchor": "figure#param:figsize",
+   "kind": "trail",
+   "line": 427
+  },
+  {
+   "id": "r31",
+   "anchor": "figure#param:dpi",
+   "kind": "trail",
+   "line": 428
+  },
+  {
+   "id": "r32",
+   "anchor": "figure#param:facecolor",
+   "kind": "trail",
+   "line": 429
+  },
+  {
+   "id": "r33",
+   "anchor": "figure#param:edgecolor",
+   "kind": "trail",
+   "line": 430
+  },
+  {
+   "id": "r34",
+   "anchor": "figure",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r35",
+   "anchor": "figure#if:num is None/else/assign:num",
+   "kind": "trail",
+   "line": 520
+  },
+  {
+   "id": "r36",
+   "anchor": "figure.make_active",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r37",
+   "anchor": "figure#if:figManager is None/if:matplotlib.is_interactive()",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r38",
+   "anchor": "_auto_draw_if_interactive",
+   "kind": "doc",
+   "line": 578
+  },
+  {
+   "id": "r39",
+   "anchor": "gcf",
+   "kind": "doc",
+   "line": 592
+  },
+  {
+   "id": "r40",
+   "anchor": "fignum_exists",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r41",
+   "anchor": "get_fignums",
+   "kind": "doc",
+   "line": 611
+  },
+  {
+   "id": "r42",
+   "anchor": "get_figlabels",
+   "kind": "doc",
+   "line": 616
+  },
+  {
+   "id": "r43",
+   "anchor": "get_current_fig_manager",
+   "kind": "doc",
+   "line": 623
+  },
+  {
+   "id": "r44",
+   "anchor": "get_current_fig_manager#if:figManager is None/call:gcf",
+   "kind": "trail",
+   "line": 639
+  },
+  {
+   "id": "r45",
+   "anchor": "close",
+   "kind": "doc",
+   "line": 654
+  },
+  {
+   "id": "r46",
+   "anchor": "close#if:fig is None/elif:hasattr(fig, 'int')/call:_pylab_helpers.Gcf.destroy",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r47",
+   "anchor": "clf",
+   "kind": "doc",
+   "line": 696
+  },
+  {
+   "id": "r48",
+   "anchor": "draw",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r49",
+   "anchor": "savefig#call:fig.canvas.draw_idle",
+   "kind": "trail",
+   "line": 723
+  },
+  {
+   "id": "r50",
+   "anchor": "ginput",
+   "kind": "doc",
+   "line": 728
+  },
+  {
+   "id": "r51",
+   "anchor": "waitforbuttonpress",
+   "kind": "doc",
+   "line": 741
+  },
+  {
+   "id": "r52",
+   "anchor": "figtext#decorator:docstring.copy",
+   "kind": "lead",
+   "line": 757
+  },
+  {
+   "id": "r53",
+   "anchor": "axes#decorator:docstring.dedent_interpd",
+   "kind": "lead",
+   "line": 780
+  },
+  {
+   "id": "r54",
+   "anchor": "axes",
+   "kind": "doc",
+   "line": 781
+  },
+  {
+   "id": "r55",
+   "anchor": "delaxes",
+   "kind": "doc",
+   "line": 882
+  },
+  {
+   "id": "r56",
+   "anchor": "sca",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r57",
+   "anchor": "gca",
+   "kind": "doc",
+   "line": 908
+  },
+  {
+   "id": "r58",
+   "anchor": "subplot#decorator:docstring.dedent_interpd",
+   "kind": "lead",
+   "line": 931
+  },
+  {
+   "id": "r59",
+   "anchor": "subplot",
+   "kind": "doc",
+   "line": 932
+  },
+  {
+   "id": "r60",
+   "anchor": "subplot#if:len(args)==0",
+   "kind": "lead",
+   "line": 1061
+  },
+  {
+   "id": "r61",
+   "anchor": "subplot#if:len(args)>=3 and isinstance(args[2], bool)",
+   "kind": "lead",
+   "line": 1070
+  },
+  {
+   "id": "r62",
+   "anchor": "subplots",
+   "kind": "doc",
+   "line": 1090
+  },
+  {
+   "id": "r63",
+   "anchor": "subplot2grid",
+   "kind": "doc",
+   "line": 1216
+  },
+  {
+   "id": "r64",
+   "anchor": "twinx",
+   "kind": "doc",
+   "line": 1277
+  },
+  {
+   "id": "r65",
+   "anchor": "twiny",
+   "kind": "doc",
+   "line": 1293
+  },
+  {
+   "id": "r66",
+   "anchor": "subplots_adjust",
+   "kind": "doc",
+   "line": 1309
+  },
+  {
+   "id": "r67",
+   "anchor": "subplot_tool",
+   "kind": "doc",
+   "line": 1331
+  },
+  {
+   "id": "r68",
+   "anchor": "subplot_tool#assign:tbar",
+   "kind": "trail",
+   "line": 1337
+  },
+  {
+   "id": "r69",
+   "anchor": "subplot_tool#if:targetfig is None/else/for:manager in _pylab_helpers.Gcf._activeQue",
+   "kind": "lead",
+   "line": 1344
+  },
+  {
+   "id": "r70",
+   "anchor": "subplot_tool#call:_pylab_helpers.Gcf.set_active",
+   "kind": "trail",
+   "line": 1354
+  },
+  {
+   "id": "r71",
+   "anchor": "tight_layout",
+   "kind": "doc",
+   "line": 1358
+  },
+  {
+   "id": "r72",
+   "anchor": "box",
+   "kind": "doc",
+   "line": 1378
+  },
+  {
+   "id": "r73",
+   "anchor": "xlim",
+   "kind": "lead",
+   "line": 1401
+  },
+  {
+   "id": "r74",
+   "anchor": "xlim",
+   "kind": "doc",
+   "line": 1401
+  },
+  {
+   "id": "r75",
+   "anchor": "ylim",
+   "kind": "doc",
+   "line": 1438
+  },
+  {
+   "id": "r76",
+   "anchor": "xticks",
+   "kind": "doc",
+   "line": 1475
+  },
+  {
+   "id": "r77",
+   "anchor": "yticks",
+   "kind": "doc",
+   "line": 1551
+  },
+  {
+   "id": "r78",
+   "anchor": "rgrids",
+   "kind": "doc",
+   "line": 1627
+  },
+  {
+   "id": "r79",
+   "anchor": "thetagrids",
+   "kind": "doc",
+   "line": 1695
+  },
+  {
+   "id": "r80",
+   "anchor": "plotting",
+   "kind": "lead",
+   "line": 1763
+  },
+  {
+   "id": "r81",
+   "anchor": "get_plot_commands",
+   "kind": "doc",
+   "line": 1767
+  },
+  {
+   "id": "r82",
+   "anchor": "get_plot_commands#assign:exclude",
+   "kind": "lead",
+   "line": 1774
+  },
+  {
+   "id": "r83",
+   "anchor": "colormaps",
+   "kind": "doc",
+   "line": 1786
+  },
+  {
+   "id": "r84",
+   "anchor": "_setup_pyplot_info_docstrings",
+   "kind": "doc",
+   "line": 2031
+  },
+  {
+   "id": "r85",
+   "anchor": "_setup_pyplot_info_docstrings#assign:rows",
+   "kind": "lead",
+   "line": 2045
+  },
+  {
+   "id": "r86",
+   "anchor": "colorbar",
+   "kind": "lead",
+   "line": 2077
+  },
+  {
+   "id": "r87",
+   "anchor": "clim",
+   "kind": "doc",
+   "line": 2092
+  },
+  {
+   "id": "r88",
+   "anchor": "set_cmap",
+   "kind": "doc",
+   "line": 2113
+  },
+  {
+   "id": "r89",
+   "anchor": "matshow",
+   "kind": "doc",
+   "line": 2143
+  },
+  {
+   "id": "r90",
+   "anchor": "matshow#if:fignum==0/else/assign:fig",
+   "kind": "lead",
+   "line": 2188
+  },
+  {
+   "id": "r91",
+   "anchor": "polar",
+   "kind": "doc",
+   "line": 2195
+  },
+  {
+   "id": "r92",
+   "anchor": "polar#if:gcf().get_axes()",
+   "kind": "lead",
+   "line": 2208
+  },
+  {
+   "id": "r93",
+   "anchor": "plotfile",
+   "kind": "doc",
+   "line": 2217
+  },
+  {
+   "id": "r94",
+   "anchor": "plotfile.getname_val",
+   "kind": "doc",
+   "line": 2296
+  },
+  {
+   "id": "r95",
+   "anchor": "<module>#if:rcParams[\"backend_fallback\"] and dict.__getitem__(rcParams, \"backend\") in _interactive_bk and _get_running_interactive_framework()",
+   "kind": "lead",
+   "line": 2350
+  },
+  {
+   "id": "r96",
+   "anchor": "<module>#call:switch_backend",
+   "kind": "lead",
+   "line": 2355
+  },
+  {
+   "id": "r97",
+   "anchor": "<module>#call:install_repl_displayhook",
+   "kind": "lead",
+   "line": 2362
+  },
+  {
+   "id": "r98",
+   "anchor": "autumn",
+   "kind": "doc",
+   "line": 3092
+  },
+  {
+   "id": "r99",
+   "anchor": "bone",
+   "kind": "doc",
+   "line": 3103
+  },
+  {
+   "id": "r100",
+   "anchor": "cool",
+   "kind": "doc",
+   "line": 3114
+  },
+  {
+   "id": "r101",
+   "anchor": "copper",
+   "kind": "doc",
+   "line": 3125
+  },
+  {
+   "id": "r102",
+   "anchor": "flag",
+   "kind": "doc",
+   "line": 3136
+  },
+  {
+   "id": "r103",
+   "anchor": "gray",
+   "kind": "doc",
+   "line": 3147
+  },
+  {
+   "id": "r104",
+   "anchor": "hot",
+   "kind": "doc",
+   "line": 3158
+  },
+  {
+   "id": "r105",
+   "anchor": "hsv",
+   "kind": "doc",
+   "line": 3169
+  },
+  {
+   "id": "r106",
+   "anchor": "jet",
+   "kind": "doc",
+   "line": 3180
+  },
+  {
+   "id": "r107",
+   "anchor": "pink",
+   "kind": "doc",
+   "line": 3191
+  },
+  {
+   "id": "r108",
+   "anchor": "prism",
+   "kind": "doc",
+   "line": 3202
+  },
+  {
+   "id": "r109",
+   "anchor": "spring",
+   "kind": "doc",
+   "line": 3213
+  },
+  {
+   "id": "r110",
+   "anchor": "summer",
+   "kind": "doc",
+   "line": 3224
+  },
+  {
+   "id": "r111",
+   "anchor": "winter",
+   "kind": "doc",
+   "line": 3235
+  },
+  {
+   "id": "r112",
+   "anchor": "magma",
+   "kind": "doc",
+   "line": 3246
+  },
+  {
+   "id": "r113",
+   "anchor": "inferno",
+   "kind": "doc",
+   "line": 3257
+  },
+  {
+   "id": "r114",
+   "anchor": "plasma",
+   "kind": "doc",
+   "line": 3268
+  },
+  {
+   "id": "r115",
+   "anchor": "viridis",
+   "kind": "doc",
+   "line": 3279
+  },
+  {
+   "id": "r116",
+   "anchor": "nipy_spectral",
+   "kind": "doc",
+   "line": 3290
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 64682,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8885,
+  "thinking_tokens": 4514,
+  "opus_cost_usd": 0.8732365000000001,
+  "total_cost_usd": 0.9249325,
+  "duration_ms": 80835,
+  "duration_api_ms": 82926,
+  "num_turns": 2
+ },
+ "wall_ms": 81924,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

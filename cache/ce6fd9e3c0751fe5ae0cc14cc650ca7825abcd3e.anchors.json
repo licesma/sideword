@@ -1,0 +1,265 @@
+{
+ "blob_sha": "ce6fd9e3c0751fe5ae0cc14cc650ca7825abcd3e",
+ "path": "django/db/migrations/loader.py",
+ "repo": "django/django",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MigrationLoader",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "MigrationLoader.migrations_module",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r3",
+   "anchor": "MigrationLoader.load_disk",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r4",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/assign:module_name, explicit",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r5",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/try/except:ImportError/if:(explicit and self.ignore_no_migrations) or (not explicit and \"No module named\" in str(e) and MIGRATIONS_MODULE_NAME in str(e))",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r6",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/try/else/if:not hasattr(module, '__file__')",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r7",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/try/else/if:not hasattr(module, '__path__')",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/try/else/if:was_loaded",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r9",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/assign:migration_names",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r10",
+   "anchor": "MigrationLoader.load_disk#for:app_config in apps.get_app_configs()/for:migration_name in migration_names",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r11",
+   "anchor": "MigrationLoader.get_migration",
+   "kind": "doc",
+   "line": 124
+  },
+  {
+   "id": "r12",
+   "anchor": "MigrationLoader.get_migration_by_prefix",
+   "kind": "doc",
+   "line": 128
+  },
+  {
+   "id": "r13",
+   "anchor": "MigrationLoader.get_migration_by_prefix#assign:results",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r14",
+   "anchor": "MigrationLoader.check_key#if:key[0] == current_app",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r15",
+   "anchor": "MigrationLoader.check_key#if:key[0] == current_app/return",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r16",
+   "anchor": "MigrationLoader.check_key#if:key[0] in self.unmigrated_apps/return",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r17",
+   "anchor": "MigrationLoader.check_key#if:key[0] in self.migrated_apps/try/if:key[1] == \"__first__\"/else",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "MigrationLoader.add_internal_dependencies",
+   "kind": "doc",
+   "line": 172
+  },
+  {
+   "id": "r19",
+   "anchor": "MigrationLoader.add_internal_dependencies#for:parent in migration.dependencies/if:parent[0] != key[0] or parent[1] == '__first__'/continue",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r20",
+   "anchor": "MigrationLoader.add_external_dependencies#for:parent in migration.dependencies/if:key[0] == parent[0]",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r21",
+   "anchor": "MigrationLoader.build_graph",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r22",
+   "anchor": "MigrationLoader.build_graph#call:self.load_disk",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r23",
+   "anchor": "MigrationLoader.build_graph#if:self.connection is None",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r24",
+   "anchor": "MigrationLoader.build_graph#assign:self.graph",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r25",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.disk_migrations.items()/call:self.add_internal_dependencies",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r26",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.disk_migrations.items()/if:migration.replaces",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r27",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.disk_migrations.items()",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r28",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.replacements.items()",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r29",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.replacements.items()/assign:applied_statuses",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r30",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.replacements.items()/if:all(applied_statuses)",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r31",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.replacements.items()/if:all(applied_statuses) or (not any(applied_statuses))",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r32",
+   "anchor": "MigrationLoader.build_graph#for:key, migration in self.replacements.items()/if:all(applied_statuses) or (not any(applied_statuses))/else/call:self.graph.remove_replacement_node",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r33",
+   "anchor": "MigrationLoader.build_graph#try",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r34",
+   "anchor": "MigrationLoader.build_graph#try/except:NodeNotFoundError/assign:reverse_replacements",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r35",
+   "anchor": "MigrationLoader.build_graph#try/except:NodeNotFoundError/if:exc.node in reverse_replacements",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r36",
+   "anchor": "MigrationLoader.check_consistent_history",
+   "kind": "doc",
+   "line": 276
+  },
+  {
+   "id": "r37",
+   "anchor": "MigrationLoader.check_consistent_history#for:migration in applied/if:migration not in self.graph.nodes",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r38",
+   "anchor": "MigrationLoader.check_consistent_history#for:migration in applied/for:parent in self.graph.node_map[migration].parents/if:parent not in applied/if:parent in self.replacements",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r39",
+   "anchor": "MigrationLoader.detect_conflicts",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r40",
+   "anchor": "MigrationLoader.project_state",
+   "kind": "doc",
+   "line": 316
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10689,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4658,
+  "thinking_tokens": 2204,
+  "opus_cost_usd": 0.2276315,
+  "total_cost_usd": 0.2347645,
+  "duration_ms": 41896,
+  "duration_api_ms": 42936,
+  "num_turns": 2
+ },
+ "wall_ms": 42877,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

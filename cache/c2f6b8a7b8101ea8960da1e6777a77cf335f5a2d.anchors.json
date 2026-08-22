@@ -1,0 +1,391 @@
+{
+ "blob_sha": "c2f6b8a7b8101ea8960da1e6777a77cf335f5a2d",
+ "path": "astropy/units/quantity_helper.py",
+ "repo": "astropy/astropy",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 5
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 5
+  },
+  {
+   "id": "r3",
+   "anchor": "get_converter",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r4",
+   "anchor": "get_converters_and_unit#if:unit2 is None",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r5",
+   "anchor": "get_converters_and_unit#if:unit2 is None/if:unit1 is None/return",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r6",
+   "anchor": "get_converters_and_unit#if:unit2 is None/assign:unit2",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r7",
+   "anchor": "get_converters_and_unit#if:unit2 is None/elif:unit2 is unit1/return",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r8",
+   "anchor": "get_converters_and_unit#if:unit1 is None",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r9",
+   "anchor": "get_converters_and_unit#if:unit1 is None/try/except:UnitsError/assign:converters[1-changeable]",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r10",
+   "anchor": "can_have_arbitrary_unit",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r11",
+   "anchor": "helper_onearg_test",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r12",
+   "anchor": "helper_multiplication",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r13",
+   "anchor": "helper_power#if:unit2 is None",
+   "kind": "todo",
+   "line": 234
+  },
+  {
+   "id": "r14",
+   "anchor": "helper_copysign#if:unit1 is None",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r15",
+   "anchor": "helper_twoarg_invariant",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r16",
+   "anchor": "UFUNC_HELPERS",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r17",
+   "anchor": "<module>#for:name in 'isnat', 'gcd', 'lcm'/assign:ufunc",
+   "kind": "lead",
+   "line": 341
+  },
+  {
+   "id": "r18",
+   "anchor": "onearg_test_ufuncs",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r19",
+   "anchor": "onearg_test_ufuncs",
+   "kind": "lead",
+   "line": 348
+  },
+  {
+   "id": "r20",
+   "anchor": "invariant_ufuncs",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r21",
+   "anchor": "<module>#if:isinstance(getattr(np, 'positive', None), np.ufunc)",
+   "kind": "lead",
+   "line": 358
+  },
+  {
+   "id": "r22",
+   "anchor": "dimensionless_to_dimensionless_ufuncs",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r23",
+   "anchor": "dimensionless_to_radian_ufuncs",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r24",
+   "anchor": "degree_to_radian_ufuncs",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r25",
+   "anchor": "radian_to_degree_ufuncs",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r26",
+   "anchor": "radian_to_dimensionless_ufuncs",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r27",
+   "anchor": "<module>#assign:UFUNC_HELPERS[np.sqrt]",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r28",
+   "anchor": "two_arg_dimensionless_ufuncs",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r29",
+   "anchor": "two_arg_dimensionless_ufuncs",
+   "kind": "lead",
+   "line": 403
+  },
+  {
+   "id": "r30",
+   "anchor": "twoarg_invariant_ufuncs",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r31",
+   "anchor": "twoarg_comparison_ufuncs",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r32",
+   "anchor": "twoarg_invtrig_ufuncs",
+   "kind": "lead",
+   "line": 421
+  },
+  {
+   "id": "r33",
+   "anchor": "<module>#if:isinstance(getattr(np.core.umath, '_arg', None), np.ufunc)",
+   "kind": "lead",
+   "line": 423
+  },
+  {
+   "id": "r34",
+   "anchor": "<module>#assign:UFUNC_HELPERS[np.multiply]",
+   "kind": "lead",
+   "line": 429
+  },
+  {
+   "id": "r35",
+   "anchor": "<module>#if:isinstance(getattr(np, 'heaviside', None), np.ufunc)",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r36",
+   "anchor": "<module>#if:isinstance(getattr(np, 'float_power', None), np.ufunc)",
+   "kind": "lead",
+   "line": 440
+  },
+  {
+   "id": "r37",
+   "anchor": "<module>#if:isinstance(getattr(np, 'divmod', None), np.ufunc)",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r38",
+   "anchor": "<module>#try",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r39",
+   "anchor": "dimensionless_to_dimensionless_sps_ufuncs",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r40",
+   "anchor": "<module>#try/else/if:minversion(scipy, \"0.18\")",
+   "kind": "todo",
+   "line": 471
+  },
+  {
+   "id": "r41",
+   "anchor": "degree_to_dimensionless_sps_ufuncs",
+   "kind": "lead",
+   "line": 478
+  },
+  {
+   "id": "r42",
+   "anchor": "two_arg_dimensionless_sps_ufuncs",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r43",
+   "anchor": "<module>#try/else/assign:UFUNC_HELPERS[sps.cbrt]",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r44",
+   "anchor": "converters_and_unit",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r45",
+   "anchor": "converters_and_unit#try",
+   "kind": "lead",
+   "line": 531
+  },
+  {
+   "id": "r46",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/assign:units",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r47",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/assign:converters, result_unit",
+   "kind": "lead",
+   "line": 549
+  },
+  {
+   "id": "r48",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:any(converter is False for converter in converters)/assign:maybe_arbitrary_arg",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r49",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:any(converter is False for converter in converters)/try/except:TypeError/raise:TypeError",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r50",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:result_unit is False",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r51",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/if:result_unit is False/if:units[0] is None or units[0] == dimensionless_unscaled/else/try/except:ValueError/try",
+   "kind": "lead",
+   "line": 595
+  },
+  {
+   "id": "r52",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else",
+   "kind": "trail",
+   "line": 603
+  },
+  {
+   "id": "r53",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:method == 'at' and nin <= 2/call:converters.insert",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r54",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:method == 'at' and nin <= 2/elif:method in {'reduce', 'accumulate', 'reduceat'} and nin == 2/if:method == 'reduceat'/assign:converters",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r55",
+   "anchor": "converters_and_unit#if:method == '__call__' or (method == 'outer' and function.nin == 2)/else/if:unit is not None and result_unit is None",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r56",
+   "anchor": "check_output",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r57",
+   "anchor": "check_output#if:output is None",
+   "kind": "lead",
+   "line": 684
+  },
+  {
+   "id": "r58",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/if:unit is None",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r59",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/assign:output",
+   "kind": "lead",
+   "line": 707
+  },
+  {
+   "id": "r60",
+   "anchor": "check_output#if:hasattr(output, '__quantity_subclass__')/else/if:not (unit is None or unit is dimensionless_unscaled)",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r61",
+   "anchor": "check_output#if:not np.can_cast(np.result_type(*inputs), output.dtype, casting='same_kind')",
+   "kind": "lead",
+   "line": 719
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19695,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7124,
+  "thinking_tokens": 3877,
+  "opus_cost_usd": 0.3793415,
+  "total_cost_usd": 0.3941095,
+  "duration_ms": 65248,
+  "duration_api_ms": 66857,
+  "num_turns": 2
+ },
+ "wall_ms": 66109,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,481 @@
+{
+ "blob_sha": "acbeca931c38a1aea50e73a9e58f12ba77a36b5c",
+ "path": "lib/mpl_toolkits/mplot3d/art3d.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 76,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 5
+  },
+  {
+   "id": "r3",
+   "anchor": "_norm_angle",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "_norm_text_angle",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r5",
+   "anchor": "get_dir_vector",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "Text3D",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "Text3D.get_position_3d",
+   "kind": "doc",
+   "line": 97
+  },
+  {
+   "id": "r8",
+   "anchor": "Text3D.set_position_3d",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r9",
+   "anchor": "Text3D.set_z",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r10",
+   "anchor": "Text3D.get_tightbbox#return",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r11",
+   "anchor": "text_2d_to_3d",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r12",
+   "anchor": "Line3D",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r13",
+   "anchor": "Line3D.__init__",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r14",
+   "anchor": "Line3D.set_data_3d",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r15",
+   "anchor": "Line3D.get_data_3d",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r16",
+   "anchor": "line_2d_to_3d",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r17",
+   "anchor": "_path_to_3d_segment",
+   "kind": "doc",
+   "line": 228
+  },
+  {
+   "id": "r18",
+   "anchor": "_paths_to_3d_segments",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r19",
+   "anchor": "_path_to_3d_segment_with_codes",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r20",
+   "anchor": "_paths_to_3d_segments_with_codes",
+   "kind": "doc",
+   "line": 267
+  },
+  {
+   "id": "r21",
+   "anchor": "Line3DCollection",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r22",
+   "anchor": "Line3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r23",
+   "anchor": "Line3DCollection.set_segments",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r24",
+   "anchor": "Line3DCollection.do_3d_projection",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r25",
+   "anchor": "Line3DCollection.do_3d_projection#assign:minz",
+   "kind": "todo",
+   "line": 309
+  },
+  {
+   "id": "r26",
+   "anchor": "line_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 315
+  },
+  {
+   "id": "r27",
+   "anchor": "Patch3D",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r28",
+   "anchor": "PathPatch3D",
+   "kind": "doc",
+   "line": 348
+  },
+  {
+   "id": "r29",
+   "anchor": "PathPatch3D.__init__#call:Patch.__init__",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r30",
+   "anchor": "_get_patch_verts",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r31",
+   "anchor": "patch_2d_to_3d",
+   "kind": "doc",
+   "line": 379
+  },
+  {
+   "id": "r32",
+   "anchor": "pathpatch_2d_to_3d",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r33",
+   "anchor": "Patch3DCollection",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r34",
+   "anchor": "Patch3DCollection.__init__",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r35",
+   "anchor": "Patch3DCollection.set_depthshade",
+   "kind": "doc",
+   "line": 424
+  },
+  {
+   "id": "r36",
+   "anchor": "Patch3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 437
+  },
+  {
+   "id": "r37",
+   "anchor": "Patch3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r38",
+   "anchor": "Patch3DCollection.get_edgecolor#if:cbook._str_equal(self._edgecolors, 'face')",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r39",
+   "anchor": "Path3DCollection",
+   "kind": "doc",
+   "line": 491
+  },
+  {
+   "id": "r40",
+   "anchor": "Path3DCollection.__init__",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r41",
+   "anchor": "Path3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 521
+  },
+  {
+   "id": "r42",
+   "anchor": "Path3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 529
+  },
+  {
+   "id": "r43",
+   "anchor": "Path3DCollection.set_3d_properties#assign:self._sizes3d",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r44",
+   "anchor": "Path3DCollection.set_3d_properties#assign:self._z_markers_idx",
+   "kind": "lead",
+   "line": 554
+  },
+  {
+   "id": "r45",
+   "anchor": "Path3DCollection.set_depthshade",
+   "kind": "doc",
+   "line": 571
+  },
+  {
+   "id": "r46",
+   "anchor": "Path3DCollection.do_3d_projection#assign:z_markers_idx",
+   "kind": "lead",
+   "line": 591
+  },
+  {
+   "id": "r47",
+   "anchor": "Path3DCollection.do_3d_projection#if:len(self._sizes3d)>1",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r48",
+   "anchor": "Path3DCollection.do_3d_projection#assign:vzs",
+   "kind": "lead",
+   "line": 606
+  },
+  {
+   "id": "r49",
+   "anchor": "Path3DCollection.get_edgecolor#if:cbook._str_equal(self._edgecolors, 'face')",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r50",
+   "anchor": "patch_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 636
+  },
+  {
+   "id": "r51",
+   "anchor": "Poly3DCollection",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r52",
+   "anchor": "Poly3DCollection.__init__",
+   "kind": "doc",
+   "line": 684
+  },
+  {
+   "id": "r53",
+   "anchor": "Poly3DCollection.set_zsort",
+   "kind": "doc",
+   "line": 718
+  },
+  {
+   "id": "r54",
+   "anchor": "Poly3DCollection.get_vector",
+   "kind": "doc",
+   "line": 732
+  },
+  {
+   "id": "r55",
+   "anchor": "Poly3DCollection.get_vector#if:len(segments3d)/else",
+   "kind": "trail",
+   "line": 736
+  },
+  {
+   "id": "r56",
+   "anchor": "Poly3DCollection.set_verts",
+   "kind": "doc",
+   "line": 744
+  },
+  {
+   "id": "r57",
+   "anchor": "Poly3DCollection.set_verts#call:super().set_verts",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r58",
+   "anchor": "Poly3DCollection.set_verts_and_codes",
+   "kind": "doc",
+   "line": 751
+  },
+  {
+   "id": "r59",
+   "anchor": "Poly3DCollection.set_verts_and_codes#call:self.set_verts",
+   "kind": "lead",
+   "line": 755
+  },
+  {
+   "id": "r60",
+   "anchor": "Poly3DCollection.set_verts_and_codes#assign:self._codes3d",
+   "kind": "lead",
+   "line": 757
+  },
+  {
+   "id": "r61",
+   "anchor": "Poly3DCollection.set_3d_properties#call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r62",
+   "anchor": "Poly3DCollection.set_sort_zpos",
+   "kind": "doc",
+   "line": 770
+  },
+  {
+   "id": "r63",
+   "anchor": "Poly3DCollection.do_3d_projection",
+   "kind": "doc",
+   "line": 775
+  },
+  {
+   "id": "r64",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._A is not None/call:self.update_scalarmappable",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r65",
+   "anchor": "Poly3DCollection.do_3d_projection#assign:cface",
+   "kind": "lead",
+   "line": 796
+  },
+  {
+   "id": "r66",
+   "anchor": "Poly3DCollection.do_3d_projection#if:xyzlist/assign:z_segments_2d",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r67",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._sort_zpos is not None",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r68",
+   "anchor": "Poly3DCollection.do_3d_projection#if:self._sort_zpos is not None/elif:tzs.size>0/return",
+   "kind": "todo",
+   "line": 840
+  },
+  {
+   "id": "r69",
+   "anchor": "Poly3DCollection.set_facecolor#call:super().set_facecolor",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r70",
+   "anchor": "Poly3DCollection.set_edgecolor#call:super().set_edgecolor",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r71",
+   "anchor": "Poly3DCollection.set_alpha#call:artist.Artist.set_alpha",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r72",
+   "anchor": "poly_collection_2d_to_3d",
+   "kind": "doc",
+   "line": 876
+  },
+  {
+   "id": "r73",
+   "anchor": "juggle_axes",
+   "kind": "doc",
+   "line": 885
+  },
+  {
+   "id": "r74",
+   "anchor": "rotate_axes",
+   "kind": "doc",
+   "line": 901
+  },
+  {
+   "id": "r75",
+   "anchor": "_zalpha",
+   "kind": "doc",
+   "line": 921
+  },
+  {
+   "id": "r76",
+   "anchor": "_zalpha#if:len(colors)==0 or len(zs)==0",
+   "kind": "todo",
+   "line": 927
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22091,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5814,
+  "thinking_tokens": 2504,
+  "opus_cost_usd": 0.3705515,
+  "total_cost_usd": 0.3876735,
+  "duration_ms": 51546,
+  "duration_api_ms": 52668,
+  "num_turns": 2
+ },
+ "wall_ms": 52412,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

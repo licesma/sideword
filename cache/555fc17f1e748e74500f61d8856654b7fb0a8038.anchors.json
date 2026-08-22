@@ -1,0 +1,193 @@
+{
+ "blob_sha": "555fc17f1e748e74500f61d8856654b7fb0a8038",
+ "path": "django/contrib/gis/db/backends/postgis/pgraster.py",
+ "repo": "django/django",
+ "records": 28,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "pack",
+   "kind": "doc",
+   "line": 12
+  },
+  {
+   "id": "r2",
+   "anchor": "unpack",
+   "kind": "doc",
+   "line": 19
+  },
+  {
+   "id": "r3",
+   "anchor": "chunk",
+   "kind": "doc",
+   "line": 26
+  },
+  {
+   "id": "r4",
+   "anchor": "get_pgraster_srid",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r5",
+   "anchor": "get_pgraster_srid#return",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "from_pgraster",
+   "kind": "doc",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "from_pgraster#assign:header, data",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r8",
+   "anchor": "from_pgraster#assign:bands",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r9",
+   "anchor": "from_pgraster#while:data/assign:pixeltype, data",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r10",
+   "anchor": "from_pgraster#while:data/assign:has_nodata",
+   "kind": "lead",
+   "line": 65
+  },
+  {
+   "id": "r11",
+   "anchor": "from_pgraster#while:data/assign:pixeltype",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r12",
+   "anchor": "from_pgraster#while:data/assign:nodata, data",
+   "kind": "lead",
+   "line": 77
+  },
+  {
+   "id": "r13",
+   "anchor": "from_pgraster#while:data/assign:band, data",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r14",
+   "anchor": "from_pgraster#while:data/if:has_nodata",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r15",
+   "anchor": "from_pgraster#while:data/call:bands.append",
+   "kind": "lead",
+   "line": 89
+  },
+  {
+   "id": "r16",
+   "anchor": "from_pgraster#while:data/call:pixeltypes.append",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r17",
+   "anchor": "from_pgraster#if:len(set(pixeltypes))!=1",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r18",
+   "anchor": "to_pgraster",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r19",
+   "anchor": "to_pgraster#if:rast is None or rast==''",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r20",
+   "anchor": "to_pgraster#assign:rasterheader",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r21",
+   "anchor": "to_pgraster#assign:result",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r22",
+   "anchor": "to_pgraster#for:band in rast.bands/assign:structure",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r23",
+   "anchor": "to_pgraster#for:band in rast.bands/assign:pixeltype",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r24",
+   "anchor": "to_pgraster#for:band in rast.bands/if:band.nodata_value is not None",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r25",
+   "anchor": "to_pgraster#for:band in rast.bands/assign:bandheader",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r26",
+   "anchor": "to_pgraster#for:band in rast.bands/assign:band_data_hex",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r27",
+   "anchor": "to_pgraster#for:band in rast.bands/assign:result",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r28",
+   "anchor": "to_pgraster#return",
+   "kind": "lead",
+   "line": 161
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 7037,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1996,
+  "thinking_tokens": 750,
+  "opus_cost_usd": 0.1245615,
+  "total_cost_usd": 0.1287875,
+  "duration_ms": 18165,
+  "duration_api_ms": 19144,
+  "num_turns": 2
+ },
+ "wall_ms": 18964,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

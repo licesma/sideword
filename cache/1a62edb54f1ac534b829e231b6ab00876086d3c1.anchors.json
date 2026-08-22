@@ -1,0 +1,433 @@
+{
+ "blob_sha": "1a62edb54f1ac534b829e231b6ab00876086d3c1",
+ "path": "astropy/units/quantity_helper/function_helpers.py",
+ "repo": "astropy/astropy",
+ "records": 68,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 4
+  },
+  {
+   "id": "r3",
+   "anchor": "ARRAY_FUNCTION_ENABLED",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r4",
+   "anchor": "SUBCLASS_SAFE_FUNCTIONS",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "FUNCTION_HELPERS",
+   "kind": "doc",
+   "line": 58
+  },
+  {
+   "id": "r6",
+   "anchor": "DISPATCHED_FUNCTIONS",
+   "kind": "doc",
+   "line": 60
+  },
+  {
+   "id": "r7",
+   "anchor": "UNSUPPORTED_FUNCTIONS",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#assign:SUBCLASS_SAFE_FUNCTIONS/item:np.round_",
+   "kind": "trail",
+   "line": 81
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#assign:SUBCLASS_SAFE_FUNCTIONS",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#assign:UNSUPPORTED_FUNCTIONS",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r11",
+   "anchor": "IGNORED_FUNCTIONS#item:np.save",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r12",
+   "anchor": "IGNORED_FUNCTIONS#item:np.poly",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r13",
+   "anchor": "IGNORED_FUNCTIONS#item:rfn.rec_append_fields",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r14",
+   "anchor": "<module>#if:NUMPY_LT_1_23/assign:IGNORED_FUNCTIONS/item:np.asscalar",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r15",
+   "anchor": "FunctionAssigner.__call__",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r16",
+   "anchor": "like_helper",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r17",
+   "anchor": "_as_quantity",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r18",
+   "anchor": "_as_quantity#try/except:Exception/raise:NotImplementedError",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r19",
+   "anchor": "_as_quantities",
+   "kind": "doc",
+   "line": 317
+  },
+  {
+   "id": "r20",
+   "anchor": "_as_quantities#try/return",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r21",
+   "anchor": "_as_quantities#try/except:Exception/raise:NotImplementedError",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r22",
+   "anchor": "_quantities2arrays",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r23",
+   "anchor": "_quantities2arrays#assign:q",
+   "kind": "lead",
+   "line": 336
+  },
+  {
+   "id": "r24",
+   "anchor": "_quantities2arrays#if:not unit_from_first and (q.unit is q._default_unit and not hasattr(args[0], \"unit\"))",
+   "kind": "lead",
+   "line": 342
+  },
+  {
+   "id": "r25",
+   "anchor": "_quantities2arrays#if:not unit_from_first and (q.unit is q._default_unit and not hasattr(args[0], \"unit\"))/for:arg in args[1:]",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r26",
+   "anchor": "_quantities2arrays#if:not unit_from_first and (q.unit is q._default_unit and not hasattr(args[0], \"unit\"))/for:arg in args[1:]/if:not trial.unit.is_equivalent(q.unit)/assign:q",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r27",
+   "anchor": "_quantities2arrays#try",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r28",
+   "anchor": "_iterable_helper",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r29",
+   "anchor": "_iterable_helper#if:out is not None/if:isinstance(out, Quantity)/else/raise:NotImplementedError",
+   "kind": "todo",
+   "line": 377
+  },
+  {
+   "id": "r30",
+   "anchor": "median#if:out is not None/assign:a",
+   "kind": "lead",
+   "line": 394
+  },
+  {
+   "id": "r31",
+   "anchor": "concatenate#assign:arrays, kwargs, unit, out",
+   "kind": "todo",
+   "line": 404
+  },
+  {
+   "id": "r32",
+   "anchor": "block#assign:(arrays, list_ndim, result_ndim, final_size)",
+   "kind": "lead",
+   "line": 417
+  },
+  {
+   "id": "r33",
+   "anchor": "block#assign:arrays, unit",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r34",
+   "anchor": "block#assign:dtype",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r35",
+   "anchor": "piecewise#assign:n2",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r36",
+   "anchor": "piecewise#if:np.isscalar(condlist) or (not isinstance(condlist[0], (list, np.ndarray)) and x.ndim != 0)",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r37",
+   "anchor": "piecewise#if:n == n2 - 1",
+   "kind": "trail",
+   "line": 469
+  },
+  {
+   "id": "r38",
+   "anchor": "pad#for:key in \"constant_values\", \"end_values\"",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r39",
+   "anchor": "close#assign:atol",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r40",
+   "anchor": "_check_bins#if:check.ndim > 0/elif:isinstance(bins, Quantity)/raise:NotImplementedError",
+   "kind": "lead",
+   "line": 682
+  },
+  {
+   "id": "r41",
+   "anchor": "histogram_bin_edges#assign:a",
+   "kind": "lead",
+   "line": 723
+  },
+  {
+   "id": "r42",
+   "anchor": "histogram2d#try/except:TypeError/if:isinstance(bins, Quantity)",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r43",
+   "anchor": "histogramdd#try/assign:_, D",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r44",
+   "anchor": "histogramdd#try/except:(AttributeError, ValueError)/assign:sample",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r45",
+   "anchor": "histogramdd#try/except:TypeError/import:astropy.units",
+   "kind": "lead",
+   "line": 803
+  },
+  {
+   "id": "r46",
+   "anchor": "logspace#assign:stop",
+   "kind": "lead",
+   "line": 874
+  },
+  {
+   "id": "r47",
+   "anchor": "geomspace#assign:(stop, start), unit",
+   "kind": "lead",
+   "line": 883
+  },
+  {
+   "id": "r48",
+   "anchor": "setcheckop#assign:(ar2, ar1), unit",
+   "kind": "lead",
+   "line": 931
+  },
+  {
+   "id": "r49",
+   "anchor": "apply_over_axes#assign:val",
+   "kind": "lead",
+   "line": 941
+  },
+  {
+   "id": "r50",
+   "anchor": "apply_over_axes#return",
+   "kind": "lead",
+   "line": 962
+  },
+  {
+   "id": "r51",
+   "anchor": "array_repr#assign:cls_name",
+   "kind": "todo",
+   "line": 970
+  },
+  {
+   "id": "r52",
+   "anchor": "array_str#assign:no_unit",
+   "kind": "todo",
+   "line": 989
+  },
+  {
+   "id": "r53",
+   "anchor": "array2string#assign:formatter",
+   "kind": "lead",
+   "line": 1002
+  },
+  {
+   "id": "r54",
+   "anchor": "array2string#if:formatter is None/else/import:numpy.core.arrayprint",
+   "kind": "lead",
+   "line": 1008
+  },
+  {
+   "id": "r55",
+   "anchor": "array2string#if:formatter is None/else/with:np.printoptions(formatter=formatter)/try/except:Exception/pass",
+   "kind": "lead",
+   "line": 1016
+  },
+  {
+   "id": "r56",
+   "anchor": "array2string#if:formatter is None/else/with:np.printoptions(formatter=formatter)/try/else/if:\"numpy\" in ff.__module__",
+   "kind": "lead",
+   "line": 1020
+  },
+  {
+   "id": "r57",
+   "anchor": "diag#return",
+   "kind": "lead",
+   "line": 1030
+  },
+  {
+   "id": "r58",
+   "anchor": "structured_to_unstructured",
+   "kind": "lead",
+   "line": 1146
+  },
+  {
+   "id": "r59",
+   "anchor": "structured_to_unstructured",
+   "kind": "doc",
+   "line": 1146
+  },
+  {
+   "id": "r60",
+   "anchor": "_build_structured_unit",
+   "kind": "doc",
+   "line": 1166
+  },
+  {
+   "id": "r61",
+   "anchor": "_izip_units_flat",
+   "kind": "doc",
+   "line": 1193
+  },
+  {
+   "id": "r62",
+   "anchor": "_izip_units_flat#assign:units",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r63",
+   "anchor": "_izip_units_flat#for:v in units.values()",
+   "kind": "lead",
+   "line": 1211
+  },
+  {
+   "id": "r64",
+   "anchor": "merge_arrays",
+   "kind": "doc",
+   "line": 1219
+  },
+  {
+   "id": "r65",
+   "anchor": "merge_arrays#if:asrecarray/raise:ValueError",
+   "kind": "todo",
+   "line": 1236
+  },
+  {
+   "id": "r66",
+   "anchor": "merge_arrays#if:usemask/raise:ValueError",
+   "kind": "todo",
+   "line": 1239
+  },
+  {
+   "id": "r67",
+   "anchor": "merge_arrays#if:isinstance(seqarrays, Quantity)",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r68",
+   "anchor": "merge_arrays#assign:seqarrays",
+   "kind": "lead",
+   "line": 1246
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27896,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8248,
+  "thinking_tokens": 5080,
+  "opus_cost_usd": 0.4894515,
+  "total_cost_usd": 0.5108405,
+  "duration_ms": 76789,
+  "duration_api_ms": 78063,
+  "num_turns": 2
+ },
+ "wall_ms": 77607,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

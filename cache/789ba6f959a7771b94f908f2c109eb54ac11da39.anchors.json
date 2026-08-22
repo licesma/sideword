@@ -1,0 +1,1897 @@
+{
+ "blob_sha": "789ba6f959a7771b94f908f2c109eb54ac11da39",
+ "path": "lib/matplotlib/axes/_base.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 312,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_axis_method_wrapper",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r2",
+   "anchor": "_axis_method_wrapper.__init__#assign:doc",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r3",
+   "anchor": "_axis_method_wrapper.__init__#if:doc/for:k, v in doc_sub.items()/if:k not in doc",
+   "kind": "trail",
+   "line": 61
+  },
+  {
+   "id": "r4",
+   "anchor": "_axis_method_wrapper.__set_name__#assign:get_method",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r5",
+   "anchor": "_axis_method_wrapper.__set_name__#assign:wrapper.__signature__",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r6",
+   "anchor": "_TransformedBoundsLocator",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r7",
+   "anchor": "_TransformedBoundsLocator.__init__",
+   "kind": "doc",
+   "line": 103
+  },
+  {
+   "id": "r8",
+   "anchor": "_TransformedBoundsLocator.__call__#return",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "_process_plot_format",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r10",
+   "anchor": "_process_plot_format#try",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r11",
+   "anchor": "_process_plot_format#try/try",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r12",
+   "anchor": "_process_plot_format#try/try/except:ValueError/return",
+   "kind": "trail",
+   "line": 154
+  },
+  {
+   "id": "r13",
+   "anchor": "_process_plot_format#try/try/else/if:fmt != fmtint/return",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r14",
+   "anchor": "_process_plot_format#try/try/else/if:fmt != fmtint/return",
+   "kind": "trail",
+   "line": 158
+  },
+  {
+   "id": "r15",
+   "anchor": "_process_plot_format#try/try/else/if:fmt != fmtint/else/assign:color",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r16",
+   "anchor": "_process_plot_format#try/except:ValueError/pass",
+   "kind": "trail",
+   "line": 163
+  },
+  {
+   "id": "r17",
+   "anchor": "_process_plot_format#while:i < len(fmt)/if:fmt[i:i+2] in mlines.lineStyles",
+   "kind": "trail",
+   "line": 172
+  },
+  {
+   "id": "r18",
+   "anchor": "_process_plot_var_args",
+   "kind": "doc",
+   "line": 210
+  },
+  {
+   "id": "r19",
+   "anchor": "_process_plot_var_args.__getstate__#return",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r20",
+   "anchor": "_process_plot_var_args.set_prop_cycle#assign:self._prop_keys",
+   "kind": "trail",
+   "line": 238
+  },
+  {
+   "id": "r21",
+   "anchor": "_process_plot_var_args.__call__#if:data is None",
+   "kind": "trail",
+   "line": 251
+  },
+  {
+   "id": "r22",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else",
+   "kind": "trail",
+   "line": 253
+  },
+  {
+   "id": "r23",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else/if:len(args) == 1/elif:len(args) == 2",
+   "kind": "trail",
+   "line": 257
+  },
+  {
+   "id": "r24",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else/if:len(args) == 1/elif:len(args) == 2/try",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r25",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else/if:len(args) == 1/elif:len(args) == 2/try/except:ValueError",
+   "kind": "trail",
+   "line": 268
+  },
+  {
+   "id": "r26",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else/if:len(args) == 1/elif:len(args) == 2/try/else/if:replaced[1] is not args[1]",
+   "kind": "trail",
+   "line": 271
+  },
+  {
+   "id": "r27",
+   "anchor": "_process_plot_var_args.__call__#if:data is None/else/if:len(args) == 1/elif:len(args) == 2/try/else/if:replaced[1] is not args[1]/else",
+   "kind": "trail",
+   "line": 282
+  },
+  {
+   "id": "r28",
+   "anchor": "_process_plot_var_args.__call__#while:args",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r29",
+   "anchor": "_process_plot_var_args.get_next_color",
+   "kind": "doc",
+   "line": 314
+  },
+  {
+   "id": "r30",
+   "anchor": "_process_plot_var_args._getdefaults",
+   "kind": "doc",
+   "line": 320
+  },
+  {
+   "id": "r31",
+   "anchor": "_process_plot_var_args._getdefaults#if:any(kw.get(k, None) is None for k in prop_keys)/assign:default_dict",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r32",
+   "anchor": "_process_plot_var_args._setdefaults",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r33",
+   "anchor": "_process_plot_var_args._makeline#assign:kw",
+   "kind": "trail",
+   "line": 348
+  },
+  {
+   "id": "r34",
+   "anchor": "_process_plot_var_args._makefill#assign:x",
+   "kind": "lead",
+   "line": 356
+  },
+  {
+   "id": "r35",
+   "anchor": "_process_plot_var_args._makefill#assign:kw",
+   "kind": "trail",
+   "line": 359
+  },
+  {
+   "id": "r36",
+   "anchor": "_process_plot_var_args._makefill#assign:ignores",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r37",
+   "anchor": "_process_plot_var_args._makefill#for:k, v in kwargs.items()",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r38",
+   "anchor": "_process_plot_var_args._makefill#assign:default_dict",
+   "kind": "lead",
+   "line": 381
+  },
+  {
+   "id": "r39",
+   "anchor": "_process_plot_var_args._makefill#assign:facecolor",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r40",
+   "anchor": "_process_plot_var_args._makefill#call:default_dict.pop",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r41",
+   "anchor": "_process_plot_var_args._makefill#call:self._setdefaults",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r42",
+   "anchor": "_process_plot_var_args._plot_args",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r43",
+   "anchor": "_process_plot_var_args._plot_args#if:len(tup) > 1 and isinstance(tup[-1], str)/assign:*xy, fmt",
+   "kind": "lead",
+   "line": 453
+  },
+  {
+   "id": "r44",
+   "anchor": "_process_plot_var_args._plot_args#if:any(v is None for v in tup)",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r45",
+   "anchor": "_process_plot_var_args._plot_args#for:prop_name, val in zip(('linestyle', 'marker', 'color'), (linestyle, marker, color))/if:val is not None/if:fmt.lower() != 'none' and prop_name in kwargs and val != 'None'",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r46",
+   "anchor": "_process_plot_var_args._plot_args#for:prop_name, val in zip(('linestyle', 'marker', 'color'), (linestyle, marker, color))/if:val is not None/if:fmt.lower() != 'none' and prop_name in kwargs and val != 'None'/call:_api.warn_external",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r47",
+   "anchor": "_AxesBase._axis_names",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r48",
+   "anchor": "_AxesBase._axis_map",
+   "kind": "doc",
+   "line": 563
+  },
+  {
+   "id": "r49",
+   "anchor": "_AxesBase.__init__#param:facecolor",
+   "kind": "trail",
+   "line": 574
+  },
+  {
+   "id": "r50",
+   "anchor": "_AxesBase.__init__#param:sharex",
+   "kind": "trail",
+   "line": 576
+  },
+  {
+   "id": "r51",
+   "anchor": "_AxesBase.__init__#param:sharey",
+   "kind": "trail",
+   "line": 577
+  },
+  {
+   "id": "r52",
+   "anchor": "_AxesBase.__init__",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r53",
+   "anchor": "_AxesBase.__init__#assign:self._axes_locator",
+   "kind": "trail",
+   "line": 636
+  },
+  {
+   "id": "r54",
+   "anchor": "_AxesBase.__init__#assign:self._colorbars",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r55",
+   "anchor": "_AxesBase.__init__#call:self._init_axis",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r56",
+   "anchor": "_AxesBase.__init__#assign:self.fmt_xdata",
+   "kind": "lead",
+   "line": 654
+  },
+  {
+   "id": "r57",
+   "anchor": "_AxesBase.__getstate__#assign:state[\"_shared_axes\"]",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r58",
+   "anchor": "_AxesBase.__setstate__#assign:shared_axes",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r59",
+   "anchor": "_AxesBase.get_window_extent",
+   "kind": "doc",
+   "line": 743
+  },
+  {
+   "id": "r60",
+   "anchor": "_AxesBase._init_axis#assign:self.xaxis",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r61",
+   "anchor": "_AxesBase.set_figure#call:super().set_figure",
+   "kind": "lead",
+   "line": 772
+  },
+  {
+   "id": "r62",
+   "anchor": "_AxesBase.set_figure#assign:self.dataLim",
+   "kind": "lead",
+   "line": 777
+  },
+  {
+   "id": "r63",
+   "anchor": "_AxesBase._unstale_viewLim#assign:need_scale",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r64",
+   "anchor": "_AxesBase._request_autoscale_view",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r65",
+   "anchor": "_AxesBase._set_lim_and_transforms",
+   "kind": "doc",
+   "line": 824
+  },
+  {
+   "id": "r66",
+   "anchor": "_AxesBase._set_lim_and_transforms#assign:self.transScale",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r67",
+   "anchor": "_AxesBase._set_lim_and_transforms#assign:self.transLimits",
+   "kind": "lead",
+   "line": 847
+  },
+  {
+   "id": "r68",
+   "anchor": "_AxesBase._set_lim_and_transforms#assign:self.transData",
+   "kind": "lead",
+   "line": 853
+  },
+  {
+   "id": "r69",
+   "anchor": "_AxesBase.get_xaxis_transform",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r70",
+   "anchor": "_AxesBase.get_xaxis_transform#if:which == 'grid'/elif:which == 'tick1'/return",
+   "kind": "lead",
+   "line": 877
+  },
+  {
+   "id": "r71",
+   "anchor": "_AxesBase.get_xaxis_transform#if:which == 'grid'/elif:which == 'tick1'/elif:which == 'tick2'/return",
+   "kind": "lead",
+   "line": 880
+  },
+  {
+   "id": "r72",
+   "anchor": "_AxesBase.get_xaxis_text1_transform",
+   "kind": "doc",
+   "line": 884
+  },
+  {
+   "id": "r73",
+   "anchor": "_AxesBase.get_xaxis_text2_transform",
+   "kind": "doc",
+   "line": 910
+  },
+  {
+   "id": "r74",
+   "anchor": "_AxesBase.get_yaxis_transform",
+   "kind": "doc",
+   "line": 936
+  },
+  {
+   "id": "r75",
+   "anchor": "_AxesBase.get_yaxis_transform#if:which == 'grid'/elif:which == 'tick1'/return",
+   "kind": "lead",
+   "line": 953
+  },
+  {
+   "id": "r76",
+   "anchor": "_AxesBase.get_yaxis_transform#if:which == 'grid'/elif:which == 'tick1'/elif:which == 'tick2'/return",
+   "kind": "lead",
+   "line": 956
+  },
+  {
+   "id": "r77",
+   "anchor": "_AxesBase.get_yaxis_text1_transform",
+   "kind": "doc",
+   "line": 960
+  },
+  {
+   "id": "r78",
+   "anchor": "_AxesBase.get_yaxis_text2_transform",
+   "kind": "doc",
+   "line": 986
+  },
+  {
+   "id": "r79",
+   "anchor": "_AxesBase._update_transScale#for:line in getattr(self, \"_children\", [])",
+   "kind": "trail",
+   "line": 1016
+  },
+  {
+   "id": "r80",
+   "anchor": "_AxesBase.get_position",
+   "kind": "doc",
+   "line": 1024
+  },
+  {
+   "id": "r81",
+   "anchor": "_AxesBase.set_position",
+   "kind": "doc",
+   "line": 1048
+  },
+  {
+   "id": "r82",
+   "anchor": "_AxesBase.set_position#call:self.set_in_layout",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r83",
+   "anchor": "_AxesBase._set_position",
+   "kind": "doc",
+   "line": 1076
+  },
+  {
+   "id": "r84",
+   "anchor": "_AxesBase.reset_position",
+   "kind": "doc",
+   "line": 1092
+  },
+  {
+   "id": "r85",
+   "anchor": "_AxesBase.set_axes_locator",
+   "kind": "doc",
+   "line": 1103
+  },
+  {
+   "id": "r86",
+   "anchor": "_AxesBase.get_axes_locator",
+   "kind": "doc",
+   "line": 1114
+  },
+  {
+   "id": "r87",
+   "anchor": "_AxesBase._set_artist_props",
+   "kind": "doc",
+   "line": 1120
+  },
+  {
+   "id": "r88",
+   "anchor": "_AxesBase._gen_axes_patch",
+   "kind": "doc",
+   "line": 1130
+  },
+  {
+   "id": "r89",
+   "anchor": "_AxesBase._gen_axes_spines",
+   "kind": "doc",
+   "line": 1147
+  },
+  {
+   "id": "r90",
+   "anchor": "_AxesBase.sharex",
+   "kind": "doc",
+   "line": 1165
+  },
+  {
+   "id": "r91",
+   "anchor": "_AxesBase.sharex#assign:self.xaxis.major",
+   "kind": "trail",
+   "line": 1178
+  },
+  {
+   "id": "r92",
+   "anchor": "_AxesBase.sharex#assign:self.xaxis.minor",
+   "kind": "trail",
+   "line": 1179
+  },
+  {
+   "id": "r93",
+   "anchor": "_AxesBase.sharey",
+   "kind": "doc",
+   "line": 1184
+  },
+  {
+   "id": "r94",
+   "anchor": "_AxesBase.sharey#assign:self.yaxis.major",
+   "kind": "trail",
+   "line": 1197
+  },
+  {
+   "id": "r95",
+   "anchor": "_AxesBase.sharey#assign:self.yaxis.minor",
+   "kind": "trail",
+   "line": 1198
+  },
+  {
+   "id": "r96",
+   "anchor": "_AxesBase.clear",
+   "kind": "doc",
+   "line": 1203
+  },
+  {
+   "id": "r97",
+   "anchor": "_AxesBase.clear#if:hasattr(self, 'patch')",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r98",
+   "anchor": "_AxesBase.clear#if:hasattr(self, 'patch')",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r99",
+   "anchor": "_AxesBase.clear#if:mpl.rcParams['xtick.minor.visible']",
+   "kind": "lead",
+   "line": 1246
+  },
+  {
+   "id": "r100",
+   "anchor": "_AxesBase.clear#call:self._update_transScale",
+   "kind": "trail",
+   "line": 1255
+  },
+  {
+   "id": "r101",
+   "anchor": "_AxesBase.clear#assign:self._current_image",
+   "kind": "trail",
+   "line": 1264
+  },
+  {
+   "id": "r102",
+   "anchor": "_AxesBase.clear#assign:self._projection_init",
+   "kind": "trail",
+   "line": 1265
+  },
+  {
+   "id": "r103",
+   "anchor": "_AxesBase.clear#call:self.grid",
+   "kind": "trail",
+   "line": 1269
+  },
+  {
+   "id": "r104",
+   "anchor": "_AxesBase.clear#call:self._set_title_offset_trans",
+   "kind": "lead",
+   "line": 1303
+  },
+  {
+   "id": "r105",
+   "anchor": "_AxesBase.clear#assign:self.patch",
+   "kind": "lead",
+   "line": 1311
+  },
+  {
+   "id": "r106",
+   "anchor": "_AxesBase.ArtistList",
+   "kind": "doc",
+   "line": 1334
+  },
+  {
+   "id": "r107",
+   "anchor": "_AxesBase.ArtistList.__init__",
+   "kind": "doc",
+   "line": 1345
+  },
+  {
+   "id": "r108",
+   "anchor": "_AxesBase.ArtistList.insert#if:index is not None/assign:self._axes._children[index:index]",
+   "kind": "lead",
+   "line": 1420
+  },
+  {
+   "id": "r109",
+   "anchor": "_AxesBase.ArtistList.__setitem__#if:index is not None/assign:i",
+   "kind": "lead",
+   "line": 1445
+  },
+  {
+   "id": "r110",
+   "anchor": "_AxesBase.cla",
+   "kind": "doc",
+   "line": 1497
+  },
+  {
+   "id": "r111",
+   "anchor": "_AxesBase.get_facecolor",
+   "kind": "doc",
+   "line": 1501
+  },
+  {
+   "id": "r112",
+   "anchor": "_AxesBase.set_facecolor",
+   "kind": "doc",
+   "line": 1505
+  },
+  {
+   "id": "r113",
+   "anchor": "_AxesBase._set_title_offset_trans",
+   "kind": "doc",
+   "line": 1517
+  },
+  {
+   "id": "r114",
+   "anchor": "_AxesBase.set_prop_cycle",
+   "kind": "doc",
+   "line": 1529
+  },
+  {
+   "id": "r115",
+   "anchor": "_AxesBase.set_prop_cycle#if:len(args) == 1 and args[0] is None",
+   "kind": "lead",
+   "line": 1596
+  },
+  {
+   "id": "r116",
+   "anchor": "_AxesBase.get_aspect",
+   "kind": "doc",
+   "line": 1603
+  },
+  {
+   "id": "r117",
+   "anchor": "_AxesBase.set_aspect",
+   "kind": "doc",
+   "line": 1611
+  },
+  {
+   "id": "r118",
+   "anchor": "_AxesBase.set_aspect#if:not cbook._str_equal(aspect, 'auto')/assign:aspect",
+   "kind": "trail",
+   "line": 1662
+  },
+  {
+   "id": "r119",
+   "anchor": "_AxesBase.set_aspect#call:self.set_adjustable",
+   "kind": "trail",
+   "line": 1675
+  },
+  {
+   "id": "r120",
+   "anchor": "_AxesBase.get_adjustable",
+   "kind": "doc",
+   "line": 1681
+  },
+  {
+   "id": "r121",
+   "anchor": "_AxesBase.set_adjustable",
+   "kind": "doc",
+   "line": 1695
+  },
+  {
+   "id": "r122",
+   "anchor": "_AxesBase.set_adjustable#if:adjustable == \"datalim\" and any(getattr(ax.get_data_ratio, \"__func__\", None) != _AxesBase.get_data_ratio for ax in axs)/raise:ValueError",
+   "kind": "lead",
+   "line": 1737
+  },
+  {
+   "id": "r123",
+   "anchor": "_AxesBase.get_box_aspect",
+   "kind": "doc",
+   "line": 1743
+  },
+  {
+   "id": "r124",
+   "anchor": "_AxesBase.set_box_aspect",
+   "kind": "doc",
+   "line": 1759
+  },
+  {
+   "id": "r125",
+   "anchor": "_AxesBase.set_box_aspect#if:aspect is not None/for:ax in axs",
+   "kind": "lead",
+   "line": 1789
+  },
+  {
+   "id": "r126",
+   "anchor": "_AxesBase.get_anchor",
+   "kind": "doc",
+   "line": 1796
+  },
+  {
+   "id": "r127",
+   "anchor": "_AxesBase.set_anchor",
+   "kind": "doc",
+   "line": 1809
+  },
+  {
+   "id": "r128",
+   "anchor": "_AxesBase.get_data_ratio",
+   "kind": "doc",
+   "line": 1857
+  },
+  {
+   "id": "r129",
+   "anchor": "_AxesBase.apply_aspect",
+   "kind": "doc",
+   "line": 1871
+  },
+  {
+   "id": "r130",
+   "anchor": "_AxesBase.apply_aspect#assign:fig_aspect",
+   "kind": "lead",
+   "line": 1906
+  },
+  {
+   "id": "r131",
+   "anchor": "_AxesBase.apply_aspect#if:self._box_aspect is not None",
+   "kind": "lead",
+   "line": 1919
+  },
+  {
+   "id": "r132",
+   "anchor": "_AxesBase.apply_aspect#if:self._box_aspect is None",
+   "kind": "lead",
+   "line": 1928
+  },
+  {
+   "id": "r133",
+   "anchor": "_AxesBase.apply_aspect#if:abs(y_expander) < 0.005",
+   "kind": "lead",
+   "line": 1945
+  },
+  {
+   "id": "r134",
+   "anchor": "_AxesBase.apply_aspect#assign:xm",
+   "kind": "lead",
+   "line": 1961
+  },
+  {
+   "id": "r135",
+   "anchor": "_AxesBase.apply_aspect#if:shared_y",
+   "kind": "lead",
+   "line": 1974
+  },
+  {
+   "id": "r136",
+   "anchor": "_AxesBase.apply_aspect#if:shared_y/else/assign:adjust_y",
+   "kind": "trail",
+   "line": 1982
+  },
+  {
+   "id": "r137",
+   "anchor": "_AxesBase.axis",
+   "kind": "doc",
+   "line": 1995
+  },
+  {
+   "id": "r138",
+   "anchor": "_AxesBase.axis#if:len(args) > 1/elif:len(args) == 1 and isinstance(args[0], (str, bool))/if:s == 'on'/elif:s == 'off'/elif:s in ('equal', 'tight', 'scaled', 'auto', 'image', 'square')/if:s == 'equal'/elif:s == 'scaled'/call:self.set_autoscale_on",
+   "kind": "trail",
+   "line": 2075
+  },
+  {
+   "id": "r139",
+   "anchor": "_AxesBase.axis#if:len(args) > 1/elif:len(args) == 1 and isinstance(args[0], (str, bool))/else/assign:xauto",
+   "kind": "trail",
+   "line": 2110
+  },
+  {
+   "id": "r140",
+   "anchor": "_AxesBase.axis#if:len(args) > 1/elif:len(args) == 1 and isinstance(args[0], (str, bool))/else/assign:xauto",
+   "kind": "trail",
+   "line": 2112
+  },
+  {
+   "id": "r141",
+   "anchor": "_AxesBase.get_legend",
+   "kind": "doc",
+   "line": 2123
+  },
+  {
+   "id": "r142",
+   "anchor": "_AxesBase.get_images",
+   "kind": "doc",
+   "line": 2127
+  },
+  {
+   "id": "r143",
+   "anchor": "_AxesBase.get_lines",
+   "kind": "doc",
+   "line": 2131
+  },
+  {
+   "id": "r144",
+   "anchor": "_AxesBase.get_xaxis",
+   "kind": "doc",
+   "line": 2135
+  },
+  {
+   "id": "r145",
+   "anchor": "_AxesBase.get_yaxis",
+   "kind": "doc",
+   "line": 2144
+  },
+  {
+   "id": "r146",
+   "anchor": "_AxesBase._sci",
+   "kind": "lead",
+   "line": 2160
+  },
+  {
+   "id": "r147",
+   "anchor": "_AxesBase._sci",
+   "kind": "doc",
+   "line": 2160
+  },
+  {
+   "id": "r148",
+   "anchor": "_AxesBase._gci",
+   "kind": "doc",
+   "line": 2179
+  },
+  {
+   "id": "r149",
+   "anchor": "_AxesBase.has_data",
+   "kind": "doc",
+   "line": 2183
+  },
+  {
+   "id": "r150",
+   "anchor": "_AxesBase._deprecate_noninstance",
+   "kind": "doc",
+   "line": 2195
+  },
+  {
+   "id": "r151",
+   "anchor": "_AxesBase.add_artist",
+   "kind": "doc",
+   "line": 2209
+  },
+  {
+   "id": "r152",
+   "anchor": "_AxesBase.add_child_axes",
+   "kind": "doc",
+   "line": 2230
+  },
+  {
+   "id": "r153",
+   "anchor": "_AxesBase.add_child_axes#assign:ax._axes",
+   "kind": "lead",
+   "line": 2240
+  },
+  {
+   "id": "r154",
+   "anchor": "_AxesBase.add_collection",
+   "kind": "doc",
+   "line": 2248
+  },
+  {
+   "id": "r155",
+   "anchor": "_AxesBase.add_collection#if:autolim/call:self._unstale_viewLim",
+   "kind": "lead",
+   "line": 2267
+  },
+  {
+   "id": "r156",
+   "anchor": "_AxesBase.add_collection#if:autolim/if:not np.isinf(datalim.minpos).all()/assign:points",
+   "kind": "lead",
+   "line": 2276
+  },
+  {
+   "id": "r157",
+   "anchor": "_AxesBase.add_image",
+   "kind": "doc",
+   "line": 2282
+  },
+  {
+   "id": "r158",
+   "anchor": "_AxesBase.add_line",
+   "kind": "doc",
+   "line": 2299
+  },
+  {
+   "id": "r159",
+   "anchor": "_AxesBase._add_text",
+   "kind": "doc",
+   "line": 2316
+  },
+  {
+   "id": "r160",
+   "anchor": "_AxesBase._update_line_limits",
+   "kind": "doc",
+   "line": 2327
+  },
+  {
+   "id": "r161",
+   "anchor": "_AxesBase._update_line_limits#if:line_trf == self.transData/elif:any(line_trf.contains_branch_seperately(self.transData))/assign:trf_to_data",
+   "kind": "lead",
+   "line": 2341
+  },
+  {
+   "id": "r162",
+   "anchor": "_AxesBase._update_line_limits#if:line_trf == self.transData/elif:any(line_trf.contains_branch_seperately(self.transData))/if:self.transData.is_affine",
+   "kind": "lead",
+   "line": 2345
+  },
+  {
+   "id": "r163",
+   "anchor": "_AxesBase._update_line_limits#if:line_trf == self.transData/elif:any(line_trf.contains_branch_seperately(self.transData))/else/assign:data_path",
+   "kind": "lead",
+   "line": 2357
+  },
+  {
+   "id": "r164",
+   "anchor": "_AxesBase._update_line_limits#if:self.name != \"rectilinear\"/if:updatex and line_trf == self.get_yaxis_transform()",
+   "kind": "lead",
+   "line": 2366
+  },
+  {
+   "id": "r165",
+   "anchor": "_AxesBase.add_patch",
+   "kind": "doc",
+   "line": 2375
+  },
+  {
+   "id": "r166",
+   "anchor": "_AxesBase._update_patch_limits",
+   "kind": "doc",
+   "line": 2388
+  },
+  {
+   "id": "r167",
+   "anchor": "_AxesBase._update_patch_limits#if:isinstance(patch, mpatches.Rectangle) and ((not patch.get_width()) and (not patch.get_height()))",
+   "kind": "lead",
+   "line": 2398
+  },
+  {
+   "id": "r168",
+   "anchor": "_AxesBase._update_patch_limits#if:isinstance(patch, mpatches.Rectangle) and ((not patch.get_width()) and (not patch.get_height()))",
+   "kind": "lead",
+   "line": 2398
+  },
+  {
+   "id": "r169",
+   "anchor": "_AxesBase._update_patch_limits#assign:vertices",
+   "kind": "lead",
+   "line": 2404
+  },
+  {
+   "id": "r170",
+   "anchor": "_AxesBase._update_patch_limits#for:curve, code in p.iter_bezier()/assign:_, dzeros",
+   "kind": "lead",
+   "line": 2407
+  },
+  {
+   "id": "r171",
+   "anchor": "_AxesBase._update_patch_limits#for:curve, code in p.iter_bezier()/call:vertices.append",
+   "kind": "lead",
+   "line": 2409
+  },
+  {
+   "id": "r172",
+   "anchor": "_AxesBase._update_patch_limits#if:self.name != \"rectilinear\"/if:updatex and patch_trf == self.get_yaxis_transform()",
+   "kind": "lead",
+   "line": 2420
+  },
+  {
+   "id": "r173",
+   "anchor": "_AxesBase.add_table",
+   "kind": "doc",
+   "line": 2428
+  },
+  {
+   "id": "r174",
+   "anchor": "_AxesBase.add_container",
+   "kind": "doc",
+   "line": 2439
+  },
+  {
+   "id": "r175",
+   "anchor": "_AxesBase._unit_change_handler",
+   "kind": "doc",
+   "line": 2450
+  },
+  {
+   "id": "r176",
+   "anchor": "_AxesBase._unit_change_handler#if:event is None",
+   "kind": "trail",
+   "line": 2454
+  },
+  {
+   "id": "r177",
+   "anchor": "_AxesBase.relim",
+   "kind": "doc",
+   "line": 2463
+  },
+  {
+   "id": "r178",
+   "anchor": "_AxesBase.relim#call:self.dataLim.ignore",
+   "kind": "lead",
+   "line": 2476
+  },
+  {
+   "id": "r179",
+   "anchor": "_AxesBase.update_datalim",
+   "kind": "doc",
+   "line": 2489
+  },
+  {
+   "id": "r180",
+   "anchor": "_AxesBase._process_unit_info",
+   "kind": "doc",
+   "line": 2514
+  },
+  {
+   "id": "r181",
+   "anchor": "_AxesBase._process_unit_info#assign:datasets",
+   "kind": "lead",
+   "line": 2543
+  },
+  {
+   "id": "r182",
+   "anchor": "_AxesBase._process_unit_info#for:axis_name, data in datasets/if:axis is not None and data is not None and not axis.have_units()",
+   "kind": "lead",
+   "line": 2552
+  },
+  {
+   "id": "r183",
+   "anchor": "_AxesBase._process_unit_info#for:axis_name, axis in axis_map.items()/if:axis is None",
+   "kind": "lead",
+   "line": 2556
+  },
+  {
+   "id": "r184",
+   "anchor": "_AxesBase._process_unit_info#for:axis_name, axis in axis_map.items()/assign:units",
+   "kind": "lead",
+   "line": 2559
+  },
+  {
+   "id": "r185",
+   "anchor": "_AxesBase._process_unit_info#for:axis_name, axis in axis_map.items()/if:self.name == \"polar\"/assign:polar_units",
+   "kind": "lead",
+   "line": 2562
+  },
+  {
+   "id": "r186",
+   "anchor": "_AxesBase._process_unit_info#for:axis_name, axis in axis_map.items()/if:units != axis.units and units is not None/for:dataset_axis_name, data in datasets",
+   "kind": "lead",
+   "line": 2568
+  },
+  {
+   "id": "r187",
+   "anchor": "_AxesBase.in_axes",
+   "kind": "doc",
+   "line": 2575
+  },
+  {
+   "id": "r188",
+   "anchor": "_AxesBase.get_autoscale_on",
+   "kind": "doc",
+   "line": 2586
+  },
+  {
+   "id": "r189",
+   "anchor": "_AxesBase.set_autoscale_on",
+   "kind": "doc",
+   "line": 2591
+  },
+  {
+   "id": "r190",
+   "anchor": "_AxesBase.use_sticky_edges",
+   "kind": "doc",
+   "line": 2604
+  },
+  {
+   "id": "r191",
+   "anchor": "_AxesBase.use_sticky_edges#assign:self._use_sticky_edges",
+   "kind": "post",
+   "line": 2622
+  },
+  {
+   "id": "r192",
+   "anchor": "_AxesBase.set_xmargin",
+   "kind": "doc",
+   "line": 2625
+  },
+  {
+   "id": "r193",
+   "anchor": "_AxesBase.set_ymargin",
+   "kind": "doc",
+   "line": 2647
+  },
+  {
+   "id": "r194",
+   "anchor": "_AxesBase.margins",
+   "kind": "doc",
+   "line": 2669
+  },
+  {
+   "id": "r195",
+   "anchor": "_AxesBase.set_rasterization_zorder",
+   "kind": "doc",
+   "line": 2744
+  },
+  {
+   "id": "r196",
+   "anchor": "_AxesBase.get_rasterization_zorder",
+   "kind": "doc",
+   "line": 2764
+  },
+  {
+   "id": "r197",
+   "anchor": "_AxesBase.autoscale",
+   "kind": "doc",
+   "line": 2768
+  },
+  {
+   "id": "r198",
+   "anchor": "_AxesBase.autoscale_view",
+   "kind": "doc",
+   "line": 2813
+  },
+  {
+   "id": "r199",
+   "anchor": "_AxesBase.autoscale_view#if:self.use_sticky_edges/if:self._xmargin and scalex and self.get_autoscalex_on()",
+   "kind": "lead",
+   "line": 2862
+  },
+  {
+   "id": "r200",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#if:not (scale and axis._get_autoscale_on())/return",
+   "kind": "trail",
+   "line": 2883
+  },
+  {
+   "id": "r201",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:values",
+   "kind": "lead",
+   "line": 2888
+  },
+  {
+   "id": "r202",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#if:values/elif:getattr(self._viewLim, f\"mutated{name}\")()/return",
+   "kind": "lead",
+   "line": 2896
+  },
+  {
+   "id": "r203",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:locator",
+   "kind": "lead",
+   "line": 2900
+  },
+  {
+   "id": "r204",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:minimum_minpos",
+   "kind": "lead",
+   "line": 2903
+  },
+  {
+   "id": "r205",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:tol",
+   "kind": "lead",
+   "line": 2911
+  },
+  {
+   "id": "r206",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:i0",
+   "kind": "lead",
+   "line": 2913
+  },
+  {
+   "id": "r207",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:i1",
+   "kind": "lead",
+   "line": 2916
+  },
+  {
+   "id": "r208",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#assign:transform",
+   "kind": "lead",
+   "line": 2921
+  },
+  {
+   "id": "r209",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#if:not np.isfinite(delta)/assign:delta",
+   "kind": "trail",
+   "line": 2927
+  },
+  {
+   "id": "r210",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#if:x0bound is not None",
+   "kind": "lead",
+   "line": 2931
+  },
+  {
+   "id": "r211",
+   "anchor": "_AxesBase.autoscale_view.handle_single_axis#call:set_bound",
+   "kind": "post",
+   "line": 2938
+  },
+  {
+   "id": "r212",
+   "anchor": "_AxesBase._update_title_position",
+   "kind": "doc",
+   "line": 2948
+  },
+  {
+   "id": "r213",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/call:title.set_position",
+   "kind": "lead",
+   "line": 2962
+  },
+  {
+   "id": "r214",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/assign:axs",
+   "kind": "lead",
+   "line": 2964
+  },
+  {
+   "id": "r215",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/for:ax in self.child_axes",
+   "kind": "lead",
+   "line": 2966
+  },
+  {
+   "id": "r216",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/for:ax in axs/if:bb is None/if:'outline' in ax.spines/assign:bb",
+   "kind": "lead",
+   "line": 2984
+  },
+  {
+   "id": "r217",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/for:ax in axs/if:title.get_text()/call:ax.yaxis.get_tightbbox",
+   "kind": "trail",
+   "line": 2989
+  },
+  {
+   "id": "r218",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/if:top < 0/call:_log.debug",
+   "kind": "lead",
+   "line": 2997
+  },
+  {
+   "id": "r219",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/if:title.get_window_extent(renderer).ymin < top/if:title.get_window_extent(renderer).ymin < top",
+   "kind": "lead",
+   "line": 3004
+  },
+  {
+   "id": "r220",
+   "anchor": "_AxesBase._update_title_position#for:title in titles/assign:x, _",
+   "kind": "lead",
+   "line": 3012
+  },
+  {
+   "id": "r221",
+   "anchor": "_AxesBase.draw",
+   "kind": "lead",
+   "line": 3017
+  },
+  {
+   "id": "r222",
+   "anchor": "_AxesBase.draw#if:renderer is None",
+   "kind": "lead",
+   "line": 3019
+  },
+  {
+   "id": "r223",
+   "anchor": "_AxesBase.draw#assign:self._stale",
+   "kind": "lead",
+   "line": 3028
+  },
+  {
+   "id": "r224",
+   "anchor": "_AxesBase.draw#assign:locator",
+   "kind": "lead",
+   "line": 3031
+  },
+  {
+   "id": "r225",
+   "anchor": "_AxesBase.draw#if:not (self.axison and self._frameon)",
+   "kind": "lead",
+   "line": 3045
+  },
+  {
+   "id": "r226",
+   "anchor": "_AxesBase.draw#assign:rasterization_zorder",
+   "kind": "lead",
+   "line": 3063
+  },
+  {
+   "id": "r227",
+   "anchor": "_AxesBase.draw#if:self.axison and self._frameon",
+   "kind": "lead",
+   "line": 3077
+  },
+  {
+   "id": "r228",
+   "anchor": "_AxesBase.draw_artist",
+   "kind": "doc",
+   "line": 3091
+  },
+  {
+   "id": "r229",
+   "anchor": "_AxesBase.redraw_in_frame",
+   "kind": "doc",
+   "line": 3103
+  },
+  {
+   "id": "r230",
+   "anchor": "_AxesBase.get_frame_on",
+   "kind": "lead",
+   "line": 3124
+  },
+  {
+   "id": "r231",
+   "anchor": "_AxesBase.get_frame_on",
+   "kind": "doc",
+   "line": 3124
+  },
+  {
+   "id": "r232",
+   "anchor": "_AxesBase.set_frame_on",
+   "kind": "doc",
+   "line": 3128
+  },
+  {
+   "id": "r233",
+   "anchor": "_AxesBase.get_axisbelow",
+   "kind": "doc",
+   "line": 3139
+  },
+  {
+   "id": "r234",
+   "anchor": "_AxesBase.set_axisbelow",
+   "kind": "doc",
+   "line": 3153
+  },
+  {
+   "id": "r235",
+   "anchor": "_AxesBase.set_axisbelow#assign:self._axisbelow",
+   "kind": "lead",
+   "line": 3177
+  },
+  {
+   "id": "r236",
+   "anchor": "_AxesBase.grid",
+   "kind": "doc",
+   "line": 3189
+  },
+  {
+   "id": "r237",
+   "anchor": "_AxesBase.ticklabel_format",
+   "kind": "doc",
+   "line": 3231
+  },
+  {
+   "id": "r238",
+   "anchor": "_AxesBase.ticklabel_format#if:scilimits is not None/try/expr:m + n + 1",
+   "kind": "trail",
+   "line": 3281
+  },
+  {
+   "id": "r239",
+   "anchor": "_AxesBase.locator_params",
+   "kind": "doc",
+   "line": 3306
+  },
+  {
+   "id": "r240",
+   "anchor": "_AxesBase.tick_params",
+   "kind": "doc",
+   "line": 3347
+  },
+  {
+   "id": "r241",
+   "anchor": "_AxesBase.set_axis_off",
+   "kind": "doc",
+   "line": 3426
+  },
+  {
+   "id": "r242",
+   "anchor": "_AxesBase.set_axis_on",
+   "kind": "doc",
+   "line": 3435
+  },
+  {
+   "id": "r243",
+   "anchor": "_AxesBase.get_xlabel",
+   "kind": "lead",
+   "line": 3446
+  },
+  {
+   "id": "r244",
+   "anchor": "_AxesBase.get_xlabel",
+   "kind": "doc",
+   "line": 3446
+  },
+  {
+   "id": "r245",
+   "anchor": "_AxesBase.set_xlabel",
+   "kind": "doc",
+   "line": 3453
+  },
+  {
+   "id": "r246",
+   "anchor": "_AxesBase.invert_xaxis",
+   "kind": "doc",
+   "line": 3504
+  },
+  {
+   "id": "r247",
+   "anchor": "_AxesBase.get_xbound",
+   "kind": "doc",
+   "line": 3518
+  },
+  {
+   "id": "r248",
+   "anchor": "_AxesBase.set_xbound",
+   "kind": "doc",
+   "line": 3534
+  },
+  {
+   "id": "r249",
+   "anchor": "_AxesBase.get_xlim",
+   "kind": "doc",
+   "line": 3566
+  },
+  {
+   "id": "r250",
+   "anchor": "_AxesBase._validate_converted_limits",
+   "kind": "doc",
+   "line": 3588
+  },
+  {
+   "id": "r251",
+   "anchor": "_AxesBase.set_xlim",
+   "kind": "doc",
+   "line": 3606
+  },
+  {
+   "id": "r252",
+   "anchor": "_AxesBase.set_xscale",
+   "kind": "doc",
+   "line": 3686
+  },
+  {
+   "id": "r253",
+   "anchor": "_AxesBase.set_xscale#if:old_default_lims != new_default_lims/call:self.autoscale_view",
+   "kind": "lead",
+   "line": 3724
+  },
+  {
+   "id": "r254",
+   "anchor": "_AxesBase.get_ylabel",
+   "kind": "doc",
+   "line": 3735
+  },
+  {
+   "id": "r255",
+   "anchor": "_AxesBase.set_ylabel",
+   "kind": "doc",
+   "line": 3742
+  },
+  {
+   "id": "r256",
+   "anchor": "_AxesBase.invert_yaxis",
+   "kind": "doc",
+   "line": 3793
+  },
+  {
+   "id": "r257",
+   "anchor": "_AxesBase.get_ybound",
+   "kind": "doc",
+   "line": 3807
+  },
+  {
+   "id": "r258",
+   "anchor": "_AxesBase.set_ybound",
+   "kind": "doc",
+   "line": 3823
+  },
+  {
+   "id": "r259",
+   "anchor": "_AxesBase.get_ylim",
+   "kind": "doc",
+   "line": 3855
+  },
+  {
+   "id": "r260",
+   "anchor": "_AxesBase.set_ylim",
+   "kind": "doc",
+   "line": 3878
+  },
+  {
+   "id": "r261",
+   "anchor": "_AxesBase.set_yscale",
+   "kind": "doc",
+   "line": 3958
+  },
+  {
+   "id": "r262",
+   "anchor": "_AxesBase.set_yscale#if:old_default_lims != new_default_lims/call:self.autoscale_view",
+   "kind": "lead",
+   "line": 3996
+  },
+  {
+   "id": "r263",
+   "anchor": "_AxesBase.format_xdata",
+   "kind": "doc",
+   "line": 4010
+  },
+  {
+   "id": "r264",
+   "anchor": "_AxesBase.format_ydata",
+   "kind": "doc",
+   "line": 4020
+  },
+  {
+   "id": "r265",
+   "anchor": "_AxesBase.format_coord",
+   "kind": "doc",
+   "line": 4030
+  },
+  {
+   "id": "r266",
+   "anchor": "_AxesBase.minorticks_on",
+   "kind": "doc",
+   "line": 4037
+  },
+  {
+   "id": "r267",
+   "anchor": "_AxesBase.minorticks_off",
+   "kind": "doc",
+   "line": 4056
+  },
+  {
+   "id": "r268",
+   "anchor": "_AxesBase.can_zoom",
+   "kind": "lead",
+   "line": 4063
+  },
+  {
+   "id": "r269",
+   "anchor": "_AxesBase.can_zoom",
+   "kind": "doc",
+   "line": 4063
+  },
+  {
+   "id": "r270",
+   "anchor": "_AxesBase.can_pan",
+   "kind": "doc",
+   "line": 4069
+  },
+  {
+   "id": "r271",
+   "anchor": "_AxesBase.get_navigate",
+   "kind": "doc",
+   "line": 4075
+  },
+  {
+   "id": "r272",
+   "anchor": "_AxesBase.set_navigate",
+   "kind": "doc",
+   "line": 4081
+  },
+  {
+   "id": "r273",
+   "anchor": "_AxesBase.get_navigate_mode",
+   "kind": "doc",
+   "line": 4091
+  },
+  {
+   "id": "r274",
+   "anchor": "_AxesBase.set_navigate_mode",
+   "kind": "doc",
+   "line": 4097
+  },
+  {
+   "id": "r275",
+   "anchor": "_AxesBase._get_view",
+   "kind": "doc",
+   "line": 4107
+  },
+  {
+   "id": "r276",
+   "anchor": "_AxesBase._set_view",
+   "kind": "doc",
+   "line": 4125
+  },
+  {
+   "id": "r277",
+   "anchor": "_AxesBase._prepare_view_from_bbox",
+   "kind": "doc",
+   "line": 4141
+  },
+  {
+   "id": "r278",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:len(bbox) == 3/assign:xp, yp, scl",
+   "kind": "trail",
+   "line": 4151
+  },
+  {
+   "id": "r279",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:len(bbox) == 3/if:scl == 0",
+   "kind": "trail",
+   "line": 4152
+  },
+  {
+   "id": "r280",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:len(bbox) == 3/assign:(xmin, ymin), (xmax, ymax)",
+   "kind": "lead",
+   "line": 4160
+  },
+  {
+   "id": "r281",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:len(bbox) == 3/assign:xwidth",
+   "kind": "lead",
+   "line": 4163
+  },
+  {
+   "id": "r282",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:len(bbox) == 3/elif:len(bbox) != 4/call:_api.warn_external",
+   "kind": "lead",
+   "line": 4173
+  },
+  {
+   "id": "r283",
+   "anchor": "_AxesBase._prepare_view_from_bbox#assign:xmin0, xmax0",
+   "kind": "lead",
+   "line": 4179
+  },
+  {
+   "id": "r284",
+   "anchor": "_AxesBase._prepare_view_from_bbox#assign:startx, starty, stopx, stopy",
+   "kind": "lead",
+   "line": 4182
+  },
+  {
+   "id": "r285",
+   "anchor": "_AxesBase._prepare_view_from_bbox#assign:(startx, starty), (stopx, stopy)",
+   "kind": "lead",
+   "line": 4184
+  },
+  {
+   "id": "r286",
+   "anchor": "_AxesBase._prepare_view_from_bbox#assign:xmin, xmax",
+   "kind": "lead",
+   "line": 4187
+  },
+  {
+   "id": "r287",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:twinx or mode == \"y\"",
+   "kind": "lead",
+   "line": 4190
+  },
+  {
+   "id": "r288",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:direction == \"in\"/elif:direction == \"out\"/assign:sxmin0, sxmax0, sxmin, sxmax",
+   "kind": "trail",
+   "line": 4202
+  },
+  {
+   "id": "r289",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:direction == \"in\"/elif:direction == \"out\"/assign:factor",
+   "kind": "trail",
+   "line": 4203
+  },
+  {
+   "id": "r290",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:direction == \"in\"/elif:direction == \"out\"/assign:sxmin1",
+   "kind": "lead",
+   "line": 4206
+  },
+  {
+   "id": "r291",
+   "anchor": "_AxesBase._prepare_view_from_bbox#if:direction == \"in\"/elif:direction == \"out\"/assign:new_xbound",
+   "kind": "lead",
+   "line": 4209
+  },
+  {
+   "id": "r292",
+   "anchor": "_AxesBase._set_view_from_bbox",
+   "kind": "doc",
+   "line": 4221
+  },
+  {
+   "id": "r293",
+   "anchor": "_AxesBase.start_pan",
+   "kind": "doc",
+   "line": 4266
+  },
+  {
+   "id": "r294",
+   "anchor": "_AxesBase.end_pan",
+   "kind": "doc",
+   "line": 4289
+  },
+  {
+   "id": "r295",
+   "anchor": "_AxesBase._get_pan_points",
+   "kind": "doc",
+   "line": 4299
+  },
+  {
+   "id": "r296",
+   "anchor": "_AxesBase._get_pan_points#assign:points[~valid]",
+   "kind": "lead",
+   "line": 4358
+  },
+  {
+   "id": "r297",
+   "anchor": "_AxesBase.drag_pan",
+   "kind": "doc",
+   "line": 4361
+  },
+  {
+   "id": "r298",
+   "anchor": "_AxesBase.get_children#return",
+   "kind": "lead",
+   "line": 4385
+  },
+  {
+   "id": "r299",
+   "anchor": "_AxesBase.contains#assign:inside, info",
+   "kind": "lead",
+   "line": 4397
+  },
+  {
+   "id": "r300",
+   "anchor": "_AxesBase.contains_point",
+   "kind": "doc",
+   "line": 4402
+  },
+  {
+   "id": "r301",
+   "anchor": "_AxesBase.get_default_bbox_extra_artists",
+   "kind": "doc",
+   "line": 4409
+  },
+  {
+   "id": "r302",
+   "anchor": "_AxesBase.get_default_bbox_extra_artists#for:axis in self._axis_map.values()/call:artists.remove",
+   "kind": "lead",
+   "line": 4423
+  },
+  {
+   "id": "r303",
+   "anchor": "_AxesBase.get_default_bbox_extra_artists#if:not (self.axison and self._frameon)/for:spine in self.spines.values()",
+   "kind": "lead",
+   "line": 4426
+  },
+  {
+   "id": "r304",
+   "anchor": "_AxesBase.get_default_bbox_extra_artists#assign:noclip",
+   "kind": "lead",
+   "line": 4436
+  },
+  {
+   "id": "r305",
+   "anchor": "_AxesBase.get_tightbbox",
+   "kind": "doc",
+   "line": 4441
+  },
+  {
+   "id": "r306",
+   "anchor": "_AxesBase.get_tightbbox#for:title in [self.title, self._left_title, self._right_title]/if:title.get_visible()/if:for_layout_only and bt.width > 0/assign:bt.x0",
+   "kind": "lead",
+   "line": 4514
+  },
+  {
+   "id": "r307",
+   "anchor": "_AxesBase._make_twin_axes",
+   "kind": "doc",
+   "line": 4531
+  },
+  {
+   "id": "r308",
+   "anchor": "_AxesBase._make_twin_axes#if:'sharex' in kwargs and 'sharey' in kwargs",
+   "kind": "lead",
+   "line": 4534
+  },
+  {
+   "id": "r309",
+   "anchor": "_AxesBase.twinx",
+   "kind": "doc",
+   "line": 4545
+  },
+  {
+   "id": "r310",
+   "anchor": "_AxesBase.twiny",
+   "kind": "doc",
+   "line": 4575
+  },
+  {
+   "id": "r311",
+   "anchor": "_AxesBase.get_shared_x_axes",
+   "kind": "doc",
+   "line": 4604
+  },
+  {
+   "id": "r312",
+   "anchor": "_AxesBase.get_shared_y_axes",
+   "kind": "doc",
+   "line": 4608
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 98141,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 33215,
+  "thinking_tokens": 17612,
+  "opus_cost_usd": 1.8160765000000003,
+  "total_cost_usd": 1.8967755000000004,
+  "duration_ms": 277628,
+  "duration_api_ms": 279973,
+  "num_turns": 2
+ },
+ "wall_ms": 278460,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

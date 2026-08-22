@@ -1,0 +1,547 @@
+{
+ "blob_sha": "9899b2121196553d13933fe0d912726c8c4d3484",
+ "path": "astropy/io/fits/util.py",
+ "repo": "astropy/astropy",
+ "records": 87,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:gzip",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "NotifierMixin",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "NotifierMixin._add_listener",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r4",
+   "anchor": "NotifierMixin._remove_listener",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r5",
+   "anchor": "NotifierMixin._notify",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r6",
+   "anchor": "NotifierMixin._notify#for:listener in self._listeners.valuerefs()/assign:listener",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r7",
+   "anchor": "NotifierMixin._notify#for:listener in self._listeners.valuerefs()/assign:listener",
+   "kind": "trail",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "NotifierMixin.__getstate__",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r9",
+   "anchor": "NotifierMixin.__getstate__#try",
+   "kind": "todo",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "NotifierMixin.__getstate__#try/except:AttributeError/assign:state",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r11",
+   "anchor": "first",
+   "kind": "doc",
+   "line": 150
+  },
+  {
+   "id": "r12",
+   "anchor": "itersubclasses",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r13",
+   "anchor": "itersubclasses#try/except:TypeError",
+   "kind": "trail",
+   "line": 191
+  },
+  {
+   "id": "r14",
+   "anchor": "ignore_sigint",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r15",
+   "anchor": "ignore_sigint.wrapped#assign:curr_thread",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r16",
+   "anchor": "ignore_sigint.wrapped#if:single_thread",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r17",
+   "anchor": "ignore_sigint.wrapped#if:single_thread/assign:old_handler",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r18",
+   "anchor": "pairwise",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r19",
+   "anchor": "pairwise#for:_ in b/break",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r20",
+   "anchor": "decode_ascii#if:isinstance(s, bytes)/elif:isinstance(s, np.ndarray) and issubclass(s.dtype.type, np.bytes_)/if:s.size == 0",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r21",
+   "anchor": "decode_ascii#if:isinstance(s, bytes)/elif:isinstance(s, np.ndarray) and issubclass(s.dtype.type, np.bytes_)/if:s.size == 0/assign:dt",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r22",
+   "anchor": "decode_ascii#if:isinstance(s, bytes)/elif:isinstance(s, np.ndarray) and not issubclass(s.dtype.type, np.str_)/raise:TypeError",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r23",
+   "anchor": "isreadable",
+   "kind": "doc",
+   "line": 312
+  },
+  {
+   "id": "r24",
+   "anchor": "isreadable#if:hasattr(f, 'closed') and f.closed/raise:ValueError",
+   "kind": "lead",
+   "line": 323
+  },
+  {
+   "id": "r25",
+   "anchor": "isreadable#return",
+   "kind": "lead",
+   "line": 333
+  },
+  {
+   "id": "r26",
+   "anchor": "iswritable",
+   "kind": "doc",
+   "line": 336
+  },
+  {
+   "id": "r27",
+   "anchor": "iswritable#if:hasattr(f, 'closed') and f.closed/raise:ValueError",
+   "kind": "lead",
+   "line": 347
+  },
+  {
+   "id": "r28",
+   "anchor": "iswritable#return",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r29",
+   "anchor": "isfile",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r30",
+   "anchor": "fileobj_open",
+   "kind": "doc",
+   "line": 378
+  },
+  {
+   "id": "r31",
+   "anchor": "fileobj_name",
+   "kind": "doc",
+   "line": 391
+  },
+  {
+   "id": "r32",
+   "anchor": "fileobj_name#if:isinstance(f, str)/elif:isinstance(f, gzip.GzipFile)/return",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r33",
+   "anchor": "fileobj_closed",
+   "kind": "doc",
+   "line": 419
+  },
+  {
+   "id": "r34",
+   "anchor": "fileobj_mode",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r35",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r36",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')",
+   "kind": "lead",
+   "line": 451
+  },
+  {
+   "id": "r37",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')/elif:hasattr(f, 'fileobj_mode')",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r38",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')/elif:hasattr(f, 'fp') and hasattr(f.fp, 'mode')",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r39",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')/elif:hasattr(f, 'mode')",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r40",
+   "anchor": "fileobj_mode#if:hasattr(f, 'fileobj') and hasattr(f.fileobj, 'mode')/else",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r41",
+   "anchor": "_fileobj_normalize_mode",
+   "kind": "doc",
+   "line": 474
+  },
+  {
+   "id": "r42",
+   "anchor": "_fileobj_normalize_mode#if:isinstance(f, gzip.GzipFile)",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r43",
+   "anchor": "_fileobj_normalize_mode#if:isinstance(f, gzip.GzipFile)/if:mode == gzip.READ",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r44",
+   "anchor": "_fileobj_normalize_mode#if:isinstance(f, gzip.GzipFile)/if:mode == gzip.READ/else/return",
+   "kind": "trail",
+   "line": 488
+  },
+  {
+   "id": "r45",
+   "anchor": "_fileobj_normalize_mode#if:'+' in mode",
+   "kind": "lead",
+   "line": 492
+  },
+  {
+   "id": "r46",
+   "anchor": "fileobj_is_binary",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r47",
+   "anchor": "fileobj_is_binary#if:hasattr(f, 'binary')",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r48",
+   "anchor": "fill",
+   "kind": "doc",
+   "line": 528
+  },
+  {
+   "id": "r49",
+   "anchor": "CHUNKED_FROMFILE",
+   "kind": "lead",
+   "line": 551
+  },
+  {
+   "id": "r50",
+   "anchor": "_array_from_file",
+   "kind": "doc",
+   "line": 554
+  },
+  {
+   "id": "r51",
+   "anchor": "_array_from_file#if:isfile(infile)/if:CHUNKED_FROMFILE/assign:chunk_size",
+   "kind": "trail",
+   "line": 568
+  },
+  {
+   "id": "r52",
+   "anchor": "_array_from_file#if:isfile(infile)/else/assign:read_size",
+   "kind": "lead",
+   "line": 583
+  },
+  {
+   "id": "r53",
+   "anchor": "_array_from_file#if:isfile(infile)/else/assign:array",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r54",
+   "anchor": "_array_to_file",
+   "kind": "doc",
+   "line": 596
+  },
+  {
+   "id": "r55",
+   "anchor": "_array_to_file#if:sys.platform == 'darwin' and arr.nbytes >= _OSX_WRITE_LIMIT + 1 and arr.nbytes % 4096 == 0",
+   "kind": "lead",
+   "line": 628
+  },
+  {
+   "id": "r56",
+   "anchor": "_array_to_file#if:sys.platform == 'darwin' and arr.nbytes >= _OSX_WRITE_LIMIT + 1 and arr.nbytes % 4096 == 0/assign:chunksize",
+   "kind": "lead",
+   "line": 631
+  },
+  {
+   "id": "r57",
+   "anchor": "_array_to_file#if:sys.platform == 'darwin' and arr.nbytes >= _OSX_WRITE_LIMIT + 1 and arr.nbytes % 4096 == 0/else/return",
+   "kind": "lead",
+   "line": 636
+  },
+  {
+   "id": "r58",
+   "anchor": "_array_to_file#assign:idx",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r59",
+   "anchor": "_array_to_file_like",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r60",
+   "anchor": "_array_to_file_like#if:len(arr) == 0",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r61",
+   "anchor": "_array_to_file_like#if:arr.flags.contiguous/try",
+   "kind": "lead",
+   "line": 665
+  },
+  {
+   "id": "r62",
+   "anchor": "_array_to_file_like#if:hasattr(np, 'nditer')/for:item in np.nditer(arr)",
+   "kind": "lead",
+   "line": 674
+  },
+  {
+   "id": "r63",
+   "anchor": "_array_to_file_like#if:hasattr(np, 'nditer')/else/assign:byteorder",
+   "kind": "lead",
+   "line": 680
+  },
+  {
+   "id": "r64",
+   "anchor": "_write_string",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r65",
+   "anchor": "_write_string#assign:binmode",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r66",
+   "anchor": "_convert_array",
+   "kind": "doc",
+   "line": 708
+  },
+  {
+   "id": "r67",
+   "anchor": "_convert_array#if:array.dtype == dtype/elif:array.dtype.itemsize == dtype.itemsize and not (np.issubdtype(array.dtype, np.number) and np.issubdtype(dtype, np.number))/return",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r68",
+   "anchor": "_unsigned_zero",
+   "kind": "doc",
+   "line": 727
+  },
+  {
+   "id": "r69",
+   "anchor": "_str_to_num",
+   "kind": "doc",
+   "line": 745
+  },
+  {
+   "id": "r70",
+   "anchor": "_str_to_num#try/except:ValueError/assign:num",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r71",
+   "anchor": "_words_group",
+   "kind": "doc",
+   "line": 756
+  },
+  {
+   "id": "r72",
+   "anchor": "_words_group#assign:blank_loc",
+   "kind": "lead",
+   "line": 770
+  },
+  {
+   "id": "r73",
+   "anchor": "_words_group#for:idx in range(nmax)/if:offset <= xoffset",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r74",
+   "anchor": "_words_group#for:idx in range(nmax)/call:words.append",
+   "kind": "lead",
+   "line": 787
+  },
+  {
+   "id": "r75",
+   "anchor": "_tmp_name",
+   "kind": "doc",
+   "line": 795
+  },
+  {
+   "id": "r76",
+   "anchor": "_get_array_mmap",
+   "kind": "doc",
+   "line": 808
+  },
+  {
+   "id": "r77",
+   "anchor": "_extract_number",
+   "kind": "doc",
+   "line": 847
+  },
+  {
+   "id": "r78",
+   "anchor": "_extract_number#try/return",
+   "kind": "lead",
+   "line": 856
+  },
+  {
+   "id": "r79",
+   "anchor": "get_testdata_filepath",
+   "kind": "doc",
+   "line": 861
+  },
+  {
+   "id": "r80",
+   "anchor": "_rstrip_inplace",
+   "kind": "doc",
+   "line": 882
+  },
+  {
+   "id": "r81",
+   "anchor": "_rstrip_inplace#assign:dt",
+   "kind": "lead",
+   "line": 897
+  },
+  {
+   "id": "r82",
+   "anchor": "_rstrip_inplace#assign:bpc",
+   "kind": "lead",
+   "line": 903
+  },
+  {
+   "id": "r83",
+   "anchor": "_rstrip_inplace#assign:bufsize",
+   "kind": "lead",
+   "line": 907
+  },
+  {
+   "id": "r84",
+   "anchor": "_rstrip_inplace#if:b.ndim > 2",
+   "kind": "lead",
+   "line": 910
+  },
+  {
+   "id": "r85",
+   "anchor": "_rstrip_inplace#if:b.ndim > 2/try/except:AttributeError",
+   "kind": "trail",
+   "line": 913
+  },
+  {
+   "id": "r86",
+   "anchor": "_rstrip_inplace#for:j in range(0, b.shape[0], bufsize)/assign:mask",
+   "kind": "lead",
+   "line": 918
+  },
+  {
+   "id": "r87",
+   "anchor": "_rstrip_inplace#for:j in range(0, b.shape[0], bufsize)/for:i in range(-1, -c.shape[-1], -1)",
+   "kind": "lead",
+   "line": 924
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 21868,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8500,
+  "thinking_tokens": 4103,
+  "opus_cost_usd": 0.4354715,
+  "total_cost_usd": 0.4519265,
+  "duration_ms": 71572,
+  "duration_api_ms": 72856,
+  "num_turns": 2
+ },
+ "wall_ms": 72459,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

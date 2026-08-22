@@ -1,0 +1,121 @@
+{
+ "blob_sha": "4918261fb0a8c5b9b5da796f8d7ecc1459b895ca",
+ "path": "django/db/migrations/writer.py",
+ "repo": "django/django",
+ "records": 16,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:django.conf",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r2",
+   "anchor": "OperationWriter.serialize#if:getattr(migrations, name, None) == self.operation.__class__",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r3",
+   "anchor": "OperationWriter.serialize#for:arg_name in operation_args[i:]",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r4",
+   "anchor": "OperationWriter.serialize#for:arg_name in operation_args[i:]/if:arg_name in kwargs",
+   "kind": "trail",
+   "line": 97
+  },
+  {
+   "id": "r5",
+   "anchor": "MigrationWriter",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r6",
+   "anchor": "MigrationWriter.as_string",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r7",
+   "anchor": "MigrationWriter.as_string#assign:operations",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r8",
+   "anchor": "MigrationWriter.as_string#assign:dependencies",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r9",
+   "anchor": "MigrationWriter.as_string#assign:migration_imports",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r10",
+   "anchor": "MigrationWriter.as_string#if:\"from django.db import models\" in imports",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r11",
+   "anchor": "MigrationWriter.as_string#assign:sorted_imports",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r12",
+   "anchor": "MigrationWriter.as_string#if:self.migration.replaces",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r13",
+   "anchor": "MigrationWriter.as_string#if:self.include_header",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r14",
+   "anchor": "MigrationWriter.basedir#try",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r15",
+   "anchor": "MigrationWriter.basedir#assign:app_config",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r16",
+   "anchor": "MigrationWriter.basedir#assign:existing_dirs, missing_dirs",
+   "kind": "lead",
+   "line": 231
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8546,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1623,
+  "thinking_tokens": 797,
+  "opus_cost_usd": 0.1303265,
+  "total_cost_usd": 0.1358095,
+  "duration_ms": 17098,
+  "duration_api_ms": 18515,
+  "num_turns": 2
+ },
+ "wall_ms": 17950,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

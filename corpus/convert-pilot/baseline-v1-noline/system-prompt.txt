@@ -1,0 +1,527 @@
+# Sidedoc format — v1
+
+Sideword is an **authoring convention**. Code is written without comments; the
+prose is written alongside it, as records keyed to what they describe. An agent
+writing a function emits both at once — it never annotates and then extracts.
+
+One module becomes three artifacts:
+
+| Artifact | Path | Who reads it |
+|---|---|---|
+| Source | `src/cart.py` | everyone |
+| Index | `.sideword/src/cart.py.idx` | agents, always |
+| Sidedoc | `.sideword/src/cart.py.md` | agents on demand; editor always |
+
+The mirror tree keeps docs out of glob range, so the ablation arm of the
+experiment is just `rm -rf .sideword/`.
+
+> **What changed in v1.** Every change below is evidence-driven: `FINDINGS.md`
+> enumerated 125,698 anchors across the CPython stdlib, and EST-111 ran a model
+> over 6,509 real documentation records. Where the two disagreed with the spec,
+> the spec lost. The changes are: `elif` takes a condition (§1.3); `import` says
+> which name it keys on (§1.3); §1.4 covers positional and nested elements;
+> symbol paths name a **name, not a binding** (§1.1); ties extend to paths and
+> are always derived (§1.5); discriminators have stated canonicalisation and a
+> length budget (§1.6); a doc record is a **block**, not a line, and blocks can
+> attach *after* what they describe (§3).
+
+## 1. Anchors
+
+An anchor names *what a doc is about*. It is never a line number, and never a
+positional index into anything — except as a last-resort tiebreak (§1.5).
+
+```
+anchor   := path [ "#" segments ]
+path     := ( "<module>" | name ( "." name )* ) [ "~" n ]
+segments := segment ( "/" segment )*
+segment  := kind [ ":" discriminator ] [ "~" n ]
+```
+
+`path` addresses named symbols. Everything after `#` is a path of segments walking
+*into* that symbol. One rule at every depth: name the step, don't count it.
+
+### 1.1 Symbols
+
+| Python | Anchor |
+|---|---|
+| module docstring | `<module>` |
+| `MAX_TOKENS = 4096` | `MAX_TOKENS` |
+| `class Cart` | `Cart` |
+| `def add` in `Cart` | `Cart.add` |
+| `self.total` assigned in `__init__` | `Cart.total` |
+| closure `helper` inside `add` | `Cart.add.helper` |
+| `@property def kind` | `Token.kind` |
+
+**A symbol path names a name, not a binding.** One attribute, one anchor, one
+doc — however many times the code assigns it:
+
+```python
+class shlex:
+    def __init__(self):
+        self.state = ' '        # shlex.state
+    def read_token(self):
+        self.state = nextchar   # still shlex.state, not a second anchor
+```
+
+This is the common case by a wide margin — 600 of the 661 root collisions in
+`FINDINGS.md`, led by attributes assigned in as many as 19 methods of one class.
+Nobody documents `self.state` nineteen times; they document it once. The
+resolver renders the doc at the **first** binding. Every other binding stays
+addressable as a statement anchor (`shlex.read_token#assign:self.state`) when a
+comment is genuinely about that particular write.
+
+The same rule covers a module or class variable rebound in a conditional branch,
+which is the identical shape:
+
+```python
+try:
+    import cjson as json     # <module>#try/import:cjson
+except ImportError:
+    import json              # the name `json` is still one anchor
+```
+
+**A redefinition that genuinely wants its own doc gets a tie.** A getter and a
+setter say different things; so do the two platform branches of one function.
+Where two *definitions* share a qualified name, they take an occurrence suffix
+on the path, derived by the same rule as §1.5:
+
+```python
+@property
+def minimum_version(self): ...      # SSLContext.minimum_version~1
+@minimum_version.setter
+def minimum_version(self, v): ...   # SSLContext.minimum_version~2
+```
+
+This covers `@property`/`@setter`/`@deleter`, `if TYPE_CHECKING:`-style platform
+branches, plain redefinition, and `@overload`. It is the one place a symbol path
+counts, and like every other tie it is derived, never authored.
+
+**A definition outranks an assignment for the same name**, whichever comes
+first in the file. `def reduce(...)` followed by `reduce = _warn(reduce)` is one
+name with one doc, and the `def` is what a reader looks up; the assignment stays
+reachable as `<module>#assign:reduce`. The same holds for a method whose
+platform branch is written as an alias:
+
+```python
+class Popen:
+    if _mswindows:
+        kill = terminate       # Popen#assign:kill
+    else:
+        def kill(self): ...    # Popen.kill
+```
+
+The distinction is worth stating plainly, because the three cases look alike:
+
+| | Rule |
+|---|---|
+| The same name **assigned** more than once | one anchor, first binding renders |
+| The same name **defined** more than once | one anchor per definition, tied `~n` |
+| A name both **defined and assigned** | the definition owns the anchor |
+
+Together these leave the stdlib corpus with **no root collisions at all**, down
+from 661 under v0.
+
+### 1.2 Parts of a symbol
+
+Parameters, returns, raised exceptions, and decorators aren't symbols but belong
+to one:
+
+```
+Cart.add#param:qty
+Cart.add#returns
+Cart.add#raises:ValueError
+Cart.add#decorator:retry
+```
+
+This is the main payoff over a docstring. A docstring is one blob — you retrieve
+all of it or none. Splitting parameters into their own records means an agent
+reasoning about `qty` pays for one line, not thirty.
+
+A `raises:` naming an exception that this symbol does not raise directly is
+**unverified**, not missing: Sphinx docstrings routinely document what a call
+chain can throw. It resolves to the owning symbol.
+
+A comment above a decorated `def` anchors on the `def`, not on the decorators —
+a comment above a decorator is already addressable as `#decorator:`.
+
+### 1.3 Statements
+
+Every statement kind carries a discriminator drawn from the code itself. Nesting
+is a `/`-joined path:
+
+```
+Cart.add#for:item in items/if:qty<0/raise:ValueError
+```
+
+| Kind | Discriminator | Example |
+|---|---|---|
+| `assign` | target (also augmented, annotated) | `assign:self.total` |
+| `call` | callee | `call:db.commit` |
+| `raise` `assert` `del` | exception / condition / target | `raise:LookupError` |
+| `import` | **module** — see below | `import:os.path` |
+| `global` `nonlocal` | name | `global:_cache` |
+| `return` `pass` `break` `continue` `yield` | — | `return` |
+| `if` | condition | `if:qty<0` |
+| `elif` | **condition** | `if:qty<0/elif:qty==0` |
+| `else` | — (hangs off its opener) | `if:qty<0/else` |
+| `for` | `target in iterable` | `for:item in items` |
+| `while` | condition | `while:pos<end` |
+| `try` `else` `finally` | — | `try/finally` |
+| `except` | exception type | `try/except:ValueError` |
+| `with` | context expression | `with:open(path)` |
+| `match` `case` | subject / pattern | `match:cmd/case:Move()` |
+| `expr` | the expression's source text | `expr:x==y` |
+
+`async for` and `async with` are the same segments with the prefix kept.
+
+**`elif` takes its condition.** An `elif` has a test, and a chain of them is
+otherwise unaddressable — v0's table said it had no discriminator, which made
+every comment inside an `elif` chain, and every statement nested under one,
+impossible to name. It was the single largest failure in the EST-111 pilot.
+
+**`import` keys on the module, and the imported names are elements.** For a plain
+`import a.b`, the module is the imported dotted name. For a `from` import the
+module is what follows `from`, with leading dots kept:
+
+```python
+from .prefixes import (
+    yotta,           # <module>#import:.prefixes/item:yotta
+    zetta,           # <module>#import:.prefixes/item:zetta
+)
+import os.path       # <module>#import:os.path
+```
+
+The imported name alone (`import:yotta`) is accepted as an alias where it is
+unambiguous, since it is what a reader reaches for first.
+
+**`except` is written `try/except:E`.** The `try` stays in the path. A bare
+`except:E` is accepted as an alias so a shorter form still resolves. A bare
+`except:` with no type is `except:*`.
+
+Statements with no discriminator — `pass`, `break`, `continue` — are unique by
+where they sit, and that place has a name:
+
+```python
+except ValueError:
+    pass          → Cart.add#try/except:ValueError/pass
+```
+
+`else` and `finally` have no node of their own in Python's grammar, so their
+anchors resolve to the extent of the clause body. That is exact for retrieval and
+approximate for rendering: an editor restoring a `lead` comment above `else:`
+must find the keyword itself.
+
+A statement at module level hangs off `<module>`, which names the module as a
+container and not only its docstring:
+
+```
+<module>#call:logging.basicConfig
+```
+
+### 1.4 Elements
+
+Comments sit inside a single statement constantly — on a dict entry, an
+argument, a row of a table literal. The same rule extends downward, and it
+extends as far as the literal nests:
+
+```python
+CONFIG = {
+    "retries": 3,          # CONFIG#key:retries
+    "backoff": {
+        "base": 2,         # CONFIG#key:backoff/key:base
+    },
+}
+client = Client(
+    pool_size=10,          # assign:client/arg:pool_size
+    timeout,               # assign:client/arg:timeout
+)
+FREQ = (
+    (1, 0.94),             # FREQ#item:(1, 0.94)
+    (2, 0.91),             # FREQ#item:(2, 0.91)
+)
+```
+
+Kinds: `key`, `arg`, `item`.
+
+| Container | Kind | Discriminator |
+|---|---|---|
+| dict | `key` | the key; a string literal drops its quotes |
+| call, keyword argument | `arg` | the parameter name |
+| call, positional argument | `arg` | the argument's own source text |
+| list, set, tuple | `item` | the element's own source text |
+
+An element **keyed by its own source text** is the fallback for anything with no
+name of its own, and it is what makes table literals addressable — the largest
+single class of unanchorable comment in the pilot. Sibling elements that are
+textually identical tie under §1.5 like anything else.
+
+`**spread` in a dict has no key to name; hoist its comment to the statement.
+
+Elements nest to a depth of 6. Past that, hoist.
+
+### 1.5 Ties
+
+Two siblings identical in kind *and* discriminator get an occurrence suffix:
+
+```
+if:x~1
+if:x~2
+```
+
+**Ties are derived, never authored.** An author writing `if:x` cannot see the
+identical `if:x` forty lines below, and 6.6% of all stdlib anchors need a tie —
+too common to leave to notice. Every authored tie in the pilot was effectively a
+coin flip. Write the untied form; the resolver assigns the number.
+
+An untied anchor therefore always resolves: to the one thing it names, or — when
+it names several — to an ambiguity listing them, which is the useful failure. A
+tie on an inner segment never has to be written out to reach something deeper:
+`for:x in xs/assign:total` resolves even when the `for` is one of two identical
+siblings.
+
+This is the only counting in the format, and it counts **exact duplicates among
+siblings** — not statements in general. Inserting, deleting, or reordering any
+*other* statement never renumbers them. It breaks only when two identical siblings
+swap places, where the correct assignment is close to a coin flip anyway.
+
+The same mechanism numbers repeated definitions of one qualified name (§1.1) and
+repeated doc blocks on one anchor (§3).
+
+### 1.6 Discriminators
+
+A discriminator is source text, so the format has to say what happens to it.
+
+**Canonicalisation.** Whitespace is insignificant: `if: qty < 0` and `if:qty<0`
+name the same branch, and a discriminator spanning several physical lines
+collapses to one. Outer parentheses added only for line continuation are
+dropped, as is a trailing comma on a one-element tuple target. A string literal
+used as a dict key drops its quotes; a string used as a list item keeps them,
+because there it is the value.
+
+**Length.** A discriminator over 80 characters is legal but defeats the point of
+a cheap index — the stdlib has 2,457 of them, the worst over 300 characters.
+Truncate to the budget and let §1.5 tie whatever collides.
+
+**Hazards.** Two characters in a discriminator collide with the grammar:
+
+- `/` is the segment separator. A `/` only splits when a known kind follows it
+  *and* that kind is followed by `:`, `/`, `~`, or the end of the anchor. So
+  `if:n/2>1` and `call:reduce(a/item)` both survive; `assign:total/item` does
+  not, and is read as two segments. Rare, and stated here rather than left to the
+  parser.
+- A trailing `~<digits>` is read as a tie.
+
+An anchor cannot contain a `#` comment or a `\` line continuation: both are
+stripped during canonicalisation.
+
+### 1.7 Not covered
+
+Comments inside lambdas and comprehensions. Both are single expressions with no
+named parts. Hoist them to the enclosing statement. A comment that badly wants to
+live inside a comprehension is usually a sign it should be a loop.
+
+## 2. What stays in the source
+
+**If anything other than a human reads it, it stays in the `.py`.**
+
+`# type: ignore`, `# noqa`, `# pragma: no cover`, `# fmt: off` are not comments —
+they are arguments to tools, written in comment syntax because Python offers
+nowhere else to put them. mypy, ruff, and coverage run against the clean `.py`,
+never against the reconstructed inline view, so a directive moved into the sidedoc
+silently stops working. They are code wearing comment syntax; leave them exactly
+where they are.
+
+Everything written for a human moves — including `# TODO`, `# FIXME`, `# HACK`.
+Those anchor like any other prose and get their own kind, which makes "what is
+outstanding in this module" a lookup against the index instead of a grep.
+
+## 3. Records and kinds
+
+**A record is a block, not a line.** Consecutive comment lines at one indent are
+one paragraph and become one record:
+
+```python
+# pull off and analyze the leading coefficient from each gamma arg
+# looking for runs in those Rationals
+rats = {}
+```
+
+That is one record on `assign:rats`, not two. A blank line ends a block; so does
+a line of code, a change of indent, and a tool directive (§2). A trailing comment
+— one that shares a line with code — is always its own record.
+
+This follows from the anchor being semantic. Line-keyed comments could be
+adjacent and distinct; anchor-keyed ones cannot, because two records on one
+anchor with one kind have nothing to tell them apart. In the pilot, 48% of
+records shared an anchor with another record, and 95% of those groups were a
+single paragraph split apart line by line.
+
+**A kind is a property of the block, not of a line.** A 16-line paragraph whose
+seventh line happens to open with `XXX:` is one `lead` record, not a `lead` split
+around a `todo`. The first line decides.
+
+How a record renders back in the editor's inline view:
+
+| Kind | Restored as |
+|---|---|
+| `doc` | triple-quoted docstring, first statement of the body |
+| `lead` | `#` lines above the statement, at its indent |
+| `trail` | two spaces + `#` on the statement's last line |
+| `post` | `#` lines *below* the statement, at its indent |
+| `todo` | like `lead` or `trail`, but filterable in the index |
+
+`post` exists for prose with nothing after it to attach to — the end of a block,
+the end of a file:
+
+```python
+def render(ani):
+    ani.save("out.gif")
+
+    # Pillow and FFMpeg writers both accept a filename; the extension
+    # selects the encoder.        → render#call:ani.save {post}
+```
+
+Addressing was never the problem here: the preceding statement has a perfectly
+good anchor. What was missing was a way to say *below*. Anchoring a footer to the
+statement before it with a `lead` kind round-trips it to the wrong side.
+
+Prose that is genuinely about the whole file anchors on `<module>` — but that is
+a judgement about the content, not a default for anything trailing. A tutorial
+whose narrative continues past the last statement is about the code above it, and
+takes `post`.
+
+`param` / `returns` / `raises` segments have no kind — they fold into the parent's
+docstring in the style recorded for the file.
+
+**Several blocks on one anchor** — two paragraphs separated by a blank line,
+above the same statement — tie by occurrence, on the kind:
+
+```
+## _mult_thm#assign:rats {lead~1}
+## _mult_thm#assign:rats {lead~2}
+```
+
+Derived like every other tie (§1.5), ordered by position in the source.
+
+## 4. Index
+
+One line per record. Cheap enough that an agent always reads it with the source.
+
+```
+sideword/1  src/cart.py  6 records  ~130 tok
+<module>                       doc    1L
+MAX_TOKENS                     trail  1L
+Cart                           doc    3L
+Cart.add                       doc    1L  +param:item +param:qty +returns
+Cart.add#assign:self.total     lead   1L
+Cart.add#return                post   2L
+```
+
+Sub-symbol parts roll up onto their parent's row: the agent learns `#param:qty`
+exists without paying a line for it. `1L` is line count; the header carries a token
+estimate so a retrieval can be budgeted before it's made.
+
+The index says *that* something is documented, never *what it says*. Any summary
+here leaks the doc into every context and defeats the point.
+
+## 5. Sidedoc
+
+Markdown. `##` heading text is the anchor, verbatim.
+
+````markdown
+---
+style: sphinx
+---
+
+## <module> {doc}
+Shopping cart and checkout.
+
+## MAX_TOKENS {trail}
+hard cap, tuned against the CPython grammar
+
+## Cart {doc}
+A shopping cart. Not thread-safe; one per session.
+
+## Cart.add {doc}
+Add an item to the cart.
+
+### #param:item
+The product to add.
+
+### #param:qty
+How many. Must be positive.
+
+### #returns
+The new total count.
+
+## Cart.add#assign:self.total {lead}
+Recompute eagerly — the UI reads `.total` immediately after this returns.
+
+## Cart.add#return {post}
+Callers that need the pre-add total must read it themselves; we do not
+return both.
+````
+
+Markdown because the payload is prose, humans review it in PRs, and it diffs per
+paragraph. The machine-readable part is small enough to live in headings.
+
+## 6. Resolution
+
+Reading the inline view means parsing the source and walking each anchor's
+segments against the tree. Python's `ast` is sufficient — the source has no
+comments to preserve.
+
+The walk enumerates the whole anchor space of a file once, so resolution is a
+lookup rather than an interpretation. Three things follow: ties are derived
+because the walk sees both siblings; "names nothing" and "names two things" are
+the same cheap check; and a comment with no anchor is *provably* unanchorable
+rather than merely unnamed.
+
+An anchor that doesn't resolve is **orphaned**: surfaced in the diff, never
+silently dropped. Orphaning is the signal that code moved out from under its
+documentation, which is the case worth a human's attention.
+
+## Open
+
+1. **Migration.** Converting an existing repo is a separate problem. It needs
+   comment extraction alongside a parse; `ast`-equivalent parsing was enough for
+   the resolver and `tokenize`-equivalent extraction enough for the stripper, so
+   LibCST is probably not needed. Later issue under EST-79.
+2. **Rendering `else` and `finally`.** Their anchors resolve to the clause body
+   (§1.3); an editor restoring a `lead` comment above the keyword needs the
+   keyword's own offset, which the parse does not currently carry.
+3. **Corpus bias.** Both evidence sets are Python that predates this format. The
+   stdlib has few annotations and no `@overload`; the pilot corpus is
+   scientific-Python. Neither stresses `#param:` splitting the way a typed,
+   Sphinx-heavy codebase would.
+
+Resolved in v1: whether ties are derived or authored (§1.5 — derived);
+attribute versus statement anchor (§1.1 — the question was wrong, a path names a
+name); overloads and redefinitions (§1.1 — tied paths).
+
+
+---
+
+# Task
+
+You name anchors for documentation records of a Python file. Anchors follow the grammar above
+exactly. Output only JSON matching the schema. For each record give the anchor (verbatim grammar,
+discriminators copied from source text with whitespace normalized as the spec says) and the kind
+(doc|lead|trail|todo|post). If no anchor in the grammar can name a record, put it in unanchorable with a
+one-line reason. Never invent anchor kinds. Never quote or rewrite the record text.
+
+Conventions that follow from the spec:
+- Every record id (r1..rN) must appear exactly once, either in `anchors` or in `unanchorable`.
+- A docstring / doctest docstring record has kind `doc` and its anchor is the symbol that owns it
+  (`<module>`, `Cart`, `Cart.add`); a stray string documents the statement just above it.
+- A comment on its own line has kind `lead` (or `todo` if it starts with TODO/FIXME/XXX/HACK) and
+  is anchored to the statement it sits above; a comment at the end of a code line has kind `trail`
+  (or `todo`) and is anchored to that statement.
+- A comment block with no statement after it — the end of a file, or the end of the block it
+  closes — has kind `post` and is anchored to the statement it follows.
+- A record is a comment *block*, not a line: consecutive comment lines arrive as one record
+  (`[comment block, lines 124–136, ...]`) and take one anchor and one kind.
+- Statements at module level are anchored as `<module>#...` (e.g. `<module>#import:os`,
+  `<module>#if:__name__=="__main__"`); statements inside a function or method as
+  `Class.method#...`; module and class variables as symbols (`MAX_TOKENS`, `Cart.total`).
+- The user prompt shows the file with 1-based line numbers (`   12| code`) followed by the records.

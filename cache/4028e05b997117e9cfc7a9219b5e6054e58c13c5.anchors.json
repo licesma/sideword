@@ -1,0 +1,463 @@
+{
+ "blob_sha": "4028e05b997117e9cfc7a9219b5e6054e58c13c5",
+ "path": "django/db/models/options.py",
+ "repo": "django/django",
+ "records": 73,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "normalize_together",
+   "kind": "doc",
+   "line": 38
+  },
+  {
+   "id": "r2",
+   "anchor": "normalize_together#try/return",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r3",
+   "anchor": "normalize_together#try/except:TypeError/return",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "Options.proxy_for_model",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r5",
+   "anchor": "Options.concrete_model",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r6",
+   "anchor": "Options.related_fkey_lookups",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r7",
+   "anchor": "Options.apps",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r8",
+   "anchor": "Options.app_config#return",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r9",
+   "anchor": "Options.contribute_to_class#assign:self.object_name",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r10",
+   "anchor": "Options.original_attrs",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r11",
+   "anchor": "Options.contribute_to_class#if:self.meta",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "Options.contribute_to_class#if:self.meta/for:name in self.meta.__dict__/if:name.startswith('_')",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r13",
+   "anchor": "Options.contribute_to_class#if:self.meta/if:not getattr(cls._meta, 'abstract', False)",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r14",
+   "anchor": "Options.contribute_to_class#if:self.meta/if:self.verbose_name_plural is None",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r15",
+   "anchor": "Options.contribute_to_class#if:self.meta/assign:self._ordering_clash",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r16",
+   "anchor": "Options.contribute_to_class#if:self.meta/if:meta_attrs != {}",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r17",
+   "anchor": "Options.contribute_to_class#if:not self.db_table",
+   "kind": "lead",
+   "line": 205
+  },
+  {
+   "id": "r18",
+   "anchor": "Options._format_names_with_class",
+   "kind": "doc",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "Options._prepare#if:self.order_with_respect_to/assign:query",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r20",
+   "anchor": "Options._prepare#if:self.pk is None/if:self.parents/assign:field",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r21",
+   "anchor": "Options._prepare#if:self.pk is None/if:self.parents/assign:already_created",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r22",
+   "anchor": "Options.add_field#if:private",
+   "kind": "lead",
+   "line": 298
+  },
+  {
+   "id": "r23",
+   "anchor": "Options.add_field#if:field.is_relation and hasattr(field.remote_field, 'model') and field.remote_field.model",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r24",
+   "anchor": "Options.setup_proxy",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r25",
+   "anchor": "Options.can_migrate",
+   "kind": "doc",
+   "line": 343
+  },
+  {
+   "id": "r26",
+   "anchor": "Options.verbose_name_raw",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r27",
+   "anchor": "Options.swapped",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r28",
+   "anchor": "Options.swapped#if:self.swappable/if:swapped_for/try/except:ValueError/return",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r29",
+   "anchor": "Options.base_manager#if:not base_manager_name/for:parent in self.model.mro()[1:]",
+   "kind": "lead",
+   "line": 419
+  },
+  {
+   "id": "r30",
+   "anchor": "Options.default_manager#if:not default_manager_name and not self.local_managers/for:parent in self.model.mro()[1:]",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r31",
+   "anchor": "Options.fields",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r32",
+   "anchor": "Options.fields.is_not_an_m2m_field",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r33",
+   "anchor": "Options.concrete_fields",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r34",
+   "anchor": "Options.local_concrete_fields",
+   "kind": "doc",
+   "line": 514
+  },
+  {
+   "id": "r35",
+   "anchor": "Options.many_to_many",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r36",
+   "anchor": "Options.related_objects",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r37",
+   "anchor": "Options._forward_fields_map#for:field in fields/try",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r38",
+   "anchor": "Options.fields_map#for:field in fields/try",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r39",
+   "anchor": "Options.get_field",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r40",
+   "anchor": "Options.get_field#try/return",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r41",
+   "anchor": "Options.get_field#try/except:KeyError/if:not self.apps.models_ready",
+   "kind": "lead",
+   "line": 598
+  },
+  {
+   "id": "r42",
+   "anchor": "Options.get_field#try/return",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r43",
+   "anchor": "Options.get_base_chain",
+   "kind": "doc",
+   "line": 612
+  },
+  {
+   "id": "r44",
+   "anchor": "Options.get_parent_list",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r45",
+   "anchor": "Options.get_ancestor_link",
+   "kind": "doc",
+   "line": 640
+  },
+  {
+   "id": "r46",
+   "anchor": "Options.get_ancestor_link#for:parent in self.parents/assign:parent_link",
+   "kind": "lead",
+   "line": 653
+  },
+  {
+   "id": "r47",
+   "anchor": "Options.get_ancestor_link#for:parent in self.parents/if:parent_link/return",
+   "kind": "lead",
+   "line": 658
+  },
+  {
+   "id": "r48",
+   "anchor": "Options.get_path_to_parent",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r49",
+   "anchor": "Options.get_path_to_parent#assign:proxied_model",
+   "kind": "lead",
+   "line": 669
+  },
+  {
+   "id": "r50",
+   "anchor": "Options.get_path_from_parent",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r51",
+   "anchor": "Options.get_path_from_parent#assign:chain",
+   "kind": "lead",
+   "line": 701
+  },
+  {
+   "id": "r52",
+   "anchor": "Options.get_path_from_parent#assign:path",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r53",
+   "anchor": "Options._populate_directed_relation_graph",
+   "kind": "doc",
+   "line": 712
+  },
+  {
+   "id": "r54",
+   "anchor": "Options._populate_directed_relation_graph#for:model in all_models/if:opts.abstract",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r55",
+   "anchor": "Options._populate_directed_relation_graph#for:model in all_models/assign:related_objects",
+   "kind": "lead",
+   "line": 743
+  },
+  {
+   "id": "r56",
+   "anchor": "Options._populate_directed_relation_graph#return",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r57",
+   "anchor": "Options._expire_cache#if:forward",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r58",
+   "anchor": "Options.get_fields",
+   "kind": "doc",
+   "line": 766
+  },
+  {
+   "id": "r59",
+   "anchor": "Options._get_fields",
+   "kind": "doc",
+   "line": 780
+  },
+  {
+   "id": "r60",
+   "anchor": "Options._get_fields#if:include_parents not in (True, False, PROXY_PARENTS)",
+   "kind": "post",
+   "line": 793
+  },
+  {
+   "id": "r61",
+   "anchor": "Options._get_fields#assign:topmost_call",
+   "kind": "lead",
+   "line": 801
+  },
+  {
+   "id": "r62",
+   "anchor": "Options._get_fields#assign:cache_key",
+   "kind": "lead",
+   "line": 807
+  },
+  {
+   "id": "r63",
+   "anchor": "Options._get_fields#try/return",
+   "kind": "lead",
+   "line": 812
+  },
+  {
+   "id": "r64",
+   "anchor": "Options._get_fields#if:include_parents is not False",
+   "kind": "lead",
+   "line": 819
+  },
+  {
+   "id": "r65",
+   "anchor": "Options._get_fields#if:include_parents is not False/for:parent in self.parents/if:parent in seen_models",
+   "kind": "lead",
+   "line": 824
+  },
+  {
+   "id": "r66",
+   "anchor": "Options._get_fields#if:reverse and not self.proxy/assign:all_fields",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r67",
+   "anchor": "Options._get_fields#if:reverse and not self.proxy/for:field in all_fields/if:include_hidden or not field.remote_field.hidden",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r68",
+   "anchor": "Options._get_fields#if:forward/if:topmost_call",
+   "kind": "lead",
+   "line": 853
+  },
+  {
+   "id": "r69",
+   "anchor": "Options._get_fields#assign:fields",
+   "kind": "lead",
+   "line": 858
+  },
+  {
+   "id": "r70",
+   "anchor": "Options._get_fields#assign:self._get_fields_cache[cache_key]",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r71",
+   "anchor": "Options.total_unique_constraints",
+   "kind": "doc",
+   "line": 865
+  },
+  {
+   "id": "r72",
+   "anchor": "Options._property_names",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r73",
+   "anchor": "Options.db_returning_fields",
+   "kind": "doc",
+   "line": 887
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 21685,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6702,
+  "thinking_tokens": 3414,
+  "opus_cost_usd": 0.38869149999999997,
+  "total_cost_usd": 0.40537549999999994,
+  "duration_ms": 61533,
+  "duration_api_ms": 62497,
+  "num_turns": 2
+ },
+ "wall_ms": 62360,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

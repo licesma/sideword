@@ -1,0 +1,391 @@
+{
+ "blob_sha": "a7ac2f662b5da1d6828d692f102aecdadc478204",
+ "path": "astropy/samp/hub.py",
+ "repo": "astropy/astropy",
+ "records": 61,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 4
+  },
+  {
+   "id": "r2",
+   "anchor": "SAMPHubServer",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "SAMPHubServer._id",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r4",
+   "anchor": "SAMPHubServer._is_running",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r5",
+   "anchor": "SAMPHubServer._web_profile",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r6",
+   "anchor": "SAMPHubServer._thread_lock",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r7",
+   "anchor": "SAMPHubServer._last_activity_time",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r8",
+   "anchor": "SAMPHubServer._hub_msg_id_counter",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r9",
+   "anchor": "SAMPHubServer._hub_secret_code_customized",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r10",
+   "anchor": "SAMPHubServer._hub_public_id",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r11",
+   "anchor": "SAMPHubServer._private_keys",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r12",
+   "anchor": "SAMPHubServer._metadata",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r13",
+   "anchor": "SAMPHubServer._mtype2ids",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r14",
+   "anchor": "SAMPHubServer._id2mtypes",
+   "kind": "lead",
+   "line": 174
+  },
+  {
+   "id": "r15",
+   "anchor": "SAMPHubServer._xmlrpc_endpoints",
+   "kind": "lead",
+   "line": 178
+  },
+  {
+   "id": "r16",
+   "anchor": "SAMPHubServer._sync_msg_ids_heap",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r17",
+   "anchor": "SAMPHubServer._client_id_counter",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r18",
+   "anchor": "SAMPHubServer.id",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r19",
+   "anchor": "SAMPHubServer._register_standard_api#call:server.register_function",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r20",
+   "anchor": "SAMPHubServer._register_standard_api#call:server.register_function",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r21",
+   "anchor": "SAMPHubServer._register_web_profile_api#call:server.register_function",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r22",
+   "anchor": "SAMPHubServer._register_web_profile_api#call:server.register_function",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r23",
+   "anchor": "SAMPHubServer._start_web_profile_server#if:self._web_profile_dialog is not None/assign:self._web_profile_dialog.queue_request",
+   "kind": "todo",
+   "line": 256
+  },
+  {
+   "id": "r24",
+   "anchor": "SAMPHubServer._start_web_profile_server#try/except:OSError/assign:self._web_profile_requests_queue",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r25",
+   "anchor": "SAMPHubServer._launch_thread#assign:remove",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r26",
+   "anchor": "SAMPHubServer._launch_thread#assign:t",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r27",
+   "anchor": "SAMPHubServer._launch_thread#call:self._launched_threads.append",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r28",
+   "anchor": "SAMPHubServer._timeout_test_hub#while:self._is_running/call:time.sleep",
+   "kind": "trail",
+   "line": 307
+  },
+  {
+   "id": "r29",
+   "anchor": "SAMPHubServer._timeout_test_client#while:self._is_running/call:time.sleep",
+   "kind": "trail",
+   "line": 326
+  },
+  {
+   "id": "r30",
+   "anchor": "SAMPHubServer.start",
+   "kind": "doc",
+   "line": 366
+  },
+  {
+   "id": "r31",
+   "anchor": "SAMPHubServer.params",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r32",
+   "anchor": "SAMPHubServer.params#assign:params['samp.secret']",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r33",
+   "anchor": "SAMPHubServer.params#assign:params['hub.id']",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r34",
+   "anchor": "SAMPHubServer.stop",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r35",
+   "anchor": "SAMPHubServer.stop#call:self._join_all_threads",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r36",
+   "anchor": "SAMPHubServer._join_all_threads#assign:current_thread",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r37",
+   "anchor": "SAMPHubServer.is_running",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r38",
+   "anchor": "SAMPHubServer._serve_forever#while:self._is_running/if:self._web_profile/if:self._web_profile_dialog is None",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r39",
+   "anchor": "SAMPHubServer._serve_forever#while:self._is_running/if:self._web_profile/try",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r40",
+   "anchor": "SAMPHubServer._notify_register#for:mtype in msubs/if:mtype in self._mtype2ids/for:key in self._mtype2ids[mtype]/call:self._notify",
+   "kind": "lead",
+   "line": 587
+  },
+  {
+   "id": "r41",
+   "anchor": "SAMPHubServer._notify_metadata#for:mtype in msubs/if:mtype in self._mtype2ids/for:key in self._mtype2ids[mtype]/call:self._notify",
+   "kind": "lead",
+   "line": 611
+  },
+  {
+   "id": "r42",
+   "anchor": "SAMPHubServer._set_xmlrpc_callback#if:private_key in self._private_keys/call:log.debug",
+   "kind": "lead",
+   "line": 674
+  },
+  {
+   "id": "r43",
+   "anchor": "SAMPHubServer._register#if:secret==self._hub_secret/else/raise:SAMPProxyError",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r44",
+   "anchor": "SAMPHubServer._declare_subscriptions#if:private_key in self._private_keys/if:private_key in self._id2mtypes",
+   "kind": "lead",
+   "line": 798
+  },
+  {
+   "id": "r45",
+   "anchor": "SAMPHubServer._declare_subscriptions#if:private_key in self._private_keys/if:private_key in self._id2mtypes/for:mtype in prev_mtypes/try/except:ValueError",
+   "kind": "trail",
+   "line": 805
+  },
+  {
+   "id": "r46",
+   "anchor": "SAMPHubServer._declare_subscriptions#if:private_key in self._private_keys/assign:original_mtypes",
+   "kind": "lead",
+   "line": 811
+  },
+  {
+   "id": "r47",
+   "anchor": "SAMPHubServer.get_mtype_subtypes",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r48",
+   "anchor": "SAMPHubServer._reply",
+   "kind": "doc",
+   "line": 1122
+  },
+  {
+   "id": "r49",
+   "anchor": "SAMPHubServer._retry_method",
+   "kind": "doc",
+   "line": 1168
+  },
+  {
+   "id": "r50",
+   "anchor": "SAMPHubServer._retry_method#for:attempt in range(conf.n_retries)/try/if:self._web_profile and recipient_private_key in self._web_profile_callbacks/assign:callback",
+   "kind": "lead",
+   "line": 1201
+  },
+  {
+   "id": "r51",
+   "anchor": "SAMPHubServer._retry_method#for:attempt in range(conf.n_retries)/try/if:self._web_profile and recipient_private_key in self._web_profile_callbacks/else/assign:hub",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r52",
+   "anchor": "SAMPHubServer._retry_method#assign:error_message",
+   "kind": "lead",
+   "line": 1220
+  },
+  {
+   "id": "r53",
+   "anchor": "SAMPHubServer._web_profile_register#if:isinstance(identity_info, dict)/if:\"samp.name\" not in identity_info",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r54",
+   "anchor": "SAMPHubServer._web_profile_register#call:self._web_profile_requests_semaphore.put",
+   "kind": "lead",
+   "line": 1291
+  },
+  {
+   "id": "r55",
+   "anchor": "SAMPHubServer._web_profile_register#call:self._web_profile_requests_queue.put",
+   "kind": "lead",
+   "line": 1293
+  },
+  {
+   "id": "r56",
+   "anchor": "SAMPHubServer._web_profile_register#assign:response",
+   "kind": "lead",
+   "line": 1296
+  },
+  {
+   "id": "r57",
+   "anchor": "SAMPHubServer._web_profile_register#call:self._web_profile_requests_semaphore.get",
+   "kind": "lead",
+   "line": 1298
+  },
+  {
+   "id": "r58",
+   "anchor": "WebProfileDialog",
+   "kind": "doc",
+   "line": 1339
+  },
+  {
+   "id": "r59",
+   "anchor": "WebProfileDialog.handle_queue#try/except:queue.Empty",
+   "kind": "trail",
+   "line": 1369
+  },
+  {
+   "id": "r60",
+   "anchor": "WebProfileDialog.handle_queue#try/except:AttributeError",
+   "kind": "trail",
+   "line": 1371
+  },
+  {
+   "id": "r61",
+   "anchor": "WebProfileDialog.handle_queue#try/else/if:isinstance(request[0], str)",
+   "kind": "trail",
+   "line": 1374
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28753,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6102,
+  "thinking_tokens": 2826,
+  "opus_cost_usd": 0.44437150000000003,
+  "total_cost_usd": 0.46726750000000006,
+  "duration_ms": 53291,
+  "duration_api_ms": 54795,
+  "num_turns": 2
+ },
+ "wall_ms": 54144,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

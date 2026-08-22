@@ -1,0 +1,1813 @@
+{
+ "blob_sha": "c573c369e9e3390dbdf15623a1d4d636bc3af390",
+ "path": "lib/matplotlib/backend_bases.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 298,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_safe_pyplot_import",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r3",
+   "anchor": "_safe_pyplot_import#try/except:ImportError",
+   "kind": "trail",
+   "line": 99
+  },
+  {
+   "id": "r4",
+   "anchor": "_safe_pyplot_import#try/except:ImportError/if:current_framework is None/raise",
+   "kind": "trail",
+   "line": 102
+  },
+  {
+   "id": "r5",
+   "anchor": "_safe_pyplot_import#try/except:ImportError/import:matplotlib.pyplot",
+   "kind": "trail",
+   "line": 114
+  },
+  {
+   "id": "r6",
+   "anchor": "register_backend",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r7",
+   "anchor": "get_registered_canvas_class",
+   "kind": "doc",
+   "line": 137
+  },
+  {
+   "id": "r8",
+   "anchor": "RendererBase",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r9",
+   "anchor": "RendererBase.open_group",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r10",
+   "anchor": "RendererBase.close_group",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r11",
+   "anchor": "RendererBase.draw_path",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r12",
+   "anchor": "RendererBase.draw_markers",
+   "kind": "doc",
+   "line": 197
+  },
+  {
+   "id": "r13",
+   "anchor": "RendererBase.draw_path_collection",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r14",
+   "anchor": "RendererBase.draw_path_collection#for:xo, yo, path_id, gc0, rgbFace in self._iter_collection(gc, list(path_ids), offse/if:xo != 0 or yo != 0",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r15",
+   "anchor": "RendererBase.draw_path_collection#for:xo, yo, path_id, gc0, rgbFace in self._iter_collection(gc, list(path_ids), offse/if:xo != 0 or yo != 0/assign:transform",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r16",
+   "anchor": "RendererBase.draw_quad_mesh",
+   "kind": "doc",
+   "line": 268
+  },
+  {
+   "id": "r17",
+   "anchor": "RendererBase.draw_gouraud_triangle",
+   "kind": "doc",
+   "line": 290
+  },
+  {
+   "id": "r18",
+   "anchor": "RendererBase.draw_gouraud_triangles",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r19",
+   "anchor": "RendererBase._iter_collection_raw_paths",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r20",
+   "anchor": "RendererBase._iter_collection_uses_per_path",
+   "kind": "doc",
+   "line": 352
+  },
+  {
+   "id": "r21",
+   "anchor": "RendererBase._iter_collection",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r22",
+   "anchor": "RendererBase._iter_collection.cycle_or_default#return",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r23",
+   "anchor": "RendererBase.get_image_magnification",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r24",
+   "anchor": "RendererBase.draw_image",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r25",
+   "anchor": "RendererBase.option_image_nocomposite",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r26",
+   "anchor": "RendererBase.option_scale_image",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r27",
+   "anchor": "RendererBase.draw_tex",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r28",
+   "anchor": "RendererBase.draw_text",
+   "kind": "doc",
+   "line": 527
+  },
+  {
+   "id": "r29",
+   "anchor": "RendererBase._get_text_path_transform",
+   "kind": "doc",
+   "line": 566
+  },
+  {
+   "id": "r30",
+   "anchor": "RendererBase._draw_text_as_path",
+   "kind": "doc",
+   "line": 606
+  },
+  {
+   "id": "r31",
+   "anchor": "RendererBase.get_text_width_height_descent",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r32",
+   "anchor": "RendererBase.get_text_width_height_descent#if:ismath == 'TeX'/return",
+   "kind": "todo",
+   "line": 641
+  },
+  {
+   "id": "r33",
+   "anchor": "RendererBase.get_text_width_height_descent#if:ismath/return",
+   "kind": "trail",
+   "line": 647
+  },
+  {
+   "id": "r34",
+   "anchor": "RendererBase.get_text_width_height_descent#call:font.set_text",
+   "kind": "lead",
+   "line": 653
+  },
+  {
+   "id": "r35",
+   "anchor": "RendererBase.get_text_width_height_descent#assign:w",
+   "kind": "trail",
+   "line": 656
+  },
+  {
+   "id": "r36",
+   "anchor": "RendererBase.flipy",
+   "kind": "doc",
+   "line": 661
+  },
+  {
+   "id": "r37",
+   "anchor": "RendererBase.get_canvas_width_height",
+   "kind": "doc",
+   "line": 669
+  },
+  {
+   "id": "r38",
+   "anchor": "RendererBase.get_texmanager",
+   "kind": "doc",
+   "line": 673
+  },
+  {
+   "id": "r39",
+   "anchor": "RendererBase.new_gc",
+   "kind": "doc",
+   "line": 679
+  },
+  {
+   "id": "r40",
+   "anchor": "RendererBase.points_to_pixels",
+   "kind": "doc",
+   "line": 683
+  },
+  {
+   "id": "r41",
+   "anchor": "RendererBase.start_rasterizing",
+   "kind": "doc",
+   "line": 704
+  },
+  {
+   "id": "r42",
+   "anchor": "RendererBase.stop_rasterizing",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r43",
+   "anchor": "RendererBase.start_filter",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r44",
+   "anchor": "RendererBase.stop_filter",
+   "kind": "doc",
+   "line": 726
+  },
+  {
+   "id": "r45",
+   "anchor": "RendererBase._draw_disabled",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r46",
+   "anchor": "GraphicsContextBase",
+   "kind": "doc",
+   "line": 753
+  },
+  {
+   "id": "r47",
+   "anchor": "GraphicsContextBase._forced_alpha",
+   "kind": "trail",
+   "line": 758
+  },
+  {
+   "id": "r48",
+   "anchor": "GraphicsContextBase._antialiased",
+   "kind": "trail",
+   "line": 759
+  },
+  {
+   "id": "r49",
+   "anchor": "GraphicsContextBase.copy_properties",
+   "kind": "doc",
+   "line": 776
+  },
+  {
+   "id": "r50",
+   "anchor": "GraphicsContextBase.restore",
+   "kind": "doc",
+   "line": 797
+  },
+  {
+   "id": "r51",
+   "anchor": "GraphicsContextBase.get_alpha",
+   "kind": "doc",
+   "line": 803
+  },
+  {
+   "id": "r52",
+   "anchor": "GraphicsContextBase.get_antialiased",
+   "kind": "doc",
+   "line": 810
+  },
+  {
+   "id": "r53",
+   "anchor": "GraphicsContextBase.get_capstyle",
+   "kind": "doc",
+   "line": 814
+  },
+  {
+   "id": "r54",
+   "anchor": "GraphicsContextBase.get_clip_rectangle",
+   "kind": "doc",
+   "line": 818
+  },
+  {
+   "id": "r55",
+   "anchor": "GraphicsContextBase.get_clip_path",
+   "kind": "doc",
+   "line": 824
+  },
+  {
+   "id": "r56",
+   "anchor": "GraphicsContextBase.get_dashes",
+   "kind": "doc",
+   "line": 839
+  },
+  {
+   "id": "r57",
+   "anchor": "GraphicsContextBase.get_forced_alpha",
+   "kind": "doc",
+   "line": 849
+  },
+  {
+   "id": "r58",
+   "anchor": "GraphicsContextBase.get_joinstyle",
+   "kind": "doc",
+   "line": 856
+  },
+  {
+   "id": "r59",
+   "anchor": "GraphicsContextBase.get_linewidth",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r60",
+   "anchor": "GraphicsContextBase.get_rgb",
+   "kind": "doc",
+   "line": 864
+  },
+  {
+   "id": "r61",
+   "anchor": "GraphicsContextBase.get_url",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r62",
+   "anchor": "GraphicsContextBase.get_gid",
+   "kind": "doc",
+   "line": 872
+  },
+  {
+   "id": "r63",
+   "anchor": "GraphicsContextBase.get_snap",
+   "kind": "doc",
+   "line": 876
+  },
+  {
+   "id": "r64",
+   "anchor": "GraphicsContextBase.set_alpha",
+   "kind": "doc",
+   "line": 887
+  },
+  {
+   "id": "r65",
+   "anchor": "GraphicsContextBase.set_antialiased",
+   "kind": "doc",
+   "line": 904
+  },
+  {
+   "id": "r66",
+   "anchor": "GraphicsContextBase.set_antialiased#assign:self._antialiased",
+   "kind": "lead",
+   "line": 907
+  },
+  {
+   "id": "r67",
+   "anchor": "GraphicsContextBase.set_capstyle",
+   "kind": "doc",
+   "line": 910
+  },
+  {
+   "id": "r68",
+   "anchor": "GraphicsContextBase.set_clip_rectangle",
+   "kind": "doc",
+   "line": 920
+  },
+  {
+   "id": "r69",
+   "anchor": "GraphicsContextBase.set_clip_path",
+   "kind": "doc",
+   "line": 924
+  },
+  {
+   "id": "r70",
+   "anchor": "GraphicsContextBase.set_dashes",
+   "kind": "doc",
+   "line": 929
+  },
+  {
+   "id": "r71",
+   "anchor": "GraphicsContextBase.set_foreground",
+   "kind": "doc",
+   "line": 959
+  },
+  {
+   "id": "r72",
+   "anchor": "GraphicsContextBase.set_joinstyle",
+   "kind": "doc",
+   "line": 980
+  },
+  {
+   "id": "r73",
+   "anchor": "GraphicsContextBase.set_linewidth",
+   "kind": "doc",
+   "line": 990
+  },
+  {
+   "id": "r74",
+   "anchor": "GraphicsContextBase.set_url",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r75",
+   "anchor": "GraphicsContextBase.set_gid",
+   "kind": "doc",
+   "line": 998
+  },
+  {
+   "id": "r76",
+   "anchor": "GraphicsContextBase.set_snap",
+   "kind": "doc",
+   "line": 1002
+  },
+  {
+   "id": "r77",
+   "anchor": "GraphicsContextBase.set_hatch",
+   "kind": "doc",
+   "line": 1013
+  },
+  {
+   "id": "r78",
+   "anchor": "GraphicsContextBase.get_hatch",
+   "kind": "doc",
+   "line": 1017
+  },
+  {
+   "id": "r79",
+   "anchor": "GraphicsContextBase.get_hatch_path",
+   "kind": "doc",
+   "line": 1021
+  },
+  {
+   "id": "r80",
+   "anchor": "GraphicsContextBase.get_hatch_color",
+   "kind": "doc",
+   "line": 1028
+  },
+  {
+   "id": "r81",
+   "anchor": "GraphicsContextBase.set_hatch_color",
+   "kind": "doc",
+   "line": 1032
+  },
+  {
+   "id": "r82",
+   "anchor": "GraphicsContextBase.get_hatch_linewidth",
+   "kind": "doc",
+   "line": 1036
+  },
+  {
+   "id": "r83",
+   "anchor": "GraphicsContextBase.get_sketch_params",
+   "kind": "doc",
+   "line": 1040
+  },
+  {
+   "id": "r84",
+   "anchor": "GraphicsContextBase.set_sketch_params",
+   "kind": "doc",
+   "line": 1060
+  },
+  {
+   "id": "r85",
+   "anchor": "TimerBase",
+   "kind": "doc",
+   "line": 1080
+  },
+  {
+   "id": "r86",
+   "anchor": "TimerBase.__init__",
+   "kind": "doc",
+   "line": 1106
+  },
+  {
+   "id": "r87",
+   "anchor": "TimerBase.__init__#assign:self.interval",
+   "kind": "lead",
+   "line": 1121
+  },
+  {
+   "id": "r88",
+   "anchor": "TimerBase.__del__",
+   "kind": "doc",
+   "line": 1124
+  },
+  {
+   "id": "r89",
+   "anchor": "TimerBase.start",
+   "kind": "doc",
+   "line": 1128
+  },
+  {
+   "id": "r90",
+   "anchor": "TimerBase.stop",
+   "kind": "doc",
+   "line": 1142
+  },
+  {
+   "id": "r91",
+   "anchor": "TimerBase.interval",
+   "kind": "doc",
+   "line": 1153
+  },
+  {
+   "id": "r92",
+   "anchor": "TimerBase.interval#assign:interval",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r93",
+   "anchor": "TimerBase.single_shot",
+   "kind": "doc",
+   "line": 1166
+  },
+  {
+   "id": "r94",
+   "anchor": "TimerBase.add_callback",
+   "kind": "doc",
+   "line": 1175
+  },
+  {
+   "id": "r95",
+   "anchor": "TimerBase.remove_callback",
+   "kind": "doc",
+   "line": 1186
+  },
+  {
+   "id": "r96",
+   "anchor": "TimerBase._timer_set_interval",
+   "kind": "doc",
+   "line": 1209
+  },
+  {
+   "id": "r97",
+   "anchor": "TimerBase._timer_set_single_shot",
+   "kind": "doc",
+   "line": 1212
+  },
+  {
+   "id": "r98",
+   "anchor": "TimerBase._on_timer",
+   "kind": "doc",
+   "line": 1215
+  },
+  {
+   "id": "r99",
+   "anchor": "TimerBase._on_timer#for:func, args, kwargs in self.callbacks/if:ret == 0",
+   "kind": "lead",
+   "line": 1228
+  },
+  {
+   "id": "r100",
+   "anchor": "Event",
+   "kind": "doc",
+   "line": 1235
+  },
+  {
+   "id": "r101",
+   "anchor": "Event._process",
+   "kind": "doc",
+   "line": 1257
+  },
+  {
+   "id": "r102",
+   "anchor": "DrawEvent",
+   "kind": "doc",
+   "line": 1262
+  },
+  {
+   "id": "r103",
+   "anchor": "ResizeEvent",
+   "kind": "doc",
+   "line": 1289
+  },
+  {
+   "id": "r104",
+   "anchor": "CloseEvent",
+   "kind": "doc",
+   "line": 1309
+  },
+  {
+   "id": "r105",
+   "anchor": "LocationEvent",
+   "kind": "doc",
+   "line": 1313
+  },
+  {
+   "id": "r106",
+   "anchor": "LocationEvent.lastevent",
+   "kind": "trail",
+   "line": 1333
+  },
+  {
+   "id": "r107",
+   "anchor": "LocationEvent.x",
+   "kind": "lead",
+   "line": 1338
+  },
+  {
+   "id": "r108",
+   "anchor": "LocationEvent.y",
+   "kind": "lead",
+   "line": 1340
+  },
+  {
+   "id": "r109",
+   "anchor": "LocationEvent.inaxes",
+   "kind": "trail",
+   "line": 1341
+  },
+  {
+   "id": "r110",
+   "anchor": "LocationEvent.xdata",
+   "kind": "trail",
+   "line": 1342
+  },
+  {
+   "id": "r111",
+   "anchor": "LocationEvent.ydata",
+   "kind": "trail",
+   "line": 1343
+  },
+  {
+   "id": "r112",
+   "anchor": "LocationEvent.__init__#if:x is None or y is None/return",
+   "kind": "lead",
+   "line": 1348
+  },
+  {
+   "id": "r113",
+   "anchor": "MouseEvent",
+   "kind": "doc",
+   "line": 1374
+  },
+  {
+   "id": "r114",
+   "anchor": "PickEvent",
+   "kind": "doc",
+   "line": 1449
+  },
+  {
+   "id": "r115",
+   "anchor": "KeyEvent",
+   "kind": "doc",
+   "line": 1498
+  },
+  {
+   "id": "r116",
+   "anchor": "_key_handler",
+   "kind": "lead",
+   "line": 1536
+  },
+  {
+   "id": "r117",
+   "anchor": "_key_handler#if:event.name == \"key_press_event\"",
+   "kind": "lead",
+   "line": 1538
+  },
+  {
+   "id": "r118",
+   "anchor": "_mouse_handler",
+   "kind": "lead",
+   "line": 1545
+  },
+  {
+   "id": "r119",
+   "anchor": "_mouse_handler#if:event.name == \"button_press_event\"",
+   "kind": "lead",
+   "line": 1547
+  },
+  {
+   "id": "r120",
+   "anchor": "_mouse_handler#if:event.name == \"motion_notify_event\"",
+   "kind": "lead",
+   "line": 1556
+  },
+  {
+   "id": "r121",
+   "anchor": "_mouse_handler#if:event.name == \"motion_notify_event\"/if:last_axes != event.inaxes/if:last_axes is not None/try/except:Exception/pass",
+   "kind": "trail",
+   "line": 1564
+  },
+  {
+   "id": "r122",
+   "anchor": "_get_renderer",
+   "kind": "doc",
+   "line": 1571
+  },
+  {
+   "id": "r123",
+   "anchor": "_get_renderer.Done",
+   "kind": "lead",
+   "line": 1581
+  },
+  {
+   "id": "r124",
+   "anchor": "_get_renderer#with:cbook._setattr_cm(figure, draw=_draw), ExitStack() as stack/if:print_method is None/assign:print_method",
+   "kind": "lead",
+   "line": 1591
+  },
+  {
+   "id": "r125",
+   "anchor": "_no_output_draw#call:figure.draw_without_rendering",
+   "kind": "lead",
+   "line": 1606
+  },
+  {
+   "id": "r126",
+   "anchor": "_is_non_interactive_terminal_ipython",
+   "kind": "doc",
+   "line": 1609
+  },
+  {
+   "id": "r127",
+   "anchor": "FigureCanvasBase",
+   "kind": "doc",
+   "line": 1623
+  },
+  {
+   "id": "r128",
+   "anchor": "FigureCanvasBase.required_interactive_framework",
+   "kind": "lead",
+   "line": 1635
+  },
+  {
+   "id": "r129",
+   "anchor": "FigureCanvasBase.manager_class",
+   "kind": "lead",
+   "line": 1642
+  },
+  {
+   "id": "r130",
+   "anchor": "FigureCanvasBase.supports_blit",
+   "kind": "doc",
+   "line": 1666
+  },
+  {
+   "id": "r131",
+   "anchor": "FigureCanvasBase._button",
+   "kind": "trail",
+   "line": 1682
+  },
+  {
+   "id": "r132",
+   "anchor": "FigureCanvasBase._key",
+   "kind": "trail",
+   "line": 1683
+  },
+  {
+   "id": "r133",
+   "anchor": "FigureCanvasBase.mouse_grabber",
+   "kind": "trail",
+   "line": 1685
+  },
+  {
+   "id": "r134",
+   "anchor": "FigureCanvasBase.toolbar",
+   "kind": "trail",
+   "line": 1686
+  },
+  {
+   "id": "r135",
+   "anchor": "FigureCanvasBase.__init__#assign:figure._original_dpi",
+   "kind": "lead",
+   "line": 1689
+  },
+  {
+   "id": "r136",
+   "anchor": "FigureCanvasBase.__init__#call:super().__init__",
+   "kind": "trail",
+   "line": 1691
+  },
+  {
+   "id": "r137",
+   "anchor": "FigureCanvasBase._fix_ipython_backend2gui#if:sys.modules.get(\"IPython\") is None",
+   "kind": "lead",
+   "line": 1704
+  },
+  {
+   "id": "r138",
+   "anchor": "FigureCanvasBase._fix_ipython_backend2gui#if:not hasattr(pt, \"backend2gui\") or not hasattr(ip, \"enable_matplotlib\")/return",
+   "kind": "lead",
+   "line": 1715
+  },
+  {
+   "id": "r139",
+   "anchor": "FigureCanvasBase.new_manager",
+   "kind": "doc",
+   "line": 1728
+  },
+  {
+   "id": "r140",
+   "anchor": "FigureCanvasBase.is_saving",
+   "kind": "doc",
+   "line": 1748
+  },
+  {
+   "id": "r141",
+   "anchor": "FigureCanvasBase.blit",
+   "kind": "doc",
+   "line": 1760
+  },
+  {
+   "id": "r142",
+   "anchor": "FigureCanvasBase.resize",
+   "kind": "doc",
+   "line": 1763
+  },
+  {
+   "id": "r143",
+   "anchor": "FigureCanvasBase.resize#if:hasattr(super(), \"resize\")",
+   "kind": "lead",
+   "line": 1772
+  },
+  {
+   "id": "r144",
+   "anchor": "FigureCanvasBase.draw_event",
+   "kind": "doc",
+   "line": 1780
+  },
+  {
+   "id": "r145",
+   "anchor": "FigureCanvasBase.resize_event",
+   "kind": "doc",
+   "line": 1788
+  },
+  {
+   "id": "r146",
+   "anchor": "FigureCanvasBase.close_event",
+   "kind": "doc",
+   "line": 1799
+  },
+  {
+   "id": "r147",
+   "anchor": "FigureCanvasBase.close_event#try/except:(TypeError, AttributeError)/pass",
+   "kind": "post",
+   "line": 1808
+  },
+  {
+   "id": "r148",
+   "anchor": "FigureCanvasBase.key_press_event",
+   "kind": "doc",
+   "line": 1817
+  },
+  {
+   "id": "r149",
+   "anchor": "FigureCanvasBase.key_release_event",
+   "kind": "doc",
+   "line": 1829
+  },
+  {
+   "id": "r150",
+   "anchor": "FigureCanvasBase.pick_event",
+   "kind": "doc",
+   "line": 1841
+  },
+  {
+   "id": "r151",
+   "anchor": "FigureCanvasBase.scroll_event",
+   "kind": "doc",
+   "line": 1859
+  },
+  {
+   "id": "r152",
+   "anchor": "FigureCanvasBase.button_press_event",
+   "kind": "doc",
+   "line": 1881
+  },
+  {
+   "id": "r153",
+   "anchor": "FigureCanvasBase.button_release_event",
+   "kind": "doc",
+   "line": 1900
+  },
+  {
+   "id": "r154",
+   "anchor": "FigureCanvasBase.motion_notify_event#decorator:_api.deprecated",
+   "kind": "lead",
+   "line": 1925
+  },
+  {
+   "id": "r155",
+   "anchor": "FigureCanvasBase.motion_notify_event",
+   "kind": "doc",
+   "line": 1927
+  },
+  {
+   "id": "r156",
+   "anchor": "FigureCanvasBase.leave_notify_event",
+   "kind": "doc",
+   "line": 1954
+  },
+  {
+   "id": "r157",
+   "anchor": "FigureCanvasBase.enter_notify_event",
+   "kind": "doc",
+   "line": 1972
+  },
+  {
+   "id": "r158",
+   "anchor": "FigureCanvasBase.inaxes",
+   "kind": "doc",
+   "line": 1990
+  },
+  {
+   "id": "r159",
+   "anchor": "FigureCanvasBase.grab_mouse",
+   "kind": "doc",
+   "line": 2014
+  },
+  {
+   "id": "r160",
+   "anchor": "FigureCanvasBase.release_mouse",
+   "kind": "doc",
+   "line": 2025
+  },
+  {
+   "id": "r161",
+   "anchor": "FigureCanvasBase.set_cursor",
+   "kind": "doc",
+   "line": 2035
+  },
+  {
+   "id": "r162",
+   "anchor": "FigureCanvasBase.draw",
+   "kind": "doc",
+   "line": 2053
+  },
+  {
+   "id": "r163",
+   "anchor": "FigureCanvasBase.draw_idle",
+   "kind": "doc",
+   "line": 2063
+  },
+  {
+   "id": "r164",
+   "anchor": "FigureCanvasBase.device_pixel_ratio",
+   "kind": "doc",
+   "line": 2081
+  },
+  {
+   "id": "r165",
+   "anchor": "FigureCanvasBase._set_device_pixel_ratio",
+   "kind": "doc",
+   "line": 2093
+  },
+  {
+   "id": "r166",
+   "anchor": "FigureCanvasBase._set_device_pixel_ratio#assign:dpi",
+   "kind": "lead",
+   "line": 2126
+  },
+  {
+   "id": "r167",
+   "anchor": "FigureCanvasBase.get_width_height",
+   "kind": "doc",
+   "line": 2131
+  },
+  {
+   "id": "r168",
+   "anchor": "FigureCanvasBase.get_supported_filetypes",
+   "kind": "doc",
+   "line": 2156
+  },
+  {
+   "id": "r169",
+   "anchor": "FigureCanvasBase.get_supported_filetypes_grouped",
+   "kind": "doc",
+   "line": 2161
+  },
+  {
+   "id": "r170",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method",
+   "kind": "doc",
+   "line": 2175
+  },
+  {
+   "id": "r171",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:backend is not None/assign:canvas_class",
+   "kind": "lead",
+   "line": 2200
+  },
+  {
+   "id": "r172",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:backend is not None/elif:hasattr(self, f\"print_{fmt}\")/assign:canvas",
+   "kind": "lead",
+   "line": 2208
+  },
+  {
+   "id": "r173",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:backend is not None/elif:hasattr(self, f\"print_{fmt}\")/assign:canvas_class",
+   "kind": "trail",
+   "line": 2209
+  },
+  {
+   "id": "r174",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:backend is not None/else/assign:canvas_class",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r175",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#assign:mod",
+   "kind": "trail",
+   "line": 2220
+  },
+  {
+   "id": "r176",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:mod.startswith((\"matplotlib.\", \"mpl_toolkits.\"))/assign:optional_kws",
+   "kind": "trail",
+   "line": 2224
+  },
+  {
+   "id": "r177",
+   "anchor": "FigureCanvasBase._switch_canvas_and_return_print_method#if:mod.startswith((\"matplotlib.\", \"mpl_toolkits.\"))/else",
+   "kind": "trail",
+   "line": 2230
+  },
+  {
+   "id": "r178",
+   "anchor": "FigureCanvasBase.print_figure",
+   "kind": "doc",
+   "line": 2237
+  },
+  {
+   "id": "r179",
+   "anchor": "FigureCanvasBase.print_figure#if:format is None/if:isinstance(filename, os.PathLike)",
+   "kind": "lead",
+   "line": 2293
+  },
+  {
+   "id": "r180",
+   "anchor": "FigureCanvasBase.print_figure#with:cbook._setattr_cm(self, manager=None), self._switch_canvas_and_return_print_meth",
+   "kind": "lead",
+   "line": 2309
+  },
+  {
+   "id": "r181",
+   "anchor": "FigureCanvasBase.print_figure#with:cbook._setattr_cm(self, manager=None), self._switch_canvas_and_return_print_meth/if:self.figure.get_layout_engine() is not None or bbox_inches == \"tight\"/assign:renderer",
+   "kind": "lead",
+   "line": 2332
+  },
+  {
+   "id": "r182",
+   "anchor": "FigureCanvasBase.print_figure#with:cbook._setattr_cm(self, manager=None), self._switch_canvas_and_return_print_meth/if:bbox_inches/assign:restore_bbox",
+   "kind": "lead",
+   "line": 2349
+  },
+  {
+   "id": "r183",
+   "anchor": "FigureCanvasBase.print_figure#with:cbook._setattr_cm(self, manager=None), self._switch_canvas_and_return_print_meth/call:stack.enter_context",
+   "kind": "lead",
+   "line": 2357
+  },
+  {
+   "id": "r184",
+   "anchor": "FigureCanvasBase.print_figure#with:cbook._setattr_cm(self, manager=None), self._switch_canvas_and_return_print_meth/try/with:cbook._setattr_cm(self.figure, dpi=dpi)",
+   "kind": "lead",
+   "line": 2361
+  },
+  {
+   "id": "r185",
+   "anchor": "FigureCanvasBase.get_default_filetype",
+   "kind": "doc",
+   "line": 2376
+  },
+  {
+   "id": "r186",
+   "anchor": "FigureCanvasBase.get_default_filename",
+   "kind": "doc",
+   "line": 2386
+  },
+  {
+   "id": "r187",
+   "anchor": "FigureCanvasBase.switch_backends",
+   "kind": "doc",
+   "line": 2398
+  },
+  {
+   "id": "r188",
+   "anchor": "FigureCanvasBase.mpl_connect",
+   "kind": "doc",
+   "line": 2411
+  },
+  {
+   "id": "r189",
+   "anchor": "FigureCanvasBase.mpl_disconnect",
+   "kind": "doc",
+   "line": 2474
+  },
+  {
+   "id": "r190",
+   "anchor": "FigureCanvasBase._timer_cls",
+   "kind": "lead",
+   "line": 2490
+  },
+  {
+   "id": "r191",
+   "anchor": "FigureCanvasBase.new_timer",
+   "kind": "doc",
+   "line": 2492
+  },
+  {
+   "id": "r192",
+   "anchor": "FigureCanvasBase.flush_events",
+   "kind": "doc",
+   "line": 2517
+  },
+  {
+   "id": "r193",
+   "anchor": "FigureCanvasBase.start_event_loop",
+   "kind": "doc",
+   "line": 2524
+  },
+  {
+   "id": "r194",
+   "anchor": "FigureCanvasBase.stop_event_loop",
+   "kind": "doc",
+   "line": 2552
+  },
+  {
+   "id": "r195",
+   "anchor": "key_press_handler",
+   "kind": "doc",
+   "line": 2562
+  },
+  {
+   "id": "r196",
+   "anchor": "key_press_handler#if:event.key is None",
+   "kind": "lead",
+   "line": 2582
+  },
+  {
+   "id": "r197",
+   "anchor": "key_press_handler#assign:fullscreen_keys",
+   "kind": "lead",
+   "line": 2590
+  },
+  {
+   "id": "r198",
+   "anchor": "key_press_handler#if:event.key in fullscreen_keys",
+   "kind": "lead",
+   "line": 2605
+  },
+  {
+   "id": "r199",
+   "anchor": "key_press_handler#if:event.key in quit_keys",
+   "kind": "lead",
+   "line": 2612
+  },
+  {
+   "id": "r200",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys",
+   "kind": "lead",
+   "line": 2619
+  },
+  {
+   "id": "r201",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys/elif:event.key in back_keys",
+   "kind": "lead",
+   "line": 2623
+  },
+  {
+   "id": "r202",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys/elif:event.key in back_keys/elif:event.key in forward_keys",
+   "kind": "lead",
+   "line": 2626
+  },
+  {
+   "id": "r203",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys/elif:event.key in back_keys/elif:event.key in forward_keys/elif:event.key in pan_keys",
+   "kind": "lead",
+   "line": 2629
+  },
+  {
+   "id": "r204",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys/elif:event.key in back_keys/elif:event.key in forward_keys/elif:event.key in pan_keys/elif:event.key in zoom_keys",
+   "kind": "lead",
+   "line": 2633
+  },
+  {
+   "id": "r205",
+   "anchor": "key_press_handler#if:toolbar is not None/if:event.key in home_keys/elif:event.key in back_keys/elif:event.key in forward_keys/elif:event.key in pan_keys/elif:event.key in zoom_keys/elif:event.key in save_keys",
+   "kind": "lead",
+   "line": 2637
+  },
+  {
+   "id": "r206",
+   "anchor": "key_press_handler._get_uniform_gridstate",
+   "kind": "lead",
+   "line": 2644
+  },
+  {
+   "id": "r207",
+   "anchor": "key_press_handler._get_uniform_gridstate#if:all(tick.gridline.get_visible() for tick in ticks)",
+   "kind": "lead",
+   "line": 2647
+  },
+  {
+   "id": "r208",
+   "anchor": "key_press_handler#if:event.key in grid_keys and None not in [_get_uniform_gridstate(ax.xaxis.minorTic",
+   "kind": "lead",
+   "line": 2659
+  },
+  {
+   "id": "r209",
+   "anchor": "key_press_handler#if:event.key in grid_keys and None not in [_get_uniform_gridstate(ax.xaxis.minorTic",
+   "kind": "lead",
+   "line": 2659
+  },
+  {
+   "id": "r210",
+   "anchor": "key_press_handler#if:event.key in grid_keys and None not in [_get_uniform_gridstate(ax.xaxis.minorTic/try/except:ValueError/pass",
+   "kind": "lead",
+   "line": 2671
+  },
+  {
+   "id": "r211",
+   "anchor": "key_press_handler#if:event.key in grid_keys and None not in [_get_uniform_gridstate(ax.xaxis.minorTic/try/else/call:ax.grid",
+   "kind": "lead",
+   "line": 2674
+  },
+  {
+   "id": "r212",
+   "anchor": "key_press_handler#if:event.key in grid_minor_keys and None not in [_get_uniform_gridstate(ax.xaxis.ma",
+   "kind": "lead",
+   "line": 2678
+  },
+  {
+   "id": "r213",
+   "anchor": "key_press_handler#if:event.key in grid_minor_keys and None not in [_get_uniform_gridstate(ax.xaxis.ma",
+   "kind": "lead",
+   "line": 2678
+  },
+  {
+   "id": "r214",
+   "anchor": "key_press_handler#if:event.key in grid_minor_keys and None not in [_get_uniform_gridstate(ax.xaxis.ma/try/except:ValueError/pass",
+   "kind": "lead",
+   "line": 2690
+  },
+  {
+   "id": "r215",
+   "anchor": "key_press_handler#if:event.key in grid_minor_keys and None not in [_get_uniform_gridstate(ax.xaxis.ma/elif:event.key in toggle_yscale_keys",
+   "kind": "lead",
+   "line": 2696
+  },
+  {
+   "id": "r216",
+   "anchor": "key_press_handler#if:event.key in grid_minor_keys and None not in [_get_uniform_gridstate(ax.xaxis.ma/elif:event.key in toggle_yscale_keys/elif:event.key in toggle_xscale_keys",
+   "kind": "lead",
+   "line": 2709
+  },
+  {
+   "id": "r217",
+   "anchor": "button_press_handler",
+   "kind": "doc",
+   "line": 2723
+  },
+  {
+   "id": "r218",
+   "anchor": "NonGuiException",
+   "kind": "doc",
+   "line": 2742
+  },
+  {
+   "id": "r219",
+   "anchor": "FigureManagerBase",
+   "kind": "doc",
+   "line": 2747
+  },
+  {
+   "id": "r220",
+   "anchor": "FigureManagerBase.__init__#assign:canvas.manager",
+   "kind": "trail",
+   "line": 2811
+  },
+  {
+   "id": "r221",
+   "anchor": "FigureManagerBase.__init__.notify_axes_change#if:self.toolmanager is None and self.toolbar is not None",
+   "kind": "lead",
+   "line": 2843
+  },
+  {
+   "id": "r222",
+   "anchor": "FigureManagerBase.create_with_canvas",
+   "kind": "doc",
+   "line": 2847
+  },
+  {
+   "id": "r223",
+   "anchor": "FigureManagerBase.start_main_loop",
+   "kind": "doc",
+   "line": 2857
+  },
+  {
+   "id": "r224",
+   "anchor": "FigureManagerBase.pyplot_show",
+   "kind": "doc",
+   "line": 2869
+  },
+  {
+   "id": "r225",
+   "anchor": "FigureManagerBase.pyplot_show#for:manager in managers/try/call:manager.show",
+   "kind": "trail",
+   "line": 2890
+  },
+  {
+   "id": "r226",
+   "anchor": "FigureManagerBase.pyplot_show#if:block is None/assign:ipython_pylab",
+   "kind": "lead",
+   "line": 2897
+  },
+  {
+   "id": "r227",
+   "anchor": "FigureManagerBase.show",
+   "kind": "doc",
+   "line": 2903
+  },
+  {
+   "id": "r228",
+   "anchor": "FigureManagerBase.show#if:sys.platform == \"linux\" and not os.environ.get(\"DISPLAY\")",
+   "kind": "lead",
+   "line": 2911
+  },
+  {
+   "id": "r229",
+   "anchor": "FigureManagerBase.show#if:sys.platform == \"linux\" and not os.environ.get(\"DISPLAY\")/return",
+   "kind": "lead",
+   "line": 2916
+  },
+  {
+   "id": "r230",
+   "anchor": "FigureManagerBase.resize",
+   "kind": "doc",
+   "line": 2927
+  },
+  {
+   "id": "r231",
+   "anchor": "FigureManagerBase.get_window_title",
+   "kind": "doc",
+   "line": 2930
+  },
+  {
+   "id": "r232",
+   "anchor": "FigureManagerBase.set_window_title",
+   "kind": "doc",
+   "line": 2937
+  },
+  {
+   "id": "r233",
+   "anchor": "NavigationToolbar2",
+   "kind": "doc",
+   "line": 2961
+  },
+  {
+   "id": "r234",
+   "anchor": "NavigationToolbar2.toolitems",
+   "kind": "lead",
+   "line": 3000
+  },
+  {
+   "id": "r235",
+   "anchor": "NavigationToolbar2._last_cursor",
+   "kind": "lead",
+   "line": 3020
+  },
+  {
+   "id": "r236",
+   "anchor": "NavigationToolbar2.mode",
+   "kind": "trail",
+   "line": 3031
+  },
+  {
+   "id": "r237",
+   "anchor": "NavigationToolbar2.set_message",
+   "kind": "doc",
+   "line": 3034
+  },
+  {
+   "id": "r238",
+   "anchor": "NavigationToolbar2.draw_rubberband",
+   "kind": "doc",
+   "line": 3037
+  },
+  {
+   "id": "r239",
+   "anchor": "NavigationToolbar2.remove_rubberband",
+   "kind": "doc",
+   "line": 3044
+  },
+  {
+   "id": "r240",
+   "anchor": "NavigationToolbar2.home",
+   "kind": "doc",
+   "line": 3047
+  },
+  {
+   "id": "r241",
+   "anchor": "NavigationToolbar2.back",
+   "kind": "doc",
+   "line": 3059
+  },
+  {
+   "id": "r242",
+   "anchor": "NavigationToolbar2.forward",
+   "kind": "doc",
+   "line": 3071
+  },
+  {
+   "id": "r243",
+   "anchor": "NavigationToolbar2._update_cursor",
+   "kind": "doc",
+   "line": 3083
+  },
+  {
+   "id": "r244",
+   "anchor": "NavigationToolbar2._wait_cursor_for_draw_cm",
+   "kind": "doc",
+   "line": 3101
+  },
+  {
+   "id": "r245",
+   "anchor": "NavigationToolbar2.pan",
+   "kind": "doc",
+   "line": 3160
+  },
+  {
+   "id": "r246",
+   "anchor": "NavigationToolbar2.press_pan",
+   "kind": "doc",
+   "line": 3180
+  },
+  {
+   "id": "r247",
+   "anchor": "NavigationToolbar2.press_pan#if:self._nav_stack() is None/call:self.push_current",
+   "kind": "trail",
+   "line": 3190
+  },
+  {
+   "id": "r248",
+   "anchor": "NavigationToolbar2.drag_pan",
+   "kind": "doc",
+   "line": 3198
+  },
+  {
+   "id": "r249",
+   "anchor": "NavigationToolbar2.drag_pan#for:ax in self._pan_info.axes/call:ax.drag_pan",
+   "kind": "lead",
+   "line": 3203
+  },
+  {
+   "id": "r250",
+   "anchor": "NavigationToolbar2.release_pan",
+   "kind": "doc",
+   "line": 3206
+  },
+  {
+   "id": "r251",
+   "anchor": "NavigationToolbar2.zoom#if:not self.canvas.widgetlock.available(self)",
+   "kind": "post",
+   "line": 3220
+  },
+  {
+   "id": "r252",
+   "anchor": "NavigationToolbar2.press_zoom",
+   "kind": "doc",
+   "line": 3235
+  },
+  {
+   "id": "r253",
+   "anchor": "NavigationToolbar2.press_zoom#if:self._nav_stack() is None/call:self.push_current",
+   "kind": "trail",
+   "line": 3245
+  },
+  {
+   "id": "r254",
+   "anchor": "NavigationToolbar2.press_zoom#if:hasattr(axes[0], \"_colorbar\")",
+   "kind": "lead",
+   "line": 3251
+  },
+  {
+   "id": "r255",
+   "anchor": "NavigationToolbar2.drag_zoom",
+   "kind": "doc",
+   "line": 3259
+  },
+  {
+   "id": "r256",
+   "anchor": "NavigationToolbar2.drag_zoom#if:self._zoom_info.cbar == \"horizontal\"",
+   "kind": "lead",
+   "line": 3267
+  },
+  {
+   "id": "r257",
+   "anchor": "NavigationToolbar2.release_zoom",
+   "kind": "doc",
+   "line": 3278
+  },
+  {
+   "id": "r258",
+   "anchor": "NavigationToolbar2.release_zoom#call:self.canvas.mpl_disconnect",
+   "kind": "lead",
+   "line": 3285
+  },
+  {
+   "id": "r259",
+   "anchor": "NavigationToolbar2.release_zoom#if:self._zoom_info.cbar == \"horizontal\"",
+   "kind": "lead",
+   "line": 3292
+  },
+  {
+   "id": "r260",
+   "anchor": "NavigationToolbar2.release_zoom#if:(abs(event.x - start_x) < 5 and key != \"y\") or (abs(event.y - start_y) < 5 and k",
+   "kind": "lead",
+   "line": 3298
+  },
+  {
+   "id": "r261",
+   "anchor": "NavigationToolbar2.release_zoom#for:i, ax in enumerate(self._zoom_info.axes)/assign:twinx",
+   "kind": "lead",
+   "line": 3307
+  },
+  {
+   "id": "r262",
+   "anchor": "NavigationToolbar2.push_current",
+   "kind": "doc",
+   "line": 3319
+  },
+  {
+   "id": "r263",
+   "anchor": "NavigationToolbar2.push_current#call:self._nav_stack.push",
+   "kind": "trail",
+   "line": 3321
+  },
+  {
+   "id": "r264",
+   "anchor": "NavigationToolbar2._update_view",
+   "kind": "doc",
+   "line": 3330
+  },
+  {
+   "id": "r265",
+   "anchor": "NavigationToolbar2._update_view#assign:items",
+   "kind": "lead",
+   "line": 3340
+  },
+  {
+   "id": "r266",
+   "anchor": "NavigationToolbar2._update_view#for:ax, (view, (pos_orig, pos_active)) in items/call:ax._set_position",
+   "kind": "lead",
+   "line": 3344
+  },
+  {
+   "id": "r267",
+   "anchor": "NavigationToolbar2.configure_subplots#import:matplotlib.figure",
+   "kind": "lead",
+   "line": 3353
+  },
+  {
+   "id": "r268",
+   "anchor": "NavigationToolbar2.configure_subplots#with:mpl.rc_context({\"toolbar\": \"none\"})",
+   "kind": "trail",
+   "line": 3354
+  },
+  {
+   "id": "r269",
+   "anchor": "NavigationToolbar2.save_figure",
+   "kind": "doc",
+   "line": 3367
+  },
+  {
+   "id": "r270",
+   "anchor": "NavigationToolbar2.update",
+   "kind": "doc",
+   "line": 3371
+  },
+  {
+   "id": "r271",
+   "anchor": "NavigationToolbar2.set_history_buttons",
+   "kind": "doc",
+   "line": 3376
+  },
+  {
+   "id": "r272",
+   "anchor": "ToolContainerBase",
+   "kind": "doc",
+   "line": 3380
+  },
+  {
+   "id": "r273",
+   "anchor": "ToolContainerBase._icon_extension",
+   "kind": "post",
+   "line": 3390
+  },
+  {
+   "id": "r274",
+   "anchor": "ToolContainerBase._tool_toggled_cbk",
+   "kind": "doc",
+   "line": 3406
+  },
+  {
+   "id": "r275",
+   "anchor": "ToolContainerBase.add_tool",
+   "kind": "doc",
+   "line": 3414
+  },
+  {
+   "id": "r276",
+   "anchor": "ToolContainerBase.add_tool#if:toggle/if:tool.toggled",
+   "kind": "lead",
+   "line": 3436
+  },
+  {
+   "id": "r277",
+   "anchor": "ToolContainerBase._get_image_filename",
+   "kind": "doc",
+   "line": 3439
+  },
+  {
+   "id": "r278",
+   "anchor": "ToolContainerBase.trigger_tool",
+   "kind": "doc",
+   "line": 3454
+  },
+  {
+   "id": "r279",
+   "anchor": "ToolContainerBase.add_toolitem",
+   "kind": "doc",
+   "line": 3465
+  },
+  {
+   "id": "r280",
+   "anchor": "ToolContainerBase.toggle_toolitem",
+   "kind": "doc",
+   "line": 3495
+  },
+  {
+   "id": "r281",
+   "anchor": "ToolContainerBase.remove_toolitem",
+   "kind": "doc",
+   "line": 3508
+  },
+  {
+   "id": "r282",
+   "anchor": "ToolContainerBase.set_message",
+   "kind": "doc",
+   "line": 3523
+  },
+  {
+   "id": "r283",
+   "anchor": "_Backend.backend_version",
+   "kind": "lead",
+   "line": 3543
+  },
+  {
+   "id": "r284",
+   "anchor": "_Backend.backend_version",
+   "kind": "lead",
+   "line": 3543
+  },
+  {
+   "id": "r285",
+   "anchor": "_Backend.FigureCanvas",
+   "kind": "lead",
+   "line": 3546
+  },
+  {
+   "id": "r286",
+   "anchor": "_Backend.FigureManager",
+   "kind": "lead",
+   "line": 3549
+  },
+  {
+   "id": "r287",
+   "anchor": "_Backend.mainloop",
+   "kind": "lead",
+   "line": 3554
+  },
+  {
+   "id": "r288",
+   "anchor": "_Backend.new_figure_manager#decorator:classmethod",
+   "kind": "lead",
+   "line": 3559
+  },
+  {
+   "id": "r289",
+   "anchor": "_Backend.new_figure_manager",
+   "kind": "doc",
+   "line": 3560
+  },
+  {
+   "id": "r290",
+   "anchor": "_Backend.new_figure_manager#import:matplotlib.figure",
+   "kind": "lead",
+   "line": 3563
+  },
+  {
+   "id": "r291",
+   "anchor": "_Backend.new_figure_manager_given_figure",
+   "kind": "doc",
+   "line": 3569
+  },
+  {
+   "id": "r292",
+   "anchor": "_Backend.draw_if_interactive#assign:backend_is_interactive",
+   "kind": "lead",
+   "line": 3577
+  },
+  {
+   "id": "r293",
+   "anchor": "_Backend.show",
+   "kind": "doc",
+   "line": 3586
+  },
+  {
+   "id": "r294",
+   "anchor": "_Backend.show#for:manager in managers/try/call:manager.show",
+   "kind": "trail",
+   "line": 3599
+  },
+  {
+   "id": "r295",
+   "anchor": "_Backend.show#if:block is None/assign:ipython_pylab",
+   "kind": "lead",
+   "line": 3608
+  },
+  {
+   "id": "r296",
+   "anchor": "_Backend.export#decorator:staticmethod",
+   "kind": "lead",
+   "line": 3616
+  },
+  {
+   "id": "r297",
+   "anchor": "_Backend.export.Show",
+   "kind": "lead",
+   "line": 3631
+  },
+  {
+   "id": "r298",
+   "anchor": "ShowBase",
+   "kind": "doc",
+   "line": 3639
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 78184,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 30226,
+  "thinking_tokens": 15845,
+  "opus_cost_usd": 1.5417815,
+  "total_cost_usd": 1.6042185,
+  "duration_ms": 267430,
+  "duration_api_ms": 269173,
+  "num_turns": 2
+ },
+ "wall_ms": 268583,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

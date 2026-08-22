@@ -1,0 +1,187 @@
+{
+ "blob_sha": "6591a90499d530f5ec555a378d32b765b873bad3",
+ "path": "astropy/units/utils.py",
+ "repo": "astropy/astropy",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "_JUST_BELOW_UNITY",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_first_sentence",
+   "kind": "doc",
+   "line": 23
+  },
+  {
+   "id": "r5",
+   "anchor": "_iter_unit_summary",
+   "kind": "doc",
+   "line": 34
+  },
+  {
+   "id": "r6",
+   "anchor": "_iter_unit_summary#assign:units",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r7",
+   "anchor": "_iter_unit_summary#for:key, val in namespace.items()/if:not isinstance(val, core.UnitBase)",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "_iter_unit_summary#for:key, val in namespace.items()/if:key != val.name",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r9",
+   "anchor": "_iter_unit_summary#for:key, val in namespace.items()/if:isinstance(val, core.PrefixUnit)/call:has_prefixes.add",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r10",
+   "anchor": "_iter_unit_summary#call:units.sort",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r11",
+   "anchor": "generate_unit_summary",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r12",
+   "anchor": "generate_prefixonly_unit_summary",
+   "kind": "doc",
+   "line": 124
+  },
+  {
+   "id": "r13",
+   "anchor": "is_effectively_unity#try",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r14",
+   "anchor": "is_effectively_unity#try/except:TypeError",
+   "kind": "trail",
+   "line": 168
+  },
+  {
+   "id": "r15",
+   "anchor": "sanitize_scale#if:scale.__class__ is float",
+   "kind": "lead",
+   "line": 180
+  },
+  {
+   "id": "r16",
+   "anchor": "sanitize_scale#if:hasattr(scale, \"dtype\")",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r17",
+   "anchor": "sanitize_scale#if:scale.imag",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r18",
+   "anchor": "maybe_simple_fraction",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r19",
+   "anchor": "maybe_simple_fraction#assign:n0, d0",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r20",
+   "anchor": "validate_power",
+   "kind": "doc",
+   "line": 231
+  },
+  {
+   "id": "r21",
+   "anchor": "validate_power#if:denom is None/assign:p",
+   "kind": "lead",
+   "line": 258
+  },
+  {
+   "id": "r22",
+   "anchor": "validate_power#if:denom is None/if:isinstance(p, float)",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r23",
+   "anchor": "validate_power#if:denom is None/assign:denom",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r24",
+   "anchor": "validate_power#if:denom == 1/elif:(denom & (denom - 1)) == 0/assign:p",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r25",
+   "anchor": "resolve_fractions",
+   "kind": "doc",
+   "line": 277
+  },
+  {
+   "id": "r26",
+   "anchor": "resolve_fractions#assign:a_is_fraction",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r27",
+   "anchor": "quantity_asanyarray#if:not isinstance(a, np.ndarray) and not np.isscalar(a) and any(isins/else/assign:dtype",
+   "kind": "lead",
+   "line": 310
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8835,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2793,
+  "thinking_tokens": 1510,
+  "opus_cost_usd": 0.1624665,
+  "total_cost_usd": 0.1681465,
+  "duration_ms": 26508,
+  "duration_api_ms": 27627,
+  "num_turns": 2
+ },
+ "wall_ms": 27379,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

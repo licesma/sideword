@@ -1,0 +1,91 @@
+{
+ "blob_sha": "13ed4a2798bfd88a7c2655f75d2f82d2f0b4307a",
+ "path": "django/core/mail/backends/smtp.py",
+ "repo": "django/django",
+ "records": 11,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "EmailBackend",
+   "kind": "doc",
+   "line": 12
+  },
+  {
+   "id": "r3",
+   "anchor": "EmailBackend.open",
+   "kind": "doc",
+   "line": 41
+  },
+  {
+   "id": "r4",
+   "anchor": "EmailBackend.open#if:self.connection/return",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r5",
+   "anchor": "EmailBackend.open#assign:connection_params",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "EmailBackend.open#try/if:not self.use_ssl and self.use_tls",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r7",
+   "anchor": "EmailBackend.close",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r8",
+   "anchor": "EmailBackend.close#try/try/except:(ssl.SSLError, smtplib.SMTPServerDisconnected)/call:self.connection.close",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r9",
+   "anchor": "EmailBackend.send_messages",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r10",
+   "anchor": "EmailBackend.send_messages#with:self._lock/if:not self.connection or new_conn_created is None/return",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r11",
+   "anchor": "EmailBackend._send",
+   "kind": "doc",
+   "line": 116
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 5862,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 873,
+  "thinking_tokens": 324,
+  "opus_cost_usd": 0.08473649999999999,
+  "total_cost_usd": 0.08791449999999999,
+  "duration_ms": 9506,
+  "duration_api_ms": 10470,
+  "num_turns": 2
+ },
+ "wall_ms": 10463,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,295 @@
+{
+ "blob_sha": "487dab9152c96ffaf318ddc24da8c99998115046",
+ "path": "lib/matplotlib/_layoutgrid.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 45,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "LayoutGrid",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "LayoutGrid.__init__#if:not isinstance(parent, LayoutGrid)/assign:self.parent",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r4",
+   "anchor": "LayoutGrid.artists",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r5",
+   "anchor": "LayoutGrid.__init__#for:todo in ['left', 'right', 'leftcb', 'rightcb']",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r6",
+   "anchor": "LayoutGrid.__init__#for:todo in ['left', 'right', 'leftcb', 'rightcb']/assign:self.margin_vals[todo]",
+   "kind": "lead",
+   "line": 73
+  },
+  {
+   "id": "r7",
+   "anchor": "LayoutGrid.widths",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r8",
+   "anchor": "LayoutGrid.__init__#call:self.reset_margins",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r9",
+   "anchor": "LayoutGrid.reset_margins",
+   "kind": "doc",
+   "line": 129
+  },
+  {
+   "id": "r10",
+   "anchor": "LayoutGrid.add_constraints#call:self.hard_constraints",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r11",
+   "anchor": "LayoutGrid.add_constraints#call:self.parent_constraints",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r12",
+   "anchor": "LayoutGrid.add_constraints#call:self.grid_constraints",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r13",
+   "anchor": "LayoutGrid.hard_constraints",
+   "kind": "doc",
+   "line": 148
+  },
+  {
+   "id": "r14",
+   "anchor": "LayoutGrid.add_child#assign:self.children[np.ix_(np.atleast_1d(i), np.atleast_1d(j))]",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r15",
+   "anchor": "LayoutGrid.parent_constraints#assign:parent",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r16",
+   "anchor": "LayoutGrid.parent_constraints#if:not isinstance(parent, LayoutGrid)/assign:hc",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r17",
+   "anchor": "LayoutGrid.parent_constraints#if:not isinstance(parent, LayoutGrid)/assign:hc/item:self.tops[0] == parent[1] + parent[3]",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r18",
+   "anchor": "LayoutGrid.parent_constraints#if:not isinstance(parent, LayoutGrid)/else/if:self.parent_inner/assign:left",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r19",
+   "anchor": "LayoutGrid.parent_constraints#if:not isinstance(parent, LayoutGrid)/else/assign:hc/item:self.tops[0] == top",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r20",
+   "anchor": "LayoutGrid.grid_constraints#assign:w",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r21",
+   "anchor": "LayoutGrid.grid_constraints#assign:w",
+   "kind": "lead",
+   "line": 223
+  },
+  {
+   "id": "r22",
+   "anchor": "LayoutGrid.grid_constraints#for:i in range(1, self.ncols)",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r23",
+   "anchor": "LayoutGrid.grid_constraints#for:i in range(1, self.ncols)/assign:c",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r24",
+   "anchor": "LayoutGrid.grid_constraints#assign:h",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r25",
+   "anchor": "LayoutGrid.grid_constraints#for:i in range(1, self.nrows)",
+   "kind": "lead",
+   "line": 246
+  },
+  {
+   "id": "r26",
+   "anchor": "LayoutGrid.grid_constraints#for:i in range(1, self.nrows)/assign:c",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r27",
+   "anchor": "LayoutGrid.edit_margin",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r28",
+   "anchor": "LayoutGrid.edit_margin",
+   "kind": "doc",
+   "line": 260
+  },
+  {
+   "id": "r29",
+   "anchor": "LayoutGrid.edit_margin_min",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r30",
+   "anchor": "LayoutGrid.edit_margins",
+   "kind": "doc",
+   "line": 300
+  },
+  {
+   "id": "r31",
+   "anchor": "LayoutGrid.edit_all_margins_min",
+   "kind": "doc",
+   "line": 316
+  },
+  {
+   "id": "r32",
+   "anchor": "LayoutGrid.edit_outer_margin_mins",
+   "kind": "doc",
+   "line": 335
+  },
+  {
+   "id": "r33",
+   "anchor": "LayoutGrid.edit_outer_margin_mins#call:self.edit_margin_min",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r34",
+   "anchor": "LayoutGrid.get_margins",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r35",
+   "anchor": "LayoutGrid.get_outer_bbox",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r36",
+   "anchor": "LayoutGrid.get_inner_bbox",
+   "kind": "doc",
+   "line": 379
+  },
+  {
+   "id": "r37",
+   "anchor": "LayoutGrid.get_bbox_for_cb",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r38",
+   "anchor": "LayoutGrid.get_left_margin_bbox",
+   "kind": "doc",
+   "line": 423
+  },
+  {
+   "id": "r39",
+   "anchor": "LayoutGrid.get_bottom_margin_bbox",
+   "kind": "doc",
+   "line": 441
+  },
+  {
+   "id": "r40",
+   "anchor": "LayoutGrid.get_right_margin_bbox",
+   "kind": "doc",
+   "line": 460
+  },
+  {
+   "id": "r41",
+   "anchor": "LayoutGrid.get_top_margin_bbox",
+   "kind": "doc",
+   "line": 478
+  },
+  {
+   "id": "r42",
+   "anchor": "LayoutGrid.update_variables",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r43",
+   "anchor": "seq_id",
+   "kind": "doc",
+   "line": 505
+  },
+  {
+   "id": "r44",
+   "anchor": "print_children",
+   "kind": "doc",
+   "line": 510
+  },
+  {
+   "id": "r45",
+   "anchor": "plot_children",
+   "kind": "doc",
+   "line": 516
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 15551,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5076,
+  "thinking_tokens": 2806,
+  "opus_cost_usd": 0.2867015,
+  "total_cost_usd": 0.2978985,
+  "duration_ms": 47394,
+  "duration_api_ms": 49130,
+  "num_turns": 2
+ },
+ "wall_ms": 48302,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

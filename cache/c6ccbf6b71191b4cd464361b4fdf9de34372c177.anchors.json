@@ -1,0 +1,133 @@
+{
+ "blob_sha": "c6ccbf6b71191b4cd464361b4fdf9de34372c177",
+ "path": "astropy/cosmology/utils.py",
+ "repo": "astropy/astropy",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:functools",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "__all__",
+   "kind": "trail",
+   "line": 15
+  },
+  {
+   "id": "r3",
+   "anchor": "vectorize_redshift_method",
+   "kind": "doc",
+   "line": 20
+  },
+  {
+   "id": "r4",
+   "anchor": "vectorize_redshift_method#if:func is None",
+   "kind": "lead",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "vectorize_redshift_method.wrapper",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "vectorize_redshift_method.wrapper#assign:zs",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r7",
+   "anchor": "vectorize_redshift_method.wrapper#if:all(isinstance(z, (Number, np.generic)) for z in zs)",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "vectorize_redshift_method.wrapper#return",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r9",
+   "anchor": "vectorize_redshift_method#assign:wrapper.__vectorized__",
+   "kind": "trail",
+   "line": 59
+  },
+  {
+   "id": "r10",
+   "anchor": "vectorize_redshift_method#return",
+   "kind": "todo",
+   "line": 62
+  },
+  {
+   "id": "r11",
+   "anchor": "vectorize_if_needed",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r12",
+   "anchor": "inf_like",
+   "kind": "doc",
+   "line": 105
+  },
+  {
+   "id": "r13",
+   "anchor": "aszarr",
+   "kind": "doc",
+   "line": 137
+  },
+  {
+   "id": "r14",
+   "anchor": "aszarr#if:isinstance(z, (Number, np.generic))",
+   "kind": "trail",
+   "line": 142
+  },
+  {
+   "id": "r15",
+   "anchor": "aszarr#if:isinstance(z, (Number, np.generic))/elif:hasattr(z, \"shape\")",
+   "kind": "trail",
+   "line": 144
+  },
+  {
+   "id": "r16",
+   "anchor": "aszarr#if:isinstance(z, (Number, np.generic))/elif:hasattr(z, \"shape\")/if:hasattr(z, \"unit\")",
+   "kind": "trail",
+   "line": 145
+  },
+  {
+   "id": "r17",
+   "anchor": "aszarr#if:isinstance(z, (Number, np.generic))/elif:hasattr(z, \"shape\")/if:hasattr(z, \"unit\")/return",
+   "kind": "trail",
+   "line": 146
+  },
+  {
+   "id": "r18",
+   "anchor": "aszarr#return",
+   "kind": "lead",
+   "line": 149
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6152,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1727,
+  "thinking_tokens": 809,
+  "opus_cost_usd": 0.10898650000000001,
+  "total_cost_usd": 0.11237950000000002,
+  "duration_ms": 16628,
+  "duration_api_ms": 17821,
+  "num_turns": 2
+ },
+ "wall_ms": 17500,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

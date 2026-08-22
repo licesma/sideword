@@ -1,0 +1,151 @@
+{
+ "blob_sha": "49b225d8807a14c8f2ed6bb1a6f837658cf2e2fc",
+ "path": "django/db/models/lookups.py",
+ "repo": "django/django",
+ "records": 21,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Lookup.__init__#if:bilateral_transforms/import:django.db.models.sql.query",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r2",
+   "anchor": "Lookup.__init__#if:bilateral_transforms/import:django.db.models.sql.query",
+   "kind": "trail",
+   "line": 29
+  },
+  {
+   "id": "r3",
+   "anchor": "Lookup.process_rhs#if:self.bilateral_transforms/if:self.rhs_is_direct_value()/assign:value",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r4",
+   "anchor": "Lookup.process_rhs#if:hasattr(value, 'get_compiler')",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r5",
+   "anchor": "Transform",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r6",
+   "anchor": "FieldGetDbPrepValueMixin",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r7",
+   "anchor": "FieldGetDbPrepValueMixin.get_db_prep_lookup#assign:field",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r8",
+   "anchor": "FieldGetDbPrepValueIterableMixin",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r9",
+   "anchor": "FieldGetDbPrepValueIterableMixin.get_prep_lookup#if:hasattr(self.rhs, '_prepare')/return",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r10",
+   "anchor": "FieldGetDbPrepValueIterableMixin.get_prep_lookup#for:rhs_value in self.rhs/if:hasattr(rhs_value, 'resolve_expression')/pass",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r11",
+   "anchor": "FieldGetDbPrepValueIterableMixin.process_rhs#if:self.rhs_is_direct_value()/return",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r12",
+   "anchor": "FieldGetDbPrepValueIterableMixin.batch_process_rhs#assign:sql, params",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r13",
+   "anchor": "IntegerFieldFloatRounding",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r14",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/try/except:TypeError",
+   "kind": "trail",
+   "line": 309
+  },
+  {
+   "id": "r15",
+   "anchor": "In.process_rhs#if:self.rhs_is_direct_value()/assign:sqls, sqls_params",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r16",
+   "anchor": "In.split_parameter_list_as_sql#assign:max_in_list_size",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r17",
+   "anchor": "PatternLookup.get_rhs_op#if:hasattr(self.rhs, 'get_compiler') or hasattr(self.rhs, 'as_sql') or self.bilateral_transforms",
+   "kind": "lead",
+   "line": 368
+  },
+  {
+   "id": "r18",
+   "anchor": "YearComparisonLookup.as_sql#assign:lhs_sql, params",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r19",
+   "anchor": "YearExact.as_sql#assign:lhs_sql, params",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r20",
+   "anchor": "YearExact.as_sql#try/call:int",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r21",
+   "anchor": "YearExact.as_sql#try/except:(IndexError, TypeError, ValueError)/return",
+   "kind": "lead",
+   "line": 544
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14667,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2591,
+  "thinking_tokens": 1323,
+  "opus_cost_usd": 0.2157365,
+  "total_cost_usd": 0.2262255,
+  "duration_ms": 23893,
+  "duration_api_ms": 25087,
+  "num_turns": 2
+ },
+ "wall_ms": 24710,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

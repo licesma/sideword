@@ -1,0 +1,289 @@
+{
+ "blob_sha": "4655fabf8e25a5e8c871ec62ef6d188b37863b7a",
+ "path": "astropy/visualization/wcsaxes/core.py",
+ "repo": "astropy/astropy",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:functools",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_WCSAxesArtist",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "WCSAxes",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r4",
+   "anchor": "WCSAxes.__init__",
+   "kind": "doc",
+   "line": 99
+  },
+  {
+   "id": "r5",
+   "anchor": "WCSAxes.__init__#if:not (transData is None)/assign:self.transData",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r6",
+   "anchor": "WCSAxes._hide_parent_artists#for:s in self.spines.values()",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r7",
+   "anchor": "WCSAxes.imshow",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r8",
+   "anchor": "WCSAxes.imshow",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r9",
+   "anchor": "WCSAxes.imshow#if:origin is None",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r10",
+   "anchor": "WCSAxes.contour",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r11",
+   "anchor": "WCSAxes.contour#assign:transform",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r12",
+   "anchor": "WCSAxes.contour#if:transform is not None/assign:transform",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r13",
+   "anchor": "WCSAxes.contourf",
+   "kind": "doc",
+   "line": 246
+  },
+  {
+   "id": "r14",
+   "anchor": "WCSAxes.contourf#assign:transform",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r15",
+   "anchor": "WCSAxes.contourf#if:transform is not None/assign:transform",
+   "kind": "lead",
+   "line": 267
+  },
+  {
+   "id": "r16",
+   "anchor": "WCSAxes.plot_coord",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r17",
+   "anchor": "WCSAxes.plot_coord#if:isinstance(args[0], (SkyCoord, BaseCoordinateFrame))/assign:frame0",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r18",
+   "anchor": "WCSAxes.plot_coord#if:isinstance(args[0], (SkyCoord, BaseCoordinateFrame))/assign:frame0",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r19",
+   "anchor": "WCSAxes.reset_wcs",
+   "kind": "doc",
+   "line": 329
+  },
+  {
+   "id": "r20",
+   "anchor": "WCSAxes.reset_wcs#if:wcs is None and transform is None",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r21",
+   "anchor": "WCSAxes.reset_wcs#if:wcs is None and transform is None/else/if:wcs is not None",
+   "kind": "lead",
+   "line": 345
+  },
+  {
+   "id": "r22",
+   "anchor": "WCSAxes.reset_wcs#if:wcs is None and transform is None/else/if:wcs is not None/if:isinstance(wcs, WCS)",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r23",
+   "anchor": "WCSAxes.reset_wcs#if:hasattr(self, 'coords')",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r24",
+   "anchor": "WCSAxes.reset_wcs#for:ind, pos in enumerate(coord_meta.get('default_axislabel_position', ['b', 'l']))",
+   "kind": "lead",
+   "line": 387
+  },
+  {
+   "id": "r25",
+   "anchor": "WCSAxes.draw_wcsaxes#assign:self._bboxes",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r26",
+   "anchor": "WCSAxes.draw_wcsaxes#assign:ticklabels_bbox",
+   "kind": "lead",
+   "line": 407
+  },
+  {
+   "id": "r27",
+   "anchor": "WCSAxes.draw",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r28",
+   "anchor": "WCSAxes.draw#for:coords in self._all_coords",
+   "kind": "lead",
+   "line": 440
+  },
+  {
+   "id": "r29",
+   "anchor": "WCSAxes.draw#assign:locator",
+   "kind": "lead",
+   "line": 447
+  },
+  {
+   "id": "r30",
+   "anchor": "WCSAxes.draw#if:self._axisbelow is True/elif:self._axisbelow is False/else/call:self._wcsaxesartist.set_zorder",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r31",
+   "anchor": "WCSAxes.draw#call:self.coords.frame._update_patch_path",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r32",
+   "anchor": "WCSAxes.set_xlabel",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r33",
+   "anchor": "WCSAxes.set_xlabel",
+   "kind": "doc",
+   "line": 470
+  },
+  {
+   "id": "r34",
+   "anchor": "WCSAxes.set_ylabel",
+   "kind": "doc",
+   "line": 482
+  },
+  {
+   "id": "r35",
+   "anchor": "WCSAxes.get_coords_overlay#if:isinstance(frame, WCS)",
+   "kind": "lead",
+   "line": 517
+  },
+  {
+   "id": "r36",
+   "anchor": "WCSAxes.get_coords_overlay#call:coords[0].set_axislabel_position",
+   "kind": "lead",
+   "line": 532
+  },
+  {
+   "id": "r37",
+   "anchor": "WCSAxes.get_transform",
+   "kind": "doc",
+   "line": 541
+  },
+  {
+   "id": "r38",
+   "anchor": "WCSAxes._get_transform_no_transdata",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r39",
+   "anchor": "WCSAxes.get_tightbbox#if:not self.get_visible()",
+   "kind": "todo",
+   "line": 626
+  },
+  {
+   "id": "r40",
+   "anchor": "WCSAxes.grid",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r41",
+   "anchor": "WCSAxes.tick_params",
+   "kind": "doc",
+   "line": 673
+  },
+  {
+   "id": "r42",
+   "anchor": "WCSAxes.tick_params#if:not hasattr(self, 'coords')/return",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r43",
+   "anchor": "WCSAxesSubplot",
+   "kind": "lead",
+   "line": 767
+  },
+  {
+   "id": "r44",
+   "anchor": "WCSAxesSubplot",
+   "kind": "doc",
+   "line": 767
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19320,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3902,
+  "thinking_tokens": 1728,
+  "opus_cost_usd": 0.2950415,
+  "total_cost_usd": 0.3089695,
+  "duration_ms": 34740,
+  "duration_api_ms": 36026,
+  "num_turns": 2
+ },
+ "wall_ms": 35683,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

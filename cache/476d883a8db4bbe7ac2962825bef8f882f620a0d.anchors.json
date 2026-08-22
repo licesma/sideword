@@ -1,0 +1,187 @@
+{
+ "blob_sha": "476d883a8db4bbe7ac2962825bef8f882f620a0d",
+ "path": "django/contrib/admindocs/views.py",
+ "repo": "django/django",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "MODEL_METHODS_EXCLUDE",
+   "kind": "lead",
+   "line": 26
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseAdminDocsView",
+   "kind": "doc",
+   "line": 29
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseAdminDocsView.dispatch#if:not utils.docutils_is_available/assign:self.template_name",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r4",
+   "anchor": "TemplateTagIndexView.get_context_data#try/except:ImproperlyConfigured/pass",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r5",
+   "anchor": "TemplateFilterIndexView.get_context_data#try/except:ImproperlyConfigured/pass",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r6",
+   "anchor": "ViewIndexView._get_full_name#if:six.PY3/else/assign:func_name",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r7",
+   "anchor": "ViewDetailView._get_view_func#if:get_resolver(urlconf)._is_callback(view)/try/return",
+   "kind": "lead",
+   "line": 167
+  },
+  {
+   "id": "r8",
+   "anchor": "ViewDetailView._get_view_func#if:get_resolver(urlconf)._is_callback(view)/try/except:ImportError/assign:mod, klass",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r9",
+   "anchor": "ViewDetailView._get_view_func#if:get_resolver(urlconf)._is_callback(view)/try/except:AttributeError/return",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r10",
+   "anchor": "ModelDetailView.get_context_data#try",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r11",
+   "anchor": "ModelDetailView.get_context_data#assign:fields",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r12",
+   "anchor": "ModelDetailView.get_context_data#for:field in opts.fields/if:isinstance(field, models.ForeignKey)",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r13",
+   "anchor": "ModelDetailView.get_context_data#for:field in opts.many_to_many",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r14",
+   "anchor": "ModelDetailView.get_context_data#for:func_name, func in model.__dict__.items()",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r15",
+   "anchor": "ModelDetailView.get_context_data#for:func_name, func in model.__dict__.items()/if:inspect.isfunction(func)/if:func_has_no_args(func) and not func_accepts_kwargs(func) and not func_accepts_var_args(func)",
+   "kind": "lead",
+   "line": 295
+  },
+  {
+   "id": "r16",
+   "anchor": "ModelDetailView.get_context_data#for:func_name, func in model.__dict__.items()/if:inspect.isfunction(func)/if:func_has_no_args(func) and not func_accepts_kwargs(func) and not func_accepts_var_args(func)/else/assign:print_arguments",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r17",
+   "anchor": "ModelDetailView.get_context_data#for:rel in opts.related_objects",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r18",
+   "anchor": "TemplateDetailView.get_context_data#try/except:ImproperlyConfigured/pass",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r19",
+   "anchor": "TemplateDetailView.get_context_data#try/else/for:index, directory in enumerate(default_engine.dirs)",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r20",
+   "anchor": "get_return_data_type",
+   "kind": "lead",
+   "line": 382
+  },
+  {
+   "id": "r21",
+   "anchor": "get_return_data_type",
+   "kind": "doc",
+   "line": 382
+  },
+  {
+   "id": "r22",
+   "anchor": "get_readable_field_data_type",
+   "kind": "doc",
+   "line": 392
+  },
+  {
+   "id": "r23",
+   "anchor": "extract_views_from_urlpatterns",
+   "kind": "doc",
+   "line": 400
+  },
+  {
+   "id": "r24",
+   "anchor": "simplify_regex",
+   "kind": "doc",
+   "line": 432
+  },
+  {
+   "id": "r25",
+   "anchor": "simplify_regex#assign:pattern",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r26",
+   "anchor": "simplify_regex#assign:pattern",
+   "kind": "lead",
+   "line": 442
+  },
+  {
+   "id": "r27",
+   "anchor": "simplify_regex#assign:pattern",
+   "kind": "lead",
+   "line": 445
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12009,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3291,
+  "thinking_tokens": 1734,
+  "opus_cost_usd": 0.2066565,
+  "total_cost_usd": 0.2150745,
+  "duration_ms": 32210,
+  "duration_api_ms": 33537,
+  "num_turns": 2
+ },
+ "wall_ms": 33081,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

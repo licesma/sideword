@@ -1,0 +1,223 @@
+{
+ "blob_sha": "5481e533ca574bed969b32bea4897c25edaf1429",
+ "path": "tutorials/advanced/blitting.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 33,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#assign:ln",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#call:plt.show",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#call:plt.pause",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#assign:bg",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r6",
+   "anchor": "<module>#call:ax.draw_artist",
+   "kind": "lead",
+   "line": 84
+  },
+  {
+   "id": "r7",
+   "anchor": "<module>#call:fig.canvas.blit",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#for:j in range(100)/call:fig.canvas.restore_region",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r9",
+   "anchor": "<module>#for:j in range(100)/call:ln.set_ydata",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "<module>#for:j in range(100)/call:ax.draw_artist",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r11",
+   "anchor": "<module>#for:j in range(100)/call:fig.canvas.blit",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r12",
+   "anchor": "<module>#for:j in range(100)/call:fig.canvas.flush_events",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r13",
+   "anchor": "<module>#for:j in range(100)/call:fig.canvas.flush_events",
+   "kind": "post",
+   "line": 99
+  },
+  {
+   "id": "r14",
+   "anchor": "BlitManager",
+   "kind": "lead",
+   "line": 122
+  },
+  {
+   "id": "r15",
+   "anchor": "BlitManager.__init__",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r16",
+   "anchor": "BlitManager.__init__#assign:self.cid",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r17",
+   "anchor": "BlitManager.on_draw",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r18",
+   "anchor": "BlitManager.add_artist",
+   "kind": "doc",
+   "line": 153
+  },
+  {
+   "id": "r19",
+   "anchor": "BlitManager._draw_animated",
+   "kind": "doc",
+   "line": 171
+  },
+  {
+   "id": "r20",
+   "anchor": "BlitManager.update",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r21",
+   "anchor": "BlitManager.update#if:self._bg is None",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r22",
+   "anchor": "BlitManager.update#if:self._bg is None/else/call:cv.restore_region",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r23",
+   "anchor": "BlitManager.update#if:self._bg is None/else/call:self._draw_animated",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r24",
+   "anchor": "BlitManager.update#if:self._bg is None/else/call:cv.blit",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r25",
+   "anchor": "BlitManager.update#call:cv.flush_events",
+   "kind": "lead",
+   "line": 192
+  },
+  {
+   "id": "r26",
+   "anchor": "<module>#assign:fig, ax",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r27",
+   "anchor": "<module>#assign:fig, ax",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r28",
+   "anchor": "<module>#assign:ln",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r29",
+   "anchor": "<module>#assign:fr_number",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r30",
+   "anchor": "<module>#call:plt.show",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r31",
+   "anchor": "<module>#for:j in range(100)/call:ln.set_ydata",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r32",
+   "anchor": "<module>#for:j in range(100)/call:bm.update",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r33",
+   "anchor": "<module>#for:j in range(100)",
+   "kind": "post",
+   "line": 219
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8275,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3398,
+  "thinking_tokens": 1951,
+  "opus_cost_usd": 0.17199149999999996,
+  "total_cost_usd": 0.17708149999999998,
+  "duration_ms": 37742,
+  "duration_api_ms": 38906,
+  "num_turns": 2
+ },
+ "wall_ms": 38657,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

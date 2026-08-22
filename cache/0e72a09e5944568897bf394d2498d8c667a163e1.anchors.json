@@ -1,0 +1,661 @@
+{
+ "blob_sha": "0e72a09e5944568897bf394d2498d8c667a163e1",
+ "path": "django/db/models/fields/__init__.py",
+ "repo": "django/django",
+ "records": 106,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BLANK_CHOICE_DASH",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r2",
+   "anchor": "_empty",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r3",
+   "anchor": "Field",
+   "kind": "doc",
+   "line": 86
+  },
+  {
+   "id": "r4",
+   "anchor": "Field.empty_strings_allowed",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r5",
+   "anchor": "Field.creation_counter",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r6",
+   "anchor": "Field.default_validators",
+   "kind": "trail",
+   "line": 99
+  },
+  {
+   "id": "r7",
+   "anchor": "Field.default_error_messages#key:unique_for_date",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r8",
+   "anchor": "Field.hidden",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r9",
+   "anchor": "Field._description",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r10",
+   "anchor": "Field.verbose_name",
+   "kind": "trail",
+   "line": 140
+  },
+  {
+   "id": "r11",
+   "anchor": "Field._verbose_name",
+   "kind": "trail",
+   "line": 141
+  },
+  {
+   "id": "r12",
+   "anchor": "Field.__init__#if:auto_created",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r13",
+   "anchor": "Field._validators",
+   "kind": "trail",
+   "line": 170
+  },
+  {
+   "id": "r14",
+   "anchor": "Field._error_messages",
+   "kind": "trail",
+   "line": 176
+  },
+  {
+   "id": "r15",
+   "anchor": "Field.__str__",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r16",
+   "anchor": "Field.__repr__",
+   "kind": "doc",
+   "line": 189
+  },
+  {
+   "id": "r17",
+   "anchor": "Field._check_field_name",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r18",
+   "anchor": "Field._check_choices#for:choices_group in self.choices",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r19",
+   "anchor": "Field._check_choices#for:choices_group in self.choices/try/except:(TypeError, ValueError)/break",
+   "kind": "lead",
+   "line": 264
+  },
+  {
+   "id": "r20",
+   "anchor": "Field._check_choices#for:choices_group in self.choices/try/except:(TypeError, ValueError)/assign:value, human_name",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r21",
+   "anchor": "Field._check_choices#for:choices_group in self.choices/if:isinstance(choices_group, str)",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r22",
+   "anchor": "Field._check_null_allowed_for_primary_keys#if:self.primary_key and self.null and not connection.features.interprets_empty_strings_as_nulls/return",
+   "kind": "lead",
+   "line": 326
+  },
+  {
+   "id": "r23",
+   "anchor": "Field.select_format",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r24",
+   "anchor": "Field.deconstruct",
+   "kind": "doc",
+   "line": 417
+  },
+  {
+   "id": "r25",
+   "anchor": "Field.deconstruct#assign:keywords",
+   "kind": "lead",
+   "line": 450
+  },
+  {
+   "id": "r26",
+   "anchor": "Field.deconstruct#for:name, default in possibles.items()/if:name == \"choices\" and isinstance(value, collections.abc.Iterable)",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r27",
+   "anchor": "Field.deconstruct#for:name, default in possibles.items()/if:name in equals_comparison",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r28",
+   "anchor": "Field.deconstruct#assign:path",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r29",
+   "anchor": "Field.deconstruct#return",
+   "kind": "lead",
+   "line": 506
+  },
+  {
+   "id": "r30",
+   "anchor": "Field.clone",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r31",
+   "anchor": "Field.__eq__#if:isinstance(other, Field)",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r32",
+   "anchor": "Field.__lt__#if:isinstance(other, Field)",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r33",
+   "anchor": "Field.__lt__#if:isinstance(other, Field)/if:self.creation_counter != other.creation_counter or not hasattr(self, 'model') and not hasattr(other, 'model')/elif:hasattr(self, 'model') != hasattr(other, 'model')/return",
+   "kind": "trail",
+   "line": 535
+  },
+  {
+   "id": "r34",
+   "anchor": "Field.__lt__#if:isinstance(other, Field)/if:self.creation_counter != other.creation_counter or not hasattr(self, 'model') and not hasattr(other, 'model')/elif:hasattr(self, 'model') != hasattr(other, 'model')/else/return",
+   "kind": "lead",
+   "line": 538
+  },
+  {
+   "id": "r35",
+   "anchor": "Field.__deepcopy__#assign:obj",
+   "kind": "lead",
+   "line": 554
+  },
+  {
+   "id": "r36",
+   "anchor": "Field.__copy__#assign:obj",
+   "kind": "lead",
+   "line": 565
+  },
+  {
+   "id": "r37",
+   "anchor": "Field.__reduce__",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r38",
+   "anchor": "Field.__reduce__#if:not hasattr(self, 'model')/assign:state",
+   "kind": "lead",
+   "line": 582
+  },
+  {
+   "id": "r39",
+   "anchor": "Field.__reduce__#if:not hasattr(self, 'model')/call:state.pop",
+   "kind": "lead",
+   "line": 585
+  },
+  {
+   "id": "r40",
+   "anchor": "Field.get_pk_value_on_save",
+   "kind": "doc",
+   "line": 590
+  },
+  {
+   "id": "r41",
+   "anchor": "Field.to_python",
+   "kind": "doc",
+   "line": 601
+  },
+  {
+   "id": "r42",
+   "anchor": "Field.validators",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r43",
+   "anchor": "Field.validate",
+   "kind": "doc",
+   "line": 633
+  },
+  {
+   "id": "r44",
+   "anchor": "Field.validate#if:not self.editable/return",
+   "kind": "lead",
+   "line": 640
+  },
+  {
+   "id": "r45",
+   "anchor": "Field.validate#if:self.choices is not None and value not in self.empty_values/for:option_key, option_value in self.choices/if:isinstance(option_value, (list, tuple))/for:optgroup_key, optgroup_value in option_value",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r46",
+   "anchor": "Field.clean",
+   "kind": "doc",
+   "line": 664
+  },
+  {
+   "id": "r47",
+   "anchor": "Field.db_check",
+   "kind": "doc",
+   "line": 678
+  },
+  {
+   "id": "r48",
+   "anchor": "Field.db_type",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r49",
+   "anchor": "Field.db_type#assign:data",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r50",
+   "anchor": "Field.rel_db_type",
+   "kind": "doc",
+   "line": 716
+  },
+  {
+   "id": "r51",
+   "anchor": "Field.cast_db_type",
+   "kind": "doc",
+   "line": 724
+  },
+  {
+   "id": "r52",
+   "anchor": "Field.db_parameters",
+   "kind": "doc",
+   "line": 731
+  },
+  {
+   "id": "r53",
+   "anchor": "Field.db_returning",
+   "kind": "doc",
+   "line": 761
+  },
+  {
+   "id": "r54",
+   "anchor": "Field.contribute_to_class",
+   "kind": "doc",
+   "line": 775
+  },
+  {
+   "id": "r55",
+   "anchor": "Field.contribute_to_class#if:self.choices is not None/if:'get_%s_display' % self.name not in cls.__dict__",
+   "kind": "lead",
+   "line": 792
+  },
+  {
+   "id": "r56",
+   "anchor": "Field.get_filter_kwargs_for_object",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r57",
+   "anchor": "Field.pre_save",
+   "kind": "doc",
+   "line": 817
+  },
+  {
+   "id": "r58",
+   "anchor": "Field.get_prep_value",
+   "kind": "doc",
+   "line": 821
+  },
+  {
+   "id": "r59",
+   "anchor": "Field.get_db_prep_value",
+   "kind": "doc",
+   "line": 827
+  },
+  {
+   "id": "r60",
+   "anchor": "Field.get_db_prep_save",
+   "kind": "doc",
+   "line": 837
+  },
+  {
+   "id": "r61",
+   "anchor": "Field.has_default",
+   "kind": "doc",
+   "line": 841
+  },
+  {
+   "id": "r62",
+   "anchor": "Field.get_default",
+   "kind": "doc",
+   "line": 845
+  },
+  {
+   "id": "r63",
+   "anchor": "Field._get_default#return",
+   "kind": "trail",
+   "line": 858
+  },
+  {
+   "id": "r64",
+   "anchor": "Field.get_choices",
+   "kind": "doc",
+   "line": 860
+  },
+  {
+   "id": "r65",
+   "anchor": "Field.value_to_string",
+   "kind": "doc",
+   "line": 886
+  },
+  {
+   "id": "r66",
+   "anchor": "Field._get_flatchoices",
+   "kind": "doc",
+   "line": 893
+  },
+  {
+   "id": "r67",
+   "anchor": "Field.formfield",
+   "kind": "doc",
+   "line": 909
+  },
+  {
+   "id": "r68",
+   "anchor": "Field.formfield#if:self.choices is not None/assign:include_blank",
+   "kind": "lead",
+   "line": 924
+  },
+  {
+   "id": "r69",
+   "anchor": "Field.formfield#if:self.choices is not None/for:k in list(kwargs)",
+   "kind": "lead",
+   "line": 937
+  },
+  {
+   "id": "r70",
+   "anchor": "Field.value_from_object",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r71",
+   "anchor": "BooleanField.to_python#if:value in (True, False)/return",
+   "kind": "lead",
+   "line": 968
+  },
+  {
+   "id": "r72",
+   "anchor": "BooleanField.formfield#if:self.choices is not None/else/assign:defaults",
+   "kind": "lead",
+   "line": 994
+  },
+  {
+   "id": "r73",
+   "anchor": "CharField.formfield#assign:defaults",
+   "kind": "lead",
+   "line": 1077
+  },
+  {
+   "id": "r74",
+   "anchor": "CharField.formfield#if:self.null and not connection.features.interprets_empty_strings_as_nulls",
+   "kind": "todo",
+   "line": 1079
+  },
+  {
+   "id": "r75",
+   "anchor": "DateTimeCheckMixin._check_mutually_exclusive_options#assign:mutually_exclusive_options",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r76",
+   "anchor": "DateTimeCheckMixin._check_if_value_fixed",
+   "kind": "lead",
+   "line": 1150
+  },
+  {
+   "id": "r77",
+   "anchor": "DateTimeCheckMixin._check_if_value_fixed",
+   "kind": "doc",
+   "line": 1150
+  },
+  {
+   "id": "r78",
+   "anchor": "DateField._check_fix_default_value",
+   "kind": "doc",
+   "line": 1203
+  },
+  {
+   "id": "r79",
+   "anchor": "DateField._check_fix_default_value#if:isinstance(value, datetime.datetime)/elif:isinstance(value, datetime.date)/else/return",
+   "kind": "lead",
+   "line": 1218
+  },
+  {
+   "id": "r80",
+   "anchor": "DateField._check_fix_default_value#return",
+   "kind": "lead",
+   "line": 1220
+  },
+  {
+   "id": "r81",
+   "anchor": "DateField.to_python#if:isinstance(value, datetime.datetime)/if:settings.USE_TZ and timezone.is_aware(value)/assign:default_timezone",
+   "kind": "lead",
+   "line": 1243
+  },
+  {
+   "id": "r82",
+   "anchor": "DateField.get_db_prep_value#if:not prepared",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r83",
+   "anchor": "DateTimeField._check_fix_default_value",
+   "kind": "lead",
+   "line": 1322
+  },
+  {
+   "id": "r84",
+   "anchor": "DateTimeField._check_fix_default_value",
+   "kind": "doc",
+   "line": 1322
+  },
+  {
+   "id": "r85",
+   "anchor": "DateTimeField._check_fix_default_value#return",
+   "kind": "lead",
+   "line": 1334
+  },
+  {
+   "id": "r86",
+   "anchor": "DateTimeField.to_python#if:isinstance(value, datetime.date)/if:settings.USE_TZ/call:warnings.warn",
+   "kind": "lead",
+   "line": 1351
+  },
+  {
+   "id": "r87",
+   "anchor": "DateTimeField.get_prep_value",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r88",
+   "anchor": "DateTimeField.get_prep_value#if:value is not None and settings.USE_TZ and timezone.is_naive(value)/try",
+   "kind": "lead",
+   "line": 1405
+  },
+  {
+   "id": "r89",
+   "anchor": "DateTimeField.get_db_prep_value#if:not prepared",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r90",
+   "anchor": "DurationField",
+   "kind": "doc",
+   "line": 1575
+  },
+  {
+   "id": "r91",
+   "anchor": "EmailField.__init__#call:kwargs.setdefault",
+   "kind": "lead",
+   "line": 1641
+  },
+  {
+   "id": "r92",
+   "anchor": "EmailField.deconstruct#return",
+   "kind": "lead",
+   "line": 1648
+  },
+  {
+   "id": "r93",
+   "anchor": "EmailField.formfield#return",
+   "kind": "lead",
+   "line": 1653
+  },
+  {
+   "id": "r94",
+   "anchor": "IntegerField.validators#assign:validators_",
+   "kind": "lead",
+   "line": 1792
+  },
+  {
+   "id": "r95",
+   "anchor": "PositiveIntegerRelDbTypeMixin.rel_db_type",
+   "kind": "doc",
+   "line": 2023
+  },
+  {
+   "id": "r96",
+   "anchor": "TextField.formfield#return",
+   "kind": "lead",
+   "line": 2161
+  },
+  {
+   "id": "r97",
+   "anchor": "TimeField._check_fix_default_value",
+   "kind": "doc",
+   "line": 2192
+  },
+  {
+   "id": "r98",
+   "anchor": "TimeField._check_fix_default_value#if:isinstance(value, datetime.datetime)/elif:isinstance(value, datetime.time)/assign:value",
+   "kind": "lead",
+   "line": 2207
+  },
+  {
+   "id": "r99",
+   "anchor": "TimeField._check_fix_default_value#if:isinstance(value, datetime.datetime)/elif:isinstance(value, datetime.time)/else/return",
+   "kind": "lead",
+   "line": 2210
+  },
+  {
+   "id": "r100",
+   "anchor": "TimeField._check_fix_default_value#return",
+   "kind": "lead",
+   "line": 2212
+  },
+  {
+   "id": "r101",
+   "anchor": "TimeField.to_python#if:isinstance(value, datetime.datetime)/return",
+   "kind": "lead",
+   "line": 2237
+  },
+  {
+   "id": "r102",
+   "anchor": "TimeField.get_db_prep_value#if:not prepared",
+   "kind": "lead",
+   "line": 2270
+  },
+  {
+   "id": "r103",
+   "anchor": "URLField.formfield#return",
+   "kind": "lead",
+   "line": 2302
+  },
+  {
+   "id": "r104",
+   "anchor": "BinaryField.value_to_string",
+   "kind": "doc",
+   "line": 2361
+  },
+  {
+   "id": "r105",
+   "anchor": "BinaryField.to_python#if:isinstance(value, str)",
+   "kind": "lead",
+   "line": 2367
+  },
+  {
+   "id": "r106",
+   "anchor": "AutoFieldMeta",
+   "kind": "doc",
+   "line": 2478
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 47732,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10723,
+  "thinking_tokens": 5831,
+  "opus_cost_usd": 0.7496864999999999,
+  "total_cost_usd": 0.7887865,
+  "duration_ms": 95784,
+  "duration_api_ms": 97430,
+  "num_turns": 2
+ },
+ "wall_ms": 96896,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

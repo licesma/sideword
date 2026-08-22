@@ -1,0 +1,1477 @@
+{
+ "blob_sha": "0ba523642aedc058fa0a9eaf7165ef38be9544cb",
+ "path": "astropy/time/core.py",
+ "repo": "astropy/astropy",
+ "records": 242,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:.formats",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "SCALE_OFFSETS",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r5",
+   "anchor": "SIDEREAL_TIME_MODELS",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r6",
+   "anchor": "_LeapSecondsCheck.NOT_STARTED",
+   "kind": "trail",
+   "line": 103
+  },
+  {
+   "id": "r7",
+   "anchor": "_LeapSecondsCheck.RUNNING",
+   "kind": "trail",
+   "line": 104
+  },
+  {
+   "id": "r8",
+   "anchor": "_LeapSecondsCheck.DONE",
+   "kind": "trail",
+   "line": 105
+  },
+  {
+   "id": "r9",
+   "anchor": "TimeInfoBase",
+   "kind": "doc",
+   "line": 112
+  },
+  {
+   "id": "r10",
+   "anchor": "TimeInfoBase._represent_as_dict_extra_attrs",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r11",
+   "anchor": "TimeInfoBase._represent_as_dict_primary_data",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r12",
+   "anchor": "TimeInfoBase.__init__#if:bound",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r13",
+   "anchor": "TimeInfoBase.__init__#if:bound/assign:self.serialize_method",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r14",
+   "anchor": "TimeInfoBase.get_sortable_arrays",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r15",
+   "anchor": "TimeInfoBase.info_summary_stats",
+   "kind": "post",
+   "line": 181
+  },
+  {
+   "id": "r16",
+   "anchor": "TimeInfoBase._construct_from_dict#if:'jd1' in map and 'jd2' in map/assign:format",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r17",
+   "anchor": "TimeInfoBase.new_like",
+   "kind": "doc",
+   "line": 206
+  },
+  {
+   "id": "r18",
+   "anchor": "TimeInfoBase.new_like#assign:attrs",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r19",
+   "anchor": "TimeInfoBase.new_like#call:attrs.pop",
+   "kind": "trail",
+   "line": 236
+  },
+  {
+   "id": "r20",
+   "anchor": "TimeInfoBase.new_like#for:col in cols[1:]",
+   "kind": "lead",
+   "line": 240
+  },
+  {
+   "id": "r21",
+   "anchor": "TimeInfoBase.new_like#for:col in cols[1:]/try",
+   "kind": "lead",
+   "line": 245
+  },
+  {
+   "id": "r22",
+   "anchor": "TimeInfoBase.new_like#assign:shape",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r23",
+   "anchor": "TimeInfoBase.new_like#assign:jd2000",
+   "kind": "trail",
+   "line": 252
+  },
+  {
+   "id": "r24",
+   "anchor": "TimeInfoBase.new_like#for:attr, value in attrs.items()",
+   "kind": "lead",
+   "line": 262
+  },
+  {
+   "id": "r25",
+   "anchor": "TimeInfo",
+   "kind": "doc",
+   "line": 268
+  },
+  {
+   "id": "r26",
+   "anchor": "TimeInfo._represent_as_dict",
+   "kind": "doc",
+   "line": 274
+  },
+  {
+   "id": "r27",
+   "anchor": "TimeInfo._represent_as_dict#if:self._serialize_context == 'ecsv' and map['format'] == 'datetime64' and 'value' in map",
+   "kind": "todo",
+   "line": 286
+  },
+  {
+   "id": "r28",
+   "anchor": "TimeInfo._represent_as_dict#if:self._serialize_context == 'ecsv' and map['format'] == 'datetime64' and 'value' in map",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r29",
+   "anchor": "TimeInfo._represent_as_dict#if:map['format'] == 'datetime' and 'value' in map",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r30",
+   "anchor": "TimeInfo._construct_from_dict#if:map['format'] == 'datetime64' and 'value' in map and map['value'].dtype.kind == 'U'",
+   "kind": "lead",
+   "line": 301
+  },
+  {
+   "id": "r31",
+   "anchor": "TimeInfo._construct_from_dict#if:map['format'] == 'datetime' and 'value' in map",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r32",
+   "anchor": "TimeDeltaInfo",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r33",
+   "anchor": "TimeDeltaInfo.new_like",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r34",
+   "anchor": "TimeDeltaInfo.new_like#assign:attrs",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r35",
+   "anchor": "TimeDeltaInfo.new_like#call:attrs.pop",
+   "kind": "trail",
+   "line": 362
+  },
+  {
+   "id": "r36",
+   "anchor": "TimeDeltaInfo.new_like#assign:shape",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r37",
+   "anchor": "TimeDeltaInfo.new_like#for:attr, value in attrs.items()",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r38",
+   "anchor": "TimeBase",
+   "kind": "doc",
+   "line": 379
+  },
+  {
+   "id": "r39",
+   "anchor": "TimeBase.__array_priority__",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r40",
+   "anchor": "TimeBase._astropy_column_attrs",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r41",
+   "anchor": "TimeBase._init_from_vals",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r42",
+   "anchor": "TimeBase._init_from_vals#assign:val",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r43",
+   "anchor": "TimeBase._init_from_vals#if:val2 is not None",
+   "kind": "lead",
+   "line": 411
+  },
+  {
+   "id": "r44",
+   "anchor": "TimeBase._init_from_vals#assign:mask, val, val2",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r45",
+   "anchor": "TimeBase._init_from_vals#assign:self._time",
+   "kind": "lead",
+   "line": 431
+  },
+  {
+   "id": "r46",
+   "anchor": "TimeBase._init_from_vals#if:hasattr(self._time, '_location')",
+   "kind": "todo",
+   "line": 438
+  },
+  {
+   "id": "r47",
+   "anchor": "TimeBase._init_from_vals#if:mask is not False",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r48",
+   "anchor": "TimeBase._init_from_vals#if:mask is not False/assign:self._time.jd1[mask]",
+   "kind": "trail",
+   "line": 447
+  },
+  {
+   "id": "r49",
+   "anchor": "TimeBase._get_time_fmt",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r50",
+   "anchor": "TimeBase._get_time_fmt#if:format is None and (val.dtype.kind in ('S', 'U', 'O', 'M') or val.dtype.names)/assign:formats",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r51",
+   "anchor": "TimeBase._get_time_fmt#if:format is None and (val.dtype.kind in ('S', 'U', 'O', 'M') or val.dtype.names)/call:formats.append",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r52",
+   "anchor": "TimeBase._get_time_fmt#for:name, cls in formats/try/except:(ValueError, TypeError)/if:len(formats) == 1",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r53",
+   "anchor": "TimeBase.format",
+   "kind": "doc",
+   "line": 519
+  },
+  {
+   "id": "r54",
+   "anchor": "TimeBase.format",
+   "kind": "doc",
+   "line": 536
+  },
+  {
+   "id": "r55",
+   "anchor": "TimeBase.format#assign:self._time",
+   "kind": "lead",
+   "line": 545
+  },
+  {
+   "id": "r56",
+   "anchor": "TimeBase.scale",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r57",
+   "anchor": "TimeBase._set_scale",
+   "kind": "doc",
+   "line": 586
+  },
+  {
+   "id": "r58",
+   "anchor": "TimeBase._set_scale#if:scale == 'utc' or self.scale == 'utc'/call:_check_leapsec",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r59",
+   "anchor": "TimeBase._set_scale#assign:xform",
+   "kind": "lead",
+   "line": 607
+  },
+  {
+   "id": "r60",
+   "anchor": "TimeBase._set_scale#if:xform_sort != xform",
+   "kind": "lead",
+   "line": 612
+  },
+  {
+   "id": "r61",
+   "anchor": "TimeBase._set_scale#assign:jd1, jd2",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r62",
+   "anchor": "TimeBase._set_scale#for:sys1, sys2 in zip(xforms[:-1], xforms[1:])/assign:args",
+   "kind": "lead",
+   "line": 623
+  },
+  {
+   "id": "r63",
+   "anchor": "TimeBase.precision",
+   "kind": "doc",
+   "line": 646
+  },
+  {
+   "id": "r64",
+   "anchor": "TimeBase.in_subfmt",
+   "kind": "doc",
+   "line": 659
+  },
+  {
+   "id": "r65",
+   "anchor": "TimeBase.out_subfmt",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r66",
+   "anchor": "TimeBase.out_subfmt#assign:self._time.out_subfmt",
+   "kind": "lead",
+   "line": 681
+  },
+  {
+   "id": "r67",
+   "anchor": "TimeBase.shape",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r68",
+   "anchor": "TimeBase.shape#assign:reshaped",
+   "kind": "lead",
+   "line": 714
+  },
+  {
+   "id": "r69",
+   "anchor": "TimeBase.shape#for:obj, attr in ((self._time, 'jd1'), (self._time, 'jd2'), (self, '_delta_ut1_utc'), (self, '_delta_tdb_tt'), (self, 'location'))",
+   "kind": "lead",
+   "line": 721
+  },
+  {
+   "id": "r70",
+   "anchor": "TimeBase._shaped_like_input#if:self._time.jd1.shape/else/if:isinstance(value, np.ndarray) and not value.shape and not np.ma.is_masked(value)",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r71",
+   "anchor": "TimeBase._shaped_like_input#if:self._time.jd1.shape/else/if:isinstance(value, np.ndarray) and not value.shape and not np.ma.is_masked(value)/if:value.dtype.kind == 'M'/return",
+   "kind": "lead",
+   "line": 752
+  },
+  {
+   "id": "r72",
+   "anchor": "TimeBase._shaped_like_input#if:self._time.jd1.shape/else/if:isinstance(value, np.ndarray) and not value.shape and not np.ma.is_masked(value)/elif:value.dtype.fields/return",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r73",
+   "anchor": "TimeBase.jd1",
+   "kind": "doc",
+   "line": 763
+  },
+  {
+   "id": "r74",
+   "anchor": "TimeBase.jd2",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r75",
+   "anchor": "TimeBase.to_value",
+   "kind": "doc",
+   "line": 778
+  },
+  {
+   "id": "r76",
+   "anchor": "TimeBase.to_value#if:format not in self.FORMATS",
+   "kind": "todo",
+   "line": 814
+  },
+  {
+   "id": "r77",
+   "anchor": "TimeBase.to_value#assign:key",
+   "kind": "lead",
+   "line": 819
+  },
+  {
+   "id": "r78",
+   "anchor": "TimeBase.to_value#if:key not in cache/assign:kwargs",
+   "kind": "lead",
+   "line": 831
+  },
+  {
+   "id": "r79",
+   "anchor": "TimeBase.to_value#if:key not in cache/try/except:TypeError/call:tm._time._select_subfmts",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r80",
+   "anchor": "TimeBase.to_value#if:key not in cache/try/except:TypeError/if:\"unexpected keyword argument 'out_subfmt'\" in str(exc)",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r81",
+   "anchor": "TimeBase.to_value#if:key not in cache/try/except:TypeError/if:\"unexpected keyword argument 'out_subfmt'\" in str(exc)/else/raise",
+   "kind": "lead",
+   "line": 852
+  },
+  {
+   "id": "r82",
+   "anchor": "TimeBase.value",
+   "kind": "doc",
+   "line": 859
+  },
+  {
+   "id": "r83",
+   "anchor": "TimeBase.insert",
+   "kind": "doc",
+   "line": 871
+  },
+  {
+   "id": "r84",
+   "anchor": "TimeBase.insert#try",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r85",
+   "anchor": "TimeBase.insert#if:idx0 < 0",
+   "kind": "lead",
+   "line": 921
+  },
+  {
+   "id": "r86",
+   "anchor": "TimeBase.insert#if:not isinstance(values, self.__class__)",
+   "kind": "lead",
+   "line": 926
+  },
+  {
+   "id": "r87",
+   "anchor": "TimeBase.insert#assign:out",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r88",
+   "anchor": "TimeBase.insert#assign:out[idx0:idx0 + n_values]",
+   "kind": "lead",
+   "line": 938
+  },
+  {
+   "id": "r89",
+   "anchor": "TimeBase.__setitem__#del:self.cache",
+   "kind": "lead",
+   "line": 956
+  },
+  {
+   "id": "r90",
+   "anchor": "TimeBase.__setitem__#for:attr in ('_delta_tdb_tt', '_delta_ut1_utc')",
+   "kind": "lead",
+   "line": 959
+  },
+  {
+   "id": "r91",
+   "anchor": "TimeBase.__setitem__#if:self.scale is not None",
+   "kind": "lead",
+   "line": 970
+  },
+  {
+   "id": "r92",
+   "anchor": "TimeBase.isclose",
+   "kind": "doc",
+   "line": 975
+  },
+  {
+   "id": "r93",
+   "anchor": "TimeBase.isclose#if:atol is None/assign:atol",
+   "kind": "lead",
+   "line": 996
+  },
+  {
+   "id": "r94",
+   "anchor": "TimeBase.isclose#try/assign:dt",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r95",
+   "anchor": "TimeBase.copy",
+   "kind": "doc",
+   "line": 1014
+  },
+  {
+   "id": "r96",
+   "anchor": "TimeBase.replicate",
+   "kind": "doc",
+   "line": 1039
+  },
+  {
+   "id": "r97",
+   "anchor": "TimeBase._apply",
+   "kind": "doc",
+   "line": 1070
+  },
+  {
+   "id": "r98",
+   "anchor": "TimeBase._apply#assign:tm",
+   "kind": "lead",
+   "line": 1118
+  },
+  {
+   "id": "r99",
+   "anchor": "TimeBase._apply#for:attr in ('_delta_ut1_utc', '_delta_tdb_tt', 'location')",
+   "kind": "lead",
+   "line": 1123
+  },
+  {
+   "id": "r100",
+   "anchor": "TimeBase._apply#for:attr in ('_delta_ut1_utc', '_delta_tdb_tt', 'location')/if:apply_method/if:getattr(val, 'shape', ())",
+   "kind": "lead",
+   "line": 1133
+  },
+  {
+   "id": "r101",
+   "anchor": "TimeBase._apply#for:attr in ('_delta_ut1_utc', '_delta_tdb_tt', 'location')/if:apply_method/elif:method == 'copy' or method == 'flatten'/assign:val",
+   "kind": "lead",
+   "line": 1139
+  },
+  {
+   "id": "r102",
+   "anchor": "TimeBase._apply#if:'info' in self.__dict__",
+   "kind": "lead",
+   "line": 1147
+  },
+  {
+   "id": "r103",
+   "anchor": "TimeBase._apply#if:new_format not in tm.FORMATS",
+   "kind": "lead",
+   "line": 1153
+  },
+  {
+   "id": "r104",
+   "anchor": "TimeBase.__copy__",
+   "kind": "doc",
+   "line": 1170
+  },
+  {
+   "id": "r105",
+   "anchor": "TimeBase.__deepcopy__",
+   "kind": "doc",
+   "line": 1178
+  },
+  {
+   "id": "r106",
+   "anchor": "TimeBase._advanced_index",
+   "kind": "doc",
+   "line": 1186
+  },
+  {
+   "id": "r107",
+   "anchor": "TimeBase.argmin",
+   "kind": "doc",
+   "line": 1236
+  },
+  {
+   "id": "r108",
+   "anchor": "TimeBase.argmin#assign:jd1, jd2",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r109",
+   "anchor": "TimeBase.argmin#assign:dt",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r110",
+   "anchor": "TimeBase.argmax",
+   "kind": "doc",
+   "line": 1259
+  },
+  {
+   "id": "r111",
+   "anchor": "TimeBase.argmax#assign:jd1, jd2",
+   "kind": "lead",
+   "line": 1267
+  },
+  {
+   "id": "r112",
+   "anchor": "TimeBase.argsort",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r113",
+   "anchor": "TimeBase.argsort#assign:jd1, jd2",
+   "kind": "lead",
+   "line": 1283
+  },
+  {
+   "id": "r114",
+   "anchor": "TimeBase.min",
+   "kind": "doc",
+   "line": 1292
+  },
+  {
+   "id": "r115",
+   "anchor": "TimeBase.max",
+   "kind": "doc",
+   "line": 1308
+  },
+  {
+   "id": "r116",
+   "anchor": "TimeBase.ptp",
+   "kind": "doc",
+   "line": 1324
+  },
+  {
+   "id": "r117",
+   "anchor": "TimeBase.sort",
+   "kind": "doc",
+   "line": 1341
+  },
+  {
+   "id": "r118",
+   "anchor": "TimeBase.cache",
+   "kind": "doc",
+   "line": 1359
+  },
+  {
+   "id": "r119",
+   "anchor": "TimeBase.__getattr__",
+   "kind": "doc",
+   "line": 1369
+  },
+  {
+   "id": "r120",
+   "anchor": "TimeBase.__getattr__#if:attr in self.SCALES and self.scale is not None/if:attr not in cache/if:attr == self.scale/else/if:tm.shape/assign:tm.writeable",
+   "kind": "lead",
+   "line": 1383
+  },
+  {
+   "id": "r121",
+   "anchor": "TimeBase.__getattr__#if:attr in self.SCALES and self.scale is not None/elif:attr in TIME_SCALES",
+   "kind": "trail",
+   "line": 1390
+  },
+  {
+   "id": "r122",
+   "anchor": "TimeBase.__getattr__#if:attr in self.SCALES and self.scale is not None/else/return",
+   "kind": "lead",
+   "line": 1402
+  },
+  {
+   "id": "r123",
+   "anchor": "TimeBase._match_shape",
+   "kind": "doc",
+   "line": 1410
+  },
+  {
+   "id": "r124",
+   "anchor": "TimeBase._match_shape#assign:val",
+   "kind": "trail",
+   "line": 1415
+  },
+  {
+   "id": "r125",
+   "anchor": "TimeBase._match_shape#if:val.size > 1 and val.shape != self.shape/try/assign:val",
+   "kind": "lead",
+   "line": 1419
+  },
+  {
+   "id": "r126",
+   "anchor": "TimeBase._time_comparison",
+   "kind": "doc",
+   "line": 1428
+  },
+  {
+   "id": "r127",
+   "anchor": "TimeBase._time_comparison#if:other.__class__ is not self.__class__/try/except:Exception/return",
+   "kind": "lead",
+   "line": 1437
+  },
+  {
+   "id": "r128",
+   "anchor": "TimeBase._time_comparison#if:self.scale is not None and self.scale not in other.SCALES or other.scale is not None and other.scale not in self.SCALES/raise:TypeError",
+   "kind": "lead",
+   "line": 1443
+  },
+  {
+   "id": "r129",
+   "anchor": "TimeBase.__eq__",
+   "kind": "doc",
+   "line": 1458
+  },
+  {
+   "id": "r130",
+   "anchor": "TimeBase.__ne__",
+   "kind": "doc",
+   "line": 1466
+  },
+  {
+   "id": "r131",
+   "anchor": "Time",
+   "kind": "doc",
+   "line": 1481
+  },
+  {
+   "id": "r132",
+   "anchor": "Time.SCALES",
+   "kind": "doc",
+   "line": 1530
+  },
+  {
+   "id": "r133",
+   "anchor": "Time.FORMATS",
+   "kind": "doc",
+   "line": 1533
+  },
+  {
+   "id": "r134",
+   "anchor": "Time.__init__#if:isinstance(val, Time)/if:precision is not None",
+   "kind": "lead",
+   "line": 1565
+  },
+  {
+   "id": "r135",
+   "anchor": "Time.__init__#if:self.location is not None and (self.location.size > 1 and self.location.shape != self.shape)/try/assign:self.location",
+   "kind": "lead",
+   "line": 1583
+  },
+  {
+   "id": "r136",
+   "anchor": "Time._make_value_equivalent",
+   "kind": "doc",
+   "line": 1592
+  },
+  {
+   "id": "r137",
+   "anchor": "Time._make_value_equivalent#if:self.location is not None and self.location.shape",
+   "kind": "lead",
+   "line": 1597
+  },
+  {
+   "id": "r138",
+   "anchor": "Time._make_value_equivalent#if:isinstance(value, Time)/if:self_location is None and value.location is None",
+   "kind": "lead",
+   "line": 1605
+  },
+  {
+   "id": "r139",
+   "anchor": "Time.now",
+   "kind": "doc",
+   "line": 1630
+  },
+  {
+   "id": "r140",
+   "anchor": "Time.now#assign:dtnow",
+   "kind": "lead",
+   "line": 1648
+  },
+  {
+   "id": "r141",
+   "anchor": "Time.strptime",
+   "kind": "doc",
+   "line": 1654
+  },
+  {
+   "id": "r142",
+   "anchor": "Time.strftime",
+   "kind": "doc",
+   "line": 1704
+  },
+  {
+   "id": "r143",
+   "anchor": "Time.light_travel_time",
+   "kind": "doc",
+   "line": 1740
+  },
+  {
+   "id": "r144",
+   "anchor": "Time.light_travel_time#if:not skycoord.is_transformable_to(ICRS())",
+   "kind": "lead",
+   "line": 1790
+  },
+  {
+   "id": "r145",
+   "anchor": "Time.light_travel_time#try",
+   "kind": "lead",
+   "line": 1794
+  },
+  {
+   "id": "r146",
+   "anchor": "Time.light_travel_time#with:solar_system_ephemeris.set(ephemeris)/if:kind.lower() == 'heliocentric'/assign:cpos",
+   "kind": "lead",
+   "line": 1802
+  },
+  {
+   "id": "r147",
+   "anchor": "Time.light_travel_time#with:solar_system_ephemeris.set(ephemeris)/if:kind.lower() == 'heliocentric'/else/assign:gcrs_coo",
+   "kind": "lead",
+   "line": 1806
+  },
+  {
+   "id": "r148",
+   "anchor": "Time.light_travel_time#with:solar_system_ephemeris.set(ephemeris)/if:kind.lower() == 'heliocentric'/else/assign:cpos",
+   "kind": "lead",
+   "line": 1808
+  },
+  {
+   "id": "r149",
+   "anchor": "Time.light_travel_time#assign:spos",
+   "kind": "lead",
+   "line": 1811
+  },
+  {
+   "id": "r150",
+   "anchor": "Time.light_travel_time#assign:cpos",
+   "kind": "lead",
+   "line": 1815
+  },
+  {
+   "id": "r151",
+   "anchor": "Time.light_travel_time#assign:tcor_val",
+   "kind": "lead",
+   "line": 1819
+  },
+  {
+   "id": "r152",
+   "anchor": "Time.earth_rotation_angle",
+   "kind": "doc",
+   "line": 1822
+  },
+  {
+   "id": "r153",
+   "anchor": "Time.sidereal_time",
+   "kind": "doc",
+   "line": 1873
+  },
+  {
+   "id": "r154",
+   "anchor": "Time._sid_time_or_earth_rot_ang",
+   "kind": "doc",
+   "line": 1954
+  },
+  {
+   "id": "r155",
+   "anchor": "Time._sid_time_or_earth_rot_ang#if:longitude is None/else/assign:longitude",
+   "kind": "lead",
+   "line": 1990
+  },
+  {
+   "id": "r156",
+   "anchor": "Time._sid_time_or_earth_rot_ang#if:include_tio/assign:sp",
+   "kind": "todo",
+   "line": 1997
+  },
+  {
+   "id": "r157",
+   "anchor": "Time._sid_time_or_earth_rot_ang#if:include_tio/assign:r",
+   "kind": "lead",
+   "line": 2000
+  },
+  {
+   "id": "r158",
+   "anchor": "Time._sid_time_or_earth_rot_ang#if:include_tio/assign:angle",
+   "kind": "lead",
+   "line": 2005
+  },
+  {
+   "id": "r159",
+   "anchor": "Time._call_erfa#assign:erfa_parameters",
+   "kind": "todo",
+   "line": 2014
+  },
+  {
+   "id": "r160",
+   "anchor": "Time.get_delta_ut1_utc",
+   "kind": "doc",
+   "line": 2025
+  },
+  {
+   "id": "r161",
+   "anchor": "Time._get_delta_ut1_utc",
+   "kind": "lead",
+   "line": 2074
+  },
+  {
+   "id": "r162",
+   "anchor": "Time._get_delta_ut1_utc",
+   "kind": "doc",
+   "line": 2074
+  },
+  {
+   "id": "r163",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')",
+   "kind": "lead",
+   "line": 2083
+  },
+  {
+   "id": "r164",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')/if:jd1 is None",
+   "kind": "lead",
+   "line": 2088
+  },
+  {
+   "id": "r165",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')/assign:delta",
+   "kind": "lead",
+   "line": 2095
+  },
+  {
+   "id": "r166",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')/if:scale == 'ut1'",
+   "kind": "lead",
+   "line": 2098
+  },
+  {
+   "id": "r167",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')/if:scale == 'ut1'/assign:jd1_utc, jd2_utc",
+   "kind": "lead",
+   "line": 2101
+  },
+  {
+   "id": "r168",
+   "anchor": "Time._get_delta_ut1_utc#if:not hasattr(self, '_delta_ut1_utc')/if:scale == 'ut1'/assign:delta",
+   "kind": "lead",
+   "line": 2103
+  },
+  {
+   "id": "r169",
+   "anchor": "Time._set_delta_ut1_utc#if:hasattr(val, 'to')",
+   "kind": "trail",
+   "line": 2111
+  },
+  {
+   "id": "r170",
+   "anchor": "Time.delta_ut1_utc",
+   "kind": "lead",
+   "line": 2118
+  },
+  {
+   "id": "r171",
+   "anchor": "Time.delta_ut1_utc",
+   "kind": "doc",
+   "line": 2118
+  },
+  {
+   "id": "r172",
+   "anchor": "Time._get_delta_tdb_tt",
+   "kind": "lead",
+   "line": 2122
+  },
+  {
+   "id": "r173",
+   "anchor": "Time._get_delta_tdb_tt#if:not hasattr(self, '_delta_tdb_tt')/if:jd1 is None or jd2 is None",
+   "kind": "lead",
+   "line": 2127
+  },
+  {
+   "id": "r174",
+   "anchor": "Time._get_delta_tdb_tt#if:not hasattr(self, '_delta_tdb_tt')/assign:njd1, njd2",
+   "kind": "lead",
+   "line": 2140
+  },
+  {
+   "id": "r175",
+   "anchor": "Time._get_delta_tdb_tt#if:not hasattr(self, '_delta_tdb_tt')/assign:ut",
+   "kind": "lead",
+   "line": 2143
+  },
+  {
+   "id": "r176",
+   "anchor": "Time._get_delta_tdb_tt#if:not hasattr(self, '_delta_tdb_tt')/if:self.location is None/assign:self._delta_tdb_tt",
+   "kind": "lead",
+   "line": 2147
+  },
+  {
+   "id": "r177",
+   "anchor": "Time._get_delta_tdb_tt#if:not hasattr(self, '_delta_tdb_tt')/if:self.location is None/else/assign:lon",
+   "kind": "lead",
+   "line": 2151
+  },
+  {
+   "id": "r178",
+   "anchor": "Time._set_delta_tdb_tt#if:hasattr(val, 'to')",
+   "kind": "trail",
+   "line": 2162
+  },
+  {
+   "id": "r179",
+   "anchor": "Time.delta_tdb_tt",
+   "kind": "lead",
+   "line": 2169
+  },
+  {
+   "id": "r180",
+   "anchor": "Time.delta_tdb_tt",
+   "kind": "doc",
+   "line": 2169
+  },
+  {
+   "id": "r181",
+   "anchor": "Time.__sub__#assign:other_is_delta",
+   "kind": "lead",
+   "line": 2175
+  },
+  {
+   "id": "r182",
+   "anchor": "Time.__sub__#if:other_is_delta",
+   "kind": "trail",
+   "line": 2176
+  },
+  {
+   "id": "r183",
+   "anchor": "Time.__sub__#if:other_is_delta/if:not isinstance(other, TimeDelta)",
+   "kind": "lead",
+   "line": 2178
+  },
+  {
+   "id": "r184",
+   "anchor": "Time.__sub__#if:other_is_delta/assign:out",
+   "kind": "lead",
+   "line": 2186
+  },
+  {
+   "id": "r185",
+   "anchor": "Time.__sub__#if:other_is_delta/for:attr in ('_delta_ut1_utc', '_delta_tdb_tt')",
+   "kind": "lead",
+   "line": 2200
+  },
+  {
+   "id": "r186",
+   "anchor": "Time.__sub__#if:other_is_delta/else",
+   "kind": "trail",
+   "line": 2204
+  },
+  {
+   "id": "r187",
+   "anchor": "Time.__sub__#if:other_is_delta/else/if:other.scale not in self.SCALES",
+   "kind": "lead",
+   "line": 2206
+  },
+  {
+   "id": "r188",
+   "anchor": "Time.__sub__#if:other_is_delta/else/assign:out",
+   "kind": "lead",
+   "line": 2213
+  },
+  {
+   "id": "r189",
+   "anchor": "Time.__sub__#if:other_is_delta/call:out._set_scale",
+   "kind": "lead",
+   "line": 2226
+  },
+  {
+   "id": "r190",
+   "anchor": "Time.__add__#if:isinstance(other, Time)",
+   "kind": "lead",
+   "line": 2233
+  },
+  {
+   "id": "r191",
+   "anchor": "Time.__add__#if:not isinstance(other, TimeDelta)",
+   "kind": "lead",
+   "line": 2237
+  },
+  {
+   "id": "r192",
+   "anchor": "Time.__add__#assign:out",
+   "kind": "lead",
+   "line": 2246
+  },
+  {
+   "id": "r193",
+   "anchor": "Time.__add__#for:attr in ('_delta_ut1_utc', '_delta_tdb_tt')",
+   "kind": "lead",
+   "line": 2260
+  },
+  {
+   "id": "r194",
+   "anchor": "Time.__add__#call:out._set_scale",
+   "kind": "lead",
+   "line": 2270
+  },
+  {
+   "id": "r195",
+   "anchor": "Time.__radd__",
+   "kind": "lead",
+   "line": 2276
+  },
+  {
+   "id": "r196",
+   "anchor": "Time.__array_function__",
+   "kind": "doc",
+   "line": 2279
+  },
+  {
+   "id": "r197",
+   "anchor": "Time.to_datetime#assign:tm",
+   "kind": "todo",
+   "line": 2308
+  },
+  {
+   "id": "r198",
+   "anchor": "TimeDeltaMissingUnitWarning",
+   "kind": "doc",
+   "line": 2314
+  },
+  {
+   "id": "r199",
+   "anchor": "TimeDelta",
+   "kind": "doc",
+   "line": 2319
+  },
+  {
+   "id": "r200",
+   "anchor": "TimeDelta.SCALES",
+   "kind": "doc",
+   "line": 2369
+  },
+  {
+   "id": "r201",
+   "anchor": "TimeDelta.FORMATS",
+   "kind": "doc",
+   "line": 2372
+  },
+  {
+   "id": "r202",
+   "anchor": "TimeDelta.to_datetime",
+   "kind": "doc",
+   "line": 2415
+  },
+  {
+   "id": "r203",
+   "anchor": "TimeDelta._set_scale",
+   "kind": "doc",
+   "line": 2422
+  },
+  {
+   "id": "r204",
+   "anchor": "TimeDelta._set_scale#assign:scale_offset",
+   "kind": "lead",
+   "line": 2436
+  },
+  {
+   "id": "r205",
+   "anchor": "TimeDelta._add_sub",
+   "kind": "doc",
+   "line": 2447
+  },
+  {
+   "id": "r206",
+   "anchor": "TimeDelta._add_sub#if:not isinstance(other, TimeDelta)",
+   "kind": "lead",
+   "line": 2450
+  },
+  {
+   "id": "r207",
+   "anchor": "TimeDelta._add_sub#if:self.scale is not None and self.scale not in other.SCALES or other.scale is not None and other.scale not in self.SCALES",
+   "kind": "lead",
+   "line": 2457
+  },
+  {
+   "id": "r208",
+   "anchor": "TimeDelta._add_sub#if:self.scale is not None or other.scale is None",
+   "kind": "lead",
+   "line": 2463
+  },
+  {
+   "id": "r209",
+   "anchor": "TimeDelta.__add__#if:isinstance(other, Time)",
+   "kind": "lead",
+   "line": 2479
+  },
+  {
+   "id": "r210",
+   "anchor": "TimeDelta.__sub__#if:isinstance(other, Time)",
+   "kind": "lead",
+   "line": 2486
+  },
+  {
+   "id": "r211",
+   "anchor": "TimeDelta.__neg__",
+   "kind": "doc",
+   "line": 2498
+  },
+  {
+   "id": "r212",
+   "anchor": "TimeDelta.__abs__",
+   "kind": "doc",
+   "line": 2505
+  },
+  {
+   "id": "r213",
+   "anchor": "TimeDelta.__mul__",
+   "kind": "doc",
+   "line": 2514
+  },
+  {
+   "id": "r214",
+   "anchor": "TimeDelta.__mul__#if:isinstance(other, Time)",
+   "kind": "lead",
+   "line": 2518
+  },
+  {
+   "id": "r215",
+   "anchor": "TimeDelta.__mul__#try",
+   "kind": "lead",
+   "line": 2527
+  },
+  {
+   "id": "r216",
+   "anchor": "TimeDelta.__mul__#try/except:Exception/try",
+   "kind": "lead",
+   "line": 2532
+  },
+  {
+   "id": "r217",
+   "anchor": "TimeDelta.__mul__#try/except:Exception/try/except:Exception/return",
+   "kind": "lead",
+   "line": 2537
+  },
+  {
+   "id": "r218",
+   "anchor": "TimeDelta.__rmul__",
+   "kind": "doc",
+   "line": 2546
+  },
+  {
+   "id": "r219",
+   "anchor": "TimeDelta.__truediv__",
+   "kind": "doc",
+   "line": 2550
+  },
+  {
+   "id": "r220",
+   "anchor": "TimeDelta.__truediv__#if:(isinstance(other, u.UnitBase) and other == u.dimensionless_unscaled) or (isinstance(other, str) and other == '')",
+   "kind": "lead",
+   "line": 2553
+  },
+  {
+   "id": "r221",
+   "anchor": "TimeDelta.__truediv__#try",
+   "kind": "lead",
+   "line": 2560
+  },
+  {
+   "id": "r222",
+   "anchor": "TimeDelta.__truediv__#try/except:Exception/try",
+   "kind": "lead",
+   "line": 2565
+  },
+  {
+   "id": "r223",
+   "anchor": "TimeDelta.__truediv__#try/except:Exception/try/except:Exception/return",
+   "kind": "lead",
+   "line": 2570
+  },
+  {
+   "id": "r224",
+   "anchor": "TimeDelta.__rtruediv__",
+   "kind": "doc",
+   "line": 2579
+  },
+  {
+   "id": "r225",
+   "anchor": "TimeDelta.__rtruediv__#return",
+   "kind": "lead",
+   "line": 2583
+  },
+  {
+   "id": "r226",
+   "anchor": "TimeDelta.to",
+   "kind": "doc",
+   "line": 2585
+  },
+  {
+   "id": "r227",
+   "anchor": "TimeDelta.to_value",
+   "kind": "doc",
+   "line": 2611
+  },
+  {
+   "id": "r228",
+   "anchor": "TimeDelta.to_value#if:'format' in kwargs or (args != () and (args[0] is None or args[0] in self.FORMATS))",
+   "kind": "todo",
+   "line": 2682
+  },
+  {
+   "id": "r229",
+   "anchor": "TimeDelta.to_value#if:'format' in kwargs or (args != () and (args[0] is None or args[0] in self.FORMATS))/return",
+   "kind": "lead",
+   "line": 2685
+  },
+  {
+   "id": "r230",
+   "anchor": "TimeDelta.to_value#if:args",
+   "kind": "lead",
+   "line": 2689
+  },
+  {
+   "id": "r231",
+   "anchor": "TimeDelta._make_value_equivalent",
+   "kind": "doc",
+   "line": 2701
+  },
+  {
+   "id": "r232",
+   "anchor": "TimeDelta.isclose",
+   "kind": "doc",
+   "line": 2711
+  },
+  {
+   "id": "r233",
+   "anchor": "_make_array",
+   "kind": "doc",
+   "line": 2750
+  },
+  {
+   "id": "r234",
+   "anchor": "_make_array#if:val.dtype.kind == \"f\" and val.dtype.itemsize >= np.dtype(np.float64).itemsize",
+   "kind": "lead",
+   "line": 2770
+  },
+  {
+   "id": "r235",
+   "anchor": "_check_for_masked_and_fill",
+   "kind": "doc",
+   "line": 2780
+  },
+  {
+   "id": "r236",
+   "anchor": "_check_for_masked_and_fill.get_as_filled_ndarray",
+   "kind": "doc",
+   "line": 2804
+  },
+  {
+   "id": "r237",
+   "anchor": "_check_for_masked_and_fill.get_as_filled_ndarray#if:np.any(val.mask)/assign:mask",
+   "kind": "lead",
+   "line": 2816
+  },
+  {
+   "id": "r238",
+   "anchor": "_check_for_masked_and_fill.get_as_filled_ndarray#if:np.any(val.mask)/assign:val_unmasked",
+   "kind": "lead",
+   "line": 2822
+  },
+  {
+   "id": "r239",
+   "anchor": "_check_for_masked_and_fill.get_as_filled_ndarray#if:np.any(val.mask)/assign:val_unmasked",
+   "kind": "trail",
+   "line": 2822
+  },
+  {
+   "id": "r240",
+   "anchor": "_check_for_masked_and_fill.get_as_filled_ndarray#assign:val",
+   "kind": "lead",
+   "line": 2828
+  },
+  {
+   "id": "r241",
+   "anchor": "_check_leapsec#if:_LEAP_SECONDS_CHECK != _LeapSecondsCheck.DONE/with:_LEAP_SECONDS_LOCK/if:_LEAP_SECONDS_CHECK == _LeapSecondsCheck.NOT_STARTED",
+   "kind": "lead",
+   "line": 2862
+  },
+  {
+   "id": "r242",
+   "anchor": "update_leap_seconds",
+   "kind": "doc",
+   "line": 2868
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 68919,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 23236,
+  "thinking_tokens": 10846,
+  "opus_cost_usd": 1.2743815,
+  "total_cost_usd": 1.3297355,
+  "duration_ms": 193208,
+  "duration_api_ms": 194924,
+  "num_turns": 2
+ },
+ "wall_ms": 194282,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

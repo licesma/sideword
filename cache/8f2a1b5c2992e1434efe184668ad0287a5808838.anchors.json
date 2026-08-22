@@ -1,0 +1,307 @@
+{
+ "blob_sha": "8f2a1b5c2992e1434efe184668ad0287a5808838",
+ "path": "requests/packages/urllib3/response.py",
+ "repo": "psf/requests",
+ "records": 47,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "HTTPResponse",
+   "kind": "doc",
+   "line": 68
+  },
+  {
+   "id": "r2",
+   "anchor": "HTTPResponse.chunked",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r3",
+   "anchor": "HTTPResponse.__init__#assign:encodings",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r4",
+   "anchor": "HTTPResponse.__init__#if:preload_content and not self._body",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r5",
+   "anchor": "HTTPResponse.get_redirect_location",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r6",
+   "anchor": "HTTPResponse.data#if:self._body",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r7",
+   "anchor": "HTTPResponse.tell",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r8",
+   "anchor": "HTTPResponse._init_decoder",
+   "kind": "doc",
+   "line": 176
+  },
+  {
+   "id": "r9",
+   "anchor": "HTTPResponse._init_decoder#assign:content_encoding",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r10",
+   "anchor": "HTTPResponse._decode",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r11",
+   "anchor": "HTTPResponse._flush_decoder",
+   "kind": "doc",
+   "line": 204
+  },
+  {
+   "id": "r12",
+   "anchor": "HTTPResponse._error_catcher",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r13",
+   "anchor": "HTTPResponse._error_catcher#try/try/except:SocketTimeout/raise:ReadTimeoutError",
+   "kind": "todo",
+   "line": 231
+  },
+  {
+   "id": "r14",
+   "anchor": "HTTPResponse._error_catcher#try/try/except:BaseSSLError/if:'read operation timed out' not in str(e)",
+   "kind": "todo",
+   "line": 235
+  },
+  {
+   "id": "r15",
+   "anchor": "HTTPResponse._error_catcher#try/try/except:BaseSSLError/if:'read operation timed out' not in str(e)",
+   "kind": "trail",
+   "line": 235
+  },
+  {
+   "id": "r16",
+   "anchor": "HTTPResponse._error_catcher#try/try/except:BaseSSLError/if:'read operation timed out' not in str(e)/raise",
+   "kind": "lead",
+   "line": 238
+  },
+  {
+   "id": "r17",
+   "anchor": "HTTPResponse._error_catcher#try/try/except:(HTTPException, SocketError)/raise:ProtocolError",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r18",
+   "anchor": "HTTPResponse._error_catcher#try/except:Exception/if:self._original_response and not self._original_response.isclosed()",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r19",
+   "anchor": "HTTPResponse._error_catcher#try/except:Exception/if:self._connection is not None",
+   "kind": "lead",
+   "line": 255
+  },
+  {
+   "id": "r20",
+   "anchor": "HTTPResponse.read",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r21",
+   "anchor": "HTTPResponse.read#with:self._error_catcher()/if:amt is None/assign:data",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r22",
+   "anchor": "HTTPResponse.read#with:self._error_catcher()/if:amt is None/else/if:amt != 0 and not data",
+   "kind": "trail",
+   "line": 302
+  },
+  {
+   "id": "r23",
+   "anchor": "HTTPResponse.read#with:self._error_catcher()/if:amt is None/else/if:amt != 0 and not data/call:self._fp.close",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r24",
+   "anchor": "HTTPResponse.stream",
+   "kind": "doc",
+   "line": 323
+  },
+  {
+   "id": "r25",
+   "anchor": "HTTPResponse.from_httplib",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r26",
+   "anchor": "HTTPResponse.from_httplib#if:not isinstance(headers, HTTPHeaderDict)/if:PY3",
+   "kind": "trail",
+   "line": 361
+  },
+  {
+   "id": "r27",
+   "anchor": "HTTPResponse.from_httplib#if:not isinstance(headers, HTTPHeaderDict)/if:PY3/else",
+   "kind": "trail",
+   "line": 363
+  },
+  {
+   "id": "r28",
+   "anchor": "HTTPResponse.from_httplib#assign:strict",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r29",
+   "anchor": "HTTPResponse.getheaders",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r30",
+   "anchor": "HTTPResponse.close",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r31",
+   "anchor": "HTTPResponse.closed#if:self._fp is None/elif:hasattr(self._fp, 'closed')/elif:hasattr(self._fp, 'isclosed')",
+   "kind": "trail",
+   "line": 396
+  },
+  {
+   "id": "r32",
+   "anchor": "HTTPResponse.readable#return",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r33",
+   "anchor": "HTTPResponse.readinto#assign:temp",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r34",
+   "anchor": "HTTPResponse._update_chunk_length#if:self.chunk_left is not None",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r35",
+   "anchor": "HTTPResponse._update_chunk_length#try/except:ValueError/call:self.close",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r36",
+   "anchor": "HTTPResponse._handle_chunk#if:amt is None/call:self._fp._safe_read",
+   "kind": "trail",
+   "line": 446
+  },
+  {
+   "id": "r37",
+   "anchor": "HTTPResponse._handle_chunk#if:amt is None/elif:amt < self.chunk_left/elif:amt == self.chunk_left/call:self._fp._safe_read",
+   "kind": "trail",
+   "line": 454
+  },
+  {
+   "id": "r38",
+   "anchor": "HTTPResponse._handle_chunk#if:amt is None/elif:amt < self.chunk_left/elif:amt == self.chunk_left/else",
+   "kind": "trail",
+   "line": 457
+  },
+  {
+   "id": "r39",
+   "anchor": "HTTPResponse._handle_chunk#if:amt is None/elif:amt < self.chunk_left/elif:amt == self.chunk_left/else/call:self._fp._safe_read",
+   "kind": "trail",
+   "line": 459
+  },
+  {
+   "id": "r40",
+   "anchor": "HTTPResponse.read_chunked",
+   "kind": "doc",
+   "line": 463
+  },
+  {
+   "id": "r41",
+   "anchor": "HTTPResponse.read_chunked#if:not self.chunked",
+   "kind": "todo",
+   "line": 474
+  },
+  {
+   "id": "r42",
+   "anchor": "HTTPResponse.read_chunked#if:self._original_response and is_response_to_head(self._original_response)",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r43",
+   "anchor": "HTTPResponse.read_chunked#with:self._error_catcher()/if:decode_content/assign:decoded",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r44",
+   "anchor": "HTTPResponse.read_chunked#with:self._error_catcher()/if:decode_content/if:decoded",
+   "kind": "trail",
+   "line": 500
+  },
+  {
+   "id": "r45",
+   "anchor": "HTTPResponse.read_chunked#with:self._error_catcher()/while:True",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r46",
+   "anchor": "HTTPResponse.read_chunked#with:self._error_catcher()/while:True/if:not line/break",
+   "kind": "lead",
+   "line": 508
+  },
+  {
+   "id": "r47",
+   "anchor": "HTTPResponse.read_chunked#with:self._error_catcher()/if:self._original_response",
+   "kind": "lead",
+   "line": 513
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12743,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5288,
+  "thinking_tokens": 2649,
+  "opus_cost_usd": 0.26392150000000003,
+  "total_cost_usd": 0.27293950000000006,
+  "duration_ms": 48051,
+  "duration_api_ms": 49518,
+  "num_turns": 2
+ },
+ "wall_ms": 49107,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

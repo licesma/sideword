@@ -1,0 +1,841 @@
+{
+ "blob_sha": "a165ef3c994a2b3ec5f765c17ca11f0bfb5d5945",
+ "path": "lib/matplotlib/lines.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 136,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:.",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_dash_pattern",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_dash_pattern#if:isinstance(style, str)",
+   "kind": "lead",
+   "line": 36
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_dash_pattern#if:style in ['solid', 'None']",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_dash_pattern#if:style in ['solid', 'None']/elif:style in ['dashed', 'dashdot', 'dotted']",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r7",
+   "anchor": "_get_dash_pattern#if:style in ['solid', 'None']/elif:style in ['dashed', 'dashdot', 'dotted']/elif:isinstance(style, tuple)",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "_get_dash_pattern#if:dashes is not None",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r9",
+   "anchor": "_get_inverse_dash_pattern",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r10",
+   "anchor": "_get_inverse_dash_pattern#assign:gaps",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r11",
+   "anchor": "_get_inverse_dash_pattern#assign:offset_gaps",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r12",
+   "anchor": "segment_hits",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r13",
+   "anchor": "segment_hits#if:len(x) <= 1",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r14",
+   "anchor": "segment_hits#assign:xr, yr",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r15",
+   "anchor": "segment_hits#assign:dx, dy",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r16",
+   "anchor": "segment_hits#assign:Lnorm_sq",
+   "kind": "trail",
+   "line": 100
+  },
+  {
+   "id": "r17",
+   "anchor": "segment_hits#assign:point_hits",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r18",
+   "anchor": "segment_hits#assign:px, py",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r19",
+   "anchor": "_mark_every_path",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r20",
+   "anchor": "_mark_every_path#assign:codes, verts",
+   "kind": "lead",
+   "line": 130
+  },
+  {
+   "id": "r21",
+   "anchor": "_mark_every_path._slice_or_none",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r22",
+   "anchor": "_mark_every_path#if:isinstance(markevery, Integral)",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r23",
+   "anchor": "_mark_every_path#if:isinstance(markevery, Integral)/elif:isinstance(markevery, Real)",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r24",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r25",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/if:not isinstance(start, Integral)",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r26",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/return",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r27",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/elif:isinstance(step, Real)/assign:fin",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r28",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/elif:isinstance(step, Real)/assign:(x0, y0), (x1, y1)",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r29",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/elif:isinstance(step, Real)/assign:inds",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r30",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/if:isinstance(step, Integral)/elif:isinstance(step, Real)/return",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r31",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/elif:isinstance(markevery, slice)/return",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r32",
+   "anchor": "_mark_every_path#if:isinstance(markevery, tuple)/elif:isinstance(markevery, slice)/elif:np.iterable(markevery)/try",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r33",
+   "anchor": "Line2D",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r34",
+   "anchor": "Line2D.lineStyles",
+   "kind": "trail",
+   "line": 237
+  },
+  {
+   "id": "r35",
+   "anchor": "Line2D.drawStyles",
+   "kind": "lead",
+   "line": 259
+  },
+  {
+   "id": "r36",
+   "anchor": "Line2D.drawStyleKeys",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r37",
+   "anchor": "Line2D.markers",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r38",
+   "anchor": "Line2D.__init__#param:linewidth",
+   "kind": "trail",
+   "line": 287
+  },
+  {
+   "id": "r39",
+   "anchor": "Line2D.__init__",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r40",
+   "anchor": "Line2D.__init__#if:not np.iterable(xdata)",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r41",
+   "anchor": "Line2D._unscaled_dash_pattern",
+   "kind": "trail",
+   "line": 367
+  },
+  {
+   "id": "r42",
+   "anchor": "Line2D._dash_pattern",
+   "kind": "trail",
+   "line": 368
+  },
+  {
+   "id": "r43",
+   "anchor": "Line2D.__init__#if:marker is None/assign:marker",
+   "kind": "trail",
+   "line": 377
+  },
+  {
+   "id": "r44",
+   "anchor": "Line2D.__init__#call:self.set_markerfacecolor",
+   "kind": "trail",
+   "line": 399
+  },
+  {
+   "id": "r45",
+   "anchor": "Line2D.__init__#call:self.set_markeredgecolor",
+   "kind": "trail",
+   "line": 401
+  },
+  {
+   "id": "r46",
+   "anchor": "Line2D.__init__#call:self._internal_update",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r47",
+   "anchor": "Line2D._x_filled",
+   "kind": "trail",
+   "line": 423
+  },
+  {
+   "id": "r48",
+   "anchor": "Line2D.contains",
+   "kind": "doc",
+   "line": 427
+  },
+  {
+   "id": "r49",
+   "anchor": "Line2D.contains#if:self._invalidy or self._invalidx",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r50",
+   "anchor": "Line2D.contains#assign:transformed_path",
+   "kind": "lead",
+   "line": 462
+  },
+  {
+   "id": "r51",
+   "anchor": "Line2D.contains#if:self.figure is None",
+   "kind": "lead",
+   "line": 470
+  },
+  {
+   "id": "r52",
+   "anchor": "Line2D.contains#with:np.errstate(all='ignore')",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r53",
+   "anchor": "Line2D.contains#with:np.errstate(all='ignore')/if:self._linestyle in ['None', None]",
+   "kind": "lead",
+   "line": 481
+  },
+  {
+   "id": "r54",
+   "anchor": "Line2D.contains#with:np.errstate(all='ignore')/if:self._linestyle in ['None', None]/assign:ind",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r55",
+   "anchor": "Line2D.contains#with:np.errstate(all='ignore')/if:self._linestyle in ['None', None]/else/assign:ind",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r56",
+   "anchor": "Line2D.contains#return",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r57",
+   "anchor": "Line2D.get_pickradius",
+   "kind": "doc",
+   "line": 497
+  },
+  {
+   "id": "r58",
+   "anchor": "Line2D.set_pickradius",
+   "kind": "doc",
+   "line": 506
+  },
+  {
+   "id": "r59",
+   "anchor": "Line2D.get_fillstyle",
+   "kind": "doc",
+   "line": 523
+  },
+  {
+   "id": "r60",
+   "anchor": "Line2D.set_fillstyle",
+   "kind": "doc",
+   "line": 531
+  },
+  {
+   "id": "r61",
+   "anchor": "Line2D.set_markevery",
+   "kind": "doc",
+   "line": 551
+  },
+  {
+   "id": "r62",
+   "anchor": "Line2D.get_markevery",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r63",
+   "anchor": "Line2D.set_picker",
+   "kind": "doc",
+   "line": 618
+  },
+  {
+   "id": "r64",
+   "anchor": "Line2D.get_bbox",
+   "kind": "doc",
+   "line": 631
+  },
+  {
+   "id": "r65",
+   "anchor": "Line2D.get_window_extent#if:self._marker",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r66",
+   "anchor": "Line2D.set_data",
+   "kind": "doc",
+   "line": 648
+  },
+  {
+   "id": "r67",
+   "anchor": "Line2D.recache#assign:self._x, self._y",
+   "kind": "trail",
+   "line": 680
+  },
+  {
+   "id": "r68",
+   "anchor": "Line2D._transform_path",
+   "kind": "doc",
+   "line": 710
+  },
+  {
+   "id": "r69",
+   "anchor": "Line2D._transform_path#if:subslice is not None",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r70",
+   "anchor": "Line2D._get_transformed_path",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r71",
+   "anchor": "Line2D.set_transform#assign:self._invalidx",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r72",
+   "anchor": "Line2D._is_sorted",
+   "kind": "doc",
+   "line": 737
+  },
+  {
+   "id": "r73",
+   "anchor": "Line2D._is_sorted#return",
+   "kind": "lead",
+   "line": 740
+  },
+  {
+   "id": "r74",
+   "anchor": "Line2D.draw#if:not self.get_visible()",
+   "kind": "lead",
+   "line": 746
+  },
+  {
+   "id": "r75",
+   "anchor": "Line2D.draw#assign:self.ind_offset",
+   "kind": "trail",
+   "line": 751
+  },
+  {
+   "id": "r76",
+   "anchor": "Line2D.draw#if:self._lineStyles[self._linestyle] != '_draw_nothing'/if:len(tpath.vertices)/if:self.is_dashed() and self._gapcolor is not None",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r77",
+   "anchor": "Line2D.draw#if:self._marker and self._markersize > 0/if:cbook._str_equal(self._markeredgecolor, \"auto\") and not cbook._str_lower_equal(self.get_markerfacecolor(), \"none\")",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r78",
+   "anchor": "Line2D.draw#if:self._marker and self._markersize > 0/if:self.get_drawstyle() != \"default\"",
+   "kind": "lead",
+   "line": 836
+  },
+  {
+   "id": "r79",
+   "anchor": "Line2D.draw#if:self._marker and self._markersize > 0/if:len(tpath.vertices)/assign:markevery",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r80",
+   "anchor": "Line2D.draw#if:self._marker and self._markersize > 0/if:len(tpath.vertices)/if:cbook._str_equal(marker.get_marker(), \",\")/else/assign:marker_trans",
+   "kind": "lead",
+   "line": 870
+  },
+  {
+   "id": "r81",
+   "anchor": "Line2D.get_antialiased",
+   "kind": "doc",
+   "line": 888
+  },
+  {
+   "id": "r82",
+   "anchor": "Line2D.get_color",
+   "kind": "doc",
+   "line": 892
+  },
+  {
+   "id": "r83",
+   "anchor": "Line2D.get_drawstyle",
+   "kind": "doc",
+   "line": 900
+  },
+  {
+   "id": "r84",
+   "anchor": "Line2D.get_gapcolor",
+   "kind": "doc",
+   "line": 908
+  },
+  {
+   "id": "r85",
+   "anchor": "Line2D.get_linestyle",
+   "kind": "doc",
+   "line": 916
+  },
+  {
+   "id": "r86",
+   "anchor": "Line2D.get_linewidth",
+   "kind": "doc",
+   "line": 924
+  },
+  {
+   "id": "r87",
+   "anchor": "Line2D.get_marker",
+   "kind": "doc",
+   "line": 932
+  },
+  {
+   "id": "r88",
+   "anchor": "Line2D.get_markeredgecolor",
+   "kind": "doc",
+   "line": 940
+  },
+  {
+   "id": "r89",
+   "anchor": "Line2D.get_markeredgecolor#if:cbook._str_equal(mec, 'auto')/if:mpl.rcParams['_internal.classic_mode']/if:self._marker.is_filled() and self._marker.get_fillstyle() != 'none'/return",
+   "kind": "trail",
+   "line": 953
+  },
+  {
+   "id": "r90",
+   "anchor": "Line2D.get_markeredgewidth",
+   "kind": "doc",
+   "line": 958
+  },
+  {
+   "id": "r91",
+   "anchor": "Line2D.get_markerfacecolor",
+   "kind": "doc",
+   "line": 975
+  },
+  {
+   "id": "r92",
+   "anchor": "Line2D.get_markerfacecoloralt",
+   "kind": "doc",
+   "line": 983
+  },
+  {
+   "id": "r93",
+   "anchor": "Line2D.get_markersize",
+   "kind": "doc",
+   "line": 991
+  },
+  {
+   "id": "r94",
+   "anchor": "Line2D.get_data",
+   "kind": "doc",
+   "line": 999
+  },
+  {
+   "id": "r95",
+   "anchor": "Line2D.get_xdata",
+   "kind": "doc",
+   "line": 1007
+  },
+  {
+   "id": "r96",
+   "anchor": "Line2D.get_ydata",
+   "kind": "doc",
+   "line": 1020
+  },
+  {
+   "id": "r97",
+   "anchor": "Line2D.get_path",
+   "kind": "doc",
+   "line": 1033
+  },
+  {
+   "id": "r98",
+   "anchor": "Line2D.get_xydata",
+   "kind": "doc",
+   "line": 1039
+  },
+  {
+   "id": "r99",
+   "anchor": "Line2D.set_antialiased",
+   "kind": "doc",
+   "line": 1045
+  },
+  {
+   "id": "r100",
+   "anchor": "Line2D.set_color",
+   "kind": "doc",
+   "line": 1057
+  },
+  {
+   "id": "r101",
+   "anchor": "Line2D.set_drawstyle",
+   "kind": "doc",
+   "line": 1069
+  },
+  {
+   "id": "r102",
+   "anchor": "Line2D.set_drawstyle#if:self._drawstyle != drawstyle/assign:self._invalidx",
+   "kind": "lead",
+   "line": 1101
+  },
+  {
+   "id": "r103",
+   "anchor": "Line2D.set_gapcolor",
+   "kind": "doc",
+   "line": 1104
+  },
+  {
+   "id": "r104",
+   "anchor": "Line2D.set_linewidth",
+   "kind": "doc",
+   "line": 1127
+  },
+  {
+   "id": "r105",
+   "anchor": "Line2D.set_linestyle",
+   "kind": "doc",
+   "line": 1142
+  },
+  {
+   "id": "r106",
+   "anchor": "Line2D.set_marker",
+   "kind": "doc",
+   "line": 1188
+  },
+  {
+   "id": "r107",
+   "anchor": "Line2D._set_markercolor#if:current is None/else/if:neq.any() if isinstance(neq, np.ndarray) else neq",
+   "kind": "lead",
+   "line": 1211
+  },
+  {
+   "id": "r108",
+   "anchor": "Line2D.set_markeredgecolor",
+   "kind": "doc",
+   "line": 1215
+  },
+  {
+   "id": "r109",
+   "anchor": "Line2D.set_markerfacecolor",
+   "kind": "doc",
+   "line": 1225
+  },
+  {
+   "id": "r110",
+   "anchor": "Line2D.set_markerfacecoloralt",
+   "kind": "doc",
+   "line": 1235
+  },
+  {
+   "id": "r111",
+   "anchor": "Line2D.set_markeredgewidth",
+   "kind": "doc",
+   "line": 1245
+  },
+  {
+   "id": "r112",
+   "anchor": "Line2D.set_markersize",
+   "kind": "doc",
+   "line": 1260
+  },
+  {
+   "id": "r113",
+   "anchor": "Line2D.set_xdata",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r114",
+   "anchor": "Line2D.set_xdata#if:not np.iterable(x)/call:_api.warn_deprecated",
+   "kind": "lead",
+   "line": 1285
+  },
+  {
+   "id": "r115",
+   "anchor": "Line2D.set_ydata",
+   "kind": "doc",
+   "line": 1295
+  },
+  {
+   "id": "r116",
+   "anchor": "Line2D.set_ydata#if:not np.iterable(y)/call:_api.warn_deprecated",
+   "kind": "lead",
+   "line": 1306
+  },
+  {
+   "id": "r117",
+   "anchor": "Line2D.set_dashes",
+   "kind": "doc",
+   "line": 1316
+  },
+  {
+   "id": "r118",
+   "anchor": "Line2D.update_from",
+   "kind": "doc",
+   "line": 1340
+  },
+  {
+   "id": "r119",
+   "anchor": "Line2D.set_dash_joinstyle",
+   "kind": "doc",
+   "line": 1364
+  },
+  {
+   "id": "r120",
+   "anchor": "Line2D.set_solid_joinstyle",
+   "kind": "doc",
+   "line": 1380
+  },
+  {
+   "id": "r121",
+   "anchor": "Line2D.get_dash_joinstyle",
+   "kind": "doc",
+   "line": 1395
+  },
+  {
+   "id": "r122",
+   "anchor": "Line2D.get_solid_joinstyle",
+   "kind": "doc",
+   "line": 1403
+  },
+  {
+   "id": "r123",
+   "anchor": "Line2D.set_dash_capstyle",
+   "kind": "doc",
+   "line": 1412
+  },
+  {
+   "id": "r124",
+   "anchor": "Line2D.set_solid_capstyle",
+   "kind": "doc",
+   "line": 1428
+  },
+  {
+   "id": "r125",
+   "anchor": "Line2D.get_dash_capstyle",
+   "kind": "doc",
+   "line": 1443
+  },
+  {
+   "id": "r126",
+   "anchor": "Line2D.get_solid_capstyle",
+   "kind": "doc",
+   "line": 1451
+  },
+  {
+   "id": "r127",
+   "anchor": "Line2D.is_dashed",
+   "kind": "doc",
+   "line": 1459
+  },
+  {
+   "id": "r128",
+   "anchor": "_AxLine",
+   "kind": "doc",
+   "line": 1471
+  },
+  {
+   "id": "r129",
+   "anchor": "_AxLine.get_transform#if:self._xy2 is not None/assign:(x1, y1), (x2, y2)",
+   "kind": "lead",
+   "line": 1495
+  },
+  {
+   "id": "r130",
+   "anchor": "_AxLine.get_transform#if:self._xy2 is not None/else/assign:x1, y1",
+   "kind": "lead",
+   "line": 1509
+  },
+  {
+   "id": "r131",
+   "anchor": "_AxLine.get_transform#if:np.isclose(slope, 0)",
+   "kind": "lead",
+   "line": 1514
+  },
+  {
+   "id": "r132",
+   "anchor": "_AxLine.draw#assign:self._transformed_path",
+   "kind": "trail",
+   "line": 1531
+  },
+  {
+   "id": "r133",
+   "anchor": "VertexSelector",
+   "kind": "doc",
+   "line": 1535
+  },
+  {
+   "id": "r134",
+   "anchor": "VertexSelector.__init__",
+   "kind": "doc",
+   "line": 1564
+  },
+  {
+   "id": "r135",
+   "anchor": "VertexSelector.process_selected",
+   "kind": "doc",
+   "line": 1585
+  },
+  {
+   "id": "r136",
+   "anchor": "VertexSelector.onpick",
+   "kind": "doc",
+   "line": 1598
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 34439,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 10995,
+  "thinking_tokens": 4559,
+  "opus_cost_usd": 0.6235565,
+  "total_cost_usd": 0.6507925,
+  "duration_ms": 95230,
+  "duration_api_ms": 96585,
+  "num_turns": 2
+ },
+ "wall_ms": 96299,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

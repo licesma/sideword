@@ -1,0 +1,139 @@
+{
+ "blob_sha": "d3630ae7846dd7fb00f4fbb0c04c4d608b729cb4",
+ "path": "django/dispatch/dispatcher.py",
+ "repo": "django/django",
+ "records": 19,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "NO_RECEIVERS",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r2",
+   "anchor": "Signal",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "Signal.__init__",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r4",
+   "anchor": "Signal.sender_receivers_cache",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r5",
+   "anchor": "Signal.connect",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r6",
+   "anchor": "Signal.connect#if:settings.configured and settings.DEBUG",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r7",
+   "anchor": "Signal.connect#if:settings.configured and settings.DEBUG/if:not func_accepts_kwargs(receiver)",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r8",
+   "anchor": "Signal.connect#if:weak/if:hasattr(receiver, '__self__') and hasattr(receiver, '__func__')",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r9",
+   "anchor": "Signal.disconnect",
+   "kind": "doc",
+   "line": 110
+  },
+  {
+   "id": "r10",
+   "anchor": "Signal.send",
+   "kind": "doc",
+   "line": 149
+  },
+  {
+   "id": "r11",
+   "anchor": "Signal.send_robust",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r12",
+   "anchor": "Signal.send_robust#assign:responses",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r13",
+   "anchor": "Signal._clear_dead_receivers#if:self._dead_receivers",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r14",
+   "anchor": "Signal._live_receivers",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r15",
+   "anchor": "Signal._live_receivers#if:self.use_caching and not self._dead_receivers/if:receivers is NO_RECEIVERS",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r16",
+   "anchor": "Signal._live_receivers#if:receivers is None/with:self.lock/if:self.use_caching/if:not receivers/else/assign:self.sender_receivers_cache[sender]",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r17",
+   "anchor": "Signal._live_receivers#for:receiver in receivers/if:isinstance(receiver, weakref.ReferenceType)/assign:receiver",
+   "kind": "lead",
+   "line": 256
+  },
+  {
+   "id": "r18",
+   "anchor": "Signal._remove_receiver#assign:self._dead_receivers",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r19",
+   "anchor": "receiver",
+   "kind": "doc",
+   "line": 273
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8504,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2020,
+  "thinking_tokens": 1051,
+  "opus_cost_usd": 0.1398315,
+  "total_cost_usd": 0.1450145,
+  "duration_ms": 18918,
+  "duration_api_ms": 19858,
+  "num_turns": 2
+ },
+ "wall_ms": 19762,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

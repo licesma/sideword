@@ -1,0 +1,517 @@
+{
+ "blob_sha": "350d4c554aae8e81e4b79f46783a60358b9bc77e",
+ "path": "lib/matplotlib/__init__.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 82,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#import:sys",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:.",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:matplotlib.cbook",
+   "kind": "trail",
+   "line": 141
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:._version",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r6",
+   "anchor": "compare_versions",
+   "kind": "doc",
+   "line": 170
+  },
+  {
+   "id": "r7",
+   "anchor": "_check_versions#import:.",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r8",
+   "anchor": "<module>#if:not hasattr(sys, 'argv')",
+   "kind": "trail",
+   "line": 208
+  },
+  {
+   "id": "r9",
+   "anchor": "_ensure_handler",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r10",
+   "anchor": "_ensure_handler",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r11",
+   "anchor": "set_loglevel",
+   "kind": "doc",
+   "line": 228
+  },
+  {
+   "id": "r12",
+   "anchor": "_logged_cached",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r13",
+   "anchor": "_logged_cached#if:func is None",
+   "kind": "trail",
+   "line": 264
+  },
+  {
+   "id": "r14",
+   "anchor": "_get_executable_info",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r15",
+   "anchor": "_get_executable_info.impl#try",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r16",
+   "anchor": "_get_executable_info#if:name==\"dvipng\"/elif:name==\"gs\"/assign:execs",
+   "kind": "trail",
+   "line": 346
+  },
+  {
+   "id": "r17",
+   "anchor": "_get_executable_info#if:name==\"dvipng\"/elif:name==\"magick\"/if:sys.platform==\"win32\"/import:winreg",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r18",
+   "anchor": "_get_executable_info#if:name==\"dvipng\"/elif:name==\"pdftops\"/if:info and not (\"3.0\" <= info.version or \"0.9\" <= info.version <= \"1.0\")",
+   "kind": "lead",
+   "line": 388
+  },
+  {
+   "id": "r19",
+   "anchor": "checkdep_ghostscript#if:checkdep_ghostscript.executable is None/if:sys.platform=='win32'/assign:gs_execs",
+   "kind": "lead",
+   "line": 418
+  },
+  {
+   "id": "r20",
+   "anchor": "get_home",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r21",
+   "anchor": "_create_tmp_config_or_cache_dir",
+   "kind": "doc",
+   "line": 525
+  },
+  {
+   "id": "r22",
+   "anchor": "_get_xdg_config_dir",
+   "kind": "doc",
+   "line": 535
+  },
+  {
+   "id": "r23",
+   "anchor": "_get_xdg_cache_dir",
+   "kind": "doc",
+   "line": 547
+  },
+  {
+   "id": "r24",
+   "anchor": "get_configdir",
+   "kind": "doc",
+   "line": 583
+  },
+  {
+   "id": "r25",
+   "anchor": "get_cachedir",
+   "kind": "doc",
+   "line": 603
+  },
+  {
+   "id": "r26",
+   "anchor": "_get_data_path",
+   "kind": "doc",
+   "line": 613
+  },
+  {
+   "id": "r27",
+   "anchor": "_get_data_path.get_candidate_paths#import:matplotlib.afm",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r28",
+   "anchor": "_get_data_path.get_candidate_paths#if:getattr(sys, 'frozen', None)",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r29",
+   "anchor": "_get_data_path.get_candidate_paths#if:getattr(sys, 'frozen', None)/yield",
+   "kind": "lead",
+   "line": 635
+  },
+  {
+   "id": "r30",
+   "anchor": "_get_data_path.get_candidate_paths#if:getattr(sys, 'frozen', None)/yield",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r31",
+   "anchor": "matplotlib_fname",
+   "kind": "doc",
+   "line": 663
+  },
+  {
+   "id": "r32",
+   "anchor": "_deprecated_map",
+   "kind": "lead",
+   "line": 706
+  },
+  {
+   "id": "r33",
+   "anchor": "_deprecated_ignore_map",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r34",
+   "anchor": "_deprecated_remain_as_none",
+   "kind": "lead",
+   "line": 717
+  },
+  {
+   "id": "r35",
+   "anchor": "RcParams",
+   "kind": "doc",
+   "line": 728
+  },
+  {
+   "id": "r36",
+   "anchor": "RcParams.__init__",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r37",
+   "anchor": "RcParams.__iter__",
+   "kind": "doc",
+   "line": 847
+  },
+  {
+   "id": "r38",
+   "anchor": "RcParams.find_all",
+   "kind": "doc",
+   "line": 855
+  },
+  {
+   "id": "r39",
+   "anchor": "rc_params",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r40",
+   "anchor": "is_url",
+   "kind": "doc",
+   "line": 885
+  },
+  {
+   "id": "r41",
+   "anchor": "_rc_params_in_file",
+   "kind": "doc",
+   "line": 908
+  },
+  {
+   "id": "r42",
+   "anchor": "_rc_params_in_file#for:key, (val, line, cnt) in rc_temp.items()/if:key in defaultParams/if:fail_on_error/assign:config[key]",
+   "kind": "trail",
+   "line": 948
+  },
+  {
+   "id": "r43",
+   "anchor": "_rc_params_in_file#for:key, (val, line, cnt) in rc_temp.items()/if:key in defaultParams/if:fail_on_error/else/try/assign:config[key]",
+   "kind": "trail",
+   "line": 951
+  },
+  {
+   "id": "r44",
+   "anchor": "rc_params_from_file",
+   "kind": "doc",
+   "line": 973
+  },
+  {
+   "id": "r45",
+   "anchor": "rcParams",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r46",
+   "anchor": "<module>#if:dict.__getitem__(rcParams, 'examples.directory')",
+   "kind": "lead",
+   "line": 1018
+  },
+  {
+   "id": "r47",
+   "anchor": "<module>#if:dict.__getitem__(rcParams, 'examples.directory')/if:not os.path.isabs(rcParams['examples.directory'])",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r48",
+   "anchor": "<module>#if:dict.__getitem__(rcParams, 'examples.directory')/if:not os.path.isabs(rcParams['examples.directory'])/assign:_basedir",
+   "kind": "lead",
+   "line": 1028
+  },
+  {
+   "id": "r49",
+   "anchor": "rc",
+   "kind": "doc",
+   "line": 1046
+  },
+  {
+   "id": "r50",
+   "anchor": "rcdefaults",
+   "kind": "doc",
+   "line": 1119
+  },
+  {
+   "id": "r51",
+   "anchor": "rcdefaults#with:cbook._suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1136
+  },
+  {
+   "id": "r52",
+   "anchor": "rc_file_defaults",
+   "kind": "doc",
+   "line": 1143
+  },
+  {
+   "id": "r53",
+   "anchor": "rc_file_defaults#with:cbook._suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1152
+  },
+  {
+   "id": "r54",
+   "anchor": "rc_file",
+   "kind": "doc",
+   "line": 1158
+  },
+  {
+   "id": "r55",
+   "anchor": "rc_file#with:cbook._suppress_matplotlib_deprecation_warning()",
+   "kind": "lead",
+   "line": 1178
+  },
+  {
+   "id": "r56",
+   "anchor": "rc_context",
+   "kind": "doc",
+   "line": 1186
+  },
+  {
+   "id": "r57",
+   "anchor": "rc_context.__init__",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r58",
+   "anchor": "rc_context.__fallback#assign:updated_backend",
+   "kind": "lead",
+   "line": 1238
+  },
+  {
+   "id": "r59",
+   "anchor": "rc_context.__fallback#if:self._orig['backend'] is rcsetup._auto_backend_sentinel",
+   "kind": "lead",
+   "line": 1242
+  },
+  {
+   "id": "r60",
+   "anchor": "use",
+   "kind": "doc",
+   "line": 1253
+  },
+  {
+   "id": "r61",
+   "anchor": "use#if:dict.__getitem__(rcParams, 'backend')==name/pass",
+   "kind": "lead",
+   "line": 1292
+  },
+  {
+   "id": "r62",
+   "anchor": "use#if:dict.__getitem__(rcParams, 'backend')==name/elif:'matplotlib.pyplot' in sys.modules/if:(not force) and warn",
+   "kind": "lead",
+   "line": 1299
+  },
+  {
+   "id": "r63",
+   "anchor": "use#if:dict.__getitem__(rcParams, 'backend')==name/elif:'matplotlib.pyplot' in sys.modules/if:(not force) and warn",
+   "kind": "lead",
+   "line": 1299
+  },
+  {
+   "id": "r64",
+   "anchor": "use#if:dict.__getitem__(rcParams, 'backend')==name/elif:'matplotlib.pyplot' in sys.modules/if:force",
+   "kind": "lead",
+   "line": 1307
+  },
+  {
+   "id": "r65",
+   "anchor": "use#if:dict.__getitem__(rcParams, 'backend')==name/else/assign:rcParams['backend']",
+   "kind": "lead",
+   "line": 1315
+  },
+  {
+   "id": "r66",
+   "anchor": "get_backend",
+   "kind": "doc",
+   "line": 1322
+  },
+  {
+   "id": "r67",
+   "anchor": "interactive",
+   "kind": "doc",
+   "line": 1333
+  },
+  {
+   "id": "r68",
+   "anchor": "is_interactive",
+   "kind": "doc",
+   "line": 1342
+  },
+  {
+   "id": "r69",
+   "anchor": "tk_window_focus",
+   "kind": "doc",
+   "line": 1348
+  },
+  {
+   "id": "r70",
+   "anchor": "_init_tests#import:platform",
+   "kind": "lead",
+   "line": 1368
+  },
+  {
+   "id": "r71",
+   "anchor": "_init_tests#assign:LOCAL_FREETYPE_VERSION",
+   "kind": "lead",
+   "line": 1377
+  },
+  {
+   "id": "r72",
+   "anchor": "test",
+   "kind": "doc",
+   "line": 1400
+  },
+  {
+   "id": "r73",
+   "anchor": "<module>#assign:test.__test__",
+   "kind": "trail",
+   "line": 1448
+  },
+  {
+   "id": "r74",
+   "anchor": "_replacer",
+   "kind": "doc",
+   "line": 1451
+  },
+  {
+   "id": "r75",
+   "anchor": "_replacer#try/if:isinstance(value, str)",
+   "kind": "lead",
+   "line": 1458
+  },
+  {
+   "id": "r76",
+   "anchor": "_replacer#try/if:isinstance(value, str)/assign:value",
+   "kind": "lead",
+   "line": 1460
+  },
+  {
+   "id": "r77",
+   "anchor": "_replacer#try/except:Exception/pass",
+   "kind": "lead",
+   "line": 1463
+  },
+  {
+   "id": "r78",
+   "anchor": "_add_data_doc",
+   "kind": "doc",
+   "line": 1496
+  },
+  {
+   "id": "r79",
+   "anchor": "_preprocess_data",
+   "kind": "doc",
+   "line": 1525
+  },
+  {
+   "id": "r80",
+   "anchor": "_preprocess_data#if:func is None",
+   "kind": "trail",
+   "line": 1563
+  },
+  {
+   "id": "r81",
+   "anchor": "_preprocess_data#assign:arg_names",
+   "kind": "trail",
+   "line": 1586
+  },
+  {
+   "id": "r82",
+   "anchor": "_preprocess_data.inner#if:needs_label/assign:label",
+   "kind": "lead",
+   "line": 1629
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 34340,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 8580,
+  "thinking_tokens": 4829,
+  "opus_cost_usd": 0.5621915000000001,
+  "total_cost_usd": 0.5885895000000001,
+  "duration_ms": 80113,
+  "duration_api_ms": 81619,
+  "num_turns": 2
+ },
+ "wall_ms": 81334,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

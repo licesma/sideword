@@ -1,0 +1,301 @@
+{
+ "blob_sha": "fd9c7357a9763f389a7af4e31472e7acb3c123e3",
+ "path": "astropy/io/fits/scripts/fitsheader.py",
+ "repo": "astropy/astropy",
+ "records": 46,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "ExtensionNotFoundException",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r4",
+   "anchor": "HeaderFormatter",
+   "kind": "doc",
+   "line": 90
+  },
+  {
+   "id": "r5",
+   "anchor": "HeaderFormatter.parse",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r6",
+   "anchor": "HeaderFormatter.parse#if:extensions is None",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r7",
+   "anchor": "HeaderFormatter.parse#if:extensions is None/assign:hdukeys",
+   "kind": "trail",
+   "line": 144
+  },
+  {
+   "id": "r8",
+   "anchor": "HeaderFormatter.parse#if:extensions is None/else/for:ext in extensions/try/call:hdukeys.append",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r9",
+   "anchor": "HeaderFormatter.parse#if:extensions is None/else/for:ext in extensions/try/except:ValueError/assign:parts",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r10",
+   "anchor": "HeaderFormatter.parse#return",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r11",
+   "anchor": "HeaderFormatter._parse_internal",
+   "kind": "doc",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "HeaderFormatter._parse_internal#for:idx, hdu in enumerate(hdukeys)/if:idx > 0",
+   "kind": "trail",
+   "line": 173
+  },
+  {
+   "id": "r13",
+   "anchor": "HeaderFormatter._get_cards",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r14",
+   "anchor": "HeaderFormatter._get_cards#try",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r15",
+   "anchor": "HeaderFormatter._get_cards#try/if:compressed/assign:header",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r16",
+   "anchor": "HeaderFormatter._get_cards#if:not keywords",
+   "kind": "trail",
+   "line": 217
+  },
+  {
+   "id": "r17",
+   "anchor": "HeaderFormatter._get_cards#if:not keywords/else",
+   "kind": "trail",
+   "line": 219
+  },
+  {
+   "id": "r18",
+   "anchor": "HeaderFormatter._get_cards#if:not keywords/else/for:kw in keywords/try/if:isinstance(crd, fits.card.Card)",
+   "kind": "trail",
+   "line": 224
+  },
+  {
+   "id": "r19",
+   "anchor": "HeaderFormatter._get_cards#if:not keywords/else/for:kw in keywords/try/if:isinstance(crd, fits.card.Card)/else",
+   "kind": "trail",
+   "line": 226
+  },
+  {
+   "id": "r20",
+   "anchor": "HeaderFormatter._get_cards#if:not keywords/else/for:kw in keywords/try/except:KeyError",
+   "kind": "trail",
+   "line": 228
+  },
+  {
+   "id": "r21",
+   "anchor": "TableHeaderFormatter",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r22",
+   "anchor": "TableHeaderFormatter._parse_internal",
+   "kind": "doc",
+   "line": 247
+  },
+  {
+   "id": "r23",
+   "anchor": "print_headers_traditional",
+   "kind": "doc",
+   "line": 271
+  },
+  {
+   "id": "r24",
+   "anchor": "print_headers_traditional#for:idx, filename in enumerate(args.filename)",
+   "kind": "trail",
+   "line": 279
+  },
+  {
+   "id": "r25",
+   "anchor": "print_headers_traditional#for:idx, filename in enumerate(args.filename)/if:idx > 0 and not args.keyword/call:print",
+   "kind": "trail",
+   "line": 281
+  },
+  {
+   "id": "r26",
+   "anchor": "print_headers_as_table",
+   "kind": "doc",
+   "line": 296
+  },
+  {
+   "id": "r27",
+   "anchor": "print_headers_as_table#for:filename in args.filename",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r28",
+   "anchor": "print_headers_as_table#for:filename in args.filename",
+   "kind": "trail",
+   "line": 306
+  },
+  {
+   "id": "r29",
+   "anchor": "print_headers_as_table#for:filename in args.filename/try/except:OSError/call:log.error",
+   "kind": "trail",
+   "line": 314
+  },
+  {
+   "id": "r30",
+   "anchor": "print_headers_as_table#if:len(tables) == 0",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r31",
+   "anchor": "print_headers_as_table#call:resulting_table.write",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r32",
+   "anchor": "print_headers_as_comparison",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r33",
+   "anchor": "print_headers_as_comparison#for:filename in args.filename",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r34",
+   "anchor": "print_headers_as_comparison#for:filename in args.filename",
+   "kind": "trail",
+   "line": 346
+  },
+  {
+   "id": "r35",
+   "anchor": "print_headers_as_comparison#for:filename in args.filename/try/if:tbl/assign:tbl",
+   "kind": "lead",
+   "line": 353
+  },
+  {
+   "id": "r36",
+   "anchor": "print_headers_as_comparison#for:filename in args.filename/try/except:OSError/call:log.error",
+   "kind": "trail",
+   "line": 358
+  },
+  {
+   "id": "r37",
+   "anchor": "print_headers_as_comparison#if:len(tables) == 0",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r38",
+   "anchor": "print_headers_as_comparison#assign:hdus",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r39",
+   "anchor": "print_headers_as_comparison#assign:final_tables",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r40",
+   "anchor": "print_headers_as_comparison#if:args.sort",
+   "kind": "lead",
+   "line": 397
+  },
+  {
+   "id": "r41",
+   "anchor": "print_headers_as_comparison#call:final_table.pprint",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r42",
+   "anchor": "main",
+   "kind": "doc",
+   "line": 403
+  },
+  {
+   "id": "r43",
+   "anchor": "main#if:args.table is None",
+   "kind": "lead",
+   "line": 486
+  },
+  {
+   "id": "r44",
+   "anchor": "main#if:args.sort/if:not args.fitsort/call:sys.exit",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r45",
+   "anchor": "main#try",
+   "kind": "lead",
+   "line": 503
+  },
+  {
+   "id": "r46",
+   "anchor": "main#try/except:OSError/pass",
+   "kind": "lead",
+   "line": 513
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12385,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4298,
+  "thinking_tokens": 2054,
+  "opus_cost_usd": 0.23559149999999998,
+  "total_cost_usd": 0.2441245,
+  "duration_ms": 38248,
+  "duration_api_ms": 39183,
+  "num_turns": 2
+ },
+ "wall_ms": 39151,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

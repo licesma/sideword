@@ -1,0 +1,769 @@
+{
+ "blob_sha": "3e1bceb98aa9add0e71ede0488d47594df5e19ba",
+ "path": "astropy/io/fits/fitsrec.py",
+ "repo": "astropy/astropy",
+ "records": 124,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "FITS_record",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "FITS_record.__init__",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r4",
+   "anchor": "FITS_record.__repr__",
+   "kind": "doc",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "FITS_record.field",
+   "kind": "doc",
+   "line": 110
+  },
+  {
+   "id": "r6",
+   "anchor": "FITS_record.setfield",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r7",
+   "anchor": "FITS_rec",
+   "kind": "doc",
+   "line": 144
+  },
+  {
+   "id": "r8",
+   "anchor": "FITS_rec.__new__",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r9",
+   "anchor": "FITS_rec.__new__#if:input.dtype.subdtype is None",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r10",
+   "anchor": "FITS_rec.__reduce__",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r11",
+   "anchor": "FITS_rec.__reduce__#assign:column_state",
+   "kind": "lead",
+   "line": 198
+  },
+  {
+   "id": "r12",
+   "anchor": "FITS_rec.__reduce__#for:attrs in ['_converted', '_heapoffset', '_heapsize', '_nfields', '_gap', '_uint', 'parnames', '_coldefs']/with:suppress(AttributeError)/if:attrs == '_coldefs'",
+   "kind": "lead",
+   "line": 207
+  },
+  {
+   "id": "r13",
+   "anchor": "FITS_rec.__array_finalize__#if:isinstance(obj, FITS_rec) and obj.dtype == self.dtype/elif:self.dtype.fields is not None/assign:self._nfields",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r14",
+   "anchor": "FITS_rec.__array_finalize__#if:isinstance(obj, FITS_rec) and obj.dtype == self.dtype/elif:self.dtype.fields is not None/for:col in self._coldefs",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r15",
+   "anchor": "FITS_rec._init",
+   "kind": "doc",
+   "line": 257
+  },
+  {
+   "id": "r16",
+   "anchor": "FITS_rec.from_columns",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r17",
+   "anchor": "FITS_rec.from_columns#for:column in columns",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r18",
+   "anchor": "FITS_rec.from_columns#del:columns._arrays",
+   "kind": "lead",
+   "line": 317
+  },
+  {
+   "id": "r19",
+   "anchor": "FITS_rec.from_columns#if:nrows == 0",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r20",
+   "anchor": "FITS_rec.from_columns#call:columns._add_listener",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r21",
+   "anchor": "FITS_rec.from_columns#assign:data._coldefs",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r22",
+   "anchor": "FITS_rec.from_columns#if:fill",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r23",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r24",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/assign:arr",
+   "kind": "lead",
+   "line": 361
+  },
+  {
+   "id": "r25",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:not n",
+   "kind": "todo",
+   "line": 374
+  },
+  {
+   "id": "r26",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:not n/continue",
+   "kind": "lead",
+   "line": 377
+  },
+  {
+   "id": "r27",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/if:inarr.shape[-1] == recformat.repeat",
+   "kind": "lead",
+   "line": 389
+  },
+  {
+   "id": "r28",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:recformat[-2:] == FITS2NUMPY['L'] and inarr.dtype == bool",
+   "kind": "todo",
+   "line": 398
+  },
+  {
+   "id": "r29",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:recformat[-2:] == FITS2NUMPY['L'] and inarr.dtype == bool/assign:field[:]",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r30",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:recformat[-2:] == FITS2NUMPY['L'] and inarr.dtype == bool/assign:converted",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r31",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:recformat[-2:] == FITS2NUMPY['L'] and inarr.dtype == bool/assign:inarr",
+   "kind": "todo",
+   "line": 410
+  },
+  {
+   "id": "r32",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:columns[idx]._physical_values and columns[idx]._pseudo_unsigned_ints/assign:bzero",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r33",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:columns[idx]._physical_values and columns[idx]._pseudo_unsigned_ints/if:n < nrows/assign:field[n:]",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r34",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:isinstance(columns, _AsciiColDefs)/if:fitsformat._pseudo_logical",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r35",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:isinstance(columns, _AsciiColDefs)/if:fitsformat._pseudo_logical/assign:outarr",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r36",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:isinstance(recformat, _FormatX)/elif:isinstance(columns, _AsciiColDefs)/if:fitsformat._pseudo_logical/elif:arr.dtype.kind not in ('S', 'U')/call:data._cache_field",
+   "kind": "lead",
+   "line": 437
+  },
+  {
+   "id": "r37",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:inarr.shape != outarr.shape/if:outarr.ndim > 1",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r38",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:inarr.shape != outarr.shape/if:outarr.ndim > 1/assign:inarr_rowsize",
+   "kind": "lead",
+   "line": 457
+  },
+  {
+   "id": "r39",
+   "anchor": "FITS_rec.from_columns#for:idx, column in enumerate(columns)/if:inarr.shape != outarr.shape/if:outarr.ndim > 1/else/assign:outarr[:n]",
+   "kind": "lead",
+   "line": 464
+  },
+  {
+   "id": "r40",
+   "anchor": "FITS_rec.from_columns#for:idx in range(len(columns))",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r41",
+   "anchor": "FITS_rec.__repr__#return",
+   "kind": "lead",
+   "line": 480
+  },
+  {
+   "id": "r42",
+   "anchor": "FITS_rec.__getitem__#assign:out",
+   "kind": "lead",
+   "line": 492
+  },
+  {
+   "id": "r43",
+   "anchor": "FITS_rec.__getitem__#if:type(out) is not np.recarray/return",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r44",
+   "anchor": "FITS_rec.__getitem__#assign:out",
+   "kind": "lead",
+   "line": 499
+  },
+  {
+   "id": "r45",
+   "anchor": "FITS_rec.__getitem__#for:idx, name in enumerate(self._coldefs.names)/call:arrays.append",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r46",
+   "anchor": "FITS_rec.__getitem__#for:idx, name in enumerate(self._coldefs.names)/if:name in self._converted",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r47",
+   "anchor": "FITS_rec.copy",
+   "kind": "doc",
+   "line": 555
+  },
+  {
+   "id": "r48",
+   "anchor": "FITS_rec.columns",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r49",
+   "anchor": "FITS_rec._coldefs#return",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r50",
+   "anchor": "FITS_rec.__del__#try/except:(AttributeError, TypeError)",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r51",
+   "anchor": "FITS_rec.names",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r52",
+   "anchor": "FITS_rec.formats",
+   "kind": "doc",
+   "line": 640
+  },
+  {
+   "id": "r53",
+   "anchor": "FITS_rec._raw_itemsize",
+   "kind": "doc",
+   "line": 649
+  },
+  {
+   "id": "r54",
+   "anchor": "FITS_rec._raw_itemsize#if:_has_unicode_fields(self)/else/return",
+   "kind": "lead",
+   "line": 668
+  },
+  {
+   "id": "r55",
+   "anchor": "FITS_rec.field",
+   "kind": "doc",
+   "line": 670
+  },
+  {
+   "id": "r56",
+   "anchor": "FITS_rec.field#assign:column",
+   "kind": "lead",
+   "line": 677
+  },
+  {
+   "id": "r57",
+   "anchor": "FITS_rec.field#assign:base",
+   "kind": "lead",
+   "line": 690
+  },
+  {
+   "id": "r58",
+   "anchor": "FITS_rec.field#assign:field",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r59",
+   "anchor": "FITS_rec.field#if:name not in self._converted/if:isinstance(recformat, _FormatP)",
+   "kind": "todo",
+   "line": 703
+  },
+  {
+   "id": "r60",
+   "anchor": "FITS_rec.field#if:name not in self._converted/if:isinstance(recformat, _FormatP)/assign:converted",
+   "kind": "lead",
+   "line": 705
+  },
+  {
+   "id": "r61",
+   "anchor": "FITS_rec.field#if:name not in self._converted/if:isinstance(recformat, _FormatP)/else/assign:converted",
+   "kind": "lead",
+   "line": 709
+  },
+  {
+   "id": "r62",
+   "anchor": "FITS_rec.field#if:name not in self._converted/call:self._cache_field",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r63",
+   "anchor": "FITS_rec._cache_field",
+   "kind": "doc",
+   "line": 720
+  },
+  {
+   "id": "r64",
+   "anchor": "FITS_rec._update_column_attribute_changed",
+   "kind": "doc",
+   "line": 748
+  },
+  {
+   "id": "r65",
+   "anchor": "FITS_rec._update_column_attribute_changed#if:hasattr(self, method_name)/call:getattr(self, method_name)",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r66",
+   "anchor": "FITS_rec._update_column_name",
+   "kind": "doc",
+   "line": 764
+  },
+  {
+   "id": "r67",
+   "anchor": "FITS_rec._update_column_name#assign:dtype.names",
+   "kind": "lead",
+   "line": 769
+  },
+  {
+   "id": "r68",
+   "anchor": "FITS_rec._convert_x",
+   "kind": "doc",
+   "line": 771
+  },
+  {
+   "id": "r69",
+   "anchor": "FITS_rec._convert_p",
+   "kind": "doc",
+   "line": 780
+  },
+  {
+   "id": "r70",
+   "anchor": "FITS_rec._convert_p#for:idx in range(len(self))/if:recformat.dtype == 'a'/else/assign:dummy[idx]",
+   "kind": "lead",
+   "line": 817
+  },
+  {
+   "id": "r71",
+   "anchor": "FITS_rec._convert_ascii",
+   "kind": "doc",
+   "line": 822
+  },
+  {
+   "id": "r72",
+   "anchor": "FITS_rec._convert_ascii#assign:nullval",
+   "kind": "lead",
+   "line": 831
+  },
+  {
+   "id": "r73",
+   "anchor": "FITS_rec._convert_ascii#assign:dummy",
+   "kind": "lead",
+   "line": 839
+  },
+  {
+   "id": "r74",
+   "anchor": "FITS_rec._convert_ascii#assign:dummy",
+   "kind": "lead",
+   "line": 846
+  },
+  {
+   "id": "r75",
+   "anchor": "FITS_rec._convert_ascii#if:nullval != b''",
+   "kind": "lead",
+   "line": 849
+  },
+  {
+   "id": "r76",
+   "anchor": "FITS_rec._convert_other",
+   "kind": "doc",
+   "line": 863
+  },
+  {
+   "id": "r77",
+   "anchor": "FITS_rec._convert_other#if:isinstance(recformat, _FormatX)/return",
+   "kind": "lead",
+   "line": 872
+  },
+  {
+   "id": "r78",
+   "anchor": "FITS_rec._convert_other#if:not _str and isinstance(self._coldefs, _AsciiColDefs)",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r79",
+   "anchor": "FITS_rec._convert_other#if:dim",
+   "kind": "lead",
+   "line": 891
+  },
+  {
+   "id": "r80",
+   "anchor": "FITS_rec._convert_other#if:dim/if:field.ndim > 1",
+   "kind": "lead",
+   "line": 894
+  },
+  {
+   "id": "r81",
+   "anchor": "FITS_rec._convert_other#if:dim/if:dim == actual_shape/assign:dim",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r82",
+   "anchor": "FITS_rec._convert_other#if:dim/if:dim == actual_shape/else/if:_str/elif:len(field.shape) == 1",
+   "kind": "trail",
+   "line": 909
+  },
+  {
+   "id": "r83",
+   "anchor": "FITS_rec._convert_other#if:not column.ascii and column.format.p_format",
+   "kind": "lead",
+   "line": 927
+  },
+  {
+   "id": "r84",
+   "anchor": "FITS_rec._convert_other#if:not column.ascii and column.format.p_format/else/assign:format_code",
+   "kind": "todo",
+   "line": 934
+  },
+  {
+   "id": "r85",
+   "anchor": "FITS_rec._convert_other#if:(_number and (_scale or _zero) and not column._physical_values)/if:self._uint",
+   "kind": "lead",
+   "line": 940
+  },
+  {
+   "id": "r86",
+   "anchor": "FITS_rec._convert_other#if:(_number and (_scale or _zero) and not column._physical_values)/if:_zero/if:self._uint and format_code == 'K'/assign:test_overflow",
+   "kind": "lead",
+   "line": 958
+  },
+  {
+   "id": "r87",
+   "anchor": "FITS_rec._convert_other#if:(_number and (_scale or _zero) and not column._physical_values)/assign:column._physical_values",
+   "kind": "lead",
+   "line": 971
+  },
+  {
+   "id": "r88",
+   "anchor": "FITS_rec._convert_other#if:dim/assign:nitems",
+   "kind": "lead",
+   "line": 982
+  },
+  {
+   "id": "r89",
+   "anchor": "FITS_rec._get_heap_data",
+   "kind": "doc",
+   "line": 994
+  },
+  {
+   "id": "r90",
+   "anchor": "FITS_rec._get_raw_data",
+   "kind": "doc",
+   "line": 1008
+  },
+  {
+   "id": "r91",
+   "anchor": "FITS_rec._get_scale_factors",
+   "kind": "doc",
+   "line": 1032
+  },
+  {
+   "id": "r92",
+   "anchor": "FITS_rec._get_scale_factors#assign:_str",
+   "kind": "todo",
+   "line": 1037
+  },
+  {
+   "id": "r93",
+   "anchor": "FITS_rec._get_scale_factors#if:not _scale",
+   "kind": "lead",
+   "line": 1048
+  },
+  {
+   "id": "r94",
+   "anchor": "FITS_rec._get_scale_factors#assign:dim",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r95",
+   "anchor": "FITS_rec._scale_back",
+   "kind": "doc",
+   "line": 1059
+  },
+  {
+   "id": "r96",
+   "anchor": "FITS_rec._scale_back#assign:heapsize",
+   "kind": "lead",
+   "line": 1072
+  },
+  {
+   "id": "r97",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:isinstance(recformat, _FormatP)",
+   "kind": "lead",
+   "line": 1081
+  },
+  {
+   "id": "r98",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:isinstance(recformat, _FormatP)/assign:dtype",
+   "kind": "lead",
+   "line": 1086
+  },
+  {
+   "id": "r99",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:isinstance(recformat, _FormatP)/if:update_heap_pointers and name in self._converted/assign:raw_field[:]",
+   "kind": "lead",
+   "line": 1091
+  },
+  {
+   "id": "r100",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:isinstance(recformat, _FormatP)/if:update_heap_pointers and name in self._converted/assign:raw_field[:]",
+   "kind": "trail",
+   "line": 1091
+  },
+  {
+   "id": "r101",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:isinstance(recformat, _FormatP)/assign:heapsize",
+   "kind": "post",
+   "line": 1099
+  },
+  {
+   "id": "r102",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str",
+   "kind": "lead",
+   "line": 1114
+  },
+  {
+   "id": "r103",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/if:_number and (_scale or _zero) and column._physical_values/assign:column._physical_values",
+   "kind": "lead",
+   "line": 1124
+  },
+  {
+   "id": "r104",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/if:isinstance(self._coldefs, _AsciiColDefs)",
+   "kind": "lead",
+   "line": 1131
+  },
+  {
+   "id": "r105",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/if:isinstance(self._coldefs, _AsciiColDefs)/elif:isinstance(raw_field, chararray.chararray)",
+   "kind": "lead",
+   "line": 1134
+  },
+  {
+   "id": "r106",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/if:isinstance(self._coldefs, _AsciiColDefs)/else",
+   "kind": "lead",
+   "line": 1137
+  },
+  {
+   "id": "r107",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/if:isinstance(self._coldefs, _AsciiColDefs)/else/if:raw_field.shape == dummy.shape/else/assign:raw_field[:]",
+   "kind": "lead",
+   "line": 1148
+  },
+  {
+   "id": "r108",
+   "anchor": "FITS_rec._scale_back#for:indx, name in enumerate(self.dtype.names)/if:_number or _str/elif:_bool and name in self._converted",
+   "kind": "lead",
+   "line": 1153
+  },
+  {
+   "id": "r109",
+   "anchor": "FITS_rec._scale_back#assign:self._heapsize",
+   "kind": "lead",
+   "line": 1159
+  },
+  {
+   "id": "r110",
+   "anchor": "FITS_rec._scale_back_strings#if:input_field.dtype.kind == 'U' and output_field.dtype.kind == 'S'",
+   "kind": "lead",
+   "line": 1180
+  },
+  {
+   "id": "r111",
+   "anchor": "FITS_rec._scale_back_strings#if:input_field.dtype.kind == 'U' and output_field.dtype.kind == 'S'",
+   "kind": "lead",
+   "line": 1180
+  },
+  {
+   "id": "r112",
+   "anchor": "FITS_rec._scale_back_strings#if:input_field.dtype.kind == 'U' and output_field.dtype.kind == 'S'/else/assign:input_field",
+   "kind": "lead",
+   "line": 1195
+  },
+  {
+   "id": "r113",
+   "anchor": "FITS_rec._scale_back_strings#call:_rstrip_inplace",
+   "kind": "lead",
+   "line": 1201
+  },
+  {
+   "id": "r114",
+   "anchor": "FITS_rec._scale_back_ascii",
+   "kind": "doc",
+   "line": 1203
+  },
+  {
+   "id": "r115",
+   "anchor": "FITS_rec._scale_back_ascii#assign:end",
+   "kind": "lead",
+   "line": 1218
+  },
+  {
+   "id": "r116",
+   "anchor": "FITS_rec._scale_back_ascii#if:'A' in format",
+   "kind": "todo",
+   "line": 1239
+  },
+  {
+   "id": "r117",
+   "anchor": "FITS_rec._scale_back_ascii#assign:trailing_decimal",
+   "kind": "lead",
+   "line": 1250
+  },
+  {
+   "id": "r118",
+   "anchor": "FITS_rec._scale_back_ascii#for:jdx, value in enumerate(input_field)",
+   "kind": "lead",
+   "line": 1255
+  },
+  {
+   "id": "r119",
+   "anchor": "FITS_rec._scale_back_ascii#for:jdx, value in enumerate(input_field)/if:trailing_decimal and value[0] == ' '/assign:value",
+   "kind": "lead",
+   "line": 1265
+  },
+  {
+   "id": "r120",
+   "anchor": "FITS_rec._scale_back_ascii#if:'D' in format",
+   "kind": "lead",
+   "line": 1270
+  },
+  {
+   "id": "r121",
+   "anchor": "_get_recarray_field",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r122",
+   "anchor": "_get_recarray_field#assign:field",
+   "kind": "lead",
+   "line": 1284
+  },
+  {
+   "id": "r123",
+   "anchor": "_ascii_encode",
+   "kind": "doc",
+   "line": 1297
+  },
+  {
+   "id": "r124",
+   "anchor": "_has_unicode_fields",
+   "kind": "doc",
+   "line": 1332
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 32781,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 16481,
+  "thinking_tokens": 8850,
+  "opus_cost_usd": 0.7441264999999999,
+  "total_cost_usd": 0.7699464999999999,
+  "duration_ms": 141959,
+  "duration_api_ms": 143246,
+  "num_turns": 2
+ },
+ "wall_ms": 142981,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,679 @@
+{
+ "blob_sha": "9c9615210b21cee6527517244822c9f26dbe6bb7",
+ "path": "astropy/io/fits/hdu/image.py",
+ "repo": "astropy/astropy",
+ "records": 109,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:sys",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_ImageBaseHDU",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r3",
+   "anchor": "_ImageBaseHDU.__init__#if:header is not None/if:not isinstance(header, Header)/raise:ValueError",
+   "kind": "todo",
+   "line": 50
+  },
+  {
+   "id": "r4",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:header is None",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r5",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:header is None/raise:ValueError",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r6",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:header is None/else",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r7",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/if:isinstance(self, ExtensionHDU)",
+   "kind": "todo",
+   "line": 67
+  },
+  {
+   "id": "r8",
+   "anchor": "_ImageBaseHDU.__init__#assign:bzero_in_header",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r9",
+   "anchor": "_ImageBaseHDU.__init__#assign:self._axes",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r10",
+   "anchor": "_ImageBaseHDU.__init__#assign:self._bitpix",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r11",
+   "anchor": "_ImageBaseHDU.__init__#assign:self._orig_bzero",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r12",
+   "anchor": "_ImageBaseHDU.__init__#if:'name' in kwargs and kwargs['name']",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r13",
+   "anchor": "_ImageBaseHDU.__init__#assign:self._modified",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r14",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/if:not do_not_scale_image_data and (self._bscale != 1 or self._bzero != 0)/assign:self._data_needs_rescale",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r15",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self.data",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r16",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self._bitpix",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r17",
+   "anchor": "_ImageBaseHDU.__init__#if:data is DELAYED/else/assign:self._bzero",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r18",
+   "anchor": "_ImageBaseHDU.__init__#if:not bzero_in_header",
+   "kind": "lead",
+   "line": 171
+  },
+  {
+   "id": "r19",
+   "anchor": "_ImageBaseHDU.match_header",
+   "kind": "doc",
+   "line": 177
+  },
+  {
+   "id": "r20",
+   "anchor": "_ImageBaseHDU.section",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r21",
+   "anchor": "_ImageBaseHDU.shape",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r22",
+   "anchor": "_ImageBaseHDU.shape#return",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r23",
+   "anchor": "_ImageBaseHDU.data",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r24",
+   "anchor": "_ImageBaseHDU.data#if:data is not None and not isinstance(data, np.ndarray)/try",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r25",
+   "anchor": "_ImageBaseHDU.data#if:isinstance(data, np.ndarray)/assign:self._bitpix",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r26",
+   "anchor": "_ImageBaseHDU.data#call:self.update_header",
+   "kind": "lead",
+   "line": 289
+  },
+  {
+   "id": "r27",
+   "anchor": "_ImageBaseHDU.data#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r28",
+   "anchor": "_ImageBaseHDU.data#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r29",
+   "anchor": "_ImageBaseHDU.data#return",
+   "kind": "lead",
+   "line": 308
+  },
+  {
+   "id": "r30",
+   "anchor": "_ImageBaseHDU.update_header",
+   "kind": "doc",
+   "line": 310
+  },
+  {
+   "id": "r31",
+   "anchor": "_ImageBaseHDU.update_header#if:not (self._modified or self._header._modified or (self._has_data and self.shape != self.data.shape))/return",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r32",
+   "anchor": "_ImageBaseHDU.update_header#call:self._header.set",
+   "kind": "lead",
+   "line": 329
+  },
+  {
+   "id": "r33",
+   "anchor": "_ImageBaseHDU.update_header#if:self._has_data and self.shape != self.data.shape",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r34",
+   "anchor": "_ImageBaseHDU.update_header#if:'NAXIS' in self._header",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r35",
+   "anchor": "_ImageBaseHDU.update_header#for:idx, axis in enumerate(self._axes)",
+   "kind": "todo",
+   "line": 351
+  },
+  {
+   "id": "r36",
+   "anchor": "_ImageBaseHDU.update_header#for:idx in range(len(self._axes) + 1, old_naxis + 1)",
+   "kind": "lead",
+   "line": 363
+  },
+  {
+   "id": "r37",
+   "anchor": "_ImageBaseHDU.update_header#call:self._update_uint_scale_keywords",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r38",
+   "anchor": "_ImageBaseHDU._update_header_scale_info",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r39",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:self._dtype_for_bitpix() is not None",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r40",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:self._dtype_for_bitpix() is not None",
+   "kind": "lead",
+   "line": 391
+  },
+  {
+   "id": "r41",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#if:dtype is not None and dtype.kind == 'u' and (self._scale_back or self._scale_back is None)/return",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r42",
+   "anchor": "_ImageBaseHDU._update_header_scale_info#for:keyword in ['BSCALE', 'BZERO']/try/call:self._header.append",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r43",
+   "anchor": "_ImageBaseHDU.scale",
+   "kind": "doc",
+   "line": 430
+  },
+  {
+   "id": "r44",
+   "anchor": "_ImageBaseHDU.scale#call:self._scale_internal",
+   "kind": "lead",
+   "line": 458
+  },
+  {
+   "id": "r45",
+   "anchor": "_ImageBaseHDU._scale_internal",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r46",
+   "anchor": "_ImageBaseHDU._scale_internal#if:type is None",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r47",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r48",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None/elif:option == 'minmax' and not issubclass(_type, np.floating)/if:_type == np.uint8",
+   "kind": "trail",
+   "line": 505
+  },
+  {
+   "id": "r49",
+   "anchor": "_ImageBaseHDU._scale_internal#if:bscale is not None and bzero is not None/elif:option == 'minmax' and not issubclass(_type, np.floating)/if:_type == np.uint8/else/assign:nbytes",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r50",
+   "anchor": "_ImageBaseHDU._scale_internal#if:_zero != 0",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r51",
+   "anchor": "_ImageBaseHDU._scale_internal#if:_zero != 0/call:np.add",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r52",
+   "anchor": "_ImageBaseHDU._scale_internal#if:blank is not None and issubclass(_type, np.integer)",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r53",
+   "anchor": "_ImageBaseHDU._scale_internal#if:blank is not None and issubclass(_type, np.integer)/assign:self.data[np.isnan(self.data)]",
+   "kind": "todo",
+   "line": 545
+  },
+  {
+   "id": "r54",
+   "anchor": "_ImageBaseHDU._scale_internal#assign:self._bitpix",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r55",
+   "anchor": "_ImageBaseHDU._scale_internal#assign:self._orig_bitpix",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r56",
+   "anchor": "_ImageBaseHDU._verify#call:self.update_header",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r57",
+   "anchor": "_ImageBaseHDU._verify_blank#if:self._blank is None",
+   "kind": "lead",
+   "line": 578
+  },
+  {
+   "id": "r58",
+   "anchor": "_ImageBaseHDU._verify_blank#if:not _is_int(self._blank)",
+   "kind": "todo",
+   "line": 584
+  },
+  {
+   "id": "r59",
+   "anchor": "_ImageBaseHDU._prewriteto#if:not inplace and self._data_needs_rescale/assign:_",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r60",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is not None/if:sys.byteorder == 'little'",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r61",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is not None/if:_is_pseudo_unsigned(self.data.dtype)",
+   "kind": "lead",
+   "line": 624
+  },
+  {
+   "id": "r62",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is not None/if:_is_pseudo_unsigned(self.data.dtype)/assign:output",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r63",
+   "anchor": "_ImageBaseHDU._writedata_internal#if:self.data is not None/if:not fileobj.simulateonly/if:should_swap/if:output.flags.writeable/else/call:fileobj.writearray",
+   "kind": "lead",
+   "line": 647
+  },
+  {
+   "id": "r64",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix",
+   "kind": "doc",
+   "line": 655
+  },
+  {
+   "id": "r65",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:self._uint and self._orig_bscale == 1",
+   "kind": "lead",
+   "line": 664
+  },
+  {
+   "id": "r66",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:bitpix > 16",
+   "kind": "trail",
+   "line": 671
+  },
+  {
+   "id": "r67",
+   "anchor": "_ImageBaseHDU._dtype_for_bitpix#if:bitpix > 16/elif:bitpix > 0",
+   "kind": "trail",
+   "line": 673
+  },
+  {
+   "id": "r68",
+   "anchor": "_ImageBaseHDU._convert_pseudo_unsigned",
+   "kind": "doc",
+   "line": 676
+  },
+  {
+   "id": "r69",
+   "anchor": "_ImageBaseHDU._convert_pseudo_unsigned#if:dtype is not None and dtype.kind == 'u'",
+   "kind": "lead",
+   "line": 689
+  },
+  {
+   "id": "r70",
+   "anchor": "_ImageBaseHDU._convert_pseudo_unsigned#if:dtype is not None and dtype.kind == 'u'/assign:bits",
+   "kind": "lead",
+   "line": 694
+  },
+  {
+   "id": "r71",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data",
+   "kind": "doc",
+   "line": 700
+  },
+  {
+   "id": "r72",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:self._do_not_scale_image_data or (self._orig_bzero == 0 and self._orig_bscale == 1 and self._blank is None)/return",
+   "kind": "lead",
+   "line": 716
+  },
+  {
+   "id": "r73",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#try/except:AttributeError",
+   "kind": "trail",
+   "line": 723
+  },
+  {
+   "id": "r74",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/assign:blanks",
+   "kind": "lead",
+   "line": 736
+  },
+  {
+   "id": "r75",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:self._blank is not None and self._bitpix > 0/if:blanks.sum() < len(blanks) / 8",
+   "kind": "lead",
+   "line": 745
+  },
+  {
+   "id": "r76",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else",
+   "kind": "trail",
+   "line": 751
+  },
+  {
+   "id": "r77",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else/if:self._file is not None and self._file.memmap/elif:not raw_data.flags.writeable/assign:data",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r78",
+   "anchor": "_ImageBaseHDU._get_scaled_image_data#if:data is None/if:new_dtype is not None/else/if:self._file is not None and self._file.memmap/elif:not raw_data.flags.writeable/else",
+   "kind": "lead",
+   "line": 758
+  },
+  {
+   "id": "r79",
+   "anchor": "_ImageBaseHDU._summary",
+   "kind": "doc",
+   "line": 773
+  },
+  {
+   "id": "r80",
+   "anchor": "_ImageBaseHDU._summary#if:self._data_loaded",
+   "kind": "lead",
+   "line": 781
+  },
+  {
+   "id": "r81",
+   "anchor": "_ImageBaseHDU._summary#if:self._data_loaded/else/if:self.shape and all(self.shape)/assign:format",
+   "kind": "lead",
+   "line": 791
+  },
+  {
+   "id": "r82",
+   "anchor": "_ImageBaseHDU._summary#assign:shape",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r83",
+   "anchor": "_ImageBaseHDU._calculate_datasum",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r84",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/assign:d",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r85",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:_is_pseudo_unsigned(self.data.dtype)",
+   "kind": "lead",
+   "line": 818
+  },
+  {
+   "id": "r86",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:d.dtype.str[0] != '>'",
+   "kind": "lead",
+   "line": 824
+  },
+  {
+   "id": "r87",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:d.dtype.str[0] != '>'/if:d.flags.writeable/else/assign:d",
+   "kind": "lead",
+   "line": 832
+  },
+  {
+   "id": "r88",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/if:byteswapped and not _is_pseudo_unsigned(self.data.dtype)",
+   "kind": "lead",
+   "line": 842
+  },
+  {
+   "id": "r89",
+   "anchor": "_ImageBaseHDU._calculate_datasum#if:self._has_data/else/return",
+   "kind": "lead",
+   "line": 852
+  },
+  {
+   "id": "r90",
+   "anchor": "Section",
+   "kind": "doc",
+   "line": 855
+  },
+  {
+   "id": "r91",
+   "anchor": "Section.__getitem__#if:not any(k is Ellipsis for k in key)/assign:key",
+   "kind": "lead",
+   "line": 881
+  },
+  {
+   "id": "r92",
+   "anchor": "Section.__getitem__#assign:idx",
+   "kind": "lead",
+   "line": 886
+  },
+  {
+   "id": "r93",
+   "anchor": "Section.__getitem__#for:idx in range(naxis)",
+   "kind": "lead",
+   "line": 894
+  },
+  {
+   "id": "r94",
+   "anchor": "Section.__getitem__#for:jdx in range(idx + 1, naxis)/if:indx.npts == axis and indx.contiguous/assign:offset",
+   "kind": "lead",
+   "line": 909
+  },
+  {
+   "id": "r95",
+   "anchor": "Section._getdata#for:idx, (key, axis) in enumerate(zip(keys, self.hdu.shape))/if:isinstance(key, slice)/elif:isiterable(key)/assign:ks",
+   "kind": "lead",
+   "line": 934
+  },
+  {
+   "id": "r96",
+   "anchor": "Section._getdata#for:idx, (key, axis) in enumerate(zip(keys, self.hdu.shape))/if:isinstance(key, slice)",
+   "kind": "post",
+   "line": 929
+  },
+  {
+   "id": "r97",
+   "anchor": "Section._getdata#if:any(isinstance(key, slice) or isiterable(key) for key in keys[idx + 1:])/return",
+   "kind": "lead",
+   "line": 943
+  },
+  {
+   "id": "r98",
+   "anchor": "Section._getdata#if:any(isinstance(key, slice) or isiterable(key) for key in keys[idx + 1:])/else/return",
+   "kind": "lead",
+   "line": 946
+  },
+  {
+   "id": "r99",
+   "anchor": "PrimaryHDU",
+   "kind": "doc",
+   "line": 949
+  },
+  {
+   "id": "r100",
+   "anchor": "PrimaryHDU.__init__",
+   "kind": "doc",
+   "line": 956
+  },
+  {
+   "id": "r101",
+   "anchor": "PrimaryHDU.__init__#if:header is None",
+   "kind": "lead",
+   "line": 1004
+  },
+  {
+   "id": "r102",
+   "anchor": "PrimaryHDU.match_header#return",
+   "kind": "lead",
+   "line": 1015
+  },
+  {
+   "id": "r103",
+   "anchor": "PrimaryHDU.update_header#if:'EXTEND' in self._header",
+   "kind": "lead",
+   "line": 1023
+  },
+  {
+   "id": "r104",
+   "anchor": "PrimaryHDU._verify#if:'EXTEND' in self._header",
+   "kind": "lead",
+   "line": 1037
+  },
+  {
+   "id": "r105",
+   "anchor": "ImageHDU",
+   "kind": "doc",
+   "line": 1044
+  },
+  {
+   "id": "r106",
+   "anchor": "ImageHDU.__init__",
+   "kind": "doc",
+   "line": 1051
+  },
+  {
+   "id": "r107",
+   "anchor": "ImageHDU.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 1100
+  },
+  {
+   "id": "r108",
+   "anchor": "ImageHDU._verify",
+   "kind": "doc",
+   "line": 1113
+  },
+  {
+   "id": "r109",
+   "anchor": "ImageHDU._verify#call:self.req_cards",
+   "kind": "lead",
+   "line": 1123
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 27966,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15579,
+  "thinking_tokens": 9069,
+  "opus_cost_usd": 0.6734265,
+  "total_cost_usd": 0.6953675,
+  "duration_ms": 137492,
+  "duration_api_ms": 139072,
+  "num_turns": 2
+ },
+ "wall_ms": 138400,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

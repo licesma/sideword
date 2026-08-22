@@ -1,0 +1,301 @@
+{
+ "blob_sha": "589b4693fd04a0c8a42ec11e14c17c9a3947e734",
+ "path": "django/forms/forms.py",
+ "repo": "django/django",
+ "records": 46,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "DeclarativeFieldsMetaclass",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r3",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#assign:attrs['declared_fields']",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#assign:declared_fields",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#for:base in reversed(new_class.__mro__)/if:hasattr(base, 'declared_fields')",
+   "kind": "lead",
+   "line": 40
+  },
+  {
+   "id": "r6",
+   "anchor": "DeclarativeFieldsMetaclass.__new__#for:base in reversed(new_class.__mro__)/for:attr, value in base.__dict__.items()",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseForm",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseForm._errors",
+   "kind": "trail",
+   "line": 86
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseForm.fields",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseForm.__init__#if:renderer is None",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseForm.order_fields",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseForm.order_fields#for:key in field_order/try/except:KeyError",
+   "kind": "trail",
+   "line": 134
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseForm.order_fields#call:fields.update",
+   "kind": "trail",
+   "line": 136
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseForm._bound_items",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseForm.__iter__",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseForm.__getitem__",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseForm.errors",
+   "kind": "doc",
+   "line": 182
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseForm.is_valid",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseForm.add_prefix",
+   "kind": "doc",
+   "line": 192
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseForm.add_initial_prefix",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseForm._widget_data_value#return",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseForm._html_output",
+   "kind": "doc",
+   "line": 211
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseForm._html_output#assign:top_errors",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseForm._html_output#for:name, bf in self._bound_items()/if:bf.is_hidden/else/assign:css_classes",
+   "kind": "lead",
+   "line": 236
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseForm._html_output#if:hidden_fields",
+   "kind": "trail",
+   "line": 267
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/if:not last_row.endswith(row_ender)",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/if:not last_row.endswith(row_ender)/assign:last_row",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseForm._html_output#if:hidden_fields/if:output/else/call:output.append",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseForm.get_context#for:name, bf in self._bound_items()/if:bf.is_hidden/else/if:not isinstance(errors_str, SafeString)",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseForm.non_field_errors",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseForm.add_error",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseForm.add_error#if:not isinstance(error, ValidationError)/assign:error",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseForm.full_clean",
+   "kind": "doc",
+   "line": 391
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseForm.full_clean#if:not self.is_bound",
+   "kind": "trail",
+   "line": 396
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseForm.full_clean#if:self.empty_permitted and not self.has_changed()",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseForm._post_clean",
+   "kind": "doc",
+   "line": 433
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseForm.clean",
+   "kind": "doc",
+   "line": 440
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseForm.has_changed",
+   "kind": "doc",
+   "line": 449
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseForm.media",
+   "kind": "doc",
+   "line": 458
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseForm.is_multipart",
+   "kind": "doc",
+   "line": 465
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseForm.hidden_fields",
+   "kind": "doc",
+   "line": 472
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseForm.visible_fields",
+   "kind": "doc",
+   "line": 479
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseForm.get_initial_for_field",
+   "kind": "doc",
+   "line": 486
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseForm.get_initial_for_field#if:isinstance(value, (datetime.datetime, datetime.time)) and not field.widget.supports_microseconds",
+   "kind": "lead",
+   "line": 496
+  },
+  {
+   "id": "r45",
+   "anchor": "Form",
+   "kind": "doc",
+   "line": 502
+  },
+  {
+   "id": "r46",
+   "anchor": "Form",
+   "kind": "post",
+   "line": 502
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13467,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4421,
+  "thinking_tokens": 2265,
+  "opus_cost_usd": 0.2494865,
+  "total_cost_usd": 0.2590545,
+  "duration_ms": 41136,
+  "duration_api_ms": 42171,
+  "num_turns": 2
+ },
+ "wall_ms": 41991,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

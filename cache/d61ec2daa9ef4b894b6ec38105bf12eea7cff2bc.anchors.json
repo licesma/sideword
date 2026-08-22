@@ -1,0 +1,313 @@
+{
+ "blob_sha": "d61ec2daa9ef4b894b6ec38105bf12eea7cff2bc",
+ "path": "requests/cookies.py",
+ "repo": "psf/requests",
+ "records": 48,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>#try/expr:threading",
+   "kind": "lead",
+   "line": 17
+  },
+  {
+   "id": "r3",
+   "anchor": "MockRequest",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r4",
+   "anchor": "MockRequest.get_full_url#if:not self._r.headers.get('Host')",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r5",
+   "anchor": "MockRequest.get_full_url#assign:host",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r6",
+   "anchor": "MockRequest.get_full_url#return",
+   "kind": "lead",
+   "line": 57
+  },
+  {
+   "id": "r7",
+   "anchor": "MockRequest.add_header",
+   "kind": "doc",
+   "line": 71
+  },
+  {
+   "id": "r8",
+   "anchor": "MockResponse",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r9",
+   "anchor": "MockResponse.__init__",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r10",
+   "anchor": "extract_cookies_to_jar",
+   "kind": "doc",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "extract_cookies_to_jar#assign:req",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r12",
+   "anchor": "extract_cookies_to_jar#assign:res",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r13",
+   "anchor": "get_cookie_header",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r14",
+   "anchor": "remove_cookie_by_name",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r15",
+   "anchor": "CookieConflictError",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r16",
+   "anchor": "RequestsCookieJar",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r17",
+   "anchor": "RequestsCookieJar.get",
+   "kind": "doc",
+   "line": 180
+  },
+  {
+   "id": "r18",
+   "anchor": "RequestsCookieJar.set",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r19",
+   "anchor": "RequestsCookieJar.set#if:value is None",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r20",
+   "anchor": "RequestsCookieJar.iterkeys",
+   "kind": "doc",
+   "line": 207
+  },
+  {
+   "id": "r21",
+   "anchor": "RequestsCookieJar.keys",
+   "kind": "doc",
+   "line": 213
+  },
+  {
+   "id": "r22",
+   "anchor": "RequestsCookieJar.itervalues",
+   "kind": "doc",
+   "line": 218
+  },
+  {
+   "id": "r23",
+   "anchor": "RequestsCookieJar.values",
+   "kind": "doc",
+   "line": 224
+  },
+  {
+   "id": "r24",
+   "anchor": "RequestsCookieJar.iteritems",
+   "kind": "doc",
+   "line": 229
+  },
+  {
+   "id": "r25",
+   "anchor": "RequestsCookieJar.items",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r26",
+   "anchor": "RequestsCookieJar.list_domains",
+   "kind": "doc",
+   "line": 242
+  },
+  {
+   "id": "r27",
+   "anchor": "RequestsCookieJar.list_paths",
+   "kind": "doc",
+   "line": 250
+  },
+  {
+   "id": "r28",
+   "anchor": "RequestsCookieJar.multiple_domains",
+   "kind": "doc",
+   "line": 258
+  },
+  {
+   "id": "r29",
+   "anchor": "RequestsCookieJar.multiple_domains#return",
+   "kind": "trail",
+   "line": 266
+  },
+  {
+   "id": "r30",
+   "anchor": "RequestsCookieJar.get_dict",
+   "kind": "doc",
+   "line": 268
+  },
+  {
+   "id": "r31",
+   "anchor": "RequestsCookieJar.__getitem__",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r32",
+   "anchor": "RequestsCookieJar.__setitem__",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r33",
+   "anchor": "RequestsCookieJar.__delitem__",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r34",
+   "anchor": "RequestsCookieJar.update",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r35",
+   "anchor": "RequestsCookieJar._find",
+   "kind": "doc",
+   "line": 313
+  },
+  {
+   "id": "r36",
+   "anchor": "RequestsCookieJar._find_no_duplicates",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r37",
+   "anchor": "RequestsCookieJar._find_no_duplicates#for:cookie in iter(self)/if:cookie.name==name/if:domain is None or cookie.domain==domain/if:path is None or cookie.path==path/if:toReturn is not None",
+   "kind": "trail",
+   "line": 338
+  },
+  {
+   "id": "r38",
+   "anchor": "RequestsCookieJar._find_no_duplicates#for:cookie in iter(self)/if:cookie.name==name/if:domain is None or cookie.domain==domain/if:path is None or cookie.path==path/assign:toReturn",
+   "kind": "trail",
+   "line": 340
+  },
+  {
+   "id": "r39",
+   "anchor": "RequestsCookieJar.__getstate__",
+   "kind": "doc",
+   "line": 346
+  },
+  {
+   "id": "r40",
+   "anchor": "RequestsCookieJar.__getstate__#call:state.pop",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r41",
+   "anchor": "RequestsCookieJar.__setstate__",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r42",
+   "anchor": "RequestsCookieJar.copy",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r43",
+   "anchor": "_copy_cookie_jar#if:hasattr(jar, 'copy')/return",
+   "kind": "lead",
+   "line": 372
+  },
+  {
+   "id": "r44",
+   "anchor": "_copy_cookie_jar#assign:new_jar",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r45",
+   "anchor": "create_cookie",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r46",
+   "anchor": "morsel_to_cookie",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r47",
+   "anchor": "cookiejar_from_dict",
+   "kind": "doc",
+   "line": 446
+  },
+  {
+   "id": "r48",
+   "anchor": "merge_cookies",
+   "kind": "doc",
+   "line": 466
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13236,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3308,
+  "thinking_tokens": 1229,
+  "opus_cost_usd": 0.2193515,
+  "total_cost_usd": 0.2285095,
+  "duration_ms": 29590,
+  "duration_api_ms": 30481,
+  "num_turns": 2
+ },
+ "wall_ms": 30612,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

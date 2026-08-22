@@ -1,0 +1,395 @@
+# Sideword stripper directive allowlist (schema v1) — EST-106 final.
+#
+# The stripper (harness/strip.py) removes every `#` comment EXCEPT those matching a
+# [[keep]] entry, which are kept byte-for-byte. This list was derived from the 30
+# base_commit checkouts of the 12 SWE-bench Verified repos in corpus/instances.json
+# (tool inventory: corpus/tool-inventory.md; histogram: corpus/directives-histogram.tsv).
+# 343,114 comment tokens in 15,126 non-test .py files were classified; every entry
+# carries a `provenance` note saying which tool reads it and how often it occurs.
+#
+# Matching semantics (implemented in harness/directives.py):
+#   kind = "prefix"   -> `body` starts with `pattern`, where body = comment text with
+#                        the leading '#' removed and leading whitespace stripped.
+#   kind = "contains" -> `pattern` occurs anywhere in the full comment text (incl. '#').
+#   kind = "regex"    -> Python `re.search(pattern, full_comment_text)`.
+#   ignore_case       -> default false.
+#   line              -> "any" (default) | "1" | "1-2": physical line the comment must be on.
+#
+# [[watch]] entries are tool-vocabulary regexes. A REMOVED comment that matches a watch
+# regex but no [[keep]] and no [[human]] entry is "unresolved" — reported in the sidecar
+# with unresolved=true and blocks the pass-2 tag. [[human]] entries whitelist prose that
+# merely mentions a tool ("mypy complains here"), matched by kind/pattern like [[keep]].
+#
+# Classification order (harness/directives.py): [[keep]] first, then [[human]], then
+# [[watch]]; entries within a section are tried in file order, first match wins.
+#
+# Design rules used for this list:
+#   * A [[keep]] rule mirrors the *tool's own* matching semantics (cited in provenance):
+#     flake8/ruff/pycodestyle search the whole line for `noqa`; coverage searches the
+#     line for `#\s*pragma[:\s]?\s*no\s*cover` (repos add custom regexes); black accepts
+#     `# fmt: off/on/skip` also when combined with other comments (`# x # fmt: skip`,
+#     `# fmt: skip; x`) and honours `# yapf: disable/enable`; isort matches `isort:skip`
+#     / `isort: skip` / `isort: split` anywhere in the line and `# isort: off/on/...` as a
+#     whole line; pylint matches `#.*\bpylint:` anywhere; PEP 484 / CPython require
+#     `# type:` at the start of the comment; PEP 263 requires `coding[:=]` on line 1-2;
+#     bandit `#\s*nosec`; mypy `# mypy:` at column 0; sphinx-gallery `^#\s*sphinx_gallery_`
+#     and `^# ?%%` (cell marker); xgettext `--add-comments=Translators` (django).
+#   * A [[human]] rule is only added when the tool's COMPLETE comment-directive vocabulary
+#     is already covered by [[keep]] rules, so any remaining mention of the tool name is
+#     necessarily prose (justification in each entry's provenance).
+#   * Words whose directive form is NOT covered by a keep rule (nosemgrep, nosonar,
+#     noinspection, pytype, pyre-*, cspell, nolint) stay in [[watch]] only, so a new
+#     corpus surfaces them as unresolved instead of silently dropping them.
+version = 1
+
+# ---------------------------------------------------------------------------
+# [[keep]] — machine-read directives, kept byte-for-byte
+# ---------------------------------------------------------------------------
+
+[[keep]]
+name = "shebang"
+pattern = "!"
+kind = "prefix"
+line = "1"
+tool = "os / exec"
+provenance = "mandatory. 394 comments in corpus (astropy, django, matplotlib, pylint, requests, scikit-learn, seaborn, sphinx, sympy, xarray); 0 shebangs found off line 1. sympy bin/test_executable.py checks shebang+exec bit of bin/ scripts (extension-less, never stripped)."
+
+[[keep]]
+name = "coding"
+pattern = "coding[:=]"
+kind = "regex"
+line = "1-2"
+tool = "python (PEP 263) — CPython tokenizer regex ^[ \\t\\f]*#.*?coding[:=][ \\t]*([-_.a-zA-Z0-9]+); also emacs -*- coding -*- and vim fileencoding= forms"
+provenance = "mandatory. 498 comments on line 1-2 (scikit-learn 160, astropy 136, django 107, sympy 76, requests 15, pytest 3, xarray 1); forms seen: `# -*- coding: utf-8 -*-`, `# coding: utf-8`, `# coding=utf-8`, `# coding=utf8`, `# encoding: utf-8`. LOAD-BEARING in sympy 20916/22714: sympy/testing/quality_unicode.py message C fails if a unicode-whitelisted file (e.g. sympy/physics/wigner.py, sympy/liealgebras/type_g.py) loses its coding header. Only 2 `coding[:=]` comments exist on line>=3 in the corpus (xarray prose 'set_encoding=True'), so no header can migrate up into line 1-2 after stripping."
+
+[[keep]]
+name = "emacs-modeline"
+pattern = "-*-"
+kind = "prefix"
+line = "1-2"
+tool = "emacs file-local variables (-*- mode: python; coding: utf-8 -*-) / PEP 263"
+provenance = "seed rule kept. 475 comments start with -*- (almost all `# -*- coding: utf-8 -*-`, matched first by `coding`); 1 non-coding form: pylint/epylint.py:2 `# -*- vim:fenc=utf-8:ft=python:et:sw=4:ts=4:sts=4`."
+
+[[keep]]
+name = "vim-modeline"
+pattern = "^#\\s*(vim?|ex):"
+kind = "regex"
+tool = "vim/vi modelines (`# vim: set ts=4:`, `# vi:`, `# ex:`); vim reads the first and last 5 lines"
+provenance = "editor directive; unused in corpus (0 comments; the only vim modeline in the corpus is the -*- form above). Case-sensitive on purpose: sympy has prose `# Ex: y==x becomes ...` (capital E, 10 comments) which must not match."
+
+[[keep]]
+name = "type-comment"
+pattern = "^#\\s*type\\s*:"
+kind = "regex"
+tool = "mypy, pyright, pytype, CPython ast type_comments=True (PEP 484: the comment must START with `type:`; `# type: ignore[code]` is a TYPE_IGNORE token)"
+provenance = "mandatory. 3,309 comments (sympy 1,682, sphinx 1,215, pytest 131, xarray 128, flask 68, pylint 55, scikit-learn 24, seaborn 6): `# type: ignore` 1,474, `# type: ignore[code]` ~250, PEP 484 signature/variable comments `# type: Dict[str, Extension]` (sphinx 8475, sympy). sphinx, pylint, flask, pytest-10051 run mypy with warn_unused_ignores / ignore-without-code, so these are semantically load-bearing. Prose `# Type ignored because mypy ...` (pytest, 26) does not match (no colon, capital T)."
+
+[[keep]]
+name = "noqa"
+pattern = "noqa"
+kind = "contains"
+ignore_case = true
+tool = "flake8 (NOQA_INLINE_REGEXP `# noqa(?::[\\s]?(?P<codes>...))?` re.I, searched in the whole physical line; NOQA_FILE `\\s*# flake8[:=]\\s*noqa`), pycodestyle (`# no(?:qa|pep8)\\b` re.I), ruff (`#\\s*noqa`, `# ruff: noqa`), pydocstyle, flake8 plugins (bugbear B950 etc.)"
+provenance = "mandatory. 1,823 comments contain noqa (sympy 572, django 302, astropy 292, scikit-learn 183, sphinx 177, matplotlib 144, seaborn 47, pytest 42, xarray 39, requests 16, flask 8, pylint 1). Forms: `# noqa`, `# noqa: F401`, `# noqa:F811` (sympy, 501 without space), `# NOQA` (sphinx 8475, 93), `# NoQA: E704` (sphinx 11445, 47), `# flake8: noqa` (27), `# NOQA isort:skip` (72), `# type: ignore # noqa: B950`. flake8/ruff run in 11 of 12 repos; astropy 14365/14598 additionally forbid blanket noqa (pygrep python-check-blanket-noqa). contains-anywhere is exactly flake8 semantics."
+
+[[keep]]
+name = "nopep8"
+pattern = "#\\s*nopep8\\b"
+kind = "regex"
+ignore_case = true
+tool = "pycodestyle (`# no(?:qa|pep8)\\b`, re.I; also autopep8)"
+provenance = "histogram: 2 comments (astropy/utils/decorators.py:125, requests/packages/chardet/escprober.py:83). Both repos run pycodestyle-based flake8."
+
+[[keep]]
+name = "pragma"
+pattern = "#\\s*pragma\\b|\\bpragma:\\s*no.?(cover|branch)"
+kind = "regex"
+ignore_case = true
+tool = "coverage.py — DEFAULT_EXCLUDE `#\\s*(pragma|PRAGMA)[:\\s]?\\s*(no|NO)\\s*(cover|COVER)` and DEFAULT_PARTIAL `... no branch`, re.search on the source line; repo overrides: sympy `\\#.*pragma:\\s*no.?cover`, pytest-10051 `\\#\\s*pragma: no cover`, astropy `pragma: py{ignore_python_version}`, pylint/flask/xarray/seaborn/sphinx/matplotlib(23299+) `pragma: no cover`"
+provenance = "mandatory. 736 comments (sympy 483, astropy 86, xarray 54, pylint 49, scikit-learn 27, django 14, flask 14, pytest 9): 711 start with `# pragma:`, the rest embed it after another comment (`# Something else  # pragma: no cover`, astropy/stats/histogram.py:268) — hence regex-anywhere, not prefix. django's `PRAGMA` (sqlite) prose never follows `#` directly and never has `pragma:`, so it is not matched (see [[human]] pragma-prose). matplotlib-14623 .coveragerc lacks `pragma: no cover` (added by 23299) — kept anyway."
+
+[[keep]]
+name = "fmt"
+pattern = "[#;]\\s*fmt:"
+kind = "regex"
+tool = "black / ruff format — FMT_OFF {'# fmt: off','# fmt:off'}, FMT_ON {'# fmt: on','# fmt:on'}, FMT_SKIP {'# fmt: skip','# fmt:skip'}; black.comments.contains_fmt_directive also recognises them when combined `# x # fmt: skip` or `# fmt: skip; x`"
+provenance = "mandatory. 114 comments (astropy 82, pytest 32): `# fmt: off` 32, `# fmt: on` 32, `# fmt: skip` 50. black runs in astropy(14365+), pytest, pylint, flask, xarray, scikit-learn-25102, seaborn(no) — pytest-10051 has 6 on/off region pairs. Prose `# fmt will issue a deprecation warning ...` (matplotlib) has no colon and is not matched."
+
+[[keep]]
+name = "yapf"
+pattern = "[#;]\\s*yapf:\\s*(disable|enable)\\b"
+kind = "regex"
+tool = "yapf; black also honours `# yapf: disable` / `# yapf: enable` as FMT_OFF/FMT_ON"
+provenance = "black-recognised directive; unused in corpus (0 comments). Kept because black is in the toolchain of 7 repos."
+
+[[keep]]
+name = "isort"
+pattern = "\\bisort:\\s*[A-Za-z_-]+"
+kind = "regex"
+tool = "isort — parse.py: `'isort:skip' in line or 'isort: skip' in line or 'isort: split' in line` (anywhere); core.py: whole-line `# isort: off|on|skip_file|split|dont-add-imports|dont-add-import:|list|dict|unique-list|unique-tuple|assignments`; ruff `# ruff: isort: skip_file`"
+provenance = "mandatory. 59 comments: astropy `# isort: split` (28, incl. `# needed before 'realizations'  # isort: split` at astropy/cosmology/__init__.py:13 which isort honours via endswith), django/sphinx `# NOQA isort:skip` (26 — also kept by noqa), sphinx `# isort:skip`. isort runs in astropy(13398), django, xarray, pylint, sphinx, matplotlib-25311, pytest(tox). Case-sensitive like isort itself; prose `# isort < 5` (pylint) has no colon -> [[human]] isort-prose."
+
+[[keep]]
+name = "pylint"
+pattern = "#.*\\bpylint:"
+kind = "regex"
+tool = "pylint — OPTION_RGX `\\#.*?\\bpylint:\\s*([^;#\\n]+)` (pragma may follow other comment text on the same line): disable/enable/disable-next/skip-file/disable-all"
+provenance = "mandatory. 179 comments start with `# pylint:` (pylint 100, astropy 79: `# pylint: disable=W0611`, `# pylint: disable=invalid-name`, `# pylint: disable=W,C,R`); pylint's own source also contains 3 embedded forms (`# 3.        pylint: disable=not-callable, useless-suppression` in pylint/utils/file_state.py, `# The 'pylint: disable whatever' ...` in checkers/format.py) that pylint's regex WOULD parse when it lints itself (pre-commit `pylint --fail-on=I`), so regex-anywhere is required."
+
+[[keep]]
+name = "flake8"
+pattern = "^#\\s*flake8[:=]"
+kind = "regex"
+ignore_case = true
+tool = "flake8 NOQA_FILE `\\s*# flake8[:=]\\s*noqa` (file-level suppression), re.I"
+provenance = "mandatory. 28 comments (requests 13, scikit-learn 11, astropy 3, seaborn 1), all `# flake8: noqa` (also caught by `noqa`)."
+
+[[keep]]
+name = "nosec"
+pattern = "#\\s*nosec\\b"
+kind = "regex"
+tool = "bandit — NOSEC_COMMENT `#\\s*nosec:?\\s*(?P<tests>[^#]+)?#?` searched in the line"
+provenance = "mandatory (unused in corpus): 0 comments; bandit is not configured in any of the 12 repos."
+
+[[keep]]
+name = "mypy"
+pattern = "mypy:"
+kind = "prefix"
+tool = "mypy inline config — mypy/util.py get_mypy_comments: `line.startswith('# mypy: ')` (whole-line, column 0), e.g. `# mypy: ignore-errors`, `# mypy: disallow-any-generics`"
+provenance = "mandatory (unused in corpus): 0 comments, although mypy runs in sphinx, pylint, pytest-10051, flask, xarray, seaborn, scikit-learn-25102, sympy(20916+)."
+
+[[keep]]
+name = "pyright"
+pattern = "pyright:"
+kind = "prefix"
+tool = "pyright — `# pyright: ignore[rule]` (trailing), `# pyright: basic|standard|strict` and `# pyright: reportFoo=false` (file-level)"
+provenance = "mandatory (unused in corpus): 0 comments; pyright not configured in any repo (xarray/astropy prose mentions only)."
+
+[[keep]]
+name = "ruff"
+pattern = "ruff:"
+kind = "prefix"
+tool = "ruff — `# ruff: noqa`, `# ruff: noqa: F401`, `# ruff: isort: skip_file`"
+provenance = "mandatory (unused in corpus): 0 comments; ruff is configured in sphinx-11445 (select=ALL) and astropy-14365/14598 and matplotlib-25311, all using plain `# noqa`."
+
+[[keep]]
+name = "cython-directive"
+pattern = "^#\\s*(cython|distutils):"
+kind = "regex"
+tool = "Cython compiler directives / distutils build hints in file headers (`# cython: language_level=3`, `# distutils: language=c++`); honoured in .pyx and in pure-Python-mode .py"
+provenance = "tool present (scikit-learn, astropy, sympy build Cython extensions) but the directive form is unused in corpus .py files (0 comments; prose `# cython k-means code assumes int32 inputs` has no colon -> [[human]] cython-prose)."
+
+[[keep]]
+name = "sphinx-gallery-config"
+pattern = "^#\\s*sphinx_gallery_[A-Za-z0-9_]+"
+kind = "regex"
+tool = "sphinx-gallery — INFILE_CONFIG_PATTERN `^[ \\t]*#\\s*sphinx_gallery_([A-Za-z0-9_]+)(\\s*=\\s*(.+))?` (thumbnail_number, capture_repr, start_ignore/end_ignore, defer_figures, dummy_images, ...); with remove_config_comments=True (matplotlib 23299+, scikit-learn 25102) it deletes them from the rendered example, i.e. it definitely parses them"
+provenance = "histogram: 59 comments (matplotlib 56: `# sphinx_gallery_thumbnail_number = N` 54, `# sphinx_gallery_capture_repr = ('__repr__',)` 2; scikit-learn 3). Only affects the docs build (no PASS_TO_PASS), kept because it is a parsed configuration directive."
+
+[[keep]]
+name = "cell-marker"
+pattern = "^# ?%%"
+kind = "regex"
+tool = "sphinx-gallery text-block header `^# ?%%.*` (py_source_parser.split_code_and_text_blocks); also the IPython/VS Code/Spyder/PyCharm/Jupytext code-cell marker"
+provenance = "histogram: 1,895 comments (scikit-learn examples/ 1,057; matplotlib galleries/ 836, examples/tutorials/ 2), all `# %%` at column 0. DECISION: keep — it is a structural, tool-parsed cell separator (the example stays runnable cell-by-cell) and costs 1,895 x 4 bytes. The older sphinx-gallery separator (a line of >=20 `#`, `^#{20,}.*`; 2,464 such lines in matplotlib/sklearn/astropy examples but also 963 in sympy/, 336 in astropy/, 236 in sklearn/ as pure decoration) is NOT kept: the schema cannot scope it to example dirs and outside them it is decoration; the prose text block that follows it is stripped anyway."
+
+[[keep]]
+name = "translators"
+pattern = "Translators:"
+kind = "prefix"
+tool = "xgettext via django makemessages (`--add-comments=Translators`): a comment block starting with `Translators:` immediately before a gettext call is copied into the .po file"
+provenance = "histogram: 72 comments, django only (django/contrib/humanize/templatetags/humanize.py 21, forms/boundfield.py, core/paginator.py, db/models/fields/__init__.py, contrib/admin/options.py, template/defaultfilters.py, utils/text.py, ...). Case-sensitive like the xgettext tag. LIMITATION: 29 of the 72 continue on following full-line comments (`# Translators: please keep a non-breaking space (U+00A0)` / `# between count and time unit.`); the continuation lines are removed, so the extracted translator note is truncated. No test depends on them (tests/i18n uses its own sample files)."
+
+[[keep]]
+name = "matplotlib-boilerplate"
+pattern = "REMAINING CONTENT GENERATED BY boilerplate\\.py|^#\\s*Autogenerated by boilerplate\\.py"
+kind = "regex"
+tool = "matplotlib tools/boilerplate.py — build_pyplot() truncates lib/matplotlib/pyplot.py at the exact line `################# REMAINING CONTENT GENERATED BY boilerplate.py ##############` (raises ValueError if missing) and re-emits `# Autogenerated by boilerplate.py.  Do not edit as changes will be lost.` before every generated function; lib/matplotlib/tests/test_pyplot.py::test_pyplot_up_to_date asserts the regenerated file is byte-identical"
+provenance = "histogram: 1 marker + 93/104/104/104 `# Autogenerated by boilerplate.py.` comments in the 4 matplotlib checkouts (lib/matplotlib/pyplot.py only). test_pyplot_up_to_date is not in any instance's PASS_TO_PASS, but the marker is a machine directive and the file must stay regenerable. NOTE: the same test also compares the docstrings of the 19 generated colormap functions (`\"\"\"Set the colormap to 'viridis'...\"\"\"`) which the stripper removes — flagged in the EST-106 spec, not fixable by a comment rule."
+
+[[keep]]
+name = "skipcq"
+pattern = "skipcq"
+kind = "contains"
+tool = "DeepSource — `# skipcq: PYL-W0613` anywhere in the line"
+provenance = "tool configured (xarray-4356 .deepsource.toml) but 0 comments in corpus."
+
+[[keep]]
+name = "codespell"
+pattern = "codespell:ignore"
+kind = "contains"
+tool = "codespell inline ignore — `[^\\w\\s]\\s*codespell:ignore(?!-)\\b(\\s+words)?`, `codespell:ignore-next-line`, `codespell:ignore-begin/-end`"
+provenance = "codespell runs in astropy-14365/14598, matplotlib-23299+, scikit-learn-25102, pylint (spelling); 0 inline-ignore comments in corpus."
+
+[[keep]]
+name = "lgtm"
+pattern = "#\\s*lgtm\\b"
+kind = "regex"
+tool = "LGTM.com / CodeQL alert suppression `# lgtm[py/unused-loop-variable]` (searched in the line)"
+provenance = "histogram: 4 comments, all matplotlib lib/matplotlib/cbook/__init__.py `# lgtm[py/unused-loop-variable]`."
+
+# ---------------------------------------------------------------------------
+# [[human]] — prose that mentions a tool; removed, never unresolved
+# ---------------------------------------------------------------------------
+
+[[human]]
+name = "pylint-license-header"
+pattern = "^#\\s*(For details:|Copyright \\(c\\)) https://github\\.com/PyCQA/pylint/blob/main/(LICENSE|CONTRIBUTORS\\.txt)"
+kind = "regex"
+tool = "pylint repo license header (pre-commit copyright-notice hook, not a linter directive)"
+provenance = "342 comments in pylint-6528 (lines 2-3 of every file). The header is enforced by pre-commit `copyright-notice --enforce-all`, i.e. it would be re-added by the hook; no test reads it."
+
+[[human]]
+name = "pylint-prose"
+pattern = "\\bpylint\\b"
+kind = "regex"
+ignore_case = true
+tool = "pylint"
+provenance = "pylint's complete comment vocabulary is `pylint:` (OPTION_RGX), covered by [[keep]] pylint above; whatever remains is prose — 30 distinct comments, mostly in pylint's own source (`# Skip pylint enable/disable comments`, `# Call pylint in a sub-process`, `# https://github.com/PyCQA/pylint/pull/3577`, `# Pylint documentation build configuration file`)."
+
+[[human]]
+name = "mypy-prose"
+pattern = "\\bmypy\\b"
+kind = "regex"
+ignore_case = true
+tool = "mypy"
+provenance = "mypy's complete comment vocabulary is `# type:` (PEP 484) and `# mypy:` (inline config), both in [[keep]]; the rest is prose — 65 distinct comments (`# mypy error: Module 'sklearn.svm' has no attribute '_libsvm'` sklearn, `# https://github.com/python/mypy/issues/12846 is resolved` xarray, `# Type ignored because mypy is confused about the `self` binding here.` pytest, `# XXX: The type: ignore on WildFunction is because mypy complains:` sympy)."
+
+[[human]]
+name = "pyright-prose"
+pattern = "\\bpyright\\b"
+kind = "regex"
+ignore_case = true
+tool = "pyright"
+provenance = "pyright's directives are `# pyright:` and `# type: ignore` (both [[keep]]); remaining mentions are prose (astropy/io/ascii/ui.py:402 `# Static analysis (pyright) indicates ...`, xarray/core/types.py:41 `# Can be uncommented if using pyright though.`)."
+
+[[human]]
+name = "flake8-prose"
+pattern = "\\bflake8\\b"
+kind = "regex"
+ignore_case = true
+tool = "flake8"
+provenance = "every flake8 directive contains `noqa` ([[keep]] noqa) or starts with `flake8:` ([[keep]] flake8); remaining mentions are prose (`# Explicitly skipping next line from flake8 as it triggers an F401 warning` sklearn, `# as arg to stop flake8 from complaining` sphinx, `# [1] https://gitlab.com/pycqa/flake8/issues/347`)."
+
+[[human]]
+name = "isort-prose"
+pattern = "\\bisort\\b"
+kind = "regex"
+ignore_case = true
+tool = "isort"
+provenance = "every isort directive contains `isort:` ([[keep]] isort); the one remaining mention is prose (pylint/utils/utils.py:11 `# isort < 5`)."
+
+[[human]]
+name = "black-prose"
+pattern = "\\bblack\\b"
+kind = "regex"
+ignore_case = true
+tool = "black"
+provenance = "black's directives are `fmt:` and `yapf:` ([[keep]]); the word `black` in comments of this corpus is the colour (68 distinct comments in matplotlib/scikit-learn/seaborn examples: `# black outline`, `# Black used for noise.`, `# Black band of CMLY image` django gis)."
+
+[[human]]
+name = "coverage-prose"
+pattern = "\\bcoverage\\b"
+kind = "regex"
+ignore_case = true
+tool = "coverage.py"
+provenance = "coverage's comment directive is `pragma` ([[keep]] pragma); mentions of the word are prose (`# COVERAGE NOTE: Not used internally or from examples` matplotlib, `# here for coverage` sympy, `# If coverage is running, pass the config file to the subprocess` sklearn) — 26 distinct comments."
+
+[[human]]
+name = "pragma-prose"
+pattern = "\\bpragma\\b"
+kind = "regex"
+ignore_case = true
+tool = "coverage.py"
+provenance = "coverage requires `#\\s*pragma` or `pragma:` (both [[keep]] pragma, incl. the repos' custom regexes); what remains is django's sqlite `PRAGMA` prose (`# Don't use PRAGMA because that causes issues with some transactions`, `# constraints from `PRAGMA index_list` are:`) and pylint's own `# Parse module/block level option pragma's` — 8 distinct comments."
+
+[[human]]
+name = "cython-prose"
+pattern = "\\bcython\\b"
+kind = "regex"
+ignore_case = true
+tool = "Cython"
+provenance = "Cython's .py directives are `# cython:` / `# distutils:` ([[keep]] cython-directive); remaining mentions are prose about Cython code (`# cython k-means code assumes int32 inputs` sklearn, `# locally in the Cython code.` sympy, `# https://github.com/cython/cython/issues/2104` astropy) — 45 distinct comments."
+
+[[human]]
+name = "doctest-prose"
+pattern = "\\bdoctest\\b"
+kind = "regex"
+ignore_case = true
+tool = "doctest / pytest-doctestplus"
+provenance = "`# doctest: +SKIP` option directives are only parsed inside `>>>` example source (docstrings/rst); a COMMENT token can never carry one (0 in corpus; sympy has 105-144 `# doctest: +SKIP` per checkout, ALL inside docstrings). Remaining mentions are prose (`# doctest skipped as the complex number formatting changed in numpy 1.14.` astropy, `# Doctest handling` matplotlib, sphinx/ext/doctest.py internals, sympy runtests) — 45 distinct comments."
+
+[[human]]
+name = "pep8-tools-prose"
+pattern = "\\b(pyflakes|pycodestyle|pep8|autopep8)\\b"
+kind = "regex"
+ignore_case = true
+tool = "pyflakes / pycodestyle / autopep8"
+provenance = "these tools' only directives are `noqa` and `nopep8` (both [[keep]]); mentions are prose (`# placates pyflakes: created by @_Backend.export below` matplotlib, `# grr, pyflakes: this fixes ...` requests, `# Next line to silence pyflakes.` sklearn) — 9 comments."
+
+[[human]]
+name = "ruff-prose"
+pattern = "\\bruff\\b"
+kind = "regex"
+ignore_case = true
+tool = "ruff"
+provenance = "ruff's directives are `noqa` and `ruff:` (both [[keep]]); 0 prose mentions in corpus, listed for completeness."
+
+[[human]]
+name = "sphinx-gallery-prose"
+pattern = "sphinx_gallery"
+kind = "regex"
+tool = "sphinx-gallery"
+provenance = "the parsed forms are `^#\\s*sphinx_gallery_...` ([[keep]] sphinx-gallery-config); anything else (e.g. `# sphinx_gallery_conf` mentions in doc/conf.py) is prose. 0 in corpus after the keep rule."
+
+[[human]]
+name = "yapf-bandit-semgrep-prose"
+pattern = "\\b(yapf|bandit|semgrep|codespell|skipcq|lgtm)\\b"
+kind = "regex"
+ignore_case = true
+tool = "yapf / bandit / semgrep / codespell / DeepSource / LGTM"
+provenance = "their directive forms are all in [[keep]] (`yapf:`, `nosec`, `codespell:ignore`, `skipcq`, `lgtm`); `nosemgrep` is deliberately NOT here (no keep rule -> stays watch). 0 prose mentions in corpus."
+
+[[human]]
+name = "translators-prose"
+pattern = "\\btranslators\\b"
+kind = "regex"
+ignore_case = true
+tool = "xgettext / django makemessages"
+provenance = "the xgettext tag is the case-sensitive comment prefix `Translators:` ([[keep]] translators); any other mention is prose — sphinx/locale/__init__.py:141 `# guarantee translators[(namespace, catalog)] exists`, sphinx/registry.py:116/119 `#: custom translators; ...` (6 comments)."
+
+[[human]]
+name = "emacs-mode-without-marker"
+pattern = "^#\\s*mode:\\s*python\\s*;"
+kind = "regex"
+tool = "emacs"
+provenance = "pylint/epylint.py:1 `# mode: python; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4` — Emacs only honours `mode:` inside `-*- ... -*-` on line 1 or a trailing `Local Variables:` block, so this bare form is inert; matched by watch colon-token `mode:` and classified as prose."
+
+# ---------------------------------------------------------------------------
+# [[watch]] — tool vocabulary that must never be silently removed
+# ---------------------------------------------------------------------------
+
+[[watch]]
+name = "tool-words"
+pattern = "(?i)\\b(noqa|nosec|pragma|pylint|flake8|mypy|pyright|pytype|pyre|pyre-ignore|pyre-fixme|ruff|isort|yapf|black|autopep8|pycodestyle|pep8|nopep8|bandit|coverage|cython|doctest|codespell|cspell|skipcq|nosonar|noinspection|sphinx_gallery|nolint|semgrep|nosemgrep|lgtm|pyflakes|translators)\\b"
+kind = "regex"
+
+[[watch]]
+name = "colon-token-lower"
+pattern = "^#\\s*(type|fmt|coding|encoding|vim|vi|ex|mode|region|endregion|cython|distutils|doctest|mypy|pyright|ruff|flake8|isort|pylint|pragma|codespell|cspell|pytype|nosec|noqa|nopep8|autopep8|yapf|translators|sphinx_gallery_[a-z0-9_]+):"
+kind = "regex"
+
+[[watch]]
+name = "shebang-off-line-1"
+pattern = "^#!\\s*/"
+kind = "regex"
+
+[[watch]]
+name = "coding-declaration-off-line-1-2"
+pattern = "^#\\s*(-\\*-\\s*)?(en)?coding[:=]"
+kind = "regex"
+# A PEP 263 declaration on line >= 3 is inert in the original file, but if the full-line
+# comments above it are stripped it MIGRATES to line 1-2 and becomes active (possibly with
+# a different codec than the file was decoded with). 0 such comments in the corpus (the
+# only `coding[:=]` comments on line >= 3 are xarray prose `set_encoding=True`, which this
+# anchored regex does not match); surfacing them as unresolved forces a human decision.

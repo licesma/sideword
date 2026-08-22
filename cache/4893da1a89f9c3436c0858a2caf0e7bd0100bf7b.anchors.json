@@ -1,0 +1,355 @@
+{
+ "blob_sha": "4893da1a89f9c3436c0858a2caf0e7bd0100bf7b",
+ "path": "astropy/utils/data_info.py",
+ "repo": "astropy/astropy",
+ "records": 55,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:os",
+   "kind": "lead",
+   "line": 17
+  },
+  {
+   "id": "r4",
+   "anchor": "IGNORE_WARNINGS",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "serialize_context_as",
+   "kind": "doc",
+   "line": 43
+  },
+  {
+   "id": "r6",
+   "anchor": "dtype_info_name",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r7",
+   "anchor": "data_info_factory",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r8",
+   "anchor": "_get_obj_attrs_map",
+   "kind": "doc",
+   "line": 162
+  },
+  {
+   "id": "r9",
+   "anchor": "_get_data_attribute",
+   "kind": "doc",
+   "line": 178
+  },
+  {
+   "id": "r10",
+   "anchor": "InfoAttribute.__set__#if:instance is None/raise:ValueError",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r11",
+   "anchor": "ParentAttribute.__set__#if:instance is None/raise:ValueError",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r12",
+   "anchor": "DataInfoMeta.__new__#call:dct.setdefault",
+   "kind": "lead",
+   "line": 237
+  },
+  {
+   "id": "r13",
+   "anchor": "DataInfoMeta.__init__#for:attr in cls.attr_names",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r14",
+   "anchor": "DataInfoMeta.__init__#for:attr in cls.attr_names/if:attr not in dct/assign:cls_attr",
+   "kind": "lead",
+   "line": 249
+  },
+  {
+   "id": "r15",
+   "anchor": "DataInfoMeta.__init__#for:attr in cls.attr_names/if:attr not in dct/if:attr in cls.attrs_from_parent/if:'attrs_from_parent' in dct and not isinstance(cls_attr, ParentAttribute)",
+   "kind": "lead",
+   "line": 254
+  },
+  {
+   "id": "r16",
+   "anchor": "DataInfoMeta.__init__#for:attr in cls.attr_names/if:attr not in dct/if:attr in cls.attrs_from_parent/elif:not cls_attr or isinstance(cls_attr, ParentAttribute)/call:setattr",
+   "kind": "lead",
+   "line": 261
+  },
+  {
+   "id": "r17",
+   "anchor": "DataInfo",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r18",
+   "anchor": "DataInfo._represent_as_dict_attrs",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r19",
+   "anchor": "DataInfo._construct_from_dict_args",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r20",
+   "anchor": "DataInfo._represent_as_dict_primary_data",
+   "kind": "lead",
+   "line": 309
+  },
+  {
+   "id": "r21",
+   "anchor": "DataInfo.__init__#if:bound",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r22",
+   "anchor": "DataInfo.__get__#if:instance is None/assign:self._parent_cls",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r23",
+   "anchor": "DataInfo.__get__#assign:info._parent_ref",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r24",
+   "anchor": "DataInfo.__set__#if:instance is None/raise:ValueError",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r25",
+   "anchor": "DataInfo.__set__#if:isinstance(value, DataInfo)/if:value.__class__ is self.__class__/assign:attr_names",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r26",
+   "anchor": "DataInfo.__set__#if:isinstance(value, DataInfo)/if:value.__class__ is self.__class__/assign:attr_names",
+   "kind": "trail",
+   "line": 364
+  },
+  {
+   "id": "r27",
+   "anchor": "DataInfo.__set__#if:isinstance(value, DataInfo)/if:value.__class__ is self.__class__/else/assign:attr_names",
+   "kind": "lead",
+   "line": 367
+  },
+  {
+   "id": "r28",
+   "anchor": "DataInfo._represent_as_dict",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r29",
+   "anchor": "DataInfo.info_summary_stats",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r30",
+   "anchor": "DataInfo.__call__",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseColumnInfo",
+   "kind": "doc",
+   "line": 513
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseColumnInfo._serialize_context",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseColumnInfo.__init__#if:bound",
+   "kind": "lead",
+   "line": 556
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseColumnInfo.__set__#try",
+   "kind": "lead",
+   "line": 561
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseColumnInfo.iter_str_vals",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseColumnInfo.indices#return",
+   "kind": "lead",
+   "line": 588
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseColumnInfo.adjust_indices",
+   "kind": "doc",
+   "line": 594
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseColumnInfo.adjust_indices#if:isinstance(index, slice)/assign:t",
+   "kind": "lead",
+   "line": 615
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseColumnInfo.adjust_indices#if:isinstance(index, slice)/elif:isinstance(index, np.ndarray) and index.dtype.kind == 'b'/assign:keys",
+   "kind": "lead",
+   "line": 619
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseColumnInfo.adjust_indices#if:isinstance(index, slice)/else",
+   "kind": "trail",
+   "line": 620
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseColumnInfo.adjust_indices#assign:value",
+   "kind": "trail",
+   "line": 623
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseColumnInfo.adjust_indices#if:value.size == 1/assign:value",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseColumnInfo.slice_indices",
+   "kind": "doc",
+   "line": 632
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseColumnInfo.slice_indices#if:not getattr(self, '_copy_indices', True)/assign:col_slice.info.indices",
+   "kind": "lead",
+   "line": 650
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseColumnInfo.slice_indices#if:not getattr(self, '_copy_indices', True)/elif:isinstance(item, slice)/elif:self.indices/if:isinstance(item, np.ndarray) and item.dtype.kind == 'b'/assign:item",
+   "kind": "lead",
+   "line": 657
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseColumnInfo.slice_indices#if:not getattr(self, '_copy_indices', True)/elif:isinstance(item, slice)/elif:self.indices/assign:small",
+   "kind": "lead",
+   "line": 662
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseColumnInfo.merge_cols_attributes",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseColumnInfo.merge_cols_attributes#assign:out['dtype']",
+   "kind": "lead",
+   "line": 719
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseColumnInfo.merge_cols_attributes#assign:uniq_shapes",
+   "kind": "lead",
+   "line": 722
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseColumnInfo.merge_cols_attributes#if:name is not None",
+   "kind": "lead",
+   "line": 728
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseColumnInfo.get_sortable_arrays",
+   "kind": "doc",
+   "line": 733
+  },
+  {
+   "id": "r52",
+   "anchor": "MixinInfo.name#if:self.parent_table is not None",
+   "kind": "lead",
+   "line": 758
+  },
+  {
+   "id": "r53",
+   "anchor": "MixinInfo.groups#import:astropy.table",
+   "kind": "lead",
+   "line": 770
+  },
+  {
+   "id": "r54",
+   "anchor": "ParentDtypeInfo",
+   "kind": "doc",
+   "line": 774
+  },
+  {
+   "id": "r55",
+   "anchor": "ParentDtypeInfo.attrs_from_parent",
+   "kind": "trail",
+   "line": 777
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 18164,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5994,
+  "thinking_tokens": 3088,
+  "opus_cost_usd": 0.3357815,
+  "total_cost_usd": 0.3490725,
+  "duration_ms": 53168,
+  "duration_api_ms": 54396,
+  "num_turns": 2
+ },
+ "wall_ms": 54098,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

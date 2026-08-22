@@ -1,0 +1,265 @@
+{
+ "blob_sha": "3e4199a1d956238c139073db95566863eb613cff",
+ "path": "django/utils/text.py",
+ "repo": "django/django",
+ "records": 40,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "capfirst",
+   "kind": "doc",
+   "line": 14
+  },
+  {
+   "id": "r2",
+   "anchor": "re_words",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r3",
+   "anchor": "re_newlines",
+   "kind": "trail",
+   "line": 27
+  },
+  {
+   "id": "r4",
+   "anchor": "wrap",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "wrap._generator#for:line in text.splitlines(True)",
+   "kind": "trail",
+   "line": 44
+  },
+  {
+   "id": "r6",
+   "anchor": "Truncator",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r7",
+   "anchor": "Truncator.add_truncation_text#if:text.endswith(truncate)",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r8",
+   "anchor": "Truncator.add_truncation_text#if:text.endswith(truncate)/return",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r9",
+   "anchor": "Truncator.chars",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r10",
+   "anchor": "Truncator.chars#assign:truncate_len",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r11",
+   "anchor": "Truncator._text_chars",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r12",
+   "anchor": "Truncator._text_chars#for:i, char in enumerate(text)/if:unicodedata.combining(char)/continue",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r13",
+   "anchor": "Truncator._text_chars#for:i, char in enumerate(text)/if:s_len>length/return",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r14",
+   "anchor": "Truncator._text_chars#return",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r15",
+   "anchor": "Truncator.words",
+   "kind": "doc",
+   "line": 127
+  },
+  {
+   "id": "r16",
+   "anchor": "Truncator._text_words",
+   "kind": "doc",
+   "line": 139
+  },
+  {
+   "id": "r17",
+   "anchor": "Truncator._truncate_html",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r18",
+   "anchor": "Truncator._truncate_html#assign:pos",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r19",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:not m/break",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r20",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:m[1]/assign:current_len",
+   "kind": "lead",
+   "line": 183
+  },
+  {
+   "id": "r21",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/assign:tag",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r22",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:not tag or current_len>=truncate_len/continue",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r23",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/assign:tagname",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r24",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:self_closing or tagname in html4_singlets/elif:closing_tag/try",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r25",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:self_closing or tagname in html4_singlets/elif:closing_tag/try/else/assign:open_tags",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r26",
+   "anchor": "Truncator._truncate_html#while:current_len<=length/if:self_closing or tagname in html4_singlets/else/call:open_tags.insert",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r27",
+   "anchor": "Truncator._truncate_html#for:tag in open_tags",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r28",
+   "anchor": "Truncator._truncate_html#return",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r29",
+   "anchor": "get_valid_filename",
+   "kind": "doc",
+   "line": 225
+  },
+  {
+   "id": "r30",
+   "anchor": "get_text_list",
+   "kind": "doc",
+   "line": 242
+  },
+  {
+   "id": "r31",
+   "anchor": "normalize_newlines",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r32",
+   "anchor": "phone2numeric",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r33",
+   "anchor": "compress_sequence",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r34",
+   "anchor": "compress_sequence#with:GzipFile(mode='wb', compresslevel=6, fileobj=buf, mtime=0)/yield",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r35",
+   "anchor": "smart_split_re",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r36",
+   "anchor": "smart_split",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r37",
+   "anchor": "unescape_string_literal",
+   "kind": "doc",
+   "line": 364
+  },
+  {
+   "id": "r38",
+   "anchor": "slugify",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r39",
+   "anchor": "camel_case_to_spaces",
+   "kind": "doc",
+   "line": 401
+  },
+  {
+   "id": "r40",
+   "anchor": "_format_lazy",
+   "kind": "doc",
+   "line": 408
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11306,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3687,
+  "thinking_tokens": 1870,
+  "opus_cost_usd": 0.2095265,
+  "total_cost_usd": 0.2174265,
+  "duration_ms": 34360,
+  "duration_api_ms": 35822,
+  "num_turns": 2
+ },
+ "wall_ms": 35158,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

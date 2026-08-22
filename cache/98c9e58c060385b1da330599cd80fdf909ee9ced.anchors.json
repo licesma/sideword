@@ -1,0 +1,283 @@
+{
+ "blob_sha": "98c9e58c060385b1da330599cd80fdf909ee9ced",
+ "path": "astropy/io/ascii/fixedwidth.py",
+ "repo": "astropy/astropy",
+ "records": 43,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "FixedWidthSplitter",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r4",
+   "anchor": "FixedWidthHeaderSplitter",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r5",
+   "anchor": "FixedWidthHeader",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r6",
+   "anchor": "FixedWidthHeader.splitter_class",
+   "kind": "post",
+   "line": 70
+  },
+  {
+   "id": "r7",
+   "anchor": "FixedWidthHeader.position_line",
+   "kind": "trail",
+   "line": 72
+  },
+  {
+   "id": "r8",
+   "anchor": "FixedWidthHeader.position_line",
+   "kind": "post",
+   "line": 72
+  },
+  {
+   "id": "r9",
+   "anchor": "FixedWidthHeader.get_line#for:i, line in enumerate(self.process_lines(lines))/else",
+   "kind": "trail",
+   "line": 80
+  },
+  {
+   "id": "r10",
+   "anchor": "FixedWidthHeader.get_cols",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r11",
+   "anchor": "FixedWidthHeader.get_cols#assign:start_line",
+   "kind": "lead",
+   "line": 100
+  },
+  {
+   "id": "r12",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r13",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None/assign:data_lines",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r14",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None/else/if:position_line is not None",
+   "kind": "lead",
+   "line": 135
+  },
+  {
+   "id": "r15",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None/else/if:position_line is not None/assign:line",
+   "kind": "lead",
+   "line": 141
+  },
+  {
+   "id": "r16",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None/else/if:position_line is not None/if:len(set(line) - {self.splitter.delimiter, \" \"}) != 1/raise:InconsistentTableError",
+   "kind": "post",
+   "line": 143
+  },
+  {
+   "id": "r17",
+   "anchor": "FixedWidthHeader.get_cols#if:start_line is None/else/assign:line",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r18",
+   "anchor": "FixedWidthHeader.get_cols#for:i, col in enumerate(self.cols)",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r19",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params",
+   "kind": "doc",
+   "line": 181
+  },
+  {
+   "id": "r20",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r21",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/assign:starts",
+   "kind": "trail",
+   "line": 210
+  },
+  {
+   "id": "r22",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/assign:ends",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r23",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/elif:self.col_starts is None and self.col_ends is None/assign:vals",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r24",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/elif:self.col_starts is None and self.col_ends is None/else/if:self.col_starts is not None",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r25",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/elif:self.col_starts is None and self.col_ends is None/else/if:self.col_starts is not None/assign:ends",
+   "kind": "trail",
+   "line": 237
+  },
+  {
+   "id": "r26",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/elif:self.col_starts is None and self.col_ends is None/else/if:self.col_starts is not None/else",
+   "kind": "trail",
+   "line": 238
+  },
+  {
+   "id": "r27",
+   "anchor": "FixedWidthHeader.get_fixedwidth_params#if:self.col_starts is not None and self.col_ends is not None/elif:self.col_starts is None and self.col_ends is None/else/if:self.col_starts is not None/else/assign:starts",
+   "kind": "trail",
+   "line": 240
+  },
+  {
+   "id": "r28",
+   "anchor": "FixedWidthHeader.write#pass",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r29",
+   "anchor": "FixedWidthData",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r30",
+   "anchor": "FixedWidthData.splitter_class",
+   "kind": "post",
+   "line": 256
+  },
+  {
+   "id": "r31",
+   "anchor": "FixedWidthData.write#assign:vals_list",
+   "kind": "lead",
+   "line": 265
+  },
+  {
+   "id": "r32",
+   "anchor": "FixedWidthData.write#assign:hdrs_list",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r33",
+   "anchor": "FixedWidthData.write#assign:widths",
+   "kind": "lead",
+   "line": 280
+  },
+  {
+   "id": "r34",
+   "anchor": "FixedWidthData.write#if:hdrs_list",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r35",
+   "anchor": "FixedWidthData.write#for:vals in hdrs_list",
+   "kind": "lead",
+   "line": 292
+  },
+  {
+   "id": "r36",
+   "anchor": "FixedWidth",
+   "kind": "doc",
+   "line": 305
+  },
+  {
+   "id": "r37",
+   "anchor": "FixedWidthNoHeaderHeader",
+   "kind": "doc",
+   "line": 359
+  },
+  {
+   "id": "r38",
+   "anchor": "FixedWidthNoHeaderData",
+   "kind": "doc",
+   "line": 365
+  },
+  {
+   "id": "r39",
+   "anchor": "FixedWidthNoHeader",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r40",
+   "anchor": "FixedWidthTwoLineHeader",
+   "kind": "doc",
+   "line": 414
+  },
+  {
+   "id": "r41",
+   "anchor": "FixedWidthTwoLineDataSplitter",
+   "kind": "doc",
+   "line": 425
+  },
+  {
+   "id": "r42",
+   "anchor": "FixedWidthTwoLineData",
+   "kind": "doc",
+   "line": 431
+  },
+  {
+   "id": "r43",
+   "anchor": "FixedWidthTwoLine",
+   "kind": "doc",
+   "line": 437
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 12708,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4838,
+  "thinking_tokens": 2459,
+  "opus_cost_usd": 0.2523215,
+  "total_cost_usd": 0.2613965,
+  "duration_ms": 44857,
+  "duration_api_ms": 46626,
+  "num_turns": 2
+ },
+ "wall_ms": 48451,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

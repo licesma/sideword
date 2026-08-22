@@ -1,0 +1,463 @@
+{
+ "blob_sha": "ae37ee948e1f14faeabe77d73842be170b18582b",
+ "path": "astropy/wcs/utils.py",
+ "repo": "astropy/astropy",
+ "records": 73,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:copy",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "add_stokes_axis_to_wcs",
+   "kind": "doc",
+   "line": 25
+  },
+  {
+   "id": "r3",
+   "anchor": "_wcs_to_celestial_frame_builtin#import:astropy.coordinates",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r4",
+   "anchor": "_wcs_to_celestial_frame_builtin#import:astropy.time",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r5",
+   "anchor": "_wcs_to_celestial_frame_builtin#if:radesys == '' and xcoord == 'RA--' and ycoord == 'DEC-'",
+   "kind": "lead",
+   "line": 74
+  },
+  {
+   "id": "r6",
+   "anchor": "_wcs_to_celestial_frame_builtin#if:radesys == 'FK4'/else/if:xcoord == 'GLON' and ycoord == 'GLAT'/elif:xcoord == 'TLON' and ycoord == 'TLAT'/assign:frame",
+   "kind": "lead",
+   "line": 102
+  },
+  {
+   "id": "r7",
+   "anchor": "_celestial_frame_to_wcs_builtin#import:astropy.coordinates",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r8",
+   "anchor": "_celestial_frame_to_wcs_builtin#assign:wcs",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r9",
+   "anchor": "custom_frame_mappings",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r10",
+   "anchor": "wcs_to_celestial_frame",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r11",
+   "anchor": "celestial_frame_to_wcs",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r12",
+   "anchor": "proj_plane_pixel_scales",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r13",
+   "anchor": "proj_plane_pixel_area",
+   "kind": "doc",
+   "line": 338
+  },
+  {
+   "id": "r14",
+   "anchor": "is_proj_plane_distorted",
+   "kind": "doc",
+   "line": 399
+  },
+  {
+   "id": "r15",
+   "anchor": "_is_cd_orthogonal#assign:I",
+   "kind": "lead",
+   "line": 460
+  },
+  {
+   "id": "r16",
+   "anchor": "non_celestial_pixel_scales",
+   "kind": "doc",
+   "line": 466
+  },
+  {
+   "id": "r17",
+   "anchor": "_has_distortion",
+   "kind": "doc",
+   "line": 493
+  },
+  {
+   "id": "r18",
+   "anchor": "skycoord_to_pixel",
+   "kind": "todo",
+   "line": 504
+  },
+  {
+   "id": "r19",
+   "anchor": "skycoord_to_pixel",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r20",
+   "anchor": "skycoord_to_pixel#assign:wcs",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r21",
+   "anchor": "skycoord_to_pixel#assign:frame",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r22",
+   "anchor": "skycoord_to_pixel#assign:xw_unit",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r23",
+   "anchor": "skycoord_to_pixel#assign:coords",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r24",
+   "anchor": "skycoord_to_pixel#try",
+   "kind": "lead",
+   "line": 554
+  },
+  {
+   "id": "r25",
+   "anchor": "skycoord_to_pixel#if:mode == 'all'",
+   "kind": "lead",
+   "line": 562
+  },
+  {
+   "id": "r26",
+   "anchor": "pixel_to_skycoord",
+   "kind": "doc",
+   "line": 572
+  },
+  {
+   "id": "r27",
+   "anchor": "pixel_to_skycoord#import:astropy.coordinates",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r28",
+   "anchor": "pixel_to_skycoord#if:cls is None",
+   "kind": "lead",
+   "line": 609
+  },
+  {
+   "id": "r29",
+   "anchor": "pixel_to_skycoord#assign:wcs",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r30",
+   "anchor": "pixel_to_skycoord#assign:frame",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r31",
+   "anchor": "pixel_to_skycoord#assign:lon_unit",
+   "kind": "lead",
+   "line": 625
+  },
+  {
+   "id": "r32",
+   "anchor": "pixel_to_skycoord#if:mode == 'all'",
+   "kind": "lead",
+   "line": 629
+  },
+  {
+   "id": "r33",
+   "anchor": "pixel_to_skycoord#assign:lon",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r34",
+   "anchor": "pixel_to_skycoord#assign:data",
+   "kind": "lead",
+   "line": 641
+  },
+  {
+   "id": "r35",
+   "anchor": "_unique_with_order_preserved",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r36",
+   "anchor": "_pixel_to_world_correlation_matrix",
+   "kind": "doc",
+   "line": 659
+  },
+  {
+   "id": "r37",
+   "anchor": "_pixel_to_world_correlation_matrix#assign:all_components",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r38",
+   "anchor": "_pixel_to_world_correlation_matrix#assign:all_components",
+   "kind": "lead",
+   "line": 673
+  },
+  {
+   "id": "r39",
+   "anchor": "_pixel_to_pixel_correlation_matrix",
+   "kind": "doc",
+   "line": 690
+  },
+  {
+   "id": "r40",
+   "anchor": "_pixel_to_pixel_correlation_matrix#assign:unique_match",
+   "kind": "lead",
+   "line": 708
+  },
+  {
+   "id": "r41",
+   "anchor": "_pixel_to_pixel_correlation_matrix#if:unique_match/assign:matrix2",
+   "kind": "lead",
+   "line": 724
+  },
+  {
+   "id": "r42",
+   "anchor": "_split_matrix",
+   "kind": "doc",
+   "line": 735
+  },
+  {
+   "id": "r43",
+   "anchor": "pixel_to_pixel",
+   "kind": "doc",
+   "line": 775
+  },
+  {
+   "id": "r44",
+   "anchor": "pixel_to_pixel#if:np.isscalar(inputs[0])",
+   "kind": "lead",
+   "line": 797
+  },
+  {
+   "id": "r45",
+   "anchor": "pixel_to_pixel#assign:original_shape",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r46",
+   "anchor": "local_partial_pixel_derivatives",
+   "kind": "doc",
+   "line": 839
+  },
+  {
+   "id": "r47",
+   "anchor": "local_partial_pixel_derivatives#assign:pixel_ref",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r48",
+   "anchor": "local_partial_pixel_derivatives#assign:derivatives",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r49",
+   "anchor": "_linear_wcs_fit",
+   "kind": "doc",
+   "line": 875
+  },
+  {
+   "id": "r50",
+   "anchor": "_linear_wcs_fit#assign:lon_resids",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r51",
+   "anchor": "_sip_fit",
+   "kind": "doc",
+   "line": 907
+  },
+  {
+   "id": "r52",
+   "anchor": "_sip_fit#import:..modeling.models",
+   "kind": "trail",
+   "line": 923
+  },
+  {
+   "id": "r53",
+   "anchor": "_sip_fit#assign:crpix",
+   "kind": "lead",
+   "line": 926
+  },
+  {
+   "id": "r54",
+   "anchor": "_sip_fit#assign:w_obj.wcs.cd",
+   "kind": "lead",
+   "line": 932
+  },
+  {
+   "id": "r55",
+   "anchor": "_sip_fit#assign:x, y",
+   "kind": "lead",
+   "line": 947
+  },
+  {
+   "id": "r56",
+   "anchor": "fit_wcs_from_points",
+   "kind": "doc",
+   "line": 955
+  },
+  {
+   "id": "r57",
+   "anchor": "fit_wcs_from_points#import:astropy.coordinates",
+   "kind": "trail",
+   "line": 1019
+  },
+  {
+   "id": "r58",
+   "anchor": "fit_wcs_from_points#if:(type(proj_point) != type(world_coords)) and (proj_point != 'center')",
+   "kind": "lead",
+   "line": 1031
+  },
+  {
+   "id": "r59",
+   "anchor": "fit_wcs_from_points#if:type(projection) == str/assign:wcs",
+   "kind": "lead",
+   "line": 1051
+  },
+  {
+   "id": "r60",
+   "anchor": "fit_wcs_from_points#if:type(projection) == str/else",
+   "kind": "trail",
+   "line": 1053
+  },
+  {
+   "id": "r61",
+   "anchor": "fit_wcs_from_points#if:type(projection) == str/else/assign:wcs.cdelt",
+   "kind": "trail",
+   "line": 1055
+  },
+  {
+   "id": "r62",
+   "anchor": "fit_wcs_from_points#if:wcs.wcs.has_pc()",
+   "kind": "lead",
+   "line": 1059
+  },
+  {
+   "id": "r63",
+   "anchor": "fit_wcs_from_points#assign:xpmin, xpmax, ypmin, ypmax",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r64",
+   "anchor": "fit_wcs_from_points#assign:wcs.pixel_shape",
+   "kind": "lead",
+   "line": 1070
+  },
+  {
+   "id": "r65",
+   "anchor": "fit_wcs_from_points#assign:close",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r66",
+   "anchor": "fit_wcs_from_points#if:use_center_as_proj_point",
+   "kind": "trail",
+   "line": 1075
+  },
+  {
+   "id": "r67",
+   "anchor": "fit_wcs_from_points#if:use_center_as_proj_point/else",
+   "kind": "trail",
+   "line": 1083
+  },
+  {
+   "id": "r68",
+   "anchor": "fit_wcs_from_points#if:xpmin == xpmax",
+   "kind": "lead",
+   "line": 1093
+  },
+  {
+   "id": "r69",
+   "anchor": "fit_wcs_from_points#if:sip_degree",
+   "kind": "lead",
+   "line": 1109
+  },
+  {
+   "id": "r70",
+   "anchor": "fit_wcs_from_points#if:sip_degree/assign:wcs.wcs.cd",
+   "kind": "lead",
+   "line": 1130
+  },
+  {
+   "id": "r71",
+   "anchor": "obsgeo_to_frame",
+   "kind": "doc",
+   "line": 1146
+  },
+  {
+   "id": "r72",
+   "anchor": "obsgeo_to_frame#if:np.all(obsgeo[:3] == 0) or np.any(~np.isfinite(obsgeo[:3]))",
+   "kind": "lead",
+   "line": 1192
+  },
+  {
+   "id": "r73",
+   "anchor": "obsgeo_to_frame#if:np.all(obsgeo[:3] == 0) or np.any(~np.isfinite(obsgeo[:3]))/else",
+   "kind": "lead",
+   "line": 1196
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 28536,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6731,
+  "thinking_tokens": 3241,
+  "opus_cost_usd": 0.4579265,
+  "total_cost_usd": 0.4794315,
+  "duration_ms": 59631,
+  "duration_api_ms": 63355,
+  "num_turns": 2
+ },
+ "wall_ms": 60649,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

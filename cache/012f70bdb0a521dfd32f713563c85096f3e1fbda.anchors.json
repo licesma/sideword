@@ -1,0 +1,211 @@
+{
+ "blob_sha": "012f70bdb0a521dfd32f713563c85096f3e1fbda",
+ "path": "django/contrib/gis/gdal/layer.py",
+ "repo": "django/django",
+ "records": 31,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Layer",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "Layer",
+   "kind": "doc",
+   "line": 21
+  },
+  {
+   "id": "r3",
+   "anchor": "Layer.__init__",
+   "kind": "doc",
+   "line": 24
+  },
+  {
+   "id": "r4",
+   "anchor": "Layer.__init__#assign:self._random_read",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r5",
+   "anchor": "Layer.__getitem__",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r6",
+   "anchor": "Layer.__getitem__#if:isinstance(index, int)/if:index<0",
+   "kind": "lead",
+   "line": 45
+  },
+  {
+   "id": "r7",
+   "anchor": "Layer.__getitem__#if:isinstance(index, int)/elif:isinstance(index, slice)/assign:start, stop, stride",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r8",
+   "anchor": "Layer.__iter__",
+   "kind": "doc",
+   "line": 55
+  },
+  {
+   "id": "r9",
+   "anchor": "Layer.__iter__#call:capi.reset_reading",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r10",
+   "anchor": "Layer.__len__",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r11",
+   "anchor": "Layer.__str__",
+   "kind": "doc",
+   "line": 66
+  },
+  {
+   "id": "r12",
+   "anchor": "Layer._make_feature",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r13",
+   "anchor": "Layer._make_feature#if:self._random_read/try",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r14",
+   "anchor": "Layer._make_feature#if:self._random_read/else/for:feat in self",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r15",
+   "anchor": "Layer._make_feature#raise:IndexError",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r16",
+   "anchor": "Layer.extent",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r17",
+   "anchor": "Layer.extent",
+   "kind": "doc",
+   "line": 94
+  },
+  {
+   "id": "r18",
+   "anchor": "Layer.name",
+   "kind": "doc",
+   "line": 101
+  },
+  {
+   "id": "r19",
+   "anchor": "Layer.num_feat",
+   "kind": "doc",
+   "line": 107
+  },
+  {
+   "id": "r20",
+   "anchor": "Layer.num_fields",
+   "kind": "doc",
+   "line": 112
+  },
+  {
+   "id": "r21",
+   "anchor": "Layer.geom_type",
+   "kind": "doc",
+   "line": 117
+  },
+  {
+   "id": "r22",
+   "anchor": "Layer.srs",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r23",
+   "anchor": "Layer.fields",
+   "kind": "doc",
+   "line": 131
+  },
+  {
+   "id": "r24",
+   "anchor": "Layer.field_types",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r25",
+   "anchor": "Layer.field_widths",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r26",
+   "anchor": "Layer.field_precisions",
+   "kind": "doc",
+   "line": 158
+  },
+  {
+   "id": "r27",
+   "anchor": "Layer._set_spatial_filter#if:isinstance(filter, OGRGeometry)/elif:isinstance(filter, (tuple, list))/assign:xmin, ymin, xmax, ymax",
+   "kind": "lead",
+   "line": 177
+  },
+  {
+   "id": "r28",
+   "anchor": "Layer.get_fields",
+   "kind": "lead",
+   "line": 187
+  },
+  {
+   "id": "r29",
+   "anchor": "Layer.get_fields",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r30",
+   "anchor": "Layer.get_geoms",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r31",
+   "anchor": "Layer.test_capability",
+   "kind": "doc",
+   "line": 207
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8233,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2035,
+  "thinking_tokens": 751,
+  "opus_cost_usd": 0.13749650000000002,
+  "total_cost_usd": 0.14271250000000002,
+  "duration_ms": 20008,
+  "duration_api_ms": 21288,
+  "num_turns": 2
+ },
+ "wall_ms": 20862,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

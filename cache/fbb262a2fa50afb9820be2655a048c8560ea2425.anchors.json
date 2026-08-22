@@ -1,0 +1,1417 @@
+{
+ "blob_sha": "fbb262a2fa50afb9820be2655a048c8560ea2425",
+ "path": "astropy/coordinates/representation.py",
+ "repo": "astropy/astropy",
+ "records": 232,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "REPRESENTATION_CLASSES",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r3",
+   "anchor": "DUPLICATE_REPRESENTATIONS",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r4",
+   "anchor": "_REPRDIFF_HASH",
+   "kind": "lead",
+   "line": 56
+  },
+  {
+   "id": "r5",
+   "anchor": "_fqn_class",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "get_reprdiff_cls_hash",
+   "kind": "doc",
+   "line": 64
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseRepresentationOrDifferentialInfo",
+   "kind": "doc",
+   "line": 83
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseRepresentationOrDifferentialInfo.attrs_from_parent",
+   "kind": "trail",
+   "line": 90
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseRepresentationOrDifferentialInfo.default_format#assign:components",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseRepresentationOrDifferentialInfo.new_like",
+   "kind": "doc",
+   "line": 118
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseRepresentationOrDifferentialInfo.new_like#assign:attrs",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseRepresentationOrDifferentialInfo.new_like#assign:indexes",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseRepresentationOrDifferentialInfo.new_like#for:rep in reps[1:]",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseRepresentationOrDifferentialInfo.new_like#for:attr in (\"name\", \"meta\", \"description\")",
+   "kind": "lead",
+   "line": 162
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseRepresentationOrDifferential",
+   "kind": "doc",
+   "line": 169
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseRepresentationOrDifferential.__array_priority__",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseRepresentationOrDifferential.__init__#assign:args",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseRepresentationOrDifferential.__init__#assign:attrs",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseRepresentationOrDifferential.__init__#assign:attrs",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseRepresentationOrDifferential.__init__#for:component, attr in zip(components, attrs)",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseRepresentationOrDifferential.get_name",
+   "kind": "doc",
+   "line": 282
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseRepresentationOrDifferential.from_cartesian",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseRepresentationOrDifferential.from_cartesian",
+   "kind": "doc",
+   "line": 302
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseRepresentationOrDifferential.from_cartesian#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseRepresentationOrDifferential.to_cartesian",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseRepresentationOrDifferential.to_cartesian#raise:NotImplementedError",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseRepresentationOrDifferential.components",
+   "kind": "doc",
+   "line": 347
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseRepresentationOrDifferential.__eq__",
+   "kind": "doc",
+   "line": 351
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseRepresentationOrDifferential._apply",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseRepresentationOrDifferential._apply#if:\"info\" in self.__dict__",
+   "kind": "lead",
+   "line": 414
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseRepresentationOrDifferential.shape",
+   "kind": "doc",
+   "line": 430
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseRepresentationOrDifferential.shape#assign:reshaped",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseRepresentationOrDifferential._scale_operation",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseRepresentationOrDifferential.__pos__",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseRepresentationOrDifferential._combine_operation",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseRepresentationOrDifferential._values",
+   "kind": "lead",
+   "line": 511
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseRepresentationOrDifferential._values",
+   "kind": "doc",
+   "line": 511
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseRepresentationOrDifferential._units",
+   "kind": "doc",
+   "line": 523
+  },
+  {
+   "id": "r39",
+   "anchor": "_make_getter",
+   "kind": "doc",
+   "line": 560
+  },
+  {
+   "id": "r40",
+   "anchor": "_make_getter#assign:component",
+   "kind": "lead",
+   "line": 571
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseRepresentation",
+   "kind": "doc",
+   "line": 602
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseRepresentation.__init_subclass__#if:cls.__name__ == \"BaseRepresentation\"",
+   "kind": "lead",
+   "line": 639
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseRepresentation.__init_subclass__#if:repr_name in REPRESENTATION_CLASSES",
+   "kind": "lead",
+   "line": 650
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseRepresentation.__init_subclass__#if:repr_name in REPRESENTATION_CLASSES/elif:repr_name in DUPLICATE_REPRESENTATIONS",
+   "kind": "lead",
+   "line": 672
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseRepresentation.__init_subclass__#for:component in cls.attr_classes",
+   "kind": "lead",
+   "line": 686
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseRepresentation.__init__#call:super().__init__",
+   "kind": "lead",
+   "line": 701
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseRepresentation._validate_differentials",
+   "kind": "doc",
+   "line": 706
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseRepresentation._validate_differentials#if:differentials is None",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseRepresentation._validate_differentials#if:differentials is None/elif:isinstance(differentials, BaseDifferential)/if:isinstance(differentials, RadialDifferential) and isinstance(self, UnitSphericalRepresentation)",
+   "kind": "lead",
+   "line": 720
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseRepresentation._validate_differentials#for:key in differentials/if:isinstance(diff, RadialDifferential) and isinstance(self, UnitSphericalRepresentation)/pass",
+   "kind": "lead",
+   "line": 748
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseRepresentation._validate_differentials#for:key in differentials/if:diff.shape != self.shape",
+   "kind": "lead",
+   "line": 762
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseRepresentation._validate_differentials#for:key in differentials/if:diff.shape != self.shape/raise:ValueError",
+   "kind": "todo",
+   "line": 765
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseRepresentation._raise_if_has_differentials",
+   "kind": "doc",
+   "line": 772
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseRepresentation.differentials",
+   "kind": "doc",
+   "line": 788
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseRepresentation.unit_vectors",
+   "kind": "lead",
+   "line": 802
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseRepresentation.unit_vectors",
+   "kind": "doc",
+   "line": 802
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseRepresentation.scale_factors",
+   "kind": "doc",
+   "line": 816
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseRepresentation._re_represent_differentials",
+   "kind": "doc",
+   "line": 830
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseRepresentation._re_represent_differentials#if:not self.differentials and differential_class/elif:len(self.differentials) == 1 and inspect.isclass(differential_class) and issubclass(differential_class, BaseDifferential)/assign:differential_class",
+   "kind": "todo",
+   "line": 848
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseRepresentation.represent_as",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseRepresentation.represent_as#if:other_class is self.__class__ and not differential_class/else/if:other_class is not self.__class__/assign:new_rep",
+   "kind": "lead",
+   "line": 909
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseRepresentation.transform",
+   "kind": "doc",
+   "line": 919
+  },
+  {
+   "id": "r63",
+   "anchor": "BaseRepresentation.transform#assign:difs_cls",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r64",
+   "anchor": "BaseRepresentation.transform#assign:difs_cls",
+   "kind": "lead",
+   "line": 939
+  },
+  {
+   "id": "r65",
+   "anchor": "BaseRepresentation.with_differentials",
+   "kind": "doc",
+   "line": 943
+  },
+  {
+   "id": "r66",
+   "anchor": "BaseRepresentation.with_differentials#assign:new_rep",
+   "kind": "lead",
+   "line": 969
+  },
+  {
+   "id": "r67",
+   "anchor": "BaseRepresentation.without_differentials",
+   "kind": "doc",
+   "line": 976
+  },
+  {
+   "id": "r68",
+   "anchor": "BaseRepresentation.from_representation",
+   "kind": "doc",
+   "line": 992
+  },
+  {
+   "id": "r69",
+   "anchor": "BaseRepresentation.__eq__",
+   "kind": "doc",
+   "line": 1002
+  },
+  {
+   "id": "r70",
+   "anchor": "BaseRepresentation.__eq__#assign:out",
+   "kind": "lead",
+   "line": 1010
+  },
+  {
+   "id": "r71",
+   "anchor": "BaseRepresentation.__eq__#if:self._differentials.keys() != value._differentials.keys()",
+   "kind": "lead",
+   "line": 1014
+  },
+  {
+   "id": "r72",
+   "anchor": "BaseRepresentation._apply",
+   "kind": "doc",
+   "line": 1027
+  },
+  {
+   "id": "r73",
+   "anchor": "BaseRepresentation._scale_operation",
+   "kind": "doc",
+   "line": 1096
+  },
+  {
+   "id": "r74",
+   "anchor": "BaseRepresentation._scale_operation#try",
+   "kind": "lead",
+   "line": 1118
+  },
+  {
+   "id": "r75",
+   "anchor": "BaseRepresentation._combine_operation",
+   "kind": "doc",
+   "line": 1129
+  },
+  {
+   "id": "r76",
+   "anchor": "BaseRepresentation.shape",
+   "kind": "lead",
+   "line": 1154
+  },
+  {
+   "id": "r77",
+   "anchor": "BaseRepresentation.shape#call:BaseRepresentationOrDifferential.shape.fset",
+   "kind": "lead",
+   "line": 1158
+  },
+  {
+   "id": "r78",
+   "anchor": "BaseRepresentation.shape#try",
+   "kind": "lead",
+   "line": 1161
+  },
+  {
+   "id": "r79",
+   "anchor": "BaseRepresentation.norm",
+   "kind": "doc",
+   "line": 1171
+  },
+  {
+   "id": "r80",
+   "anchor": "BaseRepresentation.mean",
+   "kind": "doc",
+   "line": 1193
+  },
+  {
+   "id": "r81",
+   "anchor": "BaseRepresentation.sum",
+   "kind": "doc",
+   "line": 1212
+  },
+  {
+   "id": "r82",
+   "anchor": "BaseRepresentation.dot",
+   "kind": "doc",
+   "line": 1231
+  },
+  {
+   "id": "r83",
+   "anchor": "BaseRepresentation.cross",
+   "kind": "doc",
+   "line": 1253
+  },
+  {
+   "id": "r84",
+   "anchor": "CartesianRepresentation",
+   "kind": "doc",
+   "line": 1275
+  },
+  {
+   "id": "r85",
+   "anchor": "CartesianRepresentation.__init__#if:y is None and z is None/if:isinstance(x, np.ndarray) and x.dtype.kind not in \"OV\"/assign:x",
+   "kind": "lead",
+   "line": 1318
+  },
+  {
+   "id": "r86",
+   "anchor": "CartesianRepresentation.__init__#if:y is None and z is None/if:isinstance(x, np.ndarray) and x.dtype.kind not in \"OV\"/assign:self._xyz",
+   "kind": "lead",
+   "line": 1321
+  },
+  {
+   "id": "r87",
+   "anchor": "CartesianRepresentation.get_xyz",
+   "kind": "doc",
+   "line": 1382
+  },
+  {
+   "id": "r88",
+   "anchor": "CartesianRepresentation.get_xyz#return",
+   "kind": "lead",
+   "line": 1406
+  },
+  {
+   "id": "r89",
+   "anchor": "CartesianRepresentation.transform",
+   "kind": "doc",
+   "line": 1417
+  },
+  {
+   "id": "r90",
+   "anchor": "CartesianRepresentation.transform#assign:p",
+   "kind": "lead",
+   "line": 1454
+  },
+  {
+   "id": "r91",
+   "anchor": "CartesianRepresentation.transform#assign:rep",
+   "kind": "lead",
+   "line": 1456
+  },
+  {
+   "id": "r92",
+   "anchor": "CartesianRepresentation.transform#assign:new_diffs",
+   "kind": "lead",
+   "line": 1458
+  },
+  {
+   "id": "r93",
+   "anchor": "CartesianRepresentation.norm",
+   "kind": "doc",
+   "line": 1479
+  },
+  {
+   "id": "r94",
+   "anchor": "CartesianRepresentation.norm#return",
+   "kind": "lead",
+   "line": 1494
+  },
+  {
+   "id": "r95",
+   "anchor": "CartesianRepresentation.mean",
+   "kind": "doc",
+   "line": 1496
+  },
+  {
+   "id": "r96",
+   "anchor": "CartesianRepresentation.sum",
+   "kind": "doc",
+   "line": 1509
+  },
+  {
+   "id": "r97",
+   "anchor": "CartesianRepresentation.dot",
+   "kind": "doc",
+   "line": 1522
+  },
+  {
+   "id": "r98",
+   "anchor": "CartesianRepresentation.dot#return",
+   "kind": "lead",
+   "line": 1547
+  },
+  {
+   "id": "r99",
+   "anchor": "CartesianRepresentation.cross",
+   "kind": "doc",
+   "line": 1549
+  },
+  {
+   "id": "r100",
+   "anchor": "CartesianRepresentation.cross#assign:sxo",
+   "kind": "lead",
+   "line": 1571
+  },
+  {
+   "id": "r101",
+   "anchor": "UnitSphericalRepresentation",
+   "kind": "doc",
+   "line": 1575
+  },
+  {
+   "id": "r102",
+   "anchor": "UnitSphericalRepresentation.lon",
+   "kind": "lead",
+   "line": 1625
+  },
+  {
+   "id": "r103",
+   "anchor": "UnitSphericalRepresentation.lon",
+   "kind": "doc",
+   "line": 1625
+  },
+  {
+   "id": "r104",
+   "anchor": "UnitSphericalRepresentation.lat",
+   "kind": "doc",
+   "line": 1632
+  },
+  {
+   "id": "r105",
+   "anchor": "UnitSphericalRepresentation.to_cartesian",
+   "kind": "doc",
+   "line": 1653
+  },
+  {
+   "id": "r106",
+   "anchor": "UnitSphericalRepresentation.to_cartesian#assign:p",
+   "kind": "lead",
+   "line": 1659
+  },
+  {
+   "id": "r107",
+   "anchor": "UnitSphericalRepresentation.from_cartesian",
+   "kind": "doc",
+   "line": 1663
+  },
+  {
+   "id": "r108",
+   "anchor": "UnitSphericalRepresentation.from_cartesian#return",
+   "kind": "lead",
+   "line": 1670
+  },
+  {
+   "id": "r109",
+   "anchor": "UnitSphericalRepresentation.represent_as#if:inspect.isclass(other_class) and not differential_class",
+   "kind": "lead",
+   "line": 1679
+  },
+  {
+   "id": "r110",
+   "anchor": "UnitSphericalRepresentation.transform",
+   "kind": "doc",
+   "line": 1689
+  },
+  {
+   "id": "r111",
+   "anchor": "UnitSphericalRepresentation.transform#if:np.all(is_O3(matrix))",
+   "kind": "lead",
+   "line": 1713
+  },
+  {
+   "id": "r112",
+   "anchor": "UnitSphericalRepresentation.transform#if:np.all(is_O3(matrix))",
+   "kind": "trail",
+   "line": 1713
+  },
+  {
+   "id": "r113",
+   "anchor": "UnitSphericalRepresentation.transform#if:np.all(is_O3(matrix))/assign:new_diffs",
+   "kind": "lead",
+   "line": 1719
+  },
+  {
+   "id": "r114",
+   "anchor": "UnitSphericalRepresentation.transform#if:np.all(is_O3(matrix))/else",
+   "kind": "trail",
+   "line": 1724
+  },
+  {
+   "id": "r115",
+   "anchor": "UnitSphericalRepresentation.norm",
+   "kind": "doc",
+   "line": 1754
+  },
+  {
+   "id": "r116",
+   "anchor": "UnitSphericalRepresentation.mean",
+   "kind": "doc",
+   "line": 1777
+  },
+  {
+   "id": "r117",
+   "anchor": "UnitSphericalRepresentation.sum",
+   "kind": "doc",
+   "line": 1793
+  },
+  {
+   "id": "r118",
+   "anchor": "UnitSphericalRepresentation.cross",
+   "kind": "doc",
+   "line": 1809
+  },
+  {
+   "id": "r119",
+   "anchor": "RadialRepresentation",
+   "kind": "doc",
+   "line": 1832
+  },
+  {
+   "id": "r120",
+   "anchor": "RadialRepresentation.distance",
+   "kind": "doc",
+   "line": 1865
+  },
+  {
+   "id": "r121",
+   "anchor": "RadialRepresentation.unit_vectors",
+   "kind": "doc",
+   "line": 1871
+  },
+  {
+   "id": "r122",
+   "anchor": "RadialRepresentation.to_cartesian",
+   "kind": "doc",
+   "line": 1881
+  },
+  {
+   "id": "r123",
+   "anchor": "RadialRepresentation.from_cartesian",
+   "kind": "doc",
+   "line": 1888
+  },
+  {
+   "id": "r124",
+   "anchor": "RadialRepresentation.norm",
+   "kind": "doc",
+   "line": 1900
+  },
+  {
+   "id": "r125",
+   "anchor": "RadialRepresentation.transform",
+   "kind": "doc",
+   "line": 1915
+  },
+  {
+   "id": "r126",
+   "anchor": "RadialRepresentation.transform#if:np.any(matrix != scl[..., np.newaxis, np.newaxis] * np.identity(3))",
+   "kind": "lead",
+   "line": 1935
+  },
+  {
+   "id": "r127",
+   "anchor": "_spherical_op_funcs",
+   "kind": "doc",
+   "line": 1944
+  },
+  {
+   "id": "r128",
+   "anchor": "_spherical_op_funcs#try/except:Exception/return",
+   "kind": "lead",
+   "line": 1953
+  },
+  {
+   "id": "r129",
+   "anchor": "SphericalRepresentation",
+   "kind": "doc",
+   "line": 1963
+  },
+  {
+   "id": "r130",
+   "anchor": "SphericalRepresentation.lon",
+   "kind": "doc",
+   "line": 2028
+  },
+  {
+   "id": "r131",
+   "anchor": "SphericalRepresentation.lat",
+   "kind": "doc",
+   "line": 2035
+  },
+  {
+   "id": "r132",
+   "anchor": "SphericalRepresentation.distance",
+   "kind": "doc",
+   "line": 2042
+  },
+  {
+   "id": "r133",
+   "anchor": "SphericalRepresentation.represent_as#if:inspect.isclass(other_class)",
+   "kind": "lead",
+   "line": 2070
+  },
+  {
+   "id": "r134",
+   "anchor": "SphericalRepresentation.to_cartesian",
+   "kind": "doc",
+   "line": 2093
+  },
+  {
+   "id": "r135",
+   "anchor": "SphericalRepresentation.to_cartesian#if:isinstance(self.distance, Distance)",
+   "kind": "lead",
+   "line": 2099
+  },
+  {
+   "id": "r136",
+   "anchor": "SphericalRepresentation.to_cartesian#assign:p",
+   "kind": "lead",
+   "line": 2105
+  },
+  {
+   "id": "r137",
+   "anchor": "SphericalRepresentation.from_cartesian",
+   "kind": "doc",
+   "line": 2110
+  },
+  {
+   "id": "r138",
+   "anchor": "SphericalRepresentation.from_cartesian#return",
+   "kind": "lead",
+   "line": 2117
+  },
+  {
+   "id": "r139",
+   "anchor": "SphericalRepresentation.transform",
+   "kind": "doc",
+   "line": 2119
+  },
+  {
+   "id": "r140",
+   "anchor": "SphericalRepresentation.transform#assign:new_diffs",
+   "kind": "lead",
+   "line": 2138
+  },
+  {
+   "id": "r141",
+   "anchor": "SphericalRepresentation.norm",
+   "kind": "doc",
+   "line": 2143
+  },
+  {
+   "id": "r142",
+   "anchor": "SphericalRepresentation._scale_operation#if:any(differential.base_representation is not self.__class__ for differential in self.differentials.values())",
+   "kind": "todo",
+   "line": 2159
+  },
+  {
+   "id": "r143",
+   "anchor": "PhysicsSphericalRepresentation",
+   "kind": "doc",
+   "line": 2181
+  },
+  {
+   "id": "r144",
+   "anchor": "PhysicsSphericalRepresentation.__init__#call:self._phi.wrap_at",
+   "kind": "lead",
+   "line": 2223
+  },
+  {
+   "id": "r145",
+   "anchor": "PhysicsSphericalRepresentation.phi",
+   "kind": "doc",
+   "line": 2235
+  },
+  {
+   "id": "r146",
+   "anchor": "PhysicsSphericalRepresentation.theta",
+   "kind": "doc",
+   "line": 2242
+  },
+  {
+   "id": "r147",
+   "anchor": "PhysicsSphericalRepresentation.r",
+   "kind": "doc",
+   "line": 2249
+  },
+  {
+   "id": "r148",
+   "anchor": "PhysicsSphericalRepresentation.represent_as#if:inspect.isclass(other_class)",
+   "kind": "lead",
+   "line": 2277
+  },
+  {
+   "id": "r149",
+   "anchor": "PhysicsSphericalRepresentation.to_cartesian",
+   "kind": "doc",
+   "line": 2302
+  },
+  {
+   "id": "r150",
+   "anchor": "PhysicsSphericalRepresentation.to_cartesian#if:isinstance(self.r, Distance)",
+   "kind": "lead",
+   "line": 2308
+  },
+  {
+   "id": "r151",
+   "anchor": "PhysicsSphericalRepresentation.from_cartesian",
+   "kind": "doc",
+   "line": 2320
+  },
+  {
+   "id": "r152",
+   "anchor": "PhysicsSphericalRepresentation.transform",
+   "kind": "doc",
+   "line": 2333
+  },
+  {
+   "id": "r153",
+   "anchor": "PhysicsSphericalRepresentation.transform#assign:xyz",
+   "kind": "lead",
+   "line": 2347
+  },
+  {
+   "id": "r154",
+   "anchor": "PhysicsSphericalRepresentation.transform#assign:lon, lat, ur",
+   "kind": "trail",
+   "line": 2349
+  },
+  {
+   "id": "r155",
+   "anchor": "PhysicsSphericalRepresentation.transform#assign:rep",
+   "kind": "lead",
+   "line": 2352
+  },
+  {
+   "id": "r156",
+   "anchor": "PhysicsSphericalRepresentation.norm",
+   "kind": "doc",
+   "line": 2359
+  },
+  {
+   "id": "r157",
+   "anchor": "PhysicsSphericalRepresentation._scale_operation#assign:result",
+   "kind": "lead",
+   "line": 2383
+  },
+  {
+   "id": "r158",
+   "anchor": "CylindricalRepresentation",
+   "kind": "doc",
+   "line": 2400
+  },
+  {
+   "id": "r159",
+   "anchor": "CylindricalRepresentation.rho",
+   "kind": "doc",
+   "line": 2441
+  },
+  {
+   "id": "r160",
+   "anchor": "CylindricalRepresentation.phi",
+   "kind": "doc",
+   "line": 2448
+  },
+  {
+   "id": "r161",
+   "anchor": "CylindricalRepresentation.z",
+   "kind": "doc",
+   "line": 2455
+  },
+  {
+   "id": "r162",
+   "anchor": "CylindricalRepresentation.from_cartesian",
+   "kind": "doc",
+   "line": 2476
+  },
+  {
+   "id": "r163",
+   "anchor": "CylindricalRepresentation.to_cartesian",
+   "kind": "doc",
+   "line": 2487
+  },
+  {
+   "id": "r164",
+   "anchor": "BaseDifferential",
+   "kind": "doc",
+   "line": 2522
+  },
+  {
+   "id": "r165",
+   "anchor": "BaseDifferential.__init_subclass__",
+   "kind": "doc",
+   "line": 2549
+  },
+  {
+   "id": "r166",
+   "anchor": "BaseDifferential.__init_subclass__#if:cls.__name__ in (\"BaseDifferential\", \"BaseSphericalDifferential\", \"BaseSphericalCosLatDifferential\")",
+   "kind": "lead",
+   "line": 2556
+  },
+  {
+   "id": "r167",
+   "anchor": "BaseDifferential.__init_subclass__#if:not hasattr(cls, \"attr_classes\")",
+   "kind": "lead",
+   "line": 2570
+  },
+  {
+   "id": "r168",
+   "anchor": "BaseDifferential.__init_subclass__#for:component in cls.attr_classes",
+   "kind": "lead",
+   "line": 2582
+  },
+  {
+   "id": "r169",
+   "anchor": "BaseDifferential._get_deriv_key",
+   "kind": "doc",
+   "line": 2603
+  },
+  {
+   "id": "r170",
+   "anchor": "BaseDifferential._get_deriv_key#call:self._check_base",
+   "kind": "lead",
+   "line": 2610
+  },
+  {
+   "id": "r171",
+   "anchor": "BaseDifferential._get_deriv_key#for:name in base.components/if:d_comp is not None/assign:d_unit_si",
+   "kind": "lead",
+   "line": 2620
+  },
+  {
+   "id": "r172",
+   "anchor": "BaseDifferential._get_deriv_key#for:name in base.components/if:d_comp is not None/assign:d_unit_si._scale",
+   "kind": "trail",
+   "line": 2621
+  },
+  {
+   "id": "r173",
+   "anchor": "BaseDifferential._get_base_vectors",
+   "kind": "doc",
+   "line": 2635
+  },
+  {
+   "id": "r174",
+   "anchor": "BaseDifferential.to_cartesian",
+   "kind": "doc",
+   "line": 2658
+  },
+  {
+   "id": "r175",
+   "anchor": "BaseDifferential.from_cartesian",
+   "kind": "doc",
+   "line": 2683
+  },
+  {
+   "id": "r176",
+   "anchor": "BaseDifferential.represent_as",
+   "kind": "doc",
+   "line": 2708
+  },
+  {
+   "id": "r177",
+   "anchor": "BaseDifferential.represent_as#assign:self_cartesian",
+   "kind": "lead",
+   "line": 2727
+  },
+  {
+   "id": "r178",
+   "anchor": "BaseDifferential.from_representation",
+   "kind": "doc",
+   "line": 2734
+  },
+  {
+   "id": "r179",
+   "anchor": "BaseDifferential.transform",
+   "kind": "doc",
+   "line": 2755
+  },
+  {
+   "id": "r180",
+   "anchor": "BaseDifferential.transform#assign:cdiff",
+   "kind": "lead",
+   "line": 2774
+  },
+  {
+   "id": "r181",
+   "anchor": "BaseDifferential.transform#assign:diff",
+   "kind": "lead",
+   "line": 2776
+  },
+  {
+   "id": "r182",
+   "anchor": "BaseDifferential._scale_operation",
+   "kind": "doc",
+   "line": 2779
+  },
+  {
+   "id": "r183",
+   "anchor": "BaseDifferential._combine_operation",
+   "kind": "doc",
+   "line": 2798
+  },
+  {
+   "id": "r184",
+   "anchor": "BaseDifferential.__sub__#if:isinstance(other, BaseRepresentation)",
+   "kind": "lead",
+   "line": 2831
+  },
+  {
+   "id": "r185",
+   "anchor": "BaseDifferential.norm",
+   "kind": "doc",
+   "line": 2835
+  },
+  {
+   "id": "r186",
+   "anchor": "BaseDifferential.norm#if:not isinstance(self, CartesianDifferential) and base is None",
+   "kind": "lead",
+   "line": 2854
+  },
+  {
+   "id": "r187",
+   "anchor": "CartesianDifferential",
+   "kind": "doc",
+   "line": 2862
+  },
+  {
+   "id": "r188",
+   "anchor": "CartesianDifferential.__init__#if:d_y is None and d_z is None/if:isinstance(d_x, np.ndarray) and d_x.dtype.kind not in \"OV\"/assign:d_x",
+   "kind": "lead",
+   "line": 2891
+  },
+  {
+   "id": "r189",
+   "anchor": "CartesianDifferential.__init__#if:d_y is None and d_z is None/if:isinstance(d_x, np.ndarray) and d_x.dtype.kind not in \"OV\"/assign:self._d_xyz",
+   "kind": "lead",
+   "line": 2894
+  },
+  {
+   "id": "r190",
+   "anchor": "CartesianDifferential.transform",
+   "kind": "doc",
+   "line": 2939
+  },
+  {
+   "id": "r191",
+   "anchor": "CartesianDifferential.transform#assign:p",
+   "kind": "lead",
+   "line": 2952
+  },
+  {
+   "id": "r192",
+   "anchor": "CartesianDifferential.get_d_xyz",
+   "kind": "doc",
+   "line": 2956
+  },
+  {
+   "id": "r193",
+   "anchor": "CartesianDifferential.get_d_xyz#return",
+   "kind": "lead",
+   "line": 2980
+  },
+  {
+   "id": "r194",
+   "anchor": "BaseSphericalDifferential._d_lon_coslat",
+   "kind": "doc",
+   "line": 2986
+  },
+  {
+   "id": "r195",
+   "anchor": "BaseSphericalDifferential._get_d_lon",
+   "kind": "doc",
+   "line": 2998
+  },
+  {
+   "id": "r196",
+   "anchor": "BaseSphericalDifferential._combine_operation",
+   "kind": "doc",
+   "line": 3011
+  },
+  {
+   "id": "r197",
+   "anchor": "UnitSphericalDifferential",
+   "kind": "doc",
+   "line": 3050
+  },
+  {
+   "id": "r198",
+   "anchor": "UnitSphericalDifferential.from_cartesian#assign:dimensional",
+   "kind": "lead",
+   "line": 3077
+  },
+  {
+   "id": "r199",
+   "anchor": "UnitSphericalDifferential.represent_as#if:issubclass(other_class, UnitSphericalCosLatDifferential)",
+   "kind": "lead",
+   "line": 3093
+  },
+  {
+   "id": "r200",
+   "anchor": "UnitSphericalDifferential.from_representation#if:isinstance(representation, SphericalDifferential)",
+   "kind": "lead",
+   "line": 3102
+  },
+  {
+   "id": "r201",
+   "anchor": "UnitSphericalDifferential.transform",
+   "kind": "doc",
+   "line": 3115
+  },
+  {
+   "id": "r202",
+   "anchor": "UnitSphericalDifferential.transform#if:np.all(is_O3(matrix))",
+   "kind": "lead",
+   "line": 3136
+  },
+  {
+   "id": "r203",
+   "anchor": "UnitSphericalDifferential.transform#if:np.all(is_O3(matrix))",
+   "kind": "trail",
+   "line": 3136
+  },
+  {
+   "id": "r204",
+   "anchor": "UnitSphericalDifferential.transform#if:np.all(is_O3(matrix))/assign:diff",
+   "kind": "todo",
+   "line": 3139
+  },
+  {
+   "id": "r205",
+   "anchor": "UnitSphericalDifferential.transform#if:np.all(is_O3(matrix))/else",
+   "kind": "trail",
+   "line": 3141
+  },
+  {
+   "id": "r206",
+   "anchor": "UnitSphericalDifferential.transform#if:np.all(is_O3(matrix))/else/assign:du",
+   "kind": "trail",
+   "line": 3142
+  },
+  {
+   "id": "r207",
+   "anchor": "SphericalDifferential",
+   "kind": "doc",
+   "line": 3156
+  },
+  {
+   "id": "r208",
+   "anchor": "SphericalDifferential.represent_as#if:issubclass(other_class, UnitSphericalDifferential)",
+   "kind": "lead",
+   "line": 3181
+  },
+  {
+   "id": "r209",
+   "anchor": "SphericalDifferential.from_representation#if:isinstance(representation, SphericalCosLatDifferential)",
+   "kind": "lead",
+   "line": 3198
+  },
+  {
+   "id": "r210",
+   "anchor": "BaseSphericalCosLatDifferential",
+   "kind": "doc",
+   "line": 3215
+  },
+  {
+   "id": "r211",
+   "anchor": "BaseSphericalCosLatDifferential._get_base_vectors",
+   "kind": "doc",
+   "line": 3222
+  },
+  {
+   "id": "r212",
+   "anchor": "BaseSphericalCosLatDifferential._d_lon",
+   "kind": "doc",
+   "line": 3246
+  },
+  {
+   "id": "r213",
+   "anchor": "BaseSphericalCosLatDifferential._get_d_lon_coslat",
+   "kind": "doc",
+   "line": 3258
+  },
+  {
+   "id": "r214",
+   "anchor": "BaseSphericalCosLatDifferential._combine_operation",
+   "kind": "doc",
+   "line": 3271
+  },
+  {
+   "id": "r215",
+   "anchor": "UnitSphericalCosLatDifferential",
+   "kind": "doc",
+   "line": 3310
+  },
+  {
+   "id": "r216",
+   "anchor": "UnitSphericalCosLatDifferential.from_cartesian#assign:dimensional",
+   "kind": "lead",
+   "line": 3338
+  },
+  {
+   "id": "r217",
+   "anchor": "UnitSphericalCosLatDifferential.represent_as#if:issubclass(other_class, UnitSphericalDifferential)",
+   "kind": "lead",
+   "line": 3354
+  },
+  {
+   "id": "r218",
+   "anchor": "UnitSphericalCosLatDifferential.from_representation#if:isinstance(representation, SphericalCosLatDifferential)",
+   "kind": "lead",
+   "line": 3363
+  },
+  {
+   "id": "r219",
+   "anchor": "UnitSphericalCosLatDifferential.transform",
+   "kind": "doc",
+   "line": 3376
+  },
+  {
+   "id": "r220",
+   "anchor": "UnitSphericalCosLatDifferential.transform#if:np.all(is_O3(matrix))",
+   "kind": "lead",
+   "line": 3397
+  },
+  {
+   "id": "r221",
+   "anchor": "UnitSphericalCosLatDifferential.transform#if:np.all(is_O3(matrix))",
+   "kind": "trail",
+   "line": 3397
+  },
+  {
+   "id": "r222",
+   "anchor": "UnitSphericalCosLatDifferential.transform#if:np.all(is_O3(matrix))/assign:diff",
+   "kind": "todo",
+   "line": 3399
+  },
+  {
+   "id": "r223",
+   "anchor": "UnitSphericalCosLatDifferential.transform#if:np.all(is_O3(matrix))/else",
+   "kind": "trail",
+   "line": 3401
+  },
+  {
+   "id": "r224",
+   "anchor": "UnitSphericalCosLatDifferential.transform#if:np.all(is_O3(matrix))/else/assign:du",
+   "kind": "trail",
+   "line": 3402
+  },
+  {
+   "id": "r225",
+   "anchor": "SphericalCosLatDifferential",
+   "kind": "doc",
+   "line": 3416
+  },
+  {
+   "id": "r226",
+   "anchor": "SphericalCosLatDifferential.represent_as#if:issubclass(other_class, UnitSphericalCosLatDifferential)",
+   "kind": "lead",
+   "line": 3446
+  },
+  {
+   "id": "r227",
+   "anchor": "SphericalCosLatDifferential.from_representation#if:isinstance(representation, SphericalDifferential)",
+   "kind": "lead",
+   "line": 3463
+  },
+  {
+   "id": "r228",
+   "anchor": "RadialDifferential",
+   "kind": "doc",
+   "line": 3481
+  },
+  {
+   "id": "r229",
+   "anchor": "PhysicsSphericalDifferential",
+   "kind": "doc",
+   "line": 3541
+  },
+  {
+   "id": "r230",
+   "anchor": "PhysicsSphericalDifferential.represent_as#if:issubclass(other_class, SphericalDifferential)",
+   "kind": "lead",
+   "line": 3566
+  },
+  {
+   "id": "r231",
+   "anchor": "PhysicsSphericalDifferential.from_representation#if:isinstance(representation, SphericalDifferential)",
+   "kind": "lead",
+   "line": 3588
+  },
+  {
+   "id": "r232",
+   "anchor": "CylindricalDifferential",
+   "kind": "doc",
+   "line": 3606
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 77560,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 21635,
+  "thinking_tokens": 10062,
+  "opus_cost_usd": 1.3207665,
+  "total_cost_usd": 1.3828015,
+  "duration_ms": 172997,
+  "duration_api_ms": 175150,
+  "num_turns": 2
+ },
+ "wall_ms": 173986,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

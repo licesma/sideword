@@ -1,0 +1,133 @@
+{
+ "blob_sha": "654c9d01b4f9e3c96ce9e6d5f91c0b2c37c6ffec",
+ "path": "django/db/backends/oracle/creation.py",
+ "repo": "django/django",
+ "records": 18,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseCreation._maindb_connection",
+   "kind": "doc",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseCreation._create_test_db#if:self._test_database_create()/try/except:Exception/if:keepdb",
+   "kind": "lead",
+   "line": 42
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseCreation._create_test_db#if:self._test_database_create()/try/except:Exception/if:autoclobber or confirm == 'yes'/try/except:DatabaseError/if:'ORA-29857' in str(e)/else/call:sys.stderr.write",
+   "kind": "lead",
+   "line": 60
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseCreation._create_test_db#call:self._maindb_connection.close",
+   "kind": "trail",
+   "line": 100
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseCreation._switch_to_test_user",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseCreation.set_as_test_mirror",
+   "kind": "doc",
+   "line": 123
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseCreation._handle_objects_preventing_db_destruction#call:print",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseCreation._destroy_test_db",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseCreation._destroy_test_db#call:time.sleep",
+   "kind": "trail",
+   "line": 176
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseCreation._execute_test_db_creation#assign:acceptable_ora_err",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseCreation._create_test_user#assign:acceptable_ora_err",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseCreation._create_test_user#if:not success and self._test_settings_get('PASSWORD') is None",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseCreation._create_test_user#assign:extra",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseCreation._execute_allow_fail_statements",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseCreation._execute_allow_fail_statements#try/assign:allow_quiet_fail",
+   "kind": "lead",
+   "line": 272
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseCreation._test_settings_get",
+   "kind": "doc",
+   "line": 294
+  },
+  {
+   "id": "r17",
+   "anchor": "DatabaseCreation._test_database_passwd#if:password is None and self._test_user_create()/assign:password",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r18",
+   "anchor": "DatabaseCreation._get_test_db_name",
+   "kind": "doc",
+   "line": 347
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11361,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2177,
+  "thinking_tokens": 1132,
+  "opus_cost_usd": 0.1723265,
+  "total_cost_usd": 0.1796815,
+  "duration_ms": 21148,
+  "duration_api_ms": 22128,
+  "num_turns": 2
+ },
+ "wall_ms": 22238,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

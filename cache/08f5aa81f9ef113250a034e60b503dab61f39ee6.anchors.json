@@ -1,0 +1,325 @@
+{
+ "blob_sha": "08f5aa81f9ef113250a034e60b503dab61f39ee6",
+ "path": "django/contrib/gis/db/models/fields.py",
+ "repo": "django/django",
+ "records": 50,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_srid_cache",
+   "kind": "lead",
+   "line": 17
+  },
+  {
+   "id": "r2",
+   "anchor": "get_srid_info",
+   "kind": "doc",
+   "line": 20
+  },
+  {
+   "id": "r3",
+   "anchor": "get_srid_info#try/assign:SpatialRefSys",
+   "kind": "lead",
+   "line": 30
+  },
+  {
+   "id": "r4",
+   "anchor": "get_srid_info#try/except:NotImplementedError/return",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r5",
+   "anchor": "get_srid_info#if:connection.alias not in _srid_cache/assign:_srid_cache[connection.alias]",
+   "kind": "lead",
+   "line": 37
+  },
+  {
+   "id": "r6",
+   "anchor": "get_srid_info#if:srid not in _srid_cache[connection.alias]/assign:sr",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r7",
+   "anchor": "GeoSelectFormatMixin.select_format",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r8",
+   "anchor": "GeoSelectFormatMixin.select_format#if:connection.ops.select/assign:sel_fmt",
+   "kind": "lead",
+   "line": 68
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseSpatialField",
+   "kind": "doc",
+   "line": 72
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseSpatialField.geodetic_units",
+   "kind": "lead",
+   "line": 83
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseSpatialField.__init__",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseSpatialField.spatial_index",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseSpatialField.srid",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseSpatialField.__init__#assign:kwargs['verbose_name']",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseSpatialField.deconstruct#assign:kwargs['srid']",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseSpatialField._get_srid_info",
+   "kind": "lead",
+   "line": 127
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseSpatialField._get_srid_info#assign:self._units, self._units_name, self._spheroid",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseSpatialField.geodetic",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseSpatialField.geodetic#return",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseSpatialField.get_placeholder",
+   "kind": "doc",
+   "line": 156
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseSpatialField.get_srid",
+   "kind": "doc",
+   "line": 163
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseSpatialField.get_srid#assign:srid",
+   "kind": "trail",
+   "line": 170
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseSpatialField.get_db_prep_save",
+   "kind": "doc",
+   "line": 176
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseSpatialField.get_raster_prep_value",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseSpatialField.get_prep_value",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseSpatialField.get_prep_value#if:isinstance(value, (Expression, bool))",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseSpatialField.get_prep_value#if:isinstance(obj, Geometry)",
+   "kind": "lead",
+   "line": 224
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseSpatialField.get_prep_value#if:isinstance(obj, Geometry)/else/assign:is_candidate",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseSpatialField.get_prep_value#if:isinstance(obj, Geometry)/else/assign:raster",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseSpatialField.get_prep_value#assign:obj.srid",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r31",
+   "anchor": "GeometryField",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r32",
+   "anchor": "GeometryField.geom_type",
+   "kind": "lead",
+   "line": 263
+  },
+  {
+   "id": "r33",
+   "anchor": "GeometryField.__init__",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r34",
+   "anchor": "GeometryField.dim",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r35",
+   "anchor": "GeometryField.geography",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r36",
+   "anchor": "GeometryField._extent",
+   "kind": "lead",
+   "line": 291
+  },
+  {
+   "id": "r37",
+   "anchor": "GeometryField.deconstruct#if:self.dim != 2",
+   "kind": "lead",
+   "line": 299
+  },
+  {
+   "id": "r38",
+   "anchor": "GeometryField.get_distance",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r39",
+   "anchor": "GeometryField.get_distance",
+   "kind": "doc",
+   "line": 306
+  },
+  {
+   "id": "r40",
+   "anchor": "GeometryField.contribute_to_class",
+   "kind": "lead",
+   "line": 324
+  },
+  {
+   "id": "r41",
+   "anchor": "GeometryField.contribute_to_class#call:setattr",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r42",
+   "anchor": "GeometryField._get_db_prep_lookup",
+   "kind": "doc",
+   "line": 341
+  },
+  {
+   "id": "r43",
+   "anchor": "GeometryField._get_db_prep_lookup#if:isinstance(value, (tuple, list))",
+   "kind": "lead",
+   "line": 354
+  },
+  {
+   "id": "r44",
+   "anchor": "GeometryField._get_db_prep_lookup#if:isinstance(value, (tuple, list))/assign:params",
+   "kind": "lead",
+   "line": 357
+  },
+  {
+   "id": "r45",
+   "anchor": "PointField",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r46",
+   "anchor": "ExtentField",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r47",
+   "anchor": "RasterField",
+   "kind": "doc",
+   "line": 415
+  },
+  {
+   "id": "r48",
+   "anchor": "RasterField._check_connection#if:not connection.features.gis_enabled or not connection.features.supports_raster",
+   "kind": "lead",
+   "line": 426
+  },
+  {
+   "id": "r49",
+   "anchor": "RasterField.get_db_prep_value#if:not prepared",
+   "kind": "lead",
+   "line": 439
+  },
+  {
+   "id": "r50",
+   "anchor": "RasterField.contribute_to_class#call:setattr",
+   "kind": "lead",
+   "line": 449
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13126,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4236,
+  "thinking_tokens": 1930,
+  "opus_cost_usd": 0.2414515,
+  "total_cost_usd": 0.2506255,
+  "duration_ms": 37002,
+  "duration_api_ms": 38856,
+  "num_turns": 2
+ },
+ "wall_ms": 37936,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

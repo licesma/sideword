@@ -1,0 +1,871 @@
+{
+ "blob_sha": "e7b3f3fd71d3b84b7f010c90916e04e0ea881f7a",
+ "path": "django/db/models/base.py",
+ "repo": "django/django",
+ "records": 141,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "subclass_exception",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r2",
+   "anchor": "subclass_exception.__reduce__#return",
+   "kind": "lead",
+   "line": 67
+  },
+  {
+   "id": "r3",
+   "anchor": "ModelBase",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r4",
+   "anchor": "ModelBase.__new__#assign:parents",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r5",
+   "anchor": "ModelBase.__new__#assign:module",
+   "kind": "lead",
+   "line": 92
+  },
+  {
+   "id": "r6",
+   "anchor": "ModelBase.__new__#assign:app_config",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r7",
+   "anchor": "ModelBase.__new__#if:not abstract/if:base_meta and not base_meta.abstract/if:not hasattr(meta, 'ordering')",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r8",
+   "anchor": "ModelBase.__new__#if:is_proxy and base_meta and base_meta.swapped",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r9",
+   "anchor": "ModelBase.__new__#for:obj_name, obj in attrs.items()",
+   "kind": "lead",
+   "line": 156
+  },
+  {
+   "id": "r10",
+   "anchor": "ModelBase.__new__#assign:new_fields",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r11",
+   "anchor": "ModelBase.__new__#if:is_proxy",
+   "kind": "lead",
+   "line": 168
+  },
+  {
+   "id": "r12",
+   "anchor": "ModelBase.__new__#assign:parent_links",
+   "kind": "lead",
+   "line": 191
+  },
+  {
+   "id": "r13",
+   "anchor": "ModelBase.__new__#for:base in reversed([new_class] + parents)/if:not hasattr(base, '_meta')",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r14",
+   "anchor": "ModelBase.__new__#for:base in reversed([new_class] + parents)/if:base != new_class and not base._meta.abstract",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r15",
+   "anchor": "ModelBase.__new__#for:base in reversed([new_class] + parents)/for:field in base._meta.local_fields",
+   "kind": "lead",
+   "line": 200
+  },
+  {
+   "id": "r16",
+   "anchor": "ModelBase.__new__#assign:inherited_attributes",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r17",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r18",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:base not in parents or not hasattr(base, '_meta')/assign:inherited_attributes",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r19",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/for:field in parent_fields",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r20",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/assign:base",
+   "kind": "lead",
+   "line": 233
+  },
+  {
+   "id": "r21",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/if:base_key in parent_links/elif:not is_proxy/if:not hasattr(new_class, attr_name)",
+   "kind": "lead",
+   "line": 260
+  },
+  {
+   "id": "r22",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/else/for:field in parent_fields",
+   "kind": "lead",
+   "line": 269
+  },
+  {
+   "id": "r23",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/else/for:field in parent_fields/if:field.name not in field_names and field.name not in new_class.__dict__ and field.name not in inherited_attributes/if:field.one_to_one",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r24",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/if:not base._meta.abstract/else/call:new_class._meta.parents.update",
+   "kind": "lead",
+   "line": 283
+  },
+  {
+   "id": "r25",
+   "anchor": "ModelBase.__new__#for:base in new_class.mro()/for:field in base._meta.private_fields",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r26",
+   "anchor": "ModelBase.__new__#for:index in new_class._meta.indexes",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r27",
+   "anchor": "ModelBase.__new__#if:abstract/assign:attr_meta.abstract",
+   "kind": "lead",
+   "line": 312
+  },
+  {
+   "id": "r28",
+   "anchor": "ModelBase.add_to_class#if:not inspect.isclass(value) and hasattr(value, 'contribute_to_class')",
+   "kind": "lead",
+   "line": 322
+  },
+  {
+   "id": "r29",
+   "anchor": "ModelBase._prepare",
+   "kind": "doc",
+   "line": 327
+  },
+  {
+   "id": "r30",
+   "anchor": "ModelBase._prepare#if:opts.order_with_respect_to/if:opts.order_with_respect_to.remote_field",
+   "kind": "lead",
+   "line": 343
+  },
+  {
+   "id": "r31",
+   "anchor": "ModelBase._prepare#if:cls.__doc__ is None",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r32",
+   "anchor": "ModelBase._requires_legacy_default_manager",
+   "kind": "trail",
+   "line": 368
+  },
+  {
+   "id": "r33",
+   "anchor": "ModelBase._requires_legacy_default_manager#for:manager in opts.managers",
+   "kind": "lead",
+   "line": 378
+  },
+  {
+   "id": "r34",
+   "anchor": "ModelBase._requires_legacy_default_manager#for:manager in opts.managers/else",
+   "kind": "lead",
+   "line": 416
+  },
+  {
+   "id": "r35",
+   "anchor": "ModelBase._requires_legacy_default_manager#for:manager in opts.managers/else/if:not future_default_manager.auto_created",
+   "kind": "lead",
+   "line": 419
+  },
+  {
+   "id": "r36",
+   "anchor": "ModelState",
+   "kind": "doc",
+   "line": 450
+  },
+  {
+   "id": "r37",
+   "anchor": "ModelState.adding",
+   "kind": "lead",
+   "line": 459
+  },
+  {
+   "id": "r38",
+   "anchor": "Model._state",
+   "kind": "lead",
+   "line": 468
+  },
+  {
+   "id": "r39",
+   "anchor": "Model.__init__#assign:args_len",
+   "kind": "lead",
+   "line": 474
+  },
+  {
+   "id": "r40",
+   "anchor": "Model.__init__#if:args_len > len(self._meta.concrete_fields)/raise:IndexError",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r41",
+   "anchor": "Model.__init__#if:not kwargs/for:val, field in zip(args, fields_iter)",
+   "kind": "lead",
+   "line": 485
+  },
+  {
+   "id": "r42",
+   "anchor": "Model.__init__#if:not kwargs/else/assign:fields_iter",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r43",
+   "anchor": "Model.__init__#if:not kwargs/else/for:val, field in zip(args, fields_iter)/if:isinstance(field.remote_field, ManyToOneRel)",
+   "kind": "lead",
+   "line": 498
+  },
+  {
+   "id": "r44",
+   "anchor": "Model.__init__#for:field in fields_iter",
+   "kind": "lead",
+   "line": 504
+  },
+  {
+   "id": "r45",
+   "anchor": "Model.__init__#for:field in fields_iter/if:field.attname not in kwargs and field.column is None",
+   "kind": "lead",
+   "line": 507
+  },
+  {
+   "id": "r46",
+   "anchor": "Model.__init__#for:field in fields_iter/if:kwargs/if:isinstance(field.remote_field, ForeignObjectRel)/try/assign:rel_obj",
+   "kind": "lead",
+   "line": 513
+  },
+  {
+   "id": "r47",
+   "anchor": "Model.__init__#for:field in fields_iter/if:kwargs/if:isinstance(field.remote_field, ForeignObjectRel)/try/except:KeyError/try/assign:val",
+   "kind": "lead",
+   "line": 518
+  },
+  {
+   "id": "r48",
+   "anchor": "Model.__init__#for:field in fields_iter/if:kwargs/if:isinstance(field.remote_field, ForeignObjectRel)/try/else/if:rel_obj is None and field.null",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r49",
+   "anchor": "Model.__init__#for:field in fields_iter/if:kwargs/else/try/except:KeyError/assign:val",
+   "kind": "lead",
+   "line": 534
+  },
+  {
+   "id": "r50",
+   "anchor": "Model.__init__#for:field in fields_iter/if:is_related_object/if:rel_obj is not DEFERRED",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r51",
+   "anchor": "Model.__init__#if:kwargs/for:prop in list(kwargs)/try/if:isinstance(getattr(self.__class__, prop), property) or self._meta.get_field(prop)",
+   "kind": "lead",
+   "line": 554
+  },
+  {
+   "id": "r52",
+   "anchor": "Model.__reduce__",
+   "kind": "doc",
+   "line": 607
+  },
+  {
+   "id": "r53",
+   "anchor": "Model.get_deferred_fields",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r54",
+   "anchor": "Model.refresh_from_db",
+   "kind": "doc",
+   "line": 656
+  },
+  {
+   "id": "r55",
+   "anchor": "Model.refresh_from_db#assign:deferred_fields",
+   "kind": "lead",
+   "line": 683
+  },
+  {
+   "id": "r56",
+   "anchor": "Model.refresh_from_db#for:field in self._meta.concrete_fields/if:field.attname in non_loaded_fields/continue",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r57",
+   "anchor": "Model.refresh_from_db#for:field in self._meta.concrete_fields/if:field.is_relation and field.get_cache_name() in self.__dict__",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r58",
+   "anchor": "Model.serializable_value",
+   "kind": "doc",
+   "line": 708
+  },
+  {
+   "id": "r59",
+   "anchor": "Model.save",
+   "kind": "doc",
+   "line": 725
+  },
+  {
+   "id": "r60",
+   "anchor": "Model.save#for:field in self._meta.concrete_fields",
+   "kind": "lead",
+   "line": 738
+  },
+  {
+   "id": "r61",
+   "anchor": "Model.save#for:field in self._meta.concrete_fields/if:field.is_relation/try",
+   "kind": "lead",
+   "line": 742
+  },
+  {
+   "id": "r62",
+   "anchor": "Model.save#for:field in self._meta.concrete_fields/if:field.is_relation/if:obj and obj.pk is None",
+   "kind": "lead",
+   "line": 753
+  },
+  {
+   "id": "r63",
+   "anchor": "Model.save#for:field in self._meta.concrete_fields/if:field.is_relation/if:obj and obj.pk is None/if:not field.remote_field.multiple",
+   "kind": "lead",
+   "line": 755
+  },
+  {
+   "id": "r64",
+   "anchor": "Model.save#if:update_fields is not None/if:len(update_fields) == 0",
+   "kind": "lead",
+   "line": 771
+  },
+  {
+   "id": "r65",
+   "anchor": "Model.save#if:update_fields is not None/elif:not force_insert and deferred_fields and using == self._state.db",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r66",
+   "anchor": "Model.save_base",
+   "kind": "doc",
+   "line": 806
+  },
+  {
+   "id": "r67",
+   "anchor": "Model.save_base#if:cls._meta.proxy",
+   "kind": "lead",
+   "line": 822
+  },
+  {
+   "id": "r68",
+   "anchor": "Model.save_base#assign:self._state.db",
+   "kind": "lead",
+   "line": 833
+  },
+  {
+   "id": "r69",
+   "anchor": "Model.save_base#assign:self._state.adding",
+   "kind": "lead",
+   "line": 835
+  },
+  {
+   "id": "r70",
+   "anchor": "Model.save_base#if:not meta.auto_created",
+   "kind": "lead",
+   "line": 838
+  },
+  {
+   "id": "r71",
+   "anchor": "Model._save_parents",
+   "kind": "doc",
+   "line": 844
+  },
+  {
+   "id": "r72",
+   "anchor": "Model._save_parents#for:parent, field in meta.parents.items()/if:field and getattr(self, parent._meta.pk.attname) is None and getattr(self, field.attname) is not None",
+   "kind": "lead",
+   "line": 851
+  },
+  {
+   "id": "r73",
+   "anchor": "Model._save_parents#for:parent, field in meta.parents.items()/if:field",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r74",
+   "anchor": "Model._save_parents#for:parent, field in meta.parents.items()/if:field/assign:cache_name",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r75",
+   "anchor": "Model._save_table",
+   "kind": "doc",
+   "line": 868
+  },
+  {
+   "id": "r76",
+   "anchor": "Model._save_table#if:pk_set and not force_insert",
+   "kind": "lead",
+   "line": 890
+  },
+  {
+   "id": "r77",
+   "anchor": "Model._save_table#if:not updated/if:meta.order_with_respect_to/assign:field",
+   "kind": "lead",
+   "line": 905
+  },
+  {
+   "id": "r78",
+   "anchor": "Model._do_update",
+   "kind": "doc",
+   "line": 920
+  },
+  {
+   "id": "r79",
+   "anchor": "Model._do_update#if:not values/return",
+   "kind": "lead",
+   "line": 933
+  },
+  {
+   "id": "r80",
+   "anchor": "Model._do_update#if:self._meta.select_on_save and not forced_update/if:filtered.exists()/return",
+   "kind": "lead",
+   "line": 943
+  },
+  {
+   "id": "r81",
+   "anchor": "Model._do_insert",
+   "kind": "doc",
+   "line": 948
+  },
+  {
+   "id": "r82",
+   "anchor": "Model.clean",
+   "kind": "doc",
+   "line": 1009
+  },
+  {
+   "id": "r83",
+   "anchor": "Model.validate_unique",
+   "kind": "doc",
+   "line": 1018
+  },
+  {
+   "id": "r84",
+   "anchor": "Model._get_unique_checks",
+   "kind": "doc",
+   "line": 1034
+  },
+  {
+   "id": "r85",
+   "anchor": "Model._get_unique_checks#for:model_class, unique_together in unique_togethers/for:check in unique_together/for:name in check/if:name in exclude",
+   "kind": "lead",
+   "line": 1056
+  },
+  {
+   "id": "r86",
+   "anchor": "Model._get_unique_checks#assign:date_checks",
+   "kind": "lead",
+   "line": 1062
+  },
+  {
+   "id": "r87",
+   "anchor": "Model._get_unique_checks#assign:fields_with_class",
+   "kind": "lead",
+   "line": 1067
+  },
+  {
+   "id": "r88",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/assign:lookup_kwargs",
+   "kind": "lead",
+   "line": 1093
+  },
+  {
+   "id": "r89",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/for:field_name in unique_check/if:lookup_value is None or (lookup_value == '' and connection.features.interprets_empty_strings_as_nulls)",
+   "kind": "todo",
+   "line": 1098
+  },
+  {
+   "id": "r90",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/for:field_name in unique_check/if:lookup_value is None or (lookup_value == '' and connection.features.interprets_empty_strings_as_nulls)/continue",
+   "kind": "lead",
+   "line": 1101
+  },
+  {
+   "id": "r91",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/for:field_name in unique_check/if:f.primary_key and not self._state.adding/continue",
+   "kind": "lead",
+   "line": 1104
+  },
+  {
+   "id": "r92",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/if:len(unique_check) != len(lookup_kwargs)",
+   "kind": "lead",
+   "line": 1108
+  },
+  {
+   "id": "r93",
+   "anchor": "Model._perform_unique_checks#for:model_class, unique_check in unique_checks/assign:model_class_pk",
+   "kind": "lead",
+   "line": 1119
+  },
+  {
+   "id": "r94",
+   "anchor": "Model._perform_date_checks#for:model_class, lookup_type, field, unique_for in date_checks/assign:date",
+   "kind": "lead",
+   "line": 1137
+  },
+  {
+   "id": "r95",
+   "anchor": "Model._perform_date_checks#for:model_class, lookup_type, field, unique_for in date_checks/if:not self._state.adding and self.pk is not None",
+   "kind": "lead",
+   "line": 1151
+  },
+  {
+   "id": "r96",
+   "anchor": "Model.unique_error_message#if:len(unique_check) == 1",
+   "kind": "lead",
+   "line": 1188
+  },
+  {
+   "id": "r97",
+   "anchor": "Model.unique_error_message#if:len(unique_check) == 1/else",
+   "kind": "lead",
+   "line": 1198
+  },
+  {
+   "id": "r98",
+   "anchor": "Model.full_clean",
+   "kind": "doc",
+   "line": 1207
+  },
+  {
+   "id": "r99",
+   "anchor": "Model.full_clean#try",
+   "kind": "lead",
+   "line": 1225
+  },
+  {
+   "id": "r100",
+   "anchor": "Model.full_clean#if:validate_unique",
+   "kind": "lead",
+   "line": 1231
+  },
+  {
+   "id": "r101",
+   "anchor": "Model.clean_fields",
+   "kind": "doc",
+   "line": 1243
+  },
+  {
+   "id": "r102",
+   "anchor": "Model.clean_fields#for:f in self._meta.fields/assign:raw_value",
+   "kind": "lead",
+   "line": 1257
+  },
+  {
+   "id": "r103",
+   "anchor": "Model.check#if:not cls._meta.swapped/if:not clash_errors",
+   "kind": "lead",
+   "line": 1282
+  },
+  {
+   "id": "r104",
+   "anchor": "Model._check_swappable",
+   "kind": "doc",
+   "line": 1291
+  },
+  {
+   "id": "r105",
+   "anchor": "Model._check_managers",
+   "kind": "doc",
+   "line": 1332
+  },
+  {
+   "id": "r106",
+   "anchor": "Model._check_fields",
+   "kind": "doc",
+   "line": 1341
+  },
+  {
+   "id": "r107",
+   "anchor": "Model._check_m2m_through_same_relationship",
+   "kind": "doc",
+   "line": 1352
+  },
+  {
+   "id": "r108",
+   "anchor": "Model._check_m2m_through_same_relationship#assign:fields",
+   "kind": "lead",
+   "line": 1362
+  },
+  {
+   "id": "r109",
+   "anchor": "Model._check_m2m_through_same_relationship#assign:fields",
+   "kind": "lead",
+   "line": 1365
+  },
+  {
+   "id": "r110",
+   "anchor": "Model._check_id_field",
+   "kind": "doc",
+   "line": 1383
+  },
+  {
+   "id": "r111",
+   "anchor": "Model._check_id_field#if:fields and not fields[0].primary_key and cls._meta.pk.name == 'id'",
+   "kind": "lead",
+   "line": 1387
+  },
+  {
+   "id": "r112",
+   "anchor": "Model._check_field_name_clashes",
+   "kind": "doc",
+   "line": 1400
+  },
+  {
+   "id": "r113",
+   "anchor": "Model._check_field_name_clashes#assign:used_fields",
+   "kind": "trail",
+   "line": 1404
+  },
+  {
+   "id": "r114",
+   "anchor": "Model._check_field_name_clashes#for:parent in cls._meta.get_parent_list()",
+   "kind": "lead",
+   "line": 1407
+  },
+  {
+   "id": "r115",
+   "anchor": "Model._check_field_name_clashes#for:parent in cls._meta.get_parent_list()",
+   "kind": "lead",
+   "line": 1429
+  },
+  {
+   "id": "r116",
+   "anchor": "Model._check_field_name_clashes#for:f in cls._meta.local_fields/assign:id_conflict",
+   "kind": "lead",
+   "line": 1440
+  },
+  {
+   "id": "r117",
+   "anchor": "Model._check_column_name_clashes#assign:used_column_names",
+   "kind": "lead",
+   "line": 1460
+  },
+  {
+   "id": "r118",
+   "anchor": "Model._check_column_name_clashes#for:f in cls._meta.local_fields/if:column_name and column_name in used_column_names",
+   "kind": "lead",
+   "line": 1467
+  },
+  {
+   "id": "r119",
+   "anchor": "Model._check_index_together",
+   "kind": "doc",
+   "line": 1483
+  },
+  {
+   "id": "r120",
+   "anchor": "Model._check_unique_together",
+   "kind": "doc",
+   "line": 1510
+  },
+  {
+   "id": "r121",
+   "anchor": "Model._check_local_fields#assign:forward_fields_map",
+   "kind": "lead",
+   "line": 1542
+  },
+  {
+   "id": "r122",
+   "anchor": "Model._check_ordering",
+   "kind": "doc",
+   "line": 1585
+  },
+  {
+   "id": "r123",
+   "anchor": "Model._check_ordering#assign:fields",
+   "kind": "lead",
+   "line": 1613
+  },
+  {
+   "id": "r124",
+   "anchor": "Model._check_ordering#assign:fields",
+   "kind": "lead",
+   "line": 1616
+  },
+  {
+   "id": "r125",
+   "anchor": "Model._check_ordering#assign:fields",
+   "kind": "lead",
+   "line": 1620
+  },
+  {
+   "id": "r126",
+   "anchor": "Model._check_ordering#assign:fields",
+   "kind": "lead",
+   "line": 1624
+  },
+  {
+   "id": "r127",
+   "anchor": "Model._check_ordering#assign:invalid_fields",
+   "kind": "lead",
+   "line": 1627
+  },
+  {
+   "id": "r128",
+   "anchor": "Model._check_ordering#assign:opts",
+   "kind": "lead",
+   "line": 1631
+  },
+  {
+   "id": "r129",
+   "anchor": "Model._check_long_column_names",
+   "kind": "doc",
+   "line": 1650
+  },
+  {
+   "id": "r130",
+   "anchor": "Model._check_long_column_names#for:db in settings.DATABASES.keys()",
+   "kind": "lead",
+   "line": 1660
+  },
+  {
+   "id": "r131",
+   "anchor": "Model._check_long_column_names#for:db in settings.DATABASES.keys()/if:not router.allow_migrate_model(db, cls)",
+   "kind": "lead",
+   "line": 1662
+  },
+  {
+   "id": "r132",
+   "anchor": "Model._check_long_column_names#for:f in cls._meta.local_fields/if:f.db_column is None and column_name is not None and len(column_name) > allowed_len",
+   "kind": "lead",
+   "line": 1684
+  },
+  {
+   "id": "r133",
+   "anchor": "Model._check_long_column_names#for:f in cls._meta.local_many_to_many/if:isinstance(f.remote_field.through, six.string_types)",
+   "kind": "lead",
+   "line": 1698
+  },
+  {
+   "id": "r134",
+   "anchor": "Model._check_long_column_names#for:f in cls._meta.local_many_to_many/for:m2m in f.remote_field.through._meta.local_fields",
+   "kind": "lead",
+   "line": 1703
+  },
+  {
+   "id": "r135",
+   "anchor": "method_set_order",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r136",
+   "anchor": "method_set_order",
+   "kind": "lead",
+   "line": 1729
+  },
+  {
+   "id": "r137",
+   "anchor": "method_set_order#with:transaction.atomic(using=using, savepoint=False)",
+   "kind": "todo",
+   "line": 1736
+  },
+  {
+   "id": "r138",
+   "anchor": "model_unpickle",
+   "kind": "lead",
+   "line": 1765
+  },
+  {
+   "id": "r139",
+   "anchor": "model_unpickle",
+   "kind": "doc",
+   "line": 1765
+  },
+  {
+   "id": "r140",
+   "anchor": "model_unpickle#if:isinstance(model_id, tuple)/else/assign:model",
+   "kind": "lead",
+   "line": 1773
+  },
+  {
+   "id": "r141",
+   "anchor": "unpickle_inner_exception#assign:exception",
+   "kind": "lead",
+   "line": 1780
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 40208,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 15785,
+  "thinking_tokens": 8123,
+  "opus_cost_usd": 0.8009965,
+  "total_cost_usd": 0.8333775,
+  "duration_ms": 134345,
+  "duration_api_ms": 135945,
+  "num_turns": 2
+ },
+ "wall_ms": 135425,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

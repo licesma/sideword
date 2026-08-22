@@ -1,0 +1,109 @@
+{
+ "blob_sha": "7fc49897b51c04f0893931ecfccc61841f13c79c",
+ "path": "django/db/models/functions/datetime.py",
+ "repo": "django/django",
+ "records": 14,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "TimezoneMixin.get_tzname#assign:tzname",
+   "kind": "lead",
+   "line": 22
+  },
+  {
+   "id": "r2",
+   "anchor": "Extract.as_sql#if:isinstance(lhs_output_field, DateTimeField)/elif:self.tzinfo is not None/elif:isinstance(lhs_output_field, DateField)/elif:isinstance(lhs_output_field, TimeField)/elif:isinstance(lhs_output_field, DurationField)/else/assert:False",
+   "kind": "lead",
+   "line": 62
+  },
+  {
+   "id": "r3",
+   "anchor": "Extract.resolve_expression#if:type(field) == DateField and copy.lookup_name in ('hour', 'minute', 'second')",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r4",
+   "anchor": "ExtractIsoYear",
+   "kind": "doc",
+   "line": 95
+  },
+  {
+   "id": "r5",
+   "anchor": "ExtractWeek",
+   "kind": "doc",
+   "line": 108
+  },
+  {
+   "id": "r6",
+   "anchor": "ExtractWeekDay",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r7",
+   "anchor": "ExtractIsoWeekDay",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r8",
+   "anchor": "Now.as_postgresql#return",
+   "kind": "lead",
+   "line": 184
+  },
+  {
+   "id": "r9",
+   "anchor": "TruncBase.resolve_expression#assert:isinstance(field, (DateField, TimeField))",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r10",
+   "anchor": "TruncBase.resolve_expression#if:not isinstance(copy.output_field, (DateField, DateTimeField, TimeField))",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r11",
+   "anchor": "TruncBase.resolve_expression#assign:class_output_field",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r12",
+   "anchor": "TruncWeek",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r13",
+   "anchor": "TruncDate.as_sql#assign:lhs, lhs_params",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r14",
+   "anchor": "TruncTime.as_sql#assign:lhs, lhs_params",
+   "kind": "lead",
+   "line": 315
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9726,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1804,
+  "thinking_tokens": 991,
+  "opus_cost_usd": 0.1466515,
+  "total_cost_usd": 0.1529085,
+  "duration_ms": 18152,
+  "duration_api_ms": 19348,
+  "num_turns": 2
+ },
+ "wall_ms": 18930,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

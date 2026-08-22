@@ -1,0 +1,397 @@
+{
+ "blob_sha": "338e0612b7144865717939543d5531db34ebc7de",
+ "path": "django/db/backends/base/features.py",
+ "repo": "django/django",
+ "records": 62,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BaseDatabaseFeatures.interprets_empty_strings_as_nulls",
+   "kind": "lead",
+   "line": 14
+  },
+  {
+   "id": "r2",
+   "anchor": "BaseDatabaseFeatures.supports_nullable_unique_constraints",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r3",
+   "anchor": "BaseDatabaseFeatures.supports_partially_nullable_unique_constraints",
+   "kind": "lead",
+   "line": 23
+  },
+  {
+   "id": "r4",
+   "anchor": "BaseDatabaseFeatures.related_fields_match_type",
+   "kind": "lead",
+   "line": 34
+  },
+  {
+   "id": "r5",
+   "anchor": "BaseDatabaseFeatures.test_db_allows_multiple_connections",
+   "kind": "lead",
+   "line": 44
+  },
+  {
+   "id": "r6",
+   "anchor": "BaseDatabaseFeatures.supports_unspecified_pk",
+   "kind": "lead",
+   "line": 47
+  },
+  {
+   "id": "r7",
+   "anchor": "BaseDatabaseFeatures.supports_forward_references",
+   "kind": "lead",
+   "line": 52
+  },
+  {
+   "id": "r8",
+   "anchor": "BaseDatabaseFeatures.truncates_names",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r9",
+   "anchor": "BaseDatabaseFeatures.has_real_datatype",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r10",
+   "anchor": "BaseDatabaseFeatures.has_native_uuid_field",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r11",
+   "anchor": "BaseDatabaseFeatures.has_native_duration_field",
+   "kind": "lead",
+   "line": 66
+  },
+  {
+   "id": "r12",
+   "anchor": "BaseDatabaseFeatures.supports_temporal_subtraction",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r13",
+   "anchor": "BaseDatabaseFeatures.driver_supports_timedelta_args",
+   "kind": "lead",
+   "line": 76
+  },
+  {
+   "id": "r14",
+   "anchor": "BaseDatabaseFeatures.supports_microsecond_precision",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r15",
+   "anchor": "BaseDatabaseFeatures.supports_regex_backreferencing",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r16",
+   "anchor": "BaseDatabaseFeatures.supports_date_lookup_using_string",
+   "kind": "lead",
+   "line": 85
+  },
+  {
+   "id": "r17",
+   "anchor": "BaseDatabaseFeatures.supports_timezones",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r18",
+   "anchor": "BaseDatabaseFeatures.has_zoneinfo_database",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r19",
+   "anchor": "BaseDatabaseFeatures.requires_explicit_null_ordering_when_grouping",
+   "kind": "lead",
+   "line": 95
+  },
+  {
+   "id": "r20",
+   "anchor": "BaseDatabaseFeatures.nulls_order_largest",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r21",
+   "anchor": "BaseDatabaseFeatures.supports_1000_query_parameters",
+   "kind": "lead",
+   "line": 101
+  },
+  {
+   "id": "r22",
+   "anchor": "BaseDatabaseFeatures.allows_auto_pk_0",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r23",
+   "anchor": "BaseDatabaseFeatures.can_defer_constraint_checks",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r24",
+   "anchor": "BaseDatabaseFeatures.supports_mixed_date_datetime_comparisons",
+   "kind": "lead",
+   "line": 111
+  },
+  {
+   "id": "r25",
+   "anchor": "BaseDatabaseFeatures.supports_tablespaces",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r26",
+   "anchor": "BaseDatabaseFeatures.supports_sequence_reset",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r27",
+   "anchor": "BaseDatabaseFeatures.can_introspect_max_length",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r28",
+   "anchor": "BaseDatabaseFeatures.can_introspect_null",
+   "kind": "lead",
+   "line": 128
+  },
+  {
+   "id": "r29",
+   "anchor": "BaseDatabaseFeatures.can_introspect_default",
+   "kind": "lead",
+   "line": 131
+  },
+  {
+   "id": "r30",
+   "anchor": "BaseDatabaseFeatures.can_introspect_foreign_keys",
+   "kind": "lead",
+   "line": 136
+  },
+  {
+   "id": "r31",
+   "anchor": "BaseDatabaseFeatures.can_introspect_autofield",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r32",
+   "anchor": "BaseDatabaseFeatures.can_introspect_big_integer_field",
+   "kind": "lead",
+   "line": 142
+  },
+  {
+   "id": "r33",
+   "anchor": "BaseDatabaseFeatures.can_introspect_binary_field",
+   "kind": "lead",
+   "line": 145
+  },
+  {
+   "id": "r34",
+   "anchor": "BaseDatabaseFeatures.can_introspect_decimal_field",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r35",
+   "anchor": "BaseDatabaseFeatures.can_introspect_ip_address_field",
+   "kind": "lead",
+   "line": 151
+  },
+  {
+   "id": "r36",
+   "anchor": "BaseDatabaseFeatures.can_introspect_positive_integer_field",
+   "kind": "lead",
+   "line": 154
+  },
+  {
+   "id": "r37",
+   "anchor": "BaseDatabaseFeatures.can_introspect_small_integer_field",
+   "kind": "lead",
+   "line": 157
+  },
+  {
+   "id": "r38",
+   "anchor": "BaseDatabaseFeatures.can_introspect_time_field",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r39",
+   "anchor": "BaseDatabaseFeatures.supports_index_column_ordering",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r40",
+   "anchor": "BaseDatabaseFeatures.can_distinct_on_fields",
+   "kind": "lead",
+   "line": 166
+  },
+  {
+   "id": "r41",
+   "anchor": "BaseDatabaseFeatures.autocommits_when_autocommit_is_off",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r42",
+   "anchor": "BaseDatabaseFeatures.atomic_transactions",
+   "kind": "lead",
+   "line": 173
+  },
+  {
+   "id": "r43",
+   "anchor": "BaseDatabaseFeatures.can_rollback_ddl",
+   "kind": "lead",
+   "line": 176
+  },
+  {
+   "id": "r44",
+   "anchor": "BaseDatabaseFeatures.supports_combined_alters",
+   "kind": "lead",
+   "line": 179
+  },
+  {
+   "id": "r45",
+   "anchor": "BaseDatabaseFeatures.supports_foreign_keys",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r46",
+   "anchor": "BaseDatabaseFeatures.supports_column_check_constraints",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r47",
+   "anchor": "BaseDatabaseFeatures.supports_paramstyle_pyformat",
+   "kind": "lead",
+   "line": 190
+  },
+  {
+   "id": "r48",
+   "anchor": "BaseDatabaseFeatures.requires_literal_defaults",
+   "kind": "lead",
+   "line": 193
+  },
+  {
+   "id": "r49",
+   "anchor": "BaseDatabaseFeatures.connection_persists_old_columns",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r50",
+   "anchor": "BaseDatabaseFeatures.closed_cursor_error_class",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r51",
+   "anchor": "BaseDatabaseFeatures.has_case_insensitive_like",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r52",
+   "anchor": "BaseDatabaseFeatures.requires_sqlparse_for_splitting",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r53",
+   "anchor": "BaseDatabaseFeatures.bare_select_suffix",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r54",
+   "anchor": "BaseDatabaseFeatures.implied_column_null",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r55",
+   "anchor": "BaseDatabaseFeatures.supports_select_for_update_with_limit",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r56",
+   "anchor": "BaseDatabaseFeatures.greatest_least_ignores_nulls",
+   "kind": "lead",
+   "line": 221
+  },
+  {
+   "id": "r57",
+   "anchor": "BaseDatabaseFeatures.can_clone_databases",
+   "kind": "lead",
+   "line": 225
+  },
+  {
+   "id": "r58",
+   "anchor": "BaseDatabaseFeatures.ignores_quoted_identifier_case",
+   "kind": "lead",
+   "line": 229
+  },
+  {
+   "id": "r59",
+   "anchor": "BaseDatabaseFeatures.for_update_after_from",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r60",
+   "anchor": "BaseDatabaseFeatures.supports_transactions",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r61",
+   "anchor": "BaseDatabaseFeatures.supports_stddev",
+   "kind": "doc",
+   "line": 252
+  },
+  {
+   "id": "r62",
+   "anchor": "BaseDatabaseFeatures.introspected_boolean_field_type",
+   "kind": "doc",
+   "line": 260
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10624,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4356,
+  "thinking_tokens": 1226,
+  "opus_cost_usd": 0.2194315,
+  "total_cost_usd": 0.2263635,
+  "duration_ms": 34983,
+  "duration_api_ms": 36003,
+  "num_turns": 2
+ },
+ "wall_ms": 35871,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,271 @@
+{
+ "blob_sha": "763f3765443b975ccf38c6675c8cd13c86f7a392",
+ "path": "django/contrib/gis/db/backends/postgis/operations.py",
+ "repo": "django/django",
+ "records": 41,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "BILATERAL",
+   "kind": "lead",
+   "line": 21
+  },
+  {
+   "id": "r2",
+   "anchor": "PostGISOperator.geography",
+   "kind": "lead",
+   "line": 28
+  },
+  {
+   "id": "r3",
+   "anchor": "PostGISOperator.raster",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r4",
+   "anchor": "PostGISOperator.check_raster#if:isinstance(lookup.rhs, (tuple, list))",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "PostGISOperator.check_raster#assign:lhs_is_raster",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r6",
+   "anchor": "PostGISOperator.check_raster#if:lookup.band_lhs is not None and lhs_is_raster",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r7",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid/if:lhs_is_raster",
+   "kind": "lead",
+   "line": 71
+  },
+  {
+   "id": "r9",
+   "anchor": "PostGISOperator.check_raster#if:not self.raster or spheroid/elif:self.raster == BILATERAL/if:lhs_is_raster and not rhs_is_raster",
+   "kind": "lead",
+   "line": 78
+  },
+  {
+   "id": "r10",
+   "anchor": "PostGISDistanceOperator.as_sql#if:not lookup.lhs.output_field.geography and lookup.lhs.output_field.geodetic(connection)/if:len(lookup.rhs) == 3 and lookup.rhs[-1] == 'spheroid'/call:sql_params.insert",
+   "kind": "lead",
+   "line": 98
+  },
+  {
+   "id": "r11",
+   "anchor": "PostGISOperations.gis_operators#key:exact",
+   "kind": "trail",
+   "line": 127
+  },
+  {
+   "id": "r12",
+   "anchor": "PostGISOperations.spatial_version",
+   "kind": "doc",
+   "line": 201
+  },
+  {
+   "id": "r13",
+   "anchor": "PostGISOperations.spatial_version#if:hasattr(settings, 'POSTGIS_VERSION')",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r14",
+   "anchor": "PostGISOperations.spatial_version#if:hasattr(settings, 'POSTGIS_VERSION')/else/call:self._get_postgis_func",
+   "kind": "lead",
+   "line": 215
+  },
+  {
+   "id": "r15",
+   "anchor": "PostGISOperations.convert_extent",
+   "kind": "doc",
+   "line": 230
+  },
+  {
+   "id": "r16",
+   "anchor": "PostGISOperations.convert_extent3d",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r17",
+   "anchor": "PostGISOperations.convert_geom",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r18",
+   "anchor": "PostGISOperations.geo_db_type",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r19",
+   "anchor": "PostGISOperations.geo_db_type#if:f.dim == 3",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r20",
+   "anchor": "PostGISOperations.get_distance",
+   "kind": "doc",
+   "line": 286
+  },
+  {
+   "id": "r21",
+   "anchor": "PostGISOperations.get_distance#assign:value",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r22",
+   "anchor": "PostGISOperations.get_distance#assign:geodetic",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r23",
+   "anchor": "PostGISOperations.get_distance#if:isinstance(value, Distance)/else/assign:dist_param",
+   "kind": "lead",
+   "line": 315
+  },
+  {
+   "id": "r24",
+   "anchor": "PostGISOperations.get_distance#if:handle_spheroid and len(dist_val) > 1",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r25",
+   "anchor": "PostGISOperations.get_distance#if:handle_spheroid and len(dist_val) > 1/if:not geography and geodetic and lookup_type != 'dwithin' and option == 'spheroid'/call:params.insert",
+   "kind": "lead",
+   "line": 325
+  },
+  {
+   "id": "r26",
+   "anchor": "PostGISOperations.get_geom_placeholder",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r27",
+   "anchor": "PostGISOperations.get_geom_placeholder#if:value is None",
+   "kind": "lead",
+   "line": 335
+  },
+  {
+   "id": "r28",
+   "anchor": "PostGISOperations.get_geom_placeholder#if:value_srid is None or value_srid == f.srid",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r29",
+   "anchor": "PostGISOperations.get_geom_placeholder#if:hasattr(value, 'as_sql')/assign:sql, _",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r30",
+   "anchor": "PostGISOperations._get_postgis_func",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r31",
+   "anchor": "PostGISOperations._get_postgis_func#with:self.connection.temporary_connection()",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r32",
+   "anchor": "PostGISOperations.postgis_geos_version",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r33",
+   "anchor": "PostGISOperations.postgis_lib_version",
+   "kind": "doc",
+   "line": 373
+  },
+  {
+   "id": "r34",
+   "anchor": "PostGISOperations.postgis_proj_version",
+   "kind": "doc",
+   "line": 377
+  },
+  {
+   "id": "r35",
+   "anchor": "PostGISOperations.postgis_version",
+   "kind": "doc",
+   "line": 381
+  },
+  {
+   "id": "r36",
+   "anchor": "PostGISOperations.postgis_full_version",
+   "kind": "doc",
+   "line": 385
+  },
+  {
+   "id": "r37",
+   "anchor": "PostGISOperations.postgis_version_tuple",
+   "kind": "doc",
+   "line": 389
+  },
+  {
+   "id": "r38",
+   "anchor": "PostGISOperations.postgis_version_tuple#assign:version",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r39",
+   "anchor": "PostGISOperations.proj_version_tuple",
+   "kind": "doc",
+   "line": 407
+  },
+  {
+   "id": "r40",
+   "anchor": "PostGISOperations.geometry_columns",
+   "kind": "lead",
+   "line": 427
+  },
+  {
+   "id": "r41",
+   "anchor": "PostGISOperations.parse_raster",
+   "kind": "lead",
+   "line": 435
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13797,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3854,
+  "thinking_tokens": 1649,
+  "opus_cost_usd": 0.23861149999999998,
+  "total_cost_usd": 0.24830249999999998,
+  "duration_ms": 35687,
+  "duration_api_ms": 36883,
+  "num_turns": 2
+ },
+ "wall_ms": 36527,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

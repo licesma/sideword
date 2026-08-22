@@ -1,0 +1,469 @@
+{
+ "blob_sha": "80bc9a17d83fa75e03e18ee5397a167894052919",
+ "path": "astropy/table/index.py",
+ "repo": "astropy/astropy",
+ "records": 74,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "QueryError",
+   "kind": "doc",
+   "line": 42
+  },
+  {
+   "id": "r4",
+   "anchor": "Index",
+   "kind": "doc",
+   "line": 50
+  },
+  {
+   "id": "r5",
+   "anchor": "Index.__init__#import:astropy.time",
+   "kind": "lead",
+   "line": 72
+  },
+  {
+   "id": "r6",
+   "anchor": "Index.__init__#if:engine is not None and not isinstance(engine, type)/assign:self.engine",
+   "kind": "lead",
+   "line": 81
+  },
+  {
+   "id": "r7",
+   "anchor": "Index.__init__#assign:self.engine",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r8",
+   "anchor": "Index.__init__#if:columns is None",
+   "kind": "trail",
+   "line": 89
+  },
+  {
+   "id": "r9",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns)==0/elif:len(columns)==1/else/assign:new_columns",
+   "kind": "lead",
+   "line": 103
+  },
+  {
+   "id": "r10",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns)==0/elif:len(columns)==1/else/assign:table",
+   "kind": "lead",
+   "line": 115
+  },
+  {
+   "id": "r11",
+   "anchor": "Index.__init__#if:columns is None/elif:len(columns)==0/elif:len(columns)==1/else/try/except:TypeError",
+   "kind": "trail",
+   "line": 119
+  },
+  {
+   "id": "r12",
+   "anchor": "Index.__len__",
+   "kind": "doc",
+   "line": 127
+  },
+  {
+   "id": "r13",
+   "anchor": "Index.replace_col",
+   "kind": "doc",
+   "line": 133
+  },
+  {
+   "id": "r14",
+   "anchor": "Index.reload",
+   "kind": "doc",
+   "line": 146
+  },
+  {
+   "id": "r15",
+   "anchor": "Index.col_position",
+   "kind": "doc",
+   "line": 152
+  },
+  {
+   "id": "r16",
+   "anchor": "Index.insert_row",
+   "kind": "doc",
+   "line": 166
+  },
+  {
+   "id": "r17",
+   "anchor": "Index.insert_row#for:i, col in enumerate(columns)/try/except:ValueError",
+   "kind": "trail",
+   "line": 183
+  },
+  {
+   "id": "r18",
+   "anchor": "Index.insert_row#if:pos<num_rows/call:self.data.shift_right",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r19",
+   "anchor": "Index.get_row_specifier",
+   "kind": "doc",
+   "line": 191
+  },
+  {
+   "id": "r20",
+   "anchor": "Index.get_row_specifier#if:isinstance(row_specifier, (int, np.integer))/return",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r21",
+   "anchor": "Index.remove_rows",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r22",
+   "anchor": "Index.remove_rows#for:row in self.get_row_specifier(row_specifier)",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r23",
+   "anchor": "Index.remove_rows#for:row in reversed(sorted(rows))",
+   "kind": "lead",
+   "line": 232
+  },
+  {
+   "id": "r24",
+   "anchor": "Index.remove_row",
+   "kind": "doc",
+   "line": 235
+  },
+  {
+   "id": "r25",
+   "anchor": "Index.remove_row#if:not self.data.remove(tuple(col[row] for col in self.columns), row)",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r26",
+   "anchor": "Index.remove_row#if:reorder",
+   "kind": "lead",
+   "line": 250
+  },
+  {
+   "id": "r27",
+   "anchor": "Index.find",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r28",
+   "anchor": "Index.same_prefix",
+   "kind": "doc",
+   "line": 264
+  },
+  {
+   "id": "r29",
+   "anchor": "Index.same_prefix_range",
+   "kind": "doc",
+   "line": 275
+  },
+  {
+   "id": "r30",
+   "anchor": "Index.same_prefix_range#assign:lower",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r31",
+   "anchor": "Index.range",
+   "kind": "doc",
+   "line": 301
+  },
+  {
+   "id": "r32",
+   "anchor": "Index.replace",
+   "kind": "doc",
+   "line": 319
+  },
+  {
+   "id": "r33",
+   "anchor": "Index.replace_rows",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r34",
+   "anchor": "Index.sort",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r35",
+   "anchor": "Index.sorted_data",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r36",
+   "anchor": "Index.__getitem__",
+   "kind": "doc",
+   "line": 367
+  },
+  {
+   "id": "r37",
+   "anchor": "Index.__deepcopy__",
+   "kind": "doc",
+   "line": 387
+  },
+  {
+   "id": "r38",
+   "anchor": "Index.__deepcopy__#assign:index",
+   "kind": "lead",
+   "line": 401
+  },
+  {
+   "id": "r39",
+   "anchor": "Index.__deepcopy__#assign:index.columns",
+   "kind": "trail",
+   "line": 404
+  },
+  {
+   "id": "r40",
+   "anchor": "SlicedIndex",
+   "kind": "doc",
+   "line": 409
+  },
+  {
+   "id": "r41",
+   "anchor": "SlicedIndex.__init__#if:isinstance(index_slice, tuple)/elif:isinstance(index_slice, slice)",
+   "kind": "trail",
+   "line": 437
+  },
+  {
+   "id": "r42",
+   "anchor": "SlicedIndex.stop",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r43",
+   "anchor": "SlicedIndex.__getitem__",
+   "kind": "doc",
+   "line": 455
+  },
+  {
+   "id": "r44",
+   "anchor": "SlicedIndex.__getitem__#if:self.length<=0/return",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r45",
+   "anchor": "SlicedIndex.sliced_coords",
+   "kind": "doc",
+   "line": 473
+  },
+  {
+   "id": "r46",
+   "anchor": "SlicedIndex.orig_coords",
+   "kind": "doc",
+   "line": 501
+  },
+  {
+   "id": "r47",
+   "anchor": "SlicedIndex.get_index_or_copy#if:not self.original/assign:self.index",
+   "kind": "lead",
+   "line": 540
+  },
+  {
+   "id": "r48",
+   "anchor": "SlicedIndex.get_slice",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r49",
+   "anchor": "get_index",
+   "kind": "doc",
+   "line": 614
+  },
+  {
+   "id": "r50",
+   "anchor": "get_index_by_names",
+   "kind": "doc",
+   "line": 660
+  },
+  {
+   "id": "r51",
+   "anchor": "_IndexModeContext",
+   "kind": "doc",
+   "line": 681
+  },
+  {
+   "id": "r52",
+   "anchor": "_IndexModeContext.__init__",
+   "kind": "doc",
+   "line": 693
+  },
+  {
+   "id": "r53",
+   "anchor": "_IndexModeContext.__init__#assign:self._orig_classes",
+   "kind": "lead",
+   "line": 715
+  },
+  {
+   "id": "r54",
+   "anchor": "_IndexModeContext._get_copy_on_getitem_shim",
+   "kind": "doc",
+   "line": 745
+  },
+  {
+   "id": "r55",
+   "anchor": "TableIndices",
+   "kind": "doc",
+   "line": 777
+  },
+  {
+   "id": "r56",
+   "anchor": "TableIndices.__getitem__",
+   "kind": "doc",
+   "line": 791
+  },
+  {
+   "id": "r57",
+   "anchor": "TableIndices.__getitem__#if:isinstance(item, (list, tuple))/raise:IndexError",
+   "kind": "lead",
+   "line": 813
+  },
+  {
+   "id": "r58",
+   "anchor": "TableLoc",
+   "kind": "doc",
+   "line": 818
+  },
+  {
+   "id": "r59",
+   "anchor": "TableLoc._get_rows",
+   "kind": "doc",
+   "line": 835
+  },
+  {
+   "id": "r60",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/assign:start",
+   "kind": "lead",
+   "line": 850
+  },
+  {
+   "id": "r61",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/else/if:not isinstance(item, (list, np.ndarray))",
+   "kind": "trail",
+   "line": 854
+  },
+  {
+   "id": "r62",
+   "anchor": "TableLoc._get_rows#if:isinstance(item, slice)/else/assign:rows",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r63",
+   "anchor": "TableLoc.__getitem__",
+   "kind": "doc",
+   "line": 866
+  },
+  {
+   "id": "r64",
+   "anchor": "TableLoc.__getitem__#if:len(rows)==0",
+   "kind": "trail",
+   "line": 881
+  },
+  {
+   "id": "r65",
+   "anchor": "TableLoc.__getitem__#if:len(rows)==0/elif:len(rows)==1",
+   "kind": "trail",
+   "line": 883
+  },
+  {
+   "id": "r66",
+   "anchor": "TableLoc.__setitem__",
+   "kind": "doc",
+   "line": 887
+  },
+  {
+   "id": "r67",
+   "anchor": "TableLoc.__setitem__#if:len(rows)==0",
+   "kind": "trail",
+   "line": 904
+  },
+  {
+   "id": "r68",
+   "anchor": "TableLoc.__setitem__#if:len(rows)==0/elif:len(rows)==1",
+   "kind": "trail",
+   "line": 906
+  },
+  {
+   "id": "r69",
+   "anchor": "TableLoc.__setitem__#if:len(rows)==0/else",
+   "kind": "trail",
+   "line": 908
+  },
+  {
+   "id": "r70",
+   "anchor": "TableLocIndices.__getitem__",
+   "kind": "doc",
+   "line": 917
+  },
+  {
+   "id": "r71",
+   "anchor": "TableLocIndices.__getitem__#if:len(rows)==0",
+   "kind": "trail",
+   "line": 931
+  },
+  {
+   "id": "r72",
+   "anchor": "TableLocIndices.__getitem__#if:len(rows)==0/elif:len(rows)==1",
+   "kind": "trail",
+   "line": 933
+  },
+  {
+   "id": "r73",
+   "anchor": "TableILoc",
+   "kind": "doc",
+   "line": 938
+  },
+  {
+   "id": "r74",
+   "anchor": "TableILoc.__getitem__#if:len(table_slice)==0",
+   "kind": "trail",
+   "line": 961
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19256,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6343,
+  "thinking_tokens": 3083,
+  "opus_cost_usd": 0.3554265,
+  "total_cost_usd": 0.36996049999999997,
+  "duration_ms": 53690,
+  "duration_api_ms": 55091,
+  "num_turns": 2
+ },
+ "wall_ms": 54666,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

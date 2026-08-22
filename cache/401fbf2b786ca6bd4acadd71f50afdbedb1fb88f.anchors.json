@@ -1,0 +1,85 @@
+{
+ "blob_sha": "401fbf2b786ca6bd4acadd71f50afdbedb1fb88f",
+ "path": "django/contrib/gis/db/backends/spatialite/schema.py",
+ "repo": "django/django",
+ "records": 10,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "SpatialiteSchemaEditor.column_sql#call:self.geometry_sql.append",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r2",
+   "anchor": "SpatialiteSchemaEditor.create_model#for:sql in self.geometry_sql",
+   "kind": "lead",
+   "line": 80
+  },
+  {
+   "id": "r3",
+   "anchor": "SpatialiteSchemaEditor.delete_model#for:field in model._meta.local_fields",
+   "kind": "lead",
+   "line": 87
+  },
+  {
+   "id": "r4",
+   "anchor": "SpatialiteSchemaEditor.delete_model#for:geom_table in self.geometry_tables",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r5",
+   "anchor": "SpatialiteSchemaEditor.add_field#if:isinstance(field, GeometryField)/call:self.column_sql",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r6",
+   "anchor": "SpatialiteSchemaEditor.remove_field#if:isinstance(field, GeometryField)",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r7",
+   "anchor": "SpatialiteSchemaEditor.alter_db_table#for:field in model._meta.local_fields",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r8",
+   "anchor": "SpatialiteSchemaEditor.alter_db_table#call:super(SpatialiteSchemaEditor, self).alter_db_table",
+   "kind": "lead",
+   "line": 138
+  },
+  {
+   "id": "r9",
+   "anchor": "SpatialiteSchemaEditor.alter_db_table#for:geom_table in self.geometry_tables",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "SpatialiteSchemaEditor.alter_db_table#for:field in model._meta.local_fields",
+   "kind": "lead",
+   "line": 152
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 6590,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 1179,
+  "thinking_tokens": 493,
+  "opus_cost_usd": 0.09966649999999999,
+  "total_cost_usd": 0.1035155,
+  "duration_ms": 11038,
+  "duration_api_ms": 12344,
+  "num_turns": 2
+ },
+ "wall_ms": 12363,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

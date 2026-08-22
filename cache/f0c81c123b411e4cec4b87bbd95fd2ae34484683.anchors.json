@@ -1,0 +1,343 @@
+{
+ "blob_sha": "f0c81c123b411e4cec4b87bbd95fd2ae34484683",
+ "path": "django/db/backends/sqlite3/schema.py",
+ "repo": "django/django",
+ "records": 53,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "DatabaseSchemaEditor.__enter__#if:not self.connection.disable_constraint_checking()",
+   "kind": "lead",
+   "line": 24
+  },
+  {
+   "id": "r2",
+   "anchor": "DatabaseSchemaEditor.quote_value#try",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r3",
+   "anchor": "DatabaseSchemaEditor.quote_value#if:isinstance(value, bool)",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "DatabaseSchemaEditor.quote_value#if:isinstance(value, bool)/elif:isinstance(value, (bytes, bytearray, memoryview))/return",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r5",
+   "anchor": "DatabaseSchemaEditor._is_referenced_by_fk_constraint",
+   "kind": "doc",
+   "line": 67
+  },
+  {
+   "id": "r6",
+   "anchor": "DatabaseSchemaEditor.alter_field#if:new_field.name != old_field_name and not self.connection.features.supports_atomic_references_rename and self._is_referenced_by_fk_constraint(table_name, old_column_name, ignore_self=True)/with:atomic(self.connection.alias)/with:self.connection.cursor()",
+   "kind": "lead",
+   "line": 121
+  },
+  {
+   "id": "r7",
+   "anchor": "DatabaseSchemaEditor.alter_field#if:new_field.name != old_field_name and not self.connection.features.supports_atomic_references_rename and self._is_referenced_by_fk_constraint(table_name, old_column_name, ignore_self=True)/with:atomic(self.connection.alias)/with:self.connection.cursor()/call:cursor.execute",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r8",
+   "anchor": "DatabaseSchemaEditor.alter_field#if:new_field.name != old_field_name and not self.connection.features.supports_atomic_references_rename and self._is_referenced_by_fk_constraint(table_name, old_column_name, ignore_self=True)/with:self.connection.cursor()",
+   "kind": "lead",
+   "line": 137
+  },
+  {
+   "id": "r9",
+   "anchor": "DatabaseSchemaEditor._remake_table",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r10",
+   "anchor": "DatabaseSchemaEditor._remake_table.is_self_referential",
+   "kind": "lead",
+   "line": 161
+  },
+  {
+   "id": "r11",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:body",
+   "kind": "lead",
+   "line": 164
+  },
+  {
+   "id": "r12",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:mapping",
+   "kind": "lead",
+   "line": 170
+  },
+  {
+   "id": "r13",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:rename_mapping",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r14",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:restore_pk_field",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r15",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:create_field",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r16",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:create_field/if:not create_field.many_to_many and create_field.concrete",
+   "kind": "lead",
+   "line": 189
+  },
+  {
+   "id": "r17",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:alter_field",
+   "kind": "lead",
+   "line": 194
+  },
+  {
+   "id": "r18",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:delete_field",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r19",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:delete_field/if:delete_field.many_to_many and delete_field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r20",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:apps",
+   "kind": "lead",
+   "line": 216
+  },
+  {
+   "id": "r21",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:unique_together",
+   "kind": "lead",
+   "line": 220
+  },
+  {
+   "id": "r22",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:index_together",
+   "kind": "lead",
+   "line": 227
+  },
+  {
+   "id": "r23",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:body_copy",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r24",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:meta_contents",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r25",
+   "anchor": "DatabaseSchemaEditor._remake_table#assign:body_copy",
+   "kind": "lead",
+   "line": 266
+  },
+  {
+   "id": "r26",
+   "anchor": "DatabaseSchemaEditor._remake_table#call:self.create_model",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r27",
+   "anchor": "DatabaseSchemaEditor._remake_table#call:self.execute",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r28",
+   "anchor": "DatabaseSchemaEditor._remake_table#call:self.delete_model",
+   "kind": "lead",
+   "line": 293
+  },
+  {
+   "id": "r29",
+   "anchor": "DatabaseSchemaEditor._remake_table#call:self.alter_db_table",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r30",
+   "anchor": "DatabaseSchemaEditor._remake_table#for:sql in self.deferred_sql",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r31",
+   "anchor": "DatabaseSchemaEditor._remake_table#if:restore_pk_field",
+   "kind": "lead",
+   "line": 306
+  },
+  {
+   "id": "r32",
+   "anchor": "DatabaseSchemaEditor.delete_model#if:handle_autom2m/else/call:self.execute",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r33",
+   "anchor": "DatabaseSchemaEditor.delete_model#if:handle_autom2m/else/for:sql in list(self.deferred_sql)",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r34",
+   "anchor": "DatabaseSchemaEditor.add_field",
+   "kind": "doc",
+   "line": 322
+  },
+  {
+   "id": "r35",
+   "anchor": "DatabaseSchemaEditor.add_field#if:field.many_to_many and field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r36",
+   "anchor": "DatabaseSchemaEditor.remove_field",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r37",
+   "anchor": "DatabaseSchemaEditor.remove_field#if:field.many_to_many",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r38",
+   "anchor": "DatabaseSchemaEditor.remove_field#if:field.many_to_many/if:field.remote_field.through._meta.auto_created",
+   "kind": "lead",
+   "line": 340
+  },
+  {
+   "id": "r39",
+   "anchor": "DatabaseSchemaEditor.remove_field#if:field.many_to_many/if:field.remote_field.through._meta.auto_created",
+   "kind": "post",
+   "line": 340
+  },
+  {
+   "id": "r40",
+   "anchor": "DatabaseSchemaEditor.remove_field#if:field.many_to_many/else",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r41",
+   "anchor": "DatabaseSchemaEditor.remove_field#if:field.many_to_many/else/if:field.db_parameters(connection=self.connection)['type'] is None",
+   "kind": "lead",
+   "line": 346
+  },
+  {
+   "id": "r42",
+   "anchor": "DatabaseSchemaEditor._alter_field",
+   "kind": "doc",
+   "line": 350
+  },
+  {
+   "id": "r43",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:self.connection.features.can_alter_table_rename_column and old_field.column != new_field.column and self.column_sql(model, old_field) == self.column_sql(model, new_field) and not (old_field.remote_field and old_field.db_constraint or new_field.remote_field and new_field.db_constraint)",
+   "kind": "lead",
+   "line": 355
+  },
+  {
+   "id": "r44",
+   "anchor": "DatabaseSchemaEditor._alter_field#call:self._remake_table",
+   "kind": "lead",
+   "line": 362
+  },
+  {
+   "id": "r45",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:new_field.unique and old_type != new_type",
+   "kind": "lead",
+   "line": 364
+  },
+  {
+   "id": "r46",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:new_field.unique and old_type != new_type/for:remote_field in opts.related_objects/if:remote_field.related_model == model",
+   "kind": "lead",
+   "line": 369
+  },
+  {
+   "id": "r47",
+   "anchor": "DatabaseSchemaEditor._alter_field#if:new_field.unique and old_type != new_type/if:new_field.primary_key/for:many_to_many in opts.many_to_many/if:many_to_many.related_model == model",
+   "kind": "lead",
+   "line": 379
+  },
+  {
+   "id": "r48",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many",
+   "kind": "doc",
+   "line": 386
+  },
+  {
+   "id": "r49",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many#if:old_field.remote_field.through._meta.db_table == new_field.remote_field.through._meta.db_table/call:self._remake_table",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r50",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many#if:old_field.remote_field.through._meta.db_table == new_field.remote_field.through._meta.db_table/call:self._remake_table/arg:alter_field/item:old_field.remote_field.through._meta.get_field(old_field.m2m_reverse_field_name())",
+   "kind": "lead",
+   "line": 395
+  },
+  {
+   "id": "r51",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many#call:self.create_model",
+   "kind": "lead",
+   "line": 402
+  },
+  {
+   "id": "r52",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many#call:self.execute",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r53",
+   "anchor": "DatabaseSchemaEditor._alter_many_to_many#call:self.delete_model",
+   "kind": "lead",
+   "line": 419
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13653,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 7507,
+  "thinking_tokens": 3938,
+  "opus_cost_usd": 0.32849649999999997,
+  "total_cost_usd": 0.33824649999999995,
+  "duration_ms": 66213,
+  "duration_api_ms": 67863,
+  "num_turns": 2
+ },
+ "wall_ms": 67294,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

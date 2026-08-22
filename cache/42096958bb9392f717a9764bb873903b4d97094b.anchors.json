@@ -1,0 +1,787 @@
+{
+ "blob_sha": "42096958bb9392f717a9764bb873903b4d97094b",
+ "path": "lib/matplotlib/contour.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 127,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "ClabelText",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "ClabelText",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r4",
+   "anchor": "_contour_labeler_event_handler#if:is_button and event.button == MouseButton.MIDDLE or is_key and event.key in [\"escape\", \"enter\"]",
+   "kind": "lead",
+   "line": 55
+  },
+  {
+   "id": "r5",
+   "anchor": "_contour_labeler_event_handler#if:is_button and event.button == MouseButton.MIDDLE or is_key and event.key in [\"escape\", \"enter\"]/elif:is_button and event.button == MouseButton.RIGHT or is_key and event.key in [\"backspace\", \"delete\"]",
+   "kind": "lead",
+   "line": 59
+  },
+  {
+   "id": "r6",
+   "anchor": "_contour_labeler_event_handler#if:is_button and event.button == MouseButton.MIDDLE or is_key and event.key in [\"escape\", \"enter\"]/elif:is_button and event.button == MouseButton.RIGHT or is_key and event.key in [\"backspace\", \"delete\"]/if:not inline",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r7",
+   "anchor": "_contour_labeler_event_handler#if:is_button and event.button == MouseButton.MIDDLE or is_key and event.key in [\"escape\", \"enter\"]/elif:is_button and event.button == MouseButton.RIGHT or is_key and event.key in [\"backspace\", \"delete\"]/elif:is_button and event.button == MouseButton.LEFT or is_key and event.key is not None",
+   "kind": "trail",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "_contour_labeler_event_handler#if:is_button and event.button == MouseButton.MIDDLE or is_key and event.key in [\"escape\", \"enter\"]/elif:is_button and event.button == MouseButton.RIGHT or is_key and event.key in [\"backspace\", \"delete\"]/elif:is_button and event.button == MouseButton.LEFT or is_key and event.key is not None",
+   "kind": "trail",
+   "line": 69
+  },
+  {
+   "id": "r9",
+   "anchor": "ContourLabeler",
+   "kind": "doc",
+   "line": 77
+  },
+  {
+   "id": "r10",
+   "anchor": "ContourLabeler.clabel",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r11",
+   "anchor": "ContourLabeler.clabel#if:fmt is None",
+   "kind": "lead",
+   "line": 175
+  },
+  {
+   "id": "r12",
+   "anchor": "ContourLabeler.labelManual",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r13",
+   "anchor": "ContourLabeler.print_label",
+   "kind": "doc",
+   "line": 251
+  },
+  {
+   "id": "r14",
+   "anchor": "ContourLabeler.too_close",
+   "kind": "doc",
+   "line": 256
+  },
+  {
+   "id": "r15",
+   "anchor": "ContourLabeler._get_nth_label_width",
+   "kind": "doc",
+   "line": 262
+  },
+  {
+   "id": "r16",
+   "anchor": "ContourLabeler.set_label_props",
+   "kind": "doc",
+   "line": 272
+  },
+  {
+   "id": "r17",
+   "anchor": "ContourLabeler.get_text",
+   "kind": "doc",
+   "line": 279
+  },
+  {
+   "id": "r18",
+   "anchor": "ContourLabeler.locate_label",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r19",
+   "anchor": "ContourLabeler.locate_label#assign:xx",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r20",
+   "anchor": "ContourLabeler.locate_label#with:np.errstate(divide='ignore', invalid='ignore')",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r21",
+   "anchor": "ContourLabeler.locate_label#assign:hbsize",
+   "kind": "lead",
+   "line": 316
+  },
+  {
+   "id": "r22",
+   "anchor": "ContourLabeler.locate_label#for:idx in np.append(adist, adist[0])",
+   "kind": "lead",
+   "line": 320
+  },
+  {
+   "id": "r23",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r24",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:hlw",
+   "kind": "lead",
+   "line": 349
+  },
+  {
+   "id": "r25",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:closed",
+   "kind": "lead",
+   "line": 352
+  },
+  {
+   "id": "r26",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:closed/if:len(lc)",
+   "kind": "trail",
+   "line": 355
+  },
+  {
+   "id": "r27",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:pl",
+   "kind": "lead",
+   "line": 360
+  },
+  {
+   "id": "r28",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:xi",
+   "kind": "lead",
+   "line": 366
+  },
+  {
+   "id": "r29",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:closed",
+   "kind": "trail",
+   "line": 367
+  },
+  {
+   "id": "r30",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:(dx,), (dy,)",
+   "kind": "lead",
+   "line": 374
+  },
+  {
+   "id": "r31",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:self.rightside_up/assign:rotation",
+   "kind": "lead",
+   "line": 380
+  },
+  {
+   "id": "r32",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#assign:nlc",
+   "kind": "lead",
+   "line": 383
+  },
+  {
+   "id": "r33",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/assign:xi",
+   "kind": "lead",
+   "line": 386
+  },
+  {
+   "id": "r34",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/assign:I",
+   "kind": "lead",
+   "line": 390
+  },
+  {
+   "id": "r35",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/if:closed",
+   "kind": "lead",
+   "line": 398
+  },
+  {
+   "id": "r36",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/if:closed/if:all(i != -1 for i in I)",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r37",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/if:closed/else/if:I[0] != -1",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r38",
+   "anchor": "ContourLabeler.calc_label_rot_and_inline#if:len(lc)/if:closed",
+   "kind": "post",
+   "line": 398
+  },
+  {
+   "id": "r39",
+   "anchor": "ContourLabeler.add_label",
+   "kind": "doc",
+   "line": 416
+  },
+  {
+   "id": "r40",
+   "anchor": "ContourLabeler.add_label#call:self.axes.add_artist",
+   "kind": "lead",
+   "line": 432
+  },
+  {
+   "id": "r41",
+   "anchor": "ContourLabeler.add_label_clabeltext",
+   "kind": "doc",
+   "line": 434
+  },
+  {
+   "id": "r42",
+   "anchor": "ContourLabeler.add_label_clabeltext#assign:t",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r43",
+   "anchor": "ContourLabeler.add_label_near",
+   "kind": "doc",
+   "line": 443
+  },
+  {
+   "id": "r44",
+   "anchor": "ContourLabeler.add_label_near#assign:conmin, segmin, imin, xmin, ymin",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r45",
+   "anchor": "ContourLabeler.add_label_near#assign:paths",
+   "kind": "lead",
+   "line": 476
+  },
+  {
+   "id": "r46",
+   "anchor": "ContourLabeler.add_label_near#assign:paths",
+   "kind": "trail",
+   "line": 476
+  },
+  {
+   "id": "r47",
+   "anchor": "ContourLabeler.add_label_near#assign:lc",
+   "kind": "trail",
+   "line": 477
+  },
+  {
+   "id": "r48",
+   "anchor": "ContourLabeler.add_label_near#assign:xcmin",
+   "kind": "lead",
+   "line": 479
+  },
+  {
+   "id": "r49",
+   "anchor": "ContourLabeler.add_label_near#if:not np.allclose(xcmin, lc[imin])/assign:lc",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r50",
+   "anchor": "ContourLabeler.add_label_near#assign:lmin",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r51",
+   "anchor": "ContourLabeler.add_label_near#assign:lw",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r52",
+   "anchor": "ContourLabeler.add_label_near#assign:rotation, nlc",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r53",
+   "anchor": "ContourLabeler.add_label_near#assign:rotation, nlc/arg:self.axes.transData.transform(lc)",
+   "kind": "trail",
+   "line": 494
+  },
+  {
+   "id": "r54",
+   "anchor": "ContourLabeler.add_label_near#if:inline/call:paths.pop",
+   "kind": "lead",
+   "line": 502
+  },
+  {
+   "id": "r55",
+   "anchor": "ContourLabeler.add_label_near#if:inline/call:paths.extend",
+   "kind": "lead",
+   "line": 505
+  },
+  {
+   "id": "r56",
+   "anchor": "ContourLabeler.pop_label",
+   "kind": "doc",
+   "line": 507
+  },
+  {
+   "id": "r57",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/assign:lc",
+   "kind": "trail",
+   "line": 532
+  },
+  {
+   "id": "r58",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/assign:slc",
+   "kind": "trail",
+   "line": 533
+  },
+  {
+   "id": "r59",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/if:self.print_label(slc, lw)",
+   "kind": "lead",
+   "line": 536
+  },
+  {
+   "id": "r60",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/if:self.print_label(slc, lw)/call:add_label",
+   "kind": "lead",
+   "line": 543
+  },
+  {
+   "id": "r61",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/if:self.print_label(slc, lw)/if:inline",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r62",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/if:self.print_label(slc, lw)/if:inline/for:n in new/if:len(n) > 1",
+   "kind": "lead",
+   "line": 549
+  },
+  {
+   "id": "r63",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/for:segNum, linepath in enumerate(paths)/if:self.print_label(slc, lw)/else",
+   "kind": "trail",
+   "line": 551
+  },
+  {
+   "id": "r64",
+   "anchor": "ContourLabeler.labels#for:idx, (icon, lev, cvalue) in enumerate(zip(self.labelIndiceList, self.labelLevelList, self.labelCValueList))/if:inline",
+   "kind": "lead",
+   "line": 556
+  },
+  {
+   "id": "r65",
+   "anchor": "_is_closed_polygon",
+   "kind": "doc",
+   "line": 564
+  },
+  {
+   "id": "r66",
+   "anchor": "_find_closest_point_on_path",
+   "kind": "doc",
+   "line": 573
+  },
+  {
+   "id": "r67",
+   "anchor": "_find_closest_point_on_path#assign:dxys",
+   "kind": "trail",
+   "line": 597
+  },
+  {
+   "id": "r68",
+   "anchor": "_find_closest_point_on_path#assign:norms[norms == 0]",
+   "kind": "trail",
+   "line": 599
+  },
+  {
+   "id": "r69",
+   "anchor": "_find_closest_point_on_path#assign:rel_projs",
+   "kind": "trail",
+   "line": 600
+  },
+  {
+   "id": "r70",
+   "anchor": "_find_closest_point_on_path#assign:projs",
+   "kind": "trail",
+   "line": 603
+  },
+  {
+   "id": "r71",
+   "anchor": "_find_closest_point_on_path#assign:d2s",
+   "kind": "trail",
+   "line": 604
+  },
+  {
+   "id": "r72",
+   "anchor": "ContourSet",
+   "kind": "doc",
+   "line": 629
+  },
+  {
+   "id": "r73",
+   "anchor": "ContourSet.__init__",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r74",
+   "anchor": "ContourSet.__init__#if:self.antialiased is None and self.filled/assign:self.antialiased",
+   "kind": "lead",
+   "line": 737
+  },
+  {
+   "id": "r75",
+   "anchor": "ContourSet.__init__#if:self.antialiased is None and self.filled/assign:self.antialiased",
+   "kind": "post",
+   "line": 737
+  },
+  {
+   "id": "r76",
+   "anchor": "ContourSet.__init__#if:self.negative_linestyles is None",
+   "kind": "lead",
+   "line": 765
+  },
+  {
+   "id": "r77",
+   "anchor": "ContourSet.__init__#if:self.colors is not None/assign:use_set_under_over",
+   "kind": "lead",
+   "line": 783
+  },
+  {
+   "id": "r78",
+   "anchor": "ContourSet.__init__#if:self.colors is not None/assign:total_levels",
+   "kind": "lead",
+   "line": 788
+  },
+  {
+   "id": "r79",
+   "anchor": "ContourSet.labelTexts",
+   "kind": "lead",
+   "line": 808
+  },
+  {
+   "id": "r80",
+   "anchor": "ContourSet.__init__#call:cm.ScalarMappable.__init__",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r81",
+   "anchor": "ContourSet.__init__#if:getattr(self, 'allsegs', None) is None/elif:self.allkinds is None/assign:self.allkinds",
+   "kind": "lead",
+   "line": 827
+  },
+  {
+   "id": "r82",
+   "anchor": "ContourSet.__init__#if:self.filled/assign:lowers, uppers",
+   "kind": "lead",
+   "line": 833
+  },
+  {
+   "id": "r83",
+   "anchor": "ContourSet.__init__#if:self.filled/assign:self._contour_zorder",
+   "kind": "lead",
+   "line": 835
+  },
+  {
+   "id": "r84",
+   "anchor": "ContourSet.__init__#if:self.filled/else/assign:self._contour_zorder",
+   "kind": "lead",
+   "line": 855
+  },
+  {
+   "id": "r85",
+   "anchor": "ContourSet.__init__#call:self.changed",
+   "kind": "trail",
+   "line": 879
+  },
+  {
+   "id": "r86",
+   "anchor": "ContourSet.get_transform",
+   "kind": "doc",
+   "line": 887
+  },
+  {
+   "id": "r87",
+   "anchor": "ContourSet.__getstate__#assign:state['_contour_generator']",
+   "kind": "lead",
+   "line": 901
+  },
+  {
+   "id": "r88",
+   "anchor": "ContourSet.legend_elements",
+   "kind": "doc",
+   "line": 904
+  },
+  {
+   "id": "r89",
+   "anchor": "ContourSet.legend_elements#if:self.filled/else/for:collection, level in zip(self.collections, self.levels)/assign:level",
+   "kind": "lead",
+   "line": 959
+  },
+  {
+   "id": "r90",
+   "anchor": "ContourSet._process_args",
+   "kind": "doc",
+   "line": 964
+  },
+  {
+   "id": "r91",
+   "anchor": "ContourSet._process_args#if:self.filled",
+   "kind": "lead",
+   "line": 977
+  },
+  {
+   "id": "r92",
+   "anchor": "ContourSet._process_args#if:self.allkinds is not None and len(self.allkinds) != len(self.allsegs)",
+   "kind": "lead",
+   "line": 986
+  },
+  {
+   "id": "r93",
+   "anchor": "ContourSet._process_args#assign:flatseglist",
+   "kind": "lead",
+   "line": 991
+  },
+  {
+   "id": "r94",
+   "anchor": "ContourSet._get_allsegs_and_allkinds",
+   "kind": "doc",
+   "line": 998
+  },
+  {
+   "id": "r95",
+   "anchor": "ContourSet._get_lowers_and_uppers",
+   "kind": "doc",
+   "line": 1017
+  },
+  {
+   "id": "r96",
+   "anchor": "ContourSet._get_lowers_and_uppers#if:self.zmin == lowers[0]/assign:lowers",
+   "kind": "lead",
+   "line": 1024
+  },
+  {
+   "id": "r97",
+   "anchor": "ContourSet._get_lowers_and_uppers#if:self.zmin == lowers[0]/assign:lowers",
+   "kind": "trail",
+   "line": 1024
+  },
+  {
+   "id": "r98",
+   "anchor": "ContourSet._make_paths",
+   "kind": "doc",
+   "line": 1032
+  },
+  {
+   "id": "r99",
+   "anchor": "ContourSet.changed#if:not hasattr(self, \"cvalues\")/call:cm.ScalarMappable.changed",
+   "kind": "lead",
+   "line": 1052
+  },
+  {
+   "id": "r100",
+   "anchor": "ContourSet.changed#call:self.norm.autoscale_None",
+   "kind": "lead",
+   "line": 1058
+  },
+  {
+   "id": "r101",
+   "anchor": "ContourSet.changed#for:color, hatch, collection in zip(tcolors, hatches, self.collections)/if:self.filled/call:collection.set_hatch",
+   "kind": "lead",
+   "line": 1068
+  },
+  {
+   "id": "r102",
+   "anchor": "ContourSet.changed#call:cm.ScalarMappable.changed",
+   "kind": "lead",
+   "line": 1075
+  },
+  {
+   "id": "r103",
+   "anchor": "ContourSet._autolev",
+   "kind": "doc",
+   "line": 1077
+  },
+  {
+   "id": "r104",
+   "anchor": "ContourSet._autolev#assign:under",
+   "kind": "lead",
+   "line": 1106
+  },
+  {
+   "id": "r105",
+   "anchor": "ContourSet._process_contour_level_args",
+   "kind": "doc",
+   "line": 1120
+  },
+  {
+   "id": "r106",
+   "anchor": "ContourSet._process_contour_level_args#if:self.levels is None/if:args/elif:np.issubdtype(z_dtype, bool)/else/assign:levels_arg",
+   "kind": "trail",
+   "line": 1133
+  },
+  {
+   "id": "r107",
+   "anchor": "ContourSet._process_levels",
+   "kind": "doc",
+   "line": 1145
+  },
+  {
+   "id": "r108",
+   "anchor": "ContourSet._process_levels#assign:self._levels",
+   "kind": "lead",
+   "line": 1157
+  },
+  {
+   "id": "r109",
+   "anchor": "ContourSet._process_levels#if:self.logscale",
+   "kind": "lead",
+   "line": 1175
+  },
+  {
+   "id": "r110",
+   "anchor": "ContourSet._process_levels#if:self.logscale/assign:self.layers",
+   "kind": "lead",
+   "line": 1177
+  },
+  {
+   "id": "r111",
+   "anchor": "ContourSet._process_colors",
+   "kind": "doc",
+   "line": 1182
+  },
+  {
+   "id": "r112",
+   "anchor": "ContourSet._process_colors#if:self.colors is not None/assign:i0, i1",
+   "kind": "lead",
+   "line": 1208
+  },
+  {
+   "id": "r113",
+   "anchor": "ContourSet._process_colors#if:self.colors is not None/if:self.filled/if:self.extend in ('both', 'min')",
+   "kind": "lead",
+   "line": 1212
+  },
+  {
+   "id": "r114",
+   "anchor": "ContourSet._process_colors#if:self.extend in ('both', 'max', 'min')",
+   "kind": "post",
+   "line": 1222
+  },
+  {
+   "id": "r115",
+   "anchor": "ContourSet.get_alpha",
+   "kind": "doc",
+   "line": 1272
+  },
+  {
+   "id": "r116",
+   "anchor": "ContourSet.set_alpha",
+   "kind": "doc",
+   "line": 1276
+  },
+  {
+   "id": "r117",
+   "anchor": "ContourSet.find_nearest_contour",
+   "kind": "doc",
+   "line": 1284
+  },
+  {
+   "id": "r118",
+   "anchor": "ContourSet.find_nearest_contour#if:self.filled",
+   "kind": "lead",
+   "line": 1326
+  },
+  {
+   "id": "r119",
+   "anchor": "ContourSet.find_nearest_contour#for:icon in indices/for:segNum, linepath in enumerate(paths)/if:pixel",
+   "kind": "lead",
+   "line": 1349
+  },
+  {
+   "id": "r120",
+   "anchor": "QuadContourSet",
+   "kind": "doc",
+   "line": 1370
+  },
+  {
+   "id": "r121",
+   "anchor": "QuadContourSet._process_args",
+   "kind": "doc",
+   "line": 1380
+  },
+  {
+   "id": "r122",
+   "anchor": "QuadContourSet._process_args#if:isinstance(args[0], QuadContourSet)/else/if:corner_mask is None/if:self._algorithm == \"mpl2005\"/assign:corner_mask",
+   "kind": "lead",
+   "line": 1406
+  },
+  {
+   "id": "r123",
+   "anchor": "QuadContourSet._process_args#if:isinstance(args[0], QuadContourSet)/else/if:t != self.axes.transData and any(t.contains_branch_seperately(self.axes.transData))",
+   "kind": "lead",
+   "line": 1423
+  },
+  {
+   "id": "r124",
+   "anchor": "QuadContourSet._check_xyz",
+   "kind": "doc",
+   "line": 1463
+  },
+  {
+   "id": "r125",
+   "anchor": "QuadContourSet._initialize_x_y",
+   "kind": "doc",
+   "line": 1506
+  },
+  {
+   "id": "r126",
+   "anchor": "QuadContourSet._initialize_x_y#if:self.origin is None",
+   "kind": "trail",
+   "line": 1526
+  },
+  {
+   "id": "r127",
+   "anchor": "QuadContourSet._initialize_x_y#if:self.extent is None",
+   "kind": "lead",
+   "line": 1535
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 40644,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 16015,
+  "thinking_tokens": 8466,
+  "opus_cost_usd": 0.8111065000000001,
+  "total_cost_usd": 0.8436135,
+  "duration_ms": 140673,
+  "duration_api_ms": 142208,
+  "num_turns": 2
+ },
+ "wall_ms": 141680,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,187 @@
+{
+ "blob_sha": "5c0a7829b4dc3de45749cf22cffaea7afde0da07",
+ "path": "django/core/management/commands/makemigrations.py",
+ "repo": "django/django",
+ "records": 27,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Command.handle#assign:app_labels",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r2",
+   "anchor": "Command.handle#assign:loader",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r3",
+   "anchor": "Command.handle#assign:consistency_check_labels",
+   "kind": "lead",
+   "line": 91
+  },
+  {
+   "id": "r4",
+   "anchor": "Command.handle#assign:aliases_to_check",
+   "kind": "lead",
+   "line": 93
+  },
+  {
+   "id": "r5",
+   "anchor": "Command.handle#for:alias in sorted(aliases_to_check)/if:connection.settings_dict['ENGINE'] != 'django.db.backends.dummy' and any(router.allow_migrate(connection.alias, app_label, model_name=model._meta.object_name) for app_label in consistency_check_labels for model in apps.get_app_config(app_label).get_models())",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r6",
+   "anchor": "Command.handle#assign:conflicts",
+   "kind": "lead",
+   "line": 113
+  },
+  {
+   "id": "r7",
+   "anchor": "Command.handle#if:app_labels",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r8",
+   "anchor": "Command.handle#if:self.merge and not conflicts",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r9",
+   "anchor": "Command.handle#if:self.merge and conflicts",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r10",
+   "anchor": "Command.handle#assign:autodetector",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r11",
+   "anchor": "Command.handle#if:self.empty",
+   "kind": "lead",
+   "line": 155
+  },
+  {
+   "id": "r12",
+   "anchor": "Command.handle#if:self.empty/assign:changes",
+   "kind": "lead",
+   "line": 159
+  },
+  {
+   "id": "r13",
+   "anchor": "Command.handle#assign:changes",
+   "kind": "lead",
+   "line": 172
+  },
+  {
+   "id": "r14",
+   "anchor": "Command.handle#if:not changes/if:self.verbosity >= 1",
+   "kind": "lead",
+   "line": 181
+  },
+  {
+   "id": "r15",
+   "anchor": "Command.write_migration_files",
+   "kind": "doc",
+   "line": 194
+  },
+  {
+   "id": "r16",
+   "anchor": "Command.write_migration_files#for:app_label, app_migrations in changes.items()/for:migration in app_migrations/assign:writer",
+   "kind": "lead",
+   "line": 204
+  },
+  {
+   "id": "r17",
+   "anchor": "Command.write_migration_files#for:app_label, app_migrations in changes.items()/for:migration in app_migrations/if:self.verbosity >= 1/try",
+   "kind": "lead",
+   "line": 208
+  },
+  {
+   "id": "r18",
+   "anchor": "Command.write_migration_files#for:app_label, app_migrations in changes.items()/for:migration in app_migrations/if:not self.dry_run/assign:migrations_directory",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r19",
+   "anchor": "Command.write_migration_files#for:app_label, app_migrations in changes.items()/for:migration in app_migrations/if:not self.dry_run/if:not directory_created.get(app_label)/assign:directory_created[app_label]",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r20",
+   "anchor": "Command.write_migration_files#for:app_label, app_migrations in changes.items()/for:migration in app_migrations/if:not self.dry_run/elif:self.verbosity == 3/call:self.stdout.write",
+   "kind": "lead",
+   "line": 234
+  },
+  {
+   "id": "r21",
+   "anchor": "Command.handle_merge",
+   "kind": "doc",
+   "line": 239
+  },
+  {
+   "id": "r22",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/assign:merge_migrations",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r23",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/for:migration in merge_migrations",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r24",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/if:self.verbosity > 0",
+   "kind": "lead",
+   "line": 278
+  },
+  {
+   "id": "r25",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/if:questioner.ask_merge(app_label)/assign:numbers",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r26",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/if:questioner.ask_merge(app_label)/if:not self.dry_run/with:open(writer.path, \"w\", encoding='utf-8')",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r27",
+   "anchor": "Command.handle_merge#for:app_label, migration_names in conflicts.items()/if:questioner.ask_merge(app_label)/if:not self.dry_run/elif:self.verbosity == 3/call:self.stdout.write",
+   "kind": "lead",
+   "line": 322
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10093,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4105,
+  "thinking_tokens": 2390,
+  "opus_cost_usd": 0.2078465,
+  "total_cost_usd": 0.2145205,
+  "duration_ms": 37371,
+  "duration_api_ms": 38349,
+  "num_turns": 2
+ },
+ "wall_ms": 38146,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

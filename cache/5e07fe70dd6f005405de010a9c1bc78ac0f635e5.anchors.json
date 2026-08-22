@@ -1,0 +1,1153 @@
+{
+ "blob_sha": "5e07fe70dd6f005405de010a9c1bc78ac0f635e5",
+ "path": "astropy/units/quantity.py",
+ "repo": "astropy/astropy",
+ "records": 188,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 2
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>#import:numbers",
+   "kind": "lead",
+   "line": 9
+  },
+  {
+   "id": "r4",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 16
+  },
+  {
+   "id": "r5",
+   "anchor": "<module>#import:astropy",
+   "kind": "lead",
+   "line": 19
+  },
+  {
+   "id": "r6",
+   "anchor": "__doctest_skip__",
+   "kind": "lead",
+   "line": 41
+  },
+  {
+   "id": "r7",
+   "anchor": "Conf",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r8",
+   "anchor": "QuantityIterator",
+   "kind": "doc",
+   "line": 62
+  },
+  {
+   "id": "r9",
+   "anchor": "QuantityIterator.__getitem__#if:isinstance(out, type(self._quantity))",
+   "kind": "lead",
+   "line": 96
+  },
+  {
+   "id": "r10",
+   "anchor": "QuantityIterator.__next__",
+   "kind": "doc",
+   "line": 104
+  },
+  {
+   "id": "r11",
+   "anchor": "QuantityIterator.__next__#return",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r12",
+   "anchor": "QuantityIterator.base",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r13",
+   "anchor": "QuantityIterator.base",
+   "kind": "doc",
+   "line": 120
+  },
+  {
+   "id": "r14",
+   "anchor": "QuantityIterator.coords",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r15",
+   "anchor": "QuantityIterator.index",
+   "kind": "doc",
+   "line": 130
+  },
+  {
+   "id": "r16",
+   "anchor": "QuantityIterator.copy",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r17",
+   "anchor": "QuantityInfoBase.attrs_from_parent",
+   "kind": "lead",
+   "line": 143
+  },
+  {
+   "id": "r18",
+   "anchor": "QuantityInfoBase.attrs_from_parent",
+   "kind": "trail",
+   "line": 143
+  },
+  {
+   "id": "r19",
+   "anchor": "QuantityInfoBase.possible_string_format_functions",
+   "kind": "doc",
+   "line": 151
+  },
+  {
+   "id": "r20",
+   "anchor": "QuantityInfo",
+   "kind": "doc",
+   "line": 165
+  },
+  {
+   "id": "r21",
+   "anchor": "QuantityInfo.new_like",
+   "kind": "doc",
+   "line": 175
+  },
+  {
+   "id": "r22",
+   "anchor": "QuantityInfo.new_like#assign:attrs",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r23",
+   "anchor": "QuantityInfo.new_like#assign:shape",
+   "kind": "lead",
+   "line": 206
+  },
+  {
+   "id": "r24",
+   "anchor": "QuantityInfo.new_like#assign:data",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r25",
+   "anchor": "QuantityInfo.new_like#assign:map",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r26",
+   "anchor": "QuantityInfo.new_like#for:attr, value in attrs.items()",
+   "kind": "lead",
+   "line": 218
+  },
+  {
+   "id": "r27",
+   "anchor": "QuantityInfo.get_sortable_arrays",
+   "kind": "doc",
+   "line": 223
+  },
+  {
+   "id": "r28",
+   "anchor": "Quantity",
+   "kind": "doc",
+   "line": 238
+  },
+  {
+   "id": "r29",
+   "anchor": "Quantity._equivalencies",
+   "kind": "lead",
+   "line": 307
+  },
+  {
+   "id": "r30",
+   "anchor": "Quantity._default_unit",
+   "kind": "lead",
+   "line": 311
+  },
+  {
+   "id": "r31",
+   "anchor": "Quantity._unit",
+   "kind": "lead",
+   "line": 314
+  },
+  {
+   "id": "r32",
+   "anchor": "Quantity.__class_getitem__",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r33",
+   "anchor": "Quantity.__class_getitem__#import:._typing",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r34",
+   "anchor": "Quantity.__class_getitem__#if:isinstance(unit_shape_dtype, tuple)",
+   "kind": "lead",
+   "line": 376
+  },
+  {
+   "id": "r35",
+   "anchor": "Quantity.__class_getitem__#if:isinstance(unit_shape_dtype, tuple)",
+   "kind": "trail",
+   "line": 376
+  },
+  {
+   "id": "r36",
+   "anchor": "Quantity.__class_getitem__#if:isinstance(unit_shape_dtype, tuple)/else",
+   "kind": "trail",
+   "line": 379
+  },
+  {
+   "id": "r37",
+   "anchor": "Quantity.__class_getitem__#try",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r38",
+   "anchor": "Quantity.__class_getitem__#try/except:(TypeError, ValueError)/try/except:(TypeError, ValueError, KeyError)",
+   "kind": "trail",
+   "line": 391
+  },
+  {
+   "id": "r39",
+   "anchor": "Quantity.__class_getitem__#if:not HAS_ANNOTATED",
+   "kind": "lead",
+   "line": 396
+  },
+  {
+   "id": "r40",
+   "anchor": "Quantity.__class_getitem__#return",
+   "kind": "lead",
+   "line": 405
+  },
+  {
+   "id": "r41",
+   "anchor": "Quantity.__new__#if:unit is not None/assign:unit",
+   "kind": "lead",
+   "line": 412
+  },
+  {
+   "id": "r42",
+   "anchor": "Quantity.__new__#assign:float_default",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r43",
+   "anchor": "Quantity.__new__#if:isinstance(value, Quantity)",
+   "kind": "lead",
+   "line": 420
+  },
+  {
+   "id": "r44",
+   "anchor": "Quantity.__new__#if:isinstance(value, Quantity)/if:unit is not None and unit is not value.unit/assign:copy",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r45",
+   "anchor": "Quantity.__new__#assign:value_unit",
+   "kind": "lead",
+   "line": 438
+  },
+  {
+   "id": "r46",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/if:isinstance(value, str)/assign:pattern",
+   "kind": "lead",
+   "line": 445
+  },
+  {
+   "id": "r47",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/if:isinstance(value, str)/if:unit_string/if:unit is None/assign:unit",
+   "kind": "trail",
+   "line": 465
+  },
+  {
+   "id": "r48",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/elif:isiterable(value) and len(value) > 0/if:all(isinstance(v, Quantity) for v in value)",
+   "kind": "lead",
+   "line": 469
+  },
+  {
+   "id": "r49",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/elif:isiterable(value) and len(value) > 0/if:all(isinstance(v, Quantity) for v in value)/if:unit is None",
+   "kind": "lead",
+   "line": 472
+  },
+  {
+   "id": "r50",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/elif:isiterable(value) and len(value) > 0/if:all(isinstance(v, Quantity) for v in value)/assign:value_unit",
+   "kind": "trail",
+   "line": 475
+  },
+  {
+   "id": "r51",
+   "anchor": "Quantity.__new__#if:not isinstance(value, np.ndarray)/elif:isiterable(value) and len(value) > 0/if:all(isinstance(v, Quantity) for v in value)/elif:dtype is None and not hasattr(value, 'dtype') and isinstance(unit, StructuredUnit)/assign:dtype",
+   "kind": "lead",
+   "line": 483
+  },
+  {
+   "id": "r52",
+   "anchor": "Quantity.__new__#if:value_unit is None/assign:value_unit",
+   "kind": "lead",
+   "line": 488
+  },
+  {
+   "id": "r53",
+   "anchor": "Quantity.__new__#if:value_unit is None/if:value_unit is None/if:unit is None",
+   "kind": "lead",
+   "line": 491
+  },
+  {
+   "id": "r54",
+   "anchor": "Quantity.__new__#if:value_unit is None/if:value_unit is None/assign:value_unit",
+   "kind": "trail",
+   "line": 493
+  },
+  {
+   "id": "r55",
+   "anchor": "Quantity.__new__#if:value_unit is None/if:value_unit is None/else/if:unit is None/elif:unit is not value_unit/assign:copy",
+   "kind": "trail",
+   "line": 506
+  },
+  {
+   "id": "r56",
+   "anchor": "Quantity.__new__#if:value.dtype.kind in 'OSU' and not (value.dtype.kind == 'O' and isinstance(value.item(0), numbers.Number))",
+   "kind": "lead",
+   "line": 512
+  },
+  {
+   "id": "r57",
+   "anchor": "Quantity.__new__#if:float_default and value.dtype.kind in 'iuO'",
+   "kind": "lead",
+   "line": 519
+  },
+  {
+   "id": "r58",
+   "anchor": "Quantity.__new__#if:subok",
+   "kind": "lead",
+   "line": 523
+  },
+  {
+   "id": "r59",
+   "anchor": "Quantity.__new__#if:unit is value_unit/else/return",
+   "kind": "lead",
+   "line": 535
+  },
+  {
+   "id": "r60",
+   "anchor": "Quantity.__array_finalize__#assign:super_array_finalize",
+   "kind": "lead",
+   "line": 541
+  },
+  {
+   "id": "r61",
+   "anchor": "Quantity.__array_finalize__#if:obj is None or obj.__class__ is np.ndarray",
+   "kind": "lead",
+   "line": 546
+  },
+  {
+   "id": "r62",
+   "anchor": "Quantity.__array_finalize__#if:self._unit is None",
+   "kind": "lead",
+   "line": 550
+  },
+  {
+   "id": "r63",
+   "anchor": "Quantity.__array_finalize__#if:'info' in obj.__dict__",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r64",
+   "anchor": "Quantity.__array_wrap__#if:context is None/return",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r65",
+   "anchor": "Quantity.__array_ufunc__",
+   "kind": "doc",
+   "line": 574
+  },
+  {
+   "id": "r66",
+   "anchor": "Quantity.__array_ufunc__#assign:converters, unit",
+   "kind": "lead",
+   "line": 597
+  },
+  {
+   "id": "r67",
+   "anchor": "Quantity.__array_ufunc__#if:out is not None",
+   "kind": "lead",
+   "line": 601
+  },
+  {
+   "id": "r68",
+   "anchor": "Quantity.__array_ufunc__#if:out is not None/if:function.nout == 1",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r69",
+   "anchor": "Quantity.__array_ufunc__#if:out is not None/assign:kwargs['out']",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r70",
+   "anchor": "Quantity.__array_ufunc__#if:method == 'reduce' and 'initial' in kwargs and unit is not None/assign:kwargs['initial']",
+   "kind": "lead",
+   "line": 616
+  },
+  {
+   "id": "r71",
+   "anchor": "Quantity.__array_ufunc__#assign:arrays",
+   "kind": "lead",
+   "line": 620
+  },
+  {
+   "id": "r72",
+   "anchor": "Quantity.__array_ufunc__#assign:result",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r73",
+   "anchor": "Quantity.__array_ufunc__#if:unit is None or result is None or result is NotImplemented",
+   "kind": "lead",
+   "line": 632
+  },
+  {
+   "id": "r74",
+   "anchor": "Quantity._result_as_quantity",
+   "kind": "doc",
+   "line": 637
+  },
+  {
+   "id": "r75",
+   "anchor": "Quantity._result_as_quantity#if:out is None/return",
+   "kind": "lead",
+   "line": 670
+  },
+  {
+   "id": "r76",
+   "anchor": "Quantity._result_as_quantity#call:out._set_unit",
+   "kind": "lead",
+   "line": 675
+  },
+  {
+   "id": "r77",
+   "anchor": "Quantity.__quantity_subclass__",
+   "kind": "doc",
+   "line": 678
+  },
+  {
+   "id": "r78",
+   "anchor": "Quantity._new_view",
+   "kind": "doc",
+   "line": 696
+  },
+  {
+   "id": "r79",
+   "anchor": "Quantity._new_view#if:unit is None",
+   "kind": "lead",
+   "line": 725
+  },
+  {
+   "id": "r80",
+   "anchor": "Quantity._new_view#if:unit is None/elif:unit is self.unit and self.__class__ is Quantity/assign:quantity_subclass",
+   "kind": "lead",
+   "line": 733
+  },
+  {
+   "id": "r81",
+   "anchor": "Quantity._new_view#if:obj is None",
+   "kind": "lead",
+   "line": 749
+  },
+  {
+   "id": "r82",
+   "anchor": "Quantity._new_view#assign:view",
+   "kind": "lead",
+   "line": 756
+  },
+  {
+   "id": "r83",
+   "anchor": "Quantity._set_unit",
+   "kind": "doc",
+   "line": 761
+  },
+  {
+   "id": "r84",
+   "anchor": "Quantity._set_unit#if:not isinstance(unit, UnitBase)/if:isinstance(self._unit, StructuredUnit) or isinstance(unit, StructuredUnit)/else/assign:unit",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r85",
+   "anchor": "Quantity.__deepcopy__#return",
+   "kind": "lead",
+   "line": 789
+  },
+  {
+   "id": "r86",
+   "anchor": "Quantity.__reduce__#assign:object_state",
+   "kind": "lead",
+   "line": 795
+  },
+  {
+   "id": "r87",
+   "anchor": "Quantity.__setstate__#assign:nd_state, own_state",
+   "kind": "lead",
+   "line": 803
+  },
+  {
+   "id": "r88",
+   "anchor": "Quantity._to_value",
+   "kind": "doc",
+   "line": 809
+  },
+  {
+   "id": "r89",
+   "anchor": "Quantity._to_value#if:not self.dtype.names or isinstance(self.unit, StructuredUnit)/return",
+   "kind": "lead",
+   "line": 815
+  },
+  {
+   "id": "r90",
+   "anchor": "Quantity._to_value#if:not self.dtype.names or isinstance(self.unit, StructuredUnit)/else/assign:result",
+   "kind": "lead",
+   "line": 823
+  },
+  {
+   "id": "r91",
+   "anchor": "Quantity.to",
+   "kind": "doc",
+   "line": 828
+  },
+  {
+   "id": "r92",
+   "anchor": "Quantity.to#assign:unit",
+   "kind": "lead",
+   "line": 857
+  },
+  {
+   "id": "r93",
+   "anchor": "Quantity.to#if:copy/assign:value",
+   "kind": "lead",
+   "line": 861
+  },
+  {
+   "id": "r94",
+   "anchor": "Quantity.to#if:copy/else/assign:value",
+   "kind": "lead",
+   "line": 864
+  },
+  {
+   "id": "r95",
+   "anchor": "Quantity.to_value",
+   "kind": "doc",
+   "line": 867
+  },
+  {
+   "id": "r96",
+   "anchor": "Quantity.to_value#if:unit is None or unit is self.unit/elif:not self.dtype.names/assign:unit",
+   "kind": "lead",
+   "line": 900
+  },
+  {
+   "id": "r97",
+   "anchor": "Quantity.to_value#if:unit is None or unit is self.unit/elif:not self.dtype.names/try",
+   "kind": "lead",
+   "line": 904
+  },
+  {
+   "id": "r98",
+   "anchor": "Quantity.to_value#if:unit is None or unit is self.unit/elif:not self.dtype.names/try/except:Exception/assign:value",
+   "kind": "lead",
+   "line": 908
+  },
+  {
+   "id": "r99",
+   "anchor": "Quantity.to_value#if:unit is None or unit is self.unit/elif:not self.dtype.names/try/else/if:not is_effectively_unity(scale)/assign:value",
+   "kind": "lead",
+   "line": 913
+  },
+  {
+   "id": "r100",
+   "anchor": "Quantity.to_value#if:unit is None or unit is self.unit/else/assign:value",
+   "kind": "lead",
+   "line": 916
+  },
+  {
+   "id": "r101",
+   "anchor": "Quantity.to_value#return",
+   "kind": "lead",
+   "line": 919
+  },
+  {
+   "id": "r102",
+   "anchor": "Quantity.unit",
+   "kind": "doc",
+   "line": 930
+  },
+  {
+   "id": "r103",
+   "anchor": "Quantity.equivalencies",
+   "kind": "doc",
+   "line": 939
+  },
+  {
+   "id": "r104",
+   "anchor": "Quantity._recursively_apply",
+   "kind": "doc",
+   "line": 947
+  },
+  {
+   "id": "r105",
+   "anchor": "Quantity.si",
+   "kind": "doc",
+   "line": 964
+  },
+  {
+   "id": "r106",
+   "anchor": "Quantity.cgs",
+   "kind": "doc",
+   "line": 976
+  },
+  {
+   "id": "r107",
+   "anchor": "Quantity.isscalar",
+   "kind": "doc",
+   "line": 988
+  },
+  {
+   "id": "r108",
+   "anchor": "Quantity._include_easy_conversion_members",
+   "kind": "lead",
+   "line": 1005
+  },
+  {
+   "id": "r109",
+   "anchor": "Quantity.__dir__",
+   "kind": "doc",
+   "line": 1008
+  },
+  {
+   "id": "r110",
+   "anchor": "Quantity.__getattr__",
+   "kind": "doc",
+   "line": 1023
+  },
+  {
+   "id": "r111",
+   "anchor": "Quantity.__eq__",
+   "kind": "lead",
+   "line": 1055
+  },
+  {
+   "id": "r112",
+   "anchor": "Quantity.__lshift__",
+   "kind": "lead",
+   "line": 1074
+  },
+  {
+   "id": "r113",
+   "anchor": "Quantity.__ilshift__#try/except:Exception/try",
+   "kind": "lead",
+   "line": 1092
+  },
+  {
+   "id": "r114",
+   "anchor": "Quantity.__rrshift__",
+   "kind": "lead",
+   "line": 1111
+  },
+  {
+   "id": "r115",
+   "anchor": "Quantity.__rshift__",
+   "kind": "lead",
+   "line": 1120
+  },
+  {
+   "id": "r116",
+   "anchor": "Quantity.__mul__",
+   "kind": "lead",
+   "line": 1127
+  },
+  {
+   "id": "r117",
+   "anchor": "Quantity.__mul__",
+   "kind": "doc",
+   "line": 1127
+  },
+  {
+   "id": "r118",
+   "anchor": "Quantity.__mul__#if:isinstance(other, (UnitBase, str))/try/except:UnitsError",
+   "kind": "trail",
+   "line": 1133
+  },
+  {
+   "id": "r119",
+   "anchor": "Quantity.__imul__",
+   "kind": "doc",
+   "line": 1138
+  },
+  {
+   "id": "r120",
+   "anchor": "Quantity.__rmul__",
+   "kind": "doc",
+   "line": 1147
+  },
+  {
+   "id": "r121",
+   "anchor": "Quantity.__truediv__",
+   "kind": "doc",
+   "line": 1154
+  },
+  {
+   "id": "r122",
+   "anchor": "Quantity.__truediv__#if:isinstance(other, (UnitBase, str))/try/except:UnitsError",
+   "kind": "trail",
+   "line": 1160
+  },
+  {
+   "id": "r123",
+   "anchor": "Quantity.__itruediv__",
+   "kind": "doc",
+   "line": 1165
+  },
+  {
+   "id": "r124",
+   "anchor": "Quantity.__rtruediv__",
+   "kind": "doc",
+   "line": 1174
+  },
+  {
+   "id": "r125",
+   "anchor": "Quantity.__pow__#if:isinstance(other, Fraction)/return",
+   "kind": "lead",
+   "line": 1185
+  },
+  {
+   "id": "r126",
+   "anchor": "Quantity.__hash__",
+   "kind": "lead",
+   "line": 1191
+  },
+  {
+   "id": "r127",
+   "anchor": "Quantity.__iter__.quantity_iter",
+   "kind": "lead",
+   "line": 1201
+  },
+  {
+   "id": "r128",
+   "anchor": "Quantity.__getitem__#try/except:IndexError/if:self.isscalar",
+   "kind": "lead",
+   "line": 1216
+  },
+  {
+   "id": "r129",
+   "anchor": "Quantity.__getitem__#if:not isinstance(out, np.ndarray)",
+   "kind": "lead",
+   "line": 1224
+  },
+  {
+   "id": "r130",
+   "anchor": "Quantity.__setitem__#if:isinstance(i, str)/assign:self[i][...]",
+   "kind": "lead",
+   "line": 1232
+  },
+  {
+   "id": "r131",
+   "anchor": "Quantity.__setitem__#if:not self.isscalar and 'info' in self.__dict__",
+   "kind": "lead",
+   "line": 1238
+  },
+  {
+   "id": "r132",
+   "anchor": "Quantity.__bool__",
+   "kind": "lead",
+   "line": 1244
+  },
+  {
+   "id": "r133",
+   "anchor": "Quantity.__bool__",
+   "kind": "doc",
+   "line": 1244
+  },
+  {
+   "id": "r134",
+   "anchor": "Quantity.__float__",
+   "kind": "lead",
+   "line": 1261
+  },
+  {
+   "id": "r135",
+   "anchor": "Quantity.__index__#try",
+   "kind": "lead",
+   "line": 1278
+  },
+  {
+   "id": "r136",
+   "anchor": "Quantity._unitstr",
+   "kind": "todo",
+   "line": 1287
+  },
+  {
+   "id": "r137",
+   "anchor": "Quantity.to_string",
+   "kind": "doc",
+   "line": 1298
+  },
+  {
+   "id": "r138",
+   "anchor": "Quantity.to_string#if:format not in formats/elif:format is None/if:precision is None/return",
+   "kind": "lead",
+   "line": 1361
+  },
+  {
+   "id": "r139",
+   "anchor": "Quantity.to_string#if:format not in formats/elif:format is None/if:precision is None/else/return",
+   "kind": "lead",
+   "line": 1364
+  },
+  {
+   "id": "r140",
+   "anchor": "Quantity.to_string#assign:pops",
+   "kind": "lead",
+   "line": 1370
+  },
+  {
+   "id": "r141",
+   "anchor": "Quantity.to_string#assign:pops",
+   "kind": "lead",
+   "line": 1370
+  },
+  {
+   "id": "r142",
+   "anchor": "Quantity.to_string#assign:latex_value",
+   "kind": "lead",
+   "line": 1385
+  },
+  {
+   "id": "r143",
+   "anchor": "Quantity.to_string#if:self.unit is None",
+   "kind": "lead",
+   "line": 1398
+  },
+  {
+   "id": "r144",
+   "anchor": "Quantity.to_string#if:self.unit is None/elif:format == 'latex'/assign:latex_unit",
+   "kind": "trail",
+   "line": 1401
+  },
+  {
+   "id": "r145",
+   "anchor": "Quantity._repr_latex_",
+   "kind": "doc",
+   "line": 1418
+  },
+  {
+   "id": "r146",
+   "anchor": "Quantity._repr_latex_#return",
+   "kind": "lead",
+   "line": 1428
+  },
+  {
+   "id": "r147",
+   "anchor": "Quantity.__format__",
+   "kind": "doc",
+   "line": 1430
+  },
+  {
+   "id": "r148",
+   "anchor": "Quantity.decompose",
+   "kind": "doc",
+   "line": 1450
+  },
+  {
+   "id": "r149",
+   "anchor": "Quantity._decompose",
+   "kind": "doc",
+   "line": 1472
+  },
+  {
+   "id": "r150",
+   "anchor": "Quantity._decompose#if:not allowscaledunits and hasattr(new_unit, 'scale')",
+   "kind": "lead",
+   "line": 1503
+  },
+  {
+   "id": "r151",
+   "anchor": "Quantity.item",
+   "kind": "lead",
+   "line": 1514
+  },
+  {
+   "id": "r152",
+   "anchor": "Quantity.item",
+   "kind": "doc",
+   "line": 1514
+  },
+  {
+   "id": "r153",
+   "anchor": "Quantity._to_own_unit",
+   "kind": "doc",
+   "line": 1527
+  },
+  {
+   "id": "r154",
+   "anchor": "Quantity._to_own_unit#try/except:AttributeError/if:value is np.ma.masked or (value is np.ma.masked_print_option and self.dtype.kind == 'O')",
+   "kind": "lead",
+   "line": 1559
+  },
+  {
+   "id": "r155",
+   "anchor": "Quantity._to_own_unit#try/except:AttributeError/try",
+   "kind": "lead",
+   "line": 1566
+  },
+  {
+   "id": "r156",
+   "anchor": "Quantity._to_own_unit#try/except:AttributeError/try/except:UnitsError/if:not hasattr(value, 'unit') and can_have_arbitrary_unit(as_quantity.value)",
+   "kind": "lead",
+   "line": 1572
+  },
+  {
+   "id": "r157",
+   "anchor": "Quantity._to_own_unit#if:self.dtype.kind == 'i' and check_precision/assign:_value",
+   "kind": "lead",
+   "line": 1581
+  },
+  {
+   "id": "r158",
+   "anchor": "Quantity._to_own_unit#if:self.dtype.names",
+   "kind": "lead",
+   "line": 1591
+  },
+  {
+   "id": "r159",
+   "anchor": "Quantity.fill",
+   "kind": "lead",
+   "line": 1624
+  },
+  {
+   "id": "r160",
+   "anchor": "Quantity.flat",
+   "kind": "lead",
+   "line": 1632
+  },
+  {
+   "id": "r161",
+   "anchor": "Quantity.flat",
+   "kind": "doc",
+   "line": 1632
+  },
+  {
+   "id": "r162",
+   "anchor": "Quantity.take",
+   "kind": "lead",
+   "line": 1649
+  },
+  {
+   "id": "r163",
+   "anchor": "Quantity.take#if:type(out) is not type(self)",
+   "kind": "lead",
+   "line": 1653
+  },
+  {
+   "id": "r164",
+   "anchor": "Quantity.argsort",
+   "kind": "lead",
+   "line": 1665
+  },
+  {
+   "id": "r165",
+   "anchor": "Quantity.searchsorted#return",
+   "kind": "trail",
+   "line": 1671
+  },
+  {
+   "id": "r166",
+   "anchor": "Quantity.__array_function__",
+   "kind": "doc",
+   "line": 1686
+  },
+  {
+   "id": "r167",
+   "anchor": "Quantity.__array_function__#if:function in SUBCLASS_SAFE_FUNCTIONS",
+   "kind": "lead",
+   "line": 1727
+  },
+  {
+   "id": "r168",
+   "anchor": "Quantity.__array_function__#if:function in SUBCLASS_SAFE_FUNCTIONS/elif:function in FUNCTION_HELPERS/assign:result",
+   "kind": "post",
+   "line": 1737
+  },
+  {
+   "id": "r169",
+   "anchor": "Quantity.__array_function__#if:function in SUBCLASS_SAFE_FUNCTIONS/elif:function in DISPATCHED_FUNCTIONS/try",
+   "kind": "post",
+   "line": 1742
+  },
+  {
+   "id": "r170",
+   "anchor": "Quantity.__array_function__#if:unit is None or result is NotImplemented",
+   "kind": "lead",
+   "line": 1766
+  },
+  {
+   "id": "r171",
+   "anchor": "Quantity._not_implemented_or_raise#if:any(issubclass(t, np.ndarray) and not issubclass(t, Quantity) for t in types)",
+   "kind": "lead",
+   "line": 1777
+  },
+  {
+   "id": "r172",
+   "anchor": "Quantity._wrap_function",
+   "kind": "lead",
+   "line": 1790
+  },
+  {
+   "id": "r173",
+   "anchor": "Quantity._wrap_function",
+   "kind": "doc",
+   "line": 1790
+  },
+  {
+   "id": "r174",
+   "anchor": "Quantity._wrap_function#assign:args",
+   "kind": "lead",
+   "line": 1823
+  },
+  {
+   "id": "r175",
+   "anchor": "Quantity._wrap_function#if:out is not None/assign:arrays",
+   "kind": "lead",
+   "line": 1828
+  },
+  {
+   "id": "r176",
+   "anchor": "Quantity._wrap_function#assign:result",
+   "kind": "lead",
+   "line": 1831
+  },
+  {
+   "id": "r177",
+   "anchor": "Quantity.all",
+   "kind": "lead",
+   "line": 1875
+  },
+  {
+   "id": "r178",
+   "anchor": "Quantity.diff",
+   "kind": "lead",
+   "line": 1885
+  },
+  {
+   "id": "r179",
+   "anchor": "Quantity.nansum",
+   "kind": "todo",
+   "line": 1898
+  },
+  {
+   "id": "r180",
+   "anchor": "Quantity.insert",
+   "kind": "doc",
+   "line": 1904
+  },
+  {
+   "id": "r181",
+   "anchor": "SpecificTypeQuantity",
+   "kind": "doc",
+   "line": 1953
+  },
+  {
+   "id": "r182",
+   "anchor": "SpecificTypeQuantity._equivalent_unit",
+   "kind": "lead",
+   "line": 1967
+  },
+  {
+   "id": "r183",
+   "anchor": "SpecificTypeQuantity._unit",
+   "kind": "lead",
+   "line": 1971
+  },
+  {
+   "id": "r184",
+   "anchor": "SpecificTypeQuantity._default_unit",
+   "kind": "lead",
+   "line": 1974
+  },
+  {
+   "id": "r185",
+   "anchor": "SpecificTypeQuantity.__array_priority__",
+   "kind": "lead",
+   "line": 1977
+  },
+  {
+   "id": "r186",
+   "anchor": "isclose",
+   "kind": "doc",
+   "line": 1996
+  },
+  {
+   "id": "r187",
+   "anchor": "allclose",
+   "kind": "doc",
+   "line": 2041
+  },
+  {
+   "id": "r188",
+   "anchor": "_unquantify_allclose_arguments#if:atol is None/assign:atol",
+   "kind": "lead",
+   "line": 2102
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 49872,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 19968,
+  "thinking_tokens": 10924,
+  "opus_cost_usd": 1.0022115,
+  "total_cost_usd": 1.0415345,
+  "duration_ms": 168467,
+  "duration_api_ms": 169840,
+  "num_turns": 2
+ },
+ "wall_ms": 169457,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

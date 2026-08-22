@@ -1,0 +1,553 @@
+{
+ "blob_sha": "73425f915093519245f2075bdb4ef99579579e95",
+ "path": "lib/matplotlib/backend_tools.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 88,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Cursors",
+   "kind": "trail",
+   "line": 29
+  },
+  {
+   "id": "r3",
+   "anchor": "Cursors",
+   "kind": "doc",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "cursors",
+   "kind": "trail",
+   "line": 38
+  },
+  {
+   "id": "r5",
+   "anchor": "_tool_registry",
+   "kind": "lead",
+   "line": 49
+  },
+  {
+   "id": "r6",
+   "anchor": "_register_tool_class",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r7",
+   "anchor": "_find_tool_class",
+   "kind": "doc",
+   "line": 60
+  },
+  {
+   "id": "r8",
+   "anchor": "_views_positions",
+   "kind": "lead",
+   "line": 70
+  },
+  {
+   "id": "r9",
+   "anchor": "ToolBase",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r10",
+   "anchor": "ToolBase.default_keymap",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r11",
+   "anchor": "ToolBase.description",
+   "kind": "doc",
+   "line": 91
+  },
+  {
+   "id": "r12",
+   "anchor": "ToolBase.image",
+   "kind": "doc",
+   "line": 98
+  },
+  {
+   "id": "r13",
+   "anchor": "ToolBase.figure",
+   "kind": "doc",
+   "line": 122
+  },
+  {
+   "id": "r14",
+   "anchor": "ToolBase._make_classic_style_pseudo_toolbar",
+   "kind": "doc",
+   "line": 132
+  },
+  {
+   "id": "r15",
+   "anchor": "ToolBase.trigger",
+   "kind": "doc",
+   "line": 141
+  },
+  {
+   "id": "r16",
+   "anchor": "ToolBase.destroy",
+   "kind": "doc",
+   "line": 159
+  },
+  {
+   "id": "r17",
+   "anchor": "ToolToggleBase",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r18",
+   "anchor": "ToolToggleBase.radio_group",
+   "kind": "doc",
+   "line": 183
+  },
+  {
+   "id": "r19",
+   "anchor": "ToolToggleBase.cursor",
+   "kind": "doc",
+   "line": 190
+  },
+  {
+   "id": "r20",
+   "anchor": "ToolToggleBase.default_toggled",
+   "kind": "doc",
+   "line": 193
+  },
+  {
+   "id": "r21",
+   "anchor": "ToolToggleBase.trigger",
+   "kind": "doc",
+   "line": 200
+  },
+  {
+   "id": "r22",
+   "anchor": "ToolToggleBase.enable",
+   "kind": "doc",
+   "line": 208
+  },
+  {
+   "id": "r23",
+   "anchor": "ToolToggleBase.disable",
+   "kind": "doc",
+   "line": 216
+  },
+  {
+   "id": "r24",
+   "anchor": "ToolToggleBase.toggled",
+   "kind": "doc",
+   "line": 232
+  },
+  {
+   "id": "r25",
+   "anchor": "ToolToggleBase.set_figure#if:toggled/if:self.figure/else/assign:self._toggled",
+   "kind": "lead",
+   "line": 244
+  },
+  {
+   "id": "r26",
+   "anchor": "ToolToggleBase.set_figure#if:toggled/if:figure/else/assign:self._toggled",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r27",
+   "anchor": "ToolSetCursor",
+   "kind": "doc",
+   "line": 255
+  },
+  {
+   "id": "r28",
+   "anchor": "ToolSetCursor.__init__#for:tool in self.toolmanager.tools.values()",
+   "kind": "lead",
+   "line": 271
+  },
+  {
+   "id": "r29",
+   "anchor": "ToolSetCursor._add_tool",
+   "kind": "doc",
+   "line": 289
+  },
+  {
+   "id": "r30",
+   "anchor": "ToolSetCursor._add_tool_cbk",
+   "kind": "doc",
+   "line": 295
+  },
+  {
+   "id": "r31",
+   "anchor": "ToolCursorPosition",
+   "kind": "doc",
+   "line": 314
+  },
+  {
+   "id": "r32",
+   "anchor": "ToolCursorPosition.send_message",
+   "kind": "doc",
+   "line": 332
+  },
+  {
+   "id": "r33",
+   "anchor": "RubberbandBase",
+   "kind": "doc",
+   "line": 342
+  },
+  {
+   "id": "r34",
+   "anchor": "RubberbandBase.trigger",
+   "kind": "doc",
+   "line": 344
+  },
+  {
+   "id": "r35",
+   "anchor": "RubberbandBase.draw_rubberband",
+   "kind": "doc",
+   "line": 353
+  },
+  {
+   "id": "r36",
+   "anchor": "RubberbandBase.remove_rubberband",
+   "kind": "doc",
+   "line": 361
+  },
+  {
+   "id": "r37",
+   "anchor": "ToolQuit",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r38",
+   "anchor": "ToolQuitAll",
+   "kind": "doc",
+   "line": 380
+  },
+  {
+   "id": "r39",
+   "anchor": "ToolGrid",
+   "kind": "doc",
+   "line": 390
+  },
+  {
+   "id": "r40",
+   "anchor": "ToolGrid.trigger#with:cbook._setattr_cm(event, key=sentinel), mpl.rc_context({'keymap.grid': sentinel})",
+   "kind": "lead",
+   "line": 400
+  },
+  {
+   "id": "r41",
+   "anchor": "ToolMinorGrid",
+   "kind": "doc",
+   "line": 405
+  },
+  {
+   "id": "r42",
+   "anchor": "ToolMinorGrid.trigger#with:cbook._setattr_cm(event, key=sentinel), mpl.rc_context({'keymap.grid_minor': sentinel})",
+   "kind": "lead",
+   "line": 415
+  },
+  {
+   "id": "r43",
+   "anchor": "ToolFullScreen",
+   "kind": "doc",
+   "line": 420
+  },
+  {
+   "id": "r44",
+   "anchor": "AxisScaleBase",
+   "kind": "doc",
+   "line": 430
+  },
+  {
+   "id": "r45",
+   "anchor": "ToolYScale",
+   "kind": "doc",
+   "line": 447
+  },
+  {
+   "id": "r46",
+   "anchor": "ToolXScale",
+   "kind": "doc",
+   "line": 457
+  },
+  {
+   "id": "r47",
+   "anchor": "ToolViewsPositions",
+   "kind": "doc",
+   "line": 467
+  },
+  {
+   "id": "r48",
+   "anchor": "ToolViewsPositions.add_figure",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r49",
+   "anchor": "ToolViewsPositions.add_figure#if:figure not in self.views/call:self.push_current",
+   "kind": "lead",
+   "line": 495
+  },
+  {
+   "id": "r50",
+   "anchor": "ToolViewsPositions.add_figure#if:figure not in self.views/call:figure.add_axobserver",
+   "kind": "lead",
+   "line": 497
+  },
+  {
+   "id": "r51",
+   "anchor": "ToolViewsPositions.clear",
+   "kind": "doc",
+   "line": 499
+  },
+  {
+   "id": "r52",
+   "anchor": "ToolViewsPositions.update_view",
+   "kind": "doc",
+   "line": 507
+  },
+  {
+   "id": "r53",
+   "anchor": "ToolViewsPositions.update_view#if:set(all_axes).issubset(pos)/for:a in all_axes/call:a._set_position",
+   "kind": "lead",
+   "line": 533
+  },
+  {
+   "id": "r54",
+   "anchor": "ToolViewsPositions.push_current",
+   "kind": "doc",
+   "line": 538
+  },
+  {
+   "id": "r55",
+   "anchor": "ToolViewsPositions._axes_pos",
+   "kind": "doc",
+   "line": 552
+  },
+  {
+   "id": "r56",
+   "anchor": "ToolViewsPositions.update_home_views",
+   "kind": "doc",
+   "line": 570
+  },
+  {
+   "id": "r57",
+   "anchor": "ToolViewsPositions.home",
+   "kind": "doc",
+   "line": 582
+  },
+  {
+   "id": "r58",
+   "anchor": "ToolViewsPositions.back",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r59",
+   "anchor": "ToolViewsPositions.forward",
+   "kind": "doc",
+   "line": 592
+  },
+  {
+   "id": "r60",
+   "anchor": "ViewsPositionsBase",
+   "kind": "doc",
+   "line": 598
+  },
+  {
+   "id": "r61",
+   "anchor": "ToolHome",
+   "kind": "doc",
+   "line": 610
+  },
+  {
+   "id": "r62",
+   "anchor": "ToolBack",
+   "kind": "doc",
+   "line": 619
+  },
+  {
+   "id": "r63",
+   "anchor": "ToolForward",
+   "kind": "doc",
+   "line": 628
+  },
+  {
+   "id": "r64",
+   "anchor": "ConfigureSubplotsBase",
+   "kind": "doc",
+   "line": 637
+  },
+  {
+   "id": "r65",
+   "anchor": "SaveFigureBase",
+   "kind": "doc",
+   "line": 644
+  },
+  {
+   "id": "r66",
+   "anchor": "ZoomPanBase",
+   "kind": "doc",
+   "line": 652
+  },
+  {
+   "id": "r67",
+   "anchor": "ZoomPanBase.scrollthresh",
+   "kind": "trail",
+   "line": 662
+  },
+  {
+   "id": "r68",
+   "anchor": "ZoomPanBase.enable",
+   "kind": "doc",
+   "line": 665
+  },
+  {
+   "id": "r69",
+   "anchor": "ZoomPanBase.disable",
+   "kind": "doc",
+   "line": 675
+  },
+  {
+   "id": "r70",
+   "anchor": "ZoomPanBase.scroll_zoom#if:event.inaxes is None",
+   "kind": "lead",
+   "line": 692
+  },
+  {
+   "id": "r71",
+   "anchor": "ZoomPanBase.scroll_zoom#if:event.button == 'up'/assign:scl",
+   "kind": "lead",
+   "line": 697
+  },
+  {
+   "id": "r72",
+   "anchor": "ZoomPanBase.scroll_zoom#if:event.button == 'up'/elif:event.button == 'down'/assign:scl",
+   "kind": "lead",
+   "line": 700
+  },
+  {
+   "id": "r73",
+   "anchor": "ZoomPanBase.scroll_zoom#if:event.button == 'up'/else/assign:scl",
+   "kind": "lead",
+   "line": 703
+  },
+  {
+   "id": "r74",
+   "anchor": "ZoomPanBase.scroll_zoom#if:(time.time()-self.lastscroll) < self.scrollthresh",
+   "kind": "lead",
+   "line": 710
+  },
+  {
+   "id": "r75",
+   "anchor": "ZoomPanBase.scroll_zoom#call:self.figure.canvas.draw_idle",
+   "kind": "trail",
+   "line": 713
+  },
+  {
+   "id": "r76",
+   "anchor": "ToolZoom",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r77",
+   "anchor": "ToolZoom._press",
+   "kind": "doc",
+   "line": 742
+  },
+  {
+   "id": "r78",
+   "anchor": "ToolZoom._press#if:self._ids_zoom",
+   "kind": "lead",
+   "line": 747
+  },
+  {
+   "id": "r79",
+   "anchor": "ToolZoom._mouse_move",
+   "kind": "doc",
+   "line": 784
+  },
+  {
+   "id": "r80",
+   "anchor": "ToolZoom._release",
+   "kind": "doc",
+   "line": 799
+  },
+  {
+   "id": "r81",
+   "anchor": "ToolZoom._release#for:cur_xypress in self._xypress/if:abs(x - lastx) < 5 or abs(y - lasty) < 5",
+   "kind": "lead",
+   "line": 816
+  },
+  {
+   "id": "r82",
+   "anchor": "ToolZoom._release#for:cur_xypress in self._xypress/assign:twinx",
+   "kind": "lead",
+   "line": 821
+  },
+  {
+   "id": "r83",
+   "anchor": "ToolPan",
+   "kind": "doc",
+   "line": 840
+  },
+  {
+   "id": "r84",
+   "anchor": "ToolPan._mouse_move#for:a, _ind in self._xypress/call:a.drag_pan",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r85",
+   "anchor": "ToolHelpBase.format_shortcut",
+   "kind": "doc",
+   "line": 912
+  },
+  {
+   "id": "r86",
+   "anchor": "ToolCopyToClipboardBase",
+   "kind": "doc",
+   "line": 944
+  },
+  {
+   "id": "r87",
+   "anchor": "add_tools_to_manager",
+   "kind": "doc",
+   "line": 979
+  },
+  {
+   "id": "r88",
+   "anchor": "add_tools_to_container",
+   "kind": "doc",
+   "line": 996
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22669,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6854,
+  "thinking_tokens": 3127,
+  "opus_cost_usd": 0.4023315,
+  "total_cost_usd": 0.4192595,
+  "duration_ms": 60678,
+  "duration_api_ms": 61701,
+  "num_turns": 2
+ },
+ "wall_ms": 61649,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,361 @@
+{
+ "blob_sha": "3e3456fe15f85de96d88b6a2f571479504d42696",
+ "path": "lib/matplotlib/spines.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 56,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "Spine",
+   "kind": "doc",
+   "line": 11
+  },
+  {
+   "id": "r2",
+   "anchor": "Spine.__init__",
+   "kind": "doc",
+   "line": 35
+  },
+  {
+   "id": "r3",
+   "anchor": "Spine.__init__#call:self.set_transform",
+   "kind": "trail",
+   "line": 55
+  },
+  {
+   "id": "r4",
+   "anchor": "Spine._bounds",
+   "kind": "trail",
+   "line": 57
+  },
+  {
+   "id": "r5",
+   "anchor": "Spine._position",
+   "kind": "lead",
+   "line": 63
+  },
+  {
+   "id": "r6",
+   "anchor": "Spine._patch_type",
+   "kind": "lead",
+   "line": 75
+  },
+  {
+   "id": "r7",
+   "anchor": "Spine._patch_transform",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r8",
+   "anchor": "Spine.set_smart_bounds",
+   "kind": "doc",
+   "line": 81
+  },
+  {
+   "id": "r9",
+   "anchor": "Spine.set_smart_bounds#if:self.spine_type in ('left', 'right')",
+   "kind": "lead",
+   "line": 86
+  },
+  {
+   "id": "r10",
+   "anchor": "Spine.get_smart_bounds",
+   "kind": "doc",
+   "line": 92
+  },
+  {
+   "id": "r11",
+   "anchor": "Spine.set_patch_arc",
+   "kind": "doc",
+   "line": 96
+  },
+  {
+   "id": "r12",
+   "anchor": "Spine.set_patch_arc#call:self.set_transform",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r13",
+   "anchor": "Spine.set_patch_circle",
+   "kind": "doc",
+   "line": 109
+  },
+  {
+   "id": "r14",
+   "anchor": "Spine.set_patch_circle#call:self.set_transform",
+   "kind": "lead",
+   "line": 116
+  },
+  {
+   "id": "r15",
+   "anchor": "Spine.set_patch_line",
+   "kind": "doc",
+   "line": 119
+  },
+  {
+   "id": "r16",
+   "anchor": "Spine._recompute_transform",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r17",
+   "anchor": "Spine._recompute_transform",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r18",
+   "anchor": "Spine.get_window_extent",
+   "kind": "doc",
+   "line": 147
+  },
+  {
+   "id": "r19",
+   "anchor": "Spine.get_window_extent#call:self._adjust_location",
+   "kind": "lead",
+   "line": 160
+  },
+  {
+   "id": "r20",
+   "anchor": "Spine.get_window_extent#if:len(self.axis.minorTicks)>1/call:tickstocheck.append",
+   "kind": "lead",
+   "line": 169
+  },
+  {
+   "id": "r21",
+   "anchor": "Spine._ensure_position_is_set#if:self._position is None/assign:self._position",
+   "kind": "lead",
+   "line": 211
+  },
+  {
+   "id": "r22",
+   "anchor": "Spine._ensure_position_is_set#if:self._position is None/assign:self._position",
+   "kind": "trail",
+   "line": 211
+  },
+  {
+   "id": "r23",
+   "anchor": "Spine.register_axis",
+   "kind": "doc",
+   "line": 214
+  },
+  {
+   "id": "r24",
+   "anchor": "Spine.cla",
+   "kind": "doc",
+   "line": 226
+  },
+  {
+   "id": "r25",
+   "anchor": "Spine.cla#assign:self._position",
+   "kind": "trail",
+   "line": 228
+  },
+  {
+   "id": "r26",
+   "anchor": "Spine.is_frame_like",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r27",
+   "anchor": "Spine._adjust_location",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r28",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/assign:viewlim_low, viewlim_high",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r29",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/assign:viewlim_low, viewlim_high",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r30",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/assign:ticks",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r31",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_low<viewlim_low/assign:low",
+   "kind": "lead",
+   "line": 287
+  },
+  {
+   "id": "r32",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_low<viewlim_low/else/assign:cond",
+   "kind": "lead",
+   "line": 290
+  },
+  {
+   "id": "r33",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_low<viewlim_low/else/if:len(tickvals)/assign:low",
+   "kind": "lead",
+   "line": 294
+  },
+  {
+   "id": "r34",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_low<viewlim_low/else/if:len(tickvals)/else/assign:low",
+   "kind": "lead",
+   "line": 297
+  },
+  {
+   "id": "r35",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_high>viewlim_high/assign:high",
+   "kind": "lead",
+   "line": 302
+  },
+  {
+   "id": "r36",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_high>viewlim_high/else/assign:cond",
+   "kind": "lead",
+   "line": 305
+  },
+  {
+   "id": "r37",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_high>viewlim_high/else/if:len(tickvals)/assign:high",
+   "kind": "lead",
+   "line": 310
+  },
+  {
+   "id": "r38",
+   "anchor": "Spine._adjust_location#if:self._bounds is None/if:self._smart_bounds/if:datalim_high>viewlim_high/else/if:len(tickvals)/else/assign:high",
+   "kind": "lead",
+   "line": 313
+  },
+  {
+   "id": "r39",
+   "anchor": "Spine._calc_offset_transform",
+   "kind": "doc",
+   "line": 369
+  },
+  {
+   "id": "r40",
+   "anchor": "Spine._calc_offset_transform#if:position_type=='outward'/if:amount==0/assign:self._spine_transform",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r41",
+   "anchor": "Spine._calc_offset_transform#if:position_type=='outward'/elif:self.spine_type in ['left', 'right', 'top', 'bottom']/assign:offset_x",
+   "kind": "lead",
+   "line": 393
+  },
+  {
+   "id": "r42",
+   "anchor": "Spine._calc_offset_transform#if:position_type=='outward'/elif:position_type=='axes'/if:self.spine_type in ('left', 'right')/assign:self._spine_transform",
+   "kind": "lead",
+   "line": 407
+  },
+  {
+   "id": "r43",
+   "anchor": "Spine._calc_offset_transform#if:position_type=='outward'/elif:position_type=='axes'/elif:self.spine_type in ('bottom', 'top')/assign:self._spine_transform",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r44",
+   "anchor": "Spine._calc_offset_transform#if:position_type=='outward'/elif:position_type=='data'/if:self.spine_type in ('right', 'top')/assign:amount",
+   "kind": "lead",
+   "line": 428
+  },
+  {
+   "id": "r45",
+   "anchor": "Spine.set_position",
+   "kind": "doc",
+   "line": 443
+  },
+  {
+   "id": "r46",
+   "anchor": "Spine.set_position#if:position in ('center', 'zero')/pass",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r47",
+   "anchor": "Spine.get_position",
+   "kind": "doc",
+   "line": 482
+  },
+  {
+   "id": "r48",
+   "anchor": "Spine.get_spine_transform",
+   "kind": "doc",
+   "line": 487
+  },
+  {
+   "id": "r49",
+   "anchor": "Spine.get_spine_transform#if:what=='data'/assign:data_xform",
+   "kind": "lead",
+   "line": 494
+  },
+  {
+   "id": "r50",
+   "anchor": "Spine.set_bounds",
+   "kind": "doc",
+   "line": 524
+  },
+  {
+   "id": "r51",
+   "anchor": "Spine.get_bounds",
+   "kind": "doc",
+   "line": 532
+  },
+  {
+   "id": "r52",
+   "anchor": "Spine.linear_spine",
+   "kind": "doc",
+   "line": 537
+  },
+  {
+   "id": "r53",
+   "anchor": "Spine.linear_spine#if:spine_type=='left'",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r54",
+   "anchor": "Spine.arc_spine",
+   "kind": "doc",
+   "line": 558
+  },
+  {
+   "id": "r55",
+   "anchor": "Spine.circular_spine",
+   "kind": "doc",
+   "line": 569
+  },
+  {
+   "id": "r56",
+   "anchor": "Spine.set_color",
+   "kind": "doc",
+   "line": 579
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 14947,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6590,
+  "thinking_tokens": 3643,
+  "opus_cost_usd": 0.3185115,
+  "total_cost_usd": 0.3294005,
+  "duration_ms": 62319,
+  "duration_api_ms": 63950,
+  "num_turns": 2
+ },
+ "wall_ms": 63232,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

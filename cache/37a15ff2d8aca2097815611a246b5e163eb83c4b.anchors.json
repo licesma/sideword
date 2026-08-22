@@ -1,0 +1,397 @@
+{
+ "blob_sha": "37a15ff2d8aca2097815611a246b5e163eb83c4b",
+ "path": "src/flask/cli.py",
+ "repo": "pallets/flask",
+ "records": 62,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "NoAppException",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r2",
+   "anchor": "find_best_app",
+   "kind": "doc",
+   "line": 32
+  },
+  {
+   "id": "r3",
+   "anchor": "find_best_app#for:attr_name in (\"app\", \"application\")",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r4",
+   "anchor": "find_best_app#assign:matches",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "find_best_app#for:attr_name in (\"create_app\", \"make_app\")",
+   "kind": "lead",
+   "line": 58
+  },
+  {
+   "id": "r6",
+   "anchor": "_called_with_wrong_args",
+   "kind": "doc",
+   "line": 85
+  },
+  {
+   "id": "r7",
+   "anchor": "_called_with_wrong_args#try/while:tb is not None/if:tb.tb_frame.f_code is f.__code__/return",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r8",
+   "anchor": "_called_with_wrong_args#try/return",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r9",
+   "anchor": "_called_with_wrong_args#try/finally/del:tb",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r10",
+   "anchor": "find_app_by_string",
+   "kind": "doc",
+   "line": 111
+  },
+  {
+   "id": "r11",
+   "anchor": "find_app_by_string#try",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r12",
+   "anchor": "find_app_by_string#if:isinstance(expr, ast.Name)/elif:isinstance(expr, ast.Call)/if:not isinstance(expr.func, ast.Name)",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r13",
+   "anchor": "find_app_by_string#if:isinstance(expr, ast.Name)/elif:isinstance(expr, ast.Call)/try",
+   "kind": "lead",
+   "line": 140
+  },
+  {
+   "id": "r14",
+   "anchor": "find_app_by_string#if:isinstance(expr, ast.Name)/elif:isinstance(expr, ast.Call)/try/except:ValueError/raise:NoAppException",
+   "kind": "lead",
+   "line": 146
+  },
+  {
+   "id": "r15",
+   "anchor": "find_app_by_string#if:inspect.isfunction(attr)",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r16",
+   "anchor": "prepare_import",
+   "kind": "doc",
+   "line": 187
+  },
+  {
+   "id": "r17",
+   "anchor": "prepare_import#while:True",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r18",
+   "anchor": "locate_app#try/except:ImportError/if:sys.exc_info()[2].tb_next",
+   "kind": "lead",
+   "line": 222
+  },
+  {
+   "id": "r19",
+   "anchor": "ScriptInfo",
+   "kind": "doc",
+   "line": 266
+  },
+  {
+   "id": "r20",
+   "anchor": "ScriptInfo.app_import_path",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r21",
+   "anchor": "ScriptInfo.create_app",
+   "kind": "lead",
+   "line": 285
+  },
+  {
+   "id": "r22",
+   "anchor": "ScriptInfo.data",
+   "kind": "lead",
+   "line": 288
+  },
+  {
+   "id": "r23",
+   "anchor": "ScriptInfo.load_app",
+   "kind": "doc",
+   "line": 292
+  },
+  {
+   "id": "r24",
+   "anchor": "ScriptInfo.load_app#if:self.set_debug_flag/assign:app.debug",
+   "kind": "lead",
+   "line": 328
+  },
+  {
+   "id": "r25",
+   "anchor": "with_appcontext",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r26",
+   "anchor": "AppGroup",
+   "kind": "doc",
+   "line": 362
+  },
+  {
+   "id": "r27",
+   "anchor": "AppGroup.command",
+   "kind": "doc",
+   "line": 370
+  },
+  {
+   "id": "r28",
+   "anchor": "AppGroup.group",
+   "kind": "doc",
+   "line": 384
+  },
+  {
+   "id": "r29",
+   "anchor": "_app_option",
+   "kind": "lead",
+   "line": 406
+  },
+  {
+   "id": "r30",
+   "anchor": "_set_debug#assign:source",
+   "kind": "lead",
+   "line": 424
+  },
+  {
+   "id": "r31",
+   "anchor": "_set_debug#assign:os.environ[\"FLASK_DEBUG\"]",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r32",
+   "anchor": "_env_file_callback#call:load_dotenv",
+   "kind": "lead",
+   "line": 465
+  },
+  {
+   "id": "r33",
+   "anchor": "_env_file_option",
+   "kind": "lead",
+   "line": 471
+  },
+  {
+   "id": "r34",
+   "anchor": "FlaskGroup",
+   "kind": "doc",
+   "line": 481
+  },
+  {
+   "id": "r35",
+   "anchor": "FlaskGroup.__init__#call:params.extend",
+   "kind": "lead",
+   "line": 524
+  },
+  {
+   "id": "r36",
+   "anchor": "FlaskGroup._load_plugin_commands#if:sys.version_info >= (3, 10)/else/import:importlib_metadata",
+   "kind": "lead",
+   "line": 557
+  },
+  {
+   "id": "r37",
+   "anchor": "FlaskGroup.get_command#assign:rv",
+   "kind": "lead",
+   "line": 568
+  },
+  {
+   "id": "r38",
+   "anchor": "FlaskGroup.get_command#try",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r39",
+   "anchor": "FlaskGroup.get_command#if:not current_app or current_app._get_current_object() is not app",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r40",
+   "anchor": "FlaskGroup.list_commands#assign:rv",
+   "kind": "lead",
+   "line": 594
+  },
+  {
+   "id": "r41",
+   "anchor": "FlaskGroup.list_commands#try",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r42",
+   "anchor": "FlaskGroup.list_commands#try/except:NoAppException/call:click.secho",
+   "kind": "lead",
+   "line": 604
+  },
+  {
+   "id": "r43",
+   "anchor": "FlaskGroup.list_commands#try/except:Exception/call:click.secho",
+   "kind": "lead",
+   "line": 608
+  },
+  {
+   "id": "r44",
+   "anchor": "FlaskGroup.make_context#assign:os.environ[\"FLASK_RUN_FROM_CLI\"]",
+   "kind": "lead",
+   "line": 622
+  },
+  {
+   "id": "r45",
+   "anchor": "FlaskGroup.make_context#if:get_load_dotenv(self.load_dotenv)",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r46",
+   "anchor": "FlaskGroup.parse_args#if:not args and self.no_args_is_help/call:_env_file_option.handle_parse_result",
+   "kind": "lead",
+   "line": 641
+  },
+  {
+   "id": "r47",
+   "anchor": "_path_is_ancestor",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r48",
+   "anchor": "load_dotenv",
+   "kind": "doc",
+   "line": 654
+  },
+  {
+   "id": "r49",
+   "anchor": "load_dotenv#if:path is not None",
+   "kind": "lead",
+   "line": 695
+  },
+  {
+   "id": "r50",
+   "anchor": "load_dotenv#return",
+   "kind": "trail",
+   "line": 712
+  },
+  {
+   "id": "r51",
+   "anchor": "show_server_banner",
+   "kind": "doc",
+   "line": 715
+  },
+  {
+   "id": "r52",
+   "anchor": "CertParamType",
+   "kind": "doc",
+   "line": 729
+  },
+  {
+   "id": "r53",
+   "anchor": "_validate_key",
+   "kind": "doc",
+   "line": 775
+  },
+  {
+   "id": "r54",
+   "anchor": "SeparatedPathType",
+   "kind": "doc",
+   "line": 812
+  },
+  {
+   "id": "r55",
+   "anchor": "run_command",
+   "kind": "doc",
+   "line": 877
+  },
+  {
+   "id": "r56",
+   "anchor": "run_command#try/except:Exception/if:is_running_from_reloader()/call:traceback.print_exc",
+   "kind": "lead",
+   "line": 902
+  },
+  {
+   "id": "r57",
+   "anchor": "run_command#try/except:Exception/if:is_running_from_reloader()/else/raise:e",
+   "kind": "lead",
+   "line": 911
+  },
+  {
+   "id": "r58",
+   "anchor": "shell_command",
+   "kind": "doc",
+   "line": 941
+  },
+  {
+   "id": "r59",
+   "anchor": "shell_command#assign:startup",
+   "kind": "lead",
+   "line": 960
+  },
+  {
+   "id": "r60",
+   "anchor": "shell_command#assign:interactive_hook",
+   "kind": "lead",
+   "line": 970
+  },
+  {
+   "id": "r61",
+   "anchor": "shell_command#if:interactive_hook is not None/try/else/call:readline.set_completer",
+   "kind": "lead",
+   "line": 981
+  },
+  {
+   "id": "r62",
+   "anchor": "routes_command",
+   "kind": "doc",
+   "line": 1001
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 21597,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 5240,
+  "thinking_tokens": 2436,
+  "opus_cost_usd": 0.3512615,
+  "total_cost_usd": 0.3677815,
+  "duration_ms": 45334,
+  "duration_api_ms": 47052,
+  "num_turns": 2
+ },
+ "wall_ms": 46234,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,289 @@
+{
+ "blob_sha": "3d02d7f9c1d6cdcfc0410ea5e8cba13665163d0e",
+ "path": "lib/matplotlib/_afm.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_to_int#return",
+   "kind": "lead",
+   "line": 54
+  },
+  {
+   "id": "r3",
+   "anchor": "_to_float#if:isinstance(x, bytes)",
+   "kind": "lead",
+   "line": 61
+  },
+  {
+   "id": "r4",
+   "anchor": "_to_float#if:isinstance(x, bytes)/assign:x",
+   "kind": "lead",
+   "line": 64
+  },
+  {
+   "id": "r5",
+   "anchor": "_parse_header",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r6",
+   "anchor": "_parse_header#assign:header_converters/key:b'Notice'",
+   "kind": "lead",
+   "line": 120
+  },
+  {
+   "id": "r7",
+   "anchor": "_parse_header#assign:header_converters/key:b'CapHeight'",
+   "kind": "trail",
+   "line": 122
+  },
+  {
+   "id": "r8",
+   "anchor": "_parse_header#assign:header_converters/key:b'Capheight'",
+   "kind": "trail",
+   "line": 123
+  },
+  {
+   "id": "r9",
+   "anchor": "_parse_header#for:line in fh/if:first_line/if:key != b'StartFontMetrics'",
+   "kind": "lead",
+   "line": 147
+  },
+  {
+   "id": "r10",
+   "anchor": "_parse_char_metrics",
+   "kind": "doc",
+   "line": 186
+  },
+  {
+   "id": "r11",
+   "anchor": "_parse_char_metrics#for:line in fh/assign:line",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r12",
+   "anchor": "_parse_char_metrics#for:line in fh/assign:line",
+   "kind": "trail",
+   "line": 213
+  },
+  {
+   "id": "r13",
+   "anchor": "_parse_char_metrics#for:line in fh/assign:vals",
+   "kind": "lead",
+   "line": 217
+  },
+  {
+   "id": "r14",
+   "anchor": "_parse_char_metrics#for:line in fh/if:not required_keys.issubset(vals)",
+   "kind": "lead",
+   "line": 219
+  },
+  {
+   "id": "r15",
+   "anchor": "_parse_char_metrics#for:line in fh/if:name == 'Euro'",
+   "kind": "lead",
+   "line": 230
+  },
+  {
+   "id": "r16",
+   "anchor": "_parse_char_metrics#for:line in fh/if:name == 'Euro'/elif:name == 'minus'/assign:num",
+   "kind": "trail",
+   "line": 233
+  },
+  {
+   "id": "r17",
+   "anchor": "_parse_kern_pairs",
+   "kind": "doc",
+   "line": 240
+  },
+  {
+   "id": "r18",
+   "anchor": "_parse_kern_pairs#for:line in fh/if:line.startswith(b'EndKernPairs')/call:next",
+   "kind": "trail",
+   "line": 262
+  },
+  {
+   "id": "r19",
+   "anchor": "_parse_composites",
+   "kind": "doc",
+   "line": 280
+  },
+  {
+   "id": "r20",
+   "anchor": "_parse_optional",
+   "kind": "doc",
+   "line": 326
+  },
+  {
+   "id": "r21",
+   "anchor": "AFM.__init__",
+   "kind": "doc",
+   "line": 360
+  },
+  {
+   "id": "r22",
+   "anchor": "AFM.string_width_height",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r23",
+   "anchor": "AFM.get_str_bbox_and_descent",
+   "kind": "doc",
+   "line": 396
+  },
+  {
+   "id": "r24",
+   "anchor": "AFM.get_str_bbox",
+   "kind": "doc",
+   "line": 426
+  },
+  {
+   "id": "r25",
+   "anchor": "AFM.get_name_char",
+   "kind": "doc",
+   "line": 430
+  },
+  {
+   "id": "r26",
+   "anchor": "AFM.get_width_char",
+   "kind": "doc",
+   "line": 436
+  },
+  {
+   "id": "r27",
+   "anchor": "AFM.get_width_from_char_name",
+   "kind": "doc",
+   "line": 444
+  },
+  {
+   "id": "r28",
+   "anchor": "AFM.get_height_char",
+   "kind": "doc",
+   "line": 448
+  },
+  {
+   "id": "r29",
+   "anchor": "AFM.get_kern_dist",
+   "kind": "doc",
+   "line": 454
+  },
+  {
+   "id": "r30",
+   "anchor": "AFM.get_kern_dist_from_name",
+   "kind": "doc",
+   "line": 461
+  },
+  {
+   "id": "r31",
+   "anchor": "AFM.get_fontname",
+   "kind": "doc",
+   "line": 468
+  },
+  {
+   "id": "r32",
+   "anchor": "AFM.postscript_name",
+   "kind": "trail",
+   "line": 473
+  },
+  {
+   "id": "r33",
+   "anchor": "AFM.get_fullname",
+   "kind": "doc",
+   "line": 476
+  },
+  {
+   "id": "r34",
+   "anchor": "AFM.get_fullname#if:name is None",
+   "kind": "trail",
+   "line": 479
+  },
+  {
+   "id": "r35",
+   "anchor": "AFM.get_familyname",
+   "kind": "doc",
+   "line": 483
+  },
+  {
+   "id": "r36",
+   "anchor": "AFM.get_familyname#assign:name",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r37",
+   "anchor": "AFM.family_name",
+   "kind": "doc",
+   "line": 496
+  },
+  {
+   "id": "r38",
+   "anchor": "AFM.get_weight",
+   "kind": "doc",
+   "line": 500
+  },
+  {
+   "id": "r39",
+   "anchor": "AFM.get_angle",
+   "kind": "doc",
+   "line": 504
+  },
+  {
+   "id": "r40",
+   "anchor": "AFM.get_capheight",
+   "kind": "doc",
+   "line": 508
+  },
+  {
+   "id": "r41",
+   "anchor": "AFM.get_xheight",
+   "kind": "doc",
+   "line": 512
+  },
+  {
+   "id": "r42",
+   "anchor": "AFM.get_underline_thickness",
+   "kind": "doc",
+   "line": 516
+  },
+  {
+   "id": "r43",
+   "anchor": "AFM.get_horizontal_stem_width",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r44",
+   "anchor": "AFM.get_vertical_stem_width",
+   "kind": "doc",
+   "line": 527
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 13440,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3580,
+  "thinking_tokens": 1705,
+  "opus_cost_usd": 0.2281915,
+  "total_cost_usd": 0.2379395,
+  "duration_ms": 34612,
+  "duration_api_ms": 35734,
+  "num_turns": 2
+ },
+ "wall_ms": 35499,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

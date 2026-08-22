@@ -1,0 +1,301 @@
+{
+ "blob_sha": "bf986ca5237b8557ada61efd90c9afa94efa44a2",
+ "path": "lib/matplotlib/blocking_input.py",
+ "repo": "matplotlib/matplotlib",
+ "records": 46,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "BlockingInput",
+   "kind": "doc",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "BlockingInput.on_event",
+   "kind": "doc",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "BlockingInput.on_event#call:self.add_event",
+   "kind": "lead",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "BlockingInput.on_event#call:self.post_event",
+   "kind": "lead",
+   "line": 50
+  },
+  {
+   "id": "r6",
+   "anchor": "BlockingInput.on_event#if:len(self.events)>=self.n>0",
+   "kind": "lead",
+   "line": 53
+  },
+  {
+   "id": "r7",
+   "anchor": "BlockingInput.post_event",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r8",
+   "anchor": "BlockingInput.cleanup",
+   "kind": "doc",
+   "line": 59
+  },
+  {
+   "id": "r9",
+   "anchor": "BlockingInput.add_event",
+   "kind": "doc",
+   "line": 65
+  },
+  {
+   "id": "r10",
+   "anchor": "BlockingInput.pop_event",
+   "kind": "doc",
+   "line": 69
+  },
+  {
+   "id": "r11",
+   "anchor": "BlockingInput.__call__",
+   "kind": "doc",
+   "line": 80
+  },
+  {
+   "id": "r12",
+   "anchor": "BlockingInput.__call__#if:self.fig.canvas.manager/call:self.fig.show",
+   "kind": "lead",
+   "line": 88
+  },
+  {
+   "id": "r13",
+   "anchor": "BlockingInput.__call__#assign:self.callbacks",
+   "kind": "lead",
+   "line": 90
+  },
+  {
+   "id": "r14",
+   "anchor": "BlockingInput.__call__#try/call:self.fig.canvas.start_event_loop",
+   "kind": "lead",
+   "line": 94
+  },
+  {
+   "id": "r15",
+   "anchor": "BlockingInput.__call__#try/finally",
+   "kind": "trail",
+   "line": 95
+  },
+  {
+   "id": "r16",
+   "anchor": "BlockingInput.__call__#try/finally/call:self.cleanup",
+   "kind": "lead",
+   "line": 97
+  },
+  {
+   "id": "r17",
+   "anchor": "BlockingInput.__call__#return",
+   "kind": "lead",
+   "line": 99
+  },
+  {
+   "id": "r18",
+   "anchor": "BlockingMouseInput",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r19",
+   "anchor": "BlockingMouseInput.post_event",
+   "kind": "doc",
+   "line": 125
+  },
+  {
+   "id": "r20",
+   "anchor": "BlockingMouseInput.mouse_event",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r21",
+   "anchor": "BlockingMouseInput.key_event",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r22",
+   "anchor": "BlockingMouseInput.key_event#if:event.key is None/return",
+   "kind": "lead",
+   "line": 152
+  },
+  {
+   "id": "r23",
+   "anchor": "BlockingMouseInput.mouse_event_add",
+   "kind": "doc",
+   "line": 160
+  },
+  {
+   "id": "r24",
+   "anchor": "BlockingMouseInput.mouse_event_add#if:event.inaxes/else",
+   "kind": "trail",
+   "line": 170
+  },
+  {
+   "id": "r25",
+   "anchor": "BlockingMouseInput.mouse_event_stop",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r26",
+   "anchor": "BlockingMouseInput.mouse_event_stop#call:BlockingInput.pop",
+   "kind": "lead",
+   "line": 182
+  },
+  {
+   "id": "r27",
+   "anchor": "BlockingMouseInput.mouse_event_stop#call:self.fig.canvas.stop_event_loop",
+   "kind": "lead",
+   "line": 186
+  },
+  {
+   "id": "r28",
+   "anchor": "BlockingMouseInput.mouse_event_pop",
+   "kind": "doc",
+   "line": 188
+  },
+  {
+   "id": "r29",
+   "anchor": "BlockingMouseInput.mouse_event_pop#call:BlockingInput.pop",
+   "kind": "lead",
+   "line": 197
+  },
+  {
+   "id": "r30",
+   "anchor": "BlockingMouseInput.mouse_event_pop#if:self.events",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r31",
+   "anchor": "BlockingMouseInput.add_click",
+   "kind": "doc",
+   "line": 202
+  },
+  {
+   "id": "r32",
+   "anchor": "BlockingMouseInput.add_click#if:self.show_clicks",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r33",
+   "anchor": "BlockingMouseInput.pop_click",
+   "kind": "doc",
+   "line": 221
+  },
+  {
+   "id": "r34",
+   "anchor": "BlockingMouseInput.pop",
+   "kind": "doc",
+   "line": 234
+  },
+  {
+   "id": "r35",
+   "anchor": "BlockingMouseInput.cleanup",
+   "kind": "doc",
+   "line": 243
+  },
+  {
+   "id": "r36",
+   "anchor": "BlockingMouseInput.cleanup#if:self.show_clicks",
+   "kind": "lead",
+   "line": 251
+  },
+  {
+   "id": "r37",
+   "anchor": "BlockingMouseInput.cleanup#call:super().cleanup",
+   "kind": "lead",
+   "line": 257
+  },
+  {
+   "id": "r38",
+   "anchor": "BlockingMouseInput.__call__",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r39",
+   "anchor": "BlockingContourLabeler",
+   "kind": "doc",
+   "line": 270
+  },
+  {
+   "id": "r40",
+   "anchor": "BlockingContourLabeler.button1",
+   "kind": "doc",
+   "line": 287
+  },
+  {
+   "id": "r41",
+   "anchor": "BlockingContourLabeler.button1#if:event.inaxes==self.cs.ax",
+   "kind": "lead",
+   "line": 296
+  },
+  {
+   "id": "r42",
+   "anchor": "BlockingContourLabeler.button1#if:event.inaxes==self.cs.ax/else",
+   "kind": "trail",
+   "line": 301
+  },
+  {
+   "id": "r43",
+   "anchor": "BlockingContourLabeler.button3",
+   "kind": "doc",
+   "line": 304
+  },
+  {
+   "id": "r44",
+   "anchor": "BlockingKeyMouseInput",
+   "kind": "doc",
+   "line": 328
+  },
+  {
+   "id": "r45",
+   "anchor": "BlockingKeyMouseInput.post_event",
+   "kind": "doc",
+   "line": 337
+  },
+  {
+   "id": "r46",
+   "anchor": "BlockingKeyMouseInput.__call__",
+   "kind": "doc",
+   "line": 344
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 10179,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3271,
+  "thinking_tokens": 1175,
+  "opus_cost_usd": 0.18785649999999998,
+  "total_cost_usd": 0.19451349999999998,
+  "duration_ms": 28996,
+  "duration_api_ms": 30108,
+  "num_turns": 2
+ },
+ "wall_ms": 29777,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

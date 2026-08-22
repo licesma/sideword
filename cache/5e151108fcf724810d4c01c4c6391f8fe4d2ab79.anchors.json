@@ -1,0 +1,289 @@
+{
+ "blob_sha": "5e151108fcf724810d4c01c4c6391f8fe4d2ab79",
+ "path": "django/core/serializers/xml_serializer.py",
+ "repo": "django/django",
+ "records": 44,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "Serializer",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "Serializer.start_serialization",
+   "kind": "doc",
+   "line": 31
+  },
+  {
+   "id": "r4",
+   "anchor": "Serializer.end_serialization",
+   "kind": "doc",
+   "line": 39
+  },
+  {
+   "id": "r5",
+   "anchor": "Serializer.start_object",
+   "kind": "doc",
+   "line": 47
+  },
+  {
+   "id": "r6",
+   "anchor": "Serializer.end_object",
+   "kind": "doc",
+   "line": 63
+  },
+  {
+   "id": "r7",
+   "anchor": "Serializer.handle_field",
+   "kind": "doc",
+   "line": 70
+  },
+  {
+   "id": "r8",
+   "anchor": "Serializer.handle_field#if:getattr(obj, field.name) is not None",
+   "kind": "lead",
+   "line": 82
+  },
+  {
+   "id": "r9",
+   "anchor": "Serializer.handle_fk_field",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r10",
+   "anchor": "Serializer.handle_fk_field#if:related_att is not None/if:self.use_natural_foreign_keys and hasattr(field.remote_field.model, 'natural_key')/assign:related",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r11",
+   "anchor": "Serializer.handle_fk_field#if:related_att is not None/if:self.use_natural_foreign_keys and hasattr(field.remote_field.model, 'natural_key')/for:key_value in related",
+   "kind": "lead",
+   "line": 106
+  },
+  {
+   "id": "r12",
+   "anchor": "Serializer.handle_m2m_field",
+   "kind": "doc",
+   "line": 116
+  },
+  {
+   "id": "r13",
+   "anchor": "Serializer.handle_m2m_field.handle_m2m",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r14",
+   "anchor": "Serializer.handle_m2m_field.handle_m2m#call:self.xml.startElement",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r15",
+   "anchor": "Serializer._start_relational_field",
+   "kind": "doc",
+   "line": 145
+  },
+  {
+   "id": "r16",
+   "anchor": "Deserializer",
+   "kind": "doc",
+   "line": 157
+  },
+  {
+   "id": "r17",
+   "anchor": "Deserializer._make_parser",
+   "kind": "doc",
+   "line": 168
+  },
+  {
+   "id": "r18",
+   "anchor": "Deserializer._handle_object",
+   "kind": "doc",
+   "line": 179
+  },
+  {
+   "id": "r19",
+   "anchor": "Deserializer._handle_object#assign:Model",
+   "kind": "lead",
+   "line": 185
+  },
+  {
+   "id": "r20",
+   "anchor": "Deserializer._handle_object#assign:data",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r21",
+   "anchor": "Deserializer._handle_object#assign:m2m_data",
+   "kind": "lead",
+   "line": 195
+  },
+  {
+   "id": "r22",
+   "anchor": "Deserializer._handle_object#for:field_node in node.getElementsByTagName(\"field\")",
+   "kind": "lead",
+   "line": 199
+  },
+  {
+   "id": "r23",
+   "anchor": "Deserializer._handle_object#for:field_node in node.getElementsByTagName(\"field\")/assign:field_name",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r24",
+   "anchor": "Deserializer._handle_object#for:field_node in node.getElementsByTagName(\"field\")/if:self.ignore and field_name not in field_names",
+   "kind": "lead",
+   "line": 209
+  },
+  {
+   "id": "r25",
+   "anchor": "Deserializer._handle_object#for:field_node in node.getElementsByTagName(\"field\")/if:field.remote_field and isinstance(field.remote_field, models.ManyToManyRel)",
+   "kind": "lead",
+   "line": 214
+  },
+  {
+   "id": "r26",
+   "anchor": "Deserializer._handle_object#return",
+   "kind": "lead",
+   "line": 228
+  },
+  {
+   "id": "r27",
+   "anchor": "Deserializer._handle_fk_field_node",
+   "kind": "doc",
+   "line": 230
+  },
+  {
+   "id": "r28",
+   "anchor": "Deserializer._handle_fk_field_node#if:node.getElementsByTagName('None')",
+   "kind": "lead",
+   "line": 235
+  },
+  {
+   "id": "r29",
+   "anchor": "Deserializer._handle_fk_field_node#if:node.getElementsByTagName('None')/else/if:hasattr(model._default_manager, 'get_by_natural_key')/if:keys/assign:field_value",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r30",
+   "anchor": "Deserializer._handle_fk_field_node#if:node.getElementsByTagName('None')/else/if:hasattr(model._default_manager, 'get_by_natural_key')/if:keys/if:field.remote_field.model._meta.pk.remote_field",
+   "kind": "lead",
+   "line": 248
+  },
+  {
+   "id": "r31",
+   "anchor": "Deserializer._handle_fk_field_node#if:node.getElementsByTagName('None')/else/if:hasattr(model._default_manager, 'get_by_natural_key')/if:keys/else/assign:field_value",
+   "kind": "lead",
+   "line": 252
+  },
+  {
+   "id": "r32",
+   "anchor": "Deserializer._handle_m2m_field_node",
+   "kind": "doc",
+   "line": 259
+  },
+  {
+   "id": "r33",
+   "anchor": "Deserializer._handle_m2m_field_node.m2m_convert#if:keys/assign:field_value",
+   "kind": "lead",
+   "line": 270
+  },
+  {
+   "id": "r34",
+   "anchor": "Deserializer._handle_m2m_field_node.m2m_convert#if:keys/else/assign:obj_pk",
+   "kind": "lead",
+   "line": 274
+  },
+  {
+   "id": "r35",
+   "anchor": "Deserializer._get_model_from_node",
+   "kind": "doc",
+   "line": 281
+  },
+  {
+   "id": "r36",
+   "anchor": "getInnerText",
+   "kind": "doc",
+   "line": 299
+  },
+  {
+   "id": "r37",
+   "anchor": "getInnerText#assign:inner_text",
+   "kind": "lead",
+   "line": 304
+  },
+  {
+   "id": "r38",
+   "anchor": "DefusedExpatParser",
+   "kind": "lead",
+   "line": 318
+  },
+  {
+   "id": "r39",
+   "anchor": "DefusedExpatParser",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r40",
+   "anchor": "DefusedExpatParser.unparsed_entity_decl#raise:EntitiesForbidden",
+   "kind": "lead",
+   "line": 338
+  },
+  {
+   "id": "r41",
+   "anchor": "DefusedXmlException",
+   "kind": "doc",
+   "line": 352
+  },
+  {
+   "id": "r42",
+   "anchor": "DTDForbidden",
+   "kind": "doc",
+   "line": 358
+  },
+  {
+   "id": "r43",
+   "anchor": "EntitiesForbidden",
+   "kind": "doc",
+   "line": 371
+  },
+  {
+   "id": "r44",
+   "anchor": "ExternalReferenceForbidden",
+   "kind": "doc",
+   "line": 387
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 11773,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3957,
+  "thinking_tokens": 1675,
+  "opus_cost_usd": 0.2209465,
+  "total_cost_usd": 0.2292205,
+  "duration_ms": 36398,
+  "duration_api_ms": 37255,
+  "num_turns": 2
+ },
+ "wall_ms": 37342,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

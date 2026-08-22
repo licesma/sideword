@@ -1,0 +1,259 @@
+{
+ "blob_sha": "62370f51be43bace57ae7ac003d4010e1f4a01c5",
+ "path": "astropy/stats/sigma_clipping.py",
+ "repo": "astropy/astropy",
+ "records": 39,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:warnings",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "_move_tuple_axes_first",
+   "kind": "doc",
+   "line": 22
+  },
+  {
+   "id": "r3",
+   "anchor": "_move_tuple_axes_first#assign:naxis",
+   "kind": "lead",
+   "line": 29
+  },
+  {
+   "id": "r4",
+   "anchor": "_move_tuple_axes_first#assign:axis",
+   "kind": "lead",
+   "line": 32
+  },
+  {
+   "id": "r5",
+   "anchor": "_move_tuple_axes_first#assign:destination",
+   "kind": "lead",
+   "line": 35
+  },
+  {
+   "id": "r6",
+   "anchor": "_move_tuple_axes_first#assign:array_new",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r7",
+   "anchor": "_move_tuple_axes_first#assign:array_new",
+   "kind": "lead",
+   "line": 43
+  },
+  {
+   "id": "r8",
+   "anchor": "_nanmean",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r9",
+   "anchor": "_nanmedian",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r10",
+   "anchor": "_nanstd",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r11",
+   "anchor": "_nanmadstd",
+   "kind": "doc",
+   "line": 88
+  },
+  {
+   "id": "r12",
+   "anchor": "SigmaClip",
+   "kind": "doc",
+   "line": 93
+  },
+  {
+   "id": "r13",
+   "anchor": "SigmaClip.__init__#if:self.grow",
+   "kind": "lead",
+   "line": 243
+  },
+  {
+   "id": "r14",
+   "anchor": "SigmaClip._compute_bounds#with:warnings.catch_warnings()",
+   "kind": "lead",
+   "line": 300
+  },
+  {
+   "id": "r15",
+   "anchor": "SigmaClip._sigmaclip_fast",
+   "kind": "doc",
+   "line": 307
+  },
+  {
+   "id": "r16",
+   "anchor": "SigmaClip._sigmaclip_fast#if:not isiterable(axis)/else/assign:axis",
+   "kind": "lead",
+   "line": 334
+  },
+  {
+   "id": "r17",
+   "anchor": "SigmaClip._sigmaclip_fast#if:transposed_shape is not None/assign:mask",
+   "kind": "lead",
+   "line": 370
+  },
+  {
+   "id": "r18",
+   "anchor": "SigmaClip._sigmaclip_noaxis",
+   "kind": "doc",
+   "line": 393
+  },
+  {
+   "id": "r19",
+   "anchor": "SigmaClip._sigmaclip_noaxis#if:isinstance(filtered_data, np.ma.MaskedArray)",
+   "kind": "lead",
+   "line": 404
+  },
+  {
+   "id": "r20",
+   "anchor": "SigmaClip._sigmaclip_noaxis#assign:good_mask",
+   "kind": "lead",
+   "line": 408
+  },
+  {
+   "id": "r21",
+   "anchor": "SigmaClip._sigmaclip_noaxis#if:masked/assign:filtered_data",
+   "kind": "lead",
+   "line": 430
+  },
+  {
+   "id": "r22",
+   "anchor": "SigmaClip._sigmaclip_noaxis#if:masked/with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 434
+  },
+  {
+   "id": "r23",
+   "anchor": "SigmaClip._sigmaclip_withaxis",
+   "kind": "doc",
+   "line": 443
+  },
+  {
+   "id": "r24",
+   "anchor": "SigmaClip._sigmaclip_withaxis#assign:filtered_data",
+   "kind": "lead",
+   "line": 452
+  },
+  {
+   "id": "r25",
+   "anchor": "SigmaClip._sigmaclip_withaxis#assign:filtered_data",
+   "kind": "trail",
+   "line": 452
+  },
+  {
+   "id": "r26",
+   "anchor": "SigmaClip._sigmaclip_withaxis#assign:bad_mask",
+   "kind": "lead",
+   "line": 455
+  },
+  {
+   "id": "r27",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:isinstance(filtered_data, np.ma.MaskedArray)",
+   "kind": "lead",
+   "line": 463
+  },
+  {
+   "id": "r28",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:axis is not None/if:not isiterable(axis)",
+   "kind": "lead",
+   "line": 469
+  },
+  {
+   "id": "r29",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:axis is not None/assign:mshape",
+   "kind": "lead",
+   "line": 475
+  },
+  {
+   "id": "r30",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:self.grow/assign:cenidx",
+   "kind": "lead",
+   "line": 482
+  },
+  {
+   "id": "r31",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:self.grow/if:axis is not None/for:n, dim in enumerate(indices)/if:n not in axis",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r32",
+   "anchor": "SigmaClip._sigmaclip_withaxis#while:nchanged != 0 and (iteration < self.maxiters)/with:np.errstate(invalid='ignore')/assign:new_mask",
+   "kind": "lead",
+   "line": 510
+  },
+  {
+   "id": "r33",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:masked/if:copy",
+   "kind": "lead",
+   "line": 522
+  },
+  {
+   "id": "r34",
+   "anchor": "SigmaClip._sigmaclip_withaxis#if:masked/if:copy/else/with:np.errstate(invalid='ignore')",
+   "kind": "lead",
+   "line": 528
+  },
+  {
+   "id": "r35",
+   "anchor": "SigmaClip.__call__",
+   "kind": "doc",
+   "line": 540
+  },
+  {
+   "id": "r36",
+   "anchor": "SigmaClip.__call__#if:self.cenfunc in ('mean', 'median') and self.stdfunc in ('std', 'mad_std') and axis is not None and not self.grow",
+   "kind": "lead",
+   "line": 626
+  },
+  {
+   "id": "r37",
+   "anchor": "SigmaClip.__call__#if:axis is None and not self.grow",
+   "kind": "lead",
+   "line": 637
+  },
+  {
+   "id": "r38",
+   "anchor": "sigma_clip",
+   "kind": "doc",
+   "line": 647
+  },
+  {
+   "id": "r39",
+   "anchor": "sigma_clipped_stats",
+   "kind": "doc",
+   "line": 839
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 22084,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 4376,
+  "thinking_tokens": 2298,
+  "opus_cost_usd": 0.3345315,
+  "total_cost_usd": 0.3507945,
+  "duration_ms": 39471,
+  "duration_api_ms": 40663,
+  "num_turns": 2
+ },
+ "wall_ms": 40393,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

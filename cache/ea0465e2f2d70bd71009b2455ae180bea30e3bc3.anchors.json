@@ -1,0 +1,769 @@
+{
+ "blob_sha": "ea0465e2f2d70bd71009b2455ae180bea30e3bc3",
+ "path": "xarray/core/dataarray.py",
+ "repo": "pydata/xarray",
+ "records": 124,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "_infer_coords_and_dims",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r2",
+   "anchor": "_infer_coords_and_dims#if:dims is None/if:coords is not None and len(coords) == len(shape)/if:utils.is_dict_like(coords)",
+   "kind": "lead",
+   "line": 107
+  },
+  {
+   "id": "r3",
+   "anchor": "_infer_coords_and_dims#if:dims is None/if:coords is not None and len(coords) == len(shape)/if:utils.is_dict_like(coords)/raise:ValueError",
+   "kind": "lead",
+   "line": 109
+  },
+  {
+   "id": "r4",
+   "anchor": "_LocIndexer.__getitem__#if:not utils.is_dict_like(key)/assign:labels",
+   "kind": "lead",
+   "line": 196
+  },
+  {
+   "id": "r5",
+   "anchor": "_LocIndexer.__setitem__#if:not utils.is_dict_like(key)/assign:labels",
+   "kind": "lead",
+   "line": 203
+  },
+  {
+   "id": "r6",
+   "anchor": "_THIS_ARRAY",
+   "kind": "lead",
+   "line": 212
+  },
+  {
+   "id": "r7",
+   "anchor": "DataArray",
+   "kind": "doc",
+   "line": 215
+  },
+  {
+   "id": "r8",
+   "anchor": "DataArray.__init__#param:indexes",
+   "kind": "lead",
+   "line": 273
+  },
+  {
+   "id": "r9",
+   "anchor": "DataArray.__init__",
+   "kind": "doc",
+   "line": 265
+  },
+  {
+   "id": "r10",
+   "anchor": "DataArray.__init__#if:fastpath/else/if:coords is None",
+   "kind": "lead",
+   "line": 321
+  },
+  {
+   "id": "r11",
+   "anchor": "DataArray.__init__#if:fastpath/else/assign:indexes",
+   "kind": "trail",
+   "line": 345
+  },
+  {
+   "id": "r12",
+   "anchor": "DataArray.__init__#assign:self._variable",
+   "kind": "lead",
+   "line": 350
+  },
+  {
+   "id": "r13",
+   "anchor": "DataArray.__init__#assign:self._indexes",
+   "kind": "todo",
+   "line": 357
+  },
+  {
+   "id": "r14",
+   "anchor": "DataArray._replace_maybe_drop_dims#if:variable.dims == self.dims and variable.shape == self.shape/elif:variable.dims == self.dims/assign:new_sizes",
+   "kind": "lead",
+   "line": 384
+  },
+  {
+   "id": "r15",
+   "anchor": "DataArray._overwrite_indexes#assign:dim_names",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r16",
+   "anchor": "DataArray._to_dataset_split",
+   "kind": "doc",
+   "line": 432
+  },
+  {
+   "id": "r17",
+   "anchor": "DataArray._to_dataset_whole#assign:variables",
+   "kind": "lead",
+   "line": 466
+  },
+  {
+   "id": "r18",
+   "anchor": "DataArray.to_dataset",
+   "kind": "doc",
+   "line": 477
+  },
+  {
+   "id": "r19",
+   "anchor": "DataArray.name",
+   "kind": "doc",
+   "line": 520
+  },
+  {
+   "id": "r20",
+   "anchor": "DataArray.variable",
+   "kind": "doc",
+   "line": 530
+  },
+  {
+   "id": "r21",
+   "anchor": "DataArray.data",
+   "kind": "doc",
+   "line": 558
+  },
+  {
+   "id": "r22",
+   "anchor": "DataArray.values",
+   "kind": "doc",
+   "line": 568
+  },
+  {
+   "id": "r23",
+   "anchor": "DataArray.to_index",
+   "kind": "doc",
+   "line": 580
+  },
+  {
+   "id": "r24",
+   "anchor": "DataArray.dims",
+   "kind": "doc",
+   "line": 587
+  },
+  {
+   "id": "r25",
+   "anchor": "DataArray._level_coords",
+   "kind": "doc",
+   "line": 611
+  },
+  {
+   "id": "r26",
+   "anchor": "DataArray.__getitem__#if:isinstance(key, str)/else/return",
+   "kind": "lead",
+   "line": 643
+  },
+  {
+   "id": "r27",
+   "anchor": "DataArray.__setitem__#if:isinstance(key, str)/else/assign:obj",
+   "kind": "lead",
+   "line": 652
+  },
+  {
+   "id": "r28",
+   "anchor": "DataArray.__setitem__#if:isinstance(key, str)/else/assign:key",
+   "kind": "lead",
+   "line": 656
+  },
+  {
+   "id": "r29",
+   "anchor": "DataArray._attr_sources",
+   "kind": "doc",
+   "line": 666
+  },
+  {
+   "id": "r30",
+   "anchor": "DataArray._item_sources",
+   "kind": "doc",
+   "line": 672
+  },
+  {
+   "id": "r31",
+   "anchor": "DataArray.loc",
+   "kind": "doc",
+   "line": 685
+  },
+  {
+   "id": "r32",
+   "anchor": "DataArray.attrs",
+   "kind": "doc",
+   "line": 691
+  },
+  {
+   "id": "r33",
+   "anchor": "DataArray.attrs#assign:self.variable.attrs",
+   "kind": "lead",
+   "line": 698
+  },
+  {
+   "id": "r34",
+   "anchor": "DataArray.encoding",
+   "kind": "doc",
+   "line": 701
+  },
+  {
+   "id": "r35",
+   "anchor": "DataArray.indexes",
+   "kind": "doc",
+   "line": 711
+  },
+  {
+   "id": "r36",
+   "anchor": "DataArray.coords",
+   "kind": "doc",
+   "line": 719
+  },
+  {
+   "id": "r37",
+   "anchor": "DataArray.reset_coords",
+   "kind": "doc",
+   "line": 724
+  },
+  {
+   "id": "r38",
+   "anchor": "DataArray.load",
+   "kind": "doc",
+   "line": 796
+  },
+  {
+   "id": "r39",
+   "anchor": "DataArray.compute",
+   "kind": "doc",
+   "line": 820
+  },
+  {
+   "id": "r40",
+   "anchor": "DataArray.persist",
+   "kind": "doc",
+   "line": 842
+  },
+  {
+   "id": "r41",
+   "anchor": "DataArray.copy",
+   "kind": "doc",
+   "line": 861
+  },
+  {
+   "id": "r42",
+   "anchor": "DataArray.__deepcopy__#return",
+   "kind": "lead",
+   "line": 944
+  },
+  {
+   "id": "r43",
+   "anchor": "DataArray.__hash__",
+   "kind": "lead",
+   "line": 948
+  },
+  {
+   "id": "r44",
+   "anchor": "DataArray.chunks",
+   "kind": "doc",
+   "line": 951
+  },
+  {
+   "id": "r45",
+   "anchor": "DataArray.chunk",
+   "kind": "doc",
+   "line": 957
+  },
+  {
+   "id": "r46",
+   "anchor": "DataArray.isel",
+   "kind": "doc",
+   "line": 1005
+  },
+  {
+   "id": "r47",
+   "anchor": "DataArray.isel#assign:variable",
+   "kind": "lead",
+   "line": 1053
+  },
+  {
+   "id": "r48",
+   "anchor": "DataArray.sel",
+   "kind": "doc",
+   "line": 1068
+  },
+  {
+   "id": "r49",
+   "anchor": "DataArray.head",
+   "kind": "doc",
+   "line": 1158
+  },
+  {
+   "id": "r50",
+   "anchor": "DataArray.tail",
+   "kind": "doc",
+   "line": 1175
+  },
+  {
+   "id": "r51",
+   "anchor": "DataArray.thin",
+   "kind": "doc",
+   "line": 1192
+  },
+  {
+   "id": "r52",
+   "anchor": "DataArray.broadcast_like",
+   "kind": "doc",
+   "line": 1209
+  },
+  {
+   "id": "r53",
+   "anchor": "DataArray.reindex_like",
+   "kind": "doc",
+   "line": 1274
+  },
+  {
+   "id": "r54",
+   "anchor": "DataArray.reindex",
+   "kind": "doc",
+   "line": 1334
+  },
+  {
+   "id": "r55",
+   "anchor": "DataArray.interp",
+   "kind": "doc",
+   "line": 1398
+  },
+  {
+   "id": "r56",
+   "anchor": "DataArray.interp_like",
+   "kind": "doc",
+   "line": 1469
+  },
+  {
+   "id": "r57",
+   "anchor": "DataArray.rename",
+   "kind": "doc",
+   "line": 1525
+  },
+  {
+   "id": "r58",
+   "anchor": "DataArray.swap_dims",
+   "kind": "doc",
+   "line": 1564
+  },
+  {
+   "id": "r59",
+   "anchor": "DataArray.expand_dims",
+   "kind": "doc",
+   "line": 1615
+  },
+  {
+   "id": "r60",
+   "anchor": "DataArray.set_index",
+   "kind": "doc",
+   "line": 1668
+  },
+  {
+   "id": "r61",
+   "anchor": "DataArray.reset_index",
+   "kind": "doc",
+   "line": 1728
+  },
+  {
+   "id": "r62",
+   "anchor": "DataArray.reorder_levels",
+   "kind": "doc",
+   "line": 1761
+  },
+  {
+   "id": "r63",
+   "anchor": "DataArray.stack",
+   "kind": "doc",
+   "line": 1798
+  },
+  {
+   "id": "r64",
+   "anchor": "DataArray.unstack",
+   "kind": "doc",
+   "line": 1853
+  },
+  {
+   "id": "r65",
+   "anchor": "DataArray.to_unstacked_dataset",
+   "kind": "doc",
+   "line": 1910
+  },
+  {
+   "id": "r66",
+   "anchor": "DataArray.to_unstacked_dataset#assign:data_dict",
+   "kind": "lead",
+   "line": 1971
+  },
+  {
+   "id": "r67",
+   "anchor": "DataArray.to_unstacked_dataset#return",
+   "kind": "lead",
+   "line": 1976
+  },
+  {
+   "id": "r68",
+   "anchor": "DataArray.transpose",
+   "kind": "doc",
+   "line": 1978
+  },
+  {
+   "id": "r69",
+   "anchor": "DataArray.drop_vars",
+   "kind": "doc",
+   "line": 2021
+  },
+  {
+   "id": "r70",
+   "anchor": "DataArray.drop",
+   "kind": "doc",
+   "line": 2043
+  },
+  {
+   "id": "r71",
+   "anchor": "DataArray.drop_sel",
+   "kind": "doc",
+   "line": 2063
+  },
+  {
+   "id": "r72",
+   "anchor": "DataArray.dropna",
+   "kind": "doc",
+   "line": 2094
+  },
+  {
+   "id": "r73",
+   "anchor": "DataArray.fillna",
+   "kind": "doc",
+   "line": 2118
+  },
+  {
+   "id": "r74",
+   "anchor": "DataArray.interpolate_na",
+   "kind": "doc",
+   "line": 2145
+  },
+  {
+   "id": "r75",
+   "anchor": "DataArray.ffill",
+   "kind": "doc",
+   "line": 2239
+  },
+  {
+   "id": "r76",
+   "anchor": "DataArray.bfill",
+   "kind": "doc",
+   "line": 2263
+  },
+  {
+   "id": "r77",
+   "anchor": "DataArray.combine_first",
+   "kind": "doc",
+   "line": 2287
+  },
+  {
+   "id": "r78",
+   "anchor": "DataArray.reduce",
+   "kind": "doc",
+   "line": 2305
+  },
+  {
+   "id": "r79",
+   "anchor": "DataArray.to_pandas",
+   "kind": "doc",
+   "line": 2350
+  },
+  {
+   "id": "r80",
+   "anchor": "DataArray.to_pandas#assign:constructors",
+   "kind": "todo",
+   "line": 2366
+  },
+  {
+   "id": "r81",
+   "anchor": "DataArray.to_dataframe",
+   "kind": "doc",
+   "line": 2377
+  },
+  {
+   "id": "r82",
+   "anchor": "DataArray.to_dataframe#assign:unique_name",
+   "kind": "lead",
+   "line": 2421
+  },
+  {
+   "id": "r83",
+   "anchor": "DataArray.to_series",
+   "kind": "doc",
+   "line": 2433
+  },
+  {
+   "id": "r84",
+   "anchor": "DataArray.to_masked_array",
+   "kind": "doc",
+   "line": 2442
+  },
+  {
+   "id": "r85",
+   "anchor": "DataArray.to_masked_array#assign:values",
+   "kind": "trail",
+   "line": 2456
+  },
+  {
+   "id": "r86",
+   "anchor": "DataArray.to_netcdf",
+   "kind": "doc",
+   "line": 2460
+  },
+  {
+   "id": "r87",
+   "anchor": "DataArray.to_netcdf#if:self.name is None/assign:dataset",
+   "kind": "lead",
+   "line": 2477
+  },
+  {
+   "id": "r88",
+   "anchor": "DataArray.to_netcdf#if:self.name is None/elif:self.name in self.coords or self.name in self.dims/assign:dataset",
+   "kind": "lead",
+   "line": 2481
+  },
+  {
+   "id": "r89",
+   "anchor": "DataArray.to_netcdf#if:self.name is None/else/assign:dataset",
+   "kind": "lead",
+   "line": 2485
+  },
+  {
+   "id": "r90",
+   "anchor": "DataArray.to_dict",
+   "kind": "doc",
+   "line": 2489
+  },
+  {
+   "id": "r91",
+   "anchor": "DataArray.from_dict",
+   "kind": "doc",
+   "line": 2515
+  },
+  {
+   "id": "r92",
+   "anchor": "DataArray.from_series",
+   "kind": "doc",
+   "line": 2571
+  },
+  {
+   "id": "r93",
+   "anchor": "DataArray.to_cdms2",
+   "kind": "doc",
+   "line": 2593
+  },
+  {
+   "id": "r94",
+   "anchor": "DataArray.from_cdms2",
+   "kind": "doc",
+   "line": 2601
+  },
+  {
+   "id": "r95",
+   "anchor": "DataArray.to_iris",
+   "kind": "doc",
+   "line": 2608
+  },
+  {
+   "id": "r96",
+   "anchor": "DataArray.from_iris",
+   "kind": "doc",
+   "line": 2616
+  },
+  {
+   "id": "r97",
+   "anchor": "DataArray._all_compat",
+   "kind": "doc",
+   "line": 2623
+  },
+  {
+   "id": "r98",
+   "anchor": "DataArray.broadcast_equals",
+   "kind": "doc",
+   "line": 2634
+  },
+  {
+   "id": "r99",
+   "anchor": "DataArray.equals",
+   "kind": "doc",
+   "line": 2649
+  },
+  {
+   "id": "r100",
+   "anchor": "DataArray.identical",
+   "kind": "doc",
+   "line": 2669
+  },
+  {
+   "id": "r101",
+   "anchor": "DataArray._result_name#assign:other_name",
+   "kind": "lead",
+   "line": 2686
+  },
+  {
+   "id": "r102",
+   "anchor": "DataArray.__rmatmul__#return",
+   "kind": "lead",
+   "line": 2702
+  },
+  {
+   "id": "r103",
+   "anchor": "DataArray._binary_op#param:join",
+   "kind": "trail",
+   "line": 2717
+  },
+  {
+   "id": "r104",
+   "anchor": "DataArray._inplace_binary_op.func#assign:other_coords",
+   "kind": "lead",
+   "line": 2755
+  },
+  {
+   "id": "r105",
+   "anchor": "DataArray._title_for_slice",
+   "kind": "doc",
+   "line": 2775
+  },
+  {
+   "id": "r106",
+   "anchor": "DataArray.diff",
+   "kind": "doc",
+   "line": 2804
+  },
+  {
+   "id": "r107",
+   "anchor": "DataArray.shift",
+   "kind": "doc",
+   "line": 2851
+  },
+  {
+   "id": "r108",
+   "anchor": "DataArray.roll",
+   "kind": "doc",
+   "line": 2900
+  },
+  {
+   "id": "r109",
+   "anchor": "DataArray.dot",
+   "kind": "doc",
+   "line": 2959
+  },
+  {
+   "id": "r110",
+   "anchor": "DataArray.sortby",
+   "kind": "doc",
+   "line": 3012
+  },
+  {
+   "id": "r111",
+   "anchor": "DataArray.quantile",
+   "kind": "doc",
+   "line": 3070
+  },
+  {
+   "id": "r112",
+   "anchor": "DataArray.rank",
+   "kind": "doc",
+   "line": 3163
+  },
+  {
+   "id": "r113",
+   "anchor": "DataArray.differentiate",
+   "kind": "doc",
+   "line": 3205
+  },
+  {
+   "id": "r114",
+   "anchor": "DataArray.integrate",
+   "kind": "doc",
+   "line": 3264
+  },
+  {
+   "id": "r115",
+   "anchor": "DataArray.unify_chunks",
+   "kind": "doc",
+   "line": 3315
+  },
+  {
+   "id": "r116",
+   "anchor": "DataArray.map_blocks",
+   "kind": "doc",
+   "line": 3331
+  },
+  {
+   "id": "r117",
+   "anchor": "DataArray.polyfit",
+   "kind": "doc",
+   "line": 3435
+  },
+  {
+   "id": "r118",
+   "anchor": "DataArray.pad",
+   "kind": "doc",
+   "line": 3497
+  },
+  {
+   "id": "r119",
+   "anchor": "DataArray.idxmin",
+   "kind": "doc",
+   "line": 3667
+  },
+  {
+   "id": "r120",
+   "anchor": "DataArray.idxmax",
+   "kind": "doc",
+   "line": 3764
+  },
+  {
+   "id": "r121",
+   "anchor": "DataArray.argmin",
+   "kind": "doc",
+   "line": 3861
+  },
+  {
+   "id": "r122",
+   "anchor": "DataArray.argmax",
+   "kind": "doc",
+   "line": 3963
+  },
+  {
+   "id": "r123",
+   "anchor": "DataArray.str",
+   "kind": "lead",
+   "line": 4068
+  },
+  {
+   "id": "r124",
+   "anchor": "<module>#call:ops.inject_all_ops_and_reduce_methods",
+   "kind": "lead",
+   "line": 4072
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 78607,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 9201,
+  "thinking_tokens": 4228,
+  "opus_cost_usd": 1.0203864999999999,
+  "total_cost_usd": 1.0829294999999999,
+  "duration_ms": 82890,
+  "duration_api_ms": 84533,
+  "num_turns": 2
+ },
+ "wall_ms": 84458,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,145 @@
+{
+ "blob_sha": "83b8e136ad37dd8dc28f754d13db83c9dfbcf4f0",
+ "path": "seaborn/_core/subplots.py",
+ "repo": "mwaskom/seaborn",
+ "records": 20,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#if:TYPE_CHECKING",
+   "kind": "todo",
+   "line": 11
+  },
+  {
+   "id": "r2",
+   "anchor": "Subplots",
+   "kind": "doc",
+   "line": 16
+  },
+  {
+   "id": "r3",
+   "anchor": "Subplots.__init__#param:subplot_spec",
+   "kind": "todo",
+   "line": 34
+  },
+  {
+   "id": "r4",
+   "anchor": "Subplots._check_dimension_uniqueness",
+   "kind": "doc",
+   "line": 46
+  },
+  {
+   "id": "r5",
+   "anchor": "Subplots._check_dimension_uniqueness#if:err is not None/raise:RuntimeError",
+   "kind": "todo",
+   "line": 76
+  },
+  {
+   "id": "r6",
+   "anchor": "Subplots._determine_grid_dimensions",
+   "kind": "doc",
+   "line": 78
+  },
+  {
+   "id": "r7",
+   "anchor": "Subplots._handle_wrapping",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r8",
+   "anchor": "Subplots._determine_axis_sharing",
+   "kind": "doc",
+   "line": 121
+  },
+  {
+   "id": "r9",
+   "anchor": "Subplots._determine_axis_sharing#for:axis in \"xy\"/if:key not in self.subplot_spec",
+   "kind": "lead",
+   "line": 129
+  },
+  {
+   "id": "r10",
+   "anchor": "Subplots._determine_axis_sharing#for:axis in \"xy\"/if:key not in self.subplot_spec/if:axis in pair_spec.get(\"structure\", {})/if:self.wrap is None and pair_spec.get(\"cross\", True)",
+   "kind": "lead",
+   "line": 132
+  },
+  {
+   "id": "r11",
+   "anchor": "Subplots._determine_axis_sharing#for:axis in \"xy\"/if:key not in self.subplot_spec/if:axis in pair_spec.get(\"structure\", {})/else/assign:val",
+   "kind": "lead",
+   "line": 139
+  },
+  {
+   "id": "r12",
+   "anchor": "Subplots.init_figure",
+   "kind": "doc",
+   "line": 142
+  },
+  {
+   "id": "r13",
+   "anchor": "Subplots.init_figure#if:figure_kws is None",
+   "kind": "todo",
+   "line": 152
+  },
+  {
+   "id": "r14",
+   "anchor": "Subplots.init_figure#if:isinstance(target, mpl.axes.Axes)/if:max(self.subplot_spec[\"nrows\"], self.subplot_spec[\"ncols\"]) > 1/try/except:AttributeError",
+   "kind": "trail",
+   "line": 164
+  },
+  {
+   "id": "r15",
+   "anchor": "Subplots.init_figure#if:isinstance(target, mpl.axes.Axes)/elif:hasattr(mpl.figure, \"SubFigure\") and isinstance(target, mpl.figure.SubFigure)",
+   "kind": "trail",
+   "line": 183
+  },
+  {
+   "id": "r16",
+   "anchor": "Subplots.init_figure#if:self.wrap/assign:axs_flat",
+   "kind": "lead",
+   "line": 201
+  },
+  {
+   "id": "r17",
+   "anchor": "Subplots.init_figure#assign:iter_axs",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r18",
+   "anchor": "Subplots.__iter__",
+   "kind": "todo",
+   "line": 263
+  },
+  {
+   "id": "r19",
+   "anchor": "Subplots.__iter__",
+   "kind": "doc",
+   "line": 263
+  },
+  {
+   "id": "r20",
+   "anchor": "Subplots.__len__",
+   "kind": "doc",
+   "line": 267
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8854,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 2512,
+  "thinking_tokens": 1330,
+  "opus_cost_usd": 0.15563149999999998,
+  "total_cost_usd": 0.1611935,
+  "duration_ms": 25304,
+  "duration_api_ms": 26744,
+  "num_turns": 2
+ },
+ "wall_ms": 26196,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

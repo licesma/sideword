@@ -1,0 +1,559 @@
+{
+ "blob_sha": "9c624d3c112ef99e7a4acfc38dca2bed8c7840fb",
+ "path": "requests/models.py",
+ "repo": "psf/requests",
+ "records": 89,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "REDIRECT_STATI",
+   "kind": "lead",
+   "line": 39
+  },
+  {
+   "id": "r3",
+   "anchor": "REDIRECT_STATI#item:codes.moved",
+   "kind": "trail",
+   "line": 40
+  },
+  {
+   "id": "r4",
+   "anchor": "REDIRECT_STATI#item:codes.found",
+   "kind": "trail",
+   "line": 41
+  },
+  {
+   "id": "r5",
+   "anchor": "REDIRECT_STATI#item:codes.other",
+   "kind": "trail",
+   "line": 42
+  },
+  {
+   "id": "r6",
+   "anchor": "REDIRECT_STATI#item:codes.temporary_redirect",
+   "kind": "trail",
+   "line": 43
+  },
+  {
+   "id": "r7",
+   "anchor": "REDIRECT_STATI#item:codes.permanent_redirect",
+   "kind": "trail",
+   "line": 44
+  },
+  {
+   "id": "r8",
+   "anchor": "RequestEncodingMixin.path_url",
+   "kind": "doc",
+   "line": 54
+  },
+  {
+   "id": "r9",
+   "anchor": "RequestEncodingMixin._encode_params",
+   "kind": "doc",
+   "line": 75
+  },
+  {
+   "id": "r10",
+   "anchor": "RequestEncodingMixin._encode_files",
+   "kind": "doc",
+   "line": 102
+  },
+  {
+   "id": "r11",
+   "anchor": "RequestEncodingMixin._encode_files#for:field, val in fields/for:v in val/if:v is not None/if:not isinstance(v, bytes)",
+   "kind": "lead",
+   "line": 125
+  },
+  {
+   "id": "r12",
+   "anchor": "RequestEncodingMixin._encode_files#for:(k, v) in files/assign:ft",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r13",
+   "anchor": "RequestHooksMixin.register_hook",
+   "kind": "doc",
+   "line": 162
+  },
+  {
+   "id": "r14",
+   "anchor": "RequestHooksMixin.deregister_hook",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r15",
+   "anchor": "Request",
+   "kind": "doc",
+   "line": 185
+  },
+  {
+   "id": "r16",
+   "anchor": "Request.__init__#assign:data",
+   "kind": "lead",
+   "line": 213
+  },
+  {
+   "id": "r17",
+   "anchor": "Request.prepare",
+   "kind": "doc",
+   "line": 236
+  },
+  {
+   "id": "r18",
+   "anchor": "PreparedRequest",
+   "kind": "doc",
+   "line": 254
+  },
+  {
+   "id": "r19",
+   "anchor": "PreparedRequest.method",
+   "kind": "lead",
+   "line": 275
+  },
+  {
+   "id": "r20",
+   "anchor": "PreparedRequest.url",
+   "kind": "lead",
+   "line": 277
+  },
+  {
+   "id": "r21",
+   "anchor": "PreparedRequest.headers",
+   "kind": "lead",
+   "line": 279
+  },
+  {
+   "id": "r22",
+   "anchor": "PreparedRequest._cookies",
+   "kind": "lead",
+   "line": 282
+  },
+  {
+   "id": "r23",
+   "anchor": "PreparedRequest.body",
+   "kind": "lead",
+   "line": 284
+  },
+  {
+   "id": "r24",
+   "anchor": "PreparedRequest.hooks",
+   "kind": "lead",
+   "line": 286
+  },
+  {
+   "id": "r25",
+   "anchor": "PreparedRequest.prepare",
+   "kind": "doc",
+   "line": 288
+  },
+  {
+   "id": "r26",
+   "anchor": "PreparedRequest.prepare#call:self.prepare_auth",
+   "kind": "post",
+   "line": 297
+  },
+  {
+   "id": "r27",
+   "anchor": "PreparedRequest.prepare#call:self.prepare_hooks",
+   "kind": "lead",
+   "line": 303
+  },
+  {
+   "id": "r28",
+   "anchor": "PreparedRequest.prepare_method",
+   "kind": "doc",
+   "line": 318
+  },
+  {
+   "id": "r29",
+   "anchor": "PreparedRequest.prepare_url",
+   "kind": "doc",
+   "line": 324
+  },
+  {
+   "id": "r30",
+   "anchor": "PreparedRequest.prepare_url#if:isinstance(url, bytes)",
+   "kind": "lead",
+   "line": 331
+  },
+  {
+   "id": "r31",
+   "anchor": "PreparedRequest.prepare_url#if:':' in url and not url.lower().startswith('http')",
+   "kind": "lead",
+   "line": 339
+  },
+  {
+   "id": "r32",
+   "anchor": "PreparedRequest.prepare_url#try",
+   "kind": "lead",
+   "line": 344
+  },
+  {
+   "id": "r33",
+   "anchor": "PreparedRequest.prepare_url#try",
+   "kind": "lead",
+   "line": 359
+  },
+  {
+   "id": "r34",
+   "anchor": "PreparedRequest.prepare_url#assign:netloc",
+   "kind": "lead",
+   "line": 365
+  },
+  {
+   "id": "r35",
+   "anchor": "PreparedRequest.prepare_url#if:not path",
+   "kind": "lead",
+   "line": 373
+  },
+  {
+   "id": "r36",
+   "anchor": "PreparedRequest.prepare_headers",
+   "kind": "doc",
+   "line": 398
+  },
+  {
+   "id": "r37",
+   "anchor": "PreparedRequest.prepare_body",
+   "kind": "doc",
+   "line": 406
+  },
+  {
+   "id": "r38",
+   "anchor": "PreparedRequest.prepare_body#assign:body",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r39",
+   "anchor": "PreparedRequest.prepare_body#assign:body",
+   "kind": "lead",
+   "line": 413
+  },
+  {
+   "id": "r40",
+   "anchor": "PreparedRequest.prepare_body#if:is_stream/else/if:files",
+   "kind": "lead",
+   "line": 443
+  },
+  {
+   "id": "r41",
+   "anchor": "PreparedRequest.prepare_body#if:is_stream/else/if:content_type and ('content-type' not in self.headers)",
+   "kind": "lead",
+   "line": 456
+  },
+  {
+   "id": "r42",
+   "anchor": "PreparedRequest.prepare_auth",
+   "kind": "doc",
+   "line": 473
+  },
+  {
+   "id": "r43",
+   "anchor": "PreparedRequest.prepare_auth#if:auth is None",
+   "kind": "lead",
+   "line": 477
+  },
+  {
+   "id": "r44",
+   "anchor": "PreparedRequest.prepare_auth#if:auth/if:isinstance(auth, tuple) and len(auth) == 2/assign:auth",
+   "kind": "lead",
+   "line": 484
+  },
+  {
+   "id": "r45",
+   "anchor": "PreparedRequest.prepare_auth#if:auth/assign:r",
+   "kind": "lead",
+   "line": 487
+  },
+  {
+   "id": "r46",
+   "anchor": "PreparedRequest.prepare_auth#if:auth/call:self.__dict__.update",
+   "kind": "lead",
+   "line": 490
+  },
+  {
+   "id": "r47",
+   "anchor": "PreparedRequest.prepare_auth#if:auth/call:self.prepare_content_length",
+   "kind": "lead",
+   "line": 493
+  },
+  {
+   "id": "r48",
+   "anchor": "PreparedRequest.prepare_cookies",
+   "kind": "doc",
+   "line": 495
+  },
+  {
+   "id": "r49",
+   "anchor": "PreparedRequest.prepare_hooks",
+   "kind": "doc",
+   "line": 515
+  },
+  {
+   "id": "r50",
+   "anchor": "PreparedRequest.prepare_hooks#assign:hooks",
+   "kind": "lead",
+   "line": 520
+  },
+  {
+   "id": "r51",
+   "anchor": "Response",
+   "kind": "doc",
+   "line": 525
+  },
+  {
+   "id": "r52",
+   "anchor": "Response.status_code",
+   "kind": "lead",
+   "line": 542
+  },
+  {
+   "id": "r53",
+   "anchor": "Response.headers",
+   "kind": "lead",
+   "line": 547
+  },
+  {
+   "id": "r54",
+   "anchor": "Response.raw",
+   "kind": "lead",
+   "line": 552
+  },
+  {
+   "id": "r55",
+   "anchor": "Response.url",
+   "kind": "lead",
+   "line": 555
+  },
+  {
+   "id": "r56",
+   "anchor": "Response.encoding",
+   "kind": "lead",
+   "line": 558
+  },
+  {
+   "id": "r57",
+   "anchor": "Response.history",
+   "kind": "lead",
+   "line": 563
+  },
+  {
+   "id": "r58",
+   "anchor": "Response.reason",
+   "kind": "lead",
+   "line": 566
+  },
+  {
+   "id": "r59",
+   "anchor": "Response.cookies",
+   "kind": "lead",
+   "line": 569
+  },
+  {
+   "id": "r60",
+   "anchor": "Response.elapsed",
+   "kind": "lead",
+   "line": 577
+  },
+  {
+   "id": "r61",
+   "anchor": "Response.request",
+   "kind": "lead",
+   "line": 581
+  },
+  {
+   "id": "r62",
+   "anchor": "Response.__getstate__#if:not self._content_consumed",
+   "kind": "lead",
+   "line": 586
+  },
+  {
+   "id": "r63",
+   "anchor": "Response.__setstate__#call:setattr",
+   "kind": "lead",
+   "line": 599
+  },
+  {
+   "id": "r64",
+   "anchor": "Response.__bool__",
+   "kind": "doc",
+   "line": 605
+  },
+  {
+   "id": "r65",
+   "anchor": "Response.__nonzero__",
+   "kind": "doc",
+   "line": 609
+  },
+  {
+   "id": "r66",
+   "anchor": "Response.__iter__",
+   "kind": "doc",
+   "line": 613
+  },
+  {
+   "id": "r67",
+   "anchor": "Response.is_redirect",
+   "kind": "doc",
+   "line": 626
+  },
+  {
+   "id": "r68",
+   "anchor": "Response.is_permanent_redirect",
+   "kind": "doc",
+   "line": 633
+  },
+  {
+   "id": "r69",
+   "anchor": "Response.apparent_encoding",
+   "kind": "doc",
+   "line": 638
+  },
+  {
+   "id": "r70",
+   "anchor": "Response.iter_content",
+   "kind": "doc",
+   "line": 642
+  },
+  {
+   "id": "r71",
+   "anchor": "Response.iter_content.generate#if:hasattr(self.raw, 'stream')",
+   "kind": "lead",
+   "line": 655
+  },
+  {
+   "id": "r72",
+   "anchor": "Response.iter_content.generate#if:hasattr(self.raw, 'stream')/else/while:True",
+   "kind": "lead",
+   "line": 667
+  },
+  {
+   "id": "r73",
+   "anchor": "Response.iter_content#assign:reused_chunks",
+   "kind": "lead",
+   "line": 678
+  },
+  {
+   "id": "r74",
+   "anchor": "Response.iter_lines",
+   "kind": "doc",
+   "line": 689
+  },
+  {
+   "id": "r75",
+   "anchor": "Response.content",
+   "kind": "doc",
+   "line": 721
+  },
+  {
+   "id": "r76",
+   "anchor": "Response.content#if:self._content is False/try",
+   "kind": "lead",
+   "line": 726
+  },
+  {
+   "id": "r77",
+   "anchor": "Response.content#return",
+   "kind": "lead",
+   "line": 742
+  },
+  {
+   "id": "r78",
+   "anchor": "Response.text",
+   "kind": "doc",
+   "line": 745
+  },
+  {
+   "id": "r79",
+   "anchor": "Response.text#assign:content",
+   "kind": "lead",
+   "line": 758
+  },
+  {
+   "id": "r80",
+   "anchor": "Response.text#if:self.encoding is None",
+   "kind": "lead",
+   "line": 765
+  },
+  {
+   "id": "r81",
+   "anchor": "Response.text#try",
+   "kind": "lead",
+   "line": 769
+  },
+  {
+   "id": "r82",
+   "anchor": "Response.text#try/except:(LookupError, TypeError)/assign:content",
+   "kind": "lead",
+   "line": 778
+  },
+  {
+   "id": "r83",
+   "anchor": "Response.json",
+   "kind": "doc",
+   "line": 782
+  },
+  {
+   "id": "r84",
+   "anchor": "Response.json#if:not self.encoding and len(self.content) > 3/assign:encoding",
+   "kind": "lead",
+   "line": 793
+  },
+  {
+   "id": "r85",
+   "anchor": "Response.json#if:not self.encoding and len(self.content) > 3/if:encoding is not None/try/except:UnicodeDecodeError/pass",
+   "kind": "lead",
+   "line": 804
+  },
+  {
+   "id": "r86",
+   "anchor": "Response.links",
+   "kind": "doc",
+   "line": 808
+  },
+  {
+   "id": "r87",
+   "anchor": "Response.links#assign:l",
+   "kind": "lead",
+   "line": 814
+  },
+  {
+   "id": "r88",
+   "anchor": "Response.raise_for_status",
+   "kind": "doc",
+   "line": 825
+  },
+  {
+   "id": "r89",
+   "anchor": "Response.close",
+   "kind": "doc",
+   "line": 839
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 19848,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 6646,
+  "thinking_tokens": 2910,
+  "opus_cost_usd": 0.3689215,
+  "total_cost_usd": 0.38357450000000004,
+  "duration_ms": 60254,
+  "duration_api_ms": 61448,
+  "num_turns": 2
+ },
+ "wall_ms": 61159,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

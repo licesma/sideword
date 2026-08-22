@@ -1,0 +1,61 @@
+{
+ "blob_sha": "0ce6097483cc1196bad421684dce2e8351b46931",
+ "path": "astropy/io/fits/setup_package.py",
+ "repo": "astropy/astropy",
+ "records": 6,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 1
+  },
+  {
+   "id": "r2",
+   "anchor": "_get_compression_extension#if:int(os.environ.get('ASTROPY_USE_SYSTEM_CFITSIO', 0)) or int(os.environ.get('ASTROPY_USE_SYSTEM_ALL', 0))/else/if:get_compiler()=='msvc'/call:cfg['extra_compile_args'].extend",
+   "kind": "lead",
+   "line": 33
+  },
+  {
+   "id": "r3",
+   "anchor": "_get_compression_extension#if:int(os.environ.get('ASTROPY_USE_SYSTEM_CFITSIO', 0)) or int(os.environ.get('ASTROPY_USE_SYSTEM_ALL', 0))/else/if:get_compiler()=='msvc'/else/if:not debug/call:cfg['extra_compile_args'].extend",
+   "kind": "lead",
+   "line": 51
+  },
+  {
+   "id": "r4",
+   "anchor": "_get_compression_extension#if:int(os.environ.get('ASTROPY_USE_SYSTEM_CFITSIO', 0)) or int(os.environ.get('ASTROPY_USE_SYSTEM_ALL', 0))/else/if:get_compiler()=='msvc'/else/if:not debug/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-result', '-Wno-misleading-indentation', '-Wno-format-overflow']/item:'-Wno-unused-result'",
+   "kind": "trail",
+   "line": 55
+  },
+  {
+   "id": "r5",
+   "anchor": "_get_compression_extension#if:int(os.environ.get('ASTROPY_USE_SYSTEM_CFITSIO', 0)) or int(os.environ.get('ASTROPY_USE_SYSTEM_ALL', 0))/else/if:get_compiler()=='msvc'/else/if:not debug/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-result', '-Wno-misleading-indentation', '-Wno-format-overflow']/item:'-Wno-misleading-indentation'",
+   "kind": "trail",
+   "line": 56
+  },
+  {
+   "id": "r6",
+   "anchor": "_get_compression_extension#if:int(os.environ.get('ASTROPY_USE_SYSTEM_CFITSIO', 0)) or int(os.environ.get('ASTROPY_USE_SYSTEM_ALL', 0))/else/if:get_compiler()=='msvc'/else/if:not debug/call:cfg['extra_compile_args'].extend/arg:['-Wno-strict-prototypes', '-Wno-unused', '-Wno-uninitialized', '-Wno-unused-result', '-Wno-misleading-indentation', '-Wno-format-overflow']/item:'-Wno-format-overflow'",
+   "kind": "trail",
+   "line": 57
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 4837,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3539,
+  "thinking_tokens": 2385,
+  "opus_cost_usd": 0.1411365,
+  "total_cost_usd": 0.1434935,
+  "duration_ms": 37525,
+  "duration_api_ms": 38707,
+  "num_turns": 2
+ },
+ "wall_ms": 38474,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

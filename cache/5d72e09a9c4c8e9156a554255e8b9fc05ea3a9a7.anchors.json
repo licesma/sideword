@@ -1,0 +1,235 @@
+{
+ "blob_sha": "5d72e09a9c4c8e9156a554255e8b9fc05ea3a9a7",
+ "path": "astropy/table/sorted_array.py",
+ "repo": "astropy/astropy",
+ "records": 35,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>#import:numpy",
+   "kind": "lead",
+   "line": 2
+  },
+  {
+   "id": "r2",
+   "anchor": "_searchsorted",
+   "kind": "doc",
+   "line": 5
+  },
+  {
+   "id": "r3",
+   "anchor": "_searchsorted#assign:begin",
+   "kind": "lead",
+   "line": 13
+  },
+  {
+   "id": "r4",
+   "anchor": "SortedArray",
+   "kind": "doc",
+   "line": 28
+  },
+  {
+   "id": "r5",
+   "anchor": "SortedArray.add",
+   "kind": "doc",
+   "line": 53
+  },
+  {
+   "id": "r6",
+   "anchor": "SortedArray.add#assign:pos",
+   "kind": "trail",
+   "line": 64
+  },
+  {
+   "id": "r7",
+   "anchor": "SortedArray.add#if:self.unique and 0 <= pos < len(self.row_index) and all(self.data[pos][i] == key[i] for i in range(len(key)))/raise:ValueError",
+   "kind": "lead",
+   "line": 69
+  },
+  {
+   "id": "r8",
+   "anchor": "SortedArray._get_key_slice",
+   "kind": "doc",
+   "line": 74
+  },
+  {
+   "id": "r9",
+   "anchor": "SortedArray.find_pos",
+   "kind": "doc",
+   "line": 84
+  },
+  {
+   "id": "r10",
+   "anchor": "SortedArray.find_pos#if:not self.unique/assign:key",
+   "kind": "lead",
+   "line": 104
+  },
+  {
+   "id": "r11",
+   "anchor": "SortedArray.find_pos#for:i in range(num_cols)",
+   "kind": "lead",
+   "line": 108
+  },
+  {
+   "id": "r12",
+   "anchor": "SortedArray.find_pos#for:i in range(num_cols)/if:exact and (t == len(key_slice) or key_slice[t] != key[i])",
+   "kind": "lead",
+   "line": 112
+  },
+  {
+   "id": "r13",
+   "anchor": "SortedArray.find_pos#for:i in range(num_cols)/if:exact and (t == len(key_slice) or key_slice[t] != key[i])/return",
+   "kind": "lead",
+   "line": 114
+  },
+  {
+   "id": "r14",
+   "anchor": "SortedArray.find_pos#for:i in range(num_cols)/if:exact and (t == len(key_slice) or key_slice[t] != key[i])/elif:t == len(key_slice) or (t == 0 and len(key_slice) > 0 and key[i] < key_slice[0])/return",
+   "kind": "lead",
+   "line": 118
+  },
+  {
+   "id": "r15",
+   "anchor": "SortedArray.find_pos#for:i in range(num_cols)/if:begin >= len(self.row_index)",
+   "kind": "trail",
+   "line": 121
+  },
+  {
+   "id": "r16",
+   "anchor": "SortedArray.find",
+   "kind": "doc",
+   "line": 126
+  },
+  {
+   "id": "r17",
+   "anchor": "SortedArray.find#for:i in range(self.num_cols)",
+   "kind": "lead",
+   "line": 144
+  },
+  {
+   "id": "r18",
+   "anchor": "SortedArray.find#for:i in range(self.num_cols)/if:t == len(key_slice) or key_slice[t] != key[i]",
+   "kind": "lead",
+   "line": 148
+  },
+  {
+   "id": "r19",
+   "anchor": "SortedArray.find#for:i in range(self.num_cols)/if:t == len(key_slice) or key_slice[t] != key[i]/return",
+   "kind": "lead",
+   "line": 150
+  },
+  {
+   "id": "r20",
+   "anchor": "SortedArray.find#for:i in range(self.num_cols)/if:t == len(key_slice) or key_slice[t] != key[i]/elif:t == 0 and len(key_slice) > 0 and key[i] < key_slice[0]/return",
+   "kind": "lead",
+   "line": 153
+  },
+  {
+   "id": "r21",
+   "anchor": "SortedArray.find#for:i in range(self.num_cols)/if:begin >= len(self.row_index)",
+   "kind": "trail",
+   "line": 156
+  },
+  {
+   "id": "r22",
+   "anchor": "SortedArray.range",
+   "kind": "doc",
+   "line": 161
+  },
+  {
+   "id": "r23",
+   "anchor": "SortedArray.range#if:not bounds[0] and lower_bound == lower/assign:lower_pos",
+   "kind": "trail",
+   "line": 184
+  },
+  {
+   "id": "r24",
+   "anchor": "SortedArray.range#if:upper_pos < len(self.row_index)",
+   "kind": "lead",
+   "line": 188
+  },
+  {
+   "id": "r25",
+   "anchor": "SortedArray.range#if:upper_pos < len(self.row_index)/if:not bounds[1] and upper_bound == upper/assign:upper_pos",
+   "kind": "trail",
+   "line": 191
+  },
+  {
+   "id": "r26",
+   "anchor": "SortedArray.range#if:upper_pos < len(self.row_index)/if:not bounds[1] and upper_bound == upper/elif:upper_bound > upper/assign:upper_pos",
+   "kind": "trail",
+   "line": 193
+  },
+  {
+   "id": "r27",
+   "anchor": "SortedArray.remove",
+   "kind": "doc",
+   "line": 196
+  },
+  {
+   "id": "r28",
+   "anchor": "SortedArray.remove#if:pos == -1",
+   "kind": "trail",
+   "line": 213
+  },
+  {
+   "id": "r29",
+   "anchor": "SortedArray.shift_left",
+   "kind": "doc",
+   "line": 222
+  },
+  {
+   "id": "r30",
+   "anchor": "SortedArray.shift_right",
+   "kind": "doc",
+   "line": 233
+  },
+  {
+   "id": "r31",
+   "anchor": "SortedArray.replace_rows",
+   "kind": "doc",
+   "line": 244
+  },
+  {
+   "id": "r32",
+   "anchor": "SortedArray.items",
+   "kind": "doc",
+   "line": 269
+  },
+  {
+   "id": "r33",
+   "anchor": "SortedArray.sort",
+   "kind": "doc",
+   "line": 285
+  },
+  {
+   "id": "r34",
+   "anchor": "SortedArray.sorted_data",
+   "kind": "doc",
+   "line": 291
+  },
+  {
+   "id": "r35",
+   "anchor": "SortedArray.__getitem__",
+   "kind": "doc",
+   "line": 297
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 8492,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3372,
+  "thinking_tokens": 1444,
+  "opus_cost_usd": 0.17351149999999999,
+  "total_cost_usd": 0.1790445,
+  "duration_ms": 49371,
+  "duration_api_ms": 69073,
+  "num_turns": 2
+ },
+ "wall_ms": 50201,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}

@@ -1,0 +1,247 @@
+{
+ "blob_sha": "38bdd589109f76114e1780fb2e5c56d1dc15367d",
+ "path": "astropy/cosmology/io/model.py",
+ "repo": "astropy/astropy",
+ "records": 37,
+ "anchors": [
+  {
+   "id": "r1",
+   "anchor": "<module>",
+   "kind": "lead",
+   "line": 3
+  },
+  {
+   "id": "r2",
+   "anchor": "<module>",
+   "kind": "doc",
+   "line": 3
+  },
+  {
+   "id": "r3",
+   "anchor": "<module>",
+   "kind": "trail",
+   "line": 9
+  },
+  {
+   "id": "r4",
+   "anchor": "__all__",
+   "kind": "trail",
+   "line": 24
+  },
+  {
+   "id": "r5",
+   "anchor": "_CosmologyModel",
+   "kind": "doc",
+   "line": 27
+  },
+  {
+   "id": "r6",
+   "anchor": "_CosmologyModel._cosmology_class",
+   "kind": "doc",
+   "line": 48
+  },
+  {
+   "id": "r7",
+   "anchor": "_CosmologyModel._method_name",
+   "kind": "doc",
+   "line": 52
+  },
+  {
+   "id": "r8",
+   "anchor": "_CosmologyModel.cosmology_class",
+   "kind": "doc",
+   "line": 56
+  },
+  {
+   "id": "r9",
+   "anchor": "_CosmologyModel.cosmology",
+   "kind": "doc",
+   "line": 61
+  },
+  {
+   "id": "r10",
+   "anchor": "_CosmologyModel.method_name",
+   "kind": "doc",
+   "line": 73
+  },
+  {
+   "id": "r11",
+   "anchor": "_CosmologyModel.evaluate",
+   "kind": "lead",
+   "line": 79
+  },
+  {
+   "id": "r12",
+   "anchor": "_CosmologyModel.evaluate",
+   "kind": "doc",
+   "line": 79
+  },
+  {
+   "id": "r13",
+   "anchor": "_CosmologyModel.evaluate#assign:ba",
+   "kind": "lead",
+   "line": 105
+  },
+  {
+   "id": "r14",
+   "anchor": "_CosmologyModel.evaluate#for:k in self.param_names",
+   "kind": "lead",
+   "line": 110
+  },
+  {
+   "id": "r15",
+   "anchor": "_CosmologyModel.evaluate#for:k in self.param_names/if:np.shape(ba.arguments[k])",
+   "kind": "lead",
+   "line": 117
+  },
+  {
+   "id": "r16",
+   "anchor": "_CosmologyModel.evaluate#for:k in self.param_names/if:np.shape(ba.arguments[k])",
+   "kind": "trail",
+   "line": 117
+  },
+  {
+   "id": "r17",
+   "anchor": "_CosmologyModel.evaluate#for:k in self.param_names/if:np.shape(ba.arguments[k])/if:k == \"m_nu\" and len(ba.arguments[k].shape) == 1",
+   "kind": "lead",
+   "line": 119
+  },
+  {
+   "id": "r18",
+   "anchor": "_CosmologyModel.evaluate#assign:cosmo",
+   "kind": "lead",
+   "line": 124
+  },
+  {
+   "id": "r19",
+   "anchor": "_CosmologyModel.evaluate#assign:result",
+   "kind": "lead",
+   "line": 126
+  },
+  {
+   "id": "r20",
+   "anchor": "from_model",
+   "kind": "lead",
+   "line": 134
+  },
+  {
+   "id": "r21",
+   "anchor": "from_model",
+   "kind": "doc",
+   "line": 134
+  },
+  {
+   "id": "r22",
+   "anchor": "from_model#assign:params",
+   "kind": "lead",
+   "line": 158
+  },
+  {
+   "id": "r23",
+   "anchor": "from_model#for:n in model.param_names/assign:meta[p.name]",
+   "kind": "lead",
+   "line": 163
+  },
+  {
+   "id": "r24",
+   "anchor": "to_model",
+   "kind": "doc",
+   "line": 173
+  },
+  {
+   "id": "r25",
+   "anchor": "to_model#if:not hasattr(cosmology, method)",
+   "kind": "lead",
+   "line": 202
+  },
+  {
+   "id": "r26",
+   "anchor": "to_model#assign:n_inputs",
+   "kind": "lead",
+   "line": 210
+  },
+  {
+   "id": "r27",
+   "anchor": "to_model#assign:attrs",
+   "kind": "trail",
+   "line": 212
+  },
+  {
+   "id": "r28",
+   "anchor": "to_model#assign:params",
+   "kind": "trail",
+   "line": 218
+  },
+  {
+   "id": "r29",
+   "anchor": "to_model#for:n in cosmology.__parameters__/assign:v",
+   "kind": "trail",
+   "line": 220
+  },
+  {
+   "id": "r30",
+   "anchor": "to_model#for:n in cosmology.__parameters__/if:v is None",
+   "kind": "trail",
+   "line": 222
+  },
+  {
+   "id": "r31",
+   "anchor": "to_model#for:n in cosmology.__parameters__/assign:params[n]",
+   "kind": "lead",
+   "line": 226
+  },
+  {
+   "id": "r32",
+   "anchor": "to_model#assign:clsname",
+   "kind": "lead",
+   "line": 231
+  },
+  {
+   "id": "r33",
+   "anchor": "to_model#assign:CosmoModel",
+   "kind": "lead",
+   "line": 239
+  },
+  {
+   "id": "r34",
+   "anchor": "to_model#assign:CosmoModel.evaluate.__signature__",
+   "kind": "lead",
+   "line": 241
+  },
+  {
+   "id": "r35",
+   "anchor": "to_model#assign:ps",
+   "kind": "lead",
+   "line": 247
+  },
+  {
+   "id": "r36",
+   "anchor": "model_identify",
+   "kind": "doc",
+   "line": 253
+  },
+  {
+   "id": "r37",
+   "anchor": "<module>#call:convert_registry.register_reader",
+   "kind": "lead",
+   "line": 270
+  }
+ ],
+ "unanchorable": [],
+ "usage": {
+  "input_tokens": 2,
+  "cache_creation_input_tokens": 9108,
+  "cache_read_input_tokens": 8563,
+  "output_tokens": 3230,
+  "thinking_tokens": 1641,
+  "opus_cost_usd": 0.1761215,
+  "total_cost_usd": 0.18192049999999998,
+  "duration_ms": 30492,
+  "duration_api_ms": 31730,
+  "num_turns": 2
+ },
+ "wall_ms": 31336,
+ "attempts": 1,
+ "model": "claude-opus-5",
+ "effort": "medium"
+}
