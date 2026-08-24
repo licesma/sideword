@@ -258,6 +258,11 @@ def estimate_tokens(text: str) -> int:
     return max(step, int(round(tokens / step)) * step)
 
 
+#: Width the anchor column pads to. Longer anchors overflow rather than widen
+#: every other row (§4 — the index has to stay cheap).
+ANCHOR_COLUMN = 56
+
+
 def write_index(path: str, records: list[Record], sidedoc: str) -> str:
     """Render the index: one line per record, parts rolled onto the parent's row (§4)."""
     records = fold_parts(list(records))
@@ -266,13 +271,19 @@ def write_index(path: str, records: list[Record], sidedoc: str) -> str:
     for rec in records:
         rollup = " ".join("+" + p.anchor.lstrip("#") for p in rec.parts)
         rows.append((rec.anchor, rec.slot, f"{rec.lines}L", rollup))
-    anchor_w = max([len(r[0]) for r in rows], default=0) + 2
+    # Pad to the common case, not to the worst one. A discriminator is source
+    # text and can run to hundreds of characters (§1.6); padding every row to
+    # the longest of them turned the index into 60% of the sidedoc's size, when
+    # §4's whole premise is that it is cheap enough to always read. Anything
+    # wider than the column simply overflows with a single space after it.
+    anchor_w = min(max([len(r[0]) for r in rows], default=0), ANCHOR_COLUMN) + 2
     kind_w = max([len(r[1]) for r in rows], default=0) + 2
     header = (f"{FORMAT_VERSION}  {path}  {len(records)} record"
               f"{'' if len(records) == 1 else 's'}  ~{estimate_tokens(sidedoc)} tok")
     out = [header]
     for anchor, slot, count, rollup in rows:
-        line = f"{anchor:<{anchor_w}}{slot:<{kind_w}}{count}"
+        pad = anchor_w if len(anchor) < anchor_w else len(anchor) + 1
+        line = f"{anchor:<{pad}}{slot:<{kind_w}}{count}"
         if rollup:
             line += "  " + rollup
         out.append(line)
