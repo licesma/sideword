@@ -9,14 +9,8 @@ grammar is `FORMAT.md`; the evidence behind it is `FINDINGS.md`.
 
 ## Setup
 
-Python 3.14 is required, and a system 3.9/3.10 will fail at import. `uv` supplies
-it without touching the system interpreter.
-
-```sh
-curl -LsSf https://astral.sh/uv/install.sh | sh
-uv sync --frozen                 # installs CPython 3.14 and 2 dependencies
-uv run python -m unittest discover -s harness/tests -t .    # 77 tests
-```
+**Build the resolver first.** The Python harness shells out to the compiled
+binary for every anchor lookup, so its test suite fails without it.
 
 The resolver is Rust, edition 2024, and needs toolchain **1.95 or newer** — a
 distro `rustc` is usually too old:
@@ -25,6 +19,15 @@ distro `rustc` is usually too old:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo build --release -p sideword-resolver
 cargo test -p sideword-resolver   # 37 tests
+```
+
+Then Python. 3.14 is required, and a system 3.9/3.10 will fail at import; `uv`
+supplies it without touching the system interpreter.
+
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv sync --frozen                 # installs CPython 3.14 and 2 dependencies
+uv run python -m unittest discover -s harness/tests -t .    # 77 tests
 ```
 
 ## What is here

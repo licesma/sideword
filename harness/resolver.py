@@ -32,9 +32,18 @@ class ResolverError(RuntimeError):
     """The binary refused a file: unreadable, or it does not parse."""
 
 
+class ResolverMissing(ResolverError):
+    """The binary is not built. Distinct from a rejected file because
+    `index_files` treats a rejection as "this source does not parse" and moves
+    on — which, when the binary is simply absent, turns one clear error into a
+    parse failure on every file in the corpus."""
+
+
 def _run(args: list[str]) -> str:
     if not BINARY.exists():
-        raise ResolverError(f"resolver binary not built: {BINARY} (cargo build --release -p sideword-resolver)")
+        raise ResolverMissing(
+            f"resolver binary not built: {BINARY}\n"
+            f"build it first: cargo build --release -p sideword-resolver")
     proc = subprocess.run([str(BINARY), *args], capture_output=True)
     if proc.returncode != 0:
         raise ResolverError(proc.stderr.decode("utf-8", "replace").strip() or "resolver failed")
@@ -53,6 +62,8 @@ def index_files(paths) -> dict[str, list[dict]]:
         chunk = paths[i:i + CHUNK]
         try:
             payload = json.loads(_run(["index", *chunk]))
+        except ResolverMissing:
+            raise                      # not a bad file; nothing here can work
         except ResolverError:
             if len(chunk) == 1:
                 continue
