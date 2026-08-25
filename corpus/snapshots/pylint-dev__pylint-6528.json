@@ -2,8 +2,8 @@
  "instance_id": "pylint-dev__pylint-6528",
  "repo": "pylint-dev/pylint",
  "base_commit": "273a8b25620467c1e5686aa8d2a1dbb8c02c78d0",
- "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
- "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "directives_sha256": "f5e1ed55296a6cc8172606bacb6ecf1e4c62776911285c4f2fce4911e6c31dc4",
+ "stripper_version": "6d90ee8b66b2388c6250b36b2fa6b43b162c1c85d883767c7466726b542687a1",
  "cache_dir": "/Users/esteban/repos/sideword/cache",
  "selected": 405,
  "skipped": {
@@ -16,6 +16,17 @@
   "tests/regrtest_data/directory/ignored_subdirectory/failing.py",
   "tests/test_self.py"
  ],
+ "docuse": {
+  "sites": 6,
+  "tolerant": 2,
+  "resolved": 3,
+  "partly_resolved": 0,
+  "unresolved": 1,
+  "files_with_kept_docstrings": 3,
+  "docstrings_kept": 3,
+  "parse_failures": 0,
+  "repo_rule_files": 1
+ },
  "files": [
   {
    "path": "doc/conf.py",
@@ -1702,7 +1713,13 @@
    "blob_sha": "fe68ad2938d75dbca63f02862baa4fb68cae80f1",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     ".*",
+     "pylint-self-lint"
+    ]
+   ]
   },
   {
    "path": "pylint/checkers/__init__.py",
@@ -2073,7 +2090,13 @@
    "blob_sha": "7854ff733703fddd9e1725706d662bce4b5b3967",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "ConfigurationMixIn",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "pylint/config/deprecation_actions.py",
@@ -2500,7 +2523,13 @@
    "blob_sha": "0dc7316183d877e3676cf7b56e2f588f39296ddf",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "<module>",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "pylint/pyreverse/mermaidjs_printer.py",
@@ -2822,7 +2851,13 @@
    "blob_sha": "fca87469974b49d312209b5ec56725e5477b0b17",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "<module>",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "script/create_contributor_list.py",

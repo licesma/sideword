@@ -1,0 +1,1385 @@
+{
+ "schema": "sideword-eval-1",
+ "instance_id": "pallets__flask-5014",
+ "repo": "pallets/flask",
+ "version": "2.3",
+ "arm": "sw",
+ "arm_ref": "pallets__flask-5014-sw",
+ "tree_sha": "4310b188eeaecb35883c7372b135622c83a5efba",
+ "model": "claude-opus-5",
+ "image": "swebench/sweb.eval.x86_64.pallets_1776_flask-5014:latest",
+ "source": "agent",
+ "started_at": "2026-08-24T21:50:18+00:00",
+ "harness": {
+  "config_sha256": "5446a7edb51069770caeefa601da40973c0f395e2451eebef82d7863c8f1f6b5",
+  "limits": {
+   "step_limit": 250,
+   "cost_limit": 5.0,
+   "wall_limit_s": 3600,
+   "action_timeout_s": 180,
+   "call_timeout_s": 900,
+   "test_timeout_s": 1800
+  },
+  "effort": null,
+  "sideword_prompt_bytes": 1249,
+  "sideword_prompt_sha256": "246f208af0619a6e9b6be35950799e9eb6384074b3869f61cc739a13bc6b0eb0",
+  "mini_swe_agent": "2.4.6",
+  "session_id": "e01a7d30-ddea-42a0-9429-cd79e95f712d",
+  "model_source": "claude-cli",
+  "claude_workdir": "/var/folders/g0/47tr69v179dg7w6zyphp9b280000gn/T/sideword-claude-cczujvo0"
+ },
+ "errors": [],
+ "baseline_commit": "94f87ea41dfbc0cd6bf104b8a706aa92e2679589",
+ "sideword_probe": "PROBE docs/conf.py\nsideword/1  docs/conf.py  5 records  ~120 tok\nproject          lead  1L\nmaster_doc       lead  1L",
+ "agent": {
+  "exit_status": "Submitted",
+  "n_calls": 14,
+  "n_messages": 30,
+  "cost_usd": 0.318888,
+  "tokens": {
+   "input": 28,
+   "output": 3674,
+   "cache_read": 117908,
+   "cache_creation": 16529
+  },
+  "tokens_billed": 20231,
+  "wall_s": 83.5,
+  "calls": [
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 3561,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 2770,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 83,
+     "output_tokens_details": {
+      "thinking_tokens": 11
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 2770,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 83,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 2770,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 2770
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.032438999999999996,
+    "model_usage": {
+     "claude-haiku-4-5-20251001": {
+      "inputTokens": 2594,
+      "outputTokens": 12,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 0,
+      "webSearchRequests": 0,
+      "costUSD": 0.002654,
+      "contextWindow": 200000,
+      "maxOutputTokens": 32000,
+      "canonicalModel": "claude-haiku-4-5",
+      "provider": "firstParty"
+     },
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 83,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 2770,
+      "webSearchRequests": 0,
+      "costUSD": 0.029785,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:24",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 2656,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 5368,
+     "cache_read_input_tokens": 0,
+     "output_tokens": 84,
+     "output_tokens_details": {
+      "thinking_tokens": 17
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 5368,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 84,
+       "cache_read_input_tokens": 0,
+       "cache_creation_input_tokens": 5368,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5368
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.055790000000000006,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 84,
+      "cacheReadInputTokens": 0,
+      "cacheCreationInputTokens": 5368,
+      "webSearchRequests": 0,
+      "costUSD": 0.055790000000000006,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:27",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 6762,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 1517,
+     "cache_read_input_tokens": 5368,
+     "output_tokens": 329,
+     "output_tokens_details": {
+      "thinking_tokens": 237
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 1517,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 329,
+       "cache_read_input_tokens": 5368,
+       "cache_creation_input_tokens": 1517,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1517
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.026089,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 329,
+      "cacheReadInputTokens": 5368,
+      "cacheCreationInputTokens": 1517,
+      "webSearchRequests": 0,
+      "costUSD": 0.026089,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:35",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 4008,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 497,
+     "cache_read_input_tokens": 6885,
+     "output_tokens": 136,
+     "output_tokens_details": {
+      "thinking_tokens": 25
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 497,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 136,
+       "cache_read_input_tokens": 6885,
+       "cache_creation_input_tokens": 497,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 497
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.0118225,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 136,
+      "cacheReadInputTokens": 6885,
+      "cacheCreationInputTokens": 497,
+      "webSearchRequests": 0,
+      "costUSD": 0.0118225,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:39",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 2557,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 826,
+     "cache_read_input_tokens": 7382,
+     "output_tokens": 43,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 826,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 43,
+       "cache_read_input_tokens": 7382,
+       "cache_creation_input_tokens": 826,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 826
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.013035999999999999,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 43,
+      "cacheReadInputTokens": 7382,
+      "cacheCreationInputTokens": 826,
+      "webSearchRequests": 0,
+      "costUSD": 0.013035999999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:42",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 7930,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 866,
+     "cache_read_input_tokens": 8208,
+     "output_tokens": 369,
+     "output_tokens_details": {
+      "thinking_tokens": 298
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 866,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 369,
+       "cache_read_input_tokens": 8208,
+       "cache_creation_input_tokens": 866,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 866
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.021999,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 369,
+      "cacheReadInputTokens": 8208,
+      "cacheCreationInputTokens": 866,
+      "webSearchRequests": 0,
+      "costUSD": 0.021999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:50",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 4858,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 527,
+     "cache_read_input_tokens": 9074,
+     "output_tokens": 295,
+     "output_tokens_details": {
+      "thinking_tokens": 27
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 527,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 295,
+       "cache_read_input_tokens": 9074,
+       "cache_creation_input_tokens": 527,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 527
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.017192,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 295,
+      "cacheReadInputTokens": 9074,
+      "cacheCreationInputTokens": 527,
+      "webSearchRequests": 0,
+      "costUSD": 0.017192,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:50:56",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 13599,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 522,
+     "cache_read_input_tokens": 9601,
+     "output_tokens": 1027,
+     "output_tokens_details": {
+      "thinking_tokens": 941
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 522,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 1027,
+       "cache_read_input_tokens": 9601,
+       "cache_creation_input_tokens": 522,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 522
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.035705499999999994,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 1027,
+      "cacheReadInputTokens": 9601,
+      "cacheCreationInputTokens": 522,
+      "webSearchRequests": 0,
+      "costUSD": 0.035705499999999994,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:10",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 7064,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 1071,
+     "cache_read_input_tokens": 10123,
+     "output_tokens": 446,
+     "output_tokens_details": {
+      "thinking_tokens": 171
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 1071,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 446,
+       "cache_read_input_tokens": 10123,
+       "cache_creation_input_tokens": 1071,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1071
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.026931499999999997,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 446,
+      "cacheReadInputTokens": 10123,
+      "cacheCreationInputTokens": 1071,
+      "webSearchRequests": 0,
+      "costUSD": 0.026931499999999997,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:17",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 4598,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 768,
+     "cache_read_input_tokens": 11194,
+     "output_tokens": 269,
+     "output_tokens_details": {
+      "thinking_tokens": 0
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 768,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 269,
+       "cache_read_input_tokens": 11194,
+       "cache_creation_input_tokens": 768,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 768
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.020012,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 269,
+      "cacheReadInputTokens": 11194,
+      "cacheCreationInputTokens": 768,
+      "webSearchRequests": 0,
+      "costUSD": 0.020012,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:22",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 3200,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 393,
+     "cache_read_input_tokens": 11962,
+     "output_tokens": 87,
+     "output_tokens_details": {
+      "thinking_tokens": 15
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 393,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 87,
+       "cache_read_input_tokens": 11962,
+       "cache_creation_input_tokens": 393,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 393
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.012095999999999999,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 87,
+      "cacheReadInputTokens": 11962,
+      "cacheCreationInputTokens": 393,
+      "webSearchRequests": 0,
+      "costUSD": 0.012095999999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:26",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 3844,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 290,
+     "cache_read_input_tokens": 12355,
+     "output_tokens": 165,
+     "output_tokens_details": {
+      "thinking_tokens": 60
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 290,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 165,
+       "cache_read_input_tokens": 12355,
+       "cache_creation_input_tokens": 290,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 290
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.013212499999999999,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 165,
+      "cacheReadInputTokens": 12355,
+      "cacheCreationInputTokens": 290,
+      "webSearchRequests": 0,
+      "costUSD": 0.013212499999999999,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:33",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 5601,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 466,
+     "cache_read_input_tokens": 12645,
+     "output_tokens": 246,
+     "output_tokens_details": {
+      "thinking_tokens": 109
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 466,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 246,
+       "cache_read_input_tokens": 12645,
+       "cache_creation_input_tokens": 466,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 466
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.0171425,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 246,
+      "cacheReadInputTokens": 12645,
+      "cacheCreationInputTokens": 466,
+      "webSearchRequests": 0,
+      "costUSD": 0.0171425,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:40",
+    "error": null
+   },
+   {
+    "attempt": 1,
+    "ok": true,
+    "wall_ms": 3135,
+    "returncode": 0,
+    "usage": {
+     "input_tokens": 2,
+     "cache_creation_input_tokens": 648,
+     "cache_read_input_tokens": 13111,
+     "output_tokens": 95,
+     "output_tokens_details": {
+      "thinking_tokens": 14
+     },
+     "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+     },
+     "service_tier": "standard",
+     "cache_creation": {
+      "ephemeral_1h_input_tokens": 648,
+      "ephemeral_5m_input_tokens": 0
+     },
+     "inference_geo": "not_available",
+     "iterations": [
+      {
+       "input_tokens": 2,
+       "output_tokens": 95,
+       "cache_read_input_tokens": 13111,
+       "cache_creation_input_tokens": 648,
+       "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 648
+       },
+       "type": "message"
+      }
+     ],
+     "speed": "standard"
+    },
+    "cost_usd": 0.0154205,
+    "model_usage": {
+     "claude-opus-5": {
+      "inputTokens": 2,
+      "outputTokens": 95,
+      "cacheReadInputTokens": 13111,
+      "cacheCreationInputTokens": 648,
+      "webSearchRequests": 0,
+      "costUSD": 0.0154205,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 64000,
+      "canonicalModel": "claude-opus-5",
+      "provider": "firstParty"
+     }
+    },
+    "at": "2026-08-24T14:51:44",
+    "error": null
+   }
+  ]
+ },
+ "actions": [
+  {
+   "i": 0,
+   "command": "cd /testbed && ls && grep -n \"class Blueprint\" src/flask/*.py",
+   "returncode": 0,
+   "output_bytes": 259,
+   "output_tokens_est": 65,
+   "duration_s": 0.379
+  },
+  {
+   "i": 1,
+   "command": "cd /testbed && sed -n 94,200p src/flask/blueprints.py",
+   "returncode": 0,
+   "output_bytes": 3969,
+   "output_tokens_est": 993,
+   "duration_s": 0.336
+  },
+  {
+   "i": 2,
+   "command": "cd /testbed && grep -rn \"may not be empty\\|may not contain a dot\" . --include=*.py --include=*.rst | head -20",
+   "returncode": 0,
+   "output_bytes": 332,
+   "output_tokens_est": 83,
+   "duration_s": 0.352
+  },
+  {
+   "i": 3,
+   "command": "cd /testbed && sideword index src/flask/blueprints.py",
+   "returncode": 0,
+   "output_bytes": 2085,
+   "output_tokens_est": 522,
+   "duration_s": 0.486
+  },
+  {
+   "i": 4,
+   "command": "cd /testbed && sideword show src/flask/blueprints.py Blueprint",
+   "returncode": 0,
+   "output_bytes": 2532,
+   "output_tokens_est": 633,
+   "duration_s": 0.481
+  },
+  {
+   "i": 5,
+   "command": "cd /testbed && sideword --help",
+   "returncode": 0,
+   "output_bytes": 418,
+   "output_tokens_est": 105,
+   "duration_s": 0.489
+  },
+  {
+   "i": 6,
+   "command": "cd /testbed && python - <<'EOF'\nimport re\np = \"src/flask/blueprints.py\"\ns = open(p).read()\nold = \"\"\"        if \".\" in name:\n            raise ValueError(\"'name' may not contain a dot '.' character.\")\n\"\"\"\nnew = \"\"\"        if not name:\n            raise ValueError(\"'name' may not be empty.\")\n\n        if \".\" in name:\n            raise ValueError(\"'name' may not contain a dot '.' character.\")\n\"\"\"\nassert s.count(old) == 1\nopen(p, \"w\").write(s.replace(old, new))\nEOF\nsed -n 112,128p src/flask/blueprints.py",
+   "returncode": 0,
+   "output_bytes": 557,
+   "output_tokens_est": 140,
+   "duration_s": 0.453
+  },
+  {
+   "i": 7,
+   "command": "cd /testbed && grep -rn 'name=\"\"' tests/ src/ | head -20",
+   "returncode": 0,
+   "output_bytes": 0,
+   "output_tokens_est": 0,
+   "duration_s": 0.363
+  },
+  {
+   "i": 8,
+   "command": "cd /testbed && python - <<'EOF'\np = \"src/flask/blueprints.py\"\ns = open(p).read()\nold = \"\"\"        self_name = options.get(\"name\", self.name)\n        name = f\"{name_prefix}.{self_name}\".lstrip(\".\")\n\n\"\"\"\nnew = \"\"\"        self_name = options.get(\"name\", self.name)\n        name = f\"{name_prefix}.{self_name}\".lstrip(\".\")\n\n        if not self_name:\n            raise ValueError(\"'name' may not be empty.\")\n\n\"\"\"\nassert s.count(old) == 1\nopen(p, \"w\").write(s.replace(old, new))\nEOF\nsed -n 168,185p src/flask/blueprints.py",
+   "returncode": 0,
+   "output_bytes": 782,
+   "output_tokens_est": 196,
+   "duration_s": 0.429
+  },
+  {
+   "i": 9,
+   "command": "cd /testbed && python -c \"\nimport flask\nfor bad in ('', None):\n    try:\n        flask.Blueprint(bad, __name__)\n        print('no error for', repr(bad))\n    except ValueError as e:\n        print('ValueError:', e)\nbp = flask.Blueprint('ok', __name__)\napp = flask.Flask(__name__)\ntry:\n    app.register_blueprint(bp, name='')\nexcept ValueError as e:\n    print('ValueError:', e)\napp.register_blueprint(bp)\nprint('registered:', list(app.blueprints))\n\" && python -m pytest tests/test_blueprints.py -q 2>&1 | tail -3",
+   "returncode": 0,
+   "output_bytes": 229,
+   "output_tokens_est": 58,
+   "duration_s": 1.056
+  },
+  {
+   "i": 10,
+   "command": "cd /testbed && python -m pytest -q 2>&1 | tail -5",
+   "returncode": 0,
+   "output_bytes": 366,
+   "output_tokens_est": 92,
+   "duration_s": 2.271
+  },
+  {
+   "i": 11,
+   "command": "cd /testbed && git stash && python -m pytest -q 2>&1 | tail -2 && git stash pop",
+   "returncode": 0,
+   "output_bytes": 585,
+   "output_tokens_est": 147,
+   "duration_s": 2.196
+  },
+  {
+   "i": 12,
+   "command": "cd /testbed && git diff -- src/flask/blueprints.py > patch.txt && cat patch.txt",
+   "returncode": 0,
+   "output_bytes": 866,
+   "output_tokens_est": 217,
+   "duration_s": 0.372
+  }
+ ],
+ "files_read": [
+  ".gitignore",
+  ".pytest_cache/.gitignore",
+  ".pytest_cache/CACHEDIR.TAG",
+  ".pytest_cache/README.md",
+  ".pytest_cache/v/cache/lastfailed",
+  ".pytest_cache/v/cache/nodeids",
+  ".pytest_cache/v/cache/stepwise",
+  ".sideword/src/flask/blueprints.py.idx",
+  ".sideword/src/flask/blueprints.py.md",
+  "CHANGES.rst",
+  "CONTRIBUTING.rst",
+  "LICENSE.rst",
+  "README.rst",
+  "artwork/LICENSE.rst",
+  "docs/api.rst",
+  "docs/appcontext.rst",
+  "docs/async-await.rst",
+  "docs/blueprints.rst",
+  "docs/changes.rst",
+  "docs/cli.rst",
+  "docs/conf.py",
+  "docs/config.rst",
+  "docs/contributing.rst",
+  "docs/debugging.rst",
+  "docs/deploying/apache-httpd.rst",
+  "docs/deploying/asgi.rst",
+  "docs/deploying/eventlet.rst",
+  "docs/deploying/gevent.rst",
+  "docs/deploying/gunicorn.rst",
+  "docs/deploying/index.rst",
+  "docs/deploying/mod_wsgi.rst",
+  "docs/deploying/nginx.rst",
+  "docs/deploying/proxy_fix.rst",
+  "docs/deploying/uwsgi.rst",
+  "docs/deploying/waitress.rst",
+  "docs/design.rst",
+  "docs/errorhandling.rst",
+  "docs/extensiondev.rst",
+  "docs/extensions.rst",
+  "docs/index.rst",
+  "docs/installation.rst",
+  "docs/license.rst",
+  "docs/lifecycle.rst",
+  "docs/logging.rst",
+  "docs/patterns/appdispatch.rst",
+  "docs/patterns/appfactories.rst",
+  "docs/patterns/caching.rst",
+  "docs/patterns/celery.rst",
+  "docs/patterns/deferredcallbacks.rst",
+  "docs/patterns/favicon.rst",
+  "docs/patterns/fileuploads.rst",
+  "docs/patterns/flashing.rst",
+  "docs/patterns/index.rst",
+  "docs/patterns/javascript.rst",
+  "docs/patterns/jquery.rst",
+  "docs/patterns/lazyloading.rst",
+  "docs/patterns/methodoverrides.rst",
+  "docs/patterns/mongoengine.rst",
+  "docs/patterns/packages.rst",
+  "docs/patterns/requestchecksum.rst",
+  "docs/patterns/singlepageapplications.rst",
+  "docs/patterns/sqlalchemy.rst",
+  "docs/patterns/sqlite3.rst",
+  "docs/patterns/streaming.rst",
+  "docs/patterns/subclassing.rst",
+  "docs/patterns/templateinheritance.rst",
+  "docs/patterns/urlprocessors.rst",
+  "docs/patterns/viewdecorators.rst",
+  "docs/patterns/wtforms.rst",
+  "docs/quickstart.rst",
+  "docs/reqcontext.rst",
+  "docs/security.rst",
+  "docs/server.rst",
+  "docs/shell.rst",
+  "docs/signals.rst",
+  "docs/templating.rst",
+  "docs/testing.rst",
+  "docs/tutorial/blog.rst",
+  "docs/tutorial/database.rst",
+  "docs/tutorial/deploy.rst",
+  "docs/tutorial/factory.rst",
+  "docs/tutorial/index.rst",
+  "docs/tutorial/install.rst",
+  "docs/tutorial/layout.rst",
+  "docs/tutorial/next.rst",
+  "docs/tutorial/static.rst",
+  "docs/tutorial/templates.rst",
+  "docs/tutorial/tests.rst",
+  "docs/tutorial/views.rst",
+  "docs/views.rst",
+  "examples/celery/make_celery.py",
+  "examples/celery/src/task_app/__init__.py",
+  "examples/celery/src/task_app/tasks.py",
+  "examples/celery/src/task_app/views.py",
+  "examples/javascript/.gitignore",
+  "examples/javascript/LICENSE.rst",
+  "examples/javascript/README.rst",
+  "examples/javascript/js_example/__init__.py",
+  "examples/javascript/js_example/views.py",
+  "examples/javascript/tests/conftest.py",
+  "examples/javascript/tests/test_js_example.py",
+  "examples/tutorial/.gitignore",
+  "examples/tutorial/LICENSE.rst",
+  "examples/tutorial/README.rst",
+  "examples/tutorial/flaskr/__init__.py",
+  "examples/tutorial/flaskr/auth.py",
+  "examples/tutorial/flaskr/blog.py",
+  "examples/tutorial/flaskr/db.py",
+  "examples/tutorial/tests/conftest.py",
+  "examples/tutorial/tests/test_auth.py",
+  "examples/tutorial/tests/test_blog.py",
+  "examples/tutorial/tests/test_db.py",
+  "examples/tutorial/tests/test_factory.py",
+  "patch.txt",
+  "pyproject.toml",
+  "src/Flask.egg-info/PKG-INFO",
+  "src/Flask.egg-info/SOURCES.txt",
+  "src/Flask.egg-info/dependency_links.txt",
+  "src/Flask.egg-info/entry_points.txt",
+  "src/Flask.egg-info/requires.txt",
+  "src/Flask.egg-info/top_level.txt",
+  "src/flask/__init__.py",
+  "src/flask/__main__.py",
+  "src/flask/__pycache__/__init__.cpython-311.pyc",
+  "src/flask/__pycache__/app.cpython-311.pyc",
+  "src/flask/__pycache__/blueprints.cpython-311.pyc",
+  "src/flask/__pycache__/cli.cpython-311.pyc",
+  "src/flask/__pycache__/config.cpython-311.pyc",
+  "src/flask/__pycache__/ctx.cpython-311.pyc",
+  "src/flask/__pycache__/debughelpers.cpython-311.pyc",
+  "src/flask/__pycache__/globals.cpython-311.pyc",
+  "src/flask/__pycache__/helpers.cpython-311.pyc",
+  "src/flask/__pycache__/logging.cpython-311.pyc",
+  "src/flask/__pycache__/scaffold.cpython-311.pyc",
+  "src/flask/__pycache__/sessions.cpython-311.pyc",
+  "src/flask/__pycache__/signals.cpython-311.pyc",
+  "src/flask/__pycache__/templating.cpython-311.pyc",
+  "src/flask/__pycache__/testing.cpython-311.pyc",
+  "src/flask/__pycache__/typing.cpython-311.pyc",
+  "src/flask/__pycache__/views.cpython-311.pyc",
+  "src/flask/__pycache__/wrappers.cpython-311.pyc",
+  "src/flask/app.py",
+  "src/flask/blueprints.py",
+  "src/flask/cli.py",
+  "src/flask/config.py",
+  "src/flask/ctx.py",
+  "src/flask/debughelpers.py",
+  "src/flask/globals.py",
+  "src/flask/helpers.py",
+  "src/flask/json/__init__.py",
+  "src/flask/json/__pycache__/__init__.cpython-311.pyc",
+  "src/flask/json/__pycache__/provider.cpython-311.pyc",
+  "src/flask/json/__pycache__/tag.cpython-311.pyc",
+  "src/flask/json/provider.py",
+  "src/flask/json/tag.py",
+  "src/flask/logging.py",
+  "src/flask/py.typed",
+  "src/flask/scaffold.py",
+  "src/flask/sessions.py",
+  "src/flask/signals.py",
+  "src/flask/templating.py",
+  "src/flask/testing.py",
+  "src/flask/typing.py",
+  "src/flask/views.py",
+  "src/flask/wrappers.py",
+  "tests/__pycache__/conftest.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_appctx.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_async.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_basic.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_blueprints.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_cli.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_config.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_converters.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_helpers.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_instance_config.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_json.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_json_tag.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_logging.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_regression.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_reqctx.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_session_interface.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_signals.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_subclassing.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_templating.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_testing.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_user_error_handler.cpython-311-pytest-7.3.0.pyc",
+  "tests/__pycache__/test_views.cpython-311-pytest-7.3.0.pyc",
+  "tests/conftest.py",
+  "tests/static/config.json",
+  "tests/static/config.toml",
+  "tests/static/index.html",
+  "tests/templates/_macro.html",
+  "tests/templates/context_template.html",
+  "tests/templates/escaping_template.html",
+  "tests/templates/mail.txt",
+  "tests/templates/nested/nested.txt",
+  "tests/templates/non_escaping_template.txt",
+  "tests/templates/simple_template.html",
+  "tests/templates/template_filter.html",
+  "tests/templates/template_test.html",
+  "tests/test_appctx.py",
+  "tests/test_apps/.env",
+  "tests/test_apps/.flaskenv",
+  "tests/test_apps/blueprintapp/__init__.py",
+  "tests/test_apps/blueprintapp/__pycache__/__init__.cpython-311.pyc",
+  "tests/test_apps/blueprintapp/apps/__init__.py",
+  "tests/test_apps/blueprintapp/apps/__pycache__/__init__.cpython-311.pyc",
+  "tests/test_apps/blueprintapp/apps/admin/__init__.py",
+  "tests/test_apps/blueprintapp/apps/admin/__pycache__/__init__.cpython-311.pyc",
+  "tests/test_apps/blueprintapp/apps/admin/static/css/test.css",
+  "tests/test_apps/blueprintapp/apps/admin/static/test.txt",
+  "tests/test_apps/blueprintapp/apps/admin/templates/admin/index.html",
+  "tests/test_apps/blueprintapp/apps/frontend/__init__.py",
+  "tests/test_apps/blueprintapp/apps/frontend/__pycache__/__init__.cpython-311.pyc",
+  "tests/test_apps/blueprintapp/apps/frontend/templates/frontend/index.html",
+  "tests/test_apps/cliapp/__init__.py",
+  "tests/test_apps/cliapp/__pycache__/__init__.cpython-311.pyc",
+  "tests/test_apps/cliapp/__pycache__/app.cpython-311.pyc",
+  "tests/test_apps/cliapp/__pycache__/factory.cpython-311.pyc",
+  "tests/test_apps/cliapp/__pycache__/importerrorapp.cpython-311.pyc",
+  "tests/test_apps/cliapp/app.py",
+  "tests/test_apps/cliapp/factory.py",
+  "tests/test_apps/cliapp/importerrorapp.py",
+  "tests/test_apps/cliapp/inner1/__init__.py",
+  "tests/test_apps/cliapp/inner1/inner2/__init__.py",
+  "tests/test_apps/cliapp/inner1/inner2/flask.py",
+  "tests/test_apps/cliapp/message.txt",
+  "tests/test_apps/cliapp/multiapp.py",
+  "tests/test_apps/helloworld/__pycache__/hello.cpython-311.pyc",
+  "tests/test_apps/helloworld/__pycache__/wsgi.cpython-311.pyc",
+  "tests/test_apps/helloworld/hello.py",
+  "tests/test_apps/helloworld/wsgi.py",
+  "tests/test_apps/subdomaintestmodule/__init__.py",
+  "tests/test_apps/subdomaintestmodule/static/hello.txt",
+  "tests/test_async.py",
+  "tests/test_basic.py",
+  "tests/test_blueprints.py",
+  "tests/test_cli.py",
+  "tests/test_config.py",
+  "tests/test_converters.py",
+  "tests/test_helpers.py",
+  "tests/test_instance_config.py",
+  "tests/test_json.py",
+  "tests/test_json_tag.py",
+  "tests/test_logging.py",
+  "tests/test_regression.py",
+  "tests/test_reqctx.py",
+  "tests/test_session_interface.py",
+  "tests/test_signals.py",
+  "tests/test_subclassing.py",
+  "tests/test_templating.py",
+  "tests/test_testing.py",
+  "tests/test_user_error_handler.py",
+  "tests/test_views.py",
+  "tests/typing/typing_app_decorators.py",
+  "tests/typing/typing_error_handler.py",
+  "tests/typing/typing_route.py"
+ ],
+ "files_read_count": 257,
+ "files_read_counts": {
+  "source": 255,
+  "sideword": 2
+ },
+ "files_modified": [
+  "src/flask/blueprints.py"
+ ],
+ "sideword_calls": [
+  {
+   "at": 1787608239,
+   "returncode": 0,
+   "args": "index src/flask/blueprints.py"
+  },
+  {
+   "at": 1787608242,
+   "returncode": 0,
+   "args": "show src/flask/blueprints.py Blueprint"
+  },
+  {
+   "at": 1787608251,
+   "returncode": 0,
+   "args": "--help"
+  }
+ ],
+ "sideword_call_count": 3,
+ "patch": "diff --git a/src/flask/blueprints.py b/src/flask/blueprints.py\nindex 7869b823..9ab97191 100644\n--- a/src/flask/blueprints.py\n+++ b/src/flask/blueprints.py\n@@ -116,6 +116,9 @@ class Blueprint(Scaffold):\n             root_path=root_path,\n         )\n \n+        if not name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if \".\" in name:\n             raise ValueError(\"'name' may not contain a dot '.' character.\")\n \n@@ -170,6 +173,9 @@ class Blueprint(Scaffold):\n         self_name = options.get(\"name\", self.name)\n         name = f\"{name_prefix}.{self_name}\".lstrip(\".\")\n \n+        if not self_name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if name in app.blueprints:\n             bp_desc = \"this\" if app.blueprints[name] is self else \"a different\"\n             existing_at = f\" '{name}'\" if self_name != name else \"\"\n",
+ "patch_source": "submission",
+ "submission_patch": "diff --git a/src/flask/blueprints.py b/src/flask/blueprints.py\nindex 7869b823..9ab97191 100644\n--- a/src/flask/blueprints.py\n+++ b/src/flask/blueprints.py\n@@ -116,6 +116,9 @@ class Blueprint(Scaffold):\n             root_path=root_path,\n         )\n \n+        if not name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if \".\" in name:\n             raise ValueError(\"'name' may not contain a dot '.' character.\")\n \n@@ -170,6 +173,9 @@ class Blueprint(Scaffold):\n         self_name = options.get(\"name\", self.name)\n         name = f\"{name_prefix}.{self_name}\".lstrip(\".\")\n \n+        if not self_name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if name in app.blueprints:\n             bp_desc = \"this\" if app.blueprints[name] is self else \"a different\"\n             existing_at = f\" '{name}'\" if self_name != name else \"\"\n",
+ "git_diff_patch": "diff --git a/src/flask/blueprints.py b/src/flask/blueprints.py\nindex 7869b823..9ab97191 100644\n--- a/src/flask/blueprints.py\n+++ b/src/flask/blueprints.py\n@@ -116,6 +116,9 @@ class Blueprint(Scaffold):\n             root_path=root_path,\n         )\n \n+        if not name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if \".\" in name:\n             raise ValueError(\"'name' may not contain a dot '.' character.\")\n \n@@ -170,6 +173,9 @@ class Blueprint(Scaffold):\n         self_name = options.get(\"name\", self.name)\n         name = f\"{name_prefix}.{self_name}\".lstrip(\".\")\n \n+        if not self_name:\n+            raise ValueError(\"'name' may not be empty.\")\n+\n         if name in app.blueprints:\n             bp_desc = \"this\" if app.blueprints[name] is self else \"a different\"\n             existing_at = f\" '{name}'\" if self_name != name else \"\"\n",
+ "scoring": {
+  "swebench": "4.1.0",
+  "baseline_commit": "5fbd75645183e3e2c86c0e60258c2d98e8714922",
+  "resolved": true,
+  "patch_applied": true,
+  "apply_output": "",
+  "log_path": "corpus/eval/claude-opus-5/sw/pallets__flask-5014.sw.eval.log",
+  "test_cmd": "pytest -rA",
+  "status_map": {
+   "tests/test_blueprints.py::test_blueprint_specific_error_handling": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_specific_user_error_handling": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_app_error_handling": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[-/-/]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/--/]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/-/-/]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo--/foo]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/--/foo/]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[-/bar-/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-/bar-/foo/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-bar-/foo/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo-/bar-/foo/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-//bar-/foo/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo//-/bar-/foo/bar]": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_url_defaults": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_url_processors": "PASSED",
+   "tests/test_blueprints.py::test_templates_and_static": "PASSED",
+   "tests/test_blueprints.py::test_default_static_max_age": "PASSED",
+   "tests/test_blueprints.py::test_templates_list": "PASSED",
+   "tests/test_blueprints.py::test_dotted_name_not_allowed": "PASSED",
+   "tests/test_blueprints.py::test_empty_name_not_allowed": "PASSED",
+   "tests/test_blueprints.py::test_dotted_names_from_app": "PASSED",
+   "tests/test_blueprints.py::test_empty_url_defaults": "PASSED",
+   "tests/test_blueprints.py::test_route_decorator_custom_endpoint": "PASSED",
+   "tests/test_blueprints.py::test_route_decorator_custom_endpoint_with_dots": "PASSED",
+   "tests/test_blueprints.py::test_endpoint_decorator": "PASSED",
+   "tests/test_blueprints.py::test_template_filter": "PASSED",
+   "tests/test_blueprints.py::test_add_template_filter": "PASSED",
+   "tests/test_blueprints.py::test_template_filter_with_name": "PASSED",
+   "tests/test_blueprints.py::test_add_template_filter_with_name": "PASSED",
+   "tests/test_blueprints.py::test_template_filter_with_template": "PASSED",
+   "tests/test_blueprints.py::test_template_filter_after_route_with_template": "PASSED",
+   "tests/test_blueprints.py::test_add_template_filter_with_template": "PASSED",
+   "tests/test_blueprints.py::test_template_filter_with_name_and_template": "PASSED",
+   "tests/test_blueprints.py::test_add_template_filter_with_name_and_template": "PASSED",
+   "tests/test_blueprints.py::test_template_test": "PASSED",
+   "tests/test_blueprints.py::test_add_template_test": "PASSED",
+   "tests/test_blueprints.py::test_template_test_with_name": "PASSED",
+   "tests/test_blueprints.py::test_add_template_test_with_name": "PASSED",
+   "tests/test_blueprints.py::test_template_test_with_template": "PASSED",
+   "tests/test_blueprints.py::test_template_test_after_route_with_template": "PASSED",
+   "tests/test_blueprints.py::test_add_template_test_with_template": "PASSED",
+   "tests/test_blueprints.py::test_template_test_with_name_and_template": "PASSED",
+   "tests/test_blueprints.py::test_add_template_test_with_name_and_template": "PASSED",
+   "tests/test_blueprints.py::test_context_processing": "PASSED",
+   "tests/test_blueprints.py::test_template_global": "PASSED",
+   "tests/test_blueprints.py::test_request_processing": "PASSED",
+   "tests/test_blueprints.py::test_app_request_processing": "PASSED",
+   "tests/test_blueprints.py::test_app_url_processors": "PASSED",
+   "tests/test_blueprints.py::test_nested_blueprint": "PASSED",
+   "tests/test_blueprints.py::test_nested_callback_order": "PASSED",
+   "tests/test_blueprints.py::test_nesting_url_prefixes[/parent-/child-None-None]": "PASSED",
+   "tests/test_blueprints.py::test_nesting_url_prefixes[/parent-None-None-/child]": "PASSED",
+   "tests/test_blueprints.py::test_nesting_url_prefixes[None-None-/parent-/child]": "PASSED",
+   "tests/test_blueprints.py::test_nesting_url_prefixes[/other-/something-/parent-/child]": "PASSED",
+   "tests/test_blueprints.py::test_nesting_subdomains": "PASSED",
+   "tests/test_blueprints.py::test_child_and_parent_subdomain": "PASSED",
+   "tests/test_blueprints.py::test_unique_blueprint_names": "PASSED",
+   "tests/test_blueprints.py::test_self_registration": "PASSED",
+   "tests/test_blueprints.py::test_blueprint_renaming": "PASSED"
+  },
+  "FAIL_TO_PASS": {
+   "success": [
+    "tests/test_blueprints.py::test_empty_name_not_allowed"
+   ],
+   "failure": []
+  },
+  "PASS_TO_PASS": {
+   "success": [
+    "tests/test_blueprints.py::test_blueprint_specific_error_handling",
+    "tests/test_blueprints.py::test_blueprint_specific_user_error_handling",
+    "tests/test_blueprints.py::test_blueprint_app_error_handling",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[-/-/]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/--/]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/-/-/]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo--/foo]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/--/foo/]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[-/bar-/bar]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-/bar-/foo/bar]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-bar-/foo/bar]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo-/bar-/foo/bar]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo/-//bar-/foo/bar]",
+    "tests/test_blueprints.py::test_blueprint_prefix_slash[/foo//-/bar-/foo/bar]",
+    "tests/test_blueprints.py::test_blueprint_url_defaults",
+    "tests/test_blueprints.py::test_blueprint_url_processors",
+    "tests/test_blueprints.py::test_templates_and_static",
+    "tests/test_blueprints.py::test_default_static_max_age",
+    "tests/test_blueprints.py::test_templates_list",
+    "tests/test_blueprints.py::test_dotted_name_not_allowed",
+    "tests/test_blueprints.py::test_dotted_names_from_app",
+    "tests/test_blueprints.py::test_empty_url_defaults",
+    "tests/test_blueprints.py::test_route_decorator_custom_endpoint",
+    "tests/test_blueprints.py::test_route_decorator_custom_endpoint_with_dots",
+    "tests/test_blueprints.py::test_endpoint_decorator",
+    "tests/test_blueprints.py::test_template_filter",
+    "tests/test_blueprints.py::test_add_template_filter",
+    "tests/test_blueprints.py::test_template_filter_with_name",
+    "tests/test_blueprints.py::test_add_template_filter_with_name",
+    "tests/test_blueprints.py::test_template_filter_with_template",
+    "tests/test_blueprints.py::test_template_filter_after_route_with_template",
+    "tests/test_blueprints.py::test_add_template_filter_with_template",
+    "tests/test_blueprints.py::test_template_filter_with_name_and_template",
+    "tests/test_blueprints.py::test_add_template_filter_with_name_and_template",
+    "tests/test_blueprints.py::test_template_test",
+    "tests/test_blueprints.py::test_add_template_test",
+    "tests/test_blueprints.py::test_template_test_with_name",
+    "tests/test_blueprints.py::test_add_template_test_with_name",
+    "tests/test_blueprints.py::test_template_test_with_template",
+    "tests/test_blueprints.py::test_template_test_after_route_with_template",
+    "tests/test_blueprints.py::test_add_template_test_with_template",
+    "tests/test_blueprints.py::test_template_test_with_name_and_template",
+    "tests/test_blueprints.py::test_add_template_test_with_name_and_template",
+    "tests/test_blueprints.py::test_context_processing",
+    "tests/test_blueprints.py::test_template_global",
+    "tests/test_blueprints.py::test_request_processing",
+    "tests/test_blueprints.py::test_app_request_processing",
+    "tests/test_blueprints.py::test_app_url_processors",
+    "tests/test_blueprints.py::test_nested_blueprint",
+    "tests/test_blueprints.py::test_nested_callback_order",
+    "tests/test_blueprints.py::test_nesting_url_prefixes[/parent-/child-None-None]",
+    "tests/test_blueprints.py::test_nesting_url_prefixes[/parent-None-None-/child]",
+    "tests/test_blueprints.py::test_nesting_url_prefixes[None-None-/parent-/child]",
+    "tests/test_blueprints.py::test_nesting_url_prefixes[/other-/something-/parent-/child]",
+    "tests/test_blueprints.py::test_nesting_subdomains",
+    "tests/test_blueprints.py::test_child_and_parent_subdomain",
+    "tests/test_blueprints.py::test_unique_blueprint_names",
+    "tests/test_blueprints.py::test_self_registration",
+    "tests/test_blueprints.py::test_blueprint_renaming"
+   ],
+   "failure": []
+  },
+  "wall_s": 6.1
+ },
+ "finished_at": "2026-08-24T21:51:52+00:00",
+ "wall_s": 93.5
+}

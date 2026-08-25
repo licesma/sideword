@@ -20,6 +20,25 @@ dependencies = [
 #   uv run python -m unittest discover -s harness/tests -t .
 dev = []
 
+# `harness/evaluate.py` only. Two pins, and both are pins on purpose:
+#
+#   mini-swe-agent  is the agent the experiment runs. The whole point of picking it
+#                   was that its tool surface is small enough to read; a floating
+#                   version could change that surface between arms of one sweep.
+#   swebench        supplies the test command, the log parsers and the definition of
+#                   "resolved". 4.1.0 is the last line that still carries
+#                   MAP_REPO_VERSION_TO_SPECS in-tree, which is what the classic
+#                   `sweb.eval.x86_64.*` images were built against; 5.x moved those
+#                   specs into the dataset row and no longer matches these images.
+#
+# Kept out of the base dependency set so a cold clone can still run the converter
+# and the test suite without pulling 77 packages. Run the evaluator with:
+#   uv run --extra eval python -m harness.evaluate ...
+eval = [
+    "mini-swe-agent==2.4.6",
+    "swebench==4.1.0",
+]
+
 [tool.uv]
 # 3.14 is not optional. `harness/strip.py` and the anchorer rely on 3.12+ syntax,
 # and a system 3.9/3.10 fails at import. `uv python install 3.14` provides it

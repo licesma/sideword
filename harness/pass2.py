@@ -58,11 +58,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 if __package__ in (None, ""):
     sys.path.insert(0, str(ROOT))
-    from harness import astcheck, directives as directives_mod, paths as paths_mod
+    from harness import astcheck, directives as directives_mod, paths as paths_mod, strip as strip_mod
     from harness.pass1 import (CatFile, blob_sha1, log, ls_tree, sha256_file, stripper_version,
                                STAT_KEYS)
 else:
-    from . import astcheck, directives as directives_mod, paths as paths_mod
+    from . import astcheck, directives as directives_mod, paths as paths_mod, strip as strip_mod
     from .pass1 import CatFile, blob_sha1, log, ls_tree, sha256_file, stripper_version, STAT_KEYS
 
 DEFAULT_INSTANCES = ROOT / "corpus" / "instances.json"
@@ -129,15 +129,26 @@ def _w_init(directives_path: str) -> None:
     _W_DIRECTIVES = directives_mod.load(directives_path)
 
 
+def sidecar_keep_owners(cache_py: str) -> list[tuple[str, str]]:
+    """The ``keep_owners`` context cache/<sha>.jsonl was written under (usually none)."""
+    jsonl = Path(cache_py).with_suffix(".jsonl")
+    try:
+        lines = [l for l in jsonl.read_text(encoding="utf-8").split("\n") if l]
+    except OSError:
+        return []
+    return strip_mod.keep_owners_from_sidecar(json.loads(l) for l in lines[-1:])
+
+
 def check_blob(sha: str, orig: bytes, cache_py: str) -> dict:
-    """Re-verify one cache entry against its original blob.  Pure in (orig, cache bytes)."""
+    """Re-verify one cache entry against its original blob.  Pure in (orig, cache bytes,
+    the sidecar's recorded ``keep_owners``)."""
     try:
         stripped = Path(cache_py).read_bytes()
     except OSError as e:
         return {"sha": sha, "ok": False, "detail": f"cache file unreadable: {e}",
                 "stripped_sha": None, "identity": False}
     try:
-        ok, detail = astcheck.equal(orig, stripped, _W_DIRECTIVES)
+        ok, detail = astcheck.equal(orig, stripped, _W_DIRECTIVES, sidecar_keep_owners(cache_py))
     except Exception as e:  # never crash the batch
         ok, detail = False, f"astcheck raised {type(e).__name__}: {e}"
     return {"sha": sha, "ok": ok, "detail": detail if not ok else "",
@@ -193,6 +204,7 @@ def commit_message(inst: dict, snap: dict, agg: dict, files_changed: int, files_
         f"comments_removed: {agg['comments_removed']}",
         f"docstrings_removed: {agg['docstrings_removed']}",
         f"doctest_docstrings_kept: {agg['doctest_docstrings_kept']}",
+        f"docstrings_kept: {agg.get('docstrings_kept', 0)}",
         f"directives_kept: {agg['directives_kept']}",
         f"stray_strings_kept: {agg['stray_strings_kept']}",
         f"unresolved: {agg['unresolved']}",

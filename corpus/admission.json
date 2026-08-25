@@ -1,0 +1,4204 @@
+{
+ "schema": "sideword-admission-1",
+ "generated_at": "2026-08-25T00:24:35+00:00",
+ "method": {
+  "command": "uv run --extra eval python -m harness.evaluate --instance <id> --arm <orig|sw|nc> --model admission --score-only <gold|empty>",
+  "model_calls": 0,
+  "swebench": "4.1.0",
+  "runs": 180,
+  "concurrency": 3,
+  "note": "--score-only exits non-zero when the assertion fails: gold must score resolved, empty must score unresolved. Both must hold for an arm to discriminate."
+ },
+ "summary": {
+  "instances": 30,
+  "arms": 90,
+  "arms_passing": 72,
+  "arms_failing": 18,
+  "instances_usable_three_arm": 22,
+  "instances_excluded": 8,
+  "arm1_failures": [
+   "astropy__astropy-7336",
+   "django__django-7530"
+  ]
+ },
+ "usable_instances": [
+  "django__django-14631",
+  "django__django-14787",
+  "matplotlib__matplotlib-14623",
+  "matplotlib__matplotlib-23299",
+  "matplotlib__matplotlib-24970",
+  "matplotlib__matplotlib-25311",
+  "pallets__flask-5014",
+  "psf__requests-2931",
+  "pydata__xarray-4356",
+  "pydata__xarray-7229",
+  "pytest-dev__pytest-5262",
+  "scikit-learn__scikit-learn-10297",
+  "scikit-learn__scikit-learn-13142",
+  "scikit-learn__scikit-learn-15100",
+  "scikit-learn__scikit-learn-25102",
+  "sphinx-doc__sphinx-11445",
+  "sphinx-doc__sphinx-8475",
+  "sympy__sympy-13551",
+  "sympy__sympy-16597",
+  "sympy__sympy-20916",
+  "sympy__sympy-22714",
+  "sympy__sympy-23824"
+ ],
+ "excluded_instances": [
+  {
+   "instance_id": "astropy__astropy-13398",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1181,1189 `func.__doc__ += inspect.cleandoc(cls.__doc__).strip()`. Stripped, cls.__doc__ is None -> AttributeError: 'NoneType' object has no attribute 'expandtabs', raised while astropy/conftest.py::pytest_configure imports astropy.io.ascii. pytest INTERNALERROR; 0 of 4 F2P and 0 of 68 P2P run."
+  },
+  {
+   "instance_id": "astropy__astropy-14365",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1233,1246, same `func.__doc__ += inspect.cleandoc(cls.__doc__)`. pytest INTERNALERROR at configure; 0 of 1 F2P and 0 of 8 P2P run."
+  },
+  {
+   "instance_id": "astropy__astropy-14598",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1233,1246, same pattern. pytest INTERNALERROR at configure; 0 of 1 F2P and 0 of 175 P2P run."
+  },
+  {
+   "instance_id": "astropy__astropy-7336",
+   "arms_failed": [
+    "orig",
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": true,
+   "mechanism": "harness:submodule-gitlink",
+   "mechanism_detail": "materialize() aborts: `git ls-files -z | xargs -0 -r rm -f` hits the `astropy_helpers` submodule (mode 160000) and `rm -f` refuses a directory. Nothing installs, no test runs. The only instance of the 30 with a gitlink."
+  },
+  {
+   "instance_id": "django__django-7530",
+   "arms_failed": [
+    "orig",
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": true,
+   "mechanism": "instance-cannot-discriminate",
+   "mechanism_detail": "The empty patch scores resolved: 1/1 F2P and 59/59 P2P pass with no change applied. Reproduces under stock SWE-bench in an untouched image; nothing to do with stripping."
+  },
+  {
+   "instance_id": "mwaskom__seaborn-3069",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "seaborn/relational.py:178 `DocstringComponents.from_function_params(EstimateAggregator.__init__)` routes through seaborn/_docstrings.py:41-49 `pydoc.getdoc(func)` parsed by NumpyDocString. Stripped, the entries dict is empty and seaborn/relational.py:576 (`lineplot.__doc__ = \"\"\"...{params.stat.errorbar}...\"\"\"`) raises AttributeError: 'DocstringComponents' object has no attribute 'errorbar' at `import seaborn`. Collection error; 0 of 2 F2P and 0 of 94 P2P run."
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6528",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "repository-lints-itself",
+   "mechanism_detail": "The suite runs pylint over pylint. All 4 F2P pass; the P2P test tests/test_self.py::TestRunTC::test_pkginfo fails because pylint on pylint/__pkginfo__.py emits C0114 missing-module-docstring and C0116 missing-function-docstring, exit 16 instead of 0. (The two test_generate_toml_config failures in the same log are pre-existing tomlkit breakage: they fail in arm 1 too and are on neither list.)"
+  },
+  {
+   "instance_id": "pytest-dev__pytest-10051",
+   "arms_failed": [
+    "sw",
+    "nc"
+   ],
+   "arm1_affected": false,
+   "mechanism": "docstring-is-executable-config",
+   "mechanism_detail": "PYTEST_DONT_REWRITE appears in exactly one place in the repository: src/_pytest/pytester.py:3, inside the module docstring. src/_pytest/assertion/rewrite.py:759-760 `is_rewrite_disabled(docstring)` greps for that token; mark_rewrite (rewrite.py:213) then calls _warn_already_imported. Stripped, the opt-out is gone and pytest emits PytestAssertRewriteWarning: Module already imported so cannot be rewritten: _pytest.pytester. The repo sets filterwarnings = error, so this raises inside pytest_cmdline_parse and pytest never starts; 0 of 1 F2P and 0 of 15 P2P run."
+  }
+ ],
+ "mechanism_groups": {
+  "docstring-read-at-runtime": [
+   "astropy__astropy-13398",
+   "astropy__astropy-14365",
+   "astropy__astropy-14598",
+   "mwaskom__seaborn-3069"
+  ],
+  "harness:submodule-gitlink": [
+   "astropy__astropy-7336"
+  ],
+  "instance-cannot-discriminate": [
+   "django__django-7530"
+  ],
+  "repository-lints-itself": [
+   "pylint-dev__pylint-6528"
+  ],
+  "docstring-is-executable-config": [
+   "pytest-dev__pytest-10051"
+  ]
+ },
+ "rows": [
+  {
+   "instance_id": "astropy__astropy-7336",
+   "repo": "astropy/astropy",
+   "version": "1.3",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": null,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 4,
+    "patch_applied": null,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "empty": {
+    "resolved": null,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 3,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "usable": false,
+   "mechanism": "harness:submodule-gitlink",
+   "mechanism_detail": "materialize() aborts: `git ls-files -z | xargs -0 -r rm -f` hits the `astropy_helpers` submodule (mode 160000) and `rm -f` refuses a directory. Nothing installs, no test runs. The only instance of the 30 with a gitlink.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-7336",
+   "repo": "astropy/astropy",
+   "version": "1.3",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": null,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 5,
+    "patch_applied": null,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "empty": {
+    "resolved": null,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 2,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "usable": false,
+   "mechanism": "harness:submodule-gitlink",
+   "mechanism_detail": "Same as arm 1. Also unreachable by tree hash: tree_blobs() drops gitlinks, so the rebuilt index could never equal tree_sha(ref).",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-7336",
+   "repo": "astropy/astropy",
+   "version": "1.3",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": null,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 4,
+    "patch_applied": null,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "empty": {
+    "resolved": null,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 3,
+    "install_ok": null,
+    "f2p": [
+     0,
+     0
+    ],
+    "p2p": [
+     0,
+     0
+    ]
+   },
+   "usable": false,
+   "mechanism": "harness:submodule-gitlink",
+   "mechanism_detail": "Same as arm 1.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-13398",
+   "repo": "astropy/astropy",
+   "version": "5.0",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 135,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     4,
+     4
+    ],
+    "p2p": [
+     68,
+     68
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 137,
+    "install_ok": null,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     68,
+     68
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-13398",
+   "repo": "astropy/astropy",
+   "version": "5.0",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 134,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     0,
+     68
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 136,
+    "install_ok": null,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     0,
+     68
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1181,1189 `func.__doc__ += inspect.cleandoc(cls.__doc__).strip()`. Stripped, cls.__doc__ is None -> AttributeError: 'NoneType' object has no attribute 'expandtabs', raised while astropy/conftest.py::pytest_configure imports astropy.io.ascii. pytest INTERNALERROR; 0 of 4 F2P and 0 of 68 P2P run.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-13398",
+   "repo": "astropy/astropy",
+   "version": "5.0",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 134,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     0,
+     68
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 136,
+    "install_ok": null,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     0,
+     68
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "Identical to arm 2 (the .py blobs are byte-identical).",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14365",
+   "repo": "astropy/astropy",
+   "version": "5.1",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 93,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 88,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14365",
+   "repo": "astropy/astropy",
+   "version": "5.1",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 93,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 88,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     8
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1233,1246, same `func.__doc__ += inspect.cleandoc(cls.__doc__)`. pytest INTERNALERROR at configure; 0 of 1 F2P and 0 of 8 P2P run.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14365",
+   "repo": "astropy/astropy",
+   "version": "5.1",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 91,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 88,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     8
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "Identical to arm 2.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14598",
+   "repo": "astropy/astropy",
+   "version": "5.2",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 87,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     175,
+     175
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 84,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     175,
+     175
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14598",
+   "repo": "astropy/astropy",
+   "version": "5.2",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 86,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     175
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 84,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     175
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "astropy/io/ascii/core.py:1233,1246, same pattern. pytest INTERNALERROR at configure; 0 of 1 F2P and 0 of 175 P2P run.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "astropy__astropy-14598",
+   "repo": "astropy/astropy",
+   "version": "5.2",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 86,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     175
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 84,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     175
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "Identical to arm 2.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-7530",
+   "repo": "django/django",
+   "version": "1.11",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 26,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": true,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": false,
+   "mechanism": "instance-cannot-discriminate",
+   "mechanism_detail": "The empty patch scores resolved: 1/1 F2P and 59/59 P2P pass with no change applied. Reproduces under stock SWE-bench in an untouched image; nothing to do with stripping.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-7530",
+   "repo": "django/django",
+   "version": "1.11",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 26,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": true,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": false,
+   "mechanism": "instance-cannot-discriminate",
+   "mechanism_detail": "Same as arm 1.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-7530",
+   "repo": "django/django",
+   "version": "1.11",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 25,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": true,
+    "expected": false,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": false,
+   "mechanism": "instance-cannot-discriminate",
+   "mechanism_detail": "Same as arm 1.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14631",
+   "repo": "django/django",
+   "version": "4.0",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 23,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14631",
+   "repo": "django/django",
+   "version": "4.0",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 23,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14631",
+   "repo": "django/django",
+   "version": "4.0",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 23,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     117,
+     117
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14787",
+   "repo": "django/django",
+   "version": "4.1",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14787",
+   "repo": "django/django",
+   "version": "4.1",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "django__django-14787",
+   "repo": "django/django",
+   "version": "4.1",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     20,
+     20
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-14623",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.1",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 78,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 74,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-14623",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.1",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 78,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 74,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-14623",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.1",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 78,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 74,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     400,
+     400
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-23299",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.5",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 112,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 108,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-23299",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.5",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 112,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 110,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-23299",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.5",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 112,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 108,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     192,
+     192
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-24970",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.6",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 128,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 137,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-24970",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.6",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 128,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 135,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-24970",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.6",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 126,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 134,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     253,
+     253
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25311",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.7",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 145,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 127,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25311",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.7",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 144,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 127,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "matplotlib__matplotlib-25311",
+   "repo": "matplotlib/matplotlib",
+   "version": "3.7",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 141,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 128,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     181,
+     181
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "mwaskom__seaborn-3069",
+   "repo": "mwaskom/seaborn",
+   "version": "0.12",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     94,
+     94
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 28,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     94,
+     94
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "mwaskom__seaborn-3069",
+   "repo": "mwaskom/seaborn",
+   "version": "0.12",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     0,
+     94
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     0,
+     94
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "seaborn/relational.py:178 `DocstringComponents.from_function_params(EstimateAggregator.__init__)` routes through seaborn/_docstrings.py:41-49 `pydoc.getdoc(func)` parsed by NumpyDocString. Stripped, the entries dict is empty and seaborn/relational.py:576 (`lineplot.__doc__ = \"\"\"...{params.stat.errorbar}...\"\"\"`) raises AttributeError: 'DocstringComponents' object has no attribute 'errorbar' at `import seaborn`. Collection error; 0 of 2 F2P and 0 of 94 P2P run.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "mwaskom__seaborn-3069",
+   "repo": "mwaskom/seaborn",
+   "version": "0.12",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     0,
+     94
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     0,
+     94
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-read-at-runtime",
+   "mechanism_detail": "Identical to arm 2.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "repo": "pallets/flask",
+   "version": "2.3",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 9,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 9,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "repo": "pallets/flask",
+   "version": "2.3",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 9,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 9,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pallets__flask-5014",
+   "repo": "pallets/flask",
+   "version": "2.3",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 9,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 8,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "psf__requests-2931",
+   "repo": "psf/requests",
+   "version": "2.9",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 7,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 7,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "psf__requests-2931",
+   "repo": "psf/requests",
+   "version": "2.9",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 7,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 7,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "psf__requests-2931",
+   "repo": "psf/requests",
+   "version": "2.9",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 8,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 7,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     84,
+     84
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-4356",
+   "repo": "pydata/xarray",
+   "version": "0.12",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     8,
+     8
+    ],
+    "p2p": [
+     604,
+     604
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "install_ok": true,
+    "f2p": [
+     0,
+     8
+    ],
+    "p2p": [
+     596,
+     604
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-4356",
+   "repo": "pydata/xarray",
+   "version": "0.12",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     8,
+     8
+    ],
+    "p2p": [
+     604,
+     604
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "install_ok": true,
+    "f2p": [
+     0,
+     8
+    ],
+    "p2p": [
+     596,
+     604
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-4356",
+   "repo": "pydata/xarray",
+   "version": "0.12",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 18,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     8,
+     8
+    ],
+    "p2p": [
+     604,
+     604
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "install_ok": true,
+    "f2p": [
+     0,
+     8
+    ],
+    "p2p": [
+     596,
+     604
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-7229",
+   "repo": "pydata/xarray",
+   "version": "2022.09",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 22,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 22,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-7229",
+   "repo": "pydata/xarray",
+   "version": "2022.09",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pydata__xarray-7229",
+   "repo": "pydata/xarray",
+   "version": "2022.09",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     280,
+     280
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6528",
+   "repo": "pylint-dev/pylint",
+   "version": "2.14",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 29,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     4,
+     4
+    ],
+    "p2p": [
+     171,
+     171
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 30,
+    "install_ok": true,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     171,
+     171
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6528",
+   "repo": "pylint-dev/pylint",
+   "version": "2.14",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 30,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     4,
+     4
+    ],
+    "p2p": [
+     170,
+     171
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "install_ok": true,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     170,
+     171
+    ]
+   },
+   "usable": false,
+   "mechanism": "repository-lints-itself",
+   "mechanism_detail": "The suite runs pylint over pylint. All 4 F2P pass; the P2P test tests/test_self.py::TestRunTC::test_pkginfo fails because pylint on pylint/__pkginfo__.py emits C0114 missing-module-docstring and C0116 missing-function-docstring, exit 16 instead of 0. (The two test_generate_toml_config failures in the same log are pre-existing tomlkit breakage: they fail in arm 1 too and are on neither list.)",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pylint-dev__pylint-6528",
+   "repo": "pylint-dev/pylint",
+   "version": "2.14",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 29,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     4,
+     4
+    ],
+    "p2p": [
+     170,
+     171
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 31,
+    "install_ok": true,
+    "f2p": [
+     0,
+     4
+    ],
+    "p2p": [
+     170,
+     171
+    ]
+   },
+   "usable": false,
+   "mechanism": "repository-lints-itself",
+   "mechanism_detail": "Identical to arm 2.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5262",
+   "repo": "pytest-dev/pytest",
+   "version": "4.5",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 23,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5262",
+   "repo": "pytest-dev/pytest",
+   "version": "4.5",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-5262",
+   "repo": "pytest-dev/pytest",
+   "version": "4.5",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     108,
+     108
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-10051",
+   "repo": "pytest-dev/pytest",
+   "version": "7.2",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     15,
+     15
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     15,
+     15
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-10051",
+   "repo": "pytest-dev/pytest",
+   "version": "7.2",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     15
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     15
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-is-executable-config",
+   "mechanism_detail": "PYTEST_DONT_REWRITE appears in exactly one place in the repository: src/_pytest/pytester.py:3, inside the module docstring. src/_pytest/assertion/rewrite.py:759-760 `is_rewrite_disabled(docstring)` greps for that token; mark_rewrite (rewrite.py:213) then calls _warn_already_imported. Stripped, the opt-out is gone and pytest emits PytestAssertRewriteWarning: Module already imported so cannot be rewritten: _pytest.pytester. The repo sets filterwarnings = error, so this raises inside pytest_cmdline_parse and pytest never starts; 0 of 1 F2P and 0 of 15 P2P run.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "pytest-dev__pytest-10051",
+   "repo": "pytest-dev/pytest",
+   "version": "7.2",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": false,
+    "expected": true,
+    "ok": false,
+    "exit_code": 1,
+    "wall_s": 11,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     15
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     0,
+     15
+    ]
+   },
+   "usable": false,
+   "mechanism": "docstring-is-executable-config",
+   "mechanism_detail": "Identical to arm 2.",
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10297",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.20",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 199,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 200,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10297",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.20",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 198,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 198,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-10297",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.20",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 198,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 197,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     28,
+     28
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-13142",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.21",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 236,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 245,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-13142",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.21",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 236,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 245,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-13142",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.21",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 235,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 245,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     54,
+     54
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-15100",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.22",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 15,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 12,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-15100",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.22",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 15,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-15100",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "0.22",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 15,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 12,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     93,
+     93
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25102",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "1.3",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 18,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25102",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "1.3",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 18,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "scikit-learn__scikit-learn-25102",
+   "repo": "scikit-learn/scikit-learn",
+   "version": "1.3",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     59,
+     59
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8475",
+   "repo": "sphinx-doc/sphinx",
+   "version": "3.4",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8475",
+   "repo": "sphinx-doc/sphinx",
+   "version": "3.4",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-8475",
+   "repo": "sphinx-doc/sphinx",
+   "version": "3.4",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-11445",
+   "repo": "sphinx-doc/sphinx",
+   "version": "7.1",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-11445",
+   "repo": "sphinx-doc/sphinx",
+   "version": "7.1",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sphinx-doc__sphinx-11445",
+   "repo": "sphinx-doc/sphinx",
+   "version": "7.1",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 14,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     2,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 13,
+    "install_ok": true,
+    "f2p": [
+     0,
+     2
+    ],
+    "p2p": [
+     8,
+     8
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-13551",
+   "repo": "sympy/sympy",
+   "version": "1.1",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-13551",
+   "repo": "sympy/sympy",
+   "version": "1.1",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": false,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": false,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": "install-fails-benign",
+   "note_detail": "`pip install -e .` fails: setup.py reads sympy/__init__.py as text and does `f.read().split('\"\"\"')[1]` to lift the module docstring into long_description; with no triple quotes left that is an IndexError and egg_info exits 1. Harmless here \u2014 the image's editable install already points at /testbed and sympy's `bin/test` imports from the source tree \u2014 and both verdicts match arm 1 exactly."
+  },
+  {
+   "instance_id": "sympy__sympy-13551",
+   "repo": "sympy/sympy",
+   "version": "1.1",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": false,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": false,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     17,
+     17
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": "install-fails-benign",
+   "note_detail": "`pip install -e .` fails: setup.py reads sympy/__init__.py as text and does `f.read().split('\"\"\"')[1]` to lift the module docstring into long_description; with no triple quotes left that is an IndexError and egg_info exits 1. Harmless here \u2014 the image's editable install already points at /testbed and sympy's `bin/test` imports from the source tree \u2014 and both verdicts match arm 1 exactly."
+  },
+  {
+   "instance_id": "sympy__sympy-16597",
+   "repo": "sympy/sympy",
+   "version": "1.5",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     3,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 21,
+    "install_ok": true,
+    "f2p": [
+     0,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-16597",
+   "repo": "sympy/sympy",
+   "version": "1.5",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": false,
+    "f2p": [
+     3,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "install_ok": false,
+    "f2p": [
+     0,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": "install-fails-benign",
+   "note_detail": "`pip install -e .` fails: setup.py reads sympy/__init__.py as text and does `f.read().split('\"\"\"')[1]` to lift the module docstring into long_description; with no triple quotes left that is an IndexError and egg_info exits 1. Harmless here \u2014 the image's editable install already points at /testbed and sympy's `bin/test` imports from the source tree \u2014 and both verdicts match arm 1 exactly."
+  },
+  {
+   "instance_id": "sympy__sympy-16597",
+   "repo": "sympy/sympy",
+   "version": "1.5",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": false,
+    "f2p": [
+     3,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "install_ok": false,
+    "f2p": [
+     0,
+     3
+    ],
+    "p2p": [
+     74,
+     74
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": "install-fails-benign",
+   "note_detail": "`pip install -e .` fails: setup.py reads sympy/__init__.py as text and does `f.read().split('\"\"\"')[1]` to lift the module docstring into long_description; with no triple quotes left that is an IndexError and egg_info exits 1. Harmless here \u2014 the image's editable install already points at /testbed and sympy's `bin/test` imports from the source tree \u2014 and both verdicts match arm 1 exactly."
+  },
+  {
+   "instance_id": "sympy__sympy-20916",
+   "repo": "sympy/sympy",
+   "version": "1.8",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-20916",
+   "repo": "sympy/sympy",
+   "version": "1.8",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-20916",
+   "repo": "sympy/sympy",
+   "version": "1.8",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 12,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 10,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     1,
+     1
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-22714",
+   "repo": "sympy/sympy",
+   "version": "1.10",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-22714",
+   "repo": "sympy/sympy",
+   "version": "1.10",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 20,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-22714",
+   "repo": "sympy/sympy",
+   "version": "1.10",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 17,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     11,
+     11
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-23824",
+   "repo": "sympy/sympy",
+   "version": "1.12",
+   "arm": "orig",
+   "arm_number": 1,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-23824",
+   "repo": "sympy/sympy",
+   "version": "1.12",
+   "arm": "sw",
+   "arm_number": 2,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  },
+  {
+   "instance_id": "sympy__sympy-23824",
+   "repo": "sympy/sympy",
+   "version": "1.12",
+   "arm": "nc",
+   "arm_number": 3,
+   "gold": {
+    "resolved": true,
+    "expected": true,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 18,
+    "patch_applied": true,
+    "install_ok": true,
+    "f2p": [
+     1,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "empty": {
+    "resolved": false,
+    "expected": false,
+    "ok": true,
+    "exit_code": 0,
+    "wall_s": 19,
+    "install_ok": true,
+    "f2p": [
+     0,
+     1
+    ],
+    "p2p": [
+     2,
+     2
+    ]
+   },
+   "usable": true,
+   "mechanism": null,
+   "mechanism_detail": null,
+   "note": null,
+   "note_detail": null
+  }
+ ]
+}

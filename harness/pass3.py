@@ -71,10 +71,21 @@ def index_path(sha: str) -> Path:
     return CACHE / f"{sha}.sw.idx"
 
 
+def keep_owners_of(sha: str) -> list[tuple[str, str]]:
+    """The docstring context pass 1 stripped this blob under (``stats.keep_owners``)."""
+    p = CACHE / f"{sha}.jsonl"
+    try:
+        lines = [l for l in p.read_text(encoding="utf-8").split("\n") if l]
+    except OSError:
+        return []
+    return strip.keep_owners_from_sidecar(json.loads(l) for l in lines[-1:])
+
+
 def convert(sha: str, path: str, original: bytes, check: bool) -> dict:
     row = {"blob_sha": sha, "path": path}
+    keep_owners = keep_owners_of(sha)
     try:
-        art = anchoring.convert(original, directives())
+        art = anchoring.convert(original, directives(), keep_owners)
     except Exception as exc:  # noqa: BLE001 — one bad blob must not stop the corpus
         row["error"] = f"{type(exc).__name__}: {exc}"
         return row
@@ -83,7 +94,7 @@ def convert(sha: str, path: str, original: bytes, check: bool) -> dict:
     row["records"] = len(art["records"])
     row["unanchorable"] = len(anchored.unanchorable)
 
-    ok, detail = astcheck.equal(original, art["source"], directives())
+    ok, detail = astcheck.equal(original, art["source"], directives(), keep_owners)
     row["code_ok"] = ok
     if not ok:
         row["code_detail"] = detail[:200]

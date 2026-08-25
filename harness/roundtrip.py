@@ -238,7 +238,8 @@ def run_one(entry: dict, original: bytes, orig_entries: list[dict], clean_entrie
     result["notes"] = notes
     result["exact"] = rebuilt == original
 
-    restripped, resid = strip.strip_source(rebuilt, directives)
+    restripped, resid = strip.strip_source(rebuilt, directives,
+                                           strip.keep_owners_from_sidecar(sidecar))
     result["code_identical"] = restripped == clean
     # A blank line between two blocks on one anchor is the one thing the reader adds that
     # the stripper cannot take back out (§3 ties): the separating blank line stayed in the

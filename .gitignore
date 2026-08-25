@@ -26,3 +26,10 @@ __pycache__/
 .DS_Store
 
 # uv creates .venv; the lock is tracked, the tree is not.
+
+# Evaluation runs: per-run records, run logs, admission-check output. The three
+# scored flask records that prove the pipeline are the exception, tracked below.
+corpus/eval/*
+!corpus/eval/claude-opus-5/
+corpus/eval/claude-opus-5/**/*.run.log
+corpus/eval/claude-opus-5/**/*.traj*

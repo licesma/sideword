@@ -12,8 +12,9 @@ corpus/directives.toml     EST-106  keep / watch / human lists (schema in the fi
 corpus/directives-histogram.tsv     first-token histogram behind the allowlist
 harness/paths.py           is_test_path(path) — shared by pass 1 and pass 2
 harness/directives.py      load(path) + classify(comment_text, lineno) -> Keep|Human|Unresolved|Remove
-harness/strip.py           strip_source(src: bytes, directives) -> (out: bytes, records: list[dict]); CLI
-harness/astcheck.py        equal(orig: bytes, stripped: bytes) -> (ok, detail); CLI
+harness/strip.py           strip_source(src: bytes, directives, keep_owners=None) -> (out: bytes, records: list[dict]); CLI
+harness/astcheck.py        equal(orig: bytes, stripped: bytes, directives=None, keep_owners=None) -> (ok, detail); CLI
+harness/docuse.py          analyze({path: bytes}, directives) -> which docstrings the tree reads back (rule "consumed")
 harness/tests/             unit tests (stdlib corpus for the stripper)
 harness/pass1.py           EST-108  fill cache/<blob-sha>.py + cache/<blob-sha>.jsonl
 harness/pass2.py           EST-109  materialize -nc commits + tags in the mirror
@@ -49,10 +50,24 @@ Everything else ending in `.py` is stripped, including `doc/`, `docs/`, `example
   newline. Trailing comment -> delete from the end of the last non-whitespace char before `#`
   to end of line (never leave trailing whitespace: sympy's code-quality test is PASS_TO_PASS).
 - Docstring = first statement of Module / ClassDef / FunctionDef / AsyncFunctionDef that is
-  `Expr(Constant(str))`. Remove it unless any line of its value, lstripped, starts with `>>>`
-  (doctest -> keep byte-for-byte, record kind="doctest_docstring"). If removal empties the
-  body, put `pass` at the docstring's indentation (same whitespace bytes as the original
-  line prefix; one-liner `def f(): "d"` -> `def f(): pass`).
+  `Expr(Constant(str))`. Remove it unless, in this order:
+  1. any line of its value, lstripped, starts with `>>>` (doctest -> keep byte-for-byte,
+     record kind="doctest_docstring");
+  2. a general `[[docstrings]]` rule in directives.toml matches it
+     (`Directives.classify_docstring(value, owner, module_text)`: pattern on the value, `owner`
+     regex fullmatched against the qualified owner name, `module` regex searched in the module
+     source) -> keep byte-for-byte, record kind="docstring" action="kept" rule=<name>;
+  3. its owner fullmatches an entry of `keep_owners`, the `[(owner_regex, rule)]` context the
+     caller passes because the blob alone cannot carry it: the consumption analysis
+     (`harness/docuse.py`, run by pass 1 over the whole instance tree; rule "consumed") and the
+     per-repo tier of directives.toml (resolved by pass 1 from repo + path; rule = entry name)
+     -> keep, recorded the same way.
+  If removal empties the body, put `pass` at the docstring's indentation (same whitespace
+  bytes as the original line prefix; one-liner `def f(): "d"` -> `def f(): pass`).
+- A non-empty `keep_owners` is echoed into the `stats` record (`keep_owners`), so a cache entry
+  states the context it was written under; pass 1 refuses (`context_conflict`) when a blob is
+  wanted under a different context than the cache holds, or by two instances under different
+  contexts. The cache stays keyed by blob sha.
 - Bare string statements elsewhere (attribute docs, e.g. `x = 1` then `"""doc"""`) are KEPT
   and recorded kind="stray_string" so the leak is measurable. Not a docstring per Python.
 - `from __future__` stays first executable statement automatically; verify in tests.
@@ -62,11 +77,14 @@ Everything else ending in `.py` is stripped, including `doc/`, `docs/`, `example
 
 ## astcheck.equal
 
-`ast.dump(norm(parse(orig)), include_attributes=False) == ast.dump(parse(stripped), include_attributes=False)`
-where `norm` drops exactly the docstring nodes the stripper is allowed to drop (non-doctest
-docstrings) and inserts `Pass` when that empties a body. Also require: stripped parses; no
-non-doctest docstring remains in stripped; comment tokens remaining in stripped all classify
-as Keep. Returns (ok: bool, detail: str).
+`ast.dump(norm(parse(orig)), include_attributes=False) == ast.dump(norm(parse(stripped)), include_attributes=False)`
+where `norm` drops every leading non-doctest string statement of a doc-owner body and inserts
+`Pass` when that empties a class/function body. Also require: stripped parses; every
+non-doctest docstring remaining in stripped is one of the original's leading strings for the
+same owner (same value) AND is allowed to stay -- a general `[[docstrings]]` rule matches it or
+its owner fullmatches `keep_owners` (`equal(orig, stripped, directives, keep_owners)`; passes 2
+and 4 read the context back from the sidecar's `stats.keep_owners`); comment tokens remaining
+in stripped all classify as Keep. Returns (ok: bool, detail: str).
 
 ## Sidecar JSONL (`cache/<sha>.jsonl`, one record per line)
 
@@ -76,11 +94,14 @@ as Keep. Returns (ok: bool, detail: str).
 {"kind":"directive",         "action":"kept",   "line":13,"col":8,"text":"# noqa: E501","rule":"noqa"}
 {"kind":"docstring",         "action":"removed","line":20,"end_line":31,"text":"\"\"\"...\"\"\"","owner":"Cart.add"}
 {"kind":"doctest_docstring", "action":"kept",   "line":50,"end_line":70,"owner":"sympy.core.x.f"}
+{"kind":"docstring",         "action":"kept",   "line":3,"end_line":3,"owner":"<module>","rule":"pytest-dont-rewrite"}
+{"kind":"docstring",         "action":"kept",   "line":61,"end_line":66,"owner":"Basic","rule":"consumed"}
 {"kind":"stray_string",      "action":"kept",   "line":90,"end_line":90}
 {"kind":"parse_error",       "error":"..."}
 {"kind":"stats","comments_removed":N,"docstrings_removed":N,"doctest_docstrings_kept":N,
- "directives_kept":N,"stray_strings_kept":N,"unresolved":N,"lines_before":N,"lines_after":N,
- "bytes_before":N,"bytes_after":N}
+ "docstrings_kept":N,"directives_kept":N,"stray_strings_kept":N,"unresolved":N,
+ "lines_before":N,"lines_after":N,"bytes_before":N,"bytes_after":N,
+ "keep_owners":[["Basic","consumed"],...]}      <- only when the context is non-empty
 ```
 `line`/`end_line` are ORIGINAL 1-based line numbers. `text` is verbatim (docstring text may
 be omitted for doctest/stray kinds to keep sidecars small; comments always carry text).

@@ -8,10 +8,10 @@ No model. Anchors derive from the position each comment already occupied.
 | errors | 0 |
 | gated: code changed | 0 |
 | gated: prose lost | 0 |
-| documentation records | 239,698 |
+| documentation records | 239,306 |
 | unanchorable | 11 (0.0046%) |
-| sidedoc bytes | 51,899,813 |
-| index bytes | 19,151,391 |
+| sidedoc bytes | 51,743,516 |
+| index bytes | 19,125,252 |
 | instances fully converted | 30/30 |
 
 ## Per instance

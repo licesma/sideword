@@ -80,7 +80,8 @@ class TestComments(unittest.TestCase):
         out, recs = run(b"")
         self.assertEqual(out, b"")
         self.assertEqual(recs, [{"kind": "stats", "comments_removed": 0, "docstrings_removed": 0,
-                                 "doctest_docstrings_kept": 0, "directives_kept": 0,
+                                 "doctest_docstrings_kept": 0, "docstrings_kept": 0,
+                                 "directives_kept": 0,
                                  "stray_strings_kept": 0, "unresolved": 0, "lines_before": 0,
                                  "lines_after": 0, "bytes_before": 0, "bytes_after": 0}])
 
@@ -454,6 +455,101 @@ class TestCLI(unittest.TestCase):
                                capture_output=True, text=True)
             self.assertEqual(r.returncode, 1)
             self.assertIn("AST differs", r.stdout)
+
+
+class TestDocstringRules(unittest.TestCase):
+    """The docstring tiers of directives.toml and the ``keep_owners`` context."""
+
+    PLY = ('import ply.lex as lex\n\n\ndef t_UINT(t):\n    r"[0-9]+"\n    return t\n\n\n'
+           'def p_main(p):\n    "main : UINT"\n    p[0] = p[1]\n\n\ndef helper():\n'
+           '    "prose"\n    return lex.lex()\n')
+
+    def test_pytest_token_is_kept_by_the_general_tier(self):
+        src = '"""Module. PYTEST_DONT_REWRITE"""\n\n\ndef f():\n    """gone"""\n    return 1\n'
+        out, recs = run(src)
+        self.assertEqual(out, b'"""Module. PYTEST_DONT_REWRITE"""\n\n\ndef f():\n    return 1\n')
+        self.assertEqual(recs[0], {"kind": "docstring", "action": "kept", "line": 1, "end_line": 1,
+                                   "owner": "<module>", "rule": "pytest-dont-rewrite"})
+        self.assertEqual(recs[-1]["docstrings_kept"], 1)
+        self.assertEqual(recs[-1]["docstrings_removed"], 1)
+        self.assertNotIn("keep_owners", recs[-1])
+
+    def test_ply_grammar_docstrings_are_kept_only_in_ply_modules(self):
+        out, recs = run(self.PLY)
+        self.assertIn(b'r"[0-9]+"', out)
+        self.assertIn(b'"main : UINT"', out)
+        self.assertNotIn(b"prose", out)
+        self.assertEqual([(r["owner"], r["rule"]) for r in recs if r.get("action") == "kept"],
+                         [("t_UINT", "ply-grammar"), ("p_main", "ply-grammar")])
+        # same functions, no PLY in sight: ordinary docstrings
+        plain = self.PLY.replace("import ply.lex as lex\n", "").replace("lex.lex()", "1")
+        out, recs = run(plain)
+        self.assertNotIn(b"[0-9]+", out)
+        self.assertEqual(recs[-1]["docstrings_kept"], 0)
+        # the wrapper-call form (`parsing.lex(...)`) counts too, and nesting keeps the name
+        nested = ('from x import parsing\n\n\nclass P:\n    def _make(cls):\n'
+                  '        def t_A(t):\n            r"a"\n            return t\n'
+                  '        return parsing.lex(lextab="t")\n')
+        out, recs = run(nested)
+        self.assertIn(b'r"a"', out)
+        self.assertEqual(recs[0]["owner"], "P._make.t_A")
+
+    def test_p_value_is_not_a_grammar_rule(self):
+        out, _ = run('import ply\n\n\ndef p_value(x):\n    "statistics"\n    return x\n\n\n'
+                     'def pvalue(x):\n    "no"\n    return x\n')
+        self.assertIn(b'"statistics"', out)      # named like PLY, in a PLY module: kept
+        self.assertNotIn(b'"no"', out)
+
+    def test_keep_owners_keeps_exactly_the_named_owners(self):
+        src = ('"""mod"""\n\n\nclass Foo:\n    """Foo"""\n\n    def bar(self):\n'
+               '        """bar"""\n        return 1\n\n    def baz(self):\n'
+               '        """baz"""\n        return 2\n')
+        out, recs = strip.strip_source(src.encode(), D, [("Foo\\.bar", "consumed")])
+        self.assertEqual(out.decode(), '\n\nclass Foo:\n\n    def bar(self):\n        """bar"""\n'
+                                       '        return 1\n\n    def baz(self):\n        return 2\n')
+        kept = [r for r in recs if r.get("action") == "kept"]
+        self.assertEqual(kept, [{"kind": "docstring", "action": "kept", "line": 8, "end_line": 8,
+                                 "owner": "Foo.bar", "rule": "consumed"}])
+        self.assertEqual(recs[-1]["docstrings_kept"], 1)
+        self.assertEqual(recs[-1]["docstrings_removed"], 3)
+        self.assertEqual(recs[-1]["keep_owners"], [["Foo\\.bar", "consumed"]])
+        self.assertEqual(strip.keep_owners_from_sidecar(recs), [("Foo\\.bar", "consumed")])
+        # the gate knows the context, and only the context
+        ok, _ = astcheck.equal(src.encode(), out, D, [("Foo\\.bar", "consumed")])
+        self.assertTrue(ok)
+        ok, detail = astcheck.equal(src.encode(), out, D)
+        self.assertFalse(ok)
+        self.assertIn("Foo.bar", detail)
+        # idempotent under the same context
+        out2, _ = strip.strip_source(out, D, [("Foo\\.bar", "consumed")])
+        self.assertEqual(out2, out)
+
+    def test_keep_owners_is_a_fullmatch(self):
+        src = 'def f():\n    "f"\n\n\ndef ff():\n    "ff"\n'
+        out, _ = strip.strip_source(src.encode(), D, [("f", "x")])
+        self.assertEqual(out.decode(), 'def f():\n    "f"\n\n\ndef ff():\n    pass\n')
+
+    def test_keep_owners_context_is_echoed_even_for_a_parse_error(self):
+        out, recs = strip.strip_source(b"def f(:\n", D, [("f", "x")])
+        self.assertEqual(recs[0]["kind"], "parse_error")
+        self.assertEqual(recs[-1]["keep_owners"], [["f", "x"]])
+        self.assertEqual(recs[-1]["docstrings_kept"], 0)
+
+    def test_iter_doc_owners_names(self):
+        import ast
+        tree = ast.parse("class C:\n    def m(self):\n        def inner():\n            pass\n"
+                         "async def a():\n    pass\n")
+        self.assertEqual([q for _, q in strip.iter_doc_owners(tree)],
+                         ["<module>", "C", "C.m", "C.m.inner", "a"])
+
+    def test_cli_keep_owner(self):
+        with tempfile.TemporaryDirectory() as td:
+            inp = Path(td, "in.py")
+            inp.write_bytes(b'def f():\n    """d"""\n    return 1\n')
+            r = subprocess.run([PY, str(ROOT / "harness" / "strip.py"), "--check",
+                                "--keep-owner", "f=why", str(inp)], capture_output=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertEqual(r.stdout, b'def f():\n    """d"""\n    return 1\n')
 
 
 if __name__ == "__main__":

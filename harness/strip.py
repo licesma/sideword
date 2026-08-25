@@ -3,11 +3,20 @@
 Public API::
 
     from harness.strip import strip_source
-    out_bytes, records = strip_source(src_bytes, directives)
+    out_bytes, records = strip_source(src_bytes, directives, keep_owners=None)
 
 ``records`` is the sidecar: one dict per removal / keep, ordered by original position, with
 the ``stats`` record last.  Edits are span deletions/replacements on the ORIGINAL bytes, so
 encoding, BOM, per-line line endings, tabs and every untouched byte stay identical.
+
+A docstring survives when (in this order) it holds a doctest, a general ``[[docstrings]]``
+rule in directives.toml matches it, or its owner matches ``keep_owners`` -- a list of
+``(owner_regex, rule_name)`` pairs the caller derives from context the blob alone cannot
+carry: the consumption analysis (harness/docuse.py) and the per-repo tier of
+directives.toml, both resolved by pass 1. Kept docstrings are recorded as
+``{"kind": "docstring", "action": "kept", "rule": ...}`` and counted in
+``stats.docstrings_kept``; a non-empty ``keep_owners`` is echoed in ``stats.keep_owners``
+so a cache entry says what context it was written under.
 
 CLI::
 
@@ -77,26 +86,81 @@ def is_str_expr(stmt) -> bool:
             and isinstance(stmt.value.value, str))
 
 
-def _empty_stats(src: bytes) -> dict:
+def iter_doc_owners(tree):
+    """Yield ``(node, qualname)`` for every docstring owner, in source order.
+
+    ``<module>`` for the module, ``Cls``, ``Cls.meth``, ``f.inner`` otherwise -- the same
+    names the sidecar's ``owner`` field carries. Statement lists only: an expression never
+    contains a statement, so lambdas and comprehensions are never descended into.
+    """
+    def walk(node, qual):
+        if isinstance(node, (ast.ClassDef, ast.FunctionDef, ast.AsyncFunctionDef)):
+            qual = qual + [node.name]
+            yield node, ".".join(qual)
+        elif isinstance(node, ast.Module):
+            yield node, "<module>"
+        for _field, value in ast.iter_fields(node):
+            if type(value) is list and value and isinstance(
+                    value[0], (ast.stmt, ast.excepthandler, ast.match_case)):
+                for item in value:
+                    yield from walk(item, qual)
+    yield from walk(tree, [])
+
+
+class KeepOwners:
+    """``[(owner_regex, rule_name), ...]`` compiled once; ``match(owner) -> rule | None``."""
+
+    __slots__ = ("pairs", "_compiled")
+
+    def __init__(self, pairs=None):
+        self.pairs = sorted({(str(p), str(r)) for p, r in (pairs or ())})
+        self._compiled = [(re.compile(p), r) for p, r in self.pairs]
+
+    def __bool__(self):
+        return bool(self.pairs)
+
+    def match(self, owner: str) -> str | None:
+        for rx, rule in self._compiled:
+            if rx.fullmatch(owner):
+                return rule
+        return None
+
+    def as_list(self) -> list[list[str]]:
+        return [[p, r] for p, r in self.pairs]
+
+
+def keep_owners_from_sidecar(records) -> list[tuple[str, str]]:
+    """The ``keep_owners`` a sidecar was written under (empty for the ordinary blob)."""
+    for rec in reversed(list(records)):
+        if rec.get("kind") == "stats":
+            return [(p, r) for p, r in rec.get("keep_owners") or []]
+    return []
+
+
+def _empty_stats(src: bytes, keep_owners=None) -> dict:
     n = count_lines(src)
-    return {"kind": "stats", "comments_removed": 0, "docstrings_removed": 0,
-            "doctest_docstrings_kept": 0, "directives_kept": 0, "stray_strings_kept": 0,
-            "unresolved": 0, "lines_before": n, "lines_after": n,
-            "bytes_before": len(src), "bytes_after": len(src)}
+    st = {"kind": "stats", "comments_removed": 0, "docstrings_removed": 0,
+          "doctest_docstrings_kept": 0, "docstrings_kept": 0, "directives_kept": 0,
+          "stray_strings_kept": 0, "unresolved": 0, "lines_before": n, "lines_after": n,
+          "bytes_before": len(src), "bytes_after": len(src)}
+    if keep_owners:
+        st["keep_owners"] = keep_owners.as_list()
+    return st
 
 
 class _Stripper:
     """One-shot worker; ``run()`` returns (out_bytes, records)."""
 
-    def __init__(self, src: bytes, directives):
+    def __init__(self, src: bytes, directives, keep_owners=None):
         self.src = src
         self.directives = directives
+        self.keep_owners = keep_owners if isinstance(keep_owners, KeepOwners) else KeepOwners(keep_owners)
         self.records: list[tuple[tuple[int, int], dict]] = []
         # spans: (start, end, replacement) in char offsets of self.text
         self.spans: list[tuple[int, int, str]] = []
         self.stats = {"comments_removed": 0, "docstrings_removed": 0,
-                      "doctest_docstrings_kept": 0, "directives_kept": 0,
-                      "stray_strings_kept": 0, "unresolved": 0}
+                      "doctest_docstrings_kept": 0, "docstrings_kept": 0,
+                      "directives_kept": 0, "stray_strings_kept": 0, "unresolved": 0}
 
     # ---- setup -----------------------------------------------------------------------
     def decode(self):
@@ -193,6 +257,15 @@ class _Stripper:
     def do_docstrings(self):
         self._visit(self.tree, [])
 
+    def docstring_keep_rule(self, value: str, owner: str) -> str | None:
+        """Why this (non-doctest) docstring stays, or None: general tier first, then context."""
+        classify = getattr(self.directives, "classify_docstring", None)
+        if classify is not None:
+            rule = classify(value, owner, self.ntext)
+            if rule is not None:
+                return rule
+        return self.keep_owners.match(owner)
+
     def _visit(self, node, qual: list[str]):
         # Statements only: expressions never contain statements, so skip them entirely.
         if isinstance(node, (ast.ClassDef, ast.FunctionDef, ast.AsyncFunctionDef)):
@@ -219,6 +292,15 @@ class _Stripper:
                                          {"kind": "doctest_docstring", "action": "kept",
                                           "line": stmt.lineno, "end_line": stmt.end_lineno,
                                           "owner": owner}))
+                    i += 1
+                    break
+                rule = self.docstring_keep_rule(stmt.value.value, owner)
+                if rule is not None:
+                    self.stats["docstrings_kept"] += 1
+                    self.records.append(((stmt.lineno, stmt.col_offset),
+                                         {"kind": "docstring", "action": "kept",
+                                          "line": stmt.lineno, "end_line": stmt.end_lineno,
+                                          "owner": owner, "rule": rule}))
                     i += 1
                     break
                 removed.append(stmt)
@@ -318,7 +400,8 @@ class _Stripper:
             self.decode()
             self.parse()
         except ParseFailure as e:
-            return self.src, [{"kind": "parse_error", "error": str(e)}, _empty_stats(self.src)]
+            return self.src, [{"kind": "parse_error", "error": str(e)},
+                              _empty_stats(self.src, self.keep_owners)]
         self.do_comments()
         self.do_docstrings()
         out = self.apply()
@@ -327,6 +410,8 @@ class _Stripper:
         stats = {"kind": "stats", **self.stats,
                  "lines_before": len(self.lines), "lines_after": count_lines(out),
                  "bytes_before": len(self.src), "bytes_after": len(out)}
+        if self.keep_owners:
+            stats["keep_owners"] = self.keep_owners.as_list()
         recs.append(stats)
         return out, recs
 
@@ -381,11 +466,15 @@ def group_comment_blocks(records: list[dict], lines: list[str]) -> list[dict]:
     return out
 
 
-def strip_source(src: bytes, directives) -> tuple[bytes, list[dict]]:
-    """Strip comments/docstrings from ``src``; return (stripped_bytes, sidecar_records)."""
+def strip_source(src: bytes, directives, keep_owners=None) -> tuple[bytes, list[dict]]:
+    """Strip comments/docstrings from ``src``; return (stripped_bytes, sidecar_records).
+
+    ``keep_owners``: ``[(owner_regex, rule_name), ...]`` (or a ``KeepOwners``) naming
+    docstrings that must survive for reasons outside this file -- see the module docstring.
+    """
     if isinstance(src, str):
         raise TypeError("strip_source expects bytes")
-    return _Stripper(src, directives).run()
+    return _Stripper(src, directives, keep_owners).run()
 
 
 # ---- CLI --------------------------------------------------------------------------------
@@ -397,11 +486,18 @@ def main(argv=None) -> int:
     ap.add_argument("-o", "--output", help="write stripped source here (default: stdout)")
     ap.add_argument("--check", action="store_true",
                     help="run astcheck.equal on the result; exit nonzero on failure")
+    ap.add_argument("--keep-owner", action="append", default=[], metavar="REGEX[=RULE]",
+                    help="keep the docstring of every owner whose qualified name fullmatches "
+                         "REGEX (repeatable); RULE defaults to 'cli'")
     args = ap.parse_args(argv)
 
     directives = _directives_mod.load(args.directives)
     src = Path(args.input).read_bytes()
-    out, records = strip_source(src, directives)
+    keep_owners = []
+    for spec in args.keep_owner:
+        pattern, _, rule = spec.partition("=")
+        keep_owners.append((pattern, rule or "cli"))
+    out, records = strip_source(src, directives, keep_owners)
 
     if args.sidecar:
         with open(args.sidecar, "w", encoding="utf-8") as fh:
@@ -419,7 +515,7 @@ def main(argv=None) -> int:
             from harness import astcheck
         else:
             from . import astcheck
-        ok, detail = astcheck.equal(src, out, directives)
+        ok, detail = astcheck.equal(src, out, directives, keep_owners)
         if not ok:
             print(f"astcheck FAILED: {detail}", file=sys.stderr)
             rc = 1

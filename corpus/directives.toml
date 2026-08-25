@@ -1,4 +1,4 @@
-# Sideword stripper directive allowlist (schema v1) — EST-106 final.
+# Sideword stripper directive allowlist (schema v2) — EST-106 final, plus docstrings.
 #
 # The stripper (harness/strip.py) removes every `#` comment EXCEPT those matching a
 # [[keep]] entry, which are kept byte-for-byte. This list was derived from the 30
@@ -6,6 +6,10 @@
 # (tool inventory: corpus/tool-inventory.md; histogram: corpus/directives-histogram.tsv).
 # 343,114 comment tokens in 15,126 non-test .py files were classified; every entry
 # carries a `provenance` note saying which tool reads it and how often it occurs.
+#
+# Schema v2 adds three tiers for DOCSTRINGS (the bottom of this file): [[docstrings]]
+# (general content/structure rules), [consumption] (the static analysis in
+# harness/docuse.py) and [[repo]] (per-repository deviations, empty by design).
 #
 # Matching semantics (implemented in harness/directives.py):
 #   kind = "prefix"   -> `body` starts with `pattern`, where body = comment text with
@@ -40,7 +44,7 @@
 #   * Words whose directive form is NOT covered by a keep rule (nosemgrep, nosonar,
 #     noinspection, pytype, pyre-*, cspell, nolint) stay in [[watch]] only, so a new
 #     corpus surfaces them as unresolved instead of silently dropping them.
-version = 1
+version = 2
 
 # ---------------------------------------------------------------------------
 # [[keep]] — machine-read directives, kept byte-for-byte
@@ -393,3 +397,107 @@ kind = "regex"
 # a different codec than the file was decoded with). 0 such comments in the corpus (the
 # only `coding[:=]` comments on line >= 3 are xarray prose `set_encoding=True`, which this
 # anchored regex does not match); surfacing them as unresolved forces a human decision.
+
+# ===========================================================================
+# DOCSTRINGS
+# ===========================================================================
+#
+# The stripper removes every docstring except (in this order) one holding a doctest
+# (`>>>`), one matching a [[docstrings]] entry below, and one whose owner pass 1 names
+# in `keep_owners` -- the output of the consumption analysis ([consumption]) or of a
+# per-repo entry ([[repo]]). Every kept docstring is recorded in the sidecar as
+# {"kind": "docstring", "action": "kept", "rule": <entry name | "consumed">} and counted
+# in `stats.docstrings_kept`, so what survived and why is visible per file.
+#
+# Matching semantics for [[docstrings]] (harness/directives.py, DocRule):
+#   pattern / kind / ignore_case -> as for comments, applied to the docstring's VALUE
+#                                   (the string the interpreter sees; `prefix` = the
+#                                   value, left-stripped, starts with pattern).
+#   owner   -> regex, re.fullmatch against the qualified owner name: `<module>`,
+#              `Cls`, `Cls.meth`, `outer.inner` -- the sidecar's `owner` field.
+#   module  -> regex, re.search over the whole module source (newlines normalised
+#              to \n), for rules that only apply in modules using a given tool.
+#   Every field present must match; a rule with no field is a schema error. First
+#   match wins, in file order.
+#
+# Design rule, as for comments: an entry mirrors the *tool's own* reading of the
+# docstring (cited in provenance). It is about a tool, never about a repository.
+
+# ---------------------------------------------------------------------------
+# [[docstrings]] -- docstrings read by tools or the interpreter, kept byte-for-byte
+# ---------------------------------------------------------------------------
+
+[[docstrings]]
+name = "pytest-dont-rewrite"
+pattern = "PYTEST_DONT_REWRITE"
+kind = "contains"
+tool = "pytest assertion rewriter -- _pytest/assertion/rewrite.py is_rewrite_disabled(docstring): `\"PYTEST_DONT_REWRITE\" in docstring`, run over `mod.__doc__` (the first string statement of the module) of every module the rewrite hook imports; a module that opts out this way and loses the token is rewritten or, when already imported, raises PytestAssertRewriteWarning"
+provenance = "corpus: 1 docstring, src/_pytest/pytester.py:3 in pytest-dev__pytest-10051 (module docstring `PYTEST_DONT_REWRITE`). LOAD-BEARING there: the repo sets filterwarnings = error, so the warning raises inside pytest_cmdline_parse and no test starts (admission: 0 of 1 F2P, 0 of 15 P2P). pytest-5262 carries the same file without the token on the docstring line."
+
+[[docstrings]]
+name = "ply-grammar"
+owner = "(?:.*\\.)?[tp]_[A-Za-z0-9_]+"
+module = "(?m)^\\s*(?:from\\s+[\\w.]*\\bply\\b[\\w.]*\\s+import\\b|import\\s+ply\\b)|\\.(?:lex|yacc)\\("
+tool = "PLY (python-lex-yacc) -- lex.lex() reads the `__doc__` of every `t_*` function in the calling module (or `module=`) as the token's regular expression and yacc.yacc() reads the `__doc__` of every `p_*` function as its grammar production; both regenerate their tables from the docstrings when the committed `*_lextab.py` / `*_parsetab.py` are missing or stale (PLY checks a signature of the rules)"
+provenance = "corpus: astropy only -- astropy/units/format/{generic,cds,ogip}.py and astropy/coordinates/angle_formats.py define `t_*`/`p_*` inside `_make_lexer`/`_make_parser` and call `parsing.lex(...)`/`parsing.yacc(...)` (astropy/utils/parsing.py wraps `from astropy.extern.ply import lex, yacc`); astropy-7336 calls `lex.lex(...)`/`yacc.yacc(...)` directly. The module condition is an import of a module path containing `ply` OR a call of something named `.lex(`/`.yacc(`; the owner condition is PLY's own naming convention, which is what it dispatches on. Not fatal in this corpus because the generated tables are committed (admission.md, near miss) -- kept so a repo without them does not fail silently. Names like `p_value` outside such modules are not matched."
+
+# ---------------------------------------------------------------------------
+# [consumption] -- the static consumption analysis (harness/docuse.py)
+# ---------------------------------------------------------------------------
+#
+# A repository that reads its own docstrings at runtime names the object it reads:
+# `inspect.cleandoc(cls.__doc__)`, `pydoc.getdoc(func)`. Pass 1 runs harness/docuse.py
+# over every non-test .py of an instance and follows that name -- through imports, up
+# the in-tree class hierarchy, into every class a metaclass builds, and through the
+# call sites of a function whose parameter is read -- to the docstrings that must
+# survive. It hands them to the stripper as `keep_owners`; the sidecar records each
+# with rule "consumed". The unit of analysis is the whole tree: it is a general rule
+# (no repository is named anywhere in it), and its blind spots are reported per
+# instance in corpus/pass1-docuse.json as unresolved sites.
+#
+# Sites where a missing docstring cannot hurt (copied into another `__doc__`,
+# truth-tested, compared with None, read under an `if` that tests it, or inside a
+# try/except AttributeError/TypeError) are classified tolerant and ignored.
+#
+# provenance: 4 instances failed admission on this (astropy 13398/14365/14598 --
+# astropy/io/ascii/core.py MetaBaseReader.__init__ `inspect.cleandoc(cls.__doc__)` over
+# 27 reader classes in 13 modules; mwaskom__seaborn-3069 -- seaborn/_docstrings.py
+# `pydoc.getdoc(func)` fed by `from_function_params(EstimateAggregator.__init__)`).
+# Over the 30 base commits the analysis keeps at most 31 docstrings in any instance
+# (astropy) and 0 in 13 of them; see corpus/pass1-report.md, column `docstrings kept`.
+
+[consumption]
+enabled = true
+getdoc = ["inspect.getdoc", "pydoc.getdoc"]
+
+# ---------------------------------------------------------------------------
+# [[repo]] -- per-repository deviations
+# ---------------------------------------------------------------------------
+#
+# Everything above is a rule about Python or about a tool, and applies to every
+# repository alike. This tier is for the genuinely local case a general rule cannot
+# express, keyed by the repository's `owner/name` as in corpus/instances.json. It is
+# meant to stay EMPTY: an entry here is a deviation from uniform treatment and must be
+# disclosed wherever the experiment's results are reported, with the instance it
+# affects and the reason.
+#
+# Schema:
+#   [[repo]]
+#   repo = "owner/name"
+#   [[repo.docstrings]]
+#   name  = "..."                       required
+#   path  = "regex"                     required; re.fullmatch on the repo-relative path
+#   owner = "regex"                     optional; re.fullmatch on the qualified owner
+#                                       name (default: every docstring in the file)
+#   provenance = "..."                  what breaks without it, and which instance
+# `pattern` and `module` are not accepted here: pass 1 resolves this tier into
+# `keep_owners` by path and owner, and the stripper never sees the repo name.
+# The sidecar records the entry's `name` as the rule.
+
+[[repo]]
+repo = "pylint-dev/pylint"
+
+[[repo.docstrings]]
+name = "pylint-self-lint"
+path = "pylint/__pkginfo__\\.py"
+provenance = "DEVIATION, pylint-dev__pylint-6528 only. The PASS_TO_PASS test tests/test_self.py::TestRunTC::test_pkginfo runs pylint over pylint/__pkginfo__.py under pylint/testutils/testing_pylintrc (which does not disable missing-docstring) and asserts exit code 0. Stripped, the file yields C0114 missing-module-docstring and C0116 missing-function-docstring, exit 16, and the instance cannot discriminate in arms 2 and 3. This entry keeps that file's 2 docstrings (module, get_numversion_from_version) in both stripped arms; arm 1 already has them, so the three trees still differ only by stripping. Deviation from SWE-bench's pass criteria: for this instance, the stripped arms carry one unstripped file so that a self-lint test that checks documentation *presence* stays satisfiable. Every other repository is treated uniformly."

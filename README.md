@@ -27,7 +27,7 @@ supplies it without touching the system interpreter.
 ```sh
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv sync --frozen                 # installs CPython 3.14 and 2 dependencies
-uv run python -m unittest discover -s harness/tests -t .    # 77 tests
+uv run python -m unittest discover -s harness/tests -t .    # 251 tests
 ```
 
 ## What is here
@@ -44,6 +44,8 @@ uv run python -m unittest discover -s harness/tests -t .    # 77 tests
 | `harness/migrate.py` | convert a whole repository |
 | `harness/convert_pilot.py`, `convert_corpus.py` | the model converter and its accounting |
 | `harness/model_bench.py` | score any model against the same blobs, mechanically |
+| `harness/sideword_cli.py` | the `sideword` command — arm 2's retrieval surface |
+| `harness/evaluate.py` | one instance, one arm, one model: run, extract, score, record |
 | `cache/*.anchors.json` | 5,448 blobs converted by Opus 5 — anchors and kinds only |
 
 ## What is not here
@@ -77,3 +79,33 @@ changed, and no prose lost.
 What this cannot do is decide that a comment written inside a function body is
 *about* the function rather than the statement it precedes. That judgement is
 what a model adds, and `FORMAT.md`'s own metric does not measure it.
+
+## Running the experiment
+
+`harness/evaluate.py` is one instance, one arm, one model. It needs Docker, the
+corpus mirror, and two pinned packages that the rest of the repository does not:
+
+```sh
+uv sync --extra eval          # mini-swe-agent 2.4.6 and swebench 4.1.0
+export SIDEWORD_CLAUDE_CONFIG_DIR=$HOME/.claude2   # which account to bill
+uv run --extra eval python -m harness.evaluate \
+    --instance pallets__flask-5014 --arm sw --model claude-opus-5
+```
+
+`--arm` is `orig` (the base commit), `sw` (stripped plus `.sideword/`) or `nc`
+(stripped, no docs). The record lands in
+`corpus/eval/<model>/<arm>/<instance_id>.json`.
+
+Three ways to run it without calling a model:
+
+```sh
+--dry-run            # container up, tree verified, sideword probed, then stop
+--score-only gold    # score the instance's own patch, re-derived for the arm
+--score-only empty   # score nothing at all
+--script <file.json> # replay recorded assistant turns through the whole loop
+```
+
+`gold` and `empty` are the arm's validity check, and they exit non-zero when the
+answer is wrong: an arm whose own patch does not resolve is an arm that cannot
+measure anything, and an instance whose tests pass unpatched cannot either. Both
+happen — see the module docstring.

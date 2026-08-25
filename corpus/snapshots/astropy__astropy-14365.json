@@ -2,8 +2,8 @@
  "instance_id": "astropy__astropy-14365",
  "repo": "astropy/astropy",
  "base_commit": "7269fa3e33e8d02485a647da91a5a2a60a06af61",
- "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
- "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "directives_sha256": "f5e1ed55296a6cc8172606bacb6ecf1e4c62776911285c4f2fce4911e6c31dc4",
+ "stripper_version": "6d90ee8b66b2388c6250b36b2fa6b43b162c1c85d883767c7466726b542687a1",
  "cache_dir": "/Users/esteban/repos/sideword/cache",
  "selected": 510,
  "skipped": {
@@ -13,6 +13,17 @@
  "test_patch_paths": [
   "astropy/io/ascii/tests/test_qdp.py"
  ],
+ "docuse": {
+  "sites": 84,
+  "tolerant": 41,
+  "resolved": 8,
+  "partly_resolved": 0,
+  "unresolved": 35,
+  "files_with_kept_docstrings": 17,
+  "docstrings_kept": 31,
+  "parse_failures": 0,
+  "repo_rule_files": 0
+ },
  "files": [
   {
    "path": ".pyinstaller/hooks/hook-skyfield.py",
@@ -446,7 +457,13 @@
    "blob_sha": "3ac338f38ba53bfb979e7e0eda7ec1cbf4c4166c",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "SkyOffsetFrame",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/coordinates/builtin_frames/supergalactic.py",
@@ -775,7 +792,13 @@
    "blob_sha": "f730edb5e8f7443836c562718698f9f39e476648",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Parameter",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/cosmology/parameters.py",
@@ -908,14 +931,46 @@
    "blob_sha": "42b3c0a8ca6dacb813893013aed814e4d8d712f6",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Basic",
+     "consumed"
+    ],
+    [
+     "CommentedHeader",
+     "consumed"
+    ],
+    [
+     "Csv",
+     "consumed"
+    ],
+    [
+     "NoHeader",
+     "consumed"
+    ],
+    [
+     "Rdb",
+     "consumed"
+    ],
+    [
+     "Tab",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/cds.py",
    "blob_sha": "7a83fc39be040a837fe9eac63a41f99145b60599",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Cds",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/connect.py",
@@ -929,14 +984,26 @@
    "blob_sha": "839ed39e4d13ebd547f74e9918160ab2bd2588fd",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "BaseReader",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/daophot.py",
    "blob_sha": "6db34da56a483b9f5fd2264950e97bebe971515f",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Daophot",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/docs.py",
@@ -950,42 +1017,110 @@
    "blob_sha": "d361a08fcc76bbddfa33511fbc5bb56c62f1584b",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Ecsv",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/fastbasic.py",
    "blob_sha": "e2554cc5a67ed8ca2b9c9c11ee55bf27d716f266",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "FastBasic",
+     "consumed"
+    ],
+    [
+     "FastCommentedHeader",
+     "consumed"
+    ],
+    [
+     "FastCsv",
+     "consumed"
+    ],
+    [
+     "FastNoHeader",
+     "consumed"
+    ],
+    [
+     "FastRdb",
+     "consumed"
+    ],
+    [
+     "FastTab",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/fixedwidth.py",
    "blob_sha": "98c9e58c060385b1da330599cd80fdf909ee9ced",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "FixedWidth",
+     "consumed"
+    ],
+    [
+     "FixedWidthNoHeader",
+     "consumed"
+    ],
+    [
+     "FixedWidthTwoLine",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/html.py",
    "blob_sha": "f98bf497366b0c2115fcec529a59b26382022181",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "HTML",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/ipac.py",
    "blob_sha": "9e79f5a88e449a7880a6f59da2a2cef5a0517204",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Ipac",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/latex.py",
    "blob_sha": "de7a018d0c524ec57d3529333efb78f6d9ad7c1a",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "AASTex",
+     "consumed"
+    ],
+    [
+     "Latex",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/misc.py",
@@ -999,21 +1134,39 @@
    "blob_sha": "82e8134843b41795b94a79e316b71443c9f2efc1",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Mrt",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/qdp.py",
    "blob_sha": "83a4f004aa37209db13023464c4f239482da2f2f",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "QDP",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/rst.py",
    "blob_sha": "159a24919c166beea1a4600b6a3e36ff1c7afe0e",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "RST",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/setup_package.py",
@@ -1027,7 +1180,13 @@
    "blob_sha": "4843ec65de175d7a57cd50680208e0b4e5867932",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "SExtractor",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/ascii/ui.py",
@@ -1111,7 +1270,17 @@
    "blob_sha": "837d97a5d0f60436fe854e565f6b08f7a706637f",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "tabledump",
+     "consumed"
+    ],
+    [
+     "tableload",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/fits/diff.py",

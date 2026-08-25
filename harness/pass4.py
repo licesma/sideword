@@ -262,6 +262,7 @@ def commit_message(inst: dict, snap: dict, agg: dict, counts: dict, nc_commit: s
         f"comments_removed: {agg['comments_removed']}",
         f"docstrings_removed: {agg['docstrings_removed']}",
         f"doctest_docstrings_kept: {agg['doctest_docstrings_kept']}",
+        f"docstrings_kept: {agg.get('docstrings_kept', 0)}",
         f"directives_kept: {agg['directives_kept']}",
         f"stray_strings_kept: {agg['stray_strings_kept']}",
         f"unresolved: {agg['unresolved']}",

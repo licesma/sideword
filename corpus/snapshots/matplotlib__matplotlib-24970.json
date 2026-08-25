@@ -2,8 +2,8 @@
  "instance_id": "matplotlib__matplotlib-24970",
  "repo": "matplotlib/matplotlib",
  "base_commit": "a3011dfd1aaa2487cce8aa7369475533133ef777",
- "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
- "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "directives_sha256": "f5e1ed55296a6cc8172606bacb6ecf1e4c62776911285c4f2fce4911e6c31dc4",
+ "stripper_version": "6d90ee8b66b2388c6250b36b2fa6b43b162c1c85d883767c7466726b542687a1",
  "cache_dir": "/Users/esteban/repos/sideword/cache",
  "selected": 777,
  "skipped": {
@@ -13,6 +13,17 @@
  "test_patch_paths": [
   "lib/matplotlib/tests/test_colors.py"
  ],
+ "docuse": {
+  "sites": 39,
+  "tolerant": 26,
+  "resolved": 3,
+  "partly_resolved": 1,
+  "unresolved": 9,
+  "files_with_kept_docstrings": 5,
+  "docstrings_kept": 9,
+  "parse_failures": 0,
+  "repo_rule_files": 0
+ },
  "files": [
   {
    "path": ".circleci/fetch_doc_logs.py",
@@ -3841,7 +3852,17 @@
    "blob_sha": "c8c50f7c3028ee70aff2ee3073d7dad3e5260ec5",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "CapStyle",
+     "consumed"
+    ],
+    [
+     "JoinStyle",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "lib/matplotlib/_fontconfig_pattern.py",
@@ -4233,7 +4254,13 @@
    "blob_sha": "1306e0c02fa6d9c6bf2b1b291d0d40532e61e160",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "<module>",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "lib/matplotlib/backends/qt_editor/figureoptions.py",
@@ -4478,7 +4505,25 @@
    "blob_sha": "22b11f44e8b5a4e7b0e90ea6e22dcaed0bf93b51",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "_validate_linestyle",
+     "consumed"
+    ],
+    [
+     "validate_color",
+     "consumed"
+    ],
+    [
+     "validate_hatch",
+     "consumed"
+    ],
+    [
+     "validate_markevery",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "lib/matplotlib/sankey.py",
@@ -4569,7 +4614,13 @@
    "blob_sha": "d20e06f204d8b2d3ce5e44337d33dc8ca01c1bee",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "Annotation\\.__init__",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "lib/matplotlib/textpath.py",
@@ -5206,7 +5257,13 @@
    "blob_sha": "e6542e9ddf23ae840e63c7fb7ff27d64e824a51c",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "<module>",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "tools/subset.py",

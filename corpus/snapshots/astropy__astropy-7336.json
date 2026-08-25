@@ -2,8 +2,8 @@
  "instance_id": "astropy__astropy-7336",
  "repo": "astropy/astropy",
  "base_commit": "732d89c2940156bdc0e200bb36dc38b5e424bcba",
- "directives_sha256": "a333b70274b3934cad0af5770fd7b47572cd0c2200002ca0b5ab7f73243bb262",
- "stripper_version": "dac0bb4d0c8e6545f19ea85104c70530bb787e6436bb8f3873c196db58b27a44",
+ "directives_sha256": "f5e1ed55296a6cc8172606bacb6ecf1e4c62776911285c4f2fce4911e6c31dc4",
+ "stripper_version": "6d90ee8b66b2388c6250b36b2fa6b43b162c1c85d883767c7466726b542687a1",
  "cache_dir": "/Users/esteban/repos/sideword/cache",
  "selected": 399,
  "skipped": {
@@ -14,6 +14,17 @@
   "astropy/units/tests/test_quantity_annotations.py",
   "astropy/units/tests/test_quantity_decorator.py"
  ],
+ "docuse": {
+  "sites": 77,
+  "tolerant": 45,
+  "resolved": 13,
+  "partly_resolved": 0,
+  "unresolved": 19,
+  "files_with_kept_docstrings": 5,
+  "docstrings_kept": 10,
+  "parse_failures": 0,
+  "repo_rule_files": 0
+ },
  "files": [
   {
    "path": "ah_bootstrap.py",
@@ -27,7 +38,13 @@
    "blob_sha": "8deaacb414f76531617d431b433eba824dbcf8b4",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "<module>",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/_erfa/__init__.py",
@@ -398,7 +415,13 @@
    "blob_sha": "8bb3c297c5cc3c97cafefc8e0265cce01accd2e7",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "SkyOffsetFrame",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/coordinates/builtin_frames/supergalactic.py",
@@ -524,7 +547,29 @@
    "blob_sha": "7b8689be1ab1f1d371635aa8eb14869cdabd0d9b",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "_get_apparent_body_position",
+     "consumed"
+    ],
+    [
+     "get_body",
+     "consumed"
+    ],
+    [
+     "get_body_barycentric",
+     "consumed"
+    ],
+    [
+     "get_body_barycentric_posvel",
+     "consumed"
+    ],
+    [
+     "get_moon",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/coordinates/transformations.py",
@@ -825,7 +870,17 @@
    "blob_sha": "1d2bdc1aa5326684f810683d94aece1235560379",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "tabledump",
+     "consumed"
+    ],
+    [
+     "tableload",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/io/fits/diff.py",
@@ -2358,7 +2413,13 @@
    "blob_sha": "1e6d788a0d58e25876199d7044e33f54157d764b",
    "mode": "100644",
    "cached": true,
-   "astcheck": "ok"
+   "astcheck": "ok",
+   "keep_owners": [
+    [
+     "wraps",
+     "consumed"
+    ]
+   ]
   },
   {
    "path": "astropy/utils/exceptions.py",

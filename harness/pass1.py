@@ -12,14 +12,25 @@ Also writes::
 
     cache/MANIFEST.json                 directives/contract/stripper hashes; refuses to run on a
                                         stale cache unless --reset
-    corpus/snapshots/<instance_id>.json every selected (path, blob_sha, cached, astcheck)
+    corpus/snapshots/<instance_id>.json every selected (path, blob_sha, cached, astcheck) plus
+                                        the docstring context (``keep_owners``) each file was
+                                        stripped under
     corpus/pass1-report.json / .md      per-instance / per-repo stats and cache hit rates
     corpus/pass1-unresolved.tsv         unresolved comments aggregated by exact text
+    corpus/pass1-docuse.json            the consumption analysis per instance: every site,
+                                        how it resolved, and the docstrings it keeps
 
 Blobs are enumerated with ``git ls-tree -r -z`` and read with one long-lived
 ``git cat-file --batch`` in the parent; nothing is ever checked out.  Stripping runs in a
-ProcessPoolExecutor; every output is a pure function of the blob content + directives, so
-scheduling never changes what lands on disk.
+ProcessPoolExecutor; every output is a pure function of the blob content + directives +
+``keep_owners``, so scheduling never changes what lands on disk.
+
+``keep_owners`` is the one input that is not in the blob: the docstrings the whole tree
+needs (harness/docuse.py, run per instance before stripping) and the per-repo tier of
+directives.toml, resolved by path. The cache stays keyed by blob sha; each sidecar echoes
+the context it was written under (``stats.keep_owners``), and a blob asked for under two
+different contexts -- by two instances, or by the cache and this run -- is a hard error
+rather than a silent overwrite.
 
 CLI::
 
@@ -45,23 +56,25 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 if __package__ in (None, ""):
     sys.path.insert(0, str(ROOT))
-    from harness import astcheck, directives as directives_mod, paths as paths_mod, strip as strip_mod
+    from harness import (astcheck, directives as directives_mod, docuse, paths as paths_mod,
+                         strip as strip_mod)
 else:
-    from . import astcheck, directives as directives_mod, paths as paths_mod, strip as strip_mod
+    from . import astcheck, directives as directives_mod, docuse, paths as paths_mod, strip as strip_mod
 
 DEFAULT_INSTANCES = ROOT / "corpus" / "instances.json"
 DEFAULT_MIRROR = Path.home() / "repos" / "sideword-corpus"
 DEFAULT_CACHE = ROOT / "cache"
 DEFAULT_DIRECTIVES = ROOT / "corpus" / "directives.toml"
 CONTRACT = ROOT / "harness" / "CONTRACT.md"
-STRIPPER_FILES = ("strip.py", "directives.py", "astcheck.py")
+STRIPPER_FILES = ("strip.py", "directives.py", "astcheck.py", "docuse.py")
 SNAPSHOT_DIR = ROOT / "corpus" / "snapshots"
 REPORT_JSON = ROOT / "corpus" / "pass1-report.json"
 REPORT_MD = ROOT / "corpus" / "pass1-report.md"
 UNRESOLVED_TSV = ROOT / "corpus" / "pass1-unresolved.tsv"
+DOCUSE_JSON = ROOT / "corpus" / "pass1-docuse.json"
 
 STAT_KEYS = ("comments_removed", "docstrings_removed", "doctest_docstrings_kept",
-             "directives_kept", "stray_strings_kept", "unresolved",
+             "docstrings_kept", "directives_kept", "stray_strings_kept", "unresolved",
              "lines_before", "lines_after", "bytes_before", "bytes_after")
 
 
@@ -148,12 +161,15 @@ def _summary_from_records(records: list[dict]) -> dict:
     return {"stats": stats, "unresolved": unresolved, "parse_error": parse_error}
 
 
-def process_blob(sha: str, data: bytes) -> dict:
-    """Strip one blob (or read it back from the cache).  Pure in (sha, data, directives)."""
+def process_blob(sha: str, data: bytes, keep_owners=()) -> dict:
+    """Strip one blob (or read it back from the cache).  Pure in (sha, data, directives,
+    keep_owners); a cached entry written under a different ``keep_owners`` is reported as
+    ``context_conflict`` and left alone."""
     cache = _W_CACHE
     py = cache / f"{sha}.py"
     jsonl = cache / f"{sha}.jsonl"
     failed = cache / f"{sha}.FAILED"
+    keep = strip_mod.KeepOwners(keep_owners)
     res = {"sha": sha, "has_doc": b"__doc__" in data, "was_cached": False,
            "status": "ok", "detail": "", "stats": None, "unresolved": [],
            "parse_error": False}
@@ -164,13 +180,19 @@ def process_blob(sha: str, data: bytes) -> dict:
         return res
     if py.exists() and jsonl.exists():
         records = [json.loads(l) for l in jsonl.read_text(encoding="utf-8").split("\n") if l]
+        cached_keep = strip_mod.KeepOwners(strip_mod.keep_owners_from_sidecar(records))
+        if cached_keep.pairs != keep.pairs:
+            res.update(was_cached=True, status="context_conflict",
+                       detail=f"cache written under keep_owners={cached_keep.as_list()}, "
+                              f"this run wants {keep.as_list()}")
+            return res
         res.update(was_cached=True, **_summary_from_records(records))
         if res["parse_error"]:
             res["status"] = "parse_error"
         return res
     try:
-        out, records = strip_mod.strip_source(data, _W_DIRECTIVES)
-        ok, detail = astcheck.equal(data, out, _W_DIRECTIVES)
+        out, records = strip_mod.strip_source(data, _W_DIRECTIVES, keep)
+        ok, detail = astcheck.equal(data, out, _W_DIRECTIVES, keep)
     except Exception:  # never crash the batch
         detail = traceback.format_exc()
         atomic_write(failed, ("error\n" + detail).encode("utf-8"))
@@ -260,7 +282,7 @@ def add_stats(acc: dict, res: dict) -> None:
     if res["status"] == "astcheck_fail":
         acc["astcheck_failures"] += 1
         return
-    if res["status"] == "error":
+    if res["status"] in ("error", "context_conflict"):
         acc["errors"] += 1
         return
     if res["parse_error"]:
@@ -271,7 +293,7 @@ def add_stats(acc: dict, res: dict) -> None:
 
 
 def astcheck_label(res: dict) -> str:
-    if res["status"] in ("astcheck_fail", "error"):
+    if res["status"] in ("astcheck_fail", "error", "context_conflict"):
         return "fail"
     if res["parse_error"]:
         return "parse_error"
@@ -283,7 +305,7 @@ def run(args) -> int:
     cache = Path(args.cache).resolve()
     mirror = Path(args.mirror).expanduser().resolve()
     directives_path = Path(args.directives).resolve()
-    directives_mod.load(directives_path)  # fail fast on schema problems
+    directives = directives_mod.load(directives_path)  # fail fast on schema problems
     manifest = check_manifest(cache, directives_path, args.reset)
     instances = json.loads(Path(args.instances).read_text())
     if args.only:
@@ -295,19 +317,66 @@ def run(args) -> int:
     if not instances:
         sys.exit("no instances selected")
 
-    # 1. enumerate: per instance, selected blobs; global first-seen path per sha
+    # 1. enumerate: per instance, selected blobs; global first-seen path per sha.
+    #    The docstring context is decided here too: the consumption analysis needs the
+    #    whole tree, and the per-repo tier needs the repo and the path -- neither of which
+    #    the blob carries.
     per_instance = []
     first_seen: dict[str, tuple[str, str, str]] = {}   # sha -> (repo, instance_id, path)
     unique_order: list[str] = []
+    keep_by_sha: dict[str, list[tuple[str, str]]] = {}
+    keep_origin: dict[str, tuple[str, str]] = {}
+    context_conflicts: list[str] = []
+    docuse_rows: dict[str, dict] = {}
+    reader = CatFile(mirror)
     for inst in instances:
         entries = ls_tree(mirror, inst["base_commit"])
         picked, skipped = select_blobs(entries, set(inst.get("test_patch_paths") or []))
-        per_instance.append({"inst": inst, "picked": picked, "skipped": skipped})
+        t_a = time.time()
+        tree = {path: reader.read(sha) for path, sha, _mode in picked}
+        analysis = docuse.analyze(tree, directives)
+        del tree
+        keep_paths: dict[str, list[tuple[str, str]]] = {}
+        repo_rules: dict[str, list[str]] = {}
+        for path, sha, _mode in picked:
+            pairs = analysis.keep_owners(path)
+            for rule in directives.repo_docstring_rules(inst["repo"], path):
+                pairs.append((rule.owner if rule.owner is not None else ".*", rule.name))
+                repo_rules.setdefault(path, []).append(rule.name)
+            pairs = strip_mod.KeepOwners(pairs).pairs
+            if pairs:
+                keep_paths[path] = pairs
+            if sha not in keep_by_sha:
+                keep_by_sha[sha] = pairs
+                keep_origin[sha] = (inst["instance_id"], path)
+            elif keep_by_sha[sha] != pairs:
+                o_inst, o_path = keep_origin[sha]
+                context_conflicts.append(
+                    f"blob {sha}: {o_inst}:{o_path} wants keep_owners={keep_by_sha[sha]}, "
+                    f"{inst['instance_id']}:{path} wants {pairs}")
+        summary = docuse.summarize(analysis)
+        summary["repo_rule_files"] = len(repo_rules)
+        docuse_rows[inst["instance_id"]] = {
+            "instance_id": inst["instance_id"], "repo": inst["repo"],
+            "base_commit": inst["base_commit"], "summary": summary,
+            "seconds": round(time.time() - t_a, 1),
+            "keep": {p: sorted(o) for p, o in sorted(analysis.keep.items())},
+            "repo_rules": repo_rules, "sites": analysis.sites,
+            "parse_failures": analysis.parse_failures}
+        per_instance.append({"inst": inst, "picked": picked, "skipped": skipped,
+                             "keep": keep_paths, "docuse": summary})
         for path, sha, _mode in picked:
             if sha not in first_seen:
                 first_seen[sha] = (inst["repo"], inst["instance_id"], path)
                 unique_order.append(sha)
-        log(f"{inst['instance_id']}: {len(picked)} blobs selected, skipped {skipped}")
+        log(f"{inst['instance_id']}: {len(picked)} blobs selected, skipped {skipped}; docstring "
+            f"context: {summary['docstrings_kept']} consumed in {summary['files_with_kept_docstrings']} "
+            f"files ({summary['unresolved']} unresolved sites), {len(repo_rules)} files under "
+            f"per-repo rules, {time.time() - t_a:.1f}s")
+    reader.close()
+    if context_conflicts:
+        sys.exit("the same blob is wanted under different docstring contexts; the cache is keyed "
+                 "by blob and cannot hold both:\n  " + "\n  ".join(context_conflicts[:20]))
     log(f"{len(instances)} instances, {sum(len(p['picked']) for p in per_instance)} blob refs, "
         f"{len(unique_order)} unique blobs")
 
@@ -340,7 +409,7 @@ def run(args) -> int:
                 if blob_sha1(data) != sha:   # ls-tree sha must be the content-address we key on
                     raise SystemExit(f"blob sha mismatch for {sha} ({first_seen[sha]})")
                 sha_checked += 1
-                fut = pool.submit(process_blob, sha, data)
+                fut = pool.submit(process_blob, sha, data, keep_by_sha.get(sha, []))
                 pending[fut] = sha
             if not pending:
                 break
@@ -353,6 +422,12 @@ def run(args) -> int:
                     log(f"  {done_n}/{len(unique_order)} blobs done")
     reader.close()
     log(f"strip phase done in {time.time() - t0:.1f}s ({sha_checked} blobs read)")
+    stale_context = [sha for sha in unique_order if results[sha]["status"] == "context_conflict"]
+    if stale_context:
+        sys.exit(f"{len(stale_context)} cached blobs were written under a different docstring "
+                 f"context (keep_owners) than this run derives; rerun with --reset:\n  "
+                 + "\n  ".join(f"{sha} {first_seen[sha]}: {results[sha]['detail']}"
+                                for sha in stale_context[:10]))
 
     # 3. aggregate
     SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
@@ -374,9 +449,12 @@ def run(args) -> int:
                 hit_disk += 1
             if sha in seen_this_run:
                 hit_run += 1
-            files.append({"path": path, "blob_sha": sha, "mode": mode,
-                          "cached": res["status"] not in ("astcheck_fail", "error"),
-                          "astcheck": astcheck_label(res)})
+            frec = {"path": path, "blob_sha": sha, "mode": mode,
+                    "cached": res["status"] not in ("astcheck_fail", "error", "context_conflict"),
+                    "astcheck": astcheck_label(res)}
+            if entry["keep"].get(path):
+                frec["keep_owners"] = [list(pr) for pr in entry["keep"][path]]
+            files.append(frec)
             repo_unique[repo].add(sha)
             repo_refs[repo] += 1
         seen_this_run.update(sha for _, sha, _ in entry["picked"])
@@ -384,13 +462,14 @@ def run(args) -> int:
         row = {"instance_id": inst["instance_id"], "repo": repo, "base_commit": inst["base_commit"],
                "created_at": inst.get("created_at"), "blobs": n,
                "hits_on_disk_before_run": hit_disk, "hits_from_earlier_instance": hit_run,
-               "skipped": entry["skipped"], **st}
+               "skipped": entry["skipped"], **st, "docuse": entry["docuse"]}
         inst_rows.append(row)
         snap = {"instance_id": inst["instance_id"], "repo": inst["repo"],
                 "base_commit": inst["base_commit"], "directives_sha256": manifest["directives_sha256"],
                 "stripper_version": manifest["stripper_version"], "cache_dir": str(cache),
                 "selected": n, "skipped": entry["skipped"],
-                "test_patch_paths": inst.get("test_patch_paths") or [], "files": files}
+                "test_patch_paths": inst.get("test_patch_paths") or [],
+                "docuse": entry["docuse"], "files": files}
         atomic_write(SNAPSHOT_DIR / f"{inst['instance_id']}.json",
                      json.dumps(snap, indent=1, ensure_ascii=False).encode("utf-8") + b"\n")
     # hit = on disk before the run OR produced by an earlier instance of this run
@@ -441,7 +520,8 @@ def run(args) -> int:
 
     failures = [{"sha": sha, "status": results[sha]["status"], "first_path": first_seen[sha],
                  "detail": results[sha]["detail"][:2000]}
-                for sha in unique_order if results[sha]["status"] in ("astcheck_fail", "error")]
+                for sha in unique_order
+                if results[sha]["status"] in ("astcheck_fail", "error", "context_conflict")]
     parse_errors = [{"sha": sha, "first_path": first_seen[sha],
                      "refs": ref_count[sha]}
                     for sha in unique_order if results[sha]["parse_error"]]
@@ -465,6 +545,11 @@ def run(args) -> int:
     }
     REPORT_JSON.write_text(json.dumps(report, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     REPORT_MD.write_text(render_md(report), encoding="utf-8")
+    DOCUSE_JSON.write_text(json.dumps({
+        "generated_at": report["generated_at"], "stripper_version": manifest["stripper_version"],
+        "directives_sha256": manifest["directives_sha256"],
+        "instances": [docuse_rows[i["instance_id"]] for i in instances]},
+        indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     log(f"done in {wall:.1f}s; unique={len(unique_order)} refs={report['blob_refs']} "
         f"failures={len(failures)} parse_errors={len(parse_errors)} "
         f"unresolved={total['unresolved']} ({len(unres_rows)} distinct)")
@@ -489,42 +574,53 @@ def render_md(rep: dict) -> str:
     L.append(f"Instances {rep['instances']} · blob refs {_fmt(rep['blob_refs'])} · unique blobs "
              f"{_fmt(rep['unique_blobs'])} · on disk before run {_fmt(rep['preexisting_on_disk'])}\n")
     L.append("## Totals over unique blobs\n")
-    L.append("| files | comments removed | docstrings removed | doctest kept | directives kept | stray kept | "
+    L.append("| files | comments removed | docstrings removed | doctest kept | docstrings kept | "
+             "directives kept | stray kept | "
              "unresolved | parse errors | AST failures | errors | `__doc__` files | bytes before | bytes after | "
              "lines before | lines after |")
-    L.append("|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+    L.append("|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
     L.append("| " + " | ".join(_fmt(t[k]) for k in ("files", "comments_removed", "docstrings_removed",
-             "doctest_docstrings_kept", "directives_kept", "stray_strings_kept", "unresolved",
+             "doctest_docstrings_kept", "docstrings_kept", "directives_kept", "stray_strings_kept", "unresolved",
              "parse_errors", "astcheck_failures", "errors", "has_doc", "bytes_before", "bytes_after",
              "lines_before", "lines_after")) + " |\n")
     L.append("## Per repo (unique blobs)\n")
     L.append("| repo | inst | unique blobs | blob refs | reuse | comments removed | docstrings removed | "
-             "doctest kept | directives kept | stray kept | unresolved | parse errors | AST failures | "
-             "`__doc__` files | bytes before | bytes after |")
-    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+             "doctest kept | docstrings kept | directives kept | stray kept | unresolved | parse errors | "
+             "AST failures | `__doc__` files | bytes before | bytes after |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
     for r in rep["per_repo"]:
         L.append(f"| {r['repo']} | {r['instances']} | {_fmt(r['unique_blobs'])} | {_fmt(r['blob_refs'])} | "
                  f"{_fmt(r['reuse_rate'])} | {_fmt(r['comments_removed'])} | {_fmt(r['docstrings_removed'])} | "
-                 f"{_fmt(r['doctest_docstrings_kept'])} | {_fmt(r['directives_kept'])} | "
+                 f"{_fmt(r['doctest_docstrings_kept'])} | {_fmt(r['docstrings_kept'])} | {_fmt(r['directives_kept'])} | "
                  f"{_fmt(r['stray_strings_kept'])} | {_fmt(r['unresolved'])} | {_fmt(r['parse_errors'])} | "
                  f"{_fmt(r['astcheck_failures'] + r['errors'])} | {_fmt(r['has_doc'])} | "
                  f"{_fmt(r['bytes_before'])} | {_fmt(r['bytes_after'])} |")
     L.append("\n## Per instance (blob references; hit = cached before this instance was processed)\n")
     L.append("| instance | blobs | hits | hit rate | on-disk hits | earlier-instance hits | same-repo hit rate | "
              "comments removed | "
-             "docstrings removed | doctest kept | directives kept | stray kept | unresolved | parse errors | "
-             "AST failures | `__doc__` files | bytes before | bytes after |")
-    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
+             "docstrings removed | doctest kept | docstrings kept | directives kept | stray kept | unresolved | "
+             "parse errors | AST failures | `__doc__` files | bytes before | bytes after |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|")
     for r in rep["per_instance"]:
         L.append(f"| {r['instance_id']} | {_fmt(r['blobs'])} | {_fmt(r['hits'])} | "
                  f"{_fmt(r['hit_rate']) if r['hit_rate'] is not None else '-'} | "
                  f"{_fmt(r['hits_on_disk_before_run'])} | {_fmt(r['hits_from_earlier_instance'])} | "
                  f"{_fmt(r['hit_rate_same_repo']) if r['hit_rate_same_repo'] is not None else '-'} | "
                  f"{_fmt(r['comments_removed'])} | {_fmt(r['docstrings_removed'])} | "
-                 f"{_fmt(r['doctest_docstrings_kept'])} | {_fmt(r['directives_kept'])} | "
+                 f"{_fmt(r['doctest_docstrings_kept'])} | {_fmt(r['docstrings_kept'])} | {_fmt(r['directives_kept'])} | "
                  f"{_fmt(r['stray_strings_kept'])} | {_fmt(r['unresolved'])} | {_fmt(r['parse_errors'])} | "
                  f"{_fmt(r['astcheck_failures'] + r['errors'])} | {_fmt(r['has_doc'])} | "
                  f"{_fmt(r['bytes_before'])} | {_fmt(r['bytes_after'])} |")
+    L.append("\n## Docstring context (harness/docuse.py; per-site detail in corpus/pass1-docuse.json)\n")
+    L.append("| instance | consumption sites | tolerant | resolved | unresolved | files w/ kept | "
+             "docstrings kept (consumed) | files under per-repo rules |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|")
+    for r in rep["per_instance"]:
+        d = r.get("docuse") or {}
+        L.append(f"| {r['instance_id']} | {_fmt(d.get('sites', 0))} | {_fmt(d.get('tolerant', 0))} | "
+                 f"{_fmt(d.get('resolved', 0) + d.get('partly_resolved', 0))} | {_fmt(d.get('unresolved', 0))} | "
+                 f"{_fmt(d.get('files_with_kept_docstrings', 0))} | {_fmt(d.get('docstrings_kept', 0))} | "
+                 f"{_fmt(d.get('repo_rule_files', 0))} |")
     L.append(f"\n## Unresolved comments ({rep['unresolved_distinct_texts']} distinct texts; top 20; "
              f"full list in corpus/pass1-unresolved.tsv)\n")
     L.append("| count | refs | watch | repos | text | example |")

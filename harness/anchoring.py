@@ -360,12 +360,15 @@ def anchor_records(original: bytes, sidecar: list[dict], entries: list[dict]) ->
     return _Anchorer(original, sidecar, entries).run()
 
 
-def convert(original: bytes, directives) -> dict:
+def convert(original: bytes, directives, keep_owners=None) -> dict:
     """Original bytes -> the three artifacts, in memory.
 
     ``{"source": clean bytes, "index": str, "sidedoc": str, "anchored": Anchored}``
+
+    ``keep_owners`` is the docstring context pass 1 stripped this blob under (see
+    ``strip.strip_source``); a docstring kept in the source is not a sidedoc record.
     """
-    clean, sidecar = strip.strip_source(original, directives)
+    clean, sidecar = strip.strip_source(original, directives, keep_owners)
     entries = resolver.index_text(_decode(original).replace("\r\n", "\n").replace("\r", "\n"))
     anchored = anchor_records(original, sidecar, entries)
     doc = sidedoc.write_sidedoc(anchored.records)
