@@ -14,6 +14,7 @@ no corpus coverage is exactly the one that rots.
 
 import io
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -243,6 +244,130 @@ class TestSearch(CliTestCase):
         status, _, err = run("search", "cart(")
         self.assertEqual(status, sideword_cli.EXIT_USAGE)
         self.assertIn("bad pattern", err)
+
+
+#: Raw artifacts copied byte-for-byte (bodies trimmed) from the converted corpus —
+#: shapes the synthetic fixtures above cannot produce. Provenance, per record:
+#:   Flask.debug~1        pallets__flask-5014-sw  src/flask/app.py — a tie the
+#:                        *resolver* put on the anchor path itself, not a `{kind~n}`
+#:   get_sign             astropy__astropy-14365-sw  astropy/coordinates/calculation.py
+#:                        — a record whose entire body is one space (25 such anchors
+#:                        across the 12-tree EST-166 sample)
+#:   teme_to_itrs_mat     astropy__astropy-14365-sw  astropy/coordinates/builtin_frames/
+#:                        intermediate_rotation_transforms.py — a body line starting
+#:                        with `#`, stored escaped as `\#`
+#:   Flask.run#if:...     pallets__flask-5014-sw  src/flask/app.py — a discriminator
+#:                        carrying spaces and double quotes, overflowing the anchor column
+#:   ConfigObj._parse#... astropy__astropy-14365-sw  astropy/extern/configobj/configobj.py
+#:                        — a deep segment path routed through `/else/`
+REAL_MD = '''---
+style: sphinx
+---
+
+## Flask.debug~1 {doc}
+Whether debug mode is enabled.
+
+## get_sign {doc}
+ 
+
+## teme_to_itrs_mat {lead}
+\\# first define helper functions
+
+## Flask.run#if:os.environ.get("FLASK_RUN_FROM_CLI") == "true" {lead}
+Ignore this call so that it doesn't start another server if
+the 'flask run' command is used.
+
+## ConfigObj._parse#while:cur_index < maxline/if:mat is None/else/assign:key {lead}
+we have a value
+'''
+
+REAL_IDX = '''sideword/1  src/app.py  5 records  ~90 tok
+Flask.debug~1                                             doc   1L
+get_sign                                                  doc   1L
+teme_to_itrs_mat                                          lead  1L
+Flask.run#if:os.environ.get("FLASK_RUN_FROM_CLI") == "true" lead  1L
+ConfigObj._parse#while:cur_index < maxline/if:mat is None/else/assign:key lead  1L
+'''
+
+
+class TestRealCorpusShapes(unittest.TestCase):
+    """The EST-166 corpus sweep (12 tags, 4,664 files, 78,864 anchors) found no verb
+    failures — these tests pin the real anchor shapes that sweep proved and the
+    synthetic `CART` fixture does not reach, from literal corpus bytes."""
+
+    def setUp(self):
+        self._cwd = os.getcwd()
+        self._tmp = tempfile.TemporaryDirectory()
+        repo = Path(self._tmp.name)
+        (repo / "src").mkdir(parents=True)
+        (repo / "src/app.py").write_text("# placeholder\n", encoding="utf-8")
+        mirror = repo / ".sideword" / "src"
+        mirror.mkdir(parents=True)
+        (mirror / "app.py.md").write_text(REAL_MD, encoding="utf-8")
+        (mirror / "app.py.idx").write_text(REAL_IDX, encoding="utf-8")
+        os.chdir(repo)
+
+    def tearDown(self):
+        os.chdir(self._cwd)
+        self._tmp.cleanup()
+
+    def test_anchor_level_tie_suffix_is_fetched_verbatim(self):
+        # `~1` here is part of the anchor path (resolver occurrence numbering, §1.6),
+        # not a `--kind` tie; `show` must match it verbatim, never strip it.
+        status, out, _ = run("show", "src/app.py", "Flask.debug~1")
+        self.assertEqual(status, 0)
+        self.assertEqual(out, "Whether debug mode is enabled.\n")
+
+    def test_the_untied_spelling_misses_but_suggests_the_tied_one(self):
+        status, _, err = run("show", "src/app.py", "Flask.debug")
+        self.assertEqual(status, sideword_cli.EXIT_NO_MATCH)
+        self.assertIn("did you mean: Flask.debug~1", err)
+
+    def test_whitespace_only_body_is_returned_not_reported_missing(self):
+        # The record exists and the index advertises it as 1L; empty prose is a
+        # corpus fact the verb must relay, not an error it may invent.
+        status, out, err = run("show", "src/app.py", "get_sign")
+        self.assertEqual(status, 0)
+        self.assertEqual(err, "")
+        self.assertEqual(out, " \n")
+
+    def test_escaped_hash_line_comes_back_unescaped(self):
+        status, out, _ = run("show", "src/app.py", "teme_to_itrs_mat")
+        self.assertEqual(status, 0)
+        self.assertEqual(out, "# first define helper functions\n")
+
+    def test_search_sees_through_the_escaping(self):
+        status, out, _ = run("search", "^# first define")
+        self.assertEqual(status, 0)
+        self.assertIn("teme_to_itrs_mat {lead}", out)
+        self.assertNotIn("\\#", out)
+
+    def test_quoted_spaced_discriminator_is_fetchable(self):
+        anchor = 'Flask.run#if:os.environ.get("FLASK_RUN_FROM_CLI") == "true"'
+        status, out, _ = run("show", "src/app.py", anchor)
+        self.assertEqual(status, 0)
+        self.assertEqual(out, "Ignore this call so that it doesn't start another "
+                              "server if\nthe 'flask run' command is used.\n")
+
+    def test_deep_else_segment_path_is_fetchable(self):
+        anchor = ("ConfigObj._parse#while:cur_index < maxline"
+                  "/if:mat is None/else/assign:key")
+        status, out, _ = run("show", "src/app.py", anchor)
+        self.assertEqual(status, 0)
+        self.assertEqual(out, "we have a value\n")
+
+    def test_every_row_of_the_real_index_is_fetchable(self):
+        # Parse the rows the way the EST-166 sweep did: anchor text up to the
+        # padded kind/line-count tail, spaces inside the anchor preserved.
+        row = re.compile(r"^(.+?) +(?:doc|lead|trail|post|todo)(?:~\d+)? +\d+L$")
+        anchors = [m.group(1).rstrip() for m in
+                   (row.match(line) for line in REAL_IDX.splitlines()[1:]) if m]
+        self.assertEqual(len(anchors), 5)
+        for anchor in anchors:
+            with self.subTest(anchor=anchor):
+                status, out, _ = run("show", "src/app.py", anchor)
+                self.assertEqual(status, 0)
+                self.assertTrue(out)
 
 
 class TestPaths(CliTestCase):
